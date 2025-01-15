@@ -1,4 +1,3 @@
-# SledProc-plus-ChasmVM
+# SledProc-plus-ChasmVM (introduction)
 
-## introduction
 
