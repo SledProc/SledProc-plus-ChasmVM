@@ -104,8 +104,8 @@ prototype or proof-of-concept stage.
 During the early stages of our project focused more 
 broadly on GUI (and native-application) development, 
 we prototyped a simple scripting language 
-engineered for easy interoperability with Qt.  
-Our reasoning was that scripting capabilities 
+engineered for easy interoperability with Qt.  Our 
+reasoning was that scripting capabilities 
 (alongside database persistence, multimedia, etc.) 
 should be handled by modules that could be 
 distributed in source code fashion and examined 
