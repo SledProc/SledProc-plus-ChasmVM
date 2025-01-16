@@ -160,7 +160,33 @@ We have therefore designed SledProc (Software
 Language Engineering for Data Publishing -- 
 Prototype Compiler/Runtime) as a special-purpose 
 scripting language for the Data Publishing problem 
-case.  
+case.  Alongside SledProc is ChasmVM ("Channel/Syntagm 
+Virtual Machine"; see references for an explanation 
+for this terminology) that is operationally 
+separate in that alternative source-level formats 
+could potentially compile to ChasmVM code.  
+We believe the use-cases within Data Publishing -- especially 
+in the broad sense outlined here, that overlaps 
+with concerns such as native GUI development -- 
+are sufficiently distinct that a specialized  
+scripting environment may offer concrete benefits, 
+justifying the effort to create yet another 
+scripting language.  SledProc does not aim for 
+optimizations or for general-purposes use-cases 
+in the sense of Python, or JavaScript, etc.  
+On the other hand, SledProc is desinged to be 
+somewhat larger than just as Data Publishing 
+DSL; it supports general-purpose programming 
+particularly in the context of analyzing 
+and working with data sets, and is optimized 
+for the precision and pedagogical requirements 
+of scientific data -- utilizing constructs 
+such as explicit SI units, dimensional analysis, 
+queryable code libraries, and other 
+features through which the code supporting 
+a data set can help illustrate the scientific 
+theory and experimental protocols through which 
+published data was acquired. 
   
 
  
