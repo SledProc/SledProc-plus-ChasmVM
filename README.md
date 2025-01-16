@@ -186,7 +186,23 @@ queryable code libraries, and other
 features through which the code supporting 
 a data set can help illustrate the scientific 
 theory and experimental protocols through which 
-published data was acquired. 
+published data was acquired.
+
+In the SledProc/ChasmVM context, a "module" 
+is actually a group of C++ files 
+providing functionality that could be 
+invoked from SledProc code (and, in general, 
+embed a SledProc compiler and ChasmVM runtime 
+allowing for calls in the opposite direction 
+as well).  Our GUI components (and a few 
+others, such as tools for Natural Language 
+documents' text encoding) can accoringly 
+be developed as SledProc modules, 
+which the form in general that they will 
+take in this repository (although 
+users may find reasons to incorporate 
+some of the C++ code without finding use-cases 
+for the overall SledProc project).  
   
 
  
