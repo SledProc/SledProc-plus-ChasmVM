@@ -35,8 +35,8 @@ of Data Publishing.  To describe this concern as a
 domain in itself acknowledges a distinction between 
 merely sharing raw data files, and a more modern 
 understanding of Data Publishing in the context of 
-Open Science, transparency, and research replication.  
-In academic contexts, Data Publishing is encouraged 
+Open Science, transparency, and research replication.  In 
+academic contexts, Data Publishing is encouraged 
 (at least in theory) not only to diminish the 
 likelihood of inadvertant processing or analysis 
 errors (not to mention outright fabrication) but also 
