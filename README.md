@@ -143,14 +143,14 @@ on the usability of deserialization libaries
 that map raw data files onto live application 
 objects.  We feel this situation represents a 
 further rationale for a scripting environment 
-optimically focused on Data Publishing.  
-Libraries for parsing and processing data 
+optimically focused on Data Publishing.  Libraries 
+for parsing and processing data 
 files in discipline-specific formats could 
 be compiled to a specialized embeddable 
 Virtual Machine which is lightweight enough 
 to run within many science-related applications 
-and to be compiled in a cross-platform manner.  
-Up-to-date deserialization libaries could therefore 
+and to be compiled in a cross-platform manner.  Up-to-date 
+deserialization libaries could therefore 
 be maintained by targeting at least this 
 Data Publishing VM, even if there is a lag 
 in updating code for different platforms 
@@ -164,17 +164,17 @@ case.  Alongside SledProc is ChasmVM ("Channel/Syntagm
 Virtual Machine"; see references for an explanation 
 for this terminology) that is operationally 
 separate in that alternative source-level formats 
-could potentially compile to ChasmVM code.  
-We believe the use-cases within Data Publishing -- especially 
+could potentially compile to ChasmVM code.  We 
+believe the use-cases within Data Publishing -- especially 
 in the broad sense outlined here, that overlaps 
 with concerns such as native GUI development -- 
-are sufficiently distinct that a specialized  
-scripting environment may offer concrete benefits, 
+are sufficiently distinct that a specialized scripting 
+environment may offer concrete benefits, 
 justifying the effort to create yet another 
 scripting language.  SledProc does not aim for 
 optimizations or for general-purposes use-cases 
-in the sense of Python, or JavaScript, etc.  
-On the other hand, SledProc is desinged to be 
+in the sense of Python, or JavaScript, etc.  On 
+the other hand, SledProc is desinged to be 
 somewhat larger than just as Data Publishing 
 DSL; it supports general-purpose programming 
 particularly in the context of analyzing 
