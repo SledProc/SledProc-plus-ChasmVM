@@ -1,7 +1,4 @@
 # SledProc-plus-ChasmVM
 
-Except for visitors already familiar with the SledProc project, 
-please first check out the "intro" branch.
-
-Other branches will aggregate work-in-process files.
+This "prelim" branch holds most of the source code for now.
 
