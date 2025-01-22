@@ -362,7 +362,7 @@ public:
 //Frame_With_Connector
  Node_Caon_type retrieve(const Frame_type* fr, const Connectors_type& connector)
  {
-  return targets_[fr].value(caon_ptr<Connectors_type>(&connector));
+  return targets_[const_cast<Frame_type*>(fr)].value(caon_ptr<Connectors_type>(&connector));
  }
 
  Node_Caon_type retrieve(Frame_type* fr, Connection_Caon_type& connection, const Connectors_type& connector)
