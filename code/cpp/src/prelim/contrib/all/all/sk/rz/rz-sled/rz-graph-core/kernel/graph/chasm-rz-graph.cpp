@@ -80,7 +80,7 @@ void ChasmRZ_Graph::report_from_node(QTextStream& qts,
  }
   //Run_Data_Entry
  node.each_connection([this, node, &qts, &padding, &indent]
-  (const ChasmRZ_Connectors& connector, const ChasmRZ_Node& target, const ChasmRZ_Connection* connection)
+  (ChasmRZ_Frame* fr, const ChasmRZ_Connectors& connector, const ChasmRZ_Node& target, const ChasmRZ_Connection* connection)
  {
   // //   For debugging...
   QString label = node.label();

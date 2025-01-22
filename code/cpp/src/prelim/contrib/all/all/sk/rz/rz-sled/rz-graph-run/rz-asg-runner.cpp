@@ -32,6 +32,8 @@ RZ_ASG_Runner::RZ_ASG_Runner(caon_ptr<RZ_ASG_Valuer>  valuer)
 {
 }
 
+#define in_Cf ChasmRZ_Frame::instance("casement"),
+
 
 void RZ_ASG_Runner::check_run_info(int generation,
   RZ_ASG_Result_Holder& rh,
@@ -188,16 +190,16 @@ caon_ptr<RZ_ASG_Runner::tNode>
 
  caon_ptr<tNode> result = nullptr;
 
- if(result = Qy.Run_Call_Sequence(&lhs_node))
+ if(result = Qy.Run_Call_Sequence(in_Cf &lhs_node))
  {
  }
- else if(result = Qy.Run_Call_Entry(&lhs_node))
+ else if(result = Qy.Run_Call_Entry(in_Cf &lhs_node))
  {
   if(caon_ptr<ChasmRZ_Call_Entry> rce = result->chasm_rz_call_entry())
   {
    premise = &Qy.Run_Call_Entry;
    caon_ptr<tNode> entry_node;
-   if(entry_node = Qy.Run_Call_Entry(result))
+   if(entry_node = Qy.Run_Call_Entry(in_Cf result))
    {
     if(caon_ptr<RZ_ASG_Token> tok = entry_node->asg_token())
     {
@@ -209,7 +211,7 @@ caon_ptr<RZ_ASG_Runner::tNode>
     }
     result = entry_node;
    }
-   else if(entry_node = Qy.Run_Data_Entry(result))
+   else if(entry_node = Qy.Run_Data_Entry(in_Cf result))
    {
     premise = &Qy.Run_Data_Entry;
     if(caon_ptr<ChasmRZ_Tuple_Info> rti = entry_node->chasm_rz_tuple_info())
@@ -239,14 +241,14 @@ caon_ptr<tNode> RZ_ASG_Runner::run_token_as_first_argument(
  CAON_PTR_DEBUG(tNode ,arity_node)
  arity_node->debug_connections();
 
- caon_ptr<tNode> new_start_node = Qy.Run_Call_Sequence(arity_node);
+ caon_ptr<tNode> new_start_node = Qy.Run_Call_Sequence(in_Cf arity_node);
  if(new_start_node)
   return new_start_node;
- else if(new_start_node = Qy.Run_Cross_Sequence(arity_node))
+ else if(new_start_node = Qy.Run_Cross_Sequence(in_Cf arity_node))
  {
   return new_start_node;
  }
- else if(new_start_node = Qy.Run_Call_Entry(arity_node))
+ else if(new_start_node = Qy.Run_Call_Entry(in_Cf arity_node))
  {
   return new_start_node;
  }

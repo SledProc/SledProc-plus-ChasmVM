@@ -22,6 +22,7 @@ RZNS_(RZ_Core)
 
 class ChasmRZ_Node;
 class ChasmRZ_Connectors;
+class ChasmRZ_Frame;
 
 class ChasmRZ_Casement_Call_Entry
 {
@@ -112,7 +113,7 @@ public:
  caon_ptr<ChasmRZ_Node> get_next_entry_node();
  caon_ptr<ChasmRZ_Node> get_node();
 
- void debug_check_entry(const ChasmRZ_Connectors& conn);
+ void debug_check_entry(ChasmRZ_Frame* fr, const ChasmRZ_Connectors& conn);
 
 };
 

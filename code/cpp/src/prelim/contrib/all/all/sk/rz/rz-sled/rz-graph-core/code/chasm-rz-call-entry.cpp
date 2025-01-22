@@ -78,12 +78,12 @@ caon_ptr<ChasmRZ_Call_Entry> ChasmRZ_Call_Entry::unwind(int& unwind_count)
 }
 
 
-void ChasmRZ_Call_Entry::debug_check_entry(const ChasmRZ_Connectors& conn)
+void ChasmRZ_Call_Entry::debug_check_entry(ChasmRZ_Frame* fr, const ChasmRZ_Connectors& conn)
 {
  qDebug() << "call depth: " << call_depth_;
  if(ref_node_)
  {
-  if(caon_ptr<ChasmRZ_Node> node = ref_node_->retrieve(conn))
+  if(caon_ptr<ChasmRZ_Node> node = ref_node_->retrieve(fr, conn))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,node);
    if(caon_ptr<ChasmRZ_Token> token = node->chasm_rz_token())
@@ -97,7 +97,7 @@ void ChasmRZ_Call_Entry::debug_check_entry(const ChasmRZ_Connectors& conn)
 
  if(parent_entry_node_)
  {
-  if(caon_ptr<ChasmRZ_Node> node = parent_entry_node_->retrieve(conn))
+  if(caon_ptr<ChasmRZ_Node> node = parent_entry_node_->retrieve(fr, conn))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,node);
    if(caon_ptr<ChasmRZ_Token> token = node->chasm_rz_token())

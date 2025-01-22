@@ -53,6 +53,8 @@ ChasmRZ_ASG_Position::ChasmRZ_ASG_Position
 {
 }
 
+#define in_Cf Cf,
+
 
 QPair<ChasmRZ_ASG_Position::Equalizer_Contexts, QString>
 ChasmRZ_ASG_Position::parse_equalizer_context(QString key)
@@ -580,11 +582,11 @@ void ChasmRZ_ASG_Position::add_call_entry(bool is_statement_entry, QString prefi
 
     // //  We need to connect the arrows ...
      //
-    if(caon_ptr<ChasmRZ_Node> old_do_node = Qy.Run_Call_Entry(old_closed_do_entry_node))
+    if(caon_ptr<ChasmRZ_Node> old_do_node = Qy.Run_Call_Entry(in_Cf old_closed_do_entry_node))
     {
      CAON_PTR_DEBUG(ChasmRZ_Node ,old_do_node)
      old_do_node->debug_connections();
-     if(caon_ptr<ChasmRZ_Node> old_arrow_node = Qy.Run_Call_Sequence(old_do_node))
+     if(caon_ptr<ChasmRZ_Node> old_arrow_node = Qy.Run_Call_Sequence(in_Cf old_do_node))
      {
       CAON_PTR_DEBUG(ChasmRZ_Node ,old_arrow_node)
       old_arrow_node << Cf/Qy.Run_Fundef_Arrow_Sequence >> current_node_;
@@ -690,7 +692,7 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_ASG_Position::check_implied_lambda_tuple(ChasmRZ_
     CAON_PTR_DEBUG(ChasmRZ_Node ,last_pchasm_rz_entry_node_)
     caon_ptr<ChasmRZ_Node> fdef_node = graph_build_->new_function_def_entry_node(*last_pchasm_rz_entry_node_, kind);
 
-    last_pchasm_rz_entry_node_->delete_relation(Qy.Run_Call_Entry, current_node_);
+    last_pchasm_rz_entry_node_->delete_relation(&Cf, Qy.Run_Call_Entry, current_node_);
     current_function_def_entry_node_ = fdef_node;
 
     caon_ptr<ChasmRZ_Node> tuple_info_node = graph_build_->create_tuple(ChasmRZ_Tuple_Info::Tuple_Formations::Indicates_Input,
@@ -700,7 +702,7 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_ASG_Position::check_implied_lambda_tuple(ChasmRZ_
 
     current_node_->debug_connections();
 
-    caon_ptr<ChasmRZ_Node> entry_node = Qy.Run_Call_Entry(current_node_);
+    caon_ptr<ChasmRZ_Node> entry_node = Qy.Run_Call_Entry(in_Cf current_node_);
 
     result = current_node_;
 
@@ -710,7 +712,7 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_ASG_Position::check_implied_lambda_tuple(ChasmRZ_
 
     current_node_ << Cf/Qy.Run_Data_Entry >> tuple_info_node;
     tuple_info_node << Cf/Qy.Run_Data_Entry >> entry_node;
-    current_node_->delete_relation(Qy.Run_Call_Entry, entry_node);
+    current_node_->delete_relation(&in_Cf Qy.Run_Call_Entry, entry_node);
 
     caon_ptr<ChasmRZ_Node> tuple_leave_node = graph_build_->create_tuple(ChasmRZ_Tuple_Info::Tuple_Formations::N_A,
      ChasmRZ_Tuple_Info::Tuple_Indicators::Leave_Array, ChasmRZ_Tuple_Info::Tuple_Formations::N_A, false);
@@ -1034,7 +1036,7 @@ void ChasmRZ_ASG_Position::add_block_map_leave()
 
  if(current_do_map_block_entry_node_)
  {
-  if(caon_ptr<ChasmRZ_Node> n = Qy.Parent_Do_Map_Block(current_do_map_block_entry_node_))
+  if(caon_ptr<ChasmRZ_Node> n = Qy.Parent_Do_Map_Block(in_Cf current_do_map_block_entry_node_))
   {
    current_do_map_block_entry_node_ = n;
    //? and...?
@@ -1063,7 +1065,7 @@ void ChasmRZ_ASG_Position::add_block_map_leave()
 
  if(current_block_map_entry_node_)
  {
-  if(caon_ptr<ChasmRZ_Node> n = Qy.Parent_Block_Map(current_block_map_entry_node_))
+  if(caon_ptr<ChasmRZ_Node> n = Qy.Parent_Block_Map(in_Cf current_block_map_entry_node_))
   {
    current_block_map_entry_node_ = n;
   }
@@ -1152,7 +1154,7 @@ void ChasmRZ_ASG_Position::add_block_map_leave()
     CAON_DEBUG_NOOP
    }
   }
-  else if(caon_ptr<ChasmRZ_Node> en_node = Qy.Run_Call_Entry(bc_node))
+  else if(caon_ptr<ChasmRZ_Node> en_node = Qy.Run_Call_Entry(in_Cf bc_node))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,en_node)
    current_node_ = bc_node;
@@ -1507,11 +1509,11 @@ void ChasmRZ_ASG_Position::add_token_node(caon_ptr<ChasmRZ_Node> token_node)
     pConnector = &Qy.Run_Cross_Sequence;
     current_node_ = current_closed_do_entry_node_;
 
-    if(caon_ptr<ChasmRZ_Node> old_do_node = Qy.Run_Call_Entry(current_closed_do_entry_node_))
+    if(caon_ptr<ChasmRZ_Node> old_do_node = Qy.Run_Call_Entry(in_Cf current_closed_do_entry_node_))
     {
      CAON_PTR_DEBUG(ChasmRZ_Node ,old_do_node)
      old_do_node->debug_connections();
-     if(caon_ptr<ChasmRZ_Node> old_arrow_node = Qy.Run_Call_Sequence(old_do_node))
+     if(caon_ptr<ChasmRZ_Node> old_arrow_node = Qy.Run_Call_Sequence(in_Cf old_do_node))
      {
       CAON_PTR_DEBUG(ChasmRZ_Node ,old_arrow_node)
 
@@ -1923,7 +1925,7 @@ void ChasmRZ_ASG_Position::read_over_chiefs()
  {
   caon_ptr<ChasmRZ_Node> n = it.next();
   CAON_PTR_DEBUG(ChasmRZ_Node ,n)
-  if(caon_ptr<ChasmRZ_Node> nn = Qy.Run_Call_Entry(n))
+  if(caon_ptr<ChasmRZ_Node> nn = Qy.Run_Call_Entry(in_Cf n))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,nn)
    if(caon_ptr<ChasmRZ_Token> tok = nn->chasm_rz_token())
@@ -1932,7 +1934,7 @@ void ChasmRZ_ASG_Position::read_over_chiefs()
     qDebug() << tok->string_value();
    }
   }
-  else if(caon_ptr<ChasmRZ_Node> dn = Qy.Run_Data_Entry(n))
+  else if(caon_ptr<ChasmRZ_Node> dn = Qy.Run_Data_Entry(in_Cf n))
   {
    if(caon_ptr<ChasmRZ_Tuple_Info> rti = dn->chasm_rz_tuple_info())
    {
@@ -1950,7 +1952,7 @@ void ChasmRZ_ASG_Position::read_block_chiefs()
  {
   caon_ptr<ChasmRZ_Node> n = it.next();
   CAON_PTR_DEBUG(ChasmRZ_Node ,n)
-  if(caon_ptr<ChasmRZ_Node> nn = Qy.Run_Call_Entry(n))
+  if(caon_ptr<ChasmRZ_Node> nn = Qy.Run_Call_Entry(in_Cf n))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,nn)
    if(caon_ptr<ChasmRZ_Token> tok = nn->chasm_rz_token())
@@ -1959,7 +1961,7 @@ void ChasmRZ_ASG_Position::read_block_chiefs()
     qDebug() << tok->string_value();
    }
   }
-  else if(caon_ptr<ChasmRZ_Node> dn = Qy.Run_Data_Entry(n))
+  else if(caon_ptr<ChasmRZ_Node> dn = Qy.Run_Data_Entry(in_Cf n))
   {
    if(caon_ptr<ChasmRZ_Tuple_Info> rti = dn->chasm_rz_tuple_info())
    {
@@ -1978,7 +1980,7 @@ void ChasmRZ_ASG_Position::read_chiefs()
  {
   caon_ptr<ChasmRZ_Node> n = it.next();
   CAON_PTR_DEBUG(ChasmRZ_Node ,n)
-  if(caon_ptr<ChasmRZ_Node> nn = Qy.Run_Call_Entry(n))
+  if(caon_ptr<ChasmRZ_Node> nn = Qy.Run_Call_Entry(in_Cf n))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,nn)
    if(caon_ptr<ChasmRZ_Token> tok = nn->chasm_rz_token())
@@ -1987,7 +1989,7 @@ void ChasmRZ_ASG_Position::read_chiefs()
     CAON_DEBUG_NOOP
    }
   }
-  else if(caon_ptr<ChasmRZ_Node> dn = Qy.Run_Data_Entry(n))
+  else if(caon_ptr<ChasmRZ_Node> dn = Qy.Run_Data_Entry(in_Cf n))
   {
    if(caon_ptr<ChasmRZ_Tuple_Info> rti = dn->chasm_rz_tuple_info())
    {
@@ -2024,7 +2026,7 @@ void ChasmRZ_ASG_Position::add_data_leave(caon_ptr<ChasmRZ_Node> tuple_info_node
   CAON_DEBUG_NOOP
   ce_rti->set_call_entry_node(pop_node);
 
-  if(caon_ptr<ChasmRZ_Node> den = Qy.Run_Data_Entry(current_node_))
+  if(caon_ptr<ChasmRZ_Node> den = Qy.Run_Data_Entry(in_Cf current_node_))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,den)
    CAON_DEBUG_NOOP

@@ -104,6 +104,9 @@ RZ_ASG_Valuer::RZ_ASG_Valuer(RZ_ASG_Visitor& rz_asg_visitor,
 
 }
 
+#define in_Cf Cf,
+
+
 void RZ_ASG_Valuer::init_core_function_redirect_code_map()
 {
  #define RZ_ASG_FUNCTION_DECLARE(rz_name, code, arity, ftype) \
@@ -432,7 +435,7 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
 
  if(tok->type_object())
   return;
- if(caon_ptr<tNode> value_node = Qy.Static_Init_Value(node))
+ if(caon_ptr<tNode> value_node = Qy.Static_Init_Value(in_Cf node))
  {
   ChasmRZ_Dominion::Type_Codes tc = value_node->type_code();
   caon_ptr<RZ_Type_Object> tobj = type_objects_by_code_[tc];
@@ -462,7 +465,7 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
  else if(tok->flags.is_declaration_arrow)
  {
   tok->set_type_object(*type_variety_.get_type_object(RZ_Run_Types::FnDefInfo));
-  caon_ptr<ChasmRZ_Node> n = Qy.Run_Function_Def_Entry(node);
+  caon_ptr<ChasmRZ_Node> n = Qy.Run_Function_Def_Entry(in_Cf node);
   if(n)
   {
    caon_ptr<RZ_Function_Def_Info> fdi = new_function_def_info(n->chasm_rz_function_def_entry());
@@ -496,7 +499,7 @@ void RZ_ASG_Valuer::check_function_def_map_sequence(caon_ptr<tNode> node,
   RZ_Function_Def_Info& fdi)
 {
  CAON_PTR_DEBUG(ChasmRZ_Node ,node)
- caon_ptr<tNode> arrow_node = Qy.Run_Fundef_Map_Key_Sequence(node);
+ caon_ptr<tNode> arrow_node = Qy.Run_Fundef_Map_Key_Sequence(in_Cf node);
 
  caon_ptr<RZ_Function_Def_Info> reffdi = nullptr;
 
@@ -509,13 +512,13 @@ void RZ_ASG_Valuer::check_function_def_map_sequence(caon_ptr<tNode> node,
 //  CAON_PTR_DEBUG(ChasmRZ_Node ,en)
 //    if(caon_ptr<ChasmRZ_Node> don = Qy.Run_Fundef_Arrow_Sequence(en))
 
-  if(caon_ptr<ChasmRZ_Node> don = Qy.Run_Fundef_Arrow_Sequence(node))
+  if(caon_ptr<ChasmRZ_Node> don = Qy.Run_Fundef_Arrow_Sequence(in_Cf node))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,don)
-   if(caon_ptr<ChasmRZ_Node> en = Qy.Run_Call_Entry(don))
+   if(caon_ptr<ChasmRZ_Node> en = Qy.Run_Call_Entry(in_Cf don))
    {
     CAON_PTR_DEBUG(ChasmRZ_Node ,en)
-    arrow_node = Qy.Run_Call_Sequence(en);
+    arrow_node = Qy.Run_Call_Sequence(in_Cf en);
     reffdi = fdi.ref_fdi();
     if(!reffdi)
     {
@@ -540,7 +543,7 @@ void RZ_ASG_Valuer::check_function_def_map_sequence(caon_ptr<tNode> node,
   }
   if(rzlt)
   {
-   if(caon_ptr<ChasmRZ_Node> fdef_node = Qy.Run_Function_Def_Entry(arrow_node))
+   if(caon_ptr<ChasmRZ_Node> fdef_node = Qy.Run_Function_Def_Entry(in_Cf arrow_node))
    {
     if(caon_ptr<ChasmRZ_Function_Def_Entry> fdef = fdef_node->chasm_rz_function_def_entry())
     {
@@ -572,7 +575,7 @@ void RZ_ASG_Valuer::check_function_def_map_sequence(caon_ptr<tNode> node,
  }
 
  // // if not an arrow-to-arrow, then ...
- else if(caon_ptr<ChasmRZ_Node> tn = Qy.Run_Token_Arrow_Sequence(node))
+ else if(caon_ptr<ChasmRZ_Node> tn = Qy.Run_Token_Arrow_Sequence(in_Cf node))
  {
   CAON_PTR_DEBUG(ChasmRZ_Node ,tn)
   //?check_node_type(tn);
@@ -661,7 +664,7 @@ caon_ptr<RZ_ASG_Valuer::tNode>
  caon_ptr<tNode> result = nullptr;
  if(caon_ptr<ChasmRZ_Tuple_Info> rti = node.chasm_rz_tuple_info())
  {
-  caon_ptr<tNode> first_node = Qy.Run_Data_Entry(&node);
+  caon_ptr<tNode> first_node = Qy.Run_Data_Entry(in_Cf &node);
   switch(rti->indicator())
   {
   case ChasmRZ_Tuple_Info::Tuple_Indicators::Enter_Vector:
@@ -691,7 +694,7 @@ caon_ptr<RZ_ASG_Valuer::tNode>
 
 void RZ_ASG_Valuer::check_node_value_proxy(caon_ptr<tNode>& node)
 {
- if(caon_ptr<tNode> proxy = Qy.Run_Proxy_Value(node))
+ if(caon_ptr<tNode> proxy = Qy.Run_Proxy_Value(in_Cf node))
  {
   node = proxy;
  }
@@ -724,10 +727,10 @@ caon_ptr<RZ_ASG_Valuer::tNode>
  if(caon_ptr<ChasmRZ_Node> call_entry_node = rti.call_entry_node())
  {
   CAON_PTR_DEBUG(ChasmRZ_Node ,first_node)
-  if(caon_ptr<ChasmRZ_Node> data_entry_node = Qy.Run_Data_Entry(call_entry_node))
+  if(caon_ptr<ChasmRZ_Node> data_entry_node = Qy.Run_Data_Entry(in_Cf call_entry_node))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,data_entry_node)
-   if(caon_ptr<ChasmRZ_Node> string_plex_node = Qy.String_Plex_Value(data_entry_node))
+   if(caon_ptr<ChasmRZ_Node> string_plex_node = Qy.String_Plex_Value(in_Cf data_entry_node))
    {
     CAON_PTR_DEBUG(ChasmRZ_Node ,string_plex_node)
     rzspb = string_plex_node->string_plex_builder();
@@ -755,11 +758,11 @@ caon_ptr<RZ_ASG_Valuer::tNode>
   if(do_check_node_type)
    check_node_type(n);
   vect->add_node(n);
-  caon_ptr<tNode> tn = Qy.Run_Data_Sequence(n);
+  caon_ptr<tNode> tn = Qy.Run_Data_Sequence(in_Cf n);
   if(tn)
    n = tn;
   else
-   n = Qy.Run_Call_Sequence(n);
+   n = Qy.Run_Call_Sequence(in_Cf n);
  }
  return vector_node;
 }
@@ -865,7 +868,7 @@ caon_ptr<ChasmRZ_Node> RZ_ASG_Valuer::check_skip_symbol_dep_nodes(caon_ptr<Chasm
  caon_ptr<ChasmRZ_Node> result = start_node;
  caon_ptr<ChasmRZ_Node> current = start_node;
  caon_ptr<ChasmRZ_Node> former = start_node;
- while(current = Qy.Run_Call_Sequence(current))
+ while(current = Qy.Run_Call_Sequence(in_Cf current))
  {
   if(caon_ptr<RZ_ASG_Token> tok = current->asg_token())
   {
@@ -912,7 +915,7 @@ caon_ptr<ChasmRZ_Node> RZ_ASG_Valuer::check_skip_symbol_dep_nodes(caon_ptr<Chasm
 QString RZ_ASG_Valuer::form_type_expression(caon_ptr<ChasmRZ_Node> entry_node)
 {
  QString result = "(";
- for(caon_ptr<ChasmRZ_Node> node = entry_node; node; node = Qy.Run_Call_Sequence(node))
+ for(caon_ptr<ChasmRZ_Node> node = entry_node; node; node = Qy.Run_Call_Sequence(in_Cf node))
  {
   CAON_PTR_DEBUG(tNode ,node)
   if(caon_ptr<RZ_ASG_Token> token = node->asg_token())
@@ -922,7 +925,7 @@ QString RZ_ASG_Valuer::form_type_expression(caon_ptr<ChasmRZ_Node> entry_node)
    type_variety_.check_embed_type_name(sv);
    result += sv + ' ';
   }
-  caon_ptr<ChasmRZ_Node> nested_entry_node = Qy.Run_Call_Entry(node);
+  caon_ptr<ChasmRZ_Node> nested_entry_node = Qy.Run_Call_Entry(in_Cf node);
   caon_ptr<ChasmRZ_Node> prior_nested = nullptr;
   while(nested_entry_node)
   {
@@ -930,12 +933,12 @@ QString RZ_ASG_Valuer::form_type_expression(caon_ptr<ChasmRZ_Node> entry_node)
    if(caon_ptr<ChasmRZ_Call_Entry> rce = nested_entry_node->chasm_rz_call_entry())
    {
     CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,rce)
-    if(nested_entry_node = Qy.Run_Call_Entry(nested_entry_node))
+    if(nested_entry_node = Qy.Run_Call_Entry(in_Cf nested_entry_node))
     {
      QString nested = form_type_expression(nested_entry_node);
      result += nested + ' ';
      prior_nested = nested_entry_node;
-     nested_entry_node = Qy.Run_Cross_Sequence(nested_entry_node);
+     nested_entry_node = Qy.Run_Cross_Sequence(in_Cf nested_entry_node);
     }
    }
    // else : need to handle cross-continue
@@ -959,7 +962,7 @@ RZ_ASG_Valuer::register_lexical_symbol
   CAON_PTR_DEBUG(tNode ,en)
   caon_ptr<tNode> pen = opc.pre_entry_node();
   CAON_PTR_DEBUG(tNode ,pen)
-  if(caon_ptr<tNode> declaration_node = Qy.Run_Cross_Sequence(pen))
+  if(caon_ptr<tNode> declaration_node = Qy.Run_Cross_Sequence(in_Cf pen))
   {
    if(caon_ptr<RZ_ASG_Token> declaration_token = declaration_node->asg_token())
    {
@@ -992,7 +995,7 @@ RZ_ASG_Valuer::register_lexical_symbol
  caon_ptr<RZ_ASG_Token> declaration_token = nullptr;
  QStringList keywords;
 
- while(n = Qy.Run_Call_Sequence(n))
+ while(n = Qy.Run_Call_Sequence(in_Cf n))
  {
   caon_ptr<RZ_ASG_Token> next_token = n->asg_token();
   CAON_PTR_DEBUG(RZ_ASG_Token ,next_token)
@@ -1024,7 +1027,7 @@ RZ_ASG_Valuer::register_lexical_symbol
 
  if(result)
  {
-  caon_ptr<tNode> nn = Qy.Run_Call_Sequence(result);
+  caon_ptr<tNode> nn = Qy.Run_Call_Sequence(in_Cf result);
   check_node_type(nn);
  }
 
@@ -1654,7 +1657,7 @@ void RZ_ASG_Valuer::insert_collection_node(tNode& new_node, tNode& lhs_node,
 
 caon_ptr<tNode> RZ_ASG_Valuer::retval_follow(caon_ptr<tNode> n)
 {
- return Qy.Retval_Follow(n);
+ return Qy.Retval_Follow(in_Cf n);
 }
 
 
@@ -1683,18 +1686,18 @@ bool RZ_ASG_Valuer::check_embed_noop(caon_ptr<tNode> start_node)
 {
  CAON_PTR_DEBUG(ChasmRZ_Node, start_node)
 
-   if(caon_ptr<tNode> sern = Qy.Run_Embed_Redirect(start_node))
+   if(caon_ptr<tNode> sern = Qy.Run_Embed_Redirect(in_Cf start_node))
    {
     CAON_PTR_DEBUG(ChasmRZ_Node, sern)
     return embedder_->match_noop_node(sern);
    }
 
 //?
- if(caon_ptr<ChasmRZ_Node> ce_node = Qy.Run_Call_Entry(start_node))
+ if(caon_ptr<ChasmRZ_Node> ce_node = Qy.Run_Call_Entry(in_Cf start_node))
  {
   CAON_PTR_DEBUG(ChasmRZ_Node, ce_node)
   ce_node->debug_connections();
-  if(caon_ptr<tNode> ern = Qy.Run_Embed_Redirect(ce_node))
+  if(caon_ptr<tNode> ern = Qy.Run_Embed_Redirect(in_Cf ce_node))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node, ern)
    return embedder_->match_noop_node(ern);
@@ -1799,9 +1802,9 @@ caon_ptr<RZ_ASG_Valuer_Core_Pair> RZ_ASG_Valuer::check_release_core_pair()
 {
  if(core_pair_function_node_)
  {
-  caon_ptr<tNode> prn = Qy.Run_Core_Pair(core_pair_function_node_);
+  caon_ptr<tNode> prn = Qy.Run_Core_Pair(in_Cf core_pair_function_node_);
   if(!prn)
-    prn = Qy.Run_Nested_Core_Pair(core_pair_function_node_);
+    prn = Qy.Run_Nested_Core_Pair(in_Cf core_pair_function_node_);
   core_pair_function_node_ = nullptr;
   if(!prn)
     return nullptr;
@@ -1838,7 +1841,7 @@ void RZ_ASG_Valuer::init_scan_block(RZ_ASG_Result_Holder& rh,
  RZ_Opaque_Type_Symbol& ots)
 {
  caon_ptr<tNode> en = ots.get_node();
- if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(en))
+ if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(in_Cf en))
  {
   init_scan_block(rh, nullptr, en, ben);
  }
@@ -1849,7 +1852,7 @@ void RZ_ASG_Valuer::init_scan_block(RZ_ASG_Result_Holder& rh, RZ_Opaque_Call& op
 {
  caon_ptr<tNode> pen = opc.pre_entry_node();
  caon_ptr<tNode> en = opc.entry_node();
- if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(pen))
+ if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(in_Cf pen))
  {
   init_scan_block(rh, pen, en, ben);
  }
@@ -1919,7 +1922,7 @@ void RZ_ASG_Valuer::init_if_block(RZ_ASG_Result_Holder& rh, RZ_Opaque_Call& opc)
 {
  caon_ptr<tNode> pen = opc.pre_entry_node();
  caon_ptr<tNode> en = opc.entry_node();
- if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(pen))
+ if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(in_Cf pen))
  {
   init_if_block(rh, pen, en, ben);
  }
@@ -1930,7 +1933,7 @@ void RZ_ASG_Valuer::init_if_block(RZ_ASG_Result_Holder& rh, RZ_Opaque_Type_Symbo
 {
  caon_ptr<tNode> n = ots.get_node();
 
- if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(n))
+ if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(in_Cf n))
  {
   init_if_block(rh, n, n, ben);
  }
@@ -1988,7 +1991,7 @@ void RZ_ASG_Valuer::init_elsif_block(RZ_ASG_Result_Holder& rh, RZ_Opaque_Call& o
 {
  caon_ptr<tNode> pen = opc.pre_entry_node();
  caon_ptr<tNode> en = opc.entry_node();
- if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(pen))
+ if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(in_Cf pen))
  {
   init_elsif_block(rh, pen, en, ben);
  }
@@ -2045,7 +2048,7 @@ void RZ_ASG_Valuer::init_elsif_block(RZ_ASG_Result_Holder& rh,
    {
     CAON_PTR_DEBUG(ChasmRZ_Node ,sen)
     sen << Cf/Qy.Run_Nested_Block_Continue >> fnode;
-    if(caon_ptr<ChasmRZ_Node> ren = Qy.Run_Call_Entry(sen))
+    if(caon_ptr<ChasmRZ_Node> ren = Qy.Run_Call_Entry(in_Cf sen))
     {
      CAON_PTR_DEBUG(ChasmRZ_Node ,ren)
      if(caon_ptr<RZ_ASG_Token> rzlt = ren->asg_token())
@@ -2131,7 +2134,7 @@ void RZ_ASG_Valuer::init_else_block(RZ_ASG_Result_Holder& rh,
    {
     sen << Cf/Qy.Run_Nested_Block_Continue >> fnode;
 
-    if(caon_ptr<ChasmRZ_Node> ren = Qy.Run_Call_Entry(sen))
+    if(caon_ptr<ChasmRZ_Node> ren = Qy.Run_Call_Entry(in_Cf sen))
     {
      CAON_PTR_DEBUG(ChasmRZ_Node ,ren)
      if(caon_ptr<RZ_ASG_Token> rzlt = ren->asg_token())
@@ -2202,7 +2205,7 @@ void RZ_ASG_Valuer::init_else_block(RZ_ASG_Result_Holder& rh,
 void RZ_ASG_Valuer::run_Else(RZ_ASG_Result_Holder& rh,
  tNode& start_node)
 {
- if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(&start_node))
+ if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(in_Cf &start_node))
  {
   CAON_PTR_DEBUG(RZ_ASG_Lexical_Scope ,current_lexical_scope_)
 
@@ -2214,10 +2217,10 @@ void RZ_ASG_Valuer::run_Else(RZ_ASG_Result_Holder& rh,
 void RZ_ASG_Valuer::run_Caserun(RZ_ASG_Result_Holder& rh,
  tNode& start_node)
 {
- if(caon_ptr<tNode> arg = Qy.Run_Call_Sequence(&start_node))
+ if(caon_ptr<tNode> arg = Qy.Run_Call_Sequence(in_Cf &start_node))
  {
   CAON_PTR_DEBUG(tNode ,arg)
-  if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(arg))
+  if(caon_ptr<tNode> ben = Qy.Run_Block_Entry(in_Cf arg))
   {
    CAON_PTR_DEBUG(tNode ,ben)
    init_caserun_block(rh, &start_node, arg, ben);

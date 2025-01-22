@@ -52,13 +52,13 @@ public:
 
  void debug_connections();
 
- void each_connection(std::function<void(const ChasmRZ_Connectors& connector,
+ void each_connection(std::function<void(ChasmRZ_Frame* fr, const ChasmRZ_Connectors& connector,
   const ChasmRZ_Node&, const ChasmRZ_Connection* connection)> fn)  const;
 
- void swap_relation(const ChasmRZ_Connectors& connector,
+ void swap_relation(ChasmRZ_Frame* fr, const ChasmRZ_Connectors& connector,
   caon_ptr<ChasmRZ_Node> n1, caon_ptr<ChasmRZ_Node> n2);
 
- void delete_relation(const ChasmRZ_Connectors& connector,
+ void delete_relation(ChasmRZ_Frame* fr, const ChasmRZ_Connectors& connector,
   caon_ptr<ChasmRZ_Node> n1);
 
  void add_hyponode(caon_ptr<ChasmRZ_Node> n);
