@@ -33,6 +33,8 @@ ChasmRZ_ASG_Position::ChasmRZ_ASG_Position
  : Flags(0), graph_build_(graph_build),
    Cf(ChasmRZ_Frame::instance("casement")),
    Sf(ChasmRZ_Frame::instance("semantic")),
+//   Af(ChasmRZ_Frame::instance("asg")),
+//   Rf(ChasmRZ_Frame::instance("root")),
    Qy(ChasmRZ_Query::instance()),
    position_state_(Position_States::Root),
    current_node_(nullptr), last_pchasm_rz_entry_node_(nullptr),
@@ -52,6 +54,133 @@ ChasmRZ_ASG_Position::ChasmRZ_ASG_Position
    held_assignment_annotation_node_(nullptr)
 {
 }
+
+
+
+void ChasmRZ_ASG_Position::add_block_level_type_declaration_entry(caon_ptr<ChasmRZ_Node> bltd_node)
+{
+ switch(position_state_)
+ {
+ case Position_States::Root:
+  current_node_ <<Cf/Qy.Block_Level_Expression_Entry>> bltd_node;
+  current_node_ = bltd_node;
+  push_chief(bltd_node);
+  position_state_ = Position_States::Active_Type_Declaration_Chief;
+  break;
+
+ }
+}
+
+void ChasmRZ_ASG_Position::add_numeric_literal(caon_ptr<ChasmRZ_Node> token_node)
+{
+
+}
+
+
+void ChasmRZ_ASG_Position::add_type_symbol(caon_ptr<ChasmRZ_Node> token_node)
+{
+ switch(position_state_)
+ {
+ case Position_States::Active_Type_Declaration_Chief:
+  current_node_ <<Cf/Qy.Type_Symbol_Declaration>> token_node;
+  current_node_ = token_node;
+  position_state_ = Position_States::Active_Type_Declaration;
+  break;
+ }
+}
+
+void ChasmRZ_ASG_Position::push_chief(caon_ptr<ChasmRZ_Node> node)
+{
+ chiefs_.push(node);
+}
+
+
+void ChasmRZ_ASG_Position::add_statement_entry(caon_ptr<ChasmRZ_Node> node,
+  ChasmRZ_Anchored_Casement_Entry::Statement_Entry_Modes mode)
+{
+ // // do we have a block entry?
+ check_pop_chief();
+
+ current_node_ << Cf/Qy.Casement_Block_Sequence >> node;
+
+ caon_ptr<ChasmRZ_Anchored_Casement_Entry> ace = new ChasmRZ_Anchored_Casement_Entry(mode);
+ CAON_PTR_DEBUG(ChasmRZ_Anchored_Casement_Entry ,ace)
+
+ caon_ptr<ChasmRZ_Node> ace_node = graph_build_->make_new_node(ace);
+ node << Sf/Qy.Anchor_Info >> ace_node;
+
+ push_chief(node);
+ position_state_ = Position_States::Active_Statement_Entry_Anchor;
+ current_node_ = node;
+
+ //caon_ptr<ChasmRZ_Node> chief_node =
+
+// static QMap<Position_States, ChasmRZ_Query> which_connector {
+//  {Position_States::Root, Qy.}
+// };
+// int connector = Qy.Type_Symbol_Declaration;
+
+// switch(position_state_)
+// {
+// case Position_States::Root:
+//  // //  need a block entry ...
+//  break;
+// default:
+// }
+
+}
+
+void ChasmRZ_ASG_Position::check_pop_chief()
+{
+ CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
+
+ if(chiefs_.isEmpty())
+ {
+  switch(position_state_)
+  {
+  case Position_States::Root:
+   return; // // root_node_ is already current_node_
+  default:
+   // // problem ...
+   break;
+  }
+  return;
+ }
+ pop_chief();
+
+#ifdef HIDE
+ caon_ptr<ChasmRZ_Call_Entry> rce = current_node_->chasm_rz_call_entry();
+
+ CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,rce)
+
+ caon_ptr<ChasmRZ_Node> self_node = current_node_;
+ current_node_ = pop_chief();
+ {
+  CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
+  CAON_DEBUG_NOOP
+ }
+ if(rce)
+ {
+  CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
+  // //   Here its ref node should = its parent entry node
+
+   rce->set_ref_node(current_node_);
+
+   rce->set_self_node(self_node);
+
+ }
+ if( caon_ptr<ChasmRZ_Call_Entry> current_rce = current_node_->chasm_rz_call_entry() )
+ {
+  CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,current_rce)
+  if(current_rce->flags.was_added_as_implied)
+  {
+   check_pop_chief();
+  }
+ }
+#endif
+}
+
+
 
 #define in_Cf Cf,
 
@@ -239,38 +368,6 @@ caon_ptr<ChasmRZ_Call_Entry> ChasmRZ_ASG_Position::current_closed_do_entry()
  }
 }
 
-void ChasmRZ_ASG_Position::check_pop_chief()
-{
- CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
- caon_ptr<ChasmRZ_Call_Entry> rce = current_node_->chasm_rz_call_entry();
-
- CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,rce)
-
- caon_ptr<ChasmRZ_Node> self_node = current_node_;
- current_node_ = pop_chief();
- {
-  CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
-  CAON_DEBUG_NOOP
- }
- if(rce)
- {
-  CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
-  // //   Here its ref node should = its parent entry node
-
-   rce->set_ref_node(current_node_);
-
-   rce->set_self_node(self_node);
-
- }
- if( caon_ptr<ChasmRZ_Call_Entry> current_rce = current_node_->chasm_rz_call_entry() )
- {
-  CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,current_rce)
-  if(current_rce->flags.was_added_as_implied)
-  {
-   check_pop_chief();
-  }
- }
-}
 
 void ChasmRZ_ASG_Position::check_append_chief(caon_ptr<ChasmRZ_Node> new_chief)
 {

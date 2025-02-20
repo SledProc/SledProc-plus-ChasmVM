@@ -166,6 +166,35 @@ void ChasmRZ_Grammar::init(ChasmRZ_Parser& p, ChasmRZ_Graph& g, ChasmRZ_Graph_Bu
  });
 
 
+ add_rule( run_context, "single-initialization-token",
+  " (?<prefix> [\\^]) (?<token>.script-word.) ",
+   [&]
+ {
+  QString prefix = p.matched("prefix");
+  QString token = p.matched("token");
+  graph_build.add_initialization_token(prefix, token);
+ });
+
+
+ add_rule( run_context, "numeric-literal",
+  " (?<prefix> [+-]? (?: 0 [xb]?)? ) (?<text> \\d [\\d',.]*) ",
+   [&]
+ {
+  QString prefix = p.matched("prefix");
+  QString text = p.matched("text");
+  graph_build.add_numeric_literal(prefix, text);
+ });
+
+
+ add_rule( run_context, "opaque-type-symbol",
+  " (?<token>.script-word.) ",
+   [&]
+ {
+  QString token = p.matched("token");
+  graph_build.add_opaque_type_symbol(token);
+ });
+
+
 
  add_rule( run_context, "initialization-via-constructor",
   " == ",

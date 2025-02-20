@@ -10,6 +10,9 @@
 #include "accessors.h"
 #include "flags.h"
 
+#include "global-types.h"
+
+#include "code/chasm-rz-anchored-casement-entry.h"
 
 #include "kernel/graph/chasm-rz-node.h"
 #include "kernel/query/chasm-rz-query.h"
@@ -56,6 +59,10 @@ private:
  enum class Position_States {
   Root, Active_Run_Casement_Node, Active_Run_Casement_Chief,
 
+  Active_Type_Declaration_Chief, Active_Type_Declaration,
+
+  Active_Statement_Entry_Anchor,
+
   Active_Run_Token, Active_Run_Chief,
   End_Of_Logical_Scope, Data_Entry,
   Run_Cross_Sequence, Run_Pchasm_rz_Entry, Cross_Run_Chief,
@@ -90,6 +97,9 @@ private:
 
  caon_ptr<ChasmRZ_Call_Entry> current_closed_do_entry();
 
+
+ void push_chief(caon_ptr<ChasmRZ_Node> node);
+
  void check_append_chief(caon_ptr<ChasmRZ_Node> new_chief);
  void check_pop_chief();
 
@@ -103,6 +113,8 @@ private:
 
  ChasmRZ_Frame& Cf;
  ChasmRZ_Frame& Sf;
+// ChasmRZ_Frame& Af;
+// ChasmRZ_Frame& Rf;
 
  const ChasmRZ_Query& Qy;
 
@@ -151,6 +163,18 @@ public:
  ChasmRZ_ASG_Position(ChasmRZ_Graph_Build* graph_build);
 
  ACCESSORS(caon_ptr<ChasmRZ_Node> ,current_node)
+
+
+ void add_block_level_type_declaration_entry(caon_ptr<ChasmRZ_Node> bltd_node);
+ void add_type_symbol(caon_ptr<ChasmRZ_Node> token_node);
+
+ void add_numeric_literal(caon_ptr<ChasmRZ_Node> token_node);
+
+ void add_statement_entry(caon_ptr<ChasmRZ_Node> node,
+   ChasmRZ_Anchored_Casement_Entry::Statement_Entry_Modes mode);
+
+
+
 
  ChasmRZ_Node& get_current_chief();
 
@@ -224,6 +248,8 @@ public:
 
 
  void hold_retval_node(caon_ptr<ChasmRZ_Node> node);
+
+
 
 };
 

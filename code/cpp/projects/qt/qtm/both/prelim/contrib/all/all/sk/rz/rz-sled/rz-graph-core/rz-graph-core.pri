@@ -30,6 +30,7 @@ HEADERS += \
   $$SRC_DIR/kernel/dominion/types.h \
   $$SRC_DIR/kernel/dominion/connectors.h \
   $$SRC_DIR/token/chasm-rz-token.h \
+  $$SRC_DIR/token/rz-block-level-type-declaration.h \
   $$SRC_DIR/kernel/graph/chasm-rz-node.h \
   $$SRC_DIR/kernel/graph/chasm-rz-node-proxy.h \
   $$SRC_DIR/kernel/graph/chasm-rz-graph.h \
@@ -43,6 +44,7 @@ HEADERS += \
   $$SRC_DIR/kernel/grammar/chasm-rz-graph-build.h \
   $$SRC_DIR/kernel/grammar/chasm-rz-parse-context.h \
   $$SRC_DIR/kernel/grammar/chasm-rz-string-plex-builder.h \
+  $$SRC_DIR/code/chasm-rz-anchored-casement-entry.h \
   $$SRC_DIR/code/chasm-rz-call-entry.h \
   $$SRC_DIR/code/chasm-rz-casement-call-entry.h \
   $$SRC_DIR/code/chasm-rz-block-entry.h \
@@ -57,6 +59,7 @@ HEADERS += \
   $$SRC_DIR/output/chasm-rz-pre-normal-asg.h \
   $$SRC_DIR/output/chasm-rz-pre-run-asg.h \
 
+
 DEFINES += CAON_DEBUG
 DEFINES += RELAE_LABEL_NODES
 
@@ -66,6 +69,7 @@ SOURCES += \
   $$SRC_DIR/kernel/chasm-rz-dominion.cpp \
   $$SRC_DIR/kernel/chasm-rz-root.cpp \
   $$SRC_DIR/token/chasm-rz-token.cpp \
+  $$SRC_DIR/token/rz-block-level-type-declaration.cpp \
   $$SRC_DIR/kernel/graph/chasm-rz-node.cpp \
   $$SRC_DIR/kernel/graph/chasm-rz-node-proxy.cpp \
   $$SRC_DIR/kernel/graph/chasm-rz-graph.cpp \
@@ -79,6 +83,7 @@ SOURCES += \
   $$SRC_DIR/kernel/grammar/chasm-rz-graph-build.cpp \
   $$SRC_DIR/kernel/grammar/chasm-rz-parse-context.cpp \
   $$SRC_DIR/kernel/grammar/chasm-rz-string-plex-builder.cpp \
+  $$SRC_DIR/code/chasm-rz-anchored-casement-entry.cpp \
   $$SRC_DIR/code/chasm-rz-code-representation.cpp \
   $$SRC_DIR/code/chasm-rz-call-entry.cpp \
   $$SRC_DIR/code/chasm-rz-casement-call-entry.cpp \

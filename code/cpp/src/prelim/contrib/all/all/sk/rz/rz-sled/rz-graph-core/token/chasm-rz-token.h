@@ -10,6 +10,7 @@
 #include "accessors.h"
 #include "flags.h"
 
+#include "global-types.h"
 
 #include "code/chasm-rz-code-representation.h"
 
@@ -31,7 +32,7 @@ RZNS_(RZ_Core)
 class ChasmRZ_Token
 {
 public:
- flags_(5)
+ flags_(6)
   bool is_keyword:1;
   bool is_symbol_declaration:1;
   bool is_up_scope_declaration:1;
@@ -41,6 +42,11 @@ public:
   bool is_string_literal:1;
   bool is_text_map_value_literal:1;
   bool is_numeric_literal:1;
+  bool marked_positive:1;
+  bool marked_negative:1;
+  bool marked_hexadecimal:1;
+  bool marked_octal:1;
+  bool marked_binary:1;
   bool is_equalizer:1;
   bool is_arrow:1;
   bool has_mapkey:1;
@@ -63,6 +69,11 @@ public:
 
 
 public:
+
+ enum class Token_Initialization_Modes : u2 {
+   N_A = 0, Single = 1, Split = 2, Split_Opaque = 4, Repeat = 8, Reset = 16
+ };
+
 
  enum class Prefix_Kinds {
   N_A, Keyword, Symbol_Declaration, Up_Scope_Declaration,
@@ -95,6 +106,8 @@ public:
 
 private:
 
+ Token_Initialization_Modes initialization_mode_;
+
  int syntactic_depth_;
  QString raw_text_;
  int line_number_;
@@ -108,6 +121,8 @@ private:
  void resolve_arrow_prefix(QString prefix, QString raw_text);
 
 public:
+
+ ACCESSORS(Token_Initialization_Modes ,initialization_mode)
 
  ACCESSORS(QString ,raw_text)
  ACCESSORS(int ,syntactic_depth)

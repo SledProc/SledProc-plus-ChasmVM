@@ -33,6 +33,8 @@ CONFIG += no_keywords
 
 DEFINES += USE_RZNS
 
+DEFINES += USE_KANS
+
 
 SOURCES += \
   $$SRC_DIR/main.cpp

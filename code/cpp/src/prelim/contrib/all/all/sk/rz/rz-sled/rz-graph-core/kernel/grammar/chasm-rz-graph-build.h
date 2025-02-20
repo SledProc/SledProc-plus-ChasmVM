@@ -13,6 +13,8 @@
 
 #include "accessors.h"
 
+#include "global-types.h"
+
 #include "chasm-rz-parse-context.h"
 
 #include "kernel/graph/chasm-rz-asg-position.h"
@@ -47,6 +49,7 @@ class ChasmRZ_Call_Entry;
 class ChasmRZ_Function_Def_Entry;
 class RZ_String_Plex_Builder;
 
+class ChasmRZ_Anchored_Casement_Entry;
 
 class ChasmRZ_Casement_Block_Entry;
  // //  and ...?
@@ -134,6 +137,11 @@ public:
   N_A, Normal, Cpp_Scoped, Do_Plus_Block, Strong_Do_Plus_Block
  };
 
+ enum class Token_Initialization_Modes : u2 {
+   N_A = 0, Single = 1, Split = 2, Split_Opaque = 4, Repeat = 8, Reset = 16
+ };
+
+
  ACCESSORS(ChasmRZ_Document* ,document)
 
  ACCESSORS(caon_ptr<ChasmRZ_Node> ,root_node)
@@ -147,13 +155,32 @@ public:
  ChasmRZ_Graph_Build(ChasmRZ_Document* d,
   ChasmRZ_Parser& p, ChasmRZ_Graph& g);
 
- void complete_function_declaration();
-
- void add_assignment_annotation(QString text);
 
  void init();
 
  void declare_lexical_symbol(QString raw_text);
+ void add_opaque_type_symbol(QString raw_text);
+ void add_initialization_token(QString prefix, QString raw_text);
+ void add_initialization_token(QString raw_text, Token_Initialization_Modes mode);
+ void add_numeric_literal(QString prefix, QString text);
+
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Token>  token);
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<RZ_Block_Level_Type_Declaration> bltd);
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Casement_Call_Entry> rce);
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Call_Entry> rce);
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Casement_Block_Entry> rbe);
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Block_Entry> rbe);
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Function_Def_Entry> fdef);
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<RZ_String_Plex_Builder> rzspb);
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Anchored_Casement_Entry> ace);
+
+
+
+ void complete_function_declaration();
+
+ void add_assignment_annotation(QString text);
+
+
 
  void string_plex_switch(QString key);
  void string_plex_acc(QString text);
@@ -231,14 +258,6 @@ public:
 
  void terminate_read();
  void terminate_parse();
-
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Token>  token);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Casement_Call_Entry> rce);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Call_Entry> rce);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Casement_Block_Entry> rbe);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Block_Entry> rbe);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Function_Def_Entry> fdef);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<RZ_String_Plex_Builder> rzspb);
 
 
  void absorb_whitespace();

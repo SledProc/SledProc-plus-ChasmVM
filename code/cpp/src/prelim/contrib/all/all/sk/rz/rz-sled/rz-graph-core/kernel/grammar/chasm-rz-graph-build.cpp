@@ -29,6 +29,7 @@ USING_RZNS(RZ_Core)
 
 
 #include "token/chasm-rz-token.h"
+#include "token/rz-block-level-type-declaration.h"
 
 
 #include "kernel/document/chasm-rz-document.h"
@@ -82,18 +83,91 @@ void ChasmRZ_Graph_Build::init()
 }
 
 
+void ChasmRZ_Graph_Build::add_opaque_type_symbol(QString raw_text)
+{
+ caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(raw_text);
+ CAON_PTR_DEBUG(ChasmRZ_Token ,token)
+
+ caon_ptr<ChasmRZ_Node> token_node = make_new_node(token);
+
+ asg_position_.add_type_symbol(token_node);
+}
+
+void ChasmRZ_Graph_Build::add_numeric_literal(QString prefix, QString text)
+{
+ caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(text);
+ CAON_PTR_DEBUG(ChasmRZ_Token ,token)
+
+ token->flags.is_numeric_literal = true;
+
+ if(prefix.startsWith('-'))
+ {
+  prefix = prefix.mid(1);
+  token->flags.marked_negative = true;
+ }
+ else if(prefix.startsWith('+'))
+ {
+  prefix = prefix.mid(1);
+  token->flags.marked_positive = true;
+ }
+
+ if(prefix == "0")
+   token->flags.marked_octal = true;
+ else if(prefix == "0x")
+   token->flags.marked_hexadecimal = true;
+ else if(prefix == "0b")
+   token->flags.marked_hexadecimal = true;
+
+ caon_ptr<ChasmRZ_Node> token_node = make_new_node(token);
+
+ asg_position_.add_numeric_literal(token_node);
+
+}
+
+void ChasmRZ_Graph_Build::add_initialization_token(QString prefix, QString raw_text)
+{
+ QMap<QString, Token_Initialization_Modes> static_map {
+  {"^", Token_Initialization_Modes::Single},
+  {"\\", Token_Initialization_Modes::Split},
+  {"|\\", Token_Initialization_Modes::Split_Opaque},
+  {"\\\\", Token_Initialization_Modes::Repeat},
+  {"\\|", Token_Initialization_Modes::Reset},
+ };
+
+ auto it = static_map.find(prefix);
+ if(it != static_map.end())
+ {
+  add_initialization_token(prefix, it.value());
+ }
+}
+
+
+void ChasmRZ_Graph_Build::add_initialization_token(QString raw_text, Token_Initialization_Modes mode)
+{
+ caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(raw_text);
+
+ token->set_initialization_mode((ChasmRZ_Token::Token_Initialization_Modes)(u2) mode);
+
+ CAON_PTR_DEBUG(ChasmRZ_Token ,token)
+
+}
+
+
 void ChasmRZ_Graph_Build::declare_lexical_symbol(QString raw_text)
 {
  caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(raw_text);
  CAON_PTR_DEBUG(ChasmRZ_Token ,token)
- caon_ptr<ChasmRZ_Node> token_node = make_new_node(token);
 
- caon_ptr<ChasmRZ_Token> observer = new ChasmRZ_Token("lex-let");
- CAON_PTR_DEBUG(ChasmRZ_Token ,observer)
- caon_ptr<ChasmRZ_Node> observer_node = make_new_node(observer);
+ caon_ptr<RZ_Block_Level_Type_Declaration> bltd = new RZ_Block_Level_Type_Declaration(token);
 
- asg_position_.add_casement_entry(observer_node);
- asg_position_.add_casement_sequence(token_node);
+ caon_ptr<ChasmRZ_Node> bltd_node = make_new_node(bltd);
+
+// caon_ptr<ChasmRZ_Token> observer = new ChasmRZ_Token("lex-let");
+// CAON_PTR_DEBUG(ChasmRZ_Token ,observer)
+// caon_ptr<ChasmRZ_Node> observer_node = make_new_node(observer);
+// asg_position_.add_casement_entry(observer_node);
+
+ asg_position_.add_block_level_type_declaration_entry(bltd_node);
 
 
 
@@ -146,6 +220,22 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<ChasmRZ_Token
  RELAE_SET_NODE_LABEL(result, token->string_summary());
  return result;
 }
+
+caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<RZ_Block_Level_Type_Declaration> bltd)
+{
+ caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(bltd);
+ RELAE_SET_NODE_LABEL(result, bltd->token_string_summary());
+ return result;
+}
+
+caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<ChasmRZ_Anchored_Casement_Entry> ace)
+{
+ caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(ace);
+ RELAE_SET_NODE_LABEL(result, ace->string_summary());
+ return result;
+}
+
+
 
 
 caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<RZ_String_Plex_Builder> rzspb)
