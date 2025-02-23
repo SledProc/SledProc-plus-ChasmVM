@@ -38,6 +38,8 @@ protected:
  const ChasmRZ_Frame& Sf;
  const ChasmRZ_Query& Qy;
 
+ caon_ptr<ChasmRZ_Node> get_root_node();
+
  virtual void output_from_node(QTextStream& qts,
   const ChasmRZ_Node& node, int indent = 0,
   caon_ptr<ChasmRZ_Call_Entry> rce_ptr = nullptr);
@@ -69,6 +71,8 @@ public:
  virtual void write_report(QTextStream& qts);
 
 };
+
+
 
 _RZNS(RZ_Core)
 

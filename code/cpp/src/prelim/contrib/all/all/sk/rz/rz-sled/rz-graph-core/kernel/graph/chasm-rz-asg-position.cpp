@@ -57,23 +57,88 @@ ChasmRZ_ASG_Position::ChasmRZ_ASG_Position
 
 
 
-void ChasmRZ_ASG_Position::add_block_level_type_declaration_entry(caon_ptr<ChasmRZ_Node> bltd_node)
+void ChasmRZ_ASG_Position::add_block_level_type_declaration_entry(caon_ptr<ChasmRZ_Node> blt_node)
 {
+ CAON_PTR_DEBUG(ChasmRZ_Node ,blt_node)
+
  switch(position_state_)
  {
  case Position_States::Root:
-  current_node_ <<Cf/Qy.Block_Level_Expression_Entry>> bltd_node;
-  current_node_ = bltd_node;
-  push_chief(bltd_node);
+  enter_new_lexical_scope();
+  current_node_ <<Cf/Qy.Block_Level_Entry>> blt_node;
+  current_node_ = blt_node;
+  push_chief(blt_node);
   position_state_ = Position_States::Active_Type_Declaration_Chief;
   break;
 
  }
 }
 
+
+void ChasmRZ_ASG_Position::add_block_level_initialization_node(caon_ptr<ChasmRZ_Node> node)
+{
+ switch(position_state_)
+ {
+ case Position_States::Active_Type_Declaration:
+  check_pop_chief();
+
+  CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
+
+  current_node_ <<Cf/Qy.Type_Symbol_Declaration>> node;
+  position_state_ = Position_States::Active_Anchor_Chief;
+
+
+ }
+}
+
+
 void ChasmRZ_ASG_Position::add_numeric_literal(caon_ptr<ChasmRZ_Node> token_node)
 {
+ switch(position_state_)
+ {
+ case Position_States::Active_Anchor_Chief:
+  // //  this means that the anchor is actually an assignment to literal
+  current_node_ <<Cf/Qy.Literal_Assignment>> token_node;
+  position_state_ = Position_States::Expression_Stop;
+  current_node_ = token_node;
 
+
+ }
+}
+
+
+void ChasmRZ_ASG_Position::add_no_anchor_statement_start_node(caon_ptr<ChasmRZ_Node> token_node)
+{
+ CAON_PTR_DEBUG(ChasmRZ_Node ,token_node)
+
+ check_pop_chief();
+
+ CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
+
+ switch(position_state_)
+ {
+ case Position_States::Expression_Stop:
+  current_node_ <<Cf/Qy.Block_Level_Term_Sequence>> token_node;
+  current_node_ = token_node;
+  position_state_ = Position_States::Active_Procedure_Node;
+  break;
+ }
+}
+
+
+void ChasmRZ_ASG_Position::add_variable_token(ChasmRZ_Lexical_Scope* ls, QString name,
+  caon_ptr<ChasmRZ_Node> token_node)
+{
+ switch(position_state_)
+ {
+ case Position_States::Active_Procedure_Node:
+  current_node_ <<Cf/Qy.Run_Call_Entry>> token_node;
+  current_node_ = token_node;
+  position_state_ = Position_States::Active_Expression_Node;
+  break;
+
+
+ }
 }
 
 
@@ -95,13 +160,15 @@ void ChasmRZ_ASG_Position::push_chief(caon_ptr<ChasmRZ_Node> node)
 }
 
 
-void ChasmRZ_ASG_Position::add_statement_entry(caon_ptr<ChasmRZ_Node> node,
+void ChasmRZ_ASG_Position::add_block_level_term_entry(caon_ptr<ChasmRZ_Node> node,
   ChasmRZ_Anchored_Casement_Entry::Statement_Entry_Modes mode)
 {
  // // do we have a block entry?
  check_pop_chief();
 
- current_node_ << Cf/Qy.Casement_Block_Sequence >> node;
+ CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
+
+ current_node_ << Cf/Qy.Block_Level_Term_Sequence >> node;
 
  caon_ptr<ChasmRZ_Anchored_Casement_Entry> ace = new ChasmRZ_Anchored_Casement_Entry(mode);
  CAON_PTR_DEBUG(ChasmRZ_Anchored_Casement_Entry ,ace)

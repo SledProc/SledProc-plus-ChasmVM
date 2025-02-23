@@ -36,12 +36,15 @@ HEADERS += \
   $$SRC_DIR/prerun/rz-prerun-anticipate.h \
   $$SRC_DIR/prerun/rz-prerun-normalize.h \
   $$SRC_DIR/prerun/rz-prerun-tokens.h \
+  $$SRC_DIR/traverser/rz-prerun-check.h \
 
 
 SOURCES += \
   $$SRC_DIR/prerun/rz-prerun-anticipate.cpp \
   $$SRC_DIR/prerun/rz-prerun-normalize.cpp \
   $$SRC_DIR/prerun/rz-prerun-tokens.cpp \
+  $$SRC_DIR/traverser/rz-prerun-check.cpp \
+
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
 mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)

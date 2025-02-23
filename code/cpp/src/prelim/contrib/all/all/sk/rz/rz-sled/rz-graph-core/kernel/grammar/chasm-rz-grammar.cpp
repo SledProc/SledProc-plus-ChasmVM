@@ -165,6 +165,14 @@ void ChasmRZ_Grammar::init(ChasmRZ_Parser& p, ChasmRZ_Graph& g, ChasmRZ_Graph_Bu
   graph_build.declare_lexical_symbol(token);
  });
 
+ add_rule( run_context, "no-anchor-statement-start",
+  " \\. (?<token>.script-word.) ",
+   [&]
+ {
+  QString token = p.matched("token");
+  graph_build.no_anchor_statement_start(token);
+ });
+
 
  add_rule( run_context, "single-initialization-token",
   " (?<prefix> [\\^]) (?<token>.script-word.) ",

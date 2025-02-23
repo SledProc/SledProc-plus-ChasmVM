@@ -4,6 +4,7 @@
 //     (See accompanying file LICENSE_1_0.txt or copy at
 //           http://www.boost.org/LICENSE_1_0.txt)
 
+
 #ifndef CHASM_RZ_ASG_POSITION__H
 #define CHASM_RZ_ASG_POSITION__H
 
@@ -20,6 +21,10 @@
 #include "tuple/chasm-rz-tuple-info.h"
 
 #include "code/chasm-rz-function-def-kinds.h"
+
+#include "scope/chasm-rz-lexical-scope.h"
+
+#include "scope/chasm-rz-scope-system.h"
 
 #include <QList>
 #include <QStack>
@@ -61,7 +66,9 @@ private:
 
   Active_Type_Declaration_Chief, Active_Type_Declaration,
 
-  Active_Statement_Entry_Anchor,
+  Active_Anchor_Chief,  Active_Statement_Entry_Anchor,//?
+
+  Expression_Stop, Active_Procedure_Node, Active_Expression_Node,
 
   Active_Run_Token, Active_Run_Chief,
   End_Of_Logical_Scope, Data_Entry,
@@ -72,11 +79,15 @@ private:
 
  };
 
+ ChasmRZ_Scope_System scope_system_;
+
  Position_States position_state_;
  ChasmRZ_Graph_Build* graph_build_;
  caon_ptr<ChasmRZ_Token>  active_run_token_;
 
  int current_depth_;
+
+
 
  QStack<caon_ptr<ChasmRZ_Node>> block_chiefs_;
  QStack<caon_ptr<ChasmRZ_Node>> chiefs_;
@@ -170,7 +181,28 @@ public:
 
  void add_numeric_literal(caon_ptr<ChasmRZ_Node> token_node);
 
- void add_statement_entry(caon_ptr<ChasmRZ_Node> node,
+ void add_block_level_initialization_node(caon_ptr<ChasmRZ_Node> node);
+ void add_no_anchor_statement_start_node(caon_ptr<ChasmRZ_Node> token_node);
+ void add_variable_token(ChasmRZ_Lexical_Scope* ls, QString name,
+   caon_ptr<ChasmRZ_Node> token_node);
+
+ void enter_new_lexical_scope()
+ {
+  scope_system_.enter_new_lexical_scope();
+ }
+
+ ChasmRZ_Lexical_Scope* lookup_variable_name(QString name)
+ {
+  return scope_system_.lookup_variable_name(name);
+ }
+
+ void register_variable_name(QString name, caon_ptr<ChasmRZ_Node> node)
+ {
+  scope_system_.register_variable_name(name, node);
+ }
+
+
+ void add_block_level_term_entry(caon_ptr<ChasmRZ_Node> node,
    ChasmRZ_Anchored_Casement_Entry::Statement_Entry_Modes mode);
 
 

@@ -95,6 +95,9 @@ class ChasmRZ_Graph_Build
  caon_ptr<ChasmRZ_Node> active_run_node_;
  caon_ptr<ChasmRZ_Token> active_chief_token_;
 
+ caon_ptr<ChasmRZ_Node> held_statement_start_node_;
+
+
  caon_ptr<RZ_String_Plex_Builder> current_string_plex_builder_;
 
  ChasmRZ_Parse_Context parse_context_;
@@ -144,9 +147,12 @@ public:
 
  ACCESSORS(ChasmRZ_Document* ,document)
 
+
  ACCESSORS(caon_ptr<ChasmRZ_Node> ,root_node)
  ACCESSORS(caon_ptr<ChasmRZ_Node> ,active_run_node)
  ACCESSORS(caon_ptr<ChasmRZ_Token>  ,active_chief_token)
+ ACCESSORS(caon_ptr<ChasmRZ_Node> ,held_statement_start_node)
+
  ACCESSORS__GET(ChasmRZ_Graph& ,graph)
 
  ACCESSORS__RGET(ChasmRZ_Parse_Context ,parse_context)
@@ -163,6 +169,9 @@ public:
  void add_initialization_token(QString prefix, QString raw_text);
  void add_initialization_token(QString raw_text, Token_Initialization_Modes mode);
  void add_numeric_literal(QString prefix, QString text);
+ void no_anchor_statement_start(QString raw_text);
+ void check_release_held_statement_start();
+
 
  caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Token>  token);
  caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<RZ_Block_Level_Type_Declaration> bltd);

@@ -12,17 +12,27 @@ DOMINION_CONNECTOR(Run_Casement_Entry, "run-casement-entry")
 DOMINION_CONNECTOR(Run_Casement_Sequence, "run-casement-sequence")
 DOMINION_CONNECTOR(Run_Casement_Cross, "run-casement-cross")
 
+DOMINION_CONNECTOR(Literal_Assignment, "literal-assignment")
 
-DOMINION_CONNECTOR(Block_Level_Expression_Entry, "block-level-expression-entry")
-DOMINION_CONNECTOR(Block_Level_Expression_Sequence, "block-level-expression-sequence")
+
+
+DOMINION_CONNECTOR(Block_Level_Entry, "block-level-entry")
+
+DOMINION_CONNECTOR(Block_Level_Term_Sequence, "block-level-term-sequence")
+
+DOMINION_CONNECTOR(Block_Level_Cross, "block-level-cross")
+
+
+//DOMINION_CONNECTOR(Block_Level_Expression_Entry, "block-level-expression-entry")
+//DOMINION_CONNECTOR(Block_Level_Expression_Sequence, "block-level-expression-sequence")
 
 DOMINION_CONNECTOR(Type_Symbol_Declaration, "type-symbol-declaration")
 DOMINION_CONNECTOR(Anchor_Info, "anchor-info")
 
 
 DOMINION_CONNECTOR(Casement_Block_Entry, "casement-block-entry")
-DOMINION_CONNECTOR(Casement_Block_Sequence, "casement-block-sequence")
-DOMINION_CONNECTOR(Casement_Block_Cross, "casement-block-cross")
+//DOMINION_CONNECTOR(Casement_Block_Sequence, "casement-block-sequence")
+//DOMINION_CONNECTOR(Casement_Block_Cross, "casement-block-cross")
 
 
 

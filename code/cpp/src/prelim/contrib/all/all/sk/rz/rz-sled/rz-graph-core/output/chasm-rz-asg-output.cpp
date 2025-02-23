@@ -48,11 +48,18 @@ void ChasmRZ_ASG_Output::output(QString path)
  document_->write_report(path, *this);
 }
 
+caon_ptr<ChasmRZ_Node>  ChasmRZ_ASG_Output::get_root_node()
+{
+ return document_->graph()->root_node();
+}
+
+
 void ChasmRZ_ASG_Output::write_report(QTextStream& qts)
 {
- caon_ptr<ChasmRZ_Node> node = document_->graph()->root_node();
+ caon_ptr<ChasmRZ_Node> node = get_root_node();
  output_from_node(qts, *node);
 }
+
 
 
 void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,

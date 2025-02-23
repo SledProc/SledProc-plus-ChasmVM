@@ -58,6 +58,9 @@ HEADERS += \
   $$SRC_DIR/output/chasm-rz-pre-init-asg.h \
   $$SRC_DIR/output/chasm-rz-pre-normal-asg.h \
   $$SRC_DIR/output/chasm-rz-pre-run-asg.h \
+  $$SRC_DIR/scope/chasm-rz-lexical-scope.h \
+  $$SRC_DIR/scope/chasm-rz-scope-system.h \
+  $$SRC_DIR/traverser/chasm-rz-traverser.h \
 
 
 DEFINES += CAON_DEBUG
@@ -95,6 +98,12 @@ SOURCES += \
   $$SRC_DIR/output/chasm-rz-pre-init-asg.cpp \
   $$SRC_DIR/output/chasm-rz-pre-normal-asg.cpp \
   $$SRC_DIR/output/chasm-rz-pre-run-asg.cpp \
+  $$SRC_DIR/scope/chasm-rz-lexical-scope.cpp \
+  $$SRC_DIR/scope/chasm-rz-scope-system.cpp \
+  $$SRC_DIR/traverser/chasm-rz-traverser.cpp \
+
+
+
 
 message(choice: $$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
 mkpath($$CPP_ROOT_DIR/targets/$$CHOICE_CODE/$$PROJECT_SET--$$PROJECT_GROUP--$$PROJECT_NAME)
