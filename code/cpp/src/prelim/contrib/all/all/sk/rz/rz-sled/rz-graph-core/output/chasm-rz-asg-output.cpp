@@ -29,13 +29,14 @@ USING_RZNS(RZ_Core)
 ChasmRZ_ASG_Output::ChasmRZ_ASG_Output(caon_ptr<ChasmRZ_Document> document)
  : document_(document), Cf(ChasmRZ_Frame::instance("casement")),
     Sf(ChasmRZ_Frame::instance("semantic")),
-    Tf(ChasmRZ_Frame::instance("traverse")),
+    Tf(ChasmRZ_Frame::instance("traversal")),
     Qy(ChasmRZ_Query::instance())
 {
 
 }
 
 #define in_Cf Cf,
+#define in_Tf Tf,
 
 
 QString ChasmRZ_ASG_Output::get_asg_out(const ChasmRZ_Token& token)
@@ -104,7 +105,7 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
   output_from_node(qts, *next_node, indent + 1);
  }
 
- if(caon_ptr<ChasmRZ_Node> next_node = Qy.Run_Call_Entry(in_Cf pnode))
+ if(caon_ptr<ChasmRZ_Node> next_node = Qy.Run_Call_Entry(in_Tf pnode))
  {
   CAON_PTR_DEBUG(ChasmRZ_Node ,next_node)
   if(rce)
@@ -116,7 +117,7 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
    report_call_leave(qts, *rce);
    qts << ')';
 
-   if(caon_ptr<ChasmRZ_Node> cross_node = Qy.Run_Cross_Sequence(in_Cf pnode))
+   if(caon_ptr<ChasmRZ_Node> cross_node = Qy.Run_Cross_Sequence(in_Tf pnode))
    {
     qts << ' ';
     output_from_node(qts, *cross_node, indent);
@@ -150,12 +151,12 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
 
  }
 
- if(caon_ptr<ChasmRZ_Node> next_node = Qy.Run_Block_Entry(in_Cf pnode))
+ if(caon_ptr<ChasmRZ_Node> next_node = Qy.Run_Block_Entry(in_Tf pnode))
  {
   qts << "\n" << padding;
   qts << "(block ";
   output_from_node(qts, *next_node, indent + 1);
-  if(caon_ptr<ChasmRZ_Node> cross_node = Qy.Run_Cross_Sequence(in_Cf next_node))
+  if(caon_ptr<ChasmRZ_Node> cross_node = Qy.Run_Cross_Sequence(in_Tf next_node))
   {
    output_from_node(qts, *cross_node, indent + 1);
   }

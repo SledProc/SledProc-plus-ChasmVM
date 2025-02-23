@@ -24,6 +24,9 @@
 
 #include "code/chasm-rz-function-def-kinds.h"
 
+#include "chasm-rz-node-factory.h"
+
+
 #include <QStack>
 #include <QSet>
 
@@ -71,6 +74,8 @@ class ChasmRZ_Graph_Build
  ChasmRZ_Document* document_;
  ChasmRZ_Parser& parser_;
  ChasmRZ_Graph& graph_;
+
+ ChasmRZ_Node_Factory& node_factory_;
 
  enum class Quoting_Formations {
   N_A, Single,
@@ -123,15 +128,13 @@ class ChasmRZ_Graph_Build
 
  QString raw_asg_acc_;
 
- int call_entry_count_;
- int block_entry_count_;
- int tuple_entry_count_;
 
  void set_expected_token_end(QString text);
  void check_line_increment(QString text);
 
 
  QString held_suffix_;
+
 
 
 public:
@@ -148,6 +151,7 @@ public:
 
  ACCESSORS(ChasmRZ_Document* ,document)
 
+ ACCESSORS__CONST_RGET(ChasmRZ_Node_Factory ,node_factory)
 
  ACCESSORS(caon_ptr<ChasmRZ_Node> ,root_node)
  ACCESSORS(caon_ptr<ChasmRZ_Node> ,active_run_node)
@@ -173,16 +177,6 @@ public:
  void no_anchor_statement_start(QString raw_text);
  void check_release_held_statement_start();
 
-
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Token>  token);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<RZ_Block_Level_Type_Declaration> bltd);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Casement_Call_Entry> rce);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Call_Entry> rce);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Casement_Block_Entry> rbe);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Block_Entry> rbe);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Function_Def_Entry> fdef);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<RZ_String_Plex_Builder> rzspb);
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Anchored_Casement_Entry> ace);
 
 
 

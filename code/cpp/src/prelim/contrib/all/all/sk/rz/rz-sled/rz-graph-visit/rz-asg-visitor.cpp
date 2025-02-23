@@ -72,7 +72,7 @@ RZ_ASG_Visitor::RZ_ASG_Visitor(caon_ptr<ChasmRZ_Graph> graph)
    Qy(ChasmRZ_Query::instance()),
    Cf(ChasmRZ_Frame::instance("casement")),
    Sf(ChasmRZ_Frame::instance("semantic")),
-   Tf(ChasmRZ_Frame::instance("traverse")),
+   Tf(ChasmRZ_Frame::instance("traversal")),
    asg_runner_(nullptr),
    current_block_node_(nullptr),
    valuer_(new RZ_ASG_Valuer(*this)),

@@ -82,7 +82,7 @@ RZ_ASG_Valuer::RZ_ASG_Valuer(RZ_ASG_Visitor& rz_asg_visitor,
   : rz_asg_visitor_(rz_asg_visitor),
     embedder_(embedder), Cf(ChasmRZ_Frame::instance("casement")),
     Sf(ChasmRZ_Frame::instance("semantic")),
-    Tf(ChasmRZ_Frame::instance("traverse")),
+    Tf(ChasmRZ_Frame::instance("traversal")),
     Qy(ChasmRZ_Query::instance()), current_logical_scope_(nullptr),
     current_block_info_(nullptr), current_core_pair_nodes_generation_(0),
     core_pair_function_node_(nullptr)

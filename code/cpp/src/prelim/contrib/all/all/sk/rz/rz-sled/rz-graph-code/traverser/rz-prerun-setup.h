@@ -21,6 +21,8 @@
 
 #include "rz-graph-core/traverser/chasm-rz-traverser.h"
 
+#include "rz-graph-core/kernel/grammar/chasm-rz-node-factory.h"
+
 
 #include <QString>
 #include <QTextStream>
@@ -38,11 +40,14 @@ class ChasmRZ_Document;
 class ChasmRZ_Node;
 class ChasmRZ_Graph;
 
+class ChasmRZ_Node_Factory;
+
 
 class RZ_Prerun_Setup : public ChasmRZ_ASG_Output
 {
  ChasmRZ_Traverser traverser_;
 
+ ChasmRZ_Node_Factory& node_factory_;
 
 public:
 

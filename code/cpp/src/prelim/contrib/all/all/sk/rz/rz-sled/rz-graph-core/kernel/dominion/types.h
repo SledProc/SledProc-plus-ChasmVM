@@ -31,6 +31,9 @@ DOMINION_TYPE(chasm_rz_root, ChasmRZ_Root, ChasmRZ_Root)
 DOMINION_TYPE(chasm_rz_token, ChasmRZ_Token, ChasmRZ_Token)
 DOMINION_TYPE(block_level_type_declaration, RZ_Block_Level_Type_Declaration, Block_Level_Type_Declaration)
 
+DOMINION_TYPE(rz_compiler_function, RZ_Compiler_Function, Compiler_Function)
+
+
 DOMINION_TYPE(anchored_casement_entry, ChasmRZ_Anchored_Casement_Entry, Anchored_Casement_Entry)
 
 

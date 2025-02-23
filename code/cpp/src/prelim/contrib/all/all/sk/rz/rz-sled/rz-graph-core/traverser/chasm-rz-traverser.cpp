@@ -23,7 +23,7 @@ ChasmRZ_Traverser::ChasmRZ_Traverser(ChasmRZ_Graph& graph)
   : graph_(graph)
     ,Cf(ChasmRZ_Frame::instance("casement"))
     ,Sf(ChasmRZ_Frame::instance("semantic"))
-    ,Tf(ChasmRZ_Frame::instance("traverse"))
+    ,Tf(ChasmRZ_Frame::instance("traversal"))
     ,Qy(ChasmRZ_Query::instance())
 {
 

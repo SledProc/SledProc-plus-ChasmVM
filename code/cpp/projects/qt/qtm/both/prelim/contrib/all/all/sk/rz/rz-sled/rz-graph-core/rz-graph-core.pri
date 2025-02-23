@@ -30,6 +30,7 @@ HEADERS += \
   $$SRC_DIR/kernel/dominion/types.h \
   $$SRC_DIR/kernel/dominion/connectors.h \
   $$SRC_DIR/token/chasm-rz-token.h \
+  $$SRC_DIR/token/rz-compiler-function.h \
   $$SRC_DIR/token/rz-block-level-type-declaration.h \
   $$SRC_DIR/kernel/graph/chasm-rz-node.h \
   $$SRC_DIR/kernel/graph/chasm-rz-node-proxy.h \
@@ -43,6 +44,7 @@ HEADERS += \
   $$SRC_DIR/kernel/grammar/chasm-rz-parser.h \
   $$SRC_DIR/kernel/grammar/chasm-rz-grammar.h \
   $$SRC_DIR/kernel/grammar/chasm-rz-graph-build.h \
+  $$SRC_DIR/kernel/grammar/chasm-rz-node-factory.h \
   $$SRC_DIR/kernel/grammar/chasm-rz-parse-context.h \
   $$SRC_DIR/kernel/grammar/chasm-rz-string-plex-builder.h \
   $$SRC_DIR/code/chasm-rz-anchored-casement-entry.h \
@@ -73,6 +75,7 @@ SOURCES += \
   $$SRC_DIR/kernel/chasm-rz-dominion.cpp \
   $$SRC_DIR/kernel/chasm-rz-root.cpp \
   $$SRC_DIR/token/chasm-rz-token.cpp \
+  $$SRC_DIR/token/rz-compiler-function.cpp \
   $$SRC_DIR/token/rz-block-level-type-declaration.cpp \
   $$SRC_DIR/kernel/graph/chasm-rz-node.cpp \
   $$SRC_DIR/kernel/graph/chasm-rz-node-proxy.cpp \
@@ -84,6 +87,7 @@ SOURCES += \
   $$SRC_DIR/kernel/document/chasm-rz-document.cpp \
   $$SRC_DIR/kernel/document/chasm-rz-source-file.cpp \
   $$SRC_DIR/kernel/grammar/chasm-rz-parser.cpp \
+  $$SRC_DIR/kernel/grammar/chasm-rz-node-factory.cpp \
   $$SRC_DIR/kernel/grammar/chasm-rz-grammar.cpp \
   $$SRC_DIR/kernel/grammar/chasm-rz-graph-build.cpp \
   $$SRC_DIR/kernel/grammar/chasm-rz-parse-context.cpp \

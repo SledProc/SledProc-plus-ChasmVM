@@ -24,7 +24,7 @@ USING_RZNS(GEmbed)
 RZ_Graph_Run_Embedder::RZ_Graph_Run_Embedder(caon_ptr<RZ_ASG_Valuer> valuer)
  : valuer_(valuer), Cf(ChasmRZ_Frame::instance("casement")),
    Sf(ChasmRZ_Frame::instance("semantic")),
-   Tf(ChasmRZ_Frame::instance("traverse")),
+   Tf(ChasmRZ_Frame::instance("traversal")),
    Qy(ChasmRZ_Query::instance()), cpp_project_(nullptr)
 {
  init_noop_node();

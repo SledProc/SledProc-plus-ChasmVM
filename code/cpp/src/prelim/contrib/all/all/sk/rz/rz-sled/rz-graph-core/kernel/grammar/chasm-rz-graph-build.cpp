@@ -50,19 +50,17 @@ ChasmRZ_Graph_Build::ChasmRZ_Graph_Build(ChasmRZ_Document* d,
   ,document_(d)
   ,graph_(g)
   ,parser_(p)
+  ,node_factory_(ChasmRZ_Node_Factory::instance())
   ,current_line_(1)
   ,Cf(ChasmRZ_Frame::instance("casement"))
   ,Sf(ChasmRZ_Frame::instance("semantic"))
-  ,Tf(ChasmRZ_Frame::instance("traverse"))
+  ,Tf(ChasmRZ_Frame::instance("traversal"))
   ,asg_position_(this)
   ,active_run_node_(nullptr)
   ,held_statement_start_node_(nullptr)
   ,active_chief_token_(nullptr)
   ,current_run_comment_left_(0)
   ,current_run_comment_right_(0)
-  ,call_entry_count_(0)
-  ,block_entry_count_(0)
-  ,tuple_entry_count_(0)
   ,current_string_plex_builder_(nullptr)
 {
 }
@@ -92,7 +90,7 @@ void ChasmRZ_Graph_Build::add_opaque_type_symbol(QString raw_text)
  caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(raw_text);
  CAON_PTR_DEBUG(ChasmRZ_Token ,token)
 
- caon_ptr<ChasmRZ_Node> token_node = make_new_node(token);
+ caon_ptr<ChasmRZ_Node> token_node = node_factory_.make_new_node(token);
 
  if(ChasmRZ_Lexical_Scope* s = asg_position_.lookup_variable_name(raw_text))
  {
@@ -131,7 +129,7 @@ void ChasmRZ_Graph_Build::add_numeric_literal(QString prefix, QString text)
  else if(prefix == "0b")
    token->flags.marked_hexadecimal = true;
 
- caon_ptr<ChasmRZ_Node> token_node = make_new_node(token);
+ caon_ptr<ChasmRZ_Node> token_node = node_factory_.make_new_node(token);
 
  asg_position_.add_numeric_literal(token_node);
 
@@ -163,7 +161,7 @@ void ChasmRZ_Graph_Build::add_initialization_token(QString raw_text, Token_Initi
 
  CAON_PTR_DEBUG(ChasmRZ_Token ,token)
 
- caon_ptr<ChasmRZ_Node> token_node = make_new_node(token);
+ caon_ptr<ChasmRZ_Node> token_node = node_factory_.make_new_node(token);
 
  asg_position_.add_block_level_initialization_node(token_node);
 
@@ -191,7 +189,7 @@ void ChasmRZ_Graph_Build::no_anchor_statement_start(QString raw_text)
  caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(raw_text);
  CAON_PTR_DEBUG(ChasmRZ_Token ,token)
 
- held_statement_start_node_ = make_new_node(token);
+ held_statement_start_node_ = node_factory_.make_new_node(token);
 }
 
 void ChasmRZ_Graph_Build::declare_lexical_symbol(QString raw_text)
@@ -201,11 +199,11 @@ void ChasmRZ_Graph_Build::declare_lexical_symbol(QString raw_text)
 
  caon_ptr<RZ_Block_Level_Type_Declaration> blt = new RZ_Block_Level_Type_Declaration(token);
 
- caon_ptr<ChasmRZ_Node> blt_node = make_new_node(blt);
+ caon_ptr<ChasmRZ_Node> blt_node = node_factory_.make_new_node(blt);
 
 // caon_ptr<ChasmRZ_Token> observer = new ChasmRZ_Token("lex-let");
 // CAON_PTR_DEBUG(ChasmRZ_Token ,observer)
-// caon_ptr<ChasmRZ_Node> observer_node = make_new_node(observer);
+// caon_ptr<ChasmRZ_Node> observer_node = node_factory_.make_new_node(observer);
 // asg_position_.add_casement_entry(observer_node);
 
  asg_position_.add_block_level_type_declaration_entry(blt_node);
@@ -255,77 +253,10 @@ void ChasmRZ_Graph_Build::check_run_comment_end(int left, int right)
 }
 
 
-caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<ChasmRZ_Token> token)
-{
- caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(token);
- RELAE_SET_NODE_LABEL(result, token->string_summary());
- return result;
-}
-
-caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<RZ_Block_Level_Type_Declaration> blt)
-{
- caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(blt);
- RELAE_SET_NODE_LABEL(result, blt->token_string_summary());
- return result;
-}
-
-caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<ChasmRZ_Anchored_Casement_Entry> ace)
-{
- caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(ace);
- RELAE_SET_NODE_LABEL(result, ace->string_summary());
- return result;
-}
-
-
-
-
-caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<RZ_String_Plex_Builder> rzspb)
-{
- caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(rzspb);
-
- return result;
-}
-
-
-caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<ChasmRZ_Casement_Call_Entry> rce)
-{
- caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(rce);
- RELAE_SET_NODE_LABEL(result, QString("<casement-call %1>").arg(rce->call_id()));
- return result;
-}
-
-caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<ChasmRZ_Call_Entry> rce)
-{
- caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(rce);
- RELAE_SET_NODE_LABEL(result, QString("<call %1>").arg(rce->call_id()));
- return result;
-}
-
-caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<ChasmRZ_Function_Def_Entry> fdef)
-{
- caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(fdef);
- RELAE_SET_NODE_LABEL(result, "<fdef>");
- return result;
-}
-
-caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<ChasmRZ_Block_Entry> rbe)
-{
- caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(rbe);
- RELAE_SET_NODE_LABEL(result, QString("<block %1>").arg(rbe->block_id()));
- return result;
-}
-
-caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_node(caon_ptr<ChasmRZ_Casement_Block_Entry> cbe)
-{
- caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(cbe);
- RELAE_SET_NODE_LABEL(result, QString("<block %1>").arg(cbe->block_id()));
- return result;
-}
-
 void ChasmRZ_Graph_Build::add_assignment_annotation(QString text)
 {
  caon_ptr<ChasmRZ_Token> aa_token = new ChasmRZ_Token(text);
- caon_ptr<ChasmRZ_Node> aa_node = make_new_node(aa_token);
+ caon_ptr<ChasmRZ_Node> aa_node = node_factory_.make_new_node(aa_token);
  asg_position_.hold_assignment_annotation_node(aa_node);
 }
 
@@ -351,10 +282,10 @@ void ChasmRZ_Graph_Build::set_expected_token_end(QString text)
 void ChasmRZ_Graph_Build::complete_function_declaration()
 {
  caon_ptr<ChasmRZ_Token> arrow_token = new ChasmRZ_Token("->def", "", "");
- caon_ptr<ChasmRZ_Node> arrow_node = make_new_node(arrow_token);
+ caon_ptr<ChasmRZ_Node> arrow_node = node_factory_.make_new_node(arrow_token);
 
  caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token("<undef-function-body>", "", "");
- caon_ptr<ChasmRZ_Node> node = make_new_node(token);
+ caon_ptr<ChasmRZ_Node> node = node_factory_.make_new_node(token);
 
  asg_position_.complete_function_declaration(arrow_node, node);
 
@@ -421,7 +352,7 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::close_string_plex()
 {
  current_string_plex_builder_->add_part(string_literal_acc_.trimmed());
  string_literal_acc_.clear();
- caon_ptr<ChasmRZ_Node> result = make_new_node(current_string_plex_builder_);
+ caon_ptr<ChasmRZ_Node> result = node_factory_.make_new_node(current_string_plex_builder_);
  current_string_plex_builder_ = nullptr;
  return result;
 
@@ -437,7 +368,7 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::create_tuple(ChasmRZ_Tuple_Info::Tup
 {
  int tuple_id;
  if(increment_id)
-  tuple_id = ++tuple_entry_count_;
+  tuple_id = node_factory_.make_tuple_entry_id();// ++tuple_entry_count_;
  else
   tuple_id = 0;
 
@@ -453,7 +384,7 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::make_new_empty_tuple_node(caon_ptr<C
  QString rep = rti->token_representation();
  caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(rep);
  token->flags.is_empty_tuple_indicator = true;
- caon_ptr<ChasmRZ_Node> result = make_new_node(token);
+ caon_ptr<ChasmRZ_Node> result = node_factory_.make_new_node(token);
  result->set_label(rep);
  return result;
 }
@@ -554,7 +485,7 @@ void ChasmRZ_Graph_Build::enter_tuple(QString name, QString prefix, QString entr
  }
  else
 good_to_go:
-  tuple_id = ++tuple_entry_count_;
+  tuple_id = node_factory_.make_tuple_entry_id();
 
 
  caon_ptr<ChasmRZ_Tuple_Info> tinfo = new ChasmRZ_Tuple_Info(tf, ti, tuple_id);
@@ -610,7 +541,7 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::new_function_def_entry_node(ChasmRZ_
   ChasmRZ_Function_Def_Kinds kind, caon_ptr<ChasmRZ_Node> label_node)
 {
  caon_ptr<ChasmRZ_Function_Def_Entry> fdef = new ChasmRZ_Function_Def_Entry(&prior_node, kind, label_node);
- caon_ptr<ChasmRZ_Node> result = make_new_node(fdef);
+ caon_ptr<ChasmRZ_Node> result = node_factory_.make_new_node(fdef);
  fdef->set_node(result);
  return result;
 }
@@ -624,14 +555,15 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::new_autogenerated_token_node(QString
 {
  caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(raw_text);
  CAON_PTR_DEBUG(ChasmRZ_Token ,token)
- caon_ptr<ChasmRZ_Node> result = make_new_node(token);
+ caon_ptr<ChasmRZ_Node> result = node_factory_.make_new_node(token);
  return result;
 }
 
 caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::new_run_call_entry_node(bool is_statement_entry,
   QString prefix, caon_ptr<ChasmRZ_Call_Entry> parent_entry)
 {
- caon_ptr<ChasmRZ_Call_Entry> new_entry = new ChasmRZ_Call_Entry(call_entry_count_, prefix);
+ caon_ptr<ChasmRZ_Call_Entry> new_entry =
+   new ChasmRZ_Call_Entry(node_factory_.make_call_entry_id(), prefix);
 
  CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,new_entry)
 
@@ -647,8 +579,8 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::new_run_call_entry_node(bool is_stat
    new_entry->flags.no_anticipate = parent_entry->flags.no_anticipate;
  }
 
- ++call_entry_count_;
- caon_ptr<ChasmRZ_Node> result = make_new_node(new_entry);
+ //?++call_entry_count_;
+ caon_ptr<ChasmRZ_Node> result = node_factory_.make_new_node(new_entry);
  return result;
 }
 
@@ -656,7 +588,8 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::new_run_call_entry_node(bool is_stat
 caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::new_run_casement_entry_node(bool is_statement_entry,
   QString prefix, caon_ptr<ChasmRZ_Casement_Call_Entry> parent_entry)
 {
- caon_ptr<ChasmRZ_Casement_Call_Entry> new_entry = new ChasmRZ_Casement_Call_Entry(call_entry_count_, prefix);
+ caon_ptr<ChasmRZ_Casement_Call_Entry> new_entry =
+   new ChasmRZ_Casement_Call_Entry(node_factory_.make_call_entry_id(), prefix);
 
  CAON_PTR_DEBUG(ChasmRZ_Casement_Call_Entry ,new_entry)
 
@@ -672,26 +605,36 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::new_run_casement_entry_node(bool is_
    new_entry->flags.no_anticipate = parent_entry->flags.no_anticipate;
  }
 
- ++call_entry_count_;
- caon_ptr<ChasmRZ_Node> result = make_new_node(new_entry);
+ //?++call_entry_count_;
+ caon_ptr<ChasmRZ_Node> result = node_factory_.make_new_node(new_entry);
  return result;
 }
 
 
 caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::new_casement_block_entry_node()
 {
- caon_ptr<ChasmRZ_Casement_Block_Entry> new_entry = new ChasmRZ_Casement_Block_Entry(block_entry_count_);
- ++block_entry_count_;
- caon_ptr<ChasmRZ_Node> result = make_new_node(new_entry);
+ caon_ptr<ChasmRZ_Casement_Block_Entry> new_entry = new
+   ChasmRZ_Casement_Block_Entry(node_factory_.make_block_entry_id());
+
+
+
+// caon_ptr<ChasmRZ_Casement_Block_Entry> new_entry = new ChasmRZ_Casement_Block_Entry(block_entry_count_);
+// ++block_entry_count_;
+ caon_ptr<ChasmRZ_Node> result = node_factory_.make_new_node(new_entry);
  return result;
 }
 
 
 caon_ptr<ChasmRZ_Node> ChasmRZ_Graph_Build::new_run_block_entry_node()
 {
- caon_ptr<ChasmRZ_Block_Entry> new_entry = new ChasmRZ_Block_Entry(block_entry_count_);
- ++block_entry_count_;
- caon_ptr<ChasmRZ_Node> result = make_new_node(new_entry);
+ caon_ptr<ChasmRZ_Block_Entry> new_entry = new
+   ChasmRZ_Block_Entry(node_factory_.make_block_entry_id());
+
+// caon_ptr<ChasmRZ_Block_Entry> new_entry = new ChasmRZ_Block_Entry(block_entry_count_);
+// ++block_entry_count_;
+
+
+ caon_ptr<ChasmRZ_Node> result = node_factory_.make_new_node(new_entry);
  return result;
 }
 
@@ -732,13 +675,13 @@ void ChasmRZ_Graph_Build::raw_asg_start()
 
 void ChasmRZ_Graph_Build::add_run_token(ChasmRZ_Token& token)
 {
- caon_ptr<ChasmRZ_Node> node = make_new_node(&token);
+ caon_ptr<ChasmRZ_Node> node = node_factory_.make_new_node(&token);
  asg_position_.add_token_node(node);
 }
 
 void ChasmRZ_Graph_Build::add_raw_asg_token(ChasmRZ_Token& token)
 {
- caon_ptr<ChasmRZ_Node> node = make_new_node(&token);
+ caon_ptr<ChasmRZ_Node> node = node_factory_.make_new_node(&token);
  asg_position_.add_raw_asg_token(node);
 }
 
@@ -797,7 +740,7 @@ void ChasmRZ_Graph_Build::add_type_indicator(QString raw_text)
  }
  caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(raw_text);
  CAON_PTR_DEBUG(ChasmRZ_Token ,token)
- caon_ptr<ChasmRZ_Node> node = make_new_node(token);
+ caon_ptr<ChasmRZ_Node> node = node_factory_.make_new_node(token);
  asg_position_.add_type_indicator(node);
 }
 
@@ -843,7 +786,7 @@ void ChasmRZ_Graph_Build::add_run_token(QString prefix, QString raw_text,
   asg_position_.check_add_implied_my();
  }
 
- caon_ptr<ChasmRZ_Node> node = make_new_node(token);
+ caon_ptr<ChasmRZ_Node> node = node_factory_.make_new_node(token);
 
  if(tf == Token_Formations::Cpp_Scoped)
  {
@@ -908,7 +851,7 @@ void ChasmRZ_Graph_Build::add_run_token(QString prefix, QString raw_text,
 
    CAON_PTR_DEBUG(ChasmRZ_Token ,ntoken)
 
-   caon_ptr<ChasmRZ_Node> nnode = make_new_node(ntoken);
+   caon_ptr<ChasmRZ_Node> nnode = node_factory_.make_new_node(ntoken);
    asg_position_.add_token_node(nnode);
 
    asg_position_.add_call_entry(false, "\\");

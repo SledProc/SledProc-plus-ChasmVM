@@ -33,7 +33,7 @@ ChasmRZ_ASG_Position::ChasmRZ_ASG_Position
  : Flags(0), graph_build_(graph_build),
    Cf(ChasmRZ_Frame::instance("casement")),
    Sf(ChasmRZ_Frame::instance("semantic")),
-   Tf(ChasmRZ_Frame::instance("traverse")),
+   Tf(ChasmRZ_Frame::instance("traversal")),
 //   Af(ChasmRZ_Frame::instance("asg")),
 //   Rf(ChasmRZ_Frame::instance("root")),
    Qy(ChasmRZ_Query::instance()),
@@ -179,7 +179,7 @@ void ChasmRZ_ASG_Position::add_block_level_term_entry(caon_ptr<ChasmRZ_Node> nod
  caon_ptr<ChasmRZ_Anchored_Casement_Entry> ace = new ChasmRZ_Anchored_Casement_Entry(mode);
  CAON_PTR_DEBUG(ChasmRZ_Anchored_Casement_Entry ,ace)
 
- caon_ptr<ChasmRZ_Node> ace_node = graph_build_->make_new_node(ace);
+ caon_ptr<ChasmRZ_Node> ace_node = graph_build_->node_factory().make_new_node(ace);
  node << Sf/Qy.Anchor_Info >> ace_node;
 
  push_chief(node);

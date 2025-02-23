@@ -19,6 +19,8 @@
 
 #include "flags.h"
 
+#include "global-types.h"
+
 #include "rzns.h"
 
 RZNS_(GVal)
@@ -68,9 +70,9 @@ private:
  caon_ptr<ChasmRZ_Node> statement_entry_node_;
  caon_ptr<RZ_ASG_Lexical_Scope> lexical_scope_;
 
- int block_id_;
+ u2 block_id_;
 
- int nested_depth_;
+ u2 nested_depth_;
 
  QString notes_;
 
@@ -79,12 +81,12 @@ public:
  ACCESSORS(caon_ptr<ChasmRZ_Node> ,statement_entry_node)
  ACCESSORS(caon_ptr<RZ_ASG_Lexical_Scope> ,lexical_scope)
 
- ACCESSORS__GET(int ,block_id)
- ACCESSORS(int ,nested_depth)
+ ACCESSORS__GET(u2 ,block_id)
+ ACCESSORS(u2 ,nested_depth)
  ACCESSORS(QString ,notes)
 
 
- ChasmRZ_Block_Entry(int block_id);
+ ChasmRZ_Block_Entry(u2 block_id);
 
 };
 
