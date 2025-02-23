@@ -36,10 +36,19 @@ class ChasmRZ_Graph;
 
 class ChasmRZ_Traverser
 {
+ ChasmRZ_Graph& graph_;
+
+ ChasmRZ_Frame& Cf;
+ ChasmRZ_Frame& Sf;
+ ChasmRZ_Frame& Tf;
+ const ChasmRZ_Query& Qy;
+
 
 public:
 
- ChasmRZ_Traverser();
+ ChasmRZ_Traverser(ChasmRZ_Graph& graph);
+
+ caon_ptr<ChasmRZ_Node> find_root_entry(caon_ptr<ChasmRZ_Node> root_node);
 
  void scan();
 

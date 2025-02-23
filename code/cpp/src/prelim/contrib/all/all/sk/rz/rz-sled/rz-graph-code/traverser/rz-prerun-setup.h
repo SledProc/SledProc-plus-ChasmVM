@@ -5,8 +5,8 @@
 //           http://www.boost.org/LICENSE_1_0.txt)
 
 
-#ifndef RZ_PRERUN_CHECK__H
-#define RZ_PRERUN_CHECK__H
+#ifndef RZ_PRERUN_SETUP__H
+#define RZ_PRERUN_SETUP__H
 
 #include "accessors.h"
 #include "flags.h"
@@ -18,6 +18,8 @@
 #include "rz-graph-core/kernel/graph/chasm-rz-graph.h"
 
 #include "rz-graph-core/output/chasm-rz-asg-output.h"
+
+#include "rz-graph-core/traverser/chasm-rz-traverser.h"
 
 
 #include <QString>
@@ -37,12 +39,14 @@ class ChasmRZ_Node;
 class ChasmRZ_Graph;
 
 
-class RZ_Prerun_Check : public ChasmRZ_ASG_Output
+class RZ_Prerun_Setup : public ChasmRZ_ASG_Output
 {
+ ChasmRZ_Traverser traverser_;
+
 
 public:
 
- RZ_Prerun_Check(caon_ptr<ChasmRZ_Document> document);
+ RZ_Prerun_Setup(caon_ptr<ChasmRZ_Document> document);
 
  virtual void report_token(QTextStream& qts,
   const ChasmRZ_Token& token)  Q_DECL_OVERRIDE;
@@ -66,4 +70,4 @@ public:
 
 _RZNS(RZ_Core)
 
-#endif //RZ_PRERUN_CHECK__H
+#endif //RZ_PRERUN_SETUP__H

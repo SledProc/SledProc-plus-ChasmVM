@@ -23,7 +23,11 @@ DOMINION_TYPE(qstring, QString, QStr)
 
 #define DOMINION_INNER_NAMESPACE RZ_Core
 #include "relae-graph/dominion-macros.h"
+
+DOMINION_TYPE(chasm_rz_source_file, ChasmRZ_Source_File, ChasmRZ_Source_File)
+
 DOMINION_TYPE(chasm_rz_root, ChasmRZ_Root, ChasmRZ_Root)
+
 DOMINION_TYPE(chasm_rz_token, ChasmRZ_Token, ChasmRZ_Token)
 DOMINION_TYPE(block_level_type_declaration, RZ_Block_Level_Type_Declaration, Block_Level_Type_Declaration)
 

@@ -39,6 +39,7 @@ HEADERS += \
   $$SRC_DIR/kernel/query/chasm-rz-query.h \
   $$SRC_DIR/kernel/frame/chasm-rz-frame.h \
   $$SRC_DIR/kernel/document/chasm-rz-document.h \
+  $$SRC_DIR/kernel/document/chasm-rz-source-file.h \
   $$SRC_DIR/kernel/grammar/chasm-rz-parser.h \
   $$SRC_DIR/kernel/grammar/chasm-rz-grammar.h \
   $$SRC_DIR/kernel/grammar/chasm-rz-graph-build.h \
@@ -81,6 +82,7 @@ SOURCES += \
   $$SRC_DIR/kernel/query/chasm-rz-query.cpp \
   $$SRC_DIR/kernel/frame/chasm-rz-frame.cpp \
   $$SRC_DIR/kernel/document/chasm-rz-document.cpp \
+  $$SRC_DIR/kernel/document/chasm-rz-source-file.cpp \
   $$SRC_DIR/kernel/grammar/chasm-rz-parser.cpp \
   $$SRC_DIR/kernel/grammar/chasm-rz-grammar.cpp \
   $$SRC_DIR/kernel/grammar/chasm-rz-graph-build.cpp \

@@ -63,6 +63,7 @@ class RZ_Graph_Run_Embedder
 
  ChasmRZ_Frame& Cf;
  ChasmRZ_Frame& Sf;
+ ChasmRZ_Frame& Tf;
  const ChasmRZ_Query& Qy;
 
 

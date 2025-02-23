@@ -126,6 +126,7 @@ class RZ_ASG_Valuer
 
  ChasmRZ_Frame& Cf;
  ChasmRZ_Frame& Sf;
+ ChasmRZ_Frame& Tf;
  const ChasmRZ_Query& Qy;
 
  QMap<ChasmRZ_Dominion::Type_Codes, caon_ptr<RZ_Type_Object>> type_objects_by_code_;

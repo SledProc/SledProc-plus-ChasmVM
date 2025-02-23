@@ -36,6 +36,7 @@ protected:
 
  const ChasmRZ_Frame& Cf;
  const ChasmRZ_Frame& Sf;
+ const ChasmRZ_Frame& Tf;
  const ChasmRZ_Query& Qy;
 
  caon_ptr<ChasmRZ_Node> get_root_node();

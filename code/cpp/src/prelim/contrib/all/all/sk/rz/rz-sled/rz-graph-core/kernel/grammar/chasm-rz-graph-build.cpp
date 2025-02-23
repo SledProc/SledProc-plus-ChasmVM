@@ -53,6 +53,7 @@ ChasmRZ_Graph_Build::ChasmRZ_Graph_Build(ChasmRZ_Document* d,
   ,current_line_(1)
   ,Cf(ChasmRZ_Frame::instance("casement"))
   ,Sf(ChasmRZ_Frame::instance("semantic"))
+  ,Tf(ChasmRZ_Frame::instance("traverse"))
   ,asg_position_(this)
   ,active_run_node_(nullptr)
   ,held_statement_start_node_(nullptr)

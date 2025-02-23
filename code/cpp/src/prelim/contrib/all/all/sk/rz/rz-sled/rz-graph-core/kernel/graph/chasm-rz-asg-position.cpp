@@ -33,6 +33,7 @@ ChasmRZ_ASG_Position::ChasmRZ_ASG_Position
  : Flags(0), graph_build_(graph_build),
    Cf(ChasmRZ_Frame::instance("casement")),
    Sf(ChasmRZ_Frame::instance("semantic")),
+   Tf(ChasmRZ_Frame::instance("traverse")),
 //   Af(ChasmRZ_Frame::instance("asg")),
 //   Rf(ChasmRZ_Frame::instance("root")),
    Qy(ChasmRZ_Query::instance()),
@@ -54,6 +55,11 @@ ChasmRZ_ASG_Position::ChasmRZ_ASG_Position
    held_assignment_annotation_node_(nullptr)
 {
 }
+
+
+#define in_Cf Cf,
+#define in_Tf Tf,
+#define in_Sf Sf,
 
 
 

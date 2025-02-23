@@ -113,6 +113,7 @@ class ChasmRZ_Graph_Build
 
  ChasmRZ_Frame& Cf;
  ChasmRZ_Frame& Sf;
+ ChasmRZ_Frame& Tf;
 
  ChasmRZ_ASG_Position asg_position_;
 

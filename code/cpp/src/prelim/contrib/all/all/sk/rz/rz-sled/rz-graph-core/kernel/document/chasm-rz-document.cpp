@@ -6,6 +6,8 @@
 
 #include "chasm-rz-document.h"
 
+#include "chasm-rz-source-file.h"-
+
 #include "relae-graph/relae-parser.templates.h"
 
 #include "kernel/grammar/chasm-rz-parser.h"
@@ -274,7 +276,10 @@ void ChasmRZ_Document::parse(int start_position, int end_position)
 {
  preprocess_raw_text();
 
- graph_ = new ChasmRZ_Graph();
+ caon_ptr<ChasmRZ_Source_File> sf = new ChasmRZ_Source_File(local_path_);
+ caon_ptr<ChasmRZ_Node> sf_node = new ChasmRZ_Node(sf);
+
+ graph_ = new ChasmRZ_Graph(); //sf_node);
  parser_ = new ChasmRZ_Parser(graph_);
  parser_->set_raw_text(raw_text_);
 

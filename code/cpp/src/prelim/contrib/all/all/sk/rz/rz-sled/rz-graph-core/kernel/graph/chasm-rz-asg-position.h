@@ -124,6 +124,8 @@ private:
 
  ChasmRZ_Frame& Cf;
  ChasmRZ_Frame& Sf;
+ ChasmRZ_Frame& Tf;
+
 // ChasmRZ_Frame& Af;
 // ChasmRZ_Frame& Rf;
 

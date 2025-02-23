@@ -132,6 +132,7 @@ private:
 
  ChasmRZ_Frame& Cf;
  ChasmRZ_Frame& Sf;
+ ChasmRZ_Frame& Tf;
 
  caon_ptr<ChasmRZ_Node> current_block_node_;
  caon_ptr<ChasmRZ_Node> data_continue_node_;

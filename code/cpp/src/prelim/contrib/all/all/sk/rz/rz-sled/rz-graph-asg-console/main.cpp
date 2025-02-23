@@ -41,7 +41,7 @@ int main()
 #include "rz-graph-code/prerun/rz-prerun-normalize.h"
 #include "rz-graph-code/prerun/rz-prerun-anticipate.h"
 
-#include "rz-graph-code/traverser/rz-prerun-check.h"
+#include "rz-graph-code/traverser/rz-prerun-setup.h"
 
 
 
@@ -74,8 +74,8 @@ void compile_rz(QString file_name)
 
  doc->report_graph(file_name + ".txt");
 
- RZ_Prerun_Check check(doc);
- check.output("..check.txt");
+ RZ_Prerun_Setup setup(doc);
+ setup.output("..setup.txt");
 
  ChasmRZ_Pre_Normal_ASG prenorm(doc);
  prenorm.output("..prenorm.txt");
