@@ -61,6 +61,11 @@
 #include <QRegularExpressionMatch>
 
 #include "rz-code-elements/rz-expression-review.h"
+
+
+#include "rz-graph-core/token/rz-compiler-function.h"
+
+
 #include "rzns.h"
 
 USING_RZNS(GBuild)
@@ -104,6 +109,7 @@ void RZ_ASG_Visitor::prepare_rz_path_handlers_output(QString handlers)
 }
 
 #define in_Cf Cf,
+#define in_Tf Tf,
 
 void RZ_ASG_Visitor::add_initial_output_text(QString text)
 {
@@ -1041,8 +1047,8 @@ caon_ptr<tNode> RZ_ASG_Visitor::normalize_run_call(int depth, int pos, tNode& pr
 
   caon_ptr<ChasmRZ_Connection> cion; // this "skips" rces...
 
-  caon_ptr<tNode> n1 = Qy.Run_Call_Entry_Direct[cion](in_Cf &pre_entry_node);
-  caon_ptr<tNode> n2 = Qy.Run_Call_Entry(in_Cf &start_node);
+  caon_ptr<tNode> n1 = Qy.Run_Call_Entry_Direct[cion](in_Tf &pre_entry_node);
+  caon_ptr<tNode> n2 = Qy.Run_Call_Entry(in_Tf &start_node);
 
   caon_ptr<tNode> n = nullptr;
 
@@ -1122,7 +1128,21 @@ caon_ptr<tNode> RZ_ASG_Visitor::normalize_run_call(int depth, int pos, tNode& pr
   }
  }
  caon_ptr<tNode> function_node = &start_node;
- if(caon_ptr<RZ_ASG_Token> tok = start_node.asg_token())
+
+ caon_ptr<RZ_ASG_Token> tok = start_node.asg_token();
+
+ caon_ptr<RZ_Compiler_Function> rcf;
+
+ if(!tok)
+ {
+  rcf = start_node.rz_compiler_function();
+
+ }
+
+ CAON_PTR_DEBUG(RZ_Compiler_Function ,rcf)
+
+
+ if(tok)
  {
   CAON_PTR_DEBUG(RZ_ASG_Token ,tok)
   CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,current_call_entry)
@@ -1261,7 +1281,7 @@ void RZ_ASG_Visitor::hyper_normalize(tNode& start_node)
 
 void RZ_ASG_Visitor::normalize(tNode& start_node)
 {
- if(caon_ptr<tNode> n = Qy.Run_Casement_Entry(in_Cf &start_node))
+ if(caon_ptr<tNode> n = Qy.Run_Casement_Entry(in_Tf &start_node))
  {
   //normalize_run_call(0, 0, start_node, *n, Qy.Run_Casement_Entry);
   normalize_run_casement(0, 0, start_node, *n, Qy.Run_Casement_Entry);
@@ -1270,11 +1290,11 @@ void RZ_ASG_Visitor::normalize(tNode& start_node)
 
 
  else
- if(caon_ptr<tNode> n = Qy.Run_Call_Entry(in_Cf &start_node))
+ if(caon_ptr<tNode> n = Qy.Run_Call_Entry(in_Tf &start_node))
  {
   normalize_run_call(0, 0, start_node, *n, Qy.Run_Call_Entry);
  }
- else if(n = Qy.Run_Block_Entry(in_Cf &start_node))
+ else if(n = Qy.Run_Block_Entry(in_Tf &start_node))
  {
   normalize_block(start_node, *n, Qy.Run_Block_Entry);
  }
@@ -1423,7 +1443,7 @@ void RZ_ASG_Visitor::normalize_block(tNode& pre_entry_node,
 {
  if(caon_ptr<ChasmRZ_Block_Entry> rbe = start_node.chasm_rz_block_entry())
  {
-  if(caon_ptr<tNode> call_start_node = Qy.Run_Call_Entry(in_Cf &start_node))
+  if(caon_ptr<tNode> call_start_node = Qy.Run_Call_Entry(in_Tf &start_node))
   {
    caon_ptr<tNode> node = normalize_run_call(0, 0, start_node,
     *call_start_node, qtok, nullptr, nullptr, node_to_change);

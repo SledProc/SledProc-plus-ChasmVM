@@ -200,6 +200,9 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
    }
   }
  }
+
+ //?qts << "\n\n============\n\n";
+
 }
 
 
