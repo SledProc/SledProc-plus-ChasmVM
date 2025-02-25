@@ -29,6 +29,8 @@ DOMINION_CONNECTOR(Block_Level_Cross, "block-level-cross")
 DOMINION_CONNECTOR(Type_Symbol_Declaration, "type-symbol-declaration")
 DOMINION_CONNECTOR(Anchor_Info, "anchor-info")
 
+DOMINION_CONNECTOR(Generated_ASG_Token, "generated-asg-token")
+
 
 DOMINION_CONNECTOR(Casement_Block_Entry, "casement-block-entry")
 //DOMINION_CONNECTOR(Casement_Block_Sequence, "casement-block-sequence")

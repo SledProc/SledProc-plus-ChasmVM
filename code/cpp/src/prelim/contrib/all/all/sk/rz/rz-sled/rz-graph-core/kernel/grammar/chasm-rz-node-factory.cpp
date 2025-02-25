@@ -27,7 +27,7 @@
 
 #include "kernel/chasm-rz-dominion.h"
 
-#include "token/rz-compiler-function.h"
+#include "token/rz-observer-function.h"
 
 
 USING_RZNS(RZ_Core)
@@ -106,10 +106,18 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Node_Factory::make_new_node(caon_ptr<ChasmRZ_Case
 }
 
 
-caon_ptr<ChasmRZ_Node> ChasmRZ_Node_Factory::make_new_node(caon_ptr<RZ_Compiler_Function> rcf) const
+caon_ptr<ChasmRZ_Node> ChasmRZ_Node_Factory::make_new_node(caon_ptr<RZ_Observer_Function> rcf) const
 {
  caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(rcf);
  RELAE_SET_NODE_LABEL(result, "<%1>"_qt.arg(rcf->token_label()));
+ return result;
+}
+
+caon_ptr<ChasmRZ_Node> ChasmRZ_Node_Factory::make_new_node(caon_ptr<RZ_ASG_Token> rat,
+  QString label) const
+{
+ caon_ptr<ChasmRZ_Node> result = new ChasmRZ_Node(rat);
+ RELAE_SET_NODE_LABEL(result, label);
  return result;
 }
 

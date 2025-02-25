@@ -47,7 +47,7 @@ class RZ_Prerun_Setup : public ChasmRZ_ASG_Output
 {
  ChasmRZ_Traverser traverser_;
 
- ChasmRZ_Node_Factory& node_factory_;
+// ChasmRZ_Node_Factory& node_factory_;
 
 public:
 

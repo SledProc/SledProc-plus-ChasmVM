@@ -4,16 +4,23 @@
 //     (See accompanying file LICENSE_1_0.txt or copy at
 //           http://www.boost.org/LICENSE_1_0.txt)
 
-#include "rz-compiler-function.h"
+#include "rz-observer-function.h"
 
 
 USING_RZNS(RZ_Core)
 
-RZ_Compiler_Function::RZ_Compiler_Function(QString name)
- : name_(name)
+RZ_Observer_Function::RZ_Observer_Function(QString name)
+ : name_(name), asg_token_(nullptr)
 {
 
 }
+
+void RZ_Observer_Function::init_asg_token()
+{
+ asg_token_ = new RZ_ASG_Token("[%1]"_qt.arg(name_));
+}
+
+
 
 
 

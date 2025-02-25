@@ -22,17 +22,28 @@
 #include <functional>
 
 #include "rzns.h"
+
+
+RZNS_CLASS_DECLARE(GBuild ,RZ_ASG_Token)
+USING_RZNS(GBuild)
+
 RZNS_(RZ_Core)
 
 
 class ChasmRZ_Document;
 class ChasmRZ_Node;
 
+class ChasmRZ_Node;
+class ChasmRZ_Node_Factory;
+
 class ChasmRZ_ASG_Output
 {
 protected:
 
  caon_ptr<ChasmRZ_Document> document_;
+
+ ChasmRZ_Node_Factory& node_factory_;
+
 
  ChasmRZ_Frame& Cf;
  ChasmRZ_Frame& Sf;
@@ -63,6 +74,7 @@ protected:
   const ChasmRZ_Token& token) = 0;
 
  virtual void init_token(ChasmRZ_Token& token) {}
+ virtual void init_token(const ChasmRZ_Node& node, caon_ptr<ChasmRZ_Node>& rat_node) {}
 
 public:
 

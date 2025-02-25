@@ -216,7 +216,7 @@ void RPI_Block::scan_form_from_statement_entry_node(RZ_Graph_Visitor_Phaon& visi
   pending_block_info_ = visitor_phaon.check_pending_block_info(&start_node);
  }
 
- if(caon_ptr<RZ_ASG_Token> tok = start_node.asg_token())
+ if(caon_ptr<RZ_ASG_Token> tok = start_node.get_asg_token())
  {
   CAON_PTR_DEBUG(RZ_ASG_Token ,tok)
 
@@ -333,7 +333,7 @@ void RPI_Block::scan_form_from_statement_entry_node(RZ_Graph_Visitor_Phaon& visi
 
   case RZ_ASG_Visitor::Next_Node_Premise::Normal:
    {
-    if(caon_ptr<RZ_ASG_Token> next_tok = next_node->asg_token())
+    if(caon_ptr<RZ_ASG_Token> next_tok = next_node->get_asg_token())
     {
      CAON_PTR_DEBUG(RZ_ASG_Token ,next_tok)
 

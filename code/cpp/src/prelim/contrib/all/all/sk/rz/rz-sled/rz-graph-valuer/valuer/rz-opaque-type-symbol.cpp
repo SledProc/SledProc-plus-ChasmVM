@@ -22,11 +22,11 @@ caon_ptr<RZ_Opaque_Type_Symbol::tNode> RZ_Opaque_Type_Symbol::get_node()
 
 caon_ptr<RZ_ASG_Token> RZ_Opaque_Type_Symbol::get_token()
 {
- return get_node()->asg_token();
+ return get_node()->get_asg_token();
 }
 
 QString RZ_Opaque_Type_Symbol::get_name()
 {
- return get_node()->asg_token()->string_value();
+ return get_node()->get_asg_token()->string_value();
 }
 

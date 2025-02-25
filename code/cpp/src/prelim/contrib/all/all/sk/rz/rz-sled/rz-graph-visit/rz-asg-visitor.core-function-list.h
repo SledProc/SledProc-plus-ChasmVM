@@ -1,5 +1,5 @@
 
-////  This is not a top-level header.
+// //  This is not a top-level header.
 //    It contains a list of core function
 //    names, meaning predefined functions
 //    which may need special treatment

@@ -26,6 +26,7 @@
 
 #include "relae-graph/relae-caon-ptr.h"
 
+#include "global-types.h"
 
 #include <QString>
 
@@ -122,9 +123,9 @@ public:
 
 private:
 
- int syntactic_depth_;
+ u4 syntactic_depth_;
  QString raw_text_;
- int line_number_;
+ u4 line_number_;
 
  RZ_ASG_Value_Holder vh_;
 
@@ -133,9 +134,9 @@ private:
 public:
 
  ACCESSORS(QString ,raw_text)
- ACCESSORS(int ,syntactic_depth)
+ ACCESSORS(u4 ,syntactic_depth)
  ACCESSORS__RGET(RZ_ASG_Value_Holder ,vh)
- ACCESSORS(int ,line_number)
+ ACCESSORS(u4 ,line_number)
 
  ACCESSORS(caon_ptr<RZ_ASG_Token_Out_Info> ,out)
 
@@ -178,11 +179,11 @@ public:
  caon_ptr<RZ_Type_Object> type_object();
  void set_type_object(RZ_Type_Object& cto);
 
- RZ_ASG_Token(QString raw_text, int line_number = 0);
+ RZ_ASG_Token(QString raw_text, u4 line_number = 0);
 
  enum class Special_Constructor_Mode { N_A, Raw_Text };
 
- RZ_ASG_Token(QString raw_text, Special_Constructor_Mode scm, int line_number = 0);
+ RZ_ASG_Token(QString raw_text, Special_Constructor_Mode scm, u4 line_number = 0);
 
  void comment_asg(QString str);
  void redirect_asg(QString str);

@@ -179,6 +179,8 @@ private:
   caon_ptr<RZ_ASG_Core_Casement_Function>);
 
 
+ void check_find_asg_token(caon_ptr<RZ_ASG_Token>& result, caon_ptr<tNode> node);
+
 public:
 
  RZ_ASG_Visitor(caon_ptr<ChasmRZ_Graph> graph = nullptr);

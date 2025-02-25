@@ -300,7 +300,7 @@ caon_ptr<ChasmRZ_Node> RZ_Graph_Visitor_Phaon::leave_nested_block(caon_ptr<RZ_AS
 caon_ptr<ChasmRZ_Node> RZ_Graph_Visitor_Phaon::block_entry_node_from_function_def_entry_node(caon_ptr<ChasmRZ_Node> start_node)
 {
  CAON_PTR_DEBUG(ChasmRZ_Node ,start_node)
- if(caon_ptr<RZ_ASG_Token> rzlt = start_node->asg_token())
+ if(caon_ptr<RZ_ASG_Token> rzlt = start_node->get_asg_token())
  {
   if(rzlt->raw_text() == "\\=>>")
   {
@@ -321,7 +321,7 @@ caon_ptr<RZ_Function_Def_Info> RZ_Graph_Visitor_Phaon::get_function_def_info_fro
  caon_ptr<ChasmRZ_Node> prior_node = fde->prior_node();
  CAON_PTR_DEBUG(ChasmRZ_Node ,prior_node)
 
- if(caon_ptr<RZ_ASG_Token> ptok = prior_node->asg_token())
+ if(caon_ptr<RZ_ASG_Token> ptok = prior_node->get_asg_token())
  {
   if(ptok->raw_text() == "\\=>>")
   {
@@ -336,7 +336,7 @@ caon_ptr<RZ_Function_Def_Info> RZ_Graph_Visitor_Phaon::get_function_def_info_fro
  if(caon_ptr<ChasmRZ_Node> fdi_node = visitor_.get_call_sequence_node(prior_node))
  {
   CAON_PTR_DEBUG(ChasmRZ_Node ,fdi_node)
-  if(caon_ptr<RZ_ASG_Token> tok = fdi_node->asg_token())
+  if(caon_ptr<RZ_ASG_Token> tok = fdi_node->get_asg_token())
   {
    return tok->pRestore<RZ_Function_Def_Info>();
    //return fdi_node->rz_function_def_info();

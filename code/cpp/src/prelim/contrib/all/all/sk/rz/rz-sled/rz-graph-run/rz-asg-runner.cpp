@@ -33,6 +33,7 @@ RZ_ASG_Runner::RZ_ASG_Runner(caon_ptr<RZ_ASG_Valuer>  valuer)
 }
 
 #define in_Cf ChasmRZ_Frame::instance("casement"),
+#define in_Tf ChasmRZ_Frame::instance("traversal"),
 
 
 void RZ_ASG_Runner::check_run_info(int generation,
@@ -147,7 +148,7 @@ void RZ_ASG_Runner::init_run_sequence_pair(RZ_ASG_Result_Holder& rh,
  if(lhs_node)
  {
   CAON_PTR_DEBUG(tNode ,lhs_node)
-  caon_ptr<RZ_ASG_Token> lhst = lhs_node->asg_token();
+  caon_ptr<RZ_ASG_Token> lhst = lhs_node->get_asg_token();
   CAON_PTR_DEBUG(RZ_ASG_Token ,lhst)
 
   rhs_node = check_run_sequence(rh, rhs_premise, start_node);
@@ -190,7 +191,7 @@ caon_ptr<RZ_ASG_Runner::tNode>
 
  caon_ptr<tNode> result = nullptr;
 
- if(result = Qy.Run_Call_Sequence(in_Cf &lhs_node))
+ if(result = Qy.Run_Call_Sequence(in_Tf &lhs_node))
  {
  }
  else if(result = Qy.Run_Call_Entry(in_Cf &lhs_node))
@@ -201,7 +202,7 @@ caon_ptr<RZ_ASG_Runner::tNode>
    caon_ptr<tNode> entry_node;
    if(entry_node = Qy.Run_Call_Entry(in_Cf result))
    {
-    if(caon_ptr<RZ_ASG_Token> tok = entry_node->asg_token())
+    if(caon_ptr<RZ_ASG_Token> tok = entry_node->get_asg_token())
     {
      tok->flags.is_nested_opaque_call = !tok->flags.is_core_function_symbol;
      if(tok->flags.is_nested_opaque_call)

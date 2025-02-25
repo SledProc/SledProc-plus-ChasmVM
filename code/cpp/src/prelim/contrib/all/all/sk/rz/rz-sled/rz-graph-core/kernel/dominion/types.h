@@ -31,7 +31,7 @@ DOMINION_TYPE(chasm_rz_root, ChasmRZ_Root, ChasmRZ_Root)
 DOMINION_TYPE(chasm_rz_token, ChasmRZ_Token, ChasmRZ_Token)
 DOMINION_TYPE(block_level_type_declaration, RZ_Block_Level_Type_Declaration, Block_Level_Type_Declaration)
 
-DOMINION_TYPE(rz_compiler_function, RZ_Compiler_Function, Compiler_Function)
+DOMINION_TYPE(rz_observer_function, RZ_Observer_Function, Observer_Function)
 
 
 DOMINION_TYPE(anchored_casement_entry, ChasmRZ_Anchored_Casement_Entry, Anchored_Casement_Entry)
@@ -69,9 +69,15 @@ DOMINION_TYPE(ecl_token, RZ_Graph_ECL_Token, RZ_Graph_ECL_Token)
 #define DOMINION_INNER_NAMESPACE GBuild
 #include "relae-graph/dominion-macros.h"
 //?
+
+DOMINION_TYPE(asg_token, RZ_ASG_Token, ASG_Token)
+
+
 DOMINION_TYPE(core_function, RZ_ASG_Core_Casement_Function, Core_Function)
+
 //?DOMINION_TYPE(cfn, RZ_ASG_Core_Casement_Function, Token_CoreFun)
 DOMINION_TYPE(fair_annotation, RZ_FAIR_Annotation, Fair_Annotation)
+
 DOMINION_TYPE(null_value, RZ_Null_Value, Null_Value)
 DOMINION_TYPE(empty_tuple, RZ_ASG_Empty_Tuple, EmptyTuple)
 #undef DOMINION_INNER_NAMESPACE

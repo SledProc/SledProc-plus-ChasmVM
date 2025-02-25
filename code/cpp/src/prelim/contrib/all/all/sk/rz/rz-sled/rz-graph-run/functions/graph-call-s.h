@@ -62,12 +62,20 @@ RZ_GCALL_TEMP_DEFAULT_IMPLEMENTATION(5)
 
 
 
-//RZ_GCALL_IMPLEMENT <RZ_GCALL_S(Leave_Logical_Scope_4, Internal)>
+//RZ_GCALL_IMPLEMENT <RZ_GCALL_S(Lex_Decl, Internal)>
 //{
 // static void run(RZ_ASG_Result_Holder& rh, RZ_ASG_Token& start_token, caon_ptr<tNode> pass_node)
 // {
+//  caon_ptr<ChasmRZ_Node> fnode = rh.function_node();
+//  CAON_PTR_DEBUG(ChasmRZ_Node ,fnode)
+//  CAON_DEBUG_NOOP
+
+
+////  caon_ptr<RZ_ASG_Token> ftok = rh.function_token();
+////  CAON_PTR_DEBUG(RZ_ASG_Token ,ftok)
+////  CAON_DEBUG_NOOP
+
 //  //QString scope_kind =
-//  rh.valuer().leave_logical_scope(4, rh);
 ////  scope_kind.prepend("#_rz-");
 ////  rh.function_token()->redirect_paste(scope_kind);
 // }

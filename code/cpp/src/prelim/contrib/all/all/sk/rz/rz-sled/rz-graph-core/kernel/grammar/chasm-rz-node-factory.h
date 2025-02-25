@@ -14,6 +14,11 @@
 #include "global-types.h"
 
 #include "rzns.h"
+
+RZNS_CLASS_DECLARE(GBuild ,RZ_ASG_Token)
+USING_RZNS(GBuild)
+
+
 RZNS_(RZ_Core)
 
 class ChasmRZ_Node;
@@ -70,8 +75,9 @@ public:
  caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Function_Def_Entry> fdef) const;
  caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<RZ_String_Plex_Builder> rzspb) const;
  caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<ChasmRZ_Anchored_Casement_Entry> ace) const;
- caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<RZ_Compiler_Function> rcf) const;
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<RZ_Observer_Function> rcf) const;
 
+ caon_ptr<ChasmRZ_Node> make_new_node(caon_ptr<RZ_ASG_Token> rat, QString label) const;
 
 
 

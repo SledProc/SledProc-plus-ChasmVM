@@ -41,7 +41,7 @@ void RZ_ASG_Runner::proceed_run_from_node<0>(RZ_ASG_Result_Holder& rh,
  case RZ_Graph_Call_S:
   RZ_ASG_Core_Runner::run<RZ_Graph_Call_S>
     (rh, code,
-     *start_node.asg_token(), &start_node);
+     *start_node.get_asg_token(), &start_node);
   break;
  }
  check_continue(rh);
@@ -163,12 +163,12 @@ void RZ_ASG_Runner::proceed_run_from_node<1>(RZ_ASG_Result_Holder& rh,
    rh.flags.has_held_value = false;
    RZ_ASG_Core_Runner::run<RZ_Graph_Call_TC>
     (rh, ccf.info().Core_Function_Code,
-     *lhs_token, second_node->asg_token()->vh());
+     *lhs_token, second_node->get_asg_token()->vh());
   }
   else
    RZ_ASG_Core_Runner::run<RZ_Graph_Call_TC>
     (rh, ccf.info().Core_Function_Code,
-     *lhs_token, second_node->asg_token()->vh());
+     *lhs_token, second_node->get_asg_token()->vh());
   break;
 
  case RZ_Graph_Call_T:
@@ -274,7 +274,7 @@ void RZ_ASG_Runner::proceed_run_from_node<2>(RZ_ASG_Result_Holder& rh,
 
  CAON_PTR_DEBUG(tNode ,rhs_node)
 
- caon_ptr<RZ_ASG_Token> rhs_token = rhs_node->asg_token();
+ caon_ptr<RZ_ASG_Token> rhs_token = rhs_node->get_asg_token();
  CAON_PTR_DEBUG(RZ_ASG_Token ,rhs_token)
 
  RZ_ASG_Value_Holder lhs_vh;
@@ -361,14 +361,14 @@ void RZ_ASG_Runner::proceed_run_from_node<2>(RZ_ASG_Result_Holder& rh,
  case RZ_Graph_Call_TV:
   RZ_ASG_Core_Runner::run<RZ_Graph_Call_TV>
     (rh, ccf.info().Core_Function_Code,
-     *lhs_node->asg_token(),
+     *lhs_node->get_asg_token(),
      rhs_vh);
   break;
 
  case RZ_Graph_Call_TC:
   RZ_ASG_Core_Runner::run<RZ_Graph_Call_TC>
     (rh, ccf.info().Core_Function_Code,
-     *lhs_node->asg_token(),
+     *lhs_node->get_asg_token(),
      rhs_vh);
   break;
 
@@ -378,14 +378,14 @@ void RZ_ASG_Runner::proceed_run_from_node<2>(RZ_ASG_Result_Holder& rh,
    rh.flags.has_held_value = false;
    RZ_ASG_Core_Runner::run<RZ_Graph_Call_CT>
     (rh, ccf.info().Core_Function_Code,
-     rh.value_holder(), *lhs_node->asg_token());
+     rh.value_holder(), *lhs_node->get_asg_token());
   }
   else
   {
    RZ_ASG_Core_Runner::run<RZ_Graph_Call_CT>
      (rh, ccf.info().Core_Function_Code,
       lhs_vh,
-      *rhs_node->asg_token());
+      *rhs_node->get_asg_token());
   }
   break;
 
@@ -403,14 +403,14 @@ void RZ_ASG_Runner::prepare_run_from_node<2>(int generation,
 {
  if(lhs_node)
  {
-  caon_ptr<RZ_ASG_Token> lhst = lhs_node->asg_token();
+  caon_ptr<RZ_ASG_Token> lhst = lhs_node->get_asg_token();
   CAON_PTR_DEBUG(RZ_ASG_Token ,lhst)
   CAON_DEBUG_NOOP
  }
 
 // CAON_PTR_DEBUG(tNode ,rhs_node)
 
-// caon_ptr<RZ_ASG_Token> rhs_token = rhs_node->asg_token();
+// caon_ptr<RZ_ASG_Token> rhs_token = rhs_node->get_asg_token();
 // CAON_PTR_DEBUG(RZ_ASG_Token ,rhs_token)
 
 // RZ_ASG_Value_Holder rhs_vh;
@@ -504,7 +504,7 @@ void RZ_ASG_Runner::prepare_run_from_node<2>(int generation,
 
  CAON_PTR_DEBUG(tNode ,rhs_node)
 
- caon_ptr<RZ_ASG_Token> rhs_token = rhs_node->asg_token();
+ caon_ptr<RZ_ASG_Token> rhs_token = rhs_node->get_asg_token();
  CAON_PTR_DEBUG(RZ_ASG_Token ,rhs_token)
 
  RZ_ASG_Value_Holder lhs_vh;
@@ -590,14 +590,14 @@ void RZ_ASG_Runner::prepare_run_from_node<2>(int generation,
  case RZ_Graph_Call_TV:
   RZ_ASG_Core_Runner::run<RZ_Graph_Call_TV>
     (rh, ccf.info().Core_Function_Code,
-     *lhs_node->asg_token(),
+     *lhs_node->get_asg_token(),
      rhs_vh);
   break;
 
  case RZ_Graph_Call_TC:
   RZ_ASG_Core_Runner::run<RZ_Graph_Call_TC>
     (rh, ccf.info().Core_Function_Code,
-     *lhs_node->asg_token(),
+     *lhs_node->get_asg_token(),
      rhs_vh);
   break;
 
@@ -607,14 +607,14 @@ void RZ_ASG_Runner::prepare_run_from_node<2>(int generation,
    rh.flags.has_held_value = false;
    RZ_ASG_Core_Runner::run<RZ_Graph_Call_CT>
     (rh, ccf.info().Core_Function_Code,
-     rh.value_holder(), *lhs_node->asg_token());
+     rh.value_holder(), *lhs_node->get_asg_token());
   }
   else
   {
    RZ_ASG_Core_Runner::run<RZ_Graph_Call_CT>
      (rh, ccf.info().Core_Function_Code,
       lhs_vh,
-      *rhs_node->asg_token());
+      *rhs_node->get_asg_token());
   }
   break;
 

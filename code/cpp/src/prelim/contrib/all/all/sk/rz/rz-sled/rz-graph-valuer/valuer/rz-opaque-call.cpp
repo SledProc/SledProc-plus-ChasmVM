@@ -22,6 +22,6 @@ caon_ptr<RZ_ASG_Token> RZ_Opaque_Call::get_entry_token()
 {
  caon_ptr<RZ_ASG_Token> result = nullptr;
  CAON_PTR_DEBUG(ChasmRZ_Node ,entry_node_)
- result = entry_node_->asg_token();
+ result = entry_node_->get_asg_token();
  return result;
 }

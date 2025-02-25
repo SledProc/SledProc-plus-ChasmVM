@@ -60,7 +60,14 @@ caon_ptr<RZ_ASG_Token> RZ_ASG_Result_Holder::function_token()
  //    a context where a function node will
  //    have been pushed on, but ...
  if(caon_ptr<tNode> n = function_node())
-  return n->chasm_rz_token()->asg_token();
+ {
+  CAON_PTR_DEBUG(tNode ,n)
+  if(caon_ptr<ChasmRZ_Token> tok = n->chasm_rz_token())
+  {
+   CAON_PTR_DEBUG(ChasmRZ_Token ,tok)
+   return tok->asg_token();
+  }
+ }
  return nullptr;
 }
 

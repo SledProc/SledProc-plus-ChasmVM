@@ -20,6 +20,8 @@
 
 #include "token/chasm-rz-token.h"
 
+#include "rz-graph-core/kernel/grammar/chasm-rz-node-factory.h"
+
 #include "rzns.h"
 
 
@@ -27,7 +29,9 @@ USING_RZNS(RZ_Core)
 
 
 ChasmRZ_ASG_Output::ChasmRZ_ASG_Output(caon_ptr<ChasmRZ_Document> document)
- : document_(document), Cf(ChasmRZ_Frame::instance("casement")),
+ : document_(document),
+    node_factory_(ChasmRZ_Node_Factory::instance()),
+    Cf(ChasmRZ_Frame::instance("casement")),
     Sf(ChasmRZ_Frame::instance("semantic")),
     Tf(ChasmRZ_Frame::instance("traversal")),
     Qy(ChasmRZ_Query::instance())
@@ -35,6 +39,7 @@ ChasmRZ_ASG_Output::ChasmRZ_ASG_Output(caon_ptr<ChasmRZ_Document> document)
 
 }
 
+#define in_Sf Sf,
 #define in_Cf Cf,
 #define in_Tf Tf,
 
@@ -75,12 +80,36 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
  caon_ptr<ChasmRZ_Block_Entry> rbe = nullptr;
  caon_ptr<ChasmRZ_Tuple_Info> rde = nullptr;
 
- if(caon_ptr<ChasmRZ_Token> token = node.chasm_rz_token())
+ caon_ptr<ChasmRZ_Token> token = node.chasm_rz_token();
+
+ caon_ptr<ChasmRZ_Node> rat_node = nullptr;
+
+ if(!token)
+   init_token(node, rat_node);
+
+
+// if(!tok)
+// {
+//  caon_ptr<RZ_Observer_Function> rzof = node.rz_compiler_function();
+//  if(rzof)
+//  {
+//   rzof->init_get_asg_token();
+//   tok = rzof->get_asg_token();
+//  }
+//  caon_ptr<ChasmRZ_Node> token_node =
+// }
+
+
+ if(token)
  {
   init_token(*token);
   report_token(qts, *token);
  }
-
+ else if(rat_node)
+ {
+  CAON_PTR_DEBUG(ChasmRZ_Node ,rat_node)
+  &node <<Sf/Qy.Generated_ASG_Token>> rat_node;
+ }
  else if(rce = node.chasm_rz_call_entry())
  {
  }
@@ -99,7 +128,7 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
  caon_ptr<ChasmRZ_Node> pnode = &node;
 #endif
 
- if(caon_ptr<ChasmRZ_Node> next_node = Qy.Run_Call_Sequence(in_Cf pnode))
+ if(caon_ptr<ChasmRZ_Node> next_node = Qy.Run_Call_Sequence(in_Tf pnode))
  {
   qts << ' ';
   output_from_node(qts, *next_node, indent + 1);

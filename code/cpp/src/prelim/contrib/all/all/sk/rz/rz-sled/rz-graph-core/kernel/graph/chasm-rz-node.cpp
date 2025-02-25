@@ -52,12 +52,13 @@ void ChasmRZ_Node::each_connection(std::function<void(ChasmRZ_Frame* fr, const C
 }
 
 
-caon_ptr<RZ_ASG_Token> ChasmRZ_Node::asg_token()
+caon_ptr<RZ_ASG_Token> ChasmRZ_Node::get_asg_token()
 {
  if(chasm_rz_token())
  {
   return chasm_rz_token()->asg_token();
  }
+
  return nullptr;
 }
 

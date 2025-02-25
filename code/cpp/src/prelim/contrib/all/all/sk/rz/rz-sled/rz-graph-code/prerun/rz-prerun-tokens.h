@@ -34,22 +34,26 @@ class RZ_Prerun_Tokens : public ChasmRZ_ASG_Output
 public:
 
  RZ_Prerun_Tokens(caon_ptr<ChasmRZ_Document> document);
- void init_token(ChasmRZ_Token& token);
+
+ virtual void init_token(ChasmRZ_Token& token) Q_DECL_OVERRIDE;
+
+ virtual void init_token(const ChasmRZ_Node& node, caon_ptr<ChasmRZ_Node>& rat_node) Q_DECL_OVERRIDE;
+
 
  virtual void report_token(QTextStream& qts,
-  const ChasmRZ_Token& token);
+  const ChasmRZ_Token& token) Q_DECL_OVERRIDE;
 
  virtual void report_tuple_info_entry(QTextStream& qts,
-  const ChasmRZ_Tuple_Info& rti, caon_ptr<ChasmRZ_Call_Entry> rce_ptr = nullptr);
+  const ChasmRZ_Tuple_Info& rti, caon_ptr<ChasmRZ_Call_Entry> rce_ptr = nullptr) Q_DECL_OVERRIDE;
 
  virtual void report_tuple_info_leave(QTextStream& qts,
-  const ChasmRZ_Tuple_Info& rti, caon_ptr<ChasmRZ_Call_Entry> rce_ptr = nullptr);
+  const ChasmRZ_Tuple_Info& rti, caon_ptr<ChasmRZ_Call_Entry> rce_ptr = nullptr) Q_DECL_OVERRIDE;
 
  virtual void report_call_entry(QTextStream& qts,
-  const ChasmRZ_Call_Entry& rce) override;
+  const ChasmRZ_Call_Entry& rce) Q_DECL_OVERRIDE;
 
  virtual void report_call_leave(QTextStream& qts,
-  const ChasmRZ_Call_Entry& rce) override;
+  const ChasmRZ_Call_Entry& rce) Q_DECL_OVERRIDE;
 
 
 };

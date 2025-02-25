@@ -18,7 +18,7 @@
 #include "rz-graph-core/code/chasm-rz-block-entry.h"
 #include "rz-graph-core/code/chasm-rz-call-entry.h"
 
-#include "rz-graph-core/token/rz-compiler-function.h"
+#include "rz-graph-core/token/rz-observer-function.h"
 
 
 #include "textio.h"
@@ -31,7 +31,6 @@ USING_KANS(TextIO)
 
 RZ_Prerun_Setup::RZ_Prerun_Setup(caon_ptr<ChasmRZ_Document> document)
  : ChasmRZ_ASG_Output(document),
-   node_factory_(ChasmRZ_Node_Factory::instance()),
    traverser_(*document->graph())
 {
 
@@ -75,7 +74,7 @@ void RZ_Prerun_Setup::write_report(QTextStream& qts)
  caon_ptr<ChasmRZ_Call_Entry> rce = new ChasmRZ_Call_Entry(node_factory_.make_call_entry_id());
  caon_ptr<ChasmRZ_Node> rce_node = node_factory_.make_new_node(rce);
 
- caon_ptr<RZ_Compiler_Function> rcf = new RZ_Compiler_Function("lex-decl");
+ caon_ptr<RZ_Observer_Function> rcf = new RZ_Observer_Function("lex-decl");
  caon_ptr<ChasmRZ_Node> rcf_node = node_factory_.make_new_node(rcf);
 
  root_node <<Tf/Qy.Run_Block_Entry>> rbe_node;

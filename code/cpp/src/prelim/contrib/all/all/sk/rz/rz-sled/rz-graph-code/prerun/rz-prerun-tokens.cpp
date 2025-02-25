@@ -11,6 +11,13 @@
 
 #include "rz-graph-core/token/chasm-rz-token.h"
 
+#include "rz-graph-core/token/rz-observer-function.h"
+#include "rz-graph-core/token/rz-block-level-type-declaration.h"
+
+#include "rz-graph-core/kernel/graph/chasm-rz-node.h"
+
+#include "rz-graph-core/kernel/grammar/chasm-rz-node-factory.h"
+
 USING_RZNS(RZ_Core)
 USING_RZNS(GBuild)
 
@@ -21,6 +28,51 @@ RZ_Prerun_Tokens::RZ_Prerun_Tokens(caon_ptr<ChasmRZ_Document> document)
 
 }
 
+void RZ_Prerun_Tokens::init_token(const ChasmRZ_Node& node, caon_ptr<ChasmRZ_Node>& rat_node)
+{
+ caon_ptr<RZ_ASG_Token> rat;
+ QString label;
+ QString label_template = "(%1)";
+
+ switch (node.type_code())
+ {
+ case ChasmRZ_Node::Type_Code::Block_Level_Type_Declaration:
+  {
+   caon_ptr<RZ_Block_Level_Type_Declaration> blt = node.block_level_type_declaration_Unchecked();
+   init_token(*blt->token());
+   rat = blt->token()->asg_token();
+   label = label_template.arg(blt->token_string_summary());
+  }
+  break;
+
+ case ChasmRZ_Node::Type_Code::Observer_Function:
+  {
+   caon_ptr<RZ_Observer_Function> rzof  = node.rz_observer_function_Unchecked();
+   CAON_PTR_DEBUG(RZ_Observer_Function ,rzof)
+
+   rzof->init_asg_token();
+   rat = rzof->asg_token();
+   label = label_template.arg("<%1>"_qt.arg(rzof->name()));
+  }
+  break;
+
+ default:
+  break;
+ }
+
+ if(rat)
+ {
+  rat_node = node_factory_.make_new_node(rat, label);
+
+ }
+
+// if(caon_ptr<RZ_Observer_Function> rzof  = node.rz_compiler_function())
+// {
+//  rzof->init_get_asg_token();
+//  rat = rzof->get_asg_token();
+// }
+
+}
 
 void RZ_Prerun_Tokens::init_token(ChasmRZ_Token& token)
 {

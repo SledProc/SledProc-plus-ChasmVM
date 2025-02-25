@@ -30,7 +30,7 @@ HEADERS += \
   $$SRC_DIR/kernel/dominion/types.h \
   $$SRC_DIR/kernel/dominion/connectors.h \
   $$SRC_DIR/token/chasm-rz-token.h \
-  $$SRC_DIR/token/rz-compiler-function.h \
+  $$SRC_DIR/token/rz-observer-function.h \
   $$SRC_DIR/token/rz-block-level-type-declaration.h \
   $$SRC_DIR/kernel/graph/chasm-rz-node.h \
   $$SRC_DIR/kernel/graph/chasm-rz-node-proxy.h \
@@ -75,7 +75,7 @@ SOURCES += \
   $$SRC_DIR/kernel/chasm-rz-dominion.cpp \
   $$SRC_DIR/kernel/chasm-rz-root.cpp \
   $$SRC_DIR/token/chasm-rz-token.cpp \
-  $$SRC_DIR/token/rz-compiler-function.cpp \
+  $$SRC_DIR/token/rz-observer-function.cpp \
   $$SRC_DIR/token/rz-block-level-type-declaration.cpp \
   $$SRC_DIR/kernel/graph/chasm-rz-node.cpp \
   $$SRC_DIR/kernel/graph/chasm-rz-node-proxy.cpp \

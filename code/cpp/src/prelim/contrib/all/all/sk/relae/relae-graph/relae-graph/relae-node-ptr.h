@@ -335,6 +335,8 @@ public:
 
 public:
 
+ typedef Type_Codes_type Type_Code;
+
  ACCESSORS(Type_Codes_type ,type_code)
  ACCESSORS(VERTEX_Type ,vertex)
 
@@ -414,6 +416,12 @@ public:
 
  template<typename T>
  caon_ptr<T> as()
+ {
+  return vertex_.template as<T>();
+ }
+
+ template<typename T>
+ caon_ptr<T> as() const
  {
   return vertex_.template as<T>();
  }

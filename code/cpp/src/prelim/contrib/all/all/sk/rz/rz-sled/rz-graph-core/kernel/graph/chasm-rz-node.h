@@ -48,7 +48,7 @@ public:
  ACCESSORS__RGET(QVector<caon_ptr<ChasmRZ_Node>> ,hyponodes)
  ACCESSORS(caon_ptr<ChasmRZ_Node> ,parent)
 
- caon_ptr<RZ_ASG_Token> asg_token();
+ caon_ptr<RZ_ASG_Token> get_asg_token();
 
  void debug_connections();
 

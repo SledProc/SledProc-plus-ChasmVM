@@ -63,7 +63,7 @@
 #include "rz-code-elements/rz-expression-review.h"
 
 
-#include "rz-graph-core/token/rz-compiler-function.h"
+#include "rz-graph-core/token/rz-observer-function.h"
 
 
 #include "rzns.h"
@@ -110,6 +110,8 @@ void RZ_ASG_Visitor::prepare_rz_path_handlers_output(QString handlers)
 
 #define in_Cf Cf,
 #define in_Tf Tf,
+#define in_Sf Sf,
+
 
 void RZ_ASG_Visitor::add_initial_output_text(QString text)
 {
@@ -167,7 +169,7 @@ QString RZ_ASG_Visitor::get_mapkey_string(caon_ptr<ChasmRZ_Node> node)
  if(caon_ptr<tNode> mapkey_node = Qy.Run_Map_Key_Value(in_Cf node))
  {
   CAON_PTR_DEBUG(ChasmRZ_Node ,mapkey_node)
-  if(caon_ptr<RZ_ASG_Token> token = mapkey_node->asg_token())
+  if(caon_ptr<RZ_ASG_Token> token = mapkey_node->get_asg_token())
   {
    return token->asg_string_value();
   }
@@ -728,7 +730,7 @@ RZ_ASG_Visitor::Next_Node_Premise RZ_ASG_Visitor::get_cross_node(caon_ptr<ChasmR
    CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,rce)
    return Next_Node_Premise::Expression;
   }
-  else if(caon_ptr<RZ_ASG_Token> tok = result->asg_token())
+  else if(caon_ptr<RZ_ASG_Token> tok = result->get_asg_token())
   {
    CAON_PTR_DEBUG(RZ_ASG_Token ,tok)
    return Next_Node_Premise::Normal;
@@ -925,7 +927,7 @@ caon_ptr<tNode> RZ_ASG_Visitor::normalize_run_casement(int depth, int pos, tNode
   }
  }
  caon_ptr<tNode> function_node = &start_node;
- if(caon_ptr<RZ_ASG_Token> tok = start_node.asg_token())
+ if(caon_ptr<RZ_ASG_Token> tok = start_node.get_asg_token())
  {
   CAON_PTR_DEBUG(RZ_ASG_Token ,tok)
   CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,current_call_entry)
@@ -1006,6 +1008,18 @@ caon_ptr<tNode> RZ_ASG_Visitor::normalize_run_casement(int depth, int pos, tNode
   //     well not sure?
  normalize_nested_run_call(srce, depth, *function_node);
  return nullptr;
+}
+
+void RZ_ASG_Visitor::check_find_asg_token(caon_ptr<RZ_ASG_Token>& result, caon_ptr<tNode> node)
+{
+ if(!result)
+ {
+  if(caon_ptr<ChasmRZ_Node> alt_node = Qy.Generated_ASG_Token(in_Sf node))
+  {
+   CAON_PTR_DEBUG(ChasmRZ_Node ,alt_node)
+   result = alt_node->asg_token();
+  }
+ }
 }
 
 
@@ -1129,17 +1143,23 @@ caon_ptr<tNode> RZ_ASG_Visitor::normalize_run_call(int depth, int pos, tNode& pr
  }
  caon_ptr<tNode> function_node = &start_node;
 
- caon_ptr<RZ_ASG_Token> tok = start_node.asg_token();
+ caon_ptr<RZ_ASG_Token> tok = start_node.get_asg_token();
 
- caon_ptr<RZ_Compiler_Function> rcf;
+ check_find_asg_token(tok, function_node);
 
- if(!tok)
- {
-  rcf = start_node.rz_compiler_function();
 
- }
+ // if(!tok)
+// {
+//  caon_ptr<RZ_Observer_Function> rzof;
+//  rzof = start_node.rz_compiler_function();
+//  if(rzof)
+//  {
+//   rzof->init_get_asg_token();
+//   tok = rzof->get_asg_token();
+//  }
+// }
 
- CAON_PTR_DEBUG(RZ_Compiler_Function ,rcf)
+// CAON_PTR_DEBUG(RZ_Observer_Function ,rzof)
 
 
  if(tok)
@@ -1326,7 +1346,7 @@ caon_ptr<RZ_ASG_Visitor::tNode>
    &start_node << Cf/Qy.Element_Association >> stn;
   }
 
-  caon_ptr<RZ_ASG_Token> tok = start_node.asg_token();
+  caon_ptr<RZ_ASG_Token> tok = start_node.get_asg_token();
   CAON_PTR_DEBUG(RZ_ASG_Token ,tok)
   tok->flags.is_likely_function_symbol = true;
   tok->flags.is_function_expression_entry = true;
@@ -1353,7 +1373,7 @@ caon_ptr<RZ_ASG_Visitor::tNode>
  //     the function token.
  for(caon_ptr<tNode> n = &current_node; n; n = Qy.Run_Call_Sequence(in_Cf n))
  {
-  if(caon_ptr<RZ_ASG_Token> tok = n->asg_token())
+  if(caon_ptr<RZ_ASG_Token> tok = n->get_asg_token())
   {
    if(tok->flags.is_call_arrow)
    {
@@ -1419,7 +1439,7 @@ caon_ptr<RZ_ASG_Visitor::tNode>
   &start_node << Cf/Qy.Element_Association >> stn;
  }
 
- caon_ptr<RZ_ASG_Token> stok = start_node.asg_token();
+ caon_ptr<RZ_ASG_Token> stok = start_node.get_asg_token();
  stok->flags.is_function_expression_entry = true;
  stok->flags.is_likely_function_symbol = true;
  return &start_node;
@@ -1574,7 +1594,7 @@ void RZ_ASG_Visitor::check_cross_do(caon_ptr<ChasmRZ_Node> n)
   if(caon_ptr<ChasmRZ_Node> arn = Qy.Run_Call_Sequence(in_Cf don))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,arn)
-   if(caon_ptr<RZ_ASG_Token> rzlt = arn->asg_token())
+   if(caon_ptr<RZ_ASG_Token> rzlt = arn->get_asg_token())
    {
     CAON_PTR_DEBUG(RZ_ASG_Token ,rzlt)
     if(caon_ptr<ChasmRZ_Node> fdef_node = Qy.Run_Function_Def_Entry(in_Cf arn))
@@ -1704,7 +1724,7 @@ void
   if(caon_ptr<tNode> start_node = Qy.Run_Data_Entry(in_Cf &data_node))
   {
    CAON_PTR_DEBUG(ChasmRZ_Node ,start_node)
-   if(caon_ptr<RZ_ASG_Token> tok = start_node->asg_token())
+   if(caon_ptr<RZ_ASG_Token> tok = start_node->get_asg_token())
    {
     QString str = tok->string_value();
     start_node->debug_connections();
@@ -1741,7 +1761,7 @@ caon_ptr<RZ_ASG_Visitor::tNode>
 
 void RZ_ASG_Visitor::check_function_symbol(caon_ptr<tNode> function_node)
 {
- if(caon_ptr<RZ_ASG_Token> tok = function_node->asg_token())
+ if(caon_ptr<RZ_ASG_Token> tok = function_node->get_asg_token())
  {
   caon_ptr<RZ_ASG_Core_Casement_Function> ccf;
   identify_function(tok->string_value(), ccf);
@@ -1778,11 +1798,11 @@ void RZ_ASG_Visitor::set_token_type_object(
 void RZ_ASG_Visitor::anticipate(tNode& start_node)
 {
  caon_ptr<tNode> n;
- if(n = Qy.Run_Call_Entry(in_Cf &start_node))
+ if(n = Qy.Run_Call_Entry(in_Tf &start_node))
  {
   anticipate_run_call(*n);
  }
- else if(n = Qy.Run_Block_Entry(in_Cf &start_node))
+ else if(n = Qy.Run_Block_Entry(in_Tf &start_node))
  {
   anticipate_block(*n);
  }
@@ -1831,18 +1851,18 @@ void RZ_ASG_Visitor::anticipate_block(tNode& start_node)
    rbe->set_lexical_scope(valuer_->current_lexical_scope());
   }
   caon_ptr<tNode> call_entry_node;
-  if(call_entry_node = Qy.Run_Call_Entry(in_Cf &start_node))
+  if(call_entry_node = Qy.Run_Call_Entry(in_Tf &start_node))
   {
    CAON_PTR_DEBUG(tNode ,call_entry_node)
 
    anticipate_run_call(*call_entry_node);
 
-   while(call_entry_node = Qy.Run_Cross_Sequence(in_Cf call_entry_node))
+   while(call_entry_node = Qy.Run_Cross_Sequence(in_Tf call_entry_node))
    {
     anticipate_run_call(*call_entry_node);
    }
   }
-  if(call_entry_node = Qy.Run_Cross_Sequence(in_Cf &start_node))
+  if(call_entry_node = Qy.Run_Cross_Sequence(in_Tf &start_node))
   {
    anticipate_run_call(*call_entry_node);
   }
@@ -1863,7 +1883,7 @@ QString RZ_ASG_Visitor::type_expression_from_node(caon_ptr<tNode> node)
   CAON_PTR_DEBUG(ChasmRZ_Node ,node)
   while(node)
   {
-   if(caon_ptr<RZ_ASG_Token> token = node->asg_token() )
+   if(caon_ptr<RZ_ASG_Token> token = node->get_asg_token() )
    {
     result += token->raw_text() + " ";
    }
@@ -1903,7 +1923,7 @@ int RZ_ASG_Visitor::run_core_pairs(int generation)
    return valuer_->core_pair_nodes().size();
  for(caon_ptr<tNode> n: valuer_->core_pair_nodes()[generation])
  {
-  caon_ptr<tNode> prn = Qy.Run_Core_Pair(in_Cf n);
+  caon_ptr<tNode> prn = Qy.Run_Core_Pair(in_Tf n);
   if(!prn)
     prn = Qy.Run_Nested_Core_Pair(in_Cf n);
   if(!prn)
@@ -2022,7 +2042,23 @@ void RZ_ASG_Visitor::check_anticipate(int generation,
  else
    function_node = &start_node;
 
- if(caon_ptr<RZ_ASG_Token> tok = function_node->asg_token())
+ caon_ptr<RZ_ASG_Token> tok = function_node->get_asg_token();
+
+
+ if(!tok)
+ {
+
+//  caon_ptr<RZ_Observer_Function> rzof;
+//  rzof = function_node->rz_observer_function();
+//  if(rzof)
+//  {
+//   tok = rzof->get_asg_token();
+//  }
+
+ }
+
+
+ if(tok)
  {
   CAON_PTR_DEBUG(RZ_ASG_Token ,tok)
   check_token_node_type(tok, function_node);
@@ -2035,16 +2071,20 @@ void RZ_ASG_Visitor::check_anticipate(int generation,
   caon_ptr<RZ_Type_Object> vto =  valuer_->type_variety().get_type_object(RZ_Run_Type_Code<RZ_ASG_Core_Casement_Function>::Value);
   CAON_PTR_DEBUG(RZ_Type_Object ,vto)
 
+  caon_ptr<RZ_ASG_Core_Casement_Function> ccf;
+
   if(tok->type_object() ==
    valuer_->type_variety().get_type_object(RZ_Run_Type_Code<RZ_ASG_Core_Casement_Function>::Value))
   {
-   caon_ptr<RZ_ASG_Core_Casement_Function> ccf =
-    tok->pRestore<RZ_ASG_Core_Casement_Function>();
+   //?caon_ptr<RZ_ASG_Core_Casement_Function>
+   ccf = tok->pRestore<RZ_ASG_Core_Casement_Function>();
    CAON_PTR_DEBUG(RZ_ASG_Core_Casement_Function ,ccf)
+
+   CAON_DEBUG_NOOP
   }
 
-  caon_ptr<RZ_ASG_Core_Casement_Function> ccf =
-    tok->pRestore<RZ_ASG_Core_Casement_Function>(valuer_->type_variety());
+// //?  caon_ptr<RZ_ASG_Core_Casement_Function> ccf =
+//    tok->pRestore<RZ_ASG_Core_Casement_Function>(valuer_->type_variety());
 
   if(ccf)
   {
@@ -2082,7 +2122,7 @@ caon_ptr<tNode> RZ_ASG_Visitor::anticipate_run_call(tNode& start_node)
  if(caon_ptr<ChasmRZ_Call_Entry> rce = start_node.chasm_rz_call_entry())
  {
   CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,rce)
-  if(caon_ptr<tNode> node = Qy.Run_Call_Entry(in_Cf &start_node))
+  if(caon_ptr<tNode> node = Qy.Run_Call_Entry(in_Tf &start_node))
   {
    if(!rce->flags.no_anticipate)
    {
@@ -2124,7 +2164,7 @@ caon_ptr<tNode> RZ_ASG_Visitor::anticipate_run_call(tNode& start_node)
   rh.clear_continue_proceed();
   if(rh.arity_node())
     function_node = rh.arity_node();
-  if(caon_ptr<RZ_ASG_Token> tok = function_node->asg_token())
+  if(caon_ptr<RZ_ASG_Token> tok = function_node->get_asg_token())
   {
    CAON_PTR_DEBUG(RZ_ASG_Token ,tok)
    check_token_node_type(tok, function_node);
