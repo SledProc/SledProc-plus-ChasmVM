@@ -273,7 +273,8 @@ struct Cast_Schedule
   {
    switch(CORE_FUNCTION_Code)
    {
-    // //?    RZ_TEMP_CASES__FUNCTION_CODE
+    // //?
+    RZ_TEMP_CASES__FUNCTION_CODE
    }
   }
 #undef RZ_TEMP_CASE

@@ -54,7 +54,7 @@ public:
   bool is_empty_tuple_indicator:1;
   bool is_do:1;
   bool is_do_mapkey:1;
-  bool is_cpp_scoped:1;
+//?  bool is_cpp_scoped:1;
   bool precedes_ghost_scope:1;
   bool not_entry:1;
   bool strong_ghost_scope:1;
@@ -65,6 +65,8 @@ public:
   bool follows_call_arrow:1;
   bool follows_elsif_token:1;
   bool precedes_call_arrow:1;
+
+  bool is_block_level_type_declaration:1;
  _flags
 
 

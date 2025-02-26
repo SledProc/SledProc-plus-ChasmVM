@@ -197,6 +197,8 @@ void ChasmRZ_Graph_Build::declare_lexical_symbol(QString raw_text)
  caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(raw_text);
  CAON_PTR_DEBUG(ChasmRZ_Token ,token)
 
+ token->flags.is_block_level_type_declaration = true;
+
  caon_ptr<RZ_Block_Level_Type_Declaration> blt = new RZ_Block_Level_Type_Declaration(token);
 
  caon_ptr<ChasmRZ_Node> blt_node = node_factory_.make_new_node(blt);
@@ -788,11 +790,13 @@ void ChasmRZ_Graph_Build::add_run_token(QString prefix, QString raw_text,
 
  caon_ptr<ChasmRZ_Node> node = node_factory_.make_new_node(token);
 
- if(tf == Token_Formations::Cpp_Scoped)
- {
-  token->flags.is_cpp_scoped = true;
- }
- else if(tf == Token_Formations::Do_Plus_Block)
+//?
+// if(tf == Token_Formations::Cpp_Scoped)
+// {
+//  token->flags.is_cpp_scoped = true;
+// } else
+
+ if(tf == Token_Formations::Do_Plus_Block)
  {
   token->flags.is_do = false;
   token->flags.precedes_ghost_scope = true;

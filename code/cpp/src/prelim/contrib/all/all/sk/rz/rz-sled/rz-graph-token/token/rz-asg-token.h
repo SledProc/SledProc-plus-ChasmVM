@@ -103,9 +103,9 @@ public:
   bool is_match_literal:1;
   bool is_empty_tuple_indicator:1;
   bool is_if_with_elsif:1;
-  bool is_cpp_scoped:1;
-  bool is_their:1;
-  bool is_your:1;
+//?  bool is_cpp_scoped:1;
+//?  bool is_their:1;
+//?  bool is_your:1;
   bool not_entry:1;
   bool is_via_type_assignment:1;
   bool is_type_symbol_in_declaration:1;
@@ -119,6 +119,8 @@ public:
   bool precedes_call_arrow:1;
   bool is_if_with_else:1;
   bool skip_phaon_out:1;
+
+  bool is_block_level_type_declaration:1;
  _flags
 
 private:
@@ -177,7 +179,7 @@ public:
  }
 
  caon_ptr<RZ_Type_Object> type_object();
- void set_type_object(RZ_Type_Object& cto);
+ void set_type_object(RZ_Type_Object& rto);
 
  RZ_ASG_Token(QString raw_text, u4 line_number = 0);
 

@@ -1923,9 +1923,9 @@ int RZ_ASG_Visitor::run_core_pairs(int generation)
    return valuer_->core_pair_nodes().size();
  for(caon_ptr<tNode> n: valuer_->core_pair_nodes()[generation])
  {
-  caon_ptr<tNode> prn = Qy.Run_Core_Pair(in_Tf n);
+  caon_ptr<tNode> prn = Qy.Run_Core_Pair(in_Sf n);
   if(!prn)
-    prn = Qy.Run_Nested_Core_Pair(in_Cf n);
+    prn = Qy.Run_Nested_Core_Pair(in_Sf n);
   if(!prn)
     continue;
 
@@ -2044,18 +2044,17 @@ void RZ_ASG_Visitor::check_anticipate(int generation,
 
  caon_ptr<RZ_ASG_Token> tok = function_node->get_asg_token();
 
+ check_find_asg_token(tok, function_node);
 
- if(!tok)
- {
-
-//  caon_ptr<RZ_Observer_Function> rzof;
-//  rzof = function_node->rz_observer_function();
-//  if(rzof)
-//  {
-//   tok = rzof->get_asg_token();
-//  }
-
- }
+// if(!tok)
+// {
+////  caon_ptr<RZ_Observer_Function> rzof;
+////  rzof = function_node->rz_observer_function();
+////  if(rzof)
+////  {
+////   tok = rzof->get_asg_token();
+////  }
+// }
 
 
  if(tok)

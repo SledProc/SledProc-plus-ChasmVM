@@ -100,13 +100,17 @@ void RZ_ASG_Token::init_asg_token(ChasmRZ_Token& chasm_rz_token)
  rat->flags.is_match_literal = chasm_rz_token.flags.is_match_literal;
  rat->flags.is_empty_tuple_indicator = chasm_rz_token.flags.is_empty_tuple_indicator;
 
- rat->flags.is_cpp_scoped = chasm_rz_token.flags.is_cpp_scoped;
+//? rat->flags.is_cpp_scoped = chasm_rz_token.flags.is_cpp_scoped;
+
  rat->flags.not_entry = chasm_rz_token.flags.not_entry;
  rat->flags.has_type_indicator = chasm_rz_token.flags.has_type_indicator;
 
  rat->flags.follows_call_arrow = chasm_rz_token.flags.follows_call_arrow;
 
  rat->flags.precedes_call_arrow = chasm_rz_token.flags.precedes_call_arrow;
+
+ rat->flags.is_block_level_type_declaration =
+   chasm_rz_token.flags.is_block_level_type_declaration;
 
 }
 
@@ -166,9 +170,9 @@ caon_ptr<RZ_Type_Object> RZ_ASG_Token::type_object()
  return vh_.type_object();
 }
 
-void RZ_ASG_Token::set_type_object(RZ_Type_Object& cto)
+void RZ_ASG_Token::set_type_object(RZ_Type_Object& rto)
 {
- vh_.set_type_object(&cto);
+ vh_.set_type_object(&rto);
 }
 
 void RZ_ASG_Token::mark_as_string_literal()

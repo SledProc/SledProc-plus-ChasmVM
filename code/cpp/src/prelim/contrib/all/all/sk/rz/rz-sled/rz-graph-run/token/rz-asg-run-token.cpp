@@ -56,7 +56,9 @@ void RZ_ASG_Run_Token::init_from(RZ_ASG_Token& rzlt)
  flags.is_do_mapkey = rzlt.flags.is_do_mapkey;
  flags.is_caserun_argument = rzlt.flags.is_block_entry_caserun;
  flags.has_mapkey = rzlt.flags.has_mapkey;
+
  flags.has_match_literal_value = rzlt.flags.is_match_literal;
+
  flags.is_if_with_elsif = rzlt.flags.is_if_with_elsif;
  flags.is_if_with_else = rzlt.flags.is_if_with_else;
  flags.is_elsif_with_elsif = rzlt.flags.is_elsif_with_elsif;
@@ -70,10 +72,13 @@ void RZ_ASG_Run_Token::init_from(RZ_ASG_Token& rzlt)
  flags.is_quoted = rzlt.flags.is_quoted;
  flags.is_keyword = rzlt.flags.is_keyword;
 
- flags.is_their = rzlt.flags.is_their;
- flags.is_cpp_scoped = rzlt.flags.is_cpp_scoped;
+//? flags.is_their = rzlt.flags.is_their;
+//? flags.is_cpp_scoped = rzlt.flags.is_cpp_scoped;
+
  flags.follows_call_arrow = rzlt.flags.follows_call_arrow;
 
+ //? flags.is_bloco
+ //?
 }
 
 

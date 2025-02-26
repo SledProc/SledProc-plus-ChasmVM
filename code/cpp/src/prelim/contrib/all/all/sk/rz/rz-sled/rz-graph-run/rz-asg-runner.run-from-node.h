@@ -83,6 +83,10 @@ void RZ_ASG_Runner::proceed_run_from_node<1>(RZ_ASG_Result_Holder& rh,
  caon_ptr<tNode> right_new_node = cp.right_new_node;
  caon_ptr<tNode> arity_value_node = cp.arity_value_node;
 
+
+ CAON_PTR_DEBUG(ChasmRZ_Node ,left_new_node)
+ CAON_PTR_DEBUG(ChasmRZ_Node ,next_node)
+
  caon_ptr<RZ_ASG_Token> lhs_token;
 
  if(left_new_node)
@@ -96,6 +100,8 @@ void RZ_ASG_Runner::proceed_run_from_node<1>(RZ_ASG_Result_Holder& rh,
   //?valuer_->mark_core_function_call_entry(start_node, *next_node);
   lhs_token = valuer_->get_token_from(*next_node);
  }
+
+ CAON_PTR_DEBUG(RZ_ASG_Token ,lhs_token)
 
  rh.hold(&start_node);
 

@@ -106,6 +106,8 @@ RZ_ASG_Valuer::RZ_ASG_Valuer(RZ_ASG_Visitor& rz_asg_visitor,
 }
 
 #define in_Cf Cf,
+#define in_Tf Tf,
+#define in_Sf Sf,
 
 
 void RZ_ASG_Valuer::init_core_function_redirect_code_map()
@@ -432,8 +434,11 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
  }
  caon_ptr<RZ_ASG_Token> tok = node->get_asg_token();
 
+ rz_asg_visitor_.check_find_asg_token(tok, node);
+
+
  if(!tok)
-  return;
+   return;
 
  CAON_PTR_DEBUG(RZ_ASG_Token ,tok)
 
@@ -463,8 +468,17 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
   type_numeric_token(*tok);
  else if(tok->flags.is_string_literal)
   type_string_token(*tok);
+
+//?
  else if(tok->flags.is_match_literal)
   type_match_literal_token(*tok);
+
+
+ else if(tok->flags.is_block_level_type_declaration)
+ {
+  tok->set_type_object(*type_variety_.get_type_object(RZ_Run_Types::Bltd));
+ }
+
 
  else if(tok->flags.is_declaration_arrow)
  {
@@ -706,7 +720,10 @@ void RZ_ASG_Valuer::check_node_value_proxy(caon_ptr<tNode>& node)
 
 caon_ptr<RZ_ASG_Token> RZ_ASG_Valuer::get_token_from(tNode& node)
 {
- if(caon_ptr<RZ_ASG_Token> result = node.get_asg_token())
+ caon_ptr<RZ_ASG_Token> result  = node.get_asg_token();
+ rz_asg_visitor_.check_find_asg_token(result, &node);
+
+ if(result)
  {
   return result;
  }
@@ -1785,7 +1802,7 @@ void RZ_ASG_Valuer::mark_core_function_call_entry(
    lhs_node,
    left_new_node, rhs_node, right_new_node, arity_value_node, nullptr};
  caon_ptr<tNode> cpn = new tNode(cp);
- function_node << Tf/Qy.Run_Core_Pair >> cpn;
+ function_node << Sf/Qy.Run_Core_Pair >> cpn;
 
  while(generation >= core_pair_nodes_.size())
  {
@@ -1806,9 +1823,9 @@ caon_ptr<RZ_ASG_Valuer_Core_Pair> RZ_ASG_Valuer::check_release_core_pair()
 {
  if(core_pair_function_node_)
  {
-  caon_ptr<tNode> prn = Qy.Run_Core_Pair(in_Cf core_pair_function_node_);
+  caon_ptr<tNode> prn = Qy.Run_Core_Pair(in_Sf core_pair_function_node_);
   if(!prn)
-    prn = Qy.Run_Nested_Core_Pair(in_Cf core_pair_function_node_);
+    prn = Qy.Run_Nested_Core_Pair(in_Sf core_pair_function_node_);
   core_pair_function_node_ = nullptr;
   if(!prn)
     return nullptr;
