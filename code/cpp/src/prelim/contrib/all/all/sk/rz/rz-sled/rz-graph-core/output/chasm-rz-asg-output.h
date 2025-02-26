@@ -12,6 +12,8 @@
 
 #include "relae-graph/relae-node-ptr.h"
 
+#include "global-types.h"
+
 #include "rz-graph-core/kernel/query/chasm-rz-query.h"
 #include "rz-graph-core/kernel/frame/chasm-rz-frame.h"
 
@@ -55,11 +57,25 @@ protected:
  ChasmRZ_Frame& Tf;
  const ChasmRZ_Query& Qy;
 
- caon_ptr<ChasmRZ_Node> get_root_node();
+ virtual caon_ptr<ChasmRZ_Node> get_root_node();
+
+ virtual caon_ptr<ChasmRZ_Node> get_root_node(QTextStream& qts)
+ {
+  return get_root_node();
+ }
+
+ virtual void output_from_individual_node(QTextStream& qts,
+   const ChasmRZ_Node& node, caon_ptr<ChasmRZ_Call_Entry>& rce, u2 indent);
 
  virtual void output_from_node(QTextStream& qts,
-  const ChasmRZ_Node& node, int indent = 0,
-  caon_ptr<ChasmRZ_Call_Entry> rce_ptr = nullptr);
+  const ChasmRZ_Node& node, u2 indent = 0, caon_ptr<ChasmRZ_Call_Entry> rce_ptr = nullptr);
+
+
+ virtual caon_ptr<ChasmRZ_Node> find_next_node_via_block_entry(caon_ptr<ChasmRZ_Node> node);
+ virtual caon_ptr<ChasmRZ_Node> find_next_node_via_entry(caon_ptr<ChasmRZ_Node> node);
+ virtual caon_ptr<ChasmRZ_Node> find_next_node_via_sequence(caon_ptr<ChasmRZ_Node> node);
+ virtual caon_ptr<ChasmRZ_Node> find_next_node_via_cross(caon_ptr<ChasmRZ_Node> node);
+
 
  virtual QString get_asg_out(const ChasmRZ_Token& token);
 

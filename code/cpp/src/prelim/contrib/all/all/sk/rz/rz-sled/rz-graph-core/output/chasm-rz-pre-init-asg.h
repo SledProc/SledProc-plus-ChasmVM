@@ -4,8 +4,8 @@
 //     (See accompanying file LICENSE_1_0.txt or copy at
 //           http://www.boost.org/LICENSE_1_0.txt)
 
-#ifndef CHASM_RZ_PChasmRZ_INIT_ASG__H
-#define CHASM_RZ_PChasmRZ_INIT_ASG__H
+#ifndef CHASM_RZ_PRE_INIT_ASG__H
+#define CHASM_RZ_PRE_INIT_ASG__H
 
 #include "accessors.h"
 #include "flags.h"
@@ -27,24 +27,24 @@ RZNS_(RZ_Core)
 class ChasmRZ_Document;
 class ChasmRZ_Node;
 
-class ChasmRZ_Pchasm_rz_Init_ASG : public ChasmRZ_ASG_Output
+class ChasmRZ_Pre_Init_ASG : public ChasmRZ_ASG_Output
 {
 public:
 
- ChasmRZ_Pchasm_rz_Init_ASG(caon_ptr<ChasmRZ_Document> document);
+ ChasmRZ_Pre_Init_ASG(caon_ptr<ChasmRZ_Document> document);
 
  virtual void output_from_node(QTextStream& qts,
-  const ChasmRZ_Node& node, int indent = 0,
-  caon_ptr<ChasmRZ_Call_Entry> rce_ptr = nullptr) override;
+  const ChasmRZ_Node& node, u2 indent = 0,
+  caon_ptr<ChasmRZ_Call_Entry> rce_ptr = nullptr)  Q_DECL_OVERRIDE;
 
  virtual void report_call_entry(QTextStream& qts,
-  const ChasmRZ_Call_Entry& rce) override;
+  const ChasmRZ_Call_Entry& rce)  Q_DECL_OVERRIDE;
 
  virtual void report_call_leave(QTextStream& qts,
-  const ChasmRZ_Call_Entry& rce) override;
+  const ChasmRZ_Call_Entry& rce)  Q_DECL_OVERRIDE;
 
 };
 
 _RZNS(RZ_Core)
 
-#endif //CHASM_RZ_PChasmRZ_INIT_ASG__H
+#endif //CHASM_RZ_PRE_INIT_ASG__H

@@ -10,25 +10,25 @@
 
 USING_RZNS(RZ_Core)
 
-ChasmRZ_Pchasm_rz_Init_ASG::ChasmRZ_Pchasm_rz_Init_ASG(caon_ptr<ChasmRZ_Document> document)
+ChasmRZ_Pre_Init_ASG::ChasmRZ_Pre_Init_ASG(caon_ptr<ChasmRZ_Document> document)
  : ChasmRZ_ASG_Output(document)
 {
 
 }
 
-void ChasmRZ_Pchasm_rz_Init_ASG::output_from_node(QTextStream& qts,
- const ChasmRZ_Node& node, int indent, caon_ptr<ChasmRZ_Call_Entry> rce_ptr)
+void ChasmRZ_Pre_Init_ASG::output_from_node(QTextStream& qts,
+ const ChasmRZ_Node& node, u2 indent, caon_ptr<ChasmRZ_Call_Entry> rce_ptr)
 {
  qts << "OK";
 }
 
 
-void ChasmRZ_Pchasm_rz_Init_ASG::report_call_entry(QTextStream& qts,
+void ChasmRZ_Pre_Init_ASG::report_call_entry(QTextStream& qts,
  const ChasmRZ_Call_Entry& rce)
 {
 }
 
-void ChasmRZ_Pchasm_rz_Init_ASG::report_call_leave(QTextStream& qts,
+void ChasmRZ_Pre_Init_ASG::report_call_leave(QTextStream& qts,
  const ChasmRZ_Call_Entry& rce)
 {
 }

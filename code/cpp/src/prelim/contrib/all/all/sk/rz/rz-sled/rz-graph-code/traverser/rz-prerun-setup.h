@@ -45,9 +45,19 @@ class RZ_Prerun_Setup : public ChasmRZ_ASG_Output
 {
 // ChasmRZ_Node_Factory& node_factory_;
 
+
+ void add_observer_function(caon_ptr<ChasmRZ_Node> start_node,
+   caon_ptr<ChasmRZ_Node> next_node, const ChasmRZ_Connectors& connector);
+
 public:
 
  RZ_Prerun_Setup(caon_ptr<ChasmRZ_Document> document);
+
+ virtual caon_ptr<ChasmRZ_Node> get_root_node(QTextStream& qts)  Q_DECL_OVERRIDE;
+
+ virtual void output_from_individual_node(QTextStream& qts,
+   const ChasmRZ_Node& node, caon_ptr<ChasmRZ_Call_Entry>& rce,
+   u2 indent = 0)  Q_DECL_OVERRIDE;
 
  virtual void report_token(QTextStream& qts,
   const ChasmRZ_Token& token)  Q_DECL_OVERRIDE;
@@ -64,7 +74,7 @@ public:
  virtual void report_call_leave(QTextStream& qts,
   const ChasmRZ_Call_Entry& rce) Q_DECL_OVERRIDE;
 
- virtual void write_report(QTextStream& qts) Q_DECL_OVERRIDE;
+// virtual void write_report(QTextStream& qts) Q_DECL_OVERRIDE;
 
 
 };

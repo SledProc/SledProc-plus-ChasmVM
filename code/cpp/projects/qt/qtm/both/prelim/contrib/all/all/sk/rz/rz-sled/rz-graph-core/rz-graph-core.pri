@@ -64,6 +64,8 @@ HEADERS += \
   $$SRC_DIR/scope/chasm-rz-lexical-scope.h \
   $$SRC_DIR/scope/chasm-rz-scope-system.h \
   $$SRC_DIR/traverser/chasm-rz-traverser.h \
+  $$SRC_DIR/traverser/chasm-rz-chiefs-stack.h \
+
 
 
 DEFINES += CAON_DEBUG
@@ -107,6 +109,7 @@ SOURCES += \
   $$SRC_DIR/scope/chasm-rz-lexical-scope.cpp \
   $$SRC_DIR/scope/chasm-rz-scope-system.cpp \
   $$SRC_DIR/traverser/chasm-rz-traverser.cpp \
+  $$SRC_DIR/traverser/chasm-rz-chiefs-stack.cpp \
 
 
 

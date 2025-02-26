@@ -70,14 +70,10 @@ void ChasmRZ_ASG_Output::write_report(QTextStream& qts)
 
 
 
-void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
- const ChasmRZ_Node& node, int indent, caon_ptr<ChasmRZ_Call_Entry> rce_ptr)
+void ChasmRZ_ASG_Output::output_from_individual_node(QTextStream& qts,
+  const ChasmRZ_Node& node, caon_ptr<ChasmRZ_Call_Entry>& rce, u2 indent)
 {
- CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,rce_ptr)
 
- QString padding(indent, ' ');
-
- caon_ptr<ChasmRZ_Call_Entry> rce = nullptr;
  caon_ptr<ChasmRZ_Block_Entry> rbe = nullptr;
  caon_ptr<ChasmRZ_Tuple_Info> rde = nullptr;
 
@@ -123,19 +119,54 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
 
  }
 
+}
+
+
+caon_ptr<ChasmRZ_Node> ChasmRZ_ASG_Output::find_next_node_via_entry(caon_ptr<ChasmRZ_Node> node)
+{
+ return Qy.Run_Call_Entry(in_Tf node);
+}
+
+caon_ptr<ChasmRZ_Node> ChasmRZ_ASG_Output::find_next_node_via_block_entry(caon_ptr<ChasmRZ_Node> node)
+{
+ return Qy.Run_Block_Entry(in_Tf node);
+}
+
+caon_ptr<ChasmRZ_Node> ChasmRZ_ASG_Output::find_next_node_via_sequence(caon_ptr<ChasmRZ_Node> node)
+{
+ return Qy.Run_Call_Sequence(in_Tf node);
+}
+
+caon_ptr<ChasmRZ_Node> ChasmRZ_ASG_Output::find_next_node_via_cross(caon_ptr<ChasmRZ_Node> node)
+{
+ return Qy.Run_Cross_Sequence(in_Tf node);
+}
+
+
+void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
+  const ChasmRZ_Node& node, u2 indent, caon_ptr<ChasmRZ_Call_Entry> rce_ptr)
+{
+ CAON_PTR_DEBUG(ChasmRZ_Call_Entry ,rce_ptr)
+
+ caon_ptr<ChasmRZ_Call_Entry> rce = nullptr;
+
+ output_from_individual_node(qts, node, rce, indent);
+
 #ifdef NO_CAON
   caon_ptr<ChasmRZ_Node> pnode = caon_ptr<ChasmRZ_Node>( &node );
 #else
  caon_ptr<ChasmRZ_Node> pnode = &node;
 #endif
 
- if(caon_ptr<ChasmRZ_Node> next_node = Qy.Run_Call_Sequence(in_Tf pnode))
+ QString padding(indent, ' ');
+
+ if(caon_ptr<ChasmRZ_Node> next_node = find_next_node_via_sequence(pnode))
  {
   qts << ' ';
   output_from_node(qts, *next_node, indent + 1);
  }
 
- if(caon_ptr<ChasmRZ_Node> next_node = Qy.Run_Call_Entry(in_Tf pnode))
+ if(caon_ptr<ChasmRZ_Node> next_node = find_next_node_via_entry(pnode))
  {
   CAON_PTR_DEBUG(ChasmRZ_Node ,next_node)
   if(rce)
@@ -147,7 +178,7 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
    report_call_leave(qts, *rce);
    qts << ')';
 
-   if(caon_ptr<ChasmRZ_Node> cross_node = Qy.Run_Cross_Sequence(in_Tf pnode))
+   if(caon_ptr<ChasmRZ_Node> cross_node = find_next_node_via_cross(pnode))
    {
     qts << ' ';
     output_from_node(qts, *cross_node, indent);
@@ -177,16 +208,14 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
     break;
    }
   }
-
-
  }
 
- if(caon_ptr<ChasmRZ_Node> next_node = Qy.Run_Block_Entry(in_Tf pnode))
+ if(caon_ptr<ChasmRZ_Node> next_node = find_next_node_via_block_entry(pnode))
  {
   qts << "\n" << padding;
   qts << "(block ";
   output_from_node(qts, *next_node, indent + 1);
-  if(caon_ptr<ChasmRZ_Node> cross_node = Qy.Run_Cross_Sequence(in_Tf next_node))
+  if(caon_ptr<ChasmRZ_Node> cross_node = find_next_node_via_cross(next_node))
   {
    output_from_node(qts, *cross_node, indent + 1);
   }
@@ -205,7 +234,7 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
     output_from_node(qts, *next_node, indent + 1);
    report_tuple_info_leave(qts, *rti, rce);
   }
-  if(caon_ptr<ChasmRZ_Node> cross_node = Qy.Run_Cross_Sequence(in_Cf pnode))
+  if(caon_ptr<ChasmRZ_Node> cross_node = find_next_node_via_cross(pnode))
   {
    qts << ' ';
    output_from_node(qts, *cross_node, indent);
@@ -221,9 +250,9 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
   //  Cross Sequence (not Block Entry)
   // probably implies type expression
 
-  if(caon_ptr<ChasmRZ_Node> call_entry_node = Qy.Run_Call_Entry(in_Cf next_node))
+  if(caon_ptr<ChasmRZ_Node> call_entry_node = find_next_node_via_entry(next_node))
   {
-   if(caon_ptr<ChasmRZ_Node> entry_node = Qy.Run_Cross_Sequence(in_Cf call_entry_node))
+   if(caon_ptr<ChasmRZ_Node> entry_node = find_next_node_via_cross(call_entry_node))
    {
     CAON_PTR_DEBUG(ChasmRZ_Node ,entry_node)
     output_from_node(qts, *entry_node);
@@ -234,5 +263,3 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
  //?qts << "\n\n============\n\n";
 
 }
-
-

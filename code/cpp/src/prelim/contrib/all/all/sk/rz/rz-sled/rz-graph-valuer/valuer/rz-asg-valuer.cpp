@@ -818,6 +818,8 @@ caon_ptr<ChasmRZ_Node> RZ_ASG_Valuer::register_block_level_type_declaration
 //  CAON_DEBUG_NOOP
 
   n->debug_connections();
+
+
  }
 }
 

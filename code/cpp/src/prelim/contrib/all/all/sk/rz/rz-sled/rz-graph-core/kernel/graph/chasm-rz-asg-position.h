@@ -26,6 +26,8 @@
 
 #include "scope/chasm-rz-scope-system.h"
 
+#include "traverser/chasm-rz-chiefs-stack.h"
+
 #include <QList>
 #include <QStack>
 #include <QMap>
@@ -85,12 +87,12 @@ private:
  ChasmRZ_Graph_Build* graph_build_;
  caon_ptr<ChasmRZ_Token>  active_run_token_;
 
- int current_depth_;
+ u2 current_depth_;
+
+ ChasmRZ_Chiefs_Stack chiefs_stack_;
 
 
 
- QStack<caon_ptr<ChasmRZ_Node>> block_chiefs_;
- QStack<caon_ptr<ChasmRZ_Node>> chiefs_;
  QStack<caon_ptr<ChasmRZ_Node>> over_chiefs_;
  QStack<caon_ptr<ChasmRZ_Node>> block_chiefs_ifs_;
 
@@ -108,15 +110,8 @@ private:
 
  caon_ptr<ChasmRZ_Call_Entry> current_closed_do_entry();
 
-
- void push_chief(caon_ptr<ChasmRZ_Node> node);
-
- void check_append_chief(caon_ptr<ChasmRZ_Node> new_chief);
- void check_pop_chief();
-
  void check_hold_closed_do_entry();
 
- caon_ptr<ChasmRZ_Node> pop_chief();
 
  void check_if_block_non_continue(caon_ptr<ChasmRZ_Token> token);
  void reset_if_block_pending_follow();
@@ -155,13 +150,19 @@ private:
 
  caon_ptr<ChasmRZ_Node> last_function_definition_arrow_node_;
 
- void read_chiefs();
- void read_block_chiefs();
  void read_over_chiefs();
+ void check_append_chief(caon_ptr<ChasmRZ_Node> new_chief);
 
  void add_block_entry_node(caon_ptr<ChasmRZ_Node> block_entry_node);
  void finalize_overall_if_block();
 
+ void check_pop_chief();
+
+ void read_chiefs();
+ void read_block_chiefs();
+
+
+// void check_hold_closed_do_entry();
 
  enum class Equalizer_Contexts {
   N_A, Number, String, Float, Ratio, Pointer, Function,
@@ -206,11 +207,6 @@ public:
 
  void add_block_level_term_entry(caon_ptr<ChasmRZ_Node> node,
    ChasmRZ_Anchored_Casement_Entry::Statement_Entry_Modes mode);
-
-
-
-
- ChasmRZ_Node& get_current_chief();
 
  caon_ptr<ChasmRZ_Node> check_implied_lambda_tuple(ChasmRZ_Function_Def_Kinds kind);
 
