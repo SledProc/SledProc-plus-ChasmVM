@@ -335,6 +335,8 @@ struct Cast_Schedule
   template<typename T1, typename T2>
   static void run(RZ_ASG_Result_Holder& rh, caon_ptr<T1> v1, caon_ptr<T2> v2)
   {
+   CAON_PTR_DEBUG(T2 ,v2)
+
    switch(v2->typecode())
    {
     case RZ_Run_Types::Not_Set: break;

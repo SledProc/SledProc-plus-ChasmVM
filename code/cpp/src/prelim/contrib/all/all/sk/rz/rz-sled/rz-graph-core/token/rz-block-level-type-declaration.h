@@ -31,9 +31,12 @@ class RZ_Block_Level_Type_Declaration
 {
  caon_ptr<ChasmRZ_Token> token_;
 
+ caon_ptr<ChasmRZ_Node> continuation_node_;
+
 public:
 
  ACCESSORS(caon_ptr<ChasmRZ_Token> ,token)
+ ACCESSORS(caon_ptr<ChasmRZ_Node> ,continuation_node)
 
  RZ_Block_Level_Type_Declaration(caon_ptr<ChasmRZ_Token> token);
 

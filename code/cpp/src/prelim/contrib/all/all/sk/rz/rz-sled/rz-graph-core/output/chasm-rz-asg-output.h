@@ -15,6 +15,9 @@
 #include "rz-graph-core/kernel/query/chasm-rz-query.h"
 #include "rz-graph-core/kernel/frame/chasm-rz-frame.h"
 
+#include "rz-graph-core/traverser/chasm-rz-traverser.h"
+
+
 #include <QString>
 #include <QTextStream>
 #include <QMap>
@@ -39,6 +42,8 @@ class ChasmRZ_Node_Factory;
 class ChasmRZ_ASG_Output
 {
 protected:
+
+ ChasmRZ_Traverser traverser_;
 
  caon_ptr<ChasmRZ_Document> document_;
 

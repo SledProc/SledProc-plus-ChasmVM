@@ -68,11 +68,15 @@ void ChasmRZ_Node::debug_connections()
  while(it.hasNext())
  {
   it.next();
-
-//?
-//  CAON_EVALUATE_DEBUG(ChasmRZ_Connectors ,key ,it.key())
-//  CAON_EVALUATE_DEBUG(ChasmRZ_Node ,value ,it.value())
-
+  Frame_type* fkey = it.key();
+  in_frame_targets_iterator_type fit = it.value();
+  while(fit.hasNext())
+  {
+   fit.next();
+   CAON_EVALUATE_DEBUG(ChasmRZ_Connectors ,key ,fit.key())
+   CAON_EVALUATE_DEBUG(ChasmRZ_Node ,value ,fit.value())
+   CAON_DEBUG_NOOP
+  }
  }
 }
 

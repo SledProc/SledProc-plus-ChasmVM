@@ -13,9 +13,6 @@
 
 #include "relae-graph/relae-node-ptr.h"
 
-#include "rz-graph-core/output/chasm-rz-asg-output.h"
-
-#include "rz-graph-core/kernel/graph/chasm-rz-graph.h"
 
 #include <QString>
 #include <QTextStream>
@@ -32,6 +29,8 @@ RZNS_(RZ_Core)
 class ChasmRZ_Document;
 class ChasmRZ_Node;
 class ChasmRZ_Graph;
+class ChasmRZ_Frame;
+class ChasmRZ_Query;
 
 
 class ChasmRZ_Traverser
@@ -46,9 +45,12 @@ class ChasmRZ_Traverser
 
 public:
 
+ // static ChasmRZ_Traverser& instance();
  ChasmRZ_Traverser(ChasmRZ_Graph& graph);
 
- caon_ptr<ChasmRZ_Node> find_root_entry(caon_ptr<ChasmRZ_Node> root_node);
+ caon_ptr<ChasmRZ_Node> find_root_entry(const caon_ptr<ChasmRZ_Node> root_node);
+
+ caon_ptr<ChasmRZ_Node> find_type_declaration_continuation(const caon_ptr<ChasmRZ_Node> node);
 
  void scan();
 

@@ -12,6 +12,8 @@
 
 #include "kernel/graph/chasm-rz-node.h"
 
+#include "kernel/query/chasm-rz-query.h"
+
 #include "textio.h"
 
 USING_RZNS(RZ_Core)
@@ -34,7 +36,9 @@ ChasmRZ_Traverser::ChasmRZ_Traverser(ChasmRZ_Graph& graph)
 #define in_Sf Sf,
 
 
-caon_ptr<ChasmRZ_Node> ChasmRZ_Traverser::find_root_entry(caon_ptr<ChasmRZ_Node> root_node)
+
+
+caon_ptr<ChasmRZ_Node> ChasmRZ_Traverser::find_root_entry(const caon_ptr<ChasmRZ_Node> root_node)
 {
  CAON_PTR_DEBUG(ChasmRZ_Node ,root_node)
 
@@ -54,8 +58,19 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Traverser::find_root_entry(caon_ptr<ChasmRZ_Node>
  return nullptr;
 }
 
-
-void ChasmRZ_Traverser::scan()
+caon_ptr<ChasmRZ_Node> ChasmRZ_Traverser::find_type_declaration_continuation(const caon_ptr<ChasmRZ_Node> node)
 {
+ CAON_PTR_DEBUG(ChasmRZ_Node ,node)
+
+ caon_ptr<ChasmRZ_Node> result = Qy.Type_Symbol_Declaration(in_Cf node);
+
+ CAON_PTR_DEBUG(ChasmRZ_Node ,result)
+
+ return result;
 }
+
+
+//void ChasmRZ_Traverser::scan()
+//{
+//}
 

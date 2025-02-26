@@ -125,7 +125,7 @@ public:
 
 private:
 
- u4 syntactic_depth_;
+ u1 syntactic_depth_;
  QString raw_text_;
  u4 line_number_;
 
@@ -136,7 +136,7 @@ private:
 public:
 
  ACCESSORS(QString ,raw_text)
- ACCESSORS(u4 ,syntactic_depth)
+ ACCESSORS(u1 ,syntactic_depth)
  ACCESSORS__RGET(RZ_ASG_Value_Holder ,vh)
  ACCESSORS(u4 ,line_number)
 

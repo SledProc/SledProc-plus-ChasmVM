@@ -10,6 +10,8 @@
 
 #include "rz-graph-core/token/chasm-rz-token.h"
 
+#include "rz-graph-valuer/valuer/rz-asg-valuer.h"
+
 
 #include <QStringList>
 
@@ -62,11 +64,17 @@ caon_ptr<RZ_ASG_Token> RZ_ASG_Result_Holder::function_token()
  if(caon_ptr<tNode> n = function_node())
  {
   CAON_PTR_DEBUG(tNode ,n)
+
   if(caon_ptr<ChasmRZ_Token> tok = n->chasm_rz_token())
   {
    CAON_PTR_DEBUG(ChasmRZ_Token ,tok)
    return tok->asg_token();
   }
+
+  caon_ptr<RZ_ASG_Token> result;
+  valuer_.check_find_asg_token(result, n);
+
+  return result;
  }
  return nullptr;
 }

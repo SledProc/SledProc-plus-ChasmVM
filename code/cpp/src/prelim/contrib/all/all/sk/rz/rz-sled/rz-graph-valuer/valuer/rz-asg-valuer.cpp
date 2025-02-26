@@ -67,6 +67,8 @@
 #include "scope/rz-asg-lexical-scope.h"
 #include "scope/rz-asg-logical-scope.h"
 
+#include "rz-graph-core/token/rz-block-level-type-declaration.h"
+
 
 #include <QStringList>
 
@@ -443,7 +445,7 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
  CAON_PTR_DEBUG(RZ_ASG_Token ,tok)
 
  if(tok->type_object())
-  return;
+   return;
  if(caon_ptr<tNode> value_node = Qy.Static_Init_Value(in_Cf node))
  {
   ChasmRZ_Dominion::Type_Codes tc = value_node->type_code();
@@ -477,6 +479,11 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
  else if(tok->flags.is_block_level_type_declaration)
  {
   tok->set_type_object(*type_variety_.get_type_object(RZ_Run_Types::Bltd));
+
+  if(caon_ptr<RZ_Block_Level_Type_Declaration> blt = node->block_level_type_declaration())
+  {
+   tok->set_value(blt);
+  }
  }
 
 
@@ -796,6 +803,27 @@ caon_ptr<RZ_Type_Object>
  if(type_objects_by_code_.find(node.type_code()) != type_objects_by_code_.end())
   return type_objects_by_code_[node.type_code()];
  return nullptr;
+}
+
+
+caon_ptr<ChasmRZ_Node> RZ_ASG_Valuer::register_block_level_type_declaration
+ (RZ_ASG_Token& function_token, RZ_ASG_Token& tok, RZ_Block_Level_Type_Declaration& blt,
+  caon_ptr<RZ_ASG_Logical_Scope> logs)
+{
+ current_lexical_scope_->add_symbol(tok);
+
+ if(caon_ptr<ChasmRZ_Node> n = blt.continuation_node())
+ {
+  CAON_PTR_DEBUG(ChasmRZ_Node ,n)
+//  CAON_DEBUG_NOOP
+
+  n->debug_connections();
+ }
+}
+
+void RZ_ASG_Valuer::check_find_asg_token(caon_ptr<RZ_ASG_Token>& result, caon_ptr<tNode> node)
+{
+ rz_asg_visitor_.check_find_asg_token(result, node);
 }
 
 

@@ -214,6 +214,8 @@ public:
 
 public:
 
+ RZ_ASG_Valuer(RZ_ASG_Visitor& rz_asg_visitor,
+  caon_ptr<RZ_Graph_Run_Embedder> = nullptr);
 
  ACCESSORS__RGET(RZ_Type_Variety ,type_variety)
  ACCESSORS__RGET(core_pairs_nodes_type ,core_pair_nodes)
@@ -226,8 +228,9 @@ public:
 
  ACCESSORS(caon_ptr<tNode> ,core_pair_function_node)
 
- RZ_ASG_Valuer(RZ_ASG_Visitor& rz_asg_visitor,
-  caon_ptr<RZ_Graph_Run_Embedder> = nullptr);
+
+ void check_find_asg_token(caon_ptr<RZ_ASG_Token>& result, caon_ptr<tNode> node);
+
 
  rz_asg_core_function_finder_type rz_asg_core_function_finder;
 
@@ -320,6 +323,12 @@ public:
  QString form_type_expression(caon_ptr<ChasmRZ_Node> entry_node);
 
  caon_ptr<tNode> register_user_precycle(QString name);
+
+
+ caon_ptr<ChasmRZ_Node> register_block_level_type_declaration
+  (RZ_ASG_Token& function_token, RZ_ASG_Token& tok, RZ_Block_Level_Type_Declaration& blt,
+   caon_ptr<RZ_ASG_Logical_Scope> logs = nullptr);
+
 
  caon_ptr<ChasmRZ_Node> register_lexical_symbol
   (RZ_ASG_Token& function_token, RZ_ASG_Token& tok, RZ_Opaque_Type_Symbol& ots,

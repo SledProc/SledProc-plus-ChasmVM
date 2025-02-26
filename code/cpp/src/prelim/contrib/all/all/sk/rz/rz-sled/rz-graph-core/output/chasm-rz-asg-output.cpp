@@ -30,6 +30,7 @@ USING_RZNS(RZ_Core)
 
 ChasmRZ_ASG_Output::ChasmRZ_ASG_Output(caon_ptr<ChasmRZ_Document> document)
  : document_(document),
+    traverser_(*document->graph()),
     node_factory_(ChasmRZ_Node_Factory::instance()),
     Cf(ChasmRZ_Frame::instance("casement")),
     Sf(ChasmRZ_Frame::instance("semantic")),

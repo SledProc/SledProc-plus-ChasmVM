@@ -30,8 +30,7 @@ USING_KANS(TextIO)
 
 
 RZ_Prerun_Setup::RZ_Prerun_Setup(caon_ptr<ChasmRZ_Document> document)
- : ChasmRZ_ASG_Output(document),
-   traverser_(*document->graph())
+ : ChasmRZ_ASG_Output(document)
 {
 
 }

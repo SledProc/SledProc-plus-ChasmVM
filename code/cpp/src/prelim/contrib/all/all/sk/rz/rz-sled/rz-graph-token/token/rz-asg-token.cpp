@@ -20,14 +20,16 @@
 USING_RZNS(GBuild)
 
 RZ_ASG_Token::RZ_ASG_Token(QString raw_text, Special_Constructor_Mode scm, u4 line_number)
- : Flags(0), raw_text_(raw_text), line_number_(line_number), out_(nullptr)
+ : Flags(0), raw_text_(raw_text), line_number_(line_number), out_(nullptr),
+   syntactic_depth_(0)
 {
 
 }
 
 
 RZ_ASG_Token::RZ_ASG_Token(QString raw_text, u4 line_number)
- : Flags(0), raw_text_(raw_text), line_number_(line_number), out_(nullptr)
+ : Flags(0), raw_text_(raw_text), line_number_(line_number), out_(nullptr),
+   syntactic_depth_(0)
 {
  if(raw_text_.endsWith('?'))
  {

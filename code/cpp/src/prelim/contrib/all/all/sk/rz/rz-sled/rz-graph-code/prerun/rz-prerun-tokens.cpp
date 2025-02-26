@@ -42,6 +42,16 @@ void RZ_Prerun_Tokens::init_token(const ChasmRZ_Node& node, caon_ptr<ChasmRZ_Nod
    init_token(*blt->token());
    rat = blt->token()->asg_token();
    label = label_template.arg(blt->token_string_summary());
+
+   caon_ptr<ChasmRZ_Node> cn = traverser_.find_type_declaration_continuation(&node);
+
+   CAON_PTR_DEBUG(ChasmRZ_Node ,cn)
+
+   if(cn)
+   {
+    blt->set_continuation_node(cn);
+   }
+
   }
   break;
 
