@@ -83,6 +83,8 @@ void ChasmRZ_ASG_Position::add_block_level_type_declaration_entry(caon_ptr<Chasm
 
 void ChasmRZ_ASG_Position::add_block_level_initialization_node(caon_ptr<ChasmRZ_Node> node)
 {
+ CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
+
  switch(position_state_)
  {
  case Position_States::Active_Type_Declaration:
@@ -100,6 +102,8 @@ void ChasmRZ_ASG_Position::add_block_level_initialization_node(caon_ptr<ChasmRZ_
 
 void ChasmRZ_ASG_Position::add_numeric_literal(caon_ptr<ChasmRZ_Node> token_node)
 {
+ CAON_PTR_DEBUG(ChasmRZ_Node ,current_node_)
+
  switch(position_state_)
  {
  case Position_States::Active_Anchor_Chief:
@@ -219,7 +223,7 @@ void ChasmRZ_ASG_Position::check_pop_chief()
   }
   return;
  }
- pop_chief();
+ current_node_ = pop_chief();
 
 #ifdef HIDE
  caon_ptr<ChasmRZ_Call_Entry> rce = current_node_->chasm_rz_call_entry();

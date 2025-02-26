@@ -62,6 +62,8 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Traverser::find_type_declaration_continuation(con
 {
  CAON_PTR_DEBUG(ChasmRZ_Node ,node)
 
+ node->debug_connections();
+
  caon_ptr<ChasmRZ_Node> result = Qy.Type_Symbol_Declaration(in_Cf node);
 
  CAON_PTR_DEBUG(ChasmRZ_Node ,result)

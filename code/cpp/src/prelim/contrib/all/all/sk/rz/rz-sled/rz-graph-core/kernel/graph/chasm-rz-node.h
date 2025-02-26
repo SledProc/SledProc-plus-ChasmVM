@@ -50,7 +50,7 @@ public:
 
  caon_ptr<RZ_ASG_Token> get_asg_token();
 
- void debug_connections();
+ void debug_connections() const;
 
  void each_connection(std::function<void(ChasmRZ_Frame* fr, const ChasmRZ_Connectors& connector,
   const ChasmRZ_Node&, const ChasmRZ_Connection* connection)> fn)  const;

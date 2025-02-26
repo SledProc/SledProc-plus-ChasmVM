@@ -62,7 +62,7 @@ caon_ptr<RZ_ASG_Token> ChasmRZ_Node::get_asg_token()
  return nullptr;
 }
 
-void ChasmRZ_Node::debug_connections()
+void ChasmRZ_Node::debug_connections() const
 {
  targets_iterator_type it(targets_);
  while(it.hasNext())
