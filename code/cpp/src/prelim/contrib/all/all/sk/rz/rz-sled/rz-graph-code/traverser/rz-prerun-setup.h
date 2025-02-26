@@ -72,7 +72,14 @@ public:
   const ChasmRZ_Call_Entry& rce) Q_DECL_OVERRIDE;
 
  virtual void report_call_leave(QTextStream& qts,
-  const ChasmRZ_Call_Entry& rce) Q_DECL_OVERRIDE;
+  const ChasmRZ_Call_Entry& rce)  Q_DECL_OVERRIDE;
+
+ virtual caon_ptr<ChasmRZ_Node> find_next_node_via_block_entry(caon_ptr<ChasmRZ_Node> node)  Q_DECL_OVERRIDE;
+ virtual caon_ptr<ChasmRZ_Node> find_next_node_via_entry(caon_ptr<ChasmRZ_Node> node)  Q_DECL_OVERRIDE;
+ virtual caon_ptr<ChasmRZ_Node> find_next_node_via_sequence(caon_ptr<ChasmRZ_Node> node)  Q_DECL_OVERRIDE;
+ virtual caon_ptr<ChasmRZ_Node> find_next_node_via_cross(caon_ptr<ChasmRZ_Node> node)  Q_DECL_OVERRIDE;
+
+
 
 // virtual void write_report(QTextStream& qts) Q_DECL_OVERRIDE;
 

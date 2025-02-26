@@ -32,6 +32,7 @@ ChasmRZ_ASG_Output::ChasmRZ_ASG_Output(caon_ptr<ChasmRZ_Document> document)
  : document_(document),
     traverser_(*document->graph()),
     node_factory_(ChasmRZ_Node_Factory::instance()),
+    active_node_for_reset_(nullptr),
     Cf(ChasmRZ_Frame::instance("casement")),
     Sf(ChasmRZ_Frame::instance("semantic")),
     Tf(ChasmRZ_Frame::instance("traversal")),
@@ -157,6 +158,12 @@ void ChasmRZ_ASG_Output::output_from_node(QTextStream& qts,
 #else
  caon_ptr<ChasmRZ_Node> pnode = &node;
 #endif
+
+ check_reset_active_node(pnode);
+
+
+ CAON_PTR_DEBUG(ChasmRZ_Node ,pnode)
+
 
  QString padding(indent, ' ');
 

@@ -58,6 +58,21 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_Traverser::find_root_entry(const caon_ptr<ChasmRZ
  return nullptr;
 }
 
+caon_ptr<ChasmRZ_Node> ChasmRZ_Traverser::find_block_level_cross_sequence(
+  const caon_ptr<ChasmRZ_Node> node)
+{
+ CAON_PTR_DEBUG(ChasmRZ_Node ,node)
+
+ node->debug_connections();
+
+ caon_ptr<ChasmRZ_Node> result = Qy.Block_Level_Term_Sequence(in_Cf node);
+
+ CAON_PTR_DEBUG(ChasmRZ_Node ,result)
+
+ return result;
+
+}
+
 caon_ptr<ChasmRZ_Node> ChasmRZ_Traverser::find_type_declaration_continuation(const caon_ptr<ChasmRZ_Node> node)
 {
  CAON_PTR_DEBUG(ChasmRZ_Node ,node)

@@ -52,6 +52,8 @@ public:
 
  caon_ptr<ChasmRZ_Node> find_type_declaration_continuation(const caon_ptr<ChasmRZ_Node> node);
 
+ caon_ptr<ChasmRZ_Node> find_block_level_cross_sequence(const caon_ptr<ChasmRZ_Node> node);
+
  void scan();
 
  // std::function<void(RZ_Dynamo_Output&)> fn

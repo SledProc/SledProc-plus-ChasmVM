@@ -87,8 +87,36 @@ void RZ_Prerun_Setup::output_from_individual_node(QTextStream& qts,
   &node <<Tf/Qy.Run_Block_Entry>> rbe_node;
 
   add_observer_function(rbe_node, next_node, Qy.Run_Call_Entry);
+
+  reset_active_node(next_node);
  }
 
+}
+
+
+caon_ptr<ChasmRZ_Node> RZ_Prerun_Setup::find_next_node_via_block_entry(caon_ptr<ChasmRZ_Node> node)
+{
+
+ return nullptr;
+}
+
+caon_ptr<ChasmRZ_Node> RZ_Prerun_Setup::find_next_node_via_entry(caon_ptr<ChasmRZ_Node> node)
+{
+
+ return nullptr;
+}
+
+caon_ptr<ChasmRZ_Node> RZ_Prerun_Setup::find_next_node_via_sequence(caon_ptr<ChasmRZ_Node> node)
+{
+ //?return Qy.Run_Cross_Sequence(in_Tf node);
+
+ return traverser_.find_block_level_cross_sequence(node);
+}
+
+caon_ptr<ChasmRZ_Node> RZ_Prerun_Setup::find_next_node_via_cross(caon_ptr<ChasmRZ_Node> node)
+{
+
+ return nullptr;
 }
 
 

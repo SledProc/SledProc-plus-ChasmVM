@@ -43,6 +43,8 @@ class ChasmRZ_Node_Factory;
 
 class ChasmRZ_ASG_Output
 {
+ caon_ptr<ChasmRZ_Node> active_node_for_reset_;
+
 protected:
 
  ChasmRZ_Traverser traverser_;
@@ -52,10 +54,25 @@ protected:
  ChasmRZ_Node_Factory& node_factory_;
 
 
+
  ChasmRZ_Frame& Cf;
  ChasmRZ_Frame& Sf;
  ChasmRZ_Frame& Tf;
  const ChasmRZ_Query& Qy;
+
+ virtual void reset_active_node(caon_ptr<ChasmRZ_Node> node)
+ {
+  active_node_for_reset_ = node;
+ }
+
+ virtual void check_reset_active_node(caon_ptr<ChasmRZ_Node>& node)
+ {
+  if(active_node_for_reset_)
+  {
+   node = active_node_for_reset_;
+   active_node_for_reset_ = nullptr;
+  }
+ }
 
  virtual caon_ptr<ChasmRZ_Node> get_root_node();
 
