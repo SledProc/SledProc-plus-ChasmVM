@@ -67,15 +67,17 @@ public:
   bool precedes_call_arrow:1;
 
   bool is_block_level_type_declaration:1;
+  bool marked_no_anchor:1;
+
  _flags
 
 
 public:
 
  enum class Token_Initialization_Modes : u2 {
-   N_A = 0, Single = 1, Split = 2, Split_Opaque = 4, Repeat = 8, Reset = 16
+   N_A = 0, Single = 1, Split = 2, Split_Opaque = 4, Repeat = 8, Reset = 16,
+   Expression_Level = 32
  };
-
 
  enum class Prefix_Kinds {
   N_A, Keyword, Symbol_Declaration, Up_Scope_Declaration,
@@ -133,6 +135,19 @@ public:
 
  ChasmRZ_Token(QString raw_text, QString prefix = QString(),
    QString suffix = QString(), int line_number = 0);
+
+
+ bool has_block_level_initialization_mode()
+ {
+  if((u2) initialization_mode_)
+  {
+   if((u2) initialization_mode_ & (u2) Token_Initialization_Modes::Expression_Level)
+     return false;
+   return true;
+  }
+  return false;
+ }
+
 
  static bool matches_text_map_key_pattern(QString prefix,
   QString suffix)

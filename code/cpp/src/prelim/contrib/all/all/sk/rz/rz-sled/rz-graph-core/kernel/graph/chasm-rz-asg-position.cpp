@@ -100,6 +100,8 @@ void ChasmRZ_ASG_Position::add_block_level_initialization_node(caon_ptr<ChasmRZ_
   position_state_ = Position_States::Active_Anchor_Chief;
   current_node_ = node;
 
+  chiefs_stack_.push_chief(node);
+
  }
 }
 

@@ -189,15 +189,18 @@ void ChasmRZ_Graph_Build::no_anchor_statement_start(QString raw_text)
  caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(raw_text);
  CAON_PTR_DEBUG(ChasmRZ_Token ,token)
 
+ token->flags.marked_no_anchor = true;
+
  held_statement_start_node_ = node_factory_.make_new_node(token);
 }
 
 void ChasmRZ_Graph_Build::declare_lexical_symbol(QString raw_text)
 {
  caon_ptr<ChasmRZ_Token> token = new ChasmRZ_Token(raw_text);
- CAON_PTR_DEBUG(ChasmRZ_Token ,token)
 
  token->flags.is_block_level_type_declaration = true;
+
+ CAON_PTR_DEBUG(ChasmRZ_Token ,token)
 
  caon_ptr<RZ_Block_Level_Type_Declaration> blt = new RZ_Block_Level_Type_Declaration(token);
 

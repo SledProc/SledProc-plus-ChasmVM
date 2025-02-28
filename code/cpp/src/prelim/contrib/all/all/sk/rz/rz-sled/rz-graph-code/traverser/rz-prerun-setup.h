@@ -21,6 +21,8 @@
 
 #include "rz-graph-core/kernel/grammar/chasm-rz-node-factory.h"
 
+#include "rz-graph-core/traverser/chasm-rz-chiefs-stack.h"
+
 
 #include <QString>
 #include <QTextStream>
@@ -45,9 +47,14 @@ class RZ_Prerun_Setup : public ChasmRZ_ASG_Output
 {
 // ChasmRZ_Node_Factory& node_factory_;
 
+ ChasmRZ_Chiefs_Stack chiefs_stack_;
 
- void add_observer_function(caon_ptr<ChasmRZ_Node> start_node,
+
+ caon_ptr<ChasmRZ_Node> add_observer_function(QString name, caon_ptr<ChasmRZ_Node> start_node,
    caon_ptr<ChasmRZ_Node> next_node, const ChasmRZ_Connectors& connector);
+
+ caon_ptr<ChasmRZ_Node> add_call_entry_node(caon_ptr<ChasmRZ_Node> start_node,
+   caon_ptr<ChasmRZ_Node> fn_node, const ChasmRZ_Connectors& connector);
 
 public:
 
