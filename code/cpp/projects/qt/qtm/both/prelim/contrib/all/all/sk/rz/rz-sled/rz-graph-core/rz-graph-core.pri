@@ -32,6 +32,7 @@ HEADERS += \
   $$SRC_DIR/token/chasm-rz-token.h \
   $$SRC_DIR/token/rz-observer-function.h \
   $$SRC_DIR/token/rz-block-level-type-declaration.h \
+  $$SRC_DIR/token/rz-assignment-point.h \
   $$SRC_DIR/kernel/graph/chasm-rz-node.h \
   $$SRC_DIR/kernel/graph/chasm-rz-node-proxy.h \
   $$SRC_DIR/kernel/graph/chasm-rz-graph.h \
@@ -79,6 +80,7 @@ SOURCES += \
   $$SRC_DIR/token/chasm-rz-token.cpp \
   $$SRC_DIR/token/rz-observer-function.cpp \
   $$SRC_DIR/token/rz-block-level-type-declaration.cpp \
+  $$SRC_DIR/token/rz-assignment-point.cpp \
   $$SRC_DIR/kernel/graph/chasm-rz-node.cpp \
   $$SRC_DIR/kernel/graph/chasm-rz-node-proxy.cpp \
   $$SRC_DIR/kernel/graph/chasm-rz-graph.cpp \

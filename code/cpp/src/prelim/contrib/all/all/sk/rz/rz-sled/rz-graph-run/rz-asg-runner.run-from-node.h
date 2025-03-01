@@ -637,6 +637,9 @@ void RZ_ASG_Runner::check_run_from_node<2>(int generation,
  caon_ptr<tNode> rhs_node;
  caon_ptr<tNode> lhs_node;
 
+
+ CAON_PTR_DEBUG(ChasmRZ_Node ,rhs_node)
+
  // //  New node might hold a representation of a data collection
  caon_ptr<tNode> left_new_node;
  caon_ptr<tNode> right_new_node;

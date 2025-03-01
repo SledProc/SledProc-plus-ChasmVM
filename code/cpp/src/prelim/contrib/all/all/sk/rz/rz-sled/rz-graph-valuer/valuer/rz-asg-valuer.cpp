@@ -68,6 +68,7 @@
 #include "scope/rz-asg-logical-scope.h"
 
 #include "rz-graph-core/token/rz-block-level-type-declaration.h"
+#include "rz-graph-core/token/rz-assignment-point.h"
 
 
 #include <QStringList>
@@ -487,7 +488,10 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
  }
  else if(tok->has_initialization_mode())
  {
+  tok->set_type_object(*type_variety_.get_type_object(RZ_Run_Types::Rap));
 
+  caon_ptr<RZ_Assignment_Point> rap = new RZ_Assignment_Point(tok);
+  tok->set_value(rap);
  }
 
 
@@ -617,7 +621,7 @@ void RZ_ASG_Valuer::check_function_def_map_sequence(caon_ptr<tNode> node,
 void RZ_ASG_Valuer::check_monotail(caon_ptr<tNode>& node)
 {
  if(node)
-  return;
+   return;
  node = the_monotail_;
 }
 

@@ -11,6 +11,8 @@
 
 RZ_RUN_TYPE_NS(RZ_Core, Bltd, blt, RZ_Block_Level_Type_Declaration, RZ_Block_Level_Type_Declaration, Core_Class)
 
+RZ_RUN_TYPE_NS(RZ_Core, Rap, rap, RZ_Assignment_Point, RZ_Assignment_Point, Core_Class)
+
 
 RZ_RUN_TYPE_NS(GVal, Str, str, RZ_String, RZ_String, Core_Class)
 RZ_RUN_TYPE_NS(GVal, Mlt, mlt, RZ_Match_Literal, RZ_Match_Literal, Core_Class)

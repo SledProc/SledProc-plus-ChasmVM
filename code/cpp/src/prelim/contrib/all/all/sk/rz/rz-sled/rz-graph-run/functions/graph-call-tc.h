@@ -41,6 +41,32 @@ _RZ_ASG_FUNCTION_CODES
 
 
 
+//RZ_GCALL_IMPLEMENT <RZ_GCALL_Tc(Init_or_Assign, Core_Class)>
+//{
+
+// template<typename T1, typename T2>
+// static void run(RZ_ASG_Result_Holder& rh, T1& t1, T2& t2)
+// {
+// }
+
+// template<typename T1, typename T2>
+// static void run(RZ_ASG_Result_Holder& rh, RZ_ASG_Token& token, RZ_Assignment_Point& rap) //T2& t2)
+// {
+
+//  caon_ptr<RZ_ASG_Token> ft = rh.function_token();
+
+//  CAON_PTR_DEBUG(RZ_ASG_Token ,ft)
+
+//  if(ft)
+//  {
+// //?   caon_ptr<ChasmRZ_Node> n = rh.valuer().register_block_level_type_declaration(*ft, token, blt);
+//  }
+// }
+
+//};
+
+
+
 RZ_GCALL_IMPLEMENT <RZ_GCALL_Tc(Lex_Decl, Core_Class)>
 {
 
@@ -53,6 +79,7 @@ RZ_GCALL_IMPLEMENT <RZ_GCALL_Tc(Lex_Decl, Core_Class)>
  static void run(RZ_ASG_Result_Holder& rh, RZ_ASG_Token& token, T2& t2)
  {
  }
+
 
  template<typename T1, typename T2>
  static void run(RZ_ASG_Result_Holder& rh, RZ_ASG_Token& token, RZ_Block_Level_Type_Declaration& blt) //T2& t2)

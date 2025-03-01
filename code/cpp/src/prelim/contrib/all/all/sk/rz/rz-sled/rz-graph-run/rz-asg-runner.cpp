@@ -193,7 +193,19 @@ caon_ptr<RZ_ASG_Runner::tNode>
 
  if(result = Qy.Run_Call_Sequence(in_Tf &lhs_node))
  {
+  qDebug() << "TF ...";
  }
+
+ else if(result = Qy.Run_Call_Sequence(in_Cf &lhs_node))
+ {
+  qDebug() << "CF ...";
+ }
+
+ else if(result = Qy.Literal_Assignment(in_Cf &lhs_node))
+ {
+  qDebug() << "aaa";
+ }
+
  else if(result = Qy.Run_Call_Entry(in_Cf &lhs_node))
  {
   if(caon_ptr<ChasmRZ_Call_Entry> rce = result->chasm_rz_call_entry())

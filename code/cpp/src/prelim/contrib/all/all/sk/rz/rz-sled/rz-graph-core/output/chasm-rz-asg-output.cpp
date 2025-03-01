@@ -135,7 +135,15 @@ caon_ptr<ChasmRZ_Node> ChasmRZ_ASG_Output::find_next_node_via_block_entry(caon_p
 
 caon_ptr<ChasmRZ_Node> ChasmRZ_ASG_Output::find_next_node_via_sequence(caon_ptr<ChasmRZ_Node> node)
 {
- return Qy.Run_Call_Sequence(in_Tf node);
+ caon_ptr<ChasmRZ_Node> result = Qy.Run_Call_Sequence(in_Tf node);
+ if(result)
+   return result;
+
+ result = Qy.Literal_Assignment(in_Cf node);
+ if(result)
+   return result;
+
+ return nullptr;
 }
 
 caon_ptr<ChasmRZ_Node> ChasmRZ_ASG_Output::find_next_node_via_cross(caon_ptr<ChasmRZ_Node> node)

@@ -114,7 +114,12 @@ void ChasmRZ_ASG_Position::add_numeric_literal(caon_ptr<ChasmRZ_Node> token_node
  {
  case Position_States::Active_Anchor_Chief:
   // //  this means that the anchor is actually an assignment to literal
+
+//?
   current_node_ <<Cf/Qy.Literal_Assignment>> token_node;
+  //?current_node_ <<Cf/Qy.Run_Call_Sequence>> token_node;
+
+
   position_state_ = Position_States::Expression_Stop;
   current_node_ = token_node;
 
