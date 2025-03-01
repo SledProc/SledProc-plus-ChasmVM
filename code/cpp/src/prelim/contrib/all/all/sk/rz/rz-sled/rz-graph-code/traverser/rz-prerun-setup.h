@@ -54,7 +54,7 @@ class RZ_Prerun_Setup : public ChasmRZ_ASG_Output
    caon_ptr<ChasmRZ_Node> next_node, const ChasmRZ_Connectors& connector);
 
  caon_ptr<ChasmRZ_Node> add_call_entry_node(caon_ptr<ChasmRZ_Node> start_node,
-   caon_ptr<ChasmRZ_Node> fn_node, const ChasmRZ_Connectors& connector);
+   caon_ptr<ChasmRZ_Node> fn_node);
 
 public:
 

@@ -21,7 +21,7 @@ USING_RZNS(GBuild)
 
 RZ_ASG_Token::RZ_ASG_Token(QString raw_text, Special_Constructor_Mode scm, u4 line_number)
  : Flags(0), raw_text_(raw_text), line_number_(line_number), out_(nullptr),
-   syntactic_depth_(0)
+   syntactic_depth_(0), channel_and_initialization_info_(Channel_and_Initialization_Info::N_A)
 {
 
 }
@@ -29,7 +29,7 @@ RZ_ASG_Token::RZ_ASG_Token(QString raw_text, Special_Constructor_Mode scm, u4 li
 
 RZ_ASG_Token::RZ_ASG_Token(QString raw_text, u4 line_number)
  : Flags(0), raw_text_(raw_text), line_number_(line_number), out_(nullptr),
-   syntactic_depth_(0)
+   syntactic_depth_(0), channel_and_initialization_info_(Channel_and_Initialization_Info::N_A)
 {
  if(raw_text_.endsWith('?'))
  {
@@ -75,6 +75,7 @@ caon_ptr<RZ_ASG_Token> RZ_ASG_Token::check_init_asg_token(ChasmRZ_Token& chasm_r
 void RZ_ASG_Token::init_asg_token(ChasmRZ_Token& chasm_rz_token)
 {
  caon_ptr<RZ_ASG_Token> rat;
+
  if(chasm_rz_token.flags.is_string_literal)
  {
   rat = new RZ_ASG_Token(chasm_rz_token.string_value(), RZ_ASG_Token::Special_Constructor_Mode::Raw_Text);
@@ -85,6 +86,9 @@ void RZ_ASG_Token::init_asg_token(ChasmRZ_Token& chasm_rz_token)
  rat = new RZ_ASG_Token(chasm_rz_token.string_value());
 
  chasm_rz_token.set_asg_token(rat);
+
+ rat->channel_and_initialization_info_ = (Channel_and_Initialization_Info)(u2)(chasm_rz_token.initialization_mode());
+
 
  rat->flags.is_keyword = chasm_rz_token.flags.is_keyword;
  rat->flags.is_symbol_declaration = chasm_rz_token.flags.is_symbol_declaration;

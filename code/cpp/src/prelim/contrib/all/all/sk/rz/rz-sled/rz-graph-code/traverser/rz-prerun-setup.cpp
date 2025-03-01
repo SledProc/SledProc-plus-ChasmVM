@@ -86,8 +86,8 @@ void RZ_Prerun_Setup::output_from_individual_node(QTextStream& qts,
 
   &node <<Tf/Qy.Run_Block_Entry>> rbe_node;
 
-  caon_ptr<ChasmRZ_Node> rof_node = add_observer_function("lex-decl", rbe_node, next_node, Qy.Run_Call_Entry);
-  chiefs_stack_.push_chief(rof_node);
+  caon_ptr<ChasmRZ_Node> rce_node = add_observer_function("lex-decl", rbe_node, next_node, Qy.Run_Call_Entry);
+  chiefs_stack_.push_chief(rce_node);
 
   reset_active_node(next_node);
  }
@@ -103,12 +103,14 @@ void RZ_Prerun_Setup::output_from_individual_node(QTextStream& qts,
 
    if(chief)
    {
-    caon_ptr<ChasmRZ_Node> rof_node = add_observer_function("init/assign", chief, &node,
+    CAON_PTR_DEBUG(ChasmRZ_Node ,chief)
+
+    caon_ptr<ChasmRZ_Node> rce_node = add_observer_function("init/assign", chief, &node,
       Qy.Run_Cross_Sequence);
 
 //?    chief <<Tf/Qy.Run_Cross_Sequence>> rof_node;
 
-    chiefs_stack_.push_chief(rof_node);
+    chiefs_stack_.push_chief(rce_node);
 
     reset_active_node(&node);
    }
@@ -121,13 +123,14 @@ void RZ_Prerun_Setup::output_from_individual_node(QTextStream& qts,
 
    if(chief)
    {
-    //caon_ptr<ChasmRZ_Node> rce_node =
-    add_call_entry_node(chief, &node, Qy.Run_Cross_Sequence);
+    CAON_PTR_DEBUG(ChasmRZ_Node ,chief)
 
-//?    chief <<Tf/Qy.Run_Cross_Sequence>> rce_node;
+    caon_ptr<ChasmRZ_Node> rce_node = add_call_entry_node(chief, &node); //, Qy.Run_Cross_Sequence);
+    chief <<Tf/Qy.Run_Cross_Sequence>> rce_node;
+
 //    rce_node <<Tf/Qy.Run_Call_Entry>> &node;
 
-    chiefs_stack_.push_chief(&node);
+    chiefs_stack_.push_chief(rce_node);
 
     reset_active_node(&node);
    }
@@ -165,12 +168,14 @@ caon_ptr<ChasmRZ_Node> RZ_Prerun_Setup::find_next_node_via_cross(caon_ptr<ChasmR
 }
 
 caon_ptr<ChasmRZ_Node> RZ_Prerun_Setup::add_call_entry_node(caon_ptr<ChasmRZ_Node> start_node,
-  caon_ptr<ChasmRZ_Node> fn_node, const ChasmRZ_Connectors& connector)
+  caon_ptr<ChasmRZ_Node> fn_node)
 {
+ CAON_PTR_DEBUG(ChasmRZ_Node ,start_node)
+
  caon_ptr<ChasmRZ_Call_Entry> rce = new ChasmRZ_Call_Entry(node_factory_.make_call_entry_id());
  caon_ptr<ChasmRZ_Node> rce_node = node_factory_.make_new_node(rce);
 
- start_node <<Tf/connector>> rce_node;
+//? start_node <<Tf/connector>> rce_node;
  rce_node <<Tf/Qy.Run_Call_Entry>> fn_node;
  return rce_node;
 }
@@ -184,13 +189,14 @@ caon_ptr<ChasmRZ_Node> RZ_Prerun_Setup::add_observer_function(QString name,
 
  CAON_PTR_DEBUG(ChasmRZ_Node ,start_node)
 
- //caon_ptr<ChasmRZ_Node> rce_node =
- add_call_entry_node(start_node, rof_node, connector);
+ caon_ptr<ChasmRZ_Node> rce_node = add_call_entry_node(start_node, rof_node);
+
+ start_node <<Tf/connector>> rce_node;
 
 // rce_node <<Tf/Qy.Run_Call_Entry>> rof_node;
  rof_node <<Tf/Qy.Run_Call_Sequence>> next_node;
 
- return rof_node;
+ return rce_node;
 }
 
 void RZ_Prerun_Setup::report_token(QTextStream& qts,

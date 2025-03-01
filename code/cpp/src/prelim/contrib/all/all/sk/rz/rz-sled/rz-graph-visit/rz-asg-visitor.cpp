@@ -1855,6 +1855,8 @@ void RZ_ASG_Visitor::anticipate_block(tNode& start_node)
   {
    CAON_PTR_DEBUG(tNode ,call_entry_node)
 
+   call_entry_node->debug_connections();
+
    anticipate_run_call(*call_entry_node);
 
    while(call_entry_node = Qy.Run_Cross_Sequence(in_Tf call_entry_node))

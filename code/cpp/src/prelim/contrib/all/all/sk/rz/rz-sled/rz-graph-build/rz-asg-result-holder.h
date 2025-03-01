@@ -111,6 +111,7 @@ public:
  void continue_proceed(caon_ptr<tNode> n);
 
  caon_ptr<RZ_ASG_Token> function_token();
+ caon_ptr<RZ_ASG_Token> function_token(caon_ptr<ChasmRZ_Node> n);
 
  caon_ptr<tNode> function_node();
  caon_ptr<tNode> get_lead_function_node(caon_ptr<tNode> current_start_node = nullptr);

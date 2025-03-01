@@ -428,7 +428,7 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
 
  check_monotail(node);
  if(!node)
-  return;
+   return;
 
  if(caon_ptr<ChasmRZ_Call_Entry> rce = node->chasm_rz_call_entry())
  {
@@ -467,13 +467,13 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
   return;
  }
  else if(tok->flags.is_numeric_literal)
-  type_numeric_token(*tok);
+   type_numeric_token(*tok);
  else if(tok->flags.is_string_literal)
-  type_string_token(*tok);
+   type_string_token(*tok);
 
 //?
  else if(tok->flags.is_match_literal)
-  type_match_literal_token(*tok);
+   type_match_literal_token(*tok);
 
 
  else if(tok->flags.is_block_level_type_declaration)
@@ -484,6 +484,10 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
   {
    tok->set_value(blt);
   }
+ }
+ else if(tok->has_initialization_mode())
+ {
+
  }
 
 
@@ -508,6 +512,8 @@ void RZ_ASG_Valuer::check_node_type(caon_ptr<tNode>& node)
  else if(caon_ptr<RZ_ASG_Core_Casement_Function> ccf =
   rz_asg_core_function_finder(tok->string_value()))
  {
+  CAON_PTR_DEBUG(RZ_ASG_Core_Casement_Function ,ccf)
+
   tok->flags.is_deferred_core_function_symbol = true;
   tok->set_type_object(*type_variety_.get_type_object(RZ_Run_Types::GraphCoreFun));
   tok->set_value(ccf);

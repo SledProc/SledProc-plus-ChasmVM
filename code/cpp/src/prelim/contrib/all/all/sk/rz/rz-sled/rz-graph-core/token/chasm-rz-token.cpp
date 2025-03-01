@@ -17,7 +17,7 @@ USING_RZNS(RZ_Core)
 ChasmRZ_Token::ChasmRZ_Token(QString raw_text, QString prefix,
  QString suffix, int line_number)
  : Flags(0), initialization_mode_(Token_Initialization_Modes::N_A),
-   asg_token_(nullptr),
+   asg_token_(nullptr), syntactic_depth_(0),
    raw_text_(raw_text), line_number_(line_number)
 {
  if(raw_text_ == "do")

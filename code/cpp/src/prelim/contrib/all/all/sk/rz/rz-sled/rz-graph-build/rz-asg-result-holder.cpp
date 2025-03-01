@@ -56,26 +56,30 @@ void RZ_ASG_Result_Holder::continue_proceed(caon_ptr<tNode> n)
  lead_function_node_ = function_node();
 }
 
+caon_ptr<RZ_ASG_Token> RZ_ASG_Result_Holder::function_token(caon_ptr<ChasmRZ_Node> n)
+{
+ CAON_PTR_DEBUG(tNode ,n)
+
+ if(caon_ptr<ChasmRZ_Token> tok = n->chasm_rz_token())
+ {
+  CAON_PTR_DEBUG(ChasmRZ_Token ,tok)
+  return tok->asg_token();
+ }
+
+ caon_ptr<RZ_ASG_Token> result;
+ valuer_.check_find_asg_token(result, n);
+
+ return result;
+}
+
+
 caon_ptr<RZ_ASG_Token> RZ_ASG_Result_Holder::function_token()
 {
  // //  Usually this will only be called from
  //    a context where a function node will
  //    have been pushed on, but ...
  if(caon_ptr<tNode> n = function_node())
- {
-  CAON_PTR_DEBUG(tNode ,n)
-
-  if(caon_ptr<ChasmRZ_Token> tok = n->chasm_rz_token())
-  {
-   CAON_PTR_DEBUG(ChasmRZ_Token ,tok)
-   return tok->asg_token();
-  }
-
-  caon_ptr<RZ_ASG_Token> result;
-  valuer_.check_find_asg_token(result, n);
-
-  return result;
- }
+   return function_token(n);
  return nullptr;
 }
 
@@ -117,7 +121,11 @@ caon_ptr<RZ_ASG_Result_Holder::tNode>
 caon_ptr<RZ_ASG_Token> RZ_ASG_Result_Holder::get_lead_function_token()
 {
  if(caon_ptr<tNode> n = get_lead_function_node())
-   return n->chasm_rz_token()->asg_token();
+ {
+  CAON_PTR_DEBUG(ChasmRZ_Node ,n)
+  return function_token(n);
+  //return n->chasm_rz_token()->asg_token();
+ }
  return nullptr;
 }
 

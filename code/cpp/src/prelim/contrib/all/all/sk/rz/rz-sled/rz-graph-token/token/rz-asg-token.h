@@ -133,6 +133,14 @@ private:
 
  caon_ptr<RZ_ASG_Token_Out_Info> out_;
 
+ enum class Channel_and_Initialization_Info : u2 {
+   N_A = 0, Single = 1, Split = 2, Split_Opaque = 4, Repeat = 8, Reset = 16,
+   Expression_Level = 32
+ };
+
+ Channel_and_Initialization_Info channel_and_initialization_info_;
+
+
 public:
 
  ACCESSORS(QString ,raw_text)
@@ -144,6 +152,28 @@ public:
 
  static void init_asg_token(ChasmRZ_Token& chasm_rz_token);
  static caon_ptr<RZ_ASG_Token> check_init_asg_token(ChasmRZ_Token& chasm_rz_token);
+
+
+ bool has_initialization_mode()
+ {
+  if((u2) channel_and_initialization_info_)
+    return true;
+  // //  later there will be channel info to separate out, probably
+
+  return false;
+ }
+
+// bool has_block_level_initialization_mode()
+// {
+//  if((u2) channel_and_initialization_info_)
+//  {
+//   if((u2) channel_and_initialization_info_ & (u2) Channel_and_Initialization_Info::Expression_Level)
+//     return false;
+//   return true;
+//  }
+//  return false;
+// }
+
 
  caon_ptr<RZ_ASG_Token_Out_Info>
   get_asg_out(RZ_Type_Variety& tv, QString& result);
