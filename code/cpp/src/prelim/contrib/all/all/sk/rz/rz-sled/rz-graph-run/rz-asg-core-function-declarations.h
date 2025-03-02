@@ -17,6 +17,7 @@
 #include "functions/graph-call-c.h"
 #include "functions/graph-call-t-c.h"
 #include "functions/graph-call-t-v.h"
+#include "functions/graph-call-c-v.h"
 #include "functions/graph-call-t.h"
 #include "functions/graph-call-tc.h"
 #include "functions/graph-call-tv.h"

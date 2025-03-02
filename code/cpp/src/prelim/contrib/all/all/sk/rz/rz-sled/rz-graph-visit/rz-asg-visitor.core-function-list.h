@@ -13,6 +13,7 @@
 #include "functions/core-functions-v-v.h"
 #include "functions/core-functions-c.h"
 #include "functions/core-functions-c-t.h"
+#include "functions/core-functions-c-v.h"
 #include "functions/core-functions-tc.h"
 #include "functions/core-functions-t-v.h"
 

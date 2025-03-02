@@ -45,6 +45,7 @@ HEADERS += \
    $$SRC_DIR/functions/core-functions-t-v.h \
    $$SRC_DIR/functions/core-functions-tv.h \
    $$SRC_DIR/functions/core-functions-t-c.h \
+   $$SRC_DIR/functions/core-functions-c-v.h \
    $$SRC_DIR/functions/core-functions-tc.h \
    $$SRC_DIR/functions/core-functions-t.h \
    $$SRC_DIR/functions/core-functions-s.h \
@@ -60,6 +61,7 @@ HEADERS += \
    $$SRC_DIR/functions/graph-call-t-v.h \
    $$SRC_DIR/functions/graph-call-tv.h \
    $$SRC_DIR/functions/graph-call-t-c.h \
+   $$SRC_DIR/functions/graph-call-c-v.h \
    $$SRC_DIR/functions/graph-call-tc.h \
    $$SRC_DIR/functions/graph-call-t.h \
    $$SRC_DIR/functions/graph-call-s.h \

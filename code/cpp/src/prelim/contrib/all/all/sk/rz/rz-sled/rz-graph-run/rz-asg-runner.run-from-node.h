@@ -296,10 +296,10 @@ void RZ_ASG_Runner::proceed_run_from_node<2>(RZ_ASG_Result_Holder& rh,
  {
   CAON_PTR_DEBUG(RZ_Type_Object ,rto)
 
-  caon_ptr<GBuild::RZ_Lisp_Core_Function> rhs_lcf =
-       rhs_token->pRestore<GBuild::RZ_Lisp_Core_Function>(valuer_->type_variety());
+  caon_ptr<GBuild::RZ_ASG_Core_Function> rhs_lcf =
+       rhs_token->pRestore<GBuild::RZ_ASG_Core_Function>(valuer_->type_variety());
+  CAON_PTR_DEBUG(GBuild::RZ_ASG_Core_Function ,rhs_lcf)
 
-  CAON_PTR_DEBUG(GBuild::RZ_Lisp_Core_Function ,rhs_lcf)
   CAON_DEBUG_NOOP
  }
 
@@ -321,8 +321,8 @@ void RZ_ASG_Runner::proceed_run_from_node<2>(RZ_ASG_Result_Holder& rh,
   check_run_info(generation + 1, rh1, *rhs_ccf, *rhs_node);
   rhs_vh = rh1.value_holder();
  }
- else if(caon_ptr<GBuild::RZ_Lisp_Core_Function> rhs_lcf =
-   rhs_token->pRestore<GBuild::RZ_Lisp_Core_Function>(valuer_->type_variety()))
+ else if(caon_ptr<GBuild::RZ_ASG_Core_Function> rhs_lcf =
+   rhs_token->pRestore<GBuild::RZ_ASG_Core_Function>(valuer_->type_variety()))
  {
   rhs_vh = rhs_token->vh();
  }
@@ -343,7 +343,7 @@ void RZ_ASG_Runner::proceed_run_from_node<2>(RZ_ASG_Result_Holder& rh,
  {
  case RZ_Graph_Call_VV:
   {
-   RZ_ASG_Value_Holder lhs_vh;
+   //RZ_ASG_Value_Holder lhs_vh;
    if(left_new_node)
    {
     caon_ptr<RZ_Type_Object> tobj =
@@ -363,6 +363,32 @@ void RZ_ASG_Runner::proceed_run_from_node<2>(RZ_ASG_Result_Holder& rh,
       rhs_vh);
   }
   break;
+
+
+ case RZ_Graph_Call_CC:
+  {
+   //RZ_ASG_Value_Holder lhs_vh;
+   if(left_new_node)
+   {
+    caon_ptr<RZ_Type_Object> tobj =
+     valuer_->get_node_type_object(*left_new_node);
+
+    // //   Should this be (as it once was) a function in ChasmRZ_Node?
+    lhs_vh.set_type_object(tobj);
+
+    lhs_vh.set_value(right_new_node->vertex());
+   }
+   else
+    lhs_vh = lhs_token->vh();
+
+   RZ_ASG_Core_Runner::run<RZ_Graph_Call_CC>
+     (rh, ccf.info().Core_Function_Code,
+      lhs_vh,
+      rhs_vh);
+  }
+  break;
+
+
 
  case RZ_Graph_Call_TV:
   RZ_ASG_Core_Runner::run<RZ_Graph_Call_TV>
@@ -392,6 +418,36 @@ void RZ_ASG_Runner::proceed_run_from_node<2>(RZ_ASG_Result_Holder& rh,
      (rh, ccf.info().Core_Function_Code,
       lhs_vh,
       *rhs_node->get_asg_token());
+  }
+  break;
+
+ case RZ_Graph_Call_CV:
+
+  if(left_new_node)
+  {
+   caon_ptr<RZ_Type_Object> tobj =
+    valuer_->get_node_type_object(*left_new_node);
+
+   // //   Should this be (as it once was) a function in ChasmRZ_Node?
+   lhs_vh.set_type_object(tobj);
+
+   lhs_vh.set_value(right_new_node->vertex());
+  }
+  else
+   lhs_vh = lhs_token->vh();
+
+  if(rh.flags.has_held_value)
+  {
+   rh.flags.has_held_value = false;
+   RZ_ASG_Core_Runner::run<RZ_Graph_Call_CV>
+    (rh, ccf.info().Core_Function_Code,
+     rh.value_holder(), lhs_vh);
+  }
+  else
+  {
+   RZ_ASG_Core_Runner::run<RZ_Graph_Call_CV>
+     (rh, ccf.info().Core_Function_Code,
+      lhs_vh, rhs_vh);
   }
   break;
 

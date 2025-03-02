@@ -1,6 +1,6 @@
 
 
-RZ_ASG_FUNCTION_DECLARE([init/assign], Init_or_Assign, 2, Preempt)
+//?RZ_ASG_FUNCTION_DECLARE([init/assign], Init_or_Assign, 2, Preempt)
 
 
 RZ_ASG_FUNCTION_DECLARE(=, Set_Equal, 2, Preempt)

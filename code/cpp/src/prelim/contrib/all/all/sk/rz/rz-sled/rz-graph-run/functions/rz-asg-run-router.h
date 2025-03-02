@@ -204,6 +204,8 @@ struct Cast_Schedule
   template<typename T1, typename T2>
   static void run(RZ_ASG_Result_Holder& rh, caon_ptr<T1> t1, caon_ptr<T2> t2)
   {
+   auto cfc = CAST_SCHED_Type::Core_Function_Code;
+
    switch(CAST_SCHED_Type::Core_Function_Code)
    {
     RZ_TEMP_CASES__FUNCTION_CODE

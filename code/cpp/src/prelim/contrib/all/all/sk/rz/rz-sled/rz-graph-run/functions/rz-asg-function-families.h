@@ -56,6 +56,9 @@ typedef int RZ_ASG_Function_Code;
 #define RZ_GCALL_CT(name, fam) RZ_Graph_Call_CT, \
  RZ_ASG_Function_Family_<RZ_Graph_Call_CT>::name, RZ_Type_Families::fam
 
+#define RZ_GCALL_CV(name, fam) RZ_Graph_Call_CV, \
+ RZ_ASG_Function_Family_<RZ_Graph_Call_CV>::name, RZ_Type_Families::fam
+
 #define RZ_GCALL_CC(name, fam) RZ_Graph_Call_CC, \
  RZ_ASG_Function_Family_<RZ_Graph_Call_CC>::name, RZ_Type_Families::fam
 
@@ -89,6 +92,9 @@ typedef int RZ_ASG_Function_Code;
 
 #define RZ_GCALL_CT_(name) RZ_Graph_Call_CT, \
  RZ_ASG_Function_Family_<RZ_Graph_Call_CT>::name
+
+#define RZ_GCALL_CV_(name) RZ_Graph_Call_CV, \
+ RZ_ASG_Function_Family_<RZ_Graph_Call_CV>::name
 
 #define RZ_GCALL_CC_(name) RZ_Graph_Call_CC, \
  RZ_ASG_Function_Family_<RZ_Graph_Call_CC>::name
@@ -150,6 +156,13 @@ struct RZ_Get_Family_Code< RZ_ASG_Function_Family_<RZ_Graph_Call_TV> >
 };
 
 template<>
+struct RZ_Get_Family_Code< RZ_ASG_Function_Family_<RZ_Graph_Call_CV> >
+{
+ static const RZ_ASG_Function_Family Value = RZ_Graph_Call_CV;
+};
+
+
+template<>
 struct RZ_Get_Family_Code< RZ_ASG_Function_Family_<RZ_Graph_Call_VV> >
 {
  static const RZ_ASG_Function_Family Value = RZ_Graph_Call_VV;
@@ -191,6 +204,7 @@ typedef RZ_ASG_Function_Family_<RZ_Graph_Call_VV> RZ_Graph_Call_VV_Family;
 typedef RZ_ASG_Function_Family_<RZ_Graph_Call_C> RZ_Graph_Call_C_Family;
 typedef RZ_ASG_Function_Family_<RZ_Graph_Call_CT> RZ_Graph_Call_CT_Family;
 typedef RZ_ASG_Function_Family_<RZ_Graph_Call_CC> RZ_Graph_Call_CC_Family;
+typedef RZ_ASG_Function_Family_<RZ_Graph_Call_CV> RZ_Graph_Call_CV_Family;
 
 template<RZ_ASG_Function_Family cff, int i, RZ_Type_Families::Enum Fam>
 struct RZ_ASG_Function_Run

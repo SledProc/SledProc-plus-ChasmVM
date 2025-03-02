@@ -27,8 +27,8 @@
 
 RZNS_(GBuild)
 
-class RZ_Lisp_Empty_Tuple;
-class RZ_Lisp_Core_Function;
+class RZ_ASG_Empty_Tuple;
+class RZ_ASG_Core_Function;
 class RZ_Null_Value;
 
 _RZNS(GBuild)
@@ -57,6 +57,16 @@ _RZ_ASG_FUNCTION_CODES
 
 #undef RZ_ASG_FUNCTION_DECLARE
 
+
+
+//RZ_GCALL_IMPLEMENT <RZ_GCALL_C(Init_or_Assign, Core_Class)>
+//{
+// template<typename T1, typename T2>
+// static void run(RZ_ASG_Result_Holder& rh, T1& t1, T2& t2)
+// {
+
+// }
+//};
 
 
 

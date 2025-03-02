@@ -67,6 +67,16 @@ _RZ_ASG_FUNCTION_CODES
 
 
 
+
+//RZ_GCALL_IMPLEMENT <RZ_GCALL_Tc(Init_or_Assign, Core_Class)>
+//{
+// template<typename T1, typename T2>
+// static void run(RZ_ASG_Result_Holder& rh, T1& t1, T2& t2)
+// {
+// }
+//};
+
+
 RZ_GCALL_IMPLEMENT <RZ_GCALL_Tc(Lex_Decl, Core_Class)>
 {
 

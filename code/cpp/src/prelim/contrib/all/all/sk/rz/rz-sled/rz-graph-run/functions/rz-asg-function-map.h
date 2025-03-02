@@ -61,6 +61,10 @@ static QMap<QString, RZ_ASG_Function_Info> RZ_ASG_Function_Code_Map
 #include "functions/core-functions-c-t.h"
 #undef RZ_ASG_FUNCTION_DECLARE
 
+#define RZ_ASG_FUNCTION_DECLARE(str, name, arity, status) {#name, {RZ_GCALL_CV_(name)}},
+#include "functions/core-functions-c-v.h"
+#undef RZ_ASG_FUNCTION_DECLARE
+
 #define RZ_ASG_FUNCTION_DECLARE(str, name, arity, status) {#name, {RZ_GCALL_Tc_(name)}},
 #include "functions/core-functions-tc.h"
 #undef RZ_ASG_FUNCTION_DECLARE
