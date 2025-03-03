@@ -397,7 +397,7 @@ public:
 
 class PGB_IR_Build
 {
- QString primary_source_file_;
+ QString primary_source_file_path_;
 
  QString out_file_;
  QTextStream qts_;
@@ -412,9 +412,9 @@ public:
   Purpose_Codes purpose;
  };
 
- PGB_IR_Build(QString primary_source_file, QString out_file);
+ PGB_IR_Build(QString primary_source_file_path, QString out_file);
 
- ACCESSORS(QString ,primary_source_file)
+ ACCESSORS(QString ,primary_source_file_path)
  ACCESSORS(QString ,out_file)
 
  _PGB_IR_Build operator()(Text_With_Purpose& qs);

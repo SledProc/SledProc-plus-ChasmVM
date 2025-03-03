@@ -42,6 +42,7 @@ USING_RZNS(PhrGraphCore)
 RZNS_(GVal)
 
 class RPI_Block;
+class RPI_File;
 
 
 
@@ -53,6 +54,8 @@ class RPI_Output
  RZ_Lisp_Graph_Visitor& visitor();
 
  caon_ptr<RPI_Block> top_level_block_;
+
+ caon_ptr<RPI_File> primary_source_file_;
 
  QString string_litreal_block_;
 

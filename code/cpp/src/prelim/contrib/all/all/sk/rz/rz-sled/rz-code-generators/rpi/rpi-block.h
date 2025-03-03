@@ -55,10 +55,12 @@ class RZ_Function_Def_Syntax;
 class RZ_ASG_Block_Info;
 class RZ_Code_Statement;
 class RZ_Function_Def_Info;
+class RPI_File;
 
 
 class RPI_Block
 {
+ friend class RPI_File;
 public:
 
  enum class Block_Sequence_Modes {

@@ -7,7 +7,10 @@
 #include "rpi-output.h"
 #include "rzns.h"
 
+
 #include "rpi-block.h"
+#include "rpi-file.h"
+
 
 USING_RZNS(GVal)
 
@@ -34,20 +37,18 @@ void RPI_Output::init_string_litreal_block()
 
 void RPI_Output::build_phaon_graph(PGB_IR_Build& pgb)
 {
- QString primary_source_file = pgb.primary_source_file();
-
- pgb(step_forms_).make_file_node(primary_source_file);
+ QString primary_source_file_path = pgb.primary_source_file_path();
 
  init_top_level_block(pgb);
 
+ primary_source_file_ = new RPI_File(primary_source_file_path, top_level_block_);
+ primary_source_file_->scan_top_level(visitor_phaon_);
+ primary_source_file_->write_top_level(step_forms_, nullptr);
 
- top_level_block_->scan_top_level(visitor_phaon_);
 
-// QString qs;
-// QTextStream qts(&qs);
- top_level_block_->write_top_level(step_forms_, nullptr);
-
- top_level_block_->build_phaon_graph();
+// top_level_block_->scan_top_level(visitor_phaon_);
+// top_level_block_->write_top_level(step_forms_, nullptr);
+// top_level_block_->build_phaon_graph();
 
 }
 

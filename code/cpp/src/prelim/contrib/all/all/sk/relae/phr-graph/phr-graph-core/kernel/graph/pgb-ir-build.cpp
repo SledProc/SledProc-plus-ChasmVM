@@ -527,8 +527,8 @@ Purpose_Codes& _PGB_IR_Build::write_with_tokens(QString fn, QList<MG_Token>& mgt
  return purpose_;
 }
 
-PGB_IR_Build::PGB_IR_Build(QString primary_source_file, QString out_file)
-  :  primary_source_file_(primary_source_file), out_file_(out_file)
+PGB_IR_Build::PGB_IR_Build(QString primary_source_file_path, QString out_file)
+  :  primary_source_file_path_(primary_source_file_path), out_file_(out_file)
 {
 
 }

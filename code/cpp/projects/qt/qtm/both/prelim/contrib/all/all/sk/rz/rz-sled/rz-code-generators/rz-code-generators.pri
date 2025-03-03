@@ -34,6 +34,7 @@ HEADERS += \
   $$SRC_ROOT_DIR/multistep-token.h \
   $$SRC_DIR/rpi/rpi-output.h \
   $$SRC_DIR/rpi/rpi-block.h \
+  $$SRC_DIR/rpi/rpi-file.h \
   $$SRC_DIR/rpi/rpi-stage-form.h \
   $$SRC_DIR/rpi/rpi-stage-element.h \
   $$SRC_DIR/rpi/rpi-assignment-info.h \
@@ -43,6 +44,7 @@ HEADERS += \
 SOURCES += \
   $$SRC_DIR/rpi/rpi-output.cpp \
   $$SRC_DIR/rpi/rpi-block.cpp \
+  $$SRC_DIR/rpi/rpi-file.cpp \
   $$SRC_DIR/rpi/rpi-stage-form.cpp \
   $$SRC_DIR/rpi/rpi-stage-element.cpp \
   $$SRC_DIR/rpi/rpi-assignment-info.cpp \
