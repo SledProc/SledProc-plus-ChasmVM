@@ -49,11 +49,12 @@ class RPI_Stage_Form
 public:
 
  flags_(3)
-  bool is_block_entry_statment:1;
-  bool is_nested_block_entry_statment:1;
+  bool is_block_entry_coterm:1;
+  bool is_nested_block_entry_coterm:1;
   bool write_type_declaration:1;
-  bool is_inferred_block_entry_statment:1;
+  bool is_inferred_block_entry_coterm:1;
   bool is_statement:1;
+  bool is_coterm:1;
   bool has_preceder_token:1;
   bool has_s1_token:1;
 
@@ -168,7 +169,7 @@ public:
   return instruction() == sym;
  }
 
- bool is_effective_block_entry_statment();
+ bool is_effective_block_entry_coterm();
  bool is_non_block_expression();
  bool is_deferred();
 

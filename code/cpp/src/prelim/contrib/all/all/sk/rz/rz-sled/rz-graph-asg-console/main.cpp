@@ -103,21 +103,21 @@ void compile_rz(QString file_name)
 
  anticipate.run_core_pairs_generations();
 
-// PGB_IR_Build pgb(file_name + ".gen.pgb");
+ PGB_IR_Build pgb(file_name, file_name + ".gen.pgb");
 
-// rpo.build_phaon_graph(pgb);
+ rpo.build_phaon_graph(pgb);
 
-// pgb.generate_premacro_file(rpo.step_forms());
-// pgb.expand_macros(rpo.step_forms());
-// pgb.generate_file(rpo.step_forms());
+ pgb.generate_premacro_file(rpo.step_forms());
+ pgb.expand_macros(rpo.step_forms());
+ pgb.generate_file(rpo.step_forms());
 
-// PHR_Graph phg;
-// PHR_Graph_Build phgb(phg);
+ PHR_Graph phg;
+ PHR_Graph_Build phgb(phg);
 
-// phgb.load_from_pgb_file(pgb.out_file());
-// PHR_Graph_PHR_Output pgo(pgb.out_file() + ".phr");
-// pgo.document()->set_graph(&phg);
-// pgo.generate();
+ phgb.load_from_pgb_file(pgb.out_file());
+ PHR_Graph_PHR_Output pgo(pgb.out_file() + ".phr");
+ pgo.document()->set_graph(&phg);
+ pgo.generate();
 }
 
 #include "textio.h"

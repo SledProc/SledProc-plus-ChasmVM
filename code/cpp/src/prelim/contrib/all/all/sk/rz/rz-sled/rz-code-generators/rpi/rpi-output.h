@@ -54,6 +54,8 @@ class RPI_Output
 
  caon_ptr<RPI_Block> top_level_block_;
 
+ QString string_litreal_block_;
+
  void init_function_def_syntax();
 
 public:
@@ -61,6 +63,8 @@ public:
  RPI_Output(RZ_Graph_Visitor_Phaon& visitor_phaon);
 
  ACCESSORS__RGET(QList<PGB_IR_Build::Text_With_Purpose> ,step_forms)
+
+ void init_string_litreal_block();
 
  void write(QTextStream* qts);
 

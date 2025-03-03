@@ -50,6 +50,13 @@ void RZ_Prerun_Tokens::init_token(const ChasmRZ_Node& node, caon_ptr<ChasmRZ_Nod
    if(cn)
    {
     blt->set_continuation_node(cn);
+
+    if(caon_ptr<ChasmRZ_Token> ctok = cn->chasm_rz_token())
+    {
+     CAON_PTR_DEBUG(ChasmRZ_Token ,ctok)
+     RZ_ASG_Token::init_asg_token(*ctok);
+    }
+
    }
 
   }

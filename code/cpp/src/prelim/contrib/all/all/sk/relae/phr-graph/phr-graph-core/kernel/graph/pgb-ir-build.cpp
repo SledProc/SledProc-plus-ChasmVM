@@ -70,11 +70,18 @@ MG_Token_Subgroups _PGB_IR_Build::get_subgroup(QChar c)
  }
 }
 
+Purpose_Codes& _PGB_IR_Build::make_file_node(QString file_path)
+{
+ MG_Token mgt {MG_Token_Kinds::File_Path, file_path};
+ qts_ << ";make_file_node "; end_line({mgt});
+ return purpose_;
+}
+
 
 Purpose_Codes& _PGB_IR_Build::make_root_node(QString target, MG_Token_Subgroups sg)
 {
  MG_Token mgt = mgtoken(target, MG_Token_Kind_Groups::Target, sg);
- qts_ << " (pgb::make_root_node "; end_line({mgt});
+ qts_ << ";make_root_node "; end_line({mgt});
  return purpose_;
 }
 
@@ -84,7 +91,7 @@ Purpose_Codes& _PGB_IR_Build::enter_anon_signature(QString arg, MG_Token_Subgrou
  MG_Token amgt = mgtoken(arg, MG_Token_Kind_Groups::Arg_Target, asg);
  MG_Token tmgt = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::enter_anon_signature "; end_line({amgt, tmgt});
+ qts_ << ";enter_anon_signature "; end_line({amgt, tmgt});
  return purpose_;
 }
 
@@ -92,7 +99,7 @@ Purpose_Codes& _PGB_IR_Build::leave_anon_signature(QString arg, MG_Token_Subgrou
 {
  MG_Token amgt = mgtoken(arg, MG_Token_Kind_Groups::Arg_Target, asg);
 
- qts_ << " (pgb::leave_anon_signature "; end_line({amgt});
+ qts_ << ";leave_anon_signature "; end_line({amgt});
  return purpose_;
 }
 
@@ -100,7 +107,7 @@ Purpose_Codes& _PGB_IR_Build::make_block_info_node(QString target, MG_Token_Subg
 {
  MG_Token tmgt = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::make_block_info_node "; end_line({tmgt});
+ qts_ << ";make_block_info_node "; end_line({tmgt});
  return purpose_;
 }
 
@@ -110,7 +117,7 @@ Purpose_Codes& _PGB_IR_Build::add_type_declaration(QString arg, MG_Token_Subgrou
  MG_Token amgt = mgtoken(arg, MG_Token_Kind_Groups::Arg, asg);
  MG_Token tmgt = mgtoken(ty, MG_Token_Kind_Groups::Arg, tsg);
 
- qts_ << " (pgb::add_type_declaration "; end_line({amgt, tmgt});
+ qts_ << ";add_type_declaration "; end_line({amgt, tmgt});
  return purpose_;
 }
 
@@ -124,7 +131,7 @@ Purpose_Codes& _PGB_IR_Build::add_indexed_type_declaration(QString arg, MG_Token
  MG_Token smgt = mgtoken(source, MG_Token_Kind_Groups::Arg_Target, ssg);
  MG_Token tmgt = mgtoken(source, MG_Token_Kind_Groups::Target, ssg);
 
- qts_ << " (pgb::add_indexed_type_declaration "; end_line({imgt, amgt, tymgt, smgt, tmgt});
+ qts_ << ";add_indexed_type_declaration "; end_line({imgt, amgt, tymgt, smgt, tmgt});
  return purpose_;
 }
 
@@ -136,7 +143,7 @@ Purpose_Codes& _PGB_IR_Build::make_signatuChasmRZ_Node(QString arg, MG_Token_Sub
  MG_Token amgt = mgtoken(arg, MG_Token_Kind_Groups::Arg_Target, asg);
  MG_Token tmgt = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::make_signatuChasmRZ_Node "; end_line({amgt, tmgt});
+ qts_ << ";make_signatuChasmRZ_Node "; end_line({amgt, tmgt});
  return purpose_;
 }
 
@@ -146,7 +153,7 @@ Purpose_Codes& _PGB_IR_Build::make_token_node(QString arg, MG_Token_Subgroups as
  MG_Token amgt = mgtoken(arg, MG_Token_Kind_Groups::Arg, asg);
  MG_Token tmgt = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::make_token_node "; end_line({amgt, tmgt});
+ qts_ << ";make_token_node "; end_line({amgt, tmgt});
  return purpose_;
 }
 
@@ -159,7 +166,7 @@ Purpose_Codes& _PGB_IR_Build::make_fsym_ground_node(QString arg1,
  MG_Token mgt2 = mgtoken(arg2, MG_Token_Kind_Groups::Generic, asg2);
  MG_Token tmgt = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::make_fsym_ground_node "; end_line({mgt1, mgt2, tmgt});
+ qts_ << ";make_fsym_ground_node "; end_line({mgt1, mgt2, tmgt});
  return purpose_;
 }
 
@@ -172,7 +179,7 @@ Purpose_Codes& _PGB_IR_Build::make_statement_info_node(QString anchor_name,
  MG_Token cmgt = mgtoken(channel_name, MG_Token_Kind_Groups::Generic, csg);
  MG_Token kmgt = mgtoken(anchor_kind, MG_Token_Kind_Groups::Generic, aksg);
  MG_Token tmgt = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
- qts_ << " (pgb::make_statement_info_node  ";
+ qts_ << ";make_statement_info_node  ";
  end_line({amgt, cmgt, kmgt, tmgt});
  return purpose_;
 }
@@ -189,13 +196,13 @@ Purpose_Codes& _PGB_IR_Build::add_fsym_ground_node(QString t1, MG_Token_Subgroup
 
  if(cfen.isEmpty())
  {
-  qts_ << " (pgb::add_fsym_ground_node "; end_line({mgt1, mgt2});
+  qts_ << ";add_fsym_ground_node "; end_line({mgt1, mgt2});
  }
  else
  {
   MG_Token mgt3 = mgtoken(chn, MG_Token_Kind_Groups::Generic, chnsg);
   MG_Token mgt4 = mgtoken(cfen, MG_Token_Kind_Groups::Arg_Target, cfensg);
-  qts_ << " (pgb::add_fsym_ground_node ";
+  qts_ << ";add_fsym_ground_node ";
   end_line({mgt1, mgt2, mgt3, mgt4});
  }
  return purpose_;
@@ -213,13 +220,13 @@ Purpose_Codes& _PGB_IR_Build::add_channel_fground_cross_node(QString t1, MG_Toke
 
  if(cfen.isEmpty())
  {
-  qts_ << " (pgb::add_channel_fground_cross_node "; end_line({mgt1, mgt2});
+  qts_ << ";add_channel_fground_cross_node "; end_line({mgt1, mgt2});
  }
  else
  {
   MG_Token mgt3 = mgtoken(chn, MG_Token_Kind_Groups::Generic, chnsg);
   MG_Token mgt4 = mgtoken(cfen, MG_Token_Kind_Groups::Arg_Target, cfensg);
-  qts_ << " (pgb::add_channel_fground_cross_node ";
+  qts_ << ";add_channel_fground_cross_node ";
   end_line({mgt1, mgt2, mgt3, mgt4});
  }
  return purpose_;
@@ -237,13 +244,13 @@ Purpose_Codes& _PGB_IR_Build::add_channel_fground_coentry_node(QString t1, MG_To
 
  if(cfen.isEmpty())
  {
-  qts_ << " (pgb::add_channel_fground_coentry_node "; end_line({mgt1, mgt2});
+  qts_ << ";add_channel_fground_coentry_node "; end_line({mgt1, mgt2});
  }
  else
  {
   MG_Token mgt3 = mgtoken(chn, MG_Token_Kind_Groups::Generic, chnsg);
   MG_Token mgt4 = mgtoken(cfen, MG_Token_Kind_Groups::Arg_Target, cfensg);
-  qts_ << " (pgb::add_channel_fground_coentry_node ";
+  qts_ << ";add_channel_fground_coentry_node ";
   end_line({mgt1, mgt2, mgt3, mgt4});
  }
  return purpose_;
@@ -259,32 +266,32 @@ Purpose_Codes& _PGB_IR_Build::add_channel_entry_block_node(QString t1, MG_Token_
  MG_Token mgt3 = mgtoken(t3, MG_Token_Kind_Groups::Arg_Target, sg3);
  MG_Token mgt4 = mgtoken(t4, MG_Token_Kind_Groups::Target, sg4);
 
- qts_ << " (pgb::add_channel_entry_block_node "; end_line({mgt1,
+ qts_ << ";add_channel_entry_block_node "; end_line({mgt1,
    mgtch, mgt2, mgt3, mgt4});
  return purpose_;
 }
 
 Purpose_Codes& _PGB_IR_Build::push_block_entry()
 {
- qts_ << " (pgb::push_block_entry "; end_line({});
+ qts_ << ";push_block_entry "; end_line({});
  return purpose_;
 }
 
 Purpose_Codes& _PGB_IR_Build::pop_block_entry()
 {
- qts_ << " (pgb::pop_block_entry "; end_line({});
+ qts_ << ";pop_block_entry "; end_line({});
  return purpose_;
 }
 
 Purpose_Codes& _PGB_IR_Build::push_expression_entry()
 {
- qts_ << " (pgb::push_expression_entry "; end_line({});
+ qts_ << ";push_expression_entry "; end_line({});
  return purpose_;
 }
 
 Purpose_Codes& _PGB_IR_Build::pop_expression_entry()
 {
- qts_ << " (pgb::pop_expression_entry "; end_line({});
+ qts_ << ";pop_expression_entry "; end_line({});
  return purpose_;
 }
 
@@ -297,7 +304,7 @@ Purpose_Codes& _PGB_IR_Build::add_channel_continue_block_node(QString t1, MG_Tok
  MG_Token mgt3 = mgtoken(t3, MG_Token_Kind_Groups::Arg_Target, sg3);
  MG_Token mgt4 = mgtoken(t4, MG_Token_Kind_Groups::Target, sg4);
 
- qts_ << " (pgb::add_channel_continue_block_node "; end_line({mgt1, mgt2, mgt3, mgt4});
+ qts_ << ";add_channel_continue_block_node "; end_line({mgt1, mgt2, mgt3, mgt4});
  return purpose_;
 }
 
@@ -310,7 +317,7 @@ Purpose_Codes& _PGB_IR_Build::add_channel_cross_block_node(QString t1, MG_Token_
  MG_Token mgt3 = mgtoken(t3, MG_Token_Kind_Groups::Arg_Target, sg3);
  MG_Token mgt4 = mgtoken(t4, MG_Token_Kind_Groups::Target, sg4);
 
- qts_ << " (pgb::add_channel_cross_block_node "; end_line({mgt1, mgt2, mgt3, mgt4});
+ qts_ << ";add_channel_cross_block_node "; end_line({mgt1, mgt2, mgt3, mgt4});
  return purpose_;
 }
 
@@ -323,7 +330,7 @@ Purpose_Codes& _PGB_IR_Build::add_channel_sequence_block_node(QString t1, MG_Tok
  MG_Token mgt3 = mgtoken(t3, MG_Token_Kind_Groups::Arg_Target, sg3);
  MG_Token mgt4 = mgtoken(t4, MG_Token_Kind_Groups::Target, sg4);
 
- qts_ << " (pgb::add_channel_sequence_block_node "; end_line({mgt1, mgt2, mgt3, mgt4});
+ qts_ << ";add_channel_sequence_block_node "; end_line({mgt1, mgt2, mgt3, mgt4});
  return purpose_;
 }
 
@@ -339,12 +346,12 @@ Purpose_Codes& _PGB_IR_Build::add_block_entry_node(QString t1, MG_Token_Subgroup
 
  if(anchor_name.isEmpty())
  {
-  qts_ << " (pgb::add_block_entry_node "; end_line({mgt1, mgt2, mgt3});
+  qts_ << ";add_block_entry_node "; end_line({mgt1, mgt2, mgt3});
  }
  else
  {
   MG_Token mgtan = mgtoken(anchor_name, MG_Token_Kind_Groups::Arg_Target, ansg);
-  qts_ << " (pgb::add_block_entry_node "; end_line({mgt1, mgt2, mgtan, mgt3});
+  qts_ << ";add_block_entry_node "; end_line({mgt1, mgt2, mgtan, mgt3});
  }
  return purpose_;
 }
@@ -356,7 +363,7 @@ Purpose_Codes& _PGB_IR_Build::cond_block_entry_or_statement_sequence(QString t1,
  MG_Token mgt2 = mgtoken(t2, MG_Token_Kind_Groups::Arg_Target, sg2);
  MG_Token mgt3 = mgtoken(t3, MG_Token_Kind_Groups::Arg_Target, sg3);
 
- qts_ << " (pgb::cond_block_entry_or_statement_sequence "; end_line({mgt1, mgt2, mgt3});
+ qts_ << ";cond_block_entry_or_statement_sequence "; end_line({mgt1, mgt2, mgt3});
 }
 
 Purpose_Codes& _PGB_IR_Build::add_statement_sequence_node(QString t1, MG_Token_Subgroups sg1,
@@ -367,12 +374,12 @@ Purpose_Codes& _PGB_IR_Build::add_statement_sequence_node(QString t1, MG_Token_S
 
  if(anchor_name.isEmpty())
  {
-  qts_ << " (pgb::add_statement_sequence_node "; end_line({mgt1, mgt2});
+  qts_ << ";add_statement_sequence_node "; end_line({mgt1, mgt2});
  }
  else
  {
   MG_Token mgt3 = mgtoken(anchor_name, MG_Token_Kind_Groups::Arg_Target, ansg);
-  qts_ << " (pgb::add_statement_sequence_node "; end_line({mgt1, mgt2, mgt3});
+  qts_ << ";add_statement_sequence_node "; end_line({mgt1, mgt2, mgt3});
  }
  return purpose_;
 }
@@ -383,7 +390,7 @@ Purpose_Codes& _PGB_IR_Build::copy_value(QString t1, MG_Token_Subgroups sg1,
  MG_Token mgt1 = mgtoken(t1, MG_Token_Kind_Groups::Arg_Target, sg1);
  MG_Token mgt2 = mgtoken(t2, MG_Token_Kind_Groups::Target, sg2);
 
- qts_ << " (pgb::copy_value "; end_line({mgt1, mgt2});
+ qts_ << ";copy_value "; end_line({mgt1, mgt2});
  return purpose_;
 }
 
@@ -393,7 +400,7 @@ Purpose_Codes& _PGB_IR_Build::cond_copy(QString t1, MG_Token_Subgroups sg1,
  MG_Token mgt1 = mgtoken(t1, MG_Token_Kind_Groups::Arg_Target, sg1);
  MG_Token mgt2 = mgtoken(t2, MG_Token_Kind_Groups::Target, sg2);
 
- qts_ << " (pgb::cond_copy "; end_line({mgt1, mgt2});
+ qts_ << ";cond_copy "; end_line({mgt1, mgt2});
  return purpose_;
 }
 
@@ -408,7 +415,7 @@ void _PGB_IR_Build::end_line(QList<MG_Token>&& mgts)
   if(it.hasNext())
     qts_ << ' ';
  }
- qts_ << ")";
+ qts_ << " <-";
 }
 
 Purpose_Codes& _PGB_IR_Build::add_channel_token(QString src, MG_Token_Subgroups srcsg,
@@ -419,7 +426,7 @@ Purpose_Codes& _PGB_IR_Build::add_channel_token(QString src, MG_Token_Subgroups 
  MG_Token mgt2 = mgtoken(tok, MG_Token_Kind_Groups::Arg, toksg);
  MG_Token mgt3 = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::add_channel_token "; end_line({mgt1, mgt2, mgt3});
+ qts_ << ";add_channel_token "; end_line({mgt1, mgt2, mgt3});
  return purpose_;
 }
 
@@ -431,7 +438,7 @@ Purpose_Codes& _PGB_IR_Build::add_channel_continue_token(QString src, MG_Token_S
  MG_Token mgt2 = mgtoken(tok, MG_Token_Kind_Groups::Arg, toksg);
  MG_Token mgt3 = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::add_channel_continue_token "; end_line({mgt1, mgt2, mgt3});
+ qts_ << ";add_channel_continue_token "; end_line({mgt1, mgt2, mgt3});
  return purpose_;
 }
 
@@ -446,7 +453,7 @@ Purpose_Codes& _PGB_IR_Build::add_statement_sequence_token(QString src, MG_Token
  MG_Token mgt3 = mgtoken(sin, MG_Token_Kind_Groups::Arg_Target, sinsg);
  MG_Token mgt4 = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::add_statement_sequence_token "; end_line({mgt1, mgt2, mgt3, mgt4});
+ qts_ << ";add_statement_sequence_token "; end_line({mgt1, mgt2, mgt3, mgt4});
  return purpose_;
 }
 
@@ -459,7 +466,7 @@ Purpose_Codes& _PGB_IR_Build::add_block_entry_token(QString src, MG_Token_Subgro
  MG_Token mgt3 = mgtoken(sin, MG_Token_Kind_Groups::Arg_Target, sinsg);
  MG_Token mgt4 = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::add_block_entry_token "; end_line({mgt1, mgt2, mgt3, mgt4});
+ qts_ << ";add_block_entry_token "; end_line({mgt1, mgt2, mgt3, mgt4});
  return purpose_;
 }
 
@@ -472,7 +479,7 @@ Purpose_Codes& _PGB_IR_Build::add_channel_entry_token(QString src, MG_Token_Subg
  MG_Token mgt3 = mgtoken(tok, MG_Token_Kind_Groups::Arg, toksg);
  MG_Token mgt4 = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::add_channel_entry_token "; end_line({mgt1, mgt2, mgt3, mgt4});
+ qts_ << ";add_channel_entry_token "; end_line({mgt1, mgt2, mgt3, mgt4});
  return purpose_;
 }
 
@@ -485,7 +492,7 @@ Purpose_Codes& _PGB_IR_Build::add_channel_xentry_token(QString src, MG_Token_Sub
  MG_Token mgt3 = mgtoken(tok, MG_Token_Kind_Groups::Arg, toksg);
  MG_Token mgt4 = mgtoken(target, MG_Token_Kind_Groups::Target, tsg);
 
- qts_ << " (pgb::add_channel_xentry_token "; end_line({mgt1, mgt2, mgt3, mgt4});
+ qts_ << ";add_channel_xentry_token "; end_line({mgt1, mgt2, mgt3, mgt4});
  return purpose_;
 }
 
@@ -493,7 +500,7 @@ Purpose_Codes& _PGB_IR_Build::add_channel_xentry_token(QString src, MG_Token_Sub
 
 Purpose_Codes& _PGB_IR_Build::comment(QString str)
 {
- qts_ << "(pgb::comment \"" << str << "\")";
+ qts_ << ";comment \"" << str << "\")";
  return purpose_;
 }
 
@@ -510,18 +517,18 @@ Purpose_Codes& _PGB_IR_Build::macro(QStringList _args)
 
 Purpose_Codes& _PGB_IR_Build::macro(QList<MG_Token>& args)
 {
- qts_ << "(pgb::macro "; end_line(std::move(args));
+ qts_ << ";macro "; end_line(std::move(args));
  return purpose_;
 }
 
 Purpose_Codes& _PGB_IR_Build::write_with_tokens(QString fn, QList<MG_Token>& mgts)
 {
- qts_ << "(pgb::" << fn << ' '; end_line(std::move(mgts));
+ qts_ << ";" << fn << ' '; end_line(std::move(mgts));
  return purpose_;
 }
 
-PGB_IR_Build::PGB_IR_Build(QString out_file)
-  :  out_file_(out_file)
+PGB_IR_Build::PGB_IR_Build(QString primary_source_file, QString out_file)
+  :  primary_source_file_(primary_source_file), out_file_(out_file)
 {
 
 }
@@ -717,7 +724,7 @@ void PGB_IR_Build::expand_macros(QList<Text_With_Purpose>& tps)
  while(it != tps.end())
  {
   const Text_With_Purpose& tp = *it;
-  if(tp.text.startsWith("(pgb::macro"))
+  if(tp.text.startsWith(";macro"))
   {
    QMultiMap<MG_Token_Kinds, QPair<MG_Token, int>> mgtm;
    PGB_IR_Build::parse_line(tp.text, mgtm);

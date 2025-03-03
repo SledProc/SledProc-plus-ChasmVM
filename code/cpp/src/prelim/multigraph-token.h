@@ -25,7 +25,7 @@ enum class MG_Token_Subgroups
 
 enum class MG_Token_Kinds
 {
- N_A, Generic, Raw_Symbol, Raw_Value, String_Literal,
+ N_A, Generic, Raw_Symbol, Raw_Value, String_Literal, File_Path,
  Arg_Raw_Symbol, Arg_Raw_Value, Ledger_Target, Known_Target,
  Arg_Ledger_Target, Arg_Known_Target, Arg_String_Literal,
  Macro_TBD, Macro_Name,
@@ -42,7 +42,9 @@ inline MG_Token_Kind_Groups MG_Token_Kind_to_group(MG_Token_Kinds k)
  case MG_Token_Kinds::Raw_Value:
   return MG_Token_Kind_Groups::Raw;
 
- case MG_Token_Kinds::String_Literal: return MG_Token_Kind_Groups::String_Literal;
+ case MG_Token_Kinds::File_Path:
+ case MG_Token_Kinds::String_Literal:
+  return MG_Token_Kind_Groups::String_Literal;
 
  case MG_Token_Kinds::Arg_Raw_Symbol:
  case MG_Token_Kinds::Arg_Raw_Value:
@@ -252,29 +254,58 @@ struct MG_Token
   static QMap<QString, MG_Token_Kinds> static_map {{
 #define TEMP_MACRO(X, Y) {Y, MG_Token_Kinds::X},
 
-  TEMP_MACRO(Raw_Symbol, "__@")
-  TEMP_MACRO(Raw_Value, "__$")
-  TEMP_MACRO(Generic, "/--")
+    TEMP_MACRO(File_Path, "fil")
 
-  TEMP_MACRO(Arg_Raw_Symbol, ">_@")
-  TEMP_MACRO(Arg_Raw_Value, ">_$")
+    TEMP_MACRO(Raw_Symbol, "rws")
+    TEMP_MACRO(Raw_Value, "rwv")
+    TEMP_MACRO(Generic, "gen")
 
-  TEMP_MACRO(Arg_Ledger_Target, "<->")
-  TEMP_MACRO(Arg_Known_Target, "<!>")
+    TEMP_MACRO(Arg_Raw_Symbol, "ars")
+    TEMP_MACRO(Arg_Raw_Value, "arv")
 
-  TEMP_MACRO(Ledger_Target, "-->")
-  TEMP_MACRO(Known_Target, "-!>")
+    TEMP_MACRO(Arg_Ledger_Target, "ald")
+    TEMP_MACRO(Arg_Known_Target, "akn")
 
-  TEMP_MACRO(Arg_String_Literal, "<$>")
+    TEMP_MACRO(Ledger_Target, "ldt")
+    TEMP_MACRO(Known_Target, "knt")
 
-  TEMP_MACRO(Macro_TBD, "...")
-  TEMP_MACRO(Macro_Name, "(&)")
+    TEMP_MACRO(Arg_String_Literal, "ask")
+
+    TEMP_MACRO(Macro_TBD, "tbd")
+    TEMP_MACRO(Macro_Name, "mcn")
 
 
-  TEMP_MACRO(Sig_Channel, "-&-")
-  TEMP_MACRO(Sig_Type, "-%-")
-  TEMP_MACRO(Sig_Symbol, "-@-")
-  TEMP_MACRO(Sig_Symbol_Before_Type, "-@%")
+    TEMP_MACRO(Sig_Channel, "sgc")
+    TEMP_MACRO(Sig_Type, "sgt")
+    TEMP_MACRO(Sig_Symbol, "sgs")
+    TEMP_MACRO(Sig_Symbol_Before_Type, "sbt")
+
+
+//  TEMP_MACRO(Raw_Symbol, "__@")
+//  TEMP_MACRO(Raw_Value, "__$")
+//  TEMP_MACRO(Generic, "/--")
+
+//  TEMP_MACRO(Arg_Raw_Symbol, ">_@")
+//  TEMP_MACRO(Arg_Raw_Value, ">_$")
+
+//  TEMP_MACRO(Arg_Ledger_Target, "<->")
+//  TEMP_MACRO(Arg_Known_Target, "<!>")
+
+//  TEMP_MACRO(Ledger_Target, "-->")
+//  TEMP_MACRO(Known_Target, "-!>")
+
+//  TEMP_MACRO(Arg_String_Literal, "<$>")
+
+//  TEMP_MACRO(Macro_TBD, "...")
+//  TEMP_MACRO(Macro_Name, "(&)")
+
+
+//  TEMP_MACRO(Sig_Channel, "-&-")
+//  TEMP_MACRO(Sig_Type, "-%-")
+//  TEMP_MACRO(Sig_Symbol, "-@-")
+//  TEMP_MACRO(Sig_Symbol_Before_Type, "-@%")
+
+
 
 #undef TEMP_MACRO
   }};
@@ -296,28 +327,55 @@ struct MG_Token
 
 #define TEMP_MACRO(X, Y) {MG_Token_Kinds::X, Y},
 
-  TEMP_MACRO(Raw_Symbol, "__@")
-  TEMP_MACRO(Raw_Value, "__$")
-  TEMP_MACRO(Generic, "/--")
+//  TEMP_MACRO(Raw_Symbol, "__@")
+//  TEMP_MACRO(Raw_Value, "__$")
+//  TEMP_MACRO(Generic, "/--")
 
-  TEMP_MACRO(Arg_Raw_Symbol, ">_@")
-  TEMP_MACRO(Arg_Raw_Value, ">_$")
+//  TEMP_MACRO(Arg_Raw_Symbol, ">_@")
+//  TEMP_MACRO(Arg_Raw_Value, ">_$")
 
-  TEMP_MACRO(Ledger_Target, "-->")
-  TEMP_MACRO(Known_Target, "-!>")
+//  TEMP_MACRO(Ledger_Target, "-->")
+//  TEMP_MACRO(Known_Target, "-!>")
 
-  TEMP_MACRO(Arg_Ledger_Target, "<->")
-  TEMP_MACRO(Arg_Known_Target, "<!>")
+//  TEMP_MACRO(Arg_Ledger_Target, "<->")
+//  TEMP_MACRO(Arg_Known_Target, "<!>")
 
-  TEMP_MACRO(Arg_String_Literal, "<$>")
+//  TEMP_MACRO(Arg_String_Literal, "<$>")
 
-  TEMP_MACRO(Macro_TBD, "...")
-  TEMP_MACRO(Macro_Name, "(&)")
+//  TEMP_MACRO(Macro_TBD, "...")
+//  TEMP_MACRO(Macro_Name, "(&)")
 
-  TEMP_MACRO(Sig_Channel, "-&-")
-  TEMP_MACRO(Sig_Type, "-%-")
-  TEMP_MACRO(Sig_Symbol, "-@-")
-  TEMP_MACRO(Sig_Symbol_Before_Type, "-@%")
+//  TEMP_MACRO(Sig_Channel, "-&-")
+//  TEMP_MACRO(Sig_Type, "-%-")
+//  TEMP_MACRO(Sig_Symbol, "-@-")
+//  TEMP_MACRO(Sig_Symbol_Before_Type, "-@%")
+
+    TEMP_MACRO(File_Path, "fil")
+
+
+    TEMP_MACRO(Raw_Symbol, "rws")
+    TEMP_MACRO(Raw_Value, "rwv")
+    TEMP_MACRO(Generic, "gen")
+
+    TEMP_MACRO(Arg_Raw_Symbol, "ars")
+    TEMP_MACRO(Arg_Raw_Value, "arv")
+
+    TEMP_MACRO(Arg_Ledger_Target, "ald")
+    TEMP_MACRO(Arg_Known_Target, "akn")
+
+    TEMP_MACRO(Ledger_Target, "ldt")
+    TEMP_MACRO(Known_Target, "knt")
+
+    TEMP_MACRO(Arg_String_Literal, "ask")
+
+    TEMP_MACRO(Macro_TBD, "tbd")
+    TEMP_MACRO(Macro_Name, "mcn")
+
+
+    TEMP_MACRO(Sig_Channel, "sgc")
+    TEMP_MACRO(Sig_Type, "sgt")
+    TEMP_MACRO(Sig_Symbol, "sgs")
+    TEMP_MACRO(Sig_Symbol_Before_Type, "sbt")
 
 #undef TEMP_MACRO
   }};
@@ -347,7 +405,10 @@ struct MG_Token
    //?return QString("\"%1\"").arg(raw_text);
 
   default:
-   return QString(":|%1%2|").arg(get_encode_prefix()).arg(escaped_raw_text());
+//?   return QString(":|%1>%2|").arg(get_encode_prefix()).arg(escaped_raw_text());
+   return QString("%1.%2{%3}").arg(get_encode_prefix())
+     .arg((short)kind).arg(escaped_raw_text());
+
    //return QString("%1%2").arg(get_encode_prefix()).arg(raw_text);
   }
  }

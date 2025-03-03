@@ -26,8 +26,18 @@ void RPI_Output::init_top_level_block(PGB_IR_Build& pgb)
 }
 
 
+void RPI_Output::init_string_litreal_block()
+{
+
+}
+
+
 void RPI_Output::build_phaon_graph(PGB_IR_Build& pgb)
 {
+ QString primary_source_file = pgb.primary_source_file();
+
+ pgb(step_forms_).make_file_node(primary_source_file);
+
  init_top_level_block(pgb);
 
 

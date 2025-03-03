@@ -191,6 +191,10 @@ caon_ptr<ChasmRZ_Node> RZ_Prerun_Setup::add_observer_function(QString name,
 
  caon_ptr<ChasmRZ_Node> rce_node = add_call_entry_node(start_node, rof_node);
 
+ caon_ptr<ChasmRZ_Call_Entry> rce = rce_node->chasm_rz_call_entry();
+ rce->flags.is_coterm_entry = true;
+ rce->flags.is_observer = true;
+
  start_node <<Tf/connector>> rce_node;
 
 // rce_node <<Tf/Qy.Run_Call_Entry>> rof_node;

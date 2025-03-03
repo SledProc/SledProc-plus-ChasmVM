@@ -47,6 +47,9 @@ public:
 
  ACCESSORS__RGET(QTextStream ,qts)
 
+
+ Purpose_Codes& make_file_node(QString file_path);
+
  Purpose_Codes& make_root_node(QString target, MG_Token_Subgroups sg);
  Purpose_Codes& make_root_node(QString target)
  {
@@ -388,11 +391,14 @@ public:
  void generate_file();
 
  static MG_Token mgtoken(QString rt, MG_Token_Kind_Groups kg, MG_Token_Subgroups sg);
+// static MG_Token mgtoken(QString rt, MG_Token_Kinds k);
 
 };
 
 class PGB_IR_Build
 {
+ QString primary_source_file_;
+
  QString out_file_;
  QTextStream qts_;
 
@@ -406,8 +412,9 @@ public:
   Purpose_Codes purpose;
  };
 
- PGB_IR_Build(QString out_file);
+ PGB_IR_Build(QString primary_source_file, QString out_file);
 
+ ACCESSORS(QString ,primary_source_file)
  ACCESSORS(QString ,out_file)
 
  _PGB_IR_Build operator()(Text_With_Purpose& qs);

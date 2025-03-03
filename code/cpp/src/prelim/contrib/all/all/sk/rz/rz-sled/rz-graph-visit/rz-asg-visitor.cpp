@@ -241,7 +241,10 @@ caon_ptr<RZ_ASG_Visitor::tNode> RZ_ASG_Visitor::entry_from_call_entry(caon_ptr<t
  {
   CAON_PTR_DEBUG(tNode ,node)
   node->debug_connections();
-  return Qy.Run_Call_Entry(in_Cf node);
+//?  return Qy.Run_Call_Entry(in_Cf node);
+
+  return Qy.Run_Call_Entry(in_Tf node);
+
  }
  return nullptr;
 }
@@ -268,7 +271,9 @@ caon_ptr<RZ_ASG_Visitor::tNode> RZ_ASG_Visitor::find_block_entry_node(caon_ptr<t
   {
    rbi = binode->block_info();
   }
-  return Qy.Run_Block_Entry(in_Cf node);
+
+//?  return Qy.Run_Block_Entry(in_Cf node);
+  return Qy.Run_Block_Entry(in_Tf node);
  }
  return nullptr;
 }
@@ -290,7 +295,8 @@ caon_ptr<RZ_ASG_Visitor::tNode>
  caon_ptr<tNode> result = nullptr;
  if(node)
  {
-  result = Qy.Run_Call_Entry(in_Cf node);
+  //?result = Qy.Run_Call_Entry(in_Cf node);
+  result = Qy.Run_Call_Entry(in_Tf node);
  }
  return result;
 }
@@ -675,10 +681,19 @@ QString RZ_ASG_Visitor::identify_function(QString name,
 RZ_ASG_Visitor::Next_Node_Premise RZ_ASG_Visitor::get_next_node(caon_ptr<ChasmRZ_Node> start_node, caon_ptr<ChasmRZ_Node>& result)
 {
  CAON_PTR_DEBUG(ChasmRZ_Node ,start_node)
- if(result = Qy.Run_Call_Sequence(in_Cf start_node))
+
+ start_node->debug_connections();
+
+ if(result = Qy.Run_Call_Sequence(in_Tf start_node))
  {
   return Next_Node_Premise::Normal;
  }
+
+ if(result = Qy.Type_Symbol_Declaration(in_Cf start_node))
+ {
+  return Next_Node_Premise::Normal;
+ }
+
  if(result = Qy.Run_Call_Entry(in_Cf start_node))
  {
   return Next_Node_Premise::Expression;

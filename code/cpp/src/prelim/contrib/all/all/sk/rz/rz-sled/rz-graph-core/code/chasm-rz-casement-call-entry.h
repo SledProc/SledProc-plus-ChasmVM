@@ -31,6 +31,7 @@ public:
 
  flags_(3)
   bool is_statement_entry:1;
+  bool is_coterm_entry:1;
   bool is_function_expression_entry:1;
   bool is_data_branch_entry:1;
   bool is_tuple_info_entry:1;

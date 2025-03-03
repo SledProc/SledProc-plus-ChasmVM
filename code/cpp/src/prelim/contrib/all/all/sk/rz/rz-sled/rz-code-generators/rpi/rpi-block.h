@@ -135,7 +135,7 @@ public:
 
  caon_ptr<ChasmRZ_Block_Entry> get_block_entry();
 
- RZ_ASG_Visitor& visitor();
+//? RZ_ASG_Visitor& visitor();
 
  void write(QList<PGB_IR_Build::Text_With_Purpose>& tps, QTextStream* qts);
  void write_top_level(QList<PGB_IR_Build::Text_With_Purpose>& tps, QTextStream* qts);

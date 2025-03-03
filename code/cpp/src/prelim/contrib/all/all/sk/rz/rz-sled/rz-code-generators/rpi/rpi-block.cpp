@@ -141,12 +141,18 @@ void RPI_Block::add_form_from_call_entry_node(RZ_Graph_Visitor_Phaon& visitor_ph
    current_form_->flags.is_statement = true;
   }
 
+  if(rce && rce->flags.is_coterm_entry)
+  {
+   current_form_->flags.is_coterm = true;
+  }
+
+
   if(rbe)
   {
    if(parent_block_)
-     current_form_->flags.is_nested_block_entry_statment = true;
+     current_form_->flags.is_nested_block_entry_coterm = true;
    else
-     current_form_->flags.is_block_entry_statment = true;
+     current_form_->flags.is_block_entry_coterm = true;
   }
 
   forms_.push_back(current_form_);
@@ -199,6 +205,13 @@ caon_ptr<ChasmRZ_Block_Entry> RPI_Block::get_block_entry()
  }
  return nullptr;
 }
+
+
+//RZ_ASG_Visitor& RPI_Block::visitor()
+//{
+// //return
+//}
+
 
 // //  contrary to name, can also be expression entry ...
 void RPI_Block::scan_form_from_statement_entry_node(RZ_Graph_Visitor_Phaon& visitor_phaon,
@@ -333,7 +346,10 @@ void RPI_Block::scan_form_from_statement_entry_node(RZ_Graph_Visitor_Phaon& visi
 
   case RZ_ASG_Visitor::Next_Node_Premise::Normal:
    {
-    if(caon_ptr<RZ_ASG_Token> next_tok = next_node->get_asg_token())
+    caon_ptr<RZ_ASG_Token> next_tok = next_node->get_asg_token();
+    visitor_phaon.visitor().check_find_asg_token(next_tok, next_node);
+
+    if(next_tok)
     {
      CAON_PTR_DEBUG(RZ_ASG_Token ,next_tok)
 
@@ -839,7 +855,7 @@ void RPI_Block::write(QList<PGB_IR_Build::Text_With_Purpose>& tps, QTextStream* 
 
   CAON_PTR_DEBUG(RPI_Stage_Form ,rsf)
 
-  if(!rsf->is_effective_block_entry_statment())
+  if(!rsf->is_effective_block_entry_coterm())
   {
    if(!rsf->type_declaration())
    {

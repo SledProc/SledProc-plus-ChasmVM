@@ -62,7 +62,7 @@ QString RPI_Stage_Form::get_assignment_target()
 
 caon_ptr<RPI_Type_Declaration> RPI_Stage_Form::type_declaration_on_block_entry()
 {
- if(flags.is_block_entry_statment || flags.is_nested_block_entry_statment)
+ if(flags.is_block_entry_coterm || flags.is_nested_block_entry_coterm)
    return type_declaration_;
  return nullptr;
 }
@@ -99,7 +99,7 @@ void RPI_Stage_Form::write_assignment_initialization_via_expression(
   td = prior->type_declaration_on_block_entry();
  }
  if(td)
-   f->flags.is_block_entry_statment = true;
+   f->flags.is_block_entry_coterm = true;
 
  f->mark_as_assignment_expression();
 
@@ -333,19 +333,19 @@ void RPI_Stage_Form::mark_as_fn()
 }
 
 
-bool RPI_Stage_Form::is_effective_block_entry_statment()
+bool RPI_Stage_Form::is_effective_block_entry_coterm()
 {
- bool result = flags.is_block_entry_statment;
+ bool result = flags.is_block_entry_coterm;
 
  if(!result)
-   result = flags.is_nested_block_entry_statment;
+   result = flags.is_nested_block_entry_coterm;
 
  if(!result)
  {
   if(inner_elements_.isEmpty())
     return false;
   if(inner_elements_[0].kind() == RPI_Stage_Element_Kinds::Form)
-    result = inner_elements_[0].form()->is_effective_block_entry_statment();
+    result = inner_elements_[0].form()->is_effective_block_entry_coterm();
  }
  return result;
 }
@@ -557,8 +557,8 @@ void RPI_Stage_Form::write_unmediated(QTextStream* qts, caon_ptr<RPI_Stage_Form>
      pgb_(step_forms_).make_token_node(rset.prepend('@'), "&fsym-node")
      = Purpose_Codes::Make_Token_Node_FSym;
 
-   if( flags.is_block_entry_statment
-      || flags.is_inferred_block_entry_statment )
+   if( flags.is_block_entry_coterm
+      || flags.is_inferred_block_entry_coterm )
    {
     if(rai)
     {
@@ -572,7 +572,7 @@ void RPI_Stage_Form::write_unmediated(QTextStream* qts, caon_ptr<RPI_Stage_Form>
       pgb_(step_forms_).add_block_entry_node("!last_block_pre_entry_node",
       "&fsym-node", "!last_block_entry_node");
    }
-   else if(flags.is_inferred_block_entry_statment)
+   else if(flags.is_inferred_block_entry_coterm)
    {
     if(rai)
     {
