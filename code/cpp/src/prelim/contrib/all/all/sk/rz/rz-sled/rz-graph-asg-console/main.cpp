@@ -128,7 +128,7 @@ struct Page_Ref_Pair;
 
 struct Page_Ref {
  ushort number;
- ushort note;
+ uint note;
  QString roman;
 
  QString to_code() const;
@@ -183,7 +183,13 @@ QString Page_Ref::to_code() const
  if(roman.isEmpty())
  {
   if(note)
-    return "@%1/%2"_qt.arg(number).arg(note);
+  {
+   QString n = QString::number(note);
+   int ix = n.lastIndexOf("000");
+   if(ix != -1)
+     n.replace(ix, 3, ";");
+   return "@%1/%2"_qt.arg(number).arg(n);
+  }
   return "%%1"_qt.arg(number);
  }
  return "$%1"_qt.arg(roman);
@@ -204,7 +210,7 @@ Page_Ref Page_Ref::_from(QString qs)
  }
  else
  {
-  QRegularExpression qre1 ("^[xvi]+");
+  QRegularExpression qre1 ("^[xvi]+$");
   QRegularExpressionMatch match1 = qre1.match(qs);
   if(match1.hasMatch())
     roman = qs;
@@ -232,9 +238,13 @@ Page_Ref_Pair Page_Ref::from(QString qs)
 
 struct Index_Entry {
 
+ Index_Entry* parent;
+ int count_in_parent;
  QString key;
  QVector<Page_Ref_Pair> refs;
  QString carried;
+ int sub_count;
+ QString sub_carried;
 
  static void add_redirect(QString text, QString supplement, QVector<Index_Entry>& entries);
 
@@ -254,14 +264,53 @@ void Index_Entry::add_redirect(QString text, QString supplement, QVector<Index_E
   QString key = text.mid(0, ix);
   QString carried = text.mid(ix + 1).simplified();
 
-  entries.push_back({key, {}, carried});
+  entries.push_back({nullptr, 0, key, {}, carried, 0});
  }
  else
  {
-  entries.push_back({text, {}, {}});
+  entries.push_back({nullptr, 0, text, {}, {}, 0});
  }
+}
+
+void write_index_entries(const QVector<Index_Entry>& index_entries, QTextStream& qts)
+{
+ for(const Index_Entry& ie : index_entries)
+ {
+  qts << "\n ";
+
+  if(ie.parent)
+    qts << "[[  \"" << ie.key << "\"";
+  else
+    qts << "[[ \"" << ie.key << "\"";
 
 
+
+  if(ie.parent)
+    qts << " *" << ie.count_in_parent;
+
+  if(ie.sub_count)
+    qts << " #" << ie.sub_count;
+
+  if(!ie.carried.isEmpty())
+    qts << " +{" << ie.carried << "}";
+
+  if(!ie.sub_carried.isEmpty())
+    qts << " -{" << ie.sub_carried << "}";
+
+  qts <<  " => ";// << ie.refs.count();
+
+  int count = 0;
+  for(Page_Ref_Pair pr: ie.refs)
+  {
+   if(count > 0)
+     qts << " ->";
+   ++count;
+   qts << " " << pr.to_code();
+  }
+
+  qts << "\n ]] \n";
+
+ }
 
 }
 
@@ -354,7 +403,7 @@ int main(int argc, char *argv[])
    if(line.contains("Bridget"))
      CAON_DEBUG_NOOP;
 
-   if(line.contains("Mariam"))
+   if(line.contains("Billings"))
      CAON_DEBUG_NOOP;
 
    if(line.endsWith("//"))
@@ -383,7 +432,7 @@ int main(int argc, char *argv[])
 
    bool first_match = false;
    {
-    QRegularExpression qre("(\\d+(?:n\\d+)?|[xvi]+)[.](.*)");
+    QRegularExpression qre("^((?:\\d+--)?\\d+(?:n\\d+)?|[xvi-]+)[.](.*)");
     QRegularExpressionMatch match = qre.match(line);
     if(match.hasMatch())
     {
@@ -396,7 +445,7 @@ int main(int argc, char *argv[])
 
    if(!first_match)
    {
-    QRegularExpression qre("(\\d+)\\s+([(].*)");
+    QRegularExpression qre("^(\\d+|[xvi-]+)\\s+([(].*)");
     QRegularExpressionMatch match = qre.match(line);
     if(match.hasMatch())
     {
@@ -439,7 +488,7 @@ int main(int argc, char *argv[])
 
    if(!current_key.isEmpty())
    {
-    index_entries.push_back({current_key, {}, carried_see});
+    index_entries.push_back({nullptr, 0, current_key, {}, carried_see, 0});
     current_key.clear();
     //?carried_see.clear();
    }
@@ -473,27 +522,71 @@ int main(int argc, char *argv[])
   }
  }
 
+ Index_Entry* last_non_sub = nullptr;
+
  for(Index_Entry& ie : index_entries)
  {
-  dqts << "\n [[ " << ie.key;
-
-  if(!ie.carried.isEmpty())
-    dqts << " +{" << ie.carried << "}";
-
-  dqts <<  " => ";// << ie.refs.count();
-
-  int count = 0;
-  for(Page_Ref_Pair pr: ie.refs)
+  QString key = ie.key;
+  if(key.startsWith(";_"))
   {
-   if(count > 0)
-     dqts << " ->";
-   ++count;
-   dqts << " " << pr.to_code();
+   ie.parent = last_non_sub;
+   ie.key = ie.key.mid(2);
+   ++last_non_sub->sub_count;
+   ie.count_in_parent = last_non_sub->sub_count;
+   if(!ie.carried.isEmpty())
+   {
+    last_non_sub->sub_carried = ie.carried;
+    ie.carried.clear();
+   }
   }
-
-  dqts << "\n ]] \n";
-
+  else
+    last_non_sub = &ie;
  }
+
+
+ QVector<Index_Entry> index_entries_adj;
+
+ Index_Entry* ie_for_sub_increment;
+
+ for(Index_Entry& ie : index_entries)
+ {
+  if(ie.parent && ie.parent == ie_for_sub_increment)
+    ++ie.count_in_parent;
+
+  QString key = ie.key;
+  key.replace("%", ",");
+
+  if(ie.sub_count && ie.key.contains(":"))
+  {
+   ie_for_sub_increment = &ie;
+   QStringList split = ie.key.split(":");
+
+   Index_Entry ie1, ie2;
+   ie1.carried = ie.carried;
+   ie1.count_in_parent = ie.count_in_parent; // should be 0
+   ie1.key = split.value(0).simplified();
+   ie1.parent = ie.parent; // should be nullptr
+   //ie1.refs =
+   ie1.sub_carried = ie.sub_carried;
+   ie1.sub_count = ie.sub_count;
+
+   ie2.count_in_parent = 1; // should be 0
+   ie2.key = split.value(1).simplified();
+   ie2.parent = &ie; // should be nullptr
+   ie2.refs = ie.refs;
+   ie2.sub_count = 0;
+
+   index_entries_adj.push_back(ie1);
+   index_entries_adj.push_back(ie2);
+  }
+  else
+  {
+   ie.key = key;
+   index_entries_adj.push_back(ie);
+  }
+ }
+
+ write_index_entries(index_entries_adj, dqts);
 
  KA::TextIO::save_file(ofile, otext);
  KA::TextIO::save_file(dfile, dtext);
