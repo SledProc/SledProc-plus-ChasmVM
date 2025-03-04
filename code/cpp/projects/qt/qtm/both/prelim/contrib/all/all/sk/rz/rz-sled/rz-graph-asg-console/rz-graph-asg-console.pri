@@ -36,8 +36,14 @@ DEFINES += USE_RZNS
 DEFINES += USE_KANS
 
 
+HEADERS += \
+  $$SRC_DIR/m2m.h \
+
+
+
 SOURCES += \
-  $$SRC_DIR/main.cpp
+  $$SRC_DIR/main.cpp \
+  $$SRC_DIR/m2m.cpp \
 
 
 LIBS += -L$$TARGETSDIR  \
