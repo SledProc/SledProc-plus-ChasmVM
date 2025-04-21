@@ -1,0 +1,36 @@
+
+</g> <!-- main board -->
+
+<!-- tokens -->
+<g> 
+
+%TOKENS%
+
+</g> <!-- end tokens -->
+
+<!-- chess-icons -->
+<defs> 
+
+%ICONS%
+
+</defs> <!-- end chess icons -->
+
+<!-- text indicators -->
+<g> 
+
+%TEXT-INDICATORS%
+
+</g> <!-- text indicators -->
+
+
+<!-- move indicators -->
+
+ %MOVE-INDICATORS%
+
+<!-- end move indicators -->
+
+
+</svg>
+
+
+

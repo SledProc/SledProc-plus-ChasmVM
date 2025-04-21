@@ -1,0 +1,149 @@
+
+//           Copyright Nathaniel Christen 2020.
+//  Distributed under the Boost Software License, Version 1.0.
+//     (See accompanying file LICENSE_1_0.txt or copy at
+//           http://www.boost.org/LICENSE_1_0.txt)
+
+
+#ifndef GAME_VARIANT__H
+#define GAME_VARIANT__H
+
+#include "accessors.h"
+
+#include "flags.h"
+
+#include "global-types.h"
+
+#include "game-token.h"
+#include "game-position.h"
+
+#include <QString>
+#include <QQueue>
+#include <QVector>
+
+#include <QPair>
+
+class Game_Driver;
+class Game_Position;
+
+class Game_Variant
+{
+public:
+
+ struct Move_Option {
+   Game_Position* position;
+   s2 index; // //  negative index means capture
+   // //  negative: -2 = knight's move
+    //    -1 = cut double
+    //    -3 = 2-jump
+    //    other arimaas?
+   s1 direction_code;
+ };
+
+ struct Move_Option_Sequence_Details {
+  s1 increment;
+  s1 first_increment;
+  s2 minimum_legal_move;
+  s2 first_check;
+  u1 screen_minimum;
+  u1 screen_maximum;
+ };
+
+ struct Move_Option_Vector : QVector<Move_Option>
+ {
+  QMap<s1, Game_Position*> max_positions;
+  QMap<s1, QVector<Game_Position*>> jump_screens;
+ };
+
+private:
+
+ QString name_;
+ Game_Driver* parent_driver_;
+
+
+protected:
+
+ enum class Direction_Codes {
+  N_A, Diagonals, Double_Vertical, Double_Horizontal, Single_Orthogonal, Primary_6
+ };
+
+ struct Move_Option_Details {
+
+  enum class Specs {
+   N_A, No_Captures, Allow_Captures, Look_for_Jump_Screen };
+
+  Specs specs;
+  s1 direction_code;
+  u1 ring_index;
+  u1 wind_index;
+  u2 total_count;
+
+  // //  screen info: first = current, second = min, third = max
+  QMap<s1, std::array<u1, 3>>* screen_info;
+ };
+
+ Game_Token::Token_Kind get_underlying_token_kind(Game_Token* token)
+ {
+  return (Game_Token::Token_Kind) (token->kind() & Game_Token::Token_Kind::Clear_NS);
+ }
+
+ Game_Position* get_game_position_via_offset(Game_Position* starting, QPair<s2, s2> offsets);
+
+ virtual Game_Position* check_move_option(Game_Token* token, Game_Position* start_position,
+   QPair<s2, s2> offsets, Game_Position::Occupiers& os);
+
+ virtual s2 check_move_option(Game_Token* token, Game_Position* start_position,
+   QPair<s2, s2> offsets, Game_Position::Occupiers& os,
+   Move_Option_Vector& move_options, Move_Option_Details details,
+   Game_Token** blocking_token = nullptr, s2 minimum_legal_move = 0);
+
+//   , u2 index,
+//   Game_Token** indirect_blocking_token = nullptr, Game_Token** blocking_token = nullptr);
+
+// virtual Game_Position* check_move_option(Game_Token* token, Game_Position* start_position,
+//   QPair<s2, s2> offsets, s2& index,
+//   Game_Token** indirect_blocking_token = nullptr, Game_Token** blocking_token = nullptr);
+
+// virtual s2 check_move_option(Game_Token* token, Game_Position* start_position,
+//   QPair<s2, s2> offsets, Move_Option_Vector& move_options, u2 index,
+//   Game_Token** indirect_blocking_token = nullptr, Game_Token** blocking_token = nullptr);
+
+// virtual Game_Position* check_move_option(Game_Token* token, Game_Position* start_position,
+//   QPair<s2, s2> offsets, s2& index,
+//   Game_Token** indirect_blocking_token = nullptr, Game_Token** blocking_token = nullptr);
+
+public:
+
+ Game_Variant(QString name, Game_Driver* parent_driver);
+
+ ACCESSORS(QString ,name)
+
+ struct Double_Step_Path_Details {
+  Game_Position* first_position;
+  Game_Token* first_occupier;
+  Game_Position* intermediate_position;
+  Game_Token* intermediate_occupier;
+  Game_Position* last_position;
+  Game_Token* last_occupier;
+  Game_Position* last_adj_position;
+  Game_Token* last_adj_occupier;
+
+  void reset() { *this = {nullptr,nullptr,nullptr,nullptr,nullptr,nullptr,nullptr,nullptr}; }
+ };
+
+ virtual void check_double_step_path(Game_Position* start_position,
+   u1 path, Double_Step_Path_Details& details);
+
+ virtual void check_move_options(Game_Token* token, Game_Position* start_position,
+   Move_Option_Vector& move_options);
+
+ virtual void check_dislodge(Game_Token* token, Game_Position* gp,
+   QVector<Game_Position::Dislodge_Info>& affected_tokens);
+
+ virtual void check_secondary_dislodge(Game_Position* prior_gp, Game_Token* token, Game_Position* gp,
+   QVector<Game_Position::Dislodge_Info>& affected_tokens, u1 prior_direction);
+
+};
+
+
+#endif // GAME_VARIANT__H

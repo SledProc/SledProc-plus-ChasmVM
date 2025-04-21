@@ -1,0 +1,449 @@
+
+<head>
+<!--
+<script src='~~/rs~js/qwebchannel'></script>
+<script src='~~/rs~js/wrap-qwebchannel'></script>
+-->
+
+<script src='qwebchannel.js'></script>
+<script src='wrap-qwebchannel.js'></script>
+
+
+<style>
+
+#overall-board {margin:auto}
+
+</style>
+
+
+<script>
+
+function draw_cue(td_id)
+{
+ draw_token(td_id, 25, "rgb(85, 133, 125)", 90, 1,
+   "rgb(85, 33, 125)", "rgb(85, 133, 25)");
+}
+
+function activate_left()
+{
+ //document.getElementById('label-table-left-id').className = "label-table label-table-left-active"
+}
+
+function deactivate_left()
+{
+ //document.getElementById('label-table-left-id').className = "label-table label-table-left"
+}
+
+function activate_right()
+{
+ //document.getElementById('label-table-right-id').className = "label-table label-table-right-active"
+}
+
+function deactivate_right()
+{
+ //document.getElementById('label-table-right-id').className = "label-table label-table-right"
+}
+
+function reactivate_right()
+{
+ deactive_left(); activate_right();
+}
+
+function reactivate_left()
+{
+ deactive_right(); activate_left();
+}
+
+  function run_qh_notify(key, msg)
+  {
+   var cpp = window.webChannel.objects.JsInterface;
+   cpp.page_callback(key, msg);
+
+  }
+
+function position_element(el, x, y)
+{
+ //el.setAttribute('transform', `translate(${x}, ${y})`);
+ let bv = el.transform.baseVal;
+ if(bv.length == 0)
+   el.setAttribute('transform', `translate(${x}, ${y})`);
+ else
+   el.transform.baseVal.getItem(0).setTranslate(x,y);
+}
+
+
+function position_token(token, x, y)
+{
+ position_element(token, x, y);
+// token.setAttribute('transform', `translate(${x}, ${y})`);
+// token.setAttribute('visibility', 'hidden');
+// token.setAttribute('visibility', 'visible');
+}
+
+function handle_position_clicked(event)
+{
+ run_qh_notify("position-clicked", event.currentTarget.id);
+}
+
+function handle_token_clicked(event)
+{
+ run_qh_notify("token-clicked", event.currentTarget.id);
+}
+
+function handle_move_indicator_clicked(event)
+{
+ run_qh_notify("move-indicator-clicked", event.currentTarget.id);
+}
+
+function qh_event_data(event)
+{
+ return [event.currentTarget.id, event.x - window.pageXOffset, 
+   event.y - window.pageYOffset, window.pageXOffset, window.pageYOffset];
+}
+
+function handle_position_context_menu(event)
+{
+ event.preventDefault();
+ run_qh_notify("position-context-menu", qh_event_data(event));
+}
+
+function handle_token_context_menu(event)
+{
+ event.preventDefault();
+ run_qh_notify("token-context-menu", qh_event_data(event));
+}
+
+function handle_move_indicator_context_menu(event)
+{
+ event.preventDefault();
+ run_qh_notify("move-indicator-context-menu", qh_event_data(event));
+}
+
+function show_element_at_position(id, x, y)
+{
+ let el = document.getElementById("board-svg").contentDocument.
+   getElementById(id);
+ position_element(el, x, y);
+ _show_svg_element(el);
+ return el;
+}
+
+function show_token_at_position(id, x, y)
+{
+ let token = document.getElementById("board-svg").contentDocument.
+   getElementById(id);
+ position_token(token, x, y);
+ _show_svg_element(token);
+
+
+//? alert(`et: ${token.getAttribute('transform')}`);
+}
+
+function _show_svg_element(el)
+{
+ el.setAttribute('visibility', 'visible');
+}
+
+function _hide_svg_element(el)
+{
+ el.setAttribute('visibility', 'hidden');
+}
+
+function show_svg_element(id)
+{
+ //let el = document.getElementById("board-svg").contentDocument.
+ //  getElementById(id);
+ let el = svg_doc.getElementById(id);
+ _show_svg_element(el);
+}
+
+
+// // local scope for active_icons 
+{const active_icons = new Map();
+
+function show_chess_icon(ref_id, id)
+{
+ let el = document.getElementById("board-svg").contentDocument.
+   getElementById(id);
+
+ if(active_icons.has(el))
+ {
+  _hide_svg_element(active_icons.get(el));
+ }
+
+ let ref_el = document.getElementById("board-svg").contentDocument.
+   getElementById(ref_id);
+
+ active_icons.set(el, ref_el);
+
+ _show_svg_element(ref_el);
+}
+} // end local scope
+
+function _hide_svg_element(el)
+{
+ el.setAttribute('visibility', 'hidden');
+}
+
+
+function hide_svg_element(id)
+{
+ let el = document.getElementById("board-svg").contentDocument.
+   getElementById(id);
+ _hide_svg_element(el);
+}
+
+var svg_doc;
+var south_adding_text_group;
+var north_adding_text_group;
+
+
+function show_south_adding_group()
+{
+ _show_svg_element(south_adding_text_group);
+}
+
+function hide_south_adding_group()
+{
+ _hide_svg_element(south_adding_text_group);
+}
+
+
+function show_north_adding_group()
+{
+ _show_svg_element(north_adding_text_group);
+}
+
+function hide_north_adding_group()
+{
+ _hide_svg_element(north_adding_text_group);
+}
+
+var south_token_entry_count; 
+var north_token_entry_count;
+
+function update_south_entry_token_count(text)
+{
+ south_token_entry_count.textContent = text;
+}
+
+function update_north_entry_token_count(text)
+{
+ north_token_entry_count.textContent = text;
+}
+
+var south_sidebars; 
+var north_sidebars;
+
+function highlight_south_sidebar()
+{
+ south_sidebars.forEach(el => el.setAttribute("class", "side-shelf-left-emph"));
+ north_sidebars.forEach(el => el.setAttribute("class", "side-shelf-right-quiet"));
+}
+
+function highlight_north_sidebar()
+{
+ north_sidebars.forEach(el => el.setAttribute("class", "side-shelf-right-emph"));
+ south_sidebars.forEach(el => el.setAttribute("class", "side-shelf-left-quiet"));
+}
+
+
+function update_south_messages(text) 
+{
+ left_messages.textContent += text;
+}
+
+function update_north_messages(text) 
+{
+ right_messages.textContent += text;
+}
+
+
+// // local scope for move indicators
+{const current_move_indicators = [];
+
+function show_move_indicators(arr)
+{
+ arr.forEach(indicator_and_point => {
+  let mi = show_element_at_position(indicator_and_point[0], indicator_and_point[1], indicator_and_point[2]);
+  current_move_indicators.push(mi);  
+ });
+}
+
+function hide_move_indicators()
+{
+ current_move_indicators.forEach(el => _hide_svg_element(el));
+}
+}
+
+function highlight_south_token(id)
+{
+ let el = svg_doc.getElementById(id);
+ el.setAttribute("class", "south-token_in-play_highlighted");
+}
+
+function highlight_north_token(id)
+{
+ let el = svg_doc.getElementById(id);
+ el.setAttribute("class", "north-token_in-play_highlighted");
+}
+
+function unhighlight_south_token(id)
+{
+ let el = svg_doc.getElementById(id);
+ el.setAttribute("class", "south-token_base south-token_in-play");
+}
+
+function unhighlight_north_token(id)
+{
+ let el = svg_doc.getElementById(id);
+ el.setAttribute("class", "north-token_base north-token_in-play");
+}
+
+function show_text_indicators()
+{
+ let els = svg_doc.getElementsByClassName('active-text-indicator');
+ Array.from(els).forEach(el => _show_svg_element(el));
+}
+
+function hide_text_indicators()
+{
+ let els = svg_doc.getElementsByClassName('active-text-indicator');
+ Array.from(els).forEach(el => _hide_svg_element(el));
+}
+
+function activate_text_indicator(id, x, y)
+{
+ let el = svg_doc.getElementById(id);
+ position_element(el, x, y);
+ el.setAttribute("class", "active-text-element");
+}
+
+function deactivate_text_indicator(id)
+{
+ let el = svg_doc.getElementById(id);
+ el.setAttribute("class", "hiddem-text-element");
+}
+
+
+
+</script>
+</head>
+
+<body>
+
+<div id='board-svg-container'>
+<object id='board-svg' data='board64.svg' type="image/svg+xml"/>
+
+<script>
+
+let el = document.getElementById("board-svg");
+
+
+el.addEventListener("load", function() {
+
+ let svgDoc = el.contentDocument;
+
+ svg_doc = svgDoc;
+ south_adding_text_group = svgDoc.getElementById("south-adding-text-group"); 
+ north_adding_text_group = svgDoc.getElementById("north-adding-text-group"); 
+
+ left_messages = svgDoc.getElementById("messages-left-div"); 
+ right_messages = svgDoc.getElementById("messages-right-div");
+
+ update_south_messages("South Messages");
+ update_north_messages("North Messages");
+
+       
+ hide_north_adding_group();
+ hide_south_adding_group();
+
+ south_token_entry_count = svgDoc.getElementById("south-token-entry-count");
+ north_token_entry_count = svgDoc.getElementById("north-token-entry-count");
+ 
+ // //  currently only one of each, but ...
+ south_sidebars = Array.from(svgDoc.getElementsByClassName("side-shelf-left-emph"));
+ north_sidebars = Array.from(svgDoc.getElementsByClassName("side-shelf-right-emph"));
+
+ highlight_south_sidebar();
+
+
+ let _hide_by_classname = function(...args)
+ {
+  Array.from(args.map(cn => svgDoc.getElementsByClassName(cn)))
+    .flatMap(c => Array.from(c)).forEach(el => _hide_svg_element(el));
+ }
+
+ _hide_by_classname('south-chess-icon_copied', 'north-chess-icon_copied'); 
+
+ let for_pairs = function(arr, fn) 
+ {
+  arr.forEach((val, index) => { if(index % 2) { fn(arr[index - 1], val); }}); 
+ }
+
+ let add_listeners = function(el, ...args) 
+ {
+  for_pairs(args, (a, b) => { el.addEventListener(a, b, false); });  
+ }  
+
+// let larr = svgDoc.getElementsByClassName('light-square');
+// let darr = svgDoc.getElementsByClassName('dark-square');
+// let hcarr = svgDoc.getElementsByClassName('hidden-center-polygon');
+// let hiarr = svgDoc.getElementsByClassName('hidden-intersection-polygon');
+// let hsarr = svgDoc.getElementsByClassName('hidden-side-polygon');
+// let hearr = svgDoc.getElementsByClassName('hidden-edge-polygon');
+
+ let _add_listeners = function(...args)
+ {
+  Array.from(args.map(cn => svgDoc.getElementsByClassName(cn)))
+   .flatMap(c => Array.from(c)) 
+   .forEach(el => add_listeners(el, 'click', handle_position_clicked,
+   'contextmenu', handle_position_context_menu));
+ }
+ 
+ _add_listeners('light-square', 'dark-square', 'hidden-center-polygon', 
+   'hidden-intersection-polygon', 'hidden-side-polygon', 'hidden-edge-polygon');
+
+
+ let starr = svgDoc.getElementsByClassName('south-token_in-play');
+ let ntarr = svgDoc.getElementsByClassName('north-token_in-play');
+ Array.from(starr).forEach( el => _hide_svg_element(el) );
+ Array.from(ntarr).forEach( el => _hide_svg_element(el) );
+
+ let starr0 = svgDoc.getElementsByClassName('south-token_display-select');
+ let ntarr0 = svgDoc.getElementsByClassName('north-token_display-select');
+
+ [starr, ntarr, starr0, ntarr0].flatMap(c => Array.from(c)) 
+   .forEach(el => add_listeners(el, 'click', handle_token_clicked,
+   'contextmenu', handle_token_context_menu));
+
+ let mis = svgDoc.getElementsByClassName('move-indicator');
+ let cmis = svgDoc.getElementsByClassName('capture-move-indicator');
+
+// alert(cmis.length);
+// Array.from(cmis).forEach( el => _hide_svg_element(el) );
+// Array.from(mis).forEach( el => _hide_svg_element(el) );
+ 
+ [mis, cmis].flatMap(c => Array.from(c)) 
+   .forEach(el => { _hide_svg_element(el); add_listeners(el, 'click', handle_move_indicator_clicked,
+   'contextmenu', handle_move_indicator_context_menu) });
+
+// show_move_indicators([['mi1', 101, 101],['mi2', 150, 150]]);
+
+// show_move_indicators([['mi1', 400, 400]]);
+
+// show_token_at_position('token-s1', 400, 400);
+
+// activate_text_indicator('txt-s1',  400, 400);
+// show_chess_icon('pawn-s1','token-s1');
+
+// show_token_at_position('token-s1', 400, 400)
+// show_chess_icon('queen-s1', 'token-s1');
+// show_chess_icon('king-s1', 'token-s1');
+
+},false);
+
+</script>
+
+</div> <!-- /board-svg-container -->
+</body>

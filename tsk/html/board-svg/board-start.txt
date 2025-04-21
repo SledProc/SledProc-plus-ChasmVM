@@ -1,0 +1,285 @@
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+ xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+ xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-210 -4 1211 804">
+
+    <defs>
+
+    <filter x="0" y="0" width="1" height="1" id="text-bkg">
+      <feFlood flood-color="yellow"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+
+
+      <linearGradient id="north-token-gradient" gradientTransform="rotate(299)">
+       <stop offset="0%" stop-color="rgb(27, 29, 143)" />
+       <stop offset="35%" stop-color="white" />
+       <stop offset="100%" stop-color="white" />
+      </linearGradient>
+
+      <linearGradient id="south-token-gradient" gradientTransform="rotate(299)">
+       <stop offset="0%" stop-color="rgb(127, 29, 43)" />
+       <stop offset="35%" stop-color="white" />
+       <stop offset="100%" stop-color="white" />
+      </linearGradient>
+
+     <linearGradient id="south-chess-gradient" gradientTransform="rotate(299)">
+       <stop offset="0%" stop-color="rgb(253, 229, 227)" />
+       <stop offset="35%" stop-color="yellow" />
+       <stop offset="100%" stop-color="orange" />
+      </linearGradient>
+
+      <linearGradient id="north-chess-gradient" gradientTransform="rotate(299)">
+       <stop offset="0%" stop-color="rgb(227, 229, 253)" />
+       <stop offset="35%" stop-color="yellow" />
+       <stop offset="100%" stop-color="orange" />
+      </linearGradient>
+
+
+     <linearGradient id="move-indicator-gradient" gradientTransform="rotate(299)">
+       <stop offset="0%" stop-color="rgb(253, 229, 227)" />
+       <stop offset="35%" stop-color="yellow" />
+       <stop offset="100%" stop-color="orange" />
+      </linearGradient>
+
+
+     <radialGradient id="pull-move-indicator-gradient">
+       <stop offset="10%" stop-color="white" />
+       <stop offset="50%" stop-color="yellow" />
+       <stop offset="100%" stop-color="black" />
+      </radialGradient>
+
+     <radialGradient id="screen-move-indicator-gradient">
+       <stop offset="10%" stop-color="white" />
+       <stop offset="50%" stop-color="orange" />
+       <stop offset="100%" stop-color="black" />
+      </radialGradient>
+
+     <radialGradient id="absorption-move-indicator-gradient">
+       <stop offset="10%" stop-color="white" />
+       <stop offset="50%" stop-color="gold" />
+       <stop offset="100%" stop-color="black" />
+      </radialGradient>
+
+
+      <linearGradient id="capture-move-indicator-gradient" gradientTransform="rotate(299)">
+       <stop offset="0%" stop-color="rgb(227, 229, 253)" />
+       <stop offset="35%" stop-color="yellow" />
+       <stop offset="100%" stop-color="orange" />
+      </linearGradient>
+
+
+
+    <style type="text/css"><![CDATA[
+
+
+ .hidden-text-indicator {visibility:hidden;} 
+ .text-indicator {pointer-events: none; fill:white; font:bold 15px serif; }
+
+ .south-chess-icon_proto {pointer-events: none; } 
+
+ .move-indicator {fill:url(#move-indicator-gradient);   
+      stroke:url(#move-indicator-gradient); stroke-width:3;}
+
+ .pull-move-indicator {fill:url(#pull-move-indicator-gradient);   
+      stroke:url(#move-indicator-gradient); stroke-width:3;}
+
+ .screen-move-indicator {fill:url(#screen-move-indicator-gradient);   
+      stroke:url(#move-indicator-gradient); stroke-width:3;}
+
+ .absorption-move-indicator {fill:url(#absorption-move-indicator-gradient);   
+      stroke:url(#move-indicator-gradient); stroke-width:3;}
+
+
+ .capture-move-indicator {fill:url(#capture-move-indicator-gradient);   
+      stroke:url(#capture-move-indicator-gradient); stroke-width:3;}
+
+ .move-indicator:hover { fill:rgb(125,123,85);fill-opacity:0.5 } 
+ .capture-move-indicator:hover  { fill:rgb(125,85,123);fill-opacity:0.7 } 
+
+
+
+.south-token_in-play_highlighted {fill:url(#south-token-gradient);  
+       stroke:orange; stroke-width:6;}
+
+.north-token_in-play_highlighted {fill:url(#north-token-gradient);  
+       stroke:cyan; stroke-width:6;}
+
+.south-token_in-play_highlighted:hover {fill:rgb(250,130,130);  
+       stroke-width:3;}
+
+.north-token_in-play_highlighted:hover {fill:rgb(130,130,250);  
+       stroke-width:3;}
+
+
+.south-token_base {fill:url(#south-token-gradient);  
+       stroke:url(#south-token-gradient); stroke-width:3;}
+
+.south-token_in-play {}
+
+.south-token_display-select {}
+
+.north-token_base {fill:url(#north-token-gradient);   
+       stroke:url(#north-token-gradient); stroke-width:3;}
+
+.north-token_in-play {}
+
+.north-token_display-select {}
+
+.north-token_base:hover { fill:rgb(130,130,250) } 
+.south-token_base:hover  { fill:rgb(250,130,130) } 
+
+        .dark-square {
+ stroke-width:0; opacity:0.3;
+ fill:#Ac9147;            
+        }
+
+        .dark-square:hover {
+ stroke-width:0;
+ fill:rgb(30%,41%,20%);            
+        }
+
+        .light-square {
+ stroke-width:0; opacity:0.5;
+fill: rgb(230,234,228)
+        }
+
+        .light-square:hover {
+ stroke-width:0;
+ fill:rgb(50%,41%,40%);   
+        }
+
+        .dark-square:hover {
+ stroke-width:0; 
+            fill:#EcE1EC;
+        }
+
+ .slot-border {stroke-width: 1; stroke: rgb(40,11,50); stroke-dasharray: 3,3}
+
+ .gridline {stroke-width: 1; stroke: rgb(80,191,210)}
+ .area-gridline {stroke-width: 3; stroke: rgb(80,191,210)}
+
+ .visible-center-polygon { stroke-width: 1; stroke: rgb(8,191,90);fill:none; }
+
+ .hidden-center-polygon { stroke-width: 0; fill:rgb(200,200,200); opacity:0.2;}
+ .hidden-center-polygon:hover { stroke-width: 5; stroke: rgb(78,91,90);fill:rgb(8,191,90);
+opacity:0.5;}
+
+
+ .visible-intersection-polygon { stroke-width: 1; stroke: rgb(90,101,8);fill:none; }
+
+ .hidden-intersection-polygon { stroke-width: 0; fill:rgb(200,200,200); opacity:0.2;}
+ .hidden-intersection-polygon:hover { stroke-width: 5; stroke: rgb(78,91,9);fill:rgb(90,101,8);
+opacity:0.5;}
+
+
+ .visible-edge-polygon { stroke-width: 0; stroke:none;fill:var(--board-outline-color); }
+
+ .hidden-edge-polygon { stroke-width: 0; fill:rgb(200,200,200); opacity:0.2;}
+ .hidden-edge-polygon:hover { stroke-width: 5; stroke: rgb(218,218,2);fill:rgb(238,188,200);
+opacity:0.8;}
+
+ .visible-side-polygon { stroke-width: 0; stroke:none;fill:var(--board-outline-color); }
+
+ .hidden-side-polygon { stroke-width: 0; fill:rgb(200,200,200); opacity:0.2;}
+ .hidden-side-polygon:hover { stroke-width: 5; stroke: rgb(218,218,2);
+opacity:0.8;}
+
+:root {
+
+ --chess-icons-fill-opacity: 1; 
+ --chess-icons-opacity: 0.9;
+
+ --south-chess-fill-opacity: 0.8;
+ --north-chess-fill-opacity: 0.8;
+
+ 
+ --south-chess-fill:url(#south-chess-gradient);
+ --north-chess-fill:url(#north-chess-gradient);
+
+
+ --board-outline-color: rgb(60%,5%,100%);
+ --side-shelf-right-quiet-bkg: rgb(230, 230, 245);
+ --side-shelf-left-quiet-bkg: rgb(250, 240, 240);
+
+ --side-shelf-right-emph-bkg: rgb(130, 130, 245);
+ --side-shelf-left-emph-bkg: rgb(210, 140, 140);
+
+}
+
+ .side-shelf-left-emph { stroke-width: 0; fill:var(--side-shelf-left-emph-bkg);  }
+ .side-shelf-right-emph { stroke-width: 0; fill:var(--side-shelf-right-emph-bkg);  }
+
+ .side-shelf-left-quiet { stroke-width: 0; fill:var(--side-shelf-left-quiet-bkg);  }
+ .side-shelf-right-quiet { stroke-width: 0; fill:var(--side-shelf-right-quiet-bkg);  }
+
+ .south-text-small { fill:var(--side-shelf-left-emph-bkg); font: bold 17px serif; }
+ .north-text-small { fill:var(--side-shelf-right-emph-bkg); font: bold 17px serif;  }
+ 
+
+ .south-interactive-text { fill:grey; font: bold 17px serif; }
+ .south-interactive-text:hover { filter:url(#text-bkg);  fill:red; }
+
+ .north-interactive-text { fill:grey; font: bold 17px serif; }
+ .north-interactive-text:hover { filter:url(#text-bkg);  fill:red; }
+
+    ]]></style>
+</defs>
+
+<g id="main-board">
+
+<g id="board-outline" fill="none" stroke="rgb(60%,5%,120%)" stroke-width="2">
+<rect width="800" height="800"/>
+</g>
+
+<!-- rgb(200,10,107) -->
+<foreignObject id='messages-left' class="node" x="-204" y="112" width="160" height="110">
+  <xhtml:div id='messages-left-div' style="border:1px green solid;background:rgb(207,250,200);">
+</xhtml:div>                
+</foreignObject>
+
+<foreignObject id='messages-right' class="node" x="804" y="612" width="160" height="110">
+  <xhtml:div id='messages-right-div' style="border:1px green solid;background:rgb(207,250,200);">
+</xhtml:div>                
+</foreignObject>
+
+
+
+<rect class="side-shelf-left-emph" width="200" height="600" x="-204" y="200"/>
+<rect class="side-shelf-right-emph" width="200" height="600" x="804" y="0"/>
+
+<g transform="translate(-25, 70)">
+<text x="-37" y="7" class="north-text-small">30</text>
+<a class='north-token_base north-token_display-select' id='token-n0'>
+ <circle cx='0' cy='0' r='12' />
+</a>
+
+<g id="north-adding-text-group">
+<text id="north-token-entry-count" x="-124" y="-2" class="north-text-small">Adding ...</text>
+<a class='north-interactive-text'>
+<text x="-124" y="22">(cancel)</text>
+</a>
+</g>
+
+
+</g>
+
+
+<g id="south-move-text-group" transform="translate(850, 730)">
+<text id="south-token-entry-count" x="-37" y="7" class="south-text-small">30</text>
+<a class='south-token_base south-token_display-select' id='token-s0'>
+ <circle cx='0' cy='0' r='12' />
+</a>
+
+<g id="south-adding-text-group">
+<text x="27" y="-2" class="south-text-small">Adding ...</text>
+<a class='south-interactive-text'>
+<text x="27" y="22">(cancel)</text>
+</a>
+</g>
+
+</g>
+
+
+
+
