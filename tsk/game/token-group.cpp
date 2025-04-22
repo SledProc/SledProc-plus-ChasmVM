@@ -65,7 +65,7 @@ void Token_Group::update_densities()
   u1 min_density = *std::min_element(densities.begin(), densities.end());
 
   for(Game_Token* token : tokens_.keys())
-    token->qjk_from_densities(min_density, max_density);
+    token->cjq_from_densities(min_density, max_density);
  }
 }
 

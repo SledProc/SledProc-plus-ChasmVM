@@ -450,7 +450,8 @@ void Game_Board::to_svg(QString in_folder, QString out_file)
  gridlines(); squares(); slot_borders(); centers(); intersections(); edges(); sides();
 
  static QStringList pieces { "canon", "knight", "altc", "altk",
-   "centroid", "jack", "queen", "king", "ace" };
+   "singleton", "centroid", "centroid-pivot",
+   "jack", "jack-pivot", "queen", "king", "king-pivot", "ace" };
 
  QString north_copier, south_copier;
 

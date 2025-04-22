@@ -4,7 +4,7 @@
 <circle cx="24" cy="27" r="13" stroke="var(--south-stone-fill)"
   stroke-width="3" fill="none" ></circle>
 
-<circle cx="24" cy="27" r="11" fill="var(--south-stone-fill)"
+<circle cx="24" cy="27" r="8" fill="var(--south-stone-fill)"
   stroke="none" ></circle>
 
   </g>

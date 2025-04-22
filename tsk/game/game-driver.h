@@ -102,6 +102,8 @@ class Game_Driver
  void hide_stone_icons(const QH_Web_View_Dialog& dlg);
  void clear_move_option_data();
 
+ void compute_clusters();
+
 public:
 
  Game_Driver();

@@ -23,13 +23,13 @@
        <stop offset="100%" stop-color="white" />
       </linearGradient>
 
-     <linearGradient id="south-chess-gradient" gradientTransform="rotate(299)">
+     <linearGradient id="south-stone-gradient" gradientTransform="rotate(299)">
        <stop offset="0%" stop-color="rgb(253, 229, 227)" />
        <stop offset="35%" stop-color="yellow" />
        <stop offset="100%" stop-color="orange" />
       </linearGradient>
 
-      <linearGradient id="north-chess-gradient" gradientTransform="rotate(299)">
+      <linearGradient id="north-stone-gradient" gradientTransform="rotate(299)">
        <stop offset="0%" stop-color="rgb(227, 229, 253)" />
        <stop offset="35%" stop-color="yellow" />
        <stop offset="100%" stop-color="orange" />
@@ -76,7 +76,7 @@
  .hidden-text-indicator {visibility:hidden;} 
  .text-indicator {pointer-events: none; fill:white; font:bold 15px serif; }
 
- .south-chess-icon_proto {pointer-events: none; } 
+ .south-stone-icon_proto {pointer-events: none; } 
 
  .move-indicator {fill:url(#move-indicator-gradient);   
       stroke:url(#move-indicator-gradient); stroke-width:3;}
@@ -187,15 +187,15 @@ opacity:0.8;}
 
 :root {
 
- --chess-icons-fill-opacity: 1; 
- --chess-icons-opacity: 0.9;
+ --stone-icons-fill-opacity: 1; 
+ --stone-icons-opacity: 0.9;
 
- --south-chess-fill-opacity: 0.8;
- --north-chess-fill-opacity: 0.8;
+ --south-stone-fill-opacity: 0.8;
+ --north-stone-fill-opacity: 0.8;
 
  
- --south-chess-fill:url(#south-chess-gradient);
- --north-chess-fill:url(#north-chess-gradient);
+ --south-stone-fill:url(#south-stone-gradient);
+ --north-stone-fill:url(#north-stone-gradient);
 
 
  --board-outline-color: rgb(60%,5%,100%);

@@ -34,7 +34,6 @@ class Game_Token
 {
 public:
 
- // test: -fparse-all-comments
  enum class Token_Kind : u2 {
   N_A
 
@@ -42,31 +41,37 @@ public:
 
   Qj (enum:def)
   enum_macro(Singleton, 1)
-  enum_macro(Paired, 2)
-  enum_macro(Queen, 4)
-  enum_macro(Jack, 8)
+  enum_macro(Centroid, 2)
+  enum_macro(Jack, 4)
+  enum_macro(Queen, 8)
   enum_macro(King, 16)
-  enum_macro(Ace, Queen | King)
-  enum_macro(South, 32)
-  enum_macro(North, 64)
+  enum_macro(Ace, 32)
 
-  enum_macro(Clear_Singleton, Paired | Queen | Jack | King | North | South)
+  enum_macro(Centroid_Pivot, 64)
+  enum_macro(Jack_Pivot, 128)
+  enum_macro(King_Pivot, 256)
+
+  enum_macro(South, 512)
+  enum_macro(North, 1024)
+
+  enum_macro(Clear_Singleton, Centroid | Jack | Queen | King | North | South)
   enum_macro(North_South_Mask, North | South)
-  enum_macro(Clear_QJK, Paired | North | South)
-  enum_macro(Clear_NS, Singleton | Paired | Queen | Jack | King)
+  enum_macro(Clear_CJQ, King | North | South)
+  enum_macro(Clear_CJQKAP, North | South)
+  enum_macro(Clear_NS, Singleton | Centroid | Queen | Jack | King)
 
 
   enum_macro(South_Singleton, South | Singleton)
-  enum_macro(South_Paired, South | Paired)
-  enum_macro(South_Queen, South | Queen)
+  enum_macro(South_Centroid, South | Centroid)
   enum_macro(South_Jack, South | Jack)
+  enum_macro(South_Queen, South | Queen)
   enum_macro(South_King, South | King)
   enum_macro(South_Ace, South | Ace)
 
   enum_macro(North_Singleton, North | Singleton)
-  enum_macro(North_Paired, North | Paired)
-  enum_macro(North_Queen, North | Queen)
+  enum_macro(North_Centroid, North | Centroid)
   enum_macro(North_Jack, North | Jack)
+  enum_macro(North_Queen, North | Queen)
   enum_macro(North_King, North | King)
   enum_macro(North_Ace, North | Ace)
 
@@ -233,24 +238,29 @@ public:
   Qj(enum:str)
   #define enum_macro(x, y)  {Token_Kind::x, #x},
 
-   enum_macro(Singleton, 1)
-   enum_macro(Paired, 2)
-   enum_macro(Queen, 4)
-   enum_macro(Jack, 8)
-   enum_macro(King, 16)
-   enum_macro(Ace, Queen | King)
-   enum_macro(South, 32)
-   enum_macro(North, 64)
+    enum_macro(Singleton, 1)
+    enum_macro(Centroid, 2)
+    enum_macro(Jack, 4)
+    enum_macro(Queen, 8)
+    enum_macro(King, 16)
+    enum_macro(Ace, 32)
+
+    enum_macro(Centroid_Pivot, 64)
+    enum_macro(Jack_Pivot, 128)
+    enum_macro(King_Pivot, 256)
+
+    enum_macro(South, 512)
+    enum_macro(North, 1024)
 
    enum_macro(South_Singleton, South | Singleton)
-   enum_macro(South_Paired, South | Paired)
+   enum_macro(South_Centroid, South | Centroid)
    enum_macro(South_Queen, South | Queen)
    enum_macro(South_Jack, South | Jack)
    enum_macro(South_King, South | King)
    enum_macro(South_Ace, South | Ace)
 
    enum_macro(North_Singleton, North | Singleton)
-   enum_macro(North_Paired, North | Paired)
+   enum_macro(North_Centroid, North | Centroid)
    enum_macro(North_Queen, North | Queen)
    enum_macro(North_Jack, North | Jack)
    enum_macro(North_King, North | King)
@@ -279,49 +289,147 @@ public:
   kind_ |= Token_Kind::South;
  }
 
-
- void set_as_pawn()
+ u2 match_kind_to_string(QString qs)
  {
-  kind_ &= Token_Kind::North_South_Mask;
-  kind_ |= Token_Kind::Singleton;
+  if(qs == "singleton" && is_singleton())
+    return (u2) kind_;
+
+  if(qs == "centroid" && is_centroid())
+    return (u2) kind_;
+
+  if(qs == "centroid-pivot" && is_centroid_pivot())
+    return (u2) kind_;
+
+  if(qs == "jack" && is_jack())
+    return (u2) kind_;
+
+  if(qs == "jack-pivot" && is_jack_pivot())
+    return (u2) kind_;
+
+  if(qs == "queen" && is_queen())
+    return (u2) kind_;
+
+  if(qs == "king" && is_king())
+    return (u2) kind_;
+
+  if(qs == "king-pivot" && is_king_pivot())
+    return (u2) kind_;
+
+  if(qs == "ace" && is_ace())
+    return (u2) kind_;
+
+  return 0;
  }
 
  void set_as_singleton()
  {
-  kind_ &= Token_Kind::North_South_Mask;
+//?  kind_ &= Token_Kind::North_South_Mask;
+  kind_ &= Token_Kind::Clear_CJQKAP;
   kind_ |= Token_Kind::Singleton;
+ }
+
+ bool is_singleton()
+ {
+  return kind_ & Token_Kind::Singleton;
+ }
+
+ void set_as_centroid()
+ {
+//  kind_ &= Token_Kind::North_South_Mask;
+  kind_ &= Token_Kind::Clear_CJQKAP;
+  kind_ |= Token_Kind::Centroid;
+ }
+
+ bool is_centroid()
+ {
+  return kind_ & Token_Kind::Centroid;
+ }
+
+ void set_as_centroid_pivot()
+ {
+  kind_ &= Token_Kind::Clear_CJQKAP;
+  kind_ |= Token_Kind::Centroid_Pivot;
+ }
+
+ bool is_centroid_pivot()
+ {
+  return kind_ & Token_Kind::Centroid_Pivot;
  }
 
  void set_as_ace()
  {
-  kind_ &= Token_Kind::Clear_QJK;
+  kind_ &= Token_Kind::Clear_CJQKAP;
   kind_ |= Token_Kind::Ace;
+ }
+
+ bool is_ace()
+ {
+  return kind_ & Token_Kind::Ace;
  }
 
  void set_as_king()
  {
-  kind_ &= Token_Kind::Clear_QJK;
+  kind_ &= Token_Kind::Clear_CJQKAP;
   kind_ |= Token_Kind::King;
  }
 
+ bool is_king()
+ {
+  return kind_ & Token_Kind::King;
+ }
+
+ void set_as_king_pivot()
+ {
+  kind_ &= Token_Kind::Clear_CJQKAP;
+  kind_ |= Token_Kind::King_Pivot;
+ }
+
+ bool is_king_pivot()
+ {
+  return kind_ & Token_Kind::King_Pivot;
+ }
+
+
  void set_as_queen()
  {
-  kind_ &= Token_Kind::Clear_QJK;
+  kind_ &= Token_Kind::Clear_CJQKAP;
   kind_ |= Token_Kind::Queen;
+ }
+
+ bool is_queen()
+ {
+  return kind_ & Token_Kind::Queen;
  }
 
  void set_as_jack()
  {
-  kind_ &= Token_Kind::Clear_QJK;
+  kind_ &= Token_Kind::Clear_CJQKAP;
   kind_ |= Token_Kind::Jack;
  }
 
- void qjk_from_densities(u1 min, u1 max)
+ bool is_jack()
+ {
+  return kind_ & Token_Kind::Jack;
+ }
+
+ void set_as_jack_pivot()
+ {
+  kind_ &= Token_Kind::Clear_CJQKAP;
+  kind_ |= Token_Kind::Jack_Pivot;
+ }
+
+ bool is_jack_pivot()
+ {
+  return kind_ & Token_Kind::Jack_Pivot;
+ }
+
+
+ void cjq_from_densities(u1 min, u1 max)
  {
   if(total_density() == min)
     set_as_queen();
   else if(total_density() == max)
-    set_as_king();
+    set_as_centroid();
   else
     set_as_jack();
  }

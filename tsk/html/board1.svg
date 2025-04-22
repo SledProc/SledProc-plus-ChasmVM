@@ -23,13 +23,13 @@
        <stop offset="100%" stop-color="white" />
       </linearGradient>
 
-     <linearGradient id="south-chess-gradient" gradientTransform="rotate(299)">
+     <linearGradient id="south-stone-gradient" gradientTransform="rotate(299)">
        <stop offset="0%" stop-color="rgb(253, 229, 227)" />
        <stop offset="35%" stop-color="yellow" />
        <stop offset="100%" stop-color="orange" />
       </linearGradient>
 
-      <linearGradient id="north-chess-gradient" gradientTransform="rotate(299)">
+      <linearGradient id="north-stone-gradient" gradientTransform="rotate(299)">
        <stop offset="0%" stop-color="rgb(227, 229, 253)" />
        <stop offset="35%" stop-color="yellow" />
        <stop offset="100%" stop-color="orange" />
@@ -76,7 +76,7 @@
  .hidden-text-indicator {visibility:hidden;} 
  .text-indicator {pointer-events: none; fill:white; font:bold 15px serif; }
 
- .south-chess-icon_proto {pointer-events: none; } 
+ .south-stone-icon_proto {pointer-events: none; } 
 
  .move-indicator {fill:url(#move-indicator-gradient);   
       stroke:url(#move-indicator-gradient); stroke-width:3;}
@@ -187,15 +187,15 @@ opacity:0.8;}
 
 :root {
 
- --chess-icons-fill-opacity: 1; 
- --chess-icons-opacity: 0.9;
+ --stone-icons-fill-opacity: 1; 
+ --stone-icons-opacity: 0.9;
 
- --south-chess-fill-opacity: 0.8;
- --north-chess-fill-opacity: 0.8;
+ --south-stone-fill-opacity: 0.8;
+ --north-stone-fill-opacity: 0.8;
 
  
- --south-chess-fill:url(#south-chess-gradient);
- --north-chess-fill:url(#north-chess-gradient);
+ --south-stone-fill:url(#south-stone-gradient);
+ --north-stone-fill:url(#north-stone-gradient);
 
 
  --board-outline-color: rgb(60%,5%,100%);
@@ -3511,10 +3511,14 @@ opacity:0.8;}
 <use id='knight-s1' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s1' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s1' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s1' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s1' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s1' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s1' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s1' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s1' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s1' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s1' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s1' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3529,10 +3533,14 @@ opacity:0.8;}
 <use id='knight-n1' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n1' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n1' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n1' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n1' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n1' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n1' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n1' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n1' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n1' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n1' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n1' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3547,10 +3555,14 @@ opacity:0.8;}
 <use id='knight-s2' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s2' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s2' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s2' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s2' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s2' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s2' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s2' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s2' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s2' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s2' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s2' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3565,10 +3577,14 @@ opacity:0.8;}
 <use id='knight-n2' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n2' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n2' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n2' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n2' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n2' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n2' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n2' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n2' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n2' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n2' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n2' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3583,10 +3599,14 @@ opacity:0.8;}
 <use id='knight-s3' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s3' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s3' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s3' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s3' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s3' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s3' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s3' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s3' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s3' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s3' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s3' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3601,10 +3621,14 @@ opacity:0.8;}
 <use id='knight-n3' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n3' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n3' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n3' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n3' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n3' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n3' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n3' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n3' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n3' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n3' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n3' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3619,10 +3643,14 @@ opacity:0.8;}
 <use id='knight-s4' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s4' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s4' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s4' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s4' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s4' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s4' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s4' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s4' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s4' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s4' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s4' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3637,10 +3665,14 @@ opacity:0.8;}
 <use id='knight-n4' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n4' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n4' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n4' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n4' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n4' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n4' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n4' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n4' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n4' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n4' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n4' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3655,10 +3687,14 @@ opacity:0.8;}
 <use id='knight-s5' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s5' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s5' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s5' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s5' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s5' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s5' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s5' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s5' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s5' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s5' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s5' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3673,10 +3709,14 @@ opacity:0.8;}
 <use id='knight-n5' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n5' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n5' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n5' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n5' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n5' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n5' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n5' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n5' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n5' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n5' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n5' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3691,10 +3731,14 @@ opacity:0.8;}
 <use id='knight-s6' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s6' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s6' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s6' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s6' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s6' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s6' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s6' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s6' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s6' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s6' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s6' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3709,10 +3753,14 @@ opacity:0.8;}
 <use id='knight-n6' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n6' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n6' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n6' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n6' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n6' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n6' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n6' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n6' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n6' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n6' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n6' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3727,10 +3775,14 @@ opacity:0.8;}
 <use id='knight-s7' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s7' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s7' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s7' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s7' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s7' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s7' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s7' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s7' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s7' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s7' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s7' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3745,10 +3797,14 @@ opacity:0.8;}
 <use id='knight-n7' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n7' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n7' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n7' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n7' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n7' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n7' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n7' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n7' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n7' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n7' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n7' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3763,10 +3819,14 @@ opacity:0.8;}
 <use id='knight-s8' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s8' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s8' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s8' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s8' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s8' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s8' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s8' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s8' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s8' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s8' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s8' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3781,10 +3841,14 @@ opacity:0.8;}
 <use id='knight-n8' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n8' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n8' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n8' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n8' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n8' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n8' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n8' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n8' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n8' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n8' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n8' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3799,10 +3863,14 @@ opacity:0.8;}
 <use id='knight-s9' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s9' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s9' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s9' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s9' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s9' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s9' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s9' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s9' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s9' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s9' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s9' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3817,10 +3885,14 @@ opacity:0.8;}
 <use id='knight-n9' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n9' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n9' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n9' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n9' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n9' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n9' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n9' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n9' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n9' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n9' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n9' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3835,10 +3907,14 @@ opacity:0.8;}
 <use id='knight-s10' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s10' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s10' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s10' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s10' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s10' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s10' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s10' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s10' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s10' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s10' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s10' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3853,10 +3929,14 @@ opacity:0.8;}
 <use id='knight-n10' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n10' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n10' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n10' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n10' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n10' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n10' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n10' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n10' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n10' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n10' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n10' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3871,10 +3951,14 @@ opacity:0.8;}
 <use id='knight-s11' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s11' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s11' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s11' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s11' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s11' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s11' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s11' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s11' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s11' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s11' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s11' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3889,10 +3973,14 @@ opacity:0.8;}
 <use id='knight-n11' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n11' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n11' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n11' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n11' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n11' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n11' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n11' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n11' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n11' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n11' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n11' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3907,10 +3995,14 @@ opacity:0.8;}
 <use id='knight-s12' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s12' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s12' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s12' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s12' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s12' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s12' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s12' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s12' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s12' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s12' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s12' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3925,10 +4017,14 @@ opacity:0.8;}
 <use id='knight-n12' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n12' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n12' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n12' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n12' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n12' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n12' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n12' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n12' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n12' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n12' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n12' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3943,10 +4039,14 @@ opacity:0.8;}
 <use id='knight-s13' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s13' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s13' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s13' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s13' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s13' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s13' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s13' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s13' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s13' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s13' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s13' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3961,10 +4061,14 @@ opacity:0.8;}
 <use id='knight-n13' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n13' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n13' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n13' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n13' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n13' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n13' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n13' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n13' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n13' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n13' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n13' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3979,10 +4083,14 @@ opacity:0.8;}
 <use id='knight-s14' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s14' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s14' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s14' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s14' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s14' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s14' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s14' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s14' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s14' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s14' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s14' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -3997,10 +4105,14 @@ opacity:0.8;}
 <use id='knight-n14' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n14' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n14' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n14' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n14' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n14' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n14' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n14' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n14' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n14' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n14' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n14' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4015,10 +4127,14 @@ opacity:0.8;}
 <use id='knight-s15' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s15' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s15' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s15' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s15' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s15' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s15' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s15' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s15' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s15' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s15' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s15' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4033,10 +4149,14 @@ opacity:0.8;}
 <use id='knight-n15' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n15' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n15' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n15' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n15' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n15' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n15' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n15' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n15' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n15' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n15' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n15' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4051,10 +4171,14 @@ opacity:0.8;}
 <use id='knight-s16' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s16' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s16' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s16' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s16' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s16' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s16' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s16' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s16' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s16' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s16' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s16' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4069,10 +4193,14 @@ opacity:0.8;}
 <use id='knight-n16' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n16' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n16' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n16' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n16' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n16' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n16' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n16' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n16' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n16' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n16' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n16' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4087,10 +4215,14 @@ opacity:0.8;}
 <use id='knight-s17' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s17' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s17' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s17' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s17' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s17' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s17' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s17' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s17' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s17' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s17' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s17' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4105,10 +4237,14 @@ opacity:0.8;}
 <use id='knight-n17' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n17' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n17' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n17' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n17' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n17' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n17' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n17' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n17' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n17' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n17' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n17' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4123,10 +4259,14 @@ opacity:0.8;}
 <use id='knight-s18' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s18' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s18' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s18' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s18' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s18' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s18' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s18' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s18' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s18' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s18' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s18' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4141,10 +4281,14 @@ opacity:0.8;}
 <use id='knight-n18' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n18' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n18' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n18' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n18' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n18' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n18' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n18' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n18' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n18' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n18' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n18' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4159,10 +4303,14 @@ opacity:0.8;}
 <use id='knight-s19' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s19' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s19' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s19' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s19' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s19' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s19' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s19' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s19' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s19' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s19' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s19' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4177,10 +4325,14 @@ opacity:0.8;}
 <use id='knight-n19' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n19' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n19' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n19' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n19' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n19' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n19' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n19' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n19' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n19' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n19' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n19' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4195,10 +4347,14 @@ opacity:0.8;}
 <use id='knight-s20' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s20' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s20' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s20' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s20' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s20' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s20' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s20' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s20' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s20' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s20' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s20' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4213,10 +4369,14 @@ opacity:0.8;}
 <use id='knight-n20' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n20' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n20' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n20' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n20' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n20' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n20' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n20' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n20' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n20' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n20' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n20' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4231,10 +4391,14 @@ opacity:0.8;}
 <use id='knight-s21' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s21' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s21' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s21' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s21' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s21' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s21' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s21' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s21' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s21' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s21' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s21' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4249,10 +4413,14 @@ opacity:0.8;}
 <use id='knight-n21' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n21' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n21' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n21' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n21' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n21' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n21' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n21' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n21' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n21' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n21' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n21' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4267,10 +4435,14 @@ opacity:0.8;}
 <use id='knight-s22' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s22' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s22' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s22' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s22' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s22' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s22' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s22' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s22' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s22' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s22' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s22' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4285,10 +4457,14 @@ opacity:0.8;}
 <use id='knight-n22' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n22' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n22' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n22' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n22' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n22' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n22' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n22' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n22' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n22' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n22' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n22' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4303,10 +4479,14 @@ opacity:0.8;}
 <use id='knight-s23' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s23' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s23' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s23' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s23' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s23' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s23' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s23' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s23' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s23' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s23' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s23' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4321,10 +4501,14 @@ opacity:0.8;}
 <use id='knight-n23' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n23' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n23' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n23' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n23' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n23' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n23' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n23' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n23' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n23' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n23' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n23' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4339,10 +4523,14 @@ opacity:0.8;}
 <use id='knight-s24' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s24' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s24' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s24' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s24' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s24' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s24' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s24' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s24' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s24' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s24' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s24' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4357,10 +4545,14 @@ opacity:0.8;}
 <use id='knight-n24' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n24' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n24' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n24' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n24' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n24' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n24' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n24' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n24' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n24' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n24' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n24' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4375,10 +4567,14 @@ opacity:0.8;}
 <use id='knight-s25' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s25' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s25' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s25' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s25' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s25' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s25' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s25' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s25' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s25' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s25' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s25' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4393,10 +4589,14 @@ opacity:0.8;}
 <use id='knight-n25' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n25' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n25' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n25' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n25' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n25' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n25' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n25' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n25' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n25' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n25' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n25' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4411,10 +4611,14 @@ opacity:0.8;}
 <use id='knight-s26' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s26' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s26' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s26' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s26' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s26' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s26' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s26' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s26' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s26' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s26' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s26' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4429,10 +4633,14 @@ opacity:0.8;}
 <use id='knight-n26' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n26' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n26' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n26' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n26' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n26' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n26' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n26' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n26' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n26' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n26' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n26' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4447,10 +4655,14 @@ opacity:0.8;}
 <use id='knight-s27' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s27' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s27' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s27' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s27' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s27' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s27' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s27' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s27' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s27' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s27' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s27' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4465,10 +4677,14 @@ opacity:0.8;}
 <use id='knight-n27' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n27' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n27' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n27' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n27' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n27' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n27' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n27' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n27' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n27' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n27' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n27' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4483,10 +4699,14 @@ opacity:0.8;}
 <use id='knight-s28' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s28' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s28' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s28' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s28' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s28' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s28' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s28' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s28' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s28' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s28' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s28' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4501,10 +4721,14 @@ opacity:0.8;}
 <use id='knight-n28' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n28' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n28' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n28' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n28' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n28' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n28' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n28' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n28' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n28' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n28' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n28' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4519,10 +4743,14 @@ opacity:0.8;}
 <use id='knight-s29' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s29' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s29' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s29' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s29' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s29' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s29' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s29' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s29' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s29' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s29' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s29' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4537,10 +4765,14 @@ opacity:0.8;}
 <use id='knight-n29' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n29' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n29' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n29' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n29' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n29' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n29' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n29' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n29' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n29' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n29' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n29' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4555,10 +4787,14 @@ opacity:0.8;}
 <use id='knight-s30' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s30' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s30' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s30' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s30' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s30' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s30' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s30' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s30' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s30' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s30' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s30' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4573,10 +4809,14 @@ opacity:0.8;}
 <use id='knight-n30' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n30' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n30' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n30' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n30' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n30' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n30' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n30' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n30' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n30' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n30' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n30' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4591,10 +4831,14 @@ opacity:0.8;}
 <use id='knight-s31' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s31' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s31' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s31' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s31' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s31' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s31' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s31' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s31' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s31' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s31' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s31' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4609,10 +4853,14 @@ opacity:0.8;}
 <use id='knight-n31' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n31' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n31' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n31' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n31' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n31' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n31' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n31' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n31' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n31' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n31' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n31' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4627,10 +4875,14 @@ opacity:0.8;}
 <use id='knight-s32' class='south-stone-icon_copied' xlink:href='#south-knight_proto'/>
 <use id='altc-s32' class='south-stone-icon_copied' xlink:href='#south-altc_proto'/>
 <use id='altk-s32' class='south-stone-icon_copied' xlink:href='#south-altk_proto'/>
+<use id='singleton-s32' class='south-stone-icon_copied' xlink:href='#south-singleton_proto'/>
 <use id='centroid-s32' class='south-stone-icon_copied' xlink:href='#south-centroid_proto'/>
+<use id='centroid-pivot-s32' class='south-stone-icon_copied' xlink:href='#south-centroid-pivot_proto'/>
 <use id='jack-s32' class='south-stone-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='jack-pivot-s32' class='south-stone-icon_copied' xlink:href='#south-jack-pivot_proto'/>
 <use id='queen-s32' class='south-stone-icon_copied' xlink:href='#south-queen_proto'/>
 <use id='king-s32' class='south-stone-icon_copied' xlink:href='#south-king_proto'/>
+<use id='king-pivot-s32' class='south-stone-icon_copied' xlink:href='#south-king-pivot_proto'/>
 <use id='ace-s32' class='south-stone-icon_copied' xlink:href='#south-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4645,10 +4897,14 @@ opacity:0.8;}
 <use id='knight-n32' class='north-stone-icon_copied' xlink:href='#north-knight_proto'/>
 <use id='altc-n32' class='north-stone-icon_copied' xlink:href='#north-altc_proto'/>
 <use id='altk-n32' class='north-stone-icon_copied' xlink:href='#north-altk_proto'/>
+<use id='singleton-n32' class='north-stone-icon_copied' xlink:href='#north-singleton_proto'/>
 <use id='centroid-n32' class='north-stone-icon_copied' xlink:href='#north-centroid_proto'/>
+<use id='centroid-pivot-n32' class='north-stone-icon_copied' xlink:href='#north-centroid-pivot_proto'/>
 <use id='jack-n32' class='north-stone-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='jack-pivot-n32' class='north-stone-icon_copied' xlink:href='#north-jack-pivot_proto'/>
 <use id='queen-n32' class='north-stone-icon_copied' xlink:href='#north-queen_proto'/>
 <use id='king-n32' class='north-stone-icon_copied' xlink:href='#north-king_proto'/>
+<use id='king-pivot-n32' class='north-stone-icon_copied' xlink:href='#north-king-pivot_proto'/>
 <use id='ace-n32' class='north-stone-icon_copied' xlink:href='#north-ace_proto'/>
   <!-- end stone icon representations -->
   </g>
@@ -4657,7 +4913,7 @@ opacity:0.8;}
 
 </g> <!-- end tokens -->
 
-<!-- chess-icons -->
+<!-- stone-icons -->
 <defs> 
 
 
@@ -4765,11 +5021,37 @@ stroke-miterlimit:4; stroke-dasharray:none stroke-opacity:var(--stone-icons-opac
 
  <!-- end north altk -->
 
+<!-- south singleton -->
+
+   <g id="south-singleton_proto" class='south-stone-icon_proto'>
+
+<circle cx="24" cy="27" r="19" stroke="black"
+  stroke-opacity="0.3" stroke-width="6" fill="none" ></circle>
+
+  </g>
+
+ <!-- end south singleton -->
+
+<!-- north singleton -->
+
+   <g id="north-singleton_proto" class='north-stone-icon_proto'>
+
+<circle cx="24" cy="27" r="19" stroke="black"
+  stroke-opacity="0.3" stroke-width="6" fill="none" ></circle>
+
+  </g>
+
+ <!-- end north singleton -->
+
 <!-- south centroid -->
 
    <g id="south-centroid_proto" class='south-stone-icon_proto'>
 
-  <path d="m 22.5,9 c -2.21,0 -4,1.79 -4,4 0,0.89 0.29,1.71 0.78,2.38 C 17.33,16.5 16,18.59 16,21 c 0,2.03 0.94,3.84 2.41,5.03 C 15.41,27.09 11,31.58 11,39.5 H 34 C 34,31.58 29.59,27.09 26.59,26.03 28.06,24.84 29,23.03 29,21 29,18.59 27.67,16.5 25.72,15.38 26.21,14.71 26.5,13.89 26.5,13 c 0,-2.21 -1.79,-4 -4,-4 z" style="opacity:var(--stone-icons-opacity); fill:var(--south-stone-fill); fill-opacity:var(--stone-icons-fill-opacity); fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;"/>
+<circle cx="24" cy="27" r="13" stroke="var(--south-stone-fill)"
+  stroke-width="3" fill="none" ></circle>
+
+<circle cx="24" cy="27" r="11" fill="var(--south-stone-fill)"
+  stroke="none" ></circle>
 
   </g>
 
@@ -4779,153 +5061,156 @@ stroke-miterlimit:4; stroke-dasharray:none stroke-opacity:var(--stone-icons-opac
 
    <g id="north-centroid_proto" class='north-stone-icon_proto'>
 
-  <path d="m 22.5,9 c -2.21,0 -4,1.79 -4,4 0,0.89 0.29,1.71 0.78,2.38 C 17.33,16.5 16,18.59 16,21 c 0,2.03 0.94,3.84 2.41,5.03 C 15.41,27.09 11,31.58 11,39.5 H 34 C 34,31.58 29.59,27.09 26.59,26.03 28.06,24.84 29,23.03 29,21 29,18.59 27.67,16.5 25.72,15.38 26.21,14.71 26.5,13.89 26.5,13 c 0,-2.21 -1.79,-4 -4,-4 z" style="opacity:var(--stone-icons-opacity); fill:var(--north-stone-fill); fill-opacity:var(--stone-icons-fill-opacity); fill-rule:nonzero; stroke:#000000; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:miter; stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;"/>
+<circle cx="24" cy="27" r="13" stroke="var(--north-stone-fill)"
+  stroke-width="3" fill="none" ></circle>
+
+<circle cx="24" cy="27" r="11" fill="var(--north-stone-fill)"
+  stroke="none" ></circle>
 
   </g>
 
  <!-- end north centroid -->
 
-<!-- south jack -->
+<!-- south centroid-pivot -->
 
-  <g id="south-jack_proto" class='south-stone-icon_proto' x="100" y="100"   width="45"
-   height="45" style="opacity:var(--stone-icons-opacity);fill:var(--south-stone-fill);fill-opacity:var(--stone-icons-fill-opacity);
-stroke:var(--south-stone-fill);stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;
-stroke-miterlimit:4; stroke-dasharray:none stroke-opacity:var(--stone-icons-opacity);" 
-transform="translate(0,50) scale(1, -1) ">
 
-    <path
-      d="M 9,39 L 36,39 L 36,36 L 9,36 L 9,39 z "
-      style="stroke-linecap:butt;" />
-    <path
-      d="M 12.5,32 L 14,29.5 L 31,29.5 L 32.5,32 L 12.5,32 z "
-      style="stroke-linecap:butt;" />
-    <path
-      d="M 12,36 L 12,32 L 33,32 L 33,36 L 12,36 z "
-      style="stroke-linecap:butt;" />
-    <path
-      d="M 14,29.5 L 14,16.5 L 31,16.5 L 31,29.5 L 14,29.5 z "
-      style="stroke-linecap:butt;stroke-linejoin:miter;" />
-    <path
-      d="M 14,16.5 L 11,14 L 34,14 L 31,16.5 L 14,16.5 z "
-      style="stroke-linecap:butt;" />
-    <path
-      d="M 11,14 L 11,9 L 15,9 L 15,11 L 20,11 L 20,9 L 25,9 L 25,11 L 30,11 L 30,9 L 34,9 L 34,14 L 11,14 z "
-      style="stroke-linecap:butt;" />
-    <path
-      d="M 12,35.5 L 33,35.5 L 33,35.5"
-      style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
-    <path
-      d="M 13,31.5 L 32,31.5"
-      style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
-    <path
-      d="M 14,29.5 L 31,29.5"
-      style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
-    <path
-      d="M 14,16.5 L 31,16.5"
-      style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
-    <path
-      d="M 11,14 L 34,14"
-      style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
+   <g id="south-centroid-pivot_proto" class='south-stone-icon_proto'>
+
+<circle cx="24" cy="27" r="15" stroke="var(--south-stone-fill)"
+  stroke-opacity="0.4" stroke-width="5" fill="none" ></circle>
+
+<circle cx="24" cy="27" r="10" stroke="var(--south-stone-fill)"
+  stroke-opacity="0.7" stroke-width="3" fill="none" ></circle>
+
+<line x1="16" y1="19" x2="32" y2="35" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
+
+<line x1="32" y1="19" x2="16" y2="35" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
 
   </g>
 
+
+
+ <!-- end south centroid-pivot -->
+
+<!-- north centroid-pivot -->
+
+
+   <g id="north-centroid-pivot_proto" class='south-stone-icon_proto'>
+
+<circle cx="24" cy="27" r="15" stroke="var(--south-stone-fill)"
+  stroke-opacity="0.4" stroke-width="5" fill="none" ></circle>
+
+<circle cx="24" cy="27" r="10" stroke="var(--south-stone-fill)"
+  stroke-opacity="0.7" stroke-width="3" fill="none" ></circle>
+
+<line x1="16" y1="19" x2="32" y2="35" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
+
+<line x1="32" y1="19" x2="16" y2="35" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
+
+  </g>
+
+
+
+ <!-- end north centroid-pivot -->
+
+<!-- south jack -->
+
+   <g id="south-jack_proto" class='south-stone-icon_proto'>
+
+
+<line x1="27" y1="12" x2="26" y2="40" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
+
+
+<circle cx="14" cy="27" r="6" stroke="none"
+  fill-opacity="1" fill="var(--south-stone-fill)" ></circle>
+
+<circle cx="38" cy="27" r="5" stroke="none"
+  fill-opacity="1" fill="var(--south-stone-fill)" ></circle>
+
+  </g>
 
  <!-- end south jack -->
 
 <!-- north jack -->
 
-  <g id="north-jack_proto" class='north-stone-icon_proto' x="100" y="100"   width="45"
-   height="45" style="opacity:var(--stone-icons-opacity);fill:var(--north-stone-fill);fill-opacity:var(--stone-icons-fill-opacity);
-stroke:var(--north-stone-fill);stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;
-stroke-miterlimit:4; stroke-dasharray:none stroke-opacity:var(--stone-icons-opacity);" 
-transform="translate(0,50) scale(1, -1) ">
+   <g id="north-jack_proto" class='north-stone-icon_proto'>
 
-    <path
-      d="M 9,39 L 36,39 L 36,36 L 9,36 L 9,39 z "
-      style="stroke-linecap:butt;" />
-    <path
-      d="M 12.5,32 L 14,29.5 L 31,29.5 L 32.5,32 L 12.5,32 z "
-      style="stroke-linecap:butt;" />
-    <path
-      d="M 12,36 L 12,32 L 33,32 L 33,36 L 12,36 z "
-      style="stroke-linecap:butt;" />
-    <path
-      d="M 14,29.5 L 14,16.5 L 31,16.5 L 31,29.5 L 14,29.5 z "
-      style="stroke-linecap:butt;stroke-linejoin:miter;" />
-    <path
-      d="M 14,16.5 L 11,14 L 34,14 L 31,16.5 L 14,16.5 z "
-      style="stroke-linecap:butt;" />
-    <path
-      d="M 11,14 L 11,9 L 15,9 L 15,11 L 20,11 L 20,9 L 25,9 L 25,11 L 30,11 L 30,9 L 34,9 L 34,14 L 11,14 z "
-      style="stroke-linecap:butt;" />
-    <path
-      d="M 12,35.5 L 33,35.5 L 33,35.5"
-      style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
-    <path
-      d="M 13,31.5 L 32,31.5"
-      style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
-    <path
-      d="M 14,29.5 L 31,29.5"
-      style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
-    <path
-      d="M 14,16.5 L 31,16.5"
-      style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
-    <path
-      d="M 11,14 L 34,14"
-      style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
+
+<line x1="27" y1="12" x2="26" y2="40" 
+  stroke-width="7" stroke="var(--north-stone-fill)"></line>
+
+
+<circle cx="14" cy="27" r="6" stroke="none"
+  fill-opacity="1" fill="var(--north-stone-fill)" ></circle>
+
+<circle cx="38" cy="27" r="5" stroke="none"
+  fill-opacity="1" fill="var(--north-stone-fill)" ></circle>
 
   </g>
 
-
  <!-- end north jack -->
+
+<!-- south jack-pivot -->
+
+   <g id="south-jack-pivot_proto" class='south-stone-icon_proto'>
+
+
+<line x1="25" y1="12" x2="26" y2="40" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
+
+<line x1="17" y1="21" x2="18" y2="36" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
+
+<line x1="32" y1="18" x2="33" y2="28" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
+
+  </g>
+
+ <!-- end south jack-pivot -->
+
+<!-- north jack-pivot -->
+
+   <g id="north-jack-pivot_proto" class='north-stone-icon_proto'>
+
+
+<line x1="25" y1="12" x2="26" y2="40" 
+  stroke-width="7" stroke="var(--north-stone-fill)"></line>
+
+<line x1="17" y1="21" x2="18" y2="36" 
+  stroke-width="7" stroke="var(--north-stone-fill)"></line>
+
+<line x1="32" y1="18" x2="33" y2="28" 
+  stroke-width="7" stroke="var(--north-stone-fill)"></line>
+
+  </g>
+
+ <!-- end north jack-pivot -->
 
 <!-- south queen -->
  
  <g  id="south-queen_proto" class='south-stone-icon_proto' style="fill:var(--south-stone-fill);fill-opacity:var(--stone-icons-fill-opacity);stroke:var(--south-stone-fill);stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round">
 
-    <path d="M 9,26 C 17.5,24.5 30,24.5 36,26 L 38.5,13.5 L 31,25 L 30.7,10.9 L 25.5,24.5 L 22.5,10 L 19.5,24.5 L 14.3,10.9 L 14,25 L 6.5,13.5 L 9,26 z"
-    style="stroke-linecap:butt;opacity:var(--stone-icons-opacity);fill:var(--south-stone-fill);fill-opacity:var(--stone-icons-fill-opacity);" />
-    <path d="m 9,26 c 0,2 1.5,2 2.5,4 1,1.5 1,1 0.5,3.5 -1.5,1 -1,2.5 -1,2.5 -1.5,1.5 0,2.5 0,2.5 6.5,1 16.5,1 23,0 0,0 1.5,-1 0,-2.5 0,0 0.5,-1.5 -1,-2.5 -0.5,-2.5 -0.5,-2 0.5,-3.5 1,-2 2.5,-2 2.5,-4 -8.5,-1.5 -18.5,-1.5 -27,0 z" />
-    <path d="M 11.5,30 C 15,29 30,29 33.5,30" />
-    <path d="m 12,33.5 c 6,-1 15,-1 21,0" />
-    <circle cx="6" cy="12" r="2" style='opacity:var(--stone-icons-opacity);'/>
-    <circle cx="14" cy="9" r="2" style='opacity:var(--stone-icons-opacity);'/>
-    <circle cx="22.5" cy="8" r="2" style='opacity:var(--stone-icons-opacity);'/>
-    <circle cx="31" cy="9" r="2" style='opacity:var(--stone-icons-opacity);'/>
-    <circle cx="39" cy="12" r="2" style='opacity:var(--stone-icons-opacity);'/>
-    <path d="M 11,38.5 A 35,35 1 0 0 34,38.5"
-    style="fill:none; stroke:var(--south-stone-fill);stroke-linecap:butt;" />
-    <g style="fill:none; stroke:#ffffff;">
-      <path  d="M 11,29 A 35,35 1 0 1 34,29" />
-      <path d="M 12.5,31.5 L 32.5,31.5" />
-      <path d="M 11.5,34.5 A 35,35 1 0 0 33.5,34.5" />
-      <path d="M 10.5,37.5 A 35,35 1 0 0 34.5,37.5" />
-    </g>
+<circle cx="20" cy="26" r="13" fill="var(--south-stone-fill)"></circle>
+
+<line x1="20" y1="26" x2="30" y2="36" stroke="var(--south-stone-fill)" stroke-width="8"></line>
+
   </g>
 
  <!-- end south queen -->
 
 <!-- north queen -->
-  <g id="north-queen_proto" class='north-stone-icon_proto' style="fill:var(--north-stone-fill);fill-opacity:var(--stone-icons-fill-opacity);stroke:var(--north-stone-fill);stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round">
+ 
+ <g  id="north-queen_proto" class='north-stone-icon_proto' style="fill:var(--north-stone-fill);fill-opacity:var(--stone-icons-fill-opacity);stroke:var(--north-stone-fill);stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round">
 
-    <path d="M 9,26 C 17.5,24.5 30,24.5 36,26 L 38.5,13.5 L 31,25 L 30.7,10.9 L 25.5,24.5 L 22.5,10 L 19.5,24.5 L 14.3,10.9 L 14,25 L 6.5,13.5 L 9,26 z"
-    style="stroke-linecap:butt;opacity:var(--stone-icons-opacity);fill:var(--north-stone-fill);fill-opacity:var(--stone-icons-fill-opacity);" />
-    <path d="m 9,26 c 0,2 1.5,2 2.5,4 1,1.5 1,1 0.5,3.5 -1.5,1 -1,2.5 -1,2.5 -1.5,1.5 0,2.5 0,2.5 6.5,1 16.5,1 23,0 0,0 1.5,-1 0,-2.5 0,0 0.5,-1.5 -1,-2.5 -0.5,-2.5 -0.5,-2 0.5,-3.5 1,-2 2.5,-2 2.5,-4 -8.5,-1.5 -18.5,-1.5 -27,0 z" />
-    <path d="M 11.5,30 C 15,29 30,29 33.5,30" />
-    <path d="m 12,33.5 c 6,-1 15,-1 21,0" />
-    <circle cx="6" cy="12" r="2" style='opacity:var(--stone-icons-opacity);'/>
-    <circle cx="14" cy="9" r="2" style='opacity:var(--stone-icons-opacity);'/>
-    <circle cx="22.5" cy="8" r="2" style='opacity:var(--stone-icons-opacity);'/>
-    <circle cx="31" cy="9" r="2" style='opacity:var(--stone-icons-opacity);'/>
-    <circle cx="39" cy="12" r="2" style='opacity:var(--stone-icons-opacity);'/>
-    <path d="M 11,38.5 A 35,35 1 0 0 34,38.5"
-    style="fill:none; stroke:var(--north-stone-fill);stroke-linecap:butt;" />
-    <g style="fill:none; stroke:#ffffff;">
-      <path  d="M 11,29 A 35,35 1 0 1 34,29" />
-      <path d="M 12.5,31.5 L 32.5,31.5" />
-      <path d="M 11.5,34.5 A 35,35 1 0 0 33.5,34.5" />
-      <path d="M 10.5,37.5 A 35,35 1 0 0 34.5,37.5" />
-    </g>
+<circle cx="20" cy="26" r="13" fill="var(--north-stone-fill)"></circle>
+
+<line x1="20" y1="26" x2="30" y2="36" stroke="var(--north-stone-fill)" stroke-width="8"></line>
+
   </g>
 
  <!-- end north queen -->
@@ -4960,9 +5245,9 @@ transform="translate(0,50) scale(1, -1) ">
 
  <!-- end north king -->
 
-<!-- south ace -->
+<!-- south king-pivot -->
 
-  <g id="south-ace_proto" class='south-stone-icon_proto' style="fill:none; fill-opacity:var(--stone-icons-fill-opacity); fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" transform="translate(0,50) scale(1, -1)">
+  <g id="south-king-pivot_proto" class='south-stone-icon_proto' style="fill:none; fill-opacity:var(--stone-icons-fill-opacity); fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" transform="translate(0,50) scale(1, -1)">
     <path d="M 22.5,11.63 L 22.5,6" style="fill:none; stroke:#000000; stroke-linejoin:miter;"/>
     <path d="M 22.5,25 C 22.5,25 27,17.5 25.5,14.5 C 25.5,14.5 24.5,12 22.5,12 C 20.5,12 19.5,14.5 19.5,14.5 C 18,17.5 22.5,25 22.5,25" style="fill:var(--south-stone-fill);fill-opacity:var(--stone-icons-fill-opacity); stroke-linecap:butt; stroke-linejoin:miter;"/>
     <path d="M 12.5,37 C 18,40.5 27,40.5 32.5,37 L 32.5,30 C 32.5,30 41.5,25.5 38.5,19.5 C 34.5,13 25,16 22.5,23.5 L 22.5,27 L 22.5,23.5 C 20,16 10.5,13 6.5,19.5 C 3.5,25.5 12.5,30 12.5,30 L 12.5,37" style="fill:var(--south-stone-fill); fill-opacity:var(--stone-icons-fill-opacity); stroke:#000000;"/>
@@ -4973,11 +5258,11 @@ transform="translate(0,50) scale(1, -1) ">
 
 
 
- <!-- end south ace -->
+ <!-- end south king-pivot -->
 
-<!-- north ace -->
+<!-- north king-pivot -->
 
-  <g id="north-ace_proto" class='north-stone-icon_proto' style="fill:none; fill-opacity:var(--stone-icons-fill-opacity); fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" transform="translate(0,50) scale(1, -1)">
+  <g id="north-king-pivot_proto" class='north-stone-icon_proto' style="fill:none; fill-opacity:var(--stone-icons-fill-opacity); fill-rule:evenodd; stroke:#000000; stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4; stroke-dasharray:none; stroke-opacity:1;" transform="translate(0,50) scale(1, -1)">
     <path d="M 22.5,11.63 L 22.5,6" style="fill:none; stroke:#000000; stroke-linejoin:miter;"/>
     <path d="M 22.5,25 C 22.5,25 27,17.5 25.5,14.5 C 25.5,14.5 24.5,12 22.5,12 C 20.5,12 19.5,14.5 19.5,14.5 C 18,17.5 22.5,25 22.5,25" style="fill:var(--north-stone-fill);fill-opacity:var(--stone-icons-fill-opacity); stroke-linecap:butt; stroke-linejoin:miter;"/>
     <path d="M 12.5,37 C 18,40.5 27,40.5 32.5,37 L 32.5,30 C 32.5,30 41.5,25.5 38.5,19.5 C 34.5,13 25,16 22.5,23.5 L 22.5,27 L 22.5,23.5 C 20,16 10.5,13 6.5,19.5 C 3.5,25.5 12.5,30 12.5,30 L 12.5,37" style="fill:var(--north-stone-fill); fill-opacity:var(--stone-icons-fill-opacity); stroke:#000000;"/>
@@ -4988,10 +5273,44 @@ transform="translate(0,50) scale(1, -1) ">
 
 
 
+ <!-- end north king-pivot -->
+
+<!-- south ace -->
+
+   <g id="south-ace_proto" class='south-stone-icon_proto'>
+
+<circle cx="23" cy="18" r="6" fill="var(--south-stone-fill)"
+  stroke="none" ></circle>
+
+<circle cx="15" cy="31" r="6" fill="var(--south-stone-fill)"
+  stroke="none" ></circle>
+
+<circle cx="33" cy="31" r="6" fill="var(--south-stone-fill)"
+  stroke="none" ></circle>
+
+  </g>
+
+ <!-- end south ace -->
+
+<!-- north ace -->
+
+   <g id="north-ace_proto" class='north-stone-icon_proto'>
+
+<circle cx="22" cy="18" r="6" fill="var(--north-stone-fill)"
+  stroke="none" ></circle>
+
+<circle cx="19" cy="31" r="6" fill="var(--north-stone-fill)"
+  stroke="none" ></circle>
+
+<circle cx="33" cy="28" r="6" fill="var(--north-stone-fill)"
+  stroke="none" ></circle>
+
+  </g>
+
  <!-- end north ace -->
 
 
-</defs> <!-- end chess icons -->
+</defs> <!-- end stone icons -->
 
 <!-- text indicators -->
 <g> 

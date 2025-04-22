@@ -1,0 +1,14 @@
+
+   <g id="%ID%" class='south-stone-icon_proto'>
+
+
+<line x1="25" y1="12" x2="26" y2="40" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
+
+<line x1="17" y1="21" x2="18" y2="36" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
+
+<line x1="32" y1="18" x2="33" y2="28" 
+  stroke-width="7" stroke="var(--south-stone-fill)"></line>
+
+  </g>

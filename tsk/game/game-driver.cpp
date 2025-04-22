@@ -706,7 +706,28 @@ void Game_Driver::update_token_move_or_placement(QH_Web_View_Dialog& dlg, Game_T
  if(token->current_cluster())
    token->current_cluster()->update_densities();
  else
-   token->set_as_pawn();
+   token->set_as_singleton();
+
+}
+
+
+void Game_Driver::compute_clusters()
+{
+
+ for(u1 i = 1; i <= 32; ++i)
+ {
+  QString s_stone_id = "token-s%1"_qt.arg(i);
+  QString n_stone_id = "token-n%1"_qt.arg(i);
+
+  Game_Token* s_token = tokens_by_svg_id_[s_stone_id];
+  Game_Token* n_token = tokens_by_svg_id_[n_stone_id];
+
+  _surrounding s_s;
+  _surrounding n_s;
+
+  check_cluster(s_token, s_s);
+  check_cluster(n_token, n_s);
+ }
 
 }
 
@@ -726,16 +747,73 @@ void Game_Driver::handle_setup_tokens(QH_Web_View_Dialog& dlg)
   QString s_stone_id = "token-s%1"_qt.arg(i);
   QString n_stone_id = "token-n%1"_qt.arg(i);
 
-  Game_Token* s_stone = tokens_by_svg_id_[s_stone_id];
-  Game_Token* n_stone = tokens_by_svg_id_[n_stone_id];
+  Game_Token* s_token = tokens_by_svg_id_[s_stone_id];
+  Game_Token* n_token = tokens_by_svg_id_[n_stone_id];
 
   Game_Position* s_pos = board_.get_game_position_by_coords(row, col);
   Game_Position* n_pos = board_.get_game_position_by_coords(32 - row, col);
 
-  reset_token_position(dlg, s_stone, i, s_pos);
-  reset_token_position(dlg, n_stone, i, n_pos);
+  if(col == 1 || col == 31)
+  {
+   s_token->set_as_queen();
+   n_token->set_as_queen();
+  }
+  else
+  {
+   s_token->set_as_centroid();
+   n_token->set_as_centroid();
+  }
+
+//  if(col == 3)
+//  {
+//   s_token->set_as_jack();
+//   n_token->set_as_jack();
+//  }
+
+//  if(col == 5)
+//  {
+//   s_token->set_as_king();
+//   n_token->set_as_king();
+//  }
+
+//  if(col == 7)
+//  {
+//   s_token->set_as_ace();
+//   n_token->set_as_ace();
+//  }
+
+//  if(col == 9)
+//  {
+//   s_token->set_as_singleton();
+//   n_token->set_as_singleton();
+//  }
+
+//  if(col == 11)
+//  {
+//   s_token->set_as_centroid_pivot();
+//   n_token->set_as_centroid_pivot();
+//  }
+
+//  if(col == 13)
+//  {
+//   s_token->set_as_jack_pivot();
+//   n_token->set_as_jack_pivot();
+//  }
+
+//  if(col == 15)
+//  {
+//   s_token->set_as_king_pivot();
+//   n_token->set_as_king_pivot();
+//  }
+
+
+  reset_token_position(dlg, s_token, i, s_pos);
+  reset_token_position(dlg, n_token, i, n_pos);
+
 
  }
+
+// compute_clusters();
 }
 
 void Game_Driver::reset_token_position(QH_Web_View_Dialog& dlg,
@@ -755,11 +833,12 @@ void Game_Driver::reset_token_position(QH_Web_View_Dialog& dlg,
  dlg.run_js_in_current_web_page("show_token_at_position('%1', %2, %3);"_qt.arg(token_id).arg(x).arg(y));
 
  QStringList qsl { "canon", "knight", "altc",
-  "altk", "centroid", "jack", "queen", "king", "ace" };
+  "altk", "singleton", "centroid", "centroid-pivot",
+   "jack", "jack-pivot", "queen", "king", "king-pivot",  "ace" };
 
  for(QString qs : qsl)
  {
-  if(qs == "centroid")
+  if(token->match_kind_to_string(qs))
     continue;
 
   QString element_id = "%1-%2%3"_qt.arg(qs)

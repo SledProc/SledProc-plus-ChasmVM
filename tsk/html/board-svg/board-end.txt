@@ -8,12 +8,12 @@
 
 </g> <!-- end tokens -->
 
-<!-- chess-icons -->
+<!-- stone-icons -->
 <defs> 
 
 %ICONS%
 
-</defs> <!-- end chess icons -->
+</defs> <!-- end stone icons -->
 
 <!-- text indicators -->
 <g> 
