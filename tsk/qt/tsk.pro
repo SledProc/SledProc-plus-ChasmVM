@@ -12,6 +12,7 @@ HEADERS += \
   ../game/game-player.h \
   ../game/game-position.h \
   ../game/game-token.h \
+  ../game/game-emblem.h \
   ../game/message-display-window.h \
   ../game/token-group.h \
   ../game/variants/game-variant.h \
@@ -32,6 +33,7 @@ SOURCES += \
   ../game/game-position.cpp \
   ../game/message-display-window.cpp \
   ../game/game-token.cpp \
+  ../game/game-emblem.cpp \
   ../game/token-group.cpp \
   ../game/variants/game-variant.cpp \
   ../game/variants/au/au-game-variant.cpp \

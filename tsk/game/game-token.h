@@ -16,6 +16,8 @@
 
 #include "enum-macros.h"
 
+#include "game-emblem.h"
+
 
 #include <QString>
 
@@ -102,6 +104,10 @@ public:
 private:
  Token_Kind kind_;
 
+ u1 arrow_set_code_;
+
+ Game_Emblem emblem_;
+
  //u1 capture_rank_;
 //? u1 cluster_size_;
 
@@ -156,6 +162,8 @@ public:
  ACCESSORS(Token_Kind ,kind);
 
  Qj (;)
+
+ QChar player_code();
 
  QString current_placement_order_label();
 

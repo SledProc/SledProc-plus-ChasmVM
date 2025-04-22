@@ -51,10 +51,7 @@ function reactivate_left()
 
   function run_qh_notify(key, msg)
   {
-   alert("3");
    var cpp = window.webChannel.objects.JsInterface;
-   alert("cpp = ");
-   alert(cpp);
    cpp.page_callback(key, msg);
 
   }
@@ -150,11 +147,16 @@ function show_token_at_position(id, x, y)
 {
  let token = document.getElementById("board-svg").contentDocument.
    getElementById(id);
+
+
+// alert(token);
+
+// alert(`et: ${token.getAttribute('transform')}`);
+
  position_token(token, x, y);
  _show_svg_element(token);
 
-
-//? alert(`et: ${token.getAttribute('transform')}`);
+// alert(`et: ${token.getAttribute('transform')}`);
 }
 
 function _show_svg_element(el)
@@ -214,6 +216,8 @@ function _hide_svg_element(el)
 
 function hide_svg_element(id)
 {
+ run_qh_notify("log", `id: ${id}`);
+
  let el = document.getElementById("board-svg").contentDocument.
    getElementById(id);
  _hide_svg_element(el);
@@ -370,10 +374,10 @@ function deactivate_text_indicator(id)
 <body>
 
 
-<button onclick='alert("1"); run_qh_notify("ok", "ok"); alert("2")'>OOOOOOOOOO</button>
+<button onclick='run_qh_notify("setup-tokens", "")'>OOOOOOOOOO</button>
 
 <div id='board-svg-container'>
-<object id='board-svg' data='board71.svg' type="image/svg+xml"/>
+<object id='board-svg' data='board1.svg' type="image/svg+xml"/>
 
 <script>
 

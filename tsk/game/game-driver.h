@@ -79,6 +79,9 @@ class Game_Driver
 
  void display_message(QString msg, QH_Web_View_Dialog* dlg = nullptr);
 
+ void reset_token_position(QH_Web_View_Dialog& dlg,
+   Game_Token* token, u1 index, Game_Position* pos);
+
  void get_token_info(Game_Token* token);
 
  Game_Token* get_token_for_placement();
@@ -123,6 +126,8 @@ public:
  void start_game(QH_Web_View_Dialog& dlg);
  void check_token_stone_icon(Game_Token* token);
 
+
+ void handle_setup_tokens(QH_Web_View_Dialog& dlg);
 
  void handle_text_indicator_clicked(QH_Web_View_Dialog& dlg, QString token_id);
  void handle_token_clicked(QH_Web_View_Dialog& dlg, QString token_id);

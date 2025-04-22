@@ -23,13 +23,21 @@ void test_game()
 
 
 Game_Token::Game_Token(Game_Player* player, Token_Kind kind)
-  :  kind_(kind), player_(player), current_cluster_(nullptr),
+  :  kind_(kind), arrow_set_code_(0),
+     player_(player), current_cluster_(nullptr),
      capture_status_(0), current_position_(nullptr),
      move_option_count_(0), current_placement_order_(0),
      prior_position_(nullptr)
 {
 
 }
+
+QChar Game_Token::player_code()
+{
+ static QString chars = "_sn";
+ return chars[player_->play_order()];
+}
+
 
 QString Game_Token::current_placement_order_label()
 {

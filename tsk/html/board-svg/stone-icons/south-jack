@@ -1,6 +1,9 @@
-  <g id="%ID%" class='north-chess-icon_proto' style="opacity:var(--chess-icons-opacity);fill:var(--north-chess-fill);fill-opacity:var(--chess-icons-fill-opacity);
-stroke:var(--north-chess-fill);stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;
-stroke-miterlimit:4; stroke-dasharray:none stroke-opacity:var(--chess-icons-opacity);" transform="translate(0,0.3)">
+
+  <g id="%ID%" class='south-stone-icon_proto' x="100" y="100"   width="45"
+   height="45" style="opacity:var(--stone-icons-opacity);fill:var(--south-stone-fill);fill-opacity:var(--stone-icons-fill-opacity);
+stroke:var(--south-stone-fill);stroke-width:1.5; stroke-linecap:round;stroke-linejoin:round;
+stroke-miterlimit:4; stroke-dasharray:none stroke-opacity:var(--stone-icons-opacity);" 
+transform="translate(0,50) scale(1, -1) ">
 
     <path
       d="M 9,39 L 36,39 L 36,36 L 9,36 L 9,39 z "
@@ -37,3 +40,4 @@ stroke-miterlimit:4; stroke-dasharray:none stroke-opacity:var(--chess-icons-opac
       style="fill:none; stroke:#ffffff; stroke-width:1; stroke-linejoin:miter;" />
 
   </g>
+

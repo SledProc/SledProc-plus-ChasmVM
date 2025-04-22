@@ -711,13 +711,79 @@ void Game_Driver::update_token_move_or_placement(QH_Web_View_Dialog& dlg, Game_T
 }
 
 
+void Game_Driver::handle_setup_tokens(QH_Web_View_Dialog& dlg)
+{
+
+// dlg.run_js_in_current_web_page("show_token_at_position('token-s1', 26, 775);");
+
+// return;
+
+ for(u1 i = 1; i <= 32; ++i)
+ {
+  u1 row = 1 + ((u1) (i >= 17) << 1);
+  u1 col = 1 + (((i - 1) % 16) << 1);
+
+  QString s_stone_id = "token-s%1"_qt.arg(i);
+  QString n_stone_id = "token-n%1"_qt.arg(i);
+
+  Game_Token* s_stone = tokens_by_svg_id_[s_stone_id];
+  Game_Token* n_stone = tokens_by_svg_id_[n_stone_id];
+
+  Game_Position* s_pos = board_.get_game_position_by_coords(row, col);
+  Game_Position* n_pos = board_.get_game_position_by_coords(32 - row, col);
+
+  reset_token_position(dlg, s_stone, i, s_pos);
+  reset_token_position(dlg, n_stone, i, n_pos);
+
+ }
+}
+
+void Game_Driver::reset_token_position(QH_Web_View_Dialog& dlg,
+  Game_Token* token, u1 index, Game_Position* gp)
+{
+// show_token_at_position(dlg, token, gp);
+
+// return;
+
+ token->set_prior_position(token->current_position());
+ token->set_current_position(gp);
+ gp->set_current_occupier(token);
+
+ QString token_id = token->svg_id();
+ static s2 token_mid_offset_x = 25, token_mid_offset_y = 25;
+ s2 x = gp->svg_x() + token_mid_offset_x, y = gp->svg_y() + token_mid_offset_y;
+ dlg.run_js_in_current_web_page("show_token_at_position('%1', %2, %3);"_qt.arg(token_id).arg(x).arg(y));
+
+ QStringList qsl { "canon", "knight", "altc",
+  "altk", "centroid", "jack", "queen", "king", "ace" };
+
+ for(QString qs : qsl)
+ {
+  if(qs == "centroid")
+    continue;
+
+  QString element_id = "%1-%2%3"_qt.arg(qs)
+    .arg(token->player_code()).arg(index);
+
+
+  dlg.run_js_in_current_web_page("hide_svg_element('%1');"_qt.arg(element_id));
+
+ }
+
+ //show_stone_icon(dlg, token);
+}
+
+
+
+
 void Game_Driver::handle_token_placement(QH_Web_View_Dialog& dlg, Game_Token* token, QString pos_id)
 {
  Game_Position* gp = board_.get_game_position_by_label_code(pos_id);
 
- if(token->player() != current_player_)
-   // // clicked by mistake?
-   return;
+
+// if(token->player() != current_player_)
+//   // // clicked by mistake?
+//   return;
 
 
  Game_Token* placed_token = nullptr;

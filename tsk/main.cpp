@@ -143,6 +143,9 @@ int main(int argc, char *argv[])
   else
     element_id = msg.toString();
 
+  if(key == "setup-tokens")
+    driver.handle_setup_tokens(*_dlg);
+
   if(key == "position-clicked")
     driver.handle_position_clicked(*_dlg, element_id);
 

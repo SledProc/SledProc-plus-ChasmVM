@@ -449,7 +449,8 @@ void Game_Board::to_svg(QString in_folder, QString out_file)
 
  gridlines(); squares(); slot_borders(); centers(); intersections(); edges(); sides();
 
- static QStringList pieces { "pawn", "knight", "bishop", "rook", "jack", "ace", "queen", "king" };
+ static QStringList pieces { "canon", "knight", "altc", "altk",
+   "centroid", "jack", "queen", "king", "ace" };
 
  QString north_copier, south_copier;
 
@@ -491,7 +492,9 @@ void Game_Board::to_svg(QString in_folder, QString out_file)
      "\n <!-- end north " + piece + " -->\n";
   }
  };
- icons();
+
+  //? //?
+  icons();
 
 // tokens_text += R"(
 //<a class='south-token_base south-token_display-select' id='token-s0'>
@@ -509,7 +512,7 @@ void Game_Board::to_svg(QString in_folder, QString out_file)
  QString tokens_text;
  auto tokens = [&tokens_text, in_folder, north_copier, south_copier, this]()
  {
-  for(u1 i = 1; i <= 30; ++i)
+  for(u1 i = 1; i <= 32; ++i)
   {
    QString s_id = "token-s"_qt + QString::number(i);
    QString n_id = "token-n"_qt + QString::number(i);

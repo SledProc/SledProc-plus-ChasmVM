@@ -4523,6 +4523,77 @@ opacity:0.8;}
 </a>
 
 
+<a class='south-token_base south-token_in-play' id='token-s31'>
+ <circle cx='0' cy='0' r='13' />
+  <g transform="translate(-15, -15) scale(0.6, 0.6)">
+  <!-- chess icon representations -->
+  
+<use id='pawn-s30' class='south-chess-icon_copied' xlink:href='#south-pawn_proto'/>
+<use id='knight-s30' class='south-chess-icon_copied' xlink:href='#south-knight_proto'/>
+<use id='bishop-s30' class='south-chess-icon_copied' xlink:href='#south-bishop_proto'/>
+<use id='rook-s30' class='south-chess-icon_copied' xlink:href='#south-rook_proto'/>
+<use id='jack-s30' class='south-chess-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='ace-s30' class='south-chess-icon_copied' xlink:href='#south-ace_proto'/>
+<use id='queen-s30' class='south-chess-icon_copied' xlink:href='#south-queen_proto'/>
+<use id='king-s30' class='south-chess-icon_copied' xlink:href='#south-king_proto'/>
+  <!-- end chess icon representations -->
+  </g>
+</a>
+
+<a class='north-token_base north-token_in-play' id='token-n31'>
+ <circle cx='0' cy='0' r='13' />
+  <g transform="translate(-15, -15) scale(0.6, 0.6)">
+  <!-- chess icon representations -->
+  
+<use id='pawn-n30' class='north-chess-icon_copied' xlink:href='#north-pawn_proto'/>
+<use id='knight-n30' class='north-chess-icon_copied' xlink:href='#north-knight_proto'/>
+<use id='bishop-n30' class='north-chess-icon_copied' xlink:href='#north-bishop_proto'/>
+<use id='rook-n30' class='north-chess-icon_copied' xlink:href='#north-rook_proto'/>
+<use id='jack-n30' class='north-chess-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='ace-n30' class='north-chess-icon_copied' xlink:href='#north-ace_proto'/>
+<use id='queen-n30' class='north-chess-icon_copied' xlink:href='#north-queen_proto'/>
+<use id='king-n30' class='north-chess-icon_copied' xlink:href='#north-king_proto'/>
+  <!-- end chess icon representations -->
+  </g>
+</a>
+
+
+<a class='south-token_base south-token_in-play' id='token-s32'>
+ <circle cx='0' cy='0' r='13' />
+  <g transform="translate(-15, -15) scale(0.6, 0.6)">
+  <!-- chess icon representations -->
+  
+<use id='pawn-s30' class='south-chess-icon_copied' xlink:href='#south-pawn_proto'/>
+<use id='knight-s30' class='south-chess-icon_copied' xlink:href='#south-knight_proto'/>
+<use id='bishop-s30' class='south-chess-icon_copied' xlink:href='#south-bishop_proto'/>
+<use id='rook-s30' class='south-chess-icon_copied' xlink:href='#south-rook_proto'/>
+<use id='jack-s30' class='south-chess-icon_copied' xlink:href='#south-jack_proto'/>
+<use id='ace-s30' class='south-chess-icon_copied' xlink:href='#south-ace_proto'/>
+<use id='queen-s30' class='south-chess-icon_copied' xlink:href='#south-queen_proto'/>
+<use id='king-s30' class='south-chess-icon_copied' xlink:href='#south-king_proto'/>
+  <!-- end chess icon representations -->
+  </g>
+</a>
+
+<a class='north-token_base north-token_in-play' id='token-n32'>
+ <circle cx='0' cy='0' r='13' />
+  <g transform="translate(-15, -15) scale(0.6, 0.6)">
+  <!-- chess icon representations -->
+  
+<use id='pawn-n30' class='north-chess-icon_copied' xlink:href='#north-pawn_proto'/>
+<use id='knight-n30' class='north-chess-icon_copied' xlink:href='#north-knight_proto'/>
+<use id='bishop-n30' class='north-chess-icon_copied' xlink:href='#north-bishop_proto'/>
+<use id='rook-n30' class='north-chess-icon_copied' xlink:href='#north-rook_proto'/>
+<use id='jack-n30' class='north-chess-icon_copied' xlink:href='#north-jack_proto'/>
+<use id='ace-n30' class='north-chess-icon_copied' xlink:href='#north-ace_proto'/>
+<use id='queen-n30' class='north-chess-icon_copied' xlink:href='#north-queen_proto'/>
+<use id='king-n30' class='north-chess-icon_copied' xlink:href='#north-king_proto'/>
+  <!-- end chess icon representations -->
+  </g>
+</a>
+
+
+
 </g> <!-- end tokens -->
 
 <!-- chess-icons -->

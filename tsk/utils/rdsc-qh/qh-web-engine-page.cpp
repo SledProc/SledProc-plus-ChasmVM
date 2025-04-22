@@ -80,9 +80,11 @@ void QH_Web_Engine_Page::run_js_interface_callback(const QJsonValue& key, const 
 
 void QH_Web_Engine_Page::run_js_interface_callback(QString key, QString msg)
 {
- qDebug() << key;
+// qDebug() << key;
+// qDebug() << msg;
 
- qDebug() << msg;
+ QJsonValue qjv = QJsonValue(msg);
+ run_js_interface_callback(key, qjv);
 }
 
 void QH_Web_Engine_Page::run_js_interface_callback(QString key, const QJsonValue& msg) //const QString msg)
