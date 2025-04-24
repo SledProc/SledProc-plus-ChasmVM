@@ -157,6 +157,7 @@ public:
 
 //? void handle_mark_location_requested(const QH_Cross_Map_Coords& coords);
 
+ void activate_placement_option_indicator(QString position_id); //Game_Player* player);
 
  void add_url_pattern(QUrl url);
 

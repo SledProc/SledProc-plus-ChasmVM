@@ -36,7 +36,7 @@ void Game_Variant::check_dislodge(Game_Token* token, Game_Position* gp,
  if(info)
  {
   affected_tokens.push_back(info);
-  check_secondary_dislodge(info.adjacent_occupier->current_position(), info.adjacent_occupier, info.new_position, affected_tokens, info.direction);
+  check_secondary_dislodge(info.incident_occupier->current_position(), info.incident_occupier, info.new_position, affected_tokens, info.direction);
  }
 }
 
@@ -44,7 +44,7 @@ void Game_Variant::check_secondary_dislodge(Game_Position* prior_gp, Game_Token*
   QVector<Game_Position::Dislodge_Info>& affected_tokens, u1 prior_direction)
 {
  // //  note the gp here should always be a slot, so this always returns something ...
- Game_Position* center = gp->get_adjacent_center_position();
+ Game_Position* center = gp->get_incident_center_position();
 
  Game_Position::Dislodge_Info info = gp->get_secondary_dislodge_info(prior_gp, prior_gp, center, prior_direction);
  if(info)
@@ -58,7 +58,7 @@ void Game_Variant::check_secondary_dislodge(Game_Position* prior_gp, Game_Token*
   while( (info.direction == -2) && (c--) )
   {
    affected_tokens.push_back(info);
-   info = info.new_position->get_secondary_dislodge_info(nullptr, info.adjacent_occupier->current_position(), center, -2);
+   info = info.new_position->get_secondary_dislodge_info(nullptr, info.incident_occupier->current_position(), center, -2);
   }
  }
 }
@@ -163,10 +163,10 @@ s2 Game_Variant::check_move_option(Game_Token* token, Game_Position* start_posit
      result = 0;
   }
  }
- else if(os.adjacent_occupier)
+ else if(os.incident_occupier)
  {
   if(blocking_token)
-    *blocking_token = os.adjacent_occupier;
+    *blocking_token = os.incident_occupier;
 
   if(gp->flags.is_non_slot)
   {
@@ -248,13 +248,13 @@ Game_Position* Game_Variant::check_move_option(Game_Token* token, Game_Position*
    }
    index = -index;
   }
-  else if(os.adjacent_occupier)
+  else if(os.incident_occupier)
   {
    if(gp->flags.is_non_slot)
    {
     if(os.blocks_direction(offsets))
     {
-     *indirect_blocking_token = os.adjacent_occupier;
+     *indirect_blocking_token = os.incident_occupier;
      return nullptr;
     }
    }

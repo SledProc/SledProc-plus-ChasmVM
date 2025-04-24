@@ -23,16 +23,16 @@
        <stop offset="100%" stop-color="white" />
       </linearGradient>
 
-     <linearGradient id="south-stone-gradient" gradientTransform="rotate(29)"
-       spreadMethod="repeat">
-       <stop offset="25%" stop-color="rgb(250, 190, 248)" />
-       <stop offset="70%" stop-color="rgb(237, 255, 228)" />
+     <linearGradient id="south-stone-gradient" gradientTransform="rotate(299)">
+       <stop offset="0%" stop-color="rgb(253, 229, 227)" />
+       <stop offset="35%" stop-color="yellow" />
+       <stop offset="100%" stop-color="orange" />
       </linearGradient>
 
       <linearGradient id="north-stone-gradient" gradientTransform="rotate(299)">
-       <stop offset="0%" stop-color="rgb(27, 229, 253)" />
+       <stop offset="0%" stop-color="rgb(227, 229, 253)" />
        <stop offset="35%" stop-color="yellow" />
-       <stop offset="65%" stop-color="orange" />
+       <stop offset="100%" stop-color="orange" />
       </linearGradient>
 
 
@@ -129,14 +129,16 @@
 .north-token_base:hover { fill:rgb(130,130,250) } 
 .south-token_base:hover  { fill:rgb(250,130,130) } 
 
-.move-indicator_bkg {fill:rgb(237, 188, 205);fill-opacity:0.4}
-.move-indicator_bkg:hover {fill:rgb(237, 188, 205);fill-opacity:0.7}
 
 .move-indicator_base  {fill:var(--move-indicator-fill);fill-opacity:0.3}
-.move-indicator_base:hover { fill:rgb(131, 85, 163); fill-opacity:1 }
+.move-indicator_base:hover { fill:rgb(150,130,150); fill-opacity:1 }
 .move-indicator_hidden { visibility:hidden; }
 .move-indicator_visible { visibility:visible; }
 
+
+.mi-for-hover {fill:rgb(100,100,200);}
+
+.mi-for-hover:hover {fill:rgb(200,100,100);}
 
         .dark-square {
  stroke-width:0; opacity:0.3;
@@ -3518,16 +3520,15 @@ opacity:0.8;}
 
    <g id="move-indicator_proto" class='move-indicator-icon_proto'>
 
-<rect x='-23' y='-23' width='50' height='50'/>
+ <rect x='-23' y='-23' width='50' height='50'/>
 
-
-<circle cx="1" cy="5" r="19" stroke="var(--move-indicator-fill)"
+<circle cx="1" cy="2" r="19" stroke="var(--move-indicator-fill)"
   stroke-opacity="0.4" stroke-width="5" fill="none" ></circle>
 
-<circle cx="1" cy="5" r="13" stroke="var(--move-indicator-fill)"
+<circle cx="1" cy="2" r="13" stroke="var(--move-indicator-fill)"
   stroke-opacity="0.7" stroke-width="3" fill="none" ></circle>
 
-<circle cx="1" cy="5" r="7" stroke="none"
+<circle cx="1" cy="2" r="7" stroke="none"
   fill="var(--move-indicator-fill)" ></circle>
 
   </g>
@@ -3540,11 +3541,13 @@ opacity:0.8;}
   <g id='mi1-g' transform="translate(466, 466) scale(0.6, 0.6)">
    
 <use id='mi-1-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+
   </g>
  </a>
       
  <a class='move-indicator_base move-indicator_hidden' id='mi2'>
   <g id='mi2-g' transform="translate(466, 466) scale(0.6, 0.6)">
+ <rext x='3' y='3' width='24' height='24'/>
    
 <use id='mi-2-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
   </g>

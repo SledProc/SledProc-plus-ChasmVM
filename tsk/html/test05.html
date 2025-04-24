@@ -134,6 +134,38 @@ function handle_text_indicator_context_menu(event)
 }
 
 
+function show_move_indicator_at_position(aid, gid, x, y)
+{
+ let ael = document.getElementById("board-svg").contentDocument.
+   getElementById(aid);
+
+ let gel = document.getElementById("board-svg").contentDocument.
+   getElementById(gid);
+
+ let tr1 = gel.getAttribute('transform');
+
+ position_element(gel, x, y);
+
+ ael.classList.remove("move-indicator_hidden");
+ ael.classList.add("move-indicator_visible");
+
+// run_qh_notify("log", `el: ${el.classList}`);
+
+ return ael;
+}
+
+function hide_move_indicator(id)
+{
+ let el = document.getElementById("board-svg").contentDocument.
+   getElementById(id);
+
+ el.classList.remove("move-indicator_visible");
+ el.classList.add("move-indicator_hidden");
+
+ return el;
+}
+
+
 function show_element_at_position(id, x, y)
 {
  let el = document.getElementById("board-svg").contentDocument.
@@ -295,16 +327,18 @@ function update_north_messages(text)
 function show_move_indicators(arr)
 {
  arr.forEach(indicator_and_point => {
-  let mi = show_element_at_position(indicator_and_point[0], indicator_and_point[1], indicator_and_point[2]);
+  let mi = show_move_indicator_at_position(indicator_and_point[0], indicator_and_point[1], 
+    indicator_and_point[2], indicator_and_point[3]);
   current_move_indicators.push(mi);  
  });
 }
 
 function hide_move_indicators()
 {
- current_move_indicators.forEach(el => _hide_svg_element(el));
+ current_move_indicators.forEach(el => hide_move_indicator(el));
 }
 }
+
 
 function highlight_south_token(id)
 {

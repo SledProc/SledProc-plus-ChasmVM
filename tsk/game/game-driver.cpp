@@ -28,11 +28,13 @@
 
 
 Game_Driver::Game_Driver()
-  :  board_(this), current_selected_token_(0), current_player_(nullptr),
+  :  board_(this), current_selected_token_(nullptr),
+     rejected_selected_token_(nullptr), current_player_(nullptr),
      south_player_(nullptr), north_player_(nullptr),
      message_display_window_(nullptr),
      move_indicators_capture_count_(0),
      move_indicators_count_(0),
+     current_active_move_option_indicators_(0),
      current_indicator_status_(Indicator_Status::N_A)
 {
  current_variant_ = new AU_Game_Variant("A/U", this);
@@ -92,6 +94,90 @@ void Game_Driver::start_game(QH_Web_View_Dialog& dlg)
 
  //?board_.set_next_token_number(-1);
 }
+
+
+void Game_Driver::build_placement_options_Queen(Game_Token* token,
+  QH_Web_View_Dialog& dlg)
+{
+ current_placement_options_.clear();
+
+ for(u1 row = 1; row <= 31; row += 2)
+ {
+  for(u1 col = 1; col <= 31; col += 2)
+  {
+   Game_Position* gp = board_.get_game_position_by_coords(row, col);
+
+   if(gp->current_occupier_matches_player(token))
+     continue;
+
+   std::array<Game_Position*, 8> adj = gp->get_adjacents();
+
+   u1 v = std::count_if(adj.begin(), adj.end(), [token](Game_Position* _gp)
+   {
+    return _gp && _gp->current_occupier_matches_player(token);
+   });
+
+   QVector<Game_Position*> incidents;
+
+   // //  the valence will be increased by dislodged pieces
+    //    incident to the new slot
+   v += gp->get_occupied_incidents(incidents, token);
+
+   if(v >= token->current_valence())
+   {
+    current_placement_options_[gp] = incidents;
+   }
+
+  }
+ }
+
+ if(current_placement_options_.isEmpty())
+   rejected_selected_token_ = token;
+ else
+ {
+  rejected_selected_token_ = nullptr;
+  current_selected_token_ = token;
+  show_placement_options(token, dlg);
+ }
+}
+
+void Game_Driver::build_placement_options_Jack(Game_Token* token,
+  QH_Web_View_Dialog& dlg)
+{
+
+}
+
+void Game_Driver::build_placement_options_Centroid_or_King(Game_Token* token,
+  QH_Web_View_Dialog& dlg)
+{
+
+}
+
+
+
+void Game_Driver::build_placement_options(Game_Token* token,
+  QH_Web_View_Dialog& dlg)
+{
+// current_selected_token_ = token;
+
+ switch(token->base_kind())
+ {
+ case Game_Token::Token_Kind::Queen:
+   build_placement_options_Queen(token, dlg);
+   return;
+
+ case Game_Token::Token_Kind::Jack:
+   build_placement_options_Jack(token, dlg);
+   return;
+
+ case Game_Token::Token_Kind::King:
+ case Game_Token::Token_Kind::Centroid:
+   build_placement_options_Centroid_or_King(token, dlg);
+   return;
+ }
+
+}
+
 
 
 void Game_Driver::check_prepare_token_placement(Game_Token* token, QH_Web_View_Dialog& dlg)
@@ -195,7 +281,8 @@ void Game_Driver::handle_token_clicked(QH_Web_View_Dialog& dlg, Game_Token* toke
  else
  {
   if(token->capture_status() == 0)
-    check_prepare_token_placement(token, dlg);
+    build_placement_options(token, dlg);
+    //check_prepare_token_placement(token, dlg);
   else if(token->capture_status() == -1)
     prepare_move_option_indicators(token, dlg);
  }
@@ -203,6 +290,33 @@ void Game_Driver::handle_token_clicked(QH_Web_View_Dialog& dlg, Game_Token* toke
   //board_.handle_token_clicked(dlg, token);
 
 }
+
+//void Game_Driver::build_placement_options()
+//{
+
+//}
+
+
+void Game_Driver::show_placement_options(Game_Token* token, QH_Web_View_Dialog& dlg)
+{
+ clear_move_option_data();
+
+ u2 count = 0;
+ for(Game_Position* gp : current_placement_options_.keys())
+ {
+  Move_Indicator* mi = move_indicators_[count];
+  mi->current_position = gp;
+  gp->set_current_move_option_data(mi);
+  ++count;
+ }
+
+ move_indicators_count_ = current_placement_options_.size();
+
+ js_show_move_indicators(dlg);
+ //  dlg.activate_placement_option_indicator(gp);
+}
+
+
 
 void Game_Driver::clear_move_option_data()
 {
@@ -329,10 +443,16 @@ void Game_Driver::js_show_move_indicators(QH_Web_View_Dialog& dlg)
 
  s2 token_mid_offset_x = 25, token_mid_offset_y = 25;
 
- auto fn = [token_mid_offset_x, token_mid_offset_y](Move_Indicator* mi) -> QString
+ int c = 1;
+ auto fn = [token_mid_offset_x, token_mid_offset_y, &c](Move_Indicator* mi) -> QString
  {
-  return "['%1', %2, %3]"_qt.arg(mi->id)
-    .arg(mi->current_position->svg_x() + token_mid_offset_x).arg(mi->current_position->svg_y() + token_mid_offset_y);
+  QString result = "['%1', '%2', %3, %4]"_qt.arg(mi->id).arg(mi->id + "-g")
+    .arg(mi->current_position->svg_x() + token_mid_offset_x)// - c*25)
+    .arg(mi->current_position->svg_y() + token_mid_offset_y);
+
+  ++c;
+
+  return result;
  };
 
  if(move_indicators_count_)
@@ -648,9 +768,9 @@ void Game_Driver::handle_token_move_or_placement(QH_Web_View_Dialog& dlg, Game_T
  {
   for(Game_Position::Dislodge_Info info : dislodge_info)
   {
-   _place(info.adjacent_occupier, info.new_position);
-   update_token_move_or_placement(dlg, info.adjacent_occupier, info.new_position);
-   finalize_token_move(dlg, info.adjacent_occupier, info.new_position);
+   _place(info.incident_occupier, info.new_position);
+   update_token_move_or_placement(dlg, info.incident_occupier, info.new_position);
+   finalize_token_move(dlg, info.incident_occupier, info.new_position);
   }
  }
 }
@@ -806,15 +926,62 @@ void Game_Driver::handle_setup_tokens(QH_Web_View_Dialog& dlg)
 //   n_token->set_as_king_pivot();
 //  }
 
+//  if(i == 4)
+//  {
+//   Game_Position* s_pos1 = board_.get_game_position_by_coords(5, 5);
+//   Game_Position* n_pos1 = board_.get_game_position_by_coords(5, 7);
 
-  reset_token_position(dlg, s_token, i, s_pos);
-  reset_token_position(dlg, n_token, i, n_pos);
+//   reset_token_position(dlg, s_token, i, s_pos1);
+//   reset_token_position(dlg, n_token, i, n_pos1);
+//  }
 
+//  else
+//  {
+   reset_token_position(dlg, s_token, i, s_pos);
+   reset_token_position(dlg, n_token, i, n_pos);
+//  }
 
  }
 
-// compute_clusters();
+ compute_initial_neighbors();
 }
+
+void Game_Driver::compute_initial_neighbors()
+{
+ //board_.slot_positions_
+
+ for(u1 i = 1; i <= 32; ++i)
+ {
+  QString s_stone_id = "token-s%1"_qt.arg(i);
+  QString n_stone_id = "token-n%1"_qt.arg(i);
+
+  Game_Token* s_token = tokens_by_svg_id_[s_stone_id];
+  Game_Token* n_token = tokens_by_svg_id_[n_stone_id];
+
+  Game_Position* s_pos = s_token->current_position();
+  Game_Position* n_pos = n_token->current_position();
+
+  std::array<Game_Position*, 8> s_adj = s_pos->get_adjacents();
+  std::array<Game_Position*, 8> n_adj = n_pos->get_adjacents();
+
+  for(Game_Position* sp1: s_adj)
+  {
+   if(sp1)
+     if(Game_Token* st1 = sp1->current_occupier_matching_player(s_token))
+       s_token->add_neighbor(st1);
+  }
+
+  for(Game_Position* np1: n_adj)
+  {
+   if(np1)
+     if(Game_Token* nt1 = np1->current_occupier_matching_player(n_token))
+       n_token->add_neighbor(nt1);
+  }
+
+ }
+}
+
+
 
 void Game_Driver::reset_token_position(QH_Web_View_Dialog& dlg,
   Game_Token* token, u1 index, Game_Position* gp)

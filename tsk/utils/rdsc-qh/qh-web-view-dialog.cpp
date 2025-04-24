@@ -408,6 +408,10 @@ void QH_Web_View_Dialog::run_js_in_current_web_page(QString js_code) const
  wep_->runJavaScript(js_code);
 }
 
+void QH_Web_View_Dialog::activate_placement_option_indicator(QString position_id)
+{
+
+}
 
 //void QH_Web_View_Dialog::handle_mark_location_requested(const QH_Cross_Map_Coords& coords)
 //{

@@ -1,6 +1,19 @@
 
 </g> <!-- main board -->
 
+
+<!-- move indicators -->
+<defs> 
+
+%MOVE_INDICATORS_DEFS%
+
+</defs> 
+
+%MOVE_INDICATORS_ICONS%
+
+<!-- end move indicators -->
+
+
 <!-- tokens -->
 <g> 
 
@@ -22,12 +35,6 @@
 
 </g> <!-- text indicators -->
 
-
-<!-- move indicators -->
-
- %MOVE-INDICATORS%
-
-<!-- end move indicators -->
 
 
 </svg>

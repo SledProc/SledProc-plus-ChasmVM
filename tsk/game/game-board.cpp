@@ -43,17 +43,32 @@ Game_Board::Game_Board(Game_Driver* driver)
    game_positions_by_label_code_[gp->label_code()] = gp;
   }
 
- // //  init the adjacents
+ // //  init the adjacents and incidents
 
  for(Game_Position* gp : game_positions_by_label_code_.values())
  {
   u1 r = gp->position_row();
   u1 c = gp->position_column();
 
-  gp->set_adjacent_positions(0, game_positions_by_coords_.value({r-1, c-1}));
-  gp->set_adjacent_positions(1, game_positions_by_coords_.value({r+1, c-1}));
-  gp->set_adjacent_positions(2, game_positions_by_coords_.value({r+1, c+1}));
-  gp->set_adjacent_positions(3, game_positions_by_coords_.value({r-1, c+1}));
+  gp->set_incident_position(0, game_positions_by_coords_.value({r-1, c-1}));
+  gp->set_incident_position(1, game_positions_by_coords_.value({r+1, c-1}));
+  gp->set_incident_position(2, game_positions_by_coords_.value({r+1, c+1}));
+  gp->set_incident_position(3, game_positions_by_coords_.value({r-1, c+1}));
+
+  if(gp->position_kind() == Game_Position::Position_Kind::Slot)
+  {
+   gp->set_adjacent_position(0, game_positions_by_coords_.value({r-2, c-2}));
+   gp->set_adjacent_position(1, game_positions_by_coords_.value({r, c-2}));
+   gp->set_adjacent_position(2, game_positions_by_coords_.value({r+2, c-2}));
+
+   gp->set_adjacent_position(3, game_positions_by_coords_.value({r+2, c}));
+
+   gp->set_adjacent_position(4, game_positions_by_coords_.value({r+2, c+2}));
+   gp->set_adjacent_position(5, game_positions_by_coords_.value({r, c+2}));
+   gp->set_adjacent_position(6, game_positions_by_coords_.value({r-2, c+2}));
+
+   gp->set_adjacent_position(7, game_positions_by_coords_.value({r-2, c}));
+  }
  }
 
 }
@@ -447,7 +462,10 @@ void Game_Board::to_svg(QString in_folder, QString out_file)
 
   //  }
 
+
  gridlines(); squares(); slot_borders(); centers(); intersections(); edges(); sides();
+
+// move_indicators();
 
  static QStringList pieces { "canon", "knight", "altc", "altk",
    "singleton", "centroid", "centroid-pivot",
@@ -550,8 +568,45 @@ void Game_Board::to_svg(QString in_folder, QString out_file)
  };
  tokens();
 
+ QString move_indicators_icons_text;
+ QString move_indicators_defs_text;
+ auto move_indicators = [&move_indicators_icons_text,
+   &move_indicators_defs_text, in_folder, this]()
+ {
+
+  //main_text += "\n\n<!-- move indicators -->\n\n<defs>";
+
+  QString icons_folder = in_folder + "/other-icons";
+
+  QString file = icons_folder + "/move-indicator";
+  QString file_text = load_file(file);
+
+  file_text.replace("%ID%", "move-indicator_proto");
+  move_indicators_defs_text += file_text;
+
+
+  // // is 60 enough?
+  for(u1 i = 1; i <= 60; ++i)
+  {
+   QString copier;
+   QString id = "mi"_qt + QString::number(i);
+   driver_->register_move_indicator(id);
+   copier += "\n<use id='mi-%1-default' class='move-indicator_copied' "_qt.arg(i);
+   copier += "xlink:href='#move-indicator_proto'/>";
+
+   move_indicators_icons_text += R"_(
+ <a class='move-indicator_base move-indicator_hidden' id='%1'>
+  <g id='%1-g' transform="translate(466, 466) scale(0.6, 0.6)">
+   %5
+  </g>
+ </a>
+      )_"_qt.arg(id).arg(copier);
+  }
+
+ };
+
  QString move_indicators_text;
- auto move_indicators = [&move_indicators_text, this]()
+ auto _move_indicators = [&move_indicators_text, this]()
  {
   // // is 60 enough?
   for(u1 i = 1; i <= 60; ++i)
@@ -602,7 +657,8 @@ void Game_Board::to_svg(QString in_folder, QString out_file)
 
  board_end.replace("%TEXT-INDICATORS%", text_indicators_text);
 
- board_end.replace("%MOVE-INDICATORS%", move_indicators_text);
+ board_end.replace("%MOVE_INDICATORS_ICONS%", move_indicators_icons_text);
+ board_end.replace("%MOVE_INDICATORS_DEFS%", move_indicators_defs_text);
 
  QString svg_text = board_start + main_text + board_end;
 

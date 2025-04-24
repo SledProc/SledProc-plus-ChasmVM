@@ -48,6 +48,7 @@ class Game_Driver
  QMap<Game_Token*, Stone_Icon*> tokens_on_board_;
 
  Game_Token* current_selected_token_;
+ Game_Token* rejected_selected_token_;
 
  Game_Player* current_player_;
  Game_Player* south_player_;
@@ -102,7 +103,22 @@ class Game_Driver
  void hide_stone_icons(const QH_Web_View_Dialog& dlg);
  void clear_move_option_data();
 
+ void build_placement_options(Game_Token* token, QH_Web_View_Dialog& dlg);
+ void build_placement_options_Queen(Game_Token* token,
+   QH_Web_View_Dialog& dlg);
+ void build_placement_options_Jack(Game_Token* token,
+   QH_Web_View_Dialog& dlg);
+ void build_placement_options_Centroid_or_King(Game_Token* token,
+   QH_Web_View_Dialog& dlg);
+
+ void show_placement_options(Game_Token* token, QH_Web_View_Dialog& dlg);
+
  void compute_clusters();
+ void compute_initial_neighbors();
+
+ QMap<Game_Position*, QVector<Game_Position*>> current_placement_options_;
+
+ u2 current_active_move_option_indicators_;
 
 public:
 

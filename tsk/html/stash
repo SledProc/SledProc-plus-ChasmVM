@@ -1,0 +1,25 @@
+function show_move_indicator_at_position(id, x, y)
+{
+ let el = document.getElementById("board-svg").contentDocument.
+   getElementById(id);
+ position_element(el, x, y);
+
+ el.classList.remove("move-indicator_hidden");
+ el.classList.add("move-indicator_visible");
+
+ return el;
+}
+
+
+function hide_move_indicator(id)
+{
+ let el = document.getElementById("board-svg").contentDocument.
+   getElementById(id);
+
+ el.classList.remove("move-indicator_visible");
+ el.classList.add("move-indicator_hidden");
+
+ return el;
+}
+
+

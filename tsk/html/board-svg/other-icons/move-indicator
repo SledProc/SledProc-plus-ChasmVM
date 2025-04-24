@@ -1,0 +1,16 @@
+
+   <g id="%ID%" class='move-indicator-icon_proto'>
+
+<rect x='-23' y='-23' width='50' height='50'/>
+
+
+<circle cx="1" cy="5" r="19" stroke="var(--move-indicator-fill)"
+  stroke-opacity="0.4" stroke-width="5" fill="none" ></circle>
+
+<circle cx="1" cy="5" r="13" stroke="var(--move-indicator-fill)"
+  stroke-opacity="0.7" stroke-width="3" fill="none" ></circle>
+
+<circle cx="1" cy="5" r="7" stroke="none"
+  fill="var(--move-indicator-fill)" ></circle>
+
+  </g>

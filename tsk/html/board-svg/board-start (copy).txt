@@ -23,16 +23,16 @@
        <stop offset="100%" stop-color="white" />
       </linearGradient>
 
-     <linearGradient id="south-stone-gradient" gradientTransform="rotate(29)"
-       spreadMethod="repeat">
-       <stop offset="25%" stop-color="rgb(250, 190, 248)" />
-       <stop offset="70%" stop-color="rgb(237, 255, 228)" />
+     <linearGradient id="south-stone-gradient" gradientTransform="rotate(299)">
+       <stop offset="0%" stop-color="rgb(253, 229, 227)" />
+       <stop offset="35%" stop-color="yellow" />
+       <stop offset="100%" stop-color="orange" />
       </linearGradient>
 
       <linearGradient id="north-stone-gradient" gradientTransform="rotate(299)">
-       <stop offset="0%" stop-color="rgb(27, 229, 253)" />
+       <stop offset="0%" stop-color="rgb(227, 229, 253)" />
        <stop offset="35%" stop-color="yellow" />
-       <stop offset="65%" stop-color="orange" />
+       <stop offset="100%" stop-color="orange" />
       </linearGradient>
 
 
@@ -129,11 +129,11 @@
 .north-token_base:hover { fill:rgb(130,130,250) } 
 .south-token_base:hover  { fill:rgb(250,130,130) } 
 
-.move-indicator_bkg {fill:rgb(237, 188, 205);fill-opacity:0.4}
-.move-indicator_bkg:hover {fill:rgb(237, 188, 205);fill-opacity:0.7}
+.move-indicator_bkg {fill:url(#move-indicator-gradient);fill-opacity:1}
+.move-indicator_bkg:hover {fill:rgb(237, 188, 205);fill-opacity:0.5}
 
-.move-indicator_base  {fill:var(--move-indicator-fill);fill-opacity:0.3}
-.move-indicator_base:hover { fill:rgb(131, 85, 163); fill-opacity:1 }
+.move-indicator_base  {fill:var(--move-indicator-fill);fill-opacity:0.1}
+.move-indicator_base:hover { fill:rgb(131, 85, 163); fill-opacity:0.5 }
 .move-indicator_hidden { visibility:hidden; }
 .move-indicator_visible { visibility:visible; }
 

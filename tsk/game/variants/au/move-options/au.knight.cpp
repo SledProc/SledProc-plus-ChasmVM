@@ -126,7 +126,7 @@ void AU_Game_Variant::check_move_options_Knight(Game_Token* token,
   Game_Position* start_position, Move_Option_Vector& move_options)
 {
  u2 count = 0;
- std::array<Game_Position*, 4> slot_positions = start_position->get_half_step_adjacents();
+ std::array<Game_Position*, 4> slot_positions = start_position->get_incidents();
  for(Game_Position* gp : slot_positions)
  {
     // //  qDebug() << "gp = " << gp->label_code();

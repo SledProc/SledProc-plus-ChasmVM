@@ -1,0 +1,44 @@
+ QString move_indicators_text;
+ auto move_indicators = [&move_indicators_text, in_folder, this]()
+ {
+  QString defs_text;
+  QString indicators_text;
+
+  //main_text += "\n\n<!-- move indicators -->\n\n<defs>";
+
+  QString icons_folder = in_folder + "/other-icons";
+
+  QString file = icons_folder + "/move-indicator";
+  QString file_text = load_file(file);
+
+  file_text.replace("%ID%", "move-indicator_proto");
+  defs_text += file_text;
+
+  QString copier;
+
+  for(u1 row = 1; row <= 31; ++row)
+  {
+   for(u1 col = 1; col <= 31; ++col)
+   {
+    Game_Position* gp = get_game_position_by_coords(row, col);
+    s2 x = gp->svg_x();
+    s2 y = gp->svg_y();
+
+    copier += "\n<use id='mv-r%1c%2-default' class='move-indicator_copied' "_qt.arg(row).arg(col);
+    copier += "xlink:href='move-indicator_proto'/>";
+
+    indicators_text += R"_(
+ <a class='move-indicator_base move-indicator_hidden' id='mv-r%1c%2'>
+  <g transform="translate(%3, %4) scale(0.6, 0.6)">
+   %5
+  </g>
+ </a>
+      )_"_qt.arg(row).arg(col).arg(x).arg(y).arg(copier);
+
+
+   }
+  }
+  main_text += defs_text;
+  main_text += indicators_text;
+ };
+

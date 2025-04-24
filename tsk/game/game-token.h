@@ -21,6 +21,9 @@
 
 #include <QString>
 
+#include <QSet>
+
+
 class Game_Position;
 class Game_Player;
 
@@ -51,6 +54,8 @@ public:
   enum_macro(Jack_Pivot, 128)
   enum_macro(King_Pivot, 256)
 
+  enum_macro(Pivots, Centroid_Pivot | Jack_Pivot | King_Pivot)
+
   enum_macro(South, 512)
   enum_macro(North, 1024)
 
@@ -58,7 +63,9 @@ public:
   enum_macro(North_South_Mask, North | South)
   enum_macro(Clear_CJQ, King | North | South)
   enum_macro(Clear_CJQKAP, North | South)
-  enum_macro(Clear_NS, Singleton | Centroid | Queen | Jack | King)
+  enum_macro(Clear_NS,
+    Singleton | Centroid | Queen | Jack | King | Ace
+    | Pivots )
 
 
   enum_macro(South_Singleton, South | Singleton)
@@ -75,15 +82,36 @@ public:
   enum_macro(North_King, North | King)
   enum_macro(North_Ace, North | Ace)
 
-  Qj (;)
+//?  Qj (;)
 
 #undef enum_macro
  };
 
- Qj (enum:ops)
+//? Qj (enum:ops)
  ENUM_FLAGS_OP_MACROS(Token_Kind, u2)
- Qj (;)
+//? Qj (;)
 
+
+ Token_Kind base_kind()
+ {
+  Token_Kind result = kind_;
+  result &= Token_Kind::Clear_NS;
+  if( ((u2) result & (u2) Token_Kind::Pivots))
+  {
+   switch (result)
+   {
+   case Token_Kind::Centroid_Pivot:
+     return Token_Kind::Centroid;
+   case Token_Kind::Jack_Pivot:
+     return Token_Kind::Jack;
+   case Token_Kind::King_Pivot:
+     return Token_Kind::King;
+   default:
+     return Token_Kind::N_A;
+   }
+  }
+  return result;
+ }
 
 
 //  Singleton = 1, Paired = 2,  Inner = 4,
@@ -138,6 +166,8 @@ private:
  QVector<Game_Token*> diagonal_neighbors_;
  QVector<Game_Token*> orthogonal_neighbors_;
 
+ QSet<Game_Token*> neighbors_;
+
  u2 current_placement_order_;
 
 public:
@@ -164,9 +194,20 @@ public:
  ACCESSORS(Game_Position* ,current_position)
  ACCESSORS(Game_Position* ,prior_position)
 
- ACCESSORS(Token_Kind ,kind);
+ ACCESSORS(Token_Kind ,kind)
 
- Qj (;)
+
+ Game_Token* add_neighbor(Game_Token* n)
+ {
+  neighbors_.insert(n);
+ }
+
+ u1 current_valence()
+ {
+  return neighbors_.size();
+ }
+
+ //Qj (;)
 
  QChar player_code();
 
@@ -267,7 +308,7 @@ public:
    enum_macro(North_Ace, North | Ace)
 
   #undef enum_macro
-  Qj(;)
+//?  Qj(;)
 
 
   };

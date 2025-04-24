@@ -23,16 +23,16 @@
        <stop offset="100%" stop-color="white" />
       </linearGradient>
 
-     <linearGradient id="south-stone-gradient" gradientTransform="rotate(29)"
-       spreadMethod="repeat">
-       <stop offset="25%" stop-color="rgb(250, 190, 248)" />
-       <stop offset="70%" stop-color="rgb(237, 255, 228)" />
+     <linearGradient id="south-stone-gradient" gradientTransform="rotate(299)">
+       <stop offset="0%" stop-color="rgb(253, 229, 227)" />
+       <stop offset="35%" stop-color="yellow" />
+       <stop offset="100%" stop-color="orange" />
       </linearGradient>
 
       <linearGradient id="north-stone-gradient" gradientTransform="rotate(299)">
-       <stop offset="0%" stop-color="rgb(27, 229, 253)" />
+       <stop offset="0%" stop-color="rgb(227, 229, 253)" />
        <stop offset="35%" stop-color="yellow" />
-       <stop offset="65%" stop-color="orange" />
+       <stop offset="100%" stop-color="orange" />
       </linearGradient>
 
 
@@ -77,6 +77,9 @@
  .text-indicator {pointer-events: none; fill:white; font:bold 15px serif; }
 
  .south-stone-icon_proto {pointer-events: none; } 
+
+ .mi-test {fill:url(#move-indicator-gradient);   
+      stroke:url(#move-indicator-gradient); stroke-width:3;}
 
  .move-indicator {fill:url(#move-indicator-gradient);   
       stroke:url(#move-indicator-gradient); stroke-width:3;}
@@ -129,12 +132,9 @@
 .north-token_base:hover { fill:rgb(130,130,250) } 
 .south-token_base:hover  { fill:rgb(250,130,130) } 
 
-.move-indicator_bkg {fill:rgb(237, 188, 205);fill-opacity:0.4}
-.move-indicator_bkg:hover {fill:rgb(237, 188, 205);fill-opacity:0.7}
-
-.move-indicator_base  {fill:var(--move-indicator-fill);fill-opacity:0.3}
-.move-indicator_base:hover { fill:rgb(131, 85, 163); fill-opacity:1 }
-.move-indicator_hidden { visibility:hidden; }
+.move-indiciator_base {}
+.move-indiciator_base:hover { fill:rgb(150,130,150) }
+.move-indicator_hidden { visibility:visible; }
 .move-indicator_visible { visibility:visible; }
 
 
@@ -3518,17 +3518,17 @@ opacity:0.8;}
 
    <g id="move-indicator_proto" class='move-indicator-icon_proto'>
 
-<rect x='-23' y='-23' width='50' height='50'/>
-
-
-<circle cx="1" cy="5" r="19" stroke="var(--move-indicator-fill)"
+<circle cx="24" cy="27" r="15" stroke="var(--move-indicator-fill)"
   stroke-opacity="0.4" stroke-width="5" fill="none" ></circle>
 
-<circle cx="1" cy="5" r="13" stroke="var(--move-indicator-fill)"
+<circle cx="24" cy="27" r="10" stroke="var(--move-indicator-fill)"
   stroke-opacity="0.7" stroke-width="3" fill="none" ></circle>
 
-<circle cx="1" cy="5" r="7" stroke="none"
-  fill="var(--move-indicator-fill)" ></circle>
+<line x1="16" y1="19" x2="32" y2="35" 
+  stroke-width="7" stroke="var(--move-indicator-fill)"></line>
+
+<line x1="32" y1="19" x2="16" y2="35" 
+  stroke-width="7" stroke="var(--move-indicator-fill)"></line>
 
   </g>
 
@@ -3536,423 +3536,370 @@ opacity:0.8;}
 </defs> 
 
 
+ <a class='move-indicator_base move-indicator_hidden' id='mi_'>
+  <g  id='mi1-g_' transform="translate(266, 266) scale(0.6, 0.6)">
+   <circle class='mi-test' cx='0' cy='0' r='33'/>
+  </g>
+ </a>
+
+
  <a class='move-indicator_base move-indicator_hidden' id='mi1'>
-  <g id='mi1-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-1-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+  <g  id='mi1-g' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='mi-test' cx='0' cy='0' r='33'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi2'>
-  <g id='mi2-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-2-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi2'>
+  <g  id='mi2-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='mi-test' cx='0' cy='0' r='33'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi3'>
-  <g id='mi3-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-3-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi3'>
+  <g  id='mi3-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='mi-test' cx='0' cy='0' r='33'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi4'>
-  <g id='mi4-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-4-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi4'>
+  <g  id='mi4-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi5'>
-  <g id='mi5-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-5-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi5'>
+  <g  id='mi5-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi6'>
-  <g id='mi6-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-6-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi6'>
+  <g  id='mi6-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi7'>
-  <g id='mi7-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-7-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi7'>
+  <g  id='mi7-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi8'>
-  <g id='mi8-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-8-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi8'>
+  <g  id='mi8-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi9'>
-  <g id='mi9-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-9-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi9'>
+  <g  id='mi9-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi10'>
-  <g id='mi10-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-10-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi10'>
+  <g  id='mi10-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi11'>
-  <g id='mi11-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-11-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi11'>
+  <g  id='mi11-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi12'>
-  <g id='mi12-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-12-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi12'>
+  <g  id='mi12-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi13'>
-  <g id='mi13-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-13-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi13'>
+  <g  id='mi13-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi14'>
-  <g id='mi14-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-14-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi14'>
+  <g  id='mi14-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi15'>
-  <g id='mi15-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-15-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi15'>
+  <g  id='mi15-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi16'>
-  <g id='mi16-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-16-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi16'>
+  <g  id='mi16-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi17'>
-  <g id='mi17-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-17-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi17'>
+  <g  id='mi17-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi18'>
-  <g id='mi18-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-18-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi18'>
+  <g  id='mi18-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi19'>
-  <g id='mi19-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-19-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi19'>
+  <g  id='mi19-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi20'>
-  <g id='mi20-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-20-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi20'>
+  <g  id='mi20-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi21'>
-  <g id='mi21-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-21-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi21'>
+  <g  id='mi21-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi22'>
-  <g id='mi22-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-22-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi22'>
+  <g  id='mi22-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi23'>
-  <g id='mi23-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-23-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi23'>
+  <g  id='mi23-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi24'>
-  <g id='mi24-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-24-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi24'>
+  <g  id='mi24-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi25'>
-  <g id='mi25-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-25-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi25'>
+  <g  id='mi25-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi26'>
-  <g id='mi26-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-26-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi26'>
+  <g  id='mi26-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi27'>
-  <g id='mi27-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-27-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi27'>
+  <g  id='mi27-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi28'>
-  <g id='mi28-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-28-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi28'>
+  <g  id='mi28-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi29'>
-  <g id='mi29-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-29-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi29'>
+  <g  id='mi29-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi30'>
-  <g id='mi30-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-30-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi30'>
+  <g  id='mi30-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi31'>
-  <g id='mi31-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-31-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi31'>
+  <g  id='mi31-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi32'>
-  <g id='mi32-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-32-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi32'>
+  <g  id='mi32-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi33'>
-  <g id='mi33-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-33-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi33'>
+  <g  id='mi33-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi34'>
-  <g id='mi34-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-34-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi34'>
+  <g  id='mi34-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi35'>
-  <g id='mi35-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-35-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi35'>
+  <g  id='mi35-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi36'>
-  <g id='mi36-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-36-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi36'>
+  <g  id='mi36-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi37'>
-  <g id='mi37-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-37-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi37'>
+  <g  id='mi37-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi38'>
-  <g id='mi38-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-38-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi38'>
+  <g  id='mi38-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi39'>
-  <g id='mi39-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-39-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi39'>
+  <g  id='mi39-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi40'>
-  <g id='mi40-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-40-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi40'>
+  <g  id='mi40-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi41'>
-  <g id='mi41-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-41-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi41'>
+  <g  id='mi41-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi42'>
-  <g id='mi42-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-42-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi42'>
+  <g  id='mi42-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi43'>
-  <g id='mi43-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-43-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi43'>
+  <g  id='mi43-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi44'>
-  <g id='mi44-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-44-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi44'>
+  <g  id='mi44-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi45'>
-  <g id='mi45-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-45-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi45'>
+  <g  id='mi45-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi46'>
-  <g id='mi46-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-46-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi46'>
+  <g  id='mi46-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi47'>
-  <g id='mi47-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-47-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi47'>
+  <g  id='mi47-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi48'>
-  <g id='mi48-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-48-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi48'>
+  <g  id='mi48-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi49'>
-  <g id='mi49-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-49-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi49'>
+  <g  id='mi49-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi50'>
-  <g id='mi50-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-50-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi50'>
+  <g  id='mi50-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi51'>
-  <g id='mi51-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-51-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi51'>
+  <g  id='mi51-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi52'>
-  <g id='mi52-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-52-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi52'>
+  <g  id='mi52-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi53'>
-  <g id='mi53-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-53-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi53'>
+  <g  id='mi53-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi54'>
-  <g id='mi54-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-54-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi54'>
+  <g  id='mi54-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi55'>
-  <g id='mi55-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-55-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi55'>
+  <g  id='mi55-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi56'>
-  <g id='mi56-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-56-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi56'>
+  <g  id='mi56-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi57'>
-  <g id='mi57-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-57-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi57'>
+  <g  id='mi57-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi58'>
-  <g id='mi58-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-58-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi58'>
+  <g  id='mi58-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi59'>
-  <g id='mi59-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-59-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi59'>
+  <g  id='mi59-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       
- <a class='move-indicator_base move-indicator_hidden' id='mi60'>
-  <g id='mi60-g' transform="translate(466, 466) scale(0.6, 0.6)">
-   
-<use id='mi-60-default' class='move-indicator_copied' xlink:href='#move-indicator_proto'/>
+ <a class='move-indicator move-indicator_base move-indicator_hidden' id='mi60'>
+  <g  id='mi60-g' class='move-indicator' transform="translate(466, 466) scale(0.6, 0.6)">
+   <circle class='move-indicator' cx='0' cy='0' r='44'/>
   </g>
  </a>
       

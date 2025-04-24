@@ -53,22 +53,22 @@ public:
 
  struct Occupiers {
    Game_Token* current_occupier;
-   Game_Token* adjacent_occupier;
-   u1 adjacent_occupier_index;
+   Game_Token* incident_occupier;
+   u1 incident_occupier_index;
    bool blocks_direction(const QPair<s2, s2>& offsets);
    void reset() { current_occupier = nullptr;
-     adjacent_occupier = nullptr; adjacent_occupier_index = 0;}
+     incident_occupier = nullptr; incident_occupier_index = 0;}
    bool all_clear() { return current_occupier == nullptr
-     && adjacent_occupier == nullptr; }
+     && incident_occupier == nullptr; }
  };
 
  struct Dislodge_Info {
-   Game_Token* adjacent_occupier;
+   Game_Token* incident_occupier;
    Game_Position* new_position;
    s1 direction;
    operator bool()
    {
-    return adjacent_occupier;
+    return incident_occupier;
    }
  };
 
@@ -76,7 +76,8 @@ private:
 
  Game_Token* current_occupier_;
 
- Game_Position* adjacent_positions_[4];
+ Game_Position* incident_positions_[4];
+ Game_Position* adjacent_positions_[8];
 
  u1 position_row_;
  u1 position_column_;
@@ -121,26 +122,42 @@ public:
 
  ACCESSORS(void* ,current_move_option_data)
 
+ Game_Token* current_occupier_matching_player(Game_Token* token);
+
+ u1 get_occupied_incidents(QVector<Game_Position*>& result,
+   Game_Token* token = nullptr);
+
+
+ bool current_occupier_matches_player(Game_Token* token)
+ {
+  return (bool) current_occupier_matching_player(token);
+ }
+
  void clear_current_move_option_data()
  {
   current_move_option_data_ = nullptr;
  }
 
- void set_adjacent_positions(u1 index, Game_Position* gp)
+ void set_incident_position(u1 index, Game_Position* gp)
+ {
+  incident_positions_[index] = gp;
+ }
+
+ void set_adjacent_position(u1 index, Game_Position* gp)
  {
   adjacent_positions_[index] = gp;
  }
 
-
- Game_Position* get_adjacent_center_position();
+ Game_Position* get_incident_center_position();
  u2 distance(Game_Position* other);
- Game_Position* find_common_adjacent(Game_Position* other, Game_Position* exclude);
+ Game_Position* find_common_incident(Game_Position* other, Game_Position* exclude);
 
- std::array<Game_Position*, 4> get_half_step_adjacents();
+ std::array<Game_Position*, 4> get_incidents();
+ std::array<Game_Position*, 8> get_adjacents();
 
  Occupiers occupiers();
 
- s1 get_dislodge_info(Game_Token*& adjacent_occupier, Game_Position*& adjacent_position);
+ s1 get_dislodge_info(Game_Token*& incident_occupier, Game_Position*& incident_position);
 
  Dislodge_Info get_dislodge_info();
  Dislodge_Info get_secondary_dislodge_info(Game_Position* curl_position,

@@ -126,7 +126,7 @@ void Game_Position::init()
 
 bool Game_Position::Occupiers::blocks_direction(const QPair<s2, s2>& offsets)
 {
- switch (adjacent_occupier_index)
+ switch (incident_occupier_index)
  {
  case 0: return (offsets.first < 0) && (offsets.second < 0);
  case 1: return (offsets.first > 0) && (offsets.second < 0);
@@ -135,26 +135,67 @@ bool Game_Position::Occupiers::blocks_direction(const QPair<s2, s2>& offsets)
  }
 }
 
-std::array<Game_Position*, 4> Game_Position::get_half_step_adjacents()
+u1 Game_Position::get_occupied_incidents(QVector<Game_Position*>& result,
+  Game_Token* token)
 {
- return (std::array<Game_Position*, 4>&)(adjacent_positions_);
+ u1 count = 0;
+ for(u1 i = 0; i < 4; ++i)
+ {
+  if(incident_positions_[i])
+  {
+   if(Game_Token* occupier = incident_positions_[i]->current_occupier())
+   {
+    result.push_back(incident_positions_[i]);
+
+    // //  if the "token" parameter is null, then return the overall count.
+     //    Otherwise, return the count just of friendly pieces vis-a-vis token.
+    if(token)
+    {
+     if(token->player() == occupier->player())
+       ++count;
+    }
+    else
+      ++count;
+   }
+  }
+ }
+ return count;
 }
 
-s1 Game_Position::get_dislodge_info(Game_Token*& adjacent_occupier, Game_Position*& adjacent_position)
+
+Game_Token* Game_Position::current_occupier_matching_player(Game_Token* token)
+{
+ if(current_occupier_ && current_occupier_->player() == token->player())
+   return current_occupier_;
+ return nullptr;
+}
+
+
+std::array<Game_Position*, 8> Game_Position::get_adjacents()
+{
+ return (std::array<Game_Position*, 8>&)(adjacent_positions_);
+}
+
+std::array<Game_Position*, 4> Game_Position::get_incidents()
+{
+ return (std::array<Game_Position*, 4>&)(incident_positions_);
+}
+
+s1 Game_Position::get_dislodge_info(Game_Token*& incident_occupier, Game_Position*& incident_position)
 {
  for(u1 i = 0; i < 4; ++i)
  {
-  if(Game_Position* gp = adjacent_positions_[i])
+  if(Game_Position* gp = incident_positions_[i])
   {
-   if(Game_Token* token = adjacent_positions_[i]->current_occupier_)
+   if(Game_Token* token = incident_positions_[i]->current_occupier_)
    {
-    adjacent_occupier = token;
-    adjacent_position = adjacent_positions_[i];
+    incident_occupier = token;
+    incident_position = incident_positions_[i];
     return i;
    }
   }
  }
- adjacent_occupier = nullptr; adjacent_position = nullptr;
+ incident_occupier = nullptr; incident_position = nullptr;
  return -1;
 }
 
@@ -163,10 +204,10 @@ Game_Position::Dislodge_Info Game_Position::get_dislodge_info()
 {
  for(u1 i = 0; i < 4; ++i)
  {
-  if(Game_Position* gp = adjacent_positions_[i])
+  if(Game_Position* gp = incident_positions_[i])
   {
-   if(Game_Token* token = adjacent_positions_[i]->current_occupier_)
-     return {token, adjacent_positions_[i]->adjacent_positions_[i], (s1) i};
+   if(Game_Token* token = incident_positions_[i]->current_occupier_)
+     return {token, incident_positions_[i]->incident_positions_[i], (s1) i};
   }
  }
  return {nullptr, nullptr};
@@ -178,11 +219,11 @@ u2 Game_Position::distance(Game_Position* other)
  return qMax(qAbs(position_row_ - other->position_row_), qAbs(position_column_ - other->position_column_));
 }
 
-Game_Position* Game_Position::find_common_adjacent(Game_Position* other, Game_Position* exclude)
+Game_Position* Game_Position::find_common_incident(Game_Position* other, Game_Position* exclude)
 {
  for(u1 i = 0; i < 4; ++i)
  {
-  if(Game_Position* gp = adjacent_positions_[i])
+  if(Game_Position* gp = incident_positions_[i])
   {
    if(gp == exclude)
      continue;
@@ -195,11 +236,11 @@ Game_Position* Game_Position::find_common_adjacent(Game_Position* other, Game_Po
 
 
 
-Game_Position* Game_Position::get_adjacent_center_position()
+Game_Position* Game_Position::get_incident_center_position()
 {
  for(u1 i = 0; i < 4; ++i)
  {
-  if(Game_Position* gp = adjacent_positions_[i])
+  if(Game_Position* gp = incident_positions_[i])
   {
    if(gp->position_kind_ == Game_Position::Position_Kind::Center)
      return gp;
@@ -214,28 +255,28 @@ Game_Position::Dislodge_Info Game_Position::get_secondary_dislodge_info(Game_Pos
 {
  for(u1 i = 0; i < 4; ++i)
  {
-  if(Game_Position* gp = adjacent_positions_[i])
+  if(Game_Position* gp = incident_positions_[i])
   {
    if(gp == prior_position)
      continue;
-   if(Game_Token* token = adjacent_positions_[i]->current_occupier_)
+   if(Game_Token* token = incident_positions_[i]->current_occupier_)
    {
-    Game_Position* new_position; //= adjacent_positions_[i]->find_common_adjacent(curl_position, this);
+    Game_Position* new_position; //= incident_positions_[i]->find_common_incident(curl_position, this);
     if((former_direction == -2) || (i == former_direction))
     {
-     new_position = adjacent_positions_[i]->find_common_adjacent(secondary_curl_position, this);
+     new_position = incident_positions_[i]->find_common_incident(secondary_curl_position, this);
      return {token, new_position, -2};
     }
     else
     {
-     new_position = adjacent_positions_[i]->find_common_adjacent(curl_position, this);
+     new_position = incident_positions_[i]->find_common_incident(curl_position, this);
      return {token, new_position, -1};
     }
 
 //    if(i == 3) // // so i + 1 (i.e., clockwise rotation) becomes 0
-//      return {token, adjacent_positions_[i]->adjacent_positions_[0], (u1)(0)};
+//      return {token, incident_positions_[i]->incident_positions_[0], (u1)(0)};
 
-//    return {token, adjacent_positions_[i]->adjacent_positions_[i + 1], (u1)(i + 1)};
+//    return {token, incident_positions_[i]->incident_positions_[i + 1], (u1)(i + 1)};
 
 
 
@@ -244,13 +285,13 @@ Game_Position::Dislodge_Info Game_Position::get_secondary_dislodge_info(Game_Pos
 //     // //  "wrap" around square
 
 //     if(i == 3) // // so i + 1 (i.e., clockwise rotation) becomes 0
-//       return {token, adjacent_positions_[i]->adjacent_positions_[0], (u1)(0)};
+//       return {token, incident_positions_[i]->incident_positions_[0], (u1)(0)};
 
-//     return {token, adjacent_positions_[i]->adjacent_positions_[i + 1], (u1)(i + 1)};
+//     return {token, incident_positions_[i]->incident_positions_[i + 1], (u1)(i + 1)};
 //    }
 //    else
 //      // //  "curl back"
-//     return {token, adjacent_positions_[i]->adjacent_positions_[former_direction], former_direction};
+//     return {token, incident_positions_[i]->incident_positions_[former_direction], former_direction};
    }
   }
  }
@@ -264,9 +305,9 @@ Game_Position::Occupiers Game_Position::occupiers()
  //Game_Position::Occupiers result = {current_occupier_}
  for(u1 i = 0; i < 4; ++i)
  {
-  if(Game_Position* gp = adjacent_positions_[i])
+  if(Game_Position* gp = incident_positions_[i])
   {
-   if(Game_Token* token = adjacent_positions_[i]->current_occupier_)
+   if(Game_Token* token = incident_positions_[i]->current_occupier_)
      return {current_occupier_, token, i};
   }
  }
@@ -276,8 +317,8 @@ Game_Position::Occupiers Game_Position::occupiers()
 
 QString Game_Position::summary()
 {
- QVector<QString> adj(4);
- std::transform(adjacent_positions_, adjacent_positions_ + 4, adj.begin(), [](Game_Position* gp)
+ QVector<QString> incident(4);
+ std::transform(incident_positions_, incident_positions_ + 4, incident.begin(), [](Game_Position* gp)
  {
   if(gp)
     return gp->label_code();
@@ -296,11 +337,11 @@ Position: %2, %3,
 Board: %4, %5,
 Area: %6,
 Kind: %7
-Adjacent: %8
+Incident: %8
 Ocuupied: %9
 )"_qt.arg(label_code_).arg(position_row_).arg(position_column_)
   .arg(board_row_).arg(board_column_).arg(board_area_number_)
-  .arg(position_kind_string()).arg(adj.toList().join(", "))
+  .arg(position_kind_string()).arg(incident.toList().join(", "))
   .arg(occupied);
 }
 
