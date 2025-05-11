@@ -286,7 +286,7 @@ QH_Web_View_Dialog::QH_Web_View_Dialog(QString initial_url, QWidget* parent)
 
  wev_->set_scroll_container(wev_scroll_area_);
 
- qtw_->addTab(wev_scroll_area_, "Map View");
+ qtw_->addTab(wev_scroll_area_, "Page View");
 
 //? QString iurl = ROOT_FOLDER "/../testdia/matterport/info.html";
 

@@ -48,8 +48,72 @@ int mai1(int argc, char *argv[])
 }
 
 #include <QDir>
+#include <QDirIterator>
 
 #include "textio.h"
+
+
+
+QString process_file(QDir qd, QString path)
+{
+ QString contents = load_file(path);
+
+ QRegularExpression rx("%%([\\w-]+)%%");
+
+ QRegularExpressionMatchIterator it(rx.globalMatch(contents));
+
+ QVector<QPair<QString, QString>> inserts;
+
+ while(it.hasNext())
+ {
+  QRegularExpressionMatch m = it.next();
+
+  QString key = m.captured(1);
+
+  qDebug() << "key = " << key;
+
+  QString insert = load_file(qd.absoluteFilePath(key + ".htm"));
+
+  inserts.push_back({m.captured(), insert});
+ }
+
+ for(QPair<QString, QString> pr : inserts)
+ {
+  contents.replace(pr.first, pr.second);
+ }
+
+ return contents;
+}
+
+
+int main(int argc, char *argv[])
+{
+ QDir qd("/home/nlevisrael/gits/baltimore/ar/site/");
+
+ QStringList types;
+ types << "*.html" << "*.htm";
+
+ QDir iqd(qd.absoluteFilePath("in"));
+ QDir oqd(qd.absolutePath());
+
+ QDirIterator it(iqd.path(), types);
+ while (it.hasNext())
+ {
+  QString path = it.next();
+
+  QString c = process_file(QDir(qd.absoluteFilePath("inserts")), path);
+
+  QFileInfo qfi(path);
+
+  QString o_path = oqd.absoluteFilePath(qfi.fileName());
+
+  save_file(o_path, c);
+
+ }
+
+
+}
+
 
 
 void make_svg(QString& result)
@@ -84,7 +148,7 @@ void make_svg(QString& result)
 }
 
 
-int main(int argc, char *argv[])
+int main1(int argc, char *argv[])
 {
 // QString t_file = "/home/nlevisrael/gits/tsk/board.svg";
 // QString contents;
@@ -109,6 +173,8 @@ int main(int argc, char *argv[])
 
 //   // return 0;
 
+// QUrl game_url = QUrl("http://amyneustein.com/-prv/sahana/emails/spreadsheet.htm");
+
 
  Game_Driver driver;
 
@@ -124,6 +190,7 @@ int main(int argc, char *argv[])
 // QH_Web_View_Dialog dlg("file:///home/nlevisrael/gits/tsk/html/test05.html");
 
 
+ dlg.setWindowTitle("Index/Browse");
 
 // dlg.showMinimized();
 // dlg.showNormal();
