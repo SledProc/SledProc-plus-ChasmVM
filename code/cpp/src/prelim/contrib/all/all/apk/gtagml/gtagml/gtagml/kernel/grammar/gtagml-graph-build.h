@@ -119,6 +119,23 @@ public:
 
  void init();
 
+ void auto_new_paragraph();
+ void enter_italics_mode();
+ void leave_italics_mode();
+ void enter_double_quote_mode();
+ void leave_double_quote_mode();
+ void enter_single_quote_mode();
+ void leave_single_quote_mode();
+ void enter_single_quote_mode_doubled();
+ void leave_single_quote_mode_doubled();
+ void enter_single_quote_mode_trebled();
+ void leave_single_quote_mode_trebled();
+ void enter_acronym_mode();
+ void leave_acronym_mode();
+ void enter_alt_display_mode();
+ void leave_alt_display_mode();
+
+
  void add_string_literal_tile(QString str);
  void enter_multiline_comment(QString semis, QString tildes);
  void check_leave_multiline_comment(QString semis, QString tildes);

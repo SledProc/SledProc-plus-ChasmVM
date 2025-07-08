@@ -45,6 +45,98 @@ void GTagML_Graph_Build::init()
 }
 
 
+void GTagML_Graph_Build::auto_new_paragraph()
+{
+
+}
+
+void GTagML_Graph_Build::enter_italics_mode()
+{
+ parse_context_.flags.italics_mode = true;
+
+}
+
+void GTagML_Graph_Build::leave_italics_mode()
+{
+ parse_context_.flags.italics_mode = false;
+
+}
+
+void GTagML_Graph_Build::enter_double_quote_mode()
+{
+ parse_context_.flags.double_quote_mode = true;
+
+}
+
+void GTagML_Graph_Build::leave_double_quote_mode()
+{
+ parse_context_.flags.double_quote_mode = false;
+
+}
+
+void GTagML_Graph_Build::enter_single_quote_mode()
+{
+ parse_context_.flags.single_quote_mode = true;
+
+}
+
+void GTagML_Graph_Build::leave_single_quote_mode()
+{
+ parse_context_.flags.single_quote_mode = false;
+
+}
+
+void GTagML_Graph_Build::enter_single_quote_mode_doubled()
+{
+ parse_context_.flags.single_quote_mode_doubled = true;
+
+}
+
+void GTagML_Graph_Build::leave_single_quote_mode_doubled()
+{
+ parse_context_.flags.single_quote_mode_doubled = false;
+
+}
+
+void GTagML_Graph_Build::enter_single_quote_mode_trebled()
+{
+ parse_context_.flags.single_quote_mode_trebled = true;
+
+}
+
+void GTagML_Graph_Build::leave_single_quote_mode_trebled()
+{
+ parse_context_.flags.single_quote_mode_trebled = false;
+
+}
+
+void GTagML_Graph_Build::enter_acronym_mode()
+{
+ parse_context_.flags.acronym_mode = true;
+
+}
+
+void GTagML_Graph_Build::leave_acronym_mode()
+{
+ parse_context_.flags.acronym_mode = false;
+
+}
+
+void GTagML_Graph_Build::enter_alt_display_mode()
+{
+ parse_context_.flags.alt_display_mode = true;
+
+}
+
+void GTagML_Graph_Build::leave_alt_display_mode()
+{
+ parse_context_.flags.alt_display_mode = false;
+}
+
+
+
+
+
 void GTagML_Graph_Build::enter_multiline_comment(QString semis, QString tildes)
 {
  markup_position_.enter_multiline_comment(cutmax(semis.length()), cutmax(tildes.length()));
@@ -399,7 +491,7 @@ void GTagML_Graph_Build::enter_tag_command_with_predicate_vector(QString tag_com
 
  markup_position_.load_khif_connectors(connectors);
 
- parse_context_.flags.inside_khif_tile = true;
+  //?  parse_context_.flags.inside_khif_tile = true;
 
 }
 

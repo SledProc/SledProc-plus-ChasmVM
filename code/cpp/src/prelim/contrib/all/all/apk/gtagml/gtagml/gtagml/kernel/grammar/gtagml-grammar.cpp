@@ -89,6 +89,151 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
 
+ add_rule( gtagml_context, "enter-auto-paragraph-mode",
+   " />>  "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  parse_context.flags.auto_paragraph_mode = true;
+ });
+
+ add_rule( flags_all_(parse_context ,auto_paragraph_mode),
+   gtagml_context, "auto-new-paragraph",
+   " .single-space.* \\n .single-space.* \\n"
+   ,[&]
+ {
+  graph_build.auto_new_paragraph();
+ });
+
+ add_rule( flags_all_(parse_context ,italics_mode),
+   gtagml_context, "leave-italics-mode",
+   " /\\* "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.leave_italics_mode();
+ });
+
+ add_rule( gtagml_context, "enter-italics-mode",
+   " \\*/ "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.enter_italics_mode();
+ });
+
+
+ add_rule( flags_all_(parse_context ,acronym_mode),
+   gtagml_context, "leave-acronym-mode",
+   " / "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.leave_acronym_mode();
+ });
+
+ add_rule( gtagml_context, "enter-acronym-mode",
+   " &/ "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.enter_acronym_mode();
+ });
+
+
+ add_rule( flags_all_(parse_context ,alt_display_mode),
+   gtagml_context, "leave-alt-display-mode",
+   " / "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.leave_alt_display_mode();
+ });
+
+ add_rule( gtagml_context, "enter-alt-display-mode",
+   " %/ "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.enter_alt_display_mode();
+ });
+
+
+
+ add_rule( flags_all_(parse_context ,double_quote_mode),
+   gtagml_context, "leave-double-quote-mode",
+   " /\" "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.leave_double_quote_mode();
+ });
+
+ add_rule( gtagml_context, "enter-double-quote-mode",
+   " \"(?<pre> \\w*)/ "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.enter_double_quote_mode();
+ });
+
+
+
+ add_rule( flags_all_(parse_context ,single_quote_mode),
+   gtagml_context, "leave-single-quote-mode",
+   " /' "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.leave_single_quote_mode();
+ });
+
+ add_rule( gtagml_context, "enter-single-quote-mode",
+   " '(?<pre> \\w*)/ "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.enter_single_quote_mode();
+ });
+
+
+
+ add_rule( flags_all_(parse_context ,single_quote_mode_doubled),
+   gtagml_context, "leave-single-quote-mode-doubled",
+   " /'' "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.leave_single_quote_mode_doubled();
+ });
+
+ add_rule( gtagml_context, "enter-single-quote-mode-doubled",
+   " ''(?<pre> \\w*)/ "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.enter_single_quote_mode_doubled();
+ });
+
+
+
+ add_rule( flags_all_(parse_context ,single_quote_mode_trebled),
+   gtagml_context, "leave-single-quote-mode-trebled",
+   " /''' "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.leave_single_quote_mode_trebled();
+ });
+
+ add_rule( gtagml_context, "enter-single-quote-mode-trebled",
+   " '''(?<pre> \\w*)/ "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.enter_single_quote_mode_trebled();
+ });
+
+
+
+// flag_(2, italics_mode)
+// flag_(3, double_quote_mode)
+// flag_(4, single_quote_mode)
+// flag_(5, single_quote_mode_doubled)
+// flag_(6, single_quote_mode_trebled)
+
+// flag_(7, acronym_mode)
+// flag_(8, alt_display_mode)
+
+
+
+
+
  add_rule( gtagml_context, "enter-special-parse-mode",
    " \\{  "
    " (?<spm> .valid-tag-command-name. ) "

@@ -170,11 +170,14 @@ int main(int argc, char *argv[])
  QString file;// = cmdl.size() > 3? cmdl[3]: DEFAULT_SDI_FOLDER
  QString manfolder;
 
- QStringList cmdl = get_cmdl(argc, argv, 2, {
-   {&folder, DEFAULT_GTAGML_FOLDER "/dg/ctg/src"},
-   {&file, DEFAULT_GTAGML_FOLDER "/dg/t1/t1.gt"},
-   {&manfolder, {}}
-   });
+ file = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/paper.gt";
+ folder = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/src";
+
+// QStringList cmdl = get_cmdl(argc, argv, 2, {
+//   {&folder, DEFAULT_GTAGML_FOLDER "/dg/ctg/src"},
+//   {&file, DEFAULT_GTAGML_FOLDER "/dg/t1/t1.gt"},
+//   {&manfolder, {}}
+//   });
 
 //? folder = "/home/.../ntxh-ngml/ar/htxn/sdi-test/t9";
 //? file = "/home/.../ntxh-ngml/ar/htxn/sdi-test/t9/t9.ngml";

@@ -25,18 +25,32 @@ class GTagML_Parse_Context
  typedef GTagML_Node tNode;
 
 public:
- flags_(2)
-  flag_(1, inside_khif_tile);
-  flag_(2, inside_multiline_comment);
-  flag_(3, inside_tag_body);
-  flag_(4, inside_html_tag_body);
-  flag_(5, inside_multi_parent);
-  flag_(6, inside_inline_multi_parent);
-  flag_(7, inside_html_script_tag);
-  flag_(8, inside_html_style_tag);
-  flag_(9, inside_multi_parent_semis);
-  flag_(10, inside_multi_generic);
-  flag_(11, inside_attribute_sequence);
+ flags_(4)
+  flag_(1, auto_paragraph_mode)
+  flag_(2, italics_mode)
+  flag_(3, double_quote_mode)
+  flag_(4, single_quote_mode)
+  flag_(5, single_quote_mode_doubled)
+  flag_(6, single_quote_mode_trebled)
+
+  flag_(7, acronym_mode)
+  flag_(8, alt_display_mode)
+
+  flag_(9, code_display_mode)
+
+  flag_(10, underline_mode)
+  flag_(11, strikethrough_mode)
+
+  flag_(12, inside_multiline_comment)
+  flag_(13, inside_tag_body)
+  flag_(14, inside_html_tag_body)
+  flag_(15, inside_multi_parent)
+  flag_(16, inside_inline_multi_parent)
+  flag_(17, inside_html_script_tag)
+  flag_(18, inside_html_style_tag)
+  flag_(19, inside_multi_parent_semis)
+  flag_(20, inside_multi_generic)
+  flag_(21, inside_attribute_sequence)
  _flags_
 
 public:

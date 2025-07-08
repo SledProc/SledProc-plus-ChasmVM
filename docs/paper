@@ -1,0 +1,1688 @@
+
+/>>
+It is clearly true that an important part of human language is governed by rules or 
+structures, ones that can be (at least to a useful extent) formalized and computationally 
+simulated.  And yet, language was not designed by committee: upon arguing that a 
+particular semantic or syntactic pattern has become entrenched in some context 
+(e.g., dialect or sociolect or discursive milieu) an analysis cannot just rest its 
+case %-- as if a language is intrinsically a collection of formal rules, and we 
+need merely infer them (like reverse-engineering compiled computer code).  The 
+question is */why/* patterns become entrenched and stay so.  Plus, we should not 
+overestimate rule's rigidity.  That a bachelor is an unmarried man, for example, 
+is a canonical example of logic underlying semantics; but sentences like 
+these are quite meaningful:
+
+1) My brother's been married for 10 years, but in many ways he's still a bachelor.
+2) All the eligible bachelors in this town are married.
+
+Moral of the story: just as, in a fair legal system, it should be assumed that 
+almost all laws have instances where reasonable people would break them, so 
+in language, for every "h/rule/" there are contexts where competent 
+speakers will ignore them.  
+
+<>
+
+To motivate further discussion about the limits of (and rationales for) linguistic 
+formalization, consider these pairs of sentences:
+
+3)  Everyone sang along to three songs
+4)  All appeals are heard by a panel of three judges
+
+5)  All New Yorkers live in one of five boroughs
+6)  All New Yorkers complain about how long it takes to commute to New York City.
+
+7)  In Ariel's picture of Beatrice, she looks like she has a cold
+8)  In Ariel's picture of Beatrice, she snapped the lens just as a mazerati sped by
+
+The situation in 3) and 4) is ambiguity in quantifier scope: assuming 3) discusses some 
+music performance, it would be abnormal for everyone in the audience to distinctly choose 
+exactly three songs to sing along with.  Hence, we can assume that, among all songs 
+played that evening, there were specifically three with the property that (all) the audience 
+joined in.  The numeral-quantifier "/three/" is thus outside the scope of "/everyone/": 
+"/three songs/" designates just one fixed set, with a static identity vis-a-vis 
+all the rest of the sentence (and surrounding context).
+   
+By contrast, one is free to hear (4) as nesting the scope of "/three/" inside "/All/": it is a 
+general principle that three judges hear an appeal, but the set of individuals can vary from one 
+appeal to another.  
+
+Another quantifier-related ambiguity that can arise is distinguishing levels of exactitude.  In rhetoric, 
+unlike mathematics, "/all/" often actually means "/most/".  The speaker in (6) is not heard to 
+report on the attitude of 10+ million residents as if he personally interviewed them (nor would (6) be 
+falsified by scatterred counter-examples).  On the other hand, the land area of New York is indeed 
+precisely divided into five boroughs, so (5) is */literally/* correct -- but only via a rigid 
+reading of the refential intent behind "/New Yorker/".  Informally, this term could easily be 
+applied to anyone who lives in the greater metro area, and regularly visits (or works in) the city proper.
+
+Uncertainties in (7) and (8) are of a different sort: anaphora resolution rather than quantifier-scope.  
+They also have two competing interpretations, depending on whether "/she/" is read as Ariel or Beatrice.  The 
+former option is more likely in (7) because one can tell from a photograph what the depicted subject 
+"looks like".  But we can't */a priori/* exclude a continuation like "x/you'd have to be sick to 
+take such a bad head shot/".  Nor can we fail to imagine a scenario for (8) where Ariel takes a picture of 
+Beatrice photographing a speeding Mazerati.
+
+I chose these sentence-pairs because the variable factor in each case flip-flops from first to second, at least 
+in the most */likely/* reading.  But subtle variation can point to the opposite, as in these alternatives 
+for (3) and (4):
+
+9)  Every band performed three songs
+10)  Everyone in the audience sang along to one song or another
+
+Changing the context to a */band/* playing, versus an audience member, imposes a different interpretive 
+framework: usually bands perform a "d/set/" with their own material (or covers).  Meanwhile, switching 
+from the exact "/three/" to the more flexible "/one or another/" gives enough construal slack that 
+putting the later scope in the former makes pragmatic sense.
+
+Despite the competing interpretations, each */interpretation/* of each sentence I have discussed so 
+far, I believe, has a fairly obvious logical form.  But there are other examples where a logical 
+gloss would not fully capture the communicated content of a given sentence.  Consider: 
+
+11)  This election is just slipping away from the Democrats
+12)  Student after student came by to complain about the reading assignments
+
+There is a topic the speaker entertains (a campaign, students' dislike of their homework) but 
+intrinsic to the meaning of (11) and (12) is the speaker's epistemic orientation to that 
+topic.  The metaphor of "slipping away", precisely because it is a metaphor, connotes a 
+gradual process that the speaker has observed from an extended period of time.  Similarly, 
+(12) suggests multiple similar episoded that collectively imply a specific 
+pattern or phenomenon.  In (12) we are being told more than just "/the students don't like 
+my reading assignments/"; the fact that the warrant for that claim (multiple occasions of 
+students expressing such displeasure) is presented in language that suggests an extended, 
+enduring process expresses a kind of "p/narrative account/" of the speaker's evidential 
+rationale.  The details are different than if all objections were made during one 
+heated class session, say.  
+
+Any sentence which makes an articulable propositional claim will simultaneously imply 
+(or sometimes explicitly describe) the speaker's attitude toward the proposition, 
+and rationale for believing thus.  With no further qualification, of course, we 
+hear an implicit "y/I believe that/" attached to any utterance.  Since a 
+claim of @/P is almost always a claim of "y/I believe @/P/" this kind of 
+meta-discursive attitude can be subsumed into ordinary logic, to some extent.  
+Often, of course, we present one claim to justify another, as in:
+
+13)  I'm convinced this election is slipping away from the Democrats, because each week 
+their polling numbers are getting worse.
+14)  I know my class thinks the reading is too hard %-- one student after another has come to tell me so.
+
+So, in short, the pattern of propositions jutifying other propositions does not in itself 
+challenge the validity of semantic theories premised on treating sentences as encodings for propositions.
+
+However, the resources a speaker has for expressing the backstory of their 
+propositional attitudes span a wide spectrum of connotations and experiences, 
+and I'd argue that there is no logical system that could precisely model 
+how language-users present details related to how one belief compels 
+or reinforces another.  Typical logic embeds propositions not in 
+chains of deductive reasoning but rather in narrative presentations 
+that reflect the passing of time, the interlocking of situations, and 
+in general the somewhat informal and lifeworld-dependent manner in which 
+we formulate beliefs in typical contexts.  To the degree that we 
+express beliefs via narrativizing constructions or metaphors like 
+"slipping away" and "student after student" %-- or so I claim %-- this 
+part of the discourse cannot be adequately captured via logic, but 
+rather depends on characterization of the lifeworld processes 
+between forming opinions (which are hard to model technically, even 
+if we import machinery like fuzzy sets, informal logic, etc.).
+
+Cumulatively, then, I believe that sentences 1-14 offer examples of two issues for formal semantics:
+
+1)  While assertion (or implicature) of some proposition @/P is a feature of most sentences, there 
+may be details contained in the meaning of the sentence that are not contained in @/P itself 
+(or in logically related propositions, such as */belief that @/P/*).
+
+2)  Even if the meaning of sentence @/S is indeed to a large extent included in some 
+@/P, @/S may not "h/signify/" @/P with the level of context-independence found 
+in specialized lexemes.  Instead, speakers infer intent to convey @/P from @/S only 
+via background knowledge, and the same string of words could elsewhere encode 
+some different proposition.
+
+If these points are valid, then the project of formulating semantics as the search 
+for rules governing how sentences @/S encode propositions @/P is notably limited.  
+
+A plausible rejoinder from some hypothetical (or, in my experience, actual) 
+linguist is that some indeterminacy does not disqualify a "/truth conditional 
+semantics/" project (for example) any more that multiple word-senses do.  
+Because "i/dresser/", say, can be either someone donning clothers or a piece of furniture, 
+people must discern which is meant, usually with the aid of background knowledge.  
+This shows that extra-linguistic thought processes can be woven through 
+multiple significatory layers, and anyone who believe such facts problematize 
+linguistics overall need not progress to */sentence-level/* ambiguity.  
+However, the */lexical/* underdeterminacy of "x/dresser" or "x/Trumps" 
+is a purely local phenomenon that can't be equated with more holistic 
+examples such as (1)-(14); what's at stake in the latter is that plausible 
+reframings of mental construal change our interpretation of each sentence 
+from the top down.
+
+To put it differently, it's credible to imagine homonyms like "dresser"  
+as surface-level accidents, such that the lexical roster, too, has "t/deep structure/".  
+Perhaps lurking behind Ebglish lies an idealized language where senses 
+could be marked, so "d/person" and "d/furniture" dresser becomes just 
+different words.  The problem on a larger scale is sentences are supposed to 
+function via composition: as words signify concepts, so sentences 
+convey propositional content because they merge concepts according 
+to specific recipes.  Syntax matters because multi-concept complexes 
+are not just unstructured "t/bags/": the King loves the Queen versus vice-versa.  
+   
+However, I argue from cases like (1)-(14) that even after fully digesting 
+compositional intent, predicate signification remains underdetermined.  
+To borrow an apologia from the lexical realm, we'd have to argue that 
+lurking behind any actual language is an idealized language which 
+"/marks/" all logically salient elements %-- quantifiers, anaphora, deictics 
+(imagine marking a proximate versus distal "/there/", or abstract versus concrete 
+"/here/"), 
+conjunctions (cf. "/and/" as temporal as in "/John quit his job and moved out of town/", 
+wherein we hear "/and */then/*/") %-- with enough granularity to forestall 
+all compositional ambiguities.  We can imagine some inflectional variation 
+on words like "/all/" to distinguish crisp from fuzzy domains, or nested from 
+independent quantification; or morphological features on pronouns to 
+distinguish verb subjects from objects in anaphoric reference.  
+
+It's my opinion that many writings in linguistics and philosophy 
+embrace truth-condition-like paradigms whose central tenets 
+may be summarized as follows:
+
+1)  Canonically, sentences signify propositions by analogy to how words signify concepts
+2)  Behind any actual language is an idealized language wherein sentences denote 
+structured propositions via compositional patterns, themselves encoded through 
+syntactic conventions and the semantic properties of specific word-classes 
+(quantifiers, pronouns, and so forth).
+
+That is, to the degree that speakers need to employ extralinguistic reasoning, 
+those occasions should be treated as individuals mentally bridging the vaguely 
+corrupted "/natural/" language to a specular ideal, rather like listeners 
+recognizing consistent morphemes despite accent variations.  
+It is true, say, that "/Trump/" should be interpreted differently 
+when people are playing bridge or talking politics, but this means that 
+ambient situations nudge speakers in contextual ways when construing how 
+their spoken language should be mapped to its ideal.  The cognitive 
+gap between actual and ideal dialects is orthogonal to linguists' 
+project, which is to rules of the latter.      
+
+My sense that such a paradigm is widespread is admittedly impressionistic, 
+and I certainly do not offer it as an expert pronouncement, as if a 
+self-appointed State of the Union Address for recent intellectual history.  
+It's more a coming clean, insofar as my goal in this paper is to suggest 
+an alternative metatheory wherein notions of sentences signifying propositions 
+and idealized dialects are at best provisional and emergent.   
+
+It */does/* seems that many schools of thought have 
+little to say about semantics */other than/* formulating @/S-to-@/P mappings.  
+Influential writers have not shied 
+away from proposing that "i/the meaning of a proposition is given by its truth 
+conditions/", and perhaps added details or hedging are not so much about 
+challenging the basic Davidsonian premise but, instead, defending 
+an expanded definition of "/truth conditions/".  The problem is 
+that no prehistoric King ever instructed his subjects to go create a 
+language for expressing truth conditions; even if the premise is 
+true we have to ask */why/* sentences encode truth conditions (or 
+are optimized to do so).  People don't talk out of some abstract desire 
+to assert propositions, but rather to coordinate their joint 
+activity.  It's easy to see why logically transparent statements are an 
+important part of that, but still, language's ability to convey beliefs 
+is an */emergent property/* of human verbal communication.  
+The existence of coherent @/S-to-@/P mappings is not an axiom to 
+deploy in linguistic explanations, but a cognitive faculty to be explained.
+
+To be clear, I do believe the value of signifying propositions is 
+self-evident.  My point is that any instance of @/S conveying @/P 
+is not just a linguistic phenomenon, but rather a detail of 
+of two (or more) persons' social and collaborative interactions.  
+If I slip, fall, clutch my ankle, and grimace, someone will 
+conclude that I might be injured; but groaning "/ouch/" does not 
+express this through linguistic means.  Similarly, if I see a 
+car veering dangerously close to my friend John from behind him, shouting 
+"/John/" to get attention does not make that word signify 
+"/watch out!/".  In most communication, linguistic structure 
+plays a more prominent role %-- only rarely do we convey ideas through vocalization 
+alone, untethered from syntax and semantics (and pragmatics); see, 
+"h/talking/" to dogs.  Yet just because propositions get conveyed 
+in a linguistic context does not ensure that */why/* or */how/* this 
+happens is fully explainable in linguistic terms.
+
+Instead, sentences 1-14 suggest that the specific @/P derived from an @/S 
+depends (in part) on addressee's rational acts that aren't linguistic 
+in nature.  The reason why quantifier scope is nested in (4) but not (3) is that 
+the predicates signified by that reading make more sense than their 
+alternatives, but such judgment relies on knowledge socio-cultural, not 
+linguistic, facts.  In short, whatever a sentence means, it does so 
+%-- in the general case %-- not via linguistic structures alone, but 
+via the interplay of such structures with more general cognitive 
+and social-semiotic processes.  Consequently, purely linguistic 
+explanation is explanatorily incomplete.
+
+Granted, for */any/* science */all/* explanation is incomplete.  
+Sciences have to work together across scales of phenomena 
+and causal inter-dependence.  It is reasonable for a discipline to decide  
+what is and is not in its theoretical */raison d'etre/*.  But theories 
+should at least itemize the compositional or causative networks 
+that relate phenomena in their own scope to those in peer 
+theories' purview.  For semantics, sentences are often 
+underdetermined (on purely linguistic grounds) with respect to their 
+signified propositional content.  I'd argue we need 
+extralinguistic cognitive accounts to articulate why @/S 
+means */this particular/* @/P.  But while linguists 
+should not necessarily pursue technical models of these 
+extra-linguistic processes, there's enough interpenetration 
+between language and general intersubjective reality that 
+linguistic analysis can at least be attuned to theoretical 
+structures for human cognition in general.  Linguistics 
+should operate in an intellectual environment where 
+overarching theories of cognition and communication 
+are formulated and disputed.
+
+For these reasons, I believe */cognitive phenomenology/* is 
+relevant to linguistics because it potentially provides this 
+overarching theoretical framework.  Here, I will outline 
+why I think Hussurlian phenomenology can play this role, 
+and then what implications for syntactic theory might follow 
+therefrom.
+
+///
+
+
+
+I will argue here that (Husserlian) phenomenology and the philosophy of 
+science can jointly offer a framework for justifying linguistic 
+methodology.  On (overly superficial, I believe) interpretations, 
+phenomonology is often seen as hostile toward science.  I propose, however, 
+that phenonenology's analytic role relative to other humanistic 
+disciplines can be usefully discussed in terms of the mutual support 
+between interrelated scientific theories.
+
+An intrinsic aspect of any science is establishing a collection of 
+entities (or kinds thereof) that comprise its focus.  Apart from 
+elementary particle physics (perhaps) such entities will almost 
+always be reducible to smaller parts.  Hydrology depends on 
+properties of water molecules, and botany on plant cells.  
+However, the discourse of the higher-scale disciplines should 
+not parrot that of chemistry or cellular biology.  It is the 
+responsibility of each higher-scale theory to develop a 
+vocabulary and classification that describes dispositions 
+and attributes of higher-scale objects.  Explanations can 
+then address why posited dispositions and attributes 
+generate observed behaviors.
+
+By analogy, there is a distinct set of terms relevant to 
+high-level computer source code: procedures, lexical variables, 
+lifetimes, types, pointers, execution branches.  Separately, 
+there are terms related to machine code: registers, instruction 
+sets, opcodes, memory pages.  Although source files compile 
+to machine code, analyses of programming languages' rules and 
+implementations cannot in general "h/quantify/" over machine-level 
+concepts.  Even in the context of machine code itself, low-level 
+concepts are incompelte at anything other then strictly local contexts.  
+For instance, a sequence of instructions that push values onto a 
+program stack %-- and then transfer execution to an addressed subroutine 
+%-- are carrying out a pattern whose presence is due to compiler's 
+translations of higher-level constructions.  Examining progressively smaller 
+physical scales may suffice for purely mechanical explanations of 
+physical processes, but remains explanatorily incomplete insofar 
+as macro-scale phenomena structure and mold the micro-scale aggregates.  
+By analogy, a purely molecular account of the dynamics of a spinning 
+baseball does not take into consideration the thought processes 
+of the pitcher who decided to throw a curveball.  A complete 
+account of the universe in that moment needs to recognize such 
+work of mind as part of the causal background for the ball's spin.
+
+In general, causative explanation is incomplete on any one scale in 
+particular; it is only by briding multiple theories that one can 
+simultaneously analyze both purely physical properties (dependent 
+on micro-scale realities) and aggregate, complex behavior 
+(caused by interactions between higher-scale objects).  Individual 
+theories contribute to cross-scale explanations by formalizing 
+their own terminological and epistemological frameworks, ones 
+that focus on some class of entities but also explicate how 
+peer theories (e.g., those of smaller constituents) describe 
+causal grounds for the dispositions and attributes studied by 
+the original theory.  This is intrinsic to any science: hydrology 
+and botany (reusing those examples) exist as such because it 
+is possible to negotiate discursive practices and investigatory paradigms 
+for macro-scale complexes of water (rivers, oceans, lakes, dams) 
+and plants (plus forests, ecosystems, etc.) respectively, all the 
+while connecting such paradigms to theories of smaller constituents 
+(water molecules and plant cells).
+
+The situation is similar with respect to humanities and social scientists.  
+A political theorist might note the waxing and waning of parties' popularity 
+   ??(and that of different segments of the right-center-left political spectrum) 
+but such phenomena ultimately rest on individual voters' decisions.  
+The mindset of a single person acts as a societal "/reductive base/" 
+(likewise for economics and the individual worker/consumer).  Such brings 
+one naturally to cognition, which is an inevitable explanatory 
+setting for any talk of decision-making or ideology.
+
+Abstractly, of course, cognition exists in the mind.  But human brains 
+have billions of neurons; the contrast in scale is closer to a water molecule 
+within a large lake than to a line of computer code, compiling down to 
+perhaps ten or twenty machine-language instructions.  Inter-theory 
+reduction depends on filling macro-to-microscale gaps with mid-level  
+analyses; source files, for example, become transformed to several 
+intermediate representations during a compiler pipeline.  Vis-a-vis the 
+human mind, neurologists certainly understand how clusters of neurons 
+form "t/nuclei/" or "t/ganglia/" with distinct functional roles; and, 
+on a higher scale, brain scientists identify many distinct 
+(and functionally unique) anatomic regions.  Working from 
+"h/the ground up/", however, one is still far from connecting 
+neurophysical substrata to observed patterns in human cognition.
+
+There is an almost universally recognized explanatory gap with respect 
+to consciousness itself: we still have little understanding of 
+how purely biological phenomena can give rise to subjective 
+and "t/first-personal/" states and awareness.  Some philosophers 
+apparently minimize this gap by construing consciousness as epiphenomenal, 
+ontologically separated from the primary functional structures 
+of cognition.  However, the nature of consciousness */per se/* clearly 
+plays a crucial role in the mental careers of conscious animals.  
+Consciousness evolved at some point in natural history, and presumably 
+it conferred adaptative benefits.  Modern humans have retained 
+"/fight or flight/" reflexes for very specific circumstances, 
+but many people will experience only a handful of occasions 
+during a lifetime wherein their actions are not guided 
+by deliberate conscious control.  Instead of reacting to stimuli 
+merely via instinct, forming conscious mental representations 
+%-- ones allowing a certain distance between observer and 
+observed, so that an animal may rationally assess situations %--  
+evidently permits a wider and more malleable repertoire 
+of responses.  
+
+Over the course of time, in short, animal behavior and intelligence 
+evolved in consort with consciousness such that, for humans, 
+subjective experience is the intrinsic medium through which 
+much of our rational activity happens.  Suppose I stand 
+by a platform waiting for a subway to arrive.  I need to board 
+the correct train.  To do so, I may well follow a well-rehearsed 
+protocol that might begin with hearing the train before seeing it: 
+this cues me to look down the platform in its direction.  Upon seeing 
+its outline I would then focus attention on the letter- and color-coded 
+symbol painted on the front, which I then decifer to check whether 
+this is the correct train, before stepping back to allow passengers 
+to disembark.  Each step in this process is consciously mediated: 
+I need to deliberately shift my perceptual orientation multiple 
+times.  I could choose to break off the "/protocol/" given some external 
+stimuli.  Perhaps I hear my cell phone pinging.  Or, there's an announcement 
+that the current train is out of service, so it's a moot point.
+
+My point is not that we have first-person awareness of all cognitive 
+processes.  Concious reality has many constituents 
+that we experience as perceptual givens even as the product of 
+complex (subconscious) reasoning.  We see a world of discrete objects, 
+whose contours and boundaries are inferred via visual processing.  
+Sight employs color variation to partition visual scenes, but 
+it is not as simple as isolating distinct color patches.  Given a 
+red rose in a blue vase, we cannot segment the image merely by 
+treating red as the flower and blue as its container.  
+Color-perception has added complexity first because some chromatic 
+variation is expected in an extended region due to texture 
+and lighting; and second because visible substances have 
+optical qualities beyond just red/green/blue quantities 
+%-- albedo, specularity, glossiness, metallicity, opaqueness, etc. 
+(potentially modeled as distinct 
+channels alongside RGB).  Object boundaries are 
+suggested by discontinuities in visual properties of 
+variying kinds, not just pure color; moreover, segmentation 
+algorithms have to be cautious of spurious boundaries 
+due to light/shadow effects and the vagaries of pigmentation.  
+
+Humans subconsciously perform complex image-analysis tasks, many 
+of which can be simulated by computer-vision algorithms: 
+texture segmentation, 3D reconstruction, occlusion compensation 
+(e.g., perceiving the shape of a vase's back side by projecting 
+around from its visible rim-circle).  Via color alone we 
+infer textural and optical details, yielding a significantly 
+enlarged color space, and thereby perceive objects' external 
+geometry (e.g., their gradient vectors at each point 
+%-- the degree to which their shape departs from a flat plane).  
+We do not consciously */direct/* these processes, by contrast to 
+my example of ascertaining which train is arriving.  Nevertheless, 
+conscious experience is intrinsically structured by 
+faculties of visual (and, to some extent, haptic/tactile) 
+perception so that we can trust our senses as a usually 
+reliable source of information about objects' movement, 
+position, shape, and contours.  We do exercise deliberate 
+control over such data by conscious choices of where to 
+direct attention.
+
+Presumably this balance between conscious and subconscious 
+cognition is a fine equipoise, evolved to optimize the 
+efficacy of conscious control.  But even if perceptual 
+processes such as textural segmentation, occlusion compensation, 
+and gradient recognition are not guided by conscious 
+intervention, it is only */through/* consciousness 
+that such gestalts factor in to larger-scale 
+human actions.  The human mind works in such a manner  
+that pre-conscious operations become consequential  
+as they are woven into conscious experience, 
+against which we orient as perceiver to perceived, 
+while also superimposing planning and executive 
+control, situational awareness, personal identity, 
+and our overall commitment to engage the world 
+in rational, purposeful ways.  Consciousness 
+is a necessary medium through which the 
+"/outputs/" of cognitive processes acquire the status 
+of perceptual givens, that we deem to disclose  
+external states of affairs, relative to which we coordinate actions.
+
+Any comprehensive theory of human cognition, then, is necessarily a 
+theory of how subjective experience serves as a unifying 
+field for variegated preconscious faculties, and a 
+kind of sounding board connecting momentary 
+perceptions to larger-scale goal-directed action and 
+situational reasoning.  Conseuqently, investigations 
+that abstract away an encompassing first-personal context 
+are only provisional %-- the causal efficacy of a single 
+nerve cell, neuronal cluster, brain region, or 
+functional algorithm replicated via AI, depends on 
+how such entities or processes become manifest in 
+consciousness.  Biologists notice a similar contrast 
+between */in vitro/* and */in vivo/*: molecular 
+interactions (proteins, etc.) in a test tube versus 
+in living organisms.  Lab experiments can produce useful 
+insights, but are simplifying abstractions.  I propose 
+the analogy: consciousness is the */in vivo/* of human 
+reality, in that any biological or sociological/economic 
+principles invoked to explain human actions are not explantorily 
+complete until we consider their presence in 
+first-person consciousness.
+  
+The */in vivo/* realm, to be sure, raises metascientific 
+questions.  We cannot dissect, nor neuroimage, an animal going 
+about their day-to-day life; the */in vitro/* is artificially 
+staged to facilitate data acquisition.  Insofar as 
+consciousness is the humanities' */in vivo/*, we similarly 
+cannot observe another's mental states as objective givens.  
+This is a well-known philosophical controversy.  Phenomenology 
+offer techniques to adjudicate claims about cognition 
+*/in consciousness/*, compensating for the private nature 
+of any one person's experience.  In particular, while introspective 
+consideration of mental states */as they occur/* is imperfect 
+(analysis alters the analyzed), we do have capabilities to 
+reflect on subjective episodes retroactively.  This is not 
+an artificial exercise: our minds are primed to learn 
+from experience, and also to make inferences about other's 
+mental states.  As such, noticing patterns related to 
+our own cognition %-- as well as presumptive thoughts 
+entertained by people around us (e.g., children noting 
+when others appear to act as if they are aware of some 
+fact versus when not, as their understanding of 
+perspective and inference deepens) %-- is a familiar 
+intellectual activity.  Usually this may occur 
+without explicit systematization, perhaps to some 
+extent subconsciously, but it is not a great leap 
+to reflect on past experience with a more 
+analytic/expository intent.
+
+Moreover, phenomenologists from Husserl onward have built a 
+literature of analyses and nomenclature.  Phenomenological 
+"t/reduction/" is particularly intuitive in  
+relation to perceptual experience (as compared to 
+abstract conceptualization) and how minimal sensate 
+givens are contextualized in situations and subjective 
+tableaux.  Apperceptive synthesis, in particular, 
+[https://www.degruyterbrill.com/document/doi/10.7312/gros18162-009/pdf?licenseType=restricted&srsltid=AfmBOoqAGw6I3wY_ItwcjsagdetncuOZ-LGXe7HnpNtrPvoKmqnm7hfU]   
+occurs on multiple time scales, with any momentary perception 
+connected to immediate past and future instants via 
+retention and protention.  We cannot really posit 
+consciousness within single moments in time; the 
+minimal units experience, evidently, are brief 
+but extended perceptual episodes (of a one or several 
+seconds' duration, say).  Such episodes then aggregate into 
+larger units whose inner boundaries, we might propose, 
+are defined by deliberate acts of perceptual reorientation 
+(as in the example of switching from watching for an 
+arriving train to focusing toward its window decal).  And such 
+compound episodes chain together into purposeful, situational 
+action, together with the observations and 
+conceptualizations that sustain it.
+
+We therefore have a provisional network of theoretical 
+concepts %-- qualia, protention, retention, synthesis, 
+episodicity, situationality, purposefulness, intentionality 
+%-- that help organize discussion about conscious states 
+and attitudes.  In other words, phenomenology
+does not restrict itself to sensory introspections 
+like "e/this shade of red looks identical to that one/"; 
+instead, we can reflect on our own experiences to 
+consider how concepts such as intentionality and 
+episodicity form building blocks of rigorous 
+cognitive models.  
+
+Ultimately, we might posit a reductive stack leading from 
+high-level, conscious cognition %-- situations, multi-part 
+perceptual episodes, singular perceptions %-- down to 
+brain regions, neuronal complex, and individual nerve 
+cells.  Like many inter-theory reductions, there may be 
+an aura of mystery about the middle stages of this diagram; 
+perhaps amplified here by the ontological contrast between
+conscious states, on the one hand, and physical cells, 
+on the other.  But the metaphysical controversies 
+surrounding subjective states should not preclude 
+a discursive rationality (alluding to Habermas) 
+or disputational metatheory for collectively 
+assessing claims about cognitive-subjective 
+structuration, even if the warranting data for 
+any one such claim are not publicly observable.  
+My argument is that by systematizing a methodology 
+for analysis of cognition "/in-consciousness/" 
+%-- by analogy to "/in vivo/" versus "/in vitro/" 
+%-- phenomenology thereby establishes methodological 
+prototypes for humanistic and social sciences in 
+general, at least for that part of their 
+domains where issues of human thought and decision-making 
+are relevant.
+
+// // 
+
+Similar to the controversial status of first-person reports 
+vis-a-vis theoretical confirmability/falsifiability, the 
+linguistics community is divided over the value of 
+analyses based on subjective assessments of acceptability.  
+It is, of course, common for linguists of many persuasions 
+to construct ad-hoc sentences/utterances in service 
+of theoretical claims.  Such methods 
+raise two questions: whether samples not taken from 
+real-life corpora are empirically valid, and whether a 
+language-user can simply take their own judgment 
+(rather than conducting some survey) as determintive, 
+as to whether a sentence is meaningful or grammatical.  
+
+There are many analogies, I find, between the epistemic 
+relevance of subjective accounts in linguistics 
+and in phenomenology.  Normal empirical disputation 
+against publically-accessible data perhaps does not 
+apply; but, I'd content, human beings are sufficiently 
+able to discuss first-personal states in a collective 
+setting that we can compare our experiences and 
+analyses.  The possibility of one writer assenting 
+or objecting to another's formulation implies that 
+claims largely endorsed by a discource community 
+serves witness to their theoretical value %-- no 
+less than claims warranted by more empirical measures.
+
+In one discussion that elucidates metascientific 
+background for these issues, Hubert Kowelewski 
+presents Cognitive Grammar in terms of "/Structural Empiricism/":
+
+Viewed through the lens of structural empiricism, Cognitive Grammar
+is therefore a family of models of a linguistic system. Like any other scientific theory, it features theoretical entities and processes (cognitive domains,
+constructional schemas, compositional paths, subjectification, etc.) and empirical substructures isomorphic (in a weaker version: similar) to appearances
+of observable phenomena. (p. 7)
+
+He immediately avows "c/It is somewhat unclear what should count as observable phenomena in 
+linguistics/", but situations such uncertainty in a larger philosophical context.  
+In particular, */most*/ scientific theories entertain taxonomies and analyses of 
+a domain of entities encompassing both public observables and "/hypothesized/" 
+posits that %-- for one of several possible reasons %-- cannot be "/seen/".  
+Empiricism is */structural/* insofar as such "t/unobservables/" can be 
+taken seriously because they constribute to persuasive explanations 
+of */observables'/* behavior, with structural models unifying the seen 
+and the hidden into a rational package.  Sometimes the unseen posits are 
+deemed to be just as real as everything else, merely beyond our capabilities 
+of (instrument-enhanced) observation, at least for now.  Other phenomena 
+(like "t/dark energy/") are left more open-ended, possibly subsumed under 
+such ontological realism or possibly artifacts of some more complex process 
+(like "t/phonons/", which behave like "i/particles/" of sound, but 
+that's largely a metaphor).  
+
+The status of mental attidues and subjectivity vis-a-vis physics and material 
+science is more circuitous than these other more-physical "t/unobservables/", 
+but Kowaleski implies that we should treat the cognitive as adjunct to the 
+physical in a similar structural vein: if explanations quantifying 
+over subjective states provide convincing accounts of observed 
+behavior (in this case, linguistic performance as a whole), then the first-personal 
+realm should be judged scientifically legitimate as a kind of "/hidden variables/" 
+dimension.  Specifically in regard to ad-hoc sentence examples, he argues as follows:
+
+The linguistic material analyzed in many of Langacker’s texts appears to be
+either constructed or at least picked in order to illustrate points under analysis. For this reason, the analyses can be easily attacked on the grounds that
+they are somehow unreliable due to the inauthenticity of data. ... 
+Many linguists seem to embrace the conviction that linguistics should
+study only actual, real-life events of language use, which do not belong anywhere on the above 
+counterfactuality scale [viz., logical impossibility is much stronger 
+than the contingent fact of something not having yet occurred, with 
+various intermediates].  However, this conviction overlooks the fact 
+that many useful scientific models involve clearly counterfactual scenarios 
+[whose] role is not merely heuristic or pedagogical. [para] 
+The use of fictional models in natural sciences can be accounted for in
+philosophical terms. In the framework of structural empiricism, isolated
+systems, frictionless pendulums, and perfect liquids are treated just like
+any other theoretical objects, except their theoreticity does not follow from
+unobservability, as is the case with electrons and electromagnetic fields, but
+from their fictional character.  Since a structural empiricist is not 
+committed to believing in the actual existence of real-world objects corresponding
+to theoretical concepts, but only to the empirical adequacy of the theory
+featuring these concepts, the structural empiricist may accept the theory
+while withholding belief in the actual real-world existence of the objects
+postulated by the theory.  An idealized model may serve as a tool for predicting observable 
+phenomena when predictions derived from the model are
+adjusted with respect to the factors omitted in the idealization.
+
+A reasonable paraphrase vis-a-vis constructed sentences is that, for purposes 
+of expositing semantic or syntactic claims, the universe of linguistic 
+objects is broader than merely the totality of sentences humans have in 
+fact created.  Ad-hoc hypothetical sentences also belong to the 
+linguistic domain if we consider this domain to include materials 
+for idealized model-building.
+
+I personally would put it thus: what makes a sentence an object in the 
+domain of entities spotlighted by linguistics is not necessarily the 
+fact of its being empirically an example of real language-use, but 
+rather because upon that sentence we can apply observables, analyses, 
+annotations, and so forth whose ordinary ground is real-world 
+sentences %-- we can note syntactic, morphological, or lexical patterns, 
+and so forth.  By analogy, complex numbers are not mathematical objects 
+because they have real-world interpretation (as spatial distance, say), but 
+because we can apply quantitative techniques to them (addition, multiplication, 
+exponentiation, differentiation and integration, etc.).     
+
+My earlier subway-platform speculation was similarly about hypothetical 
+circumstances.  I caught New York subways many times in real life, 
+but that's beside the point: we are primed to learn from experience, 
+but in a manner that abstracts nonsalient details.  So vividly memorializing 
+past experience is a deviation from ordinary rationality.  With respect 
+to the intellectual processes involved in learning from experience, 
+distilling pattern from */hypothetical/* scenarios is arguably 
+more realistic than introspective reconstructions of real ones.  
+Husserl, too, builds many analyses around constructed situations %-- 
+a mannequin in a shop window, our perceptual synthesis of a sphere 
+%-- and likewise almost all of his commentators.
+
+More to the point, my presentation was not free-associative: via posits 
+like attention, episodicity, and situationality I bore a matrix of 
+concepts via which to, in effect, "/annotate/" elements of consciousness.  
+Instead of focusing on the contrast between real and hypothetical 
+experiences, methodology should consider whether some target of 
+analysis is amenable to the notions and structures comprising an 
+analytic protocol.  Such framing is probably not structural */empiricism/* 
+a la Kowalewski, but there is a similar emphasis on structural 
+model building.  A hypothetical object, space, or situation becomes 
+an instance of a theoretical model via structural adequacy, and might 
+clarify structural hypotheses, or their rationale, better than 
+real-world examples.  By analogy, again, complex numbers %-- which 
+lack physical interpretations %-- are 
+better models than reals, in some respects, for a certain kind of 
+mathematical reasoning (e.g., every polynomial has complex roots).
+
+It seems to me that the status of constructed examples in linguistics 
+and phenomenology is similar, and the "t/demarcation problem/" 
+%-- defending linguistics as a legitimate science, not pseudoscience 
+(astrology, say) %-- plays similarly in both contexts.  There is 
+a more acute version of that problem once we accept hypothetical 
+case-studies as a foundation of argumentation; scientists might 
+accept corpus analysis, or the measurable 
+performance of AI agents designed according to computational linguistics principles, 
+or (respectively) quantitative experimental psychology, but dismiss 
+aritificial sentences or "c/just so/" phenomenology as quackery.  
+"r/Structural model building/" as an apologia, I'd say, works similarly 
+too: via Cognitive Grammar we have a repertoire of concepts 
+(landmark, projector, profiling, speaker epistemics) modeled 
+within constructed sentences no less than real ones.
+
+Suppose I want to examine a pair of hypothetical examples like:
+
+(1)  John poured water onto the stove.
+(2)  John spilled water onto the stove.
+
+The most obvious point would be how "poured" versus "spilled" frame the 
+action in different ways (deliberate or accidental).  By selecting 
+one or the other, the speaker implictly expresses beliefs about 
+John's mental state.  So, choice of words can encode 
+information about the speaker's epistemic starting-point; the 
+sentence is not merely notating observable details.  
+
+But let's step back.  For sake of discussion, I will assume (1) and (2) 
+occur contexts where listeners know the speaker saw John firsthand 
+(the evidence is direct observation, not hearsay).  Implicit 
+in a communicative claim to */describe/* something witnessed 
+is having been in a perceptual orientation to */see/* it.  The 
+sentences then encode salient features of this orientation: 
+presumably the speaker was standing/sitting in a position 
+where both John and the stove were in their visual frame, 
+and they could focus attention on one or the other as 
+called for.  Likewise, probably they were talking to 
+John or in some other way clued in to the ambient situation, so 
+as to rationally infer John's intentions.  Much of the 
+*/configuration/* of this cognitive-perceptual orientation, 
+thereby summarized, reflects my sketched "t/structural model/" 
+for phenomenological description: the intentional relations toward 
+objects insofar as we deliberately orient toward them 
+as a focus of attention; the coexistence of multiple 
+attentional sites (e.g., John and the stove) with focus 
+shifting back and forth in larger synthesizing episodes; 
+the role of larger-scale situational awareness guiding 
+our granular decisions to direct attention hither and thither.
+
+And yet, such configurations are also implicit in the 
+sentences' meanings.  Foci of attention tend to become 
+signified as nouns; so in both cases we have "John" and 
+"the stove".  It is John who initiates the action that 
+affects the stove's state, so the former becomes encoded 
+as subject and the latter as object.  Since speakers 
+implicitly expresses the evidence for propositions 
+stated (or implied) in their discourse, understanding a 
+sentence is partly a matter of inferring mental states, 
+which includes perceptual comportment toward 
+its noun-topics.  Anyone hearing (1) and (2) will, 
+at least in some schematic manner, reconstruct a 
+configuration of attentional focus and situational 
+construal that I tried to explicate "h/phenomenologically/".
+Syntactic categories like nouns and verbs are 
+rooted in listeners' need to infer speaker's cognitive states.
+
+Notice that communication leaves some intersubjective 
+slack: our reconstruction of fellows' mental 
+world is only provisional.  As a feature of our 
+reason and lifeworld, that is, mental states exist 
+in a vivid way in our own momentary consciousness, 
+but they also exist in an approximative manner 
+vis-a-vis people (and often animals) around us.  
+Others' cognitions being, modulo such imprecision, 
+a natural feature of our own rationality undergirds 
+%-- so I claim %-- the feasibility of both 
+phenomenological and linguistic analysis.
+
+Listeners inferring speakers' unstated beliefs, 
+and perceptual orientations, does not involve 
+extrasensory powers but rather deployment of a 
+strutural model for how people comport themselves 
+to situations so as to observe and act rationally.  
+Because language-use is a crucial factor in our 
+purposeful action, we seamlessly transition 
+from nonverbal orientation toward surrounding 
+environments to framings of states of affairs 
+in communicable ways, then actual speech-production.  
+Basic organization principles migrate from one to 
+the other, such that cognitive-perceptual structures 
+(attentional foci, say) become manifest, 
+within communicative intent and staging, as 
+linguistic phenomena (e.g., that to which 
+I can perceptually attend becomes a noun).
+
+If this is correct, then posits of linguistic argumentation 
+have origins in cognitive faculties that can be 
+phenomenologically investigated (and should be if we 
+want an encompassing, "/in vivo/" theory).  At the 
+same time, language elucidates  
+how models of other minds are inherent to our 
+rational agency; they aren't esoteric superstitions 
+of a phenomenological sect.  Language is the 
+best case-study for how phenomenology simply 
+codifies "t/folk theories/" of mind and cognition.  
+
+Phenomenology and cognitive linguistics, then, to 
+my mind reinforce each other and each can be said 
+to depend on the other, from an expository 
+and justificatory point of view.  
+
+
+
+(Contrast my defense with Kowalewski's study of the 
+Langacker sentence(s) "//").
+
+
+// //
+
+Given how this paper has progressed, I should at this point 
+clarify how a paradigm focused on the interdependence 
+of linguistics and phenomenology yields */different/* conclusions 
+than a "/truth-conditional/" semantics about sentences signifying 
+propositions.  My gloss, again: sentences encode 
+propositions */much like/* words encode concepts.  
+And they can do so because sentences are not a 
+conceptual melting pot: propositional content 
+is governed by concepts aggregating in specific 
+ways, and in a given order, denoted  by syntactic form.  
+
+For me, this approach is particularly well illustrated by 
+a theory presented in Bolt `etal; [], which largely 
+aligns with Combinatory Categorial Grammar, but also 
+employs a notion of "t/categories/" in the mathematical 
+sense of Category Theory (the overarching goal is a 
+form of Natural Language Processing suitable for quantum 
+computers).  Bolt `etal; propose a semantics 
+based on Peter `Gardenfors;'s "t/Conceptual 
+Space Theory/", which models interaction between 
+concepts as a mutual refinement of high-dimensional 
+(or perhaps just metaphorical) spaces.  For instance, 
+"/red box/" represents how a conceptual region "/red/" 
+narrows the scope of its partnered "/box/", and vice-versa.
+In jargon, such transformations would be "t/morphisms/" 
+(maps */in/* a Category) whereas there exist 
+"t/functors/" */from/* a Category of grammatical 
+structures (whose primitive operations, for example, 
+might be left or right adjacency) to a Category 
+of Conceptual Spaces.  The meaning of a 
+singe word is a concept within the latter Category.  
+The meaning of a phrase then becomes a kind of 
+commutative diagram where connections on the 
+grammatical plane become mirrored by syntheses 
+within conceptual spaces. 
+
+I am not convinced of the explanatory value of 
+quasi-mathematical treatments of concepts, such as 
+advanced by Gardenfors (such criteria as "t/convexivity/" 
+feel forced to me, outside special contexts like color terms).  
+Nonetheless, Bolt `etal; codify what a formal treatment 
+of semantics and syntax should look for: having determined 
+a pattern of synthesis within linguistic components by 
+virtue of syntax, we seek a translation of that 
+synthesis into the conceptual register.  Bolt `etal; imply 
+that Conceptual Spaces are sufficiently formalizable that 
+conceptual aggregation follows from grammatical more or 
+less mechanically, not unlike struturally 
+similar Categories in mathematics (e.g., real numbers 
+and spatial vectors).  Simply calling Conceptual 
+Spaces a "t/Category/" might be circular %-- assuming 
+what should rather be explained %-- but this methodology 
+does focus our attention on the issue of conceptual synthesis.
+
+Alongside Combinatory Categorial Grammar (CCG) is a tradition of 
+type-theoretic semantics, which has seemingly similar 
+foundations except for abstracting left and right word 
+adjacency into a general pattern of one word modifying 
+another.  It is argued that Parts of Speech may
+be likened to a system of types, such as nouns and 
+propositions.  In type theory, mappings from a tuple 
+of types to some result type are themselves a type, 
+such that one can build an arbitrarily large system 
+out of just a few basic types, like noun/proposition 
+%-- verbs map nouns to propositions, adjectives map nouns 
+to nouns, etc.  In CCG "/categories/" (a different usage 
+than Category Theory) 
+play a similar role, albeit with more attention to word order. 
+In both contexts, nouns are treated as foundational 
+constituents and propositions as the over-arching 
+sentential type (or category), with phrases 
+having intermediate types.  A sentence is properly 
+formed if those intermediates resolve to propositionality, 
+via type-inference rules such reading (intransitive) verb-noun 
+pairs as producing propositions (which may be nested into larger 
+sentences via a word such as "/that/", which in its pronoun 
+form effectively transforms a proposition into an adjective).  
+Computer languages have a similar notion of "/type-checking/" 
+to ensure that procedure's parameter-types are consistent 
+with their requisite output type, if complex expressions 
+are to be evaluable (the check fails if no mapping of 
+function-symbols to known procedures is consistent with 
+the range of types that may be presented to an enclosing 
+expression, and so on iteratively).  
+
+All of these paradigms assume that phrases compose 
+meanings by synthesizing concepts in order-dependent 
+ways, so it is important to examine a pair of 
+concepts can transform into somethings more specific 
+then either one in particular.  It is circular just 
+to say that "/red box/" means something possessing 
+both redness and boxness.  Consider a full sentence:
+
+()  I put Mom's chocolate brownies in this red tin box, take some!
+
+It's easy to break this down into a synthesis of concepts where 
+each word has a distinct contribution.  Here are a few: 
+
+)  tin box ->  provides insight into how the box will look, and 
+feel to the touch, as well as how it should be opened
+
+)  red tin box ->  the color helps one find it amidst other objects
+
+)  this red tin box ->  invites the hearer to focus on something proximate 
+to the speaker; deictic augments descriptive reference 
+
+)  in this red tin box ->  draws attention to the interior, with its functional 
+affordance of holding and storing contents
+
+)  chocolate brownies ->  adds detail possibly relevant to whether the 
+hearer will want to eat them
+
+)  Mom's chocolate brownies ->  suggests that she made them, and 
+this fact is known to the listener.  On an alternative interpretation, 
+the brownies are */for/* Mom, but this is less likely given the rest of the sentence.
+
+
+We should examine both syntactic and semantic factors.  
+Semantically, clearly each word adds its own 
+details to an emerging picture of the speaker's intent.  
+How to properly model the intermediate stages 
+of the overall conceptual synthesis remains an open 
+question.  Syntactically, it should be obvious that 
+there is a fixed order to when each word "h/enters the stage/", 
+as it were.  This is presumably enforced by, or an effect of, 
+grammatic form, though again a theory would have to 
+describe how this happens.
+
+Addressing the semantic plane first, considering words with 
+explicit sensation-related meaning is a good place to start.  
+It's simple to note that "/red box/" designates a box which 
+appears as red.  But we should investigate how this 
+meaning actually factors into cognitive processing.  I would 
+question an analysis whereby understanding () entails forming a 
+mental image of a "/red tin box/", at least with any 
+vividness.  But nor do we make sense of that phrase in 
+complete isolation from sense-content, I'd argue, in contrast 
+to statements about more ethereal matters.  This is a good 
+place to invoke the maxim that meanings are usually precursors 
+to concrete actions.  Should ()'s hearer decide to partake in 
+brownies, the meaning-content helps prep for finding them, 
+etc.  "/Red tin box/" thereby equips said hearer with 
+information relevant to locating, opening, and reaching inside the box.  
+Hearer does not need to form an explicit mental image at the moment 
+(of enunciation), but */does/* need to isolate the box from 
+a field of sense-data.  Of course, in imagining that future scenarion, 
+hearer might potentially form a certain mental picture of a red tin box, 
+however imprecise.
+
+Taking this case as an example, it seems as if phrases 
+with concrete, sense-related meanings occupy some intermediate 
+cognitive realm, neither abstract concept-clusters nor 
+photorealistic imaginary pictures.  This presumably reflects 
+cognitive anticipation of future behavior more generally: mentally 
+rehearsing planned actions (getting on a subway, introducing ourselves 
+to a friend of a friend, etc.) involves pictorial imagination to 
+some degree, but we focus on enactive schema more than sensory 
+details (perhaps a temporal mirror-image of how perceptual 
+specific likewise fade from memories).  Perhaps an important 
+percentage of our mental life similarly exists in an indeterminate 
+state with experienced, but sketchy, perception-expectations.  
+If we can accept this as a feature of cognition as such, it yields a 
+natural framework for semantics.  Such semi-perceptual content 
+serves as a "/staging area/" for intermediate-level concept-aggregates, 
+like "/Mom's chocolate brownies/".  That idea is not complete in itself 
+%-- it must be plugged as a unit into some larger context %-- 
+but (arguably, at least) it gets encapsulated in a conceptual package, 
+one that is neither fully abstract nor perceptually explicit.
+
+Syntactically, the word order seems fairly rigid.  This 
+is self-evident, because each word's contribution 
+%-- "red" and "tin", say %-- feel unrelated.  Still, 
+evidently there are cognitive trends in the mental 
+"/staging area/" that yield a preference for 
+building conceptual aggregates via certain formulae.  
+Among adjectives, those declaring attributes that are 
+more intrinsic to the nature of their substrata appear 
+closer to the noun than qualities which are more 
+incidental.  A metal box can be painted over, but will 
+never become wooden.  Hence "/red/" slots in 
+outside of "/tin/".  A color word binds more 
+closely when it is more definitionally inherent 
+to its vehicle ("t/red card/" in football, "/black belt/" 
+in karate; these have situational salience, beyond mere 
+sense-reports).  The distance from adjective to noun, 
+in short, conveys data about how the former actually 
+modifies.  Adjectives of compositional substance bind 
+tightly in general, so "/tin/" logically precedes 
+"/red/".  Such conventions evidently help given 
+how adjectives play different roles in different 
+contexts %-- affixing "/black/" inseparably to 
+"/belt/" clarifies that the color, here, is not 
+primarily a sensate quale but a constituent of an enumeration.
+
+Phrases built around material objects thereby evidently 
+pan outward from their minimal physical subtantiation 
+to the ambient situational context, with word-order 
+marker a parallel trajectory.  This is a syntactic 
+principle in the sense that "/tin red box/" is ill-formed 
+by virtue of word order, but of course we also 
+need to mark phrasal boundaries: adjective-to-noun distance 
+depends on */which/* noun.
+
+Parts of speech, moreover, reflect how words play 
+specific roles relative to aggregating concepts in 
+(what I called) a "/semi-perceptual/" staging area.  
+Noun phrases are de-facto landmarks in the synthesizing 
+process, forming a conceptual nexus with some 
+level of completeness and unity.  This surely reflects 
+how sentences reconstruct perceptual orientation: 
+in (), say, John and "/the stove/" represent two 
+object-concepts which are inferred to stand as 
+attentional foci for the speaker.  They serve 
+as attractional zones, or foregrounds, absorbing 
+awareness of other details and backgrounds 
+(e.g., we perceive parts of the stove, its color, 
+objects leaning against it, etc., as accompaniments 
+to its holistic presentation rather than foreground 
+foci in their own right).  Since linguistic structure
+intuitively reconstructs perceptual organizations, 
+it makes sense that noun-phrases are cognitive-staging 
+milestones because their significands are cognitive-perceptual 
+attractors.  
+
+Type-theoretically, modeling some parts of speech as 
+function-like "t/morphisms/" helps capture the 
+interplay of stasis and dynamics that typifies 
+cognitive "/staging/".  Noun-like conceptual 
+aggregates have a kind of holistic unity that becomes 
+destabilized by added modifiers.  "/Tin box/", say, 
+has a kind of statis as an idea, semi-image, or 
+precursor to action; a statis disrupted by "/red/", but 
+then via further processing the staged image settles 
+back into a stable synthesis.  The formal construct 
+of adjectives mapping nouns to nouns captures the 
+surface-level manifestation of a churning cognitive 
+underground, where intellectual labor is expended in  
+forming, altering (by assimilating new detail), and 
+reforming static precursor-images (in the sense of preparatory 
+ideations for future action).  Similarly, propositions 
+have a kind of situational statis (as mental targets, 
+representations of states of affairs more than 
+discrete objects, but still fixpoints within 
+our construal of facts and affordances surrounding us 
+%-- potentially in an anticipated future) which gets 
+destabilized when subordinate clauses get nested into 
+superordinates.
+
+There are, of course, multiple protocols that could be used 
+to model sentence structure.  Phrase-structure grammars emphasize 
+nested hierarchies.  Dependency grammars focus more on 
+inter-word relations (often among adjacent words, but crucial 
+connections can exist between distance ones, such as from pronoun 
+to antecedent, or subject to verb when a clause intervenes).  
+Cognitively, we can emphasize the transformative effects 
+of any single word on a conceptual synthesis established 
+via preceding words, in a */logical/* ordering that 
+deviates from the sequence of enunciation, though grammar 
+determines how the latter maps to the former.  
+Type theory is representative here because function-like 
+words map one conceptual aggregate onto a transform, 
+thereby establishing a precedence order.
+
+Earlier I argued that syntactic theory should not just 
+observe a language's rules, but also explain why 
+they retain their force despite communication's 
+inherenly anarchic nature.  Here we make progress, 
+I believe, if there is a distinct cognitive resonance 
+for a specific word-order vis-a-vis conceptual synthesis.  
+If hearing */red/* before */tin/* simplifies the 
+translation of surface discourse to a staged 
+cognitive image %-- compared to the inverse %-- then speakers 
+would be motivated to adopt that convention for sake of 
+most organically translating their own cognitive attitudes 
+into verbal form, as well as dialogic efficiency.  
+These "t/staging/" conventions for word-order, then, 
+can be considered an essential foundation for synax; 
+other syntactic principles, such as norms 
+affecting phrase boundaries and inter-word 
+relationships, can be said to derive their 
+consistency from the role they play in enforcing 
+cognitively salient word order.
+
+I intend to propose these ideas as a foundation for 
+grounding syntactic theory on cognitive optimization 
+%-- and, by extension, situating the theory's overall 
+series of disciplinary warrants against the paradigms 
+of phenomenology.  However, I feel there are two 
+issues to address that could complicate the picture I've outlined.
+
+// ///
+
+First, my discussion has implied that word-order and associated 
+sentence properties, such as phrase-structure, is logically 
+fixed.  That may be true in some sentences, but one might find 
+counter-examples.  I will examine the following:
+
+()  I'm heading out to the store.
+
+As I see, there are two ways to read this sentence, and they imply phrasal 
+and logical-sequential differencs.  We can reading "/heading out/" as a compound 
+verb, or we can treat "/out/", instead, as part of a clause describing 
+direction of movement.  That both are quite feasible may be demonstrated by 
+question-and-answer forms:
+
+()  Where are you going?  Out to the store.
+()  What are you doing?  Heading out.
+
+Movement verbs reference spatial trajectories, but these are 
+defined by more than just start and end points.  A path 
+"/to the store/" has a functionally distinct early part in leaving 
+the building, to which () alludes via "/out/".  At the same time, 
+the process has dimensions outside just spatial movement; going 
+*/out/* typically involves grabbing one's keys, wallet, phone, etc.  
+In short, the presence of */out/* results in () referring to 
+the speaker planned actions with extra detail both vis-a-vis the 
+path trajectory and the operational components.  Either of these 
+semantic effects are triggered by attaching "/out/" to a word 
+or phrase %-- but a given parse will draw the phrasal boundaries 
+one place or another, and thereby model only one part of the word's role.
+
+I would address this issue by arguing that parse-graphs are provisional: 
+diagramming one version that is appropriate for a sentence does not 
+preclude others working as well.  The actual syntactic forms that 
+influence sentences' reception may serve as a superposition 
+of multiple different phrase-nesting schema.  Since "/out/" 
+in () is stated both immediately after "/heading/" and before 
+"/to the store/" we can, while hearing (), process "/out/" 
+simultaneously as influencing our interpretation of the 
+prior word and the following clause.  A parse-graph represents 
+how we experience certain words as implying a modification of 
+some intermediate aggregate (what I've called "/staging/"), 
+particularly if we allow edge-annotations to notate where 
+words have that "h/restaging/" effect, and its targets.  
+In this sense parse-graphs are cognitively motivated, 
+but such does not preclude a sentence from yielding several 
+distinct motivated graphs.  I we believe syntax should 
+provide one definitive construction representing sentences' 
+"t/deep structure", then we can take the unit of exposition 
+as (at least potentially) a superposition of multiple graphs rather 
+than one single structure.
+
+The second issue I'd like to address is the extent of complete phrase- 
+(and sentence-) level scale in contrast to word-pairs.  
+My schematic proposal is that individual words contribute 
+cognitive "/restaging/" of aggregates formed from logically 
+prior words.  From a given conceptual synthesis, we 
+interpret a given succedent word as adding detail or 
+variation, wherein the synthesis re-stabilizes into 
+a new unity by assimilating the new content.  
+In broad outline, the process is not unlike 
+how scientific theories adapt to accommodate new 
+empirical data, though on a smaller scale.
+
+Such an analysis might work fine on relatively 
+local level, e.g., adjectives, adverbs, relative 
+pronouns, determiners, and so forth, but require 
+further clarification for verbs (and perhaps conjunctions, 
+subordinators, etc.).  In the case of verbs, a 
+"h/local/" analysis might work for intransitives, 
+but not for subject/object (and possibly indirect object) 
+tuples.  Type-theoretically, a (di)transitive verb 
+needs multiple nominal constructs in place to 
+yield a proposition-like synthesis.  Moreover, 
+verbs might command multiple clauses governed 
+by various case-forms: locative constructions, 
+benefactive, instrumentive, etc., each marking 
+that an associated phrase presents some detail 
+(the where, why, how) for the central verb 
+in the immediate surrounding phrase (or whole sentence).
+
+In the realm of conceptual synthesis, that is, verbs 
+function uniquely: they don't alter a single aggregate so 
+much as collate a collection of distinct nouns 
+(or noun-phrases), using a roster of thematic relations, 
+in particular %-- the sorts of connections marked 
+by declension, for relevant languages %-- to organize 
+the significatory role of different constituents.  
+A sentence, in general, accrues various kinds of detail 
+related to its central verb.  Some of these 
+would seem to be intrinsic to the verb's meaning; some, less 
+so.  Given */donate/*, for example, it seems necessary 
+to indicate (perhaps by implicit context) a giver, a gift, 
+and a recipient:
+
+()  Last weekend we donated a hundred dollars to the animal shelter.
+
+Here, the indicator of */when/* is subsidiary, adding merely a tangential 
+factoid to the overall sentence, but the other components are 
+mandatory given the relevant sense of "/donate/".  A verb's 
+"t/theta grid/" models elements that are sufficiently 
+intrinsic that special grammatic forms embed them concisely, 
+as in 
+
+()  We gave the animal shelter a hundred dollars 
+
+However, indirect objects may be ineliminable for a completed idea while 
+also resistant to the tranform whereby a clause headed 
+by */to/* moves before the direct object, dropping the preposition.
+It is not clear why the abridge indirect-object form is acceptable 
+with some English verbs and not others.  Be that as it may, 
+verb "/details/" exist in multiple levels of essentiality, 
+from a core subject/object nexus (spanned by theta grids) to 
+essential and then eliminable thematic relations, plus perhaps marginal 
+emendations (like when something happened, or further elaboration 
+on motives or context).  Verbs have implicit 
+"h/slots/" for such variegated thematic roles, and by observing 
+the particular slot slated for a given word (via theta formations) 
+or phrases (via case-marking, particular, in English, leading 
+propositions) we identify the intended role for the constituent.
+
+In presenting conceptual syntheses, then, verbs operate via structures 
+of roles rather than singular re-staging.  We can still say that a 
+given cognitive staging is intrinsic to inferred meaning; the point 
+here is that verb effectual such processes on a larger scale, 
+spanning the breadth of a phrase or sentence, whereas other 
+parts of speech (e.g., adjectives) operate more locally.  
+A theory of cognitive staging can cover both cases if it 
+models of thematic roles and relations.  In type-theoretic 
+terms, that structural enhancement would be akin to 
+enlarging the scope of lambda-expressions to cover not just a 
+function with a tuple of parameters, but parameter-packs that 
+are indexed via distinct role-attributions for each argument.  
+Insofar as verb-constructions are broken down into role 
+occupied by individual nouns or noun-phrases, we can still 
+discuss the cognitive phenomenon of a single word 
+acting in relation to a prior aggregate; the difference 
+for verbs is that we need to describe */which/* thematic 
+role governs how the verb is oriented to the concept that 
+it transforms.  The conceptual pairing of a verb to a 
+locative phrase, for example, would be different than the 
+same phrase (perhaps swapping in the preposition) figured 
+as indirect object, or genitive, or so on.
+   
+// //  Conclusion
+
+The premise that individual words conceptually modify logically 
+precedent aggregates may seem underwhelming, as a foundation 
+for nontrivial further theory.  But I want to extend that 
+perhaps obvious starting point with two further arguments.
+
+First, I claim that this overall phenomenon can be taken as a 
+groundwork for syntactic theory to begin with.  
+When interpreting a sentence, we need to queue up words 
+in a well-determined order, each acting as a 
+kind of conceptual modifier or transform applied to 
+syntheses borne from precedent words.  To sequence 
+which word comes on the stage when demands a 
+rigorous set of phrase-bounding and morphosyntactic 
+conventions, which emerge organically within in 
+language in the form of syntactic rules.  
+Convetions in grammar can acquire rule-like status 
+without any central authority, in large 
+part, I believe, given the processing 
+demands of aligning "/staging/" word-order to 
+optimal cognitive construal of conceptual 
+aggregates.
+
+Second, given the accretionary nature of conceptual synthesis, 
+any theory of meaning must address the intermediate 
+aggregates, in between lexical word-meanings and sentence-level 
+propositions.  To the degree that we use formal models, 
+they should be explanatory rather than circular.  
+The idea "/red box/" obviously intersects the 
+concepts */box/* and */red/*.  If we then analyze this 
+signification as, say, the set of things that are both 
+red and boxes, then such a construction might be 
+theoretical progress if we had some literal engineering 
+whereby words reference sets.  If we accept set-theoretic 
+language in just a metaphoric way, describing 
+"/red box/" as the intersection `redbox; merely restates what 
+should be analyzed.
+
+Bolt `etal;, mentioned earlier, propose Conceptual Space theory 
+as an alternative to symbolic logic, for modeling 
+aggregates like "/red/" plus "/box/".  To the extent that 
+our overall conceptual worlds may be represented via 
+quasi-mathematical operations, then aggregative meanings 
+can be seen as functors between Categories of grammatic 
+formations and of multi-part conceptual units, respectively  
+(composition operators on a purely syntactic level, 
+and conceptual syntheses on a signifactory plane, 
+being mutually commutative in the sense of 
+commutative diagrams).  Unfortunately, I am not 
+convinced that there is any logico-mathematical 
+formulation that models conceptual 
+synthesis in any general case.  The meaningfulness 
+of intermediate conceptual aggregates, from my 
+perspective, depends on some sort of 
+"t/cognitive staging" and the use of partially-formed 
+perceptual images as precursors to purposeful action.  
+I suggest that, almost always, such intermediaries 
+depend on extralinguistic cognitive engagement.
+
+There is certainly a role for semantic theories: 
+many patterns of meaning have a recurring structure 
+that doubtless guides cognitive schemata, 
+such as the mass/count distinction within modes 
+of plurality/multiplicity; and 
+For another example, alongside type-theoretic 
+grammar, there is a school of type-theoretic 
+*/semantics/* which highlights the partition 
+of our discursive domains into, in effect, 
+distinct "t/ontological regions/", such as 
+physical objects, living things, sentient 
+beings, rational agents.  The superposition of 
+multiple such regions gives conceptual structure 
+to sentences about referents that exist in multiple strata:
+
+()  That newspaper, the one on the table, just moved to 10th street 
+and laid off half its staff
+
+()  I recommend you print out this book from the PDF link
+
+Also, apparent region violations drive many functional metaphors:
+
+()  These flowers really want some sunshine
+()  This drought has left the soil parched
+()  The spell-checker thinks "/hooman/" isn't a word.  
+
+Examples such as () through () have been analyzed in terms of 
+type coercions, dependent types, and other structures 
+recognized within mathematical type theory (and 
+formalized within the semantics of computer programming languages).
+
+These are options for formal semantics that have, I contend, 
+explanatory merit vis-a-vis natural language, but they describe 
+constraints on cognitive processing more than end-to-end 
+algorithms for constructing signified meanings.  
+They do not, in my opinion, substitute for a cognitive 
+model of intermediate staging, that is necessary 
+to bridge lexical word-sense with full-phrase propositional content.
+
+To be sure, I have offerred rather inchoate characterization 
+of this "/staging/".  The space of mid-level conceptual 
+aggregates belongs neither to a realm of abstract reasoning nor 
+in-the-moment sensate perception, so it may be difficult to 
+analyze without special-purpose vocabulary and paradigms.  
+Whatever their details, I believe such theories' central 
+concerns will be */extra/*-linguistic.  This is not a kind 
+of */limited/* contextual detour, where resolving 
+ambiguities such as "/bat/" (animal or wooden instrument) depends on 
+societal background knowledge.  Since conceptual syntheses are 
+reshuffled with almost every world, we are  
+invoking "t/staging/" faculties at almost every  
+step, such that sentence-understanding is intrinsically a 
+process that swings back and forth between 
+extra-linguistic and syntactic/semantic/pragmatic inference.
+
+Against this backdrop, I think I can more rigorously 
+defend my earlier-stated object to the 
+idea (explicit or not) that sentences signify propositions.  
+Discourse may indeed */communicate/* beliefs, 
+but that phenomenon emerges from a multifaceted 
+process integrating both linguistic and extra-linguistic 
+ideations.  We cannot account for proposition-like 
+meanings */within the affordances/* of syntax, semantics, 
+or pragmatics alone, at least without widening the scope 
+of one or more of these to an extent that is not explanatorily 
+productive.
+
+Holding, in our minds, semi-complete precursor images of 
+future or hypothetical objects, surroundings, and 
+situations is an intrinsic part of rational agenthood.  
+During talk, we exploit these capabilities 
+to syncronize behavior among two or more people, 
+leveraging future-oriented cognitive routines even 
+when the focus of our discourse exists in the immediate 
+presence.  Cooperation between multiple individuals engenders  
+abstracting demands %-- refactoring perceptual experience 
+into propositional/enactive schemata %-- analogous to 
+the distancing effects of future-planning.  
+
+Certainly, purposeful action coordinated among several people requires 
+each to know (and, in general, share) each other's beliefs, 
+so communicating what we deem factual is an important part of 
+discourse.  Express not just */what/* we believe, but */why/*, 
+is relevant because we want others to hear our rationales.  
+Given these requirements, it is inevitable that human 
+language evolved structures within almost every sentence 
+that express one or more beliefs %-- either as assertions that 
+are the sentence's point or preambles to some further 
+comment, suggestion or request %-- and moreover 
+encode speaker-relative perspectives and foreknowledge that 
+clarify their origins.  This epistemics-oriented disclosure 
+emerges from the overall regime of cognitive linguistic 
+processing.
+
+But we should not conclude from such notions that 
+sentences */signify/* propositions %-- i.e., that there 
+is a series of formal rules governing a mostly 
+determinative process through which a signifying process, 
+existing on a minimal level in the mapping of lexemes 
+to word-sense, propagates outward to predicate 
+structure, in a logical or mechanical fashion.  
+Paraphrases such as "/red box/" as the set-theoretic 
+intersection of "/redness/" and "/boxness/" may 
+create the illusion that the transformative 
+effects of one word on a priorly-processed aggregate 
+can be modeled via formal systems.  However, such 
+formalization, I contend, will be either circular 
+(explaining not much, in the end) or oversimplistic 
+(explaining only cherry-picked linguistic artifacts, 
+not typical usages and utterances).  To the degree 
+that cognitive transforms and "/staging/" are 
+amenable to rigorous analysis, such analysis 
+would have to be grounded in an overarching 
+cognitive science.
+
+Meanwhile, I have also argued that any cognitive 
+science, to be comprehensive, has to work 
+with cognition as lived by flesh-and-blood 
+people in social, personalistic life-worlds.  
+Such an approach would be only tangentially a 
+*/natural/* science %-- the physicalistic 
+intuitions that lend systematicity and 
+disputative structure to studies of nature 
+would, in this context, dilute rather than 
+guarantee explanatory rigor.  I have proposed 
+phenomenology as an alternative foundation, 
+so %-- on this architecture %-- theories 
+of cognitive-semantic "t/staging/" 
+would be formulated on phenomenological 
+grounds.  Thus semantics would have a 
+kind of theoretical dependence 
+on cognitive phenomenology, and 
+syntax on semantics in the sense 
+that phrase-structure becomes entrenched 
+by virtue of word-order.  So cognitive 
+phenomenology can stand as a foundation 
+that support the multiple facets of the 
+linguistics project, even if it 
+lies outside the proper scope of that 
+discipline.  This is consistent with a 
+philosophy wherein cognitive 
+phenomenology provides an explanatory 
+scaffold for */all/* humanities.
+
+
+  
+    
+
+ 
+
+
+ 
+
+
+   
+
+
+ 
+
+
+ 
+
+
+
+ 
+ 
+
+
+  
+  
+    
+
+At any given stage in this process, syntax clarifies which 
+words belong to the conceptual aggregate targeted for 
+re-staging, as well as which word acts as a modifier, 
+for this specific step in intermediate processing.  
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+  
+
+     
+
+
+
+
+       
+
+
+
+
+(imagine: "/There's a mathematician in Poland who claims he's 
+proved the Reimann hypothesis about zeta zeros/").     
+
+
+
+
+
+
+ 
+   
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bats flying towards the stands are a risk to cameramen
+Last year I photographed bats hanging from a ledge in this case
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+
+    
+
+ 
+        
+      
+
+  
+
+
+  
+    
+
+
+
+
+
+Kowalewski addresses what is sometimes called the "t/demarcation problem/" %-- defending 
+linguistics as a legitimate science, not pseudoscience (astrology, say) %-- and moreover 
+the version of that problem relevant to linguistics based on constructed examples, 
+in contrast to more empirical/quantitative methods, such as corpus analysis, or the measurable 
+performance of AI agents designed according to computational linguistics principles.
+ 
+  
+    
+
+ 
+
+   
+
+
+the .... of 
+
+
+a form 
+of cognitive phenomenology being     
+          
+
+
+
+
+
+
+
+
+Computer software which merely replicates 
+these visual workflows cannot be said to emulate human 
+intelligence 
+   
+     
+  
+
+
+ 
+  
+ 
+ 
+   
+
+
+
+
+  before selecting a course of action %--  
+
+
+
+In particular, it is an intrinsic 
+
+
+  
+
+  
+
+
+    
+cau  
+
+
+  
+
+     
+      
+
+
+    
+
+ 
+
+   
+
+   
+
+   
+
+ 
+
+
+[https://www.ling.uni-stuttgart.de/institut/ilg/team/Dateien/Quantifier_Scope_Ambiguities.pdf]
+
+<<
+
+every band performed three songs
+everyone sang along to one song or another
+
+
+
+
+
+ is not prima facie self-evident (like 
+laws of logic) 
+
+
+
+
+any methodology 
+based on formal descriptions needs both to explain why observed patterns exist   
+
+
+
+
+
+
+
+describing formalizable 
+patterns that */do/* exist in (any particular) language is neither necessary nor 
+sufficient for a theoretically useful exposition.  
