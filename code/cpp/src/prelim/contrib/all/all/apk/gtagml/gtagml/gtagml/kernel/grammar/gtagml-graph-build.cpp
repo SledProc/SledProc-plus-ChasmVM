@@ -41,7 +41,18 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
 
 void GTagML_Graph_Build::init()
 {
+ jats_buffer_.setBuffer(&jats_array_);
+ jats_buffer_.open(QBuffer::WriteOnly);
 
+ xml_writer_.setDevice(&jats_buffer_);
+
+ xml_writer_.setAutoFormatting(true); // Optional: for human-readable XML
+ xml_writer_.writeStartDocument();
+
+// xml_writer_.set
+// xml_writer_ = QXmlStreamWriter(jats_);
+// jats_stream_.setString(&jats_); // = QTextStream(&jats_);
+// xml_writer_.setDevice(&jats_stream_);
 }
 
 
@@ -52,6 +63,9 @@ void GTagML_Graph_Build::auto_new_paragraph()
 
 void GTagML_Graph_Build::enter_italics_mode()
 {
+// xml_writer_.
+
+
  parse_context_.flags.italics_mode = true;
 
 }

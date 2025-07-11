@@ -107,6 +107,8 @@ public:
 
  QString get_path_root();
 
+ void save_jats(QString path);
+
  QString use_info_path();
 
  GTagML_Project_Info* init_project_info(QString folder = {});

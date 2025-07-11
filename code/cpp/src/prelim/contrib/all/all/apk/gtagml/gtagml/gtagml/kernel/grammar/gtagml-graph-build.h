@@ -19,7 +19,15 @@
 
 #include "accessors.h"
 
+
+#include <QXmlStreamWriter>
+#include <QBuffer>
+
+#include "textio.h"
+
+
 #include "kans.h"
+
 
 KANS_(GTagML)
 
@@ -109,13 +117,26 @@ class GTagML_Graph_Build
 
  u1 held_semantic_mark_mode_;
 
+ QXmlStreamWriter xml_writer_;
+ QString jats_;
+ QTextStream jats_stream_;
+ QBuffer jats_buffer_;
+ QByteArray jats_array_;
+
 public:
 
 
  ACCESSORS__RGET(GTagML_Parse_Context ,parse_context)
  ACCESSORS(GTagML_Parsing_Modes ,current_parsing_mode)
 
+ ACCESSORS(QString ,jats)
+
  GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& document_info);
+
+ void save_jats(QString path)
+ {
+  KA::TextIO::save_file(path, jats_);
+ }
 
  void init();
 
