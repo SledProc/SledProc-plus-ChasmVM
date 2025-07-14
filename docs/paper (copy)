@@ -144,33 +144,33 @@ some different proposition.
 If these points are valid, then the project of formulating semantics as the search 
 for rules governing how sentences @/S encode propositions @/P is notably limited.  
 
-I don't want to make too much out of ambiguity in and of itself.  A "/wooden bat/", 
-depending on context, might connote either baseball or sculptures of flying animals.  
-Some measure of indeterminacy does not automatically disqualify "/truth conditional 
-semantics/" (for example) any more than multiple word-senses do.  
+A plausible rejoinder from some hypothetical  
+linguist might be that a measure of indeterminacy does not disqualify a "/truth conditional 
+semantics/" project (for example) any more than multiple word-senses do.  
 Because "i/dresser/", say, can be either someone donning clothers or a piece of furniture, 
 people must discern which is meant, usually with the aid of background knowledge.  
-Anyone who believes that such facts problematize a particular semantic theory 
-need not progress to */sentence-level/* ambiguity.
-
-However, the */lexical/* underdeterminacy of "/dresser/" or "/bat/"  
+This shows that extra-linguistic thought processes can be woven through 
+multiple significatory layers, and anyone who believes that such facts problematize 
+linguistics overall need not progress to */sentence-level/* ambiguity.  
+However, the */lexical/* underdeterminacy of "/dresser" or (e.g.) 
+"/Trumps/" (in cards, in politics) or "/bats/" (in caves, in baseball dugouts) 
 is a purely local phenomenon that can't be equated with more holistic 
 examples such as (1)-(14); what's at stake in the latter is that plausible 
 reframings of mental construal change our interpretation of each sentence 
 from the top down.
 
 To put it differently, it's credible to imagine homonyms like "dresser"  
-as surface-level accidents, and to contemplate a lexical "t/deep structure/".  
+as surface-level accidents, such that the lexical roster, too, has "t/deep structure/".  
 Perhaps lurking behind Ebglish lies an idealized language where senses 
 could be marked, so "d/person/" and "d/furniture/" dresser become just 
 different words.  The problem on a larger scale is that sentences are supposed to 
 function via composition: as words signify concepts, so sentences 
 convey propositional content because they merge concepts according 
-to specific recipes (syntax matters because multi-concept complexes 
-are not just unstructured "t/bags/": the King loves the Queen versus vice-versa).  
-I argue from cases like (1)-(14) that even after fully digesting 
-compositional intent, predicate signification remains underdetermined.
-  
+to specific recipes.  Syntax matters because multi-concept complexes 
+are not just unstructured "t/bags/": the King loves the Queen versus vice-versa.  
+   
+However, I argue from cases like (1)-(14) that even after fully digesting 
+compositional intent, predicate signification remains underdetermined.  
 To borrow the apologia from the lexical realm, we'd have to argue that 
 lurking behind any actual language is an idealized language which 
 "/marks/" all logically salient elements %-- quantifiers, anaphora, deictics 
@@ -202,11 +202,7 @@ recognizing consistent phonemes despite accent variations.
 It is true, say, that "/Trump/" should be interpreted differently 
 when people are playing bridge or talking politics, but this means that 
 ambient situations nudge speakers in contextual ways when construing how 
-their spoken language should be mapped to its ideal projection.  Context 
-disposes us to "/label/" a word like "/Trump/" as either a person or a card 
-suit.  But such are antecedent to semantics proper; for theoretical 
-purposes we can take the lexicon as enriched with such labels */a priori/*.
-The cognitive 
+their spoken language should be mapped to its ideal projection.  The cognitive 
 gap between actual and ideal dialects is orthogonal to linguists' 
 project, which is to describe rules of the latter.    
 
@@ -216,6 +212,16 @@ self-appointed State of the Union Address for recent intellectual history.
 It's more that my goal in this paper is to suggest 
 an alternative metatheory wherein notions of sentences signifying propositions 
 and idealized dialects are at best provisional and emergent.   
+
+It */does/* seem that many schools of thought have 
+little to say about semantics */other than/* formulating @/S-to-@/P mappings.  
+Influential writers have not shied 
+away from proposing that "i/the meaning of a proposition is given by its truth 
+conditions/", and perhaps added details or hedging are not so much about 
+challenging the basic Davidsonian premise but, instead, defending 
+an expanded definition of "/truth conditions/".  
+The problem is 
+that 
 
 No prehistoric King ever instructed his subjects to go create a 
 language for expressing truth conditions; even when "i/the meaning of a 
@@ -229,10 +235,43 @@ is an */emergent property/* of human verbal communication.
 The existence of coherent @/S-to-@/P mappings is not an axiom to 
 deploy in linguistic explanations, but a cognitive faculty to be explained.
 
+I contend that much semantic theory has developed in a paradigmatic 
+circle influenced by formal logic %-- first-order, second-order, modal, 
+and so forth %-- such that rules of meaning-composition can be 
+compiled by analogy to rules of a logical system.  Given any 
+assertion that a complex of words collectively means @/x %-- 
+once it is assumed that each individual word therein has its 
+established signification %-- then a proper semantic theory 
+would explain how @/x derived from the complex via a systematic 
+operations in some formalizable domain.  With sufficient detail, these 
+constructions could be reenacted (and so the meaning inferred) via 
+any formal system that can implement the compositional operations.  
+Purely human phenomena, such as societal knowledge, may factor 
+in to both the resolution of localized lexical multiplicity 
+(dresser, Trumps, etc., with their disjoint meaningss) and to 
+uncertainties of pragmatic context (there are numerous 
+individuals last-named Trump), but between the lexical and pragmatic 
+realms lies a semantic infrastructure that plays out in mechanical, 
+computable ways.  This "/red/", say, places an object in the 
+set of red things.  We then add logical formulations as needed, 
+playing whackamole with counter-examples: auburn-haired Anne 
+is not in our world's set of red things, but she's a redhead 
+in the world of Green Gables.  
+
+In syntax, the most common formalizing mechanic is a context-free 
+grammar: if @/s is a valid string in some language, then we can 
+list off a set of "t/production rules/" that generate @/s from 
+prestipulated primitives.  Hyptothetically, formal semantics 
+would be similar: if a string means @/x, then such meaning could 
+be derived from individual word-significations by an analogous 
+set of deterministic rules.  This is an attitude I seek to critique. 
+
+
+
 To be clear, I do believe the value of signifying propositions is 
 self-evident.  My point is that any instance of @/S conveying @/P 
 is not just a linguistic phenomenon, but rather a detail of 
-two (or more) persons' social and collaborative interactions.  
+of two (or more) persons' social and collaborative interactions.  
 If I slip, fall, clutch my ankle, and grimace, someone will 
 conclude that I might be injured; but groaning "/ouch/" does not 
 express this through linguistic means.  Similarly, if I see a 
@@ -253,12 +292,8 @@ alternatives, but such judgment relies on knowledge of socio-cultural, not
 linguistic, facts.  In short, whatever a sentence means, it does so 
 %-- in the general case %-- not via linguistic structures alone, but 
 via the interplay of such structures with more general cognitive 
-and social-semiotic processes.  Consequently, linguistic 
-explanation alone is incomplete.  Moreover, these issues are sufficiently 
-holistic and entrenched that we cannot dismiss them as cognition   
-just bridging a gap beween real and ideal language, by analogy to 
-real and ideal dictionaries (where each distinct word-sense might 
-be marked in some disambiguating manner).  
+and social-semiotic processes.  Consequently, purely linguistic 
+explanation is explanatorily incomplete.
 
 Granted, for */any/* science */all/* explanation is incomplete.  
 Sciences have to work together across scales of phenomena 
@@ -266,13 +301,11 @@ and causal inter-dependence.  It is reasonable for a discipline to decide
 what is and is not in its theoretical */raison d'etre/*.  But theories 
 should at least itemize the compositional or causative networks 
 that relate phenomena in their own scope to those in peer 
-theories' purview.  Lexical plurality is one domain where 
-linguistics could be incomplete, because background knowledge 
-is needed to adjudicate competing word-senses.  But I believe 
-the */compositional/* indeterminacy of whole sentences 
-is qualitatively different, and reveals a more substantial 
-surface area where linguistic and extralinguistic 
-phenomena inter-penetrate.  While linguists 
+theories' purview.  For semantics, sentences are often 
+underdetermined (on purely linguistic grounds) with respect to their 
+signified propositional content.  I'd argue we need 
+extralinguistic cognitive accounts to articulate why @/S 
+means */this particular/* @/P.  But while linguists 
 should not necessarily pursue technical models of these 
 extra-linguistic processes, there's enough interpenetration 
 between language and general intersubjective reality that 
@@ -406,6 +439,7 @@ surrounding environments without immediately acting; we benefit
 from the chance to formulate responses thoughtfully, informed 
 by values, personal identity, and past experience.
 
+
 Suppose I stand by a platform waiting for a subway to arrive.  I need to board 
 the correct train.  To do so, I may well follow a well-rehearsed 
 protocol that might begin with hearing the train before seeing it: 
@@ -429,7 +463,7 @@ whose contours and boundaries are inferred via visual processing.
 Sight employs color variation to partition visual scenes, but 
 it is not as simple as isolating distinct color patches.  Given a 
 red rose in a blue vase, we cannot segment the image merely by 
-treating red as the flower and blue as the pottery.  
+treating red as the flower and blue as its container.  
 Color-perception has added complexity first because some chromatic 
 variation is expected in an extended region due to texture 
 and lighting; and second because visible substances have 
@@ -533,7 +567,7 @@ analytic/expository intent.
 Suppose I hold a colorful glass paperweight, maybe some 
 four centimeters in diameter.  I will most likely shift my 
 visual focus from place to place a couple times, even holding the 
-weight still, to discern the full color patterns on its visible 
+weight still, to digest the full color patterns on its visible 
 side.  Then I might turn it over.  Perhaps, to the touch, I infer that 
 the bottom side has a flattened base, which I might confirm visually 
 while rotating the object manually.  As I just begin that action I 
@@ -608,7 +642,7 @@ action, together with the observations and
 conceptualizations that sustain it.
 
 We therefore have a provisional network of theoretical 
-concepts %-- qualia, proprioception, protention, retention, synthesis, 
+concepts %-- qualia, protention, retention, synthesis, 
 episodicity, situationality, purposefulness, intentionality 
 %-- that help organize discussion about conscious states 
 and attitudes.  In other words, phenomenology
@@ -659,7 +693,7 @@ to construct ad-hoc sentences/utterances in service
 of theoretical claims.  Such methods 
 raise two questions: whether samples not taken from 
 real-life corpora are empirically valid, and whether a 
-language-user can simply rely on their own judgment 
+language-user can simply take their own judgment 
 (rather than conducting some survey) as determintive, 
 as to whether a sentence is meaningful or grammatical.  
 
@@ -675,9 +709,8 @@ serves witness to their theoretical value %-- no
 less than claims warranted by more empirical measures.
 
 In one discussion that elucidates metascientific 
-background for syntactic theory, Hubert Kowelewski 
-presents the work of Ronald Langacker, and by extension 
-Cognitive Grammar overall, in terms of "/Structural Empiricism/":
+background for these issues, Hubert Kowelewski 
+presents Cognitive Grammar in terms of "/Structural Empiricism/":
 
 Viewed through the lens of structural empiricism, Cognitive Grammar
 is therefore a family of models of a linguistic system.  Like any other scientific theory, 
@@ -700,8 +733,8 @@ of (instrument-enhanced) observation, at least for now.  Other phenomena
 (like "t/dark energy/") are left more open-ended, possibly subsumed under 
 such ontological realism or possibly artifacts of some more complex process 
 (like "t/phonons/", which behave like "i/particles/" of sound, but 
-that's largely a metaphor).  Natural selection or "t/design/" would not be an 
-object, but rather an encompassing system wherein adaptation drives 
+that's largely a metaphor).  A "t/designer/" for nature would not be an 
+object, but rather an encompassing system where adaptation drives 
 evolution.  Potentially "t/dark/" matter and energy will ultimately 
 be given a similarly indirect and holistic cosmological interpretation, 
 rather than deemed to refer to a specific kind of field or particle.  
@@ -725,10 +758,7 @@ counterfactuality scale [viz., logical impossibility is much stronger
 than the contingent fact of something not having yet occurred, with 
 various intermediates].  However, this conviction overlooks the fact 
 that many useful scientific models involve clearly counterfactual scenarios 
-[whose] role is not merely heuristic or pedagogical.
-
-He continues:
-
+[whose] role is not merely heuristic or pedagogical. [para] 
 The use of fictional models in natural sciences can be accounted for in
 philosophical terms.  In the framework of structural empiricism, isolated
 systems, frictionless pendulums, and perfect liquids are treated just like
@@ -746,8 +776,9 @@ adjusted with respect to the factors omitted in the idealization.
 A reasonable paraphrase vis-a-vis constructed sentences is that, for purposes 
 of expositing semantic or syntactic claims, the universe of linguistic 
 objects is broader than merely the totality of sentences humans have in 
-fact created.  Ad-hoc hypotheticals also belong to that 
-domain if they belong to regimes for idealized model-building.
+fact created.  Ad-hoc hypothetical sentences also belong to the 
+linguistic domain if we consider this domain to include materials 
+for idealized model-building.
 
 I personally would put it thus: what makes a sentence an object in the 
 domain of entities spotlighted by linguistics is not necessarily the 
@@ -756,7 +787,7 @@ rather because upon that sentence we can apply observations, analyses,
 annotations, and so forth whose ordinary ground is real-world 
 sentences %-- we can, for instance, note syntactic, morphological, or lexical patterns, 
 and point out where pragmatic interpretation is needed.  In terms of formal 
-syntax, any sentence %-- hypothetical or real %-- belongs fully to the English 
+syntax, a hypothetical sentence belongs fully to the English 
 universe if the quetion of whether that sentence conforms to conventional 
 English grammar can be answered in the affirmative, negative, or something 
 in between.  By analogy, complex numbers are not mathematical objects 
@@ -765,7 +796,7 @@ because we can apply quantitative techniques to them (addition, multiplication,
 exponentiation, differentiation, integration, infinite series/sums/products, etc.).  
 Given a sentence, we can write down each word's part of 
 speech; track pronoun-antecedent pairings and singular or plural alignment; observe 
-how inflections indicate verb-tense; and etc.: minimal operations in the 
+how inflections indicate verb-tense; and etc. %-- minimal operations in the 
 syntactic and semantic realms analogous to addition and vector or scalar 
 multiplication in the quantitative.  Such operations apply equally 
 whether samples are real or hypothetical.
@@ -774,9 +805,9 @@ My earlier subway-platform speculation was similarly about hypothetical
 circumstances.  I have caught New York subways in real life, 
 but that's beside the point: we are primed to learn from experience, 
 but in a manner that abstracts nonsalient details.  So, vividly memorializing 
-past experience is actually a deviation from ordinary rationality.  With respect 
+past experience is a deviation from ordinary rationality.  With respect 
 to the intellectual processes involved in learning from experience, 
-distilling patterns from */hypothetical/* scenarios is arguably 
+distilling pattern from */hypothetical/* scenarios is arguably 
 more realistic than introspective reconstructions of real ones.  
 Husserl, too, builds many analyses around constructed situations %-- 
 a mannequin in a shop window, our perceptual synthesis of a sphere.
