@@ -135,7 +135,8 @@ public:
 
  void save_jats(QString path)
  {
-  KA::TextIO::save_file(path, jats_);
+  //jats_ = QString::fromLatin1(jat)
+  KA::TextIO::save_file(path, jats_array_);
  }
 
  void init();

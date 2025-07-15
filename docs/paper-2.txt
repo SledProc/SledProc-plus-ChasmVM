@@ -148,7 +148,7 @@ I don't want to make too much out of ambiguity in and of itself.  A "/wooden bat
 depending on context, might connote either baseball or sculptures of flying animals.  
 Some measure of indeterminacy does not automatically disqualify "/truth conditional 
 semantics/" (for example) any more than multiple word-senses do.  
-Because "i/dresser/", say, can be either someone donning clothes or a piece of furniture, 
+Because "i/dresser/", say, can be either someone donning clothers or a piece of furniture, 
 people must discern which is meant, usually with the aid of background knowledge.  
 Anyone who believes that such facts problematize a particular semantic theory 
 need not progress to */sentence-level/* ambiguity.
@@ -910,7 +910,7 @@ my mind reinforce each other; and each can be said
 to depend on the other, from an expository 
 and justificatory point of view.  
 
-As much as () and () are hypothetical */sentences/*, the 
+As much as () and () are hyptothetical */sentences/*, the 
 imagined contexts %-- the speaker in the kitchen with 
 John %-- are hypothetical occurrences in a cognitive-science 
 framework.  My discussion just now focused 
@@ -1136,7 +1136,7 @@ contexts %-- affixing "/black/" inseparably to
 primarily a sensate quale but a constituent of an enumeration.
 
 Phrases built around material objects thereby evidently 
-pan outward from their minimal physical substantiation 
+pan outward from their minimal physical subtantiation 
 to the ambient situational context, with word-order 
 marking a parallel trajectory.  This is a syntactic 
 principle in the sense that "/tin red box/" is ill-formed 
@@ -1275,7 +1275,7 @@ such as multiplication before addition).  Parsing high-level code is therefore a
 matter of reducing source files (which have extra structures such as nested 
 expressions) to a simpler representation based on token-sequences 
 (such details as nesting become "t/flattened/" to a single list, which works 
-because subroutines enforce a contract about how the program stack should be used). 
+because subroutines enfoce a contract about how the program stack should be used). 
 
 Despite its simplistic provenance, the "t/push/transfer/" execution model 
 has some interesting resonance with natural language.  For one 
@@ -1623,7 +1623,7 @@ orientation and perspectival vantage.  Such details may
 be manifest temporally (e.g., via choice of verb tense/aspect), 
 spatially (via locative constructions and deictics), perceptually 
 (through, say, figure/ground, single/plural, mass/count, and landmark/trajector pairings), 
-or in terms of "t/narrative construal/" from an evidential 
+or in terms of "/narrative construal/" from an evidential 
 standpoint (I argued earlier how rhetorical patterns 
 imply evidential narratives even if these are not marked 
 directly on a morphological scale) or local qualities, such as 

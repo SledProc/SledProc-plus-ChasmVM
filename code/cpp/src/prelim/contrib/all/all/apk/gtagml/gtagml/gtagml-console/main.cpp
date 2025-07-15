@@ -66,7 +66,9 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
 
  gdoc->save_jats(path + ".jats");
 
- return 0;
+ qDebug() << "path = " << path + ".jats";
+
+ return; // 0;
 
  GH_Block_Writer* blw = new GH_Block_Writer;
 

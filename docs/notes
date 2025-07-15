@@ -1,0 +1,24 @@
+Even in the context of machine code itself, low-level 
+concepts are incomplete at anything other than strictly local contexts.  
+For instance, a sequence of instructions that push values onto a 
+program stack %-- and then transfer execution to an addressed subroutine 
+%-- are carrying out a pattern whose presence is due to compiler's 
+translations of higher-level constructions.  
+
+
+[https://www.degruyterbrill.com/document/doi/10.7312/gros18162-009/pdf?licenseType=restricted&srsltid=AfmBOoqAGw6I3wY_ItwcjsagdetncuOZ-LGXe7HnpNtrPvoKmqnm7hfU]   
+
+
+
+Taking the first two points in combination, such arguments 
+suggest priorities for syntactic theory: in particular, modeling 
+the ordering rules such that structural patterns in syntax map 
+to a sequential order of words seen as effects in a realm of 
+cognitive staging %-- i.e., the natural analog to postordering 
+parse-graphs in computational languages; and modeling the gradations of 
+thematic relations' centrality, between the mandatory theta 
+grid on the one hand, and marginal factoids on the other.  
+Representations of sentence structure %-- dependency grammar, 
+x-bar, and so forth %-- 
+should be assessed based on how rigorously they document 
+these syntactic phenomenon in particular. 
