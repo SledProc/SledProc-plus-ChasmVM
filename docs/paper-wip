@@ -159,13 +159,13 @@ compositional intent, predicate signification remains underdetermined.
   
 To borrow the apologia from the lexical realm, we'd have to argue that 
 lurking behind any actual language is an idealized language which 
-"/marks/" all logically salient elements %-- quantifiers, anaphora, deictics 
-(imagine marking a proximate versus distal "/there/", or abstract versus concrete 
-"/here/"), 
-conjunctions (cf. "/and/" as temporal as in "/John quit his job and moved out of town/", 
-wherein we hear "/and */then/*/") %-- with enough granularity to forestall 
+"t/marks/" all logically salient elements %-- quantifiers, anaphora, deictics 
+(imagine marking a proximate versus distal "m/there/", or abstract versus concrete 
+"m/here/"), 
+conjunctions (cf. "m/and/" as temporal as in "m/John quit his job and moved out of town/", 
+wherein we hear "m/and */then/*/") %-- with enough granularity to forestall 
 all compositional ambiguities.  We can imagine some inflectional variation 
-on words like "/all/" to distinguish crisp from fuzzy domains, or nested from 
+on words like "m/all/" to distinguish crisp from fuzzy domains, or nested from 
 independent quantification; or morphological features on pronouns to 
 distinguish verb subjects from objects in anaphoric reference.  But 
 should we theorize ideal languages that subsume all such ambiguities 
@@ -180,7 +180,7 @@ syntactic conventions and the semantic properties of specific word-classes
 (quantifiers, pronouns, and so forth).
 
 To the degree that speakers need to employ extralinguistic reasoning, 
-those occasions should be treated as individuals mentally refining the 
+those occasions would then be treated as individuals mentally refining the 
 actual lexicon to an approximated ideal.   
 It is true, say, that "/Trump/" should be interpreted differently 
 when people are playing bridge or talking politics, but this means that 
@@ -196,7 +196,7 @@ project, which is to describe rules of the latter.
 I contend that paradigms authorizing linguists and philosophers to 
 imagine such ideal languages %-- as their focal topic %-- leads us 
 to underestimate the theoretical dependence of linguistics 
-on other disciplines.  By way of example, sentences 1-14 suggest 
+on other disciplines.  By way of example, sentences 1-12 suggest 
 that the specific @/P derived from an @/S 
 depends (in part) on addressee's rational acts that aren't linguistic 
 in nature.  The reason why quantifier scope is nested in (4) but not (3) is that 
@@ -211,6 +211,34 @@ holistic and entrenched that we cannot dismiss them as cognition
 just bridging a gap between real and ideal language, by analogy to 
 real and ideal dictionaries (where each distinct word-sense might 
 be marked in some disambiguating manner).  
+
+No prehistoric King ever instructed his subjects to go create a 
+language for expressing truth conditions; even when "i/the meaning of a 
+proposition is given by its truth 
+conditions/" we have to ask */why/* sentences encode truth conditions (or 
+are optimized to do so).  People don't talk out of some abstract desire 
+to assert fragments of symbolic logic, but rather to coordinate their joint 
+activity.  It's easy to see why logically transparent statements are an 
+important part of that, but still, language's ability to convey beliefs 
+is an */emergent property/* of human verbal communication.  
+The existence of coherent @/S-to-@/P mappings is not an axiom to 
+deploy in linguistic explanations, but a cognitive faculty to be explained.
+
+To be clear, I do believe the value of signifying propositions is 
+self-evident.  My point is that any instance of @/S conveying @/P 
+is not just a linguistic phenomenon, but rather a detail of 
+two (or more) persons' social and collaborative interactions.  
+If I slip, fall, clutch my ankle, and grimace, someone will 
+conclude that I might be injured; but groaning "/ouch/" does not 
+express this through linguistic means.  Similarly, if I see a 
+car veering dangerously close to my friend John from behind him, shouting 
+"/John/" to get his attention does not make that word signify 
+"/watch out!/".  In most communication, linguistic structure 
+plays a more prominent role %-- only rarely do we convey ideas through vocalization 
+alone, untethered from syntax and semantics (and pragmatics) %-- 
+yet just because propositions get conveyed 
+in a linguistic context does not ensure that */why/* or */how/* this 
+happens is fully explainable in linguistic terms.
 
 Lexical plurality is one domain where 
 linguistics is obviously incomplete, because background knowledge 
@@ -233,8 +261,6 @@ therefrom.
 
 
 ///   Linguistic Foundations: Phenomenology and the Philosophy of Science?
-
-
 
 I argue in this section that (Husserlian) phenomenology and the philosophy of 
 science can jointly offer a framework for justifying linguistic 
@@ -795,6 +821,74 @@ as () and () hopefully illustrate.
 // //
 
 
+"t/The meaning of a sentence is a function of its words and 
+how they are composed/".  In itself, that seems uncontroversial, 
+except that */words/* are not combined */per ser/*; rather, 
+the concepts to which words "t/point/".  There are two 
+key questions: how this "t/pointing/" works; and how 
+*/concepts/* are combined.
+
+A good example of formal answers to the latter question is 
+Bolt `etal;, based on Peter `Gardenfors;'s Conceptual Space 
+theory, alongside a syntactic approach related to Categorial Grammar 
+and mathematical Category Theory.  Consider "t/red box/", and 
+(provisionally) define the concepts set-theoretically: 
+*/red/* means the set of red things; */box/* means the set of 
+boxes (or box-like things).  Combining the concepts yields 
+the set-intersection.  Meanwhile, syntactically, that 
+compositional pattern is cued by the left-adjacency of 
+*/red/* before */box/*, which in English binds 
+adjectives to nominal targets.  Thus we have a 
+syntactic operation/relation (left-adjacency) and a 
+semantic operation (set-intersection).  The gist 
+of [] is that mapping the */phrase/* to its signification 
+depends not just on mapping the two */words/* but also 
+interpreting adjacency, here, as "t/meaning/" intersection.
+
+Bolt `etal; generalize this kind of insight by proposing  
+Categories (in the mathematical sense) for syntax and semantics, 
+with */lexical/* word-meanings serving as maps (technically 
+*/functors/* from one to the other.  Because functors 
+project "t/morphisms/" (transforms */in/* Categories) from one Category 
+to another, structures of syntactic operations 
+project onto semantic/conceptual structures systematically, 
+extending the lexicon-to-concept functor to aggregate 
+phrases.  In other words, we can give a mathematical gloss 
+to "t/combining concepts/", and specifically the role of 
+syntax in defining compositional patterns than get transferred 
+to the semantic plane. 
+
+For Bolt `etal;, then, syntax and semantics develop in consort.  On the 
+one hand we have theories for how to properly model syntactic 
+structure (e.g., Categorial Grammar).  On the other, semantic theory 
+should define operations that are referenced by syntactic operations 
+by analogy to how lexicons define single words.  For [], Conceptual Spaces 
+supply the requisite semantic architecture, analyzing how 
+two concepts' respective "t/spaces/" can interact.  I am not convinced 
+of the explanatory value of 
+quasi-mathematical treatments of concepts, such as 
+advanced by `Gardenfors; (such criteria as "t/convexivity/" 
+feel forced to me, outside special contexts like color terms).  
+Nonetheless, Bolt `etal; codify what a formal treatment 
+of semantics and syntax should look for: having determined 
+a pattern of synthesis within linguistic components by 
+virtue of syntax, we seek a translation of that 
+synthesis into the conceptual register.  
+
+If we abstract away word-order (the left/right adjacency distinction), 
+Categorial Grammar resembles a kind of type-theoretical syntax 
+where Parts of Speech may be likened to a system of types, 
+such as nouns and propositions.  Because mappings from a tuple 
+of types to some result type are themselves a type, 
+we can build an arbitrarily large system 
+out of a small basis (e.g., noun/proposition).  
+Propositions are an overarching sentential type, 
+whereas phrases have intermediate types between propositions 
+and nouns.  A sentence is properly 
+formed if those intermediates resolve to propositionality, 
+via type-inference rules such reading (intransitive) verb-noun 
+pairs as producing propositionally complete clauses.   
+
 All of these paradigms assume that phrases compose 
 meanings by synthesizing concepts in order-dependent 
 ways, so it is important to examine how pairs of 
@@ -825,11 +919,12 @@ to the speaker; deictic augments descriptive reference
 )  in this red tin box ->  draws attention to the interior, with its functional 
 affordance of holding and storing contents
 
-)  chocolate brownies ->  adds detail possibly relevant to whether the 
-hearer will want to eat them (more inviting than "/brownies/" alone) 
+)  chocolate brownies ->  adds detail relevant to whether the 
+hearer will want to eat them 
 
-)  Mom's chocolate brownies ->  suggests that she made them, and 
-this fact is known to the listener.  On an alternative interpretation, 
+)  Mom's chocolate brownies ->  helps anchor the referent in situations 
+known to the listener (insofar as the brownies are not otherwise identified); 
+viz., Mom made them, and this fact is known to the listener.  On an alternative interpretation, 
 the brownies are */for/* Mom, but this is less likely given the rest of the sentence.
 
 
@@ -869,24 +964,17 @@ with concrete, sense-related meanings occupy some intermediate
 cognitive realm, neither abstract concept-clusters nor 
 photorealistic imaginary pictures.  This presumably reflects 
 cognitive anticipation of future behavior more generally: mentally 
-rehearsing planned actions (getting on a subway, introducing ourselves 
-to a friend of a friend, etc.) involves pictorial imagination to 
+rehearsing planned actions involves pictorial imagination to 
 some degree, but we focus on enactive schema more than sensory 
 details (maybe a temporal mirror-image of how perceptual 
-specifics likewise fade from memories).  Perhaps an important 
-percentage of our mental life similarly exists in an indeterminate 
-state with experienced, but sketchy, perception-expectations.  
+specifics likewise fade from memories).    
 If we can accept this as a feature of cognition as such, it yields a 
 natural framework for semantics.  Such semi-perceptual content 
-serves as a "/staging area/" for intermediate-level concept-aggregates, 
-like "/Mom's chocolate brownies/".  That idea is not complete in itself 
-%-- it must be plugged as a unit into some larger context %-- 
-but (arguably, at least) it gets encapsulated in a conceptual package, 
-one that is neither fully abstract nor vividly perceptually explicit.
+serves as a "/staging area/" for intermediate-level concept-aggregates.
 
 Syntactically, the word order seems fairly rigid.  This 
-is hardly self-evident, because each word's contribution 
-%-- "red" and "tin", say %-- feel unrelated.  Still, 
+is hardly self-evident, because each contribution 
+%-- "red" and "tin", say %-- feels unrelated.  Still, 
 evidently there are cognitive trends in the mental 
 "/staging area/" that yield a preference for 
 building conceptual aggregates via certain formulae.  
@@ -895,15 +983,10 @@ more intrinsic to the nature of their substrata appear
 closer to the noun than qualities which are more 
 incidental.  A metal box can be painted over, but will 
 never become wooden.  Hence "/red/" slots in 
-outside of "/tin/" ("/tin red box/" sounds wrong).  A color word binds more 
-closely when it is more definitionally inherent 
-to its vehicle ("t/red card/" in football, "/black belt/" 
-in karate; these have situational salience, beyond mere 
-sense-reports).  The distance from adjective to noun, 
-in short, conveys data about how the former actually 
-modifies.  Adjectives of compositional substance bind 
-tightly in general, so "/tin/" logically precedes 
-"/red/".  Such conventions evidently help due to  
+outside of "/tin/" ("/tin red box/" sounds wrong).  
+Adjectives of compositional substance bind more 
+tightly than color, which is ontologically "t/accidental/".  
+Such conventions evidently help due to  
 how adjectives play different roles in different 
 contexts %-- affixing "/black/" inseparably to 
 "/belt/" clarifies that the color, here, is not 
@@ -929,18 +1012,14 @@ in (), say, John and "/the stove/" represent two
 object-concepts which are inferred to stand as 
 attentional foci for the speaker.  They serve 
 as attractional zones, or foregrounds, absorbing 
-awareness of other details and backgrounds 
-(e.g., we perceive parts of the stove, its color, 
-objects leaning against it, etc., as accompaniments 
-to its holistic presentation rather than foreground 
-foci in their own right).  Since linguistic structure
+awareness of other details and backgrounds.  Since linguistic structure
 intuitively reconstructs perceptual organizations, 
 it makes sense that noun-phrases are cognitive-staging 
 milestones because their significands are cognitive-perceptual 
 attractors.  
 
 Type-theoretically, modeling some parts of speech as 
-function-like "t/morphisms/" helps capture the 
+"t/functions/" captures the 
 interplay of stasis and dynamics that typifies 
 cognitive "t/staging/".  Noun-like conceptual 
 aggregates have a kind of holistic unity that becomes 
@@ -953,14 +1032,12 @@ of adjectives mapping nouns to nouns captures the
 surface-level manifestation of a churning cognitive 
 underground, where intellectual labor is expended in  
 forming, altering (by assimilating new detail), and 
-re-establishing static precursor-images (in the sense of preparatory 
-ideations for future action).  Similarly, propositions 
-have a kind of situational stasis (as mental targets, 
-representations of states of affairs more than 
+re-establishing static precursor-images.  Similarly, propositions 
+have a kind of situational stasis %-- representations of 
+states of affairs more than 
 discrete objects, but still fixpoints within 
-our construal of facts and affordances surrounding us 
-%-- potentially in an anticipated future) which gets 
-destabilized when subordinate clauses become nested into 
+our construal of facts and affordances surrounding us %-- 
+which gets destabilized when subordinate clauses become nested into 
 superordinates.
 
 There are, of course, multiple protocols that could be used 
@@ -974,16 +1051,12 @@ of any single word on a conceptual synthesis established
 via preceding words, in a */logical/* ordering that 
 deviates from the sequence of enunciation, though grammar 
 determines how the latter maps to the former.  
-Type theory is representative here because function-like 
-words map one conceptual aggregate onto a transform, 
-thereby establishing a precedence order.
 
-To examine further, imagine a simple programming language that has 
-only a few components: function symbols, string (character-sequence) 
+To examine further, imagine a simple programming language with 
+just a few components: function symbols, string (character-sequence) 
 and numeric literals, and "t/variable/" 
 symbols that must be assigned a value before they are used. 
-The most common structure in such a language would be (by analogy 
-to real computer code) expressions consisting of a function 
+The most common structure in such a language would be expressions consisting of a function 
 symbol and one or more "t/arguments/".  The */interpreter/* 
 that executes programs would essentially 
 be a state machine, reading a sequence of symbols 
@@ -996,10 +1069,10 @@ codes (e.g., in the Unicode UTF-16 format).  Place the current
 value on a program stack.
 
 2)  If the current symbol is a variable, retrieve 
-its current value from a global index.  Because every 
+its value from a global index.  Because every 
 variable is initialized before use, we can assume that 
 any value is ultimately obtained from source code 
-as in (1), or read from an external source (such as a local file).
+as in (1), or read from an external source (like a local file).
 Again, place the current value on a program stack.
 
 3)  If the current symbol is a function-symbol, identify 
@@ -1017,19 +1090,15 @@ For sake of discussion, I will call this a "t/push/transfer/" execution
 model, given the two main operations (pushing a value, or transferring 
 control).  While this model is too simple for practical computer 
 languages, it serves as a useful case-study for real-world 
-compilers.  Forth, one of the earliest high-level languages, 
-had a structure pretty close to the one just outlined; and 
-in practical terms most languages reveal a sequence of 
-operations whose organization reflects the protocol just described.  
+compilers.
   
 Among the added complications relevant to a real-world push/transfer 
 implementation are %-- first %-- resolving polymorphically 
-"t/overloaded/" function symbols.  We can assume that the interpreter or compiler 
+"t/overloaded/" function symbols.  By stipulation, the interpreter or compiler 
 has access to a list mapping procedure names to a collection of signatures.  
 Selecting a correct overload is straightforward if there is one exact 
 signature-match given the current stack types.  However, most modern 
-programming environments recognize type-casts in which values of some types 
-may be used as if a different type (e.g., any integer is implicitly also 
+programming environments allow implicit type-casts (e.g., any integer is implicitly also 
 a decimal, with fractional part zero).  Moreover, modern languages commonly 
 adopt template-metaprogramming and/or class-inheritance systems where 
 a given variable-symbol could have multiple different types in different 
@@ -1039,7 +1108,7 @@ given sequence of parameter-values is considerably more complicated.
 A second difficulty for push/transfer mechanics is deriving the correct 
 sequence for presenting symbols to the "t/interpreter/" (in real life, said 
 interpreter is more like an abstract representation guiding the compilation 
-of high-level code into machine language, but we can still reason about source 
+of high-level code, but we can still reason about source 
 code as if it were interpreted on-the-fly).  Usually this sequence is 
 different from the order in which tokens appear in source files, so symbols 
 have to be reordered for push/transfer.  Compilers must also deduce which tokens 
@@ -1066,17 +1135,16 @@ better represented in terms of parse-graphs than trees
 (where certain relations, like anaphora in the latter context 
 and side-effect propagation in the former, cut across tree-like 
 directed branches).  With proper edge-filtering, tree "t/visiting/" 
-algorithms can be adopted to parse graphs, including 
-the "t/push/transfer/" execution model just mentioned.  
-Type-checking may similarly be described as a graph-traversal 
-strategy, where a "t/program stack/" is assigned types rather 
-than values.  Assuming polymorphism, 
+algorithms (like push/transfer) can be adopted to parse graphs.
+Type-checking may be described as a graph-traversal 
+strategy where the "t/program stack/" holds types rather 
+than concrete values.  Assuming polymorphism, 
 a type-checker must confirm that, given any stack-state with a 
 procedure symbol on top, there must be a unique implementation 
 whose parameter-types match those symbolized lower on the stack 
 (if so, its output type is then placed on the stack instead).  
 Both type-checking and push/transfer may thereby be modeled 
-as version of a generic graph-traversal pattern, whose 
+as versions of a generic graph-traversal pattern, whose 
 central operations are crossing to unvisited child nodes; 
 pushing leaf-nodes' values (or types, etc.) onto an 
 external stack; and performing some external operation 
@@ -1086,15 +1154,13 @@ machine holding stack-memory and a trace of previously-seen nodes).
 
 In short, whenever a directed graph models a computational 
 process, we can extract a postordering of nodes 
-representing the proper sequence for a push/transfer traversal.  
-Likewise, we can type-check the relationship between 
+representing the proper sequence for a push/transfer traversal; 
+and we can type-check relationships between 
 child nodes and parent nodes, the latter being interpreted 
-as procedures with a particular signature.  I believe 
-parse-graphs in the context of computer languages are a 
-useful case-study for human discourse in part because 
+as procedures with specific signatures.  I believe 
 both of these operations %-- postordering and type-checking 
-%-- have foundational correlates in natural language.  
-In particular, the mapping of a general parse-graph onto 
+%-- have apprimate correlates in natural language: 
+the mapping of a general parse-graph onto 
 a postorder traversal sequence captures, in formal terms, 
 the underlying machinery of "t/conceptual synthesis/" 
 according to a well-defined order.  
@@ -1158,33 +1224,6 @@ surely part of this process insofar as assessments of meaningfulness, on the
 one hand, and well-formedness (on syntactic, semantic, and pragmatic criteria) 
 on the other, coexist in a kind of feedback loop, converging on the most plausible 
 construals in all domains (syntax, semantics, pragmatics, and conceptualization).     
-   
-Earlier I argued that syntactic theory should not just 
-observe a language's rules, but also explain why 
-they retain their force despite communication's 
-inherently anarchic nature.  Here we make progress, 
-I believe, if there is a distinct cognitive resonance 
-for a specific word-order vis-a-vis conceptual synthesis.  
-If hearing */red/* before */tin/* simplifies the 
-translation of surface discourse to a staged 
-cognitive image %-- compared to the inverse %-- then speakers 
-would be motivated to adopt that convention for sake of 
-most organically translating their own cognitive attitudes 
-into verbal form, as well as dialogic efficiency.  
-Following Langacker [], I implied that we place adjectives closest 
-to the noun if they are most intractable as attributes. 
-Thus even color is a less essential quality than 
-compositional substance (glass, wood, metal).  
-These "t/staging/" conventions for word-order, then, 
-can be considered an essential foundation for syntax; 
-other syntactic principles, such as norms 
-affecting phrase boundaries and inter-word 
-relationships, might be said to derive their 
-consistency from the role they play in enforcing 
-cognitively salient word order (which includes break 
-strings of lexemes into clauses, insofar as the phrase 
-to which a word belongs determines its traversal-postorder 
-position). 
 
 Functional analogies between programming and natural 
 language %-- how syntax guides translation of 
@@ -1500,9 +1539,8 @@ of metaphoric word-sense that abstracts from concrete
 // /// 
       
 The premise that individual words conceptually modify logically 
-precedent aggregates may seem underwhelming, as a foundation 
-for nontrivial further theory.  But I want to extend that 
-perhaps obvious starting point with three further arguments.
+precedent aggregates may seem obvious.  But I want to extend that 
+starting point with three further arguments.
 
 First, I claim that this overall phenomenon can be taken as a 
 groundwork for syntactic theory to begin with.  
@@ -1627,7 +1665,7 @@ model of intermediate staging, that is necessary
 to bridge lexical word-sense with full-phrase propositional content.
 
 To be sure, I have offered rather inchoate characterization 
-of this "/staging/".  The space of mid-level conceptual 
+of this "t/staging/".  The space of mid-level conceptual 
 aggregates belongs neither to a realm of abstract reasoning nor 
 in-the-moment sensate perception, so it may be difficult to 
 analyze without special-purpose vocabulary and paradigms.  
