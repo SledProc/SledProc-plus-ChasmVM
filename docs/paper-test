@@ -1,8 +1,4 @@
 
-/>>
-
-
-///  Introduction
 
 It is clearly true that an important part of human language is governed by rules or 
 structures, ones that can be (at least to a useful extent) formalized and computationally 
@@ -18,7 +14,7 @@ overestimate rules' rigidity.  That a bachelor is an unmarried man, for example,
 is a canonical example of logic underlying semantics; but sentences like 
 these are quite meaningful:
 
-1) My brother has been married for 10 years, but in many ways he's still a bachelor.
+My brother has been married for 10 years, but in many ways he's still a bachelor.
 2) All the eligible bachelors in this town are married.
 
 Moral of the story: just as, in a fair legal system, it should be assumed that 
@@ -108,24 +104,6 @@ Often, of course, we present one claim to justify another, as in:
 their polling numbers are getting worse.
 14)  I know my class thinks the reading is too hard %-- one student after another has come to tell me so.
 
-So, in short, the pattern of propositions justifying other propositions does not in itself 
-challenge the validity of semantic theories premised on treating sentences as encodings for propositions.
-
-However, the resources a speaker has for expressing the backstory of their 
-propositional attitudes span a wide spectrum of connotations and experiences, 
-and I'd argue that there is no logical system that could precisely model 
-how language-users present details related to how one belief compels 
-or reinforces another.  Most discourse embeds propositions not in 
-chains of deductive reasoning but rather in narrative presentations 
-that reflect the passing of time, the interlocking of situations, and 
-in general the somewhat informal and lifeworld-dependent manner in which 
-we formulate beliefs and opinions in typical contexts.  To the degree that we 
-express beliefs via narrativizing constructions or metaphors like 
-"slipping away" and "student after student" %-- or so I claim %-- this 
-part of the discourse cannot be adequately captured via logic, but 
-rather depends on characterization of the lifeworld processes 
-between forming opinions (which are hard to model technically, even 
-if we import machinery like fuzzy sets, informal logic, etc.).
 
 Cumulatively, then, I believe that sentences 1-14 offer examples 
 of two issues for formal semantics:
@@ -211,84 +189,6 @@ The cognitive
 gap between actual and ideal dialects is orthogonal to linguists' 
 project, which is to describe rules of the latter.    
 
-My sense that such a paradigm is widespread is admittedly impressionistic, 
-and I certainly do not offer it as an expert pronouncement, as if a 
-self-appointed State of the Union Address for recent intellectual history.  
-It's more that my goal in this paper is to suggest 
-an alternative metatheory wherein notions of sentences signifying propositions 
-and idealized dialects are at best provisional and emergent.   
-
-No prehistoric King ever instructed his subjects to go create a 
-language for expressing truth conditions; even when "i/the meaning of a 
-proposition is given by its truth 
-conditions/" we have to ask */why/* sentences encode truth conditions (or 
-are optimized to do so).  People don't talk out of some abstract desire 
-to assert fragments of symbolic logic, but rather to coordinate their joint 
-activity.  It's easy to see why logically transparent statements are an 
-important part of that, but still, language's ability to convey beliefs 
-is an */emergent property/* of human verbal communication.  
-The existence of coherent @/S-to-@/P mappings is not an axiom to 
-deploy in linguistic explanations, but a cognitive faculty to be explained.
-
-To be clear, I do believe the value of signifying propositions is 
-self-evident.  My point is that any instance of @/S conveying @/P 
-is not just a linguistic phenomenon, but rather a detail of 
-two (or more) persons' social and collaborative interactions.  
-If I slip, fall, clutch my ankle, and grimace, someone will 
-conclude that I might be injured; but groaning "/ouch/" does not 
-express this through linguistic means.  Similarly, if I see a 
-car veering dangerously close to my friend John from behind him, shouting 
-"/John/" to get his attention does not make that word signify 
-"/watch out!/".  In most communication, linguistic structure 
-plays a more prominent role %-- only rarely do we convey ideas through vocalization 
-alone, untethered from syntax and semantics (and pragmatics) %-- 
-yet just because propositions get conveyed 
-in a linguistic context does not ensure that */why/* or */how/* this 
-happens is fully explainable in linguistic terms.
-
-Instead, sentences 1-14 suggest that the specific @/P derived from an @/S 
-depends (in part) on addressee's rational acts that aren't linguistic 
-in nature.  The reason why quantifier scope is nested in (4) but not (3) is that 
-the predicates signified by that reading make more sense than their 
-alternatives, but such judgment relies on knowledge of socio-cultural, not 
-linguistic, facts.  In short, whatever a sentence means, it does so 
-%-- in the general case %-- not via linguistic structures alone, but 
-via the interplay of such structures with more general cognitive 
-and social-semiotic processes.  Consequently, linguistic 
-explanation alone is incomplete.  Moreover, these issues are sufficiently 
-holistic and entrenched that we cannot dismiss them as cognition   
-just bridging a gap between real and ideal language, by analogy to 
-real and ideal dictionaries (where each distinct word-sense might 
-be marked in some disambiguating manner).  
-
-Granted, for */any/* science */all/* explanation is incomplete.  
-Sciences have to work together across scales of phenomena 
-and causal inter-dependence.  It is reasonable for a discipline to decide  
-what is and is not in its theoretical */raison d'etre/*.  But theories 
-should at least itemize the compositional or causative networks 
-that relate phenomena in their own scope to those in peer 
-theories' purview.  Lexical plurality is one domain where 
-linguistics is obviously incomplete, because background knowledge 
-is needed to adjudicate competing word-senses.  But I believe 
-the */compositional/* indeterminacy of whole sentences 
-is qualitatively different, and reveals a more substantial 
-surface area where linguistic and extralinguistic 
-phenomena inter-penetrate.  While linguists 
-should not necessarily pursue technical models of these 
-extra-linguistic processes, there's enough interpenetration 
-between language and overall intersubjective reality that 
-linguistic analysis can at least be attuned to theoretical 
-structures for human cognition in general.  Linguistics 
-should operate in an intellectual environment where 
-overarching theories of cognition and communication 
-are formulated and disputed.
-
-For these reasons, I believe */cognitive phenomenology/* is 
-relevant to linguistics because it potentially provides this 
-overarching theoretical framework.  Here, I will outline 
-why I think Husserlian phenomenology can play this role, 
-and then what implications for syntactic theory might follow 
-therefrom.
 
 
 ///   Linguistic Foundations: Phenomenology and the Philosophy of Science?
@@ -920,11 +820,6 @@ discourse are not imposed by executive fiat but codify
 innate mechanisms for interpreting others' mental states.  
 Analysis of this proposal can be performed via constructed examples, 
 such as here, no less than samples taken from recorded corpora.  
-
-
-
-(Contrast my defense with Kowalewski's study of the 
-Langacker sentence(s) "//").
 
 
 // //
@@ -1894,18 +1789,6 @@ or pragmatics alone, at least without widening the scope
 of one or more of these to an extent that is not explanatorily 
 productive.
 
-Holding, in our minds, semi-complete precursor images of 
-future or hypothetical objects, surroundings, and 
-situations is an intrinsic part of rational agenthood.  
-During talk, we exploit these capabilities 
-to synchronize behavior among two or more people, 
-leveraging future-oriented cognitive routines even 
-when the focus of our discourse exists in the immediate 
-presence.  Cooperation between multiple individuals engenders  
-abstracting demands %-- refactoring perceptual experience 
-into propositional/enactive schemata %-- analogous to 
-the distancing effects of future-planning.  
-
 Certainly, purposeful action coordinated among several people requires 
 each to know (and, in general, share) each other's beliefs, 
 so communicating what we deem factual is an important part of 
@@ -1942,26 +1825,6 @@ amenable to rigorous analysis, such analysis
 would have to be grounded in an overarching 
 cognitive science.
 
-Formal syntax has a notion of sentences being "t/grammatically well formed/" 
-(depending on which grammar applies, of course) because we can give 
-mechanical algorithms for testing when a string of words may, or may not, 
-be derived via production rules.  Whatever actual philosophy is in play, 
-formal semantics often seems to */want/* semantics to follow a 
-similar mechanizable protocol; e.g., we can imagine testing whether a 
-particular conceptual synthesis is "t/well formed/" by 
-consulting an enumeration of concept-formation rules.  The purported 
-"m/married bachelor/", say, would be ill-formed.  By contrast, however, 
-I actually believe "m/married bachelor/" names a reasonable concept, in the 
-sense that most people would infer its intension (in the sense of an 
-intensionality/extensionality contrast).  More broadly, building 
-models of algorithmic conceptual synthesis would allow the comparably 
-algorithmic notion of grammatic production to map onto the semantic 
-plane, as anticipated by Bolt `etal;: syntactic and semantic syntheses 
-commuting like Categorical diagrams, with both atomic and complex functors 
-between syntax and semantics (the "/atomic/" being lexical word-sense).  
-My arguments in this paper are that such an overly-tidy picture is 
-untenable.  Concepts simply don't synthesize according to 
-"t/production rules/" analogous to BNF grammars.  
 
 Programming language semantics is concerned with the binding 
 of values to symbols --- when those "t/markings/" start and 
@@ -1986,36 +1849,6 @@ roughly analogous to the role of syntax and semantics
 in natural language, which bridge discourse to cognitive 
 operations even if the cognitive processing itself 
 is opaque to linguistic analysis */per se/*. 
-
-This exposition might be a little straw-man-like in that Bolt `etal;, 
-for example, do not specifically work from a system of grammatical 
-productions.  Their syntactic theory is more about, starting 
-from any given sentence, retracing the compositional principles 
-that build up a complex network from isolated word-pairs.  
-We aren't "t/producing/" (or, for that matter, "t/testing/") sentences 
-so much as retracing their unifying formulae.  But still, 
-any analysis wherein the conceptual synthesis will algorithmically 
-reciprocate a syntactic composition-pattern %-- thereby 
-creating complex meanings %-- implicitly invokes a 
-principle of conceptual production.  Either we view such 
-production as inherently cognitive and extralinguistic, which is 
-my approach, or we must articulate rules for how concepts 
-in their totality form a logical system, wherein all concepts are 
-built up from primitive roots by operations such as 
-those of set theory (union, intersection, disjoint union, etc.) 
-or other formalizations (modal logic, the logic of quantifiers, and so on).   
-Referring back to my reading of the successive syntheses 
-connoted by "/in this red tin box/", I don't believe 
-*/any/* of those transforms can be glossed in such logical terms.  
-Put aphoristically, linguistic formalization should model 
-%-- perhaps with the aid of computational analogs %-- processes 
-through which surface-level discourse is mapped to a sequence 
-of cognitive transforms presented to a extra-linguistic 
-rational faculties.  This is different from attempting 
-to model concept-synthesis, as a kind of cognitive process, 
-directly.  As a useful analogy, programmers do not need to 
-study how system-kernel procedures are implemented; they merely 
-need to know the type-signatures and preconditions for calling them. 
 
 I have also argued that any cognitive 
 science, to be comprehensive, has to work 
