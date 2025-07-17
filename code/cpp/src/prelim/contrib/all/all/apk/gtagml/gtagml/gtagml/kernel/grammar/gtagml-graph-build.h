@@ -131,6 +131,9 @@ class GTagML_Graph_Build
 
  QMap<u1, u2> current_section_counts_;
 
+ u2 current_paragraph_count_;
+ u2 current_paragraph_bridge_;
+
 public:
 
 
@@ -157,6 +160,11 @@ public:
 
  void primary_acc(QString text);
  void reset_primary();
+
+ void close_paragraph();
+ void check_close_paragraph();
+
+ void enter_auto_paragraph_mode();
 
  void section_heading(QString text);
 

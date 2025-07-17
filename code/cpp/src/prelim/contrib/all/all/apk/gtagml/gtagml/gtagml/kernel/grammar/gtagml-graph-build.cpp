@@ -35,6 +35,7 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
    tile_acc_qts_(&tile_acc_), string_literal_acc_qts_(&string_literal_acc_),
    current_raw_format_("latex"), held_semantic_mark_mode_(0)
 
+   ,current_paragraph_count_(0), current_paragraph_bridge_(0)
    ,latex_stream_(&latex_)
    ,primary_acc_stream_(&primary_acc_)
 //   ,jats_stream_(&jats_)
@@ -53,6 +54,8 @@ void GTagML_Graph_Build::init()
  xml_writer_.writeStartDocument();
 
  xml_writer_.writeStartElement("document");
+
+ latex_stream_ << "\n\\begin{document}";
 
 // xml_writer_.set
 // xml_writer_ = QXmlStreamWriter(jats_);
@@ -107,6 +110,9 @@ void GTagML_Graph_Build::end_document()
 
 void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString text)
 {
+ reset_primary();
+ check_close_paragraph();
+
  if(count2 == 0)
  {
   heading(count1, text); return;
@@ -119,10 +125,36 @@ void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString text)
  }
 }
 
+void GTagML_Graph_Build::enter_auto_paragraph_mode()
+{
+ current_paragraph_bridge_ = current_paragraph_count_ + 1;
+ parse_context_.flags.auto_paragraph_mode = true;
+}
+
+void GTagML_Graph_Build::close_paragraph()
+{
+ xml_writer_.writeEndElement();
+ latex_stream_ << "\n} % end paragraph \n";
+}
+
+void GTagML_Graph_Build::check_close_paragraph()
+{
+ if(current_paragraph_bridge_)
+   current_paragraph_bridge_ = 0;
+ else
+   close_paragraph();
+}
 
 void GTagML_Graph_Build::auto_new_paragraph()
 {
+ reset_primary();
 
+ check_close_paragraph();
+
+ ++current_paragraph_count_;
+
+ xml_writer_.writeStartElement("p1");
+ latex_stream_ << "\n\\p{";
 }
 
 void GTagML_Graph_Build::enter_italics_mode()
@@ -151,14 +183,22 @@ void GTagML_Graph_Build::leave_italics_mode()
 
 void GTagML_Graph_Build::enter_double_quote_mode()
 {
+ reset_primary();
+
  parse_context_.flags.double_quote_mode = true;
 
+ xml_writer_.writeStartElement("q");
+ latex_stream_ << "\\q{";
 }
 
 void GTagML_Graph_Build::leave_double_quote_mode()
 {
+ reset_primary();
+
  parse_context_.flags.double_quote_mode = false;
 
+ xml_writer_.writeEndElement();
+ latex_stream_ << "}";
 }
 
 void GTagML_Graph_Build::enter_single_quote_mode()

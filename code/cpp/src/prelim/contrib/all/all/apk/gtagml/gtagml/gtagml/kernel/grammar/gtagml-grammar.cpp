@@ -88,12 +88,24 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   check_activate_with_depth_mark(gtagml_context, comment_context, tail.length());
  });
 
+ add_rule( gtagml_context, "slashes",
+  " \\n+ (?<first> /+) .single-space.+ (?<second> /*) .single-space.* (?<text> [^\\n]*)"
+  ,[&]
+ {
+  QString first = p.matched("first");
+  QString second = p.matched("second");
+  QString text = p.matched("text");
+
+  graph_build.heading(first.size(), second.size(), text);
+
+ });
+
 
  add_rule( gtagml_context, "enter-auto-paragraph-mode",
-   " />>  "
+   " />> "
    ,[raw_context, &parse_context, &graph_build, this, &p]
  {
-  parse_context.flags.auto_paragraph_mode = true;
+  graph_build.enter_auto_paragraph_mode();
  });
 
  add_rule( flags_all_(parse_context ,auto_paragraph_mode),
@@ -217,18 +229,6 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
    ,[raw_context, &parse_context, &graph_build, this, &p]
  {
   graph_build.enter_single_quote_mode_trebled();
- });
-
- add_rule( gtagml_context, "slashes",
-  " (?<first> /+) .single-space.+ (?<second> /*) .single-space.* (?<text> [^\\n]*)"
-  ,[&]
- {
-  QString first = p.matched("first");
-  QString second = p.matched("second");
-  QString text = p.matched("text");
-
-  graph_build.heading(first.size(), second.size(), text);
-
  });
 
 
