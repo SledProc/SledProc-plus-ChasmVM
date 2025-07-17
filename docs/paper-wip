@@ -1,6 +1,26 @@
 
 />>
 
+Abstract.
+
+This paper examines methodological foundations for 
+linguistics in terms of phenomenology and the 
+philosophy of science.  I argue for explanatory 
+paradigms that adequately model the interdependence of 
+linguistic and extra-linguistic knowledge/faculties 
+for understanding typical sentences.  In lieu 
+of set theory or preducate logic formalization, I 
+point out some similarities between natural and computer 
+languages, so that formal structures related to 
+compilers and programming-language implementation 
+may offer useful simplified models for human 
+communication.  In particular, I emphasize how 
+surface discourse may be transformed to sequences 
+of operations toward conceptual aggregation/synthesis, 
+while maintaining that most details of how  
+concepts are pairwise combined, modifying one another, 
+depend on extra-linguistic cognitive activity. 
+
 
 ///  Introduction
 
@@ -260,7 +280,7 @@ and then what implications for syntactic theory might follow
 therefrom.
 
 
-///   Linguistic Foundations: Phenomenology and the Philosophy of Science?
+///   Linguistic Foundations: Phenomenology and the Philosophy of Science
 
 I argue in this section that (Husserlian) phenomenology and the philosophy of 
 science can jointly offer a framework for justifying linguistic 
@@ -818,8 +838,7 @@ menagerie of theoretical posits in
 phenomenology and in linguistics are interrelated, 
 as () and () hopefully illustrate.
 
-// //
-
+///  Concepts and Compositionality
 
 "t/The meaning of a sentence is a function of its words and 
 how they are composed/".  In itself, that seems uncontroversial, 
@@ -835,15 +854,16 @@ and mathematical Category Theory.  Consider "t/red box/", and
 (provisionally) define the concepts set-theoretically: 
 */red/* means the set of red things; */box/* means the set of 
 boxes (or box-like things).  Combining the concepts yields 
-the set-intersection.  Meanwhile, syntactically, that 
-compositional pattern is cued by the left-adjacency of 
+an intersection between the two sets.  Meanwhile, 
+syntactically, that compositional pattern is cued by the left-adjacency of 
 */red/* before */box/*, which in English binds 
 adjectives to nominal targets.  Thus we have a 
 syntactic operation/relation (left-adjacency) and a 
 semantic operation (set-intersection).  The gist 
 of [] is that mapping the */phrase/* to its signification 
 depends not just on mapping the two */words/* but also 
-interpreting adjacency, here, as "t/meaning/" intersection.
+mapping the intra-Category */morphisms/* to each other (adjacency 
+projects to set-intersection).
 
 Bolt `etal; generalize this kind of insight by proposing  
 Categories (in the mathematical sense) for syntax and semantics, 
@@ -1450,8 +1470,6 @@ The central skeleton that pulls together multiple thematic
 relata likewise consolidates multiple sites for speaker 
 grounding/epistemics, allowing listeners to piece together 
 a provenance for speakers' expressed beliefs.
-
-// ///
 
 From a formal perspective, thematic relations suggest a 
 form of typed lambda calculus wherein functions act on a 

@@ -332,6 +332,10 @@ void GTagML_Document::save_jats(QString path)
  graph_build_->save_jats(path);
 }
 
+void GTagML_Document::save_latex(QString path)
+{
+ graph_build_->save_latex(path);
+}
 
 void GTagML_Document::set_grammar(caon_ptr<GTagML_Grammar> grammar)
 {

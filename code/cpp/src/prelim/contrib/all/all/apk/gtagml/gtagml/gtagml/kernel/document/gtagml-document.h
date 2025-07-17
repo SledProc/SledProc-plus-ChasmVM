@@ -108,6 +108,7 @@ public:
  QString get_path_root();
 
  void save_jats(QString path);
+ void save_latex(QString path);
 
  QString use_info_path();
 

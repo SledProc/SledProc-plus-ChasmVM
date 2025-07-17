@@ -34,6 +34,10 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
    tile_acc_length_adjustment_(0),
    tile_acc_qts_(&tile_acc_), string_literal_acc_qts_(&string_literal_acc_),
    current_raw_format_("latex"), held_semantic_mark_mode_(0)
+
+   ,latex_stream_(&latex_)
+   ,primary_acc_stream_(&primary_acc_)
+//   ,jats_stream_(&jats_)
 {
 
 }
@@ -43,16 +47,76 @@ void GTagML_Graph_Build::init()
 {
  jats_buffer_.setBuffer(&jats_array_);
  jats_buffer_.open(QBuffer::WriteOnly);
-
  xml_writer_.setDevice(&jats_buffer_);
 
  xml_writer_.setAutoFormatting(true); // Optional: for human-readable XML
  xml_writer_.writeStartDocument();
 
+ xml_writer_.writeStartElement("document");
+
 // xml_writer_.set
 // xml_writer_ = QXmlStreamWriter(jats_);
 // jats_stream_.setString(&jats_); // = QTextStream(&jats_);
 // xml_writer_.setDevice(&jats_stream_);
+}
+
+void GTagML_Graph_Build::primary_acc(QString text)
+{
+ primary_acc_stream_ << text;
+}
+
+void GTagML_Graph_Build::reset_primary()
+{
+ xml_writer_.writeCharacters(primary_acc_);
+ latex_stream_ << primary_acc_;
+
+ primary_acc_.clear();
+}
+
+void GTagML_Graph_Build::section_heading(QString text)
+{
+
+}
+
+
+
+void GTagML_Graph_Build::heading(u1 count, QString text)
+{
+ static QString text_default = "Section %1";
+
+ if(count == 3)
+ {
+  ++current_section_counts_[1];
+  if(text.isEmpty())
+    text = text_default.arg(current_section_counts_[1]);
+  section_heading(text);
+ }
+
+}
+
+void GTagML_Graph_Build::end_document()
+{
+ reset_primary();
+
+ latex_stream_ << "\n\\end{document}";
+
+ xml_writer_.writeEndElement();
+
+ xml_writer_.writeEndDocument();
+}
+
+void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString text)
+{
+ if(count2 == 0)
+ {
+  heading(count1, text); return;
+ }
+
+ if(count1 == 3)
+ {
+  if(count2 == 2)
+    end_document();
+ }
 }
 
 
@@ -63,7 +127,11 @@ void GTagML_Graph_Build::auto_new_paragraph()
 
 void GTagML_Graph_Build::enter_italics_mode()
 {
-// xml_writer_.
+ reset_primary();
+
+ xml_writer_.writeStartElement("i");
+
+ latex_stream_ << "\\textit{";
 
 
  parse_context_.flags.italics_mode = true;
@@ -72,7 +140,12 @@ void GTagML_Graph_Build::enter_italics_mode()
 
 void GTagML_Graph_Build::leave_italics_mode()
 {
+ reset_primary();
+
  parse_context_.flags.italics_mode = false;
+
+ xml_writer_.writeEndElement();
+ latex_stream_ << "}";
 
 }
 

@@ -219,6 +219,45 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.enter_single_quote_mode_trebled();
  });
 
+ add_rule( gtagml_context, "slashes",
+  " (?<first> /+) .single-space.+ (?<second> /*) .single-space.* (?<text> [^\\n]*)"
+  ,[&]
+ {
+  QString first = p.matched("first");
+  QString second = p.matched("second");
+  QString text = p.matched("text");
+
+  graph_build.heading(first.size(), second.size(), text);
+
+ });
+
+
+// add_rule( gtagml_context, "slashes",
+//  " (?<first> /+)  .single-space.+  (?<second> /*) "
+//  ,[&]
+// {
+//  QString first = p.matched("first");
+//  QString second = p.matched("second");
+//  QString text = p.matched("text");
+
+//  graph_build.heading(first.size(), second.size(), text);
+// });
+
+
+
+ add_rule( gtagml_context, "primary-acc-newline",
+  " .single-space.+ \\n "
+           ,[&]
+ {
+  graph_build.primary_acc("\n");
+ });
+
+ add_rule( gtagml_context, "primary-acc",
+  " . "
+           ,[&]
+ {
+  graph_build.primary_acc(p.match_text());
+ });
 
 
 // flag_(2, italics_mode)
@@ -232,7 +271,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
 
 
-
+#ifdef HIDE
 
  add_rule( gtagml_context, "enter-special-parse-mode",
    " \\{  "
@@ -495,8 +534,9 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   //graph_build.tag_body_leave();
  });
 
+#endif
 
-#ifdef HIDE
+#ifdef HIDE_before
  add_rule( html_context, "html-tag-command-leave",
   " </ (?<tag-command> .valid-tag-command-name. ) "
   " > "
@@ -520,8 +560,10 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   else
    graph_build.tag_command_leave(load_connector, tag_command);
  });
-#endif //def HIDE
+#endif //def HIDE_before
 
+
+#ifdef HIDE
  add_rule( gtagml_context, "tag-block-command-leave",
   "  ` (?<tag-command> .valid-tag-command-name. ) ` "
   ,[&]
@@ -795,6 +837,8 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  {
   graph_build.tile_acc(p.match_text());
  });
+
+#endif //def HIDE
 
 
 }

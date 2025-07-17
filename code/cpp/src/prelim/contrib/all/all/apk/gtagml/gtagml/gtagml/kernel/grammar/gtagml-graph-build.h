@@ -123,6 +123,14 @@ class GTagML_Graph_Build
  QBuffer jats_buffer_;
  QByteArray jats_array_;
 
+ QString latex_;
+ QTextStream latex_stream_;
+
+ QString primary_acc_;
+ QTextStream primary_acc_stream_;
+
+ QMap<u1, u2> current_section_counts_;
+
 public:
 
 
@@ -139,7 +147,23 @@ public:
   KA::TextIO::save_file(path, jats_array_);
  }
 
+ void save_latex(QString path)
+ {
+  //jats_ = QString::fromLatin1(jat)
+  KA::TextIO::save_file(path, latex_);
+ }
+
  void init();
+
+ void primary_acc(QString text);
+ void reset_primary();
+
+ void section_heading(QString text);
+
+ void heading(u1 count, QString text = QString());
+ void heading(u1 count1, u1 count2, QString text = QString());
+
+ void end_document();
 
  void auto_new_paragraph();
  void enter_italics_mode();
