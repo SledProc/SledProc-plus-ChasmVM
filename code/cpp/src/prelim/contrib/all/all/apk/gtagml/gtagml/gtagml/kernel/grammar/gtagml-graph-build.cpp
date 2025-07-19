@@ -123,6 +123,7 @@ void GTagML_Graph_Build::section_heading(QString text)
  xml_writer_.writeTextElement("s1", text);
  latex_stream_ << "\n\n\\s|1|{" << text << "}\n";
 
+ set_paragraph_bridge();
 }
 
 void GTagML_Graph_Build::blank_line_as_visible_space()
@@ -140,6 +141,7 @@ void GTagML_Graph_Build::heading(u1 count, QString text)
   ++current_section_counts_[1];
   if(text.isEmpty())
     text = text_default.arg(current_section_counts_[1]);
+
   section_heading(text);
  }
 
