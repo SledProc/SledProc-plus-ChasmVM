@@ -234,6 +234,11 @@ void GTagML_Graph_Build::check_close_paragraph()
    close_paragraph();
 }
 
+void GTagML_Graph_Build::show_latex()
+{
+ qDebug() << "\n" << latex_ << "\n";
+}
+
 void GTagML_Graph_Build::auto_new_paragraph()
 {
  reset_primary();
@@ -257,6 +262,15 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
   parse_context_.flags.read_parens_as_label = true;
   parse_context_.flags.read_parens_as_ref = false;
  }
+
+ else if(text == "enums")
+ {
+  latex_stream_ << "\n\n\\begin{enums}\n";
+  xml_writer_.writeStartElement("enums");
+  parse_context_.flags.read_numbered_items = true;
+  parse_context_.flags.ignore_blank_lines = true;
+ }
+
 }
 
 void GTagML_Graph_Build::single_slash_line_plus()
@@ -270,11 +284,21 @@ void GTagML_Graph_Build::single_slash_line()
 {
  reset_primary();
 
- latex_stream_ << "\n\\end{exsGroup}\n";
  xml_writer_.writeEndElement();
 
- parse_context_.flags.read_parens_as_label = false;
- parse_context_.flags.read_parens_as_ref = true;
+ if(parse_context_.flags.read_parens_as_label)
+ {
+  latex_stream_ << "\n\\end{exsGroup}\n";
+  parse_context_.flags.read_parens_as_label = false;
+  parse_context_.flags.read_parens_as_ref = true;
+ }
+
+ else if(parse_context_.flags.read_numbered_items)
+ {
+  latex_stream_ << "\n\\end{enums}\n";
+  parse_context_.flags.read_numbered_items = false;
+  parse_context_.flags.ignore_blank_lines = false;
+ }
 }
 
 void GTagML_Graph_Build::paren_ref(u2 number, QString text)
@@ -285,6 +309,23 @@ void GTagML_Graph_Build::paren_ref(u2 number, QString text)
 
  latex_stream_ << "\\exsRef(" << r << ")" ;
  xml_writer_.writeTextElement("-exsRef", "r");
+}
+
+void GTagML_Graph_Build::latex_command_auto_closed(QString command_name)
+{
+ reset_primary();
+
+ latex_stream_ << "\\" << command_name << "{}";
+ xml_writer_.writeCharacters("!%1%!"_qt.arg(command_name));
+}
+
+
+void GTagML_Graph_Build::enums_item(u2 number, QString text)
+{
+ reset_primary();
+
+ latex_stream_ << "\n\\enumsItem{} ";
+ xml_writer_.writeTextElement("enums-item", "");
 }
 
 void GTagML_Graph_Build::exs_item(u2 number, QString text)
@@ -299,7 +340,7 @@ void GTagML_Graph_Build::exs_item(u2 number, QString text)
 
  ++current_exs_number_;
 
- latex_stream_ << "\n\\exsItem{}\n";
+ latex_stream_ << "\n\\exsItem{} ";
  xml_writer_.writeTextElement("exs-item", "");
 }
 
@@ -423,6 +464,16 @@ void GTagML_Graph_Build::leave_alt_display_mode()
 }
 
 
+void GTagML_Graph_Build::special_character_sequence(QString text)
+{
+ if(text == "%--")
+ {
+  reset_primary();
+
+  latex_stream_ << "\\mdash{}";
+  xml_writer_.writeCharacters("&mdash;");
+ }
+}
 
 
 

@@ -29,6 +29,8 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  pre_rule( "end-of-line", "[__\\t\\S]* \\n" );
  pre_rule( "single-space", "[__\\t]" );
 
+ pre_rule( "blank-line-content", "[__\\t]* \\n" );
+
  pre_rule( "blank-line", " \\n [__\\t]* " );
 
  pre_rule( "blank-lines", " \\s*?\\n\\s* " );
@@ -139,22 +141,21 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
  add_rule( gtagml_context, "special-section",
    " .blank-lines. %\\. \\s* (?<text> \\S+) \\s+"
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.enter_special_section(p.matched("text"));
  });
 
-
- add_rule( gtagml_context, "special-section",
+ add_rule( gtagml_context, "subparagraph",
    " .blank-lines.  %\\/ \\s* (?<text> \\S+) \\s+"
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.enter_subparagraph(p.matched("text"));
  });
 
  add_rule( gtagml_context, "enter-auto-paragraph-mode",
    " />> "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.enter_auto_paragraph_mode();
  });
@@ -169,6 +170,26 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.exs_item(number, text);
  });
 
+ add_rule( flags_all_(parse_context ,ignore_blank_lines),
+   gtagml_context, "consume-blank-line",
+//?   " (?<=\\n) .blank-line-content. "
+   " \\n .blank-line-content. "
+   ,[&]
+ {
+//  graph_build.show_latex();
+ });
+
+ add_rule( flags_all_(parse_context ,read_numbered_items),
+   gtagml_context, "enums-item",
+   " (?<number> \\d+) (?<text> \\S*) \\. "
+   ,[&]
+ {
+  u2 number = p.matched("number").toShort();
+  QString text = p.matched("text");
+  graph_build.enums_item(number, text);
+ });
+
+
 
  add_rule( flags_all_(parse_context ,auto_paragraph_mode),
    gtagml_context, "auto-new-paragraph",
@@ -181,14 +202,22 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  add_rule( flags_all_(parse_context ,italics_mode),
    gtagml_context, "leave-italics-mode",
    " /\\* "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.leave_italics_mode();
  });
 
+ add_rule( gtagml_context, "latex-command-auto-closed",
+   " ` (?<cmd-name> \\w+) ; "
+   ,[&]
+ {
+  graph_build.latex_command_auto_closed(p.matched("cmd-name"));
+ });
+
+
  add_rule( gtagml_context, "enter-italics-mode",
    " \\*/ "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.enter_italics_mode();
  });
@@ -197,22 +226,22 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  add_rule( flags_all_(parse_context ,acronym_mode),
    gtagml_context, "leave-acronym-mode",
    " / "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.leave_acronym_mode();
  });
 
  add_rule( gtagml_context, "enter-acronym-mode",
    " &/ "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.enter_acronym_mode();
  });
 
 
  add_rule( gtagml_context, "emph-symbolic",
-   " @/ (?<text> \\S+) "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   " @/ (?<text> [^/\\s]+) "
+   ,[&]
  {
   QString text = p.matched("text");
   graph_build.emph_symbolic(text);
@@ -223,14 +252,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  add_rule( flags_all_(parse_context ,alt_display_mode),
    gtagml_context, "leave-alt-display-mode",
    " / "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.leave_alt_display_mode();
  });
 
  add_rule( gtagml_context, "enter-alt-display-mode",
    " %/ "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.enter_alt_display_mode();
  });
@@ -240,14 +269,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  add_rule( flags_all_(parse_context ,double_quote_mode),
    gtagml_context, "leave-double-quote-mode",
    " /\" "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.leave_double_quote_mode();
  });
 
  add_rule( gtagml_context, "enter-double-quote-mode",
    " \"(?<pre> \\w*)/ "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.enter_double_quote_mode();
  });
@@ -257,14 +286,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  add_rule( flags_all_(parse_context ,single_quote_mode),
    gtagml_context, "leave-single-quote-mode",
    " /' "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.leave_single_quote_mode();
  });
 
  add_rule( gtagml_context, "enter-single-quote-mode",
    " '(?<pre> \\w*)/ "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.enter_single_quote_mode();
  });
@@ -274,14 +303,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  add_rule( flags_all_(parse_context ,single_quote_mode_doubled),
    gtagml_context, "leave-single-quote-mode-doubled",
    " /'' "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.leave_single_quote_mode_doubled();
  });
 
  add_rule( gtagml_context, "enter-single-quote-mode-doubled",
    " ''(?<pre> \\w*)/ "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.enter_single_quote_mode_doubled();
  });
@@ -291,17 +320,27 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  add_rule( flags_all_(parse_context ,single_quote_mode_trebled),
    gtagml_context, "leave-single-quote-mode-trebled",
    " /''' "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.leave_single_quote_mode_trebled();
  });
 
  add_rule( gtagml_context, "enter-single-quote-mode-trebled",
    " '''(?<pre> \\w*)/ "
-   ,[raw_context, &parse_context, &graph_build, this, &p]
+   ,[&]
  {
   graph_build.enter_single_quote_mode_trebled();
  });
+
+ add_rule( gtagml_context, "special-character-sequence",
+   " (?: %-- ) "
+   ,[&]
+ {
+  QString m = p.match_text();
+  graph_build.special_character_sequence(m);
+ });
+
+
 
 
 // add_rule( gtagml_context, "slashes",

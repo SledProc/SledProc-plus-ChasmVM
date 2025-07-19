@@ -173,6 +173,10 @@ public:
  void exs_item(u2 number, QString text);
  void paren_ref(u2 number, QString text);
 
+ void enums_item(u2 number, QString text);
+
+ void latex_command_auto_closed(QString command_name);
+
  void blank_line_as_visible_space();
 
  void single_slash_line();
@@ -221,6 +225,8 @@ public:
  void enter_alt_display_mode();
  void leave_alt_display_mode();
 
+ void special_character_sequence(QString text);
+ void show_latex();
 
  void add_string_literal_tile(QString str);
  void enter_multiline_comment(QString semis, QString tildes);

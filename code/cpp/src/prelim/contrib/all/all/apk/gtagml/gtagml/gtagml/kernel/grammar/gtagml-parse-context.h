@@ -44,11 +44,13 @@ public:
   flag_(12, read_parens_as_label)
   flag_(13, read_parens_as_ref)
 
-  flag_(14, inside_multiline_comment)
+  flag_(14, read_numbered_items)
+  flag_(15, ignore_blank_lines)
+
+  flag_(16, inside_multiline_comment)
+
 //  flag_(14, inside_tag_body)
 //  flag_(14, inside_html_tag_body)
-  flag_(15, inside_multi_parent)
-  flag_(16, inside_inline_multi_parent)
   flag_(17, inside_html_script_tag)
   flag_(18, inside_html_style_tag)
   flag_(19, inside_multi_parent_semis)
@@ -57,6 +59,10 @@ public:
 
   flag_(22, inside_html_tag_body)
   flag_(23, inside_tag_body)
+
+
+  flag_(15, inside_multi_parent)
+  flag_(16, inside_inline_multi_parent)
 
  _flags_
 
