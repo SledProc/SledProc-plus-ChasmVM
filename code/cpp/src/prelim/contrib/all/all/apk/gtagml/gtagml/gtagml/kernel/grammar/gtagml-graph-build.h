@@ -195,6 +195,7 @@ public:
  void enter_auto_paragraph_mode();
 
  void section_heading(QString text);
+ void subsection_heading(QString text);
 
  void heading(u1 count, QString text = QString());
  void heading(u1 count1, u1 count2, QString text = QString());

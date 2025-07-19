@@ -99,12 +99,12 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.single_slash_line_plus();
  });
 
- add_rule( gtagml_context, "single-slash-line",
-  " \n (?<first> /) .single-space.* (?=\\n) "
-  ,[&]
- {
-  graph_build.single_slash_line();
- });
+// add_rule( gtagml_context, "single-slash-line",
+//  " \n (?<first> /) .single-space.* (?=\\n) "
+//  ,[&]
+// {
+//  graph_build.single_slash_line();
+// });
 
  add_rule( flags_all_(parse_context ,read_parens_as_label),
    gtagml_context, "exs-blank-line",
@@ -124,7 +124,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
 
  add_rule( gtagml_context, "slashes",
-  " \\n+ (?<first> /+) .single-space.+ (?<second> /*) "
+  " .space-to-end-of-line.+ (?<first> /+) .single-space.+ (?<second> /*) "
   " .single-space.* (?<text> [^\\n]*) "
   ,[&]
  {

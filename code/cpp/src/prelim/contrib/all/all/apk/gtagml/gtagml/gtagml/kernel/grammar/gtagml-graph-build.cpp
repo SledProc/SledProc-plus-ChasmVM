@@ -165,6 +165,19 @@ void GTagML_Graph_Build::set_paragraph_bridge()
  current_paragraph_bridge_ = current_paragraph_count_ + 1;
 }
 
+void GTagML_Graph_Build::subsection_heading(QString text)
+{
+ reset_primary();
+
+ check_close_paragraph();
+
+ xml_writer_.writeTextElement("s2", text);
+ latex_stream_ << "\n\n\\s|2|{" << text << "}\n";
+
+ set_paragraph_bridge();
+}
+
+
 void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString text)
 {
 // reset_primary();
@@ -176,6 +189,12 @@ void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString text)
  if(count2 == 0)
  {
   heading(count1, text); return;
+ }
+
+ if(count1 == 2)
+ {
+  if(count2 == 2)
+    subsection_heading(text);
  }
 
  if(count1 == 3)
