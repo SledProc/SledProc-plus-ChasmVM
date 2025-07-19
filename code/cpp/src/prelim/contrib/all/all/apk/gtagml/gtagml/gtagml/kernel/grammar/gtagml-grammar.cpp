@@ -154,7 +154,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
  add_rule( flags_all_(parse_context ,auto_paragraph_mode),
    gtagml_context, "auto-new-paragraph",
-   " .single-space.* \\n .single-space.* \\n"
+   " \\s* \\n .single-space.* \\n"
    ,[&]
  {
   graph_build.auto_new_paragraph();

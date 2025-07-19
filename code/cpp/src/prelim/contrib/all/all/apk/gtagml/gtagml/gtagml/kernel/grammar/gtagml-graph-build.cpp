@@ -150,6 +150,8 @@ void GTagML_Graph_Build::end_document()
  xml_writer_.writeEndElement();
 
  xml_writer_.writeEndDocument();
+
+ parse_context_.flags.auto_paragraph_mode = false;
 }
 
 void GTagML_Graph_Build::set_paragraph_bridge()
@@ -233,7 +235,7 @@ void GTagML_Graph_Build::single_slash_line_plus()
 {
  single_slash_line();
 
- latex_stream_ << "\\nip\n";
+ latex_stream_ << "\n\\nip";
 }
 
 void GTagML_Graph_Build::single_slash_line()
