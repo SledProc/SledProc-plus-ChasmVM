@@ -29,6 +29,10 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  pre_rule( "end-of-line", "[__\\t\\S]* \\n" );
  pre_rule( "single-space", "[__\\t]" );
 
+ pre_rule( "blank-line", " \\n [__\\t]* " );
+
+ pre_rule( "blank-lines", " \\s*?\\n\\s* " );
+
  pre_rule( "tag-command-wrap-mode-indicator", ": :? \\.?" );
 
  Context gtagml_context = add_context("gtaml-context");
@@ -88,8 +92,23 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   check_activate_with_depth_mark(gtagml_context, comment_context, tail.length());
  });
 
+ add_rule( gtagml_context, "single-slash-and-consume-blank-lines",
+  " \n (?<first> /\\+) \\s* (?=\\n) "
+  ,[&]
+ {
+  graph_build.single_slash_line_plus();
+ });
+
+ add_rule( gtagml_context, "single-slash-line",
+  " \n (?<first> /) .single-space.* (?=\\n) "
+  ,[&]
+ {
+  graph_build.single_slash_line();
+ });
+
  add_rule( gtagml_context, "slashes",
-  " \\n+ (?<first> /+) .single-space.+ (?<second> /*) .single-space.* (?<text> [^\\n]*)"
+  " \\n+ (?<first> /+) .single-space.+ (?<second> /*) "
+  " .single-space.* (?<text> [^\\n]*) "
   ,[&]
  {
   QString first = p.matched("first");
@@ -101,11 +120,36 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
 
+ add_rule( gtagml_context, "special-section",
+   " .blank-lines. %\\. \\s* (?<text> \\S+) \\s+"
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.enter_special_section(p.matched("text"));
+ });
+
+
+ add_rule( gtagml_context, "special-section",
+   " .blank-lines.  %\\/ \\s* (?<text> \\S+) \\s+"
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  graph_build.enter_subparagraph(p.matched("text"));
+ });
+
  add_rule( gtagml_context, "enter-auto-paragraph-mode",
    " />> "
    ,[raw_context, &parse_context, &graph_build, this, &p]
  {
   graph_build.enter_auto_paragraph_mode();
+ });
+
+ add_rule( flags_all_(parse_context ,read_parens_as_label),
+   gtagml_context, "exs-item",
+   " \\( (?<number> \\d+) (?<text> \\S*) \\) "
+   ,[&]
+ {
+  u2 number = p.matched("number").toShort();
+  QString text = p.matched("text");
+  graph_build.exs_item(number, text);
  });
 
  add_rule( flags_all_(parse_context ,auto_paragraph_mode),
@@ -146,6 +190,16 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  {
   graph_build.enter_acronym_mode();
  });
+
+
+ add_rule( gtagml_context, "emph-symbolic",
+   " @/ (?<text> \\S+) "
+   ,[raw_context, &parse_context, &graph_build, this, &p]
+ {
+  QString text = p.matched("text");
+  graph_build.emph_symbolic(text);
+ });
+
 
 
  add_rule( flags_all_(parse_context ,alt_display_mode),

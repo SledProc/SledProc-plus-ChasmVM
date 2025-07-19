@@ -107,6 +107,9 @@ public:
 
  QString get_path_root();
 
+ void insert_latex_template(QString path);
+ void insert_xml_template(QString path);
+
  void save_jats(QString path);
  void save_latex(QString path);
 

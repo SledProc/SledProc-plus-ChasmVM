@@ -41,9 +41,11 @@ public:
   flag_(10, underline_mode)
   flag_(11, strikethrough_mode)
 
-  flag_(12, inside_multiline_comment)
-  flag_(13, inside_tag_body)
-  flag_(14, inside_html_tag_body)
+  flag_(12, read_parens_as_label)
+
+  flag_(13, inside_multiline_comment)
+  flag_(14, inside_tag_body)
+//  flag_(14, inside_html_tag_body)
   flag_(15, inside_multi_parent)
   flag_(16, inside_inline_multi_parent)
   flag_(17, inside_html_script_tag)
@@ -51,6 +53,9 @@ public:
   flag_(19, inside_multi_parent_semis)
   flag_(20, inside_multi_generic)
   flag_(21, inside_attribute_sequence)
+
+  flag_(22, inside_html_tag_body)
+
  _flags_
 
 public:

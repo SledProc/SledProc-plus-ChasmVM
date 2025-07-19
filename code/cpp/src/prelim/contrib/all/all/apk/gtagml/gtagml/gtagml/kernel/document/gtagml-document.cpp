@@ -327,6 +327,16 @@ void GTagML_Document::load_file(QString path)
  }
 }
 
+void GTagML_Document::insert_latex_template(QString path)
+{
+ graph_build_->insert_latex_template(path);
+}
+
+void GTagML_Document::insert_xml_template(QString path)
+{
+ graph_build_->insert_xml_template(path);
+}
+
 void GTagML_Document::save_jats(QString path)
 {
  graph_build_->save_jats(path);

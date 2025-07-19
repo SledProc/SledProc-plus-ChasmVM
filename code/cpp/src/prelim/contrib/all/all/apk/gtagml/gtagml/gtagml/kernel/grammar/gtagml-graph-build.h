@@ -134,6 +134,17 @@ class GTagML_Graph_Build
  u2 current_paragraph_count_;
  u2 current_paragraph_bridge_;
 
+ u2 current_exs_group_number_;
+ u2 current_exs_number_;
+
+ void set_paragraph_bridge();
+
+ enum class Paragraph_Types {
+  N_A, Abstract, P0, P1
+ };
+
+ Paragraph_Types current_paragraph_type_;
+
 public:
 
 
@@ -158,6 +169,19 @@ public:
 
  void init();
 
+ void exs_item(u2 number, QString text);
+
+ void single_slash_line();
+ void single_slash_line_plus();
+
+ void enter_subparagraph(QString text);
+
+ void enter_special_section(QString text);
+ void enter_abstract();
+
+ void insert_latex_template(QString path);
+ void insert_xml_template(QString path);
+
  void primary_acc(QString text);
  void reset_primary();
 
@@ -172,6 +196,9 @@ public:
  void heading(u1 count1, u1 count2, QString text = QString());
 
  void end_document();
+
+ void emph_symbolic(QString text);
+ void emph_acronym(QString text);
 
  void auto_new_paragraph();
  void enter_italics_mode();

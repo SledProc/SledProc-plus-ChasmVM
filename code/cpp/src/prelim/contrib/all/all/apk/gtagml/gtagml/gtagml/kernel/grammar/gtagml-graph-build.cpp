@@ -35,6 +35,10 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
    tile_acc_qts_(&tile_acc_), string_literal_acc_qts_(&string_literal_acc_),
    current_raw_format_("latex"), held_semantic_mark_mode_(0)
 
+   ,current_exs_group_number_(0)
+   ,current_exs_number_(0)
+
+   ,current_paragraph_type_(Paragraph_Types::N_A)
    ,current_paragraph_count_(0), current_paragraph_bridge_(0)
    ,latex_stream_(&latex_)
    ,primary_acc_stream_(&primary_acc_)
@@ -53,14 +57,47 @@ void GTagML_Graph_Build::init()
  xml_writer_.setAutoFormatting(true); // Optional: for human-readable XML
  xml_writer_.writeStartDocument();
 
+ xml_writer_.writeComment("%XML-TEMPLATE%");
+
  xml_writer_.writeStartElement("document");
 
- latex_stream_ << "\n\\begin{document}";
+ latex_stream_ << "\n\n%PREAMBLE-TEMPLATE%\n\n\\begin{document}";
 
 // xml_writer_.set
 // xml_writer_ = QXmlStreamWriter(jats_);
 // jats_stream_.setString(&jats_); // = QTextStream(&jats_);
 // xml_writer_.setDevice(&jats_stream_);
+}
+
+void GTagML_Graph_Build::enter_special_section(QString text)
+{
+ if(text == "Abstract")
+   enter_abstract();
+}
+
+void GTagML_Graph_Build::enter_abstract()
+{
+ reset_primary();
+
+ check_close_paragraph();
+
+ current_paragraph_type_ = Paragraph_Types::Abstract;
+
+ xml_writer_.writeStartElement("abstract");
+ latex_stream_ << "\n\n\\begin{abstract}\n";
+}
+
+
+void GTagML_Graph_Build::insert_latex_template(QString path)
+{
+ QString contents = KA::TextIO::load_file(path);
+ latex_.replace("%PREAMBLE-TEMPLATE%", contents);
+}
+
+void GTagML_Graph_Build::insert_xml_template(QString path)
+{
+ QString contents = KA::TextIO::load_file(path);
+ jats_array_.replace("%XML-TEMPLATE%", contents.toLatin1());
 }
 
 void GTagML_Graph_Build::primary_acc(QString text)
@@ -78,6 +115,12 @@ void GTagML_Graph_Build::reset_primary()
 
 void GTagML_Graph_Build::section_heading(QString text)
 {
+ reset_primary();
+
+ check_close_paragraph();
+
+ xml_writer_.writeTextElement("s1", text);
+ latex_stream_ << "\n\n\\s|1|{" << text << "}\n";
 
 }
 
@@ -85,10 +128,9 @@ void GTagML_Graph_Build::section_heading(QString text)
 
 void GTagML_Graph_Build::heading(u1 count, QString text)
 {
- static QString text_default = "Section %1";
-
  if(count == 3)
  {
+  static QString text_default = "Section %1";
   ++current_section_counts_[1];
   if(text.isEmpty())
     text = text_default.arg(current_section_counts_[1]);
@@ -101,6 +143,8 @@ void GTagML_Graph_Build::end_document()
 {
  reset_primary();
 
+ check_close_paragraph();
+
  latex_stream_ << "\n\\end{document}";
 
  xml_writer_.writeEndElement();
@@ -108,10 +152,18 @@ void GTagML_Graph_Build::end_document()
  xml_writer_.writeEndDocument();
 }
 
+void GTagML_Graph_Build::set_paragraph_bridge()
+{
+ current_paragraph_bridge_ = current_paragraph_count_ + 1;
+}
+
 void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString text)
 {
- reset_primary();
- check_close_paragraph();
+// reset_primary();
+// qDebug() <<  latex_;
+// check_close_paragraph();
+// qDebug() << latex_;
+// set_paragraph_bridge();
 
  if(count2 == 0)
  {
@@ -127,14 +179,22 @@ void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString text)
 
 void GTagML_Graph_Build::enter_auto_paragraph_mode()
 {
- current_paragraph_bridge_ = current_paragraph_count_ + 1;
+ set_paragraph_bridge();
  parse_context_.flags.auto_paragraph_mode = true;
 }
 
 void GTagML_Graph_Build::close_paragraph()
 {
  xml_writer_.writeEndElement();
- latex_stream_ << "\n} % end paragraph \n";
+
+ if(current_paragraph_type_ == Paragraph_Types::Abstract)
+ {
+  current_paragraph_type_ = Paragraph_Types::N_A;
+  latex_stream_ << "\n\\end{abstract} \n";
+  set_paragraph_bridge();
+ }
+ else
+   latex_stream_ << "\n} % end paragraph \n";
 }
 
 void GTagML_Graph_Build::check_close_paragraph()
@@ -153,8 +213,46 @@ void GTagML_Graph_Build::auto_new_paragraph()
 
  ++current_paragraph_count_;
 
- xml_writer_.writeStartElement("p1");
- latex_stream_ << "\n\\p{";
+ xml_writer_.writeStartElement("p.1");
+ latex_stream_ << "\n\\p.1{%\n";
+}
+
+void GTagML_Graph_Build::enter_subparagraph(QString text)
+{
+ reset_primary();
+
+ if(text == "exs")
+ {
+  latex_stream_ << "\n\n\\begin{exsGroup}\n";
+  xml_writer_.writeStartElement("exs-group");
+  parse_context_.flags.read_parens_as_label = true;
+ }
+}
+
+void GTagML_Graph_Build::single_slash_line_plus()
+{
+ single_slash_line();
+
+ latex_stream_ << "\\nip\n";
+}
+
+void GTagML_Graph_Build::single_slash_line()
+{
+ reset_primary();
+
+ latex_stream_ << "\n\\end{exsGroup}\n";
+ xml_writer_.writeEndElement();
+}
+
+void GTagML_Graph_Build::exs_item(u2 number, QString text)
+{
+ reset_primary();
+
+ if(number == 1)
+   ++current_exs_group_number_;
+
+ latex_stream_ << "\n\\exsItem{}\n";
+ xml_writer_.writeTextElement("exs-item", "");
 }
 
 void GTagML_Graph_Build::enter_italics_mode()
@@ -179,6 +277,22 @@ void GTagML_Graph_Build::leave_italics_mode()
  xml_writer_.writeEndElement();
  latex_stream_ << "}";
 
+}
+
+void GTagML_Graph_Build::emph_symbolic(QString text)
+{
+ reset_primary();
+
+ xml_writer_.writeTextElement("eS", text);
+ latex_stream_ << "\\eS{" << text << "}";
+}
+
+void GTagML_Graph_Build::emph_acronym(QString text)
+{
+ reset_primary();
+
+ xml_writer_.writeTextElement("eA", text);
+ latex_stream_ << "\\eA{" << text << "}";
 }
 
 void GTagML_Graph_Build::enter_double_quote_mode()

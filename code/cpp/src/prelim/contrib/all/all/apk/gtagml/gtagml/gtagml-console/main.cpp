@@ -64,6 +64,9 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
 
  gdoc->load_and_parse(path);
 
+ gdoc->insert_latex_template(path + "-template.tex");
+ gdoc->insert_xml_template(path + "-template.xml");
+
  gdoc->save_jats(path + ".jats");
  gdoc->save_latex(path + ".tex");
 
