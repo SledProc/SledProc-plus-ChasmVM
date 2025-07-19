@@ -42,9 +42,10 @@ public:
   flag_(11, strikethrough_mode)
 
   flag_(12, read_parens_as_label)
+  flag_(13, read_parens_as_ref)
 
-  flag_(13, inside_multiline_comment)
-  flag_(14, inside_tag_body)
+  flag_(14, inside_multiline_comment)
+//  flag_(14, inside_tag_body)
 //  flag_(14, inside_html_tag_body)
   flag_(15, inside_multi_parent)
   flag_(16, inside_inline_multi_parent)
@@ -55,6 +56,7 @@ public:
   flag_(21, inside_attribute_sequence)
 
   flag_(22, inside_html_tag_body)
+  flag_(23, inside_tag_body)
 
  _flags_
 

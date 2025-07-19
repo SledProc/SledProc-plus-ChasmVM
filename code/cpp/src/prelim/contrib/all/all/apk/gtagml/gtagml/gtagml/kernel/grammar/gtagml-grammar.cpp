@@ -106,6 +106,23 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.single_slash_line();
  });
 
+ add_rule( flags_all_(parse_context ,read_parens_as_label),
+   gtagml_context, "exs-blank-line",
+   " (?: \\n \\s*){2,} "
+   ,[&]
+ {
+  graph_build.blank_line_as_visible_space();
+ });
+
+ add_rule( flags_all_(parse_context ,read_parens_as_ref),
+   gtagml_context, "paren-ref",
+   " \\( (?<number> \\d+ ) (?<text> \\S*) \\) "
+   ,[&]
+ {
+  graph_build.paren_ref(p.matched("number").toShort(), p.matched("text"));
+ });
+
+
  add_rule( gtagml_context, "slashes",
   " \\n+ (?<first> /+) .single-space.+ (?<second> /*) "
   " .single-space.* (?<text> [^\\n]*) "
@@ -151,6 +168,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   QString text = p.matched("text");
   graph_build.exs_item(number, text);
  });
+
 
  add_rule( flags_all_(parse_context ,auto_paragraph_mode),
    gtagml_context, "auto-new-paragraph",

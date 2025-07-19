@@ -136,6 +136,7 @@ class GTagML_Graph_Build
 
  u2 current_exs_group_number_;
  u2 current_exs_number_;
+ u2 current_exs_offset_;
 
  void set_paragraph_bridge();
 
@@ -170,6 +171,9 @@ public:
  void init();
 
  void exs_item(u2 number, QString text);
+ void paren_ref(u2 number, QString text);
+
+ void blank_line_as_visible_space();
 
  void single_slash_line();
  void single_slash_line_plus();

@@ -37,6 +37,7 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
 
    ,current_exs_group_number_(0)
    ,current_exs_number_(0)
+   ,current_exs_offset_(0)
 
    ,current_paragraph_type_(Paragraph_Types::N_A)
    ,current_paragraph_count_(0), current_paragraph_bridge_(0)
@@ -124,7 +125,12 @@ void GTagML_Graph_Build::section_heading(QString text)
 
 }
 
+void GTagML_Graph_Build::blank_line_as_visible_space()
+{
+ reset_primary();
 
+ latex_stream_ << "\n\n \\visbreak{}\n";
+}
 
 void GTagML_Graph_Build::heading(u1 count, QString text)
 {
@@ -228,6 +234,7 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
   latex_stream_ << "\n\n\\begin{exsGroup}\n";
   xml_writer_.writeStartElement("exs-group");
   parse_context_.flags.read_parens_as_label = true;
+  parse_context_.flags.read_parens_as_ref = false;
  }
 }
 
@@ -244,6 +251,19 @@ void GTagML_Graph_Build::single_slash_line()
 
  latex_stream_ << "\n\\end{exsGroup}\n";
  xml_writer_.writeEndElement();
+
+ parse_context_.flags.read_parens_as_label = false;
+ parse_context_.flags.read_parens_as_ref = true;
+}
+
+void GTagML_Graph_Build::paren_ref(u2 number, QString text)
+{
+ reset_primary();
+
+ QString r = QString::number(number + current_exs_offset_);
+
+ latex_stream_ << "\\exsRef(" << r << ")" ;
+ xml_writer_.writeTextElement("-exsRef", "r");
 }
 
 void GTagML_Graph_Build::exs_item(u2 number, QString text)
@@ -251,7 +271,12 @@ void GTagML_Graph_Build::exs_item(u2 number, QString text)
  reset_primary();
 
  if(number == 1)
-   ++current_exs_group_number_;
+ {
+  current_exs_offset_ = current_exs_number_;
+  ++current_exs_group_number_;
+ }
+
+ ++current_exs_number_;
 
  latex_stream_ << "\n\\exsItem{}\n";
  xml_writer_.writeTextElement("exs-item", "");
