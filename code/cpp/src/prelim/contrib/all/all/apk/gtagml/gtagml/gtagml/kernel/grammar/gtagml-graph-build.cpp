@@ -398,10 +398,10 @@ void GTagML_Graph_Build::citation(QString label, QString locator)
      << "(" << qsl.join(", ") << ")";
  }
 
- else if(locator.startsWith(":"))
+ else if(locator.startsWith(";"))
  {
   latex_stream_ << "\\citeLocator{" << label << "}"
-    << "(" << locator << ")";
+    << "(" << locator.mid(1) << ")";
  }
 
 }

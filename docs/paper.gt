@@ -880,7 +880,7 @@ key questions: how this "t/pointing/" works; and how
 */concepts/* are combined.
 
 A good example of formal answers to the latter question is 
-Bolt `etal;, based on Peter `Gardenfors;'s Conceptual Space 
+Bolt `etal; [/Bolt/], based on Peter `Gardenfors;'s Conceptual Space 
 theory, alongside a syntactic approach related to Categorial Grammar 
 and mathematical Category Theory.  Consider "t/red box/", and 
 (provisionally) define the concepts set-theoretically: 
@@ -892,7 +892,7 @@ syntactically, that compositional pattern is cued by the left-adjacency of
 adjectives to nominal targets.  Thus we have a 
 syntactic operation/relation (left-adjacency) and a 
 semantic operation (set-intersection).  The gist 
-of [] is that mapping the */phrase/* to its signification 
+of [/Bolt/] is that mapping the */phrase/* to its signification 
 depends not just on mapping the two */words/* but also 
 mapping the intra-Category */morphisms/* to each other (adjacency 
 projects to set-intersection).
@@ -1002,12 +1002,12 @@ explicit sensation-related meaning is a good place to start.
 It's simple to note that "/red box/" designates a box which 
 appears as red.  But we should investigate how this 
 meaning actually factors into cognitive processing.  I would 
-question an analysis whereby understanding () entails forming a 
+question an analysis whereby understanding (1) entails forming a 
 mental image of a "/red tin box/", at least with any 
 vividness.  But nor do we make sense of that phrase in 
 complete isolation from sense-content.  This is a good 
 place to invoke the maxim that meanings are usually precursors 
-to concrete actions.  Should ()'s hearer decide to partake in 
+to concrete actions.  Should (1)'s hearer decide to partake in 
 brownies, the meaning-content helps prep for finding and grasping them.  
 "/Red tin box/" thereby equips said hearer with 
 information relevant to locating, opening, and reaching inside the box.  
@@ -1066,7 +1066,7 @@ Noun phrases are de-facto landmarks in the synthesizing
 process, forming a conceptual nexus with some 
 level of completeness and unity.  This surely reflects 
 how sentences reconstruct perceptual orientation: 
-in (), say, John and "/the stove/" represent two 
+in `jrefs;, say, John and "/the stove/" represent two 
 object-concepts which are inferred to stand as 
 attentional foci for the speaker.  They serve 
 as attractional zones, or foregrounds, absorbing 
@@ -1347,10 +1347,10 @@ question-and-answer forms:
 Movement verbs reference spatial trajectories, but these are 
 defined by more than just start and end points.  A path 
 "/to the store/" has a functionally distinct early part in leaving 
-the building, to which () alludes via "/out/".  At the same time, 
+the building, to which (1) alludes via "/out/".  At the same time, 
 the process has dimensions beyond just spatial movement; going 
 */out/* typically involves grabbing one's keys, wallet, phone, etc.  
-In short, the presence of */out/* results in () referring to 
+In short, the presence of */out/* results in (1) referring to 
 the speaker's planned actions with extra detail both vis-a-vis the 
 path trajectory and the operational components.  Either of these 
 semantic effects are triggered by attaching "/out/" to a word 
@@ -1382,7 +1382,7 @@ So, in short, two different parse-graphs %-- one wherein "/out/" attaches
 to "/heading/" to yield a verb-phrase, and one where the same word 
 attached to "/to the store/" to provide a direct object %-- are both 
 correct, but neither is complete.  The "t/definitive/" parsing 
-structure for () would be a superposition of the two provisional graphs.
+structure for (1) would be a superposition of the two provisional graphs.
 
 The second issue I'd like to address is the extent of complete phrase- 
 (and sentence-) level scale in contrast to word-pairs.  
@@ -1440,13 +1440,13 @@ as in
 
 %/ exs
 (2)  We gave the animal shelter a hundred dollars 
-/+
+/
 
 However, indirect objects may be ineliminable for a completed idea while 
 also resistant to the transform whereby a clause headed 
 by */to/* moves before the direct object, dropping the preposition.
-It is not clear why the abridged indirect-object form is acceptable 
-with some English verbs and not others.  Be that as it may, 
+It is not clear why the abridged "/double object/" form is acceptable 
+with some English verbs and not others ([/Bruening/], for example).  Be that as it may, 
 verb "t/details/" exist on multiple levels of essentiality, 
 from a core subject/object nexus (spanned by theta grids) to 
 essential and then eliminable thematic relations, plus potential marginal 
@@ -1751,6 +1751,176 @@ invoking "t/staging/" faculties at almost every
 step, such that sentence-understanding is intrinsically a 
 process that swings back and forth between 
 extra-linguistic and syntactic/semantic/pragmatic inference.
+
+`vspace<5pt>;
+
+///  Conclusion
+
+Against this backdrop, I think I can more rigorously 
+defend my earlier-stated objection to the 
+idea (explicit or not) that sentences signify propositions.  
+Discourse may indeed */communicate/* beliefs, 
+but that phenomenon emerges from a multifaceted 
+process integrating both linguistic and extra-linguistic 
+ideations.  We cannot account for proposition-like 
+meanings */within the affordances/* of syntax, semantics, 
+or pragmatics alone, at least without widening the scope 
+of one or more of these to an extent that is not explanatorily 
+productive.
+
+Holding, in our minds, semi-complete precursor images of 
+future or hypothetical objects, surroundings, and 
+situations is an intrinsic part of rational agenthood.  
+During talk, we exploit these capabilities 
+to synchronize behavior among two or more people, 
+leveraging future-oriented cognitive routines even 
+when the focus of our discourse exists in the immediate 
+presence.  Cooperation between multiple individuals engenders  
+abstracting demands %-- refactoring perceptual experience 
+into propositional/enactive schemata %-- analogous to 
+the distancing effects of future-planning.  
+
+Certainly, purposeful action coordinated among several people requires 
+each to know (and, in general, share) each other's beliefs, 
+so communicating what we deem factual is an important part of 
+discourse.  Expressing not just */what/* we believe, but */why/*, 
+is relevant because we want others to hear our rationales.  
+Given these requirements, it is inevitable that human 
+language evolved structures within almost every sentence 
+to express one or more beliefs %-- either as assertions that 
+are the sentence's point or preambles to some further 
+comment, suggestion or request %-- and moreover 
+encode speaker-relative perspectives and foreknowledge that 
+clarify their origins.  This epistemics-oriented disclosure 
+emerges from the overall regime of cognitive linguistic 
+processing.
+
+But we should not conclude from such notions that 
+sentences */signify/* propositions %-- i.e., that there 
+is a series of formal rules governing a mostly 
+determinative process through which a signifying process, 
+existing on a minimal level in the mapping of lexemes 
+to word-sense, propagates outward to predicate 
+structure, in a logical or mechanical fashion.  
+Paraphrases such as "/red box/" as the set-theoretic 
+intersection of "/redness/" and "/boxness/" may 
+create the illusion that the transformative 
+effects of one word on a priorly-processed aggregate 
+can be modeled via formal systems.  However, such 
+formalization, I contend, will be either circular 
+(explaining not much, in the end) or oversimplistic 
+(explaining only cherry-picked linguistic artifacts, 
+not typical usages and utterances).  To the degree 
+that cognitive transforms and "t/staging/" are 
+amenable to rigorous analysis, such analysis 
+would have to be grounded in an overarching 
+cognitive science.
+
+Formal syntax has a notion of sentences being "t/grammatically well formed/" 
+(depending on which grammar applies, of course) because we can give 
+mechanical algorithms for testing when a string of words may, or may not, 
+be derived via production rules.  Whatever actual philosophy is in play, 
+formal semantics often seems to */want/* semantics to follow a 
+similar mechanizable protocol; e.g., we can imagine testing whether a 
+particular conceptual synthesis is "t/well formed/" by 
+consulting an enumeration of concept-formation rules.  The purported 
+"m/married bachelor/", say, would be ill-formed.  By contrast, however, 
+I actually believe "m/married bachelor/" names a reasonable concept, in the 
+sense that most people would infer its intension (in the sense of an 
+intensionality/extensionality contrast).  More broadly, building 
+models of algorithmic conceptual synthesis would allow the comparably 
+algorithmic notion of grammatic production to map onto the semantic 
+plane, as anticipated by Bolt `etal;: syntactic and semantic syntheses 
+commuting like Categorical diagrams, with both atomic and complex functors 
+between syntax and semantics (the "/atomic/" being lexical word-sense).  
+My arguments in this paper are that such an overly-tidy picture is 
+untenable.  Concepts simply don't synthesize according to 
+"t/production rules/" analogous to BNF grammars.  
+
+Programming language semantics is concerned with the binding 
+of values to symbols --- when those "t/markings/" start and 
+cease to be appropriate --- as well as polymorphic 
+definition of multiple procedures with the same symbol
+but different parameter types, and other type-related 
+concerns.  Code */syntax/* addresses such issues as 
+expression boundaries and "t/sequence points/", indicating 
+which values are parameters for which function-calls as 
+well as, potentially, the order of procedures' side-effects 
+(particularly when a prior effect could be "t/visible/" to 
+a future subroutine).  In simple terms, source code 
+can be modeled via a "t/program stack/", but syntactic and 
+semantic systems are necessary to ensure that high-level code 
+maps to an executable stack-representation while ensuring that 
+all procedures' type and precondition contracts are guaranteed.
+Note that the algorithmetized syntax and semantics here 
+serve as */preparation/* for function-calls, many of which 
+may be to precompiled routines whose implementations are 
+opaque to the high-level compiler and runtime.  I find this 
+roughly analogous to the role of syntax and semantics 
+in natural language, which bridge discourse to cognitive 
+operations even if the cognitive processing itself 
+is opaque to linguistic analysis */per se/*. 
+
+This exposition might be a little straw-man-like in that Bolt `etal;, 
+for example, do not specifically work from a system of grammatical 
+productions.  Their syntactic theory is more about, starting 
+from any given sentence, retracing the compositional principles 
+that build up a complex network from isolated word-pairs.  
+We aren't "t/producing/" (or, for that matter, "t/testing/") sentences 
+so much as retracing their unifying formulae.  But still, 
+any analysis wherein the conceptual synthesis will algorithmically 
+reciprocate a syntactic composition-pattern %-- thereby 
+creating complex meanings %-- implicitly invokes a 
+principle of conceptual production.  Either we view such 
+production as inherently cognitive and extralinguistic, which is 
+my approach, or we must articulate rules for how concepts 
+in their totality form a logical system, wherein all concepts are 
+built up from primitive roots by operations such as 
+those of set theory (union, intersection, disjoint union, etc.) 
+or other formalizations (modal logic, the logic of quantifiers, and so on).   
+Referring back to my reading of the successive syntheses 
+connoted by "/in this red tin box/", I don't believe 
+*/any/* of those transforms can be glossed in such logical terms.  
+Put aphoristically, linguistic formalization should model 
+%-- perhaps with the aid of computational analogs %-- processes 
+through which surface-level discourse is mapped to a sequence 
+of cognitive transforms presented to a extra-linguistic 
+rational faculties.  This is different from attempting 
+to model concept-synthesis, as a kind of cognitive process, 
+directly.  As a useful analogy, programmers do not need to 
+study how system-kernel procedures are implemented; they merely 
+need to know the type-signatures and preconditions for calling them. 
+
+I have also argued that any cognitive 
+science, to be comprehensive, has to work 
+with cognition as lived by flesh-and-blood 
+people in social, embodied, personalistic life-worlds.  
+Such an approach would be only tangentially a 
+*/natural/* science %-- the physicalistic 
+intuitions that lend systematicity and 
+disputative structure to studies of nature 
+would, in this context, dilute rather than 
+guarantee explanatory rigor.  I have proposed 
+phenomenology as an alternative foundation, 
+so %-- on this architecture %-- theories 
+of cognitive-semantic "t/staging/" 
+would be formulated on phenomenological 
+grounds.  Thus semantics would have a 
+kind of theoretical dependence 
+on cognitive phenomenology, and 
+syntax on semantics in the sense 
+that phrase-structure rules become entrenched 
+by virtue of conceptual demands on word-order.  So cognitive 
+phenomenology can stand as a foundation 
+that supports the multiple facets of the 
+linguistics project, even if it 
+lies outside the proper scope of that 
+discipline.  This is consistent with a 
+philosophy wherein cognitive 
+phenomenology provides an explanatory 
+scaffold for */all/* humanities.
+
+`input<biblio>;
 
 /// //
 
