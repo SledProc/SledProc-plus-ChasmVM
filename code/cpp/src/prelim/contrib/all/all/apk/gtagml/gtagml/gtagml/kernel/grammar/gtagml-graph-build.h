@@ -141,10 +141,12 @@ class GTagML_Graph_Build
  void set_paragraph_bridge();
 
  enum class Paragraph_Types {
-  N_A, Abstract, P0, P1
+  N_A, Abstract, P0, P1, Block_Quote
  };
 
  Paragraph_Types current_paragraph_type_;
+ QStack<Paragraph_Types> held_paragraph_types_;
+
 
 public:
 
@@ -175,9 +177,13 @@ public:
 
  void enums_item(u2 number, QString text);
 
- void latex_command_auto_closed(QString command_name);
+ void latex_command_auto_closed(QString command_name, QString arg);
+ void citation(QString command_name, QString arg);
+
 
  void blank_line_as_visible_space();
+ void check_blank_line();
+
 
  void single_slash_line();
  void single_slash_line_plus();

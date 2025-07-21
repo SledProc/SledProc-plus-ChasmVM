@@ -101,6 +101,13 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.single_slash_line_plus();
  });
 
+ add_rule( gtagml_context, "single-slash-line",
+  " \n (?<first> /) .single-space.* (?=\\n) "
+  ,[&]
+ {
+  graph_build.single_slash_line();
+ });
+
 // add_rule( gtagml_context, "single-slash-line",
 //  " \n (?<first> /) .single-space.* (?=\\n) "
 //  ,[&]
@@ -176,6 +183,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
    " \\n .blank-line-content. "
    ,[&]
  {
+  graph_build.check_blank_line();
 //  graph_build.show_latex();
  });
 
@@ -199,6 +207,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.auto_new_paragraph();
  });
 
+
+ add_rule( gtagml_context, "enter-italics-mode",
+   " \\*/ "
+   ,[&]
+ {
+  graph_build.enter_italics_mode();
+ });
+
  add_rule( flags_all_(parse_context ,italics_mode),
    gtagml_context, "leave-italics-mode",
    " /\\* "
@@ -208,19 +224,21 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
  add_rule( gtagml_context, "latex-command-auto-closed",
-   " ` (?<cmd-name> \\w+) ; "
+   " ` (?<cmd-name> \\w+) (?: < (?<arg> [^>]+) > )?; "
    ,[&]
  {
-  graph_build.latex_command_auto_closed(p.matched("cmd-name"));
+  graph_build.latex_command_auto_closed(p.matched("cmd-name"),
+    p.matched("arg"));
+ });
+
+ add_rule( gtagml_context, "citation",
+   " \\[/ (?<label> [^:;/]+) (?: (?<locator> [^/]*) )? /\\] "
+   ,[&]
+ {
+  graph_build.citation(p.matched("label"), p.matched("locator"));
  });
 
 
- add_rule( gtagml_context, "enter-italics-mode",
-   " \\*/ "
-   ,[&]
- {
-  graph_build.enter_italics_mode();
- });
 
 
  add_rule( flags_all_(parse_context ,acronym_mode),
@@ -292,7 +310,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
  add_rule( gtagml_context, "enter-single-quote-mode",
-   " '(?<pre> \\w*)/ "
+   " '(?<pre> \\w+)/ "
    ,[&]
  {
   graph_build.enter_single_quote_mode();

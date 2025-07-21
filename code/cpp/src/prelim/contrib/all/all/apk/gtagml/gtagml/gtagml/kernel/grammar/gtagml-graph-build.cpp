@@ -270,7 +270,26 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
   parse_context_.flags.read_numbered_items = true;
   parse_context_.flags.ignore_blank_lines = true;
  }
+ else if(text == "block")
+ {
+  latex_stream_ << "\n\n\\begin{blockQuote}\n";
+  xml_writer_.writeStartElement("block-quote");
+  parse_context_.flags.ignore_blank_lines = true;
 
+  held_paragraph_types_.push(current_paragraph_type_);
+  current_paragraph_type_ = Paragraph_Types::Block_Quote;
+
+ }
+
+
+}
+
+void GTagML_Graph_Build::check_blank_line()
+{
+ if(current_paragraph_type_ == Paragraph_Types::Block_Quote)
+ {
+  latex_stream_ << "\n\\parbreak.2{}\n";
+ }
 }
 
 void GTagML_Graph_Build::single_slash_line_plus()
@@ -299,6 +318,13 @@ void GTagML_Graph_Build::single_slash_line()
   parse_context_.flags.read_numbered_items = false;
   parse_context_.flags.ignore_blank_lines = false;
  }
+
+ else if(current_paragraph_type_ == Paragraph_Types::Block_Quote)
+ {
+  latex_stream_ << "\\end{blockQuote}\n";
+  parse_context_.flags.ignore_blank_lines = false;
+  current_paragraph_type_ = held_paragraph_types_.pop();
+ }
 }
 
 void GTagML_Graph_Build::paren_ref(u2 number, QString text)
@@ -311,13 +337,50 @@ void GTagML_Graph_Build::paren_ref(u2 number, QString text)
  xml_writer_.writeTextElement("-exsRef", "r");
 }
 
-void GTagML_Graph_Build::latex_command_auto_closed(QString command_name)
+void GTagML_Graph_Build::latex_command_auto_closed(QString command_name, QString arg)
 {
  reset_primary();
 
- latex_stream_ << "\\" << command_name << "{}";
- xml_writer_.writeCharacters("!%1%!"_qt.arg(command_name));
+ if(arg.isEmpty())
+ {
+  latex_stream_ << "\\" << command_name << "{}";
+  xml_writer_.writeCharacters("!%1%!"_qt.arg(command_name));
+ }
+ else
+ {
+  latex_stream_ << "\\" << command_name << "{" << arg << "}";
+  xml_writer_.writeCharacters("!%1:%2%!"_qt.arg(command_name).arg(arg));
+ }
 }
+
+void GTagML_Graph_Build::citation(QString label, QString locator)
+{
+ reset_primary();
+
+ if(locator.isEmpty())
+ {
+  latex_stream_ << "\\citeLabel{" << label << "}";
+//?  xml_writer_.writeCharacters("!%1%!"_qt.arg(command_name));
+ }
+ else if(locator.startsWith(":"))
+ {
+  QStringList qsl = locator.mid(1).simplified().split("-");
+  if(qsl.size() == 1)
+    latex_stream_ << "\\citePage{" << label << "}"
+      << "(" << qsl.first() << ")";
+  else
+   latex_stream_ << "\\citePages{" << label << "}"
+     << "(" << qsl.join(", ") << ")";
+ }
+
+ else if(locator.startsWith(":"))
+ {
+  latex_stream_ << "\\citeLocator{" << label << "}"
+    << "(" << locator << ")";
+ }
+
+}
+
 
 
 void GTagML_Graph_Build::enums_item(u2 number, QString text)
