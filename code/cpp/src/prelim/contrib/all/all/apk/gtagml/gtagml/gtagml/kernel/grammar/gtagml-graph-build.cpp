@@ -537,14 +537,23 @@ void GTagML_Graph_Build::leave_single_quote_mode_trebled()
 
 void GTagML_Graph_Build::enter_acronym_mode()
 {
+ reset_primary();
+
  parse_context_.flags.acronym_mode = true;
+
+ xml_writer_.writeStartElement("eA");
+ latex_stream_ << "\\eA{";
 
 }
 
 void GTagML_Graph_Build::leave_acronym_mode()
 {
+ reset_primary();
+
  parse_context_.flags.acronym_mode = false;
 
+ xml_writer_.writeEndElement();
+ latex_stream_ << "}";
 }
 
 void GTagML_Graph_Build::enter_alt_display_mode()

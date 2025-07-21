@@ -259,7 +259,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
  add_rule( gtagml_context, "enter-acronym-mode",
-   " &/ "
+   " ;/ "
    ,[&]
  {
   graph_build.enter_acronym_mode();
