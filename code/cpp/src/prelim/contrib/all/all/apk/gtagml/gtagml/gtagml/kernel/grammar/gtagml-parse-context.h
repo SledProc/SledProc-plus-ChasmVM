@@ -45,9 +45,9 @@ public:
   flag_(13, read_parens_as_ref)
 
   flag_(14, read_numbered_items)
-  flag_(15, ignore_blank_lines)
+  flag_(15, read_bulleted_items)
+  flag_(16, ignore_blank_lines)
 
-  flag_(16, inside_multiline_comment)
 
 //  flag_(14, inside_tag_body)
 //  flag_(14, inside_html_tag_body)
@@ -61,8 +61,10 @@ public:
   flag_(23, inside_tag_body)
 
 
-  flag_(15, inside_multi_parent)
-  flag_(16, inside_inline_multi_parent)
+  flag_(24, inside_multi_parent)
+  flag_(25, inside_inline_multi_parent)
+  flag_(26, inside_multiline_comment)
+
 
  _flags_
 

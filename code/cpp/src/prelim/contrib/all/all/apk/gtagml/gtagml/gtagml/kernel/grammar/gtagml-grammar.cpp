@@ -180,7 +180,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  add_rule( flags_all_(parse_context ,ignore_blank_lines),
    gtagml_context, "consume-blank-line",
 //?   " (?<=\\n) .blank-line-content. "
-   " \\n .blank-line-content. "
+   " .single-space.* \\n .blank-line-content. "
    ,[&]
  {
   graph_build.check_blank_line();
@@ -197,6 +197,15 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.enums_item(number, text);
  });
 
+ add_rule( flags_all_(parse_context ,read_bulleted_items),
+   gtagml_context, "bulleted-item",
+   " (?<= \\s) (?<symbol> \\*+) (?<supp> [^*/\\s]*) (?=\\s) "
+   ,[&]
+ {
+  QString symbol = p.matched("symbol");
+  QString supp = p.matched("supp");
+  graph_build.bulleted_item(symbol, supp);
+ });
 
 
  add_rule( flags_all_(parse_context ,auto_paragraph_mode),

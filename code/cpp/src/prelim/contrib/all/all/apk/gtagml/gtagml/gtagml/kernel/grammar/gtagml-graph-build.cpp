@@ -270,6 +270,15 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
   parse_context_.flags.read_numbered_items = true;
   parse_context_.flags.ignore_blank_lines = true;
  }
+
+ else if(text == "itemz")
+ {
+  latex_stream_ << "\n\n\\begin{itemz}\n";
+  xml_writer_.writeStartElement("itemz");
+  parse_context_.flags.read_bulleted_items = true;
+  parse_context_.flags.ignore_blank_lines = true;
+ }
+
  else if(text == "block")
  {
   latex_stream_ << "\n\n\\begin{blockQuote}\n";
@@ -288,7 +297,15 @@ void GTagML_Graph_Build::check_blank_line()
 {
  if(current_paragraph_type_ == Paragraph_Types::Block_Quote)
  {
+  reset_primary();
   latex_stream_ << "\n\\parbreak.2{}\n";
+ }
+
+ else if(parse_context_.flags.read_bulleted_items)
+ {
+  reset_primary();
+  //?qDebug() << "\n\n" << latex_ << "\n\n";
+  latex_stream_ << "\n";
  }
 }
 
@@ -318,6 +335,14 @@ void GTagML_Graph_Build::single_slash_line()
   parse_context_.flags.read_numbered_items = false;
   parse_context_.flags.ignore_blank_lines = false;
  }
+
+ else if(parse_context_.flags.read_bulleted_items)
+ {
+  latex_stream_ << "\n\\end{itemz}\n";
+  parse_context_.flags.read_bulleted_items = false;
+  parse_context_.flags.ignore_blank_lines = false;
+ }
+
 
  else if(current_paragraph_type_ == Paragraph_Types::Block_Quote)
  {
@@ -381,6 +406,13 @@ void GTagML_Graph_Build::citation(QString label, QString locator)
 
 }
 
+void GTagML_Graph_Build::bulleted_item(QString symbol, QString supp)
+{
+ reset_primary(); //? qDebug() << "\n\n" << latex_ << "\n\n";
+
+ latex_stream_ << "\n\\symItem{} ";
+ xml_writer_.writeTextElement("sym-item", "");
+}
 
 
 void GTagML_Graph_Build::enums_item(u2 number, QString text)
