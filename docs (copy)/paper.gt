@@ -442,7 +442,7 @@ due to light/shadow effects and the vagaries of pigmentation.
 
 Humans subconsciously perform complex image-analysis tasks, many 
 of which can be simulated by computer-vision algorithms: 
-texture segmentation, ;/3D/ reconstruction, occlusion compensation 
+texture segmentation, 3D reconstruction, occlusion compensation 
 (e.g., perceiving the shape of a vase's back side by projecting 
 around from its visible rim-circle).  Via color alone we 
 infer textural and optical details, yielding a significantly 
@@ -554,7 +554,7 @@ each other's use of terms and concepts such as
 protention and retention.  This gives the analysis 
 a public-discursive face, even without empirical 
 science as normally understood.  We aren't using 
-;/EKG/ machines to measure neuron activity 
+EKG machines or other brain-scans to measure neuron activity 
 while anyone examines a paperweight.  There may or 
 may not be identifiable neurological correlates to the 
 concepts of (e.g.) protention and retention.  
@@ -780,7 +780,7 @@ Constructed examples are prominent in both linguistics
 and phenomenology.  Relatedly, the "t/demarcation problem/" 
 %-- defending them as legitimate inquiry, not pseudoscience 
 %-- plays similarly in both contexts.  Suppose I want to examine a 
-pair of hypothetical examples:
+pair of hypothetical examples like:
 
 %/ exs
 (1)  John poured water onto the stove.

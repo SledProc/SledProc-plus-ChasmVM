@@ -9,12 +9,6 @@
 
 \setlength{\columnsep}{38pt}
 
-
-
-\usepackage{natbib}
-\setlength{\bibsep}{3pt}
-
-
 %\titleformat{\section}
 %  {\normalfont\Large}{\thesection}{1em}{}
 
@@ -105,16 +99,11 @@
 \cite[#2]{#1}}
 
 
-\newcommand{\onethrft}{(1)-(14)}
+\newcommand{\onethrft}{(1)-(9)}
 
-\newcommand{\onethrn}{(1)-(9)}
+\newcommand{\onethrn}{(1)-(9) and (13)-(14)}
 
-\newcommand{\onethandft}{(1)-(9) and (13)-(14)}
-
-
-\newcommand{\eS}[1]{\textbf{{\fontsize{9}{9}%
-\fontfamily{ppl}\selectfont{\textcolor{red!40!black}{#1}}}}}
-
+\newcommand{\eS}[1]{\textbf{{\fontsize{10}{9}\selectfont{#1}}}}
 \newcommand{\q}[1]{``#1''}
 
 \newcommand{\mdash}{---}
@@ -141,27 +130,6 @@
 \newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}}
 
 \newenvironment{itemz}{\vspace{5pt}\begin{itemize}}{\end{itemize}}
-
-\newenvironment{docAbstractx}{%
-\twocolumn[
-  \begin{@twocolumnfalse}
-    \maketitle
-    \begin{abstract}
-}{%
-    \end{abstract}
-  \end{@twocolumnfalse}
-]
-}
-
-
-\newenvironment{docAbstract}{%
-  \begin{@twocolumnfalse}\maketitle
-    \begin{abstract}
-}{%
-    \end{abstract}
-  \end{@twocolumnfalse}\vspace{19pt}
-}
-
 
 
 \usepackage{csquotes}
@@ -206,6 +174,12 @@
 \usepackage[tracking=true]{microtype}
 
 \newcommand{\tinyurl}[1]{\raisebox{2pt}{{\scriptsize \url{#1}}}}
+
+\newcommand{\StoP}{\eS{S}-to-\eS{P}}
+
+\newcommand{\Boltetal}{Bolt \textit{et al.}}
+
+
 
 \usepackage[colorlinks=true]{hyperref}
 
@@ -261,161 +235,19 @@ breaklines=true
 \usepackage{titlesec}
 
 
+\setcitestyle{square}
+
 \usepackage[T1]{fontenc}
 \usepackage{tgtermes}
-
-
-\usepackage{graphicx}
-
-\newcommand{\eA}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
-
-%\newcommand{\eA}[1]{{\iffootnote\begin{footnotesize}{\textsc{#1}}\end{footnotesize}%
-%\else\begin{OldFootnoteSize}{\textsc{#1}}\end{OldFootnoteSize}\fi}}
-
-
 
 \raggedbottom
 
 %\newgeometry{left=0.8in,right=0.8in,top=.6in,bottom=.6in}
 
-\newcommand{\StoP}{\eS{S}-to-\eS{P}}
-
-\newcommand{\Boltetal}{Bolt \textit{et al.}}
 
 
-
-\newcommand{\intitle}[1]{{\hspace{3pt}\textls*[-80]{\texttt{\textit{#1}}}}\hspace{-1pt}}
-
-\setcitestyle{square}
+\usepackage{natbib}
+\setlength{\bibsep}{3pt}
 
 \title{Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology for Syntactic Theory}
-
-
-\usepackage{tikz}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-
-
-\definecolor{AquaA5}{HTML}{4bacc6}
-\definecolor{blggr}{RGB}{25, 180, 180}
-
-\definecolor{tlc-main}{RGB}{125, 50, 80}
-
-\newcommand{\ul}[1]{\underline{#1}}
-
-
-\newcommand*\fncircled[1]{\tikz[baseline=(char.base)]{
-
-\begin{scope}[rotate=-29, transform shape]
-
- \node[shape=circle, yscale=.7, %rotate around={45:(0,0)},
-%shape border rotate=39,
-top color=blggr!20, bottom color=AquaA5!90!black,
-inner sep=7pt, shading angle=75,xshift=.5pt,yshift=-.5pt] (char) {\phantom{\ul{#1}}};
-
- \node[shape=circle,top color=white, bottom color=blggr!6,
-fill opacity=1, yscale=.7, shape border rotate=39,
-inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
-
-\end{scope}
-
- \node {\ul{#1}};
-
-}}
-
-
-
-\newcommand*\fnellipsed[1]{\tikz[baseline=(char.base)]{
-
-\begin{scope}[rotate=-29, transform shape]
-
- \node[shape=circle, yscale=.7, %rotate around={45:(0,0)},
-%shape border rotate=39,
-top color=blggr!20, bottom color=tlc-main,
-inner sep=7pt, shading angle=75,xshift=.5pt,yshift=-.5pt] (char) {\phantom{\ul{#1}}};
-
- \node[shape=circle,top color=white, bottom color=blggr!6,
-fill opacity=1, yscale=.7, shape border rotate=39,
-inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
-
-\end{scope}
-
- \node {\ul{#1}};
-
-}}
-
-
-
-
-%\fancyfoot[L]{\fancyplain{}{\bfseries\thepage}}
-
-\fancypagestyle{main}{
-
-\setlength{\headsep}{9pt}
-
-\fancyhead[C]{}
-\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
-\fancyhead[R]{}
-
-\fancyfoot[C]{}
-\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fnellipsed{\thepage}}}
-\fancyfoot[R]{}
-
-\renewcommand{\headrulewidth}{0pt}    
-
-}
-
-\pagestyle{main}
-
-\fancypagestyle{bib}{
-
-\setlength{\headsep}{9pt}
-
-\fancyhead[C]{}
-\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
-\fancyhead[R]{}
-
-\fancyfoot[C]{}
-\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fncircled{\thepage}}}
-\fancyfoot[R]{}
-
-\renewcommand{\headrulewidth}{0pt}    
-
-}
-
-
-
-
-\fancypagestyle{bib-last}{
-
-\setlength{\headsep}{9pt}
-
-\fancyhead[C]{}
-\fancyhead[L]{}
-\fancyhead[R]{}
-
-\fancyfoot[C]{}
-\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fncircled{\thepage}}}
-\fancyfoot[R]{}
-
-\renewcommand{\headrulewidth}{0pt}    
-
-}
-
-
-
-
-%\fancypagestyle{defaultx}{
-%    \fancyhf{}           
-%    \renewcommand{\headrulewidth}{0pt}    
-%    \renewcommand{\footrulewidth}{0pt}   
-%    \fancyfoot[L] {\fontsize{12}{10}\selectfont{\textcolor{logoOrange!50!magenta}{%
-%\hspace{1.6em}\fncircled{\usepage}}}}}}
-%}
-
-%\thispagestyle{default}
-
-
-
-
 
