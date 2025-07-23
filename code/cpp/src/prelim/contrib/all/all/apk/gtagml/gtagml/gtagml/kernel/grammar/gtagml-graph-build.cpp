@@ -84,8 +84,8 @@ void GTagML_Graph_Build::enter_abstract()
 
  current_paragraph_type_ = Paragraph_Types::Abstract;
 
- xml_writer_.writeStartElement("abstract");
- latex_stream_ << "\n\n\\begin{abstract}\n";
+ xml_writer_.writeStartElement("doc-abstract");
+ latex_stream_ << "\n\n\\twocolumn[\\begin{docAbstract}\n";
 }
 
 
@@ -219,7 +219,7 @@ void GTagML_Graph_Build::close_paragraph()
  if(current_paragraph_type_ == Paragraph_Types::Abstract)
  {
   current_paragraph_type_ = Paragraph_Types::N_A;
-  latex_stream_ << "\n\\end{abstract} \n";
+  latex_stream_ << "\n\\end{docAbstract}] \n";
   set_paragraph_bridge();
  }
  else

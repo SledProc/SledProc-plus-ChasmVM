@@ -267,7 +267,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
 
  add_rule( gtagml_context, "emph-symbolic",
-   " @/ (?<text> [^/\\s]+) "
+   " @/ (?<text> [^;,:/\\s-]+) "
    ,[&]
  {
   QString text = p.matched("text");
