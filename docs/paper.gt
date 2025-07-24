@@ -774,8 +774,8 @@ operations, path-integration, infinite summation, and so forth).
 Constructed examples are prominent in both linguistics 
 and phenomenology.  Relatedly, the "t/demarcation problem/" 
 %-- defending them as legitimate inquiry, not pseudoscience 
-%-- plays similarly in both contexts.  Suppose I want to examine a 
-pair of hypothetical examples:
+%-- plays similarly in both contexts.  Suppose I examine a 
+pair of hypothetical utterances:
 
 %/ exs
 (1)  John poured water onto the stove.
@@ -786,9 +786,9 @@ The most obvious point would be how "/poured/" versus "/spilled/" frame the
 action in different ways (deliberate or accidental).  By selecting 
 one or the other, the speaker implicitly expresses beliefs about 
 John's mental state; such choice-effects are cued by the lexical contrast 
-between the two verbs.  Choice of words can encode 
-information about the speaker's epistemic starting-point; the 
-sentence is not merely notating observable details.  This phenomenon 
+between the two verbs.  The 
+sentence is not merely notating observable details: choice of words can encode 
+information about the speaker's epistemic starting-point.  This phenomenon 
 is nicely illustrated in (1) and (2), constructed or not.  
 
 But let's step back.  For sake of discussion, I will assume (1) and (2) 
@@ -837,7 +837,7 @@ but they also exist in an approximative manner
 vis-a-vis people (and often animals) around us.  
 Others' cognitions being, modulo such imprecision, 
 a natural feature of our own rationality undergirds 
-%-- so I claim %-- the feasibility of both 
+(I claim) the feasibility of both 
 phenomenological and linguistic analysis.
 We have a 
 structural model for how people comport themselves 
@@ -921,7 +921,7 @@ For `Boltetal;, then, syntax and semantics develop in consort.  On the
 one hand we have theories for how to properly model syntactic 
 structure (e.g., Categorial Grammar).  On the other, semantic theory 
 should define operations that are referenced by syntactic operations 
-by analogy to how lexicons define single words.  For [], Conceptual Spaces 
+by analogy to how lexicons define single words.  In [/Bolt/], Conceptual Spaces 
 supply the requisite semantic architecture, analyzing how 
 two concepts' respective "t/spaces/" can interact.  I am not convinced 
 of the explanatory value of 
