@@ -88,7 +88,7 @@ to many inhabitants beyond the city proper.
 Uncertainties in (7) and (8) are of a different sort: anaphora resolution rather than quantifier-scope.  
 They also have two competing interpretations, depending on whether "/she/" is read as Ariel or Beatrice.  The 
 former option is more likely in (7) because one can tell from a photograph what the depicted subject 
-"looks like".  But we can't */a priori/* exclude a continuation like "x/you'd have to be sick to 
+"/looks like/".  But we can't */a priori/* exclude a continuation like "x/you'd have to be sick to 
 take such a bad shot/".  Nor can we fail to imagine a scenario for (8) where Ariel takes a picture of 
 Beatrice photographing colorful birds.
 
@@ -637,7 +637,7 @@ to construct ad-hoc sentences/utterances in service
 of theoretical claims.  Such methods 
 raise two questions: whether samples not taken from 
 real-life corpora are empirically valid, and whether 
-%-- testing that sentences is meaningful or grammatical 
+%-- in testing that sentences is meaningful or grammatical 
 %-- language-users can rely on just their own judgment 
 (rather than conducting some survey) as conclusive.  
 
@@ -648,7 +648,7 @@ have well-rehearsed protocols even while normal
 empirical disputation relative to publicly-accessible data 
 does not apply.  The possibility of one writer assenting 
 or objecting to another's formulation implies that 
-claims largely endorsed by a discourse community 
+claims largely endorsed by a research community 
 serves witness to their theoretical value %-- no 
 less than claims warranted by more empirical measures.
 
@@ -671,16 +671,16 @@ linguistics/", but situates such uncertainty in a larger philosophical context.
 In particular, */most/* scientific theories entertain taxonomies and analyses of 
 a domain of entities encompassing both public observables and "t/hypothesized/" 
 posits that %-- for one of several possible reasons %-- cannot be "h/seen/".  
-Empiricism is */structural/* insofar as such "t/unobservables/" can be 
+Empiricism is */structural/* insofar as such "t/unobservables/" are 
 taken seriously because they contribute to persuasive explanations 
-of */observables'/* behavior, with structural models unifying the seen 
+of */observables'/* behavior, with structured models unifying the seen 
 and the hidden into a rational package.  Sometimes unseen posits are 
 deemed just as real as everything else, merely beyond our capabilities 
 of (instrument-enhanced) observation, at least for now.  Other phenomena 
 (like "t/dark energy/") are left more open-ended, possibly subsumed under 
 such ontological realism or possibly artifacts of some more complex process 
 (like "t/phonons/", which behave like "i/particles/" of sound, but 
-that's largely a metaphor).  Natural selection or "t/design/" would not be an 
+that's largely a metaphor [/KamranMajid/]).  Natural selection or "t/design/" would not be an 
 object, but rather an encompassing system wherein adaptation drives 
 evolution.  Potentially "t/dark/" matter and energy will ultimately 
 be given a similarly indirect and holistic cosmological interpretation, 
@@ -727,7 +727,7 @@ A reasonable paraphrase vis-a-vis constructed sentences is that, for purposes
 of expositing semantic or syntactic claims, the universe of linguistic 
 objects is broader than merely the totality of sentences humans have in 
 fact created.  Ad-hoc hypotheticals also belong to that 
-domain if they belong to model-building regimes.
+domain if they serve and fit within model-building regimes.
 
 I would put it thus: what makes a sentence an object in the 
 domain of entities spotlighted by linguistics is not the 
@@ -737,7 +737,7 @@ annotations, etc. whose ordinary ground is real-world
 sentences.  We can, for instance, note syntactic, morphological, or lexical patterns, 
 and point out where pragmatic interpretation is needed.  Constructed 
 sentences may or may not conform to English grammar, 
-but at the question of whether they do so is well-posed.    
+but at least the question of whether they do so is well-posed.    
 We can write down each word's part of 
 speech; track pronoun-antecedent pairings and singular or plural alignment; observe 
 how inflections indicate verb-tense; and etc.: minimal operations in the 
@@ -760,12 +760,12 @@ Instead of focusing on the contrast between real and hypothetical
 experiences, methodology should consider whether some target of 
 analysis is amenable to the notions and structures comprising an 
 analytic protocol.  A hypothetical object, space, or situation becomes 
-an instance of a theoretical model via the applicability 
-that model's operative and descriptive maxims.  The proper explanatory 
+an instance of a theoretical model via the applicability of 
+that model's simulative and descriptive maxims.  The proper explanatory 
 domain of a theory is any structure that can be analyzed 
 according to the terms of that theory %-- including artifacts 
-conjured ad-hoc precisely to test, clarify, or refine the theory.
-By analogy, again, complex numbers, despite  
+conjured ad-hoc precisely to test, clarify, or refine it.
+By analogy, complex numbers, despite  
 lacking physical interpretations (such as spatial distance) 
 are objects of mathematical reasoning because they are 
 amenable to many quantitative methods (arithmetic 
@@ -815,8 +815,8 @@ our granular decisions to direct attention hither and thither.
 
 And yet, such configurations are also implicit in the 
 sentences' meanings.  Foci of attention tend to become 
-signified as nouns; so in both cases we have "John" and 
-"the stove".  It is John who initiates the action that 
+signified as nouns; so in both cases we have "/John/" and 
+"/the stove/".  It is John who initiates the action that 
 affects the stove's state, so the former becomes encoded 
 as subject and the latter as object.  Since speakers 
 implicitly expresses the evidence for propositions 
@@ -1039,7 +1039,7 @@ serves as a "/staging area/" for intermediate-level concept-aggregates.
 
 Syntactically, the word order seems fairly rigid.  This 
 is hardly self-evident, because each contribution 
-%-- "red" and "tin", say %-- feels unrelated.  Still, 
+%-- "/red/" and "/tin/", say %-- feels unrelated.  Still, 
 evidently there are cognitive trends in the mental 
 "/staging area/" that yield a preference for 
 building conceptual aggregates via certain formulae.  
