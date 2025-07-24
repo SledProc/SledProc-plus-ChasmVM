@@ -114,7 +114,7 @@ for (3) and (4):
 Changing the context to a */band/* playing, versus an audience member, imposes a different interpretive 
 framework: usually bands perform a "d/set/" with their own material (or covers).  Meanwhile, switching 
 from the exact "/three/" to the more flexible "/one or another/" gives enough construal slack that 
-putting the later scope in the former makes interpretive sense.
+putting the later scope in the former makes interpretive sense.  `thispagestyle<two>;
 
 Despite the competing interpretations, each reading of each sentence I have discussed so 
 far, I believe, has a fairly obvious logical form.  But there are other examples where a logical 
@@ -435,13 +435,18 @@ variation is expected in an extended region due to texture
 and lighting; and second because visible substances have 
 optical qualities beyond just red/green/blue quantities 
 %-- albedo, specularity, glossiness, metallicity, opaqueness, etc. 
+[/DavitGigilashvili/], [/XiaoyingGuo/], [/MirjaliliHardeberg/], 
+[/ShinyaNishida/], [/WendtFaul/] [/JanaZujovic/].
 Object boundaries are suggested by discontinuities in visual properties of 
 varying kinds, not just pure color; moreover, segmentation 
 algorithms have to be cautious of spurious boundaries 
 due to light/shadow effects and the vagaries of pigmentation.  
 
 Humans subconsciously perform complex image-analysis tasks, many 
-of which can be simulated by computer-vision algorithms: 
+of which can be simulated by computer-vision algorithms [/Galunetal/], 
+[/KrahenbuhlKoltun/], 
+[/TodorovicAhuja/], [/Wolfetal/], glossiness
+: 
 texture segmentation, ;/3D/ reconstruction, occlusion compensation 
 (e.g., perceiving the shape of a vase's back side by projecting 
 around from its visible rim-circle).  Via color alone we 
@@ -1452,7 +1457,7 @@ as in
 
 %/ exs
 (2)  We gave the animal shelter a hundred dollars 
-/
+/+
 
 However, indirect objects may be ineliminable for a completed idea while 
 also resistant to the transform whereby a clause headed 
