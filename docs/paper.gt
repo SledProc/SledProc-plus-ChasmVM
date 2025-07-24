@@ -405,16 +405,17 @@ evidently permits a wider and more malleable repertoire
 of responses.  Animal behavior and intelligence 
 has evolved in consort with consciousness: we exist in a world 
 of conscious representations that allow us to observe 
-surrounding environments without immediately acting.  We benefit 
-from the opportunity to formulate reactions thoughtfully, informed 
+surrounding environments without immediately committing to a 
+course of action.  We benefit 
+from opportunitities to formulate reactions thoughtfully, informed 
 by values, personal identity, and past experience.
 
 Suppose I stand by a platform waiting for a subway to arrive.  I need to board 
 the correct train.  To do so, I may well follow a well-rehearsed 
 protocol: hearing the train cues me to look down the platform; upon seeing 
-its outline I would then focus attention on the letter- and color-coded 
+its outline I then focus attention on the letter- and color-coded 
 symbol painted on the front.  If it indicates the correct train, 
-I stepp back to allow passengers 
+I pace back to allow passengers 
 to disembark.  Each step in this process is consciously mediated. 
 I need to deliberately shift my perceptual orientation multiple 
 times, and could break off the "t/protocol/" given some external 
@@ -437,8 +438,9 @@ variation is expected in an extended region due to texture
 and lighting; and second because visible substances have 
 optical qualities beyond just red/green/blue quantities 
 %-- albedo, specularity, glossiness, metallicity, opaqueness, etc. 
-[/DavitGigilashvili/], [/XiaoyingGuo/], [/MirjaliliHardeberg/], 
-[/ShinyaNishida/], [/WendtFaul/] [/JanaZujovic/].
+[/DavitGigilashvili/], [/XiaoyingGuo/], 
+[/HarveySmithson/], [/Mallickelal/], [/MirjaliliHardeberg/], 
+[/ShinyaNishida/], [/Osadchyetal/], [/WendtFaul/], [/JanaZujovic/].
 Object boundaries are suggested by discontinuities in visual properties of 
 varying kinds, not just pure color; moreover, segmentation 
 algorithms have to be cautious of spurious boundaries 
@@ -448,7 +450,7 @@ Humans subconsciously perform complex image-analysis tasks, many
 of which can be simulated by computer-vision algorithms [/Galunetal/], 
 [/KrahenbuhlKoltun/], 
 [/TodorovicAhuja/], [/Wolfetal/]: 
-texture segmentation, ;/3D/ reconstruction, occlusion compensation 
+texture segmentation, ;/3D/ reconstruction, occlusion compensation/interpolation  
 (e.g., perceiving the shape of a vase's back side by projecting 
 around from its visible rim-circle).  Via color alone we 
 infer textural and optical details, yielding a significantly 
@@ -562,7 +564,7 @@ a public-discursive face, even without empirical
 science as normally understood.  We aren't using 
 ;/EKG/ machines to measure neuron activity 
 while anyone examines a paperweight.  There may or 
-may not be identifiable neurological correlates to the 
+may not be identifiable neurobiological correlates to the 
 concepts of (e.g.) protention and retention.  
 Searching for such correlates would be a valid investigation 
 bridging the (metaphorical) "/in vivo/" and "/in vitro/" 
