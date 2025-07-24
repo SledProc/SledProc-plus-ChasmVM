@@ -9,7 +9,7 @@ philosophy of science.  I argue for explanatory
 paradigms that adequately model the interdependence of 
 linguistic and extra-linguistic knowledge/faculties 
 for understanding typical sentences.  In lieu 
-of set theory or preducate logic formalization, I 
+of set theory or predicate logic formalization, I 
 point out some similarities between natural and computer 
 languages, so that formal structures related to 
 compilers and programming-language implementation 
@@ -77,7 +77,7 @@ By contrast, one is free to hear (4) as nesting the scope of "/three/" inside "/
 (it is a general principle that three judges hear an appeal, but the set of 
 individuals can vary from one case to another).  
 
-In (6), reading a quanitifier's intent requires distinguishing levels of exactitude.  Rhetoriccally, 
+In (6), reading a quantifier's intent requires distinguishing levels of exactitude.  Rhetorically, 
 "/all/" often actually means "/most/".  The (6) speaker is not heard to 
 report on 10+ million residents as if they were personally interviewed (nor would (6) be 
 falsified by scattered counter-examples).  On the other hand, the land area of New York is indeed 
@@ -96,9 +96,9 @@ The issue in (9) and (10), by contrast, is ordinary polysemy: (9) might involve 
 accountant with offices facing a financial institution, or a field clinic established 
 near a river.  And (10) could describe a baseball collectible or an animal sculpture. 
 I include these for point of contrast: the ambiguity in the former three pairs, 
-I believe, is */holistic/* and */compositional/* whereas the latters' underdeterminism 
+I believe, is */holistic/* and */compositional/* whereas the latter's underdeterminism 
 is more localized (even though selecting one or another reading of */bank/*, and 
-*/bat/*, frames lexical choices for the overall sentense; my point is that 
+*/bat/*, frames lexical choices for the overall sentence; my point is that 
 the locus of sense-divergence can be reduced to a single word).  
 
 I chose the first three sentence-pairs because the variable factor in each 
@@ -139,7 +139,7 @@ hear an implicit "y/I believe that/" attached to any utterance.  Since a
 claim of @/P is almost always a claim of "y/I believe @/P/" this kind of 
 meta-discursive attitude can be subsumed into ordinary logic.   
 Often, of course, we present one claim to justify another 
-(imagine a variant of (11) tbat explicitly mentions polling numbers).  
+(imagine a variant of (11) that explicitly mentions polling numbers).  
 So the pattern of propositions justifying other propositions 
 does not in itself challenge the validity of semantic theories 
 premised on treating sentences as encodings for propositions.
@@ -186,7 +186,7 @@ However, the */lexical/* underdeterminacy of "/dresser/" or "/bat/"
 is a purely local phenomenon that can't be equated with more holistic 
 examples such as `onethrn;.  To put it differently, 
 it's credible to imagine homonyms like "/dresser/"  
-as surface-level accidents, artificats of random drift masking a lexical 
+as surface-level accidents, artifacts of random drift masking a lexical 
 "t/deep structure/" by analogy to the syntactic.  
 Perhaps lurking behind English lies an idealized language where senses 
 could be marked, so "d/person/" and "d/furniture/" dresser become just 
@@ -212,7 +212,7 @@ distinguish verb subjects from objects in anaphoric reference.  But
 should we theorize ideal languages that subsume all such ambiguities 
 under fully-determined contracts?
 
-We might be tempted by a formal semantcs whose basic premises are like these:
+We might be tempted by a formal semantics whose basic premises are like these:
 
 %/  enums
  1.  Canonically, sentences signify propositions %-- by analogy to how words signify concepts.
@@ -426,7 +426,7 @@ or not, because of subjectively controllable choices of cognitive orientation.
 
 Not that we have first-person awareness of all cognitive 
 processes.  Conscious reality has many constituents 
-that we experience as perceptual givens despute being the product of 
+that we experience as perceptual givens despite being the product of 
 complex (subconscious) reasoning.  We see a world of discrete objects, 
 whose contours and boundaries are inferred via visual processing.  
 Sight employs color variation to partition visual scenes, but 
@@ -638,14 +638,14 @@ of theoretical claims.  Such methods
 raise two questions: whether samples not taken from 
 real-life corpora are empirically valid, and whether 
 %-- testing that sentences is meaningful or grammatical 
-%-- language-user can rely on just their own judgment 
+%-- language-users can rely on just their own judgment 
 (rather than conducting some survey) as conclusive.  
 
 There are interesting analogies between the epistemic 
 relevance of subjective accounts in linguistics 
 and in phenomenology.  Both disciplines 
 have well-rehearsed protocols even while normal 
-empirical disputation relative to publically-accessible data 
+empirical disputation relative to publicly-accessible data 
 does not apply.  The possibility of one writer assenting 
 or objecting to another's formulation implies that 
 claims largely endorsed by a discourse community 
