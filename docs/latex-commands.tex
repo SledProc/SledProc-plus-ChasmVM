@@ -1,0 +1,530 @@
+
+\usepackage[a4paper,
+            bindingoffset=0.2in,
+            left=.35in,
+            right=.35in,
+            top=.5in,
+            bottom=.5in,
+            footskip=.35in]{geometry}
+
+\setlength{\columnsep}{38pt}
+
+
+
+\usepackage{natbib}
+\setlength{\bibsep}{3pt}
+
+
+%\titleformat{\section}
+%  {\normalfont\Large}{\thesection}{1em}{}
+
+\renewcommand{\thesection}{\textcolor[rgb]{0,0.7,0.4}{\arabic{section}}}%
+
+
+%\titleformat{\subsection}
+%  {\normalfont\large}{\thesubsection}{0}{}
+
+%\definecolor{subsclr}{rgb}{0,0.5,0.7}
+%\definecolor{es-aqua}{HTML}{00ffffff}% 
+
+\renewcommand{\thesubsection}{\textcolor[rgb]{0,0.2,0.4}{\arabic{section}}%
+\hspace{1.5pt}.\hspace{1.5pt}\small{\textcolor[rgb]{0,0.3,0.4}{\arabic{subsection}}%
+}}
+
+\usepackage{xparse}
+
+\makeatletter
+
+%\newcommand{\@sect}[1]{\section{#1}}
+%\newcommand{\@subsect}[1]{\vspace{9pt}\subsection{#1}}
+
+\newcommand{\sL@section}[1]{\section{#1}}
+\newcommand{\sL@subsection}[1]{\vspace{14pt}\subsection{#1}
+
+\vspace{-18pt}
+\textcolor[rgb]{0.6,0.6,0.8}{\rule{\columnwidth}{0.4pt}\vspace{-15pt}}}
+
+\newcommand{\@sectionLevel}[2]{%
+\ifcase#1\relax
+\or{\sL@section{#2}}
+\or{\sL@subsection{#2}}
+\else{}
+\fi
+}
+
+
+\NewDocumentCommand{\s}{E{.}{}D||{}m}{%
+\IfNoValueTF{#1}{
+\@sectionLevel{#2}{#3}
+}
+{%else
+\@sectionLevel{#1}{#3}
+}
+}
+
+
+\newcommand{\@pLevel}[2]{%
+\ifcase#1\relax{p0=#2}
+\or{\vspace{6pt}#2}
+\or{p2=#2}
+\else{}
+\fi
+}
+
+
+\NewDocumentCommand{\p}{E{.}{}D||{}+m}{%
+\IfNoValueTF{#1}{
+\@pLevel{#2}{#3}
+}
+{%else
+\@pLevel{#1}{#3}
+}
+}
+
+
+\newcommand{\@exsRef}[1]{\ref{exs:#1}}
+
+%\newcommand{\@exsRef}[1]{#1}
+
+%\usepackage{suffix}
+%\WithSuffix\newcommand{\exsRef*}{:#1}
+
+\NewDocumentCommand{\exsRef}{sd()}{%
+\IfBooleanTF{#1}{\@exsRef{#2}}{(\@exsRef{#2})}}
+
+\makeatother
+
+
+\newcommand{\citeLabel}[1]{\cite{#1}}
+
+\NewDocumentCommand{\citePage}{md()}{%
+\cite[p. #2]{#1}}
+
+\NewDocumentCommand{\citePages}{md()}{%
+\cite[pp. #2]{#1}}
+
+\NewDocumentCommand{\citeLocator}{md()}{%
+\cite[#2]{#1}}
+
+
+\newcommand{\onethrft}{\exsRef(1)-\exsRef(14)}
+
+\newcommand{\onethrn}{\exsRef(1)-\exsRef(9)}
+
+\newcommand{\onethandft}{\onethrn{} and \exsRef(13)-\exsRef(14)}
+
+
+\newcommand{\eS}[1]{\textbf{{\fontsize{9}{9}%
+\fontfamily{ppl}\selectfont{\textcolor{red!40!black}{#1}}}}}
+
+\newcommand{\q}[1]{``#1''}
+
+\newcommand{\mdash}{---}
+
+\newcommand{\visbreak}{\vspace{9pt}}
+
+
+
+
+\newcommand{\upAdj}[1]{\vspace{-#1}}
+
+
+\newcommand{\nip}{\noindent}
+
+\newcounter{exsCount}
+
+\newcounter{exsTest}
+\refstepcounter{exsTest}
+
+\makeatletter
+
+\DeclareRobustCommand{\setlabel}[2]{%
+  \phantomsection
+  #1\def\@currentlabel{\unexpanded{#1}}\label{#2}%
+}
+
+\DeclareRobustCommand{\setlabelx}[2]{}
+
+
+\makeatother
+
+
+%\newcommand{\exsItem}{%
+
+
+\newenvironment{ZexsGroup}{\vspace{2pt}%
+\begin{itemize}[leftmargin=2pt, itemsep=1pt]}{\end{itemize}\vspace{2pt}}
+
+\DeclareRobustCommand{\ZexsItem}{%
+\refstepcounter{exsCount}
+\item[(\arabic{exsCount})] \label{exs:\arabic{exsCount}}  
+}
+
+\usepackage{xcolor}
+
+\definecolor{itemc}{RGB}{3, 94, 87}
+
+
+\newenvironment{exsGroup}{\vspace{4pt}}{\vspace{7pt}}
+
+\newcommand{\rrboxm}[4]{%
+\raisebox{#1}{\rotatebox{#2}{\ensuremath{#3}}}\hspace{#4}%
+}
+
+\DeclareRobustCommand{\exsItem}{%
+\vspace{3pt}
+\refstepcounter{exsCount}
+\noindent\rrboxm{8pt}{-90}{\smile}{1.5pt}\textcolor{itemc}{\arabic{exsCount}}%
+\rrboxm{8pt}{-90}{\frown}{-.5pt} \label{exs:\arabic{exsCount}}  
+}
+
+
+
+%\setlabelx{\arabic{exsCount}}{exs:\arabic{exsCount}}
+
+
+\newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}}
+
+\newenvironment{itemz}{\vspace{5pt}\begin{itemize}}{\end{itemize}}
+
+\newenvironment{docAbstractx}{%
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \begin{abstract}
+}{%
+    \end{abstract}
+  \end{@twocolumnfalse}
+]
+}
+
+
+\newenvironment{docAbstract}{%
+  \begin{@twocolumnfalse}\maketitle
+    \begin{abstract}
+}{%
+    \end{abstract}
+  \end{@twocolumnfalse}\vspace{35pt}\thispagestyle{empty}
+}
+
+
+
+\usepackage{csquotes}
+\newenvironment{blockQuote}{\vspace{5pt}\begin{displayquote}}{\end{displayquote}}
+
+\newcommand{\enumsItem}{\item}
+
+%\setlist[itemize]{label=\textcolor{blue}{\textbullet}}
+
+
+\renewcommand{\labelenumi}{\theenumi}
+
+\usepackage{amssymb}
+
+\usepackage{xcolor}
+\definecolor{eitemc}{RGB}{83, 94, 187}
+
+\renewcommand{\theenumi}{\textcolor{eitemc}{\raisebox{.5pt}{\small\textbf{\arabic{enumi}.}}}}
+
+\newcommand{\symItemx}{\item[\textcolor{eitemc}{%
+\raisebox{1pt}{\resizebox{4pt}{4.5pt}{$\blacksquare$}}]}}
+
+
+\newcommand\spiral{}% Just for safety so \def won't overwrite something
+\def\spiral[#1](#2)(#3:#4:#5){% \spiral[draw options](placement)(end angle:revolutions:final radius)
+\pgfmathsetmacro{\domain}{pi*#3/180+#4*2*pi}
+\draw [#1,
+       shift={(#2)},
+       domain=0:\domain,
+       variable=\t,
+       smooth,
+       samples=int(\domain/0.08)] plot ({\t r}: {#5*\t/\domain})
+}
+
+\newcommand{\symItem}{\item[\textcolor{eitemc}{%
+\raisebox{2pt}{%
+\tikz{
+\begin{scope}[transform canvas={scale=0.025},overlay]
+%\node[draw=eitemc,fill=eitemc!40!red, fill opacity=0.4, circle] {};
+%\node[draw=eitemc,fill=eitemc!40!red,circle, opacity=0.6, xscale=0.6, yscale=0.6,] {};
+\spiral[opacity=0.4, eitemc](0,0)(90:5:5);
+\spiral[opacity=0.4, eitemc!60!black](0.3,0.3)(90:2:5);
+%\draw [domain=0:25.1327,variable=\t,smooth,samples=75]
+%        plot ({\t r}: {0.002*\t*\t});
+\end{scope}
+}
+}}]}
+
+
+
+
+
+\usepackage{textcomp}
+\newcommand{\sarr}{\textrightarrow}
+
+\newcommand{\OxFO}{\textbf{\scriptsize{0xF0}}}
+
+\newcommand{\UTFonesix}{\textbf{\scriptsize{UTF-16}}}
+
+\newcommand{\etal}{\textit{et al.}}
+
+\newcommand{\Gardenfors}{G\"ardenfors}
+
+
+
+\newcommand{\redbox}{\makebox{\eS{red}\hspace{4pt}\ensuremath{\cap}\hspace{4pt}\eS{box}}}
+
+\newcommand{\jrefs}{(15)/(16)}
+
+\newcommand{\cq}[1]{{\fontfamily{gar}\selectfont ``}#1{\fontfamily{gar}\selectfont ''}}
+
+\newcommand{\repeatName}{\_\_\_\_\_}
+
+\newcommand{\visavis}{vis-`a-vis}
+
+
+\usepackage{enumitem}
+\setlist[enumerate]{leftmargin=14pt,labelindent=-3pt}
+\setlist[itemize]{leftmargin=20pt, labelsep=13pt}
+
+
+\usepackage{xcolor}
+
+
+
+\usepackage[tracking=true]{microtype}
+
+\newcommand{\tinyurl}[1]{\raisebox{2pt}{{\scriptsize \url{#1}}}}
+
+\usepackage[colorlinks=true]{hyperref}
+
+\colorlet{urlclr}{red!40!magenta!50!orange}
+
+\hypersetup{
+ urlcolor = urlclr,
+ urlbordercolor = cyan!60!black,
+ linkcolor = red!30!black,
+ citecolor = orange!30!black,
+ citebordercolor = yellow!30!black,
+} 
+
+\usepackage{setspace}
+
+\newcommand{\biburl}[1]{ {\fontfamily{gar}\selectfont{\textcolor[rgb]{.2,.6,0}%
+			{\scriptsize \\\setstretch{3}{\textls*[-70]{\url{#1}}}}}}}
+
+%\newcommand{\bibformat}[1]{ {\fontfamily{gar}\selectfont{\textcolor[rgb]{.6,.2,0}%
+%			{\scriptsize \\\setstretch{4}{{#1}}}}}}
+
+\newcommand{\bibformat}[1]{ {\fontfamily{gar}\fontsize{10}{10}\selectfont{%
+\textcolor[rgb]{.6,.2,0}{%
+\textls*[-70]{%
+#1%
+}}}}}
+
+
+
+%\usepackage{verbatim}
+%\usepackage{verbatimbox}
+
+\usepackage{listings}
+\lstset{
+basicstyle=\ttfamily\linespread{0.94}\fontsize{8}{11}\selectfont\color[rgb]{.6,.2,0},
+columns=flexible,
+breaklines=true
+}
+
+\newsavebox\hrefbox
+
+\NewDocumentEnvironment{boxurl}{d()}{%
+
+\begin{lrbox}{\hrefbox}
+\begin{minipage}{\columnwidth}}
+{\end{minipage}
+\end{lrbox}
+
+\vspace*{-4pt}
+\href{#1}{\usebox{\hrefbox}}}
+
+
+\usepackage{titlesec}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{tgtermes}
+
+
+\usepackage{graphicx}
+
+\newcommand{\eA}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
+
+%\newcommand{\eA}[1]{{\iffootnote\begin{footnotesize}{\textsc{#1}}\end{footnotesize}%
+%\else\begin{OldFootnoteSize}{\textsc{#1}}\end{OldFootnoteSize}\fi}}
+
+
+
+\raggedbottom
+
+%\newgeometry{left=0.8in,right=0.8in,top=.6in,bottom=.6in}
+
+\newcommand{\StoP}{\eS{S}-to-\eS{P}}
+
+\newcommand{\Boltetal}{Bolt \textit{et al.}}
+
+
+
+\newcommand{\intitle}[1]{{\hspace{3pt}\textls*[-80]{\texttt{\textit{#1}}}}\hspace{-1pt}}
+
+\setcitestyle{square}
+
+\title{Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology for Syntactic Theory}
+
+
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
+\definecolor{AquaA5}{HTML}{4bacc6}
+\definecolor{blggr}{RGB}{25, 180, 180}
+
+\definecolor{tlc-main}{RGB}{125, 50, 80}
+
+\newcommand{\ul}[1]{\underline{#1}}
+
+
+\newcommand*\fncircled[1]{\tikz[baseline=(char.base)]{
+
+\begin{scope}[rotate=-29, transform shape]
+
+ \node[shape=circle, yscale=.7, %rotate around={45:(0,0)},
+%shape border rotate=39,
+top color=blggr!20, bottom color=AquaA5!90!black,
+inner sep=7pt, shading angle=75,xshift=.5pt,yshift=-.5pt] (char) {\phantom{\ul{#1}}};
+
+ \node[shape=circle,top color=white, bottom color=blggr!6,
+fill opacity=1, yscale=.7, shape border rotate=39,
+inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
+
+\end{scope}
+
+ \node {\ul{#1}};
+
+}}
+
+
+
+\newcommand*\fnellipsed[1]{\tikz[baseline=(char.base)]{
+
+\begin{scope}[rotate=-29, transform shape]
+
+ \node[shape=circle, yscale=.7, %rotate around={45:(0,0)},
+%shape border rotate=39,
+top color=blggr!20, bottom color=tlc-main,
+inner sep=7pt, shading angle=75,xshift=.5pt,yshift=-.5pt] (char) {\phantom{\ul{#1}}};
+
+ \node[shape=circle,top color=white, bottom color=blggr!6,
+fill opacity=1, yscale=.7, shape border rotate=39,
+inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
+
+\end{scope}
+
+ \node {\ul{#1}};
+
+}}
+
+
+
+
+%\fancyfoot[L]{\fancyplain{}{\bfseries\thepage}}
+
+\fancypagestyle{main}{
+
+\setlength{\headsep}{9pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fnellipsed{\thepage}}}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+
+\fancypagestyle{two}{
+
+\setlength{\headsep}{25pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fnellipsed{\thepage}}}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+
+
+
+\pagestyle{main}
+
+\fancypagestyle{bib}{
+
+\setlength{\headsep}{9pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fncircled{\thepage}}}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+
+
+
+\fancypagestyle{bib-last}{
+
+\setlength{\headsep}{9pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fncircled{\thepage}}}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+
+
+
+%\fancypagestyle{defaultx}{
+%    \fancyhf{}           
+%    \renewcommand{\headrulewidth}{0pt}    
+%    \renewcommand{\footrulewidth}{0pt}   
+%    \fancyfoot[L] {\fontsize{12}{10}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\hspace{1.6em}\fncircled{\usepage}}}}}}
+%}
+
+%\thispagestyle{default}
+
+
+
+
+
