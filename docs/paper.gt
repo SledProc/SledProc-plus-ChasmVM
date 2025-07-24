@@ -445,8 +445,7 @@ due to light/shadow effects and the vagaries of pigmentation.
 Humans subconsciously perform complex image-analysis tasks, many 
 of which can be simulated by computer-vision algorithms [/Galunetal/], 
 [/KrahenbuhlKoltun/], 
-[/TodorovicAhuja/], [/Wolfetal/], glossiness
-: 
+[/TodorovicAhuja/], [/Wolfetal/]: 
 texture segmentation, ;/3D/ reconstruction, occlusion compensation 
 (e.g., perceiving the shape of a vase's back side by projecting 
 around from its visible rim-circle).  Via color alone we 
@@ -1722,8 +1721,8 @@ grammar, there is a branch of type-theoretic
 of our discursive domains into, in effect, 
 distinct "t/ontological regions/", such as 
 physical objects, living things, sentient 
-beings, rational agents [/JensAllwood/], 
-[/ChungChiehShan/], [/MeryRetore/], [/PustejovskyType/], 
+beings, rational agents [/JensAllwood/], [/MeryRetore/], 
+[/PustejovskyType/], [/ChungChiehShan/],  
 [/PeterRSutton/].  The superposition of 
 multiple such regions gives conceptual structure 
 to sentences about referents that exist in multiple strata:
