@@ -159,7 +159,7 @@ part of the discourse cannot be adequately captured via formulaic logic.
 
 
 Cumulatively, then, I believe that sentences `onethrft; offer examples 
-of two issues for formal semantics:
+of two issues for formal semantics: `vspace<5pt>;
 
 %/ enums
  1.  While assertion (or implicature) of some proposition @/P is a 
@@ -186,7 +186,8 @@ However, the */lexical/* underdeterminacy of "/dresser/" or "/bat/"
 is a purely local phenomenon that can't be equated with more holistic 
 examples such as `onethrn;.  To put it differently, 
 it's credible to imagine homonyms like "/dresser/"  
-as surface-level accidents, artifacts of random drift masking a lexical 
+as surface-level accidents, artifacts of random drift in usage, borrowings, or 
+accent, masking a lexical 
 "t/deep structure/" by analogy to the syntactic.  
 Perhaps lurking behind English lies an idealized language where senses 
 could be marked, so "d/person/" and "d/furniture/" dresser become just 
@@ -194,7 +195,7 @@ different words.  The problem on a larger scale is that sentences are supposed t
 function via composition: as words signify concepts, so sentences 
 convey propositional content because they merge concepts according 
 to specific recipes (syntax matters because multi-concept complexes 
-are not just unstructured "t/bags/": the King loves the Queen versus vice-versa).  
+are not just unstructured "t/bags/": the king loves the queen versus vice-versa).  
 I argue from cases like `onethrft; that even after fully digesting 
 compositional intent, predicate signification remains underdetermined.
 
@@ -212,7 +213,7 @@ distinguish verb subjects from objects in anaphoric reference.  But
 should we theorize ideal languages that subsume all such ambiguities 
 under fully-determined contracts?
 
-We might be tempted by a formal semantics whose basic premises are like these:
+We might be tempted by a formal semantics whose basic premises are roughly these: `vspace<-7pt>;
 
 %/  enums
  1.  Canonically, sentences signify propositions %-- by analogy to how words signify concepts.
@@ -229,18 +230,18 @@ It is true, say, that "/Trump/" should be interpreted differently
 when people are playing bridge or talking politics, but this means that 
 ambient situations nudge speakers in contextual ways when construing how 
 their spoken language should be projected to its perfected form.  Context 
-disposes us to "/label/" a word like "/Trump/" as either a person or a card 
+disposes us to "/label/" a word like "/trump/" as either a person or a card 
 suit.  But such are antecedent to semantics proper; for theoretical 
 purposes we can take the lexicon as enriched with such labels */a priori/*.
 The cognitive gap between actual and ideal dialects is orthogonal to linguists' 
 project, which is to describe rules of the latter.    
 
 I contend that paradigms authorizing linguists and philosophers to 
-imagine such ideal languages %-- as their focal topic %-- leads us 
+imagine such ideal languages leads us 
 to underestimate the theoretical dependence of linguistics 
 on other disciplines.  By way of example, sentences `onethrft; imply 
 that the specific @/P derived from an @/S 
-depends (in part) on addressee's rational acts that aren't linguistic 
+depends (in part) on addressees' rational acts that aren't linguistic 
 in nature.  The reason why quantifier scope is nested in (4) but not (3) is that 
 the predicates signified by that reading make more sense than their 
 alternatives, but such judgment relies on knowledge of socio-cultural, not 
@@ -261,7 +262,7 @@ proposition is given by its truth
 conditions/" we have to ask */why/* sentences encode propositions (or 
 are optimized to do so).  People don't talk out of some abstract desire 
 to assert fragments of symbolic logic, but rather to coordinate their joint 
-activity.  Logically transparent statements are certainly  
+activity.  Logically transparent statements are certainly an 
 important part of that, but still, language's ability to convey beliefs 
 is an */emergent property/* of human verbal communication.  
 The existence of coherent `StoP; mappings is not an axiom to 
@@ -450,10 +451,11 @@ Humans subconsciously perform complex image-analysis tasks, many
 of which can be simulated by computer-vision algorithms [/Galunetal/], 
 [/KrahenbuhlKoltun/], 
 [/TodorovicAhuja/], [/Wolfetal/]: 
-texture segmentation, ;/3D/ reconstruction, occlusion compensation/interpolation  
+texture segmentation, line/pattern detection, ;/3D/ reconstruction, occlusion compensation/interpolation  
 (e.g., perceiving the shape of a vase's back side by projecting 
-around from its visible rim-circle).  Via color alone we 
-infer textural and optical details, yielding a significantly 
+around from its visible rim-circle), classifying 
+subregions (in computational parlance, "t/object proposals/" [/Gavvesetal;for instance/]), 
+Via color alone we infer textural and optical details, yielding a significantly 
 enlarged color space, and thereby perceive objects' external 
 geometry (e.g., their gradient vectors at each point 
 %-- the degree to which their shape departs from a flat plane).  
@@ -473,7 +475,7 @@ efficacy of conscious control.  But even if perceptual
 processes such as textural segmentation, occlusion compensation, 
 and gradient recognition are not guided by conscious 
 intervention, it is only */through/* consciousness 
-that such gestalts factor in to larger-scale 
+that these factor into larger-scale 
 human actions.  The human mind works in such a manner  
 that pre-conscious operations become consequential  
 as they are woven into conscious experience, 
@@ -516,7 +518,7 @@ consciousness is the humanities' */in vivo/*, we similarly
 cannot observe someone else's mental states as objective givens.  
 This is a well-known philosophical controversy.  Phenomenology 
 offer techniques to adjudicate claims about cognition 
-*/in consciousness/*, compensating for the private nature 
+*/in consciousness/*, compensating for the private existence 
 of any one person's experience.  In particular, while introspective 
 consideration of mental states */as they occur/* is imperfect 
 (analysis alters the analyzed), we do have capabilities to 
@@ -529,15 +531,15 @@ to reflect on past experience with a more
 analytic/expository intent.
 
 Suppose I examine a colorful glass paperweight.  I will most likely shift my 
-visual focus from place to place a couple times, even when holding the 
-weight still, to discern the full color patterns on its visible 
+visual focus from place to place once or twice, even when holding the 
+weight still, to discern the coloration on its visible 
 side.  Then I might turn it over.  Perhaps, from touch, I infer that 
 the bottom side has a flattened base, which I now confirm visually 
 while rotating the object manually.  As I just begin that action I 
 have some anticipation of the obverse side's appearance, which (let's 
 say) is borne out by what I see next.  So a proto-image of that 
-hidden side is protained while the top is visible, and when the 
-bottom is visible instead my perception of the top is retained. 
+hidden side is */protained/* while the top is visible, and when the 
+bottom is seen instead my perception of the top is */retained/*. 
 The interplay of protention and retention creates a 
 perceptual synthesis.  Validation of protentive expectations 
 plays a logical role in such synthesis, as would sense-data 
@@ -546,9 +548,9 @@ had a plastic or cloth covering on its base, while I
 presumed it were all glass.  Our ability to both formulate 
 perceptual expectations and adjust to subsequent sense-data 
 gives a rational structure to the minimal exploratory 
-patterns of sense-perception.
+course of sense-perception.
 
-Via discussions such as these we can collectively analyze 
+Via discussions like these we can collectively analyze 
 phenomena such as retention, protention, and perceptual 
 synthesis.  Empirical actuality 
 is not required, nor even particularly relevant, for the 
@@ -562,7 +564,7 @@ protention and retention.  This gives the analysis
 a public-discursive face, even without empirical 
 science as normally understood.  We aren't using 
 ;/EKG/ machines to measure neuron activity 
-while looking at the paperweight.  There may or 
+whilst a test-subject looks at a paperweight.  There may or 
 may not be identifiable neurobiological correlates to the 
 concepts of (e.g.) protention and retention.  
 Searching for such correlates would be a valid investigation 
@@ -570,7 +572,7 @@ bridging the (metaphorical) "/in vivo/" and "/in vitro/"
 facets of human minds.  But as a high-level science, 
 cognitive phenomenology does not need to develop a 
 complete theory about how the parameters in its 
-explanatory arsenal emerge from physical substrata.  
+explanatory arsenal emerge from and/or supervene upon physical substrata.  
 It's goal, rather, should be to work toward 
 consensus about which theoretical ideas and 
 posits have analytic value and, among such 
@@ -610,8 +612,8 @@ consider how concepts such as intentionality and
 episodicity form building blocks of rigorous 
 cognitive models.  
 
-By systematizing a methodology 
-for analysis of cognition "/in-consciousness/" 
+By systematizing a process  
+for analyzing cognition "/in-consciousness/" 
 %-- by analogy to "/in vivo/" versus "/in vitro/" 
 %-- phenomenology establishes methodological 
 prototypes for humanistic and social sciences in 
@@ -621,7 +623,7 @@ are relevant.  Phenomenological terminology is
 central to such goals; its mode of analysis is not 
 open-ended, but grounded on the deployment of 
 specific ideas with relatively fixed technical 
-meanings.  Via this sense of discursive "t/practice/" I 
+meanings.  Via this sense of discursive */praxis/* I 
 will argue for connections between phenomenology 
 and cognitive linguistics.
 
@@ -637,7 +639,7 @@ to construct ad-hoc sentences/utterances in service
 of theoretical claims.  Such methods 
 raise two questions: whether samples not taken from 
 real-life corpora are empirically valid, and whether 
-%-- in testing that sentences is meaningful or grammatical 
+%-- in testing that sentences are meaningful or grammatical 
 %-- language-users can rely on just their own judgment 
 (rather than conducting some survey) as conclusive.  
 
