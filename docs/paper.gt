@@ -965,15 +965,15 @@ little deeper.  Consider a full sentence:
 
 %/ exs
 (1)  I put Mom's chocolate brownies in this red tin box, take some!
-/
+/+
 
-It's easy to break this down into a synthesis of concepts where 
+It's easy to destructure this into a union of concepts where 
 each word has a distinct contribution.  Here are a few: 
 
 %/ itemz
 
  *  tin box `sarr;  provides insight into how the box will look, and 
-feel to the touch, as well as how it should be opened
+feel to the touch, and how to open it
 
  *  red tin box `sarr;  the color helps one find it amidst other objects
 
@@ -989,7 +989,7 @@ hearer will want to eat them
  *  Mom's chocolate brownies `sarr;  helps anchor the referent in situations 
 known to the listener (insofar as the brownies are not otherwise identified); 
 viz., Mom made them, and this fact is known to the listener.  On an alternative interpretation, 
-the brownies are */for/* Mom, but this is less likely given the rest of the sentence.
+the brownies are */for/* Mom, but this is less likely in context.
 
 /
 
@@ -1018,10 +1018,10 @@ place to invoke the maxim that meanings are usually precursors
 to concrete actions.  Should (1)'s hearer decide to partake in 
 brownies, the meaning-content helps prep for finding and grasping them.  
 "/Red tin box/" thereby equips said hearer with 
-information relevant to locating, opening, and reaching inside the box.  
-Hearer does not need to form an explicit mental image at the moment 
+information relevant to locating, opening, and reaching inside the stash.  
+Hearer does not require an explicit mental image at the moment 
 (of enunciation), but */does/* need to later isolate the box from 
-a field of sense-data.  Of course, in imagining that future scenario, 
+fields of sense-data.  Of course, in imagining that future scenario, 
 hearer might potentially form a certain mental picture of a red tin box, 
 but it can adequately be imprecise.
 
@@ -1043,7 +1043,8 @@ is hardly self-evident, because each contribution
 %-- "/red/" and "/tin/", say %-- feels unrelated.  Still, 
 evidently there are cognitive trends in the mental 
 "/staging area/" that yield a preference for 
-building conceptual aggregates via certain formulae.  
+building conceptual aggregates via certain 
+formulae [/LangackerIntro:320/].  
 Among adjectives, those declaring attributes that are 
 more intrinsic to the nature of their substrata appear 
 closer to the noun than qualities which are more 
@@ -1075,7 +1076,7 @@ process, forming a conceptual nexus with some
 level of completeness and unity.  This surely reflects 
 how sentences reconstruct perceptual orientation: 
 in `jrefs;, say, John and "/the stove/" represent two 
-object-concepts which are inferred to stand as 
+object-concepts inferred to stand as 
 attentional foci for the speaker.  They serve 
 as attractional zones, or foregrounds, absorbing 
 awareness of other details and backgrounds.  Since linguistic structure
@@ -1108,10 +1109,11 @@ superordinates.
 
 There are, of course, multiple protocols that could be used 
 to model sentence structure.  Phrase-structure grammars emphasize 
-nested hierarchies.  Dependency grammars focus more on 
-inter-word relations (often among adjacent words, but crucial 
+nested hierarchies.  Dependency grammars  
+focus more on inter-word relations (often among adjacent words, but crucial 
 connections can exist between distant ones, such as from pronoun 
-to antecedent, or subject to verb when a clause intervenes).  
+to antecedent, or subject to verb when a clause intervenes) 
+[/GerdesKahane/], [/TimothyOsborne/], [/GeroldSchneider/].  
 Cognitively, we can emphasize the transformative effects 
 of any single word on a conceptual synthesis established 
 via preceding words, in a */logical/* ordering that 
@@ -1124,14 +1126,14 @@ and numeric literals, and "t/variable/"
 symbols that must be assigned a value before they are used. 
 The most common structure in such a language would be expressions consisting of a function 
 symbol and one or more "t/arguments/".  The */interpreter/* 
-that executes programs would essentially 
+that would executes programs is essentially 
 be a state machine, reading a sequence of symbols 
-in turn.  There would be the following basic operations:
+in turn.  There could be the following basic operations:
 
 %/ enums
 
  1.  If the current symbol is a numeric literal, convert it to an actual number 
-(e.g., the text "m/16/" becomes the hexadecimal `OxFO;).  Convert 
+(e.g., the text "m/16/" becomes hexadecimal `OxFO;).  Convert 
 string literals to arrays of glyph 
 codes (e.g., in the Unicode `UTFonesix; format).  Place the current 
 value on a program stack.
@@ -1140,16 +1142,16 @@ value on a program stack.
 its value from a global index.  Because every 
 variable is initialized before use, we can assume that 
 any value is ultimately obtained from source code 
-as in item 1, or read from an external source (like a local file).
+as in item `enumref<1>;, or read from an external source (like a local file).
 Again, place the current value on a program stack.
 
  3.  If the current symbol is a function-symbol, identify 
 which procedure is named by the symbol.  If we allow 
-polymorphism %-- one name may reference multiple procedures, 
+polymorphism %-- one name may reference multiple code-blocks, 
 distinguished by their signatures %-- than this process 
 requires examining the types of values further down the 
 program stack.  Once the correct procedure is identified, 
-transfer control to that procedure.  If implemented 
+transfer control to that function body.  If programmed 
 correctly, the called routine will take its inputs off the 
 stack and push its own return values, which in turn 
 will serve as inputs to later subroutines.
@@ -1167,10 +1169,10 @@ implementation are %-- first %-- resolving polymorphically
 has access to a list mapping procedure names to a collection of signatures.  
 Selecting a correct overload is straightforward if there is one exact 
 signature-match given the current stack types.  However, most modern 
-programming environments allow implicit type-casts (e.g., any integer is implicitly also 
+programming environments allow implicit type-casts (e.g., any integer is also 
 a decimal, with fractional part zero).  Moreover, modern languages commonly 
 adopt template-metaprogramming and/or class-inheritance systems where 
-a given variable-symbol could have multiple different types in different 
+a given variable-symbol could have different types in different 
 contexts.  In these systems, computing which overload matches a 
 given sequence of parameter-values is considerably more complicated.
 
@@ -1186,7 +1188,7 @@ both syntax (e.g., nested parentheses) and semantics (e.g., order of operands,
 such as multiplication before addition).  Parsing high-level code is therefore a 
 matter of reducing source files (which have extra structures such as nested 
 expressions) to a simpler representation based on token-sequences 
-(such details as nesting become "t/flattened/" to a single list, which works 
+(details like nesting become "t/flattened/" to a single lineup, which works 
 because subroutines enforce a contract about how the program stack should be used). 
 
 Despite its simplistic provenance, the "t/push/transfer/" execution model 
@@ -1195,7 +1197,7 @@ thing, the syntactic process just described %-- parsing more-complex
 code down to symbols arranged in a sequence ordered for push and transfer 
 actions %-- has some schematic resemblance to the role of syntax 
 in human language.  Moreover, semantic complexities such as 
-function polymorphism recall phenomena such as multiple word-senses, 
+function polymorphism recall phenomena like multiple word-senses, 
 where lexical units are, in effect, "t/overloaded/" with divergent 
 meanings by context.  
 
@@ -1204,12 +1206,12 @@ better represented in terms of parse-graphs than trees
 (where certain relations, like anaphora in the latter context 
 and side-effect propagation in the former, cut across tree-like 
 directed branches).  With proper edge-filtering, tree "t/visiting/" 
-algorithms (like push/transfer) can be adopted to parse graphs.
+algorithms (e.g., push/transfer) can be adopted to parse graphs.
 Type-checking may be described as a graph-traversal 
 strategy where the "t/program stack/" holds types rather 
 than concrete values.  Assuming polymorphism, 
 a type-checker must confirm that, given any stack-state with a 
-procedure symbol on top, there must be a unique implementation 
+procedure symbol on top, there is a unique implementation 
 whose parameter-types match those symbolized lower on the stack 
 (if so, its output type is then placed on the stack instead).  
 Both type-checking and push/transfer may thereby be modeled 
@@ -1238,10 +1240,10 @@ We can treat nouns as akin to
 whereas verbs, adjectives, and other modifiers 
 embody cognitive transforms applied to concepts 
 currently residing on this "t/stack/" 
-(which in this context is mostly metaphorical).  
+(albeit which, in the present context, is mostly metaphorical).  
 Given this conceptual background, I will adopt the 
-phrase "t/staging order/" as the linguistic 
-equivalent to computational "t/push/transfer/" order. 
+phrase "t/staging order/" as a linguistic 
+counterpart to computational "t/push/transfer/" order. 
 
 Type-checking and postordering are "t/functionalizable/" 
 similarities between natural and programming languages 
@@ -1252,13 +1254,13 @@ human and computer vision share capabilities
 whose functional roles in larger processing "t/modules/" 
 can be analyzed.  Image-analysis tactics such as texture 
 segmentation, occlusion compensation, and gradient-vector inference 
-have detailed mathematical formulae that may offer functional insights into 
+have detailed mathematical formulae that can offer functional insights into 
 visual perception (even if computer implementations may 
 be very different from brains').  Type-checking and postordering are 
 not at the same level of quantitative sophistication, 
-so we have not necessarily moved a theoretical needle very far 
+so we don't necessarily move a theoretical needle very far 
 by detecting structural analogies between graph-traversal 
-postorder and cognitive "t/staging/".  With that said, 
+postorder and cognitive "t/staging/".  Still, 
 I believe these analogies yield a formal model of 
 syntax/semantics interface that is more cognitively realistic 
 than `Boltetal;'s appeal to commutative diagrams.  
@@ -1279,13 +1281,13 @@ the set of */correct/* parse graphs are those that meet
 criteria of coherence, some of which can be modeled in terms 
 of graph-traversal protocols.  
 Such processes are apparently interdependent, in that (for example) 
-part-of-speech assignment influences phrase nesting and vice-versa.  
+Part-of-Speech assignment influences phrase nesting and vice-versa.  
 Language would be more computationally tractable if we could 
 present processing algorithms in a logical order, with the 
 results of earlier ones available to later.  In reality, 
 it seems as if our minds subconsciously test out many 
 initial-condition sets for traversals (e.g., multiple ways 
-of construing part of speech) and converge on best solutions 
+of construing parts of speech) and converge on best solutions 
 (e.g., parts of speech and phrase boundaries 
 being mutually consistent, without deriving the former first, 
 or vice-versa).  Conceptual synthesis and "t/staging/" are 
@@ -1463,7 +1465,7 @@ on motives or context).  Verbs have implicit
 "h/slots/" for such variegated thematic roles, and by observing 
 the particular slot slated for a given word (via theta formations) 
 or phrases (via case-marking; particularly, in English, leading 
-propositions) we identify the intended role for the constituent.
+propositions) we identify the intended role for the constituent [/LucasChampollion/].
 
 In presenting conceptual syntheses, then, verbs operate via structures 
 of roles rather than singular re-staging.  We can still say that a 

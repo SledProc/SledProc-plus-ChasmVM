@@ -82,13 +82,15 @@
 }
 
 
-\newcommand{\@exsRef}[1]{#1}
+\newcommand{\@exsRef}[1]{\ref{exs:#1}}
+
+%\newcommand{\@exsRef}[1]{#1}
 
 %\usepackage{suffix}
 %\WithSuffix\newcommand{\exsRef*}{:#1}
 
 \NewDocumentCommand{\exsRef}{sd()}{%
-\IfBooleanTF{#1}{\@exsRef#2}{(\@exsRef#2)}}
+\IfBooleanTF{#1}{\@exsRef{#2}}{(\@exsRef{#2})}}
 
 \makeatother
 
@@ -105,11 +107,11 @@
 \cite[#2]{#1}}
 
 
-\newcommand{\onethrft}{(1)-(14)}
+\newcommand{\onethrft}{\exsRef(1)-\exsRef(14)}
 
-\newcommand{\onethrn}{(1)-(9)}
+\newcommand{\onethrn}{\exsRef(1)-\exsRef(9)}
 
-\newcommand{\onethandft}{(1)-(9) and (13)-(14)}
+\newcommand{\onethandft}{\onethrn{} and \exsRef(13)-\exsRef(14)}
 
 
 \newcommand{\eS}[1]{\textbf{{\fontsize{9}{9}%
@@ -131,16 +133,59 @@
 
 \newcounter{exsCount}
 
-\newcommand{\exsItem}{%
-\stepcounter{exsCount}
-\noindent(\theexsCount) 
+\newcounter{exsTest}
+\refstepcounter{exsTest}
+
+\makeatletter
+
+\DeclareRobustCommand{\setlabel}[2]{%
+  \phantomsection
+  #1\def\@currentlabel{\unexpanded{#1}}\label{#2}%
 }
 
-\newenvironment{exsGroup}{\vspace{5pt}}{\vspace{12pt}}
+\DeclareRobustCommand{\setlabelx}[2]{}
+
+
+\makeatother
+
+
+%\newcommand{\exsItem}{%
+
+
+\newenvironment{ZexsGroup}{\vspace{2pt}%
+\begin{itemize}[leftmargin=2pt, itemsep=1pt]}{\end{itemize}\vspace{2pt}}
+
+\DeclareRobustCommand{\ZexsItem}{%
+\refstepcounter{exsCount}
+\item[(\arabic{exsCount})] \label{exs:\arabic{exsCount}}  
+}
+
+\usepackage{xcolor}
+
+\definecolor{itemc}{RGB}{3, 94, 87}
+
+
+\newenvironment{exsGroup}{\vspace{4pt}}{\vspace{7pt}}
+
+\newcommand{\rrboxm}[4]{%
+\raisebox{#1}{\rotatebox{#2}{\ensuremath{#3}}}\hspace{#4}%
+}
+
+\DeclareRobustCommand{\exsItem}{%
+\vspace{3pt}
+\refstepcounter{exsCount}
+\noindent\rrboxm{8pt}{-90}{\smile}{1.5pt}\textcolor{itemc}{\arabic{exsCount}}%
+\rrboxm{8pt}{-90}{\frown}{-.5pt} \label{exs:\arabic{exsCount}}  
+}
+
+
+
+%\setlabelx{\arabic{exsCount}}{exs:\arabic{exsCount}}
+
 
 \newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}}
 
-\newenvironment{itemz}{\vspace{5pt}\begin{itemize}}{\end{itemize}}
+\newenvironment{itemz}{\vspace{3pt}\begin{itemize}}{\end{itemize}}
 
 \newenvironment{docAbstractx}{%
 \twocolumn[
@@ -159,7 +204,7 @@
     \begin{abstract}
 }{%
     \end{abstract}
-  \end{@twocolumnfalse}\vspace{19pt}
+  \end{@twocolumnfalse}\vspace{35pt}\thispagestyle{empty}
 }
 
 
@@ -168,14 +213,60 @@
 \newenvironment{blockQuote}{\vspace{5pt}\begin{displayquote}}{\end{displayquote}}
 
 \newcommand{\enumsItem}{\item}
-\newcommand{\symItem}{\item}
+
+%\setlist[itemize]{label=\textcolor{blue}{\textbullet}}
+
+
+\renewcommand{\labelenumi}{\theenumi}
+
+\usepackage{amssymb}
+
+\usepackage{xcolor}
+\definecolor{eitemc}{RGB}{83, 94, 187}
+
+\renewcommand{\theenumi}{\textcolor{eitemc}{\raisebox{.5pt}{\small\textbf{\arabic{enumi}.}}}}
+
+\newcommand{\enumref}[1]{\resizebox{!}{6.5pt}{\textbf{\textcolor{eitemc}#1}}}
+
+\newcommand{\symItemx}{\item[\textcolor{eitemc}{%
+\raisebox{1pt}{\resizebox{4pt}{4.5pt}{$\blacksquare$}}]}}
+
+
+\newcommand\spiral{}% Just for safety so \def won't overwrite something
+\def\spiral[#1](#2)(#3:#4:#5){% \spiral[draw options](placement)(end angle:revolutions:final radius)
+\pgfmathsetmacro{\domain}{pi*#3/180+#4*2*pi}
+\draw [#1,
+       shift={(#2)},
+       domain=0:\domain,
+       variable=\t,
+       smooth,
+       samples=int(\domain/0.08)] plot ({\t r}: {#5*\t/\domain})
+}
+
+\newcommand{\symItem}{\item[\textcolor{eitemc}{%
+\raisebox{2pt}{%
+\tikz{
+\begin{scope}[transform canvas={scale=0.025},overlay]
+%\node[draw=eitemc,fill=eitemc!40!red, fill opacity=0.4, circle] {};
+%\node[draw=eitemc,fill=eitemc!40!red,circle, opacity=0.6, xscale=0.6, yscale=0.6,] {};
+\spiral[opacity=0.4, eitemc](0,0)(90:5:5);
+\spiral[opacity=0.4, eitemc!60!black](0.3,0.3)(90:2:5);
+%\draw [domain=0:25.1327,variable=\t,smooth,samples=75]
+%        plot ({\t r}: {0.002*\t*\t});
+\end{scope}
+}
+}}]}
+
+
+
+
 
 \usepackage{textcomp}
 \newcommand{\sarr}{\textrightarrow}
 
-\newcommand{\OxFO}{\textbf{\scriptsize{0xF0}}}
+\newcommand{\OxFO}{\textbf{\small{0xF0}}}
 
-\newcommand{\UTFonesix}{\textbf{\scriptsize{UTF-16}}}
+\newcommand{\UTFonesix}{\textbf{\small{UTF-16}}}
 
 \newcommand{\etal}{\textit{et al.}}
 
@@ -185,7 +276,7 @@
 
 \newcommand{\redbox}{\makebox{\eS{red}\hspace{4pt}\ensuremath{\cap}\hspace{4pt}\eS{box}}}
 
-\newcommand{\jrefs}{(15)/(16)}
+\newcommand{\jrefs}{\exsRef(15)/\exsRef(16)}
 
 \newcommand{\cq}[1]{{\fontfamily{gar}\selectfont ``}#1{\fontfamily{gar}\selectfont ''}}
 
@@ -195,8 +286,8 @@
 
 
 \usepackage{enumitem}
-\setlist[enumerate]{leftmargin=4pt,labelindent=-3pt}
-\setlist[itemize]{leftmargin=4pt,labelindent=-3pt}
+\setlist[enumerate]{leftmargin=14pt,labelindent=-3pt}
+\setlist[itemize]{leftmargin=20pt, labelsep=9pt, itemsep=-1pt}
 
 
 \usepackage{xcolor}
@@ -250,11 +341,11 @@ breaklines=true
 \NewDocumentEnvironment{boxurl}{d()}{%
 
 \begin{lrbox}{\hrefbox}
-\begin{minipage}{\columnwidth}}
+\begin{minipage}{\columnwidth}\setstretch{.9}}
 {\end{minipage}
 \end{lrbox}
 
-\vspace*{-4pt}
+\vspace*{-7pt}
 \href{#1}{\usebox{\hrefbox}}}
 
 
@@ -284,7 +375,7 @@ breaklines=true
 
 
 
-\newcommand{\intitle}[1]{{\hspace{3pt}\textls*[-80]{\texttt{\textit{#1}}}}\hspace{-1pt}}
+\newcommand{\intitle}[1]{{\hspace{3pt}\textls*[-80]{\texttt{\scriptsize\textit{#1}}}}\hspace{-1pt}}
 
 \setcitestyle{square}
 
@@ -365,6 +456,26 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 }
 
+
+\fancypagestyle{two}{
+
+\setlength{\headsep}{25pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fnellipsed{\thepage}}}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+
+
+
 \pagestyle{main}
 
 \fancypagestyle{bib}{
@@ -402,7 +513,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 }
 
-
+\usepackage[nottoc,numbib]{tocbibind}
 
 
 %\fancypagestyle{defaultx}{
