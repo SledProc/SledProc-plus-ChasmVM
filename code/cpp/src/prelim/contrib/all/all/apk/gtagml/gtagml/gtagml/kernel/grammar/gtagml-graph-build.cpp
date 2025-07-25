@@ -352,6 +352,17 @@ void GTagML_Graph_Build::single_slash_line()
  }
 }
 
+void GTagML_Graph_Build::paren_ref_global(u2 number, QString text)
+{
+ reset_primary();
+
+ QString r = QString::number(number);
+
+ latex_stream_ << "\\exsRef(" << r << ")" ;
+ xml_writer_.writeTextElement("-exsRef", "r");
+}
+
+
 void GTagML_Graph_Build::paren_ref(u2 number, QString text)
 {
  reset_primary();

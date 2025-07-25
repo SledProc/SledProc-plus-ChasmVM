@@ -174,6 +174,7 @@ public:
 
  void exs_item(u2 number, QString text);
  void paren_ref(u2 number, QString text);
+ void paren_ref_global(u2 number, QString text);
 
  void enums_item(u2 number, QString text);
  void bulleted_item(QString symbol, QString supp);

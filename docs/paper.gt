@@ -1540,7 +1540,7 @@ In terms of computer code, that sort of calling convention
 %-- concretized in some programming languages via 
 "t/labeled/" or "t/keyword/" parameters %-- is arguably 
 more natural than the alternative (i.e., "t/positional/" 
-arguments) because each value, passed in to a procedure, 
+arguments) because each value passed in to a procedure 
 typically has a distinct role, possibly suggested by the 
 name it is assigned in the function's implementation 
 block.  In a natural-language context, the particular 
@@ -1565,9 +1565,9 @@ details).
 Unlike a hyperedge in a knowledge database, calling a procedure 
 does not assert a statement of fact but rather evaluates to a computed 
 result, which value might then be used in some larger or future expression.  
-However, there are some commonalities between sets of interrelated 
+However, there are various commonalities between sets of interrelated 
 software procedures (e.g., code libraries) and graph databases, 
-which could potentially serve as a formal inspiration for theories 
+that could potentially serve as a formal inspiration for theories 
 of human cognition.  Conceptual integration is in some sense an 
 intellectual procedure %-- a "t/computation/" in the domain 
 of conceptual staging and proto-images, if we don't take the mind/machine 
@@ -1591,7 +1591,7 @@ mean.
 Such examples motivate theories wherein language-users are 
 also, on a broader scale, competent members of a society, who 
 have learned certain norms and rituals.  Enculturated 
-knowledge acts by analogy to precompiled code libraries offered 
+knowledge acts by analogy to precompiled code libraries supplied 
 by a computer operating system, for example, from which source code 
 may "h/solicit/" a particular function as needed (e.g., opening 
 a file).  Language, by analogy, defers to a social repertoire of 
@@ -1601,8 +1601,8 @@ situations %-- grounded in social-pragmatic schemas.  For instance,
 a proper definition for the word "t/menu/" should %-- rather than 
 trying to exhaustively circumscribe the menu-concept via 
 logical or set-theoretic machinery %-- simply recognize that 
-anyone who understands the restaurant "t/domain/", as a nexus 
-of social practice, recognizes that the process includes 
+anyone familiar with the restaurant "t/domain/", as a nexus 
+of social practice, understands how the process includes 
 selecting items off a menu.  Presumably speakers rarely talk about 
 menus anyhow outside that dining/ordering context; so proper use 
 of the word is simply one part of competent social participation.  
@@ -1613,7 +1613,7 @@ Metaphorical uses also exist (the idiom "m/not on the menu/"
 extends beyond food), but that is merely one of innumerable examples 
 of metaphoric word-sense that abstracts from concrete 
 "/socialized/" usage properly modeled via something like an 
-"t/interface theory/" of meaning.
+"t/interface theory/" of meaning. `vspace<-1.4em>;
 
 // //
       
@@ -1640,7 +1640,7 @@ aggregates.  So such word-order is not just a feature
 
 Second, verbs are distinct in that conceptual synthesis here 
 requires contributions via numerous thematic relations.  
-This formulation generalizes the more "t/local/" phenomenon 
+This formulation generalizes the typically "t/local/" phenomenon 
 of one concept modifying another, to a more holistic 
 realm where syntheses need to be molded against situational 
 and enactive templates.  Meanwhile, the expansion of conceptual 
@@ -1665,7 +1665,7 @@ as saturated with their particular epistemic attitudes.
 entertain explicitly when a speaker's authority is in question, 
 say, or when there is disagreement.  Instead, synchronizing 
 cognitive disposition is woven tightly with minimal 
-facts of language constituents, such as parts of speech).
+facts of language constituents, such as Parts of Speech).
 
 Third, given the accretionary nature of conceptual synthesis, 
 any theory of meaning must address the intermediate 
@@ -1736,7 +1736,7 @@ Also, apparent region violations drive many functional metaphors:
 /+
 
 Examples such as (1) through (5) have been analyzed in terms of 
-type coercions, dependent types, and other structures 
+type coercions, monads, dependent types, and other structures 
 recognized within mathematical type theory (and 
 formalized within the semantics of computer programming languages)
 [/AsherPustejovsky/], [/ChatzikyriakidisLuo/], [/ZhaohuiLuo/].
@@ -1788,7 +1788,7 @@ During talk, we exploit these capabilities
 to synchronize behavior among two or more people, 
 leveraging future-oriented cognitive routines even 
 when the focus of our discourse exists in the immediate 
-presence.  Cooperation between multiple individuals engenders  
+present.  Cooperation between multiple individuals engenders  
 abstracting demands %-- refactoring perceptual experience 
 into propositional/enactive schemata %-- analogous to 
 the distancing effects of future-planning.  
@@ -1840,7 +1840,9 @@ consulting an enumeration of concept-formation rules.  The purported
 "m/married bachelor/", say, would be ill-formed.  By contrast, however, 
 I actually believe "m/married bachelor/" names a reasonable concept, in the 
 sense that most people would infer its intension (in the sense of an 
-intensionality/extensionality contrast).  More broadly, building 
+intensionality/extensionality contrast) %-- hence (!1) and (!2).  
+
+More broadly, building 
 models of algorithmic conceptual synthesis would allow the comparably 
 algorithmic notion of grammatic production to map onto the semantic 
 plane, as anticipated by `Boltetal;: syntactic and semantic syntheses 
@@ -1925,7 +1927,7 @@ syntax on semantics in the sense
 that phrase-structure rules become entrenched 
 by virtue of conceptual demands on word-order.  So cognitive 
 phenomenology can stand as a foundation 
-that supports the multiple facets of the 
+that supports multiple facets of the 
 linguistics project, even if it 
 lies outside the proper scope of that 
 discipline.  This is consistent with a 
