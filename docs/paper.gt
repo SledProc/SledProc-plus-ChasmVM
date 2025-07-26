@@ -38,7 +38,9 @@ question is */why/* patterns become entrenched and stay so.
 Plus, we should not 
 overestimate rules' rigidity.  That a bachelor is an unmarried man, for example, 
 is a canonical example of logic underlying semantics; but sentences like 
-these are quite meaningful:
+these are quite meaningful:`footnote<This paper's examples are 
+embedded in \eAfn{JATS} sources according to a standardized encoding; see 
+the \eAfn{XML} files for more info.>;
 
 %/ exs
 (1)  My brother has been married for 10 years, but in many ways he's still a bachelor.
@@ -1246,8 +1248,8 @@ both of these operations %-- postordering and type-checking
 %-- have approximate correlates in natural language. 
 The mapping of a general parse-graph onto 
 a postorder traversal sequence recalls   
-underlying machineries for conceptual synthesis 
-according to a "/staging order/".  
+underlying machineries for conceptual synthesis, 
+conformant to a word-by-word "/staging/" order.  
 Intuitively, nouns are akin to 
 "t/values/" pushed onto a */conceptual/* stack, 
 whereas verbs, adjectives, and other modifiers 
@@ -1267,7 +1269,7 @@ human and computer vision share capabilities
 whose functional roles in larger processing "t/modules/" 
 can be analyzed.  Image-analysis tactics such as texture 
 segmentation, occlusion compensation, and gradient-vector inference 
-have detailed mathematical formulae that can offer functional insights into 
+have detailed mathematical formulae that could offer functional insights into 
 visual perception (even if computer implementations may 
 be very different from brains').  Type-checking and postordering are 
 not at the same level of quantitative sophistication, 
@@ -1312,17 +1314,17 @@ construals in all domains (syntax, semantics, pragmatics, and conceptualization)
 
 This interpretation of parse-graphs %-- as 
 "t/intermediate representation/" for sentence content, 
-alongside postorder and type-checking traversals  
+endowed with postorder and type-checking traversals  
  %-- works by analogy to 
 (but also in place of) set-theoretic or (say) modal-logic 
 approaches, where languages are treated as a surface-level 
 manifestation of logico-mathematical rule sets.  A key difference, 
-however, is that within "t/transfer of control/" the space 
+however %-- apropos computer-code as metaphor for human 
+language %-- is that within "t/transfer of control/" the space 
 of available functions is not restricted to those explicitly 
 implemented in high-level code.  Operating-system functions, 
 language runtimes, standard libraries, and other 
-pre-compiled procedures are all available for use by new 
-code.  These would be analogous to extra-linguistic 
+pre-compiled procedures would be analogous to extra-linguistic 
 cognitive competence that may be solicited by constructions 
 in discourse: conceptual transformations' staging-order position 
 may be established by syntactic and 
@@ -1368,7 +1370,7 @@ the process has dimensions beyond just spatial movement; going
 */out/* typically involves grabbing keys, wallet, phone.  
 In short, the presence of */out/* results in (1) referring to 
 the speaker's planned actions with extra detail both `visavis; the 
-path trajectory and the operational components.  Either of these 
+path trajectory and the operative components.  Either of these 
 semantic effects are triggered by attaching "/out/" to a word 
 or phrase %-- but a given parse will draw the phrasal boundaries 
 one place or another, and thereby model only one part of the word's role.
@@ -1380,7 +1382,7 @@ influence sentences' reception may serve as a superposition
 of multiple different phrase-nesting schemes.  Since "/out/" 
 in (1) is stated both immediately after "/heading/" and before 
 "/to the store/" we can, while hearing (1), process "/out/" 
-simultaneously as influencing our interpretation of the 
+simultaneously as influencing our interpretation of both the 
 prior word and the following clause.  A parse-graph represents 
 how we experience certain words as implying a modification of 
 some intermediate aggregate (what I've called "/staging/"), 
@@ -1395,8 +1397,8 @@ as (at least potentially) a superposition of multiple graphs rather
 than one single structure.
 
 So, in short, two different parse-graphs %-- one wherein "/out/" attaches 
-to "/heading/" to yield a verb-phrase, and one where the same word 
-attached to "/to the store/" to provide a direct object %-- are both 
+to "/heading/" to yield a verb-phrase, and another where the same word 
+connects to "/to the store/" to provide a direct object %-- are both 
 correct, but neither is complete.  The "t/definitive/" parsing 
 structure for (1) would be a superposition of the two provisional graphs.
 
@@ -1408,7 +1410,7 @@ cognitive "t/restaging/" of aggregates formed from logically
 given conceptual synthesis, we 
 interpret a particular succedent word as adding detail or 
 variation, wherein the synthesis re-stabilizes into 
-a new unity by assimilating the new content.  
+an updated unity by assimilating the new content.  
 In broad outline, the process is not unlike 
 how scientific theories adapt to accommodate new 
 empirical data, though on a smaller scale.
@@ -1420,8 +1422,8 @@ further clarification for verbs (and perhaps conjunctions,
 subordinators, etc.).  In the case of verbs, a 
 "h/local/" analysis could accommodate intransitives, 
 but not subject/object (and possibly indirect object) 
-tuples.  Type-theoretically, a (di)transitive verb 
-needs multiple nominal constructs in place to 
+tuples.  Categorially, a (di)transitive verb 
+requires multiple nominal constructs in place to 
 yield a proposition-like synthesis.  Moreover, 
 verbs may command multiple clauses governed 
 by various case-forms: locative constructions, 
@@ -1434,7 +1436,7 @@ In the realm of conceptual synthesis, that is, verbs
 function uniquely: they don't alter a single aggregate so 
 much as collate a collection of distinct nouns 
 (or noun-phrases), using a roster of thematic relations, 
-in particular to organize 
+in particular, to organize 
 the significatory role of different constituents.  
 A sentence, in general, accrues various kinds of detail 
 related to its central verb.  Some of these 
@@ -1479,12 +1481,13 @@ given cognitive staging is intrinsic to inferred meaning; the point
 here is that verbs effectuate such processes on a larger scale, 
 spanning the breadth of a phrase or sentence, whereas other 
 parts of speech (e.g., adjectives) operate more locally.  
-A theory of cognitive staging can cover both cases if it 
-models thematic roles and relations.  In type-theoretic 
-terms, that structural enhancement would be akin to 
+A theory of cognitive staging can cover both cases if its 
+employs models for thematic roles and relations.`footnote<For 
+a computational analogy, consider   
 enlarging the scope of lambda-expressions to cover not just a 
 function with a tuple of parameters, but parameter-packs that 
-are indexed via distinct role-attributions for each argument.  
+are indexed via distinct role-attributions for each argument 
+(in lieu of tuple position).>;
 We can still study verb-constructions as sets of word-pairs 
 that trigger mutual cognitive reinterpretation, but the difference 
 here is that we need to describe */which/* thematic 

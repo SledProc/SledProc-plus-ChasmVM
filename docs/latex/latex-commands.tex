@@ -375,10 +375,12 @@ breaklines=true
 
 \newcommand{\eA}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
 
+\newcommand{\eAfn}[1]{\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}}
+
 %\newcommand{\eA}[1]{{\iffootnote\begin{footnotesize}{\textsc{#1}}\end{footnotesize}%
 %\else\begin{OldFootnoteSize}{\textsc{#1}}\end{OldFootnoteSize}\fi}}
 
-
+\usepackage[hang,flushmargin]{footmisc}
 
 \raggedbottom
 
@@ -545,6 +547,23 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+
+
+\addtolength{\skip\footins}{4pt}
+
+\definecolor{fnc}{RGB}{65, 150, 8}
+
+\makeatletter
+
+\renewcommand{\@makefntext}[1]{\@makefnmark\hskip.5em\relax%
+\begin{minipage}[t]{\columnwidth}#1\end{minipage}
+}
+
+\renewcommand\@makefnmark{%
+\raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}\@thefnmark}}}}
+
+\makeatother
+
 
 %\usepackage{hanging}
 
