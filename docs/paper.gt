@@ -634,7 +634,7 @@ Similar to the controversial status of first-person reports
 vis-a-vis theoretical confirmability/falsifiability, the 
 linguistics community is divided over the value of 
 analyses based on subjective assessments of 
-acceptability [/JoanBresnan;pp. 2--6/].  
+acceptability [/EranAsoulin;pp. 52--55/], [/JoanBresnan;pp. 2--6/].  
 It is, of course, common for linguists of many persuasions 
 to construct ad-hoc sentences/utterances in service 
 of theoretical claims.  Such methods 
@@ -658,7 +658,7 @@ less than claims warranted by more empirical measures.
 In one discussion that elucidates metascientific 
 background for syntactic theory, Hubert Kowelewski 
 presents the work of Ronald Langacker, and by extension 
-Cognitive Grammar overall, in terms of "/Structural Empiricism/":
+Cognitive Grammar overall, in terms of "/Structural Empiricism/": `upAdj<3pt>;
 
 %/ block
 Viewed through the lens of structural empiricism, Cognitive Grammar
@@ -696,7 +696,8 @@ physical in a similar structural vein: if explanations quantifying
 over subjective states provide convincing accounts of observed 
 behavior (in this case, linguistic performance), then the first-personal 
 realm should be judged scientifically legitimate as a kind of "t/hidden variables/" 
-dimension.  Specifically in regard to ad-hoc sentence examples, he argues as follows:
+dimension.  Specifically in regard to ad-hoc sentence 
+examples, he argues as follows: `upAdj<7pt>;
 
 %/ block
 The linguistic material analyzed in many ... texts [is] constructed 
@@ -736,8 +737,8 @@ I would put it thus: what makes a sentence an object in the
 domain of entities spotlighted by linguistics is not the 
 fact of its being empirically an example of real language-use, but 
 rather how upon that sentence we can apply observations, analyses, 
-annotations, etc. whose ordinary ground is real-world 
-sentences.  We can, for instance, note syntactic, morphological, or lexical patterns, 
+annotations, etc., whose ordinary ground is real-world 
+speech-events.  We can, for instance, note syntactic, morphological, or lexical patterns, 
 and point out where pragmatic interpretation is needed.  Constructed 
 sentences may or may not conform to English grammar, 
 but at least the question of whether they do so is well-posed.    
@@ -757,24 +758,25 @@ like seeing a mannequin in a shop window, hitting a tennis ball,
 or admiring a sculpture [/ChristopherGutland:2/], [/KennethWilliford:6/], 
 [/DavidWoodruffSmith:208/].  Following such examples, my presentation 
 was not free-associative: via posits 
-like attention, episodicity, and situationality I bore a matrix of 
+like attention, episodicity, and situationality, I bore a matrix of 
 concepts via which to, in effect, "t/annotate/" elements of consciousness.  
 Instead of focusing on the contrast between real and hypothetical 
 experiences, methodology should consider whether some target of 
 analysis is amenable to the notions and structures comprising an 
-analytic protocol.  Likewise, Cognitive Grammar advances a series of interrelated 
+analytic protocol.  Similarly, Cognitive Grammar advances a series of interrelated 
 analytic notions (landmark, projector, profiling, domain of instantiation, 
 attententional system, grounding predication, 
 subjectification, subjective and objective construal) 
-whose theoretical merits may be tested upon constructed sentences. 
+whose theoretical merits may be tested against constructed (and also real) sentences. 
 
-Methodologically speaking, a hypothetical object, space, or situation becomes 
+Methodologically speaking, reasonably, a hypothetical object, space, or situation becomes 
 an instance of a theoretical model via the applicability of 
 that model's simulative and descriptive maxims.  The proper explanatory 
 domain of a theory is any structure that can be analyzed 
 according to the terms of that theory %-- including artifacts 
 conjured ad-hoc precisely to test, clarify, or refine it.
-By analogy, complex numbers, despite  
+By analogy, complex numbers (and other dreamed-up number systems: 
+hyperreals, quaternions, transfinite ordinals), despite  
 lacking physical interpretations (such as spatial distance) 
 are objects of mathematical reasoning because they are 
 amenable to many quantitative methods (arithmetic 
@@ -885,9 +887,9 @@ applicability transfers over from constructed
 to empirical examples.  And, in particular, the 
 menagerie of theoretical posits in 
 phenomenology and in linguistics are interrelated, 
-as (1) and (2) hopefully illustrate.
+as (1) and (2) hopefully illustrate. `vspace<12pt>;
 
-///  Concepts and Compositionality
+///  Concepts and Compositionality 
 
 "t/The meaning of a sentence is a function of its words and 
 how they are composed/" (cf. [/JamesPustejovsky:2/]).  In itself, that seems uncontroversial, 
@@ -929,7 +931,7 @@ to the semantic plane.
 
 For `Boltetal;, then, syntax and semantics develop in consort.  On the 
 one hand we have theories for how to properly model syntactic 
-structure (e.g., Categorial Grammar).  On the other, semantic theory 
+structure (e.g., Categorial Grammar [/YusukeKubota/], [/WybraniecSkardowska/]).  On the other, semantic theory 
 should define operations that are referenced by syntactic operations 
 by analogy to how lexicons define single words.  In [/Bolt/], Conceptual Spaces 
 supply the requisite semantic architecture, analyzing how 
@@ -946,7 +948,7 @@ synthesis into the conceptual register.
 
 If we abstract away word-order (the left/right adjacency distinction), 
 Categorial Grammar resembles a kind of type-theoretical syntax 
-where Parts of Speech may be likened to a system of types, 
+where parts of speech may be likened to a system of types, 
 such as nouns and propositions.  Because mappings from a tuple 
 of types to some result type are themselves a type, 
 we can build an arbitrarily large system 
@@ -963,11 +965,11 @@ meanings by synthesizing concepts in order-dependent
 ways, so it is important to examine how pairs of 
 concepts can transform into something more specific 
 then either one in particular.  I will outline a 
-cognitive-phenomenological reading of this phenomenon.  
+cognitive-phenomenological reading of this phenomenon. `vspace<9pt>; 
 
 // //
 
-It is circular just 
+`vspace<6pt>; It is circular just 
 to say that "/red box/" means something possessing 
 both redness and boxness, so we need to look a 
 little deeper.  Consider a full sentence:
@@ -1030,7 +1032,7 @@ brownies, the meaning-content helps prep for finding and grasping them.
 information relevant to locating, opening, and reaching inside the stash.  
 Hearer does not require an explicit mental image at the moment 
 (of enunciation), but */does/* need to later isolate the box from 
-fields of sense-data.  Of course, in imagining that future scenario, 
+fields of sense-data.  Of course, while imagining that future scenario, 
 hearer might potentially form a certain mental picture of a red tin box, 
 but it can adequately be imprecise.
 
@@ -1052,8 +1054,8 @@ is hardly self-evident, because each contribution
 %-- "/red/" and "/tin/", say %-- feels unrelated.  Still, 
 evidently there are cognitive trends in the mental 
 "/staging area/" that yield a preference for 
-building conceptual aggregates via certain 
-formulae.  Among adjectives, those declaring attributes that are 
+building conceptual aggregates via canonical  
+formulae.  Among adjectives, those naming attributes that are 
 more intrinsic to the nature of their substrata appear 
 closer to the noun than qualities which are more 
 incidental.  A metal box can be painted over, but will 
@@ -1072,7 +1074,7 @@ pan outward from their minimal physical substantiation
 to the ambient situational context, with word-order 
 marking a parallel trajectory.  This is a syntactic 
 principle in the sense that "/tin red box/" is ill-formed 
-by virtue of word order, but of course we also 
+by virtue of word order, but also since, of course, we  
 need to mark phrasal boundaries: adjective-to-noun distance 
 depends on */which/* noun.
 
@@ -1099,7 +1101,7 @@ interplay of stasis and dynamics that typifies
 cognitive "t/staging/".  Noun-like conceptual 
 aggregates have a kind of holistic unity that becomes 
 destabilized by added modifiers.  "/Tin box/", say, 
-has a kind of stasis as an idea, semi-image, or 
+has a certain stasis as idea, semi-image, or 
 precursor to action; a stasis disrupted by "/red/", but 
 then via further processing the staged image settles 
 back into a stable unity.  The formal construct 
@@ -1122,7 +1124,8 @@ focus more on inter-word relations (often among adjacent words, but crucial
 connections can exist between distant ones, such as from pronoun 
 to antecedent, or subject to verb when a clause intervenes) 
 [/GerdesKahane/], [/TimothyOsborne/], [/GeroldSchneider/].  
-Cognitively, we can emphasize the transformative effects 
+If our framework is instead (or in addition) more 
+cognitive, we can emphasize the transformative effects 
 of any single word on a conceptual synthesis established 
 via preceding words, in a */logical/* ordering that 
 deviates from the sequence of enunciation, though grammar 
@@ -1190,7 +1193,7 @@ interpreter is more like an abstract representation guiding the compilation
 of high-level code, but we can still reason about source 
 code as if it were interpreted on-the-fly).  Usually this sequence is 
 different from the order in which tokens appear in source files, so symbols 
-have to be reordered for push/transfer.  Compilers must also deduce which tokens 
+have to be reordered for push/transfer.  Compilers need also deduce which tokens 
 are associated with which function-symbols, a process that involves 
 both syntax (e.g., nested parentheses) and semantics (e.g., order of operands, 
 such as multiplication before addition).  Parsing high-level code is therefore a 
@@ -1251,7 +1254,7 @@ currently residing on this "t/stack/"
 (albeit which, in the present context, is mostly metaphorical).  
 Given this conceptual background, I will adopt the 
 phrase "t/staging order/" as a linguistic 
-counterpart to computational "t/push/transfer/" order. 
+counterpart to computational "t/push/`allowbreak;transfer/" order. 
 
 Type-checking and postordering are "t/functionalizable/" 
 similarities between natural and programming languages 
@@ -1281,18 +1284,19 @@ to many minimally plausible graphs.  Even when excluding
 unrelated contexts like the family name, for instance, the 
 word "m/trump/" in a playing-card context can serve as noun, 
 verb, adjective, and even adverb.  The distribution of a 
-single word-sense over multiple parts of speech is more a 
+single word-sense over multiple syntactic categories is more a 
 norm than an exception.  This fact in itself yields a proliferation 
 of plausible parse-graphs, even before addressing polysemy and 
 phrase-boundary ambiguities.  From many */plausible/* candidates, 
 the set of */correct/* parse graphs are those that meet 
 criteria of coherence, some of which can be modeled in terms 
 of graph-traversal protocols.  
+
 Such processes are apparently interdependent, in that (for example) 
-Part-of-Speech assignment influences phrase nesting and vice-versa.  
-Language would be more computationally tractable if we could 
-present processing algorithms in a logical order, with the 
-results of earlier ones available to later.  In reality, 
+part-of-speech assignment influences phrase nesting and vice-versa.  
+Language would be more computationally tractable if processing algorithms 
+had a logical order, with earlier ones'  
+results available to those later.  In reality, 
 it seems as if our minds subconsciously test out many 
 initial-condition sets for traversals (e.g., multiple ways 
 of construing parts of speech) and converge on best solutions 
@@ -1304,27 +1308,18 @@ one hand, and well-formedness (on syntactic, semantic, and pragmatic criteria)
 on the other, coexist in a kind of feedback loop, converging on the most plausible 
 construals in all domains (syntax, semantics, pragmatics, and conceptualization).     
 
-Functional analogies between programming and natural 
-language %-- how syntax guides translation of 
-surface-level artifacts to parse graphs that yield 
-postorder and type-checking traversals %-- are 
-one way to summarize the systematic properties 
-of language use; in other words, spoken 
-language is a vehicle for communicating content 
-whose underlying form may be represented 
-via parse-graphs together with traversal actions.   
-This interpretation 
-of parse-graphs works by analogy to 
+This interpretation of parse-graphs %-- as 
+"t/intermediate representation/" for sentence content, 
+alongside postorder and type-checking traversals  
+ %-- works by analogy to 
 (but also in place of) set-theoretic or (say) modal-logic 
 approaches, where languages are treated as a surface-level 
-manifestation of concept-aggregates with meanings 
-governed by logico-mathematical rules 
-%-- at least when reduced to their systematic essence.  A key difference, 
+manifestation of logico-mathematical rule sets.  A key difference, 
 however, is that within "t/transfer of control/" the space 
 of available functions is not restricted to those explicitly 
-implemented in high-level code.  Operating systems, 
+implemented in high-level code.  Operating-system functions, 
 language runtimes, standard libraries, and other 
-pre-compiled functions are all available for use by new 
+pre-compiled procedures are all available for use by new 
 code.  These would be analogous to extra-linguistic 
 cognitive competence that may be solicited by constructions 
 in discourse: conceptual transformations' staging-order position 
@@ -1337,13 +1332,14 @@ grounding syntactic theory on cognitive optimization
 %-- and, by extension, situating the theory's overall 
 series of disciplinary warrants against the paradigms 
 of phenomenology.  However, I feel there are two 
-issues to address that could complicate the picture I've outlined.
+issues to address that could complicate the picture 
+I've outlined. 
 
 
 // //
 
 First, my discussion has implied that word-order and associated 
-sentence properties, such as phrase-structure, is logically 
+sentence properties, such as phrase-structure, are logically 
 fixed.  That may be true in some sentences, but one might find 
 counter-examples.  I will examine the following:
 
@@ -1674,7 +1670,7 @@ as saturated with their particular epistemic attitudes.
 entertain explicitly when a speaker's authority is in question, 
 say, or when there is disagreement.  Instead, synchronizing 
 cognitive disposition is woven tightly with minimal 
-facts of language constituents, such as Parts of Speech).
+facts of language constituents, such as parts of speech).
 
 Third, given the accretionary nature of conceptual synthesis, 
 any theory of meaning must address the intermediate 
