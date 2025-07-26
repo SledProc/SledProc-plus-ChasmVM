@@ -898,7 +898,7 @@ the concepts to which they "t/point/".  There are two
 key questions: how this "t/pointing/" works; and how 
 */concepts/* are combined.
 
-A good example of formal answers to the latter question is 
+A good example of formal answers to the second question is 
 `Boltetal; [/Bolt/], based on Peter `Gardenfors;'s Conceptual Space 
 theory, alongside a syntactic approach related to Categorial Grammar 
 and mathematical Category Theory.  Consider "t/red box/", and 
@@ -906,7 +906,7 @@ and mathematical Category Theory.  Consider "t/red box/", and
 */red/* means the set of red things; */box/* means the set of 
 boxes (or box-like things).  Combining the concepts yields 
 an intersection between the two sets.  Meanwhile, 
-syntactically, that compositional pattern is cued by the left-adjacency of 
+syntactically, that compositional motif is cued by the left-adjacency of 
 */red/* before */box/*, which in English binds 
 adjectives to nominal targets.  Thus we have a 
 syntactic operation/relation (left-adjacency) and a 
@@ -947,7 +947,7 @@ virtue of syntax, we seek a translation of that
 synthesis into the conceptual register.  
 
 If we abstract away word-order (the left/right adjacency distinction), 
-Categorial Grammar resembles a kind of type-theoretical syntax 
+Categorial Grammar resembles a kind of type-theoretic syntax 
 where parts of speech may be likened to a system of types, 
 such as nouns and propositions.  Because mappings from a tuple 
 of types to some result type are themselves a type, 
@@ -957,7 +957,7 @@ Propositions are an overarching sentential type,
 whereas phrases have intermediate types between propositions 
 and nouns.  A sentence is properly 
 formed if those intermediates resolve to propositionality, 
-via type-inference rules such reading (intransitive) verb-noun 
+via type-inference rules like reading (intransitive) verb-noun 
 pairs as producing propositionally complete clauses.   
 
 All of these paradigms assume that phrases compose 
@@ -983,21 +983,21 @@ each word makes a distinct contribution.  Here are a few:
 
 %/ itemz
 
- *  tin box `sarr;  provides insight into how the box will look, and 
+ *  `underline<tin>; box `sarr;  provides insight into how the box will look, and 
 feel to the touch, and how to open it
 
- *  red tin box `sarr;  the color helps one find it amidst other objects
+ *  `underline<red>; tin box `sarr;  the color helps one find it amidst other objects
 
- *  this red tin box `sarr;  invites the hearer to focus on something proximate 
+ *  `underline<this>; red tin box `sarr;  invites the hearer to focus on something proximate 
 to the speaker; deictic augments descriptive reference
 
- *  in this red tin box `sarr;  draws attention to the interior, with its functional 
+ *  `underline<in>; this red tin box `sarr;  draws attention to the interior, with its functional 
 affordance of holding and storing contents
 
- *  chocolate brownies `sarr;  "/chocolate/" adds detail relevant to whether the 
+ *  `underline<chocolate>; brownies `sarr;  "/chocolate/" adds detail relevant to whether the 
 hearer will want to eat them
 
- *  Mom's chocolate brownies `sarr;  helps anchor the referent in situations 
+ *  `underline<Mom's>; chocolate brownies `sarr;  helps anchor the referent in situations 
 known to the listener (insofar as the brownies are not otherwise identified); 
 viz., Mom made them, and this fact is known to the listener.  On an alternative interpretation, 
 the brownies are */for/* Mom, but this is less likely in context.
@@ -1067,14 +1067,16 @@ Such conventions evidently help due to
 how adjectives play different roles in different 
 contexts %-- affixing "/black/" inseparably to 
 "/belt/" clarifies that the color, here, is not 
-primarily a sensate quale but a constituent of an enumeration.
+primarily a sensate quale but a constituent 
+of an enumeration (*/orange baseball cap/*, but 
+*/karate black belt/*).
 
 Phrases built around material objects thereby evidently 
 pan outward from their minimal physical substantiation 
 to the ambient situational context, with word-order 
 marking a parallel trajectory.  This is a syntactic 
 principle in the sense that "/tin red box/" is ill-formed 
-by virtue of word order, but also since, of course, we  
+by virtue of word order, but also since we  
 need to mark phrasal boundaries: adjective-to-noun distance 
 depends on */which/* noun.
 
@@ -1090,9 +1092,9 @@ object-concepts inferred to stand as
 attentional foci for the speaker.  They serve 
 as attractional zones, or foregrounds, absorbing 
 awareness of other details and backgrounds.  Since linguistic structure
-intuitively reconstructs perceptual organizations, 
+intuitively reconstructs perceptual organization, 
 it makes sense that noun-phrases are cognitive-staging 
-milestones because their significands are cognitive-perceptual 
+milestones, because their significands are cognitive-perceptual 
 attractors.  
 
 Type-theoretically, modeling some parts of speech as 
@@ -1117,12 +1119,12 @@ our construal of facts and affordances surrounding us %--
 which gets destabilized when subordinate clauses become nested into 
 superordinates.
 
-There are, of course, multiple protocols that could be used 
-to model sentence structure.  Phrase-structure grammars emphasize 
+(Syntactic-) categorial type theories are, of course, just a few among many protocols 
+deployed to model sentence structure.  Phrase-structure grammars emphasize 
 nested hierarchies.  Dependency grammars  
 focus more on inter-word relations (often among adjacent words, but crucial 
-connections can exist between distant ones, such as from pronoun 
-to antecedent, or subject to verb when a clause intervenes) 
+connections can exist between distant ones, such as pronoun/antecedent, 
+or subject to verb when a clause intervenes) 
 [/GerdesKahane/], [/TimothyOsborne/], [/GeroldSchneider/].  
 If our framework is instead (or in addition) more 
 cognitive, we can emphasize the transformative effects 
@@ -1138,13 +1140,13 @@ symbols that must be assigned a value before they are used.
 The most common structure in such a language would be expressions consisting of a function 
 symbol and one or more "t/arguments/".  The */interpreter/* 
 that would executes programs is essentially 
-be a state machine, reading a sequence of symbols 
-in turn.  There could be the following basic operations:
+a state machine, reading a sequence of symbols 
+in turn.  There could be the following basic operations: `upAdj<4pt>;
 
 %/ enums
 
  1.  If the current symbol is a numeric literal, convert it to an actual number 
-(e.g., the text "m/16/" becomes hexadecimal `OxFO;).  Convert 
+(e.g., "m/16/" becomes hexadecimal `OxFO;).  Convert 
 string literals to arrays of glyph 
 codes (e.g., in the Unicode `UTFonesix; format).  Place the current 
 value on a program stack.
@@ -1159,18 +1161,18 @@ Again, place the current value on a program stack.
  3.  If the current symbol is a function-symbol, identify 
 which procedure is named by the symbol.  If we allow 
 polymorphism %-- one name may reference multiple code-blocks, 
-distinguished by their signatures %-- than this process 
+distinguished by their signatures %-- then this process 
 requires examining the types of values further down the 
 program stack.  Once the correct procedure is identified, 
 transfer control to that function body.  If programmed 
 correctly, the called routine will take its inputs off the 
 stack and push its own return values, which in turn 
-will serve as inputs to later subroutines.
+will serve as inputs to later subroutines. `vspace<5pt>; 
 /+
 
 For sake of discussion, I will call this a "t/push/transfer/" execution 
 model, given the two main operations (pushing a value, or transferring 
-control).  While this model is too simple for practical computer 
+control).  While this account is too simplistic for practical computer 
 languages, it serves as a useful case-study for real-world 
 compilers.
 
@@ -1182,7 +1184,7 @@ Selecting a correct overload is straightforward if there is one exact
 signature-match given the current stack types.  However, most modern 
 programming environments allow implicit type-casts (e.g., any integer is also 
 a decimal, with fractional part zero).  Moreover, modern languages commonly 
-adopt template-metaprogramming and/or class-inheritance systems where 
+adopt template-metaprogramming and/or class-inheritance systems wherein 
 a given variable-symbol could have different types in different 
 contexts.  In these systems, computing which overload matches a 
 given sequence of parameter-values is considerably more complicated.
@@ -1192,11 +1194,11 @@ sequence for presenting symbols to the "t/interpreter/" (in real life, said
 interpreter is more like an abstract representation guiding the compilation 
 of high-level code, but we can still reason about source 
 code as if it were interpreted on-the-fly).  Usually this sequence is 
-different from the order in which tokens appear in source files, so symbols 
-have to be reordered for push/transfer.  Compilers need also deduce which tokens 
+different from the order in which tokens appear in source code, so symbols 
+have to be reordered for push/transfer.  Compilers must also deduce which tokens 
 are associated with which function-symbols, a process that involves 
 both syntax (e.g., nested parentheses) and semantics (e.g., order of operands, 
-such as multiplication before addition).  Parsing high-level code is therefore a 
+like multiplication preempting addition).  Parsing high-level code is therefore a 
 matter of reducing source files (which have extra structures such as nested 
 expressions) to a simpler representation based on token-sequences 
 (details like nesting become "t/flattened/" to a single lineup, which works 
@@ -1241,12 +1243,12 @@ and we can type-check relationships between
 child nodes and parent nodes, the latter being interpreted 
 as procedures with specific signatures.  I believe 
 both of these operations %-- postordering and type-checking 
-%-- have approximate correlates in natural language: 
-the mapping of a general parse-graph onto 
-a postorder traversal sequence captures, in formal terms, 
-the underlying machinery of "t/conceptual synthesis/" 
-according to a well-defined order.  
-We can treat nouns as akin to 
+%-- have approximate correlates in natural language. 
+The mapping of a general parse-graph onto 
+a postorder traversal sequence recalls   
+underlying machineries for conceptual synthesis 
+according to a "/staging order/".  
+Intuitively, nouns are akin to 
 "t/values/" pushed onto a */conceptual/* stack, 
 whereas verbs, adjectives, and other modifiers 
 embody cognitive transforms applied to concepts 
