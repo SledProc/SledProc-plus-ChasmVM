@@ -555,14 +555,24 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 \makeatletter
 
-\renewcommand{\@makefntext}[1]{\@makefnmark\hskip.5em\relax%
-\begin{minipage}[t]{\columnwidth}#1\end{minipage}
+\renewcommand\@makefnmarkfn{%
+\raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}\@thefnmark}}}}
+
+
+\renewcommand{\@makefntext}[1]{\@makefnmarkfn\hskip.5em\relax%
+\begin{minipage}[t]{0.98\columnwidth}#1\end{minipage}
 }
 
 \renewcommand\@makefnmark{%
-\raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}\@thefnmark}}}}
+\raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{black}\@thefnmark}}}}
 
 \makeatother
+
+
+\usepackage{titling}
+
+\renewcommand\maketitlehookc{\vspace{-35pt}}
+
 
 
 %\usepackage{hanging}

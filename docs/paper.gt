@@ -39,8 +39,9 @@ Plus, we should not
 overestimate rules' rigidity.  That a bachelor is an unmarried man, for example, 
 is a canonical example of logic underlying semantics; but sentences like 
 these are quite meaningful:`footnote<This paper's examples are 
-embedded in \eAfn{JATS} sources according to a standardized encoding; see 
-the \eAfn{XML} files for more info.>;
+embedded in Journal Article Tag Suite (\eAfn{JATS}) sources 
+according to a standardized encoding; see 
+the \eAfn{JATS} (\eAfn{XML}) files for more information.>;
 
 %/ exs
 (1)  My brother has been married for 10 years, but in many ways he's still a bachelor.
@@ -1482,12 +1483,7 @@ here is that verbs effectuate such processes on a larger scale,
 spanning the breadth of a phrase or sentence, whereas other 
 parts of speech (e.g., adjectives) operate more locally.  
 A theory of cognitive staging can cover both cases if its 
-employs models for thematic roles and relations.`footnote<For 
-a computational analogy, consider   
-enlarging the scope of lambda-expressions to cover not just a 
-function with a tuple of parameters, but parameter-packs that 
-are indexed via distinct role-attributions for each argument 
-(in lieu of tuple position).>;
+employs models for thematic roles and relations.
 We can still study verb-constructions as sets of word-pairs 
 that trigger mutual cognitive reinterpretation, but the difference 
 here is that we need to describe */which/* thematic 
@@ -1516,7 +1512,7 @@ cognitive faculty of schematic planning and proto-images,
 the meaningfulness of the "t/central/" structure reflects a 
 more holistic, situational cognitive repertoire. 
 
-We can also say that the veins of a sentence's thematic skeleton 
+We can also say that the veins of a sentence's thematic scaffolding 
 provide multiple sites for speaker-relative grounding 
 (subjectification): for 
 each person's discourse to encode their particular epistemic 
@@ -1525,7 +1521,7 @@ orientation and perspectival vantage [/LangackerIntro;pp. 263--265, 296--309, 42
 be manifest temporally (e.g., via choice of verb tense/aspect), 
 spatially (via locative constructions and deictics), perceptually 
 (through, say, figure/ground, single/plural, 
-mass/count, and landmark/trajector pairings), 
+mass/count, and landmark/ trajector pairings), 
 or in terms of "t/narrative construal/" from an evidential 
 standpoint (I argued earlier how rhetorical patterns 
 imply evidential narratives even if these are not marked 
@@ -1536,7 +1532,7 @@ theory in its own right.  Here I simply want to observe that
 such grounding is holistic in the sense that it encompasses 
 a central verb (profiling some event, state, or process) as well as 
 the set of noun-concepts or -foci that participate therein.  
-The central skeleton that pulls together multiple thematic 
+The central spine that pulls together multiple thematic 
 relata likewise consolidates multiple sites for speaker 
 grounding/epistemics, allowing listeners to piece together 
 a provenance for speakers' expressed beliefs.
@@ -1545,24 +1541,26 @@ From a formal perspective, thematic relations suggest a
 form of typed lambda calculus wherein functions act on a 
 tuple of values indexed not by sequence, but instead by 
 assigning distinct roles to each argument.  
-In terms of computer code, that sort of calling convention 
+Consider lambda-expressions taking (in lieu of 
+value-tuples) parameter-packs indexed via 
+distinct role-attributions for each argument.\footnote{ 
+This kind of calling convention 
 %-- concretized in some programming languages via 
 "t/labeled/" or "t/keyword/" parameters %-- is arguably 
 more natural than the alternative (i.e., "t/positional/" 
-arguments) because each value passed in to a procedure 
+arguments) anyhow, because each value passed in to a procedure 
 typically has a distinct role, possibly suggested by the 
 name it is assigned in the function's implementation 
-block.  In a natural-language context, the particular 
+block.} `hspace<4pt>; In spoken language, the particular 
 thematic relation that connects a subsidiary clause to the 
 central verb determines how we infer its meaning 
 (or, more precisely, its contribution to the larger meaning overall).  
 
-Formal treatment of "t/roles/" may be outside the typical 
-scope of lambda calculi (or other models of computational 
-processes), but there are similar ideas in theories of 
-hypergraph databases and other knowledge-modeling contexts.  
-A multi-part relation (schematically a hyperedge, when 
-expressing data via labeled graphs) often assigns specific roles 
+Such "t/roles/" may be outside the normal  
+scope of lambda calculi (or other computation-models), but there are 
+related ideas in  
+hypergraph databases, or similar knowledge-representation techniques.  
+A multi-part relation (schematically a hyperedge) often assigns specific roles 
 to each participant; e.g., a */divorce/* implies two individuals, 
 a prior situation of marriage, and some legal entity or 
 context which recognizes the divorce as binding.  
