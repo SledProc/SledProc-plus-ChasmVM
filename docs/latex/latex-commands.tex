@@ -183,7 +183,7 @@
 %\setlabelx{\arabic{exsCount}}{exs:\arabic{exsCount}}
 
 
-\newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}}
+\newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
 
 \newenvironment{itemz}{\vspace{3pt}\begin{itemize}}{\end{itemize}}
 
@@ -208,9 +208,24 @@
 }
 
 
+%\let\olddisplayquote\displayquote
+%\renewcommand\displayquote{\setlength{\textwidth}{12cm}\olddisplayquote}
 
+\usepackage{quoting}
 \usepackage{csquotes}
+
+\makeatletter
+%Take the original environment definition and change the leftmargin to 1cm
+\renewenvironment*{displayquote}
+  {\begingroup\setlength{\leftmargini}{9.5pt}\csq@getcargs{\csq@bdquote{}{}}}
+  {\csq@edquote\endgroup}
+\makeatother
+
 \newenvironment{blockQuote}{\vspace{5pt}\begin{displayquote}}{\end{displayquote}}
+
+
+%\newenvironment{blockQuote}{\vspace{5pt}\quoting[leftmargin=11pt,rightmargin=13pt]\noindent%
+%\hspace{-3.5pt}}{\endquoting}
 
 \newcommand{\enumsItem}{\item}
 
@@ -345,7 +360,7 @@ breaklines=true
 {\end{minipage}
 \end{lrbox}
 
-\vspace*{-7pt}
+\vspace*{-6pt}
 \href{#1}{\usebox{\hrefbox}}}
 
 
@@ -515,6 +530,23 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 \usepackage[nottoc,numbib]{tocbibind}
 
+\NewDocumentEnvironment{bItem}{d[]}{%
+\hspace{-6pt}\begin{minipage}{.9\columnwidth}\bibitem{#1}
+}{\end{minipage}\vspace{-4pt}}
+
+
+
+\NewDocumentEnvironment{bItemx}{d[]}{%
+\bibitem{#1}
+}{}
+
+\DeclareRobustCommand{\visavis}{vis-\`a-vis}
+\DeclareRobustCommand{\Visavis}{Vis-\`a-vis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%\usepackage{hanging}
 
 %\fancypagestyle{defaultx}{
 %    \fancyhf{}           
@@ -525,8 +557,5 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 %}
 
 %\thispagestyle{default}
-
-
-
 
 

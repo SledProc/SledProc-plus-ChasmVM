@@ -377,7 +377,7 @@ setting for any talk of decision-making and ideology.
 
 Inter-theory reduction depends on filling macro-to-microscale gaps with mid-level  
 analyses; source files, for example, become transformed to several 
-intermediate representations during a compiler pipeline.  Vis-a-vis the 
+intermediate representations during a compiler pipeline.  `Visavis; the 
 human mind, neurologists certainly understand how clusters of neurons 
 form "t/nuclei/", "t/ganglia/", or "t/modules/" with distinct functional roles; and, 
 on a higher scale, brain scientists identify many distinct 
@@ -631,7 +631,7 @@ and cognitive linguistics.
 // //
 
 Similar to the controversial status of first-person reports 
-vis-a-vis theoretical confirmability/falsifiability, the 
+`visavis; theoretical confirmability/falsifiability, the 
 linguistics community is divided over the value of 
 analyses based on subjective assessments of 
 acceptability [/EranAsoulin;pp. 52--55/], [/JoanBresnan;pp. 2--6/].  
@@ -689,7 +689,7 @@ evolution.  Potentially "t/dark/" matter and energy will ultimately
 be given a similarly indirect and holistic cosmological interpretation, 
 rather than deemed to refer to a specific kind of field or particle.  
 
-The status of mental attitudes and subjectivity vis-a-vis physics and material 
+The status of mental attitudes and subjectivity `visavis; physics and material 
 science is more circuitous than these other more-physical "t/unobservables/", 
 but Kowaleski implies that we should treat the cognitive as adjunct to the 
 physical in a similar structural vein: if explanations quantifying 
@@ -727,7 +727,7 @@ to theoretical concepts, but only to the empirical adequacy of the theory
 featuring these concepts.  [/kow:33/]
 /+
 
-A reasonable paraphrase vis-a-vis constructed sentences is that, for purposes 
+A reasonable paraphrase `visavis; constructed sentences is that, for purposes 
 of expositing semantic or syntactic claims, the universe of linguistic 
 objects is broader than merely the totality of sentences humans have in 
 fact created.  Ad-hoc hypotheticals also belong to that 
@@ -845,7 +845,7 @@ As a feature of our
 reason and lifeworld, mental states exist 
 in a vivid way in our own momentary consciousness, 
 but they also exist in an approximative manner 
-vis-a-vis people (and often animals) around us.  
+`visavis; people (and often animals) around us.  
 Others' cognitions being, modulo such imprecision, 
 a natural feature of our own rationality undergirds 
 (I claim) the feasibility of both 
@@ -1363,9 +1363,9 @@ defined by more than just start and end points.  A path
 "/to the store/" has a functionally distinct early part in leaving 
 the building, to which (1) alludes via "/out/".  At the same time, 
 the process has dimensions beyond just spatial movement; going 
-*/out/* typically involves grabbing one's keys, wallet, phone, etc.  
+*/out/* typically involves grabbing keys, wallet, phone, etc.  
 In short, the presence of */out/* results in (1) referring to 
-the speaker's planned actions with extra detail both vis-a-vis the 
+the speaker's planned actions with extra detail both `visavis; the 
 path trajectory and the operational components.  Either of these 
 semantic effects are triggered by attaching "/out/" to a word 
 or phrase %-- but a given parse will draw the phrasal boundaries 
@@ -1400,10 +1400,11 @@ structure for (1) would be a superposition of the two provisional graphs.
 
 The second issue I'd like to address is the extent of complete phrase- 
 (and sentence-) level scale in contrast to word-pairs.  
-My schematic proposal is that individual words contribute 
+My preliminary proposal is that individual words contribute 
 cognitive "t/restaging/" of aggregates formed from logically 
-prior words.  From a given conceptual synthesis, we 
-interpret a given succedent word as adding detail or 
+(not necessarily temporally) prior words.  From a 
+given conceptual synthesis, we 
+interpret a particular succedent word as adding detail or 
 variation, wherein the synthesis re-stabilizes into 
 a new unity by assimilating the new content.  
 In broad outline, the process is not unlike 
@@ -1420,7 +1421,7 @@ but not subject/object (and possibly indirect object)
 tuples.  Type-theoretically, a (di)transitive verb 
 needs multiple nominal constructs in place to 
 yield a proposition-like synthesis.  Moreover, 
-verbs might command multiple clauses governed 
+verbs may command multiple clauses governed 
 by various case-forms: locative constructions, 
 benefactive, instrumental, etc., each marking 
 that an associated phrase presents some detail 
@@ -1431,8 +1432,7 @@ In the realm of conceptual synthesis, that is, verbs
 function uniquely: they don't alter a single aggregate so 
 much as collate a collection of distinct nouns 
 (or noun-phrases), using a roster of thematic relations, 
-in particular %-- the sorts of connections marked 
-by declension, for relevant languages %-- to organize 
+in particular to organize 
 the significatory role of different constituents.  
 A sentence, in general, accrues various kinds of detail 
 related to its central verb.  Some of these 
@@ -1472,7 +1472,7 @@ or phrases (via case-marking; particularly, in English, leading
 propositions) we identify the intended role for the constituent [/LucasChampollion/].
 
 In presenting conceptual syntheses, then, verbs operate via structures 
-of roles rather than singular re-staging.  We can still say that a 
+of roles rather than one-word-at-a-time reworking of conceptual syntheses.  We can still say that a 
 given cognitive staging is intrinsic to inferred meaning; the point 
 here is that verbs effectuate such processes on a larger scale, 
 spanning the breadth of a phrase or sentence, whereas other 
@@ -1483,15 +1483,13 @@ terms, that structural enhancement would be akin to
 enlarging the scope of lambda-expressions to cover not just a 
 function with a tuple of parameters, but parameter-packs that 
 are indexed via distinct role-attributions for each argument.  
-Insofar as verb-constructions are broken down into roles 
-occupied by individual nouns or noun-phrases, we can still 
-discuss the cognitive phenomenon of a single word 
-acting in relation to a prior aggregate; the difference 
-for verbs is that we need to describe */which/* thematic 
-role governs how the verb is oriented to the concept that 
-it transforms.  The conceptual pairing of a verb to a 
+We can still study verb-constructions as sets of word-pairs 
+that trigger mutual cognitive reinterpretation, but the difference 
+here is that we need to describe */which/* thematic 
+role governs how the verb is oriented to any conceptual aggregate that 
+it transforms and/or vice-versa.  The conceptual pairing of verbs to a 
 locative phrase, for example, would be different than the 
-same phrase (perhaps swapping out the preposition for another) figured 
+same phrase (perhaps swapping out the preposition) figured 
 as indirect object, or genitive, or so on.
 
 Systems of thematic relations establish a kind of two-tiered 
@@ -1501,7 +1499,7 @@ whereas adjectives and other "t/localized/" modifiers form
 a peripheral epitope (so to speak).  Conceptually, the 
 central skeleton's multi-part nature means that cognitive 
 integration must synthesize multiple components, in contrast to a 
-single re-staging such as "m/diamond/" vis-a-vis "m/wedding ring/".  
+single re-staging such as "m/diamond/"  `visavis; "m/wedding ring/".  
 To put it differently, the underlying intellectual phenomenon 
 is less about a single concept acting on a provisional image-aggregate 
 (as */diamond/* acts upon */wedding ring/*, 
@@ -1514,7 +1512,8 @@ the meaningfulness of the "t/central/" structure reflects a
 more holistic, situational cognitive repertoire. 
 
 We can also say that the veins of a sentence's thematic skeleton 
-provide multiple sites for speaker-relative grounding: for 
+provide multiple sites for speaker-relative grounding 
+(subjectification): for 
 each person's discourse to encode their particular epistemic 
 orientation and perspectival vantage [/LangackerIntro;pp. 263--265, 296--309, 422, 
 441, 449, 485/].  Such details may 
@@ -1527,7 +1526,7 @@ standpoint (I argued earlier how rhetorical patterns
 imply evidential narratives even if these are not marked 
 directly on a morphological scale) or local qualities, such as 
 verb-aspect.  Not to imply that this list is exhaustive;   
-modeling all modes of speaker-relative grounding requires a detailed 
+modeling all modes of subjectification requires a detailed 
 theory in its own right.  Here I simply want to observe that 
 such grounding is holistic in the sense that it encompasses 
 a central verb (profiling some event, state, or process) as well as 
@@ -1577,17 +1576,23 @@ of human cognition.  Conceptual integration is in some sense an
 intellectual procedure %-- a "t/computation/" in the domain 
 of conceptual staging and proto-images, if we don't take the mind/machine 
 metaphor too literally %-- and language-users deploy background knowledge 
-to "h/execute/" such scripts in ways consistent with their peers.  
+to "h/execute/" such scripts in ways consistent with their 
+peers.  Procedural "/memoization/" caches completed calculations 
+to avoid repetition.  Humans do something similar: the 
+molecular bonds between concepts (at least in the cerebral lifeworld) 
+lie somewhere between retrieving predicative beliefs and 
+summoning practical know-how, previously committed to memory.
+
 Frameworks such as the "t/interface theory of meaning/" developed 
 by Orlin Vakarelov suggest ways these intuitions could be productively 
 fleshed out [/OrlinVakarelov/], [/VakarelovAgent/].  By analogy to how lexicons codify a space of linguistic 
 knowledge %-- speakers are acquainted with the concepts associated to thousands of 
 words in their native tongue %-- we likewise have (and acquire) a 
 dictionary of mental "t/scripts/" guiding how concepts are to be 
-merged (e.g., a recurring gestalt pairs an object with its 
-constitutive material, such as "/tin box/", or its manner of appearance, 
-such as "/red box/").  In many cases these semanticized scripts derive 
-from analogous scripts in social, collective life: "x/menu/", "x/waiter/", and 
+merged; e.g., pair an object with its 
+constitutive material (like "/tin box/"), or its manner of appearance 
+("/red box/").  In many cases these semanticized scripts derive 
+from analogous skillfulness in social, collective life: "x/menu/", "x/waiter/", and 
 "x/restaurant/" belong to a semantic frame that regulates one form 
 of social activity.  Knowledge of what to do when visiting a 
 sit-down eatery is coiled together with knowing what words like "/menu/" 
@@ -1611,9 +1616,10 @@ of social practice, understands how the process includes
 selecting items off a menu.  Presumably speakers rarely talk about 
 menus anyhow outside that dining/ordering context; so proper use 
 of the word is simply one part of competent social participation.  
-More than anything, this is what the word means %-- not so 
-much its contribution to criteria for what makes a statement true, 
-but what makes it correct to use this word in a given social setting.  
+
+More than anything, after all, this is what the word means: not so 
+much its contribution to criteria for some statement's truth-conditions, 
+but rather what makes it correct to use this word in a particular social setting.  
 Metaphorical uses also exist (the idiom "m/not on the menu/" 
 extends beyond food), but that is merely one of innumerable examples 
 of metaphoric word-sense that abstracts from concrete 
@@ -1747,7 +1753,7 @@ formalized within the semantics of computer programming languages)
 [/AsherPustejovsky/], [/ChatzikyriakidisLuo/], [/ZhaohuiLuo/].
 
 These are options for formal semantics that have, I contend, 
-explanatory merit vis-a-vis natural language, but they describe 
+explanatory merit `visavis; natural language, but they describe 
 constraints on cognitive processing more than end-to-end 
 algorithms for constructing signified meanings.  
 They do not, in my opinion, substitute for a cognitive 
