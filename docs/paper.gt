@@ -1363,7 +1363,7 @@ defined by more than just start and end points.  A path
 "/to the store/" has a functionally distinct early part in leaving 
 the building, to which (1) alludes via "/out/".  At the same time, 
 the process has dimensions beyond just spatial movement; going 
-*/out/* typically involves grabbing keys, wallet, phone, etc.  
+*/out/* typically involves grabbing keys, wallet, phone.  
 In short, the presence of */out/* results in (1) referring to 
 the speaker's planned actions with extra detail both `visavis; the 
 path trajectory and the operational components.  Either of these 
@@ -1619,7 +1619,7 @@ of the word is simply one part of competent social participation.
 
 More than anything, after all, this is what the word means: not so 
 much its contribution to criteria for some statement's truth-conditions, 
-but rather what makes it correct to use this word in a particular social setting.  
+but rather what makes it correct to token this word in a particular social setting.  
 Metaphorical uses also exist (the idiom "m/not on the menu/" 
 extends beyond food), but that is merely one of innumerable examples 
 of metaphoric word-sense that abstracts from concrete 
@@ -1653,14 +1653,15 @@ Second, verbs are distinct in that conceptual synthesis here
 requires contributions via numerous thematic relations.  
 This formulation generalizes the typically "t/local/" phenomenon 
 of one concept modifying another, to a more holistic 
-realm where syntheses need to be molded against situational 
+realm where syntheses are molded against situational 
 and enactive templates.  Meanwhile, the expansion of conceptual 
 synthesis into a multi-themed roster expands the plurality of sites 
 where speakers express epistemically-inflected content.  
 Any locative construction, for example, because it will assert a 
 spatial path and/or place (or set of places), is invested with 
 speaker's orientation to the spatial framework of the discourse.  
-How does the speaker see, imagine, know about these spaces?  
+How does the speaker see, imagine, know about these spaces?
+
 Listeners instinctively reconstruct details of the speaker's 
 belief-forming perspective because they have to recreate 
 for themselves the pattern of grounding expressed in a sentence.  
@@ -1705,7 +1706,7 @@ and conceptual syntheses on a signifactory plane,
 being mutually commutative in the sense of 
 commutative diagrams).  Unfortunately, I am not 
 convinced that there is any logico-mathematical 
-formulation that models conceptual 
+formulation that models/captures conceptual 
 synthesis in any general case.  The meaningfulness 
 of intermediate conceptual aggregates, from my 
 perspective, depends on some sort of 
@@ -1715,8 +1716,8 @@ I suggest that, almost always, such intermediaries
 depend on extralinguistic cognitive engagement.
 
 There is certainly a role for semantic theories: 
-many patterns of meaning have a recurring structure 
-that doubtless guides cognitive schemata, 
+many patterns of meaning have recurring structures 
+that doubtless guide cognitive schemata, 
 such as the mass/count distinction within modes 
 of plurality/multiplicity (and others listed earlier: 
 singular/plural, figure/ground, landmark/trajector).   
@@ -1756,8 +1757,8 @@ These are options for formal semantics that have, I contend,
 explanatory merit `visavis; natural language, but they describe 
 constraints on cognitive processing more than end-to-end 
 algorithms for constructing signified meanings.  
-They do not, in my opinion, substitute for a cognitive 
-model of intermediate staging, that is necessary 
+They do not, in my opinion, substitute for cognitive 
+accounts of intermediate staging, necessary 
 to bridge lexical word-sense with full-phrase propositional content.
 
 To be sure, I have offered rather inchoate characterization 
@@ -1805,7 +1806,7 @@ into propositional/enactive schemata %-- analogous to
 the distancing effects of future-planning.  
 
 Certainly, purposeful action coordinated among several people requires 
-each to know (and, in general, share) each other's beliefs, 
+everyone to know (and mostly share) each other's beliefs, 
 so communicating what we deem factual is an important part of 
 discourse.  Expressing not just */what/* we believe, but */why/*, 
 is relevant because we want others to hear our rationales.  
@@ -1816,10 +1817,10 @@ are the sentence's point or preambles to some further
 comment, suggestion or request %-- and moreover 
 encode speaker-relative perspectives and foreknowledge that 
 clarify their origins.  This epistemics-oriented disclosure 
-emerges from the overall regime of cognitive linguistic 
-processing.
+emerges from the overall regimes of subjectification and 
+cognitive linguistic processing.
 
-But we should not conclude from such notions that 
+But we should not conclude from such hypotheses that 
 sentences */signify/* propositions %-- i.e., that there 
 is a series of formal rules governing a mostly 
 determinative process through which a signifying process, 
@@ -1861,28 +1862,28 @@ commuting like Categorical diagrams, with both atomic and complex functors
 between syntax and semantics (the "/atomic/" being lexical word-sense).  
 My arguments in this paper are that such an overly-tidy picture is 
 untenable.  Concepts simply don't synthesize according to 
-"t/production rules/" analogous to ;/BNF/ grammars.  
+"t/production rules/" akin to ;/BNF/ grammars.  
 
-Programming language semantics is concerned with the binding 
+To draw once again from coding analogies, 
+programming language semantics is concerned with the binding 
 of values to symbols --- when those "t/markings/" start and 
 cease to be appropriate --- as well as polymorphic 
 definition of multiple procedures with the same symbol
 but different parameter types, and other type-related 
 concerns.  Code */syntax/* addresses such issues as 
-expression boundaries and "t/sequence points/", indicating 
+expression boundaries, storage-duration scope, and "t/sequence points/", indicating 
 which values are parameters for which function-calls as 
 well as, potentially, the order of procedures' side-effects 
 (particularly when a prior effect could be "t/visible/" to 
-a future subroutine).  In simple terms, source code 
-can be modeled via a "t/program stack/", but syntactic and 
+a future subroutine).  Syntactic and 
 semantic systems are necessary to ensure that high-level code 
-maps to an executable stack-representation while ensuring that 
+maps (properly) to a "/push/transfer/"-like stack representation, ensuring that 
 all procedures' type and precondition contracts are guaranteed.
 Note that the algorithmetized syntax and semantics here 
 serve as */preparation/* for function-calls, many of which 
 may be to precompiled routines whose implementations are 
 opaque to the high-level compiler and runtime.  I find this 
-roughly analogous to the role of syntax and semantics 
+roughly comparable to the role of syntax and semantics 
 in natural language, which bridge discourse to cognitive 
 operations even if the cognitive processing itself 
 is opaque to linguistic analysis */per se/*. 
@@ -1903,7 +1904,8 @@ my approach, or we must articulate rules for how concepts
 in their totality form a logical system, wherein all concepts are 
 built up from primitive roots by operations such as 
 those of set theory (union, intersection, disjoint union, etc.) 
-or other formalizations (modal logic, the logic of quantifiers, and so on).   
+or other formalizations (modal logic, the logic of quantifiers, and so on). 
+  
 Referring back to my reading of the successive syntheses 
 connoted by "/in this red tin box/", I don't believe 
 */any/* of those transforms can be glossed in such logical terms.  
@@ -1931,8 +1933,8 @@ phenomenology as an alternative foundation,
 so %-- on this architecture %-- theories 
 of cognitive-semantic "t/staging/" 
 would be formulated on phenomenological 
-grounds.  Thus semantics would have a 
-kind of theoretical dependence 
+grounds.  Thus semantics has a 
+kind of nomological dependence 
 on cognitive phenomenology, and 
 syntax on semantics in the sense 
 that phrase-structure rules become entrenched 
