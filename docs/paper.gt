@@ -1431,7 +1431,7 @@ by various case-forms: locative constructions,
 benefactive, instrumental, etc., each marking 
 that an associated phrase presents some detail 
 (the where, why, how) for the central verb 
-in the immediate surrounding phrase (possibly, the whole sentence).
+in the immediate surrounding phrase/sentence.
 
 In the realm of conceptual synthesis, that is, verbs 
 function uniquely: they don't alter a single aggregate so 
@@ -1477,13 +1477,13 @@ or phrases (via case-marking; particularly, in English, leading
 propositions) we identify the intended role for the constituent [/LucasChampollion/].
 
 In presenting conceptual syntheses, then, verbs operate via structures 
-of roles rather than one-word-at-a-time reworking of conceptual syntheses.  We can still say that a 
-given cognitive staging is intrinsic to inferred meaning; the point 
+of roles rather than one-word-at-a-time reworking of conceptual syntheses.  
+Cognitive staging is still intrinsic to inferred meaning; the point 
 here is that verbs effectuate such processes on a larger scale, 
 spanning the breadth of a phrase or sentence, whereas other 
 parts of speech (e.g., adjectives) operate more locally.  
-A theory of cognitive staging can cover both cases if its 
-employs models for thematic roles and relations.
+A theory of cognitive staging can cover both cases if it 
+accounts for thematic roles and relations.
 We can still study verb-constructions as sets of word-pairs 
 that trigger mutual cognitive reinterpretation, but the difference 
 here is that we need to describe */which/* thematic 
@@ -1560,8 +1560,8 @@ Such "t/roles/" may be outside the normal
 scope of lambda calculi (or other computation-models), but there are 
 related ideas in  
 hypergraph databases, or similar knowledge-representation techniques.  
-A multi-part relation (schematically a hyperedge) often assigns specific roles 
-to each participant; e.g., a */divorce/* implies two individuals, 
+A multi-part relation (schematically a hyperedge) can assign distinct roles 
+to each participant; e.g., */divorce/* implies two individuals, 
 a prior situation of marriage, and some legal entity or 
 context which recognizes the divorce as binding.  
 A binary relation such that one party is */divorced from/* 
@@ -1579,16 +1579,23 @@ of human cognition.  Conceptual integration is in some sense an
 intellectual procedure %-- a "t/computation/" in the domain 
 of conceptual staging and proto-images, if we don't take the mind/machine 
 metaphor too literally %-- and language-users deploy background knowledge 
-to "h/execute/" such scripts in ways consistent with their 
-peers.  Procedural "/memoization/" caches completed calculations 
-to avoid repetition.  Humans do something similar: the 
-molecular bonds between concepts (at least in the cerebral lifeworld) 
-lie somewhere between retrieving predicative beliefs and 
-summoning practical know-how, previously committed to memory.
+to "h/execute/" such scripts in sanctioned ways.  
 
-Frameworks such as the "t/interface theory of meaning/" developed 
-by Orlin Vakarelov suggest ways these intuitions could be productively 
-fleshed out [/OrlinVakarelov/], [/VakarelovAgent/].  By analogy to how lexicons codify a space of linguistic 
+In programming, "/memoization/" %-- caching results to 
+avoid repeating prior calculations %-- introduces modest 
+data-persistence; meanwhile, procedural contracts (pre- and post-conditions) 
+model beliefs about anticipated values, partially 
+mimicking shape/range constraints defined on hypergraph 
+neighborhoods (so, software-language and database technologies
+can overlap).  In cognition, 
+the line between predicative belief and practical know-how is more 
+radically blurred.  For one thing, facts are inextricably contextualized 
+by conceptual and pragmatic networks.  Moreover, facts and enactive maxims 
+share agent-role structures, in a vaguely "/Neo-Davidsonian/" event semantics.  
+
+The "t/interface theory of meaning/" developed 
+by Orlin Vakarelov is another route to flesh out these intuitions 
+[/OrlinVakarelov/], [/VakarelovAgent/].  By analogy to how lexicons codify a space of linguistic 
 knowledge %-- speakers are acquainted with the concepts associated to thousands of 
 words in their native tongue %-- we likewise have (and acquire) a 
 dictionary of mental "t/scripts/" guiding how concepts are to be 
