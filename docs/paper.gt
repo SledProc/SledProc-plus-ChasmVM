@@ -1569,32 +1569,35 @@ another thereby implies the presence of further participants
 (so treating this relation as merely binary excludes constitutive 
 details).  
 
-Unlike a hyperedge in a knowledge database, calling a procedure 
-does not assert a statement of fact but rather evaluates to a computed 
-result, which value might then be used in some larger or future expression.  
+Unlike a "/Semantic Web/" style hyperedge, calling a procedure 
+does not assert a presumed fact but rather obtains a computed 
+result, perhaps then used in some larger or future expression.  
 However, there are various commonalities between sets of interrelated 
 software procedures (e.g., code libraries) and graph databases, 
-that could potentially serve as a formal inspiration for theories 
-of human cognition.  Conceptual integration is in some sense an 
+that could potentially serve as approximative inspiration for theories 
+of human cognition.  Procedural "/memoization/" (caching results to 
+avoid repeating prior calculations) combines evaluation and  
+data-persistence.  More substantially, pre- and post-conditions 
+embody implementational */contracts/*, partially 
+mimicking shape/range constraints defined on hypergraph 
+neighborhoods.  In such contexts, database and 
+software-language concerns interpenetrate.  
+
+In cognition, meanwhile, the line between 
+predicative belief and practical know-how is more 
+radically blurred.  For one thing, facts are not isolated data-points; 
+they are inextricably contextualized 
+by conceptual and pragmatic networks.  For another, facts and enactive maxims 
+share agent-role structures, on a vaguely "/Neo-Davidsonian/" event semantics.  
+Conceptual integration is in some sense an 
 intellectual procedure %-- a "t/computation/" in the domain 
 of conceptual staging and proto-images, if we don't take the mind/machine 
 metaphor too literally %-- and language-users deploy background knowledge 
-to "h/execute/" such scripts in sanctioned ways.  
+to "h/execute/" such scripts in comunally-sanctioned ways. 
 
-In programming, "/memoization/" %-- caching results to 
-avoid repeating prior calculations %-- introduces modest 
-data-persistence; meanwhile, procedural contracts (pre- and post-conditions) 
-model beliefs about anticipated values, partially 
-mimicking shape/range constraints defined on hypergraph 
-neighborhoods (so, software-language and database technologies
-can overlap).  In cognition, 
-the line between predicative belief and practical know-how is more 
-radically blurred.  For one thing, facts are inextricably contextualized 
-by conceptual and pragmatic networks.  Moreover, facts and enactive maxims 
-share agent-role structures, in a vaguely "/Neo-Davidsonian/" event semantics.  
 
 The "t/interface theory of meaning/" developed 
-by Orlin Vakarelov is another route to flesh out these intuitions 
+by Orlin Vakarelov is another route to articulate similar intuitions 
 [/OrlinVakarelov/], [/VakarelovAgent/].  By analogy to how lexicons codify a space of linguistic 
 knowledge %-- speakers are acquainted with the concepts associated to thousands of 
 words in their native tongue %-- we likewise have (and acquire) a 
