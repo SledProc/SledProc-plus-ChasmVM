@@ -39,8 +39,8 @@ Plus, we should not
 overestimate rules' rigidity.  That a bachelor is an unmarried man, for example, 
 is a canonical example of logic underlying semantics; but sentences like 
 these are quite meaningful:`footnote<This paper's examples are 
-embedded in Journal Article Tag Suite (\eAfn{JATS}) sources 
-according to a standardized encoding; see 
+embedded in its Journal Article Tag Suite (\eAfn{JATS}) sources 
+according to a standardized encoding.  See 
 the \eAfn{JATS} (\eAfn{XML}) files for more information.>;
 
 %/ exs
@@ -411,7 +411,7 @@ has evolved in consort with consciousness: we exist in a world
 of conscious representations that allow us to observe 
 surrounding environments without immediately committing to a 
 course of action.  We benefit 
-from opportunitities to formulate reactions thoughtfully, informed 
+from opportunities to formulate reactions thoughtfully, informed 
 by values, personal identity, and past experience.
 
 Suppose I stand by a platform waiting for a subway to arrive.  I need to board 
@@ -768,7 +768,7 @@ experiences, methodology should consider whether some target of
 analysis is amenable to the notions and structures comprising an 
 analytic protocol.  Similarly, Cognitive Grammar advances a series of interrelated 
 analytic notions (landmark, projector, profiling, domain of instantiation, 
-attententional system, grounding predication, 
+attentional system, grounding predication, 
 subjectification, subjective and objective construal) 
 whose theoretical merits may be tested against constructed (and also real) sentences. 
 
@@ -779,7 +779,7 @@ domain of a theory is any structure that can be analyzed
 according to the terms of that theory %-- including artifacts 
 conjured ad-hoc precisely to test, clarify, or refine it.
 By analogy, complex numbers (and other dreamed-up number systems: 
-hyperreals, quaternions, transfinite ordinals), despite  
+hyperreals, quaternions, affine arithmetic), despite  
 lacking physical interpretations (such as spatial distance) 
 are objects of mathematical reasoning because they are 
 amenable to many quantitative methods (arithmetic 
@@ -1122,7 +1122,7 @@ our construal of facts and affordances surrounding us %--
 which gets destabilized when subordinate clauses become nested into 
 superordinates.
 
-(Syntactic-) categorial type theories are, of course, just a few among many protocols 
+(Syntactic-) Categorial type theories are, of course, just a few among many protocols 
 deployed to model sentence structure.  Phrase-structure grammars emphasize 
 nested hierarchies.  Dependency grammars  
 focus more on inter-word relations (often among adjacent words, but crucial 
@@ -1588,13 +1588,12 @@ predicative belief and practical know-how is more
 radically blurred.  For one thing, facts are not isolated data-points; 
 they are inextricably contextualized 
 by conceptual and pragmatic networks.  For another, facts and enactive maxims 
-share agent-role structures, on a vaguely "/Neo-Davidsonian/" event semantics.  
+share agent and theme/role structures, on a vaguely "/Neo-Davidsonian/" event semantics.  
 Conceptual integration is in some sense an 
 intellectual procedure %-- a "t/computation/" in the domain 
 of conceptual staging and proto-images, if we don't take the mind/machine 
 metaphor too literally %-- and language-users deploy background knowledge 
 to "h/execute/" such scripts in comunally-sanctioned ways. 
-
 
 The "t/interface theory of meaning/" developed 
 by Orlin Vakarelov is another route to articulate similar intuitions 
@@ -1643,7 +1642,7 @@ of metaphoric word-sense that abstracts from concrete
       
 The premise that individual words conceptually modify logically 
 precedent aggregates may seem obvious.  But I want to extend that 
-starting point with three further arguments.
+maybe-underwhelming starting point with three further arguments.
 
 First, I claim that this overall phenomenon can be taken as a 
 groundwork for syntactic theory to begin with.  
@@ -1662,13 +1661,13 @@ word-order to optimal cognitive construal of conceptual
 aggregates.  So such word-order is not just a feature 
 */of/* syntax; it is a causative foundation */for/* syntax.
 
-Second, verbs are distinct in that conceptual synthesis here 
-requires contributions via numerous thematic relations.  
+Second, verbs are distinct in that "/their/" conceptual syntheses  
+demand contributions via numerous thematic relations.  
 This formulation generalizes the typically "t/local/" phenomenon 
 of one concept modifying another, to a more holistic 
-realm where syntheses are molded against situational 
-and enactive templates.  Meanwhile, the expansion of conceptual 
-synthesis into a multi-themed roster expands the plurality of sites 
+realm where syntheses are molded against enactive 
+and situational (agent/role) templates.  Meanwhile, the expansion of conceptual 
+synthesis into a multi-themed complex expands the plurality of sites 
 where speakers express epistemically-inflected content.  
 Any locative construction, for example, because it will assert a 
 spatial path and/or place (or set of places), is invested with 
