@@ -587,13 +587,15 @@ bridging the (metaphorical) "/in vivo/" and "/in vitro/"
 facets of human minds.  But as a high-level science, 
 cognitive phenomenology does not need to develop a 
 complete theory about how the parameters in its 
-explanatory arsenal emerge from and/or supervene upon physical substrata.  
+explanatory arsenal emerge from and/or supervene upon physical substrata 
+(the mind/matter gap is a profound limit to our 
+understanding of the universe, but no more consequential 
+here than elsewhere).  
 It's goal, rather, should be to work toward 
 consensus about which theoretical ideas and 
-posits have analytic value and, among such 
-foregrounded concepts, strive for consistency 
-in theory-semantics and how analytic parameters are 
-structurally employed for argumentation.    
+posits have analytic value and, thereupon, strive for consistency 
+in theory-semantics and in how structural parameters are 
+employed for analysis.    
      
 Phenomenologists from Husserl onward have built a 
 literature of analyses and nomenclature toward such 
@@ -698,8 +700,8 @@ of (instrument-enhanced) observation, at least for now.  Other phenomena
 (like "t/dark energy/") are left more open-ended, possibly subsumed under 
 such ontological realism or possibly artifacts of some more complex process 
 (like "t/phonons/", which behave like "i/particles/" of sound, but 
-that's largely a metaphor [/KamranMajid/]).  Natural selection or "t/design/" would not be an 
-object, but rather an encompassing system wherein adaptation drives 
+that's largely a metaphor [/KamranMajid/]).  Natural selection or "t/design/" 
+is not an object, but rather an encompassing system wherein adaptation drives 
 evolution.  Potentially "t/dark/" matter and energy will ultimately 
 be given a similarly indirect and holistic cosmological interpretation, 
 rather than deemed to refer to a specific kind of field or particle.  
@@ -794,8 +796,8 @@ By analogy, complex numbers (and other dreamed-up number systems:
 hyperreals, quaternions, affine arithmetic), despite  
 lacking physical interpretations (such as spatial distance) 
 are objects of mathematical reasoning because they are 
-amenable to many quantitative methods (arithmetic 
-operations, path-integration, infinite summation, and so forth).
+amenable to many quantitative methods (add/multiply, 
+path-integration, infinite summation, and so forth).
 
 Constructed examples are prominent in both linguistics 
 and phenomenology.  Relatedly, the "t/demarcation problem/" 
@@ -947,18 +949,18 @@ syntax in defining compositional patterns than get transferred
 to the semantic plane. 
 
 For `Boltetal;, then, syntax and semantics develop in consort.  On the 
-one hand we have theories for how to properly model syntactic 
+one hand, we have theories for how to properly model syntactic 
 structure (e.g., Categorial Grammar [/YusukeKubota/], [/WybraniecSkardowska/]).  On the other, semantic theory 
 should define operations that are referenced by syntactic operations 
 by analogy to how lexicons define single words.  In [/Bolt/], Conceptual Spaces 
 supply the requisite semantic architecture, analyzing how 
 two concepts' respective "t/spaces/" can interact.  I am not convinced 
 of the explanatory value of 
-quasi-mathematical treatments of concepts, such as 
+quasi-mathematical treatments for concepts, such as 
 advanced by `Gardenfors; (such criteria as "t/convexivity/" 
 feel forced to me, outside special contexts like color terms).  
-Nonetheless, `Boltetal; codify what a formal treatment 
-of semantics and syntax should look for: having determined 
+Nonetheless, `Boltetal; codify what a formal engagement 
+with semantics and syntax should look for: having determined 
 a pattern of synthesis within linguistic components by 
 virtue of syntax, we seek a translation of that 
 synthesis into the conceptual register.  
@@ -969,10 +971,10 @@ where parts of speech may be likened to a system of types,
 such as nouns and propositions.  Because mappings from a tuple 
 of types to some result type are themselves a type, 
 we can build an arbitrarily large system 
-out of a small basis (e.g., noun/proposition).  
+out of a small basis (e.g., `nslashp;).  
 Propositions are an overarching sentential type, 
-whereas phrases have intermediate types between propositions 
-and nouns.  A sentence is properly 
+whereas phrases have intermediate types between 
+`pANDn;.  A sentence is properly 
 formed if those intermediates resolve to propositionality, 
 via type-inference rules like reading (intransitive) verb-noun 
 pairs as producing propositionally complete clauses.   
@@ -1156,9 +1158,9 @@ and numeric literals, and "t/variable/"
 symbols that must be assigned a value before they are used. 
 The most common structure in such a language would be expressions consisting of a function 
 symbol and one or more "t/arguments/".  The */interpreter/* 
-that would executes programs is essentially 
+that would execute programs written in the language is essentially 
 a state machine, reading a sequence of symbols 
-in turn.  There could be the following basic operations: `upAdj<4pt>;
+in turn.  Assume the following basic operations: `upAdj<4pt>;
 
 %/ enums
 
@@ -1181,10 +1183,10 @@ polymorphism %-- one name may reference multiple code-blocks,
 distinguished by their signatures %-- then this process 
 requires examining the types of values further down the 
 program stack.  Once the correct procedure is identified, 
-transfer control to that function body.  If programmed 
-correctly, the called routine will take its inputs off the 
+transfer control to that function body (if compiled 
+correctly, the new callee will take its inputs off the 
 stack and push its own return values, which in turn 
-will serve as inputs to later subroutines. `vspace<5pt>; 
+may serve as inputs to later subroutines). 
 /+
 
 For sake of discussion, I will call this a "t/push/transfer/" execution 
@@ -1291,9 +1293,10 @@ not at the same level of quantitative sophistication,
 so we don't necessarily move a theoretical needle very far 
 by detecting structural analogies between graph-traversal 
 postorder and cognitive "t/staging/".  Still, 
-I believe these analogies yield a formal model of 
+I believe these analogies yield a formal summary of the 
 syntax/semantics interface that is more cognitively realistic 
-than `Boltetal;'s appeal to commutative diagrams.  
+than `Boltetal;'s appeal to commutative diagrams.  Compilers 
+are */stateful/* processing/workflow systems, not term-reduce games.
 
 More substantially, postordering is not just a heuristic 
 for revisiting parse graphs; type reduction and 
