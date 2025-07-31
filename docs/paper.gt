@@ -78,7 +78,7 @@ exactly three songs to sing along with.  Hence, we can assume that, among all so
 played that evening, there were specifically three with the property that (all) the audience 
 joined in.  The numeral-quantifier "/three/" is thus outside the scope of "/everyone/".
 By contrast, one is free to hear (4) as nesting the scope of "/three/" inside "/all/" 
-(it is a general principle that three judges hear an appeal, but the set of 
+(by protocol three judges hear an appeal, but the set of 
 individuals can vary from one case to another).  
 
 In (5) and (6), reading a quantifier's intent requires distinguishing levels of exactitude.  Rhetorically, 
@@ -108,7 +108,7 @@ the locus of sense-divergence can be reduced to a single word).
 I chose the first three sentence-pairs because the variable factor in each 
 case flip-flops from first to second, at least 
 in the most */likely/* reading.  But subtle variation can point to the opposite, as in these alternatives 
-for (3) and (4):
+for (3), (4):
 
 %/ exs
 (11)  Every band performed three songs.
@@ -205,7 +205,7 @@ I argue from cases like `onethrft; that even after fully digesting
 compositional intent, predicate signification remains underdetermined.
 
 To borrow the apologia from the lexical realm, we'd have to argue that 
-lurking behind any actual dialect is an idealized language which 
+lurking behind any spoken dialect is an idealized language which 
 "t/marks/" all logically salient elements %-- quantifiers, anaphora, deictics 
 (imagine differentiating a proximate versus distal "m/there/", or abstract versus concrete 
 "m/here/"), 
@@ -223,19 +223,19 @@ We might be tempted by a formal semantics whose basic premises are roughly these
 %/  enums
  1.  Canonically, sentences signify propositions %-- by analogy to how words signify concepts.
  2.  Behind any actual language is an idealized language wherein sentences denote 
-structured propositions via compositional patterns, themselves encoded through 
+structured propositions via compositional maxims, themselves encoded through 
 syntactic conventions and the semantic properties of specific word-classes 
-(quantifiers, pronouns, determiners, etc.).
+(quantifiers, pronouns, case-markers, determiners, etc.).
 /+
 
 To the degree that speakers must employ extralinguistic reasoning, 
 those occasions would then be treated as individuals mentally refining the 
 actual lexicon to an approximated ideal.   
-It is true, say, that "/Trump/" should be interpreted differently 
+It is true, say, that */Trump/* should be interpreted differently 
 when people are playing bridge or talking politics, but this means that 
 ambient situations nudge speakers in contextual ways when construing how 
 their spoken language should be projected to its perfected form.  Context 
-disposes us to "/label/" a word like "/trump/" as either a person or a card 
+disposes us to "/label/" "/trump/" as either person or card 
 suit.  But such are antecedent to semantics proper; for theoretical 
 purposes we can take the lexicon as enriched with such labels */a priori/*.
 The cognitive gap between actual and ideal dialects is orthogonal to linguists' 
@@ -270,7 +270,7 @@ to assert fragments of symbolic logic, but rather to coordinate their joint
 activity.  Logically transparent statements are certainly an 
 important part of that, but still, language's ability to convey beliefs 
 is an */emergent property/* of human verbal communication.  
-The existence of coherent `StoP; mappings is not an axiom to 
+The existence of (relatively) deterministic `StoP; mappings is not an axiom to 
 deploy in linguistic explanations, but a cognitive faculty to be explained.
 
 To be clear, I do believe the value of signifying propositions is 
@@ -295,7 +295,7 @@ is needed to adjudicate competing word-senses.  But I believe
 the */compositional/* indeterminacy of whole sentences 
 is qualitatively different, and reveals a more substantial 
 surface area where linguistic and extralinguistic 
-phenomena inter-penetrate.  Hence, linguistics 
+phenomena intermingle.  Hence, linguistics 
 must actively connect its paradigms and presuppositions 
 to a larger intellectual environment, where 
 overarching theories of cognition and communication 
@@ -333,22 +333,25 @@ then address why posited dispositions and attributes
 generate observed behaviors.
 
 By analogy, there is a distinct set of terms relevant to 
-high-level computer source code: procedures, lexical variables, 
-lifetimes, types, pointers, execution branches.  Separately, 
-there are terms related to machine code: registers, instruction 
-sets, opcodes, memory pages.  Although source files compile 
+high-level computer source code (procedures, contracts, side-effects, 
+lexical variables, lifetimes, types, pointers, execution branches).  
+Separately, there are terms related to machine code (registers,  prefixes, 
+opcodes/operands, instruction sets, memory pages).  Although source files compile
 to machine code, analyses of programming languages' rules and 
 implementations cannot in general "h/quantify/" over machine-level 
 concepts.  Moreover, it would be impossible to explain the rational 
 structure behind machine-code sequences without employing terms 
-or concepts derived from the original high-level sources.
+or concepts derived from the original high-level sources.  While 
+engineered rather than natural phenomena, compiler pipelines are 
+a good case-study in downward-reductive causation versus 
+emergent/supervening describability. 
   
 More generally, examining progressively smaller 
 physical scales may suffice for purely mechanical explanations of 
 physical processes, but remains explanatorily incomplete insofar 
 as macro-scale phenomena structure and mold the micro-scale aggregates.  
 For instance, a purely molecular account of the dynamics of a spinning 
-baseball does not take into consideration thought processes 
+baseball does not take into consideration the thought processes 
 of the pitcher who decided to throw a curveball.  A complete 
 account of the universe in that moment needs to recognize such 
 work of mind as part of the causal background for the ball's trajectory.
@@ -389,7 +392,7 @@ on a higher scale, brain scientists identify many distinct
 (and functionally unique) anatomic regions [/UziBenZvi/], 
 [/AnilSeth/], [/Sethetal/].  Working from 
 "h/the ground up/", however, one is still far from connecting 
-neurophysical substrata to observed patterns in human cognition.
+neurophysical substrata to vivid */Lebenswelt/* consciousness.
 
 There is an almost universally recognized explanatory gap with respect 
 to consciousness itself: we still have little understanding of 
@@ -1710,7 +1713,7 @@ should be analyzed.
 
 `Boltetal;, mentioned earlier, propose Conceptual Space theory 
 as an alternative to symbolic logic, for modeling 
-aggregates like "/red/" plus "/box/".  To the extent that 
+aggregates like `redplusbox;.  To the extent that 
 our overall conceptual worlds may be represented via 
 quasi-mathematical operations, then aggregative meanings 
 can be seen as functors between Categories of grammatic 
@@ -1750,15 +1753,17 @@ to sentences about referents that exist in multiple strata:
 %/ exs
 (1)  That newspaper [pointing to a table] just moved to 10th street 
 and laid off half its staff.
-(2)  I recommend you print out this book from the ;/PDF/ link.
+(2)  At home you can print out this book from a ;/PDF/ link.
+(3)  The borough of Queens voted heavily for Mamdani.  
 /+
 
 Also, apparent region violations drive many functional metaphors:
 
 %/ exs
-(3)  These flowers really want some sunshine.
-(4)  This drought has left the soil parched.
-(5)  The spell-checker thinks "/hooman/" isn't a word.  
+(4)  These flowers really want some sunshine.
+(5)  This drought has left the soil parched.
+(6)  Our car stubbornly refused to move.
+(7)  The spell-checker thinks "/hooman/" isn't a word.  
 /+
 
 Examples such as (1) through (5) have been analyzed in terms of 
