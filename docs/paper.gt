@@ -344,7 +344,7 @@ structure behind machine-code sequences without employing terms
 or concepts derived from the original high-level sources.  While 
 engineered rather than natural phenomena, compiler pipelines are 
 a good case-study in downward-reductive causation versus 
-emergent/supervening describability. 
+emergent/token-supervening describability. 
   
 More generally, examining progressively smaller 
 physical scales may suffice for purely mechanical explanations of 
@@ -384,15 +384,22 @@ one naturally to cognition, which is an inevitable explanatory
 setting for any talk of decision-making and ideology.
 
 Inter-theory reduction depends on filling macro-to-microscale gaps with mid-level  
-analyses; source files, for example, become transformed to several 
-intermediate representations during a compiler pipeline.  `Visavis; the 
-human mind, neurologists certainly understand how clusters of neurons 
+analyses; source files, for example  
+become transformed to several intermediate representations during a compiler build.  `Visavis; the 
+human mind, neurologists have studied how clusters of neurons 
 form "t/nuclei/", "t/ganglia/", or "t/modules/" with distinct functional roles; and, 
 on a higher scale, brain scientists identify many distinct 
 (and functionally unique) anatomic regions [/UziBenZvi/], 
 [/AnilSeth/], [/Sethetal/].  Working from 
 "h/the ground up/", however, one is still far from connecting 
-neurophysical substrata to vivid */Lebenswelt/* consciousness.
+neurophysical substrata to vivid */Lebenswelt/* 
+consciousness (and vice-versa).  Telically,
+theories' connecting arrows will more deftly point both up and
+down the ranks of physical constituency.\footnote{Science is */guided/* by a more   
+"/top-down/" metaphysic: lifeworld experience seeds our 
+recognition of phenomena needing microphysical explanation.  But we still take it on faith that 
+no aspect of reality is */fundamentally/* incommensurate 
+with basic scientific methods.}  
 
 There is an almost universally recognized explanatory gap with respect 
 to consciousness itself: we still have little understanding of 
@@ -424,9 +431,8 @@ the correct train.  To do so, I may well follow a well-rehearsed
 protocol: hearing the train cues me to look down the platform; upon seeing 
 its outline I then focus attention on the letter- and color-coded 
 symbol painted on the front.  If it indicates the correct train, 
-I pace back to allow passengers 
-to disembark.  Each step in this process is consciously mediated. 
-I need to deliberately shift my perceptual orientation multiple 
+I pace back as passengers start to disembark.  Each step in this process is consciously mediated. 
+I deliberately shift my perceptual orientation multiple 
 times, and could break off the "t/protocol/" given some external 
 stimuli.  Perhaps I hear my cell phone pinging.  Or, there's an announcement 
 that the current train is out of service, so it's a moot point.  The key 
@@ -446,14 +452,15 @@ Color-perception has added complexity first because some chromatic
 variation is expected in an extended region due to texture 
 and lighting; and second because visible substances have 
 optical qualities beyond just red/green/blue quantities 
-%-- albedo, specularity, glossiness, metallicity, opaqueness, etc. 
-[/DavitGigilashvili/], [/XiaoyingGuo/], 
+%-- albedo, specularity, glossiness, metallicity, opaqueness, 
+etc.\footnote{For instance, [/DavitGigilashvili/], [/XiaoyingGuo/], 
 [/HarveySmithson/], [/Mallickelal/], [/MirjaliliHardeberg/], 
-[/ShinyaNishida/], [/Osadchyetal/], [/WendtFaul/], [/JanaZujovic/].
-Object boundaries are suggested by discontinuities in visual properties of 
+[/ShinyaNishida/], [/Osadchyetal/], [/WendtFaul/], [/JanaZujovic/].}
+Object boundaries (and meaningful detected edges) are 
+suggested by discontinuities in visual properties of 
 varying kinds, not just pure color; moreover, segmentation 
-algorithms have to be cautious of spurious boundaries 
-due to light/shadow effects and the vagaries of pigmentation.  
+algorithms must be wary of spurious boundaries 
+due to light/shadow effects and the vagaries of pigmentation. 
 
 Humans subconsciously perform complex image-analysis tasks, many 
 of which can be simulated by computer-vision algorithms [/Galunetal/], 
@@ -484,15 +491,15 @@ processes such as textural segmentation, occlusion compensation,
 and gradient recognition are not guided by conscious 
 intervention, it is only */through/* consciousness 
 that these factor into larger-scale 
-human actions.  The human mind works in such a manner  
+human actions.  Our minds work in such a manner  
 that pre-conscious operations become consequential  
 as they are woven into conscious experience, 
 against which we orient as perceiver to perceived, 
-while also superimposing planning and executive 
+whilst also superimposing planning and executive 
 control, situational awareness, personal identity, 
 and our overall commitment to engage the world 
 in rational, purposeful ways.  Consciousness 
-is a necessary medium through which the 
+is a medium through which the 
 "t/outputs/" of cognitive processes acquire the status 
 of perceptual givens, that we deem to disclose  
 states of affairs, relative to which we coordinate actions.
@@ -910,7 +917,9 @@ A good example of formal answers to the second question is
 `Boltetal; [/Bolt/], based on Peter `Gardenfors;'s Conceptual Space 
 theory, alongside a syntactic approach related to Categorial Grammar 
 and mathematical Category Theory.  Consider "t/red box/", and 
-(provisionally) define the concepts set-theoretically: 
+(for sake of argument, although this deviates from the 
+specifics of `Gardenfors;-inspired work on conceptualization) 
+define the concepts set-theoretically: 
 */red/* means the set of red things; */box/* means the set of 
 boxes (or box-like things).  Combining the concepts yields 
 an intersection between the two sets.  Meanwhile, 
@@ -1187,7 +1196,7 @@ compilers.
 Among the added complications relevant to a real-world push/transfer 
 implementation are %-- first %-- resolving polymorphically 
 "t/overloaded/" function symbols.  By stipulation, the interpreter or compiler 
-has access to a list mapping procedure names to a collection of signatures.  
+has access to a list mapping procedure names to signatures.  
 Selecting a correct overload is straightforward if there is one exact 
 signature-match given the current stack types.  However, most modern 
 programming environments allow implicit type-casts (e.g., any integer is also 
