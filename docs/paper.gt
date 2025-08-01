@@ -344,7 +344,7 @@ structure behind machine-code sequences without employing terms
 or concepts derived from the original high-level sources.  While 
 engineered rather than natural phenomena, compiler pipelines are 
 a good case-study in downward-reductive causation versus 
-emergent/token-supervening describability. 
+emergent/token-supervening describability [/AndrewRBailey/]. 
   
 More generally, examining progressively smaller 
 physical scales may suffice for purely mechanical explanations of 
@@ -908,7 +908,7 @@ as (1) and (2) hopefully illustrate. `vspace<12pt>;
 
 ///  Concepts and Compositionality 
 
-"t/The meaning of a sentence is a function of its words and 
+`upAdj<2pt>;"t/The meaning of a sentence is a function of its words and 
 how they are composed/" (cf. [/JamesPustejovsky:2/]).  In itself, that seems uncontroversial, 
 except that */words/* are not combined */per se/*; rather, 
 the concepts to which they "t/point/".  There are two 
@@ -988,7 +988,7 @@ cognitive-phenomenological reading of this phenomenon. `vspace<9pt>;
 
 // //
 
-`vspace<6pt>; It is circular just 
+`vspace<3pt>; It is circular just 
 to say that "/red box/" means something possessing 
 both redness and boxness, so we need to look a 
 little deeper.  Consider a full sentence:
@@ -1078,16 +1078,16 @@ formulae.  Among adjectives, those naming attributes that are
 more intrinsic to the nature of their substrata appear 
 closer to the noun than qualities which are more 
 incidental.  A metal box can be painted over, but will 
-never become wooden.  Hence "/red/" slots in 
-outside of "/tin/" ("/tin red box/" sounds wrong).  
+never become wooden.  Hence "/red/" slots  
+outside "/tin/" (*/tin red box/* sounds wrong).  
 Adjectives of compositional substance bind more 
 tightly than color, which is ontologically "t/accidental/".  
-Such conventions evidently help due to  
+Such conventions evidently reflect  
 how adjectives play different roles in different 
-contexts %-- affixing "/black/" inseparably to 
+contexts %-- affixing */black/* inseparably to 
 "/belt/" clarifies that the color, here, is not 
-primarily a sensate quale but a constituent 
-of an enumeration (*/orange baseball cap/*, but 
+primarily a sensate quale, but part 
+an enumeration (*/black baseball cap/*, but 
 */karate black belt/*).
 
 Phrases built around material objects thereby evidently 
@@ -1355,7 +1355,7 @@ grounding syntactic theory on cognitive optimization
 series of disciplinary warrants against the paradigms 
 of phenomenology.  However, I feel there are two 
 issues to address that could complicate the picture 
-I've outlined. 
+I've outlined. `upAdj<14pt>;
 
 
 // //
@@ -1363,7 +1363,7 @@ I've outlined.
 First, my discussion has implied that word-order and associated 
 sentence properties, such as phrase-structure, are logically 
 fixed.  That may be true in some sentences, but one might find 
-counter-examples.  I will examine the following:
+counter-examples.  I will examine:
 
 %/ exs
 (1)  I'm heading out to the store.
@@ -1562,12 +1562,12 @@ Consider lambda-expressions taking (in lieu of
 value-tuples) parameter-packs indexed via 
 distinct role-attributions for each argument.\footnote{ 
 This kind of calling convention 
-%-- concretized in some programming languages via 
-"t/labeled/" or "t/keyword/" parameters %-- is arguably 
-more natural than the alternative (i.e., "t/positional/" 
+%-- adopted as "t/labeled/" or "t/keyword/" parameters 
+in some computer languages %-- is arguably 
+more natural than the alternative ("t/positional/" 
 arguments) anyhow, because each value passed in to a procedure 
-typically has a distinct role, possibly suggested by the 
-name it is assigned in the function's implementation 
+typically has a distinct role, possibly suggested by its 
+name in the function's implementation 
 block.} `hspace<4pt>; In spoken language, the particular 
 thematic relation that connects a subsidiary clause to the 
 central verb determines how we infer its meaning 
@@ -1597,7 +1597,7 @@ avoid repeating prior calculations) combines evaluation and
 data-persistence.  More substantially, pre- and post-conditions 
 embody implementational */contracts/*, partially 
 mimicking shape/range constraints defined on hypergraph 
-neighborhoods.  In such contexts, database and 
+neighborhoods [/IovkaBoneva/].  In such contexts, database and 
 software-language concerns interpenetrate.  
 
 In cognition, meanwhile, the line between 
@@ -1605,9 +1605,10 @@ predicative belief and practical know-how is more
 radically blurred.  For one thing, facts are not isolated data-points; 
 they are inextricably contextualized 
 by conceptual and pragmatic networks.  For another, facts and enactive maxims 
-share agent and theme/role structures, on a vaguely "/Neo-Davidsonian/" event semantics.  
+share agent and theme/role structures, on a vaguely "/Neo-Davidsonian/" event 
+semantics [/HarryBunt/].  
 Conceptual integration is in some sense an 
-intellectual procedure %-- a "t/computation/" in the domain 
+intellectual procedure %-- "t/computing/" in the domain 
 of conceptual staging and proto-images, if we don't take the mind/machine 
 metaphor too literally %-- and language-users deploy background knowledge 
 to "h/execute/" such scripts in comunally-sanctioned ways. 
