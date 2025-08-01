@@ -360,8 +360,8 @@ In short, causative explanation is incomplete on any one scale in
 particular; it is only by bridging multiple theories that one can 
 simultaneously analyze both purely physical properties (dependent 
 on micro-scale realities) and aggregate, complex behavior 
-(caused by interactions between higher-scale objects) [/DonHoward/], 
-[/LiefkeHartmann/], [/JohnSymons/].  Individual 
+(caused by interactions between higher-scale objects)  
+[/LiefkeHartmann/], [/RonMcClamrock/], [/JohnSymons/].  Individual 
 theories contribute to cross-scale explanations by formalizing 
 their own terminological and epistemological frameworks, ones 
 that focus on some class of entities but also explicate how 
@@ -1595,7 +1595,7 @@ that could potentially serve as approximative inspiration for theories
 of human cognition.  Procedural "/memoization/" (caching results to 
 avoid repeating prior calculations) combines evaluation and  
 data-persistence.  More substantially, pre- and post-conditions 
-embody implementational */contracts/*, partially 
+embody implementational */contracts/* [/TimurDoumler/], partially 
 mimicking shape/range constraints defined on hypergraph 
 neighborhoods [/IovkaBoneva/].  In such contexts, database and 
 software-language concerns interpenetrate.  
