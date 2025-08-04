@@ -10,10 +10,16 @@
 \setlength{\columnsep}{38pt}
 
 
-
 \usepackage{natbib}
 \setlength{\bibsep}{3pt}
 
+ \usepackage{titlesec}
+
+ \titleformat{\section}
+      {\normalfont\Large\bfseries\raggedright} % Apply raggedright here
+      {\thesection}
+      {1em}
+      {}
 
 %\titleformat{\section}
 %  {\normalfont\Large}{\thesection}{1em}{}
@@ -123,7 +129,19 @@
 
 \newcommand{\visbreak}{\vspace{9pt}}
 
+\newcommand{\lmdh}[1]{{\fontfamily{qcr}\selectfont#1}}
 
+\newcommand{\nslashp}{%
+\resizebox{7.5pt}{!}{\lmdh{n}}/%
+\resizebox{6pt}{!}{\lmdh{P}}%
+}
+
+
+
+\newcommand{\pANDn}{%
+\q{\resizebox{6pt}{!}{\lmdh{P}}} and %
+\q{\resizebox{7.5pt}{!}{\lmdh{n}}}%
+}
 
 
 \newcommand{\upAdj}[1]{\vspace{-#1}}
@@ -185,7 +203,7 @@
 
 \newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
 
-\newenvironment{itemz}{\vspace{3pt}\begin{itemize}}{\end{itemize}}
+\newenvironment{itemz}{\vspace{0pt}\begin{itemize}}{\end{itemize}}
 
 \newenvironment{docAbstractx}{%
 \twocolumn[
@@ -290,6 +308,8 @@
 
 
 \newcommand{\redbox}{\makebox{\eS{red}\hspace{4pt}\ensuremath{\cap}\hspace{4pt}\eS{box}}}
+
+\newcommand{\redplusbox}{\makebox{\eS{red}\hspace{4pt}+\hspace{4pt}\eS{box}}}
 
 \newcommand{\jrefs}{\exsRef(15)/\exsRef(16)}
 
@@ -396,8 +416,11 @@ breaklines=true
 
 \setcitestyle{square}
 
-\title{Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology for Syntactic Theory}
+\title{\vspace{-1em}%
+Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology for Syntactic Theory%
+\vspace{-1em}}
 
+\date{}
 
 \usepackage{tikz}
 \usepackage{fancyhdr}
@@ -406,7 +429,6 @@ breaklines=true
 
 \definecolor{AquaA5}{HTML}{4bacc6}
 \definecolor{blggr}{RGB}{25, 180, 180}
-
 \definecolor{tlc-main}{RGB}{125, 50, 80}
 
 \newcommand{\ul}[1]{\underline{#1}}
@@ -467,6 +489,17 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 \fancyfoot[C]{}
 \fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fnellipsed{\thepage}}}
+
+%\fancyfoot[L]{}
+
+%\hspace{-33pt}%\ifnum\presetStretch=2%
+%{\ifnum\thepage=3{RRR}%
+%\raisebox{13pt}{\fncircled{zzxx}}
+%\else%
+%\raisebox{3pt}{\fncircled{PPP}}
+%\fi}
+%}
+
 \fancyfoot[R]{}
 
 \renewcommand{\headrulewidth}{0pt}    
@@ -490,6 +523,23 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 }
 
+
+
+\fancypagestyle{three-dbl}{
+
+\setlength{\headsep}{25pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{19pt}{\fnellipsed{\thepage}}}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
 
 
 
@@ -553,26 +603,107 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 \definecolor{fnc}{RGB}{65, 150, 8}
 
+\usepackage{eso-pic}
+
 \makeatletter
 
 \renewcommand\@makefnmarkfn{%
 \raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}\@thefnmark}}}}
 
+\renewcommand\makefnmarkfnOne{%
+\raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}1}}}}
 
-\renewcommand{\@makefntext}[1]{\@makefnmarkfn\hskip.5em\relax%
-\begin{minipage}[t]{0.98\columnwidth}#1\end{minipage}
-}
 
-\renewcommand\@makefnmark{%
-\raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{black}\@thefnmark}}}}
-
-\makeatother
+\newcommand{\fnmini}[1]{\begin{minipage}[t]{0.97\columnwidth}#1\end{minipage}}
+\newcommand{\fnminidbl}[1]{\begin{minipage}[t]{0.97\columnwidth}{\begin{spacing}{2.0}#1\end{spacing}}\end{minipage}}
 
 
 \usepackage{titling}
 
 \renewcommand\maketitlehookc{\vspace{-35pt}}
 
+
+\usepackage{etoolbox}
+
+\providecommand{\presetStretch}{0}
+
+\AtEndPreamble{
+\ifnum\presetStretch=2\setstretch{2}\fi	
+}
+
+\renewcommand{\@makefntext}[1]{\@makefnmarkfn\hskip.5em\relax%
+\ifnum\presetStretch=2{\fnminidbl{#1}}\else{\fnmini{#1}}\fi%
+}
+
+
+\newcommand{\mmakefntext}[1]{\makefnmarkfnOne\hskip.5em\relax%
+\ifnum\presetStretch=2{\fnminidbl{#1}}\else{\fnmini{#1}}\fi%
+}
+
+
+
+\renewcommand\@makefnmark{%
+\raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{black}\@thefnmark}}}}
+
+\newcommand{\fnm}{\setcounter{footnote}{1}%
+\raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{black}1}}}}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+\hspace*{-3pt}\raisebox{3pt}{%
+\mmakefntext{\footnotesize{This paper's examples are 
+embedded in its Journal Article Tag Suite (\eAfn{JATS}) sources 
+according to a standardized encoding.  See 
+the \eAfn{JATS} (\eAfn{XML}) files for more information.}}
+}}}\fi
+}
+
+\usepackage{dashrule}
+
+\newcommand{\bfnr}{\textcolor{hrfn}{\hdashrule{1.05\columnwidth}{0.4pt}{6pt 2pt}}}
+
+\newcommand{\fnr}{%
+  \kern -3pt
+  %\hrule width 100pt height .4pt
+  %\hdashrule{100pt}{0.4pt}{1mm,1mm} 
+  \hspace*{-16pt} \vspace{-13pt} \bfnr{} \vspace{3pt}
+}
+
+\definecolor{hrfn}{RGB}{124, 83, 140}
+
+
+\renewcommand{\footnoterule}{\fnr}
+
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+\hspace*{-2pt}\raisebox{15pt}{%
+%\par\noindent\rule{100pt}{0.4pt}
+\par\noindent\bfnr
+}}}\fi
+}
+
+
+
+
+\makeatother
+
+
+%\usepackage{textpos}
+
+
+
+
+
+
+
+
+
+%\renewcommand{\footnotelayout}{\setstretch{1.5}}
 
 
 %\usepackage{hanging}

@@ -20,10 +20,6 @@ of operations toward conceptual aggregation/synthesis,
 while maintaining that most details concerning how  
 concepts are pairwise combined  
 depend on extra-linguistic cognitive activity. 
-Situational meaning construal is often outside the 
-scope of linguistics, by analogy to how 
-system kernels and Central Processing Units 
-are outside the scope of programming language theory.
 
 ///  Introduction
 
@@ -38,10 +34,8 @@ question is */why/* patterns become entrenched and stay so.
 Plus, we should not 
 overestimate rules' rigidity.  That a bachelor is an unmarried man, for example, 
 is a canonical example of logic underlying semantics; but sentences like 
-these are quite meaningful:`footnote<This paper's examples are 
-embedded in its Journal Article Tag Suite (\eAfn{JATS}) sources 
-according to a standardized encoding.  See 
-the \eAfn{JATS} (\eAfn{XML}) files for more information.>;
+these are quite meaningful:`fnm;
+
 
 %/ exs
 \ifnum\presetStretch=2\vspace*{9pt}\fi
@@ -62,10 +56,10 @@ formalization, consider these pairs of sentences:
 (4)  All appeals are heard by a panel of three judges.
 
 (5)  All New Yorkers live in one of five boroughs.
-(6)  All New Yorkers complain about how long it takes to commute to New York City.
+(6)  All New Yorkers complain about how long it takes to commute to New York City.`vspace<1em>;
 
-(7)  In Ariel's picture of Beatrice, she looks like she has a cold.
-(8)  In Ariel's picture of Beatrice, she snapped the lens just as two cardinals flew by.
+(7)  Look at Ariel's picture of Beatrice %-- is she OK?
+(8)  Look at Ariel's picture of Beatrice %-- she snapped the lens just as two cardinals flew by.
 
 (9)  We operated near the bank.
 (10)  On the mantle was a wooden bat.
@@ -112,7 +106,7 @@ for (3), (4):
 
 %/ exs
 (11)  Every band performed three songs.
-(12)  Everyone in the audience sang along to one song or another.
+(12)  Everyone sang along to one song or another.
 /+
 
 Changing the context to a */band/* playing, versus an audience member, imposes a different interpretive 
@@ -272,6 +266,16 @@ important part of that, but still, language's ability to convey beliefs
 is an */emergent property/* of human verbal communication.  
 The existence of (relatively) deterministic `StoP; mappings is not an axiom to 
 deploy in linguistic explanations, but a cognitive faculty to be explained.
+
+A plausible rejoinder is that language has a cognitively-important 
+truth-condition-oriented kernel that can be analyzed in isolation from 
+pragmatic and contextual complexifiers.  The problem then is that 
+extremely simplified languages, such as those for programming 
+computers, should thereby be much closer to a sort of truth-conditional ideal.  
+But the machinery of how programming languages are implemented does not 
+really fit a logico-mathematical description either; and while space precludes a 
+thorough look at this point here, I will try to outline several 
+cases where such an argument could be relevant. 
 
 To be clear, I do believe the value of signifying propositions is 
 self-evident.  My point is that any instance of @/S conveying @/P 
