@@ -1556,7 +1556,7 @@ the set of noun-concepts or -foci that participate therein.
 The central spine that pulls together multiple thematic 
 relata likewise consolidates multiple sites for speaker 
 grounding/epistemics, allowing listeners to piece together 
-a provenance for speakers' expressed beliefs.
+speakers' belief-provenance.
 
 From a formal perspective, thematic relations suggest a 
 form of typed lambda calculus wherein functions act on a 
@@ -1594,14 +1594,16 @@ Unlike a "/Semantic Web/" style hyperedge, calling a procedure
 does not assert a presumed fact but rather obtains a computed 
 result, perhaps then used in some larger or future expression.  
 However, there are various commonalities between sets of interrelated 
-software procedures (e.g., code libraries) and graph databases, 
+software procedures (e.g., code libraries, coalescing "/procedural/" 
+rather than "/declarative/" knowledge [/AnirudhGoyal/]) and graph databases, 
 that could potentially serve as approximative inspiration for theories 
 of human cognition.  Procedural "/memoization/" (caching results to 
 avoid repeating prior calculations) combines evaluation and  
 data-persistence.  More substantially, pre- and post-conditions 
-embody implementational */contracts/* [/TimurDoumler/], partially 
-mimicking shape/range constraints defined on hypergraph 
-neighborhoods [/IovkaBoneva/].  In such contexts, database and 
+embody */contracts/* [/TimurDoumler/] 
+(or */proofs/* [/Idris:47/]), partially 
+mimicking shape/range constraints on hypergraph 
+neighborhoods [/IovkaBoneva/].  For such contexts, database and 
 software-language concerns interpenetrate.  
 
 In cognition, meanwhile, the line between 
@@ -1884,10 +1886,10 @@ be derived via production rules.  Whatever actual philosophy is in play,
 formal semantics often seems to */want/* semantics to follow a 
 similar mechanizable protocol; e.g., we can imagine testing whether a 
 particular conceptual synthesis is "t/well formed/" by 
-consulting an enumeration of concept-formation rules.  The purported 
-"m/married bachelor/", say, would be ill-formed.  By contrast, however, 
-I actually believe "m/married bachelor/" names a reasonable concept, in the 
-sense that most people would infer its intension (in the sense of an 
+consulting an enumeration of concept-formation rules.   
+"m/Married bachelor/", say, would be ill-formed.  By contrast,  
+I believe "m/married bachelor/" names a reasonable concept, in  
+that most people would infer its intension (in the sense of an 
 intensionality/extensionality contrast) %-- hence (!1) and (!2).  
 
 More broadly, building 
