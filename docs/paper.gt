@@ -980,11 +980,12 @@ of types to some result type are themselves a type,
 we can build an arbitrarily large system 
 out of a small basis (e.g., `nslashp;).  
 Propositions are an overarching sentential type, 
-whereas phrases have intermediate types between 
+whereas phrases may have intermediate types between 
 `pANDn;.  A sentence is properly 
 formed if those intermediates resolve to propositionality, 
-via type-inference rules like reading (intransitive) verb-noun 
-pairs as producing propositionally complete clauses.   
+via type-inference rules like reading (intransitive) 
+finite-verb/noun 
+pairs as producing a grounded clause.   
 
 All of these paradigms assume that phrases compose 
 meanings by synthesizing concepts in order-dependent 
@@ -1378,7 +1379,7 @@ counter-examples.  I will examine:
 
 As I see it, there are two ways to read this sentence, and they imply phrasal 
 and staging-order differences.  We can read "/heading out/" as a compound 
-verb, or we can treat "/out/", instead, as part of a clause describing 
+verb, or we can treat "/out/", instead, as part of an expression describing 
 direction of movement.  That both are feasible may be demonstrated by 
 question-and-answer forms:
 
@@ -1498,7 +1499,7 @@ on motives or context).  Verbs have implicit
 "h/slots/" for such variegated thematic roles, and by observing 
 the particular slot slated for a given word (via theta formations) 
 or phrases (via case-marking; particularly, in English, leading 
-propositions) we identify the intended role for the constituent [/LucasChampollion/].
+prepositions) we identify the intended role for the constituent [/LucasChampollion/].
 
 In presenting conceptual syntheses, then, verbs operate via structures 
 of roles rather than one-word-at-a-time reworking of conceptual syntheses.  
