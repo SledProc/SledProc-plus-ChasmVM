@@ -383,9 +383,10 @@ The situation is similar with respect to humanities and social sciences.
 A political theorist might note the waxing and waning of parties' popularity,
 but such phenomena ultimately rest on individual voters' decisions.  
 The mindset of a single person acts as a societal "t/reductive base/" 
-(likewise for economics and the individual worker/consumer).  Such brings 
+(likewise for economics: individual workers/consumers).  Such brings 
 one naturally to cognition, which is an inevitable explanatory 
-setting for any talk of decision-making, social reality, and ideology [/RyanMcVeigh/].
+setting for any talk of decision-making, social reality, identity, and ideology 
+[/RyanMcVeigh/]; [/SchottenForkel:3/].
 
 Inter-theory reduction depends on filling macro-to-microscale gaps with mid-level  
 analyses; source files, for example  
@@ -469,7 +470,7 @@ due to light/shadow effects and the vagaries of pigmentation.
 Humans subconsciously perform complex image-analysis tasks, many 
 of which can be simulated by computer-vision algorithms [/Galunetal/], 
 [/KrahenbuhlKoltun/], 
-[/TodorovicAhuja/], [/Wolfetal/]: 
+[/TodorovicAhuja/], [/TakeshiUejima/], [/Wolfetal/]: 
 texture segmentation, line/pattern detection, ;/3D/ reconstruction, occlusion compensation/interpolation  
 (e.g., perceiving the shape of a vase's back side by projecting 
 around from its visible rim-circle), classifying 
