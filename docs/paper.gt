@@ -1036,7 +1036,7 @@ We should examine both syntactic and semantic factors.
 Semantically, clearly each word adds its own 
 details to an emerging picture of the speaker's intent.  
 How to properly model the intermediate stages 
-of the overall conceptual synthesis remains an open 
+of the overall conceptual bundling remains an open 
 question.  Syntactically, it should be obvious that 
 there is a fixed order to when each word "h/enters the stage/", 
 as it were.  This is presumably enforced by, or an effect of, 
@@ -1081,7 +1081,7 @@ is hardly self-evident, because each contribution
 %-- "/red/" and "/tin/", say %-- feels unrelated.  Still, 
 evidently there are cognitive trends in the mental 
 "/staging area/" that yield a preference for 
-building conceptual aggregates via canonical  
+building conceptual bundles via canonical  
 formulae.  Among adjectives, those naming attributes that are 
 more intrinsic to the nature of their substrata appear 
 closer to the noun than qualities which are more 
@@ -1411,7 +1411,7 @@ in (1) is stated both immediately after "/heading/" and before
 simultaneously as influencing our interpretation of both the 
 prior word and the following clause.  A parse-graph represents 
 how we experience certain words as implying a modification of 
-some intermediate aggregate (what I've called "/staging/"), 
+some intermediate complex (what I've called "/staging/"), 
 particularly if we allow edge-annotations to notate where 
 words have that "t/restaging/" effect, and the effect's targets.  
 In this sense parse-graphs are cognitively motivated, 
@@ -1433,7 +1433,7 @@ The second issue I'd like to address is the extent of complete phrase-
 My preliminary proposal is that individual words contribute 
 cognitive "t/restaging/" of aggregates formed from logically 
 (not necessarily temporally) prior words.  From a 
-given conceptual synthesis, we 
+given conceptual bundle, we 
 interpret a particular succedent word as adding detail or 
 variation, wherein the synthesis re-stabilizes into 
 an updated unity by assimilating the new content.  
@@ -1576,7 +1576,7 @@ more natural than the alternative ("t/positional/"
 arguments) anyhow, because each value passed in to a procedure 
 typically has a distinct role, possibly suggested by its 
 name in the function's implementation 
-block.} `hspace<4pt>; In spoken language, the particular 
+block.}  In spoken language, the particular 
 thematic relation that connects a subsidiary clause to the 
 central verb determines how we infer its meaning 
 (or, more precisely, its contribution to the larger meaning overall).  
@@ -1749,7 +1749,7 @@ commutative diagrams).  Unfortunately, I am not
 convinced that there is any logico-mathematical 
 formulation that models/captures conceptual 
 synthesis in any general case.  The meaningfulness 
-of intermediate conceptual aggregates, from my 
+of intermediate conceptual complexes, from my 
 perspective, depends on some sort of 
 "t/cognitive staging/" and the use of partially-formed 
 perceptual images as precursors to purposeful action.  
@@ -1890,7 +1890,7 @@ mechanical algorithms for testing when a string of words may, or may not,
 be derived via production rules.  Whatever actual philosophy is in play, 
 formal semantics often seems to */want/* semantics to follow a 
 similar mechanizable protocol; e.g., we can imagine testing whether a 
-particular conceptual synthesis is "t/well formed/" by 
+particular conceptual assemblage is "t/well formed/" by 
 consulting an enumeration of concept-formation rules.   
 "m/Married bachelor/", say, would be ill-formed.  By contrast,  
 I believe "m/married bachelor/" names a reasonable concept, in  

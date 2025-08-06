@@ -100,6 +100,7 @@
 
 \makeatother
 
+\newcommand{\hspaceback}[1]{\hspace*{-#1}}
 
 \newcommand{\citeLabel}[1]{\cite{#1}}
 
@@ -365,12 +366,20 @@
 %\usepackage{verbatimbox}
 
 \usepackage{listings}
+
+\ifnum\presetStretch=2
+\lstset{
+basicstyle=\ttfamily\linespread{1.5}\fontsize{8}{12}\selectfont\color[rgb]{.6,.2,0},
+columns=flexible,
+breaklines=true
+}
+\else
 \lstset{
 basicstyle=\ttfamily\linespread{0.94}\fontsize{8}{11}\selectfont\color[rgb]{.6,.2,0},
 columns=flexible,
 breaklines=true
 }
-
+\fi
 
 \newcommand{\hform}[1]{{\ttfamily\linespread{0.94}\fontsize{8}{11}\selectfont\color[rgb]{.6,.2,0}#1}}
 
@@ -383,7 +392,7 @@ breaklines=true
 {\end{minipage}
 \end{lrbox}
 
-\vspace*{-6pt}
+\ifnum\presetStretch=2\vspace{-1pt}\else\vspace{-6pt}\fi%
 \href{#1}{\usebox{\hrefbox}}}
 
 
@@ -603,16 +612,12 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 \NewDocumentEnvironment{bItem}{d[]}{%
 \hspace{-6pt}\begin{minipage}{.9\columnwidth}\bibitem{#1}
-}{\end{minipage}\vspace{-4pt}}
+}{\end{minipage}%
+\ifnum\presetStretch=2\vspace{4pt}\else\vspace{-4pt}\fi%
+}
 
-
-
-\NewDocumentEnvironment{bItemx}{d[]}{%
-\bibitem{#1}
-}{}
-
-\DeclareRobustCommand{\visavis}{vis-\`a-vis}
 \DeclareRobustCommand{\Visavis}{Vis-\`a-vis}
+\DeclareRobustCommand{\visavis}{vis-\`a-vis}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
