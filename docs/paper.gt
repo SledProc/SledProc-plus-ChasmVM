@@ -56,9 +56,9 @@ formalization, consider these pairs of sentences:
 (4)  All appeals are heard by a panel of three judges.
 
 (5)  All New Yorkers live in one of five boroughs.
-(6)  All New Yorkers complain about how long it takes to commute to New York City.`vspace<1em>;
+(6)  All New Yorkers complain about how long it takes to commute to New York City.
 
-(7)  Look at Ariel's picture of Beatrice %-- is she OK?
+(7)  Look at Ariel's picture of Beatrice %-- is she OK?`vspace<1em>;
 (8)  Look at Ariel's picture of Beatrice %-- she snapped the lens just as two cardinals flew by.
 
 (9)  We operated near the bank.
@@ -78,8 +78,8 @@ individuals can vary from one case to another).
 In (5) and (6), reading a quantifier's intent requires distinguishing levels of exactitude.  Rhetorically, 
 "/all/" often actually means "/most/".  The (6) speaker is not heard to 
 report on 10+ million residents as if they were personally interviewed (nor would (6) be 
-falsified by scattered counter-examples).  On the other hand, the land area of New York is indeed 
-precisely divided into five boroughs, so (5) is */literally/* correct %-- but only via a rigid 
+falsified by scattered counter-examples).  On the other hand, geopolitically New York is indeed 
+divided into five boroughs, so (5) is */literally/* correct %-- but only via a rigid 
 reading of the referential intent behind "m/New Yorker/".  In numerous contexts this term extends 
 to many inhabitants beyond the city proper.
 
@@ -353,12 +353,18 @@ emergent/token-supervening describability [/AndrewRBailey/].
 More generally, examining progressively smaller 
 physical scales may suffice for purely mechanical explanations of 
 physical processes, but remains explanatorily incomplete insofar 
-as macro-scale phenomena structure and mold the micro-scale aggregates.  
-For instance, a purely molecular account of the dynamics of a spinning 
+as macro-scale phenomena structure and mold the micro-scale 
+aggregates.\footnote{For instance, a purely molecular account of the dynamics of a spinning 
 baseball does not take into consideration the thought processes 
 of the pitcher who decided to throw a curveball.  A complete 
 account of the universe in that moment needs to recognize such 
-work of mind as part of the causal background for the ball's trajectory.
+work of mind as part of the causal background for the ball's 
+trajectory.}  Complex systems may not introduce new forms of matter or energy 
+(existents with spacetime extension and causative influence), 
+or new forces beyond those physicists recognize 
+%-- e.g., `visavis; Philosophy of Mind, first-person consciousness 
+is not a redoubt of dualism or magic  %-- but they 
+still deserve specialized descriptive and theory-semantic regimes.
 
 In short, causative explanation is incomplete on any one scale in 
 particular; it is only by bridging multiple theories that one can 
@@ -436,7 +442,7 @@ the correct train.  To do so, I may well follow a well-rehearsed
 protocol: hearing the train cues me to look down the platform; upon seeing 
 its outline I then focus attention on the letter- and color-coded 
 symbol painted on the front.  If it indicates the correct train, 
-I pace back as passengers start to disembark.  Each step in this process is consciously mediated. 
+I pace back as passengers start to disembark.  Now, each step in this process is consciously mediated. 
 I deliberately shift my perceptual orientation multiple 
 times, and could break off the "t/protocol/" given some external 
 stimuli.  Perhaps I hear my cell phone pinging.  Or, there's an announcement 
