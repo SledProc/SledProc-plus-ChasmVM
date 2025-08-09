@@ -16,7 +16,7 @@
  \usepackage{titlesec}
 
  \titleformat{\section}
-      {\normalfont\Large\bfseries\raggedright} % Apply raggedright here
+      {\normalfont\fontsize{13}{16}\selectfont\bfseries\raggedright} % Apply raggedright here
       {\thesection}
       {1em}
       {}
@@ -44,7 +44,7 @@
 %\newcommand{\@sect}[1]{\section{#1}}
 %\newcommand{\@subsect}[1]{\vspace{9pt}\subsection{#1}}
 
-\newcommand{\sL@section}[1]{\section{#1}}
+\newcommand{\sL@section}[1]{\vspace{-2pt}\section{#1}\vspace{-2pt}}
 \newcommand{\sL@subsection}[1]{\vspace{14pt}\subsection{#1}
 
 \vspace{-18pt}
@@ -223,9 +223,11 @@
     \begin{abstract}
 }{%
     \end{abstract}
-  \end{@twocolumnfalse}\vspace{35pt}\thispagestyle{empty}
+  \end{@twocolumnfalse}\vspace{22pt}\thispagestyle{empty}
 }
 
+
+\newcommand{\vfillnulleject}{\vfill\null\eject}
 
 %\let\olddisplayquote\displayquote
 %\renewcommand\displayquote{\setlength{\textwidth}{12cm}\olddisplayquote}
@@ -406,6 +408,20 @@ breaklines=true
 \vspace*{7pt}
 }
 
+\newcommand{\boxurlnn}[2]{%
+\hspace{8pt}\href{#1}{\hform{#2}}%
+
+\vspace*{7pt}
+}
+
+\newcommand{\tatilde}{\raisebox{-2pt}{\textasciitilde}}
+
+
+\newcommand{\starturl}[1]{%
+\hfill\hform{#1}}
+
+%\vspace*{3pt}
+%}
 
 
 
@@ -444,9 +460,9 @@ breaklines=true
 
 \setcitestyle{square}
 
-\title{\vspace{-1em}%
-Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology for Syntactic Theory%
-\vspace{-1em}}
+\title{\vspace{-1em}{\fontsize{15}{18}\selectfont%
+Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology\\for Syntactic Theory}%
+\vspace{-2em}}
 
 \date{}
 
@@ -650,6 +666,13 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \usepackage{etoolbox}
 
 \providecommand{\presetStretch}{0}
+
+
+\newcommand{\condenlargepage}[1]{%
+\ifnum\presetStretch=2\else\enlargethispage{#1}\fi%
+}
+
+
 
 \AtEndPreamble{
 \ifnum\presetStretch=2\setstretch{2}\fi	
