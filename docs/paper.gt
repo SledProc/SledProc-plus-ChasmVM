@@ -919,7 +919,7 @@ applicability transfers over from constructed
 to empirical examples.  And, in particular, the 
 menagerie of theoretical posits in 
 phenomenology and in linguistics are interrelated, 
-as (1) and (2) hopefully illustrate. `vspace<12pt>;
+as (1) and (2) hopefully illustrate. `vspace<6pt>;
 
 ///  Concepts and Compositionality 
 
@@ -969,8 +969,10 @@ structure (e.g., Categorial Grammar [/YusukeKubota/], [/WybraniecSkardowska/]). 
 should define operations that are referenced by syntactic operations 
 by analogy to how lexicons define single words.  In [/Bolt/], Conceptual Spaces 
 supply the requisite semantic architecture, analyzing how 
-two concepts' respective "t/spaces/" can interact.  I am not convinced 
-of the explanatory value of 
+two concepts' respective "t/spaces/" can interact (similar 
+results can be based on alternative "/amalgram/" 
+models; */cf./* [/Schorlemmeretal/]).  
+I am not convinced of the explanatory value of 
 quasi-mathematical treatments for concepts, such as 
 advanced by `Gardenfors; (such criteria as "t/convexivity/" 
 feel forced to me, outside special contexts like color terms).  
@@ -1000,7 +1002,7 @@ meanings by synthesizing concepts in order-dependent
 ways, so it is important to examine how pairs of 
 concepts can transform into something more specific 
 then either one in particular.  I will outline a 
-cognitive-phenomenological reading of this phenomenon. `vspace<9pt>; 
+cognitive-phenomenological reading of this phenomenon. `vspace<6pt>; 
 
 // //
 
@@ -1792,7 +1794,7 @@ and laid off half its staff.
 (3)  The borough of Queens voted heavily for Mamdani.  
 /+
 
-Also, apparent region violations drive many functional metaphors:
+`vspace<2pt>;Also, apparent region violations drive many functional metaphors:
 
 %/ exs
 (4)  These flowers really want some sunshine.
@@ -1801,7 +1803,7 @@ Also, apparent region violations drive many functional metaphors:
 (7)  The spell-checker thinks "/hooman/" isn't a word.  
 /+
 
-Examples such as (1) through (5) have been analyzed in terms of 
+`vspace<2pt>;Examples such as (1) through (5) have been analyzed in terms of 
 type coercions, monads, dependent types, and other structures 
 recognized within mathematical type theory (and 
 formalized within the semantics of computer programming languages)
@@ -1829,9 +1831,8 @@ reshuffled with almost every word, we are
 invoking "t/staging/" faculties at almost every  
 step, such that sentence-understanding is intrinsically a 
 process that swings back and forth between 
-extra-linguistic and syntactic/semantic/pragmatic inference.
-
-`vspace<5pt>;
+extra-linguistic and syntactic/semantic/pragmatic 
+inference. `vspace<4pt>; `enlargethispage<5pt>; 
 
 ///  Conclusion
 
@@ -1855,9 +1856,10 @@ to synchronize behavior among two or more people,
 leveraging future-oriented cognitive routines even 
 when the focus of our discourse exists in the immediate 
 present.  Cooperation between multiple individuals engenders  
-abstracting demands %-- refactoring perceptual experience 
-into propositional/enactive schemata %-- analogous to 
-the distancing effects of future-planning.  
+abstracting demands, refactoring perceptual experience 
+into propositional/enactive schemata (perhaps we can find this 
+analogous to the sensate indeterminacy 
+of an imagined/planned future).  
 
 Certainly, purposeful action coordinated among several people requires 
 everyone to know (and mostly share) each other's beliefs, 
@@ -1921,13 +1923,15 @@ I think the story `Boltetal; and many similar analyses have
 in mind %-- once expressed informally %-- is roughly like this: 
 semantics tells us how to combine concepts; 
 syntax tells us which concepts to combine, in which 
-order (*/cf./* [/Schorlemmeretal/]).  I mostly dispute the first part; although 
+order.  I mostly dispute the first part; although 
 semantics establishes parameters on concept-admixture, 
 the details often require */extra/*-linguistic 
-reasoning. 
+reasoning, with the details of how concepts 
+mutually interact/synthesize are molded 
+by dictates of social norms and purposeful action.
 
 To draw once again from coding analogies, 
-programming language semantics is concerned with the binding 
+programming language */semantics/* is concerned with the binding 
 of values to symbols --- when those "t/markings/" start and 
 cease to be appropriate --- as well as polymorphic 
 definition of multiple procedures with the same symbol
@@ -1989,23 +1993,22 @@ Such an approach would be only tangentially a
 intuitions that lend systematicity and 
 disputative structure to studies of nature 
 would, in this context, dilute rather than 
-guarantee explanatory rigor.  I have proposed 
+guarantee explanatory rigor.  Endorsing  
 phenomenology as an alternative foundation, 
-so %-- on this architecture %-- theories 
-of cognitive-semantic "t/staging/" 
-would be formulated on phenomenological 
+theories of cognitive-semantic "t/staging/" 
+would %-- on this architecture %-- rest on phenomenological 
 grounds.  Thus semantics has a 
 kind of nomological dependence 
 on cognitive phenomenology, and 
 syntax on semantics in the sense 
 that phrase-structure rules become entrenched 
-by virtue of conceptual demands on word-order.  So cognitive 
-phenomenology can stand as a foundation 
-that supports multiple facets of the 
+by virtue of conceptual demands on word-order.  
+So phenomenology can stand as a foundation 
+supporting multiple facets of the 
 linguistics project, even if it 
-lies outside the proper scope of that 
-discipline.  This is consistent with a 
-philosophy wherein cognitive 
+lies outside the normal scope of that 
+discipline's.  This is consistent with a 
+philosophy wherein  
 phenomenology provides an explanatory 
 scaffold for */all/* humanities.
 
