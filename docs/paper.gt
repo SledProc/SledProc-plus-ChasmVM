@@ -87,8 +87,9 @@ to many inhabitants beyond the city proper.
 Uncertainties in (7) and (8) are of a different sort: anaphora resolution rather than quantifier-scope.  
 These also have two competing interpretations, depending on whether "/she/" is read as Ariel or Beatrice.  The 
 former option is more likely in (7) because one can tell from a photograph what the depicted subject 
-"/looks like/".  But we can't */a priori/* exclude a continuation like "x/you'd have to be sick to 
-take such a bad shot/".  Nor can we fail to imagine a scenario for (8) where Ariel takes a picture of 
+"/looks like/".  But we can't */a priori/* exclude a continuation like "x/I'm worried, 
+it looks like Ariel's hands were shaking/".  
+Nor can we entirely disregard a scenario for (8) where Ariel takes a picture of 
 Beatrice photographing colorful birds.
 
 The issue in (9) and (10), by contrast, is ordinary polysemy: (9) might reflect an 
@@ -1875,16 +1876,15 @@ cognitive linguistic processing.
 
 But we should not conclude from such hypotheses that 
 sentences */signify/* propositions %-- i.e., that there 
-is a series of formal rules governing a mostly 
-determinative process through which a signifying process, 
+is a series of formal rules governing a determinative signifying process, 
 existing on a minimal level in the mapping of lexemes 
-to word-sense, propagates outward to predicate 
-structure, in a logical or mechanical fashion.  
-Paraphrases such as "/red box/" as the set-theoretic 
-intersection of "/redness/" and "/boxness/" may 
-create the illusion that the transformative 
+to word-sense, that propagates outward to predicate 
+structure in a logical or mechanical fashion.  
+Paraphrases such as */red box/* as the set-theoretic 
+intersection of */redness/* and */boxness/* may 
+create an illusion that the transformative 
 effects of one word on a priorly-processed aggregate 
-can be modeled via formal systems.  However, such 
+can be modeled via formal systems.  Yet such 
 formalization, I contend, will be either circular 
 (explaining not much, in the end) or oversimplistic 
 (explaining only cherry-picked linguistic artifacts, 
@@ -1917,6 +1917,15 @@ My arguments in this paper are that such an overly-tidy picture is
 untenable.  Concepts simply don't synthesize according to 
 "t/production rules/" akin to ;/BNF/ grammars.  
 
+I think the story `Boltetal; and many similar analyses have 
+in mind %-- once expressed informally %-- is roughly like this: 
+semantics tells us how to combine concepts; 
+syntax tells us which concepts to combine, in which 
+order (*/cf./* [/Schorlemmeretal/]).  I mostly dispute the first part; although 
+semantics establishes parameters on concept-admixture, 
+the details often require */extra/*-linguistic 
+reasoning. 
+
 To draw once again from coding analogies, 
 programming language semantics is concerned with the binding 
 of values to symbols --- when those "t/markings/" start and 
@@ -1947,10 +1956,9 @@ productions.  Their syntactic theory is more about, starting
 from any given sentence, retracing the compositional principles 
 that build up a complex network from isolated word-pairs.  
 We aren't "t/producing/" (or, for that matter, "t/testing/") sentences 
-so much as retracing their unifying formulae.  But still, 
-any analysis wherein the conceptual synthesis will algorithmically 
-reciprocate a syntactic composition-pattern %-- thereby 
-creating complex meanings %-- implicitly invokes a 
+so much as retracing their unifying formulae.  But still,
+any analysis wherein conceptual syntheses 
+reciprocate composition-patterns implicitly invokes a 
 principle of conceptual production.  Either we view such 
 production as inherently cognitive and extralinguistic, which is 
 my approach, or we must articulate rules for how concepts 
