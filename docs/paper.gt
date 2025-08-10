@@ -1979,7 +1979,8 @@ Put aphoristically, linguistic formalization should model
 through which surface-level discourse is mapped to a sequence 
 of cognitive transforms presented to a extra-linguistic 
 rational faculties.  This is different from attempting 
-to model concept-synthesis, as a kind of cognitive process, 
+to model concept-synthesis, as a kind of 
+"/algorithmetizable/" cognitive process, 
 directly.  As a useful analogy, programmers do not need to 
 study how system-kernel procedures are implemented; they merely 
 need to know the type-signatures and preconditions for calling them. 
