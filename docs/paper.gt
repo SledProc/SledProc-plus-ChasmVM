@@ -1791,21 +1791,21 @@ to sentences about referents that exist in multiple strata:
 (1)  That newspaper [pointing to a table] just moved to 10th street 
 and laid off half its staff.
 (2)  At home you can print out this book from a ;/PDF/ link.
-(3)  The borough of Queens voted heavily for Mamdani.  
+(3)  The borough of Queens voted heavily for Mamdani.`vspace<2pt>;  
 /+
 
-`vspace<2pt>;Also, apparent region violations drive many functional metaphors:
+Also, apparent region violations drive many functional metaphors:
 
 %/ exs
 (4)  These flowers really want some sunshine.
 (5)  This drought has left the soil parched.
 (6)  Our car stubbornly refused to move.
-(7)  The spell-checker thinks "/hooman/" isn't a word.  
+(7)  The spell-checker thinks "/hooman/" isn't a word.`vspace<2pt>;  
 /+
 
-`vspace<2pt>;Examples such as (1) through (5) have been analyzed in terms of 
-type coercions, monads, dependent types, and other structures 
-recognized within mathematical type theory (and 
+Examples such as (1) through (5) have been analyzed in terms of 
+type coercions, monads, dependent types, "/continuations/", and 
+other structures recognized within mathematical type theory (and 
 formalized within the semantics of computer programming languages)
 [/AsherPustejovsky/], [/ChatzikyriakidisLuo/], [/ZhaohuiLuo/].
 
