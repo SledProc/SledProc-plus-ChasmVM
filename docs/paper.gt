@@ -59,8 +59,9 @@ formalization, consider these pairs of sentences:
 (5)  All New Yorkers live in one of five boroughs.
 (6)  All New Yorkers complain about how long it takes to commute to New York City.
 
-(7)  Look at Ariel's picture of Beatrice %-- is she feeling OK? `vfillnulleject;\enlargethispage{2em}\vspace*{12.5pt}
-(8)  Look at Ariel's picture of Beatrice %-- she snapped the lens just as two cardinals flew by.
+(7)  In Ariel's picture of Beatrice, she looks sick.
+(8)  In Ariel's picture of Beatrice, she snapped the lens just 
+as two cardinals flew by.`vfillnulleject;\vspace*{4pt}`enlargethispage<2em>;
 
 (9)  We operated near the bank.
 (10)  On the mantle was a wooden bat.
@@ -104,7 +105,7 @@ the locus of sense-divergence can be reduced to a single word).
 I chose the first three sentence-pairs because the variable factor in each 
 case flip-flops from first to second, at least 
 in the most */likely/* reading.  But subtle variation can point to the opposite, as in these alternatives 
-for (3) and (4):
+for (3)/(4):
 
 %/ exs
 (11)  Every band performed three songs.
@@ -207,14 +208,12 @@ lurking behind any spoken dialect is an idealized language which
 "m/here/"), 
 conjunctions (cf. "m/and/" as temporal as in "m/John quit his job and moved out of town/", 
 wherein we hear "m/and */then/*/") %-- with enough granularity to forestall 
-all compositional ambiguities.  We can imagine some inflectional variation 
+all compositional ambiguities.  Imagine inflectional variations 
 on words like "m/all/" to distinguish crisp from fuzzy domains, or nested from 
 independent quantification; or morphological features on pronouns to 
-distinguish verb subjects from objects in anaphoric reference.  But 
-should we theorize ideal languages that subsume all such ambiguities 
-under fully-determined contracts?
+distinguish verb subjects from objects in anaphoric reference.  
 
-We might be tempted by a formal semantics whose basic premises are roughly these: `vspace<-7pt>;
+Imagine, that is %-- or so we might be tempted %-- a formal semantics whose basic premises are roughly these: `vspace<-22pt>;
 
 %/  enums
  1.  Canonically, sentences signify propositions %-- by analogy to how words signify concepts.
@@ -224,17 +223,18 @@ syntactic conventions and the semantic properties of specific word-classes
 (quantifiers, pronouns, case-markers, determiners, etc.).
 /+
 
-To the degree that speakers must employ extralinguistic reasoning, 
-those occasions would then be treated as individuals mentally refining the 
+Occasions where speakers employ extralinguistic reasoning 
+would then be treated as mentally refining the 
 actual lexicon to an approximated ideal.   
 It is true, say, that */Trump/* should be interpreted differently 
-when people are playing bridge or talking politics, but this means that 
-ambient situations nudge speakers in contextual ways when construing how 
-their spoken language should be projected to its perfected form.  Context 
-disposes us to "/label/" "/trump/" as either person or card 
-suit.  But such are antecedent to semantics proper; for theoretical 
+when playing bridge versus talking politics, but this just means that 
+ambient situations nudge speakers contextually when "/projecting/"  
+their actual language to its systematic ideal.  Context 
+disposes us to "/label/" */Trump/* as either person or card 
+suit.  But such concerns are antecedent to semantics proper: for theoretical 
 purposes we can take the lexicon as enriched with such labels */a priori/*.
-The cognitive gap between actual and ideal dialects is orthogonal to linguists' 
+From this perspective, the cognitive gap between 
+actual and ideal dialects is orthogonal to linguists' 
 project, which is to describe rules of the latter.    
 
 I contend that paradigms authorizing linguists and philosophers to 
@@ -256,15 +256,18 @@ Moreover, these issues are sufficiently
 holistic and entrenched that we cannot dismiss them as cognition   
 just bridging a gap between real and ideal language, by analogy to 
 real and ideal dictionaries (where each distinct word-sense might 
-be marked in some disambiguating manner).  
-No prehistoric queen ever instructed her subjects to go forth and create a 
-language for expressing logical predication; even when "i/the meaning of a 
+be marked in some disambiguating manner).  This isn't just an 
+issue of pragmatic context guiding inference of one word-sense 
+or another.  Cognition plays a more holistic role, such that 
+any */compositional/* determination depends, in general, 
+on a case-by-case admixture of linguistic and extra-linguistic reasoning. 
+Even when "i/the meaning of a 
 proposition is given by its truth 
 conditions/" we have to ask */why/* sentences encode propositions (or 
 are optimized to do so).  People don't talk out of some abstract desire 
 to assert fragments of symbolic logic, but rather to coordinate their joint 
 activity.  Logically transparent statements are certainly an 
-important part of that, but still, language's ability to convey beliefs 
+important part of that, but still, conveying beliefs 
 is an */emergent property/* of human verbal communication.  
 The existence of (relatively) deterministic `StoP; mappings is not an axiom to 
 deploy in linguistic explanations, but a cognitive faculty to be explained.
@@ -275,20 +278,24 @@ pragmatic and contextual complexifiers.  The problem then is that
 extremely simplified languages, such as those for programming 
 computers, should thereby be much closer to a sort of truth-conditional ideal.  
 But the machinery of how programming languages are implemented does not 
-really fit a logico-mathematical description either; and while space precludes a 
-thorough look at this point here, I will try to outline several 
-cases where such an argument could be relevant. 
+really fit a logico-mathematical description either.  The germinal 
+structures of computer code are calls to "/kernel/" functions and 
+the use of local symbols, bound to memory addresses, to store 
+temporary values.  If we take compilers and runtimes as 
+primitive models for human discourse processing, the analogy 
+fits a notion of extra-linguistic cognitive "/kernels/" more 
+than a "/closed world/" formal-system semantics.  
 
 To be clear, I do believe the value of signifying propositions is 
 self-evident.  My point is that any instance of @/S conveying @/P 
 is not just a linguistic phenomenon, but rather a detail of 
-two (or more) persons' social and collaborative interactions.  
-If I slip, fall, clutch my ankle, and grimace, someone will 
-conclude that I might be injured; but groaning "/ouch/" does not 
+two (or more) persons' lifeworld interactions.  
+If I slip, fall, clutch my ankle, and grimace, you may 
+conclude that I am injured; but groaning "/ouch/" does not 
 express this through linguistic means.  Similarly, if I see a 
 car veering dangerously close to my friend John from behind him, shouting 
 "/John/" to get his attention does not make that word signify 
-"/watch out!/".  In most communication, linguistic structure 
+"/watch out!/".  In most communication, true, linguistic structure 
 plays a more prominent role %-- only rarely do we convey ideas through vocalization 
 alone %-- 
 yet just because propositions get conveyed 
