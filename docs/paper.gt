@@ -1433,13 +1433,13 @@ prior word and the following clause.  A parse-graph represents
 how we experience certain words as implying a modification of 
 some intermediate complex (what I've called "/staging/"), 
 particularly if we allow edge-annotations to notate where 
-words have that "t/restaging/" effect, and the effect's targets.  
+words have that "t/restaging/" effect.  
 In this sense parse-graphs are cognitively motivated, 
 but such does not preclude a sentence from yielding several 
 distinct motivated graphs.  If we believe syntax should 
 provide one definitive construction representing sentences' 
 "t/deep structure/", then we can take the unit of exposition 
-as (at least potentially) a superposition of multiple graphs rather 
+as a superposition of multiple graphs rather 
 than one single structure.
 
 So, in short, two different parse-graphs %-- one wherein "/out/" attaches 
