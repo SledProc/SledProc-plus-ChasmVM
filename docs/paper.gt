@@ -1584,7 +1584,7 @@ speakers' belief-provenance.
 
 From a formal perspective, thematic relations suggest a 
 form of typed lambda calculus wherein functions act upon  
-tuples of values indexed not by sequence, but instead by 
+input-tuples indexed not by sequence, but instead by 
 assigning distinct roles to each argument.  
 Consider lambda-expressions taking (in lieu of 
 value-tuples) parameter-packs indexed via 
@@ -1611,7 +1611,7 @@ a prior situation of marriage, and some legal entity or
 context which recognizes the divorce as binding.  
 A binary relation such that one party is */divorced from/* 
 another thereby implies the presence of further participants 
-(so treating this relation as merely binary excludes constitutive 
+(so treating this relation as merely arity-two excludes constitutive 
 details).  
 
 Unlike a "/Semantic Web/" style hyperedge, calling a procedure 
@@ -1670,7 +1670,7 @@ meaning by triggering associations %-- or hypothetical
 situations %-- grounded in social-pragmatic schemas.  
 The meaning of sentences are their consequence for further 
 (context-specific) action.  
-rather than trying to define */menu/* via
+Rather than trying to define e.g. */menu/* via
 logical or set-theoretic machinery, we should simply recognize that
 anyone familiar with the restaurant domain %-- as a nexus
 of social practice %-- understands such actions as  
@@ -1681,7 +1681,7 @@ of the word merely reflects normative behavior in
 the preeminent contexts where it's used.  
 
 More than anything, after all, this is what the word means: not so 
-much its contribution to criteria for some statement's truth-conditions, 
+much its contribution to signification of some statement's truthmakers, 
 but rather what makes it correct to token this word in a particular social setting.  
 Metaphorical uses also exist (the idiom "m/not on the menu/" 
 extends beyond food), but that is merely one of innumerable examples 
@@ -1728,7 +1728,7 @@ How does the speaker see, imagine, know about these spaces?
 
 Listeners instinctively reconstruct details of the speaker's 
 belief-forming perspective because they have to recreate 
-for themselves the pattern of grounding expressed in a sentence.  
+for themselves the pattern of subjectivization expressed in a sentence.  
 For example, in "m/John spilled water/" the person is grounded as 
 focus of perceptual orientation and as an active agent.  Meanwhile, 
 rhetorically, */John/* is grounded as a noun, and (specifically) a verb-subject.  
