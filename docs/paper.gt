@@ -278,7 +278,7 @@ pragmatic and contextual complexifiers.  The problem then is that
 extremely simplified languages, such as those for programming 
 computers, should thereby be much closer to a sort of truth-conditional ideal.  
 But the machinery of how programming languages are implemented does not 
-really fit a logico-mathematical description either.  The germinal 
+really befit or accommodate a logico-mathematical description either.  The germinal 
 structures of computer code are calls to "/kernel/" functions and 
 the use of local symbols, bound to memory addresses, to store 
 temporary values.  If we take compilers and runtimes as 
