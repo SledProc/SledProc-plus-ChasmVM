@@ -61,7 +61,7 @@ formalization, consider these pairs of sentences:
 
 (7)  In Ariel's picture of Beatrice, she looks sick.
 (8)  In Ariel's picture of Beatrice, she snapped the lens just 
-as two cardinals flew by.`vfillnulleject;\vspace*{4pt}`enlargethispage<2em>;
+as two cardinals flew by.`vfillnulleject;\vspace*{4.5pt}`enlargethispage<2em>;
 
 (9)  We operated near the bank.
 (10)  On the mantle was a wooden bat.
@@ -69,7 +69,7 @@ as two cardinals flew by.`vfillnulleject;\vspace*{4pt}`enlargethispage<2em>;
 
 Each pair shows interpretive reliance on extra-linguistic 
 reasoning.  The situation in (3) and (4) is quantifier scope: assuming (3) discusses some 
-music performance, it would be abnormal for everyone in the audience to distinctly choose 
+musical performance, it would be abnormal for everyone in the audience to distinctly choose 
 exactly three songs to sing along with.  Hence, we can assume that, among all songs 
 played that evening, there were specifically three with the property that (all) the audience 
 joined in.  The numeral-quantifier "/three/" is thus outside the scope of "/everyone/".
@@ -109,12 +109,12 @@ for (3)/(4):
 
 %/ exs
 (11)  Every band performed three songs.
-(12)  Everyone sang along to one song or another.
+(12)  Everyone sang along to some song or another.
 /+
 
 Changing the context to a */band/* playing, versus an audience member, imposes a different interpretive 
 framework: usually bands perform a "d/set/" with their own material/ covers.  Meanwhile, switching 
-from the exact "/three/" to the more flexible "/one or another/" gives enough construal slack that 
+from the exact "/three/" to the more flexible "/some [song] or another/" gives enough construal slack that 
 putting the later scope in the former makes interpretive sense.  
 \ifnum\presetStretch=2{}\else{\thispagestyle{two}}\fi
 
@@ -235,7 +235,7 @@ suit.  But such concerns are antecedent to semantics proper: for theoretical
 purposes we can take the lexicon as enriched with such labels */a priori/*.
 From this perspective, the cognitive gap between 
 actual and ideal dialects is orthogonal to linguists' 
-project, which is to describe rules of the latter.    
+project, which is to describe the rules of the latter.    
 
 I contend that paradigms authorizing linguists and philosophers to 
 imagine such ideal languages lead us 
@@ -296,7 +296,7 @@ express this through linguistic means.  Similarly, if I see a
 car veering dangerously close to my friend John from behind him, shouting 
 "/John/" to get his attention does not make that word signify 
 "/watch out!/".  In most communication, true, linguistic structure 
-plays a more prominent role %-- only rarely do we convey ideas through vocalization 
+plays a more prominent role %-- only rarely do we share ideas through crude vocalization 
 alone %-- 
 yet just because propositions get conveyed 
 in a linguistic context does not ensure that */why/* or */how/* this 
@@ -317,7 +317,8 @@ are formulated and disputed.
 For these reasons, I believe */cognitive phenomenology/* is 
 relevant to linguistics because it potentially provides this 
 overarching theoretical framework.  Here, I will outline 
-why I think Husserlian phenomenology can play this role, 
+why I think Husserlian phenomenology and its modern 
+refinements can play this role, 
 and then what implications for syntactic theory might follow 
 therefrom.
 
@@ -404,7 +405,7 @@ setting for any talk of decision-making, social \makebox{commons, selfhood, iden
 [/RyanMcVeigh/]; [/SchottenForkel:\hspaceback{2pt}3/].`hspaceback<12pt>;}
 
 Inter-theory reduction depends on filling macro-to-microscale gaps with mid-level  
-analyses; source files, for example  
+analyses.  Source files, for example  
 become transformed to several intermediate representations during a compiler build.  `Visavis; the 
 human mind, neurologists have studied how clusters of neurons 
 form "t/nuclei/", "t/ganglia/", or "t/modules/" with distinct functional roles; and, 
@@ -489,7 +490,7 @@ of which can be simulated by computer-vision algorithms [/Galunetal/],
 texture segmentation, line/pattern detection, ;/3D/ reconstruction, occlusion compensation/interpolation  
 (e.g., perceiving the shape of a vase's back side by projecting 
 around from its visible rim-circle), classifying 
-subregions (in computational parlance, "t/object proposals/" [/Gavvesetal;for instance/]), 
+subregions (in computational parlance, "t/object proposals/" [/Gavvesetal;for instance/]). 
 Via color alone we infer textural and optical details, yielding a significantly 
 enlarged color space, and thereby perceive objects' external 
 geometry (e.g., their gradient vectors at each point 
