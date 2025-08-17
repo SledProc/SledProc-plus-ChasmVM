@@ -1784,14 +1784,14 @@ many patterns of meaning have recurring structures
 that doubtless guide cognitive schemata, 
 such as the mass/count distinction within modes 
 of plurality/multiplicity (and others listed earlier: 
-singular/plural, figure/ground, landmark/trajector).   
+singular/plural, figure/ground, landmark/ trajector).   
 For another example, alongside type-theoretic 
 grammar, there is a branch of type-theoretic 
 */semantics/* which highlights the partition 
 of our discursive domains into, in effect, 
 distinct "t/ontological regions/", such as 
 physical objects, living things, sentient 
-beings, rational agents [/JensAllwood/], [/MeryRetore/], 
+beings, and rational agents [/JensAllwood/], [/MeryRetore/], 
 [/PustejovskyType/], [/ChungChiehShan/],  
 [/PeterRSutton/].  The superposition of 
 multiple such regions gives conceptual structure 
@@ -1835,8 +1835,8 @@ analyze without special-purpose vocabulary and paradigms.
 Whatever their details, I believe such theories' central 
 concerns will be */extra/*-linguistic.  This is not a kind 
 of */limited/* contextual detour, where resolving 
-ambiguities such as "/bat/" (animal or wooden instrument) depends on 
-societal background knowledge.  Since conceptual syntheses are 
+ambiguities such as which sense of "/bat/" (animal or wooden instrument) depends on 
+background knowledge.  Since conceptual syntheses are 
 reshuffled with almost every word, we are  
 invoking "t/staging/" faculties at almost every  
 step, such that sentence-understanding is intrinsically a 
@@ -1987,11 +1987,11 @@ connoted by "/in this red tin box/", I don't believe
 Put aphoristically, linguistic formalization should model 
 %-- perhaps with the aid of computational analogs %-- processes 
 through which surface-level discourse is mapped to a sequence 
-of cognitive transforms presented to a extra-linguistic 
+of cognitive transforms */presented to/* extra-linguistic 
 rational faculties.  This is different from attempting 
 to model concept-synthesis, as a kind of 
 "/algorithmetizable/" cognitive process, 
-directly.  As a useful analogy, programmers do not need to 
+directly.  As a useful analogy, programmers are not obligated to 
 study how system-kernel procedures are implemented; they merely 
 need to know the type-signatures and preconditions for calling them. 
 
