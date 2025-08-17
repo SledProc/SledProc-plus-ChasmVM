@@ -1468,12 +1468,12 @@ further clarification for verbs (and perhaps conjunctions,
 subordinators, etc.).  In the case of verbs, a 
 "h/local/" analysis could accommodate intransitives, 
 but not subject/object (and possibly indirect object) 
-tuples.  Categorially, a (di)transitive verb 
-requires multiple nominal constructs in place to 
-yield a proposition-like synthesis.  Moreover, 
+tuples.  Categorially, (di)transitive verbs 
+require multiple nominal constructs to 
+yield proposition-like syntheses.  Moreover, 
 verbs may command multiple clauses governed 
 by various case-forms: locative constructions, 
-benefactive, instrumental, etc., each marking 
+(ab)lative, benefactive, instrumental, etc., each marking 
 that an associated phrase presents some detail 
 (the where, why, how) for the central verb 
 in the immediate surrounding phrase/sentence.
@@ -1526,9 +1526,9 @@ of roles rather than one-word-at-a-time reworking of conceptual syntheses.
 Cognitive staging is still intrinsic to inferred meaning; the point 
 here is that verbs effectuate such processes on a larger scale, 
 spanning the breadth of a phrase or sentence, whereas other 
-parts of speech (e.g., adjectives) operate more locally.  
+syntactic categories (e.g., adjectives) operate more locally.  
 A theory of cognitive staging can cover both cases if it 
-accounts for thematic roles and relations.
+accounts for thematic roles/relations.
 We can still study verb-constructions as sets of word-pairs 
 that trigger mutual cognitive reinterpretation, but the difference 
 here is that we need to describe */which/* thematic 
@@ -1543,13 +1543,13 @@ dimension of sentence structure: the set of words and phrases that
 add detail for a central verb provides sentences' inner skeleton, 
 whereas adjectives and other "t/localized/" modifiers form 
 a peripheral epitope (so to speak).  Conceptually, the 
-central skeleton's multi-part nature means that cognitive 
+central firmament's multi-part nature means that cognitive 
 integration must synthesize multiple components, in contrast to a 
-single re-staging such as "m/diamond/"  `visavis; "m/wedding ring/".  
+single re-staging such as */diamond/* in "m/her diamond wedding ring/".  
 To put it differently, the underlying intellectual phenomenon 
 is less about a single concept acting on a provisional image-aggregate 
 (as */diamond/* acts upon */wedding ring/*, 
-or */red/* upon */tin box/*) so much as a verb, in conjunction with 
+*/red/* upon */tin box/*, or */karate/* upon */black belt/*) so much as a verb, in conjunction with 
 multiple thematically related details, setting forth the principal 
 data of situations or states of affairs.  Whereas semantics 
 on the localizable "/periphery/" appears to tap into a 
@@ -1583,8 +1583,8 @@ grounding/epistemics, allowing listeners to piece together
 speakers' belief-provenance.
 
 From a formal perspective, thematic relations suggest a 
-form of typed lambda calculus wherein functions act on a 
-tuple of values indexed not by sequence, but instead by 
+form of typed lambda calculus wherein functions act upon  
+tuples of values indexed not by sequence, but instead by 
 assigning distinct roles to each argument.  
 Consider lambda-expressions taking (in lieu of 
 value-tuples) parameter-packs indexed via 
