@@ -675,9 +675,38 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 \addtolength{\skip\footins}{4pt}
 
+
+\definecolor{codegr}{RGB}{165, 150, 118}
 \definecolor{fnc}{RGB}{65, 150, 8}
 
+
 \usepackage{eso-pic}
+
+\usepackage{amssymb}
+
+%\usepackage{censor}
+
+\newcommand{\bls}{\ensuremath{\blacksquare}}
+
+\newcommand{\bs}{\raisebox{.5pt}{\resizebox{6pt}{!}{\bls}}}
+
+\newcommand{\lbs}{\raisebox{-.5pt}{\resizebox{9pt}{!}{\blacksquare}}}
+
+\AddToShipoutPicture{%
+ \ifnum\value{page}=2{
+  \AtPageLowerLeft{%
+    \hspace*{3pt}
+ \rotatebox{90}{%
+        \begin{minipage}{\paperheight}
+   \centering 
+   {\color{codegr}\textcopyright ~\today{} \lbs\bs\bs\bs\bs\bs\bs\bs\bs{} \lbs\bs\bs\bs\bs\bs\bs\bs  % Nathaniel Christen
+   } 
+        \end{minipage} %
+      }
+    } %
+   }\fi
+  }%
+
 
 \makeatletter
 
