@@ -102,16 +102,57 @@
 
 \newcommand{\hspaceback}[1]{\hspace*{-#1}}
 
-\newcommand{\citeLabel}[1]{\cite{#1}}
+\makeatletter
+
+\DeclareRobustCommand{\defCL}[1]{\def\@currentlabel{\unexpanded{#1}}}
+
+\DeclareRobustCommand{\psCite}[1]{%
+\phantomsection\cite{#1}\label{\unexpanded{#1}}%
+}
+
+\DeclareRobustCommand{\psCiteOpt}[2]{%
+\phantomsection\cite[#2]{#1}\label{\unexpanded{#1}}%
+}
+
+
+\NewDocumentEnvironment{bItem}{d[]}{%
+\hspace{-6pt}\begin{minipage}{.9\columnwidth}\def\@currentbiblabel{#1}\bibitem{#1}
+}{\end{minipage}%
+\ifnum\presetStretch=2\vspace{4pt}\else\vspace{-4pt}\fi%
+}
+
+%\NewCommandCopy{\original@bibitem}{\bibitem}
+%\renewcommand{\bibitem}[1]{\original@bibitem{#1}}
+
+\usepackage{xcolor}
+
+\definecolor{newlinkc}{RGB}{60, 55, 212}
+
+\renewcommand\@biblabel[1]{\hspace*{-6pt}\textit{[\hyperref[\@currentbiblabel]%
+{\textcolor{newlinkc}{#1}}]}\hspace*{6pt}}
+
+
+%\newcommand{\LABEL}[2]{\protected@edef\@currentlabel{#2}\label{#1}}
+
+
+\makeatother
+
+
+\makeatother
+
+
+\newcommand{\citeLabel}[1]{\psCite{#1}}
 
 \NewDocumentCommand{\citePage}{md()}{%
-\cite[p. #2]{#1}}
+\psCiteOpt{#1}{p. #2}}
 
 \NewDocumentCommand{\citePages}{md()}{%
-\cite[pp. #2]{#1}}
+\psCiteOpt{#1}{pp. #2}}
 
 \NewDocumentCommand{\citeLocator}{md()}{%
-\cite[#2]{#1}}
+\psCiteOpt{#1}{#2}}
+
+
 
 
 \newcommand{\onethrft}{\exsRef(1)-\exsRef(14)}
@@ -179,7 +220,6 @@
 \item[(\arabic{exsCount})] \label{exs:\arabic{exsCount}}  
 }
 
-\usepackage{xcolor}
 
 \definecolor{itemc}{RGB}{3, 94, 87}
 
@@ -625,12 +665,6 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 }
 
 \usepackage[nottoc,numbib]{tocbibind}
-
-\NewDocumentEnvironment{bItem}{d[]}{%
-\hspace{-6pt}\begin{minipage}{.9\columnwidth}\bibitem{#1}
-}{\end{minipage}%
-\ifnum\presetStretch=2\vspace{4pt}\else\vspace{-4pt}\fi%
-}
 
 \DeclareRobustCommand{\Visavis}{Vis-\`a-vis}
 \DeclareRobustCommand{\visavis}{vis-\`a-vis}
