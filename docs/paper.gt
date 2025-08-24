@@ -41,12 +41,12 @@ these are quite meaningful:`fnm;
 %/ exs
 \ifnum\presetStretch=2\vspace*{9pt}\else\fi
 (1)  My brother has been married for 10 years, but in many ways he's still a bachelor.
-(2)  All the eligible bachelors in this town are married.
+(2)  All of the eligible bachelors in this town are married.
 /+
 
 Moral of the story: just as, in a fair legal system, it should be assumed that 
 almost all laws have instances where reasonable people would break them, so 
-in language, for every "h/rule/" there are contexts where competent 
+in language, for every set of "h/rules/" there are contexts where competent 
 speakers will ignore them.  
 
 To motivate further discussion about the limits of linguistic 
@@ -69,7 +69,7 @@ as two cardinals flew by.`vfillnulleject;\vspace*{4.5pt}`enlargethispage<2em>;
 
 Each pair shows interpretive reliance on extra-linguistic 
 reasoning.  The situation in (3) and (4) is quantifier scope: assuming (3) discusses some 
-musical performance, it would be abnormal for everyone in the audience to distinctly choose 
+musical performance, it would be abnormal for everyone in the audience to individually choose 
 exactly three songs to sing along with.  Hence, we can assume that, among all songs 
 played that evening, there were specifically three with the property that (all) the audience 
 joined in.  The numeral-quantifier "/three/" is thus outside the scope of "/everyone/".
@@ -89,14 +89,14 @@ Uncertainties in (7) and (8) are of a different sort: anaphora resolution rather
 These also have two competing interpretations, depending on whether "/she/" is read as Ariel or Beatrice.  The 
 former option is more likely in (7) because one can tell from a photograph what the depicted subject 
 "/looks like/".  But we can't */a priori/* exclude a continuation like "x/I'm worried, 
-it looks like Ariel's hands were shaking/".  
+it seems as if Ariel's hands were shaking/".  
 Nor can we entirely disregard a scenario for (8) where Ariel takes a picture of 
 Beatrice photographing colorful birds.
 
 The issue in (9) and (10), by contrast, is ordinary polysemy: (9) might reflect an 
 accountant with offices facing a financial institution, or otherwise a field clinic established 
 near a river.  And (10) could describe a baseball collectible or an animal sculpture. 
-I include these for point of contrast: the ambiguity in the former three pairs, 
+I include these for point of comparison.  The ambiguity in the former three pairs, 
 I believe, is */holistic/* and */compositional/* whereas the latter's underdeterminism 
 is more localized (even though selecting one or another reading of */bank/*, and 
 */bat/*, frames lexical choices for the overall sentence; my point is that 
@@ -127,20 +127,20 @@ gloss would not fully capture the communicated content of a given statement.  Co
 (14)  Student after student came by to complain about the reading assignments.
 /+
 
-Notice how (13) and (14) subtlely describe warrants as well as assert beliefs.  
+Notice how (13) and (14) subtlely explicate warrants as well as assert beliefs.  
 The metaphor of "m/slipping away/" connotes a 
-gradual process that the speaker has observed from an extended period of time.  Similarly, 
+gradual process that the speaker has observed over an extended period of time.  Similarly, 
 (14) suggests multiple similar episodes that collectively motivate the enunciated, 
 presented in phrasing that intimates an extended, 
 enduring process.  These examples reveal a kind of "p/narrative account/" of the speaker's evidential 
-rationale.  The details are different than if all (14)'s objections were made during one 
-heated class session, say.  
+rationale.  The details in (14) are different than if all objections were made during one 
+single heated class session, say.  
 
 With no further qualification, of course, we 
 hear an implicit "y/I believe that/" attached to any utterance.  Since a 
 claim of @/P is almost always a claim of "y/I believe @/P/" this kind of 
 meta-discursive attitude can be subsumed into ordinary logic.   
-Often, of course, we present one claim to justify another 
+Often, it should be obvious, we present one claim to justify another 
 (imagine a variant of (11) that explicitly mentions polling numbers).  
 So the pattern of propositions justifying other propositions 
 does not in itself challenge the validity of semantic theories 
@@ -149,15 +149,15 @@ premised on treating sentences as encodings for propositions.
 However, the resources a speaker has for expressing the backstory of their 
 propositional attitudes span a wide spectrum of connotations and experiences, 
 and I'd argue that there is no logical system that could precisely model 
-how language-users characterize how one belief compels 
+all ways that language-users characterize how one belief compels 
 or reinforces another.  Most usage embeds propositions not in 
 chains of deductive reasoning but rather in narrative presentations 
-that reflect the interlocking of situations, and 
-in general the somewhat informal manner in which 
-we formulate beliefs and opinions.  To the degree that we 
-express beliefs via narrativizing constructions or metaphors like 
+that reflect perspectives, the interlocking of situations, and 
+in general the somewhat informal manner by which 
+we formulate beliefs and opinions.  To the degree that one 
+expresses beliefs via narrativizing constructions or metaphors like 
 "/slipping away/" and "/student after student/" %-- or so I claim %-- this 
-part of the discourse cannot be adequately captured via formulaic logic.
+`makebox<aspect of discourse>; cannot be adequately captured via formulaic logic.
 
 
 Cumulatively, then, I believe that sentences `onethrft; offer examples 
@@ -248,23 +248,23 @@ the predicates signified by that reading make more sense than their
 alternatives, but such judgment relies on knowledge of socio-cultural, not 
 linguistic, facts.  In short, whatever a sentence means, it does so 
 %-- in the general case %-- not via linguistic structures alone, but 
-via the interplay of such structures with more general cognitive 
+instead via the interplay of such structures with more general cognitive 
 and social-semiotic processes.  Consequently, linguistic 
 explanation alone is incomplete.  
 
 Moreover, these issues are sufficiently 
 holistic and entrenched that we cannot dismiss them as cognition   
-just bridging a gap between real and ideal language, by analogy to 
+merely bridging a gap between real and ideal language, by analogy to 
 real and ideal dictionaries (where each distinct word-sense might 
-be marked in some disambiguating manner).  This isn't just an 
+be marked in some disambiguating manner).  This isn't only an 
 issue of pragmatic context guiding inference of one word-sense 
 or another.  Cognition plays a more holistic role, such that 
 any */compositional/* determination depends, in general, 
 on a case-by-case admixture of linguistic and extra-linguistic reasoning. 
 Even when "i/the meaning of a 
 proposition is given by its truth 
-conditions/" we have to ask */why/* sentences encode propositions (or 
-are optimized to do so).  People don't talk out of some abstract desire 
+conditions/" we thus have to ask */why/* sentences encode propositions (or 
+are optimized to do so).  People don't talk out of abstract desires 
 to assert fragments of symbolic logic, but rather to coordinate their joint 
 activity.  Logically transparent statements are certainly an 
 important part of that, but still, conveying beliefs 
@@ -300,7 +300,7 @@ plays a more prominent role %-- only rarely do we share ideas through crude voca
 alone %-- 
 yet just because propositions get conveyed 
 in a linguistic context does not ensure that */why/* or */how/* this 
-happens is fully explainable in linguistic terms.
+happens is fully explicable in linguistic terms.
 
 Lexical plurality is one domain where 
 linguistics is obviously incomplete, because background knowledge 
@@ -310,7 +310,7 @@ is qualitatively different, and reveals a more substantial
 surface area where linguistic and extralinguistic 
 phenomena intermingle.  Hence, linguistics 
 must actively connect its paradigms and presuppositions 
-to a larger intellectual environment, where 
+to a larger intellectual environment, one where 
 overarching theories of cognition and communication 
 are formulated and disputed.
 
@@ -374,7 +374,7 @@ trajectory.}  Complex systems may not introduce new forms of matter or energy
 or new forces beyond those physicists recognize 
 %-- e.g., `visavis; Philosophy of Mind, first-person consciousness 
 is not a redoubt of dualism or magic  %-- but they 
-still deserve specialized descriptive and theory-semantic regimes.
+still deserve specialized descriptive and theory-semantic regimens.
 
 In short, causative explanation is incomplete on any one scale in 
 particular; it is only by bridging multiple theories that one can 
@@ -405,7 +405,7 @@ setting for any talk of decision-making, social \makebox{commons, selfhood, iden
 [/RyanMcVeigh/]; [/SchottenForkel:\hspaceback{2pt}3/].`hspaceback<12pt>;}
 
 Inter-theory reduction depends on filling macro-to-microscale gaps with mid-level  
-analyses.  Source files, for example  
+analyses.  Source files, for example,   
 become transformed to several intermediate representations during a compiler build.  `Visavis; the 
 human mind, neurologists have studied how clusters of neurons 
 form "t/nuclei/", "t/ganglia/", or "t/modules/" with distinct functional roles; and, 
@@ -418,7 +418,7 @@ consciousness (and vice-versa).  Telically,
 theories' connecting arrows will more deftly point both up and
 down the ranks of physical constituency.\footnote{Science is */guided/* by a more   
 "/top-down/" metaphysic: lifeworld experience seeds our 
-recognition of phenomena needing microphysical explanation.  But we still take it on faith that 
+recognition of phenomena needing microphysical explanation.  But we might still take it on faith that 
 no aspect of reality is */fundamentally/* incommensurate 
 with basic scientific methods.}  
 
@@ -434,12 +434,12 @@ However, the nature of consciousness */per se/* clearly
 plays a critical role in the mental careers of conscious animals.  
 Consciousness evolved at some point in natural history, and presumably 
 it conferred adaptative benefits.  Instead of reacting to stimuli 
-merely via instinct,\footnote{Apart from rare  
-"/fight or flight/" reflexes, anyhow.} forming conscious mental representations 
+merely via instinct, forming conscious mental representations  
 %-- with a certain distance between observer and 
-observed %--  
-evidently permits a wider and more malleable response repertoire.  
-Animal behavior and intelligence 
+observed\footnote{Apart from rare occasions for   
+"/fight or flight/" reflexes, anyhow.} %--  
+evidently permits a wider and more malleable response 
+repertoire.  Animal behavior and intelligence 
 has evolved in consort with consciousness: we exist in a world 
 of conscious representations that allow us to observe 
 surrounding environments without immediately committing to a 
@@ -447,18 +447,23 @@ course of action.  We benefit
 from opportunities to formulate reactions thoughtfully, informed 
 by values, personal identity, and past experience.
 
-Suppose I stand by a platform waiting for a subway to arrive.  I need to board 
-the correct train.  To do so, I may well follow a well-rehearsed 
+Suppose I stand by a platform waiting for the subway to arrive.  I need to board 
+my correct train.  To do so, I may well follow a well-rehearsed 
 protocol: hearing the train cues me to look down the platform; upon seeing 
 its outline I then focus attention on the letter- and color-coded 
-symbol painted on the front.  If it indicates the correct train, 
-I pace back as passengers start to disembark.  Now, each step in this process is consciously mediated. 
-I deliberately shift my perceptual orientation multiple 
+symbol painted on the front.  If it indicates my preferred train, 
+I pace back as passengers start to disembark.  Now, notice how each step in this process is consciously mediated. 
+I deliberately shift perceptual orientation multiple 
 times, and could break off the "t/protocol/" given some external 
-stimuli.  Perhaps I hear my cell phone pinging.  Or, there's an announcement 
+stimuli.  Perhaps I hear my cell phone pinging.  Or announcements 
 that the current train is out of service, so it's a moot point.  The key 
-detail is that such protocols don't just occur by instinct.  They continue, 
-or not, because of subjectively controllable choices of cognitive orientation. 
+detail is that such protocols don't just occur by
+\textcolor{white}{instinct.  They continue,
+or not, because of subjectively controllable choices of cognitive orientation.}
+
+`upAdj<3em>;
+\noindent{}force of instinct.  They continue, or not, because of sub-
+jectively controllable choices of cognitive orientation.
 
 Not that we have first-person awareness of all cognitive 
 processes.  Conscious reality has many constituents 
@@ -468,9 +473,9 @@ whose contours and boundaries are inferred via visual processing.
 Sight employs color variation to partition visual scenes, but 
 it is not as simple as isolating distinct color patches.  Given a 
 red rose in a blue vase, we cannot segment the image merely by 
-treating red as the flower and blue as the pottery.  
+treating red as the flower and blue as the ceramic.  
 Color-perception has added complexity first because some chromatic 
-variation is expected in an extended region due to texture 
+variation is expected in an extended region resulting from texture 
 and lighting; and second because visible substances have 
 optical qualities beyond just red/green/blue quantities 
 %-- albedo, specularity, glossiness, metallicity, opaqueness, 
