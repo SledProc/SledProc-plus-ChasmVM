@@ -141,7 +141,8 @@ class GTagML_Graph_Build
  void set_paragraph_bridge();
 
  enum class Paragraph_Types {
-  N_A, Abstract, P0, P1, Block_Quote
+  N_A, Abstract, P0, P1, Block_Quote,
+  Paragraph_Addendum
  };
 
  Paragraph_Types current_paragraph_type_;
@@ -217,7 +218,9 @@ public:
  void emph_symbolic(QString text);
  void emph_acronym(QString text);
 
+ void auto_new_paragraph(QString cmd);
  void auto_new_paragraph();
+
  void enter_italics_mode();
  void leave_italics_mode();
  void enter_double_quote_mode();

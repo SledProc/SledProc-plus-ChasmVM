@@ -74,6 +74,17 @@ void GTagML_Graph_Build::enter_special_section(QString text)
 {
  if(text == "Abstract")
    enter_abstract();
+
+ else if(text == "pa")
+ {
+  auto_new_paragraph("pa.1");
+
+//  reset_primary();
+
+//  check_close_paragraph();
+
+//  current_paragraph_type_ = Paragraph_Types::Paragraph_Addendum;
+ }
 }
 
 void GTagML_Graph_Build::enter_abstract()
@@ -241,14 +252,19 @@ void GTagML_Graph_Build::show_latex()
 
 void GTagML_Graph_Build::auto_new_paragraph()
 {
+ auto_new_paragraph("p.1");
+}
+
+void GTagML_Graph_Build::auto_new_paragraph(QString cmd)
+{ // p.1
  reset_primary();
 
  check_close_paragraph();
 
  ++current_paragraph_count_;
 
- xml_writer_.writeStartElement("p.1");
- latex_stream_ << "\n\\p.1{%\n";
+ xml_writer_.writeStartElement(cmd);
+ latex_stream_ << "\n\\" << cmd << "{%\n";
 }
 
 void GTagML_Graph_Build::enter_subparagraph(QString text)
