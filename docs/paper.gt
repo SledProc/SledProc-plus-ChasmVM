@@ -26,7 +26,7 @@ depend on extra-linguistic cognitive activity.
 
 It is clearly true that an important part of human language is governed by rules or 
 structures, ones that can be (at least to a useful extent) formalized and computationally 
-simulated.  And yet, language was not designed by committee: claiming that a 
+simulated. `pgl; And yet, language was not designed by committee: claiming that a 
 particular semantic or syntactic pattern has become entrenched is not a 
 complete argument, as if language were intrinsically a collection of formal rules, and we 
 need merely infer them (like reverse-engineering compiled computer code).  The 
@@ -94,7 +94,7 @@ Nor can we entirely disregard a scenario for (8) where Ariel takes a picture of
 Beatrice photographing colorful birds.
 
 The issue in (9) and (10), by contrast, is ordinary polysemy: (9) might reflect an 
-accountant with offices facing a financial institution, or otherwise a field clinic established 
+accountant with offices facing a financial institution, or otherwise a field clinic established `pgl; 
 near a river.  And (10) could describe a baseball collectible or an animal sculpture. 
 I include these for point of comparison.  The ambiguity in the former three pairs, 
 I believe, is */holistic/* and */compositional/* whereas the latter's underdeterminism 
@@ -202,13 +202,14 @@ I argue from cases like `onethrft; that even after fully digesting
 compositional intent, predicate signification remains underdetermined.
 
 To borrow the apologia from the lexical realm, we'd have to argue that 
-lurking behind any spoken dialect is an idealized language which 
+lurking behind any spoken dialect is an idealized  
+language which 
 "t/marks/" all logically salient elements %-- quantifiers, anaphora, deictics 
 (imagine differentiating a proximate versus distal "m/there/", or abstract versus concrete 
 "m/here/"), 
 conjunctions (cf. "m/and/" as temporal as in "m/John quit his job and moved out of town/", 
 wherein we hear "m/and */then/*/") %-- with enough granularity to forestall 
-all compositional ambiguities.  Imagine inflectional variations 
+all compositional ambiguities. `pgl; Imagine inflectional variations 
 on words like "m/all/" to distinguish crisp from fuzzy domains, or nested from 
 independent quantification; or morphological features on pronouns to 
 distinguish verb subjects from objects in anaphoric reference.  
@@ -273,17 +274,17 @@ The existence of (relatively) deterministic `StoP; mappings is not an axiom to
 deploy in linguistic explanations, but a cognitive faculty to be explained.
 
 A plausible rejoinder is that language has a cognitively-important 
-truth-condition-oriented kernel that can be analyzed in isolation from 
+truth-conditional essence that can be analyzed in isolation from 
 pragmatic and contextual complexifiers.  The problem then is that 
 extremely simplified languages, such as those for programming 
 computers, should thereby be much closer to a sort of truth-conditional ideal.  
 But the machinery of how programming languages are implemented does not 
 really befit or accommodate a logico-mathematical description either.  The germinal 
-structures of computer code are calls to "/kernel/" functions and 
+structures of computer code are calls to "/system/" functions and 
 the use of local symbols, bound to memory addresses, to store 
 temporary values.  If we take compilers and runtimes as 
 primitive models for human discourse processing, the analogy 
-fits a notion of extra-linguistic cognitive "/kernels/" more 
+matches a notion of extra-linguistic cognitive "/kernels/" more 
 than a "/closed world/" formal-system semantics.  
 
 To be clear, I do believe the value of signifying propositions is 
@@ -316,7 +317,7 @@ are formulated and disputed. `clearpage;
 
 For these reasons, I believe */cognitive phenomenology/* is 
 relevant to linguistics because it potentially provides this 
-overarching theoretical framework.  Here, I will outline 
+overarching theoretical framework. `pgl; Here, I will outline 
 why I think Husserlian phenomenology and its modern 
 refinements can play this role, 
 and then what implications for syntactic theory might follow 
@@ -429,7 +430,7 @@ how purely biological phenomena can give rise to subjective
 [/FranciscoVarela/], [/DanZahavi/].  Some philosophers 
 apparently minimize this gap by construing consciousness as epiphenomenal, 
 ontologically separated from the primary functional structures 
-of cognition [/JKim:7/], [/MarekPokropski/], [/RobertDRupert/].  
+of cognition [/JKim:7/], [/MarekPokropski/], [/RobertDRupert/]. `pgl;  
 However, the nature of consciousness */per se/* clearly 
 plays a critical role in the mental careers of conscious animals.  
 Consciousness evolved at some point in natural history, and presumably 
@@ -559,7 +560,7 @@ first-person consciousness.
 Subjective awareness affords a "h/geometric/" model 
 of surroundings more granular than facts or concepts 
 alone; we can spotlight its functional benefit
-to living organisms.  Still, the */in vivo/* raises 
+to living organisms. `pgl; Still, the */in vivo/* raises 
 metascientific questions: we cannot dissect, nor neuroimage, animals in 
 nature (the */in vitro/* is artificially 
 staged for data acquisition).  For 
@@ -687,8 +688,8 @@ Similar to the controversial status of first-person reports
 `visavis; theoretical confirmability/falsifiability, the 
 linguistics community is divided over the value of 
 analyses based on subjective assessments of 
-acceptability [/EranAsoulin;pp. 52--55/], [/JoanBresnan;pp. 2--6/].  
-It is, of course, common for linguists of many persuasions 
+acceptability [/EranAsoulin;pp. 52--55/], [/JoanBresnan;pp. 2--6/]. `pgl;  
+It is, of course, common for linguists of multiple persuasions 
 to construct ad-hoc sentences/utterances in service 
 of theoretical claims.  Such methods 
 raise two questions: whether samples not taken from 
@@ -794,7 +795,7 @@ annotations, etc., whose ordinary ground is real-world
 speech-events.  We can, for instance, note syntactic, morphological, or lexical patterns, 
 and point out where pragmatic interpretation is needed.  Constructed 
 sentences may or may not conform to English grammar, 
-but at least the question of whether they do so is well-posed. 
+but at least the question of whether they do so is well-posed. `pgl; 
 Even */imagined/* speech is grammatical (or not).    
 We can label syntactic categories; track 
 pronoun-antecedent pairings and singular or plural alignment; observe
@@ -914,7 +915,7 @@ environments to framings of states of affairs
 in communicable ways, then actual speech-production.  
 Basic organizational principles migrate from one to 
 the other, such that cognitive-perceptual structures 
-(attentional foci, say) become manifest, 
+(attentional foci, say) `pgl; become manifest, 
 within communicative intent and staging, as 
 linguistic phenomena (e.g., that to which 
 I can perceptually attend becomes a noun; attributes 
@@ -1043,7 +1044,8 @@ each word makes a distinct contribution.  Here are a few:
 
 %/ itemz
 
- *  `underline<tin>; box `sarr;  provides insight into how the box will look, and 
+ *  `underline<tin>; box `sarr; `pgl; provides insight 
+into how the box will look, and 
 feel to the touch, and how to open it
 
  *  `underline<red>; tin box `sarr;  the color helps one find it amidst other objects
@@ -1171,7 +1173,7 @@ of adjectives mapping nouns to nouns captures the
 surface-level manifestation of a churning cognitive 
 underground, where intellectual labor is expended in  
 forming, altering (by assimilating new detail), and 
-re-establishing static precursor-images.  Similarly, propositions 
+re-establishing static precursor-images. `pgl; Similarly, propositions 
 have a kind of situational stasis %-- representations of 
 states of affairs more than 
 discrete objects, but still fixpoints within 
@@ -1286,7 +1288,7 @@ than concrete values.  Assuming polymorphism,
 a type-checker must confirm that, given any stack-state with a 
 procedure symbol on top, there is a unique implementation 
 whose parameter-types match those symbolized lower on the stack 
-(if so, its output type is then placed on the stack instead).  
+(if so, its output type is then placed on the stack instead). `pgl; 
 Both type-checking and push/transfer may thereby be modeled 
 as versions of a generic graph-traversal pattern, whose 
 central operations are crossing to unvisited child nodes; 
@@ -1329,15 +1331,22 @@ can be analyzed.  Image-analysis tactics such as texture
 segmentation, occlusion compensation, and gradient-vector inference 
 have detailed mathematical formulae that could offer functional insights into 
 visual perception (even if computer implementations may 
-be very different from brains').  Type-checking and postordering are 
+be very different from brains').  Postordering and type-checking are 
 not at the same level of quantitative sophistication, 
 so we don't necessarily move a theoretical needle very far 
-by detecting structural analogies between graph-traversal 
-postorder and cognitive "t/staging/".  Still, 
-I believe these analogies yield a formal summary of the 
+by detecting structural analogies between graph-postorder 
+and cognitive "t/staging/".  Still, 
+I believe these analogies imply a precis of the 
 syntax/semantics interface that is more cognitively realistic 
 than `Boltetal;'s appeal to commutative diagrams.  Compilers 
-are */stateful/* processing/workflow systems, not term-reduce games.
+are */stateful/* processing/workflow \textcolor{white}{platforms, 
+more than term-reduce artefacts.}
+
+%.pa
+`upAdj<1.8em>;
+`noindent;`makebox<platforms, 
+more than mechanistic term-reduce 
+artefacts.>;`upAdj<1em>;
 
 More substantially, postordering is not just a heuristic 
 for revisiting parse graphs.  Type reduction and 
@@ -1348,11 +1357,11 @@ unrelated contexts like the family name, for instance, the
 word "m/trump/" in a playing-card context can serve as noun, 
 verb, adjective, and even adverb.  The distribution of a 
 single word-sense over multiple syntactic categories is more a 
-norm than an exception.  This fact in itself yields a proliferation 
+norm than an exception.  This fact in itself suggests a proliferation 
 of plausible parse-graphs, even before addressing polysemy and 
 phrase-boundary ambiguities.  From many */plausible/* candidates, 
 the set of */correct/* parse graphs are those that meet 
-criteria of coherence, some of which can be modeled in terms 
+case-by-case criteria of coherence, some of which can be modeled in terms 
 of graph-traversal protocols.  
 
 Such processes are apparently interdependent, in that (for example) 
@@ -1403,7 +1412,7 @@ I've outlined. `upAdj<14pt>;
 
 First, my discussion has implied that word-order and associated 
 sentence properties, such as phrase-structure, are logically 
-fixed.  That may be true in some sentences, but one might find 
+fixed. `pgl; That may be true in some sentences, but one might find 
 counter-examples.  I will examine:
 
 %/ exs
@@ -1532,7 +1541,7 @@ on motives or context).  Verbs have implicit
 "h/slots/" for such variegated thematic roles, and by observing 
 the particular slot slated for a given word (via theta formations) 
 or phrases (via case-marking; particularly, in English, leading 
-prepositions) we identify the intended role for the constituent [/LucasChampollion/].
+prepositions) `pgl; we identify the intended role for the constituent [/LucasChampollion/].
 
 In presenting conceptual syntheses, then, verbs operate via structures 
 of roles rather than one-word-at-a-time reworking of conceptual syntheses.  
@@ -1653,7 +1662,8 @@ semantics [/HarryBunt/].
 Conceptual integration is in some sense an 
 intellectual procedure %-- "t/computing/" in the domain 
 of conceptual staging and proto-images, if we don't take the mind/machine 
-metaphor too literally %-- and language-users deploy background knowledge 
+metaphor too literally %-- `pgl; 
+and language-users deploy background knowledge 
 to "h/execute/" such scripts in comunally-sanctioned ways. 
 
 The "t/interface theory of meaning/" developed 
@@ -1766,7 +1776,7 @@ concepts */box/* and */red/*.  If we then analyze this
 signification as, say, the set of things that are both 
 red and boxes, then such a construction might be 
 theoretical progress if we had some literal engineering 
-whereby words reference sets.  However, if we accept set-theoretic 
+whereby words reference sets. `pgl; However, if we accept set-theoretic 
 language in just a metaphoric way, describing 
 "/red box/" as the intersection `redbox; merely restates what 
 should be analyzed.
@@ -1897,7 +1907,7 @@ comment, suggestion or request %-- and moreover
 encode speaker-relative perspectives and foreknowledge that 
 clarify their origins.  This epistemics-oriented disclosure 
 emerges from the overall regimes of subjectification and 
-cognitive linguistic processing.
+cognitive linguistic processing. `pgl;
 
 But we should not conclude from such hypotheses that 
 sentences */signify/* propositions %-- i.e., that 
@@ -2017,7 +2027,7 @@ Such an approach would be only tangentially a
 intuitions that lend systematicity and 
 disputative structure to studies of nature 
 would, in this context, dilute rather than 
-guarantee explanatory rigor.  Endorsing  
+guarantee explanatory rigor. `pgl; Endorsing  
 phenomenology as an alternative foundation, 
 theories of cognitive-semantic "t/staging/" 
 would %-- on this architecture %-- rest on phenomenological 
