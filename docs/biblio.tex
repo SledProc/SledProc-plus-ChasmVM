@@ -1115,6 +1115,33 @@ pappas/papers/zujovic_tip13.pdf
 
 \thispagestyle{bib-last}
 
+\newpage{}
+
+\newcommand{\ixskip}{\vspace{6pt}}
+
+\newcommand{\ixlabel}[1]{\textbf{#1}}
+
+\newcommand{\ixentry}[3]{\noindent %
+ \ixlabel{#1} \dotfill  \pagefref{#2}  \mpcodefref{#3} {\ixskip}
+}
+
+\newcommand{\ixentrycont}[3]{\noindent %
+  \textcolor{white}{\ixlabel{#1} \dotfill} %
+\pagefref{#2}  \mpcodefref{#3} {\ixskip}
+}
+
+
+\centering{{\Large Index}}
+
+\vspace{4em}
+
+\ixentry{Kowalewski, Hubert}{7}{42}
+
+\ixentrycont{Kowalewski, Hubert}{8}{14}
+
+\ixentry{Wntry 1}{8}{14}
+
+
 
 %\begin{tikzpicture}
 %\begin{scope}[rotate=39, transform shape]
