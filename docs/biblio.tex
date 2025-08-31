@@ -1113,9 +1113,134 @@ pappas/papers/zujovic_tip13.pdf
 
 
 
-\thispagestyle{bib-last}
 
 \newpage{}
+
+
+\thispagestyle{bib-last}
+
+
+
+\newcommand{\seskip}{\vspace{6pt}}
+
+\newcommand{\selabel}[1]{{\fontfamily{pgm}%
+\fontsize{9}{9}\selectfont#1}}
+
+\newcounter{serefc}
+
+
+\newcommand{\sehyperref}[1]{\hyperref[exs:#1]%
+{\textcolor{blue}{#1}}}
+
+\newcommand{\seentry}[2]{\stepcounter{serefc}\noindent %
+ \selabel{#2} \dotfill  \sehyperref{\theserefc} %
+ \mpcodefref{#1} {\seskip}
+}
+
+\newcommand{\seentrycont}[3]{\noindent %
+  \textcolor{white}{\selabel{#1} \dotfill} %
+\pagefref{#2}  \mpcodefref{#3} {\seskip}
+}
+
+
+
+
+%\newcommand{\csectionf}[1]{\centering{{\Large #1}}}
+
+
+\newcommand{\docenter}[1]{\begin{center}#1\end{center}}
+
+\newcommand{\csection}[1]{\section{\textcolor{white}{#1}}
+{\docenter{\raisebox{3em}{{\Large #1}}}}}
+
+\renewcommand{\thesection}{}
+
+
+\vspace*{-8em}
+
+\csection{Sentence Examples}
+
+%\centering{{\Large Sentence Examples}}
+
+\vspace*{-2em}
+
+\seentry{2}{My brother has been married for 10 
+years,\\but in many
+ways he's still a bachelor.}
+
+\seentry{2}{All of the eligible bachelors in this town\\are married.}
+
+\seentry{3}{Everyone sang along to three songs.}
+
+\seentry{3}{All appeals are heard by a panel of three\\judges.}
+
+\seentry{3}{All New Yorkers live in one of five boroughs.}
+
+\seentry{3}{All New Yorkers complain about how 
+long\\it takes to commute to New York City.}
+
+\seentry{3}{In Ariel's picture of Beatrice, she looks sick.}
+
+\seentry{3}{In Ariel's picture of Beatrice, she 
+snapped\\the lens just 
+as two cardinals flew by.}
+
+\seentry{3}{We operated near the bank.}
+
+\seentry{3}{On the mantle was a wooden bat.}
+
+\seentry{7}{Every band performed three songs.}
+
+\seentry{7}{Everyone sang along to some song or another.}
+
+\seentry{8}{This election is slipping away from 
+the\\Democrats.}
+
+\seentry{8}{Student after student came by to 
+complain\\about the reading assignments.}
+
+\seentry{48}{John poured water onto the stove.}
+
+\seentry{48}{John spilled water onto the stove.}
+
+\seentry{60}{I put Mom's chocolate brownies in this 
+red\\tin box, take some!}
+
+\seentry{80}{I'm heading out to the store.}
+
+\seentry{80}{Where are you going?  Out to the store.}
+
+\seentry{80}{What are you doing?  Heading out.}
+
+
+\seentry{85}{Last weekend we donated a hundred 
+dollars\\to the animal shelter.}
+
+\seentry{85}{We gave the animal shelter a 
+hundred\\dollars.}
+
+
+\seentry{102}{That newspaper just moved to 10th 
+street\\and laid off half its staff.}
+
+\seentry{102}{At home you can print out this book 
+from\\a \eA{PDF} link.}
+
+\seentry{102}{The borough of Queens voted 
+heavily\\for Mamdani.}
+
+\seentry{102}{These flowers really want some sunshine.}
+
+\seentry{102}{This drought has left the soil parched.}
+
+\seentry{102}{Our car stubbornly refused to move.}
+
+\seentry{102}{The spell-checker thinks \q{hooman} 
+isn't\\a word.}
+
+\newpage{}
+
+
 
 \newcommand{\ixskip}{\vspace{6pt}}
 
@@ -1131,15 +1256,23 @@ pappas/papers/zujovic_tip13.pdf
 }
 
 
-\centering{{\Large Index}}
 
-\vspace{4em}
+
+\vspace*{-8em}
+
+\csection{Index}
+
+\vspace*{-2em}
 
 \ixentry{Kowalewski, Hubert}{7}{42}
 
 \ixentrycont{Kowalewski, Hubert}{8}{14}
 
 \ixentry{Wntry 1}{8}{14}
+
+
+
+%\addcontentline{Index/Sentence Examples}
 
 
 
