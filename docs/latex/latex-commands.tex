@@ -132,6 +132,7 @@
 
 \newcommand{\writempcode}{\mpcodef{\thempcode}}
 
+
 \newcommand{\clrm}{\stepcounter{mpcode}{\micro{.}}%
 \ifnum\value{mpcode} = 35
 \clrmarginpar{-21pt}{13pt}{\writempcode}%
@@ -180,7 +181,9 @@
 %\clrmarginpar{-21pt}{1pt}{!}%
 %}
 
+
 \newcommand{\clrmAltImpl}[2]{%
+%\label{alt#2}
 %
 \AddToShipoutPicture{%
 \ifnum\value{page}=#1{
@@ -229,13 +232,26 @@
 
 \newcommand{\clrmMidImpl}[1]{\micro{.}%
 \if@firstcolumn%
-\clrmarginpar{-21pt}{1pt}{\clrmMidFmt#1}%
+\clrmarginpar{-21pt}{1pt}{\clrmMidFmt{#1}}%
 \else%
-\clrmarginpar{-2pt}{1pt}{\clrmMidFmt#1}%
+\clrmarginpar{-2pt}{1pt}{\clrmMidFmt{#1}}%
 \fi%
 }
 
-\newcommand{\clrmMid}[1]{%
+%\newcommand{\clrmMidLabelTest}[1]{\label{p2a}}
+
+
+
+\newcommand{\clrmMidFormLabel}[1]{pXX{#1}}
+
+\newcommand{\clrmMidFormLabelX}[1]{p\thempcode#1}
+
+%%\newcommand{\clrmMidLabel}[1]{\label{\clrmMidFormLabel{#1}}}
+
+\newcommand{\clrmMidLabel}[1]{\label{\clrmMidFormLabelX{a}}}
+
+
+\newcommand{\clrmMid}[1]{\clrmMidLabel{#1}%
 \ifnum\value{mpcode} = 69%
 \else%
 \clrmMidImpl{#1}%
