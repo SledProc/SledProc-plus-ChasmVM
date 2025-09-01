@@ -95,12 +95,20 @@
 \textcolor{blue!70!black}{#1}}}}}}}
 
 
+\definecolor{pagefrefc}{RGB}{2, 213, 35}
+
+
+
 \newcommand{\pagefref}[1]{%
-\hyperref[pgn#1]{\textcolor{blue!70!black}{#1}}%
+\hyperref[pgn#1]{\textcolor{pagefrefc!70!black}{#1}}%
 }
 
-\newcommand{\pgl}[1]{\label{pgn#1}}
+\newcounter{pglNumber}
 
+\newcommand{\pglabel}[1]{\label{pgn#1}}
+
+\newcommand{\pgl}[1]{\stepcounter{pglNumber}%
+\pglabel{\thepglNumber}}
 
 %{%
 %
@@ -213,6 +221,7 @@
 }
 }
 
+\usepackage{refcount}
 
 \newcommand{\@exsRef}[1]{\ref{exs:#1}}
 

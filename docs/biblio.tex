@@ -1128,17 +1128,44 @@ pappas/papers/zujovic_tip13.pdf
 
 \newcounter{serefc}
 
+\definecolor{serefcc}{RGB}{47, 82, 122}
 
-\newcommand{\sehyperref}[1]{\hyperref[exs:#1]%
-{\textcolor{blue}{#1}}}
+
+\newcommand{\serefclink}[1]{%
+\hyperref[exs:\arabic{serefc}]{%
+\textcolor{serefcc}{\arabic{serefc}}}}
+
+
+\newcommand{\sehyperref}[1]{\pagefref{\getpagerefnumber{exs:#1}}}%
+%{\textcolor{blue}{}}}
+
+
+\definecolor{dotfillc}{RGB}{52, 143, 235}
+
+\newcommand{\dfillc}{\textcolor{dotfillc}{\dotfill}}
+
+%\newcommand{\sehyperref}[1]{\hyperref[exs:#1]%
+%{\textcolor{blue}{\getpagerefnumber{exs:#1}}}}
+
+\newcommand{\serefspace}{\ifnum\value{serefc} > 9%
+\hspace*{6pt}%
+\else\hspace*{9pt}%
+\fi}
+
+\newcommand{\serefspacetwo}{\ifnum\value{serefc} > 9%
+\hspace*{22pt}%
+\else\hspace*{21pt}%
+\fi}
 
 \newcommand{\seentry}[2]{\stepcounter{serefc}\noindent %
- \selabel{#2} \dotfill  \sehyperref{\theserefc} %
+ \textit{[\serefclink{}]} {\serefspace}%
+ \selabel{#2}  % \getpagerefnumber{exs:\theserefc} %
+\dfillc  \sehyperref{\theserefc} \hspace{2pt} %
  \mpcodefref{#1} {\seskip}
 }
 
 \newcommand{\seentrycont}[3]{\noindent %
-  \textcolor{white}{\selabel{#1} \dotfill} %
+  \textcolor{white}{\selabel{#1} \dfillc} %
 \pagefref{#2}  \mpcodefref{#3} {\seskip}
 }
 
@@ -1155,6 +1182,9 @@ pappas/papers/zujovic_tip13.pdf
 
 \renewcommand{\thesection}{}
 
+\newcommand{\lin}{\\\serefspacetwo{}}
+
+
 
 \vspace*{-8em}
 
@@ -1165,24 +1195,24 @@ pappas/papers/zujovic_tip13.pdf
 \vspace*{-2em}
 
 \seentry{2}{My brother has been married for 10 
-years,\\but in many
+years,\lin{}but in many
 ways he's still a bachelor.}
 
-\seentry{2}{All of the eligible bachelors in this town\\are married.}
+\seentry{2}{All of the eligible bachelors in this town\lin{}are married.}
 
 \seentry{3}{Everyone sang along to three songs.}
 
-\seentry{3}{All appeals are heard by a panel of three\\judges.}
+\seentry{3}{All appeals are heard by a panel of three\lin{}judges.}
 
-\seentry{3}{All New Yorkers live in one of five boroughs.}
+\seentry{3}{All New Yorkers live in one of five\lin{}boroughs.}
 
 \seentry{3}{All New Yorkers complain about how 
-long\\it takes to commute to New York City.}
+long\lin{}it takes to commute to New York City.}
 
-\seentry{3}{In Ariel's picture of Beatrice, she looks sick.}
+\seentry{3}{In Ariel's picture of Beatrice, she looks\lin{}sick.}
 
 \seentry{3}{In Ariel's picture of Beatrice, she 
-snapped\\the lens just 
+snapped\lin{}the lens just 
 as two cardinals flew by.}
 
 \seentry{3}{We operated near the bank.}
@@ -1191,20 +1221,20 @@ as two cardinals flew by.}
 
 \seentry{7}{Every band performed three songs.}
 
-\seentry{7}{Everyone sang along to some song or another.}
+\seentry{7}{Everyone sang along to some song or\lin{}another.}
 
 \seentry{8}{This election is slipping away from 
-the\\Democrats.}
+the\lin{}Democrats.}
 
 \seentry{8}{Student after student came by to 
-complain\\about the reading assignments.}
+complain\lin{}about the reading assignments.}
 
 \seentry{48}{John poured water onto the stove.}
 
 \seentry{48}{John spilled water onto the stove.}
 
-\seentry{60}{I put Mom's chocolate brownies in this 
-red\\tin box, take some!}
+\seentry{60}{I put Mom's chocolate brownies in 
+this\lin{}red tin box, take some!}
 
 \seentry{80}{I'm heading out to the store.}
 
@@ -1213,30 +1243,31 @@ red\\tin box, take some!}
 \seentry{80}{What are you doing?  Heading out.}
 
 
-\seentry{85}{Last weekend we donated a hundred 
-dollars\\to the animal shelter.}
+\seentry{85}{Last weekend we donated a 
+hundred\lin{}dollars to the animal shelter.}
 
 \seentry{85}{We gave the animal shelter a 
-hundred\\dollars.}
+hundred\lin{}dollars.}
 
 
-\seentry{102}{That newspaper just moved to 10th 
-street\\and laid off half its staff.}
+\seentry{102}{That newspaper just moved to 
+10th\lin{}street and laid off half its staff.}
 
-\seentry{102}{At home you can print out this book 
-from\\a \eA{PDF} link.}
+\seentry{102}{At home you can print out this 
+book\lin{}from a \resizebox{!}{6pt}{PDF} link.}
 
 \seentry{102}{The borough of Queens voted 
-heavily\\for Mamdani.}
+heavily\lin{}for Mamdani.}
 
-\seentry{102}{These flowers really want some sunshine.}
+\seentry{102}{These flowers really want 
+some\lin{}sunshine.}
 
 \seentry{102}{This drought has left the soil parched.}
 
 \seentry{102}{Our car stubbornly refused to move.}
 
-\seentry{102}{The spell-checker thinks \q{hooman} 
-isn't\\a word.}
+\seentry{102}{The spell-checker thinks 
+\q{hooman}\lin{}isn't a word.}
 
 \newpage{}
 
