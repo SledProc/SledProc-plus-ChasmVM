@@ -1128,7 +1128,9 @@ pappas/papers/zujovic_tip13.pdf
 
 \newcounter{serefc}
 
+%47, 82, 122
 \definecolor{serefcc}{RGB}{47, 82, 122}
+%\definecolor{serefcc}{RGB}{179, 101, 14}
 
 
 \newcommand{\serefclink}[1]{%
@@ -1148,13 +1150,13 @@ pappas/papers/zujovic_tip13.pdf
 %{\textcolor{blue}{\getpagerefnumber{exs:#1}}}}
 
 \newcommand{\serefspace}{\ifnum\value{serefc} > 9%
-\hspace*{6pt}%
-\else\hspace*{9pt}%
+\hspace*{3pt}%
+\else\hspace*{7pt}%
 \fi}
 
 \newcommand{\serefspacetwo}{\ifnum\value{serefc} > 9%
-\hspace*{22.5pt}%
-\else\hspace*{21pt}%
+\hspace*{20pt}%
+\else\hspace*{19pt}%
 \fi}
 
 \newcommand{\seentry}[2]{\stepcounter{serefc}\noindent %
@@ -1291,7 +1293,7 @@ some\lin{}sunshine.}
 (\textit{See also} #1)}
 
 \newcommand{\ixredirect}[2]{\noindent %
- \ixlabel{#1} \hspace{2em} \textit{See} #2 %{\ixskip}
+ \ixlabel{#1} \hspace{4pt} \textit{See} #2 %{\ixskip}
 } 
 
 \newcommand{\ixspBefore}{\hspace{1pt}}
@@ -1315,8 +1317,20 @@ some\lin{}sunshine.}
  \ixspBack{}; \ixspAfter{} #1 \pagefref{#2}  \mpcodefref{#3} 
 }
 
+%\definecolor{ixFootnoteColor}{RGB}{47, 82, 122}
+\definecolor{ixFootnoteColor}{RGB}{179, 101, 14}
+
+\newcommand{\ixFootnote}[2]{n\hspace{1pt}%
+\hyperref[fn:#1]{%
+\textcolor{ixFootnoteColor}{#2}%
+}}
+
 \newcommand{\ixentry}[3]{\noindent %
  \ixlabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefref{#3} 
+}
+
+\newcommand{\ixentryNote}[4]{\noindent %
+ \ixlabel{#1} \ixspBefore  \pagefref{#2} \ixFootnote{#3}{#4} 
 }
 
 \newcommand{\ixsubentry}[3]{\noindent %
@@ -1342,6 +1356,10 @@ some\lin{}sunshine.}
 
 \vspace*{-2em}
 
+\ixentryNote{Calling Convention}{14}{cc}{7}
+{\ixskip}
+
+
 \ixredirect{Davidson, Donald}{Neo-Davidsonian Event Semantics}
 {\ixskip}
 
@@ -1360,7 +1378,7 @@ some\lin{}sunshine.}
 \ixentry{Kowalewski, Hubert}{7}{42}
 {\ixskip}
 
-\ixentry{\q{Married Bachelor}}{1}{2}\ixl{17}{109}
+\ixentry{\q{Married} Bachelor}{1}{2}\ixl{17}{109}
 {\ixskip}
 
 \ixentry{Monads}{16}{102}
@@ -1378,6 +1396,13 @@ some\lin{}sunshine.}
 \ixentry{Quantifier Scope}{1}{3}
 {\ixskip}
 
+\ixredirect{RDF (Resource Description Framework)%
+}{Semantic Web}
+{\ixskip}
+
+\ixentry{Semantic Web}{14}{91}
+{\ixskip}
+
 \ixentry{Subjectification}{14}{88}
 \sseealso{Epistemic Narratives; Grounding}
 {\ixskip}
@@ -1385,7 +1410,7 @@ some\lin{}sunshine.}
 \ixentry{Truth-Conditional Semantics}{3}{15}
 {\ixskip}
 
-\ixentrySubs{Type-Theory}%
+\ixentrySubs{Type Theory}%
 \ixsubentry{Dependent Types}{16}{102}%
 \ixsl{Coercions}{16}{102}%
 \ixsl{Type Systems with Polymorphism}{11}{69}%
