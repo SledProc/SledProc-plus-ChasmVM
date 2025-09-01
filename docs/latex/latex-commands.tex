@@ -163,6 +163,65 @@
 
 \definecolor{clrmcMid}{RGB}{165, 10, 18}
 
+
+\newcommand{\clrmAltFmt}[1]{%
+\textcolor{clrmcMid}{%
+\raisebox{1pt}{\resizebox{6pt}{!}{\ensuremath{\cdots}}}%
+{\fontsize{8}{6}\selectfont{#1}}}}
+
+
+\newcommand{\clrmAltFmtX}[1]{%
+\textcolor{clrmcMid}{%
+{\fontsize{8}{6}\selectfont{#1}}
+}
+}
+
+%\newcommand{\clrmAlt}{%
+%\clrmarginpar{-21pt}{1pt}{!}%
+%}
+
+\newcommand{\clrmAltImpl}[2]{%
+%
+\AddToShipoutPicture{%
+\ifnum\value{page}=#1{
+\AtTextUpperLeft{
+\hspace*{-37pt}\raisebox{-14pt}{%
+%{#1:#2}
+\clrmAltFmt{#2}
+}}}\fi
+}
+%
+}
+
+
+
+\newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{%
+#2\resizebox{!}{5pt}{(#3)}}} \clrmAltSub{10}{60}{a}
+
+%\newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{#2}}
+
+
+
+%\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}}
+\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}}
+
+%\newcommand{\clrmAlt}[2]{}
+
+
+\newcommand{\clrmAltxx}{%
+\ifnum\value{mpcode} = 14%
+\clrmarginpar{-18pt}{1pt}{\clrmAltFmt{\thempcode}}%
+\else%
+\if@firstcolumn%
+\clrmarginpar{-18pt}{1pt}{\clrmAltFmt{\thempcode}}%
+\else%
+\clrmarginpar{-2pt}{1pt}{\clrmAltFmt{\thempcode}}%
+\fi\fi%
+}
+
+
+
+
 \newcommand{\clrmMidFmt}[1]{%
 \textcolor{clrmcMid}{%
 \resizebox{5pt}{!}{#1}}}
@@ -182,6 +241,9 @@
 \clrmMidImpl{#1}%
 \fi%
 }
+
+
+
 
 \AddToShipoutPicture{%
 \ifnum\value{page}=11{

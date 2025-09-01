@@ -10,6 +10,10 @@
 \setlength{\columnsep}{38pt}
 
 
+
+\usepackage{eso-pic}
+
+
 \usepackage{natbib}
 \setlength{\bibsep}{3pt}
 
@@ -84,6 +88,7 @@
 
 % ({\\clrm})(\w)
 
+
 \newcommand{\clrmarginpar}[3]{\marginpar{\raisebox{-#2}%
 {\hspace{#1}{#3}}}}
 
@@ -93,6 +98,10 @@
 \hyperref[par#1]{%
 \raisebox{0pt}{\resizebox{!}{5pt}{%
 \textcolor{blue!70!black}{#1}}}}}}}
+
+
+
+
 
 
 \definecolor{pagefrefc}{RGB}{2, 213, 35}
@@ -150,6 +159,108 @@
 \fi\fi\fi\fi\fi\fi%
 %\thempcode
 }
+
+
+\definecolor{clrmcMid}{RGB}{165, 10, 18}
+
+
+\newcommand{\clrmAltFmt}[1]{%
+\textcolor{clrmcMid}{%
+\raisebox{1pt}{\resizebox{6pt}{!}{\ensuremath{\cdots}}}%
+{\fontsize{8}{6}\selectfont{#1}}}}
+
+
+\newcommand{\clrmAltFmtX}[1]{%
+\textcolor{clrmcMid}{%
+{\fontsize{8}{6}\selectfont{#1}}
+}
+}
+
+%\newcommand{\clrmAlt}{%
+%\clrmarginpar{-21pt}{1pt}{!}%
+%}
+
+\newcommand{\clrmAltImpl}[2]{%
+%
+\AddToShipoutPicture{%
+\ifnum\value{page}=#1{
+\AtTextUpperLeft{
+\hspace*{-37pt}\raisebox{-14pt}{%
+%{#1:#2}
+\clrmAltFmt{#2}
+}}}\fi
+}
+%
+}
+
+
+
+\newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{%
+#2\resizebox{!}{5pt}{(#3)}}} \clrmAltSub{10}{60}{a}
+
+%\newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{#2}}
+
+
+
+%\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}}
+\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}}
+
+%\newcommand{\clrmAlt}[2]{}
+
+
+\newcommand{\clrmAltxx}{%
+\ifnum\value{mpcode} = 14%
+\clrmarginpar{-18pt}{1pt}{\clrmAltFmt{\thempcode}}%
+\else%
+\if@firstcolumn%
+\clrmarginpar{-18pt}{1pt}{\clrmAltFmt{\thempcode}}%
+\else%
+\clrmarginpar{-2pt}{1pt}{\clrmAltFmt{\thempcode}}%
+\fi\fi%
+}
+
+
+
+
+\newcommand{\clrmMidFmt}[1]{%
+\textcolor{clrmcMid}{%
+\resizebox{5pt}{!}{#1}}}
+
+
+\newcommand{\clrmMidImpl}[1]{\micro{.}%
+\if@firstcolumn%
+\clrmarginpar{-21pt}{1pt}{\clrmMidFmt#1}%
+\else%
+\clrmarginpar{-2pt}{1pt}{\clrmMidFmt#1}%
+\fi%
+}
+
+\newcommand{\clrmMid}[1]{%
+\ifnum\value{mpcode} = 69%
+\else%
+\clrmMidImpl{#1}%
+\fi%
+}
+
+
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=11{
+\AtTextLowerLeft{
+\hspace*{-37pt}\raisebox{14pt}{%
+\clrmMidFmt{a}
+}}}\fi
+}
+
+% \clrmMidFmt{a}
+
+
+%\ifnum\value{mpcode} = 69%
+%\else
+%\clrmMidImpl{#1}
+%}
+
 
 
 \newcommand{\clrmy}{\stepcounter{mpcode}{\micro{.}}%
@@ -815,8 +926,6 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \definecolor{fnc}{RGB}{65, 150, 8}
 
 
-\usepackage{eso-pic}
-
 \usepackage{amssymb}
 
 %\usepackage{censor}
@@ -855,6 +964,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
   }%
 
 
+
 \makeatletter
 
 \renewcommand\@makefnmarkfn{%
@@ -862,6 +972,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 \renewcommand\makefnmarkfnOne{%
 \raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}1}}}}
+
 
 
 \newcommand{\fnmini}[1]{\begin{minipage}[t]{0.97\columnwidth}#1\end{minipage}}
@@ -897,6 +1008,24 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \ifnum\presetStretch=2{\fnminidbl{#1}}\else{\fnmini{#1}}\fi%
 }
 
+\definecolor{fncAlt}{RGB}{165, 10, 18}
+
+\newcommand\makefnmarkfnArg[1]{%
+\raisebox{4pt}{\resizebox{!}{5pt}{{\color{fncAlt}#1}}}}
+
+\newcommand{\fnastx}{$\bigstar$}
+
+%\newcommand{\fnastx}{\raisebox{5pt}{%
+%\resizebox{!}{5pt}{$\bigstar$}}}
+
+
+
+\newcommand{\fnacr}[1]{\resizebox{!}{5.5pt}{#1}}
+
+
+\newcommand{\mmakefntextAlt}[2]{\makefnmarkfnArg{#1}\hskip.5em\relax%
+\ifnum\presetStretch=2{\fnminidbl{#2}}\else{\fnmini{#2}}\fi%
+}
 
 
 \renewcommand\@makefnmark{%
