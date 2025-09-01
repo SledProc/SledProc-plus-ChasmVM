@@ -1153,7 +1153,7 @@ pappas/papers/zujovic_tip13.pdf
 \fi}
 
 \newcommand{\serefspacetwo}{\ifnum\value{serefc} > 9%
-\hspace*{22pt}%
+\hspace*{22.5pt}%
 \else\hspace*{21pt}%
 \fi}
 
@@ -1275,23 +1275,58 @@ some\lin{}sunshine.}
 
 \newcommand{\ixskip}{\vspace{6pt}}
 
-\newcommand{\ixlabel}[1]{\textbf{#1}}
+\newcommand{\ixlabel}[1]{\hspace*{-6pt}{\textbf{#1}}}
+
+\newcommand{\ixsublabel}[1]{{#1}}
 
 \newcommand{\sseealso}[1]{
 
-\vspace{-4pt}
+\vspace{-1pt}
 \textit{See also} #1
 
-\vspace{6pt}
 }
+
+
+\newcommand{\seealsoParen}[1]{%
+(\textit{See also} #1)}
 
 \newcommand{\ixredirect}[2]{\noindent %
- \ixlabel{#1} \hspace{2em} \textit{See} #2 {\ixskip}
+ \ixlabel{#1} \hspace{2em} \textit{See} #2 %{\ixskip}
 } 
 
-\newcommand{\ixentry}[3]{\noindent %
- \ixlabel{#1} \dotfill  \pagefref{#2}  \mpcodefref{#3} {\ixskip}
+\newcommand{\ixspBefore}{\hspace{1pt}}
+
+\newcommand{\ixspAfter}{\hspace{-3pt}}
+
+\newcommand{\ixspMid}{\hspace{-1pt}}
+
+\newcommand{\ixspBack}{\hspace{-2pt}}
+
+\newcommand{\ixl}[2]{\noindent %
+ \ixspBack{}, \ixspAfter{} \pagefref{#1}  \mpcodefref{#2} 
 }
+
+\newcommand{\ixlp}[1]{\noindent %
+  \ixspMid{}  \mpcodefref{#2} 
+}
+
+
+\newcommand{\ixsl}[3]{\noindent %
+ \ixspBack{}; \ixspAfter{} #1 \pagefref{#2}  \mpcodefref{#3} 
+}
+
+\newcommand{\ixentry}[3]{\noindent %
+ \ixlabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefref{#3} 
+}
+
+\newcommand{\ixsubentry}[3]{\noindent %
+ \ixsublabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefref{#3} 
+}
+
+\newcommand{\ixentrySubs}[1]{\noindent %
+ \ixlabel{#1}: \ixspBefore  
+}
+
 
 \newcommand{\ixentrycont}[3]{\noindent %
   \textcolor{white}{\ixlabel{#1} \dotfill} %
@@ -1308,25 +1343,57 @@ some\lin{}sunshine.}
 \vspace*{-2em}
 
 \ixredirect{Davidson, Donald}{Neo-Davidsonian Event Semantics}
+{\ixskip}
 
-\ixentry{Epistemic Narratives}{2}{8}
+\ixentry{Epistemic Narratives}{2}{8}\ixl{16}{107}
+{\ixskip}
 
 \ixentry{G\"ardenfors, Peter}{9}{55}
+{\ixskip}
+
+\ixentry{Grounding}{14}{88}\ixl{15}{99}
+{\ixskip}
 
 \ixentry{Husserl, Edmund}{8}{46}
+{\ixskip}
 
 \ixentry{Kowalewski, Hubert}{7}{42}
+{\ixskip}
+
+\ixentry{\q{Married Bachelor}}{1}{2}\ixl{17}{109}
+{\ixskip}
+
+\ixentry{Monads}{16}{102}
+{\ixskip}
 
 \ixentry{Neo-Davidsonian Event Semantics}{14}{92}
+{\ixskip}
+
+\ixentry{Ontological Regions}{16}{102}
+{\ixskip}
+
+\ixentry{Polymorphism}{11}{69}\ixlp{72}\ixl{12}{73}
+{\ixskip}
 
 \ixentry{Quantifier Scope}{1}{3}
+{\ixskip}
 
 \ixentry{Subjectification}{14}{88}
-\sseealso{Epistemic Narratives}
+\sseealso{Epistemic Narratives; Grounding}
+{\ixskip}
 
 \ixentry{Truth-Conditional Semantics}{3}{15}
+{\ixskip}
+
+\ixentrySubs{Type-Theory}%
+\ixsubentry{Dependent Types}{16}{102}%
+\ixsl{Coercions}{16}{102}%
+\ixsl{Type Systems with Polymorphism}{11}{69}%
+\seealsoParen{Polymorphism}
+{\ixskip}
 
 
+%monads, dependent type
 
 
 %\ixentrycont{Kowalewski, Hubert}{8}{14}
