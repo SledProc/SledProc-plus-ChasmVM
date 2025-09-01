@@ -138,6 +138,8 @@ class GTagML_Graph_Build
  u2 current_exs_number_;
  u2 current_exs_offset_;
 
+ u2 current_slash_line_plus_count_;
+
  void set_paragraph_bridge();
 
  enum class Paragraph_Types {

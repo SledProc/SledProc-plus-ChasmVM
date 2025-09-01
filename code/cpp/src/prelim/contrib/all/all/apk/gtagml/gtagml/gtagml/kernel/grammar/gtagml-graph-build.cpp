@@ -39,6 +39,8 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
    ,current_exs_number_(0)
    ,current_exs_offset_(0)
 
+   ,current_slash_line_plus_count_(0)
+
    ,current_paragraph_type_(Paragraph_Types::N_A)
    ,current_paragraph_count_(0), current_paragraph_bridge_(0)
    ,latex_stream_(&latex_)
@@ -261,6 +263,8 @@ void GTagML_Graph_Build::auto_new_paragraph(QString cmd)
 
  check_close_paragraph();
 
+ current_slash_line_plus_count_ = 0;
+
  ++current_paragraph_count_;
 
  xml_writer_.writeStartElement(cmd);
@@ -329,7 +333,15 @@ void GTagML_Graph_Build::single_slash_line_plus()
 {
  single_slash_line();
 
- latex_stream_ << "\n\\nip";
+ static QString letters = "abcdefghijklmnopqrstuvwxyz";
+
+// latex_stream_ << "\n\\nip";
+
+ latex_stream_ << "\n\\nip\\clrmMid{"
+   << letters[current_slash_line_plus_count_] << "}%";
+
+ ++current_slash_line_plus_count_;
+
 }
 
 void GTagML_Graph_Build::single_slash_line()

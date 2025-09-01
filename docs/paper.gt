@@ -1382,7 +1382,7 @@ construals in all domains (syntax, semantics, pragmatics, and conceptualization)
 
 This interpretation of parse-graphs %-- as 
 "t/intermediate representation/" for sentence content, 
-endowed with postorder and type-checking traversals  
+endowed with post\-order and type-checking traversals  
  %-- works by analogy to 
 (but also in place of) set-theoretic or (say) modal-logic 
 approaches, where languages are treated as a surface-level 
@@ -1610,8 +1610,8 @@ input-tuples indexed not by sequence, but instead by
 assigning distinct roles to each argument.  
 Consider lambda-expressions taking (in lieu of 
 value-tuples) parameter-packs indexed via 
-distinct role-attributions for each argument.\footnote{ 
-This kind of calling convention 
+distinct role-attributions for each argument.\footnote{
+`label<fn:cc>; This kind of calling convention 
 %-- adopted as "t/labeled/" or "t/keyword/" parameters 
 in some computer languages %-- is arguably 
 more natural than the alternative ("t/positional/" 

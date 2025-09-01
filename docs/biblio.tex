@@ -1179,6 +1179,9 @@ pappas/papers/zujovic_tip13.pdf
 
 \newcommand{\docenter}[1]{\begin{center}#1\end{center}}
 
+\newcommand{\csectionWFn}[2]{\section{\textcolor{white}{#1}}
+{\docenter{\raisebox{3em}{{\Large #1}#2}}}}
+
 \newcommand{\csection}[1]{\section{\textcolor{white}{#1}}
 {\docenter{\raisebox{3em}{{\Large #1}}}}}
 
@@ -1190,7 +1193,43 @@ pappas/papers/zujovic_tip13.pdf
 
 \vspace*{-8em}
 
-\csection{Sentence Examples}
+\newcommand{\astx}{\hspace{2pt}\raisebox{5pt}{%
+\resizebox{!}{5pt}{$\bigstar$}}}
+
+
+
+\csectionWFn{Sentence Examples}{\astx}
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=11{
+\AtTextLowerLeft{
+\hspace*{-3pt}\raisebox{28pt}{%
+\clrmMidFmt{a}
+}}}\fi
+}
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=20{
+\AtTextLowerLeft{
+\hspace*{-3pt}\raisebox{68pt}{%
+\mmakefntextAlt{\fnastx}{\footnotesize{Numbers 
+on the left-hand column represent the 
+order of examples as they appear in the text. 
+Those on the right specify the page number and 
+paragraph id, respectively.   
+Similar styling is used for page and paragraph 
+numbers within the index entries.
+Note that all number characters may be  
+clicked, redirecting the viewer to 
+the top of the page, near the start of the 
+paragraph, or near the point where a given 
+sentence/example is first presented 
+(depending on which column the number 
+belongs to).  \fnacr{JATS/XML} code for the 
+index is included in the accompanying \fnacr{JATS} files 
+(see those files for deserialization info).}}
+}}}\fi
+}
 
 %\centering{{\Large Sentence Examples}}
 
