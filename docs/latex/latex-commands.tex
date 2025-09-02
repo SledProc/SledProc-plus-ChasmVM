@@ -102,9 +102,6 @@
 %\node at (0, 0)
  \node[shape=regular polygon, regular polygon sides = 8,
 fill = none, draw=margin!40, line width=.5pt, inner sep=#1] (char)
-%top color=white, bottom color=blggr!6,
-%fill opacity=1, yscale=.7, shape border rotate=39,
-%inner sep=6.5pt, shading angle=90,label={}] (bk) 
 {#2};
 
 % \node[shape=regular polygon, regular polygon sides = 8,
@@ -138,7 +135,41 @@ fill = none, draw=margin!40, line width=.5pt, inner sep=#1] (char)
 
 \newcommand{\mpcodefref}[1]{\mpcodefrefArgs{1pt}{0pt}{#1}}
 
-\newcommand{\mpcodefrefMid}[1]{\mpcodefrefMidArgs{1pt}{0pt}{#1}}
+
+
+\newcommand{\mpcodefrefMidFore}[2]{%
+%\colorbox{margin!10}{%
+\hyperref[p#1#2]{%
+\raisebox{0pt}{\resizebox{!}{5pt}{%
+\textcolor{blue!70!black}{#1}}}}%
+
+\hspace{1pt}\raisebox{.5pt}{%
+\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{#2}}}%
+}
+
+
+\newcommand{\mpcodefrefMidBkg}[1]{%
+\tikz[baseline=(char.base)]{
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill = none, draw=none, line width=.5pt, inner sep=1pt] (char)
+{#1};
+
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill = none, draw=margin!50, 
+xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
+ at (-1pt, 0pt) 
+{\phantom{#1}};
+
+}}
+
+
+\newcommand{\mpcodefrefMidBkgX}[1]{%
+\colorbox{margin!10}{#1}}%
+
+
+
+\newcommand{\mpcodefrefMid}[2]{\mpcodefrefMidBkg{%
+\mpcodefrefMidFore{#1}{#2}}}
 
 
 %\newcommand{\mpcodefrefMid}[2]{XXXXX}
@@ -154,7 +185,7 @@ fill = none, draw=margin!40, line width=.5pt, inner sep=#1] (char)
 }
 
 
-\newcommand{\mpcodefrefMid}[2]{%
+\newcommand{\mpcodefrefMidX}[2]{%
 \colorbox{margin!10}{%
 \hyperref[p#1#2]{%
 \raisebox{0pt}{\resizebox{!}{5pt}{%
