@@ -1159,16 +1159,16 @@ pappas/papers/zujovic_tip13.pdf
 \else\hspace*{19pt}%
 \fi}
 
-\newcommand{\seentry}[2]{\stepcounter{serefc}\noindent %
+\newcommand{\seentry}[4]{\stepcounter{serefc}\noindent %
  \textit{[\serefclink{}]} {\serefspace}%
- \selabel{#2}  % \getpagerefnumber{exs:\theserefc} %
+ \selabel{#4}  % \getpagerefnumber{exs:\theserefc} %
 \dfillc  \sehyperref{\theserefc} \hspace{2pt} %
- \mpcodefref{#1} {\seskip}
+ \smash{\mpcodefrefLeft{#1}{#2}{#3}} {\seskip}
 }
 
 \newcommand{\seentrycont}[3]{\noindent %
   \textcolor{white}{\selabel{#1} \dfillc} %
-\pagefref{#2}  \mpcodefref{#3} {\seskip}
+\pagefref{#2}  \mpcodefrefLeft{-1.5pt}{0pt}{#3} {\seskip}
 }
 
 
@@ -1231,83 +1231,85 @@ index is included in the accompanying \fnacr{JATS} files
 }}}\fi
 }
 
+\newcommand{\dtween}{\vspace*{3pt}}
+
 %\centering{{\Large Sentence Examples}}
 
 \vspace*{-2em}
 
-\seentry{2}{My brother has been married for 10 
+\seentry{0pt}{1pt}{2}{My brother has been married for 10 
 years,\lin{}but in many
 ways he's still a bachelor.}
 
-\seentry{2}{All of the eligible bachelors in this town\lin{}are married.}
+\seentry{0pt}{1pt}{2}{All of the eligible bachelors in this town\lin{}are married.}
 
-\seentry{3}{Everyone sang along to three songs.}
+\seentry{0pt}{1pt}{3}{Everyone sang along to three songs.}
 
-\seentry{3}{All appeals are heard by a panel of three\lin{}judges.}
+\seentry{0pt}{1pt}{3}{All appeals are heard by a panel of three\lin{}judges.}
 
-\seentry{3}{All New Yorkers live in one of five\lin{}boroughs.}
+\seentry{0pt}{1pt}{3}{All New Yorkers live in one of five\lin{}boroughs.}
 
-\seentry{3}{All New Yorkers complain about how 
+\seentry{0pt}{1pt}{3}{All New Yorkers complain about how 
 long\lin{}it takes to commute to New York City.}
 
-\seentry{3}{In Ariel's picture of Beatrice, she looks\lin{}sick.}
+\seentry{0pt}{1pt}{3}{In Ariel's picture of Beatrice, she looks\lin{}sick.}
 
-\seentry{3}{In Ariel's picture of Beatrice, she 
+\seentry{0pt}{1pt}{3}{In Ariel's picture of Beatrice, she 
 snapped\lin{}the lens just 
 as two cardinals flew by.}
 
-\seentry{3}{We operated near the bank.}
+\seentry{0pt}{1pt}{3}{We operated near the bank.}
 
-\seentry{3}{On the mantle was a wooden bat.}
+\seentry{0pt}{1pt}{3}{On the mantle was a wooden bat.}
 
-\seentry{7}{Every band performed three songs.}
+\seentry{0pt}{1pt}{7}{Every band performed three songs.}
 
-\seentry{7}{Everyone sang along to some song or\lin{}another.}
+\seentry{0pt}{1pt}{7}{Everyone sang along to some song or\lin{}another.}
 
-\seentry{8}{This election is slipping away from 
+\seentry{0pt}{1pt}{8}{This election is slipping away from 
 the\lin{}Democrats.}
 
-\seentry{8}{Student after student came by to 
+\seentry{0pt}{1pt}{8}{Student after student came by to 
 complain\lin{}about the reading assignments.}
 
-\seentry{48}{John poured water onto the stove.}
+\seentry{0pt}{.5pt}{48}{John poured water onto the stove.}
 
-\seentry{48}{John spilled water onto the stove.}
+\seentry{0pt}{.5pt}{48}{John spilled water onto the stove.}
 
-\seentry{60}{I put Mom's chocolate brownies in 
+\seentry{0pt}{.5pt}{60}{I put Mom's chocolate brownies in 
 this\lin{}red tin box, take some!}
 
-\seentry{80}{I'm heading out to the store.}
+\seentry{0pt}{.5pt}{80}{I'm heading out to the store.}
 
-\seentry{80}{Where are you going?  Out to the store.}
+\seentry{0pt}{.5pt}{80}{Where are you going?  Out to the store.}
 
-\seentry{80}{What are you doing?  Heading out.}
+\seentry{0pt}{.5pt}{80}{What are you doing?  Heading out.}
 
 
-\seentry{85}{Last weekend we donated a 
+\seentry{0pt}{.5pt}{85}{Last weekend we donated a 
 hundred\lin{}dollars to the animal shelter.}
 
-\seentry{85}{We gave the animal shelter a 
+\seentry{0pt}{.5pt}{85}{We gave the animal shelter a 
 hundred\lin{}dollars.}
 
 
-\seentry{102}{That newspaper just moved to 
+\seentry{.5pt}{0pt}{102}{That newspaper just moved to 
 10th\lin{}street and laid off half its staff.}
 
-\seentry{102}{At home you can print out this 
+\seentry{.5pt}{0pt}{102}{At home you can print out this 
 book\lin{}from a \resizebox{!}{6pt}{PDF} link.}
 
-\seentry{102}{The borough of Queens voted 
+\seentry{.5pt}{0pt}{102}{The borough of Queens voted 
 heavily\lin{}for Mamdani.}
 
-\seentry{102}{These flowers really want 
-some\lin{}sunshine.}
+\seentry{.5pt}{0pt}{102}{These flowers really want 
+some\lin{}sunshine.}\dtween
 
-\seentry{102}{This drought has left the soil parched.}
+\seentry{.5pt}{0pt}{102}{This drought has left the soil parched.}\dtween
 
-\seentry{102}{Our car stubbornly refused to move.}
+\seentry{.5pt}{0pt}{102}{Our car stubbornly refused to move.}\dtween
 
-\seentry{102}{The spell-checker thinks 
+\seentry{.5pt}{0pt}{102}{The spell-checker thinks 
 \q{hooman}\lin{}isn't a word.}
 
 \newpage{}
@@ -1348,6 +1350,12 @@ some\lin{}sunshine.}
  \ixspBack{}, \ixspAfter{} \pagefref{#1}  \mpcodefref{#2} 
 }
 
+\newcommand{\ixlAlt}[2]{\noindent %
+ \ixspBack{}, \ixspAfter{}  \pagefref{#1}  \mpcodefAlt{#2}
+}
+
+
+
 \newcommand{\ixlp}[1]{\noindent %
   \ixspMid{}  \mpcodefref{#1} 
 }
@@ -1377,7 +1385,6 @@ some\lin{}sunshine.}
 \newcommand{\ixentryAlt}[3]{\noindent %
  \ixlabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefAlt{#3}
 }
-
 
 
 \newcommand{\ixentrypp}[4]{\noindent %
@@ -1413,7 +1420,7 @@ some\lin{}sunshine.}
 }
 
 
-
+\newcommand{\commaback}{\hspace*{-1.5pt},}
 
 \vspace*{-8em}
 
@@ -1426,7 +1433,7 @@ some\lin{}sunshine.}
 \AddToShipoutPicture{%
 \ifnum\value{page}=20{
 \AtTextLowerLeft{
-\hspace*{269pt}\raisebox{45pt}{%
+\hspace*{271pt}\raisebox{46pt}{%
 \mmakefntextAlt{\fndagr{9pt}{9pt}}{\footnotesize{
 \begin{minipage}[t]{250pt}
 While 
@@ -1461,6 +1468,10 @@ of the main text.
 \ixl{8}{45}
 {\ixskip}
 
+\ixentry{anaphora}{1}{5}
+%\ixl{8}{45}
+{\ixskip}
+
 \ixentry{attention}{8}{46}\ixlp{49}
 \sseealso{Episodicity}
 {\ixskip}
@@ -1484,11 +1495,12 @@ of the main text.
 {\ixskip}
 
 
+%{2}{8}{a}\ixl
 \ixentry{episodicity}{6}{38}\ixlp{39}\ixl{8}{46}\ixlp{49}
 \sseealso{Attention}
 {\ixskip}
 
-\ixentry{epistemic narratives}{2}{8}\ixl{16}{107}
+\ixentry{epistemic narratives}{2}{8}\ixlp{10}\ixl{16}{107}
 {\ixskip}
 
 \ixentry{G\"ardenfors, Peter}{9}{55}
@@ -1562,16 +1574,17 @@ of the main text.
 \ixentry{supervenience}{6}{37}
 {\ixskip}
 
-\ixentryAlt{traversal (graph theory)}{12}{73}
-{\ixskip}
-
-%\ixentrypg{traversal (graph theory)}{11}{12}{73}
+%\ixentryAlt{traversal (graph theory)}{12}{73}
 %{\ixskip}
 
+\ixentrypg{traversal (graph theory)}{11}{12}{73}
+{\ixskip}
 
 
 
-\ixentry{Truth-Conditional Semantics}{3}{15}
+
+\ixentry{Truth-Conditional Semantics}{2}{11}%
+\ixlAlt{3}{14}\commaback\ixlp{15}
 {\ixskip}
 
 \ixentrySubs{Type Theory}%
