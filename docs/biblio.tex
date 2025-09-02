@@ -1166,10 +1166,34 @@ pappas/papers/zujovic_tip13.pdf
  \smash{\mpcodefrefLeft{#1}{#2}{#3}} {\seskip}
 }
 
-\newcommand{\seentrycont}[3]{\noindent %
-  \textcolor{white}{\selabel{#1} \dfillc} %
-\pagefref{#2}  \mpcodefrefLeft{-1.5pt}{0pt}{#3} {\seskip}
+
+
+\newcommand{\seentryD}[2]{\stepcounter{serefc}\noindent %
+ \textit{[\serefclink{}]} {\serefspace}%
+ \selabel{#2}  % \getpagerefnumber{exs:\theserefc} %
+\dfillc  \sehyperref{\theserefc} \hspace{2pt} %
+ \smash{\mpcodefrefLeftD{#1}} {\seskip}
 }
+
+\newcommand{\seentryDD}[2]{\stepcounter{serefc}\noindent %
+ \textit{[\serefclink{}]} {\serefspace}%
+ \selabel{#2}  % \getpagerefnumber{exs:\theserefc} %
+\dfillc  \sehyperref{\theserefc} \hspace{2pt} %
+ \smash{\mpcodefrefLeftDD{#1}} {\seskip}
+}
+
+\newcommand{\seentryDDD}[2]{\stepcounter{serefc}\noindent %
+ \textit{[\serefclink{}]} {\serefspace}%
+ \selabel{#2}  % \getpagerefnumber{exs:\theserefc} %
+\dfillc  \sehyperref{\theserefc} \hspace{2pt} %
+ \smash{\mpcodefrefLeftDDD{#1}} {\seskip}
+}
+
+
+%\newcommand{\seentrycont}[3]{\noindent %
+%  \textcolor{white}{\selabel{#1} \dfillc} %
+%\pagefref{#2}  \mpcodefrefLeft{-1.5pt}{0pt}{#3} {\seskip}
+%}
 
 
 
@@ -1211,7 +1235,7 @@ pappas/papers/zujovic_tip13.pdf
 \AddToShipoutPicture{%
 \ifnum\value{page}=20{
 \AtTextLowerLeft{
-\hspace*{-3pt}\raisebox{68pt}{%
+\hspace*{-3pt}\raisebox{75pt}{%
 \mmakefntextAlt{\fnastx}{\footnotesize{Numbers 
 on the left-hand column represent the 
 order of examples as they appear in the text. 
@@ -1237,79 +1261,79 @@ index is included in the accompanying \fnacr{JATS} files
 
 \vspace*{-2em}
 
-\seentry{0pt}{1pt}{2}{My brother has been married for 10 
+\seentryD{2}{My brother has been married for 10 
 years,\lin{}but in many
 ways he's still a bachelor.}
 
-\seentry{0pt}{1pt}{2}{All of the eligible bachelors in this town\lin{}are married.}
+\seentryD{2}{All of the eligible bachelors in this town\lin{}are married.}
 
-\seentry{0pt}{1pt}{3}{Everyone sang along to three songs.}
+\seentryD{3}{Everyone sang along to three songs.}
 
-\seentry{0pt}{1pt}{3}{All appeals are heard by a panel of three\lin{}judges.}
+\seentryD{3}{All appeals are heard by a panel of three\lin{}judges.}
 
-\seentry{0pt}{1pt}{3}{All New Yorkers live in one of five\lin{}boroughs.}
+\seentryD{3}{All New Yorkers live in one of five\lin{}boroughs.}
 
-\seentry{0pt}{1pt}{3}{All New Yorkers complain about how 
+\seentryD{3}{All New Yorkers complain about how 
 long\lin{}it takes to commute to New York City.}
 
-\seentry{0pt}{1pt}{3}{In Ariel's picture of Beatrice, she looks\lin{}sick.}
+\seentryD{3}{In Ariel's picture of Beatrice, she looks\lin{}sick.}
 
-\seentry{0pt}{1pt}{3}{In Ariel's picture of Beatrice, she 
+\seentryD{3}{In Ariel's picture of Beatrice, she 
 snapped\lin{}the lens just 
 as two cardinals flew by.}
 
-\seentry{0pt}{1pt}{3}{We operated near the bank.}
+\seentryD{3}{We operated near the bank.}
 
-\seentry{0pt}{1pt}{3}{On the mantle was a wooden bat.}
+\seentryD{3}{On the mantle was a wooden bat.}
 
-\seentry{0pt}{1pt}{7}{Every band performed three songs.}
+\seentryD{7}{Every band performed three songs.}
 
-\seentry{0pt}{1pt}{7}{Everyone sang along to some song or\lin{}another.}
+\seentryD{7}{Everyone sang along to some song or\lin{}another.}
 
-\seentry{0pt}{1pt}{8}{This election is slipping away from 
+\seentryD{8}{This election is slipping away from 
 the\lin{}Democrats.}
 
-\seentry{0pt}{1pt}{8}{Student after student came by to 
+\seentryD{8}{Student after student came by to 
 complain\lin{}about the reading assignments.}
 
-\seentry{0pt}{.5pt}{48}{John poured water onto the stove.}
+\seentryDD{48}{John poured water onto the stove.}
 
-\seentry{0pt}{.5pt}{48}{John spilled water onto the stove.}
+\seentryDD{48}{John spilled water onto the stove.}
 
-\seentry{0pt}{.5pt}{60}{I put Mom's chocolate brownies in 
+\seentryDD{60}{I put Mom's chocolate brownies in 
 this\lin{}red tin box, take some!}
 
-\seentry{0pt}{.5pt}{80}{I'm heading out to the store.}
+\seentryDD{80}{I'm heading out to the store.}
 
-\seentry{0pt}{.5pt}{80}{Where are you going?  Out to the store.}
+\seentryDD{80}{Where are you going?  Out to the store.}
 
-\seentry{0pt}{.5pt}{80}{What are you doing?  Heading out.}
+\seentryDD{80}{What are you doing?  Heading out.}
 
 
-\seentry{0pt}{.5pt}{85}{Last weekend we donated a 
+\seentryDD{85}{Last weekend we donated a 
 hundred\lin{}dollars to the animal shelter.}
 
-\seentry{0pt}{.5pt}{85}{We gave the animal shelter a 
+\seentryDD{85}{We gave the animal shelter a 
 hundred\lin{}dollars.}
 
 
-\seentry{.5pt}{0pt}{102}{That newspaper just moved to 
+\seentryDDD{102}{That newspaper just moved to 
 10th\lin{}street and laid off half its staff.}
 
-\seentry{.5pt}{0pt}{102}{At home you can print out this 
+\seentryDDD{102}{At home you can print out this 
 book\lin{}from a \resizebox{!}{6pt}{PDF} link.}
 
-\seentry{.5pt}{0pt}{102}{The borough of Queens voted 
+\seentryDDD{102}{The borough of Queens voted 
 heavily\lin{}for Mamdani.}
 
-\seentry{.5pt}{0pt}{102}{These flowers really want 
+\seentryDDD{102}{These flowers really want 
 some\lin{}sunshine.}\dtween
 
-\seentry{.5pt}{0pt}{102}{This drought has left the soil parched.}\dtween
+\seentryDDD{102}{This drought has left the soil parched.}\dtween
 
-\seentry{.5pt}{0pt}{102}{Our car stubbornly refused to move.}\dtween
+\seentryDDD{102}{Our car stubbornly refused to move.}\dtween
 
-\seentry{.5pt}{0pt}{102}{The spell-checker thinks 
+\seentryDDD{102}{The spell-checker thinks 
 \q{hooman}\lin{}isn't a word.}
 
 \newpage{}
@@ -1347,7 +1371,8 @@ some\lin{}sunshine.}\dtween
 \newcommand{\ixspBack}{\hspace{-2pt}}
 
 \newcommand{\ixl}[2]{\noindent %
- \ixspBack{}, \ixspAfter{} \pagefref{#1}  \mpcodefref{#2} 
+ \ixspBack{}, \ixspAfter{} \pagefref{#1} 
+  \smash{\mpcodefref{#2}} 
 }
 
 \newcommand{\ixlAlt}[2]{\noindent %
@@ -1357,12 +1382,12 @@ some\lin{}sunshine.}\dtween
 
 
 \newcommand{\ixlp}[1]{\noindent %
-  \ixspMid{}  \mpcodefref{#1} 
+  \ixspMid{}  \smash{\mpcodefref{#1}} 
 }
 
 
 \newcommand{\ixsl}[3]{\noindent %
- \ixspBack{}; \ixspAfter{} #1 \pagefref{#2}  \mpcodefref{#3} 
+ \ixspBack{}; \ixspAfter{} #1 \pagefref{#2}  \smash{\mpcodefref{#3}}
 }
 
 %\definecolor{ixFootnoteColor}{RGB}{47, 82, 122}
@@ -1374,12 +1399,14 @@ some\lin{}sunshine.}\dtween
 }}
 
 \newcommand{\ixentry}[3]{\noindent %
- \ixlabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefref{#3} 
+ \ixlabel{#1} \ixspBefore  \pagefref{#2}  
+ \smash{\mpcodefref{#3}} 
 }
 
 
 \newcommand{\ixentryMid}[4]{\noindent %
- \ixlabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefrefMid{#3}{#4} 
+ \ixlabel{#1} \ixspBefore  \pagefref{#2} 
+  \smash{\mpcodefrefMid{#3}{#4}}
 }
 
 \newcommand{\ixentryAlt}[3]{\noindent %
@@ -1389,7 +1416,7 @@ some\lin{}sunshine.}\dtween
 
 \newcommand{\ixentrypp}[4]{\noindent %
  \ixlabel{#1} \ixspBefore  \pagefref{#2} %
- \mpcodefref{#3}--\mpcodefref{#4} 
+ \smash{\mpcodefref{#3}--\mpcodefref{#4}} 
 }
 
 \newcommand{\ixslash}{%
@@ -1397,7 +1424,7 @@ some\lin{}sunshine.}\dtween
 
 \newcommand{\ixentrypg}[4]{\noindent %
  \ixlabel{#1} \ixspBefore  \pagefref{#2}{\ixslash}%
-\pagefref{#3} \mpcodefref{#4} 
+\pagefref{#3} \smash{\mpcodefref{#4}}
 }
 
 
@@ -1406,7 +1433,8 @@ some\lin{}sunshine.}\dtween
 }
 
 \newcommand{\ixsubentry}[3]{\noindent %
- \ixsublabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefref{#3} 
+ \ixsublabel{#1} \ixspBefore  \pagefref{#2} 
+  \smash{\mpcodefref{#3}} 
 }
 
 \newcommand{\ixentrySubs}[1]{\noindent %
@@ -1416,7 +1444,7 @@ some\lin{}sunshine.}\dtween
 
 \newcommand{\ixentrycont}[3]{\noindent %
   \textcolor{white}{\ixlabel{#1} \dotfill} %
-\pagefref{#2}  \mpcodefref{#3} {\ixskip}
+\pagefref{#2}  \smash{\mpcodefref{#3}} {\ixskip}
 }
 
 
@@ -1425,7 +1453,7 @@ some\lin{}sunshine.}\dtween
 \vspace*{-8em}
 
 \newcommand{\dagr}{\hspace{2pt}\raisebox{5pt}{%
-\resizebox{!}{5pt}{\dagger}}}
+\resizebox{!}{5pt}{\ensuremath{\dagger}}}}
 
 
 \csectionWFn{Index}{\dagr}
@@ -1577,8 +1605,8 @@ of the main text.
 %\ixentryAlt{traversal (graph theory)}{12}{73}
 %{\ixskip}
 
-\ixentrypg{traversal (graph theory)}{11}{12}{73}
-{\ixskip}
+%\ixentrypg{traversal (graph theory)}{11}{12}{73}
+%{\ixskip}
 
 
 

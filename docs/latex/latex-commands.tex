@@ -96,16 +96,21 @@
 
 
 
-\newcommand{\mpcodefrefbkg}[2]{%
+\newcommand{\mpcodefrefbkg}[4]{%
 \tikz[baseline=(char.base)]{%
 
 %\node at (0, 0)
- \node[shape=regular polygon, regular polygon sides = 8,
-fill = none, draw=margin!40, line width=.5pt, inner sep=#1] (char)
+ \node[shape=circle, %regular polygon, regular polygon sides = 8,
+fill = none, draw=none, line width=.5pt, inner sep=#1] (char)
 {#2};
 
+ \node[shape=circle, %regular polygon, regular polygon sides = 8,
+xscale=#3, yscale=#4, 
+fill = none, draw=black!40, line width=.5pt, inner sep=#1] (char)
+{\phantom{2}};
+
 % \node[shape=regular polygon, regular polygon sides = 8,
-%fill opacity=0, line width=2pt, draw=margin, inner sep=#1] 
+%fill opacity=0, line width=2pt, draw=margin!40, inner sep=#1] 
 %{\phantom{#2}};
 }}
 
@@ -125,15 +130,44 @@ fill = none, draw=margin!40, line width=.5pt, inner sep=#1] (char)
 %\textcolor{blue!70!black}{#1}}}}}}
 
 
-\newcommand{\mpcodefrefArgs}[3]{\raisebox{#1}{%
+\newcommand{\mpcodefrefArgs}[5]{\raisebox{#1}{%
 \mpcodefrefbkg{#2}{%
-\mpcodefreffore{#3}}}}
+\mpcodefreffore{#3}}%
+{#4}{#5}
+}}
+
+
+\newcommand{\mpcodefrefLeft}[3]{\mpcodefrefArgs{#1}{#2}{#3}{1}{1}}
+
+%\newcommand{\mpcodefrefLeftDtest}[3]{\mpcodefrefArgs{0pt}{1pt}{#3}}
+
+\newcommand{\mpcodefrefLeftD}[1]{\mpcodefrefArgs{0pt}{1pt}{#1}{1}{1}}
+\newcommand{\mpcodefrefLeftDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1.2}{1}}
+\newcommand{\mpcodefrefLeftDDD}[1]{\mpcodefrefArgs{.5pt}{0pt}{#1}{2}{1}}
 
 
 
-\newcommand{\mpcodefrefLeft}[3]{\mpcodefrefArgs{#1}{#2}{#3}}
+%\newcommand{\mpcodefref}[1]{\mpcodefrefArgs{1pt}{0pt}{#1}}
 
-\newcommand{\mpcodefref}[1]{\mpcodefrefArgs{1pt}{0pt}{#1}}
+\newcommand{\mpcodefrefD}[1]{\mpcodefrefArgs{.5pt}{.5pt}{#1}{1}{1}}
+\newcommand{\mpcodefrefDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1.2}{1}}
+\newcommand{\mpcodefrefDDD}[1]{\mpcodefrefArgs{.5pt}{.5pt}{#1}{2}{1}}
+
+\newcommand{\mpcodefrefX}[1]{%\mpcodefrefArgs{1pt}{0pt}{#1}
+\ifnum{#1}>99\mpcodefrefDDD{#1}%
+\else\ifnum{#1}>9\mpcodefrefDD{#1}%
+\else\mpcodefrefD{#1}%
+\fi
+\fi%
+}
+
+\newcommand{\mpcodefref}[1]{%\mpcodefrefArgs{1pt}{0pt}{#1}
+\ifnum#1>99\mpcodefrefDDD{#1}%
+\else\ifnum#1>9\mpcodefrefDD{#1}%
+\else\mpcodefrefD{#1}%
+\fi\fi
+}
+
 
 
 
