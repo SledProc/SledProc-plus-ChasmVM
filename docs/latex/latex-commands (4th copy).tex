@@ -96,23 +96,19 @@
 
 
 
-\colorlet{margingr}{margin!40!black}
-
-\newcommand{\mpcodefrefbkg}[4]{%
+\newcommand{\mpcodefrefbkg}[2]{%
 \tikz[baseline=(char.base)]{%
 
 %\node at (0, 0)
- \node[shape=circle, %regular polygon, regular polygon sides = 8,
-fill = none, draw=none, line width=.5pt, inner sep=#1] (char)
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill = none, draw=margin!40, line width=.5pt, inner sep=#1] (char)
+%top color=white, bottom color=blggr!6,
+%fill opacity=1, yscale=.7, shape border rotate=39,
+%inner sep=6.5pt, shading angle=90,label={}] (bk) 
 {#2};
 
- \node[shape=circle, %regular polygon, regular polygon sides = 8,
-xscale=#3, yscale=#4, 
-fill = none, draw=margingr!40, line width=.5pt, inner sep=#1] (char)
-{\phantom{2}};
-
 % \node[shape=regular polygon, regular polygon sides = 8,
-%fill opacity=0, line width=2pt, draw=margin!40, inner sep=#1] 
+%fill opacity=0, line width=2pt, draw=margin, inner sep=#1] 
 %{\phantom{#2}};
 }}
 
@@ -122,8 +118,27 @@ fill = none, draw=margingr!40, line width=.5pt, inner sep=#1] (char)
 
 \newcommand{\mpcodefreffore}[1]{%\colorbox{margin!10}{%
 \hyperref[par#1]{%
-\raisebox{0pt}{{\fontsize{6}{6}\selectfont%
+\raisebox{0pt}{\resizebox{!}{5pt}{%
 \textcolor{blue!70!black}{#1}}}}}
+
+
+\newcommand{\mpcodefrefMidforeX}[2]{%\colorbox{margin!10}{%
+\hyperref[par#1#2]{%
+\raisebox{0pt}{\resizebox{!}{5pt}{%
+\textcolor{blue!70!black}{#1}}}}}
+
+
+\newcommand{\mpcodefrefMidfore}[2]{%
+%\colorbox{margin!10}{%
+\hyperref[p#1#2]{%
+\raisebox{0pt}{\resizebox{!}{5pt}{%
+\textcolor{blue!70!black}{#1}}}}}%
+\hspace{-2pt}\raisebox{.5pt}{%
+\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{#2}}%
+}
+
+
+
 
 
 %\newcommand{\mpcodefrefx}[1]{\colorbox{margin!10}{%
@@ -132,84 +147,23 @@ fill = none, draw=margingr!40, line width=.5pt, inner sep=#1] (char)
 %\textcolor{blue!70!black}{#1}}}}}}
 
 
-\newcommand{\mpcodefrefArgs}[5]{\raisebox{#1}{%
+\newcommand{\mpcodefrefArgs}[3]{\raisebox{#1}{%
 \mpcodefrefbkg{#2}{%
-\mpcodefreffore{#3}}%
-{#4}{#5}
-}}
+\mpcodefreffore{#3}}}}
 
 
-\newcommand{\mpcodefrefLeft}[3]{\mpcodefrefArgs{#1}{#2}{#3}{1}{1}}
-
-%\newcommand{\mpcodefrefLeftDtest}[3]{\mpcodefrefArgs{0pt}{1pt}{#3}}
-
-\newcommand{\mpcodefrefLeftD}[1]{\mpcodefrefArgs{0pt}{1pt}{#1}{1}{1}}
-\newcommand{\mpcodefrefLeftDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1.2}{1}}
-\newcommand{\mpcodefrefLeftDDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{2}{1}}
+%\newcommand{\mpcodefrefMidArgs}[3]{\raisebox{#1}{%
+%\mpcodefrefbkg{#2}{%
+%\mpcodefrefMidfore{#3}}}}
 
 
+\newcommand{\mpcodefrefLeft}[3]{\mpcodefrefArgs{#1}{#2}{#3}}
 
-%\newcommand{\mpcodefref}[1]{\mpcodefrefArgs{1pt}{0pt}{#1}}
+\newcommand{\mpcodefref}[1]{\mpcodefrefArgs{1pt}{0pt}{#1}}
 
-\newcommand{\mpcodefrefD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1}{1}}
-\newcommand{\mpcodefrefDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1.2}{1}}
-\newcommand{\mpcodefrefDDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{2}{1}}
+%\newcommand{\mpcodefrefMid}[1]{\mpcodefrefMidArgs{1pt}{0pt}{#1}}
 
-\newcommand{\mpcodefrefX}[1]{%\mpcodefrefArgs{1pt}{0pt}{#1}
-\ifnum{#1}>99\mpcodefrefDDD{#1}%
-\else\ifnum{#1}>9\mpcodefrefDD{#1}%
-\else\mpcodefrefD{#1}%
-\fi
-\fi%
-}
-
-\newcommand{\mpcodefref}[1]{%\mpcodefrefArgs{1pt}{0pt}{#1}
-\ifnum#1>99\mpcodefrefDDD{#1}%
-\else\ifnum#1>9\mpcodefrefDD{#1}%
-\else\mpcodefrefD{#1}%
-\fi\fi%
-\hspace*{-1pt}%
-}
-
-
-
-
-\newcommand{\mpcodefrefMidFore}[2]{%
-%\colorbox{margin!10}{%
-\hyperref[p#1#2]{%
-\raisebox{0pt}{{\fontsize{7}{6}\selectfont%
-\textcolor{blue!70!black}{#1}}}}%
-
-\hspace{1pt}\raisebox{.5pt}{%
-\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{#2}}}%
-}
-
-
-\newcommand{\mpcodefrefMidBkg}[1]{%
-\tikz[baseline=(char.base)]{
- \node[shape=circle, % regular polygon, regular polygon sides = 8,
-fill = none, draw=none, line width=.5pt, inner sep=1pt] (char)
-{#1};
-
- \node[shape=circle, %regular polygon, regular polygon sides = 8,
-fill = none, draw=margin!50, 
-xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
- at (-1pt, 0pt) 
-{\phantom{#1}};
-
-}}
-
-
-\newcommand{\mpcodefrefMidBkgX}[1]{%
-\colorbox{margin!10}{#1}}%
-
-
-
-\newcommand{\mpcodefrefMid}[2]{\mpcodefrefMidBkg{%
-\mpcodefrefMidFore{#1}{#2}}}
-
-
-%\newcommand{\mpcodefrefMid}[2]{XXXXX}
+\newcommand{\mpcodefrefMid}[2]{XXXXX}
 
 \definecolor{clrmcMid}{RGB}{165, 10, 18}
 
@@ -220,17 +174,6 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 \hspace*{-1.5pt}\raisebox{.5pt}{%
 {\fontsize{6}{6}\selectfont{#1}}}}%
 }
-
-
-\newcommand{\mpcodefrefMidX}[2]{%
-\colorbox{margin!10}{%
-\hyperref[p#1#2]{%
-\raisebox{0pt}{\resizebox{!}{5pt}{%
-\textcolor{blue!70!black}{#1}}}}}%
-\hspace{-2pt}\raisebox{.5pt}{%
-\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{#2}}}%
-}
-
 
 
 
