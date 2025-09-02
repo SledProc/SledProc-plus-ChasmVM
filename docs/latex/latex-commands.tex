@@ -145,39 +145,85 @@
 %\textcolor{blue!70!black}{#1}}}
 
 
+\usepackage{tikz}
+\usetikzlibrary{shapes, shapes.misc, positioning}
 
-\newcommand{\mpcodef}[1]{\colorbox{margin!10}{%
+
+\newcommand{\mpcodeffore}[1]{%
 \textcolor{margin!60!black}{%
-\resizebox{!}{5pt}{#1}}}}
+\resizebox{!}{5pt}{#1}}}
+
+%\newcommand{\mpcodefbkg}[1]{#1} %\colorbox{margin!10}{#1}}
 
 
-\newcommand{\writempcode}{\mpcodef{\thempcode}}
+\newcommand{\mpcodefbkg}[2]{%
+\tikz[baseline=(char.base)]{%
+
+%\node at (0, 0)
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill = margin!10, inner sep=#1] (char)
+%top color=white, bottom color=blggr!6,
+%fill opacity=1, yscale=.7, shape border rotate=39,
+%inner sep=6.5pt, shading angle=90,label={}] (bk) 
+{#2};
+
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1] 
+%top color=white, bottom color=blggr!6,
+%fill opacity=1, yscale=.7, shape border rotate=39,
+%inner sep=6.5pt, shading angle=90,label={}] (bk) 
+{\phantom{#2}};
+
+
+}}
+
+
+
+%\newcommand{\mpcodef}[1]{\colorbox{margin!10}{%
+%\textcolor{margin!60!black}{%
+%\resizebox{!}{5pt}{#1}}}}
+
+
+%\newcommand{\writempcode}{\mpcodef{\thempcode}}
+
+
+
+\newcommand{\mpcodef}[2]{\mpcodefbkg{#1}{%
+\mpcodeffore{#2}}}
+
+
+\newcommand{\writempcode}[1]{\mpcodef{#1}{\thempcode}}
+
+
 
 
 \newcommand{\clrm}{\stepcounter{mpcode}{\micro{.}}%
 \ifnum\value{mpcode} = 35
-\clrmarginpar{-21pt}{13pt}{\writempcode}%
+\clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
 \else
 \ifnum\value{mpcode} = 97
-\clrmarginpar{-2pt}{13pt}{\writempcode}%
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
 \else 
 \ifnum\value{mpcode} = 32
-\clrmarginpar{-2pt}{13pt}{\writempcode}%
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
 \else
 \ifnum\value{mpcode} = 44
-\clrmarginpar{-2pt}{13pt}{\writempcode}%
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
 \else%
 \if@firstcolumn%
-\ifnum\value{mpcode} > 9
-\clrmarginpar{-21pt}{13pt}{\writempcode}%
+\ifnum\value{mpcode} > 99
+\clrmarginpar{-21pt}{13pt}{\writempcode{0pt}}%
 \else%
-\clrmarginpar{-17pt}{13pt}{\writempcode}%
-\fi%
+\ifnum\value{mpcode} > 9
+\clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
+\else%
+\clrmarginpar{-17pt}{13pt}{\writempcode{1pt}}%
+\fi\fi%
 \else%
 \ifnum\value{mpcode} > 99
-\clrmarginpar{-5pt}{13pt}{\writempcode}%
+\clrmarginpar{-5pt}{13pt}{\writempcode{0pt}}%
 \else%
-\clrmarginpar{-2pt}{13pt}{\writempcode}%
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
 \fi\fi\fi\fi\fi\fi%
 %\thempcode
 }
