@@ -96,6 +96,8 @@
 
 
 
+\colorlet{margingr}{margin!40!black}
+
 \newcommand{\mpcodefrefbkg}[4]{%
 \tikz[baseline=(char.base)]{%
 
@@ -106,7 +108,7 @@ fill = none, draw=none, line width=.5pt, inner sep=#1] (char)
 
  \node[shape=circle, %regular polygon, regular polygon sides = 8,
 xscale=#3, yscale=#4, 
-fill = none, draw=black!40, line width=.5pt, inner sep=#1] (char)
+fill = none, draw=margingr!40, line width=.5pt, inner sep=#1] (char)
 {\phantom{2}};
 
 % \node[shape=regular polygon, regular polygon sides = 8,
@@ -143,7 +145,7 @@ fill = none, draw=black!40, line width=.5pt, inner sep=#1] (char)
 
 \newcommand{\mpcodefrefLeftD}[1]{\mpcodefrefArgs{0pt}{1pt}{#1}{1}{1}}
 \newcommand{\mpcodefrefLeftDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1.2}{1}}
-\newcommand{\mpcodefrefLeftDDD}[1]{\mpcodefrefArgs{.5pt}{0pt}{#1}{2}{1}}
+\newcommand{\mpcodefrefLeftDDD}[1]{\mpcodefrefArgs{-.5pt}{0pt}{#1}{2}{1}}
 
 
 
@@ -184,11 +186,11 @@ fill = none, draw=black!40, line width=.5pt, inner sep=#1] (char)
 
 \newcommand{\mpcodefrefMidBkg}[1]{%
 \tikz[baseline=(char.base)]{
- \node[shape=regular polygon, regular polygon sides = 8,
+ \node[shape=circle, % regular polygon, regular polygon sides = 8,
 fill = none, draw=none, line width=.5pt, inner sep=1pt] (char)
 {#1};
 
- \node[shape=regular polygon, regular polygon sides = 8,
+ \node[shape=circle, %regular polygon, regular polygon sides = 8,
 fill = none, draw=margin!50, 
 xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
  at (-1pt, 0pt) 
