@@ -1200,13 +1200,13 @@ pappas/papers/zujovic_tip13.pdf
 
 \csectionWFn{Sentence Examples}{\astx}
 
-\AddToShipoutPicture{%
-\ifnum\value{page}=11{
-\AtTextLowerLeft{
-\hspace*{-3pt}\raisebox{28pt}{%
-\clrmMidFmt{a}
-}}}\fi
-}
+%\AddToShipoutPicture{%
+%\ifnum\value{page}=11{
+%\AtTextLowerLeft{
+%\hspace*{-3pt}\raisebox{28pt}{%
+%\clrmMidFmt{a}
+%}}}\fi
+%}
 
 \AddToShipoutPicture{%
 \ifnum\value{page}=20{
@@ -1417,7 +1417,42 @@ some\lin{}sunshine.}
 
 \vspace*{-8em}
 
-\csection{Index}
+\newcommand{\dagr}{\hspace{2pt}\raisebox{5pt}{%
+\resizebox{!}{5pt}{\dagger}}}
+
+
+\csectionWFn{Index}{\dagr}
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=20{
+\AtTextLowerLeft{
+\hspace*{269pt}\raisebox{45pt}{%
+\mmakefntextAlt{\fndagr{9pt}{9pt}}{\footnotesize{
+\begin{minipage}[t]{250pt}
+While 
+it is unusual to prepare an index for 
+a journal article, I believe this 
+practice should be more widely adopted, 
+partly because journals can then 
+construct \q{master} indices 
+merging content from each individual 
+article.  Here, both page and paragraph 
+numbers are clickable, except when a 
+locator refers to a portion of a 
+paragraph that occupies the page 
+following its start; in that case 
+the paragraph code is presented 
+in the \q{continuation} style 
+also used on the left-hand margins 
+of the main text.
+\end{minipage}
+}}
+}}}\fi
+}
+
+
+
+
 
 \vspace*{-2em}
 
