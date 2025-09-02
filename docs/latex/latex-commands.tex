@@ -94,11 +94,32 @@
 
 \newcommand{\micro}[1]{\textcolor{white}{\resizebox{0pt}{0pt}{#1}}}
 
+
 \newcommand{\mpcodefref}[1]{\colorbox{margin!10}{%
 \hyperref[par#1]{%
 \raisebox{0pt}{\resizebox{!}{5pt}{%
-\textcolor{blue!70!black}{#1}}}}}}}
+\textcolor{blue!70!black}{#1}}}}}}
 
+%\newcommand{\mpcodefrefMid}[2]{XXXXX}
+
+\definecolor{clrmcMid}{RGB}{165, 10, 18}
+
+\newcommand{\mpcodefAlt}[1]{%
+\textcolor{clrmcMid}{%
+\hspace*{-1.5pt}\raisebox{.5pt}{%
+{\fontsize{7}{5}\selectfont\ensuremath{\cdot}}}
+\hspace*{-1.5pt}\raisebox{.5pt}{%
+{\fontsize{6}{6}\selectfont{#1}}}}%
+}
+
+\newcommand{\mpcodefrefMid}[2]{%
+\colorbox{margin!10}{%
+\hyperref[p#1#2]{%
+\raisebox{0pt}{\resizebox{!}{5pt}{%
+\textcolor{blue!70!black}{#1}}}}}%
+\hspace{-2pt}\raisebox{.5pt}{%
+\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{#2}}}%
+}
 
 
 
@@ -162,9 +183,6 @@
 }
 
 
-\definecolor{clrmcMid}{RGB}{165, 10, 18}
-
-
 \newcommand{\clrmAltFmt}[1]{%
 \textcolor{clrmcMid}{%
 \raisebox{1pt}{\resizebox{6pt}{!}{\ensuremath{\cdots}}}%
@@ -186,27 +204,28 @@
 %\label{alt#2}
 %
 \AddToShipoutPicture{%
-\ifnum\value{page}=#1{
-\AtTextUpperLeft{
+\ifnum\value{page}=#1{%
+\AtTextUpperLeft{%
 \hspace*{-37pt}\raisebox{-14pt}{%
 %{#1:#2}
-\clrmAltFmt{#2}
-}}}\fi
-}
+\clrmAltFmt{#2}%
+}}}\fi%
+}%
 %
 }
 
 
 
 \newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{%
-#2\resizebox{!}{5pt}{(#3)}}} \clrmAltSub{10}{60}{a}
+#2\resizebox{!}{5pt}{(#3)}}\ignorespaces}
 
+% \clrmAltSub{10}{60}{a}
 %\newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{#2}}
 
 
 
 %\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}}
-\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}}
+\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}\ignorespaces}
 
 %\newcommand{\clrmAlt}[2]{}
 

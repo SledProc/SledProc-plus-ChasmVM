@@ -1369,6 +1369,17 @@ some\lin{}sunshine.}
  \ixlabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefref{#3} 
 }
 
+
+\newcommand{\ixentryMid}[4]{\noindent %
+ \ixlabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefrefMid{#3}{#4} 
+}
+
+\newcommand{\ixentryAlt}[3]{\noindent %
+ \ixlabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefAlt{#3}
+}
+
+
+
 \newcommand{\ixentrypp}[4]{\noindent %
  \ixlabel{#1} \ixspBefore  \pagefref{#2} %
  \mpcodefref{#3}--\mpcodefref{#4} 
@@ -1432,6 +1443,11 @@ some\lin{}sunshine.}
 
 \ixredirect{Davidson, Donald}{Neo-Davidsonian Event Semantics}
 {\ixskip}
+
+
+\ixentryMid{demarcation problem}{8}{48}{a}
+{\ixskip}
+
 
 \ixentry{episodicity}{6}{38}\ixlp{39}\ixl{8}{46}\ixlp{49}
 \sseealso{Attention}
@@ -1511,8 +1527,13 @@ some\lin{}sunshine.}
 \ixentry{supervenience}{6}{37}
 {\ixskip}
 
-\ixentrypg{traversal (graph theory)}{11}{12}{73}
+\ixentryAlt{traversal (graph theory)}{12}{73}
 {\ixskip}
+
+%\ixentrypg{traversal (graph theory)}{11}{12}{73}
+%{\ixskip}
+
+
 
 
 \ixentry{Truth-Conditional Semantics}{3}{15}
