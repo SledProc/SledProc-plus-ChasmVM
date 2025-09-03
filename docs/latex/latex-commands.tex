@@ -121,7 +121,7 @@ fill = none, draw=margingr!40, line width=.5pt, inner sep=#1] (char)
 
 
 \newcommand{\mpcodefreffore}[1]{%\colorbox{margin!10}{%
-\hyperref[par#1]{%
+\hyperlink{par#1}{%
 \raisebox{0pt}{{\fontsize{6}{6}\selectfont%
 \textcolor{blue!70!black}{#1}}}}}
 
@@ -176,7 +176,7 @@ fill = none, draw=margingr!40, line width=.5pt, inner sep=#1] (char)
 
 \newcommand{\mpcodefrefMidFore}[2]{%
 %\colorbox{margin!10}{%
-\hyperref[p#1#2]{%
+\hyperlink{p#1#2}{%
 \raisebox{0pt}{{\fontsize{7}{6}\selectfont%
 \textcolor{blue!70!black}{#1}}}}%
 
@@ -222,14 +222,14 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 }
 
 
-\newcommand{\mpcodefrefMidX}[2]{%
-\colorbox{margin!10}{%
-\hyperref[p#1#2]{%
-\raisebox{0pt}{\resizebox{!}{5pt}{%
-\textcolor{blue!70!black}{#1}}}}}%
-\hspace{-2pt}\raisebox{.5pt}{%
-\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{#2}}}%
-}
+%\newcommand{\mpcodefrefMidX}[2]{%
+%\colorbox{margin!10}{%
+%\hyperref[p#1#2]{%
+%\raisebox{0pt}{\resizebox{!}{5pt}{%
+%\textcolor{blue!70!black}{#1}}}}}%
+%\hspace{-2pt}\raisebox{.5pt}{%
+%\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{#2}}}%
+%}
 
 
 
@@ -418,13 +418,13 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 
 
-\newcommand{\clrmMidFormLabel}[1]{pXX{#1}}
+%\newcommand{\clrmMidFormLabel}[1]{pXX{#1}}
 
-\newcommand{\clrmMidFormLabelX}[1]{p\thempcode#1}
+\newcommand{\clrmMidFormLabel}[1]{p\thempcode#1}
 
 %%\newcommand{\clrmMidLabel}[1]{\label{\clrmMidFormLabel{#1}}}
 
-\newcommand{\clrmMidLabel}[1]{\label{\clrmMidFormLabelX{a}}}
+\newcommand{\clrmMidLabel}[1]{\hypertarget{\clrmMidFormLabel{#1}}{}}
 
 
 \newcommand{\clrmMid}[1]{\clrmMidLabel{#1}%
@@ -479,7 +479,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \fi\fi\clrmarginpar{13pt}{\thempcode}}
 
 
-\newcommand{\pcodelabel}{\label{par\thempcode}}
+\newcommand{\pcodelabel}{\hypertarget{par\thempcode}{}}
 
 %{\clrm}
 
