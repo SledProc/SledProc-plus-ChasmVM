@@ -1443,6 +1443,7 @@ some\lin{}sunshine.}\dtween
 
 
 
+
 \newcommand{\ixslash}{%
 \hspace{.5pt}\raisebox{-1pt}{\resizebox{2}{7}{/}}%
 \hspace{.5pt}} %smallsetminus
@@ -1462,6 +1463,14 @@ some\lin{}sunshine.}\dtween
   \smash{\mpcodefref{#3}} 
 }
 
+\newcommand{\ixsubentryMid}[4]{\noindent %
+ \ixsublabel{#1} \ixspBefore  \pagefref{#2} 
+  \smash{\mpcodefrefMid{#3}{#4}}
+}
+
+
+
+
 \newcommand{\ixsubentryAlt}[3]{\noindent %
  \ixsublabel{#1} \ixspBefore  \pagefref{#2}  \smash{\mpcodefAlt{#3}}
 }
@@ -1474,6 +1483,14 @@ some\lin{}sunshine.}\dtween
 \newcommand{\ixsl}[3]{\noindent %
  \ixspBack{}; \ixspAfter{} #1 \pagefref{#2}  \smash{\mpcodefref{#3}}
 }
+
+\newcommand{\ixslpp}[4]{\noindent %
+ \ixspBack{}; \ixspAfter{} #1 \pagefref{#2} %
+ \smash{\mpcodefref{#3}%
+\hspace*{-.5pt}\raisebox{.5pt}{--}\mpcodefref{#4}} 
+}
+
+
 
 
 \newcommand{\ixentrySubs}[1]{\noindent %
@@ -1532,6 +1549,7 @@ of the main text.
 
 \vspace*{-2em}
 
+\hspace{-1em}\begin{minipage}{234pt}
 
 \ixentrypg{acceptability}{6}{7}{41}\commaback\ixlp{44}%
 \ixl{8}{45}
@@ -1568,6 +1586,10 @@ of the main text.
 \ixentry{computer programming languages}{3}{18} %\ixl{16}{101}
 {\ixskip}
 
+\ixentry{Conceptual Space Theory}{9}{57}
+\sseealso{G\"ardenfors, Peter}
+{\ixskip}
+
 \ixredirect{Davidson, Donald}{Neo-Davidsonian Event Semantics}
 {\ixskip}
 
@@ -1594,13 +1616,15 @@ of the main text.
 {\ixskip}
 
 \ixentry{G\"ardenfors, Peter}{9}{55}
+\sseealso{Conceptual Space Theory}
 {\ixskip}
 
-\ixentrySubs{grammar}
+\ixentrySubs{grammar}\raggedright
 \ixsubentry{categorial}{9}{57}\ixlp{58}%
 \ixl{11}{68}%
 \ixsl{cognitive}{8}{46}%
-\ixsl{constituency and dependency}{11}{68}%
+\ixsl{constituency\\and dependency}{11}{68}%
+\ixslpp{parts of \makebox{speech/syntactic categories}}{10}{66}{67}%
 {\ixskip}
 
 
@@ -1698,11 +1722,16 @@ of the main text.
 {\ixskip}
 
 \ixentrySubs{type theory}%
-\ixsubentry{dependent types}{16}{102}%
+\ixsubentryMid{dependent types}{16}{102}{b}%
 \ixsl{coercions}{16}{102}%
+\ixsl{type-theoretic semantics}{16}{102}%
+\ixsl{type-theoretic syntax}{9}{58}%
 \ixsl{type systems with polymorphism}{11}{69}%
 \seealsoParen{polymorphism}
 {\ixskip}
+
+
+\end{minipage}
 
 %\hyperref[p7a]{TEST!}
 
