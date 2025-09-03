@@ -1350,7 +1350,7 @@ some\lin{}sunshine.}\dtween
 
 
 
-\newcommand{\ixskip}{\vspace{6pt}}
+\newcommand{\ixskip}{\vspace{3pt}}
 
 \newcommand{\ixlabel}[1]{\hspace*{-6pt}{\textbf{#1}}}
 
@@ -1420,8 +1420,9 @@ some\lin{}sunshine.}\dtween
 }
 
 \newcommand{\ixentryAlt}[3]{\noindent %
- \ixlabel{#1} \ixspBefore  \pagefref{#2}  \mpcodefAlt{#3}
+ \ixlabel{#1} \ixspBefore  \pagefref{#2}  \smash{\mpcodefAlt{#3}}
 }
+
 
 
 \newcommand{\ixentrypp}[4]{\noindent %
@@ -1447,6 +1448,11 @@ some\lin{}sunshine.}\dtween
  \ixsublabel{#1} \ixspBefore  \pagefref{#2} 
   \smash{\mpcodefref{#3}} 
 }
+
+\newcommand{\ixsubentryAlt}[3]{\noindent %
+ \ixsublabel{#1} \ixspBefore  \pagefref{#2}  \smash{\mpcodefAlt{#3}}
+}
+
 
 \newcommand{\ixentrySubs}[1]{\noindent %
  \ixlabel{#1}: \ixspBefore  
@@ -1526,11 +1532,30 @@ of the main text.
 \sseealso{Categorial Grammar; monads}
 {\ixskip}
 
+\ixentry{compositionality}{3}{17}\ixlp{20}\ixl{4}{28}
+{\ixskip}
+
+\ixentrySubs{consciousness}
+\ixsubentryAlt{functional benefits}{4}{28}
+\ixsl{as \q{in vivo}}{6}{35} %\ixlp{33}
+{\ixskip}
+
+%\ixentryAlt{consciousness (functional benefits)}{5}{29}\ixlp{33}
+%{\ixskip}
+
+\ixentry{computer programming languages}{3}{18} %\ixl{16}{101}
+{\ixskip}
+
 \ixredirect{Davidson, Donald}{Neo-Davidsonian Event Semantics}
 {\ixskip}
 
+\vspace{-2pt}
+\ixentry{demarcation problem}{8}{48}
+%\ixentry{demarcation problem}{8}{48}{a}
+{\ixskip}
 
-\ixentryMid{demarcation problem}{8}{48}{a}
+\ixentry{emergent properties}{3}{17}\ixl{4}{23}\ixlp{26}
+\sseealso{reduction}
 {\ixskip}
 
 
@@ -1542,6 +1567,9 @@ of the main text.
 \ixentry{epistemic narratives}{2}{8}\ixlp{10}\ixl{16}{107}
 {\ixskip}
 
+\ixentry{explanatory gap}{4}{28}\ixlp{29}
+{\ixskip}
+
 \ixentry{G\"ardenfors, Peter}{9}{55}
 {\ixskip}
 
@@ -1549,6 +1577,9 @@ of the main text.
 {\ixskip}
 
 \ixentry{Husserl, Edmund}{8}{46}
+{\ixskip}
+
+\ixentry{humanities and social science (metatheories/metascience)}{4}{27}
 {\ixskip}
 
 \ixentrypp{image analysis/Computer Vision}{5}{31}{33}%
@@ -1571,6 +1602,9 @@ of the main text.
 \ixentry{Neo-Davidsonian Event Semantics}{14}{92}
 {\ixskip}
 
+\ixentry{neuroscience}{4}{28}
+{\ixskip}
+
 \ixentry{ontological regions}{16}{102}
 {\ixskip}
 
@@ -1584,17 +1618,17 @@ of the main text.
 \ixentry{protention/retention}{6}{36}\ixlp{38}\ixl{12}{73}
 {\ixskip}
 
-%\ixentry{qualia}{1}{3}
-%{\ixskip}
+\ixentry{qualia}{5}{34}
+{\ixskip}
 
 \ixentry{quantifier scope}{1}{3}
 {\ixskip}
 
 \ixentrySubs{reduction (in metascience)}%
-\ixsubentry{in computers/compilers}{4}{28}%
-\ixsl{inter-theoretic}{4}{28}%
-\ixsl{via material composition}{4}{25}%
-\ixsl{\visavis{} theory semantics}{4}{23}%
+ %\ixsubentry{in computers/compilers}{4}{28}%
+\ixsubentry{inter-theoretic}{4}{28}%
+\ixsl{via material composition}{4}{23}\ixlp{25}%
+\ixsl{\visavis{} theory semantics}{4}{23}\ixlp{26}%
 {\ixskip}
 
 
@@ -1606,7 +1640,7 @@ of the main text.
 \ixentry{Semantic Web}{14}{91}
 {\ixskip}
 
-\ixentry{Subjectification}{14}{88}
+\ixentry{subjectification}{14}{88}
 \sseealso{epistemic narratives; grounding}
 {\ixskip}
 
@@ -1622,7 +1656,7 @@ of the main text.
 
 
 
-\ixentry{Truth-Conditional Semantics}{2}{11}%
+\ixentry{truth-conditional semantics}{2}{11}%
 \ixlAlt{3}{14}\commaback\ixlp{15}
 {\ixskip}
 
