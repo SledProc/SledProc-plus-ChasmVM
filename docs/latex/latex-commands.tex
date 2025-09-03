@@ -213,12 +213,16 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 
 \definecolor{clrmcMid}{RGB}{165, 10, 18}
 
+\newcommand{\raisedbar}{\raisebox{1.5pt}{%
+\resizebox{3pt}{4pt}{\ensuremath{\Lsh}}}}
+
 \newcommand{\mpcodefAlt}[1]{%
 \textcolor{clrmcMid}{%
 %\hspace*{-1.5pt}\raisebox{.5pt}{%
 %{\fontsize{7}{5}\selectfont\ensuremath{\cdot}}}
-\hspace*{-1.5pt}\raisebox{1.5pt}{%
-{\fontsize{6}{6}\selectfont{#1}}}}%
+\hspace*{-1.5pt}\raisebox{.5pt}{%
+{\fontsize{6}{6}\selectfont{\raisedbar{}\hspace*{.5pt}%
+#1}}}}%
 }
 
 
@@ -239,15 +243,26 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 
 
 
+%\newcommand{\pagefref}[1]{%
+%\hyperref[pgn#1]{\textcolor{pagefrefc!70!black}{#1}}%
+%}
+
 \newcommand{\pagefref}[1]{%
-\hyperref[pgn#1]{\textcolor{pagefrefc!70!black}{#1}}%
+\hyperlink{pgn#1}{\textcolor{pagefrefc!70!black}{#1}}%
 }
+
 
 \newcounter{pglNumber}
 
-\newcommand{\pglabel}[1]{\label{pgn#1}}
+%\newcommand{\pglabel}[1]{\label{pgn#1}}
+%\makeatletter 
+\newcommand{\pglabel}[1]{%
+\Hy@raisedlink{\hypertarget{pgn#1}{}}%
+}
+%\makeatother 
 
-\newcommand{\pgl}{\refstepcounter{pglNumber}%
+
+\newcommand{\pgl}{\stepcounter{pglNumber}%
 \pglabel{\thepglNumber}\ignorespaces}
 
 %\newcommand{\pglA}{\stepcounter{pglNumber}%
@@ -424,8 +439,11 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 %%\newcommand{\clrmMidLabel}[1]{\label{\clrmMidFormLabel{#1}}}
 
-\newcommand{\clrmMidLabel}[1]{\hypertarget{\clrmMidFormLabel{#1}}{}}
+\newcommand{\clrmMidLabel}[1]{%
+\Hy@raisedlink{\hypertarget{\clrmMidFormLabel{#1}}{}}}
 
+
+%\makeatletter
 
 \newcommand{\clrmMid}[1]{\clrmMidLabel{#1}%
 \ifnum\value{mpcode} = 69%
@@ -434,7 +452,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \fi%
 }
 
-
+%\makeatother
 
 
 \AddToShipoutPicture{%
@@ -538,11 +556,18 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 \makeatother
 
+\usepackage{xcolor}
+
+\definecolor{newlinkc}{RGB}{60, 55, 212}
+
+
+
 \newcommand{\hspaceback}[1]{\hspace*{-#1}}
 
 \makeatletter
 
-\DeclareRobustCommand{\defCL}[1]{\def\@currentlabel{\unexpanded{#1}}}
+%\DeclareRobustCommand{\defCL}[1]{\def\@currentlabel{\unexpanded{#1}}}
+
 
 \DeclareRobustCommand{\psCite}[1]{%
 \phantomsection\cite{#1}\label{\unexpanded{#1}}%
@@ -562,9 +587,14 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 %\NewCommandCopy{\original@bibitem}{\bibitem}
 %\renewcommand{\bibitem}[1]{\original@bibitem{#1}}
 
+\makeatother
+
+
 \usepackage{xcolor}
 
 \definecolor{newlinkc}{RGB}{60, 55, 212}
+
+\makeatletter
 
 \renewcommand\@biblabel[1]{\hspace*{-6pt}\textit{[\hyperref[\@currentbiblabel]%
 {\textcolor{newlinkc}{#1}}]}\hspace*{6pt}}
@@ -572,8 +602,6 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 %\newcommand{\LABEL}[2]{\protected@edef\@currentlabel{#2}\label{#1}}
 
-
-\makeatother
 
 
 \makeatother
