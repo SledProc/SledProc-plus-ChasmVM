@@ -215,9 +215,9 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 
 \newcommand{\mpcodefAlt}[1]{%
 \textcolor{clrmcMid}{%
-\hspace*{-1.5pt}\raisebox{.5pt}{%
-{\fontsize{7}{5}\selectfont\ensuremath{\cdot}}}
-\hspace*{-1.5pt}\raisebox{.5pt}{%
+%\hspace*{-1.5pt}\raisebox{.5pt}{%
+%{\fontsize{7}{5}\selectfont\ensuremath{\cdot}}}
+\hspace*{-1.5pt}\raisebox{1.5pt}{%
 {\fontsize{6}{6}\selectfont{#1}}}}%
 }
 
@@ -247,8 +247,11 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 
 \newcommand{\pglabel}[1]{\label{pgn#1}}
 
-\newcommand{\pgl}[1]{\stepcounter{pglNumber}%
-\pglabel{\thepglNumber}}
+\newcommand{\pgl}{\refstepcounter{pglNumber}%
+\pglabel{\thepglNumber}\ignorespaces}
+
+%\newcommand{\pglA}{\stepcounter{pglNumber}%
+%\label{PG2}\ignorespaces}
 
 %{%
 %
