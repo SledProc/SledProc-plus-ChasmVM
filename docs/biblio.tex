@@ -1385,6 +1385,14 @@ some\lin{}sunshine.}\dtween
   \smash{\mpcodefref{#2}} 
 }
 
+\newcommand{\ixlpp}[3]{\noindent %
+ \ixspBack{}, \ixspAfter{}  \pagefref{#1} %
+ \smash{\mpcodefref{#2}%
+\hspace*{-.5pt}\raisebox{.5pt}{--}\mpcodefref{#3}} 
+}
+
+
+
 \newcommand{\ixlAlt}[2]{\noindent %
  \ixspBack{}, \ixspAfter{}  \pagefref{#1}  \mpcodefAlt{#2}
 }
@@ -1395,10 +1403,6 @@ some\lin{}sunshine.}\dtween
   \ixspMid{}  \smash{\mpcodefref{#1}} 
 }
 
-
-\newcommand{\ixsl}[3]{\noindent %
- \ixspBack{}; \ixspAfter{} #1 \pagefref{#2}  \smash{\mpcodefref{#3}}
-}
 
 %\definecolor{ixFootnoteColor}{RGB}{47, 82, 122}
 \definecolor{ixFootnoteColor}{RGB}{179, 101, 14}
@@ -1419,6 +1423,12 @@ some\lin{}sunshine.}\dtween
   \smash{\mpcodefrefMid{#3}{#4}}
 }
 
+\newcommand{\ixlMid}[3]{\noindent %
+ \ixspBack{}, \ixspAfter{}  \pagefref{#1} 
+  \smash{\mpcodefrefMid{#2}{#3}}
+}
+
+
 \newcommand{\ixentryAlt}[3]{\noindent %
  \ixlabel{#1} \ixspBefore  \pagefref{#2}  \smash{\mpcodefAlt{#3}}
 }
@@ -1431,8 +1441,11 @@ some\lin{}sunshine.}\dtween
 \hspace*{-.5pt}\raisebox{.5pt}{--}\mpcodefref{#4}} 
 }
 
+
+
 \newcommand{\ixslash}{%
-\raisebox{-1pt}{\resizebox{2}{7}{/}}} %smallsetminus
+\hspace{.5pt}\raisebox{-1pt}{\resizebox{2}{7}{/}}%
+\hspace{.5pt}} %smallsetminus
 
 \newcommand{\ixentrypg}[4]{\noindent %
  \ixlabel{#1} \ixspBefore  \pagefref{#2}{\ixslash}%
@@ -1453,6 +1466,15 @@ some\lin{}sunshine.}\dtween
  \ixsublabel{#1} \ixspBefore  \pagefref{#2}  \smash{\mpcodefAlt{#3}}
 }
 
+\newcommand{\ixslAlt}[3]{\noindent %
+ \ixspBack{}; \ixspAfter{} #1 \pagefref{#2}  \smash{\mpcodefAlt{#3}}
+}
+
+
+\newcommand{\ixsl}[3]{\noindent %
+ \ixspBack{}; \ixspAfter{} #1 \pagefref{#2}  \smash{\mpcodefref{#3}}
+}
+
 
 \newcommand{\ixentrySubs}[1]{\noindent %
  \ixlabel{#1}: \ixspBefore  
@@ -1464,6 +1486,8 @@ some\lin{}sunshine.}\dtween
 \pagefref{#2}  \smash{\mpcodefref{#3}} {\ixskip}
 }
 
+ 
+\newcommand{\sube}{\textcolor{margin}{\ensuremath{\gtrdot}}}
 
 \newcommand{\commaback}{\hspace*{-1.5pt},}
 
@@ -1509,7 +1533,7 @@ of the main text.
 \vspace*{-2em}
 
 
-\ixentry{acceptability}{7}{41}\ixlp{44}%
+\ixentrypg{acceptability}{6}{7}{41}\commaback\ixlp{44}%
 \ixl{8}{45}
 {\ixskip}
 
@@ -1524,20 +1548,18 @@ of the main text.
 \ixentryNote{calling conventions}{14}{cc}{7}
 {\ixskip}
 
-\ixentry{Categorial Grammar}{9}{57}\ixlp{58}%
-\ixl{11}{68}
-{\ixskip}
-
 \ixentrypp{Category Theory}{9}{55}{57}\ixl{16}{101}
-\sseealso{Categorial Grammar; monads}
+\sseealso{grammar \sube{} categorial; monads}
 {\ixskip}
 
-\ixentry{compositionality}{3}{17}\ixlp{20}\ixl{4}{28}
+\ixentry{compositionality}{3}{17}\ixlp{20}\ixl{4}{28}%
+\ixlpp{9}{54}{57}
 {\ixskip}
 
 \ixentrySubs{consciousness}
-\ixsubentryAlt{functional benefits}{4}{28}
-\ixsl{as \q{in vivo}}{6}{35} %\ixlp{33}
+\ixsubentry{as \q{in vivo}}{6}{35} %\ixlp{33}
+\ixslAlt{functional benefits}{5}{29}
+\ixsl{metacognition/executive control}{6}{35}
 {\ixskip}
 
 %\ixentryAlt{consciousness (functional benefits)}{5}{29}\ixlp{33}
@@ -1550,11 +1572,12 @@ of the main text.
 {\ixskip}
 
 \vspace{-2pt}
-\ixentry{demarcation problem}{8}{48}
+\ixentry{demarcation problem}{8}{46}\ixlp{48}\ixlp{51}
 %\ixentry{demarcation problem}{8}{48}{a}
 {\ixskip}
 
-\ixentry{emergent properties}{3}{17}\ixl{4}{23}\ixlp{26}
+\ixentry{emergent properties}{3}{17}\ixl{4}{23}\ixlp{26}%
+\ixlMid{7}{43}{a}
 \sseealso{reduction}
 {\ixskip}
 
@@ -1573,7 +1596,15 @@ of the main text.
 \ixentry{G\"ardenfors, Peter}{9}{55}
 {\ixskip}
 
-\ixentry{grounding}{14}{88}\ixl{15}{99}
+\ixentrySubs{grammar}
+\ixsubentry{categorial}{9}{57}\ixlp{58}%
+\ixl{11}{68}%
+\ixsl{cognitive}{8}{46}%
+\ixsl{constituency and dependency}{11}{68}%
+{\ixskip}
+
+
+\ixentrypp{grounding}{8}{48}{50}\ixl{14}{88}\ixl{15}{99}
 {\ixskip}
 
 \ixentry{Husserl, Edmund}{8}{46}
@@ -1618,7 +1649,7 @@ of the main text.
 \ixentry{protention/retention}{6}{36}\ixlp{38}\ixl{12}{73}
 {\ixskip}
 
-\ixentry{qualia}{5}{34}
+\ixentry{qualia}{5}{34}\ixl{6}{39}
 {\ixskip}
 
 \ixentry{quantifier scope}{1}{3}
@@ -1632,11 +1663,11 @@ of the main text.
 {\ixskip}
 
 
-\vspace{-1pt}
 \ixredirect{RDF (Resource Description Framework)%
 }{Semantic Web}
 {\ixskip}
 
+\vspace{-2pt}
 \ixentry{Semantic Web}{14}{91}
 {\ixskip}
 
@@ -1644,7 +1675,13 @@ of the main text.
 \sseealso{epistemic narratives; grounding}
 {\ixskip}
 
+\ixentry{subjectivity}{6}{35}
+{\ixskip}
+
 \ixentry{supervenience}{6}{37}
+{\ixskip}
+
+\ixentry{theory semantics}{7}{45}
 {\ixskip}
 
 %\ixentryAlt{traversal (graph theory)}{12}{73}
@@ -1660,8 +1697,8 @@ of the main text.
 \ixlAlt{3}{14}\commaback\ixlp{15}
 {\ixskip}
 
-\ixentrySubs{Type Theory}%
-\ixsubentry{Dependent Types}{16}{102}%
+\ixentrySubs{type theory}%
+\ixsubentry{dependent types}{16}{102}%
 \ixsl{coercions}{16}{102}%
 \ixsl{type systems with polymorphism}{11}{69}%
 \seealsoParen{polymorphism}
