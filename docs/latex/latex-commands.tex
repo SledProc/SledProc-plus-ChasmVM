@@ -181,7 +181,9 @@ fill = none, draw=margingr!40, line width=.5pt, inner sep=#1] (char)
 \textcolor{blue!70!black}{#1}}}}%
 
 \hspace{1pt}\raisebox{.5pt}{%
-\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{#2}}}%
+\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{%
+{\fontsize{5}{5}\selectfont #2}%
+}}}%
 }
 
 
@@ -213,9 +215,25 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 
 \definecolor{clrmcMid}{RGB}{165, 10, 18}
 
+
+%\definecolor{dotbrown}{RGB}{92, 66, 28}
+%\definecolor{dotbrown}{RGB}{130, 89, 68}
+%\definecolor{cdotc}{RGB}{128, 115, 32}
+%\definecolor{cdotc}{RGB}{10, 31, 33}
+
+%%\definecolor{cdotc}{RGB}{53, 143, 222}
+%\definecolor{cdotchere}{RGB}{186, 99, 11}
+
+\definecolor{cdotchere}{RGB}{186, 60, 6}
+
+
+
 \newcommand{\raisedbar}{\raisebox{4.5pt}{%
 \rotatebox{180}{%
-\resizebox{3pt}{4pt}{\ensuremath{\Lsh}}}}}
+\resizebox{3pt}{4pt}{%
+\textcolor{cdotchere}{%
+\ensuremath{\Lsh}}%
+}}}}
 
 
 \newcommand{\mpcodefAlt}[1]{%
@@ -357,21 +375,20 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 }
 
 
-%\definecolor{dotbrown}{RGB}{92, 66, 28}
-%\definecolor{dotbrown}{RGB}{130, 89, 68}
-%\definecolor{cdotc}{RGB}{128, 115, 32}
-%\definecolor{cdotc}{RGB}{10, 31, 33}
-
-%%\definecolor{cdotc}{RGB}{53, 143, 222}
 \definecolor{cdotc}{RGB}{186, 99, 11}
 
 
+\newcommand{\clrmAltDot}{%
+\resizebox{1.5pt}{1.5pt}{\ensuremath{\blacksquare}}}
+
 \newcommand{\clrmAltFmt}[1]{%
 \textcolor{clrmcMid}{%
-\raisebox{1pt}{\resizebox{6pt}{1pt}{%
-\textcolor{cdotc}{\ensuremath{\blacksquare\hspace{2.5pt}%
-\blacksquare\hspace{2.5pt}\blacksquare}}%
-}}%
+\raisebox{.5pt}{%\resizebox{6pt}{.5pt}{%
+\textcolor{cdotc}{\clrmAltDot{}\hspace{1pt}%
+\clrmAltDot{}\hspace{1pt}\clrmAltDot{}%
+%\ensuremath{\blacksquare}
+}%
+}%
 {\fontsize{8}{6}\selectfont{#1}}}}
 
 
