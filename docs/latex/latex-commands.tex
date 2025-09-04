@@ -226,6 +226,8 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 
 \definecolor{cdotchere}{RGB}{186, 60, 6}
 
+\definecolor{cdotcherer}{RGB}{53, 214, 222}
+\definecolor{clrmcMidr}{RGB}{53, 143, 222}
 
 
 \newcommand{\raisedbar}{\raisebox{4.5pt}{%
@@ -236,6 +238,16 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 }}}}
 
 
+\newcommand{\raisedbarr}{\raisebox{-.5pt}{%
+\rotatebox{0}{%
+\resizebox{3pt}{4pt}{%
+\textcolor{cdotcherer}{%
+\ensuremath{\Rsh}}%
+}}}}
+
+
+
+
 \newcommand{\mpcodefAlt}[1]{%
 \textcolor{clrmcMid}{%
 %\hspace*{-1.5pt}\raisebox{.5pt}{%
@@ -244,6 +256,18 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 {\fontsize{6}{6}\selectfont{\raisedbar{}\hspace*{.5pt}%
 #1}}}}%
 }
+
+
+
+\newcommand{\mpcodefrAlt}[1]{%
+\textcolor{clrmcMidr}{%
+%\hspace*{-1.5pt}\raisebox{.5pt}{%
+%{\fontsize{7}{5}\selectfont\ensuremath{\cdot}}}
+\hspace*{-1.5pt}\raisebox{.5pt}{%
+{\fontsize{6}{6}\selectfont{\raisedbarr{}\hspace*{.5pt}%
+#1}}}}%
+}
+
 
 
 %\newcommand{\mpcodefrefMidX}[2]{%

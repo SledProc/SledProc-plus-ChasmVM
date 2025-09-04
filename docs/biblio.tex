@@ -1398,6 +1398,10 @@ some\lin{}sunshine.}\dtween
 }
 
 
+\newcommand{\ixlrAlt}[2]{\noindent %
+ \ixspBack{}, \ixspAfter{}  \pagefref{#1}  \mpcodefrAlt{#2}
+}
+
 
 \newcommand{\ixlp}[1]{\noindent %
   \ixspMid{}  \smash{\mpcodefref{#1}} 
@@ -1433,6 +1437,11 @@ some\lin{}sunshine.}\dtween
  \ixlabel{#1} \ixspBefore  \pagefref{#2}  \smash{\mpcodefAlt{#3}}
 }
 
+\newcommand{\ixentryrAlt}[3]{\noindent %
+ \ixlabel{#1} \ixspBefore  \pagefref{#2}  \smash{\mpcodefrAlt{#3}}
+}
+
+
 
 
 \newcommand{\ixentrypp}[4]{\noindent %
@@ -1465,6 +1474,12 @@ some\lin{}sunshine.}\dtween
  \ixlabel{#1} \ixspBefore  \pagefref{#2} \ixFootnote{#3}{#4} 
 }
 
+\newcommand{\ixlNote}[3]{\noindent %
+ \ixspBack{}, \ixspAfter{} \pagefref{#1} %
+  \ixFootnote{#3}{#4}
+}
+
+
 \newcommand{\ixsubentry}[3]{\noindent %
  \ixsublabel{#1} \ixspBefore  \pagefref{#2} 
   \smash{\mpcodefref{#3}} 
@@ -1495,6 +1510,12 @@ some\lin{}sunshine.}\dtween
 \newcommand{\ixslAlt}[3]{\noindent %
  \ixspBack{}; \ixspAfter{} #1 \pagefref{#2}  \smash{\mpcodefAlt{#3}}
 }
+
+\newcommand{\ixslrAlt}[3]{\noindent %
+ \ixspBack{}; \ixspAfter{} #1 \makebox{\pagefref{#2} %
+ \smash{\mpcodefrAlt{#3}}}
+}
+
 
 
 \newcommand{\ixsl}[3]{\noindent %
@@ -1594,7 +1615,7 @@ of the main text.
 
 \vspace*{-2em}
 
-\hspace{-2.55em}\begin{minipage}{246pt}
+\hspace{-2.55em}\begin{minipage}{253pt}
 
 \ixentrypg{acceptability}{6}{7}{41}\commaback\ixlp{44}%
 \ixl{8}{45}
@@ -1663,7 +1684,7 @@ of the main text.
 \ixentry{emergent properties}{3}{17}\ixl{4}{23}\ixlp{26}%
 \ixlMid{7}{43}{a}%
 \longback\ixsl{supervenience}{6}{37}
-\sseealso{reduction}
+\sseealso{reduction (metascience)}
 {\ixskip}
 
 %\ixentry{supervenience}{6}{37}
@@ -1748,11 +1769,17 @@ of the main text.
 \ixentry{neuroscience}{4}{28}
 {\ixskip}
 
-\ixentryNote{non-reductive materialism}{4}{scienceGuided}{3}%
-%\ixl{6}{35}
-{\ixskip}
+%\ixentryrAlt{non-reductive materialism}{4}{25}%
+%\ixlNote{4}{scienceGuided}{3}
+%{\ixskip}
+
+%\ixentryNote{non-reductive materialism}{4}{scienceGuided}{3}%
+%\ixlrAlt{4}{25}
+%{\ixskip}
 
 %
+%\ixl{6}{35}
+
 
 \ixentry{ontological regions}{16}{102}
 {\ixskip}
@@ -1785,9 +1812,11 @@ of the main text.
 \ixentry{quantifier scope}{1}{3}
 {\ixskip}
 
-\ixentrySubs{reduction (in metascience)}%
+\ixentrySubs{reduction (metascience)}\raggedright%
  %\ixsubentry{in computers/compilers}{4}{28}%
 \ixsubentry{inter-theoretic}{4}{28}%
+\ixslrAlt{non-reductive materialism}{4}{25}
+\ixlNote{4}{scienceGuided}{3}%
 \ixsl{via material composition}{4}{23}\ixlp{25}%
 \ixsl{\visavis{} theory semantics}{4}{23}\ixlp{26}%
 {\ixskip}
