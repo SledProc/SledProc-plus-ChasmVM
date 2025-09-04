@@ -357,9 +357,21 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 }
 
 
+%\definecolor{dotbrown}{RGB}{92, 66, 28}
+%\definecolor{dotbrown}{RGB}{130, 89, 68}
+%\definecolor{cdotc}{RGB}{128, 115, 32}
+%\definecolor{cdotc}{RGB}{10, 31, 33}
+
+%%\definecolor{cdotc}{RGB}{53, 143, 222}
+\definecolor{cdotc}{RGB}{186, 99, 11}
+
+
 \newcommand{\clrmAltFmt}[1]{%
 \textcolor{clrmcMid}{%
-\raisebox{1pt}{\resizebox{6pt}{!}{\ensuremath{\cdots}}}%
+\raisebox{3pt}{\resizebox{6pt}{1pt}{%
+\textcolor{cdotc}{\ensuremath{\blacksquare\hspace{2.5pt}%
+\blacksquare\hspace{2.5pt}\blacksquare}}%
+}}%
 {\fontsize{8}{6}\selectfont{#1}}}}
 
 
@@ -367,6 +379,12 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 \definecolor{clrmcr}{RGB}{0, 148, 123}
 \definecolor{clrmcrr}{RGB}{7, 165, 232}
+
+%\definecolor{clrmcrAlt}{RGB}{148, 30, 0}
+%\definecolor{clrmcrAlt}{RGB}{130, 99, 53}
+\definecolor{clrmcrAlt}{RGB}{130, 89, 68}
+
+
 
 
 \newcommand{\clrmrFmt}[1]{%
@@ -377,11 +395,15 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 
 
-\newcommand{\clrmrAltFmt}[1]{%
+\newcommand{\clrmrAltFmt}[2]{%
 \textcolor{clrmcrr}{%
 \raisebox{-1.5pt}{\resizebox{4pt}{5pt}{\ensuremath{\Rsh}}}}%
-\textcolor{clrmcr}{
-{\fontsize{8}{6}\selectfont{#1}}}}
+\textcolor{clrmcr}{%
+{\fontsize{8}{6}\selectfont{#1}}}%
+\hspace{.5pt}\raisebox{.5pt}{%
+\textcolor{clrmcrAlt}{%
+{\fontsize{7}{6}\selectfont{#2}}}}%
+}
 
 
 
@@ -422,6 +444,19 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \fi\fi
 }
 
+
+\newcommand{\clrmrAltDs}[1]{%
+\ifnum#1>99%
+\hspace*{535pt}%
+\else\ifnum#1>9%
+\hspace*{539pt}%
+\else%
+\hspace*{541pt}%
+\fi\fi
+}
+
+
+
 \newcommand{\clrmrImplRaise}[2]{%
 \ifnum#1=1
 \raisebox{-263pt}{#2}%
@@ -445,17 +480,19 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 
 
-
-\newcommand{\clrmrAltImpl}[2]{%
+\newcommand{\clrmrAltImpl}[3]{%
 \AddToShipoutPicture{%
 \ifnum\value{page}=#1{%
 \AtTextUpperLeft{%
-\hspace*{542pt}\raisebox{-9pt}{%
-\clrmrAltFmt{#2}%
-}}}\fi%
+\clrmrAltDs{#1}%
+\clrmrImplRaise{#1}{%
+\clrmrAltFmt{#2}{#3}%
+}%
+}}\fi%
 }%
 %
 }
+
 
 
 
@@ -472,6 +509,8 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}\ignorespaces}
 
 \newcommand{\clrmr}[2]{\clrmrImpl{#1}{#2}\ignorespaces}
+
+\newcommand{\clrmrAlt}[3]{\clrmrAltImpl{#1}{#2}{#3}\ignorespaces}
 
 %\newcommand{\clrmAlt}[2]{}
 
