@@ -213,8 +213,10 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 
 \definecolor{clrmcMid}{RGB}{165, 10, 18}
 
-\newcommand{\raisedbar}{\raisebox{1.5pt}{%
-\resizebox{3pt}{4pt}{\ensuremath{\Lsh}}}}
+\newcommand{\raisedbar}{\raisebox{4.5pt}{%
+\rotatebox{180}{%
+\resizebox{3pt}{4pt}{\ensuremath{\Lsh}}}}}
+
 
 \newcommand{\mpcodefAlt}[1]{%
 \textcolor{clrmcMid}{%
@@ -361,6 +363,29 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 {\fontsize{8}{6}\selectfont{#1}}}}
 
 
+%\definecolor{clrmcr}{RGB}{7, 165, 232}
+
+\definecolor{clrmcr}{RGB}{0, 148, 123}
+\definecolor{clrmcrr}{RGB}{7, 165, 232}
+
+
+\newcommand{\clrmrFmt}[1]{%
+\textcolor{clrmcrr}{%
+\raisebox{-1.5pt}{\resizebox{4pt}{5pt}{\ensuremath{\Rsh}}}}%
+\textcolor{clrmcr}{
+{\fontsize{8}{6}\selectfont{#1}}}}
+
+
+
+\newcommand{\clrmrAltFmt}[1]{%
+\textcolor{clrmcrr}{%
+\raisebox{-1.5pt}{\resizebox{4pt}{5pt}{\ensuremath{\Rsh}}}}%
+\textcolor{clrmcr}{
+{\fontsize{8}{6}\selectfont{#1}}}}
+
+
+
+
 \newcommand{\clrmAltFmtX}[1]{%
 \textcolor{clrmcMid}{%
 {\fontsize{8}{6}\selectfont{#1}}
@@ -387,6 +412,53 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 }
 
 
+\newcommand{\clrmrDs}[1]{%
+\ifnum#1>99%
+\hspace*{536pt}%
+\else\ifnum#1>9%
+\hspace*{540pt}%
+\else%
+\hspace*{542pt}%
+\fi\fi
+}
+
+\newcommand{\clrmrImplRaise}[2]{%
+\ifnum#1=1
+\raisebox{-263pt}{#2}%
+\else%
+\raisebox{-9pt}{#2}%
+\fi%
+}
+
+\newcommand{\clrmrImpl}[2]{%
+\AddToShipoutPicture{%
+\ifnum\value{page}=#1{%
+\AtTextUpperLeft{%
+\clrmrDs{#1}%
+\clrmrImplRaise{#1}{%
+\clrmrFmt{#2}%
+}%
+}}\fi%
+}%
+%
+}
+
+
+
+
+\newcommand{\clrmrAltImpl}[2]{%
+\AddToShipoutPicture{%
+\ifnum\value{page}=#1{%
+\AtTextUpperLeft{%
+\hspace*{542pt}\raisebox{-9pt}{%
+\clrmrAltFmt{#2}%
+}}}\fi%
+}%
+%
+}
+
+
+
 
 \newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{%
 #2\resizebox{!}{5pt}{(#3)}}\ignorespaces}
@@ -398,6 +470,8 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 %\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}}
 \newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}\ignorespaces}
+
+\newcommand{\clrmr}[2]{\clrmrImpl{#1}{#2}\ignorespaces}
 
 %\newcommand{\clrmAlt}[2]{}
 
