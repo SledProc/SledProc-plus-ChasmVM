@@ -1354,7 +1354,7 @@ some\lin{}sunshine.}\dtween
 
 
 
-\newcommand{\ixskip}{\vspace{3pt}}
+\newcommand{\ixskip}{\vspace{2.5pt}}
 
 \newcommand{\ixlabel}[1]{\hspace*{-6pt}{\textbf{#1}}}
 
@@ -1376,13 +1376,15 @@ some\lin{}sunshine.}\dtween
 
 }
 
+\newcommand{\seealsoParen}[1]{%
+(\textit{See also} {#1})}
+
+
+
 \newcommand{\seealsotarget}[1]{%
 \hypertarget{ie:#1}{}
 }
 
-
-\newcommand{\seealsoParen}[2]{%
-(\textit{See also} \hyperlink{ie:#1}{#2})}
 
 \newcommand{\ixredirect}[2]{\noindent %
  \ixlabel{#1} \hspace{4pt} \textit{See} #2 %{\ixskip}
@@ -1823,7 +1825,7 @@ of the main text.
 %{\ixskip}
 
 
-
+\seealsotarget{polymorphism}
 \ixentry{polymorphism}{11}{69}\ixlp{72}\ixl{12}{73}
 {\ixskip}
 
@@ -1879,7 +1881,9 @@ of the main text.
 
 
 \ixentrySubs{synthesis}%
-\ixsubentry{conceptual}{11}{68}\ixl{12}{74}%\ixl{17}{113}
+\ixsubentry{conceptual}{11}{68}\ixl{12}{74}%
+\ixlrAlt{13}{83}
+\ixl{15}{98}\ixlpp{17}{109}{111}\ixlp{114}%
 \ixsl{perceptual}{6}{36}\ixlp{37}
 {\ixskip}
 
@@ -1911,7 +1915,7 @@ of the main text.
 \ixsl{type-theoretic syntax}{9}{58}%
 \ixsl{type systems with inheritance}{11}{70}%
 \ixsl{type systems with polymorphism}{11}{69}%
-\seealsoParen{polymorphism}
+\seealsoParen{\sal{polymorphism}}
 {\ixskip}
 
 \ixentry{Vakarelov, Orlin %
