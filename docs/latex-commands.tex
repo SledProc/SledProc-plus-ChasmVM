@@ -94,11 +94,203 @@
 
 \newcommand{\micro}[1]{\textcolor{white}{\resizebox{0pt}{0pt}{#1}}}
 
-\newcommand{\mpcodefref}[1]{\colorbox{margin!10}{%
-\hyperref[par#1]{%
-\raisebox{0pt}{\resizebox{!}{5pt}{%
-\textcolor{blue!70!black}{#1}}}}}}}
 
+
+\colorlet{margingr}{margin!40!black}
+
+\newcommand{\mpcodefrefbkg}[4]{%
+\tikz[baseline=(char.base)]{%
+
+%\node at (0, 0)
+ \node[shape=circle, %regular polygon, regular polygon sides = 8,
+fill = none, draw=none, line width=.5pt, inner sep=#1] (char)
+{#2};
+
+ \node[shape=circle, %regular polygon, regular polygon sides = 8,
+xscale=#3, yscale=#4, 
+fill = none, draw=margingr!40, line width=.5pt, inner sep=#1] (char)
+{\phantom{2}};
+
+% \node[shape=regular polygon, regular polygon sides = 8,
+%fill opacity=0, line width=2pt, draw=margin!40, inner sep=#1] 
+%{\phantom{#2}};
+}}
+
+%\newcommand{\mpcodefrefbkg}[1]{\colorbox{margin!10}{#1}}
+
+
+
+\newcommand{\mpcodefreffore}[1]{%\colorbox{margin!10}{%
+\hyperlink{par#1}{%
+\raisebox{0pt}{{\fontsize{6}{6}\selectfont%
+\textcolor{blue!70!black}{#1}}}}}
+
+
+%\newcommand{\mpcodefrefx}[1]{\colorbox{margin!10}{%
+%\hyperref[par#1]{%
+%\raisebox{0pt}{\resizebox{!}{5pt}{%
+%\textcolor{blue!70!black}{#1}}}}}}
+
+
+\newcommand{\mpcodefrefArgs}[5]{\raisebox{#1}{%
+\mpcodefrefbkg{#2}{%
+\mpcodefreffore{#3}}%
+{#4}{#5}
+}}
+
+
+\newcommand{\mpcodefrefLeft}[3]{\mpcodefrefArgs{#1}{#2}{#3}{1}{1}}
+
+%\newcommand{\mpcodefrefLeftDtest}[3]{\mpcodefrefArgs{0pt}{1pt}{#3}}
+
+\newcommand{\mpcodefrefLeftD}[1]{\mpcodefrefArgs{0pt}{1pt}{#1}{1}{1}}
+\newcommand{\mpcodefrefLeftDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1.2}{1}}
+\newcommand{\mpcodefrefLeftDDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{2}{1}}
+
+
+
+%\newcommand{\mpcodefref}[1]{\mpcodefrefArgs{1pt}{0pt}{#1}}
+
+\newcommand{\mpcodefrefD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1}{1}}
+\newcommand{\mpcodefrefDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1.2}{1}}
+\newcommand{\mpcodefrefDDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{2}{1}}
+
+\newcommand{\mpcodefrefX}[1]{%\mpcodefrefArgs{1pt}{0pt}{#1}
+\ifnum{#1}>99\mpcodefrefDDD{#1}%
+\else\ifnum{#1}>9\mpcodefrefDD{#1}%
+\else\mpcodefrefD{#1}%
+\fi
+\fi%
+}
+
+\newcommand{\mpcodefref}[1]{%\mpcodefrefArgs{1pt}{0pt}{#1}
+\ifnum#1>99\mpcodefrefDDD{#1}%
+\else\ifnum#1>9\mpcodefrefDD{#1}%
+\else\mpcodefrefD{#1}%
+\fi\fi%
+\hspace*{-1pt}%
+}
+
+
+
+
+\newcommand{\mpcodefrefMidFore}[2]{%
+%\colorbox{margin!10}{%
+\hyperlink{p#1#2}{%
+\raisebox{0pt}{{\fontsize{7}{6}\selectfont%
+\textcolor{blue!70!black}{#1}}}}%
+
+\hspace{1pt}\raisebox{.5pt}{%
+\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{%
+{\fontsize{5}{5}\selectfont #2}%
+}}}%
+}
+
+
+\newcommand{\mpcodefrefMidBkg}[1]{%
+\tikz[baseline=(char.base)]{
+ \node[shape=circle, % regular polygon, regular polygon sides = 8,
+fill = none, draw=none, line width=.5pt, inner sep=1pt] (char)
+{#1};
+
+ \node[shape=circle, %regular polygon, regular polygon sides = 8,
+fill = none, draw=margin!50, 
+xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
+ at (-1pt, 0pt) 
+{\phantom{#1}};
+
+}}
+
+
+\newcommand{\mpcodefrefMidBkgX}[1]{%
+\colorbox{margin!10}{#1}}%
+
+
+
+\newcommand{\mpcodefrefMid}[2]{\mpcodefrefMidBkg{%
+\mpcodefrefMidFore{#1}{#2}}}
+
+
+%\newcommand{\mpcodefrefMid}[2]{XXXXX}
+
+\definecolor{clrmcMid}{RGB}{165, 10, 18}
+
+
+%\definecolor{dotbrown}{RGB}{92, 66, 28}
+%\definecolor{dotbrown}{RGB}{130, 89, 68}
+%\definecolor{cdotc}{RGB}{128, 115, 32}
+%\definecolor{cdotc}{RGB}{10, 31, 33}
+
+%%\definecolor{cdotc}{RGB}{53, 143, 222}
+%\definecolor{cdotchere}{RGB}{186, 99, 11}
+
+\definecolor{cdotchere}{RGB}{186, 60, 6}
+
+\definecolor{cdotcherer}{RGB}{53, 214, 222}
+\definecolor{clrmcMidr}{RGB}{53, 143, 222}
+
+
+\newcommand{\raisedbar}{\raisebox{4.5pt}{%
+\rotatebox{180}{%
+\resizebox{3pt}{4pt}{%
+\textcolor{cdotchere}{%
+\ensuremath{\Lsh}}%
+}}}}
+
+
+\newcommand{\raisedbarr}{\raisebox{-.5pt}{%
+\rotatebox{0}{%
+\resizebox{3pt}{4pt}{%
+\textcolor{cdotcherer}{%
+\ensuremath{\Rsh}}%
+}}}}
+
+
+
+
+\newcommand{\mpcodefAlt}[1]{%
+\textcolor{clrmcMid}{%
+%\hspace*{-1.5pt}\raisebox{.5pt}{%
+%{\fontsize{7}{5}\selectfont\ensuremath{\cdot}}}
+\hspace*{-1.5pt}\raisebox{.5pt}{%
+{\fontsize{6}{6}\selectfont{\raisedbar{}\hspace*{.5pt}%
+#1}}}}%
+}
+
+%makeatletter
+
+\AddToShipoutPicture{%
+%\ifnum\value{page}=1{
+\AtTextLowerLeft{%
+\raisebox{800pt}{\hypertarget{pgtop\thepage}{}}}
+%}\fi
+}
+
+%\makeatother
+
+
+
+
+
+\newcommand{\mpcodefrAlt}[1]{%
+\textcolor{clrmcMidr}{%
+%\hspace*{-1.5pt}\raisebox{.5pt}{%
+%{\fontsize{7}{5}\selectfont\ensuremath{\cdot}}}
+\hspace*{-1.5pt}\raisebox{.5pt}{%
+{\fontsize{6}{6}\selectfont{\raisedbarr{}\hspace*{.5pt}%
+#1}}}}%
+}
+
+
+
+%\newcommand{\mpcodefrefMidX}[2]{%
+%\colorbox{margin!10}{%
+%\hyperref[p#1#2]{%
+%\raisebox{0pt}{\resizebox{!}{5pt}{%
+%\textcolor{blue!70!black}{#1}}}}}%
+%\hspace{-2pt}\raisebox{.5pt}{%
+%\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{#2}}}%
+%}
 
 
 
@@ -108,66 +300,171 @@
 
 
 
+%\newcommand{\pagefref}[1]{%
+%\hyperref[pgn#1]{\textcolor{pagefrefc!70!black}{#1}}%
+%}
+
+
+%\newcommand{\pagefref}[1]{%
+%\hyperlink{pgn#1}{\textcolor{pagefrefc!70!black}{#1}}%
+%}
 \newcommand{\pagefref}[1]{%
-\hyperref[pgn#1]{\textcolor{pagefrefc!70!black}{#1}}%
+\hyperlink{pgtop#1}{\textcolor{pagefrefc!70!black}{#1}}%
 }
+
+
 
 \newcounter{pglNumber}
 
-\newcommand{\pglabel}[1]{\label{pgn#1}}
+%\newcommand{\pglabel}[1]{\label{pgn#1}}
+%\makeatletter 
+\newcommand{\pglabel}[1]{%
+\Hy@raisedlink{\hypertarget{pgn#1}{}}%
+}
+%\makeatother 
 
-\newcommand{\pgl}[1]{\stepcounter{pglNumber}%
-\pglabel{\thepglNumber}}
+
+\newcommand{\pgl}{\stepcounter{pglNumber}%
+\pglabel{\thepglNumber}\ignorespaces}
+
+%\newcommand{\pglA}{\stepcounter{pglNumber}%
+%\label{PG2}\ignorespaces}
 
 %{%
 %
 %\textcolor{blue!70!black}{#1}}}
 
 
+\usepackage{tikz}
+\usetikzlibrary{shapes, shapes.misc, positioning}
 
-\newcommand{\mpcodef}[1]{\colorbox{margin!10}{%
+
+\newcommand{\mpcodeffore}[1]{%
 \textcolor{margin!60!black}{%
-\resizebox{!}{5pt}{#1}}}}
+\resizebox{!}{5pt}{#1}}}
+
+%\newcommand{\mpcodefbkg}[1]{#1} %\colorbox{margin!10}{#1}}
 
 
-\newcommand{\writempcode}{\mpcodef{\thempcode}}
+\newcommand{\mpcodefbkg}[2]{%
+\tikz[baseline=(char.base)]{%
+
+%\node at (0, 0)
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill = margin!10, inner sep=#1] (char)
+%top color=white, bottom color=blggr!6,
+%fill opacity=1, yscale=.7, shape border rotate=39,
+%inner sep=6.5pt, shading angle=90,label={}] (bk) 
+{#2};
+
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1] 
+%top color=white, bottom color=blggr!6,
+%fill opacity=1, yscale=.7, shape border rotate=39,
+%inner sep=6.5pt, shading angle=90,label={}] (bk) 
+{\phantom{#2}};
+}}
+
+
+
+%\newcommand{\mpcodef}[1]{\colorbox{margin!10}{%
+%\textcolor{margin!60!black}{%
+%\resizebox{!}{5pt}{#1}}}}
+
+
+%\newcommand{\writempcode}{\mpcodef{\thempcode}}
+
+
+
+\newcommand{\mpcodef}[2]{\mpcodefbkg{#1}{%
+\mpcodeffore{#2}}}
+
+
+\newcommand{\writempcode}[1]{\mpcodef{#1}{\thempcode}}
+
+
+
 
 \newcommand{\clrm}{\stepcounter{mpcode}{\micro{.}}%
 \ifnum\value{mpcode} = 35
-\clrmarginpar{-21pt}{13pt}{\writempcode}%
+\clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
 \else
 \ifnum\value{mpcode} = 97
-\clrmarginpar{-2pt}{13pt}{\writempcode}%
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
 \else 
 \ifnum\value{mpcode} = 32
-\clrmarginpar{-2pt}{13pt}{\writempcode}%
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
 \else
 \ifnum\value{mpcode} = 44
-\clrmarginpar{-2pt}{13pt}{\writempcode}%
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
 \else%
 \if@firstcolumn%
-\ifnum\value{mpcode} > 9
-\clrmarginpar{-21pt}{13pt}{\writempcode}%
+\ifnum\value{mpcode} > 99
+\clrmarginpar{-21pt}{13pt}{\writempcode{0pt}}%
 \else%
-\clrmarginpar{-17pt}{13pt}{\writempcode}%
-\fi%
+\ifnum\value{mpcode} > 9
+\clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
+\else%
+\clrmarginpar{-17pt}{13pt}{\writempcode{1pt}}%
+\fi\fi%
 \else%
 \ifnum\value{mpcode} > 99
-\clrmarginpar{-5pt}{13pt}{\writempcode}%
+\clrmarginpar{-5pt}{13pt}{\writempcode{0pt}}%
 \else%
-\clrmarginpar{-2pt}{13pt}{\writempcode}%
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
 \fi\fi\fi\fi\fi\fi%
 %\thempcode
 }
 
 
-\definecolor{clrmcMid}{RGB}{165, 10, 18}
+\definecolor{cdotc}{RGB}{186, 99, 11}
 
+
+\newcommand{\clrmAltDot}{%
+\resizebox{1.5pt}{1.5pt}{\ensuremath{\blacksquare}}}
 
 \newcommand{\clrmAltFmt}[1]{%
 \textcolor{clrmcMid}{%
-\raisebox{1pt}{\resizebox{6pt}{!}{\ensuremath{\cdots}}}%
+\raisebox{.5pt}{%\resizebox{6pt}{.5pt}{%
+\textcolor{cdotc}{\clrmAltDot{}\hspace{1pt}%
+\clrmAltDot{}\hspace{1pt}\clrmAltDot{}%
+%\ensuremath{\blacksquare}
+}%
+}%
 {\fontsize{8}{6}\selectfont{#1}}}}
+
+
+%\definecolor{clrmcr}{RGB}{7, 165, 232}
+
+\definecolor{clrmcr}{RGB}{0, 148, 123}
+\definecolor{clrmcrr}{RGB}{7, 165, 232}
+
+%\definecolor{clrmcrAlt}{RGB}{148, 30, 0}
+%\definecolor{clrmcrAlt}{RGB}{130, 99, 53}
+\definecolor{clrmcrAlt}{RGB}{130, 89, 68}
+
+
+
+
+\newcommand{\clrmrFmt}[1]{%
+\textcolor{clrmcrr}{%
+\raisebox{-1.5pt}{\resizebox{4pt}{5pt}{\ensuremath{\Rsh}}}}%
+\textcolor{clrmcr}{
+{\fontsize{8}{6}\selectfont{#1}}}}
+
+
+
+\newcommand{\clrmrAltFmt}[2]{%
+\textcolor{clrmcrr}{%
+\raisebox{-1.5pt}{\resizebox{4pt}{5pt}{\ensuremath{\Rsh}}}}%
+\textcolor{clrmcr}{%
+{\fontsize{8}{6}\selectfont{#1}}}%
+\hspace{.5pt}\raisebox{.5pt}{%
+\textcolor{clrmcrAlt}{%
+{\fontsize{7}{6}\selectfont{#2}}}}%
+}
+
+
 
 
 \newcommand{\clrmAltFmtX}[1]{%
@@ -180,30 +477,99 @@
 %\clrmarginpar{-21pt}{1pt}{!}%
 %}
 
+
 \newcommand{\clrmAltImpl}[2]{%
+%\label{alt#2}
 %
 \AddToShipoutPicture{%
-\ifnum\value{page}=#1{
-\AtTextUpperLeft{
+\ifnum\value{page}=#1{%
+\AtTextUpperLeft{%
 \hspace*{-37pt}\raisebox{-14pt}{%
 %{#1:#2}
-\clrmAltFmt{#2}
-}}}\fi
-}
+\clrmAltFmt{#2}%
+}}}\fi%
+}%
 %
 }
+
+
+\newcommand{\clrmrDs}[1]{%
+\ifnum#1>99%
+\hspace*{536pt}%
+\else\ifnum#1>9%
+\hspace*{540pt}%
+\else%
+\hspace*{542pt}%
+\fi\fi
+}
+
+
+\newcommand{\clrmrAltDs}[1]{%
+\ifnum#1>99%
+\hspace*{535pt}%
+\else\ifnum#1>9%
+\hspace*{539pt}%
+\else%
+\hspace*{541pt}%
+\fi\fi
+}
+
+
+
+\newcommand{\clrmrImplRaise}[2]{%
+\ifnum#1=1
+\raisebox{-263pt}{#2}%
+\else%
+\raisebox{-9pt}{#2}%
+\fi%
+}
+
+\newcommand{\clrmrImpl}[2]{%
+\AddToShipoutPicture{%
+\ifnum\value{page}=#1{%
+\AtTextUpperLeft{%
+\clrmrDs{#1}%
+\clrmrImplRaise{#1}{%
+\clrmrFmt{#2}%
+}%
+}}\fi%
+}%
+%
+}
+
+
+
+\newcommand{\clrmrAltImpl}[3]{%
+\AddToShipoutPicture{%
+\ifnum\value{page}=#1{%
+\AtTextUpperLeft{%
+\clrmrAltDs{#1}%
+\clrmrImplRaise{#1}{%
+\clrmrAltFmt{#2}{#3}%
+}%
+}}\fi%
+}%
+%
+}
+
+
 
 
 
 \newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{%
-#2\resizebox{!}{5pt}{(#3)}}} \clrmAltSub{10}{60}{a}
+#2\resizebox{!}{5pt}{(#3)}}\ignorespaces}
 
+% \clrmAltSub{10}{60}{a}
 %\newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{#2}}
 
 
 
 %\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}}
-\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}}
+\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}\ignorespaces}
+
+\newcommand{\clrmr}[2]{\clrmrImpl{#1}{#2}\ignorespaces}
+
+\newcommand{\clrmrAlt}[3]{\clrmrAltImpl{#1}{#2}{#3}\ignorespaces}
 
 %\newcommand{\clrmAlt}[2]{}
 
@@ -229,20 +595,36 @@
 
 \newcommand{\clrmMidImpl}[1]{\micro{.}%
 \if@firstcolumn%
-\clrmarginpar{-21pt}{1pt}{\clrmMidFmt#1}%
+\clrmarginpar{-21pt}{1pt}{\clrmMidFmt{#1}}%
 \else%
-\clrmarginpar{-2pt}{1pt}{\clrmMidFmt#1}%
+\clrmarginpar{-2pt}{1pt}{\clrmMidFmt{#1}}%
 \fi%
 }
 
-\newcommand{\clrmMid}[1]{%
+%\newcommand{\clrmMidLabelTest}[1]{\label{p2a}}
+
+
+
+%\newcommand{\clrmMidFormLabel}[1]{pXX{#1}}
+
+\newcommand{\clrmMidFormLabel}[1]{p\thempcode#1}
+
+%%\newcommand{\clrmMidLabel}[1]{\label{\clrmMidFormLabel{#1}}}
+
+\newcommand{\clrmMidLabel}[1]{%
+\Hy@raisedlink{\hypertarget{\clrmMidFormLabel{#1}}{}}}
+
+
+%\makeatletter
+
+\newcommand{\clrmMid}[1]{\clrmMidLabel{#1}%
 \ifnum\value{mpcode} = 69%
 \else%
 \clrmMidImpl{#1}%
 \fi%
 }
 
-
+%\makeatother
 
 
 \AddToShipoutPicture{%
@@ -287,7 +669,7 @@
 \fi\fi\clrmarginpar{13pt}{\thempcode}}
 
 
-\newcommand{\pcodelabel}{\label{par\thempcode}}
+\newcommand{\pcodelabel}{\hypertarget{par\thempcode}{}}
 
 %{\clrm}
 
@@ -346,11 +728,18 @@
 
 \makeatother
 
+\usepackage{xcolor}
+
+\definecolor{newlinkc}{RGB}{60, 55, 212}
+
+
+
 \newcommand{\hspaceback}[1]{\hspace*{-#1}}
 
 \makeatletter
 
-\DeclareRobustCommand{\defCL}[1]{\def\@currentlabel{\unexpanded{#1}}}
+%\DeclareRobustCommand{\defCL}[1]{\def\@currentlabel{\unexpanded{#1}}}
+
 
 \DeclareRobustCommand{\psCite}[1]{%
 \phantomsection\cite{#1}\label{\unexpanded{#1}}%
@@ -370,9 +759,14 @@
 %\NewCommandCopy{\original@bibitem}{\bibitem}
 %\renewcommand{\bibitem}[1]{\original@bibitem{#1}}
 
+\makeatother
+
+
 \usepackage{xcolor}
 
 \definecolor{newlinkc}{RGB}{60, 55, 212}
+
+\makeatletter
 
 \renewcommand\@biblabel[1]{\hspace*{-6pt}\textit{[\hyperref[\@currentbiblabel]%
 {\textcolor{newlinkc}{#1}}]}\hspace*{6pt}}
@@ -380,8 +774,6 @@
 
 %\newcommand{\LABEL}[2]{\protected@edef\@currentlabel{#2}\label{#1}}
 
-
-\makeatother
 
 
 \makeatother
@@ -1014,6 +1406,13 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \raisebox{4pt}{\resizebox{!}{5pt}{{\color{fncAlt}#1}}}}
 
 \newcommand{\fnastx}{$\bigstar$}
+
+\newcommand{\fndagrc}[1]{\raisebox{#1}{%
+\resizebox{!}{7pt}{\dagger}}}
+
+
+\newcommand{\fndagr}[2]{%\raisebox{1pt}{%
+\resizebox{#1}{#2}{\dagger}}}
 
 %\newcommand{\fnastx}{\raisebox{5pt}{%
 %\resizebox{!}{5pt}{$\bigstar$}}}

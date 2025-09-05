@@ -257,6 +257,19 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 #1}}}}%
 }
 
+%makeatletter
+
+\AddToShipoutPicture{%
+%\ifnum\value{page}=1{
+\AtTextLowerLeft{%
+\raisebox{800pt}{\hypertarget{pgtop\thepage}{}}}
+%}\fi
+}
+
+%\makeatother
+
+
+
 
 
 \newcommand{\mpcodefrAlt}[1]{%
@@ -291,9 +304,14 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 %\hyperref[pgn#1]{\textcolor{pagefrefc!70!black}{#1}}%
 %}
 
+
+%\newcommand{\pagefref}[1]{%
+%\hyperlink{pgn#1}{\textcolor{pagefrefc!70!black}{#1}}%
+%}
 \newcommand{\pagefref}[1]{%
-\hyperlink{pgn#1}{\textcolor{pagefrefc!70!black}{#1}}%
+\hyperlink{pgtop#1}{\textcolor{pagefrefc!70!black}{#1}}%
 }
+
 
 
 \newcounter{pglNumber}

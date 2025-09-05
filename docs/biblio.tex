@@ -224,7 +224,7 @@ Meeting on the Mathematics of Language (MoL 14)} (2015), pp. 39--50.
 
 
 \begin{bItem}[LucasChampollion]
-Champollion, Lucas, \raggedright
+Champollion, Lucas,%\raggedright
 \cq{The Interaction of Compositional Semantics
 and Event Semantics}
 \intitle{Linguistics and Philosophy}, Vol. 39, N. 1 (2015), 
@@ -240,7 +240,7 @@ pp. 31--66. \starturl{https://archive.nyu.edu/bitstream/}
 
 
 \begin{bItem}[GallagherZahavi]
-Gallagher, Shaun \& Dan Zahavi,  \raggedright 
+Gallagher, Shaun \& Dan Zahavi,%\raggedright 
 \cq{Primal Impression and Enactive Perception}.
 \intitle{Subjective Time: The Philosophy, Psychology, and Neuroscience of Temporality},
 Dan Lloyd \& Valtteri Arstila, eds., MIT Press (Cambridge, MA), 2014.
@@ -322,7 +322,7 @@ https://jbthomas.org/Conferences/2019aCIC.pdf
 
 
 \begin{bItem}[AnirudhGoyal]
-Goyal, Anirudh, \textit{et al.},\jaggedright
+Goyal, Anirudh, \textit{et al.},%\raggedright
 \cq{Object Files and Schemata: Factorizing Declarative
 and Procedural Knowledge in Dynamical Systems}.
 \intitle{arXiv}
@@ -621,7 +621,7 @@ Mirjalili, Fereshteh \& Jon Yngve Hardeberg,
 
 
 \begin{bItem}[NancyJNersessian]
-Nersessian, Nancy J., \jaggedright
+Nersessian, Nancy J.,%\raggedright
 \cq{Model-based Reasoning in Distributed Cognitive Systems}.
 \intitle{Philosophy of Science},
 Vol. 72, N. 5 (December 2005). \starturl{https://sites.cc.gatech.edu/aimosaic/faculty/}
@@ -650,7 +650,7 @@ https://www.sciencedirect.com/science/article/pii/S2
 
 
 \begin{bItem}[TimurDoumler]
-open-std.org, \jaggedright
+open-std.org,%\raggedright
 \cq{Contracts for C++: Support for Virtual Functions}
 %\intitle{open-std.org} (2024). 
 %
@@ -1025,7 +1025,7 @@ https://journals.sagepub.com/doi/pdf/10.1177/2041669
 
 
 \begin{bItem}[KennethWilliford]
-Williford, Kenneth, \jaggedright{}
+Williford, Kenneth,%\raggedright{}
 \cq{Husserl's Hyletic Data and Phenomenal Consciousness}.
 \intitle{Phenomenology and the Cognitive Sciences},
 Vol. 12,\\N. 3 (2013), pp. 501--519.\hspace*{-5pt}\boxurln{https://philpapers.org/rec/WILHHD}
@@ -1271,6 +1271,8 @@ index is included in the accompanying \fnacr{JATS} files
 
 \vspace*{-2em}
 
+\hspace*{-4em}\begin{minipage}{253pt}
+
 \seentryD{2}{My brother has been married for 10 
 years,\lin{}but in many
 ways he's still a bachelor.}
@@ -1346,6 +1348,8 @@ some\lin{}sunshine.}\dtween
 \seentryDDD{102}{The spell-checker thinks 
 \q{hooman}\lin{}isn't a word.}
 
+\end{minipage}
+
 \newpage{}
 
 
@@ -1356,16 +1360,24 @@ some\lin{}sunshine.}\dtween
 
 \newcommand{\ixsublabel}[1]{{#1}}
 
+\newcommand{\seealsolink}[2]{%
+\hyperlink{ie:#1}{#2}%
+}%
+
 \newcommand{\sseealso}[1]{
 
 \vspace{-1pt}
-\textit{See also} #1
+\textit{See also} {#1}
 
 }
 
+\newcommand{\seealsotarget}[1]{%
+\hyperlink{ie:#1}{}
+}
 
-\newcommand{\seealsoParen}[1]{%
-(\textit{See also} #1)}
+
+\newcommand{\seealsoParen}[2]{%
+(\textit{See also} \hyperlink{ie:#1}{#2})}
 
 \newcommand{\ixredirect}[2]{\noindent %
  \ixlabel{#1} \hspace{4pt} \textit{See} #2 %{\ixskip}
@@ -1454,13 +1466,15 @@ some\lin{}sunshine.}\dtween
 
 
 \newcommand{\ixslash}{%
-\hspace{.5pt}\raisebox{-1pt}{\resizebox{2}{7}{/}}%
+\hspace{.5pt}\raisebox{-1pt}{\resizebox{2pt}{7pt}{/}}%
 \hspace{.5pt}} %smallsetminus
+
 
 \newcommand{\ixentrypg}[4]{\noindent %
  \ixlabel{#1} \ixspBefore  \pagefref{#2}{\ixslash}%
 \pagefref{#3} \smash{\mpcodefref{#4}}
 }
+
 
 
 \newcommand{\ixsubentrypg}[4]{\noindent %
@@ -1476,7 +1490,7 @@ some\lin{}sunshine.}\dtween
 
 \newcommand{\ixlNote}[3]{\noindent %
  \ixspBack{}, \ixspAfter{} \pagefref{#1} %
-  \ixFootnote{#3}{#4}
+  \ixFootnote{#2}{#3}
 }
 
 
@@ -1611,8 +1625,6 @@ of the main text.
 
 
 
-
-
 \vspace*{-2em}
 
 \hspace{-2.55em}\begin{minipage}{253pt}
@@ -1621,11 +1633,11 @@ of the main text.
 \ixl{8}{45}
 {\ixskip}
 
-\ixentry{anaphora}{1}{5}
+\ixentry{anaphora}{1}{5}%  \hyperlink{pgtop2}{pg2}
 %\ixl{8}{45}
 {\ixskip}
 
-\ixentry{attention}{8}{46}\ixlp{49}
+\seealsotarget{attention}\ixentry{attention}{8}{46}\ixlp{49}
 \sseealso{episodicity}
 {\ixskip}
 
@@ -1684,7 +1696,8 @@ of the main text.
 \ixentry{emergent properties}{3}{17}\ixl{4}{23}\ixlp{26}%
 \ixlMid{7}{43}{a}%
 \longback\ixsl{supervenience}{6}{37}
-\sseealso{reduction (metascience)}
+%\sseealso{reduction}{reduction (metascience)}}
+\sseealso{reduction}{reduction (metascience)}}
 {\ixskip}
 
 %\ixentry{supervenience}{6}{37}
@@ -1693,6 +1706,7 @@ of the main text.
 
 
 %{2}{8}{a}\ixl
+\seealsotarget{episodicity}%
 \ixentry{episodicity}{6}{38}\ixlp{39}\ixl{8}{46}\ixlp{49}
 \sseealso{attention}
 {\ixskip}
@@ -1714,7 +1728,9 @@ of the main text.
 %{\ixskip}
 
 
+\seealsotarget{grammar}%
 \ixentrySubs{grammar}%\raggedright
+\seealsotarget{categorial}%
 \ixsubentry{categorial}{9}{57}\ixlp{58}%
 \ixl{11}{68}%
 \ixsl{cognitive}{8}{46}%
@@ -1759,11 +1775,13 @@ of the main text.
 \ixentry{\q{married} bachelor}{1}{2}\ixl{17}{109}
 {\ixskip}
 
+\seealsotarget{monads}%
 \ixentry{monads}{16}{102}
 {\ixskip}
 
+\seealsotarget{neo}%
 \ixentry{Neo-Davidsonian Event Semantics}{13}{85}%
-\ilx{14}{92}
+\ixl{14}{92}
 {\ixskip}
 
 \ixentry{neuroscience}{4}{28}
@@ -1812,7 +1830,11 @@ of the main text.
 \ixentry{quantifier scope}{1}{3}
 {\ixskip}
 
-\ixentrySubs{reduction (metascience)}\raggedright%
+\ixentrySubs{reduction (metascience)}%
+%\makeatletter\Hy@raiselink{
+\hypertarget{ie:reduction}{}
+%}\makeatother
+   %\raggedright%
  %\ixsubentry{in computers/compilers}{4}{28}%
 \ixsubentry{inter-theoretic}{4}{28}%
 \ixslrAlt{non-reductive materialism}{4}{25}
