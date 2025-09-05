@@ -19,7 +19,7 @@ surface discourse may be transformed to sequences
 of operations toward conceptual aggregation/synthesis, 
 while maintaining that most details concerning how  
 concepts are pairwise combined  
-depend on extra-linguistic cognitive activity. 
+depend on extralinguistic cognitive activity. 
 
 
 ///  Introduction
@@ -260,7 +260,7 @@ be marked in some disambiguating manner).  This isn't only an
 issue of pragmatic context guiding inference of one word-sense 
 or another.  \clrmr{3}{17}Cognition plays a more holistic role, such that 
 any */compositional/* determination depends, in general, 
-on a case-by-case admixture of linguistic and extra-linguistic reasoning. 
+on a case-by-case admixture of linguistic and extralinguistic reasoning. 
 Even when "i/the meaning of a 
 proposition is given by its truth 
 conditions/" we thus have to ask */why/* sentences encode propositions (or 
@@ -283,7 +283,7 @@ structures of computer code are calls to "/system/" functions and
 the use of local symbols, bound to memory addresses, to store 
 temporary values.  If we take compilers and runtimes as 
 primitive models for human discourse processing, the analogy 
-matches a notion of extra-linguistic cognitive "/kernels/" more 
+matches a notion of extralinguistic cognitive "/kernels/" more 
 than a "/closed world/" formal-system semantics.  
 
 To be clear, I do believe the value of signifying propositions is 
@@ -1034,7 +1034,7 @@ cognitive-phenomenological reading of this phenomenon. `vspace<6pt>;
 
 // //
 
-`vspace<3pt>; It is circular just 
+It is circular just 
 to say that "/red box/" means something possessing 
 both redness and boxness, so we need to look a 
 little deeper.  Consider a full sentence:
@@ -1398,7 +1398,7 @@ language %-- is that within "t/transfer of control/" the space
 of available functions is not restricted to those explicitly 
 implemented in high-level code.  Operating-system functions, 
 language runtimes, standard libraries, and other 
-pre-compiled procedures would be analogous to extra-linguistic 
+pre-compiled procedures would be analogous to extralinguistic 
 cognitive competence that may be solicited by constructions 
 in discourse: conceptual transformations' staging-order position 
 might be established by syntactic and 
@@ -1548,7 +1548,8 @@ on motives or context).  Verbs have implicit
 "h/slots/" for such variegated thematic roles, and by observing 
 the particular slot slated for a given word (via theta formations) 
 or phrases (via case-marking; particularly, in English, leading 
-prepositions) \clrmAltSub{14}{85}{b}`pgl;we identify the intended role for the constituent [/LucasChampollion/].
+prepositions) \clrmAltSub{14}{85}{b}`pgl;we identify the intended role for the constituent [/LucasChampollion/].  (Philosophically, 
+the concept of a phrase itself may be emergent/derivative.)
 
 In presenting conceptual syntheses, then, verbs operate via structures 
 of roles rather than one-word-at-a-time reworking of conceptual syntheses.  
@@ -1873,7 +1874,7 @@ reshuffled with almost every word, we are
 invoking "t/staging/" faculties at almost every  
 step, such that sentence-understanding is intrinsically a 
 process that swings back and forth between 
-extra-linguistic and syntactic/semantic/pragmatic 
+extralinguistic and syntactic/semantic/pragmatic 
 inference. `vspace<4pt>; `enlargethispage<5pt>; 
 
 ///  Conclusion
@@ -1883,7 +1884,7 @@ defend my earlier-stated objection to the
 idea (explicit or not) that sentences signify propositions.  
 Discourse may indeed */communicate/* beliefs, 
 but that phenomenon emerges from a multifaceted 
-process integrating both linguistic and extra-linguistic 
+process integrating both linguistic and extralinguistic 
 ideations.  We cannot account for proposition-like 
 meanings */within the affordances/* of syntax, semantics, 
 or pragmatics alone, at least without widening the scope 
@@ -2020,7 +2021,7 @@ connoted by "/in this red tin box/", I don't believe
 Put aphoristically, linguistic formalization should model 
 %-- perhaps with the aid of computational analogs %-- processes 
 through which surface-level discourse is mapped to a sequence 
-of cognitive transforms */presented to/* extra-linguistic 
+of cognitive transforms */presented to/* extralinguistic 
 rational faculties.  This is different from attempting 
 to model concept-synthesis, as a kind of 
 "/algorithmetizable/" cognitive process, 

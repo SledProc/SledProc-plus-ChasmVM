@@ -1412,6 +1412,13 @@ some\lin{}sunshine.}\dtween
 
 
 
+\newcommand{\ixlpg}[3]{\noindent %
+ \ixspBack{}, \ixspAfter{}  \pagefref{#1}{\ixslash}%
+\pagefref{#2} \smash{\mpcodefref{#3}}
+}
+
+
+
 \newcommand{\ixlAlt}[2]{\noindent %
  \ixspBack{}, \ixspAfter{}  \pagefref{#1}  \mpcodefAlt{#2}
 }
@@ -1641,7 +1648,7 @@ of the main text.
 {\ixskip}
 
 \ixentry{anaphora}{1}{5}%  \hyperlink{pgtop2}{pg2}
-%\ixl{8}{45}
+\ixl{11}{73}
 {\ixskip}
 
 \seealsotarget{attention}
@@ -1651,17 +1658,26 @@ of the main text.
 {\ixskip}
 
 \ixentrypp{Category Theory}{9}{55}{57}\ixl{16}{101}
-\sseealso{\sal{grammar} \sube{} \sal{categorial}; \sal{monads}}
+\sseealso{\sal{grammar} \sube{} \sal{categorial}; %
+\sal{computer programming languages} \sube{} \sal{monads}}
 {\ixskip}
 
 \ixentry{compositionality}{3}{17}\ixlp{20}\ixl{4}{28}%
 \ixlpp{9}{54}{57}
 {\ixskip}
 
-\ixentry{computer programming languages}{3}{18}\ixl{11}{69}
-\longback\ixsl{compilers}{11}{70}
-\longback\ixsl{lambda calculus}{14}{89}
-\longback\ixslNote{calling conventions}{14}{cc}{7}
+\ixentry{computer programming languages}{3}{18}%
+\ixlpp{11}{69}{91}\ixl{17}{112}%
+%\longback
+\ixsl{compilers}{11}{70}%
+%\longback
+\ixsl{lambda calculus}{14}{89}%
+%\longback
+\ixslNote{calling conventions}{14}{cc}{7}%
+\longback\seealsotarget{monads}%
+%\ixentry{monads}{16}{102}
+%{\ixskip}
+\ixsl{monads}{16}{102}%
 {\ixskip}
 
 %\ixentryNote{calling conventions}{14}{cc}{7}
@@ -1670,10 +1686,10 @@ of the main text.
 
 
 \ixentrySubs{consciousness}
-\ixsubentry{as \q{in vivo}}{6}{35} %\ixlp{33}
-\longback\ixsl{explanatory gap}{4}{28}\ixlp{29}%
-\longback\ixslAlt{functional benefits}{5}{29}
-\ixsl{metacognition/executive control}{6}{35}
+\ixsubentry{as \q{in vivo}}{6}{35}% %\ixlp{33}
+\ixsl{explanatory gap}{4}{28}\ixlp{29}%
+\ixslAlt{functional benefits}{5}{29}\ixl{6}{35}%
+\ixsl{metacognition/executive control}{6}{35}%
 \ixsl{qualia}{5}{34}\ixl{6}{39}
 {\ixskip}
 
@@ -1706,7 +1722,8 @@ of the main text.
 {\ixskip}
 
 \vspace{-2pt}
-\ixentry{demarcation problem}{8}{46}\ixlp{48}\ixlp{51}
+\ixentry{demarcation problem}{8}{46}\ixlp{48}\ixlp{51}%
+\ixl{9}{53}
 %\ixentry{demarcation problem}{8}{48}{a}
 {\ixskip}
 
@@ -1763,7 +1780,7 @@ of the main text.
 
 
 \ixentrySubs{graph theory}%\raggedright
-\ixsubentrypp{postorder}{12}{73}{76}%
+\ixsubentrypp{postorder}{12}{74}{76}%
 \ixslpg{traversal}{11}{12}{73}%
 \sseealso{\sall{parsegraphs}{parse graphs}}
 {\ixskip}
@@ -1785,7 +1802,7 @@ of the main text.
 {\ixskip}
 
 \ixentry{\q{in vitro}/\q{in vivo}}{5}{34}%
-\ixl{6}{35}\ixlp{37}\ixlp{40}
+\ixl{6}{35}\ixlp{37}\ixlp{40}\ixl{9}{52}
 {\ixskip}
 
 \ixentry{Kowalewski, Hubert}{7}{42}
@@ -1794,9 +1811,9 @@ of the main text.
 \ixentry{\q{married} bachelor}{1}{2}\ixl{17}{109}
 {\ixskip}
 
-\seealsotarget{monads}%
-\ixentry{monads}{16}{102}
-{\ixskip}
+%\seealsotarget{monads}%
+%\ixentry{monads}{16}{102}
+%{\ixskip}
 
 \seealsotarget{neo}%
 \ixentry{Neo-Davidsonian Event Semantics}{13}{85}%
@@ -1825,7 +1842,8 @@ of the main text.
 
 %\ixsubentry{parse graphs}{12}{76}%
 \seealsotarget{parsegraphs}
-\ixentry{parse graphs}{12}{76}%
+\ixentry{parse graphs}{11}{72}\ixlp{73}\ixl{12}{76}%
+\ixlp{78}%
 \ixsl{superposition}{13}{81}
 {\ixskip}
 
@@ -1838,22 +1856,24 @@ of the main text.
 
 \ixentrySubs{perception}%
 \ixsubentry{perceptual givens}{5}{33}%
-\ixsl{protention/retention}{6}{36}\ixlp{38}\ixl{12}{73}
+\ixsl{protention/retention}{6}{36}\ixlp{38}%\ixl{12}{73}
 {\ixskip}
 
 
 \seealsotarget{polymorphism}
-\ixentry{polymorphism}{11}{69}\ixlp{72}\ixl{12}{73}
+\ixentry{polymorphism}{11}{69}\ixlp{72}\ixlAlt{12}{73}
 {\ixskip}
 
 
 \ixentrySubs{profiling}%\raggedright
 \ixsubentryMid{spatial trajectories}{13}{80}{b}%
+\ixslpp{\visavis{} material composition}{10}{64}{66}
 {\ixskip}
-
+\vspace{-1.1em}
 
 
 \ixentry{purposeful action}{6}{38}%
+\ixl{10}{62}%
 \ixsl{in rational agenthood/agency}{5}{33}\ixl{14}{92}%
 \ixsl{intersubjective}{3}{19}\ixl{8}{51}%
 \ixslAlt{\visavis{} social norms/\q{scripts}}{15}{92}%
@@ -1906,11 +1926,14 @@ of the main text.
 %\ixsl{perceptual}{6}{36}\ixlp{37}
 
 \ixentrySubs{synthesis}%
-\ixsubentry{conceptual}{11}{68}\ixl{12}{74}%
+\ixsubentry{conceptual}{9}{59}%
+\ixlpg{9}{10}{60}%
+\ixl{11}{68}\ixl{12}{74}%
 \ixlrAlt{13}{83}%
 \ixl{15}{98}\ixlp{100}%
-\ixlpp{17}{109}{111}\\\ixlp{114}%
-\ixsl{perceptual}{6}{36}\ixlp{37}
+\ixlpp{17}{109}{111}\ixlp{114}%
+\ixsl{perceptual}{6}{36}\ixlp{37}%
+\ixsl{\visavis{} word order}{10}{64}\ixlp{65}
 {\ixskip}
 
 
@@ -1921,7 +1944,8 @@ of the main text.
 {\ixskip}
 
 
-\ixentry{theory semantics}{7}{45}
+\ixentry{theory semantics}{7}{45}%
+\ixl{8}{47}
 {\ixskip}
 
 %\ixentrypg{traversal (graph theory)}{11}{70}%{73}
