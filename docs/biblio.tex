@@ -1360,9 +1360,14 @@ some\lin{}sunshine.}\dtween
 
 \newcommand{\ixsublabel}[1]{{#1}}
 
+
 \newcommand{\seealsolink}[2]{%
 \hyperlink{ie:#1}{#2}%
 }%
+
+\newcommand{\sal}[1]{\seealsolink{#1}{#1}}
+\newcommand{\sall}[2]{\seealsolink{#1}{#2}}
+
 
 \newcommand{\sseealso}[1]{
 
@@ -1372,7 +1377,7 @@ some\lin{}sunshine.}\dtween
 }
 
 \newcommand{\seealsotarget}[1]{%
-\hyperlink{ie:#1}{}
+\hypertarget{ie:#1}{}
 }
 
 
@@ -1637,12 +1642,13 @@ of the main text.
 %\ixl{8}{45}
 {\ixskip}
 
-\seealsotarget{attention}\ixentry{attention}{8}{46}\ixlp{49}
-\sseealso{episodicity}
+\seealsotarget{attention}
+\ixentry{attention}{8}{46}\ixlp{49}
+\sseealso{\sal{episodicity}}
 {\ixskip}
 
 \ixentrypp{Category Theory}{9}{55}{57}\ixl{16}{101}
-\sseealso{grammar \sube{} categorial; monads}
+\sseealso{\sal{grammar} \sube{} \sal{categorial}; \sal{monads}}
 {\ixskip}
 
 \ixentry{compositionality}{3}{17}\ixlp{20}\ixl{4}{28}%
@@ -1680,6 +1686,7 @@ of the main text.
 %\sseealso{G\"ardenfors, Peter}
 {\ixskip}
 
+
 %\ixentry{G\"ardenfors, Peter}{9}{55}
 %\sseealso{Conceptual Space Theory}
 %{\ixskip}
@@ -1697,7 +1704,7 @@ of the main text.
 \ixlMid{7}{43}{a}%
 \longback\ixsl{supervenience}{6}{37}
 %\sseealso{reduction}{reduction (metascience)}}
-\sseealso{reduction}{reduction (metascience)}}
+\sseealso{\sall{reduction}{reduction (metascience)}}}
 {\ixskip}
 
 %\ixentry{supervenience}{6}{37}
@@ -1708,15 +1715,16 @@ of the main text.
 %{2}{8}{a}\ixl
 \seealsotarget{episodicity}%
 \ixentry{episodicity}{6}{38}\ixlp{39}\ixl{8}{46}\ixlp{49}
-\sseealso{attention}
+\sseealso{\sal{attention}}
 {\ixskip}
 
+\seealsotarget{epistemicnarratives}
 \ixentry{epistemic narratives}{2}{8}\ixlp{10}\ixl{16}{107}
 {\ixskip}
 
 
 \ixentry{extralinguistic reasoning}{3}{18}%
-\ixlp{20}\ixl{16}{104}\ixl{17}{114}
+\ixlp{20}\ixl{15}{94}\ixl{16}{104}\ixl{17}{114}
 {\ixskip}
 
 
@@ -1747,11 +1755,11 @@ of the main text.
 \ixentrySubs{graph theory}%\raggedright
 \ixsubentrypp{postorder}{12}{73}{76}%
 \ixslpg{traversal}{11}{12}{73}%
-\sseealso{parse graphs}
+\sseealso{\sall{parsegraphs}{parse graphs}}
 {\ixskip}
 
 
-
+\seealsotarget{grounding}
 \ixentrypp{grounding}{8}{48}{50}\ixl{14}{88}\ixl{15}{98}\ixlp{99}
 {\ixskip}
 
@@ -1803,6 +1811,7 @@ of the main text.
 {\ixskip}
 
 %\ixsubentry{parse graphs}{12}{76}%
+\seealsotarget{parsegraphs}
 \ixentry{parse graphs}{12}{76}%
 \ixsl{superposition}{13}{81}
 {\ixskip}
@@ -1830,9 +1839,11 @@ of the main text.
 \ixentry{quantifier scope}{1}{3}
 {\ixskip}
 
+
+\seealsotarget{reduction}
 \ixentrySubs{reduction (metascience)}%
 %\makeatletter\Hy@raiselink{
-\hypertarget{ie:reduction}{}
+%\hypertarget{ie:reduction}{}
 %}\makeatother
    %\raggedright%
  %\ixsubentry{in computers/compilers}{4}{28}%
@@ -1858,17 +1869,25 @@ of the main text.
 
 
 \ixentry{subjectification}{14}{88}
-\sseealso{epistemic narratives; grounding}
+\sseealso{\sall{epistemicnarratives}{epistemic narratives}; %
+\sal{grounding}}
 {\ixskip}
 
 \ixentryNote{subjectivity}{5}{benefit}{5}%
 \ixl{6}{35}
 {\ixskip}
 
+
+\ixentrysubs{synthesis}%
+\ixsubentry{conceptual}{11}{68}\ixl{12}{74}%\ixl{17}{113}
+\ixsl{perceptual}{6}{36}\ixlp{37}
+{\ixskip}
+
+
 \ixentry{thematic relations}{13}{85}%
 \ixlpp{14}{86}{90}%
 \ixsl{theta grid}{13}{85}%
-\sseealso{Neo-Davidsonian Event Semantics}
+\sseealso{\sall{neo}{Neo-Davidsonian Event Semantics}}
 {\ixskip}
 
 
