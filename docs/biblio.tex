@@ -1270,7 +1270,7 @@ index is included in the accompanying \fnacr{JATS} files
 
 %\centering{{\Large Sentence Examples}}
 
-\vspace*{-2em}
+\vspace*{-2.3em}
 
 \hspace*{-5em}\begin{minipage}{253pt}
 
@@ -1378,8 +1378,10 @@ some\lin{}sunshine.}\dtween
 }
 
 \newcommand{\seealsoParen}[1]{%
-(\textit{See also} {#1})}
+(\textit{see also} {#1})}
 
+
+\newcommand{\seealsoInl}[1]{. \textit{See also} {#1}}
 
 
 \newcommand{\seealsotarget}[1]{%
@@ -1619,7 +1621,7 @@ some\lin{}sunshine.}\dtween
 \AddToShipoutPicture{%
 \ifnum\value{page}=20{
 \AtTextLowerLeft{
-\hspace*{256pt}\raisebox{39pt}{%
+\hspace*{257pt}\raisebox{45pt}{%
 \mmakefntextAlt{\fndagr{9pt}{9pt}}{\footnotesize{
 \begin{minipage}[t]{270pt}
 While 
@@ -1662,12 +1664,16 @@ also used within the main text.
 \seealsotarget{attention}
 \ixentry{attention}{8}{46}\ixlp{49}%
 \ixsl{attentional foci}{10}{66}%
-\sseealso{\sal{episodicity}}
+\seealsoParen{\sal{subjectification} \sube{} \sal{grounding}}
+\sseealso{\sal{episodicity}; 
+\sall{cph}{cognitive phenomenology}  \sube{} 
+\sall{cph-methods}{phenomenological methods}}
 {\ixskip}
+
 
 \ixentrypp{Category Theory}{9}{55}{57}\ixl{16}{101}\ixl{17}{110}
 \sseealso{\sal{grammar} \sube{} \sal{categorial}; %
-\sal{computer programming languages} \sube{} \sal{monads}}
+\sall{cpl}{computer programming languages} \sube{} \sal{monads}}
 {\ixskip}
 
 \ixentry{compositionality}{3}{17}\ixlp{20}\ixl{4}{28}%
@@ -1683,10 +1689,12 @@ also used within the main text.
 %\ixlAlt{18}{115}%
 %{\ixskip}
 
+\seealsotarget{cph}%
 \ixentrySubs{cognitive phenomenology}%\raggedright
 \ixsubentryAlt{and humanities/social science}{18}{115}%
 \ixsl{and linguistics}{4}{21}\ixlp{22}%
 \ixsl{Husserl, Edmund}{4}{21}\ixl{8}{46}%
+\seealsotarget{cph-methods}%
 \ixsl{phenomenological methods}{6}{37}\ixlp{40}\ixlpp{8}{46}{51}
 {\ixskip}
 
@@ -1695,7 +1703,7 @@ also used within the main text.
 %\ixsl{phenomenological methods}{6}{40}\ixlpp{8}{46}{51}
 %{\ixskip}
 
-
+\seealsotarget{cpl}
 \ixentry{computer programming languages}{3}{18}%
 \ixlpp{11}{69}{91}\ixl{17}{112}%
 %\longback
@@ -1771,8 +1779,8 @@ also used within the main text.
 
 %{2}{8}{a}\ixl
 \seealsotarget{episodicity}%
-\ixentry{episodicity}{6}{38}\ixlp{39}\ixl{8}{46}\ixlp{49}
-\sseealso{\sal{attention}}
+\ixentry{episodicity}{6}{38}\ixlp{39}\ixl{8}{46}\ixlp{49}%
+\longback\seealsoInl{\sal{attention}}
 {\ixskip}
 
 \seealsotarget{epistemicnarratives}
@@ -1816,9 +1824,9 @@ also used within the main text.
 {\ixskip}
 
 
-\seealsotarget{grounding}
-\ixentrypp{grounding}{8}{48}{50}\ixl{14}{88}\ixl{15}{98}\ixlp{99}
-{\ixskip}
+%\seealsotarget{grounding}
+%\ixentrypp{grounding}{8}{48}{50}\ixl{14}{88}\ixl{15}{98}\ixlp{99}
+%{\ixskip}
 
 %\ixentry{Husserl, Edmund}{4}{21}\ixl{8}{46}%
 %\ixsl{phenomenological methods}{6}{40}\ixlpp{8}{46}{51}
@@ -1835,7 +1843,8 @@ also used within the main text.
 \ixl{6}{35}\ixlp{37}\ixlp{40}\ixl{9}{52}
 {\ixskip}
 
-\ixentry{Kowalewski, Hubert}{7}{42}
+\ixentrypp{Kowalewski, Hubert}{7}{43}{45}%
+\ixsl{and Langacker, Roland/cognitive grammar}{7}{43}
 {\ixskip}
 
 \ixentry{\q{married} bachelor}{1}{2}\ixl{17}{109}
@@ -1867,7 +1876,8 @@ also used within the main text.
 %\ixl{6}{35}
 
 
-\ixentry{ontological regions}{16}{102}
+\ixentry{ontological regions}{16}{102}%
+\longback\seealsoInl{\sall{tts}{type-theoretic semantics}}
 {\ixskip}
 
 %\ixsubentry{parse graphs}{12}{76}%
@@ -1895,6 +1905,7 @@ also used within the main text.
 {\ixskip}
 
 
+\seealsotarget{profiling}%profiling
 \ixentrySubs{profiling}%\raggedright
 \ixsubentryMid{spatial trajectories}{13}{80}{b}%
 \ixl{15}{98}%
@@ -1935,12 +1946,13 @@ also used within the main text.
 %}{Semantic Web}
 %{\ixskip}
 
-\vspace{-2pt}
+\vspace{-1pt}
 \ixentry{Semantic Web}{14}{91}\longback%
 \ixsl{RDF (Resource Description Framework)}{14}{90}%
 {\ixskip}
+\vspace{-1pt}
 
-
+\seealsotarget{semi}%
 \ixentrypp{semi-perceptual content}{10}{62}{67}%
 \ixl{16}{106}
 %\ixlp{67}%\ixl{15}{100}\ixl{17}{113}
@@ -1950,16 +1962,28 @@ also used within the main text.
 \ixentry{set theory}{12}{78}\ixl{15}{100}\ixl{17}{113}
 {\ixskip}
 
-
-\ixentry{subjectification}{14}{88}
-\sseealso{\sall{epistemicnarratives}{epistemic narratives}; %
-\sal{grounding}}
+\ixentryrAlt{staging}{10}{63},\ixlp{66}%
+\ixsl{and grammar}{10}{70}%
+\seealsoParen{\sall{semi}{semi-perceptual content}; \sal{profiling}}
 {\ixskip}
 
+
+\ixentry{subjectification}{14}{88}%
+\ixslpp{grounding}{8}{48}{50}\ixl{14}{88}\ixl{15}{98}\ixlp{99}
+\sseealso{\sall{epistemicnarratives}{epistemic narratives}; %
+\sal{subjectivity} \sube{} \sal{intersubjectivity}}
+}
+{\ixskip}
+
+%\seealsotarget{grounding}
+
+
+\seealsotarget{subjectivity}%
 \ixentryNote{subjectivity}{5}{benefit}{5}%
 \ixl{6}{35}%
 \ixslpp{first-person}{4}{28}{29}\ixl{5}{34}%
-\ixsl{intersubjectivity}{16}{106}\ixlp{107}
+\seealsotarget{intersubjectivity} %subjectivity
+\longback\ixsl{intersubjectivity}{16}{106}\ixlp{107}
 {\ixskip}
 
 
@@ -1980,8 +2004,8 @@ also used within the main text.
 
 \ixentry{thematic relations}{13}{85}%
 \ixlpp{14}{86}{90}%
+\ixsl{grammatical case}{13}{84}%
 \ixsl{theta grid}{13}{85}%
-\ixsl{case}{13}{84}%
 \sseealso{\sall{neo}{Neo-Davidsonian Event Semantics}}
 {\ixskip}
 
@@ -2005,6 +2029,7 @@ also used within the main text.
 \ixentrySubs{type theory}%
 \ixsubentryMid{dependent types}{16}{102}{b}%
 \ixsl{coercions}{16}{102}%
+\seealsotarget{tts}%
 \ixsl{type-theoretic semantics}{16}{102}%
 \ixsl{type-theoretic syntax}{9}{58}%
 \ixsl{type systems with inheritance}{11}{70}%
