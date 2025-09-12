@@ -593,6 +593,12 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \resizebox{5pt}{!}{#1}}}
 
 
+
+\newcommand{\clrmBlockQuoteFmt}[1]{%
+\textcolor{clrmcMid!20!gray}{%
+\resizebox{!}{6.5pt}{#1}}}
+
+
 \newcommand{\clrmMidImpl}[1]{\micro{.}%
 \if@firstcolumn%
 \clrmarginpar{-21pt}{1pt}{\clrmMidFmt{#1}}%
@@ -600,6 +606,16 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \clrmarginpar{-2pt}{1pt}{\clrmMidFmt{#1}}%
 \fi%
 }
+
+\newcommand{\clrmBlockQuoteImpl}[1]{\micro{.}%
+\if@firstcolumn%
+\clrmarginpar{-18pt}{1pt}{\clrmBlockQuoteFmt{#1}}%
+\else%
+\clrmarginpar{-2pt}{1pt}{\clrmBlockQuoteFmt{#1}}%
+\fi%
+}
+
+
 
 %\newcommand{\clrmMidLabelTest}[1]{\label{p2a}}
 
@@ -609,10 +625,25 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 \newcommand{\clrmMidFormLabel}[1]{p\thempcode#1}
 
+\newcommand{\clrmBlockQuoteFormLabel}[1]{p\thempcode#1}
+
 %%\newcommand{\clrmMidLabel}[1]{\label{\clrmMidFormLabel{#1}}}
 
 \newcommand{\clrmMidLabel}[1]{%
 \Hy@raisedlink{\hypertarget{\clrmMidFormLabel{#1}}{}}}
+
+\newcommand{\clrmBlockQuoteLabel}[1]{%
+\Hy@raisedlink{\hypertarget{\clrmBlockQuoteFormLabel{#1}}{}}}
+
+
+
+\newcommand{\clrmBlockQuote}[1]{\clrmBlockQuoteLabel{#1}%
+\ifnum\value{mpcode} = 69%
+\else%
+\clrmBlockQuoteImpl{#1}%
+\fi%
+}
+
 
 
 %\makeatletter
