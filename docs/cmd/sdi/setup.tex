@@ -21,12 +21,12 @@
 \raisebox{-#1}{#2}%
 }
 
+\providecommand{\baselinestretch}{1.0}
 
+\newcommand{\hnull}{\hspace*{0pt}}
 
 
 \newif\ifSdiShow
-\SdiShowtrue
-
 \SdiShowfalse
 
 \edef\oldCCofEXC{\the\catcode`!}
@@ -54,6 +54,20 @@
 \usepackage{etoolbox}
 
 \usepackage{ifthen}
+
+
+
+\newlength\original-baselineskip % original baselineskip
+
+\providecommand{\baselinestretch}{1.0}
+
+\AtBeginDocument{%
+\ifdefempty{\baselinestretch}{%
+\renewcommand{\baselinestretch}{1.0}}{}
+\setlength\original-baselineskip{\baselineskip}%
+\let\original-baselinestretch\baselinestretch%
+} 
+
 
 
 \oldCCforEXC\oldCCforDASH
