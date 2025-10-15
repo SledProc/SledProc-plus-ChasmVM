@@ -28,6 +28,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  pre_rule( "space-to-end-of-line", "[__\\t]* \\n" );
  pre_rule( "end-of-line", "[__\\t\\S]* \\n" );
  pre_rule( "single-space", "[__\\t]" );
+// pre_rule( "single-dot", "[.]" );
 
  pre_rule( "blank-line-content", "[__\\t]* \\n" );
 
@@ -115,6 +116,131 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 //  graph_build.single_slash_line();
 // });
 
+ add_rule( gtagml_context, "enter-latex-only-to-space--leave-space",
+  " .single-space.* -%>> (?<sp> .single-space.*)  "
+  ,[&]
+ {
+  graph_build.enter_latex_only_to_space(p.matched("sp"));
+ });
+
+
+ add_rule( gtagml_context, "enter-latex-only-to-space",
+  " .single-space.* -%> .single-space.*  "
+  ,[&]
+ {
+  graph_build.enter_latex_only_to_space();
+ });
+
+
+
+ add_rule( flags_all_(parse_context ,latex_only_to_space),
+  gtagml_context, "leave-latex-only-to-space--consume-space",
+  " _ (?= \\s) "
+  ,[&]
+ {
+  graph_build.leave_latex_only_to_space();
+ });
+
+
+ add_rule( flags_all_(parse_context ,latex_only_to_space),
+  gtagml_context, "leave-latex-only-to-space",
+  " .single-space.+ (?=\\S) "
+  ,[&]
+ {
+  graph_build.leave_latex_only_to_space();
+ });
+
+ add_rule( flags_all_(parse_context ,latex_only_to_space),
+  gtagml_context, "leave-latex-only-to-space-at-newline",
+  " .single-space.* (?=\\n) "
+  ,[&]
+ {
+  graph_build.leave_latex_only_to_space();
+ });
+
+
+// add_rule( gtagml_context, "immediate-latex-only",
+//  " -%>> (?<text>\\S+) "
+//  ,[&]
+// {
+//  QString m = p.matched("text");
+//  graph_build.latex_only(m);
+// });
+
+
+
+
+ add_rule( gtagml_context, "enter-latex-only--leave-space",
+  " <<-% \\s* "
+  ,[&]
+ {
+  graph_build.enter_latex_only();
+ });
+
+ add_rule( gtagml_context, "enter-latex-only",
+  " \\s+ <-% \\s* "
+  ,[&]
+ {
+  graph_build.enter_latex_only();
+ });
+
+ add_rule( flags_all_(parse_context ,latex_only),
+   gtagml_context, "leave-latex-only--leave-space",
+   " \\s* %->> "
+   ,[&]
+ {
+  graph_build.leave_latex_only();
+ });
+
+
+ add_rule( flags_all_(parse_context ,latex_only),
+   gtagml_context, "leave-latex-only",
+   " \\s* %-> \\s* "
+   ,[&]
+ {
+  graph_build.leave_latex_only();
+ });
+
+ add_rule( gtagml_context, "force-switch-sentence",
+  " => \\s "
+  ,[&]
+ {
+  graph_build.force_switch_sentence();
+ });
+
+ add_rule( gtagml_context, "enter-sentences-latex-filter",
+  " (?<pretext> [~-]+) > (?= [\\\\$]) "
+  ,[&]
+ {
+  graph_build.enter_sentences_latex_filter(p.matched("pretext"));
+ });
+
+ add_rule( gtagml_context, "leave-sentences-latex-filter",
+  " (?<= [}$]) < (?<pretext> [~-]+) "
+  ,[&]
+ {
+  graph_build.leave_sentences_latex_filter(p.matched("pretext"));
+ });
+
+
+ add_rule( gtagml_context, "enter-sentences-only",
+  " (?<pre-space> (?: .single-space.* \\n .single-space.*) | "
+  "  (?: .single-space.+ ) ) "
+  " (?<open> <{0,2}) \\{ "
+  ,[&]
+ {
+  graph_build.enter_sentences_only(p.matched("open"), p.matched("pre-space"));
+ });
+
+ add_rule( flags_all_(parse_context ,sentences_only),
+   gtagml_context, "leave-sentences-only",
+   " \\} (?<close> >{0,2}) "
+   " (?<post-space> .single-space.* \\n? .single-space.*) "
+   ,[&]
+ {
+  graph_build.leave_sentences_only(p.matched("close"), p.matched("post-space"));
+ });
+
  add_rule( flags_all_(parse_context ,read_parens_as_label),
    gtagml_context, "exs-blank-line",
    " (?: \\n \\s*){2,} "
@@ -151,6 +277,23 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
   graph_build.heading(first.size(), second.size(), text);
 
+ });
+
+// single-dot
+
+ add_rule( gtagml_context, "end-sentence",
+   " (?<punctuation> [!?.]) (? (?=\\s{2,}) | (?= \\n) )"
+//   " (?<punctuation> [!?:.]) (\\s{2,} | \\n)"
+   ,[&]
+ {
+  graph_build.end_sentence(p.matched("punctuation"));
+ });
+
+ add_rule( gtagml_context, "manual-end-sentence",
+   "\\\\[.]/"
+   ,[&]
+ {
+  graph_build.end_sentence();
  });
 
 
@@ -252,9 +395,22 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
    " \\[/ (?<label> [^:;/]+) (?: (?<locator> [^/]*) )? /\\] "
    ,[&]
  {
-  graph_build.citation(p.matched("label"), p.matched("locator"));
+  graph_build.citation(p.match_text(), p.matched("label"), p.matched("locator"));
  });
 
+ add_rule( gtagml_context, "enter-footnote",
+   " \\{< (?<pretext> [~_-]*) (?<space> \\s+)  "
+   ,[&]
+ {
+  graph_build.enter_footnote(p.matched("pretext"), p.matched("space"));
+ });
+
+ add_rule( gtagml_context, "leave-footnote",
+   " (?<space> \\s+) (?<pretext> [~_-]*) >\\} "
+   ,[&]
+ {
+  graph_build.leave_footnote(p.matched("pretext"), p.matched("space"));
+ });
 
 
 

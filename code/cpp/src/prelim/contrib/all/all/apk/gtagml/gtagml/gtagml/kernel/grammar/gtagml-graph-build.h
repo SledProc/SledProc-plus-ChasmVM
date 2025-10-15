@@ -44,12 +44,19 @@ class GTagML_Document_Light_Xml;
 
 class GTagML_Graph_Build
 {
- flags_(1)
+ flags_(2)
   bool math_mode:1;
   bool skip_command_node_insert:1;
   bool active_annotation_entry:1;
   bool active_annotation_tile:1;
   bool active_attribute_sequence:1;
+  bool latex_only:1;
+  bool sentences_only:1;
+  bool sentences_latex_filter:1;
+  bool just_ended_sentence:1;
+  bool await_paragraph_start:1;
+  bool await_sentence_start:1;
+  bool use_latex_sdi_markers:1;
  _flags
 
  enum class Acc_Mode {
@@ -75,6 +82,8 @@ class GTagML_Graph_Build
  GTagML_Parsing_Modes current_parsing_mode_;
 
  QStack<QPair<GTagML_Parsing_Modes, Acc_Mode>> prior_parsing_modes_;
+
+ caon_ptr<GTagML_Parser> parser_;
 
  GTagML_Parse_Context parse_context_;
 
@@ -126,6 +135,34 @@ class GTagML_Graph_Build
  QString latex_;
  QTextStream latex_stream_;
 
+ struct Nesting_Codes {
+
+  static constexpr u1 Signal_Default = 255;
+  static constexpr u1 Continue_At_End = 16;
+  static constexpr u1 Continue_At_Start = 32;
+
+ };
+
+ QMap<u1, u1> nesting_codes_by_depth_;
+
+ u1 sentence_nesting_depth_;
+
+ QString sentences_sdi_;
+ QTextStream sentences_sdi_stream_;
+
+ QString sentences_text_;
+ QTextStream sentences_text_stream_;
+
+ QString sentence_gaps_;
+ QTextStream sentence_gaps_stream_;
+
+ u2 section_id_;
+ u4 sentence_id_;
+ u4 paragraph_id_;
+
+ u4 footnote_id_;
+
+
  QString primary_acc_;
  QTextStream primary_acc_stream_;
 
@@ -161,6 +198,26 @@ public:
 
  GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& document_info);
 
+ QString current_paragraph_type_to_string()
+ {
+  switch (current_paragraph_type_)
+  {
+  case Paragraph_Types::Abstract:
+    return "Abstract";
+  case Paragraph_Types::Block_Quote:
+    return "bq";
+  case Paragraph_Types::N_A:
+    return "N/A";
+  case Paragraph_Types::P0:
+    return "P0";
+  case Paragraph_Types::P1:
+    return "P1";
+
+  default: return "?";
+  }
+
+ }
+
  void save_jats(QString path)
  {
   //jats_ = QString::fromLatin1(jat)
@@ -173,7 +230,40 @@ public:
   KA::TextIO::save_file(path, latex_);
  }
 
- void init();
+ void save_sentences(QString path)
+ {
+  KA::TextIO::save_file(path, sentences_sdi_);
+ }
+
+ void init(caon_ptr<GTagML_Parser> parser);
+
+ void end_sentence(QString punctuation,
+   u1 nesting_code = Nesting_Codes::Signal_Default,
+   QVector<QPair<QString, QString>> supplements = {});
+
+ void end_sentence(QString punctuation,
+   QVector<QPair<QString, QString>> supplements)
+ {
+  end_sentence(punctuation, Nesting_Codes::Signal_Default, supplements);
+ }
+
+ void end_sentence(QVector<QPair<QString, QString>> supplements)
+ {
+  end_sentence("", Nesting_Codes::Signal_Default, supplements);
+ }
+
+ void end_sentence(u1 nesting_code,
+   QVector<QPair<QString, QString>> supplements = {})
+ {
+  end_sentence("", nesting_code, supplements);
+ }
+
+ void end_sentence()
+ {
+  end_sentence("", Nesting_Codes::Signal_Default, {});
+ }
+
+
 
  void exs_item(u2 number, QString text);
  void paren_ref(u2 number, QString text);
@@ -183,7 +273,7 @@ public:
  void bulleted_item(QString symbol, QString supp);
 
  void latex_command_auto_closed(QString command_name, QString arg);
- void citation(QString command_name, QString arg);
+ void citation(QString full_match, QString command_name, QString arg);
 
 
  void blank_line_as_visible_space();
@@ -194,6 +284,27 @@ public:
  void single_slash_line_plus();
 
  void enter_subparagraph(QString text);
+
+ void enter_latex_only();
+ void leave_latex_only();
+
+ void enter_footnote(QString pretext, QString space);
+ void leave_footnote(QString pretext, QString space);
+
+ void enter_sentences_latex_filter(QString pretext);
+ void leave_sentences_latex_filter(QString pretext);
+
+ void force_switch_sentence();
+
+ void enter_sentences_only(QString open, QString pre_space);
+ void leave_sentences_only(QString close, QString post_space);
+
+ void enter_latex_only_to_space(QString text);
+
+ void enter_latex_only_to_space();
+ void leave_latex_only_to_space();
+
+ void latex_only(QString text);
 
  void enter_special_section(QString text);
  void enter_abstract();

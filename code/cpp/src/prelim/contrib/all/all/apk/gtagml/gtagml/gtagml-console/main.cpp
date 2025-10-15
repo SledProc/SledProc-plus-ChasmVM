@@ -69,6 +69,7 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
 
  gdoc->save_jats(path + ".jats");
  gdoc->save_latex(path + ".tex");
+ gdoc->save_sentences(path + ".sentences.sdi");
 
  qDebug() << "path = " << path + ".jats";
 
@@ -180,8 +181,13 @@ int main(int argc, char *argv[])
  QString file;// = cmdl.size() > 3? cmdl[3]: DEFAULT_SDI_FOLDER
  QString manfolder;
 
- file = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/paper.gt";
- folder = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/src";
+// file = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/paper.gt";
+// folder = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/src";
+
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/foreword/foreword.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/foreword";
+
+
 
 // QStringList cmdl = get_cmdl(argc, argv, 2, {
 //   {&folder, DEFAULT_GTAGML_FOLDER "/dg/ctg/src"},
@@ -224,3 +230,330 @@ int main(int argc, char *argv[])
  return 0;
 }
 
+
+template<u1 length>
+QString bin_to_qs(u2 num)
+{
+ u2 m = 1;
+ QString result;
+ for(u1 i = 0; i < length; ++i, m *= 2)
+ {
+  if(num & m)
+    result += "a";
+  else
+    result += "b";
+ }
+ return result;
+}
+
+void invert(QString& qs)
+{
+ std::reverse(qs.begin(), qs.end());
+}
+
+u2 score(QString qs)
+{
+ invert(qs);
+ qs.replace('a', '1');
+ qs.replace('b', '0');
+ return qs.toUShort(nullptr, 2);
+}
+
+void rotate(QString& qs)
+{
+ QString qc = qs.right(1);
+ qs.chop(1);
+ qs.prepend(qc);
+}
+
+
+void check_rotation(QMap<QString, QPair<u2, QStringList>>& diagrams, QString d)
+{
+ if(diagrams.contains(d))
+   return;
+
+ QString r = d;
+
+ bool r_found = false;
+
+ while(true)
+ {
+  rotate(r);
+  if(r == d)
+    break;
+
+  if(diagrams.contains(r))
+  {
+   r_found = true;
+   u2 ds = score(d);
+   diagrams[r].second.push_back(d);
+   u2 rs = diagrams[r].first;
+   if(ds < rs)
+   {
+    auto pr = diagrams[r];
+    diagrams.remove(r);
+    pr.first = ds;
+    diagrams[d] = pr;
+   }
+   break;
+  }
+ }
+
+ if(!r_found)
+ {
+  diagrams[d] = {score(d), {d}};
+ }
+}
+
+QString to_digits(QString d)
+{
+ QString result;
+
+ for(u1 i = 0; i < 8; ++i)
+ {
+  if(d[i] == 'a')
+    result += QString::number(i + 1);
+ }
+
+ return result;
+}
+
+
+QString to_digits12(QString d)
+{
+ QString result;
+
+ for(u1 i = 0; i < 11; ++i)
+ {
+  if(d[i] == 'a')
+  {
+   if(i == 0)
+     result += "c";
+
+   else if(i == 11)
+    result += "b";
+
+   else if(i == 10)
+    result += "a";
+
+   else
+     result += QString::number(i);
+
+  }
+ }
+
+ return result;
+}
+
+
+u1 period_8(QString qs)
+{
+ QString try_1 = qs.left(1).repeated(8);
+ if(try_1 == qs)
+   return 1;
+
+ QString try_2 = qs.left(2).repeated(4);
+ if(try_2 == qs)
+   return 2;
+
+ QString try_4 = qs.left(4).repeated(2);
+ if(try_4 == qs)
+   return 4;
+
+ return 8;
+}
+
+
+u1 period_12(QString qs)
+{
+ QString try_1 = qs.left(1).repeated(12);
+ if(try_1 == qs)
+   return 1;
+
+ QString try_2 = qs.left(2).repeated(6);
+ if(try_2 == qs)
+   return 2;
+
+ QString try_3 = qs.left(3).repeated(4);
+ if(try_3 == qs)
+   return 3;
+
+ QString try_4 = qs.left(4).repeated(3);
+ if(try_4 == qs)
+   return 4;
+
+ QString try_6 = qs.left(6).repeated(2);
+ if(try_6 == qs)
+   return 6;
+
+ return 12;
+}
+
+int main2(int argc, char *argv[])
+{
+ QMap<QString, QPair<u2, QStringList>> diagrams;
+
+ for(u2 i = 0; i < 256; ++i)
+ {
+  QString b = bin_to_qs<8>(i);
+  check_rotation(diagrams, b);
+//  u2 bscore = score(b);
+//  qDebug() << i << " = " << b << " : " << bscore;
+ }
+
+ QStringList ks = diagrams.keys();
+
+ qDebug() << "total = " << ks.size() << "\n";
+
+ std::sort(ks.begin(), ks.end(), [](const QString& lhs, const QString& rhs) -> bool
+ {
+  return score(lhs) < score(rhs);
+ });
+
+ QMap<QString, QString> to_lowest;
+
+ for(QString key : ks)
+ {
+  for(QString alt : diagrams[key].second)
+  {
+   to_lowest[alt] = key;
+  }
+ }
+
+ auto flip = [&to_lowest](QString qs)
+ {
+  QString flipped = "xxxxxxxx";
+  flipped[0] = qs[0];
+  flipped[7] = qs[1];
+  flipped[6] = qs[2];
+  flipped[5] = qs[3];
+  flipped[4] = qs[4];
+  flipped[3] = qs[5];
+  flipped[2] = qs[6];
+  flipped[1] = qs[7];
+  return to_lowest[flipped];
+ };
+
+ QMap<u1, QStringList> diagrams_by_count;
+
+
+ for(QString key : ks)
+ {
+  u1 c = key.count('a');
+  diagrams_by_count[c].push_back(key);
+ }
+
+ for(u1 arrows = 0; arrows <= 8; ++arrows)
+ {
+  QStringList dc = diagrams_by_count[arrows];
+  qDebug() << arrows << " -> " << dc.size(); // << " = " << dc;
+
+  u1 asym_count = 0;
+
+  for(QString dca : dc)
+  {
+   QString f = flip(dca);
+
+   u2 per = period_8(dca);
+
+   if(f == dca)
+     qDebug() << " " << to_digits(dca) << " <" << per << "> " <<  " (symmetric)";
+   else
+   {
+    qDebug() << " " << to_digits(dca) << " <" << per << "> " << " [" << to_digits(flip(dca)) << "]";
+    ++asym_count;
+   }
+  }
+  qDebug() << "asym: " << asym_count << "\n";
+ }
+
+ return 0;
+}
+
+
+
+
+
+int main1(int argc, char *argv[])
+{
+ QMap<QString, QPair<u2, QStringList>> diagrams;
+
+ for(u2 i = 0; i < 4096; ++i)
+ {
+  QString b = bin_to_qs<12>(i);
+  check_rotation(diagrams, b);
+ }
+
+
+ QStringList ks = diagrams.keys();
+
+ qDebug() << "total = " << ks.size() << "\n";
+
+ std::sort(ks.begin(), ks.end(), [](const QString& lhs, const QString& rhs) -> bool
+ {
+  return score(lhs) < score(rhs);
+ });
+
+ QMap<QString, QString> to_lowest;
+
+ for(QString key : ks)
+ {
+  for(QString alt : diagrams[key].second)
+  {
+   to_lowest[alt] = key;
+  }
+ }
+
+ auto flip = [&to_lowest](QString qs)
+ {
+  QString flipped = "xxxxxxxxxxxx";
+  flipped[0] = qs[0];
+  flipped[11] = qs[1];
+  flipped[10] = qs[2];
+  flipped[9] = qs[3];
+  flipped[8] = qs[4];
+  flipped[7] = qs[5];
+  flipped[6] = qs[6];
+  flipped[5] = qs[7];
+  flipped[4] = qs[8];
+  flipped[3] = qs[9];
+  flipped[2] = qs[10];
+  flipped[1] = qs[11];
+  return to_lowest[flipped];
+ };
+
+ QMap<u1, QStringList> diagrams_by_count;
+
+
+ for(QString key : ks)
+ {
+  u1 c = key.count('a');
+  diagrams_by_count[c].push_back(key);
+ }
+
+ for(u1 arrows = 0; arrows <= 12; ++arrows)
+ {
+  QStringList dc = diagrams_by_count[arrows];
+  qDebug() << arrows << " -> " << dc.size(); // << " = " << dc;
+
+  u1 asym_count = 0;
+
+  for(QString dca : dc)
+  {
+   QString f = flip(dca);
+
+   u2 per = period_12(dca);
+
+   if(f == dca)
+     qDebug() << " " << to_digits12(dca) << " <" << per << "> " <<  " (symmetric)";
+   else
+   {
+    qDebug() << " " << to_digits12(dca) << " <" << per << "> " << " [" << to_digits12(flip(dca)) << "]";
+    ++asym_count;
+   }
+  }
+  qDebug() << "asym: " << asym_count << "\n";
+ }
+
+ return 0;
+}

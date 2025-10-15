@@ -337,6 +337,11 @@ void GTagML_Document::insert_xml_template(QString path)
  graph_build_->insert_xml_template(path);
 }
 
+void GTagML_Document::save_sentences(QString path)
+{
+ graph_build_->save_sentences(path);
+}
+
 void GTagML_Document::save_jats(QString path)
 {
  graph_build_->save_jats(path);
@@ -359,12 +364,14 @@ void GTagML_Document::parse()
 {
  caon_ptr<GTagML_Root> root = caon_ptr<GTagML_Root>( new GTagML_Root() );
  caon_ptr<GTagML_Node> node = caon_ptr<GTagML_Node>( new GTagML_Node(root) );
+
  graph_ = caon_ptr<GTagML_Graph> ( new GTagML_Graph(node) );
  parser_ = caon_ptr<GTagML_Parser> ( new GTagML_Parser(graph_) );
 
  graph_build_ = caon_ptr<GTagML_Graph_Build>(
   new GTagML_Graph_Build(*graph_, document_info_) );
- graph_build_->init();
+
+ graph_build_->init(parser_);
 
  graph_build_->set_current_parsing_mode(parsing_mode_);
 

@@ -16,6 +16,8 @@
 #include "tile/gtagml-paralex-tile.h"
 #include "tile/gtagml-raw-tile.h"
 
+#include "kernel/grammar/gtagml-parser.h"
+
 #include "annotation/gtagml-annotation-tile.h"
 
 #include "kernel/document/gtagml-document-info.h"
@@ -45,14 +47,24 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
    ,current_paragraph_count_(0), current_paragraph_bridge_(0)
    ,latex_stream_(&latex_)
    ,primary_acc_stream_(&primary_acc_)
+   ,sentences_sdi_stream_(&sentences_sdi_)
+   ,sentences_text_stream_(&sentences_text_)
+   ,sentence_gaps_stream_(&sentence_gaps_)
+   ,sentence_nesting_depth_(1)
+   ,section_id_(0)
+   ,sentence_id_(0)
+   ,paragraph_id_(0)
+   ,footnote_id_(0)
 //   ,jats_stream_(&jats_)
 {
-
+ flags.use_latex_sdi_markers = true;
 }
 
 
-void GTagML_Graph_Build::init()
+void GTagML_Graph_Build::init(caon_ptr<GTagML_Parser> parser)
 {
+ parser_ = parser;
+
  jats_buffer_.setBuffer(&jats_array_);
  jats_buffer_.open(QBuffer::WriteOnly);
  xml_writer_.setDevice(&jats_buffer_);
@@ -64,8 +76,9 @@ void GTagML_Graph_Build::init()
 
  xml_writer_.writeStartElement("document");
 
- latex_stream_ << "\n\n%PREAMBLE-TEMPLATE%\n\n\\begin{document}";
+ latex_stream_ << "\n\n%PREAMBLE-TEMPLATE%\n\n\\begin{document}\n%BEGIN-TEMPLATE%";
 
+ sentences_sdi_stream_ << "--- Global/start\n\n";
 // xml_writer_.set
 // xml_writer_ = QXmlStreamWriter(jats_);
 // jats_stream_.setString(&jats_); // = QTextStream(&jats_);
@@ -99,13 +112,44 @@ void GTagML_Graph_Build::enter_abstract()
 
  xml_writer_.writeStartElement("doc-abstract");
  latex_stream_ << "\n\n\\twocolumn[\\begin{docAbstract}\n";
+
+ sentences_sdi_stream_ << "\n\n--- Abstract/start\n";
 }
 
 
 void GTagML_Graph_Build::insert_latex_template(QString path)
 {
  QString contents = KA::TextIO::load_file(path);
- latex_.replace("%PREAMBLE-TEMPLATE%", contents);
+
+ s4 ix = contents.indexOf("\n%%\n");
+ s4 ix1 = contents.indexOf("\n%%%\n");
+
+ if(ix != -1)
+ {
+  if(ix1 != -1)
+  {
+   QString bcontents = contents.mid(ix + 4, ix1 - ix - 4);
+   QString econtents = contents.mid(ix1 + 4);
+   contents.replace(ix + 4, contents.length() - ix - 4, "");
+   latex_.replace("%PREAMBLE-TEMPLATE%", contents);
+   latex_.replace("%BEGIN-TEMPLATE%", bcontents);
+   latex_.replace("%END-TEMPLATE%", econtents);
+  }
+  else
+  {
+   QString bcontents = contents.mid(ix + 4);
+   contents.replace(ix + 4, contents.length() - ix - 4, "");
+   latex_.replace("%PREAMBLE-TEMPLATE%", contents);
+   latex_.replace("%BEGIN-TEMPLATE%", bcontents);
+  }
+ }
+ else if(ix1 != -1)
+ {
+  QString econtents = contents.mid(ix1 + 4);
+  contents.replace(ix1 + 4, contents.length() - ix1 - 4, "");
+  latex_.replace("%PREAMBLE-TEMPLATE%", contents);
+  latex_.replace("%END-TEMPLATE%", econtents);
+ }
 }
 
 void GTagML_Graph_Build::insert_xml_template(QString path)
@@ -116,13 +160,106 @@ void GTagML_Graph_Build::insert_xml_template(QString path)
 
 void GTagML_Graph_Build::primary_acc(QString text)
 {
+ if(flags.just_ended_sentence)
+ {
+  flags.just_ended_sentence = false;
+
+  QString space;
+
+  s4 ix = text.indexOf(QRegularExpression("\\S"));
+
+  if(ix == -1)
+    space = text;
+  else
+    space = text.left(ix);
+
+  u4 count = space.count('\n');
+
+  if(count < 2)
+  {
+   if(flags.use_latex_sdi_markers)
+     latex_stream_ << " \\> ";
+
+   ++sentence_id_;
+   sentences_sdi_stream_ << "\n\n--- Sentence/switch\ni: "
+     << sentence_id_ << "\nr# " << parser_->current_position();
+
+
+   if(text.startsWith(" "))
+     text.chop(1);
+  }
+
+ }
+
+ else
+ {
+  if(flags.await_paragraph_start)
+  {
+   flags.await_paragraph_start = false;
+   if(flags.use_latex_sdi_markers)
+     latex_stream_ << "\\:";
+
+   ++paragraph_id_;
+   sentences_sdi_stream_ << "\n\n--- Paragraph/start\ni: " << paragraph_id_
+     << "\nr# " << parser_->current_position() << "\n";
+
+  }
+
+  if(flags.await_sentence_start)
+  {
+   flags.await_sentence_start = false;
+   if(flags.use_latex_sdi_markers)
+     latex_stream_ << "\\+";
+
+   ++sentence_id_;
+   sentences_sdi_stream_ << "\n\n--- Sentence/start\ni: " << sentence_id_
+     << "\nr# " << parser_->current_position();
+
+  }
+ }
+
  primary_acc_stream_ << text;
 }
 
 void GTagML_Graph_Build::reset_primary()
 {
- xml_writer_.writeCharacters(primary_acc_);
- latex_stream_ << primary_acc_;
+ auto handle_sentences = [this]()
+ {
+  if(flags.sentences_latex_filter)
+  {
+   QString pa = primary_acc_;
+   QRegularExpression rx ("\\\\\\w+");
+   while(true)
+   {
+    QRegularExpressionMatch m = rx.match(pa);
+    if(m.hasMatch())
+      pa.replace(m.capturedStart(), m.capturedEnd() - m.capturedStart(), "");
+    else
+      break;
+   }
+   pa.replace("{", "");
+   pa.replace("}", "");
+   pa.replace("\\", "");
+   sentences_text_stream_ << pa;
+  }
+  else
+    sentences_text_stream_ << primary_acc_;
+ };
+
+ if(flags.sentences_only)
+ {
+  handle_sentences();
+ }
+
+ else if(flags.latex_only)
+   latex_stream_ << primary_acc_;
+
+ else
+ {
+  latex_stream_ << primary_acc_;
+  xml_writer_.writeCharacters(primary_acc_);
+  handle_sentences();
+ }
 
  primary_acc_.clear();
 }
@@ -136,6 +273,11 @@ void GTagML_Graph_Build::section_heading(QString text)
  xml_writer_.writeTextElement("s1", text);
  latex_stream_ << "\n\n\\s|1|{" << text << "}\n";
 
+ ++section_id_;
+
+ sentences_sdi_stream_ << "\n\n--- Section/start\n-l  1\n-i  "
+   << section_id_ << "\n-t  " << text << "\n";
+
  set_paragraph_bridge();
 }
 
@@ -145,6 +287,145 @@ void GTagML_Graph_Build::blank_line_as_visible_space()
 
  latex_stream_ << "\n\n \\visbreak{}\n";
 }
+
+// <%- \ifnum\presetStretch=2\vspace*{9pt}\else\fi -%>
+
+
+//void GTagML_Graph_Build::latex_only(QString text)
+//{
+// latex_stream_ << text;
+//}
+
+
+void GTagML_Graph_Build::enter_latex_only_to_space(QString text)
+{
+ primary_acc(text);
+
+ enter_latex_only_to_space();
+
+ //latex_stream_ << text;
+}
+
+void GTagML_Graph_Build::enter_latex_only_to_space()
+{
+ enter_latex_only();
+
+ parse_context_.flags.latex_only_to_space = true;
+}
+
+void GTagML_Graph_Build::leave_latex_only_to_space()
+{
+ leave_latex_only();
+
+ parse_context_.flags.latex_only_to_space = false;
+}
+
+
+void GTagML_Graph_Build::enter_latex_only()
+{
+ reset_primary();
+
+ parse_context_.flags.latex_only = true;
+ flags.latex_only = true;
+}
+
+void GTagML_Graph_Build::leave_latex_only()
+{
+ reset_primary();
+
+ parse_context_.flags.latex_only = false;
+ flags.latex_only = false;
+}
+
+
+void GTagML_Graph_Build::enter_sentences_only(QString open, QString pre_space)
+{
+ u1 count = open.size();
+ if(pre_space.contains("\n"))
+   primary_acc(" ");
+
+ reset_primary();
+
+ parse_context_.flags.sentences_only = true;
+ flags.sentences_only = true;
+}
+
+void GTagML_Graph_Build::leave_sentences_only(QString close, QString post_space)
+{
+ reset_primary();
+
+ parse_context_.flags.sentences_only = false;
+ flags.sentences_only = false;
+
+ u1 count = close.size();
+
+ if(count == 1)
+ {
+  if(post_space.contains("\n"))
+    primary_acc(" ");
+  else
+    primary_acc(post_space);
+ }
+ else if(count == 2)
+ {
+  if(post_space.contains("\n"))
+    primary_acc("\n");
+  else
+    primary_acc(post_space);
+ }
+}
+
+void GTagML_Graph_Build::force_switch_sentence()
+{
+ end_sentence("");
+}
+
+
+void GTagML_Graph_Build::end_sentence(QString punctuation,
+  u1 nesting_code, QVector<QPair<QString, QString>> supplements)
+{
+ flags.just_ended_sentence = true;
+
+ if(nesting_codes_by_depth_.contains(sentence_nesting_depth_))
+ {
+  if(nesting_code == Nesting_Codes::Signal_Default)
+    nesting_code = nesting_codes_by_depth_.take(sentence_nesting_depth_);
+  else
+    nesting_code |= nesting_codes_by_depth_.take(sentence_nesting_depth_);
+ }
+
+ reset_primary();
+
+ sentences_sdi_stream_ << "\np: " << punctuation;
+
+ u1 nc = sentence_nesting_depth_;
+
+ if(nesting_code != Nesting_Codes::Signal_Default)
+   nc |= nesting_code;
+
+ if(nc != 1)
+   sentences_sdi_stream_ << "\nN: " << nc;
+
+ for(auto pr : supplements)
+ {
+  sentences_sdi_stream_ << "\n" << pr.first << ": "
+    << pr.second;
+ }
+
+ sentences_sdi_stream_ << "\nt: " << sentences_text_ << "\n";
+
+ sentences_text_.clear();
+
+ if(!flags.sentences_only)
+   latex_stream_ << punctuation; // << "  ";
+
+  //? latex_stream_ << punctuation << "@ ";
+
+// primary_acc_stream_ << punctuation << "  ";
+}
+
+
+
 
 void GTagML_Graph_Build::heading(u1 count, QString text)
 {
@@ -165,6 +446,8 @@ void GTagML_Graph_Build::end_document()
  reset_primary();
 
  check_close_paragraph();
+
+ latex_stream_ << "\n%END-TEMPLATE%\n";
 
  latex_stream_ << "\n\\end{document}";
 
@@ -189,7 +472,105 @@ void GTagML_Graph_Build::subsection_heading(QString text)
  xml_writer_.writeTextElement("s2", text);
  latex_stream_ << "\n\n\\s|2|{" << text << "}\n";
 
+ sentences_sdi_stream_ << "\n\n--- Section/start\n-l  2\n-t" << text << "\n";
+
+
  set_paragraph_bridge();
+}
+
+void GTagML_Graph_Build::leave_footnote(QString pretext, QString space)
+{
+ reset_primary();
+
+ QString latex_space;
+
+ if(pretext.endsWith("_"))
+ {
+  latex_space = space;
+  pretext.chop(1);
+ }
+
+ if(pretext.isEmpty())
+   end_sentence("");
+
+ else if(pretext == "~")
+ {
+  end_sentence("");
+  --sentence_nesting_depth_;
+  nesting_codes_by_depth_[sentence_nesting_depth_] = Nesting_Codes::Continue_At_Start;
+ }
+
+ latex_stream_ << latex_space << "}";
+}
+
+void GTagML_Graph_Build::enter_footnote(QString pretext, QString space)
+{
+ reset_primary();
+
+ QString latex_space;
+
+ QString sdi_footnote_mark = "{<%1>}"_qt.arg(++footnote_id_);
+
+ if(pretext.endsWith("_"))
+ {
+  latex_space = space;
+  pretext.chop(1);
+ }
+
+ if(pretext.isEmpty())
+ {
+  end_sentence({{"F", sdi_footnote_mark}});
+ }
+
+ else if(pretext == "~")
+ {
+  sentences_text_stream_ << sdi_footnote_mark;
+  end_sentence(Nesting_Codes::Continue_At_End);
+  ++sentence_nesting_depth_;
+ }
+
+ latex_stream_ << "\\footnote{" << latex_space;
+}
+
+void GTagML_Graph_Build::enter_sentences_latex_filter(QString pretext)
+{
+ reset_primary();
+
+ if(pretext == "~~")
+ {
+  end_sentence("");
+  ++sentence_nesting_depth_;
+ }
+
+ else if(pretext == "~")
+ {
+  end_sentence("", Nesting_Codes::Continue_At_End);
+  ++sentence_nesting_depth_;
+//  parent_sentences_.push_back(sentences_text_);
+//  sentences_text_.clear();
+ }
+
+ flags.sentences_latex_filter = true;
+}
+
+void GTagML_Graph_Build::leave_sentences_latex_filter(QString pretext)
+{
+ reset_primary();
+
+ if(pretext == "~~")
+ {
+  end_sentence("");
+  --sentence_nesting_depth_;
+ }
+
+ else if(pretext == "~")
+ {
+  end_sentence("");
+  --sentence_nesting_depth_;
+  nesting_codes_by_depth_[sentence_nesting_depth_] = Nesting_Codes::Continue_At_Start;
+ }
+
+ flags.sentences_latex_filter = false;
 }
 
 
@@ -229,6 +610,21 @@ void GTagML_Graph_Build::close_paragraph()
 {
  xml_writer_.writeEndElement();
 
+ if(flags.just_ended_sentence)
+ {
+  if(flags.use_latex_sdi_markers)
+    latex_stream_ << "\\<";
+  sentences_sdi_stream_ << "\n--- Sentence/end \ni: "
+    << sentence_id_ << "\nr# " << parser_->current_position() << "\n";
+ }
+
+ if(flags.use_latex_sdi_markers)
+   latex_stream_ << "\\;";
+
+ sentences_sdi_stream_ << "\n--- Paragraph/end \ni: " << paragraph_id_
+   << "\ny: " << current_paragraph_type_to_string() << "\n";
+
+
  if(current_paragraph_type_ == Paragraph_Types::Abstract)
  {
   current_paragraph_type_ = Paragraph_Types::N_A;
@@ -236,7 +632,10 @@ void GTagML_Graph_Build::close_paragraph()
   set_paragraph_bridge();
  }
  else
-   latex_stream_ << "\n} % end paragraph \n";
+   latex_stream_ << "\n}% end paragraph \n"; // pLevel
+   ; //latex_stream_ << "\n} % end paragraph";
+
+ flags.just_ended_sentence = false;
 }
 
 void GTagML_Graph_Build::check_close_paragraph()
@@ -269,6 +668,12 @@ void GTagML_Graph_Build::auto_new_paragraph(QString cmd)
 
  xml_writer_.writeStartElement(cmd);
  latex_stream_ << "\n\\" << cmd << "{%\n";
+//? latex_stream_ << "\n\n\\pLevelOne{";
+
+//? latex_stream_ << "\n\n\\pLevelOne{";
+
+ flags.await_paragraph_start = true;
+ flags.await_sentence_start = true;
 }
 
 void GTagML_Graph_Build::enter_subparagraph(QString text)
@@ -417,9 +822,11 @@ void GTagML_Graph_Build::latex_command_auto_closed(QString command_name, QString
  }
 }
 
-void GTagML_Graph_Build::citation(QString label, QString locator)
+void GTagML_Graph_Build::citation(QString full_match, QString label, QString locator)
 {
  reset_primary();
+
+ sentences_text_stream_ << full_match;
 
  if(locator.isEmpty())
  {
@@ -476,6 +883,11 @@ void GTagML_Graph_Build::exs_item(u2 number, QString text)
 
  latex_stream_ << "\n\\exsItem{} ";
  xml_writer_.writeTextElement("exs-item", "");
+
+ end_sentence();
+
+
+
 }
 
 void GTagML_Graph_Build::enter_italics_mode()
@@ -609,13 +1021,35 @@ void GTagML_Graph_Build::leave_alt_display_mode()
 
 void GTagML_Graph_Build::special_character_sequence(QString text)
 {
- if(text == "%--")
+ auto process = [this](QString latex, QString xml)
  {
   reset_primary();
 
-  latex_stream_ << "\\mdash{}";
-  xml_writer_.writeCharacters("&mdash;");
+  if(flags.latex_only)
+    latex_stream_ << latex;
+
+  else if(flags.sentences_only)
+    sentences_text_stream_ << xml;
+
+  else
+  {
+   latex_stream_ << latex;
+   sentences_text_stream_ << xml;
+   xml_writer_.writeCharacters(xml);
+  }
+ };
+
+
+ if(text == "%--")
+ {
+  process("\\mdash{}", "&mdash;");
  }
+
+ if(text == "%-")
+ {
+  process("\\ndash{}", "&ndash;");
+ }
+
 }
 
 
