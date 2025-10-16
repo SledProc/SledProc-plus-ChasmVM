@@ -71,6 +71,8 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
  gdoc->save_latex(path + ".tex");
  gdoc->save_sentences(path + ".sentences.sdi");
 
+ gdoc->sdi_check(path + ".sentences.sdi", path + ".test");
+
  qDebug() << "path = " << path + ".jats";
 
  return; // 0;

@@ -3,2104 +3,2223 @@
 
 
 --- Paragraph/start
-i: 1
+id: 1
 r#  22  5  16
 
 
 --- Sentence/start
-i: 1
+id: 1
 r#  22  5  16
 
 --- Sentence//end
-i: 1
+id: 1
 r#  35  5  29
 g. 
 |  @l(-%>) +7/5/1
 |  +11/5/5:0=11/5/5
 |  +21/5/15:0=21/5/15
-|  @l() -21/5/15
+.  @l() -21/5/15
 p: 
-t: 
-Dear Readers,
+t. 
+. Dear Readers,
 
 --- Sentence/end 
-i: 1
+id: 1
 r#  38  5  32
 
 --- Paragraph/end 
-i: 1
+id: 1
 y: N/A
 
 
 --- Paragraph/start
-i: 2
+id: 2
 r#  55  7  16
 
 
 --- Sentence/start
-i: 2
+id: 2
 r#  55  7  16
 
 --- Sentence//end
-i: 2
+id: 2
 r#  142  8  27
 g. 
 |  @l(-%>) +40/7/1
 |  +44/7/5:0=44/7/5
 |  +54/7/15:0=54/7/15
-|  @l() -54/7/15
+.  @l() -54/7/15
 p: .
-t: I am pleased to write the foreword to the second edition of
-From Madness to Mutiny
+t. 
+| I am pleased to write the foreword to the second edition of
+. From Madness to Mutiny
 
 
 --- Sentence/switch
-i: 3
+id: 3
 r#  143  8  28
 
 
 --- Sentence//end
-i: 3
+id: 3
 r#  277  10  10
 p: .
-t:  I practiced family law for twenty-five years before
-transitioning to academia, where I continue my representation of abuse
-survivors
+t. 
+|  I practiced family law for twenty-five years before
+| transitioning to academia, where I continue my representation of abuse
+. survivors
 
 
 --- Sentence/switch
-i: 4
+id: 4
 r#  278  10  11
 
 
 --- Sentence//end
-i: 4
+id: 4
 r#  339  10  72
 p: .
-t:  Most of my family law cases involved intimate partner abuse
+t. 
+.  Most of my family law cases involved intimate partner abuse
 
 
 --- Sentence/switch
-i: 5
+id: 5
 r#  340  10  73
 
 
 --- Sentence//end
-i: 5
+id: 5
 r#  498  13  14
 p: .
-t: 
-During my academic career I have taught students to practice law in a
-clinical setting, where students provide counsel to survivors of intimate
-partner abuse
+t. 
+| During my academic career I have taught students to practice law in a
+| clinical setting, where students provide counsel to survivors of intimate
+. partner abuse
 
 
 --- Sentence/switch
-i: 6
+id: 6
 r#  499  13  15
 
 
 --- Sentence//end
-i: 6
+id: 6
 r#  559  13  75
 p: .
-t:  I teach courses related to intimate partner abuse, as well
+t. 
+.  I teach courses related to intimate partner abuse, as well
 
 
 --- Sentence/switch
-i: 7
+id: 7
 r#  560  13  76
 
 
 --- Sentence//end
-i: 7
+id: 7
 r#  639  15  21
 p: .
-t: 
-My experience working with survivors of intimate partner
-abuse is significant
+t. 
+| My experience working with survivors of intimate partner
+. abuse is significant
 
 
 --- Sentence/switch
-i: 8
+id: 8
 r#  640  15  22
 
 
 --- Sentence//end
-i: 8
+id: 8
 r#  749  16  45
 p: .
-t:  And my alarm over what has happened in the field, particularly
-over the past twenty years, is disconcerting
+t. 
+|  And my alarm over what has happened in the field, particularly
+. over the past twenty years, is disconcerting
 
 --- Sentence/end 
-i: 8
+id: 8
 r#  750  16  46
 
 --- Paragraph/end 
-i: 2
+id: 2
 y: N/A
 
 
 --- Paragraph/start
-i: 3
+id: 3
 r#  752  18  1
 
 
 --- Sentence/start
-i: 9
+id: 9
 r#  752  18  1
 
 --- Sentence//end
-i: 9
+id: 9
 r#  945  20  54
 p: .
-t: Based on my experience, I recognize From Madness to Mutiny as an
-important book for those who prioritize child safety, particularly for
-children whose parents are involved with Family Court
+t. 
+| Based on my experience, I recognize From Madness to Mutiny as an
+| important book for those who prioritize child safety, particularly for
+. children whose parents are involved with Family Court
 
 
 --- Sentence/switch
-i: 10
+id: 10
 r#  946  20  55
 
 
 --- Sentence//end
-i: 10
+id: 10
 r#  988  21  31
 p: .
-t:  Those who
-are abused come in all genders
+t. 
+|  Those who
+. are abused come in all genders
 
 
 --- Sentence/switch
-i: 11
+id: 11
 r#  989  21  32
 
 
 --- Sentence//end
-i: 11
+id: 11
 r#  1086  22  61
 p: .
-t:  The LGBTQ+ community, particularly
-transgender women, have high rates of intimate partner abuse
+t. 
+|  The LGBTQ+ community, particularly
+. transgender women, have high rates of intimate partner abuse
 
 
 --- Sentence/switch
-i: 12
+id: 12
 r#  1087  22  62
 
 
 --- Sentence//end
-i: 12
+id: 12
 r#  1294  24  57
 p: .
-t:  I do not
-doubt that allegations of parental alienation, where the abusive partner accuses the other of undermining the child's relationship with the
-abuser, is a tactic used in queer relationships, as well
+t. 
+|  I do not
+| doubt that allegations of parental alienation, where the abusive partner accuses the other of undermining the child's relationship with the
+. abuser, is a tactic used in queer relationships, as well
 
 
 --- Sentence/switch
-i: 13
+id: 13
 r#  1295  24  58
 
 
 --- Sentence//end
-i: 13
+id: 13
 r#  1496  26  111
 p: .
-t:  Until recently
-in the course of legal history, courts have not entertained a significant
-number of child custody cases involving members of the queer community, and even fewer that have been appealed
+t. 
+|  Until recently
+| in the course of legal history, courts have not entertained a significant
+. number of child custody cases involving members of the queer community, and even fewer that have been appealed
 
 
 --- Sentence/switch
-i: 14
+id: 14
 r#  1497  26  112
 
 
 --- Sentence//end
-i: 14
+id: 14
 r#  1627  28  30
 p: .
-t:  As such, which tactics are
-used for certain to disparage the abused partner in queer relationships
-have not been widely reviewed
+t. 
+|  As such, which tactics are
+| used for certain to disparage the abused partner in queer relationships
+. have not been widely reviewed
 
 
 --- Sentence/switch
-i: 15
+id: 15
 r#  1628  28  31
 
 
 --- Sentence//end
-i: 15
+id: 15
 r#  1711  29  39
 p: .
-t:  That field is ripe for study and analysis,
-although it is still in its incipience
+t. 
+|  That field is ripe for study and analysis,
+. although it is still in its incipience
 
 
 --- Sentence/switch
-i: 16
+id: 16
 r#  1712  29  40
 
 
 --- Sentence//end
-i: 16
+id: 16
 r#  1858  31  36
 p: .
-t:  This is why the reader will find that
-the case studies referenced in this present book focus on tactics used
-primarily by men to discredit women
+t. 
+|  This is why the reader will find that
+| the case studies referenced in this present book focus on tactics used
+. primarily by men to discredit women
 
 
 --- Sentence/switch
-i: 17
+id: 17
 r#  1859  31  37
 
 
 --- Sentence//end
-i: 17
+id: 17
 r#  1939  32  47
 p: .
-t:  Mothers are the primary targets
-of the tactics of abusive men in custody cases
+t. 
+|  Mothers are the primary targets
+. of the tactics of abusive men in custody cases
 
 
 --- Sentence/switch
-i: 18
+id: 18
 r#  1940  32  48
 
 
 --- Sentence//end
-i: 18
+id: 18
 r#  2128  34  17
 p: .
-t:  While men can be targets
-of unfair allegations in custody cases, the number of fathers experiencing targeted strategies of abuse and coercion in hetero relationships are
-a small minority
+t. 
+|  While men can be targets
+| of unfair allegations in custody cases, the number of fathers experiencing targeted strategies of abuse and coercion in hetero relationships are
+. a small minority
 
 --- Sentence/end 
-i: 18
+id: 18
 r#  2129  34  18
 
 --- Paragraph/end 
-i: 3
+id: 3
 y: N/A
 
 
 --- Paragraph/start
-i: 4
+id: 4
 r#  2132  36  1
 
 
 --- Sentence/start
-i: 19
+id: 19
 r#  2132  36  1
 
 --- Sentence//end
-i: 19
+id: 19
 r#  2323  37  122
 p: .
-t: Having been involved in the field of family law for over forty years,
-I have observed the backlash against women and other survivors after they made gains in protections against their abusers
+t. 
+| Having been involved in the field of family law for over forty years,
+. I have observed the backlash against women and other survivors after they made gains in protections against their abusers
 
 
 --- Sentence/switch
-i: 20
+id: 20
 r#  2324  37  123
 
 
 --- Sentence//end
-i: 20
+id: 20
 r#  2519  39  48
 p: .
-t:  These gains
-were primarily in the form of civil protections orders and legislation that limited the ability of someone with a history of domestic
-violence from being awarded custody of children
+t. 
+|  These gains
+| were primarily in the form of civil protections orders and legislation that limited the ability of someone with a history of domestic
+. violence from being awarded custody of children
 
 
 --- Sentence/switch
-i: 21
+id: 21
 r#  2520  39  49
 
 
 --- Sentence//end
-i: 21
+id: 21
 r#  2550  40  12
 p: .
-t:  These gains were
-short lived
+t. 
+|  These gains were
+. short lived
 
 
 --- Sentence/switch
-i: 22
+id: 22
 r#  2551  40  13
 
 
 --- Sentence//end
-i: 22
+id: 22
 r#  2668  41  59
 p: .
-t:  Not long after statutory protections for abused partners
-were implemented, angry men began organizing against women
+t. 
+|  Not long after statutory protections for abused partners
+. were implemented, angry men began organizing against women
 
 
 --- Sentence/switch
-i: 23
+id: 23
 r#  2669  41  60
 
 
 --- Sentence//end
-i: 23
+id: 23
 r#  2823  43  12
 p: .
-t:  The
-so-called Fathers' Rights groups, which organize against women, particularly mothers, are not to be confused with Responsible Fatherhood
-initiatives
+t. 
+|  The
+| so-called Fathers' Rights groups, which organize against women, particularly mothers, are not to be confused with Responsible Fatherhood
+. initiatives
 
 
 --- Sentence/switch
-i: 24
+id: 24
 r#  2824  43  13
 
 
 --- Sentence//end
-i: 24
+id: 24
 r#  2877  43  66
 p: .
-t:  Non-abusive, non-misogynist men do not pose concern
+t. 
+.  Non-abusive, non-misogynist men do not pose concern
 
 
 --- Sentence/switch
-i: 25
+id: 25
 r#  2878  43  67
 
 
 --- Sentence//end
-i: 25
+id: 25
 r#  2969  45  28
 p: .
-t: 
-This book addresses the tactics used by men who abuse intimate
-partners and their children
+t. 
+| This book addresses the tactics used by men who abuse intimate
+. partners and their children
 
 
 --- Sentence/switch
-i: 26
+id: 26
 r#  2970  45  29
 
 
 --- Sentence//end
-i: 26
+id: 26
 r#  3039  46  26
 p: .
-t:  These Fathers' Rights groups are well
-funded and well organized
+t. 
+|  These Fathers' Rights groups are well
+. funded and well organized
 
 
 --- Sentence/switch
-i: 27
+id: 27
 r#  3040  46  27
 
 
 --- Sentence//end
-i: 27
+id: 27
 r#  3231  48  13
 p: 
-t:  Another reason these men and their tactics have been successful is because typically the abusive parent has
-access to more financial resources and is able to retain counsel and
-experts.
+t. 
+|  Another reason these men and their tactics have been successful is because typically the abusive parent has
+| access to more financial resources and is able to retain counsel and
+. experts.
 
 --- Sentence/end 
-i: 27
+id: 27
 r#  3234  48  16
 
 --- Paragraph/end 
-i: 4
+id: 4
 y: N/A
 
 
 --- Paragraph/start
-i: 5
+id: 5
 r#  3262  50  27
 
 
 --- Sentence/start
-i: 28
+id: 28
 r#  3262  50  27
 
 --- Sentence//end
-i: 28
+id: 28
 r#  3362  52  30
 g. 
 |  @l(-%>) +3236/50/1
 |  +3240/50/5:0=3240/50/5
 |  +3262/50/27:0=3262/50/27
-|  @l() -3262/50/27
+.  @l() -3262/50/27
 p: .
-t: 
-Anti-victim tactics are successful in court because they are based on
-negative stereotypes of women
+t. 
+| Anti-victim tactics are successful in court because they are based on
+. negative stereotypes of women
 
 
 --- Sentence/switch
-i: 29
+id: 29
 r#  3363  52  31
 
 
 --- Sentence//end
-i: 29
+id: 29
 r#  3475  52  143
 p: .
-t:  Prevailing attitudes toward women include the idea that women lie, and, particularly, they lie about abuse
+t. 
+.  Prevailing attitudes toward women include the idea that women lie, and, particularly, they lie about abuse
 
 
 --- Sentence/switch
-i: 30
+id: 30
 r#  3476  52  144
 
 
 --- Sentence//end
-i: 30
+id: 30
 r#  3661  54  117
 p: .
-t: 
-Moreover, women who say what abusers or others do not want to hear,
-are labeled some version of crazy. The pathologization of women, particularly mothers, is common and unwarranted
+t. 
+| Moreover, women who say what abusers or others do not want to hear,
+. are labeled some version of crazy. The pathologization of women, particularly mothers, is common and unwarranted
 
 
 --- Sentence/switch
-i: 31
+id: 31
 r#  3662  54  118
 
 
 --- Sentence//end
-i: 31
+id: 31
 r#  3770  56  18
 p: .
-t:  Pathologizing women
-has a long history in our country where noncompliant women have been
-institutionalized
+t. 
+|  Pathologizing women
+| has a long history in our country where noncompliant women have been
+. institutionalized
 
 
 --- Sentence/switch
-i: 32
+id: 32
 r#  3771  56  19
 
 
 --- Sentence//end
-i: 32
+id: 32
 r#  3883  57  52
 p: .
-t:  As you will read, alternatives to institutionalization are
-part of the current dismissal of women's narratives
+t. 
+|  As you will read, alternatives to institutionalization are
+. part of the current dismissal of women's narratives
 
 
 --- Sentence/switch
-i: 33
+id: 33
 r#  3884  57  53
 
 
 --- Sentence//end
-i: 33
+id: 33
 r#  4127  61  5
 p: .
-t:  For example, one
-threat made to mothers is that unless they comply with court ordered
-therapy (with a therapist of the court or of the father's choosing) they will
-not only lose custody of their children but will be denied all access to
-them
+t. 
+|  For example, one
+| threat made to mothers is that unless they comply with court ordered
+| therapy (with a therapist of the court or of the father's choosing) they will
+| not only lose custody of their children but will be denied all access to
+. them
 
 --- Sentence/end 
-i: 33
+id: 33
 r#  4143  61  21
 g. 
 |  @l(-%>) +4128/61/6
 |  +4134/61/12:0=4134/61/12
 |  +4143/61/21:0=4143/61/21
-|  @l() -4143/61/21
+.  @l() -4143/61/21
 
 --- Paragraph/end 
-i: 5
+id: 5
 y: N/A
 
 
 --- Paragraph/start
-i: 6
+id: 6
 r#  4145  63  1
 
 
 --- Sentence/start
-i: 34
+id: 34
 r#  4145  63  1
 
 --- Sentence//end
-i: 34
+id: 34
 r#  4381  65  22
 p: .
-t: The question most people ask when a family court places a child in the
-custody of an abusive parent is how could this happen? Therapists, attorneys, mothers, grandparents, media, and members of the public often
-ask the same question
+t. 
+| The question most people ask when a family court places a child in the
+| custody of an abusive parent is how could this happen? Therapists, attorneys, mothers, grandparents, media, and members of the public often
+. ask the same question
 
 
 --- Sentence/switch
-i: 35
+id: 35
 r#  4382  65  23
 
 
 --- Sentence//end
-i: 35
+id: 35
 r#  4636  68  66
 p: .
-t:  As you will read in the case studies presented in
-this book, mothers often come to court with multiple medical records
-documenting spousal abuse and sexual abuse of their children by the
-father, only to have the court disregard or minimize the evidence
+t. 
+|  As you will read in the case studies presented in
+| this book, mothers often come to court with multiple medical records
+| documenting spousal abuse and sexual abuse of their children by the
+. father, only to have the court disregard or minimize the evidence
 
 
 --- Sentence/switch
-i: 36
+id: 36
 r#  4637  68  67
 
 
 --- Sentence//end
-i: 36
+id: 36
 r#  4697  68  127
 p: .
-t:  Survivors of violence expect to find relief with the court
+t. 
+.  Survivors of violence expect to find relief with the court
 
 
 --- Sentence/switch
-i: 37
+id: 37
 r#  4698  68  128
 
 
 --- Sentence//end
-i: 37
+id: 37
 r#  4732  69  18
 p: .
-t:  Too often they
-find the opposite
+t. 
+|  Too often they
+. find the opposite
 
 
 --- Sentence/switch
-i: 38
+id: 38
 r#  4733  69  19
 
 
 --- Sentence//end
-i: 38
+id: 38
 r#  4843  70  55
 p: .
-t:  Let me begin by giving my perspective on this tragedy
-which very much aligns with a major theme of this book
+t. 
+|  Let me begin by giving my perspective on this tragedy
+. which very much aligns with a major theme of this book
 
 
 --- Sentence/switch
-i: 39
+id: 39
 r#  4844  70  56
 
 
 --- Sentence//end
-i: 39
+id: 39
 r#  4943  72  16
 p: .
-t: 
-My perspective is anecdotal based upon my decades' long practice of representing
-abused partners
+t. 
+| My perspective is anecdotal based upon my decades' long practice of representing
+. abused partners
 
 
 --- Sentence/switch
-i: 40
+id: 40
 r#  4944  72  17
 
 
 --- Sentence//end
-i: 40
+id: 40
 r#  4972  72  45
 p: 
-t:  These are my observations:
+t. 
+.  These are my observations:
 
 --- Sentence/end 
-i: 40
+id: 40
 r#  4975  72  48
 
 --- Paragraph/end 
-i: 6
+id: 6
 y: N/A
 
 
 --- Paragraph/start
-i: 7
+id: 7
 r#  4977  74  1
 
 
 --- Sentence/start
-i: 41
+id: 41
 r#  4977  74  1
 
 --- Sentence//end
-i: 41
+id: 41
 r#  5101  75  60
 p: .
-t: Many judges and other court personnel do not or cannot grasp how
-widespread intimate partner abuse and child sexual abuse is
+t. 
+| Many judges and other court personnel do not or cannot grasp how
+. widespread intimate partner abuse and child sexual abuse is
 
 
 --- Sentence/switch
-i: 42
+id: 42
 r#  5102  75  61
 
 
 --- Sentence//end
-i: 42
+id: 42
 r#  5160  76  45
 p: .
-t:  They do not
-understand how widespread misogyny is either
+t. 
+|  They do not
+. understand how widespread misogyny is either
 
 
 --- Sentence/switch
-i: 43
+id: 43
 r#  5161  76  46
 
 
 --- Sentence//end
-i: 43
+id: 43
 r#  5265  77  75
 p: .
-t:  In the United States, women
-and girls live in a culture where any man feels entitled to challenge them
+t. 
+|  In the United States, women
+. and girls live in a culture where any man feels entitled to challenge them
 
 
 --- Sentence/switch
-i: 44
+id: 44
 r#  5266  77  76
 
 
 --- Sentence//end
-i: 44
+id: 44
 r#  5323  78  57
 p: .
-t: 
-Recently I was boarding an airline when I came to my row
+t. 
+. Recently I was boarding an airline when I came to my row
 
 
 --- Sentence/switch
-i: 45
+id: 45
 r#  5324  78  58
 
 
 --- Sentence//end
-i: 45
+id: 45
 r#  5464  79  57
 p: .
-t:  As I proceeded to enter, an elderly White man, who occupied the row's aisle seat,
-patronizingly asked me if I was sure I had the right row
+t. 
+|  As I proceeded to enter, an elderly White man, who occupied the row's aisle seat,
+. patronizingly asked me if I was sure I had the right row
 
 
 --- Sentence/switch
-i: 46
+id: 46
 r#  5465  79  58
 
 
 --- Sentence//end
-i: 46
+id: 46
 r#  5568  81  14
 p: .
-t:  I could not wait
-to see if he would ask the person who would occupy the middle seat the
-same question
+t. 
+|  I could not wait
+| to see if he would ask the person who would occupy the middle seat the
+. same question
 
 
 --- Sentence/switch
-i: 47
+id: 47
 r#  5569  81  15
 
 
 --- Sentence//end
-i: 47
+id: 47
 r#  5581  81  27
 p: .
-t:  He did not
+t. 
+.  He did not
 
 
 --- Sentence/switch
-i: 48
+id: 48
 r#  5582  81  28
 
 
 --- Sentence//end
-i: 48
+id: 48
 r#  5617  81  63
 p: .
-t:  That passenger was young and male
+t. 
+.  That passenger was young and male
 
 
 --- Sentence/switch
-i: 49
+id: 49
 r#  5618  81  64
 
 
 --- Sentence//end
-i: 49
+id: 49
 r#  5740  83  40
 p: .
-t:  I was, of
-course, tempted to lean over and ask why he had not asked our seatmate
-the same question he directed toward me
+t. 
+|  I was, of
+| course, tempted to lean over and ask why he had not asked our seatmate
+. the same question he directed toward me
 
 
 --- Sentence/switch
-i: 50
+id: 50
 r#  5741  83  41
 
 
 --- Sentence//end
-i: 50
+id: 50
 r#  5870  85  14
 p: .
-t:  But to do so would involve an
-innocent stranger in\mdash{}literally\mdash{}the middle of a dispute that would not
-change anyone
+t. 
+|  But to do so would involve an
+| innocent stranger in\mdash{}literally\mdash{}the middle of a dispute that would not
+. change anyone
 
 
 --- Sentence/switch
-i: 51
+id: 51
 r#  5871  85  15
 
 
 --- Sentence//end
-i: 51
+id: 51
 r#  5972  86  42
 p: .
-t:  I relay this story to describe the everyday harassment of
-women when going about living their lives
+t. 
+|  I relay this story to describe the everyday harassment of
+. women when going about living their lives
 
 
 --- Sentence/switch
-i: 52
+id: 52
 r#  5973  86  43
 
 
 --- Sentence//end
-i: 52
+id: 52
 r#  6065  87  65
 p: .
-t:  Most cisgender men do not
-understand how pervasive misogyny is and the depth of its impact
+t. 
+|  Most cisgender men do not
+. understand how pervasive misogyny is and the depth of its impact
 
 
 --- Sentence/switch
-i: 53
+id: 53
 r#  6066  87  66
 
 
 --- Sentence//end
-i: 53
+id: 53
 r#  6171  89  30
 p: .
-t:  These
-occurrences happen even more frequently with Black, Indigenous, and
-People of Color (BIPOC) women
+t. 
+|  These
+| occurrences happen even more frequently with Black, Indigenous, and
+. People of Color (BIPOC) women
 
 
 --- Sentence/switch
-i: 54
+id: 54
 r#  6172  89  31
 
 
 --- Sentence//end
-i: 54
+id: 54
 r#  6299  90  17
 p: .
-t:  Protective mothers (and/or their children) experience not only this everyday misogyny but abuse by their
-intimate partner
+t. 
+|  Protective mothers (and/or their children) experience not only this everyday misogyny but abuse by their
+. intimate partner
 
 
 --- Sentence/switch
-i: 55
+id: 55
 r#  6300  90  18
 
 
 --- Sentence//end
-i: 55
+id: 55
 r#  6450  92  12
 p: .
-t:  I wager that most protective mothers have experienced
-levels of domestic abuse\mdash{}or their children have\mdash{}far beyond what most
-can imagine
+t. 
+|  I wager that most protective mothers have experienced
+| levels of domestic abuse\mdash{}or their children have\mdash{}far beyond what most
+. can imagine
 
 
 --- Sentence/switch
-i: 56
+id: 56
 r#  6451  92  13
 
 
 --- Sentence//end
-i: 56
+id: 56
 r#  6627  94  43
 p: .
-t:  When mothers approach the courts for relief, they do not
-realize that they have entered legal institutions that will be emotionally
-abusive toward them at an unexpected level
+t. 
+|  When mothers approach the courts for relief, they do not
+| realize that they have entered legal institutions that will be emotionally
+. abusive toward them at an unexpected level
 
 
 --- Sentence/switch
-i: 57
+id: 57
 r#  6628  94  44
 
 
 --- Sentence//end
-i: 57
+id: 57
 r#  6680  95  23
 p: .
-t:  Courts are not a safe space
-for protective mothers
+t. 
+|  Courts are not a safe space
+. for protective mothers
 
 --- Sentence/end 
-i: 57
+id: 57
 r#  6681  95  24
 
 --- Paragraph/end 
-i: 7
+id: 7
 y: N/A
 
 
 --- Paragraph/start
-i: 8
+id: 8
 r#  6683  97  1
 
 
 --- Sentence/start
-i: 58
+id: 58
 r#  6683  97  1
 
 --- Sentence//end
-i: 58
+id: 58
 r#  6962  100  5
 p: .
-t: If those with power are dismissive of the everyday slights women endure, then what are they thinking when confronted with a narrative
-describing abuse of children and mothers? Many judges may want to
-help abuse survivors; but they do not always see abuse in the cases before
-them
+t. 
+| If those with power are dismissive of the everyday slights women endure, then what are they thinking when confronted with a narrative
+| describing abuse of children and mothers? Many judges may want to
+| help abuse survivors; but they do not always see abuse in the cases before
+. them
 
 
 --- Sentence/switch
-i: 59
+id: 59
 r#  6963  100  6
 
 
 --- Sentence//end
-i: 59
+id: 59
 r#  7070  101  40
 p: .
-t:  With little exposure to the dynamics of abuse, some judges cannot
-comprehend that parents can be so cruel
+t. 
+|  With little exposure to the dynamics of abuse, some judges cannot
+. comprehend that parents can be so cruel
 
 
 --- Sentence/switch
-i: 60
+id: 60
 r#  7071  101  41
 
 
 --- Sentence//end
-i: 60
+id: 60
 r#  7147  101  117
 p: .
-t:  Some cannot imagine anyone abusing people they love, particularly children
+t. 
+.  Some cannot imagine anyone abusing people they love, particularly children
 
 
 --- Sentence/switch
-i: 61
+id: 61
 r#  7148  101  118
 
 
 --- Sentence//end
-i: 61
+id: 61
 r#  7237  102  69
 p: .
-t:  Many judges do not
-understand that love is irrelevant to whether abuse has occurred
+t. 
+|  Many judges do not
+. understand that love is irrelevant to whether abuse has occurred
 
 
 --- Sentence/switch
-i: 62
+id: 62
 r#  7238  102  70
 
 
 --- Sentence//end
-i: 62
+id: 62
 r#  7279  103  37
 p: .
-t:  In
-short, love does not deter abuse
+t. 
+|  In
+. short, love does not deter abuse
 
 
 --- Sentence/switch
-i: 63
+id: 63
 r#  7280  103  38
 
 
 --- Sentence//end
-i: 63
+id: 63
 r#  7415  104  26
 p: .
-t:  Many child sexual abusers have convinced themselves that their violations are out of love and therefore
-cannot be labeled abusive
+t. 
+|  Many child sexual abusers have convinced themselves that their violations are out of love and therefore
+. cannot be labeled abusive
 
 
 --- Sentence/switch
-i: 64
+id: 64
 r#  7416  104  27
 
 
 --- Sentence//end
-i: 64
+id: 64
 r#  7505  105  45
 p: .
-t:  Others know that their actions are harmful
-but feel entitled to their children's bodies
+t. 
+|  Others know that their actions are harmful
+. but feel entitled to their children's bodies
 
 
 --- Sentence/switch
-i: 65
+id: 65
 r#  7506  105  46
 
 
 --- Sentence//end
-i: 65
+id: 65
 r#  7649  106  42
 p: .
-t:  Because crimes against children are too disturbing to consider, defenses of I love my children; I
-would never hurt them can be convincing
+t. 
+|  Because crimes against children are too disturbing to consider, defenses of I love my children; I
+. would never hurt them can be convincing
 
 
 --- Sentence/switch
-i: 66
+id: 66
 r#  7650  106  43
 
 
 --- Sentence//end
-i: 66
+id: 66
 r#  7800  108  53
 p: .
-t:  Judges may find it more
-comfortable to resort to stereotypes of hysterical and lying women than
-to acknowledge the abuse happening within the family
+t. 
+|  Judges may find it more
+| comfortable to resort to stereotypes of hysterical and lying women than
+. to acknowledge the abuse happening within the family
 
 
 --- Sentence/switch
-i: 67
+id: 67
 r#  7801  108  54
 
 
 --- Sentence//end
-i: 67
+id: 67
 r#  8047  110  90
 p: .
-t:  There are many
-well-intentioned judges who believe that they are making sound decisions and who, when confronted with the actual statistics of the rate at
-which they dismiss domestic violence narratives, find the statistics difficult to believe
+t. 
+|  There are many
+| well-intentioned judges who believe that they are making sound decisions and who, when confronted with the actual statistics of the rate at
+. which they dismiss domestic violence narratives, find the statistics difficult to believe
 
 
 --- Sentence/switch
-i: 68
+id: 68
 r#  8048  110  91
 
 
 --- Sentence//end
-i: 68
+id: 68
 r#  8159  111  55
 p: .
-t:  If they ever had training, the training truly missed a
-critical component of not prejudging an abuse survivor
+t. 
+|  If they ever had training, the training truly missed a
+. critical component of not prejudging an abuse survivor
 
 --- Sentence/end 
-i: 68
+id: 68
 r#  8160  111  56
 
 --- Paragraph/end 
-i: 8
+id: 8
 y: N/A
 
 
 --- Paragraph/start
-i: 9
+id: 9
 r#  8162  113  1
 
 
 --- Sentence/start
-i: 69
+id: 69
 r#  8162  113  1
 
 --- Sentence//end
-i: 69
+id: 69
 r#  8183  113  22
 p: .
-t: Then there are others
+t. 
+. Then there are others
 
 
 --- Sentence/switch
-i: 70
+id: 70
 r#  8184  113  23
 
 
 --- Sentence//end
-i: 70
+id: 70
 r#  8259  114  26
 p: .
-t:  A minority, but devastatingly effective, number
-of judges are misogynists
+t. 
+|  A minority, but devastatingly effective, number
+. of judges are misogynists
 
 
 --- Sentence/switch
-i: 71
+id: 71
 r#  8260  114  27
 
 
 --- Sentence//end
-i: 71
+id: 71
 r#  8303  114  70
 p: .
-t:  Changing them is not a matter of training
+t. 
+.  Changing them is not a matter of training
 
 
 --- Sentence/switch
-i: 72
+id: 72
 r#  8304  114  71
 
 
 --- Sentence//end
-i: 72
+id: 72
 r#  8493  117  38
 p: .
-t: 
-They are the judges who, for whatever reason, cannot attend a training or
-are skeptical of everything taught because they know better. You don't
-see what I see is a common response
+t. 
+| They are the judges who, for whatever reason, cannot attend a training or
+| are skeptical of everything taught because they know better. You don't
+. see what I see is a common response
 
 
 --- Sentence/switch
-i: 73
+id: 73
 r#  8494  117  39
 
 
 --- Sentence//end
-i: 73
+id: 73
 r#  8570  118  39
 p: .
-t:  Judges of all genders ignore abuse,
-even child sexual abuse, with impunity
+t. 
+|  Judges of all genders ignore abuse,
+. even child sexual abuse, with impunity
 
 
 --- Sentence/switch
-i: 74
+id: 74
 r#  8571  118  40
 
 
 --- Sentence//end
-i: 74
+id: 74
 r#  8668  119  66
 p: .
-t:  We do not, and will not, know
-how many judges are influenced by their own childhood experiences
+t. 
+|  We do not, and will not, know
+. how many judges are influenced by their own childhood experiences
 
 
 --- Sentence/switch
-i: 75
+id: 75
 r#  8669  119  67
 
 
 --- Sentence//end
-i: 75
+id: 75
 r#  8773  121  31
 p: .
-t: 
-But we cannot linger on the why of biases against women and children
-and biases in favor of fathers
+t. 
+| But we cannot linger on the why of biases against women and children
+. and biases in favor of fathers
 
 
 --- Sentence/switch
-i: 76
+id: 76
 r#  8774  121  32
 
 
 --- Sentence//end
-i: 76
+id: 76
 r#  8946  123  58
 p: .
-t:  The intent or lack of it does not change
-the fact that mothers are being banned from seeing their children based
-upon the testimony of abusers and their so-called experts
+t. 
+|  The intent or lack of it does not change
+| the fact that mothers are being banned from seeing their children based
+. upon the testimony of abusers and their so-called experts
 
 --- Sentence/end 
-i: 76
+id: 76
 r#  8947  123  59
 
 --- Paragraph/end 
-i: 9
+id: 9
 y: N/A
 
 
 --- Paragraph/start
-i: 10
+id: 10
 r#  8949  125  1
 
 
 --- Sentence/start
-i: 77
+id: 77
 r#  8949  125  1
 
 --- Sentence//end
-i: 77
+id: 77
 r#  9090  126  9
 p: .
-t: I have long been puzzled why judges refuse to accept the high likelihood that men who abuse their intimate partners will abuse their
-children
+t. 
+| I have long been puzzled why judges refuse to accept the high likelihood that men who abuse their intimate partners will abuse their
+. children
 
 
 --- Sentence/switch
-i: 78
+id: 78
 r#  9091  126  10
 
 
 --- Sentence//end
-i: 78
+id: 78
 r#  9379  129  69
 p: .
-t:  As a former judge likes to say, if we knew there was a 50 percent
-chance that a bank would be robbed, the police would be all over it. But
-where the chance of an abusive partner abusing a child is a minimum of
-50 percent, institutional actors do not take any preventative action
+t. 
+|  As a former judge likes to say, if we knew there was a 50 percent
+| chance that a bank would be robbed, the police would be all over it. But
+| where the chance of an abusive partner abusing a child is a minimum of
+. 50 percent, institutional actors do not take any preventative action
 
 
 --- Sentence/switch
-i: 79
+id: 79
 r#  9380  129  70
 
 
 --- Sentence//end
-i: 79
+id: 79
 r#  9461  131  6
 p: .
-t:  That
-percentage goes even higher depending upon the frequency and type of
-abuse
+t. 
+|  That
+| percentage goes even higher depending upon the frequency and type of
+. abuse
 
 
 --- Sentence/switch
-i: 80
+id: 80
 r#  9462  131  7
 
 
 --- Sentence//end
-i: 80
+id: 80
 r#  9536  132  7
 p: .
-t:  Abusing children is a way of continuing to torture the children's
-mother
+t. 
+|  Abusing children is a way of continuing to torture the children's
+. mother
 
 
 --- Sentence/switch
-i: 81
+id: 81
 r#  9537  132  8
 
 
 --- Sentence//end
-i: 81
+id: 81
 r#  9578  132  49
 p: .
-t:  A double-header in the world of abusers
+t. 
+.  A double-header in the world of abusers
 
 --- Sentence/end 
-i: 81
+id: 81
 r#  9579  132  50
 
 --- Paragraph/end 
-i: 10
+id: 10
 y: N/A
 
 
 --- Paragraph/start
-i: 11
+id: 11
 r#  9581  134  1
 
 
 --- Sentence/start
-i: 82
+id: 82
 r#  9581  134  1
 
 --- Sentence//end
-i: 82
+id: 82
 r#  9635  134  55
 p: .
-t: Then there are those judges who are abusive themselves
+t. 
+. Then there are those judges who are abusive themselves
 
 
 --- Sentence/switch
-i: 83
+id: 83
 r#  9636  134  56
 
 
 --- Sentence//end
-i: 83
+id: 83
 r#  9759  135  42
 p: .
-t:  Barely listening to women in court, discounting their stories, verbally abusing
-them, and rejecting children's narratives
+t. 
+|  Barely listening to women in court, discounting their stories, verbally abusing
+. them, and rejecting children's narratives
 
 
 --- Sentence/switch
-i: 84
+id: 84
 r#  9760  135  43
 
 
 --- Sentence//end
-i: 84
+id: 84
 r#  9910  137  51
 p: .
-t:  For whatever reason, these
-judges reject the reality of children who are abused and instead order
-reunification therapy which continues the harm
+t. 
+|  For whatever reason, these
+| judges reject the reality of children who are abused and instead order
+. reunification therapy which continues the harm
 
 
 --- Sentence/switch
-i: 85
+id: 85
 r#  9911  137  52
 
 
 --- Sentence//end
-i: 85
+id: 85
 r#  10105  139  101
 p: .
-t:  Asking children to
-participate in the lives of the parent who hurts them is akin to telling
-those children that adults are not concerned about their disclosures, including their pleas for help
+t. 
+|  Asking children to
+| participate in the lives of the parent who hurts them is akin to telling
+. those children that adults are not concerned about their disclosures, including their pleas for help
 
 
 --- Sentence/switch
-i: 86
+id: 86
 r#  10106  139  102
 
 
 --- Sentence//end
-i: 86
+id: 86
 r#  10238  141  23
 p: .
-t:  Compounding the harm, the non-abusive
-parent, who may be the one person that the children trust, is removed
-from contact with them
+t. 
+|  Compounding the harm, the non-abusive
+| parent, who may be the one person that the children trust, is removed
+. from contact with them
 
 --- Sentence/end 
-i: 86
+id: 86
 r#  10239  141  24
 
 --- Paragraph/end 
-i: 11
+id: 11
 y: N/A
 
 
 --- Paragraph/start
-i: 12
+id: 12
 r#  10241  143  1
 
 
 --- Sentence/start
-i: 87
+id: 87
 r#  10241  143  1
 
 --- Sentence//end
-i: 87
+id: 87
 r#  10390  144  10
 p: .
-t: From my experience as a family law practitioner, I have seen that sexual abuse of female children happens early on when fathers abuse their
-daughters
+t. 
+| From my experience as a family law practitioner, I have seen that sexual abuse of female children happens early on when fathers abuse their
+. daughters
 
 
 --- Sentence/switch
-i: 88
+id: 88
 r#  10391  144  11
 
 
 --- Sentence//end
-i: 88
+id: 88
 r#  10524  144  144
 p: .
-t:  That is, even if there was no abuse prior to the parents' separation, sexual abuse of daughters happens quite soon after separation
+t. 
+.  That is, even if there was no abuse prior to the parents' separation, sexual abuse of daughters happens quite soon after separation
 
 
 --- Sentence/switch
-i: 89
+id: 89
 r#  10525  144  145
 
 
 --- Sentence//end
-i: 89
+id: 89
 r#  10586  145  61
 p: .
-t: 
-This is not to discount the sexual, and other, abuse of boys
+t. 
+. This is not to discount the sexual, and other, abuse of boys
 
 
 --- Sentence/switch
-i: 90
+id: 90
 r#  10587  145  62
 
 
 --- Sentence//end
-i: 90
+id: 90
 r#  10812  147  137
 p: .
-t:  If the abusive
-parent is not sexually abusing the boys per se, exposure to pornography
-or verbal abuse with disturbing messages on being manly are, nonetheless, common components of a father's abuse of his male children
+t. 
+|  If the abusive
+| parent is not sexually abusing the boys per se, exposure to pornography
+. or verbal abuse with disturbing messages on being manly are, nonetheless, common components of a father's abuse of his male children
 
 
 --- Sentence/switch
-i: 91
+id: 91
 r#  10813  147  138
 
 
 --- Sentence//end
-i: 91
+id: 91
 r#  10880  148  62
 p: .
-t:  The
-depravity of sexual abuse of children seemingly has no bottom
+t. 
+|  The
+. depravity of sexual abuse of children seemingly has no bottom
 
 
 --- Sentence/switch
-i: 92
+id: 92
 r#  10881  148  63
 
 
 --- Sentence//end
-i: 92
+id: 92
 r#  10984  150  26
 p: .
-t:  I have
-had a few cases where fathers of very young girls provided other men
-access to their daughters
+t. 
+|  I have
+| had a few cases where fathers of very young girls provided other men
+. access to their daughters
 
 
 --- Sentence/switch
-i: 93
+id: 93
 r#  10985  150  27
 
 
 --- Sentence//end
-i: 93
+id: 93
 r#  11305  154  53
 p: .
-t:  Just imagine how courts would respond to
-these allegations, particularly if the basis of the allegations is solely the
-testimony of the child? Fortunately, my clients had sufficient evidence
-of abuse by the father to convince the judge to prohibit all access to the
-child without disclosing this additional information
+t. 
+|  Just imagine how courts would respond to
+| these allegations, particularly if the basis of the allegations is solely the
+| testimony of the child? Fortunately, my clients had sufficient evidence
+| of abuse by the father to convince the judge to prohibit all access to the
+. child without disclosing this additional information
 
 
 --- Sentence/switch
-i: 94
+id: 94
 r#  11306  154  54
 
 
 --- Sentence//end
-i: 94
+id: 94
 r#  11427  156  29
 p: .
-t:  Part of the evidence
-in one case included psychiatric reports from the daughter's repeated
-psychiatric hospitalizations
+t. 
+|  Part of the evidence
+| in one case included psychiatric reports from the daughter's repeated
+. psychiatric hospitalizations
 
 
 --- Sentence/switch
-i: 95
+id: 95
 r#  11428  156  30
 
 
 --- Sentence//end
-i: 95
+id: 95
 r#  11597  158  49
 p: .
-t:  Practically speaking, had we addressed the
-additional facts of the father making the child sexually available to other
-men this could have been detrimental to our case
+t. 
+|  Practically speaking, had we addressed the
+| additional facts of the father making the child sexually available to other
+. men this could have been detrimental to our case
 
 
 --- Sentence/switch
-i: 96
+id: 96
 r#  11598  158  50
 
 
 --- Sentence//end
-i: 96
+id: 96
 r#  11731  159  111
 p: .
-t:  Even the sympathetic
-judge might view such information as going a step too far and reexamine the mother's reliability as a reporter
+t. 
+|  Even the sympathetic
+. judge might view such information as going a step too far and reexamine the mother's reliability as a reporter
 
 
 --- Sentence/switch
-i: 97
+id: 97
 r#  11732  159  112
 
 
 --- Sentence//end
-i: 97
+id: 97
 r#  11840  161  11
 p: .
-t:  Fortunately for my clients,
-the judges who heard these cases were not skeptical of the mother's
-intentions
+t. 
+|  Fortunately for my clients,
+| the judges who heard these cases were not skeptical of the mother's
+. intentions
 
 
 --- Sentence/switch
-i: 98
+id: 98
 r#  11841  161  12
 
 
 --- Sentence//end
-i: 98
+id: 98
 r#  11970  162  69
 p: .
-t:  Importantly, those cases pre-dated the era where claims of
-parental alienation saturate every case involving protective mothers
+t. 
+|  Importantly, those cases pre-dated the era where claims of
+. parental alienation saturate every case involving protective mothers
 
 
 --- Sentence/switch
-i: 99
+id: 99
 r#  11971  162  70
 
 
 --- Sentence//end
-i: 99
+id: 99
 r#  12156  165  37
 p: .
-t:  Yet
-the dilemma remains the same: how much information to reveal in court;
-and the timing of such revelations is the purview of client and counsel
-and must be calculated strategically
+t. 
+|  Yet
+| the dilemma remains the same: how much information to reveal in court;
+| and the timing of such revelations is the purview of client and counsel
+. and must be calculated strategically
 
 
 --- Sentence/switch
-i: 100
+id: 100
 r#  12157  165  38
 
 
 --- Sentence//end
-i: 100
+id: 100
 r#  12274  167  9
 p: .
-t:  This is no doubt an important topic
-for domestic abuse survivors and their advocates to discuss throughout
-the case
+t. 
+|  This is no doubt an important topic
+| for domestic abuse survivors and their advocates to discuss throughout
+. the case
 
 
 --- Sentence/switch
-i: 101
+id: 101
 r#  12275  167  10
 
 
 --- Sentence//end
-i: 101
+id: 101
 r#  12457  169  49
 p: .
-t:  As you will read in the comprehensive case studies provided in
-this book, sometimes what is presented to the court is deemed wholly
-irrelevant if the judge is hostile to the mother
+t. 
+|  As you will read in the comprehensive case studies provided in
+| this book, sometimes what is presented to the court is deemed wholly
+. irrelevant if the judge is hostile to the mother
 
 --- Sentence/end 
-i: 101
+id: 101
 r#  12458  169  50
 
 --- Paragraph/end 
-i: 12
+id: 12
 y: N/A
 
 
 --- Paragraph/start
-i: 13
+id: 13
 r#  12460  171  1
 
 
 --- Sentence/start
-i: 102
+id: 102
 r#  12460  171  1
 
 --- Sentence//end
-i: 102
+id: 102
 r#  12704  173  106
 p: .
-t: Parental alienation arguments in all their forms (Parental Alienation
-Syndrome [PAS], Parental Alienation [PA], Resist and Refuse Dynamics
-[R-RD]) is pervasive in family court and often effective in grossly undermining a mother's claim of abuse
+t. 
+| Parental alienation arguments in all their forms (Parental Alienation
+| Syndrome [PAS], Parental Alienation [PA], Resist and Refuse Dynamics
+. [R-RD]) is pervasive in family court and often effective in grossly undermining a mother's claim of abuse
 
 
 --- Sentence/switch
-i: 103
+id: 103
 r#  12705  173  107
 
 
 --- Sentence//end
-i: 103
+id: 103
 r#  12846  174  104
 p: .
-t:  The mother is further punished with
-court orders assigning custody to the abuser and often loss of all visitation privileges with her child
+t. 
+|  The mother is further punished with
+. court orders assigning custody to the abuser and often loss of all visitation privileges with her child
 
 
 --- Sentence/switch
-i: 104
+id: 104
 r#  12847  174  105
 
 
 --- Sentence//end
-i: 104
+id: 104
 r#  12897  175  7
 p: .
-t:  As Neustein and Lesher discuss, Professor
-Joan S
+t. 
+|  As Neustein and Lesher discuss, Professor
+. Joan S
 
 
 --- Sentence/switch
-i: 105
+id: 105
 r#  12898  175  8
 
 
 --- Sentence//end
-i: 105
+id: 105
 r#  13188  179  13
 p: .
-t:  Meier is a leading researcher who has debunked the so-called
-science behind alienation. Although there is no question that some
-parents attempt to drive a wedge between their children and the other
-parent, that behavior is different than the situations that are described
-in this book
+t. 
+|  Meier is a leading researcher who has debunked the so-called
+| science behind alienation. Although there is no question that some
+| parents attempt to drive a wedge between their children and the other
+| parent, that behavior is different than the situations that are described
+. in this book
 
 
 --- Sentence/switch
-i: 106
+id: 106
 r#  13189  179  14
 
 
 --- Sentence//end
-i: 106
+id: 106
 r#  13409  181  18
 p: .
-t:  However, when allegations of child abuse arise in a case
-where alienation is claimed by the alleged abuser, the court should focus on the domestic violence and child abuse claims, disregarding the
-alienation claims
+t. 
+|  However, when allegations of child abuse arise in a case
+| where alienation is claimed by the alleged abuser, the court should focus on the domestic violence and child abuse claims, disregarding the
+. alienation claims
 
 
 --- Sentence/switch
-i: 107
+id: 107
 r#  13410  181  19
 
 
 --- Sentence//end
-i: 107
+id: 107
 r#  13461  181  70
 p: .
-t:  Abuse and alienation do not happen simultaneously
+t. 
+.  Abuse and alienation do not happen simultaneously
 
 
 --- Sentence/switch
-i: 108
+id: 108
 r#  13462  181  71
 
 
 --- Sentence//end
-i: 108
+id: 108
 r#  13580  182  118
 p: .
-t: 
-Raising alienation claims against the non-abusive parent is part of a pattern of abuse and should be explored as such
+t. 
+. Raising alienation claims against the non-abusive parent is part of a pattern of abuse and should be explored as such
 
 
 --- Sentence/switch
-i: 109
+id: 109
 r#  13581  182  119
 
 
 --- Sentence//end
-i: 109
+id: 109
 r#  13676  183  70
 p: .
-t:  Reputable psychologists
-and psychiatrists have debunked the fundamental notions of alienation
+t. 
+|  Reputable psychologists
+. and psychiatrists have debunked the fundamental notions of alienation
 
 
 --- Sentence/switch
-i: 110
+id: 110
 r#  13677  183  71
 
 
 --- Sentence//end
-i: 110
+id: 110
 r#  13771  185  24
 p: .
-t: 
-Significant science-based organizations do not accept it as a theory,
-let alone as a disorder
+t. 
+| Significant science-based organizations do not accept it as a theory,
+. let alone as a disorder
 
 
 --- Sentence/switch
-i: 111
+id: 111
 r#  13772  185  25
 
 
 --- Sentence//end
-i: 111
+id: 111
 r#  13826  186  6
 p: .
-t:  The authors of this book address this topic in
-depth
+t. 
+|  The authors of this book address this topic in
+. depth
 
 --- Sentence/end 
-i: 111
+id: 111
 r#  13827  186  7
 
 --- Paragraph/end 
-i: 13
+id: 13
 y: N/A
 
 
 --- Paragraph/start
-i: 14
+id: 14
 r#  13829  188  1
 
 
 --- Sentence/start
-i: 112
+id: 112
 r#  13829  188  1
 
 --- Sentence//end
-i: 112
+id: 112
 r#  13897  188  69
 p: .
-t: Fundamentally, alienation claims depend upon two myths about wo\-men
+t. 
+. Fundamentally, alienation claims depend upon two myths about wo\-men
 
 
 --- Sentence/switch
-i: 113
+id: 113
 r#  13898  188  70
 
 
 --- Sentence//end
-i: 113
+id: 113
 r#  13944  189  44
 p: .
-t: 
-As mentioned earlier, one is that women lie
+t. 
+. As mentioned earlier, one is that women lie
 
 
 --- Sentence/switch
-i: 114
+id: 114
 r#  13945  189  45
 
 
 --- Sentence//end
-i: 114
+id: 114
 r#  14000  190  35
 p: .
-t:  The second is that
-women particularly lie about abuse
+t. 
+|  The second is that
+. women particularly lie about abuse
 
 
 --- Sentence/switch
-i: 115
+id: 115
 r#  14001  190  36
 
 
 --- Sentence//end
-i: 115
+id: 115
 r#  14093  191  56
 p: .
-t:  Not surprisingly, such stereotypes
-were created by men to protect themselves and other men
+t. 
+|  Not surprisingly, such stereotypes
+. were created by men to protect themselves and other men
 
 
 --- Sentence/switch
-i: 116
+id: 116
 r#  14094  191  57
 
 
 --- Sentence//end
-i: 116
+id: 116
 r#  14165  192  71
 p: .
-t: 
-Nevertheless, it is important to remember that not all men are abusive
+t. 
+. Nevertheless, it is important to remember that not all men are abusive
 
 
 --- Sentence/switch
-i: 117
+id: 117
 r#  14166  192  72
 
 
 --- Sentence//end
-i: 117
+id: 117
 r#  14207  192  113
 p: .
-t:  By far, abusive men are in the minority
+t. 
+.  By far, abusive men are in the minority
 
 
 --- Sentence/switch
-i: 118
+id: 118
 r#  14208  192  114
 
 
 --- Sentence//end
-i: 118
+id: 118
 r#  14250  193  16
 p: .
-t:  But abusive men are good
-at what they do
+t. 
+|  But abusive men are good
+. at what they do
 
 
 --- Sentence/switch
-i: 119
+id: 119
 r#  14251  193  17
 
 
 --- Sentence//end
-i: 119
+id: 119
 r#  14367  194  67
 p: .
-t:  They know, and are groomed in, how to disparage
-women and children and how to undermine their targets' credibility
+t. 
+|  They know, and are groomed in, how to disparage
+. women and children and how to undermine their targets' credibility
 
 
 --- Sentence/switch
-i: 120
+id: 120
 r#  14368  194  68
 
 
 --- Sentence//end
-i: 120
+id: 120
 r#  14464  196  26
 p: .
-t: 
-Overcoming stereotypes of women scorned, women are crazy, and
-women lie is not easy
+t. 
+| Overcoming stereotypes of women scorned, women are crazy, and
+. women lie is not easy
 
 
 --- Sentence/switch
-i: 121
+id: 121
 r#  14465  196  27
 
 
 --- Sentence//end
-i: 121
+id: 121
 r#  14633  197  49
 p: .
-t:  These stereotypes are so embedded in our culture that ridding the public, as well as judges and other court staff, of
-these biases can be a slow and difficult process
+t. 
+|  These stereotypes are so embedded in our culture that ridding the public, as well as judges and other court staff, of
+. these biases can be a slow and difficult process
 
 
 --- Sentence/switch
-i: 122
+id: 122
 r#  14634  197  50
 
 
 --- Sentence//end
-i: 122
+id: 122
 r#  14755  199  28
 p: .
-t:  We expect a higher
-level of understanding from judges, but often it is up to the protective
-mother to educate the judge
+t. 
+|  We expect a higher
+| level of understanding from judges, but often it is up to the protective
+. mother to educate the judge
 
 
 --- Sentence/switch
-i: 123
+id: 123
 r#  14756  199  29
 
 
 --- Sentence//end
-i: 123
+id: 123
 r#  14836  200  36
 p: .
-t:  This is a complex process, particularly if
-one cannot afford an expert witness
+t. 
+|  This is a complex process, particularly if
+. one cannot afford an expert witness
 
 
 --- Sentence/switch
-i: 124
+id: 124
 r#  14837  200  37
 
 
 --- Sentence//end
-i: 124
+id: 124
 r#  14931  201  59
 p: .
-t:  Judges hear from abusers' experts
-and guardians ad litem railing about the mother's failures
+t. 
+|  Judges hear from abusers' experts
+. and guardians ad litem railing about the mother's failures
 
 
 --- Sentence/switch
-i: 125
+id: 125
 r#  14932  201  60
 
 
 --- Sentence//end
-i: 125
+id: 125
 r#  14966  202  22
 p: .
-t:  Judges are
-not social scientists
+t. 
+|  Judges are
+. not social scientists
 
 
 --- Sentence/switch
-i: 126
+id: 126
 r#  14967  202  23
 
 
 --- Sentence//end
-i: 126
+id: 126
 r#  15157  204  66
 p: .
-t:  Without experts for the protective mother, and an
-attorney who understands how to attack the father's experts, judges will
-not have an adequate record on which to make an informed decision
+t. 
+|  Without experts for the protective mother, and an
+| attorney who understands how to attack the father's experts, judges will
+. not have an adequate record on which to make an informed decision
 
 
 --- Sentence/switch
-i: 127
+id: 127
 r#  15158  204  67
 
 
 --- Sentence//end
-i: 127
+id: 127
 r#  15382  208  8
 p: .
-t: 
-This second edition of this book provides more information for judges
-and protective mothers and their advocates to understand abuse, and the
-biases that subject protective mothers to further abuse through the legal
-process
+t. 
+| This second edition of this book provides more information for judges
+| and protective mothers and their advocates to understand abuse, and the
+| biases that subject protective mothers to further abuse through the legal
+. process
 
 --- Sentence/end 
-i: 127
+id: 127
 r#  15383  208  9
 
 --- Paragraph/end 
-i: 14
+id: 14
 y: N/A
 
 
 --- Paragraph/start
-i: 15
+id: 15
 r#  15385  210  1
 
 
 --- Sentence/start
-i: 128
+id: 128
 r#  15385  210  1
 
 --- Sentence//end
-i: 128
+id: 128
 r#  15510  211  55
 p: .
-t: Finally, I must consider the failure of law schools to produce lawyers
-adequately prepared to advocate for protective mothers
+t. 
+| Finally, I must consider the failure of law schools to produce lawyers
+. adequately prepared to advocate for protective mothers
 
 
 --- Sentence/switch
-i: 129
+id: 129
 r#  15511  211  56
 
 
 --- Sentence//end
-i: 129
+id: 129
 r#  15617  213  14
 p: .
-t:  Statistically we
-know that at least one in four cases handled by family law attorneys will
-involve abuse
+t. 
+|  Statistically we
+| know that at least one in four cases handled by family law attorneys will
+. involve abuse
 
 
 --- Sentence/switch
-i: 130
+id: 130
 r#  15618  213  15
 
 
 --- Sentence//end
-i: 130
+id: 130
 r#  15743  214  69
 p: .
-t:  I am not aware of any law school that requires courses
-in domestic abuse to be a pre or co-requisite to studying family law
+t. 
+|  I am not aware of any law school that requires courses
+. in domestic abuse to be a pre or co-requisite to studying family law
 
 
 --- Sentence/switch
-i: 131
+id: 131
 r#  15744  214  70
 
 
 --- Sentence//end
-i: 131
+id: 131
 r#  15835  216  21
 p: .
-t: 
-Often family law casebooks have just one section devoted to the study
-of domestic violence
+t. 
+| Often family law casebooks have just one section devoted to the study
+. of domestic violence
 
 
 --- Sentence/switch
-i: 132
+id: 132
 r#  15836  216  22
 
 
 --- Sentence//end
-i: 132
+id: 132
 r#  16014  217  132
 p: .
-t:  Without incorporating the study of abuse and
-its legal consequences, students graduate with an incomplete education for representing domestic abuse survivors and their children
+t. 
+|  Without incorporating the study of abuse and
+. its legal consequences, students graduate with an incomplete education for representing domestic abuse survivors and their children
 
 
 --- Sentence/switch
-i: 133
+id: 133
 r#  16015  217  133
 
 
 --- Sentence//end
-i: 133
+id: 133
 r#  16107  219  14
 p: .
-t:  This
-makes family law practitioners more vulnerable to believing allegations
-of alienation
+t. 
+|  This
+| makes family law practitioners more vulnerable to believing allegations
+. of alienation
 
 
 --- Sentence/switch
-i: 134
+id: 134
 r#  16108  219  15
 
 
 --- Sentence//end
-i: 134
+id: 134
 r#  16319  221  13
 p: .
-t:  As such they lack the tools to adequately defend the protective mother and may not have the energy to mount an aggressive
-defense because they believe alienation is real, even in cases where abuse
-has occurred
+t. 
+|  As such they lack the tools to adequately defend the protective mother and may not have the energy to mount an aggressive
+| defense because they believe alienation is real, even in cases where abuse
+. has occurred
 
 
 --- Sentence/switch
-i: 135
+id: 135
 r#  16320  221  14
 
 
 --- Sentence//end
-i: 135
+id: 135
 r#  16454  222  74
 p: .
-t:  In essence, law schools are inadvertently setting up their
-graduates for incompetent representation of their clients in family cases
+t. 
+|  In essence, law schools are inadvertently setting up their
+. graduates for incompetent representation of their clients in family cases
 
 
 --- Sentence/switch
-i: 136
+id: 136
 r#  16455  222  75
 
 
 --- Sentence//end
-i: 136
+id: 136
 r#  16672  225  72
 p: .
-t: 
-Malpractice alone should motivate family law attorneys and students to
-learn about the alienation smokescreen, the single most effective tool or
-strategy preventing protective mothers from keeping their children safe
+t. 
+| Malpractice alone should motivate family law attorneys and students to
+| learn about the alienation smokescreen, the single most effective tool or
+. strategy preventing protective mothers from keeping their children safe
 
 
 --- Sentence/switch
-i: 137
+id: 137
 r#  16673  225  73
 
 
 --- Sentence//end
-i: 137
+id: 137
 r#  16776  226  103
 p: .
-t: 
-This second edition provides comprehensive case studies of what happens in court to protective mothers
+t. 
+. This second edition provides comprehensive case studies of what happens in court to protective mothers
 
 
 --- Sentence/switch
-i: 138
+id: 138
 r#  16777  226  104
 
 
 --- Sentence//end
-i: 138
+id: 138
 r#  16841  227  27
 p: .
-t:  These narrative case histories need
-to be taught in law school
+t. 
+|  These narrative case histories need
+. to be taught in law school
 
 
 --- Sentence/switch
-i: 139
+id: 139
 r#  16842  227  28
 
 
 --- Sentence//end
-i: 139
+id: 139
 r#  17028  229  69
 p: .
-t:  All things considered, this second edition of
-From Madness to Mutiny offers valuable information that attorneys for
-protective mothers need to know, and that law students need to learn
+t. 
+|  All things considered, this second edition of
+| From Madness to Mutiny offers valuable information that attorneys for
+. protective mothers need to know, and that law students need to learn
 
 --- Sentence/end 
-i: 139
+id: 139
 r#  17029  229  70
 
 --- Paragraph/end 
-i: 15
+id: 15
 y: N/A
 
 
 --- Paragraph/start
-i: 16
+id: 16
 r#  17043  231  13
 
 
 --- Sentence/start
-i: 140
+id: 140
 r#  17043  231  13
 --- Paragraph/end 
-i: 16
+id: 16
 y: N/A
 
 
 --- Paragraph/start
-i: 17
+id: 17
 r#  17082  233  13
 
 
 --- Sentence/start
-i: 141
+id: 141
 r#  17082  233  13
 --- Paragraph/end 
-i: 17
+id: 17
 y: N/A
 
 
 --- Paragraph/start
-i: 18
+id: 18
 r#  17122  235  13
 
 
 --- Sentence/start
-i: 142
+id: 142
 r#  17122  235  13
 --- Paragraph/end 
-i: 18
+id: 18
 y: N/A

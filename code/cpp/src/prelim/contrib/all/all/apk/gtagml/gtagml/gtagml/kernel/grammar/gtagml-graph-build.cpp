@@ -181,7 +181,7 @@ void GTagML_Graph_Build::primary_acc(QString text)
      latex_stream_ << " \\> ";
 
    ++sentence_id_;
-   sentences_sdi_stream_ << "\n\n--- Sentence/switch\ni: "
+   sentences_sdi_stream_ << "\n\n--- Sentence/switch\nid: "
      << sentence_id_ << "\nr#  "
      << document_info_.line_and_column_string(parser_->current_position())
      << "\n";
@@ -201,7 +201,7 @@ void GTagML_Graph_Build::primary_acc(QString text)
      latex_stream_ << "\\:";
 
    ++paragraph_id_;
-   sentences_sdi_stream_ << "\n\n--- Paragraph/start\ni: " << paragraph_id_
+   sentences_sdi_stream_ << "\n\n--- Paragraph/start\nid: " << paragraph_id_
      << "\nr#  "
      << document_info_.line_and_column_string(parser_->current_position())
      << "\n";
@@ -215,7 +215,7 @@ void GTagML_Graph_Build::primary_acc(QString text)
      latex_stream_ << "\\+";
 
    ++sentence_id_;
-   sentences_sdi_stream_ << "\n\n--- Sentence/start\ni: " << sentence_id_
+   sentences_sdi_stream_ << "\n\n--- Sentence/start\nid: " << sentence_id_
      << "\nr#  "
      << document_info_.line_and_column_string(parser_->current_position());
   }
@@ -415,7 +415,7 @@ void GTagML_Graph_Build::end_sentence(QString punctuation,
 
  sentences_sdi_stream_ << "\n\n--- Sentence//end";
 
- sentences_sdi_stream_ << "\ni: " << sentence_id_;
+ sentences_sdi_stream_ << "\nid: " << sentence_id_;
 
  sentences_sdi_stream_ << "\nr#  " <<
    document_info_.line_and_column_string(parser_->current_position());
@@ -442,7 +442,7 @@ void GTagML_Graph_Build::end_sentence(QString punctuation,
     << pr.second;
  }
 
- sentences_sdi_stream_ << "\nt: " << sentences_text_ << "\n";
+ sentences_sdi_stream_ << "\nt. " << sentences_text_to_string() << "\n";
 
  sentences_text_.clear();
 
@@ -670,7 +670,7 @@ void GTagML_Graph_Build::close_paragraph()
   if(flags.use_latex_sdi_markers)
     latex_stream_ << "\\<";
 
-  sentences_sdi_stream_ << "\n--- Sentence/end \ni: "
+  sentences_sdi_stream_ << "\n--- Sentence/end \nid: "
     << sentence_id_ << "\nr#  "
     << line_and_column_string() << "\n";
 
@@ -684,7 +684,7 @@ void GTagML_Graph_Build::close_paragraph()
  if(flags.use_latex_sdi_markers)
    latex_stream_ << "\\;";
 
- sentences_sdi_stream_ << "\n--- Paragraph/end \ni: " << paragraph_id_
+ sentences_sdi_stream_ << "\n--- Paragraph/end \nid: " << paragraph_id_
    << "\ny: " << current_paragraph_type_to_string() << "\n";
 
 

@@ -162,15 +162,29 @@ class GTagML_Graph_Build
  QString line_and_column_string_tight();
  QString line_and_column_string();
 
- QString sentence_gaps_to_string()
+ QString lines_to_string(QString text)
  {
-  QString result = sentence_gaps_;
+  QString result = text;
 
   if(!result.startsWith('\n'))
     result.prepend('\n');
+
   result.replace('\n', "\n| ");
 
+  s4 ix = result.lastIndexOf("\n| ");
+  result[ix + 1] = '.';
+
   return result;
+ }
+
+ QString sentence_gaps_to_string()
+ {
+  return lines_to_string(sentence_gaps_);
+ }
+
+ QString sentences_text_to_string()
+ {
+  return lines_to_string(sentences_text_);
  }
 
  u2 section_id_;

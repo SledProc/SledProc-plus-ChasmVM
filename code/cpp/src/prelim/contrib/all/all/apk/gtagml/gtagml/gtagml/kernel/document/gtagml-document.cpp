@@ -19,6 +19,8 @@
 #include "kernel/grammar/gtagml-parser.h"
 #include "kernel/grammar/gtagml-graph-build.h"
 
+#include "sdi-sentence-reader.h"
+
 #include "tile/gtagml-tile.h"
 //#include "annotation/gtagml-annotation-tile.h"
 
@@ -337,6 +339,13 @@ void GTagML_Document::insert_latex_template(QString path)
 void GTagML_Document::insert_xml_template(QString path)
 {
  graph_build_->insert_xml_template(path);
+}
+
+void GTagML_Document::sdi_check(QString sdi_path, QString out_path)
+{
+ SDI_Sentence_Reader ssr(sdi_path);
+ ssr.sdi_check(raw_text_, out_path);
+ //? graph_build_->sdi_check(sdi_path, out_path);
 }
 
 void GTagML_Document::save_sentences(QString path)
