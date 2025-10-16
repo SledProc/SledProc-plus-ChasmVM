@@ -14,6 +14,8 @@
 
 #include "kans.h"
 
+#include "global-types.h"
+
 #include <QStringList>
 
 KANS_(GTagML)
@@ -46,6 +48,7 @@ class GTagML_Document_Info
  QMap<QString, QVector<QPair<QString, void*>>> citations_;
 
 
+ QVector<u4> line_size_vector_;
 
 public:
 
@@ -59,6 +62,24 @@ public:
  ACCESSORS__RGET(MACRO_PASTE(QMap<QString, QVector<QPair<QString, void*>>>) ,citations)
 
  GTagML_Document_Info();
+
+ void build_line_size_vector(QString path);
+
+ QPair<u4, u4> line_and_column(u4 pos);
+
+ QString line_and_column_string(u4 pos, QString inter1, QString inter2);
+
+ QString line_and_column_string(u4 pos, QString inter)
+ {
+  return line_and_column_string(pos, inter, inter);
+ }
+
+ QString line_and_column_string(u4 pos)
+ {
+  return line_and_column_string(pos, "  ", "  ");
+ }
+
+
 
  void add_quote(QString quote);
  void add_word(QString word);

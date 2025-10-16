@@ -23,6 +23,8 @@
 
 #include "kans.h"
 
+#include "global-types.h"
+
 #include <QTextStream>
 
 KANS_(GTagML)
@@ -72,6 +74,7 @@ class GTagML_Document
 
  QString info_path_;
 
+
 public:
 
 
@@ -117,13 +120,16 @@ public:
 
  QString use_info_path();
 
+
  GTagML_Project_Info* init_project_info(QString folder = {});
 
  void check_sdi_tag_command_info();
 
  void load_and_parse(QString path, caon_ptr<GTagML_Grammar> grammar =
    caon_ptr<GTagML_Grammar>(nullptr) );
+
  void load_file(QString path);
+
  void set_grammar(caon_ptr<GTagML_Grammar> grammar =
    caon_ptr<GTagML_Grammar>(nullptr) );
  void parse();

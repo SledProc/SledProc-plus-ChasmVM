@@ -314,9 +314,11 @@ void GTagML_Document::save_file(QString path, QString contents)
 }
 
 
+
 void GTagML_Document::load_file(QString path)
 {
  QFile file(path);
+
  if(file.open(QFile::ReadOnly | QIODevice::Text))
  {
   raw_text_ = file.readAll();
@@ -405,7 +407,11 @@ void GTagML_Document::check_sdi_tag_command_info()
 void GTagML_Document::load_and_parse(QString path, caon_ptr<GTagML_Grammar> grammar)
 {
  check_sdi_tag_command_info();
+
+ document_info_.build_line_size_vector(path);
+
  load_file(path);
+
  set_grammar(grammar);
  parse();
 }

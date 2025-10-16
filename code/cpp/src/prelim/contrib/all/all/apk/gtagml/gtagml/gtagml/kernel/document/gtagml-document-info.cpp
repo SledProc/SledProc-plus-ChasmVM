@@ -24,6 +24,49 @@ GTagML_Document_Info::GTagML_Document_Info() : light_xml_(nullptr),
 }
 
 
+QPair<u4, u4> GTagML_Document_Info::line_and_column(u4 pos)
+{
+ //for(u4 start : line_size_vector_)
+
+ auto it = std::upper_bound(line_size_vector_.begin(),
+   line_size_vector_.end(), pos);
+
+ if(it == line_size_vector_.end())
+   return {line_size_vector_.size(), pos - line_size_vector_.last()};
+
+ u4 ix = std::distance(line_size_vector_.begin(), it) - 1;
+
+ return {ix, pos - line_size_vector_[ix]};
+}
+
+QString GTagML_Document_Info::line_and_column_string(u4 pos, QString inter1, QString inter2)
+{
+ auto pr = line_and_column(pos);
+
+ return "%1%2%3%4%5"_qt.arg(pos).arg(inter1)
+   .arg(pr.first + 1).arg(inter2).arg(pr.second + 1);
+}
+
+
+void GTagML_Document_Info::build_line_size_vector(QString path)
+{
+ QFile file(path);
+
+ u4 current_total = 0;
+
+ if(file.open(QFile::ReadOnly | QIODevice::Text))
+ {
+  QTextStream in(&file);
+  while(!in.atEnd())
+  {
+   QString line = in.readLine();
+   line_size_vector_.push_back(current_total);
+   current_total += line.length() + 1;
+  }
+ }
+}
+
+
 void GTagML_Document_Info::init_light_xml()
 {
 // light_xml_ = new GTagML_Document_Light_Xml();

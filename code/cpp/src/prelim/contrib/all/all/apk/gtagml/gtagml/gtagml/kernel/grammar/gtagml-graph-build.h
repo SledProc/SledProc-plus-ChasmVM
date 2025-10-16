@@ -156,6 +156,23 @@ class GTagML_Graph_Build
  QString sentence_gaps_;
  QTextStream sentence_gaps_stream_;
 
+ QString line_and_column_string_tight(u4 pos);
+ QString line_and_column_string(u4 pos);
+
+ QString line_and_column_string_tight();
+ QString line_and_column_string();
+
+ QString sentence_gaps_to_string()
+ {
+  QString result = sentence_gaps_;
+
+  if(!result.startsWith('\n'))
+    result.prepend('\n');
+  result.replace('\n', "\n| ");
+
+  return result;
+ }
+
  u2 section_id_;
  u4 sentence_id_;
  u4 paragraph_id_;
@@ -285,9 +302,6 @@ public:
 
  void enter_subparagraph(QString text);
 
- void enter_latex_only();
- void leave_latex_only();
-
  void enter_footnote(QString pretext, QString space);
  void leave_footnote(QString pretext, QString space);
 
@@ -299,10 +313,13 @@ public:
  void enter_sentences_only(QString open, QString pre_space);
  void leave_sentences_only(QString close, QString post_space);
 
- void enter_latex_only_to_space(QString text);
+ void enter_latex_only(QString match);
+ void leave_latex_only(QString match);
 
- void enter_latex_only_to_space();
- void leave_latex_only_to_space();
+ void enter_latex_only_to_space(QString match, QString space);
+
+ void enter_latex_only_to_space(QString match);
+ void leave_latex_only_to_space(QString match);
 
  void latex_only(QString text);
 

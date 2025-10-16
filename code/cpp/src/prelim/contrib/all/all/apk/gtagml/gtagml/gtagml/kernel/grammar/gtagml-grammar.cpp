@@ -125,20 +125,20 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
 
  add_rule( gtagml_context, "enter-latex-only-to-space",
-  " .single-space.* -%> .single-space.*  "
+  " .single-space.* (?<m> -%>) .single-space.*  "
   ,[&]
  {
-  graph_build.enter_latex_only_to_space();
+  graph_build.enter_latex_only_to_space(p.matched("m"));
  });
 
 
 
  add_rule( flags_all_(parse_context ,latex_only_to_space),
   gtagml_context, "leave-latex-only-to-space--consume-space",
-  " _ (?= \\s) "
+  " (?<m> _) (?= \\s) "
   ,[&]
  {
-  graph_build.leave_latex_only_to_space();
+  graph_build.leave_latex_only_to_space(p.matched("m"));
  });
 
 
@@ -147,7 +147,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   " .single-space.+ (?=\\S) "
   ,[&]
  {
-  graph_build.leave_latex_only_to_space();
+  graph_build.leave_latex_only_to_space("");
  });
 
  add_rule( flags_all_(parse_context ,latex_only_to_space),
@@ -155,7 +155,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   " .single-space.* (?=\\n) "
   ,[&]
  {
-  graph_build.leave_latex_only_to_space();
+  graph_build.leave_latex_only_to_space("");
  });
 
 
@@ -171,34 +171,34 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
 
  add_rule( gtagml_context, "enter-latex-only--leave-space",
-  " <<-% \\s* "
+  " (?<m> <<-%) \\s* "
   ,[&]
  {
-  graph_build.enter_latex_only();
+  graph_build.enter_latex_only(p.matched("m"));
  });
 
  add_rule( gtagml_context, "enter-latex-only",
-  " \\s+ <-% \\s* "
+  " \\s+ (?<m> <-%) \\s* "
   ,[&]
  {
-  graph_build.enter_latex_only();
+  graph_build.enter_latex_only(p.matched("m"));
  });
 
  add_rule( flags_all_(parse_context ,latex_only),
    gtagml_context, "leave-latex-only--leave-space",
-   " \\s* %->> "
+   " \\s* (?<m> %->>) "
    ,[&]
  {
-  graph_build.leave_latex_only();
+  graph_build.leave_latex_only(p.matched("m"));
  });
 
 
  add_rule( flags_all_(parse_context ,latex_only),
    gtagml_context, "leave-latex-only",
-   " \\s* %-> \\s* "
+   " \\s* (?<m> %->) \\s* "
    ,[&]
  {
-  graph_build.leave_latex_only();
+  graph_build.leave_latex_only(p.matched("m"));
  });
 
  add_rule( gtagml_context, "force-switch-sentence",
