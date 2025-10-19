@@ -50,6 +50,9 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
    ,sentences_sdi_stream_(&sentences_sdi_)
    ,sentences_text_stream_(&sentences_text_)
    ,sentence_gaps_stream_(&sentence_gaps_)
+   ,sentences_section_heading_stream_(&sentences_section_heading_)
+   ,latex_section_heading_stream_(&latex_section_heading_)
+   ,heading_counts_({0,0})
    ,sentence_nesting_depth_(1)
    ,section_id_(0)
    ,sentence_id_(0)
@@ -57,7 +60,8 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
    ,footnote_id_(0)
 //   ,jats_stream_(&jats_)
 {
- flags.use_latex_sdi_markers = true;
+// flags.use_latex_sdi_markers = true;
+// flags.use_latex_sdi_markers = true;
 }
 
 
@@ -160,6 +164,18 @@ void GTagML_Graph_Build::insert_xml_template(QString path)
 
 void GTagML_Graph_Build::primary_acc(QString text)
 {
+ if(flags.heading_acc)
+ {
+  if(!flags.latex_only)
+    sentences_section_heading_stream_ << text;
+
+  if(!flags.sentences_only)
+    latex_section_heading_stream_ << text;
+
+  return;
+ }
+
+
  if(flags.just_ended_sentence)
  {
   flags.just_ended_sentence = false;
@@ -277,19 +293,18 @@ void GTagML_Graph_Build::reset_primary()
  primary_acc_.clear();
 }
 
-void GTagML_Graph_Build::section_heading(QString text)
+void GTagML_Graph_Build::section_heading(QString stext, QString ltext)
 {
- reset_primary();
+// reset_primary();
+// check_close_paragraph();
 
- check_close_paragraph();
-
- xml_writer_.writeTextElement("s1", text);
- latex_stream_ << "\n\n\\s|1|{" << text << "}\n";
+ xml_writer_.writeTextElement("s1", stext);
+ latex_stream_ << "\n\n\\s|1|{" << ltext << "}\n";
 
  ++section_id_;
 
  sentences_sdi_stream_ << "\n\n--- Section/start\n-l  1\n-i  "
-   << section_id_ << "\n-t  " << text << "\n";
+   << section_id_ << "\n-t  " << stext << "\n";
 
  set_paragraph_bridge();
 }
@@ -397,6 +412,47 @@ void GTagML_Graph_Build::force_switch_sentence()
  end_sentence("");
 }
 
+void GTagML_Graph_Build::ell_count(u1 count)
+{
+ reset_primary();
+
+ if(count == 3)
+ {
+  if(!flags.sentences_only)
+    latex_stream_ << "\\ellThree{2pt}{2pt}";
+
+  if(!flags.latex_only)
+    sentences_text_stream_ << "...";
+ }
+ else if(count == 4)
+ {
+  if(!flags.sentences_only)
+    latex_stream_ << "\\ellFour{2pt}{2pt}";
+
+  if(!flags.latex_only)
+    sentences_text_stream_ << "....";
+ }
+
+}
+
+void GTagML_Graph_Build::noindent_marker()
+{
+ if(!flags.sentences_only)
+   latex_stream_ << "\\noindent{}";
+}
+
+
+void GTagML_Graph_Build::footnote_marker(QString text)
+{
+ reset_primary();
+
+ if(!flags.latex_only)
+   sentences_text_stream_ << "\\" << text;
+
+ if(!flags.sentences_only)
+   latex_stream_ << "\\fnm{" << text << "}";
+}
+
 
 void GTagML_Graph_Build::end_sentence(QString punctuation,
   u1 nesting_code, QVector<QPair<QString, QString>> supplements)
@@ -457,16 +513,19 @@ void GTagML_Graph_Build::end_sentence(QString punctuation,
 
 
 
-void GTagML_Graph_Build::heading(u1 count, QString text)
+void GTagML_Graph_Build::heading(u1 count, QString stext, QString ltext)
 {
  if(count == 3)
  {
   static QString text_default = "Section %1";
   ++current_section_counts_[1];
-  if(text.isEmpty())
-    text = text_default.arg(current_section_counts_[1]);
+  if(stext.isEmpty())
+    stext = text_default.arg(current_section_counts_[1]);
 
-  section_heading(text);
+  if(ltext.isEmpty())
+    ltext = text_default.arg(current_section_counts_[1]);
+
+  section_heading(stext, ltext);
  }
 
 }
@@ -493,17 +552,15 @@ void GTagML_Graph_Build::set_paragraph_bridge()
  current_paragraph_bridge_ = current_paragraph_count_ + 1;
 }
 
-void GTagML_Graph_Build::subsection_heading(QString text)
+void GTagML_Graph_Build::subsection_heading(QString stext, QString ltext)
 {
- reset_primary();
+// reset_primary();
+// check_close_paragraph();
 
- check_close_paragraph();
+ xml_writer_.writeTextElement("s2", stext);
+ latex_stream_ << "\n\n\\s|2|{" << ltext << "}\n";
 
- xml_writer_.writeTextElement("s2", text);
- latex_stream_ << "\n\n\\s|2|{" << text << "}\n";
-
- sentences_sdi_stream_ << "\n\n--- Section/start\n-l  2\n-t" << text << "\n";
-
+ sentences_sdi_stream_ << "\n\n--- Section/start\n-l  2\n-t" << stext << "\n";
 
  set_paragraph_bridge();
 }
@@ -628,8 +685,28 @@ void GTagML_Graph_Build::leave_sentences_latex_filter(QString pretext)
  flags.sentences_latex_filter = false;
 }
 
+void GTagML_Graph_Build::enter_heading(u1 count1, u1 count2)
+{
+ reset_primary();
+ check_close_paragraph();
 
-void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString text)
+ heading_counts_ = {count1, count2};
+
+ flags.heading_acc = true;
+ parse_context_.flags.heading_acc = true;
+}
+
+void GTagML_Graph_Build::leave_heading()
+{
+ heading(heading_counts_.first, heading_counts_.second,
+   sentences_section_heading_, latex_section_heading_);
+ sentences_section_heading_.clear();
+ latex_section_heading_.clear();
+ flags.heading_acc = false;
+ parse_context_.flags.heading_acc = false;
+}
+
+void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString stext, QString ltext)
 {
 // reset_primary();
 // qDebug() <<  latex_;
@@ -639,13 +716,13 @@ void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString text)
 
  if(count2 == 0)
  {
-  heading(count1, text); return;
+  heading(count1, stext, ltext); return;
  }
 
  if(count1 == 2)
  {
   if(count2 == 2)
-    subsection_heading(text);
+    subsection_heading(stext, ltext);
  }
 
  if(count1 == 3)
@@ -1086,6 +1163,17 @@ void GTagML_Graph_Build::special_character_sequence(QString text)
 {
  auto process = [this](QString latex, QString xml)
  {
+  if(flags.heading_acc)
+  {
+   if(!flags.latex_only)
+     sentences_section_heading_stream_ << xml;
+
+   if(!flags.sentences_only)
+     latex_section_heading_stream_ << latex;
+
+   return;
+  }
+
   reset_primary();
 
   if(flags.latex_only)

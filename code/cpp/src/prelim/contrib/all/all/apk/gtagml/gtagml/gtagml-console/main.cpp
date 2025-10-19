@@ -71,7 +71,7 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
  gdoc->save_latex(path + ".tex");
  gdoc->save_sentences(path + ".sentences.sdi");
 
- gdoc->sdi_check(path + ".sentences.sdi", path + ".test");
+ //? gdoc->sdi_check(path + ".sentences.sdi", path + ".test");
 
  qDebug() << "path = " << path + ".jats";
 
@@ -186,8 +186,14 @@ int main(int argc, char *argv[])
 // file = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/paper.gt";
 // folder = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/src";
 
- file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/foreword/foreword.gt";
- folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/foreword";
+// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/foreword/foreword.gt";
+// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/foreword";
+
+// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/intro/intro.gt";
+// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/intro";
+
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch1/ch1.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch1";
 
 
 

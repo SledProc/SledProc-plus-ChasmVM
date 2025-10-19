@@ -23,6 +23,13 @@ SDI_Sentence::SDI_Sentence(u4 id)
 {
 }
 
+
+void SDI_Sentence::read_sentence_range(QStringList read_dispatch, QVector<s4> numbers)
+{
+
+}
+
+
 void SDI_Sentence::read_sentence_text(QStringList read_dispatch)
 {
  if(read_dispatch.takeFirst() == "_end")

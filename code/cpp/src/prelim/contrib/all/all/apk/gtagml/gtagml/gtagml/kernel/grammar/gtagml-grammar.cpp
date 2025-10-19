@@ -95,6 +95,22 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   check_activate_with_depth_mark(gtagml_context, comment_context, tail.length());
  });
 
+
+ add_rule( gtagml_context, "noindent-marker",
+   " (?<! \\S) --- (?= \\S) "
+   ,[&]
+ {
+  graph_build.noindent_marker();
+ });
+
+ add_rule( gtagml_context, "ell-count",
+   " [.]{2,} "
+   ,[&]
+ {
+  graph_build.ell_count(p.match_text().size());
+ });
+
+
  add_rule( gtagml_context, "single-slash-and-consume-blank-lines",
   " \n (?<first> /\\+) \\s* (?=\\n) "
   ,[&]
@@ -201,6 +217,17 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.leave_latex_only(p.matched("m"));
  });
 
+
+
+
+ add_rule( gtagml_context, "footnote-marker",
+   " \\\\ (?<number> \\d+) (?= \\s) "
+   ,[&]
+ {
+  graph_build.footnote_marker(p.matched("number"));
+ });
+
+
  add_rule( gtagml_context, "force-switch-sentence",
   " => \\s "
   ,[&]
@@ -266,16 +293,24 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
 
+ add_rule( flags_all_(parse_context ,heading_acc),
+   gtagml_context, "leave heading",
+   " (?= \\n) "
+   ,[&]
+ {
+  graph_build.leave_heading();
+ });
+
  add_rule( gtagml_context, "slashes",
   " .space-to-end-of-line.+ (?<first> /+) .single-space.+ (?<second> /*) "
-  " .single-space.* (?<text> [^\\n]*) "
+  " .single-space.* " // (?<text> [^\\n]*) "
   ,[&]
  {
   QString first = p.matched("first");
   QString second = p.matched("second");
-  QString text = p.matched("text");
+  // QString text = p.matched("text");
 
-  graph_build.heading(first.size(), second.size(), text);
+  graph_build.enter_heading(first.size(), second.size());
 
  });
 

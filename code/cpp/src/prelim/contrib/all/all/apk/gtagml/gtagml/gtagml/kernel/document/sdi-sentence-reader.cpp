@@ -40,7 +40,17 @@ void SDI_Sentence_Reader::parse_prelim_line(QString line)
  current_prelim_ = line.mid(3).simplified().replace("//", "/_");
 }
 
-void SDI_Sentence_Reader::parse_numbers_line(QString data, QVector<s4>& numbers)
+
+QVector<s4> SDI_Sentence_Reader::parse_numbers(QString data)
+{
+ QVector<s4> result;
+
+ parse_numbers(data, result);
+
+ return result;
+}
+
+void SDI_Sentence_Reader::parse_numbers(QString data, QVector<s4>& numbers)
 {
  QStringList qsl = data.simplified().split(" ");
 
@@ -53,13 +63,19 @@ void SDI_Sentence_Reader::parse_numbers_line(QString data, QVector<s4>& numbers)
 }
 
 
-void SDI_Sentence_Reader::parse_numbers_line(QString pre, QString data)
+void SDI_Sentence_Reader::parse_numbers_line(QString data, QVector<s4>& numbers)
 {
- QVector<s4> numbers;
+ parse_numbers(data, numbers);
+}
 
- parse_numbers_line(data, numbers);
 
- qDebug() << "n: " << numbers;
+void SDI_Sentence_Reader::parse_numbers_line(QString field, QString data)
+{
+// QVector<s4> numbers;
+// parse_numbers_line(data, numbers);
+// qDebug() << "n: " << numbers;
+
+ read_field(field, data, "#");
 }
 
 
@@ -71,9 +87,12 @@ void SDI_Sentence_Reader::parse_colon_line(QString field, QString data)
   {
    sdi_sentences_.push_back(SDI_Sentence(data.simplified().toInt()));
    current_sentence_ = &sdi_sentences_.last();
+   return;
   }
-
  }
+
+ read_field(field, data, ".");
+
 }
 
 void SDI_Sentence_Reader::parse_data_line(s2 pos, QString line, QString* simpptr)
@@ -106,6 +125,12 @@ void SDI_Sentence_Reader::read_Paragraph_field(QString data, QStringList spl, QS
 
 }
 
+void SDI_Sentence_Reader::read_field(QString field, QString text, QString field_style)
+{
+ QStringList spl = current_prelim_split(field);
+ read_field(spl, text, field_style);
+}
+
 
 void SDI_Sentence_Reader::read_pipe_field(QString text)
 {
@@ -114,8 +139,13 @@ void SDI_Sentence_Reader::read_pipe_field(QString text)
 
  QStringList spl = current_prelim_split(current_pipe_field_);
 
- //QString cpp = current_prelim_plus(current_pipe_field_);
+ read_field(spl, text, ".");
 
+ //QString cpp = current_prelim_plus(current_pipe_field_);
+}
+
+void SDI_Sentence_Reader::read_field(QStringList spl, QString text, QString field_style)
+{
  typedef void (SDI_Sentence_Reader::*fn_type)(QString, QStringList, QString);
 
  static QMap<QString, fn_type> static_map {{
@@ -130,7 +160,7 @@ void SDI_Sentence_Reader::read_pipe_field(QString text)
 
  if(it != static_map.end())
  {
-  (this->*(it.value()))(text, spl, ".");
+  (this->*(it.value()))(text, spl, field_style);
  }
 
 // if(klass == "Sentence")
@@ -139,20 +169,36 @@ void SDI_Sentence_Reader::read_pipe_field(QString text)
 
 void SDI_Sentence_Reader::read_Sentence_field(QString data, QStringList spl, QString field_style)
 {
- typedef void (SDI_Sentence::*fn_type)(QStringList);
+ typedef void (SDI_Sentence::*fn_type_qsl)(QStringList);
+ typedef void (SDI_Sentence::*fn_type_numbers)(QStringList, QVector<s4>);
+
+ union fn_union {
+   fn_type_qsl _dot;
+   fn_type_numbers _hash;
+ };
 
  QString key = spl.first() + field_style + spl.at(1);
 
- static QMap<QString, fn_type> static_map {{
-   {"_end.t", &SDI_Sentence::read_sentence_text},
-   {"_end.g", &SDI_Sentence::read_sentence_gaps}
+// fn_union read_sentence_text = { ._qsl = &SDI_Sentence::read_sentence_text};
+// fn_union read_sentence_gaps = { ._qsl = &SDI_Sentence::read_sentence_text};
+// fn_union read_sentence_range = { ._nums = &SDI_Sentence::read_sentence_range};
+
+ static QMap<QString, fn_union> static_map {{
+   {"_end.t", { ._dot = &SDI_Sentence::read_sentence_text} },
+   {"_end.g", { ._dot = &SDI_Sentence::read_sentence_gaps} },
+   {"start#r", { ._hash =  &SDI_Sentence::read_sentence_range} }
    }};
 
  auto it = static_map.find(key);
 
  if(it != static_map.end())
  {
-  (current_sentence_->*(it.value()))(spl << data);
+  switch (field_style[0].toLatin1())
+  {
+  case '.':  (current_sentence_->*(it.value()._dot))(spl << data); break;
+  case '#':  (current_sentence_->*(it.value()._hash))(spl, parse_numbers(data)); break;
+  default: break;
+  }
  }
 }
 
@@ -211,7 +257,7 @@ void SDI_Sentence_Reader::parse_sdi()
 
 void SDI_Sentence_Reader::parse_pipe_line(QString line)
 {
- pipe_acc_ += line.mid(2);
+ pipe_acc_ += line.mid(3);
 }
 
 

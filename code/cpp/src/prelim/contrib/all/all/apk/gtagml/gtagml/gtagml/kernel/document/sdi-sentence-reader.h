@@ -78,8 +78,15 @@ public:
  void parse_numbers_line(QString field, QString data);
 
  void read_pipe_field(QString text);
+ void read_field(QString field, QString text, QString field_style);
+ void read_field(QStringList spl, QString text, QString field_style);
+
 
  void parse_numbers_line(QString data, QVector<s4>& numbers);
+
+ QVector<s4> parse_numbers(QString data);
+ void parse_numbers(QString data, QVector<s4>& numbers);
+
 };
 
 _KANS(GTagML)

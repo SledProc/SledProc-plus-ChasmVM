@@ -53,22 +53,24 @@ public:
 
   flag_(19, sentences_only)
 
+  flag_(20, heading_acc)
+
 //  flag_(14, inside_tag_body)
 //  flag_(14, inside_html_tag_body)
 
-  flag_(21, inside_html_script_tag)
-  flag_(22, inside_html_style_tag)
-  flag_(23, inside_multi_parent_semis)
-  flag_(24, inside_multi_generic)
-  flag_(25, inside_attribute_sequence)
+  flag_(22, inside_html_script_tag)
+  flag_(23, inside_html_style_tag)
+  flag_(24, inside_multi_parent_semis)
+  flag_(25, inside_multi_generic)
+  flag_(26, inside_attribute_sequence)
 
-  flag_(26, inside_html_tag_body)
-  flag_(27, inside_tag_body)
+  flag_(27, inside_html_tag_body)
+  flag_(28, inside_tag_body)
 
 
-  flag_(28, inside_multi_parent)
-  flag_(29, inside_inline_multi_parent)
-  flag_(30, inside_multiline_comment)
+  flag_(29, inside_multi_parent)
+  flag_(30, inside_inline_multi_parent)
+  flag_(31, inside_multiline_comment)
 
 
  _flags_

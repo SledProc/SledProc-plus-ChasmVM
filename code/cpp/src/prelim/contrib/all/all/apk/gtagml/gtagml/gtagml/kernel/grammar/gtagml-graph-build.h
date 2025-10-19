@@ -57,6 +57,7 @@ class GTagML_Graph_Build
   bool await_paragraph_start:1;
   bool await_sentence_start:1;
   bool use_latex_sdi_markers:1;
+  bool heading_acc:1;
  _flags
 
  enum class Acc_Mode {
@@ -156,6 +157,14 @@ class GTagML_Graph_Build
  QString sentence_gaps_;
  QTextStream sentence_gaps_stream_;
 
+ QString sentences_section_heading_;
+ QTextStream sentences_section_heading_stream_;
+
+ QString latex_section_heading_;
+ QTextStream latex_section_heading_stream_;
+
+ QPair<u1, u1> heading_counts_;
+
  QString line_and_column_string_tight(u4 pos);
  QString line_and_column_string(u4 pos);
 
@@ -169,9 +178,9 @@ class GTagML_Graph_Build
   if(!result.startsWith('\n'))
     result.prepend('\n');
 
-  result.replace('\n', "\n| ");
+  result.replace('\n', "\n|  ");
 
-  s4 ix = result.lastIndexOf("\n| ");
+  s4 ix = result.lastIndexOf("\n|  ");
   result[ix + 1] = '.';
 
   return result;
@@ -294,7 +303,11 @@ public:
   end_sentence("", Nesting_Codes::Signal_Default, {});
  }
 
+ void noindent_marker();
 
+ void footnote_marker(QString text);
+
+ void ell_count(u1 count);
 
  void exs_item(u2 number, QString text);
  void paren_ref(u2 number, QString text);
@@ -351,11 +364,15 @@ public:
 
  void enter_auto_paragraph_mode();
 
- void section_heading(QString text);
- void subsection_heading(QString text);
+ void section_heading(QString stext, QString ltext);
+ void subsection_heading(QString stext, QString ltext);
 
- void heading(u1 count, QString text = QString());
- void heading(u1 count1, u1 count2, QString text = QString());
+ void enter_heading(u1 count1, u1 count2);
+
+ void heading(u1 count, QString stext, QString ltext);
+ void heading(u1 count1, u1 count2, QString stext, QString ltext);
+
+ void leave_heading();
 
  void end_document();
 
