@@ -4,6 +4,8 @@
 \usepackage{csquotes}
 \newenvironment{blockQuote}{\vspace{5pt}\begin{displayquote}}{\end{displayquote}}
 
+\usepackage[all]{nowidow}
+
 
 \raggedbottom
 
@@ -27,22 +29,36 @@
 \vspace{2em}}
 
 
+\newcommand{\justline}[2][\textwidth]{\makebox[#1][s]{#2}}
 
 %\renewcommand{\section}[1]{}
 
+\usepackage{needspace}
 
 \newcommand{\sL@section}[1]{\vspace{-2pt}\fmtSection{#1}\vspace{-2pt}}
-\newcommand{\sL@subsection}[1]{\vspace{14pt}\fmtSubsection{11pt}{#1}}
+\newcommand{\sL@subsection}[1]{\vspace{23pt}\fmtSubsection{12pt}{#1}\vspace{-.5em}}
+\newcommand{\sL@subsubsection}[1]{\vspace{16pt}\fmtSubsection{11.5pt}{#1}\vspace{-1em}}
+
+\newcommand{\raiseColon}{\raisebox{2pt}{:}}
+
+
+\NewDocumentCommand{\semijust}{mD(){1.75}}{%
+\begingroup%
+\spaceskip=#2\fontdimen2\font%
+#1%
+\endgroup%
+}
 
 
 
 \newcommand{\@sectionLevel}[2]{%
+\needspace{2\baselineskip}%
 \ifcase#1\relax
 \or{\sL@section{#2}}
 \or{\sL@subsection{#2}}
+\or{\sL@subsubsection{#2}}
 \else{}
-\fi
-}
+\fi}
 
 
 \NewDocumentCommand{\s}{E{.}{}D||{}m}{%

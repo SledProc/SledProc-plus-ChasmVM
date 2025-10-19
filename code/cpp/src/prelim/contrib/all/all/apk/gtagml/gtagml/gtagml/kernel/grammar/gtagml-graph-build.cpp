@@ -54,7 +54,7 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
    ,latex_section_heading_stream_(&latex_section_heading_)
    ,heading_counts_({0,0})
    ,sentence_nesting_depth_(1)
-   ,section_id_(0)
+   //,section_id_(0)
    ,sentence_id_(0)
    ,paragraph_id_(0)
    ,footnote_id_(0)
@@ -293,18 +293,33 @@ void GTagML_Graph_Build::reset_primary()
  primary_acc_.clear();
 }
 
-void GTagML_Graph_Build::section_heading(QString stext, QString ltext)
+
+//void GTagML_Graph_Build::subsection_heading(QString stext, QString ltext, u1 level)
+//{
+//// reset_primary();
+//// check_close_paragraph();
+
+// xml_writer_.writeTextElement("s2", stext);
+// latex_stream_ << "\n\n\\s|2|{" << ltext << "}\n";
+
+// sentences_sdi_stream_ << "\n\n--- Section/start\n-l  2\n-t" << stext << "\n";
+
+// set_paragraph_bridge();
+//}
+
+
+void GTagML_Graph_Build::section_heading(QString stext, QString ltext, u1 level)
 {
 // reset_primary();
 // check_close_paragraph();
 
  xml_writer_.writeTextElement("s1", stext);
- latex_stream_ << "\n\n\\s|1|{" << ltext << "}\n";
+ latex_stream_ << "\n\n\\s|" << level << "|{" << ltext << "}\n";
 
- ++section_id_;
+ ++section_ids_[level];
 
- sentences_sdi_stream_ << "\n\n--- Section/start\n-l  1\n-i  "
-   << section_id_ << "\n-t  " << stext << "\n";
+ sentences_sdi_stream_ << "\n\n--- Section/start\n-l  " << level << "\n-i  "
+   << section_ids_[level] << "\n-t  " << stext << "\n";
 
  set_paragraph_bridge();
 }
@@ -412,26 +427,40 @@ void GTagML_Graph_Build::force_switch_sentence()
  end_sentence("");
 }
 
-void GTagML_Graph_Build::ell_count(u1 count)
+void GTagML_Graph_Build::ell_count(u1 count, QString follow)
 {
  reset_primary();
 
- if(count == 3)
- {
-  if(!flags.sentences_only)
-    latex_stream_ << "\\ellThree{2pt}{2pt}";
+ static QStringList latex = {".\\@", "\\ellThree{2pt}{2pt}",
+   "\\ellFour{2pt}{2pt}"};
 
-  if(!flags.latex_only)
-    sentences_text_stream_ << "...";
- }
- else if(count == 4)
- {
-  if(!flags.sentences_only)
-    latex_stream_ << "\\ellFour{2pt}{2pt}";
+ static QStringList sentences = {".", "...",
+   "...."};
 
-  if(!flags.latex_only)
-    sentences_text_stream_ << "....";
- }
+ if(!flags.sentences_only)
+   latex_stream_ << latex.value(count - 2) << follow;
+
+ if(!flags.latex_only)
+   sentences_text_stream_ << sentences.value(count - 2) << follow;
+
+
+// if(count == 3)
+// {
+//  if(!flags.sentences_only)
+//    latex_stream_ << ;
+
+//  if(!flags.latex_only)
+//    sentences_text_stream_ << "...";
+// }
+
+// else if(count == 4)
+// {
+//  if(!flags.sentences_only)
+//    latex_stream_ << "\\ellFour{2pt}{2pt}";
+
+//  if(!flags.latex_only)
+//    sentences_text_stream_ << "....";
+// }
 
 }
 
@@ -525,7 +554,7 @@ void GTagML_Graph_Build::heading(u1 count, QString stext, QString ltext)
   if(ltext.isEmpty())
     ltext = text_default.arg(current_section_counts_[1]);
 
-  section_heading(stext, ltext);
+  section_heading(stext, ltext, 1);
  }
 
 }
@@ -550,19 +579,6 @@ void GTagML_Graph_Build::end_document()
 void GTagML_Graph_Build::set_paragraph_bridge()
 {
  current_paragraph_bridge_ = current_paragraph_count_ + 1;
-}
-
-void GTagML_Graph_Build::subsection_heading(QString stext, QString ltext)
-{
-// reset_primary();
-// check_close_paragraph();
-
- xml_writer_.writeTextElement("s2", stext);
- latex_stream_ << "\n\n\\s|2|{" << ltext << "}\n";
-
- sentences_sdi_stream_ << "\n\n--- Section/start\n-l  2\n-t" << stext << "\n";
-
- set_paragraph_bridge();
 }
 
 void GTagML_Graph_Build::leave_footnote(QString pretext, QString space)
@@ -706,6 +722,56 @@ void GTagML_Graph_Build::leave_heading()
  parse_context_.flags.heading_acc = false;
 }
 
+void GTagML_Graph_Build::enter_justline(QString pretext)
+{
+ reset_primary();
+
+ static QMap<QString, QString> static_map {
+   {"--", "\\semijust{"},
+   {"-", "\\justline{"},
+ };
+
+ QString code = static_map.value(pretext);
+
+ if(!flags.sentences_only)
+ {
+  if(flags.heading_acc)
+    latex_section_heading_stream_ << code;
+  else
+    latex_stream_ << code;
+ }
+
+ parse_context_.flags.heading_acc = false;
+ parse_context_.flags.justline = true;
+}
+
+void GTagML_Graph_Build::leave_justline(QString pretext, QString follow)
+{
+ follow = follow.simplified().replace(' ', "");
+
+ if(follow.startsWith("="))
+   follow = follow.mid(1);
+
+ QString code = "}";
+
+ if(!follow.isEmpty())
+   code += "(" + follow + ")";
+
+ reset_primary();
+
+ parse_context_.flags.justline = false;
+ parse_context_.flags.heading_acc = flags.heading_acc;
+
+ if(!flags.sentences_only)
+ {
+  if(flags.heading_acc)
+    latex_section_heading_stream_ << code;
+  else
+    latex_stream_ << code;
+ }
+}
+
+
 void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString stext, QString ltext)
 {
 // reset_primary();
@@ -721,8 +787,7 @@ void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString stext, QString lt
 
  if(count1 == 2)
  {
-  if(count2 == 2)
-    subsection_heading(stext, ltext);
+  section_heading(stext, ltext, count2);
  }
 
  if(count1 == 3)
@@ -1161,12 +1226,12 @@ void GTagML_Graph_Build::leave_alt_display_mode()
 
 void GTagML_Graph_Build::special_character_sequence(QString text)
 {
- auto process = [this](QString latex, QString xml)
+ auto process = [this](QString latex, QString sentences, QString xml)
  {
   if(flags.heading_acc)
   {
    if(!flags.latex_only)
-     sentences_section_heading_stream_ << xml;
+     sentences_section_heading_stream_ << sentences;
 
    if(!flags.sentences_only)
      latex_section_heading_stream_ << latex;
@@ -1180,12 +1245,12 @@ void GTagML_Graph_Build::special_character_sequence(QString text)
     latex_stream_ << latex;
 
   else if(flags.sentences_only)
-    sentences_text_stream_ << xml;
+    sentences_text_stream_ << sentences;
 
   else
   {
    latex_stream_ << latex;
-   sentences_text_stream_ << xml;
+   sentences_text_stream_ << sentences;
    xml_writer_.writeCharacters(xml);
   }
  };
@@ -1193,12 +1258,17 @@ void GTagML_Graph_Build::special_character_sequence(QString text)
 
  if(text == "%--")
  {
-  process("\\mdash{}", "&mdash;");
+  process("\\mdash{}", " - ", "&mdash;");
  }
 
- if(text == "%-")
+ else if(text == "%-")
  {
-  process("\\ndash{}", "&ndash;");
+  process("\\ndash{}", "--", "&ndash;");
+ }
+
+ else if(text == "^:")
+ {
+  process("\\raiseColon{}", ":", ":");
  }
 
 }

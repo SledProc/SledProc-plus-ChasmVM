@@ -103,6 +103,15 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.noindent_marker();
  });
 
+
+ add_rule( gtagml_context, "ell-count-restrict-space",
+   " [.]{3} (?= \\s) "
+   ,[&]
+ {
+  graph_build.ell_count(p.match_text().size(), "\\");
+ });
+
+
  add_rule( gtagml_context, "ell-count",
    " [.]{2,} "
    ,[&]
@@ -253,7 +262,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  add_rule( gtagml_context, "enter-sentences-only",
   " (?<pre-space> (?: .single-space.* \\n .single-space.*) | "
   "  (?: .single-space.+ ) ) "
-  " (?<open> <{0,2}) \\{ "
+  " (?<open> <{0,2}) \\{ (?![[%<>-]) "
   ,[&]
  {
   graph_build.enter_sentences_only(p.matched("open"), p.matched("pre-space"));
@@ -293,8 +302,25 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
 
+ add_rule( gtagml_context, "enter-justline",
+   "  \\{% (?<pretext> -+ ) "
+   ,[&]
+ {
+  graph_build.enter_justline(p.matched("pretext"));
+ });
+
+
+ add_rule( flags_all_(parse_context ,justline),
+   gtagml_context, "leave-justline",
+   " (?<pretext> -+) % (?<follow> \\s* = \\d [\\d.]* )? \\s* \\}  "
+   ,[&]
+ {
+  graph_build.leave_justline(p.matched("pretext"), p.matched("follow"));
+ });
+
+
  add_rule( flags_all_(parse_context ,heading_acc),
-   gtagml_context, "leave heading",
+   gtagml_context, "leave-heading",
    " (?= \\n) "
    ,[&]
  {
@@ -559,7 +585,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
  add_rule( gtagml_context, "special-character-sequence",
-   " (?: %-- ) "
+   " (?: %-+ ) | (?: \\^: )  "
    ,[&]
  {
   QString m = p.match_text();

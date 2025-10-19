@@ -196,7 +196,7 @@ class GTagML_Graph_Build
   return lines_to_string(sentences_text_);
  }
 
- u2 section_id_;
+ QMap<u1, u2> section_ids_;
  u4 sentence_id_;
  u4 paragraph_id_;
 
@@ -307,7 +307,7 @@ public:
 
  void footnote_marker(QString text);
 
- void ell_count(u1 count);
+ void ell_count(u1 count, QString follow = "");
 
  void exs_item(u2 number, QString text);
  void paren_ref(u2 number, QString text);
@@ -364,8 +364,8 @@ public:
 
  void enter_auto_paragraph_mode();
 
- void section_heading(QString stext, QString ltext);
- void subsection_heading(QString stext, QString ltext);
+ void section_heading(QString stext, QString ltext, u1 level);
+// void subsection_heading(QString stext, QString ltext);
 
  void enter_heading(u1 count1, u1 count2);
 
@@ -373,6 +373,9 @@ public:
  void heading(u1 count1, u1 count2, QString stext, QString ltext);
 
  void leave_heading();
+
+ void enter_justline(QString pretext);
+ void leave_justline(QString pretext, QString follow);
 
  void end_document();
 

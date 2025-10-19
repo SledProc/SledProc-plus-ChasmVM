@@ -54,6 +54,7 @@ public:
   flag_(19, sentences_only)
 
   flag_(20, heading_acc)
+  flag_(21, justline)
 
 //  flag_(14, inside_tag_body)
 //  flag_(14, inside_html_tag_body)
