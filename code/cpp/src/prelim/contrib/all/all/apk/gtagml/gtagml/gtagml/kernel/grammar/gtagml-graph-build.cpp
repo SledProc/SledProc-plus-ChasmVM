@@ -1255,22 +1255,34 @@ void GTagML_Graph_Build::special_character_sequence(QString text)
   }
  };
 
+ QMap<QString, QStringList> static_map {{
+   { "%--", {"\\mdash{}", " - ", "&mdash;"}},
+   { "%-", {"\\ndash{}", "--", "&ndash;"}},
+   { "^:", {"\\raiseColon{}", ":", ":"}},
+   { "%$", {"\\$", "$", "$"}},
+   }};
 
- if(text == "%--")
+ auto it = static_map.find(text);
+
+ if(it != static_map.end())
  {
-  process("\\mdash{}", " - ", "&mdash;");
+  auto v = it.value();
+  process(v[0], v[1], v[2]);
  }
+// if(text == "%--")
+// {
+//  process("\\mdash{}", " - ", "&mdash;");
+// }
 
- else if(text == "%-")
- {
-  process("\\ndash{}", "--", "&ndash;");
- }
+// else if(text == "%-")
+// {
+//  process("\\ndash{}", "--", "&ndash;");
+// }
 
- else if(text == "^:")
- {
-  process("\\raiseColon{}", ":", ":");
- }
-
+// else if(text == "^:")
+// {
+//  process("\\raiseColon{}", ":", ":");
+// }
 }
 
 

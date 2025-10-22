@@ -7,7 +7,7 @@
 
 %\pagenumbering{roman}
 
-\setcounter{page}{28}
+\setcounter{page}{11}
 
 \fancyhf{} % Clear all headers and footers first
 
@@ -22,7 +22,7 @@
     
 \fancyhead[LO]{{\fontfamily{bch}{FROM MADNESS TO MUTINY}}} % Title on the left of odd pages
     
-\fancyhead[RE]{Research Methods} % Author on the right of even pages
+\fancyhead[RE]{FOREWORD} % Author on the right of even pages
     
 %\fancyfoot[C]{Confidential} % "Confidential" in the center of all footers
 
@@ -51,8 +51,11 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 
 \hspace{15pt}}
 
-\newcommand{\ellThree}[2]{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}
-\newcommand{\ellFour}[2]{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}
+\newcommand{\ellThree}[2]{%
+\makebox{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}}
+
+\newcommand{\ellFour}[2]{%
+\makebox{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}}
 
 %\newcommand{\prQuote}[1]{``{#1}''}
 
