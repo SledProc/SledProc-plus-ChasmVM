@@ -401,12 +401,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
  add_rule( flags_all_(parse_context ,read_numbered_items),
    gtagml_context, "enums-item",
-   " (?<= \\n) (?<number> \\d+) (?<text> \\S*) \\. "
+   " (?<= \\n) (?<number> \\d+) (?<text> \\S*) (?<follow> [).]) "
    ,[&]
  {
   u2 number = p.matched("number").toShort();
   QString text = p.matched("text");
-  graph_build.enums_item(number, text);
+  QString follow = p.matched("follow");
+
+  graph_build.enums_item(number, text, follow);
  });
 
  add_rule( flags_all_(parse_context ,read_bulleted_items),

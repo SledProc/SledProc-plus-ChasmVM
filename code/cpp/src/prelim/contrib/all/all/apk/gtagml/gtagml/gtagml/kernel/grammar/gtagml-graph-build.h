@@ -313,7 +313,7 @@ public:
  void paren_ref(u2 number, QString text);
  void paren_ref_global(u2 number, QString text);
 
- void enums_item(u2 number, QString text);
+ void enums_item(u2 number, QString text, QString follow);
  void bulleted_item(QString symbol, QString supp);
 
  void latex_command_auto_closed(QString command_name, QString arg);

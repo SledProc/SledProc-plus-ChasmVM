@@ -1066,11 +1066,15 @@ void GTagML_Graph_Build::bulleted_item(QString symbol, QString supp)
 }
 
 
-void GTagML_Graph_Build::enums_item(u2 number, QString text)
+void GTagML_Graph_Build::enums_item(u2 number, QString text, QString follow)
 {
  reset_primary();
 
- latex_stream_ << "\n\\enumsItem{} ";
+ if(follow == ")")
+   latex_stream_ << "\n\\enumsItem{}[)] ";
+
+ else
+   latex_stream_ << "\n\\enumsItem{} ";
  xml_writer_.writeTextElement("enums-item", "");
 }
 
