@@ -1071,7 +1071,8 @@ void GTagML_Graph_Build::enums_item(u2 number, QString text, QString follow)
  reset_primary();
 
  if(follow == ")")
-   latex_stream_ << "\n\\enumsItem{}[)] ";
+  //? latex_stream_ << "\n\\enumsItem{}[)] ";
+   latex_stream_ << "\n\\item[)] ";
 
  else
    latex_stream_ << "\n\\enumsItem{} ";

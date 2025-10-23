@@ -2,6 +2,7 @@
 
 />>
 
+///  Robed Rage
 
 ---Family court judges have many ways of attacking protective mothers
 who appear before them as litigants. Since many of these attacks make
@@ -135,7 +136,7 @@ I’d like to thank you for giving me the name of that party because
 I will ask that that be noted for the record, that that is among one
 of the people that I will be looking to as being responsible in the
 event that anything happens to those children.... This game that’s
-being played, that seems to be, may have even be [/*sic*/] fostered by
+being played, that seems to be, may have even be [*/sic/*] fostered by
 the State’s Attorney of Vermont, I don’t know, but that’s why I’m
 asking you to contact the Federal Bureau of Investigation, I think
 that there’s something amiss.... I think there’s been essentially a
@@ -305,16 +306,19 @@ A family court proceeding in Buffalo, New York, was equally marred
 by judicial overreaching to punish the protective mother. The mother,
 in the end, lost custodial rights to her three-year-old daughter and was
 given instead severely restricted, supervised visitation. This was not the
-
 outcome of dispassionate deliberation by the judge. In fact, it allegedly
 occurred in violation of the rules of law. In a formal statement, the
 mother’s attorney has written:
+
+%/ block
 the proceedings ... in which I have participated in the past year
 have been characterized by rudeness and anger of the Court directed at my client, myself ... [and by] ex parte communications
 and meetings between the Court and counsel for the defendant
 [ex-husband], law guardian and witnesses; substantial disregard
 of ordinary procedural law; [and] substantial disregard of the
 substantive law with respect to transfer of custody.\23
+/+
+
 The judge’s alleged violation of his legal and ethical obligations was,
 again, clearly connected with his rage at the mother’s conviction that
 sex abuse had actually occurred. In a sworn statement, the mother has
@@ -1258,10 +1262,11 @@ The next day, the mother’s lawyer tried to argue that the judge had
 refused to hear relevant evidence. The judge, however, did not need
 evidence to support his made-in-advance reading of the case:
 
-\testsc{lawyer for mother}: What I have tried to assert on
+---\vspace{6pt}\textsc{lawyer for mother}: What I have tried to assert on
 September 26th and again yesterday is that you haven’t
 listened to the evidence.
-\textsc{judge:} Do you have someone who observed [the father]
+
+---\vspace{6pt}\textsc{judge:} Do you have someone who observed [the father]
 engage in any act of sexual abuse of these children as
 a credible independent witness? The answer to that is
 "/no,/" and you know the answer is no! Now, don’t harass
