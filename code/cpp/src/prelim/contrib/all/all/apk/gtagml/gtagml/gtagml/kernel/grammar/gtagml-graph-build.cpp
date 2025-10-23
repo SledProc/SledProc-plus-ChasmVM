@@ -903,13 +903,14 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
   latex_stream_ << "\n\n\\begin{description}\n";
 //  xml_writer_.writeStartElement("exs-group");
   parse_context_.flags.read_desc_label = true;
+  parse_context_.flags.ignore_blank_lines = true;
 //  parse_context_.flags.read_parens_as_ref = false;
  }
 
  else if(text == "enumn")
  {
   latex_stream_ << "\n\n\\begin{enumerate}[1)]\n";
-  xml_writer_.writeStartElement("enums");
+  xml_writer_.writeStartElement("enumn");
   parse_context_.flags.read_numbered_items = true;
   parse_context_.flags.ignore_blank_lines = true;
  }
@@ -987,6 +988,7 @@ void GTagML_Graph_Build::single_slash_line()
  {
   latex_stream_ << "\n\\end{description}\n";
   parse_context_.flags.read_desc_label = false;
+  parse_context_.flags.ignore_blank_lines = false;
  }
 
  else if(parse_context_.flags.read_parens_as_label)
