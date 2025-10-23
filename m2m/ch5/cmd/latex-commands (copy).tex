@@ -1,0 +1,1534 @@
+
+\usepackage[a4paper,
+            bindingoffset=0.2in,
+            left=.35in,
+            right=.35in,
+            top=.5in,
+            bottom=.5in,
+            footskip=.35in]{geometry}
+
+\setlength{\columnsep}{38pt}
+
+
+
+\usepackage{eso-pic}
+
+
+\usepackage{natbib}
+\setlength{\bibsep}{3pt}
+
+ \usepackage{titlesec}
+
+ \titleformat{\section}
+      {\normalfont\fontsize{13}{16}\selectfont\bfseries\raggedright} % Apply raggedright here
+      {\thesection}
+      {1em}
+      {}
+
+%\titleformat{\section}
+%  {\normalfont\Large}{\thesection}{1em}{}
+
+\renewcommand{\thesection}{\textcolor[rgb]{0,0.7,0.4}{\arabic{section}}}%
+
+
+%\titleformat{\subsection}
+%  {\normalfont\large}{\thesubsection}{0}{}
+
+%\definecolor{subsclr}{rgb}{0,0.5,0.7}
+%\definecolor{es-aqua}{HTML}{00ffffff}% 
+
+\renewcommand{\thesubsection}{\textcolor[rgb]{0,0.2,0.4}{\arabic{section}}%
+\hspace{1.5pt}.\hspace{1.5pt}\small{\textcolor[rgb]{0,0.3,0.4}{\arabic{subsection}}%
+}}
+
+\usepackage{xparse}
+
+\makeatletter
+
+%\newcommand{\@sect}[1]{\section{#1}}
+%\newcommand{\@subsect}[1]{\vspace{9pt}\subsection{#1}}
+
+\newcommand{\sL@section}[1]{\vspace{-2pt}\section{#1}\vspace{-2pt}}
+\newcommand{\sL@subsection}[1]{\vspace{14pt}\subsection{#1}
+
+\vspace{-18pt}
+\textcolor[rgb]{0.6,0.6,0.8}{\rule{\columnwidth}{0.4pt}\vspace{-15pt}}}
+
+\newcommand{\@sectionLevel}[2]{%
+\ifcase#1\relax
+\or{\sL@section{#2}}
+\or{\sL@subsection{#2}}
+\else{}
+\fi
+}
+
+
+\NewDocumentCommand{\s}{E{.}{}D||{}m}{%
+\IfNoValueTF{#1}{
+\@sectionLevel{#2}{#3}
+}
+{%else
+\@sectionLevel{#1}{#3}
+}
+}
+
+%`clearpage;`upAdj<6pt>; 
+
+\usepackage{xcolor}
+
+%\definecolor{margin}{RGB}{195, 18, 120}
+
+\definecolor{margin}{RGB}{133, 20, 12}
+
+
+
+\newcounter{mpcode}
+
+%\setlength{\marginparsep}{1.3em}
+
+% ({\\clrm})(\w)
+
+
+\newcommand{\clrmarginpar}[3]{\marginpar{\raisebox{-#2}%
+{\hspace{#1}{#3}}}}
+
+\newcommand{\micro}[1]{\textcolor{white}{\resizebox{0pt}{0pt}{#1}}}
+
+
+
+\colorlet{margingr}{margin!40!black}
+
+\newcommand{\mpcodefrefbkg}[4]{%
+\tikz[baseline=(char.base)]{%
+
+%\node at (0, 0)
+ \node[shape=circle, %regular polygon, regular polygon sides = 8,
+fill = none, draw=none, line width=.5pt, inner sep=#1] (char)
+{#2};
+
+ \node[shape=circle, %regular polygon, regular polygon sides = 8,
+xscale=#3, yscale=#4, 
+fill = none, draw=margingr!40, line width=.5pt, inner sep=#1] (char)
+{\phantom{2}};
+
+% \node[shape=regular polygon, regular polygon sides = 8,
+%fill opacity=0, line width=2pt, draw=margin!40, inner sep=#1] 
+%{\phantom{#2}};
+}}
+
+%\newcommand{\mpcodefrefbkg}[1]{\colorbox{margin!10}{#1}}
+
+
+
+\newcommand{\mpcodefreffore}[1]{%\colorbox{margin!10}{%
+\hyperlink{par#1}{%
+\raisebox{0pt}{{\fontsize{6}{6}\selectfont%
+\textcolor{blue!70!black}{#1}}}}}
+
+
+%\newcommand{\mpcodefrefx}[1]{\colorbox{margin!10}{%
+%\hyperref[par#1]{%
+%\raisebox{0pt}{\resizebox{!}{5pt}{%
+%\textcolor{blue!70!black}{#1}}}}}}
+
+
+\newcommand{\mpcodefrefArgs}[5]{\raisebox{#1}{%
+\mpcodefrefbkg{#2}{%
+\mpcodefreffore{#3}}%
+{#4}{#5}
+}}
+
+
+\newcommand{\mpcodefrefLeft}[3]{\mpcodefrefArgs{#1}{#2}{#3}{1}{1}}
+
+%\newcommand{\mpcodefrefLeftDtest}[3]{\mpcodefrefArgs{0pt}{1pt}{#3}}
+
+\newcommand{\mpcodefrefLeftD}[1]{\mpcodefrefArgs{0pt}{1pt}{#1}{1}{1}}
+\newcommand{\mpcodefrefLeftDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1.2}{1}}
+\newcommand{\mpcodefrefLeftDDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{2}{1}}
+
+
+
+%\newcommand{\mpcodefref}[1]{\mpcodefrefArgs{1pt}{0pt}{#1}}
+
+\newcommand{\mpcodefrefD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1}{1}}
+\newcommand{\mpcodefrefDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{1.2}{1}}
+\newcommand{\mpcodefrefDDD}[1]{\mpcodefrefArgs{0pt}{.5pt}{#1}{2}{1}}
+
+\newcommand{\mpcodefrefX}[1]{%\mpcodefrefArgs{1pt}{0pt}{#1}
+\ifnum{#1}>99\mpcodefrefDDD{#1}%
+\else\ifnum{#1}>9\mpcodefrefDD{#1}%
+\else\mpcodefrefD{#1}%
+\fi
+\fi%
+}
+
+\newcommand{\mpcodefref}[1]{%\mpcodefrefArgs{1pt}{0pt}{#1}
+\ifnum#1>99\mpcodefrefDDD{#1}%
+\else\ifnum#1>9\mpcodefrefDD{#1}%
+\else\mpcodefrefD{#1}%
+\fi\fi%
+\hspace*{-1pt}%
+}
+
+
+
+
+\newcommand{\mpcodefrefMidFore}[2]{%
+%\colorbox{margin!10}{%
+\hyperlink{p#1#2}{%
+\raisebox{0pt}{{\fontsize{7}{6}\selectfont%
+\textcolor{blue!70!black}{#1}}}}%
+
+\hspace{1pt}\raisebox{.5pt}{%
+\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{%
+{\fontsize{5}{5}\selectfont #2}%
+}}}%
+}
+
+
+\newcommand{\mpcodefrefMidBkg}[1]{%
+\tikz[baseline=(char.base)]{
+ \node[shape=circle, % regular polygon, regular polygon sides = 8,
+fill = none, draw=none, line width=.5pt, inner sep=1pt] (char)
+{#1};
+
+ \node[shape=circle, %regular polygon, regular polygon sides = 8,
+fill = none, draw=margin!50, 
+xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
+ at (-1pt, 0pt) 
+{\phantom{#1}};
+
+}}
+
+
+\newcommand{\mpcodefrefMidBkgX}[1]{%
+\colorbox{margin!10}{#1}}%
+
+
+
+\newcommand{\mpcodefrefMid}[2]{\mpcodefrefMidBkg{%
+\mpcodefrefMidFore{#1}{#2}}}
+
+
+%\newcommand{\mpcodefrefMid}[2]{XXXXX}
+
+\definecolor{clrmcMid}{RGB}{165, 10, 18}
+
+
+%\definecolor{dotbrown}{RGB}{92, 66, 28}
+%\definecolor{dotbrown}{RGB}{130, 89, 68}
+%\definecolor{cdotc}{RGB}{128, 115, 32}
+%\definecolor{cdotc}{RGB}{10, 31, 33}
+
+%%\definecolor{cdotc}{RGB}{53, 143, 222}
+%\definecolor{cdotchere}{RGB}{186, 99, 11}
+
+\definecolor{cdotchere}{RGB}{186, 60, 6}
+
+\definecolor{cdotcherer}{RGB}{53, 214, 222}
+\definecolor{clrmcMidr}{RGB}{53, 143, 222}
+
+
+\newcommand{\raisedbar}{\raisebox{4.5pt}{%
+\rotatebox{180}{%
+\resizebox{3pt}{4pt}{%
+\textcolor{cdotchere}{%
+\ensuremath{\Lsh}}%
+}}}}
+
+
+\newcommand{\raisedbarr}{\raisebox{-.5pt}{%
+\rotatebox{0}{%
+\resizebox{3pt}{4pt}{%
+\textcolor{cdotcherer}{%
+\ensuremath{\Rsh}}%
+}}}}
+
+
+
+
+\newcommand{\mpcodefAlt}[1]{%
+\textcolor{clrmcMid}{%
+%\hspace*{-1.5pt}\raisebox{.5pt}{%
+%{\fontsize{7}{5}\selectfont\ensuremath{\cdot}}}
+\hspace*{-1.5pt}\raisebox{.5pt}{%
+{\fontsize{6}{6}\selectfont{\raisedbar{}\hspace*{.5pt}%
+#1}}}}%
+}
+
+%makeatletter
+
+\AddToShipoutPicture{%
+%\ifnum\value{page}=1{
+\AtTextLowerLeft{%
+\raisebox{800pt}{\hypertarget{pgtop\thepage}{}}}
+%}\fi
+}
+
+%\makeatother
+
+
+
+
+
+\newcommand{\mpcodefrAlt}[1]{%
+\textcolor{clrmcMidr}{%
+%\hspace*{-1.5pt}\raisebox{.5pt}{%
+%{\fontsize{7}{5}\selectfont\ensuremath{\cdot}}}
+\hspace*{-1.5pt}\raisebox{.5pt}{%
+{\fontsize{6}{6}\selectfont{\raisedbarr{}\hspace*{.5pt}%
+#1}}}}%
+}
+
+
+
+%\newcommand{\mpcodefrefMidX}[2]{%
+%\colorbox{margin!10}{%
+%\hyperref[p#1#2]{%
+%\raisebox{0pt}{\resizebox{!}{5pt}{%
+%\textcolor{blue!70!black}{#1}}}}}%
+%\hspace{-2pt}\raisebox{.5pt}{%
+%\colorbox{white}{\hspace{-3.5pt}\textcolor{clrmcMid}{#2}}}%
+%}
+
+
+
+
+
+\definecolor{pagefrefc}{RGB}{2, 213, 35}
+
+
+
+%\newcommand{\pagefref}[1]{%
+%\hyperref[pgn#1]{\textcolor{pagefrefc!70!black}{#1}}%
+%}
+
+
+%\newcommand{\pagefref}[1]{%
+%\hyperlink{pgn#1}{\textcolor{pagefrefc!70!black}{#1}}%
+%}
+\newcommand{\pagefref}[1]{%
+\hyperlink{pgtop#1}{\textcolor{pagefrefc!70!black}{#1}}%
+}
+
+
+
+\newcounter{pglNumber}
+
+%\newcommand{\pglabel}[1]{\label{pgn#1}}
+%\makeatletter 
+\newcommand{\pglabel}[1]{%
+\Hy@raisedlink{\hypertarget{pgn#1}{}}%
+}
+%\makeatother 
+
+
+\newcommand{\pgl}{\stepcounter{pglNumber}%
+\pglabel{\thepglNumber}\ignorespaces}
+
+%\newcommand{\pglA}{\stepcounter{pglNumber}%
+%\label{PG2}\ignorespaces}
+
+%{%
+%
+%\textcolor{blue!70!black}{#1}}}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes, shapes.misc, positioning}
+
+
+\newcommand{\mpcodeffore}[1]{%
+\textcolor{margin!60!black}{%
+\resizebox{!}{5pt}{#1}}}
+
+%\newcommand{\mpcodefbkg}[1]{#1} %\colorbox{margin!10}{#1}}
+
+
+\newcommand{\mpcodefbkg}[2]{%
+\tikz[baseline=(char.base)]{%
+
+%\node at (0, 0)
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill = margin!10, inner sep=#1] (char)
+%top color=white, bottom color=blggr!6,
+%fill opacity=1, yscale=.7, shape border rotate=39,
+%inner sep=6.5pt, shading angle=90,label={}] (bk) 
+{#2};
+
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1] 
+%top color=white, bottom color=blggr!6,
+%fill opacity=1, yscale=.7, shape border rotate=39,
+%inner sep=6.5pt, shading angle=90,label={}] (bk) 
+{\phantom{#2}};
+}}
+
+
+
+%\newcommand{\mpcodef}[1]{\colorbox{margin!10}{%
+%\textcolor{margin!60!black}{%
+%\resizebox{!}{5pt}{#1}}}}
+
+
+%\newcommand{\writempcode}{\mpcodef{\thempcode}}
+
+
+
+\newcommand{\mpcodef}[2]{\mpcodefbkg{#1}{%
+\mpcodeffore{#2}}}
+
+
+\newcommand{\writempcode}[1]{\mpcodef{#1}{\thempcode}}
+
+
+
+
+\newcommand{\clrm}{\stepcounter{mpcode}{\micro{.}}%
+\ifnum\value{mpcode} = 35
+\clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
+\else
+\ifnum\value{mpcode} = 97
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
+\else 
+\ifnum\value{mpcode} = 32
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
+\else
+\ifnum\value{mpcode} = 44
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
+\else%
+\if@firstcolumn%
+\ifnum\value{mpcode} > 99
+\clrmarginpar{-21pt}{13pt}{\writempcode{0pt}}%
+\else%
+\ifnum\value{mpcode} > 9
+\clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
+\else%
+\clrmarginpar{-17pt}{13pt}{\writempcode{1pt}}%
+\fi\fi%
+\else%
+\ifnum\value{mpcode} > 99
+\clrmarginpar{-5pt}{13pt}{\writempcode{0pt}}%
+\else%
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
+\fi\fi\fi\fi\fi\fi%
+%\thempcode
+}
+
+
+\definecolor{cdotc}{RGB}{186, 99, 11}
+
+
+\newcommand{\clrmAltDot}{%
+\resizebox{1.5pt}{1.5pt}{\ensuremath{\blacksquare}}}
+
+\newcommand{\clrmAltFmt}[1]{%
+\textcolor{clrmcMid}{%
+\raisebox{.5pt}{%\resizebox{6pt}{.5pt}{%
+\textcolor{cdotc}{\clrmAltDot{}\hspace{1pt}%
+\clrmAltDot{}\hspace{1pt}\clrmAltDot{}%
+%\ensuremath{\blacksquare}
+}%
+}%
+{\fontsize{8}{6}\selectfont{#1}}}}
+
+
+%\definecolor{clrmcr}{RGB}{7, 165, 232}
+
+\definecolor{clrmcr}{RGB}{0, 148, 123}
+\definecolor{clrmcrr}{RGB}{7, 165, 232}
+
+%\definecolor{clrmcrAlt}{RGB}{148, 30, 0}
+%\definecolor{clrmcrAlt}{RGB}{130, 99, 53}
+\definecolor{clrmcrAlt}{RGB}{130, 89, 68}
+
+
+
+
+\newcommand{\clrmrFmt}[1]{%
+\textcolor{clrmcrr}{%
+\raisebox{-1.5pt}{\resizebox{4pt}{5pt}{\ensuremath{\Rsh}}}}%
+\textcolor{clrmcr}{
+{\fontsize{8}{6}\selectfont{#1}}}}
+
+
+
+\newcommand{\clrmrAltFmt}[2]{%
+\textcolor{clrmcrr}{%
+\raisebox{-1.5pt}{\resizebox{4pt}{5pt}{\ensuremath{\Rsh}}}}%
+\textcolor{clrmcr}{%
+{\fontsize{8}{6}\selectfont{#1}}}%
+\hspace{.5pt}\raisebox{.5pt}{%
+\textcolor{clrmcrAlt}{%
+{\fontsize{7}{6}\selectfont{#2}}}}%
+}
+
+
+
+
+\newcommand{\clrmAltFmtX}[1]{%
+\textcolor{clrmcMid}{%
+{\fontsize{8}{6}\selectfont{#1}}
+}
+}
+
+%\newcommand{\clrmAlt}{%
+%\clrmarginpar{-21pt}{1pt}{!}%
+%}
+
+
+\newcommand{\clrmAltImpl}[2]{%
+%\label{alt#2}
+%
+\AddToShipoutPicture{%
+\ifnum\value{page}=#1{%
+\AtTextUpperLeft{%
+\hspace*{-37pt}\raisebox{-14pt}{%
+%{#1:#2}
+\clrmAltFmt{#2}%
+}}}\fi%
+}%
+%
+}
+
+
+\newcommand{\clrmrDs}[1]{%
+\ifnum#1>99%
+\hspace*{536pt}%
+\else\ifnum#1>9%
+\hspace*{540pt}%
+\else%
+\hspace*{542pt}%
+\fi\fi
+}
+
+
+\newcommand{\clrmrAltDs}[1]{%
+\ifnum#1>99%
+\hspace*{535pt}%
+\else\ifnum#1>9%
+\hspace*{539pt}%
+\else%
+\hspace*{541pt}%
+\fi\fi
+}
+
+
+
+\newcommand{\clrmrImplRaise}[2]{%
+\ifnum#1=1
+\raisebox{-263pt}{#2}%
+\else%
+\raisebox{-9pt}{#2}%
+\fi%
+}
+
+\newcommand{\clrmrImpl}[2]{%
+\AddToShipoutPicture{%
+\ifnum\value{page}=#1{%
+\AtTextUpperLeft{%
+\clrmrDs{#1}%
+\clrmrImplRaise{#1}{%
+\clrmrFmt{#2}%
+}%
+}}\fi%
+}%
+%
+}
+
+
+
+\newcommand{\clrmrAltImpl}[3]{%
+\AddToShipoutPicture{%
+\ifnum\value{page}=#1{%
+\AtTextUpperLeft{%
+\clrmrAltDs{#1}%
+\clrmrImplRaise{#1}{%
+\clrmrAltFmt{#2}{#3}%
+}%
+}}\fi%
+}%
+%
+}
+
+
+
+
+
+\newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{%
+#2\resizebox{!}{5pt}{(#3)}}\ignorespaces}
+
+% \clrmAltSub{10}{60}{a}
+%\newcommand{\clrmAltSub}[3]{\clrmAltImpl{#1}{#2}}
+
+
+
+%\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}}
+\newcommand{\clrmAlt}[2]{\clrmAltImpl{#1}{#2}\ignorespaces}
+
+\newcommand{\clrmr}[2]{\clrmrImpl{#1}{#2}\ignorespaces}
+
+\newcommand{\clrmrAlt}[3]{\clrmrAltImpl{#1}{#2}{#3}\ignorespaces}
+
+%\newcommand{\clrmAlt}[2]{}
+
+
+\newcommand{\clrmAltxx}{%
+\ifnum\value{mpcode} = 14%
+\clrmarginpar{-18pt}{1pt}{\clrmAltFmt{\thempcode}}%
+\else%
+\if@firstcolumn%
+\clrmarginpar{-18pt}{1pt}{\clrmAltFmt{\thempcode}}%
+\else%
+\clrmarginpar{-2pt}{1pt}{\clrmAltFmt{\thempcode}}%
+\fi\fi%
+}
+
+
+
+
+\newcommand{\clrmMidFmt}[1]{%
+\textcolor{clrmcMid}{%
+\resizebox{5pt}{!}{#1}}}
+
+
+
+\newcommand{\clrmBlockQuoteFmt}[1]{%
+\textcolor{clrmcMid!20!gray}{%
+\resizebox{!}{6.5pt}{\textit{#1}}}}
+
+
+\newcommand{\clrmMidImpl}[1]{\micro{.}%
+\if@firstcolumn%
+\clrmarginpar{-21pt}{1pt}{\clrmMidFmt{#1}}%
+\else%
+\clrmarginpar{-2pt}{1pt}{\clrmMidFmt{#1}}%
+\fi%
+}
+
+\newcommand{\clrmBlockQuoteImpl}[1]{\micro{.}%
+\if@firstcolumn%
+\clrmarginpar{-18pt}{1pt}{\clrmBlockQuoteFmt{#1}}%
+\else%
+\clrmarginpar{-2pt}{1pt}{\clrmBlockQuoteFmt{#1}}%
+\fi%
+}
+
+
+
+%\newcommand{\clrmMidLabelTest}[1]{\label{p2a}}
+
+
+
+%\newcommand{\clrmMidFormLabel}[1]{pXX{#1}}
+
+\newcommand{\clrmMidFormLabel}[1]{p\thempcode#1}
+
+\newcommand{\clrmBlockQuoteFormLabel}[1]{p\thempcode#1}
+
+%%\newcommand{\clrmMidLabel}[1]{\label{\clrmMidFormLabel{#1}}}
+
+\newcommand{\clrmMidLabel}[1]{%
+\Hy@raisedlink{\hypertarget{\clrmMidFormLabel{#1}}{}}}
+
+\newcommand{\clrmBlockQuoteLabel}[1]{%
+\Hy@raisedlink{\hypertarget{\clrmBlockQuoteFormLabel{#1}}{}}}
+
+
+
+\newcommand{\clrmBlockQuote}[1]{\clrmBlockQuoteLabel{#1}%
+\ifnum\value{mpcode} = 69%
+\else%
+\clrmBlockQuoteImpl{#1}%
+\fi%
+}
+
+
+
+%\makeatletter
+
+\newcommand{\clrmMid}[1]{\clrmMidLabel{#1}%
+\ifnum\value{mpcode} = 69%
+\else%
+\clrmMidImpl{#1}%
+\fi%
+}
+
+%\makeatother
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=11{
+\AtTextLowerLeft{
+\hspace*{-37pt}\raisebox{14pt}{%
+\clrmMidFmt{a}
+}}}\fi
+}
+
+% \clrmMidFmt{a}
+
+
+%\ifnum\value{mpcode} = 69%
+%\else
+%\clrmMidImpl{#1}
+%}
+
+
+
+\newcommand{\clrmy}{\stepcounter{mpcode}{\micro{.}}%
+\ifnum\value{mpcode} = 44\setlength{\marginparsep}{.7em}%
+\else\if@firstcolumn%
+\ifnum\value{mpcode} > 9\setlength{\marginparsep}{1.6em}%
+\else\setlength{\marginparsep}{1.3em}%
+\fi\else%
+\setlength{\marginparsep}{1em}%
+\fi\fi\clrmarginpar{13pt}{%
+\if@firstcolumn F\else S\fi%
+%\thempcode
+}}
+
+
+\newcommand{\clrmxx}{\stepcounter{mpcode}%
+\ifnum\value{mpcode} = 33\setlength{\marginparsep}{.7em}
+\else
+\if@firstcolumn
+\ifnum\value{mpcode} > 9\setlength{\marginparsep}{1.6em}
+\else\setlength{\marginparsep}{1.3em}
+\fi\else
+\setlength{\marginparsep}{.3em}
+\fi\fi\clrmarginpar{13pt}{\thempcode}}
+
+
+\newcommand{\pcodelabel}{\hypertarget{par\thempcode}{}}
+
+%{\clrm}
+
+\newcommand{\@pLevel}[2]{%
+\ifcase#1\relax{p0=#2}
+\or{\vspace{6pt}{\clrm}{\pcodelabel}#2}
+\or{p2=#2}
+\else{}
+\fi
+}
+
+\newcommand{\@paLevel}[2]{%
+\ifcase#1\relax{p0=#2}
+\or{\vspace{6pt}#2}
+\or{p2=#2}
+\else{}
+\fi
+}
+
+%cite
+
+
+\NewDocumentCommand{\pa}{E{.}{}D||{}+m}{%
+\IfNoValueTF{#1}{
+\@paLevel{#2}{#3}
+}
+{%else
+\@paLevel{#1}{#3}
+}
+}
+
+
+%\or{\vspace*{6pt}{\clrm}#2}
+
+
+\NewDocumentCommand{\p}{E{.}{}D||{}+m}{%
+\IfNoValueTF{#1}{
+\@pLevel{#2}{#3}
+}
+{%else
+\@pLevel{#1}{#3}
+}
+}
+
+\usepackage{refcount}
+
+\newcommand{\@exsRef}[1]{\ref{exs:#1}}
+
+%\newcommand{\@exsRef}[1]{#1}
+
+%\usepackage{suffix}
+%\WithSuffix\newcommand{\exsRef*}{:#1}
+
+\NewDocumentCommand{\exsRef}{sd()}{%
+\IfBooleanTF{#1}{\@exsRef{#2}}{(\@exsRef{#2})}}
+
+\makeatother
+
+\usepackage{xcolor}
+
+\definecolor{newlinkc}{RGB}{60, 55, 212}
+
+
+
+\newcommand{\hspaceback}[1]{\hspace*{-#1}}
+
+\makeatletter
+
+%\DeclareRobustCommand{\defCL}[1]{\def\@currentlabel{\unexpanded{#1}}}
+
+
+\DeclareRobustCommand{\psCite}[1]{%
+\phantomsection\cite{#1}\label{\unexpanded{#1}}%
+}
+
+\DeclareRobustCommand{\psCiteOpt}[2]{%
+\phantomsection\cite[#2]{#1}\label{\unexpanded{#1}}%
+}
+
+
+\NewDocumentEnvironment{bItem}{d[]}{%
+\hspace{-6pt}\begin{minipage}{.9\columnwidth}\def\@currentbiblabel{#1}\bibitem{#1}
+}{\end{minipage}%
+\ifnum\presetStretch=2\vspace{4pt}\else\vspace{-4pt}\fi%
+}
+
+%\NewCommandCopy{\original@bibitem}{\bibitem}
+%\renewcommand{\bibitem}[1]{\original@bibitem{#1}}
+
+\makeatother
+
+
+\usepackage{xcolor}
+
+\definecolor{newlinkc}{RGB}{60, 55, 212}
+
+\makeatletter
+
+\renewcommand\@biblabel[1]{\hspace*{-6pt}\textit{[\hyperref[\@currentbiblabel]%
+{\textcolor{newlinkc}{#1}}]}\hspace*{6pt}}
+
+
+%\newcommand{\LABEL}[2]{\protected@edef\@currentlabel{#2}\label{#1}}
+
+
+
+\makeatother
+
+
+\newcommand{\citeLabel}[1]{\psCite{#1}}
+
+\NewDocumentCommand{\citePage}{md()}{%
+\psCiteOpt{#1}{p. #2}}
+
+\NewDocumentCommand{\citePages}{md()}{%
+\psCiteOpt{#1}{pp. #2}}
+
+\NewDocumentCommand{\citeLocator}{md()}{%
+\psCiteOpt{#1}{#2}}
+
+
+
+
+\newcommand{\onethrft}{\exsRef(1)-\exsRef(14)}
+
+\newcommand{\onethrn}{\exsRef(1)-\exsRef(9)}
+
+\newcommand{\onethandft}{\onethrn{} and \exsRef(13)-\exsRef(14)}
+
+
+\newcommand{\eS}[1]{\textbf{{\fontsize{9}{9}%
+\fontfamily{ppl}\selectfont{\textcolor{red!40!black}{#1}}}}}
+
+\newcommand{\q}[1]{``#1''}
+
+\newcommand{\mdash}{---}
+
+\newcommand{\visbreak}{\vspace{9pt}}
+
+\newcommand{\lmdh}[1]{{\fontfamily{qcr}\selectfont#1}}
+
+\newcommand{\nslashp}{%
+\resizebox{7.5pt}{!}{\lmdh{n}}/%
+\resizebox{6pt}{!}{\lmdh{P}}%
+}
+
+
+
+\newcommand{\pANDn}{%
+\q{\resizebox{6pt}{!}{\lmdh{P}}} and %
+\q{\resizebox{7.5pt}{!}{\lmdh{n}}}%
+}
+
+
+\newcommand{\upAdj}[1]{\vspace{-#1}}
+
+
+\newcommand{\nip}{\noindent}
+
+\newcounter{exsCount}
+
+\newcounter{exsTest}
+\refstepcounter{exsTest}
+
+\makeatletter
+
+\DeclareRobustCommand{\setlabel}[2]{%
+  \phantomsection
+  #1\def\@currentlabel{\unexpanded{#1}}\label{#2}%
+}
+
+\DeclareRobustCommand{\setlabelx}[2]{}
+
+
+\makeatother
+
+
+%\newcommand{\exsItem}{%
+
+
+\newenvironment{ZexsGroup}{\vspace{2pt}%
+\begin{itemize}[leftmargin=2pt, itemsep=1pt]}{\end{itemize}\vspace{2pt}}
+
+\DeclareRobustCommand{\ZexsItem}{%
+\refstepcounter{exsCount}
+\item[(\arabic{exsCount})] \label{exs:\arabic{exsCount}}  
+}
+
+
+\definecolor{itemc}{RGB}{3, 94, 87}
+
+
+\newenvironment{exsGroup}{\vspace{4pt}}{\vspace{7pt}}
+
+\newcommand{\rrboxm}[4]{%
+\raisebox{#1}{\rotatebox{#2}{\ensuremath{#3}}}\hspace{#4}%
+}
+
+\DeclareRobustCommand{\exsItem}{%
+\vspace{3pt}
+\refstepcounter{exsCount}
+\noindent\rrboxm{8pt}{-90}{\smile}{1.5pt}\textcolor{itemc}{\arabic{exsCount}}%
+\rrboxm{8pt}{-90}{\frown}{-.5pt} \label{exs:\arabic{exsCount}}  
+}
+
+
+
+%\setlabelx{\arabic{exsCount}}{exs:\arabic{exsCount}}
+
+
+\newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
+
+\newenvironment{itemz}{\vspace{0pt}\begin{itemize}}{\end{itemize}}
+
+\newenvironment{docAbstractx}{%
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \begin{abstract}
+}{%
+    \end{abstract}
+  \end{@twocolumnfalse}
+]
+}
+
+
+\newenvironment{docAbstract}{%
+  \begin{@twocolumnfalse}\maketitle
+    \begin{abstract}
+}{%
+    \end{abstract}
+  \end{@twocolumnfalse}\vspace{22pt}\thispagestyle{empty}
+}
+
+
+\newcommand{\vfillnulleject}{\vfill\null\eject}
+
+%\let\olddisplayquote\displayquote
+%\renewcommand\displayquote{\setlength{\textwidth}{12cm}\olddisplayquote}
+
+\usepackage{quoting}
+\usepackage{csquotes}
+
+\makeatletter
+%Take the original environment definition and change the leftmargin to 1cm
+\renewenvironment*{displayquote}
+  {\begingroup\setlength{\leftmargini}{9.5pt}\csq@getcargs{\csq@bdquote{}{}}}
+  {\csq@edquote\endgroup}
+\makeatother
+
+\newenvironment{blockQuote}{\vspace{5pt}\begin{displayquote}}{\end{displayquote}}
+
+
+%\newenvironment{blockQuote}{\vspace{5pt}\quoting[leftmargin=11pt,rightmargin=13pt]\noindent%
+%\hspace{-3.5pt}}{\endquoting}
+
+\newcommand{\enumsItem}{\item}
+
+%\setlist[itemize]{label=\textcolor{blue}{\textbullet}}
+
+
+\renewcommand{\labelenumi}{\theenumi}
+
+\usepackage{amssymb}
+
+\usepackage{xcolor}
+\definecolor{eitemc}{RGB}{83, 94, 187}
+
+\renewcommand{\theenumi}{\textcolor{eitemc}{\raisebox{.5pt}{\small\textbf{\arabic{enumi}.}}}}
+
+\newcommand{\enumref}[1]{\resizebox{!}{6.5pt}{\textbf{\textcolor{eitemc}#1}}}
+
+\newcommand{\symItemx}{\item[\textcolor{eitemc}{%
+\raisebox{1pt}{\resizebox{4pt}{4.5pt}{$\blacksquare$}}]}}
+
+
+\newcommand\spiral{}% Just for safety so \def won't overwrite something
+\def\spiral[#1](#2)(#3:#4:#5){% \spiral[draw options](placement)(end angle:revolutions:final radius)
+\pgfmathsetmacro{\domain}{pi*#3/180+#4*2*pi}
+\draw [#1,
+       shift={(#2)},
+       domain=0:\domain,
+       variable=\t,
+       smooth,
+       samples=int(\domain/0.08)] plot ({\t r}: {#5*\t/\domain})
+}
+
+\newcommand{\symItem}{\item[\textcolor{eitemc}{%
+\raisebox{2pt}{%
+\tikz{
+\begin{scope}[transform canvas={scale=0.025},overlay]
+%\node[draw=eitemc,fill=eitemc!40!red, fill opacity=0.4, circle] {};
+%\node[draw=eitemc,fill=eitemc!40!red,circle, opacity=0.6, xscale=0.6, yscale=0.6,] {};
+\spiral[opacity=0.4, eitemc](0,0)(90:5:5);
+\spiral[opacity=0.4, eitemc!60!black](0.3,0.3)(90:2:5);
+%\draw [domain=0:25.1327,variable=\t,smooth,samples=75]
+%        plot ({\t r}: {0.002*\t*\t});
+\end{scope}
+}
+}}]}
+
+
+
+
+
+\usepackage{textcomp}
+\newcommand{\sarr}{\textrightarrow}
+
+\newcommand{\OxFO}{\textbf{\small{0xF0}}}
+
+\newcommand{\UTFonesix}{\textbf{\small{UTF-16}}}
+
+\newcommand{\etal}{\textit{et al.}}
+
+\newcommand{\Gardenfors}{G\"ardenfors}
+
+
+
+\newcommand{\redbox}{\makebox{\eS{red}\hspace{4pt}\ensuremath{\cap}\hspace{4pt}\eS{box}}}
+
+\newcommand{\redplusbox}{\makebox{\eS{red}\hspace{4pt}+\hspace{4pt}\eS{box}}}
+
+\newcommand{\jrefs}{\exsRef(15)/\exsRef(16)}
+
+\newcommand{\cq}[1]{{\fontfamily{gar}\selectfont ``}#1{\fontfamily{gar}\selectfont ''}}
+
+\newcommand{\repeatName}{\_\_\_\_\_}
+
+\newcommand{\visavis}{vis-`a-vis}
+
+
+\usepackage{enumitem}
+\setlist[enumerate]{leftmargin=14pt,labelindent=-3pt}
+\setlist[itemize]{leftmargin=20pt, labelsep=9pt, itemsep=-1pt}
+
+
+\usepackage{xcolor}
+
+
+
+\usepackage[tracking=true]{microtype}
+
+\newcommand{\tinyurl}[1]{\raisebox{2pt}{{\scriptsize \url{#1}}}}
+
+\usepackage[colorlinks=true]{hyperref}
+
+\colorlet{urlclr}{red!40!magenta!50!orange}
+
+\hypersetup{
+ urlcolor = urlclr,
+ urlbordercolor = cyan!60!black,
+ linkcolor = red!30!black,
+ citecolor = orange!30!black,
+ citebordercolor = yellow!30!black,
+} 
+
+\usepackage{setspace}
+
+\newcommand{\biburl}[1]{ {\fontfamily{gar}\selectfont{\textcolor[rgb]{.2,.6,0}%
+			{\scriptsize \\\setstretch{3}{\textls*[-70]{\url{#1}}}}}}}
+
+%\newcommand{\bibformat}[1]{ {\fontfamily{gar}\selectfont{\textcolor[rgb]{.6,.2,0}%
+%			{\scriptsize \\\setstretch{4}{{#1}}}}}}
+
+\newcommand{\bibformat}[1]{ {\fontfamily{gar}\fontsize{10}{10}\selectfont{%
+\textcolor[rgb]{.6,.2,0}{%
+\textls*[-70]{%
+#1%
+}}}}}
+
+
+
+%\usepackage{verbatim}
+%\usepackage{verbatimbox}
+
+\usepackage{listings}
+
+\ifnum\presetStretch=2
+\lstset{
+basicstyle=\ttfamily\linespread{1.5}\fontsize{8}{12}\selectfont\color[rgb]{.6,.2,0},
+columns=flexible,
+breaklines=true
+}
+\else
+\lstset{
+basicstyle=\ttfamily\linespread{0.94}\fontsize{8}{11}\selectfont\color[rgb]{.6,.2,0},
+columns=flexible,
+breaklines=true
+}
+\fi
+
+\newcommand{\hform}[1]{{\ttfamily\linespread{0.94}\fontsize{8}{11}\selectfont\color[rgb]{.6,.2,0}#1}}
+
+\newsavebox\hrefbox
+
+\NewDocumentEnvironment{boxurl}{d()}{%
+
+\begin{lrbox}{\hrefbox}
+\begin{minipage}{\columnwidth}\setstretch{.9}}
+{\end{minipage}
+\end{lrbox}
+
+\ifnum\presetStretch=2\vspace{-1pt}\else\vspace{-6pt}\fi%
+\href{#1}{\usebox{\hrefbox}}}
+
+
+%\NewDocumentEnvironment{boxurln}{d()}{%
+%\begin{lrbox}{\hrefbox}}
+%{\end{lrbox}\href{#1}{\raisebox{2pt}{\usebox{\hrefbox}}}}
+
+\newcommand{\boxurln}[1]{%
+\hspace{8pt}\href{#1}{\hform{#1}}%
+
+\vspace*{7pt}
+}
+
+\newcommand{\boxurlnn}[2]{%
+\hspace{8pt}\href{#1}{\hform{#2}}%
+
+\vspace*{7pt}
+}
+
+\newcommand{\tatilde}{\raisebox{-2pt}{\textasciitilde}}
+
+
+\newcommand{\starturl}[1]{%
+\hfill\hform{#1}}
+
+%\vspace*{3pt}
+%}
+
+
+
+%\newcommand{\hrefd}[1]{\href{#1}{#1}}
+
+
+\usepackage{titlesec}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{tgtermes}
+
+
+\usepackage{graphicx}
+
+\newcommand{\eA}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
+
+\newcommand{\eAfn}[1]{\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}}
+
+%\newcommand{\eA}[1]{{\iffootnote\begin{footnotesize}{\textsc{#1}}\end{footnotesize}%
+%\else\begin{OldFootnoteSize}{\textsc{#1}}\end{OldFootnoteSize}\fi}}
+
+\usepackage[hang,flushmargin]{footmisc}
+
+\raggedbottom
+
+%\newgeometry{left=0.8in,right=0.8in,top=.6in,bottom=.6in}
+
+\newcommand{\StoP}{\eS{S}-to-\eS{P}}
+
+\newcommand{\Boltetal}{Bolt \textit{et al.}}
+
+
+
+\newcommand{\intitle}[1]{{\hspace{3pt}\textls*[-80]{\texttt{\scriptsize\textit{#1}}}}\hspace{-1pt}}
+
+\setcitestyle{square}
+
+\title{\vspace{-1em}{\fontsize{15}{18}\selectfont%
+Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology\\for Syntactic Theory}%
+\vspace{-2em}}
+
+\date{}
+
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
+\definecolor{AquaA5}{HTML}{4bacc6}
+\definecolor{blggr}{RGB}{25, 180, 180}
+\definecolor{tlc-main}{RGB}{125, 50, 80}
+
+\newcommand{\ul}[1]{\underline{#1}}
+
+
+\newcommand*\fncircled[1]{\tikz[baseline=(char.base)]{
+
+\begin{scope}[rotate=-29, transform shape]
+
+ \node[shape=circle, yscale=.7, %rotate around={45:(0,0)},
+%shape border rotate=39,
+top color=blggr!20, bottom color=AquaA5!90!black,
+inner sep=7pt, shading angle=75,xshift=.5pt,yshift=-.5pt] (char) {\phantom{\ul{#1}}};
+
+ \node[shape=circle,top color=white, bottom color=blggr!6,
+fill opacity=1, yscale=.7, shape border rotate=39,
+inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
+
+\end{scope}
+
+ \node {\ul{#1}};
+
+}}
+
+
+
+\newcommand*\fnellipsed[1]{\tikz[baseline=(char.base)]{
+
+\begin{scope}[rotate=-29, transform shape]
+
+ \node[shape=circle, yscale=.7, %rotate around={45:(0,0)},
+%shape border rotate=39,
+top color=blggr!20, bottom color=tlc-main,
+inner sep=7pt, shading angle=75,xshift=.5pt,yshift=-.5pt] (char) {\phantom{\ul{#1}}};
+
+ \node[shape=circle,top color=white, bottom color=blggr!6,
+fill opacity=1, yscale=.7, shape border rotate=39,
+inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
+
+\end{scope}
+
+ \node {\ul{#1}};
+
+}}
+
+
+
+
+%\fancyfoot[L]{\fancyplain{}{\bfseries\thepage}}
+
+\fancypagestyle{main}{
+
+\setlength{\headsep}{9pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fnellipsed{\thepage}}}
+
+%\fancyfoot[L]{}
+
+%\hspace{-33pt}%\ifnum\presetStretch=2%
+%{\ifnum\thepage=3{RRR}%
+%\raisebox{13pt}{\fncircled{zzxx}}
+%\else%
+%\raisebox{3pt}{\fncircled{PPP}}
+%\fi}
+%}
+
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+
+\fancypagestyle{two}{
+
+\setlength{\headsep}{25pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fnellipsed{\thepage}}}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+
+
+\fancypagestyle{three-dbl}{
+
+\setlength{\headsep}{25pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{19pt}{\fnellipsed{\thepage}}}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+
+
+\pagestyle{main}
+
+\fancypagestyle{bib}{
+
+\setlength{\headsep}{9pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fncircled{\thepage}}}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+
+
+
+\fancypagestyle{bib-last}{
+
+\setlength{\headsep}{9pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fncircled{\thepage}}}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+\usepackage[nottoc,numbib]{tocbibind}
+
+\DeclareRobustCommand{\Visavis}{Vis-\`a-vis}
+\DeclareRobustCommand{\visavis}{vis-\`a-vis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+\addtolength{\skip\footins}{4pt}
+
+
+\definecolor{codegr}{RGB}{165, 150, 118}
+\definecolor{fnc}{RGB}{65, 150, 8}
+
+
+\usepackage{amssymb}
+
+%\usepackage{censor}
+
+
+
+\usetikzlibrary{shapes.misc, positioning}
+
+\newcommand{\bls}{\tikz{
+
+\node [fill, rounded rectangle, %rounded rectangle west arc=1pt, 
+  rounded rectangle east arc=0pt, 
+  text=white, text opacity=0.3 ] {\ensuremath{\blacksquare}};
+
+}}
+
+%\newcommand{\bls}{\ensuremath{\blacksquare}}
+
+\newcommand{\bs}{\raisebox{.5pt}{\resizebox{6pt}{!}{\bls}}}
+
+\newcommand{\lbs}{\raisebox{-.5pt}{\resizebox{9pt}{!}{\bls}}}
+
+\AddToShipoutPicture{%
+ \ifnum\value{page}=2{
+  \AtPageLowerLeft{%
+    \hspace*{22pt}
+ \rotatebox{90}{%
+        \begin{minipage}{\paperheight}
+   \centering 
+   {\color{codegr}\textcopyright ~\today{} \lbs\bs\bs\bs\bs\bs\bs\bs\bs{} \lbs\bs\bs\bs\bs\bs\bs\bs  % Nathaniel Christen
+   } 
+        \end{minipage} %
+      }
+    } %
+   }\fi
+  }%
+
+
+
+\makeatletter
+
+\renewcommand\@makefnmarkfn{%
+\raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}\@thefnmark}}}}
+
+\renewcommand\makefnmarkfnOne{%
+\raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}1}}}}
+
+
+
+\newcommand{\fnmini}[1]{\begin{minipage}[t]{0.97\columnwidth}#1\end{minipage}}
+\newcommand{\fnminidbl}[1]{\begin{minipage}[t]{0.97\columnwidth}{\begin{spacing}{2.0}#1\end{spacing}}\end{minipage}}
+
+
+\usepackage{titling}
+
+\renewcommand\maketitlehookc{\vspace{-35pt}}
+
+
+\usepackage{etoolbox}
+
+\providecommand{\presetStretch}{0}
+
+
+\newcommand{\condenlargepage}[1]{%
+\ifnum\presetStretch=2\else\enlargethispage{#1}\fi%
+}
+
+
+
+\AtEndPreamble{
+\ifnum\presetStretch=2\setstretch{2}\fi	
+}
+
+\renewcommand{\@makefntext}[1]{\@makefnmarkfn\hskip.5em\relax%
+\ifnum\presetStretch=2{\fnminidbl{#1}}\else{\fnmini{#1}}\fi%
+}
+
+
+\newcommand{\mmakefntext}[1]{\makefnmarkfnOne\hskip.5em\relax%
+\ifnum\presetStretch=2{\fnminidbl{#1}}\else{\fnmini{#1}}\fi%
+}
+
+\definecolor{fncAlt}{RGB}{165, 10, 18}
+
+\newcommand\makefnmarkfnArg[1]{%
+\raisebox{4pt}{\resizebox{!}{5pt}{{\color{fncAlt}#1}}}}
+
+\newcommand{\fnastx}{$\bigstar$}
+
+\newcommand{\fndagrc}[1]{\raisebox{#1}{%
+\resizebox{!}{7pt}{\dagger}}}
+
+
+\newcommand{\fndagr}[2]{%\raisebox{1pt}{%
+\resizebox{#1}{#2}{\dagger}}}
+
+%\newcommand{\fnastx}{\raisebox{5pt}{%
+%\resizebox{!}{5pt}{$\bigstar$}}}
+
+
+
+\newcommand{\fnacr}[1]{\resizebox{!}{5.5pt}{#1}}
+
+
+\newcommand{\mmakefntextAlt}[2]{\makefnmarkfnArg{#1}\hskip.5em\relax%
+\ifnum\presetStretch=2{\fnminidbl{#2}}\else{\fnmini{#2}}\fi%
+}
+
+
+\renewcommand\@makefnmark{%
+\raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{black}\@thefnmark}}}}
+
+\newcommand{\fnm}{\setcounter{footnote}{1}%
+\raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{black}1}}}}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+\hspace*{-3pt}\raisebox{-4pt}{%
+\mmakefntext{\footnotesize{This paper's examples are 
+embedded in its Journal Article Tag Suite (\eAfn{JATS}) sources 
+according to a standardized encoding.  See 
+the \eAfn{JATS} (\eAfn{XML}) files for more information.}}
+}}}\fi
+}
+
+\usepackage{dashrule}
+
+\newcommand{\bfnr}{\textcolor{hrfn}{\hdashrule{1.05\columnwidth}{0.4pt}{6pt 2pt}}}
+
+\newcommand{\fnr}{%
+  \kern -3pt
+  %\hrule width 100pt height .4pt
+  %\hdashrule{100pt}{0.4pt}{1mm,1mm} 
+  \hspace*{-16pt} \vspace{-13pt} \bfnr{} \vspace{3pt}
+}
+
+\definecolor{hrfn}{RGB}{124, 83, 140}
+
+
+\renewcommand{\footnoterule}{\fnr}
+
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+\hspace*{-2pt}\raisebox{6pt}{%
+%\par\noindent\rule{100pt}{0.4pt}
+\par\noindent\bfnr
+}}}\fi
+}
+
+
+
+
+\makeatother
+
+
+%\usepackage{textpos}
+
+
+\usepackage{imakeidx}
+\makeindex[options=-s dotted]
+\usepackage{idxlayout}
+
+%\renewcommand{\footnotelayout}{\setstretch{1.5}}
+
+
+%\usepackage{hanging}
+
+%\fancypagestyle{defaultx}{
+%    \fancyhf{}           
+%    \renewcommand{\headrulewidth}{0pt}    
+%    \renewcommand{\footrulewidth}{0pt}   
+%    \fancyfoot[L] {\fontsize{12}{10}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\hspace{1.6em}\fncircled{\usepage}}}}}}
+%}
+
+%\thispagestyle{default}
+
+
