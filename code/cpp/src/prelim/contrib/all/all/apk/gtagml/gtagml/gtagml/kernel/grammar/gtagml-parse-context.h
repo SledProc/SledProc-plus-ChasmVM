@@ -39,7 +39,10 @@ public:
   flag_(9, code_display_mode)
 
   flag_(10, underline_mode)
-  flag_(11, strikethrough_mode)
+
+  //?flag_(11, strikethrough_mode)
+
+  flag_(11, read_desc_label)
 
   flag_(12, read_parens_as_label)
   flag_(13, read_parens_as_ref)

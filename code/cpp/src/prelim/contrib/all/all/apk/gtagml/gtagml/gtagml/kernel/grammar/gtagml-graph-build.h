@@ -309,6 +309,8 @@ public:
 
  void ell_count(u1 count, QString follow = "");
 
+ void desc_item(QString text);
+
  void exs_item(u2 number, QString text);
  void paren_ref(u2 number, QString text);
  void paren_ref_global(u2 number, QString text);

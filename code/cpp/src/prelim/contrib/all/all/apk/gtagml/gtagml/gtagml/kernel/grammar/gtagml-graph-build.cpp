@@ -557,6 +557,11 @@ void GTagML_Graph_Build::heading(u1 count, QString stext, QString ltext)
   section_heading(stext, ltext, 1);
  }
 
+ else if(count == 4)
+ {
+  latex_stream_ << "\n\n\\addendum{";
+ }
+
 }
 
 void GTagML_Graph_Build::end_document()
@@ -893,9 +898,26 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
   parse_context_.flags.read_parens_as_ref = false;
  }
 
+ else if(text == "desc")
+ {
+  latex_stream_ << "\n\n\\begin{description}\n";
+//  xml_writer_.writeStartElement("exs-group");
+  parse_context_.flags.read_desc_label = true;
+//  parse_context_.flags.read_parens_as_ref = false;
+ }
+
+ else if(text == "enumn")
+ {
+  latex_stream_ << "\n\n\\begin{enumerate}[1)]\n";
+  xml_writer_.writeStartElement("enums");
+  parse_context_.flags.read_numbered_items = true;
+  parse_context_.flags.ignore_blank_lines = true;
+ }
+
  else if(text == "enums")
  {
-  latex_stream_ << "\n\n\\begin{enums}\n";
+//?  latex_stream_ << "\n\n\\begin{enums}\n";
+  latex_stream_ << "\n\n\\begin{enumerate}\n";
   xml_writer_.writeStartElement("enums");
   parse_context_.flags.read_numbered_items = true;
   parse_context_.flags.ignore_blank_lines = true;
@@ -928,7 +950,8 @@ void GTagML_Graph_Build::check_blank_line()
  if(current_paragraph_type_ == Paragraph_Types::Block_Quote)
  {
   reset_primary();
-  latex_stream_ << "\n\\parbreak.2{}\n";
+//?  latex_stream_ << "\n\\parbreak.2{}\n";
+  latex_stream_ << "\n\\parbreak{}\n";
  }
 
  else if(parse_context_.flags.read_bulleted_items)
@@ -960,7 +983,13 @@ void GTagML_Graph_Build::single_slash_line()
 
  xml_writer_.writeEndElement();
 
- if(parse_context_.flags.read_parens_as_label)
+ if(parse_context_.flags.read_desc_label)
+ {
+  latex_stream_ << "\n\\end{description}\n";
+  parse_context_.flags.read_desc_label = false;
+ }
+
+ else if(parse_context_.flags.read_parens_as_label)
  {
   latex_stream_ << "\n\\end{exsGroup}\n";
   parse_context_.flags.read_parens_as_label = false;
@@ -969,7 +998,8 @@ void GTagML_Graph_Build::single_slash_line()
 
  else if(parse_context_.flags.read_numbered_items)
  {
-  latex_stream_ << "\n\\end{enums}\n";
+  latex_stream_ << "\n\\end{enumerate}\n";
+//?  latex_stream_ << "\n\\end{enums}\n";
   parse_context_.flags.read_numbered_items = false;
   parse_context_.flags.ignore_blank_lines = false;
  }
@@ -1072,12 +1102,25 @@ void GTagML_Graph_Build::enums_item(u2 number, QString text, QString follow)
 
  if(follow == ")")
   //? latex_stream_ << "\n\\enumsItem{}[)] ";
-   latex_stream_ << "\n\\item[)] ";
+   latex_stream_ << "\n\\item[" << text << ")] ";
 
  else
    latex_stream_ << "\n\\enumsItem{} ";
+
  xml_writer_.writeTextElement("enums-item", "");
 }
+
+
+void GTagML_Graph_Build::desc_item(QString text)
+{
+ reset_primary();
+
+ latex_stream_ << "\n\\item[" << text << "]";
+//? xml_writer_.writeTextElement("exs-item", "");
+
+ end_sentence();
+}
+
 
 void GTagML_Graph_Build::exs_item(u2 number, QString text)
 {
@@ -1095,10 +1138,9 @@ void GTagML_Graph_Build::exs_item(u2 number, QString text)
  xml_writer_.writeTextElement("exs-item", "");
 
  end_sentence();
-
-
-
 }
+
+
 
 void GTagML_Graph_Build::enter_italics_mode()
 {

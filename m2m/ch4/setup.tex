@@ -1,5 +1,5 @@
 
-
+\usepackage{enumerate}
 
 \usepackage{fancyhdr}
 
@@ -16,9 +16,9 @@
 \fancyheadoffset[reh]{0pt}
 \fancyheadoffset[loh]{0pt}
     
-\fancyhead[RO]{\textbf{\roman{page}}} % Page number on the right of odd pages
+\fancyhead[RO]{\textbf{\arabic{page}}} % Page number on the right of odd pages
     
-\fancyhead[LE]{\textbf{\roman{page}}} % Page number on the left of even pages
+\fancyhead[LE]{\textbf{\arabic{page}}} % Page number on the left of even pages
     
 \fancyhead[LO]{{\fontfamily{bch}{FROM MADNESS TO MUTINY}}} % Title on the left of odd pages
     
@@ -29,7 +29,11 @@
 \setlength{\headsep}{35pt}
 
 
-\newcommand\dunderline[3][-1pt]{{%
+\newcommand{\parbreak}{
+
+\hspace{13pt}}
+
+\newcommand{\dunderline}[3][-1pt]{{%
   \sbox0{#3}%
   \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
 
@@ -111,6 +115,18 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 }\vspace{2em}
 }
 
+
+\newcommand{\addendum}[1]{
+\vspace{3em}\noindent{%\LARGE{#1}
+%\fontfamily{fmv}%
+\fontsize{15}{21}\selectfont%
+\textsf{#1}\par%
+%#1
+}\vspace{-5pt}
+}
+
+
+
 \newcommand{\prS}{\hspace*{15.4pt}}
 
 
@@ -163,6 +179,9 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 }
 
 
+\newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
+
+\newcommand{\enumsItem}{\item}
 
 
 \newcounter{prPar}

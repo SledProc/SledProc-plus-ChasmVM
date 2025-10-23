@@ -1262,17 +1262,21 @@ The next day, the mother’s lawyer tried to argue that the judge had
 refused to hear relevant evidence. The judge, however, did not need
 evidence to support his made-in-advance reading of the case:
 
----\vspace{6pt}\textsc{lawyer for mother}: What I have tried to assert on
+%/ desc
+[|\textsc{lawyer for mother:}|] What I have tried to assert on
 September 26th and again yesterday is that you haven’t
 listened to the evidence.
 
----\vspace{6pt}\textsc{judge:} Do you have someone who observed [the father]
+[|\textsc{judge:}|] Do you have someone who observed [the father]
 engage in any act of sexual abuse of these children as
 a credible independent witness? The answer to that is
 "/no,/" and you know the answer is no! Now, don’t harass
 this Court any more!\86
+/
 
-In other words, the judge now required the mother to present an eyewitness to an act of sexual abuse before he would even consider evidence
+In other words, the judge now required the 
+mother to present an eyewitness to an act of sexual 
+abuse before he would even consider evidence
 that it had occurred%--even though the mother had been barred from all
 contact with her children without a single witness having observed her
 harm the children, simply because she believed her children’s reports!
@@ -1284,7 +1288,8 @@ continuing isolation from her children:
 There was no legitimate reason in the world that my kids were ever
 taken away from me in the first place. I’m not a bad person; I’ve
 never committed a crime, I’ve never been accused of committing a
-crime. You all took one stupid video and you blew it into something. That’s not the way it is. That was thirty minutes out of a
+crime. You all took one stupid video and you blew it 
+into something. That’s not the way it is. That was thirty minutes out of a
 lifetime. You totally ignored everything else in my lifetime: How I
 communicated with the kids, the love I’ve given them, I gave birth
 to these kids, I nurtured them, I nursed them, I loved them, I never
@@ -1392,7 +1397,7 @@ printed with the judge’s name and picture. Above his head, in bold
 letters, was the word "/WANTED./"
 
 
-///  ADDENDUM%--CHARACTER ASSASSINATION OF BIPOC MOTHERS
+\addendum{ADDENDUM%--CHARACTER ASSASSINATION OF BIPOC\\MOTHERS}
 
 // //  Guyanese Mother’s Painful Odyssey in the Domestic Courts
 
@@ -1466,7 +1471,7 @@ BIPOC population of protective mothers, even if their cases are heard
 in supreme court and not in family court, the ingrained biases against
 women of color are so severe that the perniciousness of the family courts
 spreads to the supreme courts%--making the latter operate and function
-de facto as an insidious family court system.
+*/de facto/* as an insidious family court system.
 
 Here is an inkling into the climate of the court in this case. The BIPOC
 mother, on more than one occasion, was subjected to invectives, laced
@@ -1583,11 +1588,11 @@ the AFC only posed that question to the child after first receiving in
 writing a letter from the children’s therapist concerning a recent disclosure of sexual abuse made by the children during their therapy
 session:
 
-%/
+%/ block
 Now that the Court knows about that letter, that would not have
 been a prompting of the child ... Why did [the AFC] ask the child
 that question? We now know there was a letter from the therapist.
-Hence, why [the AFC] had inquired to [sic] the child.\105
+Hence, why [the AFC] had inquired to [*/sic/*] the child.\105
 /+
 
 With the removal of the guardian ad litem, the case went into a pitiful
@@ -1597,8 +1602,7 @@ and exposure to intoxication. Their behavior continued to descend into
 serious maladjustment. The mother was attempting to put out fires on
 all fronts.
 
-// //  Mother Is Stranded and Attempts to Represent Herself against a
-Hostile Judge
+// ///  Mother Is Stranded and Attempts to Represent Herself against a Hostile Judge
 
 Staying up at night with two traumatized children who had been suffering from frequent episodes of nocturnal enuresis and encopresis
 (urinary and fecal incontinence), night terrors, and screaming in their
@@ -1637,7 +1641,7 @@ their child.
 
 To wit, the judge prevented the mother from:
 
-%/ enums
+%/ enumn
 1) presenting testimony that would have revealed the children’s
 disclosures about their father;
 
@@ -1788,7 +1792,7 @@ would attest to her adjustment to her new role as a mother, as defined
 by a court suffused with madness.
 
 
-// /// A "/Good/" Report from Therapist%--and a Broken Heart for the Mother
+// ///  A ``Good'' Report from Therapist%--and a Broken Heart for the Mother
 
 ---To wit, this protective mother adjusted to restraining herself from reacting to her children’s disturbing reports of apparent abuse, and, likewise,
 adjusted to going from a 168-hour week of being around her children to

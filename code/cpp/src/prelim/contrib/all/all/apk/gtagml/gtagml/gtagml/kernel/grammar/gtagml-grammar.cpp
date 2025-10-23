@@ -389,6 +389,16 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.exs_item(number, text);
  });
 
+ add_rule( flags_all_(parse_context ,read_desc_label),
+   gtagml_context, "desc-item",
+   " \\[\\| (?<text> [^|]+) \\|\\] "
+   ,[&]
+ {
+  QString text = p.matched("text");
+  graph_build.desc_item(text);
+ });
+
+
  add_rule( flags_all_(parse_context ,ignore_blank_lines),
    gtagml_context, "consume-blank-line",
 //?   " (?<=\\n) .blank-line-content. "
