@@ -816,7 +816,7 @@ children’s lives&amp;mdash;seeking a gruesome escape from the intolerable</p.1
 <p.1>The mother’s suicide note (addressed to two adult children from
 a prior marriage) clearly suggests her internal struggle and sense of
 hopelessness:<block-quote>Dear Jason and Marisa:\\
-\hspace*{.7in}Please forgive me for any pain I have caused or will cause you in
+\hspace*{.3in}Please forgive me for any pain I have caused or will cause you in
 the future. You are my children and I love you more than myself
 Abigail is also my child. I cannot knowingly allow her to be sexually
 abused. I have no choice. I hope you can understand. Be kind to
@@ -834,10 +834,8 @@ mother&amp;mdash;rather than standing back and watching the child drift away int
 hands of an accused molester&amp;mdash;this mother took the radical, final step by
 which she removed the family court, and the tormenting law guardian,
 from her child’s life</p.1>
-<p.1>\vspace{3em}
-\addendum{ADDENDUM&amp;mdash;LAWLESS LAW GUARDIANS BECOME <q>RECKLESS</q>
-LAW GUARDIANS&amp;mdash;IGNORING THE FATHER’S CRIMINAL HISTORY}\vspace{1.5em}</p.1>
-<s1>Father’s Criminal History Spanning Over Ten Years Disregarded by Law Guardian</s1><p.1>In the intervening years since the first publication of <i>From Madness to
+<p.1>\writeAddendum{}</p.1><s1>Father’s Criminal History Spanning Over Ten Years
+Disregarded  by Law Guardian</s1><p.1>In the intervening years since the first publication of <i>From Madness to
 Mutiny</i> (2005) until the present, criminal background checks have become much easier, where much of the needed information is already in
 digital form. Diagnostic information and police investigative reports are
 likewise now part of a digital database. As such, pertinent documents,

@@ -7,7 +7,7 @@
 
 %\pagenumbering{roman}
 
-\setcounter{page}{112}
+\setcounter{page}{145}
 
 \fancyhf{} % Clear all headers and footers first
 
@@ -16,20 +16,24 @@
 \fancyheadoffset[reh]{0pt}
 \fancyheadoffset[loh]{0pt}
     
-\fancyhead[RO]{\textbf{\arabic{page}}} % Page number on the right of odd pages
+\fancyhead[RO]{\textbf{\roman{page}}} % Page number on the right of odd pages
     
-\fancyhead[LE]{\textbf{\arabic{page}}} % Page number on the left of even pages
+\fancyhead[LE]{\textbf{\roman{page}}} % Page number on the left of even pages
     
 \fancyhead[LO]{{\fontfamily{bch}{FROM MADNESS TO MUTINY}}} % Title on the left of odd pages
     
-\fancyhead[RE]{Lawless Law Guardians} % Author on the right of even pages
+\fancyhead[RE]{Anti-Social Services} % Author on the right of even pages
     
 %\fancyfoot[C]{Confidential} % "Confidential" in the center of all footers
 
+
 \setlength{\headsep}{35pt}
 
+\newcommand{\parbreak}{
 
-\newcommand\dunderline[3][-1pt]{{%
+\hspace{13pt}}
+
+\newcommand{\dunderline}[3][-1pt]{{%
   \sbox0{#3}%
   \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
 
@@ -59,13 +63,6 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 
 %\newcommand{\prQuote}[1]{``{#1}''}
 
-\newcommand{\parbreak}{
-
-\hspace{13pt}}
-
-
-
-
 \newcommand{\prQuote}[1]{%
 \vspace{1em}
 \begin{quote}
@@ -75,38 +72,15 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 }
 
 
-\newcommand{\ndash}[1]{--}
-\newcommand{\clrmMid}[1]{}
-
-
 \newcommand{\qq}[1]{``#1''}
-
-\newcommand{\qm}{\hspace*{2pt}\raisebox{.75pt}{?}}
 
 \newcommand{\fnm}[1]{%
 \raisebox{5pt}{{\scriptsize \textbf{#1}}}}
 
 \newcommand{\mdash}{---}
 
-\newcommand{\writeAddendum}{%
-\vspace{3em}\noindent{}{\fontsize{15}{24}\selectfont%
-\textsf{ADDENDUM---LAWLESS LAW GUARDIANS BECOME\\``RECKLESS'' 
-LAW GUARDIANS---IGNORING THE FATHER’S\\CRIMINAL HISTORY}\par}%
-\vspace{.75em}
-}
-
-
-
-
-\newcommand{\addendum}[1]{
-\vspace{3em}\noindent{%\LARGE{#1}
-%\fontfamily{fmv}%
-\fontsize{15}{8}\selectfont%
-\textsf{#1}%
-%#1
-}%\vspace{-5pt}
-}
-
+\newcommand{\nip}{\noindent{}}
+\newcommand{\clrmMid}[1]{}
 
 %\usepackage{arimo}
 %\usepackage{cmbright}
@@ -140,6 +114,18 @@ LAW GUARDIANS---IGNORING THE FATHER’S\\CRIMINAL HISTORY}\par}%
 %#1
 }\vspace{2em}
 }
+
+
+\newcommand{\addendum}[1]{
+\vspace{3em}\noindent{%\LARGE{#1}
+%\fontfamily{fmv}%
+\fontsize{15}{21}\selectfont%
+\textsf{#1}\par%
+%#1
+}\vspace{-5pt}
+}
+
+
 
 \newcommand{\prS}{\hspace*{15.4pt}}
 
@@ -193,6 +179,9 @@ LAW GUARDIANS---IGNORING THE FATHER’S\\CRIMINAL HISTORY}\par}%
 }
 
 
+\newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
+
+\newcommand{\enumsItem}{\item}
 
 
 \newcounter{prPar}

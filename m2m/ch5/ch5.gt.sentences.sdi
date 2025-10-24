@@ -3468,7 +3468,7 @@ t.
 |  The mother’s suicide note (addressed to two adult children from
 |  a prior marriage) clearly suggests her internal struggle and sense of
 |  hopelessness:Dear Jason and Marisa:\\
-|  \hspace*{.7in}Please forgive me for any pain I have caused or will cause you in
+|  \hspace*{.3in}Please forgive me for any pain I have caused or will cause you in
 .  the future. You are my children and I love you more than myself
 
 
@@ -3560,26 +3560,25 @@ y: N/A
 --- Section/start
 -l  3
 -i  1
--t  Father’s Criminal History Spanning Over Ten Years Disregarded by Law Guardian
+-t  Father’s Criminal History Spanning Over Ten Years
+Disregarded  by Law Guardian
 
 
 --- Paragraph/start
 id: 107
-r#  64322  1041  4
+r#  64208  1040  4
 
 
 --- Sentence/start
 id: 146
-r#  64322  1041  4
+r#  64208  1040  4
 
 --- Sentence//end
 id: 146
-r#  64840  1046  21
+r#  64726  1045  21
 p: .
 t. 
-|  \vspace{3em}
-|  \addendum{ADDENDUM - LAWLESS LAW GUARDIANS BECOME RECKLESS
-|  LAW GUARDIANS - IGNORING THE FATHER’S CRIMINAL HISTORY}\vspace{1.5em}In the intervening years since the first publication of From Madness to
+|  \writeAddendum{}In the intervening years since the first publication of From Madness to
 |  Mutiny (2005) until the present, criminal background checks have become much easier, where much of the needed information is already in
 |  digital form. Diagnostic information and police investigative reports are
 |  likewise now part of a digital database. As such, pertinent documents,
@@ -3588,7 +3587,7 @@ t.
 
 --- Sentence/end 
 id: 146
-r#  64841  1046  22
+r#  64727  1045  22
 
 --- Paragraph/end 
 id: 107
@@ -3597,16 +3596,16 @@ y: N/A
 
 --- Paragraph/start
 id: 108
-r#  64843  1048  1
+r#  64729  1047  1
 
 
 --- Sentence/start
 id: 147
-r#  64843  1048  1
+r#  64729  1047  1
 
 --- Sentence//end
 id: 147
-r#  65442  1054  28
+r#  65328  1053  28
 p: .
 t. 
 |  Although not all criminal records indicate high risk to children, certainly crimes involving substance abuse, harm to children or adults, and
@@ -3619,7 +3618,7 @@ t.
 
 --- Sentence/end 
 id: 147
-r#  65443  1054  29
+r#  65329  1053  29
 
 --- Paragraph/end 
 id: 108
@@ -3628,12 +3627,12 @@ y: N/A
 
 --- Paragraph/start
 id: 109
-r#  65445  1056  1
+r#  65331  1055  1
 
 
 --- Sentence/start
 id: 148
-r#  65445  1056  1
+r#  65331  1055  1
 --- Paragraph/end 
 id: 109
 y: N/A
@@ -3641,16 +3640,16 @@ y: N/A
 
 --- Paragraph/start
 id: 110
-r#  66175  1067  1
+r#  66061  1066  1
 
 
 --- Sentence/start
 id: 149
-r#  66175  1067  1
+r#  66061  1066  1
 
 --- Sentence//end
 id: 149
-r#  66535  1071  72
+r#  66421  1070  72
 p: .
 t. 
 |  What follows is a description of a protective mother from Contra
@@ -3671,12 +3670,12 @@ t.
 
 --- Sentence/switch
 id: 150
-r#  66536  1071  73
+r#  66422  1070  73
 
 
 --- Sentence//end
 id: 150
-r#  67213  1079  41
+r#  67099  1078  41
 p: .
 t. 
 |  It began with a conviction for criminal endangerment of the welfare of
@@ -3690,7 +3689,7 @@ t.
 
 --- Sentence/end 
 id: 150
-r#  67214  1079  42
+r#  67100  1078  42
 
 --- Paragraph/end 
 id: 110
@@ -3699,16 +3698,16 @@ y: N/A
 
 --- Paragraph/start
 id: 111
-r#  67216  1081  1
+r#  67102  1080  1
 
 
 --- Sentence/start
 id: 151
-r#  67216  1081  1
+r#  67102  1080  1
 
 --- Sentence//end
 id: 151
-r#  68348  1101  38
+r#  68234  1100  38
 p: .
 t. 
 |  The father’s criminal activities would continue over the years. In 2018,
@@ -3731,7 +3730,7 @@ t.
 
 --- Sentence/end 
 id: 151
-r#  68349  1101  39
+r#  68235  1100  39
 
 --- Paragraph/end 
 id: 111
@@ -3746,16 +3745,16 @@ y: N/A
 
 --- Paragraph/start
 id: 112
-r#  68455  1106  4
+r#  68341  1105  4
 
 
 --- Sentence/start
 id: 152
-r#  68455  1106  4
+r#  68341  1105  4
 
 --- Sentence//end
 id: 152
-r#  68728  1109  74
+r#  68614  1108  74
 p: .
 t. 
 |  The mother brought her four-year-old daughter to the Marin General
@@ -3766,7 +3765,7 @@ t.
 
 --- Sentence/switch
 id: 153
-r#  68729  1109  75
+r#  68615  1108  75
 
 --- Paragraph/end 
 id: 112
@@ -3775,12 +3774,12 @@ y: N/A
 
 --- Paragraph/start
 id: 113
-r#  70062  1131  1
+r#  69948  1130  1
 
 
 --- Sentence/start
 id: 154
-r#  70062  1131  1
+r#  69948  1130  1
 --- Paragraph/end 
 id: 113
 y: N/A
@@ -3788,16 +3787,16 @@ y: N/A
 
 --- Paragraph/start
 id: 114
-r#  70708  1141  1
+r#  70594  1140  1
 
 
 --- Sentence/start
 id: 155
-r#  70708  1141  1
+r#  70594  1140  1
 
 --- Sentence//end
 id: 155
-r#  70849  1142  72
+r#  70735  1141  72
 p: .
 t. 
 |  The emergency room doctor noted the following in his report when
@@ -3829,7 +3828,7 @@ t.
 
 --- Sentence/switch
 id: 156
-r#  70850  1142  73
+r#  70736  1141  73
 
 --- Paragraph/end 
 id: 114
@@ -3838,16 +3837,16 @@ y: N/A
 
 --- Paragraph/start
 id: 115
-r#  71440  1152  1
+r#  71326  1151  1
 
 
 --- Sentence/start
 id: 157
-r#  71440  1152  1
+r#  71326  1151  1
 
 --- Sentence//end
 id: 157
-r#  72316  1163  69
+r#  72202  1162  69
 p: .
 t. 
 |  The state paid for this extensive evaluation, which included the use of
@@ -3872,7 +3871,7 @@ t.
 
 --- Sentence/end 
 id: 157
-r#  72317  1163  70
+r#  72203  1162  70
 
 --- Paragraph/end 
 id: 115
@@ -3881,16 +3880,16 @@ y: N/A
 
 --- Paragraph/start
 id: 116
-r#  72319  1165  1
+r#  72205  1164  1
 
 
 --- Sentence/start
 id: 158
-r#  72319  1165  1
+r#  72205  1164  1
 
 --- Sentence//end
 id: 158
-r#  72762  1170  13
+r#  72648  1169  13
 p: .
 t. 
 |  In the years that followed, the children showed disturbances. Sadly,
@@ -3902,7 +3901,7 @@ t.
 
 --- Sentence/end 
 id: 158
-r#  72763  1170  14
+r#  72649  1169  14
 
 --- Paragraph/end 
 id: 116
