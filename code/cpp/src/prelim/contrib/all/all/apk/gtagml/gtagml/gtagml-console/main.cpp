@@ -213,9 +213,11 @@ int main(int argc, char *argv[])
 // file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch7/ch7.gt";
 // folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch7";
 
- file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch8/ch8.gt";
- folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch8";
+// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch8/ch8.gt";
+// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch8";
 
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch9/ch9.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch9";
 
 // QStringList cmdl = get_cmdl(argc, argv, 2, {
 //   {&folder, DEFAULT_GTAGML_FOLDER "/dg/ctg/src"},
