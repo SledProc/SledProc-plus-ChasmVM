@@ -72,6 +72,10 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 }
 
 
+% ////  The ``Aftershocks'' of the system
+
+
+
 \newcommand{\qq}[1]{``#1''}
 
 \newcommand{\fnm}[1]{%
@@ -106,10 +110,23 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 \usepackage[T1]{fontenc}
 
 
-\newcommand{\prSect}[1]{
+\newcommand{\writeS}[1]{
+\vspace{-1em}%
 \noindent{%\LARGE{#1}
 %\fontfamily{fmv}%
 \fontsize{16}{14}\selectfont%
+\hspace{3in}\textsf{The ``Aftershocks'' of the system}%
+%#1
+}\vspace{3em}
+}
+
+
+
+
+\newcommand{\prSect}[1]{
+\noindent{%\LARGE{#1}
+%\fontfamily{fmv}%
+\fontsize{22}{14}\selectfont%
 \textsf{#1}%
 %#1
 }\vspace{2em}
