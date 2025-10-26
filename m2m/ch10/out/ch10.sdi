@@ -1,0 +1,5 @@
+--- Global/start
++file  ch10.tex
++global-baseline-skip  13.6pt
++global-baseline-stretch  1.0
+
