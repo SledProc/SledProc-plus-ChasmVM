@@ -2095,7 +2095,7 @@ r#  41678  679  1
 
 --- Sentence//end
 id: 84
-r#  42413  689  67
+r#  42417  690  69
 p: .
 t. 
 |  Greenbook-inspired advocates have also criticized the family court
@@ -2118,13 +2118,14 @@ t.
 |  were more willing to climb into the boat with survivors who had
 |  CPS cases. We do an informal poll of advocates every month, and
 |  even though it’s anecdotal information, it is telling. We ask advocates how many of their domestic violence clients with children
-|  have open CPS cases. That number is still over 50%, but the number of clients who also have been arrested for domestic violence
+|  have open CPS cases. That number is still over 50%, but the
+|  number of clients who also have been arrested for domestic violence
 .  has gone down. It used to be 16--20%, and now it’s closer to 2--5%
 
 
 --- Sentence/switch
 id: 85
-r#  42414  689  68
+r#  42418  690  70
 
 --- Paragraph/end 
 id: 57
@@ -2133,12 +2134,12 @@ y: N/A
 
 --- Paragraph/start
 id: 58
-r#  42506  694  1
+r#  42510  695  1
 
 
 --- Sentence/start
 id: 86
-r#  42506  694  1
+r#  42510  695  1
 --- Paragraph/end 
 id: 58
 y: N/A
@@ -2146,12 +2147,12 @@ y: N/A
 
 --- Paragraph/start
 id: 59
-r#  43062  701  1
+r#  43066  702  1
 
 
 --- Sentence/start
 id: 87
-r#  43062  701  1
+r#  43066  702  1
 --- Paragraph/end 
 id: 59
 y: N/A
@@ -2159,12 +2160,12 @@ y: N/A
 
 --- Paragraph/start
 id: 60
-r#  44797  731  1
+r#  44801  732  1
 
 
 --- Sentence/start
 id: 88
-r#  44797  731  1
+r#  44801  732  1
 --- Paragraph/end 
 id: 60
 y: N/A
@@ -2172,16 +2173,16 @@ y: N/A
 
 --- Paragraph/start
 id: 61
-r#  45899  747  1
+r#  45903  748  1
 
 
 --- Sentence/start
 id: 89
-r#  45899  747  1
+r#  45903  748  1
 
 --- Sentence//end
 id: 89
-r#  47177  761  26
+r#  47181  762  26
 p: .
 t. 
 |  There’s still work to be done on this issue, but significant progress
@@ -2244,7 +2245,7 @@ t.
 
 --- Sentence/end 
 id: 89
-r#  47178  761  27
+r#  47182  762  27
 
 --- Paragraph/end 
 id: 61

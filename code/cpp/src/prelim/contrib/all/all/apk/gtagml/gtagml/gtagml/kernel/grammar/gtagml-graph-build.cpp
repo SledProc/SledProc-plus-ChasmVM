@@ -1309,6 +1309,7 @@ void GTagML_Graph_Build::special_character_sequence(QString text)
    { "%-", {"\\ndash{}", "--", "&ndash;"}},
    { "^:", {"\\raiseColon{}", ":", ":"}},
    { "%$", {"\\$", "$", "$"}},
+   { "%%", {"\\%", "%", "%"}},
    }};
 
  auto it = static_map.find(text);
