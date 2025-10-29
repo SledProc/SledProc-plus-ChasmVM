@@ -11,15 +11,15 @@ involved in the proceedings.
 // /  Prologue
 
 
-1. Schechter and Edleson, Effective Intervention in Domestic Violence and Child Maltreatment: Guidelines for Policy and Practice. Reno, NV: National Council of
+1+1. Schechter and Edleson, Effective Intervention in Domestic Violence and Child Maltreatment: Guidelines for Policy and Practice. Reno, NV: National Council of
 Juvenile and Family Court Judges, 1999. This text will be referred to hereafter as
 the "/Greenbook./"
 
-2. */Id./*, p. 5
+2+2. */Id./*, p. 5
 
-3. Salcido Carter, "/Advocacy Perspectives on the Greenbook,/" 87.
+3+3. Salcido Carter, "/Advocacy Perspectives on the Greenbook,/" 87.
 
-4. Part of our motivation to write a second edition was the emergence of some critical study findings, which came out a decade or so after the publication of the
+4+4. Part of our motivation to write a second edition was the emergence of some critical study findings, which came out a decade or so after the publication of the
 first edition. These studies highlighted the dire conditions in our nation’s family courts. For example, the suffering of children due to ingrained gender biases
 in the family courts was meticulously shown in 
 by Joyanna Silberg and Stephanie Dallam in their noteworthy article, "/Abusers
@@ -39,20 +39,20 @@ have been depleted in protracted trial court litigation. And even when they do
 have resources to file an appeal, higher courts do not often overturn trial court
 decisions when they involve family matters.
 
-5. "/Call for Inputs%--Custody Cases, Violence against Women and Violence against
+5+5. "/Call for Inputs%--Custody Cases, Violence against Women and Violence against
 Children./"
 
-6. Women’s Coalition News %& Views, "/UN Human Rights Council Takes on the
+6+6. Women’s Coalition News & Views, "/UN Human Rights Council Takes on the
 Custody Crisis./"
 
-7. UN, "/Urgent Reforms Needed to Protect Women and Children from Violence
+7+7. UN, "/Urgent Reforms Needed to Protect Women and Children from Violence
 in Custody Battles./"
 
-8. Justin Wm Moyer, "/In Child Custody Dispute, Breastfeeding Mom is Ordered to Use Bottle./"
+8+8. Justin Wm Moyer, "/In Child Custody Dispute, Breastfeeding Mom is Ordered to Use Bottle./"
 
-9. Neustein and Etlin, "/Infants are being penalized in the name of '/men’s rights./'/"
+9+9. Neustein and Etlin, "/Infants are being penalized in the name of '/men’s rights./'/"
 
-10. In the Spring 2022 issue of Family %& Intimate Partner Violence Quarterly, a publication of the well-respected Civic Research Institute, authors Barry Goldstein
+10+10. In the Spring 2022 issue of Family & Intimate Partner Violence Quarterly, a publication of the well-respected Civic Research Institute, authors Barry Goldstein
 and Elizabeth Liu analyzed the destructive impact of guardians ad litem (also
 known as law guardians, minor’s counsel, attorney for the child, etc.) as "/the
 heaviest contributors to unjust family court rulings/" (p. 25).
@@ -104,10 +104,10 @@ and Abuse Allegations,/" 98. See also Meier et al., "/Child Custody Outcomes in
 Cases Involving Parental Alienation and Abuse Allegations./" See also Neustein,
 "/Mothers Who Report Abuse Still Losing Custody '/at Staggering Rates/'./" 
 
-29. Meier et al., "/Harman and Lorandos’ False Critique of Meier et al.’s Family Court
+29+29. Meier et al., "/Harman and Lorandos’ False Critique of Meier et al.’s Family Court
 Study,/" 135.
 
-30. Domestic violence advocate Barry Goldstein, in summarizing the family court
+30+30. Domestic violence advocate Barry Goldstein, in summarizing the family court
 system’s abysmal track record in protecting women and children, pointed out
 how gender-based discrimination had become deeply lodged in the belief system
 of judges and others notwithstanding an impressive body of literature reporting
@@ -118,28 +118,28 @@ these discredited practices despite the current scientific research that rejects
 them./" M.T. Hannah and B. Goldstein, eds., Domestic Violence, Abuse, and Child
 Custody: Legal Strategies and Policy Issues, vol. II, xxviii.
 
-31. Pollack, "/Parents Say Family Courts Too Often Ignore Allegations of Violence
+31+31. Pollack, "/Parents Say Family Courts Too Often Ignore Allegations of Violence
 in Custody Disputes./"
 
-32. Gentile, "/Her Son Said Her Ex Sexually Abused Him./"
+32+32. Gentile, "/Her Son Said Her Ex Sexually Abused Him./"
 
-33. Rosen, */Beyond the Hostage Child/*. A second edition was published in 2017,
+33+33. Rosen, */Beyond the Hostage Child/*. A second edition was published in 2017,
 following the first edition which was published in 2014.
 
-34. Grant, "/*/End the Nightmare at Family Court/*./"
+34+34. Grant, "/*/End the Nightmare at Family Court/*./"
 
-35. Allen, "/Reviews: Children of the Underground./"
+35+35. Allen, "/Reviews: Children of the Underground./"
 
-36. One of the authors of this book appears as the first voice-over in the trailer teaser,
+36+36. One of the authors of this book appears as the first voice-over in the trailer teaser,
 pointing out how dire it is for mothers betrayed by the family courts to live as
 fugitives from the law. See the "/Official Teaser/" for */Children of 
 the Underground/* at https://www.youtube.com/watch?v=v08Zi2GrpY0.
 
-37. Carner, "/Run, Mommy, Run./"
+37+37. Carner, "/Run, Mommy, Run./"
 
-38. Neustein, "/Mothers Face Civil Rights Crisis in the Family Courts./"
+38+38. Neustein, "/Mothers Face Civil Rights Crisis in the Family Courts./"
 
-39. Here is a partial list of Amy Neustein’s subsequent editorials in Women’s eNews
+39+39. Here is a partial list of Amy Neustein’s subsequent editorials in Women’s eNews
 on the protective mother issue. (A more complete list appears in the References):
 "/Family Court Drives Mothers to Suicide: Former Brooklyn Federal Prosecutor
 is Latest Victim,/" June 4, 2023; "/Mothers Likewise Suffer from Poor ‘Debate’
@@ -149,33 +149,33 @@ May Be Key to Kamala Harris Winning Nomination %-- and Defeating Trump,/" July 2
 "/Schumer’s '/No Kings Act/' Challenges the Sacrosanct Judiciary %-- While Giving
 Hope to Mothers,/" August 5, 2024.
 
-40. The authors of this book wanted to participate in this noble effort. So, we bought
+40+40. The authors of this book wanted to participate in this noble effort. So, we bought
 one hundred copies from the publisher and donated them to Connie Valentine’s
 nonprofit organization, the California Protective Parents Association.
 
-41. H.Con.Res.72: Expressing the sense of Congress that child safety is the
+41+41. H.Con.Res.72: Expressing the sense of Congress that child safety is the
 first priority of custody and visitation adjudications, and that State courts
 should improve adjudications of custody where family violence is alleged,
 */115th Congress (2017%-2018)/*, Library of Congress, https://www.congress.gov/
 bill/115th-congress/house-concurrent-resolution/72.
 
-42. A local Colorado resident, protective mother and author, Maralee McLean, was
+42+42. A local Colorado resident, protective mother and author, Maralee McLean, was
 instrumental in the enactment of Kayden’s Law in her state. Her perseverance 
 helped to make Colorado the first state to pass Kayden’s law in whole, without
 any dilution or selective omission of any of the provisions set forth in VAWA.
 
-43. Pennsylvania, in addition to enacting "/Kayden’s Law,/" passed a law of its own to
+43+43. Pennsylvania, in addition to enacting "/Kayden’s Law,/" passed a law of its own to
 mirror this provision in VAWA. In late fall 2023, the Pennsylvania State
 Senate unanimously passed a bill in honor of Kayden Mancuso, which Governor
 Josh Shapiro signed into law in April 2024. See Neustein and Etlin, "/One Group
 of Mothers Who Need Kamala Harris’s Help./"
 
-44. Increasingly, mothers are learning to protect themselves against such threats by
+44+44. Increasingly, mothers are learning to protect themselves against such threats by
 writing e-mails and letters to government offices and legislative bodies about
 their cases, as no family court judge can prohibit a US citizen from speaking to
 governmental authorities about their life.
 
-45. Personal communication with New York family law attorney Joshua Douglas on
+45+45. Personal communication with New York family law attorney Joshua Douglas on
 October 19, 2021. Douglas explained that the visitation centers were not profitable when devoted, as they were at first, to the supervision of abusive fathers.
 According to Douglas, fathers who realized they could no longer have unrestricted access to the children they had abused would generally quit the program,
 seeing that it was not serving their needs. Mothers, on the other hand, would
@@ -215,14 +215,14 @@ eNews can be found at www.womensenews.org.
 
 8. Faller and DeVoe, "/Allegations of Sexual Abuse in Divorce./" 
 
-9. Arens and Lasswell, */In Defense of Public Order/*, 180.
+9+9. Arens and Lasswell, */In Defense of Public Order/*, 180.
 
-10. Our use of "/methodical/" does not necessarily imply */neatly/* organized case management. Instead, what we describe as "/methodical/" is meant to be understood in
+10+10. Our use of "/methodical/" does not necessarily imply */neatly/* organized case management. Instead, what we describe as "/methodical/" is meant to be understood in
 strictly ethnomethodological terms: the systematic ways in which participants
 produce and interpret social interaction. Thus, even disorganization and sloppiness are seen as "/methodically/" ordered social practices in ethnomethodological
 studies of social interaction.
 
-11. Decision of the Court of Appeals of Georgia, Fourth Division, December 23,
+11+11. Decision of the Court of Appeals of Georgia, Fourth Division, December 23,
 1999, 2.
 
 
@@ -276,70 +276,70 @@ Intrafamilial Child Sexual Abuse,/" p. 384.
 14. Heim et al., */California National Organization 
 for Women Family Court Report/*, p. iv. 
 
-15. */Id./*
+15+15. */Id./*
 
-16. The report was produced by the Battered Mothers’ Testimony Project at the
+16+16. The report was produced by the Battered Mothers’ Testimony Project at the
 Wellesley Centers for Women, November 2002. The report was authored by
 Carrie Cuthbert, Kim Slote, Monica Ghosh Driggers, Cynthia Mesh, Lundy
 Bancroft, and Jay Silverman.
 
-17. Silverman et al., "/Child Custody Determinations in Cases Involving Intimate
+17+17. Silverman et al., "/Child Custody Determinations in Cases Involving Intimate
 Partner Violence./"
 
-18. The report was authored by Dianne Post and Kisa Corcoran.
+18+18. The report was authored by Dianne Post and Kisa Corcoran.
 
-19. See Rothman and Watson (1990). This report of the Judicial Council Advisory
+19+19. See Rothman and Watson (1990). This report of the Judicial Council Advisory
 Committee on Gender Bias in the Courts was issued under the auspices of the
 Administrative Office of the Courts of California. The committee was chaired
 by Los Angeles Superior Court Judge David M. Rothman and Senator Diane E.
 Watson of Los Angeles.
 
-20. Winner, */Findings on Judge Michael Dufficy, Commissioner Sylvia Shapiro, and
+20+20. Winner, */Findings on Judge Michael Dufficy, Commissioner Sylvia Shapiro, and
 Court-Appointees in Marin County’s Superior Court in California/*, p. 4.
 
-21. Winner, */Placing Children at Risk: Questionable Psychologists and Therapists in
+21+21. Winner, */Placing Children at Risk: Questionable Psychologists and Therapists in
 the Sacramento Family Court and Surrounding Counties/*, p. 7.
 
-22. Kramer, "/Justice Denied,/" p. 17.
+22+22. Kramer, "/Justice Denied,/" p. 17.
 
-23. Testimony given at a joint New York State legislative hearing sponsored by
+23+23. Testimony given at a joint New York State legislative hearing sponsored by
 four committees: Assembly Committee on Judiciary; Assembly Committee
 on Children and Families; Senate Committee on Child Care; and Assembly
 Subcommittee on Family Law (March 9, 1989).
 
-24. Nicholson and Bulkley, */Sexual Abuse Allegations 
+24+24. Nicholson and Bulkley, */Sexual Abuse Allegations 
 in Custody and Visitation Cases/*.
 
-25. */American Jurisprudence Proof of Facts/*, 3rd ed., vol. 33, section 303, p. 327.
+25+25. */American Jurisprudence Proof of Facts/*, 3rd ed., vol. 33, section 303, p. 327.
 
-26. */Id./*, pp. 315%-316.
+26+26. */Id./*, pp. 315%-316.
 
-27. Men’s Equality Now newsletter, September/October 1982. Apart from Armstrong, feminist writer Trish Wilson has looked into the activities of father’s
+27+27. Men’s Equality Now newsletter, September/October 1982. Apart from Armstrong, feminist writer Trish Wilson has looked into the activities of father’s
 rights groups in her article "/Will Paternal Paranoia Triumph?/"
 
-28. Columnist Mike McAlary ("/Court with the Disney Touch/") wrote that the judge
+28+28. Columnist Mike McAlary ("/Court with the Disney Touch/") wrote that the judge
 was "/regarded as extremely weak on sexual abuse cases/" (p. 5).
 
-29. Testimony given at a joint New York State legislative hearing sponsored by
+29+29. Testimony given at a joint New York State legislative hearing sponsored by
 four committees: Assembly Committee on Judiciary; Assembly Committee
 on Children and Families; Senate Committee on Child Care; and Assembly
 Subcommittee on Family Law (March 9, 1989), p. 394.
 
-30. Letter from Humberto Middleton, December 20, 1991.
+30+30. Letter from Humberto Middleton, December 20, 1991.
 
-31. Winner, */Divorced from Justice/*, p. 133.
+31+31. Winner, */Divorced from Justice/*, p. 133.
 
-32. Kerrison, "/Pleas for a Dying Child Go Unheeded,/" p. 14.
+32+32. Kerrison, "/Pleas for a Dying Child Go Unheeded,/" p. 14.
 
-33. Kerrison, "/Anguished Mothers Beg for Help,/" p. 2.
+33+33. Kerrison, "/Anguished Mothers Beg for Help,/" p. 2.
 
-34. Kerrison, "/Exposing Dads Who Rape their Children,/" p. 2.
+34+34. Kerrison, "/Exposing Dads Who Rape their Children,/" p. 2.
 
-35. Hanson, "/The Sex Abuse Controversy,/" p. 258.
+35+35. Hanson, "/The Sex Abuse Controversy,/" p. 258.
 
-36. Nance, "/Validation Evidence Poses Issue in Child Abuse Cases,/" pp. 1%-2.
+36+36. Nance, "/Validation Evidence Poses Issue in Child Abuse Cases,/" pp. 1%-2.
 
-37. */Turner v. Turner/*, 689 N.Y.S.2d 269 (3rd Dept., 1999). To understand the full
+37+37. */Turner v. Turner/*, 689 N.Y.S.2d 269 (3rd Dept., 1999). To understand the full
 impact of that ruling, one should bear in mind that the majority of sex abuse
 allegations are never substantiated sufficiently to result in a judicial finding of
 abuse. The nature of the act makes legal proof unusually difficult. This ruling,
@@ -455,7 +455,7 @@ his ruling, even though it was contradicted by documentary proof.
 
 // /  chapter 4
 
-1. The practice of attorneys "/contemplating/" the judge as a guide to how to present
+1+1. The practice of attorneys "/contemplating/" the judge as a guide to how to present
 their case occurs in other legal matters as well. As discussed in the previous
 chapter, Lynch (1997) points out that in criminal proceedings "/attorneys invoke 
 the judge as an organizational principle that locally governs the presentation of
@@ -463,10 +463,10 @@ the case at hand . . . they incorporate the judge into the practical organizatio
 the projected cases, and by so doing they realize the judge in their procedures
 for presenting cases at hand/" (p. 103).
 
-2. Appellate brief, January 31, 1989, p. 78. See Kerrison, "/Incredible Return of
+2+2. Appellate brief, January 31, 1989, p. 78. See Kerrison, "/Incredible Return of
 Misogynist a Disgrace,/" p. 4.
 
-3. Women are often blamed by judges for any hostility their children show toward
+3+3. Women are often blamed by judges for any hostility their children show toward
 their fathers. For instance, in one published case, the record shows that a divorced father (stationed overseas in military service) had a drinking problem,
 was "/frequently violent when intoxicated,/" had assaulted his wife, and reportedly
 became hostile when he came to visit the children, on one occasion "/breaking
@@ -483,10 +483,10 @@ An appellate court reversed the judge, stating, "/We find no basis in the record
 for his conclusions./" */Ridley v. Dennison/*, 689 A.2d 793 (App. Div., 1997). Such
 reversals appear to be more the exception than the rule.
 
-4. Transcript, October 21, 1986, pp. 6%-8; transcript, October 22, 1986, pp. 5%-6,
+4+4. Transcript, October 21, 1986, pp. 6%-8; transcript, October 22, 1986, pp. 5%-6,
 18%-23.
 
-5. An official report from a senior assistant state attorney to Connecticut’s state’s
+5+5. An official report from a senior assistant state attorney to Connecticut’s state’s
 attorney (written in October 1998, after the boys had been placed with their father and the mother had been thrown in jail) also concluded that "/a reasonable
 parent in [the mother’s] position in February, 1994, would have believed that J.
 W. and B. W. had been sexually abused by [the father] and [his sister]/" and recites considerable evidence in support of this conclusion. The report goes on to
@@ -494,19 +494,19 @@ state that "/if her boys have been sexually abused,/" as the mother reasonably b
 while it has sent her to jail, has been one of the most gravely victimized parents ever to seek protection from the legal system./" Unfortunately, as this book
 demonstrates, her case does not stand alone.
 
-6. Transcript, July 7, 1993, pp. 5%-11.
+6+6. Transcript, July 7, 1993, pp. 5%-11.
 
-7. Transcript of testimony in chambers, June 9, 1993.
+7+7. Transcript of testimony in chambers, June 9, 1993.
 
-8. Transcript, June 15, 1993; order dated June 15, 1993, pp. 1%-2.
+8+8. Transcript, June 15, 1993; order dated June 15, 1993, pp. 1%-2.
 
-9. Affidavit supporting CPS petition, August 10, 1983. The affidavit also states that
+9+9. Affidavit supporting CPS petition, August 10, 1983. The affidavit also states that
 the infant’s seven-year-old sister had personally seen the father touching the
 infant’s genitals "/for an extended period of time./"
 
-10. Affidavit of mother, July 25, 1986, p. 8.
+10+10. Affidavit of mother, July 25, 1986, p. 8.
 
-11. */Id./* 
+11+11. */Id./* 
 
 12. */Id./*, p. 12.
 
@@ -603,15 +603,15 @@ taken from this report.
 
 37. There is no record that the family court judge even forwarded these transcripts
 to the appellate court, as required by New York law; New York Family Court Act
-§ 664(b), Civil Practice Law %& Rules § 4019; see */Fleishman v. Walters/*, 40 A.D.2d
-622. In theory, an appellate court should not accept a family court custody ruling
+§ 664(b), Civil Practice Law & Rules § 4019; see */Fleishman v. Walters/*, 40 A.D.2d
+38+622. In theory, an appellate court should not accept a family court custody ruling
 if it is based more on private interviews than on evidence taken in court; */People
 ex rel. Kessler v. Cotter/*, 285 a.d. 206. In practice, appellate courts rarely give
 family court decisions close scrutiny.
 
 39. Transcript of hearing, July 13, 1989, pp. 2%-6.
 
-40. Interview on radio program */New York %& Company/*, WNYC (New York, New
+40. Interview on radio program */New York & Company/*, WNYC (New York, New
 York), November 30, 1989.
 
 41. */Lincoln v. Lincoln/*, 24 N.Y.2d 270.
@@ -628,48 +628,48 @@ states.
 motivated the judge, the decision contains derogatory statements about the
 mother that are unsupported by the record. 
 
-46. Written statement of Robert Geffner, PhD, June 1999. Dr. Geffner wrote that
+46+46. Written statement of Robert Geffner, PhD, June 1999. Dr. Geffner wrote that
 he still thought disclosure might violate ethical guidelines and even federal law.
 Evidently that was less important to the judge than the desire to control%--or
 punish%--the protective mother.
 
-47. Mother’s complaint to the New York State Grievance Committee, March 5, 1999,
+47+47. Mother’s complaint to the New York State Grievance Committee, March 5, 1999,
 p. 2.
 
-48. */Id./*
+48+48. */Id./*
 
-49. Nassau County Medical Center report, June 14, 1993.
+49+49. Nassau County Medical Center report, June 14, 1993.
 
-50. Two other mothers whose cases had been before Judge Deutsch reportedly committed suicide. See Mike McAlary, "/Court with Disney Touch,/" p. 28; and Viva,
+50+50. Two other mothers whose cases had been before Judge Deutsch reportedly committed suicide. See Mike McAlary, "/Court with Disney Touch,/" p. 28; and Viva,
 "/Women and Children Last,/" p. 115.
 
-51. Testimony before New York State Senate, July 13, 1989, p. 1.
+51+51. Testimony before New York State Senate, July 13, 1989, p. 1.
 
-52. Jayakar testimony, May 18, 1989, p. 20.
+52+52. Jayakar testimony, May 18, 1989, p. 20.
 
-53. */Id./*, pp. 21%-22.
+53+53. */Id./*, pp. 21%-22.
 
-54. */Id./*, p. 22.
+54+54. */Id./*, p. 22.
 
-55. */Id./*, p. 23.
+55+55. */Id./*, p. 23.
 
-56. Transcript, November 29, 1990, p. 17.
+56+56. Transcript, November 29, 1990, p. 17.
 
-57. Psychiatrist’s report, November 13, 1990.
+57+57. Psychiatrist’s report, November 13, 1990.
 
-58. Transcript, November 29, 1990, p. 2.
+58+58. Transcript, November 29, 1990, p. 2.
 
-59. */Id./*, p. 5.
+59+59. */Id./*, p. 5.
 
-60. */Id./*, p. 6.
+60+60. */Id./*, p. 6.
 
-61. */Id./*, p. 16.
+61+61. */Id./*, p. 16.
 
-62. */Id./*, p. 3.
+62+62. */Id./*, p. 3.
 
-63. */Id./*, p. 7.
+63+63. */Id./*, p. 7.
 
-64. Decision of May 1993. Despite the relatively cautious wording of this decision,
+64+64. Decision of May 1993. Despite the relatively cautious wording of this decision,
 its real meaning was perfectly obvious to other judges who inherited the case.
 An appellate judge would describe the earlier decision this way: "/[The judge]
 questioned her motivations, her credibility and her mental stability. It is clear
@@ -684,11 +684,11 @@ did the earlier judge ever actually conclude that the charges had been false. Th
 not exist in any legal sense. The "/record/" had been written, so to speak, between
 the lines.
 
-65. Decision of June 15, 1993, p. 2.
+65+65. Decision of June 15, 1993, p. 2.
 
-66. Decision of December 18, 1997.
+66+66. Decision of December 18, 1997.
 
-67. Appellate brief, September 1998, and reply brief, October 5, 1998. Remarkably,
+67+67. Appellate brief, September 1998, and reply brief, October 5, 1998. Remarkably,
 none of these points were denied by the father’s attorneys. Their brief continued
 the pattern of burying the mother under hostile epithets; they scarcely even attempted to justify the (by then) familiar labels. They called the mother "/litigious/"
 even though they did not deny that it was the father, not the mother, who had insisted on litigating the issues raised in the appeal. In another flourish (unadorned 
@@ -1014,95 +1014,95 @@ attorneys%--including the ex-husband’s attorney%--were "/prepared./"
 
 21. Evaluation, p. 9. 
 
-22. Caseworker memorandum, p. 5.
+22+22. Caseworker memorandum, p. 5.
 
-23. Transcript, November 8, 2000, p. 43.
+23+23. Transcript, November 8, 2000, p. 43.
 
-24. The caseworker’s memo contains other false statements that may have originated
+24+24. The caseworker’s memo contains other false statements that may have originated
 with the GAL, although her memo does not directly say so. For instance, the
 memo states (p. 3) that the court-appointed psychologist in Maryland found that
 the mother "/has no rational thoughts at this time,/" that she "/is getting worst [sic],/"
 that her "/disorder is hard to treat,/" and that she had "/fired 4%-5 of her attorneys./"
 */Not one/* of these statements actually appears in the psychologist’s testimony.
 
-25. Strictly speaking, the "/law guardian/" in this case was an agency, the Legal Aid
+25+25. Strictly speaking, the "/law guardian/" in this case was an agency, the Legal Aid
 Society of New York, Kings County. The references to the "/law guardian/" here
 apply to the supervising attorney assigned to the case, who indeed personally
 handled nearly all of the litigation on behalf of the agency.
 
-26. Transcript, March 17, 1987.
+26+26. Transcript, March 17, 1987.
 
-27. Appellant’s brief, January 31, 1988, pp. 20%-21; affidavit of Marjori Schecter,
+27+27. Appellant’s brief, January 31, 1988, pp. 20%-21; affidavit of Marjori Schecter,
 November 13, 1992; transcript of state legislative hearing, May 14, 1993, pp.
 20%-32.
 
-28. Fifield and Lesher, "/A Child’s at Stake./"
+28+28. Fifield and Lesher, "/A Child’s at Stake./"
 
-29. Letter of law guardian, June 8, 1993.
+29+29. Letter of law guardian, June 8, 1993.
 
-30. Closing argument of law guardian, June 9, 1993, pp. 168%-169.
+30+30. Closing argument of law guardian, June 9, 1993, pp. 168%-169.
 
-31. Transcript, July 27, 1993.
+31+31. Transcript, July 27, 1993.
 
-32. Attorney for [children’s] position re: custody/visitation, August 11, 1993.
+32+32. Attorney for [children’s] position re: custody/visitation, August 11, 1993.
 
-33. Letter of December 4, 1995 from Dr. Lenore Walker.
+33+33. Letter of December 4, 1995 from Dr. Lenore Walker.
 
-34. Affidavit of law guardian in support of motion for Order to Show Cause, signed
+34+34. Affidavit of law guardian in support of motion for Order to Show Cause, signed
 December 16, 1993 (entered December 23), p. 2.
 
-35. The Children’s Hospital, Child Advocacy and Protection Team, October 1, 1991,
+35+35. The Children’s Hospital, Child Advocacy and Protection Team, October 1, 1991,
 pp. 2, 4%-5.
 
-36. */Id./*, p. 4.
+36+36. */Id./*, p. 4.
 
-37. Humana Hospital Aurora, September 20, 1991, p. 1.
+37+37. Humana Hospital Aurora, September 20, 1991, p. 1.
 
-38. The Children’s Hospital, Child Advocacy and Protection Team, October 1, 1991,
+38+38. The Children’s Hospital, Child Advocacy and Protection Team, October 1, 1991,
 p. 6.
 
-39. Law guardian’s closing argument, February 19, 1991, p. 3.
+39+39. Law guardian’s closing argument, February 19, 1991, p. 3.
 
-40. Verified motion for payment of expert witness consultation fee, November 6,
+40+40. Verified motion for payment of expert witness consultation fee, November 6,
 1989, p. 2.
 
-41. Decision of the Kentucky Court of Appeals, dissenting opinion of Judge Michael
+41+41. Decision of the Kentucky Court of Appeals, dissenting opinion of Judge Michael
 O. McDonald, March 17, 1995, p. 33.
 
-42. */Id./*, pp. 30%-31.
+42+42. */Id./*, pp. 30%-31.
 
-43. As noted earlier in this book, "/ex parte/" contact between a judge and one of the
+43+43. As noted earlier in this book, "/ex parte/" contact between a judge and one of the
 attorneys in a case, without the others’ knowledge and consent, is a breach of
 legal and judicial ethics (emphasis added).
 
-44. Dissenting opinion, p. 33.
+44+44. Dissenting opinion, p. 33.
 
-45. */Id./*, p. 34.
+45+45. */Id./*, p. 34.
 
-46. */Id./*, p. 33, n. 7.
+46+46. */Id./*, p. 33, n. 7.
 
-47. Bennett, "/Book Citing Hardin Case Stirs Debate,/" p. B1.
+47+47. Bennett, "/Book Citing Hardin Case Stirs Debate,/" p. B1.
 
-48. Judge McDonald later gave permission to have his dissenting opinion published
+48+48. Judge McDonald later gave permission to have his dissenting opinion published
 in full in the popular press. See Winner, */Divorced from Justice/*, appendix VI, pp.
 270%-280. 
 
-49. Bennett, "/Controversial Case Can’t Be Cited Later,/" p. B1.
+49+49. Bennett, "/Controversial Case Can’t Be Cited Later,/" p. B1.
 
-50. Appellate decision, p. 37 (emphasis added).
+50+50. Appellate decision, p. 37 (emphasis added).
 
-51. Mother’s complaint to the New York State Grievance Committee, March 5, 1999,
+51+51. Mother’s complaint to the New York State Grievance Committee, March 5, 1999,
 p. 2.
 
-52. Grace Moran, chief counsel for the State of New York Grievance Committee for
+52+52. Grace Moran, chief counsel for the State of New York Grievance Committee for
 the Tenth Judicial District, March 23, 1999.
 
-53. Mother’s complaint to the New York State Grievance Committee, March 5, 1999,
+53+53. Mother’s complaint to the New York State Grievance Committee, March 5, 1999,
 p. 1.
 
-54. */Krause v. Krause/* (Docket No. C 02%-5277 JSW, N.D. Cal.).
+54+54. */Krause v. Krause/* (Docket No. C 02%-5277 JSW, N.D. Cal.).
 
-55. We have not located any cases in which children, having reached the age of
+55+55. We have not located any cases in which children, having reached the age of
 majority, were permitted to sue their former law guardians for legal malpractice. However, some case law in New York suggests that such a suit might be
 possible if the law guardian is clearly incompetent or fails to act in good faith.
 See */Matter of Jamie TT/*, 191 A.D.2d 132, 599 N.Y.S.2d 892 (3rd Dept., 1993);
@@ -1110,16 +1110,16 @@ See */Matter of Jamie TT/*, 191 A.D.2d 132, 599 N.Y.S.2d 892 (3rd Dept., 1993);
 Even this hint of possible legal liability for bad law guardians appears to be the
 exception rather than the rule.
 
-56. Krause, "/Letting Children Speak for Themselves,/" p. 4.
+56+56. Krause, "/Letting Children Speak for Themselves,/" p. 4.
 
-57. 537 A.2d 1227, 109 NJ 396.
+57+57. 537 A.2d 1227, 109 NJ 396.
 
-58. Personal communications with the mother from November 1993 to December
+58+58. Personal communications with the mother from November 1993 to December
 1999.
 
-59. Agus, "/A Mother’s Cry from the Grave,/" p. 8.
+59+59. Agus, "/A Mother’s Cry from the Grave,/" p. 8.
 
-60. Petition of law guardian, October 5, 1992, p. 2. The law guardian’s petition
+60+60. Petition of law guardian, October 5, 1992, p. 2. The law guardian’s petition
 claimed that her inability to contact the mother that day posed an "/imminent
 risk of harm/" to the child. This bit of nonsense worked in family court; when
 faced with a */real/* court%--the Appellate Division%--the law guardian did not even
@@ -1128,7 +1128,7 @@ the order (*/New York Law Journal/*, November 30, 1992, p. 31, col. 3). As we ha
 seen, family courts are a breed apart, and law guardians know it. Unfortunately,
 law guardians are rarely subjected to higher court review.
 
-61. This mother was not the only one to complain about this particular law guardian.
+61+61. This mother was not the only one to complain about this particular law guardian.
 We have examined three other cases involving her. In one case, the law guardian
 allegedly threatened the mother with prosecution for "/neglect/" if she did not
 stipulate to a custody award to the father after a controversial 
@@ -1141,15 +1141,15 @@ despite a report of sexual abuse by the father, the mother lost custody and all
 visitation rights. When she died of heart failure at forty-six, her parents were
 denied all access to their granddaughter.
 
-62. Berger, "/Three Deaths,/" p. 25.
+62+62. Berger, "/Three Deaths,/" p. 25.
 
-63. Report of Virginia Strand, PhD, November 27, 1992, p. 3.
+63+63. Report of Virginia Strand, PhD, November 27, 1992, p. 3.
 
-64. Sherman, "/'/No Choice,/'/" p. 8.
+64+64. Sherman, "/'/No Choice,/'/" p. 8.
 
-65. Buckmaster, */*Let My People Go, p. 13. 
+65+65. Buckmaster, */*Let My People Go, p. 13. 
 
-66. Agus, "/A Mother’s Cry from the Grave,/" p. 8.
+66+66. Agus, "/A Mother’s Cry from the Grave,/" p. 8.
 
 67. United States District Court, Northern District of California, July 13, 2015, p. 2.
 
@@ -1199,7 +1199,7 @@ circumstances of a given case.
 6. Transcript, March 17, 1987.
 
 7. The study was funded by a grant from the National Center on Child Abuse and
-Neglect (grant %# 90-CA-1519).
+Neglect (grant # 90-CA-1519).
 
 8. Personal communication between Amy Neustein and Professors Marta Lundy
 and Carol Rippey Massat, January 21, 1994.
@@ -1223,47 +1223,47 @@ on the protective parent problem.
 
 15. Memorandum of social worker, February 8, 2001. 
 
-16. */Id./*; psychological evaluation, November 21, 2000, p. 9; letter of psychologist summarizing his review of the transcript of children’s interviews at Child
+16+16. */Id./*; psychological evaluation, November 21, 2000, p. 9; letter of psychologist summarizing his review of the transcript of children’s interviews at Child
 Advocacy Center in June%-July 2000 (undated), pp. 2%-3.
 
-17. Letter of therapist, June 22, 2000.
+17+17. Letter of therapist, June 22, 2000.
 
-18. Temporary Custody Order (Maryland), February 21, 2001.
+18+18. Temporary Custody Order (Maryland), February 21, 2001.
 
-19. Transcript of deposition, June 6, 2001, pp. 147, 158%-159.
+19+19. Transcript of deposition, June 6, 2001, pp. 147, 158%-159.
 
-20. Family Court Act § 1012(f).
+20+20. Family Court Act § 1012(f).
 
-21. C.S.R. § 19-3-102(1).
+21+21. C.S.R. § 19-3-102(1).
 
-22. California Penal Code § 11165.2.
+22+22. California Penal Code § 11165.2.
 
-23. See */In re/* E.H., 718 A.2d 162 (D.C., 1998).
+23+23. See */In re/* E.H., 718 A.2d 162 (D.C., 1998).
 
-24. Family Court Act § 1027(b).
+24+24. Family Court Act § 1027(b).
 
-25. C.R.S. § 19-3-405(2).
+25+25. C.R.S. § 19-3-405(2).
 
-26. Code of Virginia § 16.1-252(E).
+26+26. Code of Virginia § 16.1-252(E).
 
-27. In the case of a Brooklyn, New York, mother, the judge instructed CPS to charge
+27+27. In the case of a Brooklyn, New York, mother, the judge instructed CPS to charge
 the mother with neglect because she had changed therapists for her sexually
 abused children without first seeking the permission of the court. Even if her
 actions were in violation of a court order (for which contempt remedies could
 have been sought), her actions certainly did not qualify as "/neglect/" under the
 statute. See Pagnozzi, "/Mom Was Trying to Help Her Kids./"
 
-28. Personal communication with Michael Lesher, May 1997.
+28+28. Personal communication with Michael Lesher, May 1997.
 
-29. New York State Department of Social Services, October 4, 1995, pp. 1%-2.
+29+29. New York State Department of Social Services, October 4, 1995, pp. 1%-2.
 
-30. Discharge summary, November 21, 1994, pp. 1%-2.
+30+30. Discharge summary, November 21, 1994, pp. 1%-2.
 
-31. Neglect petition, May 31, 1996, p. 3 (emphasis added).
+31+31. Neglect petition, May 31, 1996, p. 3 (emphasis added).
 
-32. */Id./*
+32+32. */Id./*
 
-33. The source of these claims was, in fact, the DA’s counselor, who in turn heard
+33+33. The source of these claims was, in fact, the DA’s counselor, who in turn heard
 them from a social worker who had met the mother at the battered women’s
 shelter and (according to the mother) had pressured her to place her son with a
 foster care agency with which the social worker was professionally connected.
@@ -1276,16 +1276,16 @@ improper diagnosis, conveyed to a judge in the form of double hearsay. But as
 usual in family court, agency chatter was accepted as truth until long after the
 child was removed from his home.
 
-34. We describe in Chapter 3 how family courts rely on the "/running record,/" which
+34+34. We describe in Chapter 3 how family courts rely on the "/running record,/" which
 is built up by and shared with "/insiders,/" at key points in the legal 
 decision-making process. The "/running record/" may well be based on claims or beliefs
 that are not grounded in fact.
 
-35. CPS case summary notes, November 15, 1995.
+35+35. CPS case summary notes, November 15, 1995.
 
-36. Affidavit for Ex Parte Custody Order, February 28, 1989, pp. 1%-3.
+36+36. Affidavit for Ex Parte Custody Order, February 28, 1989, pp. 1%-3.
 
-37. Addendum to affidavit for Ex Parte Custody Order, March 1, 1989, p. 1. Ironically, CPS evidently had a budget for the costs of foster care placement but not
+37+37. Addendum to affidavit for Ex Parte Custody Order, March 1, 1989, p. 1. Ironically, CPS evidently had a budget for the costs of foster care placement but not
 for proper monitoring of visits. Unfortunately, CPS’s choice in this case is similar
 to many others made regularly by CPS agencies across the country. Investigative 
 reporter Richard Wexler found that CPS agencies readily place children in foster
@@ -1458,12 +1458,12 @@ Child Advocacy and Protective Service, August 1, 2019, p. 16.
 
 82. */Id./* 
 
-83. Adjudication Order, Circuit Court of Cook County, Illinois Department of
+83+83. Adjudication Order, Circuit Court of Cook County, Illinois Department of
 Juvenile Justice and Child Protection, Child Protection Division, March 4, 2021.
 
-84. */Id./*, p.1.
+84+84. */Id./*, p.1.
 
-85. Notwithstanding the strict guidelines%--defined by state statutes and expounded
+85+85. Notwithstanding the strict guidelines%--defined by state statutes and expounded
 upon in case law%--for bringing "/abuse/" and "/neglect/" charges against a parent,
 protective mothers throughout the country suffer from the arbitrary application
 of abuse and neglect statutes. Such charges of abuse and neglect which are basically "/invented/" terms that are used as a lame excuse to try to justify the state’s
@@ -1487,48 +1487,48 @@ matter but rather a "/special/" case in which child welfare statutes were invoke
 parent in a private child custody proceeding to inure to the benefit of the other
 parent.
 
-86. Adjudication Order, Circuit Court of Cook County, Illinois Department of Juvenile Justice and Child Protection, Child Protection Division, March 4, 2021,
+86+86. Adjudication Order, Circuit Court of Cook County, Illinois Department of Juvenile Justice and Child Protection, Child Protection Division, March 4, 2021,
 p. 1.
 
-87. Zoom hearing in Juvenile Court on visitation matter, November 18, 2022.
+87+87. Zoom hearing in Juvenile Court on visitation matter, November 18, 2022.
 
-88. Supplemental Case Report, Orland Park Police Department, May 14, 2019, p. 2.
+88+88. Supplemental Case Report, Orland Park Police Department, May 14, 2019, p. 2.
 
-89. Zoom hearing in Juvenile Court on visitation matter, November 18, 2022.
+89+89. Zoom hearing in Juvenile Court on visitation matter, November 18, 2022.
 
-90. Neustein, "/Trafficking of Minors by Child Protective Services/Foster Care Agencies/Minor’s Counsel,/" p. 23.
+90+90. Neustein, "/Trafficking of Minors by Child Protective Services/Foster Care Agencies/Minor’s Counsel,/" p. 23.
 
-91. Doctor’s Report, Comer Children’s Emergency Department, University of
+91+91. Doctor’s Report, Comer Children’s Emergency Department, University of
 Chicago, December 26, 2020, p. 3. (Although the mother brought the child into
 the hospital on the evening of Christmas Day, the report had a time stamp of
 December 26 th because it was finalized shortly after midnight.)
 
-92. */Id./*, pp. 1, 3.
+92+92. */Id./*, pp. 1, 3.
 
-93. Nurse’s Report, Comer Children’s Emergency Department, University of
+93+93. Nurse’s Report, Comer Children’s Emergency Department, University of
 Chicago, December 26, 2020, p. 1. 
 
-94. Personal communications between one of the authors and the Chicago mother,
+94+94. Personal communications between one of the authors and the Chicago mother,
 August 31, 2022; October 2, 2022; November 1, 2022.
 
-95. University of Chicago, Comer Children’s Hospital, Child Advocacy and Protective Services Consult, February 28, 2021, p. 1.
+95+95. University of Chicago, Comer Children’s Hospital, Child Advocacy and Protective Services Consult, February 28, 2021, p. 1.
 
-96. */Id./*, p. 2.
+96+96. */Id./*, p. 2.
 
-97. */Id./*
+97+97. */Id./*
 
-98. */Id./*, p. 3.
+98+98. */Id./*, p. 3.
 
-99. */Id./*, p. 4.
+99+99. */Id./*, p. 4.
 
-100. The only other population where there is a rush to place children in foster care
+100+100. The only other population where there is a rush to place children in foster care
 is the Orthodox Jewish population. There, prejudices arise because for a mother
 to bring a charge of sexual abuse against an Orthodox man poses a threat to the
 tightly organized patriarchal structure of that society. By stripping the child of
 its mother, the thorny issue of sex abuse is swept under the rug, which is */sine
 qua non/* for a closed system to be able to maintain its hierarchical structure.
 
-101. University of Chicago, Comer Children’s Hospital, Child Advocacy and Protective Services Consult, February 28, 2021, p. 3.
+101+101. University of Chicago, Comer Children’s Hospital, Child Advocacy and Protective Services Consult, February 28, 2021, p. 3.
 
 
 // / chapter 7
@@ -1574,7 +1574,7 @@ and Child Abuse in Custody Determinations,/" pp. 42, 54.
 
 14. Post and Corcoran, */Battered Mothers’ Testimony Project/*, p. 26. 
 
-15. It should be noted, however, that in actual family court cases the "/experts/" do not
+15+15. It should be noted, however, that in actual family court cases the "/experts/" do not
 hesitate to invest extraordinary time and labor scrutinizing the accusing mother.
 She may undergo months of court-ordered forensic testing. Many protective
 mothers interviewed for this book have expressed amazement that while they
@@ -1582,61 +1582,61 @@ were subjected to time-consuming testing, the parent accused of abuse rarely
 was. Perhaps changing family courts’ priorities would shift, rather than increase,
 family courts’ burdens in such cases.
 
-16. As discussed in more detail below, Gardner never clearly explained how he knew
+16+16. As discussed in more detail below, Gardner never clearly explained how he knew
 when sex abuse charges were false in the first place.
 
-17. Gardner, */True and False Accusations of Child Sex Abuse/*, p. 209.
+17+17. Gardner, */True and False Accusations of Child Sex Abuse/*, p. 209.
 
-18. Green, "/True and False Allegations of Sexual Abuse in Child Custody Disputes,/"
+18+18. Green, "/True and False Allegations of Sexual Abuse in Child Custody Disputes,/"
 p. 452.
 
-19. Hanson, "/The Sex Abuse Controversy,/" p. 258.
+19+19. Hanson, "/The Sex Abuse Controversy,/" p. 258.
 
-20. Deblinger, Stauffer, and Steer, "/Comparative Efficacies of Supportive and Cognitive Behavioral Group Therapies./"
+20+20. Deblinger, Stauffer, and Steer, "/Comparative Efficacies of Supportive and Cognitive Behavioral Group Therapies./"
 
-21. Gardner and Green do not appear to have addressed the fact that the fathers in
+21+21. Gardner and Green do not appear to have addressed the fact that the fathers in
 these divorces may also experience sexual deprivation, a fact that might, after
 all, lead to a heightened likelihood of sexual abuse.
 
-22. Gardner, */True and False Accusations of Child Sex Abuse/*, pp. 220%-221.
+22+22. Gardner, */True and False Accusations of Child Sex Abuse/*, pp. 220%-221.
 
-23. Green, "/True and False Allegations of Sexual Abuse in Child Custody Disputes,/"
+23+23. Green, "/True and False Allegations of Sexual Abuse in Child Custody Disputes,/"
 pp. 451%-452.
 
-24. See Corwin et al., "/Child Sexual Abuse and Custody Disputes,/" p. 102.
+24+24. See Corwin et al., "/Child Sexual Abuse and Custody Disputes,/" p. 102.
 
-25. Froning, Letter to the Editor, p. 665; Faller, Child Sexual Abuse.
+25+25. Froning, Letter to the Editor, p. 665; Faller, Child Sexual Abuse.
 
-26. Corwin et al., "/Child Sexual Abuse and Custody Disputes,/" p. 102.
+26+26. Corwin et al., "/Child Sexual Abuse and Custody Disputes,/" p. 102.
 
-27. Green, "/True and False Allegations of Sexual Abuse in Child Custody Disputes,/"
+27+27. Green, "/True and False Allegations of Sexual Abuse in Child Custody Disputes,/"
 p. 454.
 
-28. Report, July 7, 1987. Dr. Anne Meltzer, who actually drafted New York State’s
+28+28. Report, July 7, 1987. Dr. Anne Meltzer, who actually drafted New York State’s
 guidelines for sex abuse evaluations, had stated her "/strong reason to believe/"
 the child had been abused; psychiatrist Dr. Carmen Alonso found no mental
 illness in the mother.
 
-29. "/Betty C/" would later testify before the US Congress, Subcommittee on Select
+29+29. "/Betty C/" would later testify before the US Congress, Subcommittee on Select
 Education of the Committee on Education and Labor, House of Representatives,
 102nd Congress, 2nd Session, at a hearing looking into abuses of the family court
 system and the misuse of mental health testimony. Hearing transcript, April 20,
 1992, pp. 90%-97.
 
-30. Personal communication between Arthur Greenspan, MD, former associate director of Mount Sinai Medical Center Headache Clinic, and Amy Neustein,
+30+30. Personal communication between Arthur Greenspan, MD, former associate director of Mount Sinai Medical Center Headache Clinic, and Amy Neustein,
 January 18, 1999.
 
-31. New York State Assembly Judiciary Committee, March 9, 1989, and May 18,
+31+31. New York State Assembly Judiciary Committee, March 9, 1989, and May 18,
 1989; US Congress, Subcommittee on Select Education of the Committee on
 Education and Labor, House of Representatives, 102nd Congress, 2nd Session,
 April 20, 1992.
 
-32. Kaplan, S.L. and Kaplan, S.J. "/The Child’s Accusation of Sexual Abuse during a
+32+32. Kaplan, S.L. and Kaplan, S.J. "/The Child’s Accusation of Sexual Abuse during a
 Divorce and Custody Struggle./"
 
-33. Faller, Corwin, and Olafson, "/Literature Review,/" p. 7. 
+33+33. Faller, Corwin, and Olafson, "/Literature Review,/" p. 7. 
 
-34. Gardner wrote prolifically about "/parental alienation syndrome/" (PAS), a term
+34+34. Gardner wrote prolifically about "/parental alienation syndrome/" (PAS), a term
 he first coined in 1985 in a brief article, "/Recent Trends in Divorce and Custody
 Litigation./" His first full discussion of the syndrome, however, appeared in 1987
 in */The Parental Alienation Syndrome and the Differentiation between Fabricated
@@ -1644,29 +1644,29 @@ and Genuine Child Sexual Abuse/*. Then, in 1992, Gardner published an actual
 guide for practitioners in recognizing and treating PAS, */The Parental Alienation
 Syndrome: A Guide for Mental Health and Legal Professionals/*.
 
-35. Gardner, */True and False Accusations of Child Sex Abuse/*, p. 193.
+35+35. Gardner, */True and False Accusations of Child Sex Abuse/*, p. 193.
 
-36. See Gardner, "/Rebuttal to Kathleen Faller’s Article,/" p. 310.
+36+36. See Gardner, "/Rebuttal to Kathleen Faller’s Article,/" p. 310.
 
-37. Bruch, "/Parental Alienation Syndrome and Parental Alienation./"
+37+37. Bruch, "/Parental Alienation Syndrome and Parental Alienation./"
 
-38. */Id./*, p. 530, n 11.
+38+38. */Id./*, p. 530, n 11.
 
-39. */Id./*, p. 531 (emphasis added). Although it is generally accepted that psychosis
+39+39. */Id./*, p. 531 (emphasis added). Although it is generally accepted that psychosis
 rarely appears until late adolescence, Gardner claimed that "/three and four year
 olds are the best subjects for programming a sex-abuse accusation/" (*/True and
 False Accusations of Child Sex Abuse/*, p. 194) and maintained they are receptive
 to the induction of a */folie \'a deux/* psychosis.
 
-40. Personal communication between James Yudes, Esq., and Michael Lesher, June
+40+40. Personal communication between James Yudes, Esq., and Michael Lesher, June
 1997.
 
-41. Apolo, "/Munchausen Syndrome by Proxy,/" p. 92.
+41+41. Apolo, "/Munchausen Syndrome by Proxy,/" p. 92.
 
-42. Sinanan and Haughton, "/Evolution of Variants of the Munchausen Syndrome,/"
+42+42. Sinanan and Haughton, "/Evolution of Variants of the Munchausen Syndrome,/"
 p. 465.
 
-43. Rand, "/Munchausen Syndrome by Proxy: A Complex Type of Emotional Abuse
+43+43. Rand, "/Munchausen Syndrome by Proxy: A Complex Type of Emotional Abuse
 Responsible for Some False Allegations of Child Abuse in Divorce,/" p. 135. It
 should be noted that Rand’s "/contemporary/" version of MSBP differed sharply
 from the syndrome as originally defined. Rand was willing to apply the MSBP
@@ -1674,59 +1674,59 @@ label even when mothers had not induced any symptoms in their children, nor
 exposed them to invasive or dangerous procedures, whereas these were formerly
 both important elements of the syndrome.
 
-44. Rand, "/Munchausen Syndrome by Proxy: Integration of Classic and Contemporary Types,/" p. 83.
+44+44. Rand, "/Munchausen Syndrome by Proxy: Integration of Classic and Contemporary Types,/" p. 83.
 
-45. Faller, "/Allegations of Sexual Abuse in Divorce,/" slide %#10.
+45+45. Faller, "/Allegations of Sexual Abuse in Divorce,/" slide #10.
 
-46. Physician’s letter to the court, May 4, 1996.
+46+46. Physician’s letter to the court, May 4, 1996.
 
-47. Mental health expert’s report to the court, March 22, 1996, p. 9.
+47+47. Mental health expert’s report to the court, March 22, 1996, p. 9.
 
-48. Testimony of expert, April 24, 1996, p. 20.
+48+48. Testimony of expert, April 24, 1996, p. 20.
 
-49. Mental health expert’s report to the court, March 22, 1996, pp. 9%-10.
+49+49. Mental health expert’s report to the court, March 22, 1996, pp. 9%-10.
 
-50. Transcript, April 24, 1996, p. 19. Not only did the mental health expert leave her
+50+50. Transcript, April 24, 1996, p. 19. Not only did the mental health expert leave her
 expertise behind in making this prediction, but she overlooked the practical
 factors militating against flight: the child required steady medical supervision
 from the caretakers she had had since birth, and there was no evidence that
 the mother had ever considered fleeing the jurisdiction or, indeed, ever defied
 a court order.
 
-51. Mental Illness and the Workplace, a conference sponsored by the Association of
+51+51. Mental Illness and the Workplace, a conference sponsored by the Association of
 Health Services Research and National Alliance for the Mentally Ill, December
 8%-9, 1999.
 
-52. Gardner, "/Should Courts Order PAS Children to Visit/Reside with the Alienated
+52+52. Gardner, "/Should Courts Order PAS Children to Visit/Reside with the Alienated
 Parent?/" p. 102. 
 
-53. */Id./*
+53+53. */Id./*
 
-54. Gould, */Conducting Scientifically Crafted Child Custody Evaluations/*, p. 33.
+54+54. Gould, */Conducting Scientifically Crafted Child Custody Evaluations/*, p. 33.
 
-55. For example, see */Sullivan County Dept. 
+55+55. For example, see */Sullivan County Dept. 
 of Social Services v. Richard "/C,/"/* 260
 A.D.2d 680, 687 N.Y.S.2d 470 (3rd Dept., 1999); 
 */Gadomski v. Gadomski/*, 256
 A.D.2d 675, 681 N.Y.S.2d 374; */Rogowski v. Rogowksi/*, 251 A.D.2d 827, 674
 N.Y.S.2d 480.
 
-56. Mental health report, February 12, 1987, p. 7.
+56+56. Mental health report, February 12, 1987, p. 7.
 
-57. */Id./*
+57+57. */Id./*
 
-58. If the judge and his clerk did this%--and no one has ever denied Green’s claim,
+58+58. If the judge and his clerk did this%--and no one has ever denied Green’s claim,
 which was repeated in press coverage of the case%--they acted in violation of the
 canons of judicial ethics.
 
-59. On instructions from the counsel to New York State Senate’s Committee on
+59+59. On instructions from the counsel to New York State Senate’s Committee on
 Crime and Correction, the mother tape-recorded this interview with Dr. Green.
 The family court judge denied her motion to admit these tapes into evidence.
 Transcript, January 19, 1988, p. 24.
 
-60. Report to the court, July 7, 1987, p. 2.
+60+60. Report to the court, July 7, 1987, p. 2.
 
-61. The use of vague psychological signs to predict "/rebellion/" has its historical
+61+61. The use of vague psychological signs to predict "/rebellion/" has its historical
 precedent in the antebellum South. Henrietta Buckmaster pointed out 
 in */Let My People Go/* that when Black fugitive slaves 
 were caught and tried before the courts,
@@ -1736,23 +1736,23 @@ accused of being unsteady and/or dishonest for having tried to escape%--"/one
 week they swore they had no desire for freedom and the next week disappeared/"
 (p. 17).
 
-62. Judge’s notes, January 17, 2001; custody evaluation, June 20, 2003.
+62+62. Judge’s notes, January 17, 2001; custody evaluation, June 20, 2003.
 
-63. Decision, July 14, 1988, p. 23.
+63+63. Decision, July 14, 1988, p. 23.
 
-64. */Id./*, p. 38.
+64+64. */Id./*, p. 38.
 
-65. */Id./*, p. 99.
+65+65. */Id./*, p. 99.
 
-66. */Id./*, p. 104.
+66+66. */Id./*, p. 104.
 
-67. */Id./*, p. 62.
+67+67. */Id./*, p. 62.
 
-68. Trial transcript, June 12, 2001, pp. 45%-50.
+68+68. Trial transcript, June 12, 2001, pp. 45%-50.
 
-69. */Id./*, June 22, 2001, p. 39.
+69+69. */Id./*, June 22, 2001, p. 39.
 
-70. Once a protective mother has been branded with one of the labels endorsed by
+70+70. Once a protective mother has been branded with one of the labels endorsed by
 family court judges, almost anything she says or does may be used against her as
 further "/proof /" of her "/illness./" For example, one protective mother, responding
 to her allegedly abusive ex-husband’s second demand to reduce his child support
@@ -1844,24 +1844,24 @@ p. 24.
 
 104. Mental health report on the child, November 9, 1991, p. 10 (emphasis added). 
 
-105. Letter to the law guardian from the chief of pediatrics at New York Medical
+105+105. Letter to the law guardian from the chief of pediatrics at New York Medical
 College, Department of Pediatrics, June 8, 1992, pp. 1%-2.
 
-106. Mental health report on the child, p. 5.
+106+106. Mental health report on the child, p. 5.
 
-107. Mental health report on the mother, November 9, 1991, p. 7.
+107+107. Mental health report on the mother, November 9, 1991, p. 7.
 
-108. The tests included the Wechsler Adult Intelligence Scale (WAIS); Rorschach;
+108+108. The tests included the Wechsler Adult Intelligence Scale (WAIS); Rorschach;
 the Minnesota Multiphasic Personality Inventory (MMPI); the 
 Goodenough-Draw-a-Person test; and the Millon Clinical Multiaxial Inventory (MCMI).
 
-109. Mental health report on the mother, p. 6.
+109+109. Mental health report on the mother, p. 6.
 
-110. Psychologist’s letter to the mother, November 6, 1992, p. 2.
+110+110. Psychologist’s letter to the mother, November 6, 1992, p. 2.
 
-111. Dr. Arthur Green’s report to the court, July 7, 1987.
+111+111. Dr. Arthur Green’s report to the court, July 7, 1987.
 
-112. Similar emotional responses were found in a study of Australian mothers who
+112+112. Similar emotional responses were found in a study of Australian mothers who
 had received undeserved mental illness labels from family courts. In "/Misdiagnosed Children, Misdiagnosed Parents,/" unpublished doctoral dissertation
 (2003), Helen Hayward-Brown reports the day-to-day psychological effects on a
 mother who was wrongly diagnosed with Munchausen Syndrome by Proxy 
@@ -1873,23 +1873,23 @@ was punctuated by high levels of fear and anger . . . [and] her distress could
 particularly be seen in her attempts to try and comprehend what happened to
 her/" (p. 180).
 
-113. Neustein and Lesher, "/Evaluating PAS,/" pp. 322%-325.
+113+113. Neustein and Lesher, "/Evaluating PAS,/" pp. 322%-325.
 
-114. Transcript of court hearing, November 25, 2021, p. 25; Deposition of father, May
+114+114. Transcript of court hearing, November 25, 2021, p. 25; Deposition of father, May
 28, 2021, pp. 95%-99.
 
-115. Family Court Evaluator’s Questionnaire, January 30, 2022, p. 2.
+115+115. Family Court Evaluator’s Questionnaire, January 30, 2022, p. 2.
 
-116. */Id./*, p. 19.
+116+116. */Id./*, p. 19.
 
-117. Temporary Nonprejudicial Custody Order, "/In the General Court of Justice District Court Division,/" North Carolina Buncombe County, October 17, 2022,
+117+117. Temporary Nonprejudicial Custody Order, "/In the General Court of Justice District Court Division,/" North Carolina Buncombe County, October 17, 2022,
 p. 3.
 
-118. Family Court Evaluator’s Questionnaire, January 30, 2022, p. 19.
+118+118. Family Court Evaluator’s Questionnaire, January 30, 2022, p. 19.
 
-119. */Id./*, p. 5.
+119+119. */Id./*, p. 5.
 
-120. Personal communication between one of the authors and the mother, February
+120+120. Personal communication between one of the authors and the mother, February
 11, 2022. The mother’s concerns about the father’s apparent preoccupation with
 changing his daughter’s clothes warrants consideration particularly among mental health professionals. This issue undoubtedly is beyond the scope of this book.
 However, we must point out that potentially important clinical data%--namely
@@ -1898,19 +1898,19 @@ dismiss a mother’s concerns about her child. All in all, experts who deny the
 validity of sexual abuse have allegedly hampered their own profession by precluding what might be important empirical data for the study and research of
 behavioral patterns associated with alleged sexual abuse.
 
-121. Personal communication between one of the authors and the mother, March 25,
+121+121. Personal communication between one of the authors and the mother, March 25,
 2022.
 
-122. Transcript of court hearing, November 25, 2021, p. 10. 
+122+122. Transcript of court hearing, November 25, 2021, p. 10. 
 
-123. */Id./*, pp. 10%-11.
+123+123. */Id./*, pp. 10%-11.
 
-124. Rybicki, "/Parental Alienation and Enmeshment Issues in Child Custody Cases,/"
+124+124. Rybicki, "/Parental Alienation and Enmeshment Issues in Child Custody Cases,/"
 p. 3.
 
-125. Garber, "/The Dynamics of the Enmeshed Family System Ten Years Later,/" p. 97.
+125+125. Garber, "/The Dynamics of the Enmeshed Family System Ten Years Later,/" p. 97.
 
-126. Shortly before submission of this manuscript, we learned the mother was given
+126+126. Shortly before submission of this manuscript, we learned the mother was given
 temporary custody of her daughter, although the final order had not yet been
 written. The father enjoys generous visitation privileges (although the temporary order has suspended his overnight visits) and, according to the mother,
 continues his efforts to re-litigate the matters that were before the court. However, much to the judge’s credit, she did not buy into the hostile perceptions of
@@ -1920,32 +1920,32 @@ expensive and distressing litigation simply because of the debased mental health
 theories that still pervade the family courts. Other mothers have not been as
 fortunate.
 
-127. Transcript of Family Court of the State of New York, City of New York, County
+127+127. Transcript of Family Court of the State of New York, City of New York, County
 of Kings, February 19, 2021, pp. 16.
 
-128. */Id./*, p. 17.
+128+128. */Id./*, p. 17.
 
-129. */Id./*, p. 55.
+129+129. */Id./*, p. 55.
 
-130. New York City, Administration for Children’s Services, "/Court-Ordered Investigation,/" November 26, 2018, p. 3.
+130+130. New York City, Administration for Children’s Services, "/Court-Ordered Investigation,/" November 26, 2018, p. 3.
 
-131. Transcript of Family Court of the State of New York, City of New York, County
+131+131. Transcript of Family Court of the State of New York, City of New York, County
 of Kings, February 19, 2021, pp. 58, 62%-63. Transcript of Family Court of the
 State of New York, City of New York, County of Kings, February 22, 2021, pp.
 9%-11, 84%-85.
 
-132. Family Court of the State of New York, County of Kings, Decision and Order
+132+132. Family Court of the State of New York, County of Kings, Decision and Order
 After Trial, October 1, 2021, p. 30.
 
-133. */Id./*
+133+133. */Id./*
 
-134. New York City, Administration for Children’s Services, "/Court-Ordered Investigation,/" November 26, 2018, p. 2.
+134+134. New York City, Administration for Children’s Services, "/Court-Ordered Investigation,/" November 26, 2018, p. 2.
 
-135. */Id./*
+135+135. */Id./*
 
-136. */Id./*, p. 7.
+136+136. */Id./*, p. 7.
 
-137. */Id./*
+137+137. */Id./*
 
 
 // /  chapter 8
@@ -2240,7 +2240,7 @@ Maltreatment/*. This text will be referred to hereafter as the "/Greenbook./"
 
 20. */Id./*
 
-21. */Id./*, p. 45. See also Miller and Robuck, Child Abuse %& Domestic Violence, pp.
+21. */Id./*, p. 45. See also Miller and Robuck, Child Abuse & Domestic Violence, pp.
 10%-12.
 
 22. Salcido Carter, "/Advocacy Perspectives on the Greenbook,/" p. 87.

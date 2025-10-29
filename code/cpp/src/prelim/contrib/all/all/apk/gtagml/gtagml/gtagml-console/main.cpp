@@ -32,6 +32,9 @@
 
 #include "textio.h"
 
+
+#include <QRegularExpression>
+
 USING_KANS(GTagML)
 USING_KANS(Util)
 USING_KANS(SDI)
@@ -222,10 +225,48 @@ int main(int argc, char *argv[])
 // file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch10/ch10.gt";
 // folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch10";
 
- file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch11/ch11.gt";
- folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch11";
+// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch11/ch11.gt";
+// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch11";
 
 
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes/notes.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes";
+
+#ifdef HIDE
+ QString outstr;
+
+ u2 note_count = 0;
+
+ KA::TextIO::load_file(file, [&note_count, &outstr](QString& line)
+ {
+  QString l = line;
+  if(line.startsWith("// /"))
+    note_count = 0;
+  else if(line.startsWith("="))
+  {
+   ++note_count;
+   l.replace(0, 1, QString::number(note_count) + ". ");
+  }
+  else
+  {
+   QRegularExpression rx("^(\\d{1,3})[.]");
+   QRegularExpressionMatch rxm = rx.match(l);
+   if(rxm.hasMatch())
+   {
+    ++note_count;
+//    l.prepend(QString::number(note_count) + "+");
+   }
+  }
+
+  outstr += l + "\n";
+  return 0;
+ });
+
+ KA::TextIO::save_file(file + ".n.txt", outstr);
+
+ return 0;
+
+#endif
 
 // QStringList cmdl = get_cmdl(argc, argv, 2, {
 //   {&folder, DEFAULT_GTAGML_FOLDER "/dg/ctg/src"},
