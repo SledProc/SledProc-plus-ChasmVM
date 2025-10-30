@@ -7,7 +7,7 @@
 
 %\pagenumbering{roman}
 
-\setcounter{page}{11}
+\setcounter{page}{328}
 
 \fancyhf{} % Clear all headers and footers first
 
@@ -16,9 +16,9 @@
 \fancyheadoffset[reh]{0pt}
 \fancyheadoffset[loh]{0pt}
     
-\fancyhead[RO]{\textbf{\roman{page}}} % Page number on the right of odd pages
+\fancyhead[RO]{\textbf{\arabic{page}}} % Page number on the right of odd pages
     
-\fancyhead[LE]{\textbf{\roman{page}}} % Page number on the left of even pages
+\fancyhead[LE]{\textbf{\arabic{page}}} % Page number on the left of even pages
     
 \fancyhead[LO]{{\fontfamily{bch}{NOTES}}} % Title on the left of odd pages
     
@@ -51,6 +51,9 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 %\newcommand{\notePage}[1]{ === page #1 === }
 
 \newcommand{\ndash}{--}
+
+
+\newcommand{\notesdiv}[1]{\vspace{2em}\textbf{#1}\vspace{2pt}}
 
 
 \newcommand{\notePage}[1]{}

@@ -30,12 +30,6 @@ id: 1
 y: N/A
 
 
---- Section/start
--l  1
--i  1
--t  Prologue
-
-
 --- Paragraph/start
 id: 2
 r#  318  14  1
@@ -1094,12 +1088,6 @@ id: 46
 y: N/A
 
 
---- Section/start
--l  1
--i  2
--t  introduction
-
-
 --- Paragraph/start
 id: 47
 r#  10446  196  1
@@ -1359,12 +1347,6 @@ r#  12161  226  9
 --- Paragraph/end 
 id: 57
 y: N/A
-
-
---- Section/start
--l  1
--i  3
--t  chapter 1
 
 
 --- Paragraph/start
@@ -2435,12 +2417,6 @@ id: 104
 y: N/A
 
 
---- Section/start
--l  1
--i  4
--t  chapter 2
-
-
 --- Paragraph/start
 id: 105
 r#  18557  377  1
@@ -2635,12 +2611,6 @@ r#  19538  399  65
 --- Paragraph/end 
 id: 112
 y: N/A
-
-
---- Section/start
--l  1
--i  5
--t  chapter 3
 
 
 --- Paragraph/start
@@ -2911,12 +2881,6 @@ r#  23248  453  66
 --- Paragraph/end 
 id: 121
 y: N/A
-
-
---- Section/start
--l  1
--i  6
--t  chapter 4
 
 
 --- Paragraph/start
@@ -6058,12 +6022,6 @@ id: 236
 y: N/A
 
 
---- Section/start
--l  1
--i  7
--t  chapter 5
-
-
 --- Paragraph/start
 id: 237
 r#  48896  919  1
@@ -8150,12 +8108,6 @@ r#  60704  1179  19
 --- Paragraph/end 
 id: 314
 y: N/A
-
-
---- Section/start
--l  1
--i  8
--t  Chapter 6
 
 
 --- Paragraph/start
@@ -10744,12 +10696,6 @@ r#  79086  1531  128
 --- Paragraph/end 
 id: 415
 y: N/A
-
-
---- Section/start
--l  1
--i  9
--t  chapter 7
 
 
 --- Paragraph/start
@@ -14233,12 +14179,6 @@ id: 552
 y: N/A
 
 
---- Section/start
--l  1
--i  10
--t  chapter 8
-
-
 --- Paragraph/start
 id: 553
 r#  97004  1953  1
@@ -14874,12 +14814,6 @@ id: 578
 y: N/A
 
 
---- Section/start
--l  1
--i  11
--t  chapter 9
-
-
 --- Paragraph/start
 id: 579
 r#  101364  2041  1
@@ -15255,12 +15189,6 @@ r#  103147  2083  1
 --- Paragraph/end 
 id: 593
 y: N/A
-
-
---- Section/start
--l  1
--i  12
--t  chapter 10
 
 
 --- Paragraph/start
@@ -15739,12 +15667,6 @@ r#  107583  2160  7
 --- Paragraph/end 
 id: 609
 y: N/A
-
-
---- Section/start
--l  1
--i  13
--t  Chapter 11
 
 
 --- Paragraph/start

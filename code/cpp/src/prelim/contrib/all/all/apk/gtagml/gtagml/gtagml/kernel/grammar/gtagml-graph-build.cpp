@@ -792,7 +792,13 @@ void GTagML_Graph_Build::heading(u1 count1, u1 count2, QString stext, QString lt
 
  if(count1 == 2)
  {
-  section_heading(stext, ltext, count2);
+  if(count2 == 1)
+  {
+   latex_stream_ << "\n\n\\notesdiv{" << ltext << "}\n";
+   set_paragraph_bridge();
+  }
+  else
+    section_heading(stext, ltext, count2);
  }
 
  if(count1 == 3)
