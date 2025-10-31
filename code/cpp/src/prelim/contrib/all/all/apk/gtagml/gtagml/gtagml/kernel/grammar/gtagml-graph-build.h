@@ -221,6 +221,7 @@ class GTagML_Graph_Build
 
  enum class Paragraph_Types {
   N_A, Abstract, P0, P1, Block_Quote,
+  Endnote_Block_Quote,
   Paragraph_Addendum
  };
 
@@ -246,6 +247,8 @@ public:
     return "Abstract";
   case Paragraph_Types::Block_Quote:
     return "bq";
+  case Paragraph_Types::Endnote_Block_Quote:
+    return "nbq";
   case Paragraph_Types::N_A:
     return "N/A";
   case Paragraph_Types::P0:

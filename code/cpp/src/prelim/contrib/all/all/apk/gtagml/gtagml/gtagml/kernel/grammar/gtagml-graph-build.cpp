@@ -946,7 +946,16 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
 
   held_paragraph_types_.push(current_paragraph_type_);
   current_paragraph_type_ = Paragraph_Types::Block_Quote;
+ }
 
+ else if(text == "nblock")
+ {
+  latex_stream_ << "\n\n\\ndnblockQuote{%\n";
+//  xml_writer_.writeStartElement("block-quote");
+  parse_context_.flags.ignore_blank_lines = true;
+
+  held_paragraph_types_.push(current_paragraph_type_);
+  current_paragraph_type_ = Paragraph_Types::Endnote_Block_Quote;
  }
 
 
@@ -955,6 +964,13 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
 void GTagML_Graph_Build::check_blank_line()
 {
  if(current_paragraph_type_ == Paragraph_Types::Block_Quote)
+ {
+  reset_primary();
+//?  latex_stream_ << "\n\\parbreak.2{}\n";
+  latex_stream_ << "\n\\parbreak{}\n";
+ }
+
+ else if(current_paragraph_type_ == Paragraph_Types::Endnote_Block_Quote)
  {
   reset_primary();
 //?  latex_stream_ << "\n\\parbreak.2{}\n";
@@ -1026,7 +1042,17 @@ void GTagML_Graph_Build::single_slash_line()
   parse_context_.flags.ignore_blank_lines = false;
   current_paragraph_type_ = held_paragraph_types_.pop();
  }
+
+ else if(current_paragraph_type_ == Paragraph_Types::Endnote_Block_Quote)
+ {
+  latex_stream_ << "}\\newpage{}\n";
+  parse_context_.flags.ignore_blank_lines = false;
+  current_paragraph_type_ = held_paragraph_types_.pop();
+ }
+
 }
+
+
 
 void GTagML_Graph_Build::paren_ref_global(u2 number, QString text)
 {
