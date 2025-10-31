@@ -59,10 +59,12 @@ public:
   flag_(20, heading_acc)
   flag_(21, justline)
 
+  flag_(22, block_float_mode)
+
 //  flag_(14, inside_tag_body)
 //  flag_(14, inside_html_tag_body)
 
-  flag_(22, inside_html_script_tag)
+//  flag_(22, inside_html_script_tag)
   flag_(23, inside_html_style_tag)
   flag_(24, inside_multi_parent_semis)
   flag_(25, inside_multi_generic)

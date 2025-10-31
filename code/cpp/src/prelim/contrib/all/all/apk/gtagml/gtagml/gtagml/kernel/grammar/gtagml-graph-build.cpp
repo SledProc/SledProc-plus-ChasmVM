@@ -1148,6 +1148,23 @@ void GTagML_Graph_Build::exs_item(u2 number, QString text)
  end_sentence();
 }
 
+void GTagML_Graph_Build::enter_block_float_mode()
+{
+ reset_primary();
+ latex_stream_ << "\\ndntext{";
+ parse_context_.flags.block_float_mode = true;
+
+//? parse_context_.flags.heading_acc = false;
+}
+
+void GTagML_Graph_Build::leave_block_float_mode()
+{
+ reset_primary();
+
+ parse_context_.flags.block_float_mode = false;
+
+ latex_stream_ << "}";
+}
 
 
 void GTagML_Graph_Build::enter_italics_mode()
@@ -1158,9 +1175,7 @@ void GTagML_Graph_Build::enter_italics_mode()
 
  latex_stream_ << "\\textit{";
 
-
  parse_context_.flags.italics_mode = true;
-
 }
 
 void GTagML_Graph_Build::leave_italics_mode()

@@ -456,6 +456,23 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.leave_italics_mode();
  });
 
+
+ add_rule( gtagml_context, "enter-block-float-mode",
+   " \\s* \\[-> "
+   ,[&]
+ {
+  graph_build.enter_block_float_mode();
+ });
+
+ add_rule( flags_all_(parse_context ,block_float_mode),
+   gtagml_context, "leave-block-float-mode",
+   " \\s* ->\\] "
+   ,[&]
+ {
+  graph_build.leave_block_float_mode();
+ });
+
+
  add_rule( gtagml_context, "latex-command-auto-closed",
    " ` (?<cmd-name> \\w+) (?: < (?<arg> [^>]+) > )?; "
    ,[&]
