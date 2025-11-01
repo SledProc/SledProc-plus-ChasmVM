@@ -20,14 +20,15 @@
     
 \fancyhead[LE]{\textbf{\arabic{page}}} % Page number on the left of even pages
     
-\fancyhead[LO]{{\fontfamily{bch}{REFERENCES}}} % Title on the left of odd pages
+\fancyhead[LO]{{\fontfamily{bch}{References}}} % Title on the left of odd pages
     
-\fancyhead[RE]{References} % Author on the right of even pages
+\fancyhead[RE]{REFERENCES} % Author on the right of even pages
     
 %\fancyfoot[C]{Confidential} % "Confidential" in the center of all footers
 
 \setlength{\headsep}{35pt}
 
+\setlength{\parindent}{0pt}
 
 \newcommand{\parbreak}{
 
@@ -48,6 +49,14 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 \usepackage{xcolor}
 
 %\newcommand{\notePage}[1]{ === page #1 === }
+
+\newcommand{\ndash}{--}
+
+\usepackage{xurl}
+
+\newcommand{\urltext}[1]{\url{#1}}
+
+\setlength{\parskip}{1em}
 
 \newcommand{\notePage}[1]{}
 

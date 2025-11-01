@@ -178,6 +178,40 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
 
 }
 
+void _main(QString file, QString folder, QString manfolder)
+{
+ qDebug() << "Folder: " << folder << ", File: " << file;
+ qDebug() << "ManFolder: " << manfolder;
+
+ // file = "/home/nlevisrael/gits/ntxh/wip-sebi/ar/dev/consoles/gtagml/gt/dg/ctg/src/t1.gt";
+
+ // file.clear();
+
+// manfolder.clear();
+// file = "/home/nlevisrael/lehmann/gtagml/lehmann/ideas.gt";
+
+ if(manfolder.isEmpty())
+ {
+  if(file.isEmpty())
+  {
+   GTagML_Folder fld(folder);
+   fld.convert_all_files( &process_gtagml_file );
+  }
+  else
+  {
+   GTagML_Project_Info gpi(folder);
+
+   process_gtagml_file(file, &gpi, nullptr);
+  }
+ }
+ else
+ {
+  GTagML_Folder fld(folder, file, manfolder);
+  fld.convert_all_files( &process_gtagml_file );
+ }
+
+}
+
 
 
 int main(int argc, char *argv[])
@@ -228,9 +262,13 @@ int main(int argc, char *argv[])
 // file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch11/ch11.gt";
 // folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch11";
 
+// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes/notes.gt";
+// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes";
 
- file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes/notes.gt";
- folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references/references.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references";
+
+ _main(file, folder, manfolder);
 
 #ifdef HIDE
  QString outstr;
@@ -277,35 +315,6 @@ int main(int argc, char *argv[])
 //? folder = "/home/.../ntxh-ngml/ar/htxn/sdi-test/t9";
 //? file = "/home/.../ntxh-ngml/ar/htxn/sdi-test/t9/t9.ngml";
 
- qDebug() << "Folder: " << folder << ", File: " << file;
- qDebug() << "ManFolder: " << manfolder;
-
- // file = "/home/nlevisrael/gits/ntxh/wip-sebi/ar/dev/consoles/gtagml/gt/dg/ctg/src/t1.gt";
-
- // file.clear();
-
-// manfolder.clear();
-// file = "/home/nlevisrael/lehmann/gtagml/lehmann/ideas.gt";
-
- if(manfolder.isEmpty())
- {
-  if(file.isEmpty())
-  {
-   GTagML_Folder fld(folder);
-   fld.convert_all_files( &process_gtagml_file );
-  }
-  else
-  {
-   GTagML_Project_Info gpi(folder);
-
-   process_gtagml_file(file, &gpi, nullptr);
-  }
- }
- else
- {
-  GTagML_Folder fld(folder, file, manfolder);
-  fld.convert_all_files( &process_gtagml_file );
- }
  return 0;
 }
 
