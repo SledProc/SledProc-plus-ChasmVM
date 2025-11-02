@@ -265,8 +265,12 @@ int main(int argc, char *argv[])
 // file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes/notes.gt";
 // folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes";
 
- file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references/references.gt";
- folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references";
+// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references/references.gt";
+// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references";
+
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/toc/toc.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/toc";
+
 
  _main(file, folder, manfolder);
 

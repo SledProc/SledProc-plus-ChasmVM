@@ -1,5 +1,5 @@
 
-
+\documentclass[11pt, twoside]{article}
 
 \usepackage{fancyhdr}
 
@@ -7,7 +7,7 @@
 
 %\pagenumbering{roman}
 
-\setcounter{page}{27}
+\setcounter{page}{21}
 
 \fancyhf{} % Clear all headers and footers first
 
@@ -16,13 +16,13 @@
 \fancyheadoffset[reh]{0pt}
 \fancyheadoffset[loh]{0pt}
     
-\fancyhead[RO]{\textbf{\arabic{page}}} % Page number on the right of odd pages
+\fancyhead[RO]{\textbf{\roman{page}}} % Page number on the right of odd pages
     
-\fancyhead[LE]{\textbf{\arabic{page}}} % Page number on the left of even pages
+\fancyhead[LE]{\textbf{\roman{page}}} % Page number on the left of even pages
     
-\fancyhead[LO]{{\fontfamily{bch}{FROM MADNESS TO MUTINY}}} % Title on the left of odd pages
+\fancyhead[LO]{{\fontfamily{bch}{Preface}}} % Title on the left of odd pages
     
-\fancyhead[RE]{The New Legal Landscape} % Author on the right of even pages
+\fancyhead[RE]{PREFACE} % Author on the right of even pages
     
 %\fancyfoot[C]{Confidential} % "Confidential" in the center of all footers
 
@@ -52,7 +52,6 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 \hspace{15pt}}
 
 \newcommand{\ellThree}[2]{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}
-\newcommand{\ellFour}[2]{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}
 
 %\newcommand{\prQuote}[1]{``{#1}''}
 
@@ -99,7 +98,7 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 \newcommand{\prSect}[1]{
 \noindent{%\LARGE{#1}
 %\fontfamily{fmv}%
-\fontsize{25}{14}\selectfont%
+\fontsize{16}{14}\selectfont%
 \textsf{#1}%
 %#1
 }\vspace{2em}
@@ -173,3 +172,14 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 \newcommand{\pfl}{\vspace*{2pt}}
 
 
+\begin{document}
+
+\thispagestyle{empty}
+
+{\fontfamily{pbk}\fontsize{13}{19}\selectfont
+
+\input{preface}
+
+}
+
+\end{document}
