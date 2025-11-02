@@ -1,0 +1,86 @@
+
+
+\usepackage{letltxmacro}
+
+\usepackage{graphicx}
+
+
+
+
+\usepackage{xparse}
+
+
+\NewDocumentCommand\negativeVspace{s m}{%
+\IfBooleanTF#1%
+{\vspace*{-#2}}% star
+{\vspace{-#2}}% no star
+}
+
+
+\NewDocumentCommand\negativeHspace{s m}{%
+\IfBooleanTF#1%
+{\hspace*{-#2}}% star
+{\hspace{-#2}}% no star
+}
+
+
+\NewDocumentCommand\lowerbox{d()m}{%
+\raisebox{-#1}{#2}%
+}
+
+\providecommand{\baselinestretch}{1.0}
+
+\newcommand{\hnull}{\hspace*{0pt}}
+
+
+\edef\oldCCofEXC{\the\catcode`!}
+\edef\oldCCofDASH{\the\catcode`-}
+\edef\oldCCofCOL{\the\catcode`:}
+
+\catcode`!=11
+\catcode`-=11
+
+\edef\newCCofEXC{\the\catcode`!}
+\edef\newCCofDASH{\the\catcode`-}
+\edef\newCCofCOL{11}
+
+\newcommand{\oldCCforEXC}{\catcode`!=\oldCCofEXC}
+\newcommand{\newCCforEXC}{\catcode`!=\newCCofEXC}
+
+\newcommand{\oldCCforDASH}{\catcode`-=\oldCCofDASH}
+\newcommand{\newCCforDASH}{\catcode`-=\newCCofDASH}
+
+\newcommand{\oldCCforCOL}{\catcode`:=\oldCCofCOL}
+\newcommand{\newCCforCOL}{\catcode`:=\newCCofCOL}
+
+
+\newif\if-sdi-show-
+\-sdi-show-false
+
+
+
+\usepackage{etoolbox}
+
+\usepackage{ifthen}
+
+
+
+\newlength\original-baselineskip % original baselineskip
+
+\providecommand{\baselinestretch}{1.0}
+
+\AtBeginDocument{%
+\ifdefempty{\baselinestretch}{%
+\renewcommand{\baselinestretch}{1.0}}{}
+\setlength\original-baselineskip{\baselineskip}%
+\let\original-baselinestretch\baselinestretch%
+} 
+
+
+
+\oldCCforEXC\oldCCforDASH
+
+
+
+%\newcommand{\sss}{\ifSdiShow\sdiSentenceBetweenIcon\fi\ignorespaces}
+

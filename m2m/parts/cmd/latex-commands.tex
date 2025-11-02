@@ -15,14 +15,28 @@
 \makeatletter
 
 
-\newcommand{\fmtSection}[1]{
+\newcommand{\fmtPart}[1]{
 \begin{flushleft}\noindent{\hfill%\LARGE{#1}
 %\fontfamily{fmv}%
-\fontsize{25}{14}\selectfont%
+\fontsize{42}{14}\selectfont%
 \textsf{#1}%
 %#1
 }\vspace{2em}\end{flushleft}
 }
+
+
+
+
+\newcommand{\fmtSection}[1]{
+\begin{flushleft}\noindent{\hfill%\LARGE{#1}
+%\fontfamily{fmv}%
+\fontsize{29}{14}\selectfont%
+\textit{\textsf{#1}}%
+%#1
+}\vspace{2em}\end{flushleft}
+}
+
+
 
 \newcommand{\fmtSubsection}[2]{\vspace{9pt}%
 {\fontsize{#1}{22}\selectfont\noindent\textsf{#2}\par}%

@@ -1,0 +1,5 @@
+--- Global/start
++file  p3.tex
++global-baseline-skip  13.6pt
++global-baseline-stretch  1.0
+
