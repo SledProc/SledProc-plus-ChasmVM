@@ -3,6 +3,8 @@ pdfunite \
 ../foreword/out/foreword.pdf \
 ../preface/out/preface.pdf \
 ../ack/out/ack.pdf \
+../prologue/out/pr.pdf \
+../intro/out/intro.pdf \
 ../parts/out/p1.pdf \
 ../ch1/out/ch1.pdf \
 ../ch2/out/ch2.pdf \
