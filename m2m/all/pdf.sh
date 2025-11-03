@@ -1,4 +1,5 @@
 pdfunite \
+../series/out/series.pdf \
 ../toc/out/toc.pdf \
 ../foreword/out/foreword.pdf \
 ../preface/out/preface.pdf \
