@@ -271,6 +271,9 @@ int main(int argc, char *argv[])
  file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/toc/toc.gt";
  folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/toc";
 
+// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ack/ack.gt";
+// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ack";
+
 
  _main(file, folder, manfolder);
 

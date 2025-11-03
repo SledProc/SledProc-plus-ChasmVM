@@ -1,0 +1,745 @@
+--- Global/start
+
+
+
+--- Paragraph/start
+id: 1
+r#  10  5  4
+
+
+--- Sentence/start
+id: 1
+r#  10  5  4
+
+--- Sentence//end
+id: 1
+r#  975  14  30
+p: .
+t. 
+|  We are deeply grateful to Oxford University Press for their appreciation
+|  of the academic, social, and political importance of this book. In particular, we express our sincere gratitude to Claire M. Renzetti, co-editor,
+|  with Jeffrey L. Edleson, of the Interpersonal Violence book series at Oxford University Press. We had the privilege of working with Dr. Renzetti
+|  on the first edition of From Madness to Mutiny, when she was the editor of The Northeastern Series on Gender, Crime, and Law. Many years
+|  later we reconnected with Dr. Renzetti and proposed a second edition
+|  of this book. Her enthusiasm, encouragement, and support for this subject persisted notwithstanding the intervening years. As this topic cries
+|  out for a strong response from government, and from society writ large,
+|  we are blessed to have a series editor who comprehends the urgency of
+|  redressing a criminally dysfunctional family court system that routinely
+.  subjugates women and children
+
+--- Sentence/end 
+id: 1
+r#  976  14  31
+
+--- Paragraph/end 
+id: 1
+y: N/A
+
+
+--- Paragraph/start
+id: 2
+r#  978  16  1
+
+
+--- Sentence/start
+id: 2
+r#  978  16  1
+
+--- Sentence//end
+id: 2
+r#  1464  20  68
+p: .
+t. 
+|  We also wish to acknowledge the entire team of professionals at Oxford University Press. In particular, we express our gratitude to Dana
+|  Bliss, Executive Editor at Oxford University Press, who conscientiously
+|  shepherded us through each critical stage in bringing this book project
+|  to fruition. His patience, support, and encouragement are deeply appreciated. We thank Mary Funchion, our project editor who meticulously
+.  attended to all the necessary details and did so with so much cheer
+
+
+--- Sentence/switch
+id: 3
+r#  1465  20  69
+
+
+--- Sentence//end
+id: 3
+r#  1701  21  235
+p: .
+t. 
+.  We thank Raja Dharmaraj, project manager at Integra Software Services, for his generous assistance with carefully preparing our manuscript for publication, always remaining calm and respectful during this lengthy and difficult process
+
+
+--- Sentence/switch
+id: 4
+r#  1702  21  236
+
+
+--- Sentence//end
+id: 4
+r#  2319  29  56
+p: .
+t. 
+|  In addition, we thank Associate Professor Margaret B. Drew, University
+|  of Massachusetts, Dartmouth School of Law, for her meticulous review
+|  of our lengthy manuscript. Her insightful, substantive, and practical
+|  editing suggestions were very much appreciated, as it helped to sharpen
+|  and clarify the content of this book. Professor Drew’s powerful and
+|  cogent foreword provides an excellent introduction to the entrenched
+|  problems affecting the family courts throughout the country and, in particular, the plight of mothers who appeal to custody judges to protect
+.  their children from abuse committed by the other parent
+
+--- Sentence/end 
+id: 4
+r#  2320  29  57
+
+--- Paragraph/end 
+id: 2
+y: N/A
+
+
+--- Paragraph/start
+id: 3
+r#  2322  31  1
+
+
+--- Sentence/start
+id: 5
+r#  2322  31  1
+
+--- Sentence//end
+id: 5
+r#  3393  44  41
+p: .
+t. 
+|  Lori Sokol, PhD (psychology), an award-winning author, journalist,
+|  global speaker, and life coach, who serves as executive director
+|  and editor-in-chief of Women’s eNews - a preeminent digital news
+|  service - deserves special recognition. Employing the highest standards
+|  of journalistic integrity, Women’s eNews has published a number of
+|  thought-provoking op-eds written by freelance contributors who have
+|  analyzed the problems in family court from various angles. Dr. Sokol’s
+|  commitment to this issue is commendable. She has shown courage and
+|  conviction in publishing guest opinion editorials that report in painstaking detail on the maladies of the family courts that have damaged the
+|  lives of mothers and children. Women’s eNews serves as a beacon of
+|  light to many protective mothers who closely follow the commentaries
+|  published by this outstanding digital news service. And for good reason. Many public officials look toward Women’s eNews as the leading
+|  platform for women to share their policy views that greatly affect other
+.  women, both at home and in the workplace
+
+--- Sentence/end 
+id: 5
+r#  3394  44  42
+
+--- Paragraph/end 
+id: 3
+y: N/A
+
+
+--- Paragraph/start
+id: 4
+r#  3396  46  1
+
+
+--- Sentence/start
+id: 6
+r#  3396  46  1
+
+--- Sentence//end
+id: 6
+r#  4781  61  67
+p: .
+t. 
+|  Throughout our four-decade-long study of the family court
+|  system, we drew inspiration and strength from a number of individuals, across several professional disciplines, who have worked to shed
+|  light on family courts’ scandalous mistreatment of mothers who seek
+|  help for their children who have been sexually abused by the other parent. These men and women are too numerous to thank individually,
+|  but special acknowledgment must be given to Jeremiah B. McKenna
+|  (now deceased) who served as chief counsel to the New York
+|  State Senate Committee on Crime and Correction and as Executive Director of the Policy Sciences Center at Yale Law School. McKenna’s tireless
+|  efforts (dating back to 1986) to expose the cruelties of the family courts
+|  and child welfare agencies had been a source of hope to many despairing mothers. His championing this issue in the early days served as
+|  a guiding light to his colleagues in the state legislature and to other
+|  government officials around the country. In the early-to-mid 1990s, he
+|  met with members of the US Department of Justice, Child Exploitation
+|  and Obscenity Section. He had a stellar background as a state prosecutor,
+|  appearing on 60 Minutes, and inspired a character portrayal in the 1973 film
+|  Serpico for his role in helping to expose widespread police corruption in
+.  accepting bribes from businessmen, gamblers, and narcotics dealers
+
+--- Sentence/end 
+id: 6
+r#  4782  61  68
+
+--- Paragraph/end 
+id: 4
+y: N/A
+
+
+--- Paragraph/start
+id: 5
+r#  4784  63  1
+
+
+--- Sentence/start
+id: 7
+r#  4784  63  1
+
+--- Sentence//end
+id: 7
+r#  5170  66  23
+p: .
+t. 
+|  Sadly, Jeremiah (Jerry) passed away several years after the publication of the first edition, but his scholarly memoranda and letters to
+|  government officials are still cited today. His devoted wife, Nettie, never
+|  forgets to send a sweet note to us at the outset of every holiday, both secular and religious. Through her encouraging words, she has kept Jerry’s
+.  legacy very much alive
+
+--- Sentence/end 
+id: 7
+r#  5171  66  24
+
+--- Paragraph/end 
+id: 5
+y: N/A
+
+
+--- Paragraph/start
+id: 6
+r#  5173  68  1
+
+
+--- Sentence/start
+id: 8
+r#  5173  68  1
+
+--- Sentence//end
+id: 8
+r#  5237  68  65
+p: .
+t. 
+.  We acknowledge neuropsychologist and family counseling expert Dr
+
+
+--- Sentence/switch
+id: 9
+r#  5238  68  66
+
+
+--- Sentence//end
+id: 9
+r#  6219  79  47
+p: .
+t. 
+|  Robert (Bob) Geffner whose vision to educate and enlighten mental
+|  health professionals led to his founding of several peer-reviewed publications for the study of child sexual abuse trauma, most notably the Journal
+|  of Child Sexual Abuse. Spearheading a unique continuing education
+|  training program for clinicians that introduces advanced research and
+|  clinical methods for assessing and treating intrafamilial (and stranger)
+|  child abuse and trauma, Dr. Geffner has made the Institute on Violence,
+|  Abuse and Trauma (IVAT) a unique institution for therapists who practice in this field. Dr. Geffner has contributed an excellent preface to this
+|  book, explaining in detail how judges, guardians ad litem, mental health
+|  experts, lawyers, and others reduce the complexities of parent-child dynamics to a series of tendentious behavioral labels that become reified,
+|  taking on a life of their own, often resulting in custody and visitation
+.  decisions that are harmful to the abused child
+
+--- Sentence/end 
+id: 9
+r#  6220  79  48
+
+--- Paragraph/end 
+id: 6
+y: N/A
+
+
+--- Paragraph/start
+id: 7
+r#  6222  81  1
+
+
+--- Sentence/start
+id: 10
+r#  6222  81  1
+
+--- Sentence//end
+id: 10
+r#  6903  87  135
+p: .
+t. 
+|  Among those advocates leading this movement to reform the American family courts are many committed feminist authors and activists
+|  who have channeled their frustration and disappointment over the ingrained gender biases in the family court system - causing irreparable
+|  harm to children and deep sorrow to their mothers - into healthy and
+|  productive activism. Siena psychology professor Maureen Mo Therese
+|  Hannah became a dedicated proponent of family court reform. Since
+|  2004, she has brought together protective mothers, child advocates, and
+.  professionals from all over the country for her annual Battered Mothers Custody Conference (BMCC) at Siena College in Albany, New York
+
+
+--- Sentence/switch
+id: 11
+r#  6904  87  136
+
+
+--- Sentence//end
+id: 11
+r#  7110  89  70
+p: .
+t. 
+|  Her tireless efforts and dedication have not waned over time. Her annual conference serves as a nexus for all those concerned about the
+.  gender-based injustices and inequities prevalent in the family courts
+
+
+--- Sentence/switch
+id: 12
+r#  7111  89  71
+
+
+--- Sentence//end
+id: 12
+r#  7589  95  59
+p: .
+t. 
+|  George Washington University Law School Professor Joan S. Meier
+|  serves as an inspiration to mothers trapped in the unjust family court
+|  system as well as to researchers and scholars, who appreciate her production of valid and reliable research findings to substantiate the gravity
+|  of family court malfunction. Her sincerity and commitment to seeing
+|  change is palpable in her many writings in the academic literature and
+.  in her keynote addresses at major conferences and symposia
+
+--- Sentence/end 
+id: 12
+r#  7590  95  60
+
+--- Paragraph/end 
+id: 7
+y: N/A
+
+
+--- Paragraph/start
+id: 8
+r#  7592  97  1
+
+
+--- Sentence/start
+id: 13
+r#  7592  97  1
+
+--- Sentence//end
+id: 13
+r#  8821  112  69
+p: .
+t. 
+|  As director of the National Family Violence Law Center (NFVLC)
+|  at George Washington University Law School, Professor Meier helped
+|  draft a pivotal provision for the Violence Against Women Act 2022
+|  (VAWA) that would set a nationwide standard for family courts in
+|  handling serious child abuse matters under their jurisdiction. Titled
+|  Keeping Children Safe From Family Violence Act
+|  (commonly referred to as Kayden’s Law - named after a Bucks County, Pennsylvania,
+|  seven-year-old girl, Kayden Mancuso, tragically murdered by her abusive father while on a court-ordered unsupervised visit), this provision,
+|  in whole or in part, has already been adopted by seven states in the
+|  United States. The provision, which requires a court to consider abuse
+|  evidence - both new and old - when making custody and visitation decisions, was signed into law by President Biden as a section in VAWA
+|  in March 2022. A good deal of the legwork for garnering the adoption
+|  of this law, and in advocating for the safety of children writ large, was
+|  done by NFVLC Policy Manager Danielle Pollack, whose painstaking
+|  attention to detail helped make NFVLC a preeminent institution for
+.  legislative reform, research, and expert support for child advocates
+
+--- Sentence/end 
+id: 13
+r#  8822  112  70
+
+--- Paragraph/end 
+id: 8
+y: N/A
+
+
+--- Paragraph/start
+id: 9
+r#  8824  114  1
+
+
+--- Sentence/start
+id: 14
+r#  8824  114  1
+
+--- Sentence//end
+id: 14
+r#  9706  124  23
+p: .
+t. 
+|  As a galvanizing force and as an inspiration to many, one of Professor Meier’s study co-authors deserves a special acknowledgment in this
+|  book. Former senior social science analyst at the National Institute of
+|  Justice, Dr. Leora N. Rosen has taken up the cause of protective mothers
+|  with such enthusiasm, devotion, and love that words cannot sufficiently
+|  express our gratitude to her. In addition to her scholarly writings on this
+|  subject, Dr. Rosen is also a very talented composer and vocalist. She
+|  co-wrote a song called The Milk of Human Kindness - which captures the
+|  essence of the mother-child bond so miserably crushed by a corrupt and
+|  jaded court system. With her beautiful soprano voice, Leora performed
+|  the song on radio and inspired many mothers to rise up and fight the behemoth of the family courts. We are blessed to have her as an advocate
+.  for protective mothers
+
+--- Sentence/end 
+id: 14
+r#  9707  124  24
+
+--- Paragraph/end 
+id: 9
+y: N/A
+
+
+--- Paragraph/start
+id: 10
+r#  9709  126  1
+
+
+--- Sentence/start
+id: 15
+r#  9709  126  1
+
+--- Sentence//end
+id: 15
+r#  10767  139  7
+p: .
+t. 
+|  Similar to Dr. Rosen, her co-author of The Hostage Child, Michelle
+|  Etlin, deserves special recognition. Ms. Etlin has devoted her life to helping mothers represent themselves in hostile court settings wherein their
+|  attorneys had abandoned them because of lack of funds or pressure
+|  from the other side. A truly humble, down-to-earth person, Michelle
+|  traveled on Greyhound buses across the country to help countless mothers in remote, small towns fight for their children’s safety. She received
+|  little to no compensation and often paid for her travel and lodging
+|  out-of-pocket. Her goal now is to reunite mothers with children from
+|  whom they have been estranged for many years as a result of family
+|  court decisions favoring abusive fathers in child custody awards while
+|  expunging loving mothers from their children’s lives. Her forthcoming
+|  memoir, The Recap: My 40 Years in the Mothers’ Movement, will
+|  show her success stories in reuniting long-estranged children with the
+|  mothers they undeservedly lost due to the brutality of the family court
+.  system
+
+--- Sentence/end 
+id: 15
+r#  10768  139  8
+
+--- Paragraph/end 
+id: 10
+y: N/A
+
+
+--- Paragraph/start
+id: 11
+r#  10770  141  1
+
+
+--- Sentence/start
+id: 16
+r#  10770  141  1
+
+--- Sentence//end
+id: 16
+r#  11300  147  43
+p: .
+t. 
+|  Two other women stand out for their amazing support of this issue,
+|  although they were neither students of the issue nor victims of the family
+|  court system. Instead, as women of color, they had a deep appreciation of what it was like for the protective mothers who suffered
+|  the ingrained biases of the family court and child welfare system. They
+|  understood all too well how society - with one stroke - can oppress,
+|  marginalize, and disenfranchise people of a particular class for no other
+.  reason than their membership in that class
+
+
+--- Sentence/switch
+id: 17
+r#  11301  147  44
+
+
+--- Sentence//end
+id: 17
+r#  12028  157  26
+p: .
+t. 
+|  The first of these two women is Marian Douglas-Ungaro. As press secretary to Congressman Major Owens (a federal lawmaker representing
+|  New York’s 12\nth{} and then 11\nth{} congressional district from 1983--2007
+|  and a strong legislative force in assisting Black colleges that were
+|  struggling financially), Ms. Douglas-Ungaro put together a successful
+|  political press conference at the Sheraton Manhattan in 1992 to shed
+|  light on the plight of mothers in family courts, focusing in particular
+|  on a tragic case from Brooklyn’s Orthodox Jewish community. Shortly
+|  thereafter, she worked with her friend and colleague, USA Today
+|  award-winning columnist Barbara Reynolds, to successfully bring that case to
+.  worldwide media attention
+
+--- Sentence/end 
+id: 17
+r#  12029  157  27
+
+--- Paragraph/end 
+id: 11
+y: N/A
+
+
+--- Paragraph/start
+id: 12
+r#  12031  159  1
+
+
+--- Sentence/start
+id: 18
+r#  12031  159  1
+
+--- Sentence//end
+id: 18
+r#  12843  168  25
+p: .
+t. 
+|  The second of these unusual women is Venitra Glass, Administrative
+|  Assistant at the Institute for Human Services, an organization of internationally known thought leaders in child welfare policy reform. Venitra
+|  generously and wholeheartedly immersed herself in an historical study of
+|  a major case of extreme and severe child abuse - entailing a lengthy
+|  hospitalization for life-threatening anorexia nervosa, malnutrition, anemia, and
+|  suicidal depression - in Brooklyn’s Orthodox Jewish community in the
+|  late 1980s. Her unwavering belief in a better tomorrow was refreshing. And
+|  her encouragement and moral support were invaluable. At every step of
+|  the way, Venitra showed sensitivity to the cultural conditions of children raised in religious enclaves where acknowledgment of child abuse
+.  is generally discouraged
+
+--- Sentence/end 
+id: 18
+r#  12844  168  26
+
+--- Paragraph/end 
+id: 12
+y: N/A
+
+
+--- Paragraph/start
+id: 13
+r#  12846  170  1
+
+
+--- Sentence/start
+id: 19
+r#  12846  170  1
+
+--- Sentence//end
+id: 19
+r#  13410  176  75
+p: .
+t. 
+|  Among those we would like to acknowledge is emeritus academic
+|  publisher Howard Lipsitz, who, although retired from his stellar career
+|  in education technology, offered us a perspicuous analysis of the failed
+|  family court system by invoking insightful comparisons with other government and judicial systems. In doing so, he inspired us to excogitate
+|  and reflect on the flawed infrastructural substrata of trial courts in
+|  general and, in particular, the dangers posed by a sole jurist, who is
+.  authorized to decide the fate of abused children, often to their detriment
+
+
+--- Sentence/switch
+id: 20
+r#  13411  176  76
+
+--- Paragraph/end 
+id: 13
+y: N/A
+
+
+--- Paragraph/start
+id: 14
+r#  14170  188  1
+
+
+--- Sentence/start
+id: 21
+r#  14170  188  1
+
+--- Sentence//end
+id: 21
+r#  14800  196  8
+p: .
+t. 
+|  We would also like to thank Fort Lee, New Jersey, resident Martin
+|  Epstein for his courage in speaking up when learning of family courts’
+|  atrocious removal of children from loving mothers. As the former president of the Young Israel of Fort Lee, and as a former executive vice
+|  president at the Orthodox Union, one of the largest Orthodox Jewish
+|  organizations in the United States, Martin expressed concern for the
+|  plight of protective mothers across all faiths. In 2022, in responding to a
+|  feature story on the corrupt American family court system appearing in
+|  The Jewish Press, he wrote a poignant Letter to the Editor stating that he
+|  davened [prayed] for a reunion ...\ for all the mothers across America
+|  who have been bereft of their children.Activist, educator, and Orthodox community leader Evelyn
+|  Haies (Founder of Rachel's Children Reclamation Foundation),
+|  who unfortunately succumbed to melanoma before this second edition
+|  was completed, determinedly reached out, even in her last years of life,
+|  to mothers harmed by the family courts and child welfare system. Evelyn referred their cases to us, as she was resolved to see a solution to this
+|  problem and wanted to help in any way she could. Her referrals, in fact,
+|  were quite useful to us in shaping our research findings and analyses for
+|  this book. Notably, her good work lives on in the pages of this second
+.  edition
+
+--- Sentence/end 
+id: 21
+r#  14801  196  9
+
+--- Paragraph/end 
+id: 14
+y: N/A
+
+
+--- Paragraph/start
+id: 15
+r#  14803  198  1
+
+
+--- Sentence/start
+id: 22
+r#  14803  198  1
+
+--- Sentence//end
+id: 22
+r#  15341  203  46
+p: .
+t. 
+|  We also want to acknowledge, among this group of sympathetic ears,
+|  Alan M. Vinegrad, former United States Attorney for the Eastern District of New York, who has consistently shown concern for the plight
+|  of children whose fate has been marked by reckless and irresponsible
+|  family court and child welfare agency decisions. As a form of reality testing, in and of itself, it was very helpful to us to see that another person
+|  was equally outraged by the dire conditions in the family courts which
+.  habitually place mothers and children at risk
+
+--- Sentence/end 
+id: 22
+r#  15342  203  47
+
+--- Paragraph/end 
+id: 15
+y: N/A
+
+
+--- Paragraph/start
+id: 16
+r#  15344  205  1
+
+
+--- Sentence/start
+id: 23
+r#  15344  205  1
+
+--- Sentence//end
+id: 23
+r#  16212  213  154
+p: .
+t. 
+|  We would like to give special acknowledgment to David Holzel,
+|  former managing editor at the Washington Jewish Week, who published an
+|  op-ed in late summer 2022 by one of the authors of this book. What
+|  was remarkable was that when Amy Neustein approached Holzel about
+|  her writing a guest column on the plight of protective mothers, he did not
+|  fall back on the tried-and-true prejudices and fallacies that all women lie about sex
+|  abuse. Instead, Holzel was open to learning more about the dire conditions facing mothers in the family courts, and rightfully asked for proper
+|  documentation to support those contentions. Looking over the material, he saw the issue had merit and published Neustein’s op-ed. Soon
+.  thereafter, her guest column was reprinted in two other Jewish newspapers that were members of the same news consortium as the Washington Jewish Week
+
+
+--- Sentence/switch
+id: 24
+r#  16213  213  155
+
+
+--- Sentence//end
+id: 24
+r#  16386  216  52
+p: .
+t. 
+|  We knew, then and there, that the protective mothers
+|  had found a true angel at this prominent Jewish weekly - a man who
+.  undeniably showed compassion rather than skepticism
+
+--- Sentence/end 
+id: 24
+r#  16387  216  53
+
+--- Paragraph/end 
+id: 16
+y: N/A
+
+
+--- Paragraph/start
+id: 17
+r#  16389  218  1
+
+
+--- Sentence/start
+id: 25
+r#  16389  218  1
+
+--- Sentence//end
+id: 25
+r#  16921  224  49
+p: .
+t. 
+|  And lastly, among our personal circle of friends and neighbors, we
+|  acknowledge Sally Share, a remarkable woman who, as a former (used)
+|  bookstore owner, has a deep appreciation for the passion and zeal of
+|  writers who tackle very difficult subjects. Sally’s kindness, enthusiasm,
+|  and grace were indispensable to us in creating an ambiance of safety
+|  and calm, which was very much needed to produce a book of this importance, and to help bring an end to the senseless misery visited upon
+.  women and children in our nation’s family courts
+
+--- Sentence/end 
+id: 25
+r#  16922  224  50
+
+--- Paragraph/end 
+id: 17
+y: N/A
+
+
+--- Paragraph/start
+id: 18
+r#  16937  227  13
+
+
+--- Sentence/start
+id: 26
+r#  16937  227  13
+
+--- Sentence//end
+id: 26
+r#  16951  227  27
+g. 
+|   @l(-%>) +16925/227/1
+|   +16929/227/5:0=16929/227/5
+|   +16936/227/12:0=16936/227/12
+.   @l() -16936/227/12
+p: .
+t. 
+.  A. N. and M. L
+
+--- Sentence/end 
+id: 26
+r#  16952  227  28
+
+--- Paragraph/end 
+id: 18
+y: N/A
+
+
+--- Paragraph/start
+id: 19
+r#  16966  229  13
+
+
+--- Sentence/start
+id: 27
+r#  16966  229  13
+--- Paragraph/end 
+id: 19
+y: N/A
+
+--- Paragraph/end 
+id: 19
+y: N/A
