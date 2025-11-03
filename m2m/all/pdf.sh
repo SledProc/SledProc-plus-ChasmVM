@@ -1,5 +1,8 @@
 pdfunite \
 ../toc/out/toc.pdf \
+../foreword/out/foreword.pdf \
+../preface/out/preface.pdf \
+../ack/out/ack.pdf \
 ../parts/out/p1.pdf \
 ../ch1/out/ch1.pdf \
 ../ch2/out/ch2.pdf \

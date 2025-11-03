@@ -1,5 +1,5 @@
 
-\documentclass[11pt, twoside]{article}
+
 
 \usepackage{fancyhdr}
 
@@ -7,7 +7,7 @@
 
 %\pagenumbering{roman}
 
-\setcounter{page}{16}
+\setcounter{page}{23}
 
 \fancyhf{} % Clear all headers and footers first
 
@@ -20,9 +20,9 @@
     
 \fancyhead[LE]{\textbf{\roman{page}}} % Page number on the left of even pages
     
-\fancyhead[LO]{{\fontfamily{bch}{Preface}}} % Title on the left of odd pages
+\fancyhead[LO]{{\fontfamily{bch}{Acknowledgements}}} % Title on the left of odd pages
     
-\fancyhead[RE]{PREFACE} % Author on the right of even pages
+\fancyhead[RE]{ACKNOWLEDGEMENTS} % Author on the right of even pages
     
 %\fancyfoot[C]{Confidential} % "Confidential" in the center of all footers
 
@@ -98,7 +98,7 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 \newcommand{\prSect}[1]{
 \noindent{%\LARGE{#1}
 %\fontfamily{fmv}%
-\fontsize{16}{14}\selectfont%
+\fontsize{24}{14}\selectfont%
 \textsf{#1}%
 %#1
 }\vspace{2em}
@@ -172,14 +172,3 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 \newcommand{\pfl}{\vspace*{2pt}}
 
 
-\begin{document}
-
-\thispagestyle{empty}
-
-{\fontfamily{pbk}\fontsize{13}{19}\selectfont
-
-\input{preface}
-
-}
-
-\end{document}

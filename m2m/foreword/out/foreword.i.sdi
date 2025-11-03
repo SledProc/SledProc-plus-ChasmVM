@@ -12,7 +12,7 @@ hp  1
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  1
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  1
 sh  1
 -h  1
@@ -30,7 +30,7 @@ hp  2
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  2
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  2
 sh  1
 -h  2
@@ -44,7 +44,7 @@ sh  1
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  3
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  3
 sh  2
 -h  2
@@ -58,7 +58,7 @@ sh  2
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  4
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  4
 sh  3
 -h  2
@@ -72,7 +72,7 @@ sh  3
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  5
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  5
 sh  4
 -h  2
@@ -86,7 +86,7 @@ sh  4
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  6
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  6
 sh  5
 -h  2
@@ -100,7 +100,7 @@ sh  5
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  7
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  7
 sh  6
 -h  2
@@ -114,7 +114,7 @@ sh  6
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  8
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  8
 sh  7
 -h  2
@@ -132,7 +132,7 @@ hp  3
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  9
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  9
 sh  1
 -h  3
@@ -146,7 +146,7 @@ sh  1
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  10
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  10
 sh  2
 -h  3
@@ -160,7 +160,7 @@ sh  2
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  11
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  11
 sh  3
 -h  3
@@ -174,7 +174,7 @@ sh  3
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  12
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  12
 sh  4
 -h  3
@@ -188,7 +188,7 @@ sh  4
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  13
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  13
 sh  5
 -h  3
@@ -202,7 +202,7 @@ sh  5
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  14
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  14
 sh  6
 -h  3
@@ -216,7 +216,7 @@ sh  6
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  15
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  15
 sh  7
 -h  3
@@ -230,7 +230,7 @@ sh  7
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  16
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  16
 sh  8
 -h  3
@@ -244,7 +244,7 @@ sh  8
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  17
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  17
 sh  9
 -h  3
@@ -258,7 +258,7 @@ sh  9
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  18
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  18
 sh  10
 -h  3
@@ -276,7 +276,7 @@ hp  1
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  19
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  1
 sh  1
 -h  4
@@ -290,7 +290,7 @@ sh  1
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  20
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  2
 sh  2
 -h  4
@@ -304,7 +304,7 @@ sh  2
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  21
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  3
 sh  3
 -h  4
@@ -318,7 +318,7 @@ sh  3
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  22
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  4
 sh  4
 -h  4
@@ -332,7 +332,7 @@ sh  4
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  23
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  5
 sh  5
 -h  4
@@ -346,7 +346,7 @@ sh  5
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  24
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  6
 sh  6
 -h  4
@@ -360,7 +360,7 @@ sh  6
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  25
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  7
 sh  7
 -h  4
@@ -374,7 +374,7 @@ sh  7
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  26
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  8
 sh  8
 -h  4
@@ -388,10 +388,13 @@ sh  8
 --- Sentence/start
 \protect \unhbox \voidb@x \penalty \@M \ {}i  27
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  9
 sh  9
 -h  4
+
+--- Sentence/end
+-i  27
 
 --- Paragraph/end
 -i  4
@@ -401,10 +404,9 @@ sh  9
 hp  2
 
 --- Sentence/start
--e  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  28
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  10
 sh  1
 -h  5
@@ -416,10 +418,9 @@ sh  1
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  29
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  11
 sh  2
 -h  5
@@ -431,10 +432,9 @@ sh  2
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  30
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  12
 sh  3
 -h  5
@@ -446,10 +446,9 @@ sh  3
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  31
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  13
 sh  4
 -h  5
@@ -461,10 +460,9 @@ sh  4
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  32
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  14
 sh  5
 -h  5
@@ -476,10 +474,9 @@ sh  5
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  33
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  15
 sh  6
 -h  5
@@ -495,10 +492,9 @@ sh  6
 hp  1
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  34
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  1
 sh  1
 -h  6
@@ -510,10 +506,9 @@ sh  1
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  35
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  2
 sh  2
 -h  6
@@ -525,10 +520,9 @@ sh  2
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  36
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  3
 sh  3
 -h  6
@@ -540,10 +534,9 @@ sh  3
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  37
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  4
 sh  4
 -h  6
@@ -555,10 +548,9 @@ sh  4
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  38
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  5
 sh  5
 -h  6
@@ -570,10 +562,9 @@ sh  5
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  39
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  6
 sh  6
 -h  6
@@ -585,13 +576,15 @@ sh  6
 
 
 --- Sentence/start
-.held  27
 \protect \unhbox \voidb@x \penalty \@M \ {}i  40
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  7
 sh  7
 -h  6
+
+--- Sentence/end
+-i  40
 
 --- Paragraph/end
 -i  6
@@ -601,11 +594,9 @@ sh  7
 hp  2
 
 --- Sentence/start
-.held  40
--e  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  41
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  8
 sh  1
 -h  7
@@ -617,10 +608,9 @@ sh  1
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  42
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  9
 sh  2
 -h  7
@@ -632,10 +622,9 @@ sh  2
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  43
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  10
 sh  3
 -h  7
@@ -647,10 +636,9 @@ sh  3
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  44
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  11
 sh  4
 -h  7
@@ -662,10 +650,9 @@ sh  4
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  45
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  12
 sh  5
 -h  7
@@ -677,10 +664,9 @@ sh  5
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  46
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  13
 sh  6
 -h  7
@@ -692,10 +678,9 @@ sh  6
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  47
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  14
 sh  7
 -h  7
@@ -707,10 +692,9 @@ sh  7
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  48
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  15
 sh  8
 -h  7
@@ -722,10 +706,9 @@ sh  8
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  49
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  16
 sh  9
 -h  7
@@ -737,10 +720,9 @@ sh  9
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  50
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  17
 sh  10
 -h  7
@@ -752,10 +734,9 @@ sh  10
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  51
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  18
 sh  11
 -h  7
@@ -767,10 +748,9 @@ sh  11
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  52
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  19
 sh  12
 -h  7
@@ -782,10 +762,9 @@ sh  12
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  53
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  20
 sh  13
 -h  7
@@ -797,10 +776,9 @@ sh  13
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  54
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  21
 sh  14
 -h  7
@@ -812,10 +790,9 @@ sh  14
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  55
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  22
 sh  15
 -h  7
@@ -827,10 +804,9 @@ sh  15
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  56
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  23
 sh  16
 -h  7
@@ -842,10 +818,9 @@ sh  16
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  57
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  24
 sh  17
 -h  7
@@ -861,10 +836,9 @@ sh  17
 hp  1
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  58
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  1
 sh  1
 -h  8
@@ -876,10 +850,9 @@ sh  1
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  59
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  2
 sh  2
 -h  8
@@ -891,10 +864,9 @@ sh  2
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  60
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  3
 sh  3
 -h  8
@@ -906,10 +878,9 @@ sh  3
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  61
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  4
 sh  4
 -h  8
@@ -921,10 +892,9 @@ sh  4
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  62
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  5
 sh  5
 -h  8
@@ -936,10 +906,9 @@ sh  5
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  63
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  6
 sh  6
 -h  8
@@ -951,10 +920,9 @@ sh  6
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  64
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  7
 sh  7
 -h  8
@@ -966,10 +934,9 @@ sh  7
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  65
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  8
 sh  8
 -h  8
@@ -981,10 +948,9 @@ sh  8
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  66
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  9
 sh  9
 -h  8
@@ -996,10 +962,9 @@ sh  9
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  67
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  10
 sh  10
 -h  8
@@ -1011,10 +976,9 @@ sh  10
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  68
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  11
 sh  11
 -h  8
@@ -1030,10 +994,9 @@ sh  11
 hp  2
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  69
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  12
 sh  1
 -h  9
@@ -1045,10 +1008,9 @@ sh  1
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  70
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  13
 sh  2
 -h  9
@@ -1060,10 +1022,9 @@ sh  2
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  71
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  14
 sh  3
 -h  9
@@ -1075,10 +1036,9 @@ sh  3
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  72
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  15
 sh  4
 -h  9
@@ -1090,10 +1050,9 @@ sh  4
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  73
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  16
 sh  5
 -h  9
@@ -1105,10 +1064,9 @@ sh  5
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  74
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  17
 sh  6
 -h  9
@@ -1120,10 +1078,9 @@ sh  6
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  75
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  18
 sh  7
 -h  9
@@ -1135,10 +1092,9 @@ sh  7
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  76
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  19
 sh  8
 -h  9
@@ -1154,10 +1110,9 @@ sh  8
 hp  1
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  77
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  1
 sh  1
 -h  10
@@ -1169,10 +1124,9 @@ sh  1
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  78
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  2
 sh  2
 -h  10
@@ -1184,10 +1138,9 @@ sh  2
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  79
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  3
 sh  3
 -h  10
@@ -1199,10 +1152,9 @@ sh  3
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  80
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  4
 sh  4
 -h  10
@@ -1214,10 +1166,9 @@ sh  4
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  81
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  5
 sh  5
 -h  10
@@ -1233,10 +1184,9 @@ sh  5
 hp  2
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  82
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  6
 sh  1
 -h  11
@@ -1248,10 +1198,9 @@ sh  1
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  83
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  7
 sh  2
 -h  11
@@ -1263,10 +1212,9 @@ sh  2
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  84
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  8
 sh  3
 -h  11
@@ -1278,10 +1226,9 @@ sh  3
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  85
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  9
 sh  4
 -h  11
@@ -1293,10 +1240,9 @@ sh  4
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  86
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  10
 sh  5
 -h  11
@@ -1312,10 +1258,9 @@ sh  5
 hp  3
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  87
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  11
 sh  1
 -h  12
@@ -1327,10 +1272,9 @@ sh  1
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  88
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  12
 sh  2
 -h  12
@@ -1342,10 +1286,9 @@ sh  2
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  89
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  13
 sh  3
 -h  12
@@ -1357,10 +1300,9 @@ sh  3
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  90
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  14
 sh  4
 -h  12
@@ -1372,10 +1314,9 @@ sh  4
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  91
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  15
 sh  5
 -h  12
@@ -1387,10 +1328,9 @@ sh  5
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  92
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  16
 sh  6
 -h  12
@@ -1402,10 +1342,9 @@ sh  6
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  93
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  17
 sh  7
 -h  12
@@ -1417,10 +1356,9 @@ sh  7
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  94
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  18
 sh  8
 -h  12
@@ -1432,10 +1370,9 @@ sh  8
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  95
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  19
 sh  9
 -h  12
@@ -1447,10 +1384,9 @@ sh  9
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  96
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  20
 sh  10
 -h  12
@@ -1462,10 +1398,9 @@ sh  10
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  97
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  21
 sh  11
 -h  12
@@ -1477,10 +1412,9 @@ sh  11
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  98
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  22
 sh  12
 -h  12
@@ -1492,10 +1426,9 @@ sh  12
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  99
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  23
 sh  13
 -h  12
@@ -1507,10 +1440,9 @@ sh  13
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  100
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  24
 sh  14
 -h  12
@@ -1522,10 +1454,9 @@ sh  14
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  101
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  25
 sh  15
 -h  12
@@ -1541,10 +1472,9 @@ sh  15
 hp  1
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  102
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  1
 sh  1
 -h  13
@@ -1556,10 +1486,9 @@ sh  1
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  103
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  2
 sh  2
 -h  13
@@ -1571,10 +1500,9 @@ sh  2
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  104
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  3
 sh  3
 -h  13
@@ -1586,10 +1514,9 @@ sh  3
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  105
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  4
 sh  4
 -h  13
@@ -1601,10 +1528,9 @@ sh  4
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  106
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  5
 sh  5
 -h  13
@@ -1616,10 +1542,9 @@ sh  5
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  107
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  6
 sh  6
 -h  13
@@ -1631,10 +1556,9 @@ sh  6
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  108
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  7
 sh  7
 -h  13
@@ -1646,10 +1570,9 @@ sh  7
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  109
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  8
 sh  8
 -h  13
@@ -1661,10 +1584,9 @@ sh  8
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  110
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  9
 sh  9
 -h  13
@@ -1676,10 +1598,9 @@ sh  9
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  111
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  10
 sh  10
 -h  13
@@ -1695,10 +1616,9 @@ sh  10
 hp  1
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  112
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  1
 sh  1
 -h  14
@@ -1710,10 +1630,9 @@ sh  1
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  113
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  2
 sh  2
 -h  14
@@ -1725,10 +1644,9 @@ sh  2
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  114
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  3
 sh  3
 -h  14
@@ -1740,10 +1658,9 @@ sh  3
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  115
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  4
 sh  4
 -h  14
@@ -1755,10 +1672,9 @@ sh  4
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  116
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  5
 sh  5
 -h  14
@@ -1770,10 +1686,9 @@ sh  5
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  117
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  6
 sh  6
 -h  14
@@ -1785,10 +1700,9 @@ sh  6
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  118
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  7
 sh  7
 -h  14
@@ -1800,10 +1714,9 @@ sh  7
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  119
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  8
 sh  8
 -h  14
@@ -1815,10 +1728,9 @@ sh  8
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  120
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  9
 sh  9
 -h  14
@@ -1830,10 +1742,9 @@ sh  9
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  121
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  10
 sh  10
 -h  14
@@ -1845,10 +1756,9 @@ sh  10
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  122
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  11
 sh  11
 -h  14
@@ -1860,10 +1770,9 @@ sh  11
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  123
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  12
 sh  12
 -h  14
@@ -1875,10 +1784,9 @@ sh  12
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  124
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  13
 sh  13
 -h  14
@@ -1890,10 +1798,9 @@ sh  13
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  125
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  14
 sh  14
 -h  14
@@ -1905,10 +1812,9 @@ sh  14
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  126
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  15
 sh  15
 -h  14
@@ -1920,10 +1826,9 @@ sh  15
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  127
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  16
 sh  16
 -h  14
@@ -1939,10 +1844,9 @@ sh  16
 hp  2
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  128
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  17
 sh  1
 -h  15
@@ -1954,10 +1858,9 @@ sh  1
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  129
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  1
 sh  2
 -h  15
@@ -1969,10 +1872,9 @@ sh  2
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  130
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  2
 sh  3
 -h  15
@@ -1984,10 +1886,9 @@ sh  3
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  131
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  3
 sh  4
 -h  15
@@ -1999,10 +1900,9 @@ sh  4
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  132
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  4
 sh  5
 -h  15
@@ -2014,10 +1914,9 @@ sh  5
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  133
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  5
 sh  6
 -h  15
@@ -2029,10 +1928,9 @@ sh  6
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  134
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  6
 sh  7
 -h  15
@@ -2044,10 +1942,9 @@ sh  7
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  135
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  7
 sh  8
 -h  15
@@ -2059,10 +1956,9 @@ sh  8
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  136
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  8
 sh  9
 -h  15
@@ -2074,10 +1970,9 @@ sh  9
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  137
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  9
 sh  10
 -h  15
@@ -2089,10 +1984,9 @@ sh  10
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  138
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  10
 sh  11
 -h  15
@@ -2104,10 +1998,9 @@ sh  11
 
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  139
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  11
 sh  12
 -h  15
@@ -2123,10 +2016,9 @@ sh  12
 hp  1
 
 --- Sentence/start
-.held  40
 \protect \unhbox \voidb@x \penalty \@M \ {}i  140
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  12
 sh  1
 -h  16
@@ -2139,11 +2031,10 @@ sh  1
 hp  2
 
 --- Sentence/start
-.held  140
 -e  140
 \protect \unhbox \voidb@x \penalty \@M \ {}i  141
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  13
 sh  1
 -h  17
@@ -2160,7 +2051,7 @@ hp  3
 -e  141
 \protect \unhbox \voidb@x \penalty \@M \ {}i  142
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  14
 sh  1
 -h  18

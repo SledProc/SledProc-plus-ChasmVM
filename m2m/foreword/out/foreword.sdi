@@ -6,14 +6,14 @@
 --- Paragraph/start
 -i  1
 hp  1
--p  11
+-p  8
 -x  79.49744pt
 -y  580.29446pt
 
 --- Sentence/start
 -i  1
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  1
 sh  1
 -h  1
@@ -22,27 +22,27 @@ sh  1
 
 --- Sentence/end
 -i  1
--p  11
+-p  8
 -x  169.19637pt
 -y  580.29446pt
 
 --- Paragraph/end
 -i  1
--p  11
+-p  8
 -x  169.19637pt
 -y  580.29446pt
 
 --- Paragraph/start
 -i  2
 hp  2
--p  11
+-p  8
 -x  79.49744pt
 -y  558.29446pt
 
 --- Sentence/start
 -i  2
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  2
 sh  1
 -h  2
@@ -51,8 +51,8 @@ sh  1
 
 --- Sentence/end
 -i  2
--p  11
--x  147.42313pt
+-p  8
+-x  148.85052pt
 -y  539.29446pt
 
 --- Sentence/between
@@ -60,16 +60,16 @@ sh  1
 --- Sentence/start
 -i  3
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  3
 sh  2
 -h  2
--x  147.42313pt
+-x  148.85052pt
 -y  539.29446pt
 
 --- Sentence/end
 -i  3
--p  11
+-p  8
 -x  79.49744pt
 -y  501.29446pt
 
@@ -78,7 +78,7 @@ sh  2
 --- Sentence/start
 -i  4
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  4
 sh  3
 -h  2
@@ -87,7 +87,7 @@ sh  3
 
 --- Sentence/end
 -i  4
--p  11
+-p  8
 -x  490.33797pt
 -y  501.29446pt
 
@@ -96,7 +96,7 @@ sh  3
 --- Sentence/start
 -i  5
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  5
 sh  4
 -h  2
@@ -105,8 +105,8 @@ sh  4
 
 --- Sentence/end
 -i  5
--p  11
--x  125.42647pt
+-p  8
+-x  130.15227pt
 -y  444.29446pt
 
 --- Sentence/between
@@ -114,17 +114,17 @@ sh  4
 --- Sentence/start
 -i  6
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  6
 sh  5
 -h  2
--x  125.42647pt
+-x  130.15227pt
 -y  444.29446pt
 
 --- Sentence/end
 -i  6
--p  11
--x  492.76837pt
+-p  8
+-x  515.81776pt
 -y  444.29446pt
 
 --- Sentence/between
@@ -132,17 +132,17 @@ sh  5
 --- Sentence/start
 -i  7
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  7
 sh  6
 -h  2
--x  492.76837pt
+-x  515.81776pt
 -y  444.29446pt
 
 --- Sentence/end
 -i  7
--p  11
--x  79.49744pt
+-p  8
+-x  119.79337pt
 -y  406.29446pt
 
 --- Sentence/between
@@ -150,36 +150,36 @@ sh  6
 --- Sentence/start
 -i  8
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  8
 sh  7
 -h  2
--x  79.49744pt
+-x  119.79337pt
 -y  406.29446pt
 
 --- Sentence/end
 -i  8
--p  11
--x  303.61469pt
+-p  8
+-x  358.73401pt
 -y  387.29446pt
 
 --- Paragraph/end
 -i  2
--p  11
--x  303.61469pt
+-p  8
+-x  358.73401pt
 -y  387.29446pt
 
 --- Paragraph/start
 -i  3
 hp  3
--p  11
+-p  8
 -x  79.49744pt
 -y  381.08359pt
 
 --- Sentence/start
 -i  9
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  9
 sh  1
 -h  3
@@ -188,8 +188,8 @@ sh  1
 
 --- Sentence/end
 -i  9
--p  11
--x  441.5873pt
+-p  8
+-x  464.47226pt
 -y  327.29446pt
 
 --- Sentence/between
@@ -197,17 +197,17 @@ sh  1
 --- Sentence/start
 -i  10
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  10
 sh  2
 -h  3
--x  441.5873pt
+-x  464.47226pt
 -y  327.29446pt
 
 --- Sentence/end
 -i  10
--p  11
--x  256.03616pt
+-p  8
+-x  292.33954pt
 -y  308.29446pt
 
 --- Sentence/between
@@ -215,17 +215,17 @@ sh  2
 --- Sentence/start
 -i  11
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  11
 sh  3
 -h  3
--x  256.03616pt
+-x  292.33954pt
 -y  308.29446pt
 
 --- Sentence/end
 -i  11
--p  11
--x  446.4526pt
+-p  8
+-x  486.05283pt
 -y  289.29446pt
 
 --- Sentence/between
@@ -233,17 +233,17 @@ sh  3
 --- Sentence/start
 -i  12
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  12
 sh  4
 -h  3
--x  446.4526pt
+-x  486.05283pt
 -y  289.29446pt
 
 --- Sentence/end
 -i  12
--p  11
--x  400.3222pt
+-p  8
+-x  447.32687pt
 -y  232.29446pt
 
 --- Sentence/between
@@ -251,17 +251,17 @@ sh  4
 --- Sentence/start
 -i  13
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  13
 sh  5
 -h  3
--x  400.3222pt
+-x  447.32687pt
 -y  232.29446pt
 
 --- Sentence/end
 -i  13
--p  11
--x  312.69202pt
+-p  8
+-x  370.49724pt
 -y  175.29446pt
 
 --- Sentence/between
@@ -269,17 +269,17 @@ sh  5
 --- Sentence/start
 -i  14
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  14
 sh  6
 -h  3
--x  312.69202pt
+-x  370.49724pt
 -y  175.29446pt
 
 --- Sentence/end
 -i  14
--p  11
--x  220.94342pt
+-p  8
+-x  281.16727pt
 -y  137.29446pt
 
 --- Sentence/between
@@ -287,17 +287,17 @@ sh  6
 --- Sentence/start
 -i  15
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  15
 sh  7
 -h  3
--x  220.94342pt
+-x  281.16727pt
 -y  137.29446pt
 
 --- Sentence/end
 -i  15
--p  11
--x  246.96942pt
+-p  8
+-x  307.14146pt
 -y  118.29446pt
 
 --- Sentence/between
@@ -305,17 +305,17 @@ sh  7
 --- Sentence/start
 -i  16
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  16
 sh  8
 -h  3
--x  246.96942pt
+-x  307.14146pt
 -y  118.29446pt
 
 --- Sentence/end
 -i  16
--p  11
--x  285.07396pt
+-p  8
+-x  319.2705pt
 -y  80.29446pt
 
 --- Sentence/between
@@ -323,17 +323,17 @@ sh  8
 --- Sentence/start
 -i  17
 -b  19.0pt;1.0
--p  11
+-p  8
 sp  17
 sh  9
 -h  3
--x  285.07396pt
+-x  319.2705pt
 -y  80.29446pt
 
 --- Sentence/end
 -i  17
--p  12
--x  349.99434pt
+-p  9
+-x  360.52057pt
 -y  682.79243pt
 
 --- Sentence/between
@@ -341,36 +341,36 @@ sh  9
 --- Sentence/start
 -i  18
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  18
 sh  10
 -h  3
--x  349.99434pt
+-x  360.52057pt
 -y  682.79243pt
 
 --- Sentence/end
 -i  18
--p  12
+-p  9
 -x  175.6964pt
 -y  625.79243pt
 
 --- Paragraph/end
 -i  3
--p  12
+-p  9
 -x  175.6964pt
 -y  625.79243pt
 
 --- Paragraph/start
 -i  4
 hp  1
--p  12
+-p  9
 -x  79.49744pt
 -y  619.86751pt
 
 --- Sentence/start
 -i  19
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  1
 sh  1
 -h  4
@@ -379,8 +379,8 @@ sh  1
 
 --- Sentence/end
 -i  19
--p  12
--x  425.58977pt
+-p  9
+-x  425.87076pt
 -y  565.79243pt
 
 --- Sentence/between
@@ -388,17 +388,17 @@ sh  1
 --- Sentence/start
 -i  20
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  2
 sh  2
 -h  4
--x  425.58977pt
+-x  425.87076pt
 -y  565.79243pt
 
 --- Sentence/end
 -i  20
--p  12
--x  292.63164pt
+-p  9
+-x  270.0517pt
 -y  508.79243pt
 
 --- Sentence/between
@@ -406,17 +406,17 @@ sh  2
 --- Sentence/start
 -i  21
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  3
 sh  3
 -h  4
--x  292.63164pt
+-x  270.0517pt
 -y  508.79243pt
 
 --- Sentence/end
 -i  21
--p  12
--x  481.75514pt
+-p  9
+-x  460.48946pt
 -y  508.79243pt
 
 --- Sentence/between
@@ -424,17 +424,17 @@ sh  3
 --- Sentence/start
 -i  22
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  4
 sh  4
 -h  4
--x  481.75514pt
+-x  460.48946pt
 -y  508.79243pt
 
 --- Sentence/end
 -i  22
--p  12
--x  350.77382pt
+-p  9
+-x  343.88889pt
 -y  470.79243pt
 
 --- Sentence/between
@@ -442,17 +442,17 @@ sh  4
 --- Sentence/start
 -i  23
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  5
 sh  5
 -h  4
--x  350.77382pt
+-x  343.88889pt
 -y  470.79243pt
 
 --- Sentence/end
 -i  23
--p  12
--x  417.75319pt
+-p  9
+-x  417.86337pt
 -y  432.79243pt
 
 --- Sentence/between
@@ -460,17 +460,17 @@ sh  5
 --- Sentence/start
 -i  24
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  6
 sh  6
 -h  4
--x  417.75319pt
+-x  417.86337pt
 -y  432.79243pt
 
 --- Sentence/end
 -i  24
--p  12
--x  329.17644pt
+-p  9
+-x  330.48111pt
 -y  413.79243pt
 
 --- Sentence/between
@@ -478,16 +478,16 @@ sh  6
 --- Sentence/start
 -i  25
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  7
 sh  7
 -h  4
--x  329.17644pt
+-x  330.48111pt
 -y  413.79243pt
 
 --- Sentence/end
 -i  25
--p  12
+-p  9
 -x  497.8779pt
 -y  394.79243pt
 
@@ -496,7 +496,7 @@ sh  7
 --- Sentence/start
 -i  26
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  8
 sh  8
 -h  4
@@ -505,7 +505,7 @@ sh  8
 
 --- Sentence/end
 -i  26
--p  12
+-p  9
 -x  484.09805pt
 -y  375.79243pt
 
@@ -514,30 +514,36 @@ sh  8
 --- Sentence/start
 -i  27
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  9
 sh  9
 -h  4
 -x  484.09805pt
 -y  375.79243pt
 
+--- Sentence/end
+-i  27
+-p  9
+-x  310.20592pt
+-y  318.79243pt
+
 --- Paragraph/end
 -i  4
--p  12
+-p  9
 -x  310.20592pt
 -y  318.79243pt
 
 --- Paragraph/start
 -i  5
 hp  2
--p  12
+-p  9
 -x  79.49744pt
 -y  312.86751pt
 
 --- Sentence/start
 -i  28
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  10
 sh  1
 -h  5
@@ -546,8 +552,8 @@ sh  1
 
 --- Sentence/end
 -i  28
--p  12
--x  286.82213pt
+-p  9
+-x  288.41649pt
 -y  277.79243pt
 
 --- Sentence/between
@@ -555,16 +561,16 @@ sh  1
 --- Sentence/start
 -i  29
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  11
 sh  2
 -h  5
--x  286.82213pt
+-x  288.41649pt
 -y  277.79243pt
 
 --- Sentence/end
 -i  29
--p  12
+-p  9
 -x  79.49744pt
 -y  239.79243pt
 
@@ -573,7 +579,7 @@ sh  2
 --- Sentence/start
 -i  30
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  12
 sh  3
 -h  5
@@ -582,8 +588,8 @@ sh  3
 
 --- Sentence/end
 -i  30
--p  12
--x  399.66664pt
+-p  9
+-x  400.19963pt
 -y  201.79243pt
 
 --- Sentence/between
@@ -591,17 +597,17 @@ sh  3
 --- Sentence/start
 -i  31
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  13
 sh  4
 -h  5
--x  399.66664pt
+-x  400.19963pt
 -y  201.79243pt
 
 --- Sentence/end
 -i  31
--p  12
--x  190.12392pt
+-p  9
+-x  191.47417pt
 -y  163.79243pt
 
 --- Sentence/between
@@ -609,17 +615,17 @@ sh  4
 --- Sentence/start
 -i  32
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  14
 sh  5
 -h  5
--x  190.12392pt
+-x  191.47417pt
 -y  163.79243pt
 
 --- Sentence/end
 -i  32
--p  12
--x  423.16386pt
+-p  9
+-x  423.56529pt
 -y  144.79243pt
 
 --- Sentence/between
@@ -627,36 +633,36 @@ sh  5
 --- Sentence/start
 -i  33
 -b  19.0pt;1.0
--p  12
+-p  9
 sp  15
 sh  6
 -h  5
--x  423.16386pt
+-x  423.56529pt
 -y  144.79243pt
 
 --- Sentence/end
 -i  33
--p  13
+-p  10
 -x  79.49744pt
 -y  692.19244pt
 
 --- Paragraph/end
 -i  5
--p  13
+-p  10
 -x  79.49744pt
 -y  692.19244pt
 
 --- Paragraph/start
 -i  6
 hp  1
--p  13
+-p  10
 -x  79.49744pt
 -y  692.19244pt
 
 --- Sentence/start
 -i  34
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  1
 sh  1
 -h  6
@@ -665,8 +671,8 @@ sh  1
 
 --- Sentence/end
 -i  34
--p  13
--x  315.99374pt
+-p  10
+-x  317.32878pt
 -y  624.19244pt
 
 --- Sentence/between
@@ -674,17 +680,17 @@ sh  1
 --- Sentence/start
 -i  35
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  2
 sh  2
 -h  6
--x  315.99374pt
+-x  317.32878pt
 -y  624.19244pt
 
 --- Sentence/end
 -i  35
--p  13
--x  143.19852pt
+-p  10
+-x  145.0413pt
 -y  548.19244pt
 
 --- Sentence/between
@@ -692,16 +698,16 @@ sh  2
 --- Sentence/start
 -i  36
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  3
 sh  3
 -h  6
--x  143.19852pt
+-x  145.0413pt
 -y  548.19244pt
 
 --- Sentence/end
 -i  36
--p  13
+-p  10
 -x  511.98283pt
 -y  548.19244pt
 
@@ -710,7 +716,7 @@ sh  3
 --- Sentence/start
 -i  37
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  4
 sh  4
 -h  6
@@ -719,8 +725,8 @@ sh  4
 
 --- Sentence/end
 -i  37
--p  13
--x  266.82263pt
+-p  10
+-x  268.38197pt
 -y  529.19244pt
 
 --- Sentence/between
@@ -728,16 +734,16 @@ sh  4
 --- Sentence/start
 -i  38
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  5
 sh  5
 -h  6
--x  266.82263pt
+-x  268.38197pt
 -y  529.19244pt
 
 --- Sentence/end
 -i  38
--p  13
+-p  10
 -x  79.49744pt
 -y  491.19244pt
 
@@ -746,7 +752,7 @@ sh  5
 --- Sentence/start
 -i  39
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  6
 sh  6
 -h  6
@@ -755,8 +761,8 @@ sh  6
 
 --- Sentence/end
 -i  39
--p  13
--x  275.97685pt
+-p  10
+-x  276.9647pt
 -y  472.19244pt
 
 --- Sentence/between
@@ -764,30 +770,36 @@ sh  6
 --- Sentence/start
 -i  40
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  7
 sh  7
 -h  6
--x  275.97685pt
+-x  276.9647pt
+-y  472.19244pt
+
+--- Sentence/end
+-i  40
+-p  10
+-x  450.21361pt
 -y  472.19244pt
 
 --- Paragraph/end
 -i  6
--p  13
--x  449.22575pt
+-p  10
+-x  450.21361pt
 -y  472.19244pt
 
 --- Paragraph/start
 -i  7
 hp  2
--p  13
+-p  10
 -x  79.49744pt
 -y  465.98157pt
 
 --- Sentence/start
 -i  41
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  8
 sh  1
 -h  7
@@ -796,8 +808,8 @@ sh  1
 
 --- Sentence/end
 -i  41
--p  13
--x  483.99863pt
+-p  10
+-x  504.37787pt
 -y  431.19244pt
 
 --- Sentence/between
@@ -805,17 +817,17 @@ sh  1
 --- Sentence/start
 -i  42
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  9
 sh  2
 -h  7
--x  483.99863pt
+-x  504.37787pt
 -y  431.19244pt
 
 --- Sentence/end
 -i  42
--p  13
--x  405.5512pt
+-p  10
+-x  447.6888pt
 -y  412.19244pt
 
 --- Sentence/between
@@ -823,17 +835,17 @@ sh  2
 --- Sentence/start
 -i  43
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  10
 sh  3
 -h  7
--x  405.5512pt
+-x  447.6888pt
 -y  412.19244pt
 
 --- Sentence/end
 -i  43
--p  13
--x  158.31367pt
+-p  10
+-x  187.86638pt
 -y  374.19244pt
 
 --- Sentence/between
@@ -841,17 +853,17 @@ sh  3
 --- Sentence/start
 -i  44
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  11
 sh  4
 -h  7
--x  158.31367pt
+-x  187.86638pt
 -y  374.19244pt
 
 --- Sentence/end
 -i  44
--p  13
--x  79.49744pt
+-p  10
+-x  114.97935pt
 -y  355.19244pt
 
 --- Sentence/between
@@ -859,35 +871,35 @@ sh  4
 --- Sentence/start
 -i  45
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  12
 sh  5
 -h  7
--x  79.49744pt
+-x  114.97935pt
 -y  355.19244pt
 
 --- Sentence/end
 -i  45
--p  13
--x  530.3777pt
--y  336.19244pt
+-p  10
+-x  79.49744pt
+-y  317.19244pt
 
 --- Sentence/between
 
 --- Sentence/start
 -i  46
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  13
 sh  6
 -h  7
--x  530.3777pt
--y  336.19244pt
+-x  79.49744pt
+-y  317.19244pt
 
 --- Sentence/end
 -i  46
--p  13
--x  286.02655pt
+-p  10
+-x  321.02762pt
 -y  298.19244pt
 
 --- Sentence/between
@@ -895,17 +907,17 @@ sh  6
 --- Sentence/start
 -i  47
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  14
 sh  7
 -h  7
--x  286.02655pt
+-x  321.02762pt
 -y  298.19244pt
 
 --- Sentence/end
 -i  47
--p  13
--x  363.35272pt
+-p  10
+-x  405.43784pt
 -y  298.19244pt
 
 --- Sentence/between
@@ -913,17 +925,17 @@ sh  7
 --- Sentence/start
 -i  48
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  15
 sh  8
 -h  7
--x  363.35272pt
+-x  405.43784pt
 -y  298.19244pt
 
 --- Sentence/end
 -i  48
--p  13
--x  149.22049pt
+-p  10
+-x  197.70885pt
 -y  279.19244pt
 
 --- Sentence/between
@@ -931,35 +943,35 @@ sh  8
 --- Sentence/start
 -i  49
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  16
 sh  9
 -h  7
--x  149.22049pt
+-x  197.70885pt
 -y  279.19244pt
 
 --- Sentence/end
 -i  49
--p  13
--x  511.39787pt
--y  260.19244pt
+-p  10
+-x  110.66908pt
+-y  241.19244pt
 
 --- Sentence/between
 
 --- Sentence/start
 -i  50
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  17
 sh  10
 -h  7
--x  511.39787pt
--y  260.19244pt
+-x  110.66908pt
+-y  241.19244pt
 
 --- Sentence/end
 -i  50
--p  13
--x  378.4277pt
+-p  10
+-x  425.89813pt
 -y  222.19244pt
 
 --- Sentence/between
@@ -967,17 +979,17 @@ sh  10
 --- Sentence/start
 -i  51
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  18
 sh  11
 -h  7
--x  378.4277pt
+-x  425.89813pt
 -y  222.19244pt
 
 --- Sentence/end
 -i  51
--p  13
--x  117.23091pt
+-p  10
+-x  150.1412pt
 -y  184.19244pt
 
 --- Sentence/between
@@ -985,17 +997,17 @@ sh  11
 --- Sentence/start
 -i  52
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  19
 sh  12
 -h  7
--x  117.23091pt
+-x  150.1412pt
 -y  184.19244pt
 
 --- Sentence/end
 -i  52
--p  13
--x  288.23538pt
+-p  10
+-x  298.26222pt
 -y  165.19244pt
 
 --- Sentence/between
@@ -1003,16 +1015,16 @@ sh  12
 --- Sentence/start
 -i  53
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  20
 sh  13
 -h  7
--x  288.23538pt
+-x  298.26222pt
 -y  165.19244pt
 
 --- Sentence/end
 -i  53
--p  13
+-p  10
 -x  79.49744pt
 -y  127.19244pt
 
@@ -1021,7 +1033,7 @@ sh  13
 --- Sentence/start
 -i  54
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  21
 sh  14
 -h  7
@@ -1030,8 +1042,8 @@ sh  14
 
 --- Sentence/end
 -i  54
--p  13
--x  424.76906pt
+-p  10
+-x  425.13657pt
 -y  108.19244pt
 
 --- Sentence/between
@@ -1039,17 +1051,17 @@ sh  14
 --- Sentence/start
 -i  55
 -b  19.0pt;1.0
--p  13
+-p  10
 sp  22
 sh  15
 -h  7
--x  424.76906pt
+-x  425.13657pt
 -y  108.19244pt
 
 --- Sentence/end
 -i  55
--p  14
--x  414.60228pt
+-p  11
+-x  415.22124pt
 -y  681.19244pt
 
 --- Sentence/between
@@ -1057,17 +1069,17 @@ sh  15
 --- Sentence/start
 -i  56
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  23
 sh  16
 -h  7
--x  414.60228pt
+-x  415.22124pt
 -y  681.19244pt
 
 --- Sentence/end
 -i  56
--p  14
--x  192.85626pt
+-p  11
+-x  193.84412pt
 -y  624.19244pt
 
 --- Sentence/between
@@ -1075,36 +1087,36 @@ sh  16
 --- Sentence/start
 -i  57
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  24
 sh  17
 -h  7
--x  192.85626pt
+-x  193.84412pt
 -y  624.19244pt
 
 --- Sentence/end
 -i  57
--p  14
--x  514.40704pt
+-p  11
+-x  515.3949pt
 -y  624.19244pt
 
 --- Paragraph/end
 -i  7
--p  14
--x  514.40704pt
+-p  11
+-x  515.3949pt
 -y  624.19244pt
 
 --- Paragraph/start
 -i  8
 hp  1
--p  14
+-p  11
 -x  79.49744pt
 -y  618.26752pt
 
 --- Sentence/start
 -i  58
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  1
 sh  1
 -h  8
@@ -1113,8 +1125,8 @@ sh  1
 
 --- Sentence/end
 -i  58
--p  14
--x  150.68442pt
+-p  11
+-x  152.82486pt
 -y  526.19244pt
 
 --- Sentence/between
@@ -1122,17 +1134,17 @@ sh  1
 --- Sentence/start
 -i  59
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  2
 sh  2
 -h  8
--x  150.68442pt
+-x  152.82486pt
 -y  526.19244pt
 
 --- Sentence/end
 -i  59
--p  14
--x  397.96222pt
+-p  11
+-x  398.16844pt
 -y  507.19244pt
 
 --- Sentence/between
@@ -1140,17 +1152,17 @@ sh  2
 --- Sentence/start
 -i  60
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  3
 sh  3
 -h  8
--x  397.96222pt
+-x  398.16844pt
 -y  507.19244pt
 
 --- Sentence/end
 -i  60
--p  14
--x  434.18881pt
+-p  11
+-x  434.46638pt
 -y  488.19244pt
 
 --- Sentence/between
@@ -1158,16 +1170,16 @@ sh  3
 --- Sentence/start
 -i  61
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  4
 sh  4
 -h  8
--x  434.18881pt
+-x  434.46638pt
 -y  488.19244pt
 
 --- Sentence/end
 -i  61
--p  14
+-p  11
 -x  79.49744pt
 -y  450.19244pt
 
@@ -1176,7 +1188,7 @@ sh  4
 --- Sentence/start
 -i  62
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  5
 sh  5
 -h  8
@@ -1185,8 +1197,8 @@ sh  5
 
 --- Sentence/end
 -i  62
--p  14
--x  326.14516pt
+-p  11
+-x  327.2168pt
 -y  450.19244pt
 
 --- Sentence/between
@@ -1194,17 +1206,17 @@ sh  5
 --- Sentence/start
 -i  63
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  6
 sh  6
 -h  8
--x  326.14516pt
+-x  327.2168pt
 -y  450.19244pt
 
 --- Sentence/end
 -i  63
--p  14
--x  255.23209pt
+-p  11
+-x  256.43513pt
 -y  412.19244pt
 
 --- Sentence/between
@@ -1212,17 +1224,17 @@ sh  6
 --- Sentence/start
 -i  64
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  7
 sh  7
 -h  8
--x  255.23209pt
+-x  256.43513pt
 -y  412.19244pt
 
 --- Sentence/end
 -i  64
--p  14
--x  351.46138pt
+-p  11
+-x  351.88806pt
 -y  393.19244pt
 
 --- Sentence/between
@@ -1230,17 +1242,17 @@ sh  7
 --- Sentence/start
 -i  65
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  8
 sh  8
 -h  8
--x  351.46138pt
+-x  351.88806pt
 -y  393.19244pt
 
 --- Sentence/end
 -i  65
--p  14
--x  372.03609pt
+-p  11
+-x  373.64656pt
 -y  355.19244pt
 
 --- Sentence/between
@@ -1248,17 +1260,17 @@ sh  8
 --- Sentence/start
 -i  66
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  9
 sh  9
 -h  8
--x  372.03609pt
+-x  373.64656pt
 -y  355.19244pt
 
 --- Sentence/end
 -i  66
--p  14
--x  434.90834pt
+-p  11
+-x  435.11082pt
 -y  317.19244pt
 
 --- Sentence/between
@@ -1266,17 +1278,17 @@ sh  9
 --- Sentence/start
 -i  67
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  10
 sh  10
 -h  8
--x  434.90834pt
+-x  435.11082pt
 -y  317.19244pt
 
 --- Sentence/end
 -i  67
--p  14
--x  201.21033pt
+-p  11
+-x  202.23776pt
 -y  241.19244pt
 
 --- Sentence/between
@@ -1284,36 +1296,36 @@ sh  10
 --- Sentence/start
 -i  68
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  11
 sh  11
 -h  8
--x  201.21033pt
+-x  202.23776pt
 -y  241.19244pt
 
 --- Sentence/end
 -i  68
--p  14
+-p  11
 -x  431.83263pt
 -y  222.19244pt
 
 --- Paragraph/end
 -i  8
--p  14
+-p  11
 -x  431.83263pt
 -y  222.19244pt
 
 --- Paragraph/start
 -i  9
 hp  2
--p  14
+-p  11
 -x  79.49744pt
 -y  215.98157pt
 
 --- Sentence/start
 -i  69
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  12
 sh  1
 -h  9
@@ -1322,8 +1334,8 @@ sh  1
 
 --- Sentence/end
 -i  69
--p  14
--x  246.39636pt
+-p  11
+-x  247.58496pt
 -y  200.19244pt
 
 --- Sentence/between
@@ -1331,17 +1343,17 @@ sh  1
 --- Sentence/start
 -i  70
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  13
 sh  2
 -h  9
--x  246.39636pt
+-x  247.58496pt
 -y  200.19244pt
 
 --- Sentence/end
 -i  70
--p  14
--x  269.86542pt
+-p  11
+-x  270.73584pt
 -y  181.19244pt
 
 --- Sentence/between
@@ -1349,16 +1361,16 @@ sh  2
 --- Sentence/start
 -i  71
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  14
 sh  3
 -h  9
--x  269.86542pt
+-x  270.73584pt
 -y  181.19244pt
 
 --- Sentence/end
 -i  71
--p  14
+-p  11
 -x  79.49744pt
 -y  162.19244pt
 
@@ -1367,7 +1379,7 @@ sh  3
 --- Sentence/start
 -i  72
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  15
 sh  4
 -h  9
@@ -1376,8 +1388,8 @@ sh  4
 
 --- Sentence/end
 -i  72
--p  14
--x  359.09048pt
+-p  11
+-x  359.51689pt
 -y  124.19244pt
 
 --- Sentence/between
@@ -1385,17 +1397,17 @@ sh  4
 --- Sentence/start
 -i  73
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  16
 sh  5
 -h  9
--x  359.09048pt
+-x  359.51689pt
 -y  124.19244pt
 
 --- Sentence/end
 -i  73
--p  14
--x  383.87517pt
+-p  11
+-x  384.29974pt
 -y  105.19244pt
 
 --- Sentence/between
@@ -1403,17 +1415,17 @@ sh  5
 --- Sentence/start
 -i  74
 -b  19.0pt;1.0
--p  14
+-p  11
 sp  17
 sh  6
 -h  9
--x  383.87517pt
+-x  384.29974pt
 -y  105.19244pt
 
 --- Sentence/end
 -i  74
--p  15
--x  124.004pt
+-p  12
+-x  125.67128pt
 -y  681.19244pt
 
 --- Sentence/between
@@ -1421,17 +1433,17 @@ sh  6
 --- Sentence/start
 -i  75
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  18
 sh  7
 -h  9
--x  124.004pt
+-x  125.67128pt
 -y  681.19244pt
 
 --- Sentence/end
 -i  75
--p  15
--x  332.1526pt
+-p  12
+-x  332.98816pt
 -y  662.19244pt
 
 --- Sentence/between
@@ -1439,36 +1451,36 @@ sh  7
 --- Sentence/start
 -i  76
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  19
 sh  8
 -h  9
--x  332.1526pt
+-x  332.98816pt
 -y  662.19244pt
 
 --- Sentence/end
 -i  76
--p  15
--x  523.04832pt
+-p  12
+-x  519.91142pt
 -y  624.19244pt
 
 --- Paragraph/end
 -i  9
--p  15
--x  523.04832pt
+-p  12
+-x  519.91142pt
 -y  624.19244pt
 
 --- Paragraph/start
 -i  10
 hp  1
--p  15
+-p  12
 -x  79.49744pt
 -y  618.26752pt
 
 --- Sentence/start
 -i  77
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  1
 sh  1
 -h  10
@@ -1477,8 +1489,8 @@ sh  1
 
 --- Sentence/end
 -i  77
--p  15
--x  117.0379pt
+-p  12
+-x  117.996pt
 -y  564.19244pt
 
 --- Sentence/between
@@ -1486,35 +1498,35 @@ sh  1
 --- Sentence/start
 -i  78
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  2
 sh  2
 -h  10
--x  117.0379pt
+-x  117.996pt
 -y  564.19244pt
 
 --- Sentence/end
 -i  78
--p  15
--x  505.67784pt
--y  507.19244pt
+-p  12
+-x  127.69743pt
+-y  488.19244pt
 
 --- Sentence/between
 
 --- Sentence/start
 -i  79
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  3
 sh  3
 -h  10
--x  505.67784pt
--y  507.19244pt
+-x  127.69743pt
+-y  488.19244pt
 
 --- Sentence/end
 -i  79
--p  15
--x  125.92162pt
+-p  12
+-x  208.62755pt
 -y  469.19244pt
 
 --- Sentence/between
@@ -1522,17 +1534,17 @@ sh  3
 --- Sentence/start
 -i  80
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  4
 sh  4
 -h  10
--x  125.92162pt
+-x  208.62755pt
 -y  469.19244pt
 
 --- Sentence/end
 -i  80
--p  15
--x  132.48491pt
+-p  12
+-x  224.04277pt
 -y  450.19244pt
 
 --- Sentence/between
@@ -1540,36 +1552,36 @@ sh  4
 --- Sentence/start
 -i  81
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  5
 sh  5
 -h  10
--x  132.48491pt
+-x  224.04277pt
 -y  450.19244pt
 
 --- Sentence/end
 -i  81
--p  15
--x  391.70215pt
+-p  12
+-x  483.26001pt
 -y  450.19244pt
 
 --- Paragraph/end
 -i  10
--p  15
--x  391.70215pt
+-p  12
+-x  483.26001pt
 -y  450.19244pt
 
 --- Paragraph/start
 -i  11
 hp  2
--p  15
+-p  12
 -x  79.49744pt
 -y  447.19244pt
 
 --- Sentence/start
 -i  82
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  6
 sh  1
 -h  11
@@ -1578,8 +1590,8 @@ sh  1
 
 --- Sentence/end
 -i  82
--p  15
--x  469.56726pt
+-p  12
+-x  469.75961pt
 -y  428.19244pt
 
 --- Sentence/between
@@ -1587,17 +1599,17 @@ sh  1
 --- Sentence/start
 -i  83
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  7
 sh  2
 -h  11
--x  469.56726pt
+-x  469.75961pt
 -y  428.19244pt
 
 --- Sentence/end
 -i  83
--p  15
--x  356.66154pt
+-p  12
+-x  358.09302pt
 -y  390.19244pt
 
 --- Sentence/between
@@ -1605,17 +1617,17 @@ sh  2
 --- Sentence/start
 -i  84
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  8
 sh  3
 -h  11
--x  356.66154pt
+-x  358.09302pt
 -y  390.19244pt
 
 --- Sentence/end
 -i  84
--p  15
--x  414.9828pt
+-p  12
+-x  415.93336pt
 -y  352.19244pt
 
 --- Sentence/between
@@ -1623,17 +1635,17 @@ sh  3
 --- Sentence/start
 -i  85
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  9
 sh  4
 -h  11
--x  414.9828pt
+-x  415.93336pt
 -y  352.19244pt
 
 --- Sentence/end
 -i  85
--p  15
--x  271.32085pt
+-p  12
+-x  271.78462pt
 -y  295.19244pt
 
 --- Sentence/between
@@ -1641,36 +1653,36 @@ sh  4
 --- Sentence/start
 -i  86
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  10
 sh  5
 -h  11
--x  271.32085pt
+-x  271.78462pt
 -y  295.19244pt
 
 --- Sentence/end
 -i  86
--p  15
+-p  12
 -x  232.47966pt
 -y  257.19244pt
 
 --- Paragraph/end
 -i  11
--p  15
+-p  12
 -x  232.47966pt
 -y  257.19244pt
 
 --- Paragraph/start
 -i  12
 hp  3
--p  15
+-p  12
 -x  79.49744pt
 -y  254.19244pt
 
 --- Sentence/start
 -i  87
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  11
 sh  1
 -h  12
@@ -1679,8 +1691,8 @@ sh  1
 
 --- Sentence/end
 -i  87
--p  15
--x  189.22905pt
+-p  12
+-x  186.58896pt
 -y  197.19244pt
 
 --- Sentence/between
@@ -1688,17 +1700,17 @@ sh  1
 --- Sentence/start
 -i  88
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  12
 sh  2
 -h  12
--x  189.22905pt
+-x  186.58896pt
 -y  197.19244pt
 
 --- Sentence/end
 -i  88
--p  15
--x  154.8115pt
+-p  12
+-x  129.05902pt
 -y  159.19244pt
 
 --- Sentence/between
@@ -1706,35 +1718,35 @@ sh  2
 --- Sentence/start
 -i  89
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  13
 sh  3
 -h  12
--x  154.8115pt
+-x  129.05902pt
 -y  159.19244pt
 
 --- Sentence/end
 -i  89
--p  15
--x  79.49744pt
--y  140.19244pt
+-p  12
+-x  526.21777pt
+-y  159.19244pt
 
 --- Sentence/between
 
 --- Sentence/start
 -i  90
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  14
 sh  4
 -h  12
--x  79.49744pt
--y  140.19244pt
+-x  526.21777pt
+-y  159.19244pt
 
 --- Sentence/end
 -i  90
--p  15
--x  200.60211pt
+-p  12
+-x  145.68439pt
 -y  83.19244pt
 
 --- Sentence/between
@@ -1742,17 +1754,17 @@ sh  4
 --- Sentence/start
 -i  91
 -b  19.0pt;1.0
--p  15
+-p  12
 sp  15
 sh  5
 -h  12
--x  200.60211pt
+-x  145.68439pt
 -y  83.19244pt
 
 --- Sentence/end
 -i  91
--p  16
--x  179.97676pt
+-p  13
+-x  136.9895pt
 -y  681.19244pt
 
 --- Sentence/between
@@ -1760,17 +1772,17 @@ sh  5
 --- Sentence/start
 -i  92
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  16
 sh  6
 -h  12
--x  179.97676pt
+-x  136.9895pt
 -y  681.19244pt
 
 --- Sentence/end
 -i  92
--p  16
--x  377.2308pt
+-p  13
+-x  372.2749pt
 -y  662.19244pt
 
 --- Sentence/between
@@ -1778,17 +1790,17 @@ sh  6
 --- Sentence/start
 -i  93
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  17
 sh  7
 -h  12
--x  377.2308pt
+-x  372.2749pt
 -y  662.19244pt
 
 --- Sentence/end
 -i  93
--p  16
--x  113.04715pt
+-p  13
+-x  114.62247pt
 -y  567.19244pt
 
 --- Sentence/between
@@ -1796,17 +1808,17 @@ sh  7
 --- Sentence/start
 -i  94
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  18
 sh  8
 -h  12
--x  113.04715pt
+-x  114.62247pt
 -y  567.19244pt
 
 --- Sentence/end
 -i  94
--p  16
--x  421.27312pt
+-p  13
+-x  421.63303pt
 -y  548.19244pt
 
 --- Sentence/between
@@ -1814,17 +1826,17 @@ sh  8
 --- Sentence/start
 -i  95
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  19
 sh  9
 -h  12
--x  421.27312pt
+-x  421.63303pt
 -y  548.19244pt
 
 --- Sentence/end
 -i  95
--p  16
--x  117.08315pt
+-p  13
+-x  119.99335pt
 -y  491.19244pt
 
 --- Sentence/between
@@ -1832,16 +1844,16 @@ sh  9
 --- Sentence/start
 -i  96
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  20
 sh  10
 -h  12
--x  117.08315pt
+-x  119.99335pt
 -y  491.19244pt
 
 --- Sentence/end
 -i  96
--p  16
+-p  13
 -x  79.49744pt
 -y  453.19244pt
 
@@ -1850,7 +1862,7 @@ sh  10
 --- Sentence/start
 -i  97
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  21
 sh  11
 -h  12
@@ -1859,8 +1871,8 @@ sh  11
 
 --- Sentence/end
 -i  97
--p  16
--x  312.97894pt
+-p  13
+-x  313.36482pt
 -y  434.19244pt
 
 --- Sentence/between
@@ -1868,17 +1880,17 @@ sh  11
 --- Sentence/start
 -i  98
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  22
 sh  12
 -h  12
--x  312.97894pt
+-x  313.36482pt
 -y  434.19244pt
 
 --- Sentence/end
 -i  98
--p  16
--x  232.86888pt
+-p  13
+-x  233.93997pt
 -y  396.19244pt
 
 --- Sentence/between
@@ -1886,35 +1898,35 @@ sh  12
 --- Sentence/start
 -i  99
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  23
 sh  13
 -h  12
--x  232.86888pt
+-x  233.93997pt
 -y  396.19244pt
 
 --- Sentence/end
 -i  99
--p  16
--x  507.49774pt
--y  358.19244pt
+-p  13
+-x  79.49744pt
+-y  339.19244pt
 
 --- Sentence/between
 
 --- Sentence/start
 -i  100
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  24
 sh  14
 -h  12
--x  507.49774pt
--y  358.19244pt
+-x  79.49744pt
+-y  339.19244pt
 
 --- Sentence/end
 -i  100
--p  16
--x  354.08337pt
+-p  13
+-x  390.29442pt
 -y  320.19244pt
 
 --- Sentence/between
@@ -1922,36 +1934,36 @@ sh  14
 --- Sentence/start
 -i  101
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  25
 sh  15
 -h  12
--x  354.08337pt
+-x  390.29442pt
 -y  320.19244pt
 
 --- Sentence/end
 -i  101
--p  16
--x  152.76471pt
+-p  13
+-x  169.14452pt
 -y  263.19244pt
 
 --- Paragraph/end
 -i  12
--p  16
--x  152.76471pt
+-p  13
+-x  169.14452pt
 -y  263.19244pt
 
 --- Paragraph/start
 -i  13
 hp  1
--p  16
+-p  13
 -x  79.49744pt
 -y  260.19244pt
 
 --- Sentence/start
 -i  102
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  1
 sh  1
 -h  13
@@ -1960,8 +1972,8 @@ sh  1
 
 --- Sentence/end
 -i  102
--p  16
--x  301.06317pt
+-p  13
+-x  301.68263pt
 -y  184.19244pt
 
 --- Sentence/between
@@ -1969,17 +1981,17 @@ sh  1
 --- Sentence/start
 -i  103
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  2
 sh  2
 -h  13
--x  301.06317pt
+-x  301.68263pt
 -y  184.19244pt
 
 --- Sentence/end
 -i  103
--p  16
--x  266.79607pt
+-p  13
+-x  267.40309pt
 -y  146.19244pt
 
 --- Sentence/between
@@ -1987,16 +1999,16 @@ sh  2
 --- Sentence/start
 -i  104
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  3
 sh  3
 -h  13
--x  266.79607pt
+-x  267.40309pt
 -y  146.19244pt
 
 --- Sentence/end
 -i  104
--p  16
+-p  13
 -x  133.71754pt
 -y  127.19244pt
 
@@ -2005,7 +2017,7 @@ sh  3
 --- Sentence/start
 -i  105
 -b  19.0pt;1.0
--p  16
+-p  13
 sp  4
 sh  4
 -h  13
@@ -2014,8 +2026,8 @@ sh  4
 
 --- Sentence/end
 -i  105
--p  17
--x  167.31635pt
+-p  14
+-x  169.50691pt
 -y  662.19244pt
 
 --- Sentence/between
@@ -2023,17 +2035,17 @@ sh  4
 --- Sentence/start
 -i  106
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  5
 sh  5
 -h  13
--x  167.31635pt
+-x  169.50691pt
 -y  662.19244pt
 
 --- Sentence/end
 -i  106
--p  17
--x  223.98415pt
+-p  14
+-x  225.82047pt
 -y  605.19244pt
 
 --- Sentence/between
@@ -2041,17 +2053,17 @@ sh  5
 --- Sentence/start
 -i  107
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  6
 sh  6
 -h  13
--x  223.98415pt
+-x  225.82047pt
 -y  605.19244pt
 
 --- Sentence/end
 -i  107
--p  17
--x  122.21849pt
+-p  14
+-x  123.8119pt
 -y  586.19244pt
 
 --- Sentence/between
@@ -2059,17 +2071,17 @@ sh  6
 --- Sentence/start
 -i  108
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  7
 sh  7
 -h  13
--x  122.21849pt
+-x  123.8119pt
 -y  586.19244pt
 
 --- Sentence/end
 -i  108
--p  17
--x  438.28932pt
+-p  14
+-x  438.51549pt
 -y  567.19244pt
 
 --- Sentence/between
@@ -2077,17 +2089,17 @@ sh  7
 --- Sentence/start
 -i  109
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  8
 sh  8
 -h  13
--x  438.28932pt
+-x  438.51549pt
 -y  567.19244pt
 
 --- Sentence/end
 -i  109
--p  17
--x  152.37387pt
+-p  14
+-x  155.35725pt
 -y  529.19244pt
 
 --- Sentence/between
@@ -2095,17 +2107,17 @@ sh  8
 --- Sentence/start
 -i  110
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  9
 sh  9
 -h  13
--x  152.37387pt
+-x  155.35725pt
 -y  529.19244pt
 
 --- Sentence/end
 -i  110
--p  17
--x  292.50826pt
+-p  14
+-x  293.49312pt
 -y  510.19244pt
 
 --- Sentence/between
@@ -2113,36 +2125,36 @@ sh  9
 --- Sentence/start
 -i  111
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  10
 sh  10
 -h  13
--x  292.50826pt
+-x  293.49312pt
 -y  510.19244pt
 
 --- Sentence/end
 -i  111
--p  17
+-p  14
 -x  171.79659pt
 -y  491.19244pt
 
 --- Paragraph/end
 -i  13
--p  17
+-p  14
 -x  171.79659pt
 -y  491.19244pt
 
 --- Paragraph/start
 -i  14
 hp  1
--p  17
+-p  14
 -x  79.49744pt
 -y  485.26752pt
 
 --- Sentence/start
 -i  112
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  1
 sh  1
 -h  14
@@ -2151,8 +2163,8 @@ sh  1
 
 --- Sentence/end
 -i  112
--p  17
--x  117.04694pt
+-p  14
+-x  119.69958pt
 -y  450.19244pt
 
 --- Sentence/between
@@ -2160,17 +2172,17 @@ sh  1
 --- Sentence/start
 -i  113
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  2
 sh  2
 -h  14
--x  117.04694pt
+-x  119.69958pt
 -y  450.19244pt
 
 --- Sentence/end
 -i  113
--p  17
--x  413.04906pt
+-p  14
+-x  414.72403pt
 -y  450.19244pt
 
 --- Sentence/between
@@ -2178,17 +2190,17 @@ sh  2
 --- Sentence/start
 -i  114
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  3
 sh  3
 -h  14
--x  413.04906pt
+-x  414.72403pt
 -y  450.19244pt
 
 --- Sentence/end
 -i  114
--p  17
--x  315.51387pt
+-p  14
+-x  316.11061pt
 -y  431.19244pt
 
 --- Sentence/between
@@ -2196,17 +2208,17 @@ sh  3
 --- Sentence/start
 -i  115
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  4
 sh  4
 -h  14
--x  315.51387pt
+-x  316.11061pt
 -y  431.19244pt
 
 --- Sentence/end
 -i  115
--p  17
--x  450.5586pt
+-p  14
+-x  473.69829pt
 -y  412.19244pt
 
 --- Sentence/between
@@ -2214,17 +2226,17 @@ sh  4
 --- Sentence/start
 -i  116
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  5
 sh  5
 -h  14
--x  450.5586pt
+-x  473.69829pt
 -y  412.19244pt
 
 --- Sentence/end
 -i  116
--p  17
--x  457.47755pt
+-p  14
+-x  492.34404pt
 -y  393.19244pt
 
 --- Sentence/between
@@ -2232,17 +2244,17 @@ sh  5
 --- Sentence/start
 -i  117
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  6
 sh  6
 -h  14
--x  457.47755pt
+-x  492.34404pt
 -y  393.19244pt
 
 --- Sentence/end
 -i  117
--p  17
--x  264.61064pt
+-p  14
+-x  306.27977pt
 -y  374.19244pt
 
 --- Sentence/between
@@ -2250,17 +2262,17 @@ sh  6
 --- Sentence/start
 -i  118
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  7
 sh  7
 -h  14
--x  264.61064pt
+-x  306.27977pt
 -y  374.19244pt
 
 --- Sentence/end
 -i  118
--p  17
--x  79.49744pt
+-p  14
+-x  136.94043pt
 -y  355.19244pt
 
 --- Sentence/between
@@ -2268,17 +2280,17 @@ sh  7
 --- Sentence/start
 -i  119
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  8
 sh  8
 -h  14
--x  79.49744pt
+-x  136.94043pt
 -y  355.19244pt
 
 --- Sentence/end
 -i  119
--p  17
--x  383.43475pt
+-p  14
+-x  459.30736pt
 -y  336.19244pt
 
 --- Sentence/between
@@ -2286,17 +2298,17 @@ sh  8
 --- Sentence/start
 -i  120
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  9
 sh  9
 -h  14
--x  383.43475pt
+-x  459.30736pt
 -y  336.19244pt
 
 --- Sentence/end
 -i  120
--p  17
--x  79.49744pt
+-p  14
+-x  141.3858pt
 -y  298.19244pt
 
 --- Sentence/between
@@ -2304,17 +2316,17 @@ sh  9
 --- Sentence/start
 -i  121
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  10
 sh  10
 -h  14
--x  79.49744pt
+-x  141.3858pt
 -y  298.19244pt
 
 --- Sentence/end
 -i  121
--p  17
--x  223.16199pt
+-p  14
+-x  266.50053pt
 -y  260.19244pt
 
 --- Sentence/between
@@ -2322,17 +2334,17 @@ sh  10
 --- Sentence/start
 -i  122
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  11
 sh  11
 -h  14
--x  223.16199pt
+-x  266.50053pt
 -y  260.19244pt
 
 --- Sentence/end
 -i  122
--p  17
--x  79.49744pt
+-p  14
+-x  127.45688pt
 -y  222.19244pt
 
 --- Sentence/between
@@ -2340,17 +2352,17 @@ sh  11
 --- Sentence/start
 -i  123
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  12
 sh  12
 -h  14
--x  79.49744pt
+-x  127.45688pt
 -y  222.19244pt
 
 --- Sentence/end
 -i  123
--p  17
--x  135.3559pt
+-p  14
+-x  187.09598pt
 -y  203.19244pt
 
 --- Sentence/between
@@ -2358,17 +2370,17 @@ sh  12
 --- Sentence/start
 -i  124
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  13
 sh  13
 -h  14
--x  135.3559pt
+-x  187.09598pt
 -y  203.19244pt
 
 --- Sentence/end
 -i  124
--p  17
--x  280.2376pt
+-p  14
+-x  352.47668pt
 -y  184.19244pt
 
 --- Sentence/between
@@ -2376,35 +2388,35 @@ sh  13
 --- Sentence/start
 -i  125
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  14
 sh  14
 -h  14
--x  280.2376pt
+-x  352.47668pt
 -y  184.19244pt
 
 --- Sentence/end
 -i  125
--p  17
--x  484.09787pt
--y  184.19244pt
+-p  14
+-x  120.13687pt
+-y  165.19244pt
 
 --- Sentence/between
 
 --- Sentence/start
 -i  126
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  15
 sh  15
 -h  14
--x  484.09787pt
--y  184.19244pt
+-x  120.13687pt
+-y  165.19244pt
 
 --- Sentence/end
 -i  126
--p  17
--x  335.2037pt
+-p  14
+-x  458.07385pt
 -y  127.19244pt
 
 --- Sentence/between
@@ -2412,36 +2424,36 @@ sh  15
 --- Sentence/start
 -i  127
 -b  19.0pt;1.0
--p  17
+-p  14
 sp  16
 sh  16
 -h  14
--x  335.2037pt
+-x  458.07385pt
 -y  127.19244pt
 
 --- Sentence/end
 -i  127
--p  18
--x  408.60135pt
+-p  15
+-x  519.91118pt
 -y  681.19244pt
 
 --- Paragraph/end
 -i  14
--p  18
--x  408.60135pt
+-p  15
+-x  519.91118pt
 -y  681.19244pt
 
 --- Paragraph/start
 -i  15
 hp  2
--p  18
+-p  15
 -x  79.49744pt
 -y  674.98157pt
 
 --- Sentence/start
 -i  128
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  17
 sh  1
 -h  15
@@ -2450,8 +2462,8 @@ sh  1
 
 --- Sentence/end
 -i  128
--p  18
--x  438.95364pt
+-p  15
+-x  439.08542pt
 -y  640.19244pt
 
 --- Sentence/between
@@ -2459,17 +2471,17 @@ sh  1
 --- Sentence/start
 -i  129
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  1
 sh  2
 -h  15
--x  438.95364pt
+-x  439.08542pt
 -y  640.19244pt
 
 --- Sentence/end
 -i  129
--p  18
--x  176.0054pt
+-p  15
+-x  178.23161pt
 -y  602.19244pt
 
 --- Sentence/between
@@ -2477,16 +2489,16 @@ sh  2
 --- Sentence/start
 -i  130
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  2
 sh  3
 -h  15
--x  176.0054pt
+-x  178.23161pt
 -y  602.19244pt
 
 --- Sentence/end
 -i  130
--p  18
+-p  15
 -x  79.49744pt
 -y  564.19244pt
 
@@ -2495,7 +2507,7 @@ sh  3
 --- Sentence/start
 -i  131
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  3
 sh  4
 -h  15
@@ -2504,8 +2516,8 @@ sh  4
 
 --- Sentence/end
 -i  131
--p  18
--x  217.85548pt
+-p  15
+-x  219.5593pt
 -y  545.19244pt
 
 --- Sentence/between
@@ -2513,17 +2525,17 @@ sh  4
 --- Sentence/start
 -i  132
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  4
 sh  5
 -h  15
--x  217.85548pt
+-x  219.5593pt
 -y  545.19244pt
 
 --- Sentence/end
 -i  132
--p  18
--x  460.75925pt
+-p  15
+-x  461.10583pt
 -y  507.19244pt
 
 --- Sentence/between
@@ -2531,17 +2543,17 @@ sh  5
 --- Sentence/start
 -i  133
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  5
 sh  6
 -h  15
--x  460.75925pt
+-x  461.10583pt
 -y  507.19244pt
 
 --- Sentence/end
 -i  133
--p  18
--x  121.58804pt
+-p  15
+-x  124.70334pt
 -y  469.19244pt
 
 --- Sentence/between
@@ -2549,17 +2561,17 @@ sh  6
 --- Sentence/start
 -i  134
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  6
 sh  7
 -h  15
--x  121.58804pt
+-x  124.70334pt
 -y  469.19244pt
 
 --- Sentence/end
 -i  134
--p  18
--x  142.96188pt
+-p  15
+-x  152.33014pt
 -y  412.19244pt
 
 --- Sentence/between
@@ -2567,16 +2579,16 @@ sh  7
 --- Sentence/start
 -i  135
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  7
 sh  8
 -h  15
--x  142.96188pt
+-x  152.33014pt
 -y  412.19244pt
 
 --- Sentence/end
 -i  135
--p  18
+-p  15
 -x  79.49744pt
 -y  374.19244pt
 
@@ -2585,7 +2597,7 @@ sh  8
 --- Sentence/start
 -i  136
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  8
 sh  9
 -h  15
@@ -2594,7 +2606,7 @@ sh  9
 
 --- Sentence/end
 -i  136
--p  18
+-p  15
 -x  79.49744pt
 -y  317.19244pt
 
@@ -2603,7 +2615,7 @@ sh  9
 --- Sentence/start
 -i  137
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  9
 sh  10
 -h  15
@@ -2612,8 +2624,8 @@ sh  10
 
 --- Sentence/end
 -i  137
--p  18
--x  311.22353pt
+-p  15
+-x  311.64857pt
 -y  298.19244pt
 
 --- Sentence/between
@@ -2621,17 +2633,17 @@ sh  10
 --- Sentence/start
 -i  138
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  10
 sh  11
 -h  15
--x  311.22353pt
+-x  311.64857pt
 -y  298.19244pt
 
 --- Sentence/end
 -i  138
--p  18
--x  254.71245pt
+-p  15
+-x  255.46217pt
 -y  279.19244pt
 
 --- Sentence/between
@@ -2639,36 +2651,36 @@ sh  11
 --- Sentence/start
 -i  139
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  11
 sh  12
 -h  15
--x  254.71245pt
+-x  255.46217pt
 -y  279.19244pt
 
 --- Sentence/end
 -i  139
--p  18
--x  523.30812pt
+-p  15
+-x  519.99702pt
 -y  241.19244pt
 
 --- Paragraph/end
 -i  15
--p  18
--x  523.30812pt
+-p  15
+-x  519.99702pt
 -y  241.19244pt
 
 --- Paragraph/start
 -i  16
 hp  1
--p  18
+-p  15
 -x  347.4697pt
 -y  219.19244pt
 
 --- Sentence/start
 -i  140
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  12
 sh  1
 -h  16
@@ -2677,21 +2689,21 @@ sh  1
 
 --- Paragraph/end
 -i  16
--p  18
+-p  15
 -x  522.31778pt
 -y  219.19244pt
 
 --- Paragraph/start
 -i  17
 hp  2
--p  18
+-p  15
 -x  354.77571pt
 -y  197.19244pt
 
 --- Sentence/start
 -i  141
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  13
 sh  1
 -h  17
@@ -2700,21 +2712,21 @@ sh  1
 
 --- Paragraph/end
 -i  17
--p  18
+-p  15
 -x  522.31778pt
 -y  197.19244pt
 
 --- Paragraph/start
 -i  18
 hp  3
--p  18
+-p  15
 -x  176.78133pt
 -y  175.19244pt
 
 --- Sentence/start
 -i  142
 -b  19.0pt;1.0
--p  18
+-p  15
 sp  14
 sh  1
 -h  18
@@ -2723,7 +2735,7 @@ sh  1
 
 --- Paragraph/end
 -i  18
--p  18
+-p  15
 -x  522.31778pt
 -y  175.19244pt
 
