@@ -303,10 +303,10 @@ t.
 |  law guardians in child custody litigation.\5 Against the theory behind
 |  law guardian appointments - that a neutral representative can best
 |  represent a child’s interests while the parents are at loggerheads in
-|  litigation - Ducote maintains that nature has ...\ arranged it so that
+|  litigation - Ducote maintains that nature has . . arranged it so that
 |  most parents do, in fact, have more invested in the child’s welfare than
 |  the guardian ad litem du jour, and therefore it is certainly reasonable
-|  to conclude ...\ that after two decades of experience and experimentation ...\ the GAL’s [guardian ad litem’s] place in custody cases should be
+|  to conclude . . that after two decades of experience and experimentation . . the GAL’s [guardian ad litem’s] place in custody cases should be
 .  extinguished (pp. 117, 119)
 
 --- Sentence/end 
@@ -697,8 +697,8 @@ t.
 |  they operate. Albert J. Meehan’s 1997 study of police record-keeping practices
 |  (referred to in Chapter 3) argues that to prove guilt in a court of law,
 |  police often resort to a transformation of what happened into ‘facts’
-|  that will appear to conform with proper legal procedure ...\ [which may
-.  include] ...\ a set of facts that are lies (p. 189)
+|  that will appear to conform with proper legal procedure . . [which may
+.  include] . . a set of facts that are lies (p. 189)
 
 --- Sentence/end 
 id: 25
@@ -720,19 +720,31 @@ r#  12696  206  1
 
 --- Sentence//end
 id: 26
-r#  13293  212  22
+r#  13197  210  74
 p: .
 t. 
 |  Among Meehan’s examples is a police report that describes youths at
 |  the scene of a crime as screaming and yelling and breaking a window, even though they did not do this; these fabricated events were
 |  presented just to make a case of guilt to a judge. Meehan pointed out
 |  that the arresting officers strongly suspected the youths, who had a history of drug offenses, but were frustrated by the lack of evidence needed
-|  to ensure a conviction. For that reason, the events as they unfolded ...\
+.  to ensure a conviction. For that reason, the events as they unfolded . 
+
+
+--- Sentence/switch
+id: 27
+r#  13198  210  75
+
+
+--- Sentence//end
+id: 27
+r#  13293  212  22
+p: .
+t. 
 |  [were] clearly altered to create the elements of what the law defines as
 .  an offense (p. 189)
 
 --- Sentence/end 
-id: 26
+id: 27
 r#  13294  212  23
 
 --- Paragraph/end 
@@ -746,11 +758,11 @@ r#  13296  214  1
 
 
 --- Sentence/start
-id: 27
+id: 28
 r#  13296  214  1
 
 --- Sentence//end
-id: 27
+id: 28
 r#  13814  220  15
 p: .
 t. 
@@ -763,7 +775,7 @@ t.
 .  (pp. 186--189)
 
 --- Sentence/end 
-id: 27
+id: 28
 r#  13815  220  16
 
 --- Paragraph/end 
@@ -777,11 +789,11 @@ r#  13817  222  1
 
 
 --- Sentence/start
-id: 28
+id: 29
 r#  13817  222  1
 
 --- Sentence//end
-id: 28
+id: 29
 r#  14482  229  9
 p: .
 t. 
@@ -795,7 +807,7 @@ t.
 .  so be it
 
 --- Sentence/end 
-id: 28
+id: 29
 r#  14483  229  10
 
 --- Paragraph/end 
@@ -809,11 +821,11 @@ r#  14485  231  1
 
 
 --- Sentence/start
-id: 29
+id: 30
 r#  14485  231  1
 
 --- Sentence//end
-id: 29
+id: 30
 r#  14911  236  73
 p: .
 t. 
@@ -825,7 +837,7 @@ t.
 .  encouraging an all-too-willing judge to treat the mother as a lawbreaker
 
 --- Sentence/end 
-id: 29
+id: 30
 r#  14912  236  74
 
 --- Paragraph/end 
@@ -839,7 +851,7 @@ r#  14914  238  1
 
 
 --- Sentence/start
-id: 30
+id: 31
 r#  14914  238  1
 --- Paragraph/end 
 id: 27
@@ -852,11 +864,11 @@ r#  15551  247  1
 
 
 --- Sentence/start
-id: 31
+id: 32
 r#  15551  247  1
 
 --- Sentence//end
-id: 31
+id: 32
 r#  15617  247  67
 p: .
 t. 
@@ -871,12 +883,12 @@ t.
 
 
 --- Sentence/switch
-id: 32
+id: 33
 r#  15618  247  68
 
 
 --- Sentence//end
-id: 32
+id: 33
 r#  16363  255  30
 p: .
 t. 
@@ -890,7 +902,7 @@ t.
 .  law guardian ignored all this
 
 --- Sentence/end 
-id: 32
+id: 33
 r#  16364  255  31
 
 --- Paragraph/end 
@@ -904,11 +916,11 @@ r#  16366  257  1
 
 
 --- Sentence/start
-id: 33
+id: 34
 r#  16366  257  1
 
 --- Sentence//end
-id: 33
+id: 34
 r#  16992  264  56
 p: .
 t. 
@@ -922,7 +934,7 @@ t.
 .  did in fact place both children in the father’s custody
 
 --- Sentence/end 
-id: 33
+id: 34
 r#  16993  264  57
 
 --- Paragraph/end 
@@ -936,11 +948,11 @@ r#  16995  266  1
 
 
 --- Sentence/start
-id: 34
+id: 35
 r#  16995  266  1
 
 --- Sentence//end
-id: 34
+id: 35
 r#  17272  269  69
 p: .
 t. 
@@ -951,7 +963,7 @@ t.
 
 
 --- Sentence/switch
-id: 35
+id: 36
 r#  17273  269  70
 
 --- Paragraph/end 
@@ -965,11 +977,11 @@ r#  17977  279  1
 
 
 --- Sentence/start
-id: 36
+id: 37
 r#  17977  279  1
 
 --- Sentence//end
-id: 36
+id: 37
 r#  18505  286  21
 p: .
 t. 
@@ -990,7 +1002,7 @@ t.
 .  handed to the mother
 
 --- Sentence/end 
-id: 36
+id: 37
 r#  18506  286  22
 
 --- Paragraph/end 
@@ -1004,11 +1016,11 @@ r#  18508  288  1
 
 
 --- Sentence/start
-id: 37
+id: 38
 r#  18508  288  1
 
 --- Sentence//end
-id: 37
+id: 38
 r#  18573  288  66
 p: .
 t. 
@@ -1016,12 +1028,12 @@ t.
 
 
 --- Sentence/switch
-id: 38
+id: 39
 r#  18574  288  67
 
 
 --- Sentence//end
-id: 38
+id: 39
 r#  18819  295  1
 p: 
 t. 
@@ -1032,26 +1044,26 @@ t.
 
 
 --- Sentence/switch
-id: 39
+id: 40
 r#  18839  295  21
 
 
 --- Sentence//end
-id: 39
+id: 40
 r#  18995  298  1
 p: 
 t. 
 |  I have personal knowledge that there are criminal proceedings being taken by the State of Connecticut,
-.  criminal investigation.... I have witnesses and - 
+.  criminal investigation. . I have witnesses and - 
 
 
 --- Sentence/switch
-id: 40
+id: 41
 r#  19027  298  33
 
 
 --- Sentence//end
-id: 40
+id: 41
 r#  19060  298  66
 p: ?
 t. 
@@ -1059,7 +1071,7 @@ t.
 
 
 --- Sentence//end
-id: 40
+id: 41
 r#  19063  300  1
 p: 
 t. 
@@ -1067,12 +1079,12 @@ t.
 
 
 --- Sentence/switch
-id: 41
+id: 42
 r#  19081  300  19
 
 
 --- Sentence//end
-id: 41
+id: 42
 r#  19108  300  46
 p: .
 t. 
@@ -1080,7 +1092,7 @@ t.
 
 
 --- Sentence//end
-id: 41
+id: 42
 r#  19111  302  1
 p: 
 t. 
@@ -1088,12 +1100,12 @@ t.
 
 
 --- Sentence/switch
-id: 42
+id: 43
 r#  19131  302  21
 
 
 --- Sentence//end
-id: 42
+id: 43
 r#  19152  304  1
 p: 
 t. 
@@ -1101,21 +1113,21 @@ t.
 
 
 --- Sentence/switch
-id: 43
+id: 44
 r#  19171  304  20
 
 
 --- Sentence//end
-id: 43
+id: 44
 r#  19277  305  56
 p: ?
 t. 
 |  Excuse me, ma’am. The tape recorder can only pick
-.  up one of us talking at a time...\ . Yes, [law guardian]
+.  up one of us talking at a time. . . Yes, [law guardian]
 
 
 --- Sentence//end
-id: 43
+id: 44
 r#  19280  307  1
 p: 
 t. 
@@ -1123,25 +1135,25 @@ t.
 
 
 --- Sentence/switch
-id: 44
+id: 45
 r#  19298  307  19
 
 
 --- Sentence//end
-id: 44
+id: 45
 r#  19674  312  54
 p: .
 t. 
 |  Your Honor, I am not prepared. I just happen to be
 |  in the courtroom today. There are other motions in
 |  this matter scheduled for which [the mother] has been
-|  served. I think [she] could file appropriate other orders ...\ I would request that there not be any testimony
+|  served. I think [she] could file appropriate other orders . . I would request that there not be any testimony
 |  today and that any additional proceedings be sealed and
 .  I will submit a petition to the court concerning that
 
 
 --- Sentence/switch
-id: 45
+id: 46
 r#  19675  312  55
 
 --- Paragraph/end 
@@ -1155,11 +1167,11 @@ r#  19679  315  1
 
 
 --- Sentence/start
-id: 46
+id: 47
 r#  19679  315  1
 
 --- Sentence//end
-id: 46
+id: 47
 r#  20107  320  67
 p: !
 t. 
@@ -1172,7 +1184,7 @@ t.
 
 
 --- Sentence/switch
-id: 47
+id: 48
 r#  20108  320  68
 
 --- Paragraph/end 
@@ -1186,11 +1198,11 @@ r#  20271  325  1
 
 
 --- Sentence/start
-id: 48
+id: 49
 r#  20271  325  1
 
 --- Sentence//end
-id: 48
+id: 49
 r#  20533  330  1
 p: 
 t. 
@@ -1202,27 +1214,27 @@ t.
 
 
 --- Sentence/switch
-id: 49
+id: 50
 r#  20553  330  21
 
 
 --- Sentence//end
-id: 49
+id: 50
 r#  20707  334  1
 p: 
 t. 
 |  Your Honor, I have a statement that my children
 |  are in immediate danger of sexual abuse or death as we
-.  speak.... I have no time to wait. My children - 
+.  speak. . I have no time to wait. My children - 
 
 
 --- Sentence/switch
-id: 50
+id: 51
 r#  20726  334  20
 
 
 --- Sentence//end
-id: 50
+id: 51
 r#  20790  337  1
 p: 
 t. 
@@ -1231,12 +1243,12 @@ t.
 
 
 --- Sentence/switch
-id: 51
+id: 52
 r#  20810  337  21
 
 
 --- Sentence//end
-id: 51
+id: 52
 r#  20877  340  1
 p: 
 t. 
@@ -1245,12 +1257,12 @@ t.
 
 
 --- Sentence/switch
-id: 52
+id: 53
 r#  20896  340  20
 
 
 --- Sentence//end
-id: 52
+id: 53
 r#  21003  341  53
 p: .
 t. 
@@ -1259,13 +1271,13 @@ t.
 
 
 --- Sentence/switch
-id: 53
+id: 54
 r#  21004  341  54
 
 
 --- Sentence//end
-id: 53
-r#  21079  343  24
+id: 54
+r#  21080  343  24
 p: .
 t. 
 |  If you want a hearing you can go see Mr. Goetz who
@@ -1273,56 +1285,56 @@ t.
 
 
 --- Sentence//end
-id: 53
-r#  21082  345  1
+id: 54
+r#  21083  345  1
 p: 
 t. 
 .  
 
 
 --- Sentence/switch
-id: 54
-r#  21102  345  21
+id: 55
+r#  21103  345  21
 
 
 --- Sentence//end
-id: 54
-r#  21158  348  1
+id: 55
+r#  21159  348  1
 p: 
 t. 
-|  All right.... They are declared in imminent
+|  All right. . They are declared in imminent
 .  danger - 
 
 
 --- Sentence/switch
-id: 55
-r#  21177  348  20
+id: 56
+r#  21178  348  20
 
 
 --- Sentence//end
-id: 55
-r#  21197  348  40
+id: 56
+r#  21198  348  40
 p: .
 t. 
 .  Ma’am, I heard that
 
 
 --- Sentence//end
-id: 55
-r#  21200  350  1
+id: 56
+r#  21201  350  1
 p: 
 t. 
 .  
 
 
 --- Sentence/switch
-id: 56
-r#  21220  350  21
+id: 57
+r#  21221  350  21
 
 
 --- Sentence//end
-id: 56
-r#  21301  353  1
+id: 57
+r#  21302  353  1
 p: 
 t. 
 |  I know, but I have information from the State of
@@ -1330,49 +1342,49 @@ t.
 
 
 --- Sentence/switch
-id: 57
-r#  21320  353  20
+id: 58
+r#  21321  353  20
 
 
 --- Sentence//end
-id: 57
-r#  21354  353  54
+id: 58
+r#  21355  353  54
 p: .
 t. 
 .  You’ve told me that several times
 
 
 --- Sentence//end
-id: 57
-r#  21357  355  1
+id: 58
+r#  21358  355  1
 p: 
 t. 
 .  
 
 
 --- Sentence/switch
-id: 58
-r#  21377  355  21
+id: 59
+r#  21378  355  21
 
 
 --- Sentence//end
-id: 58
-r#  21521  359  1
+id: 59
+r#  21522  359  1
 p: 
 t. 
-|  No, I have not, Your Honor.... I just want on
+|  No, I have not, Your Honor. . I just want on
 |  the record that [the father] has been put on New York
-.  as an alleged perpetrator of children....
+.  as an alleged perpetrator of children. .
 
 
 --- Sentence/switch
-id: 59
-r#  21539  359  19
+id: 60
+r#  21540  359  19
 
 
 --- Sentence//end
-id: 59
-r#  21769  364  1
+id: 60
+r#  21770  364  1
 p: 
 t. 
 |  Your Honor, this is slanderous! This is perjury and
@@ -1382,13 +1394,13 @@ t.
 
 
 --- Sentence/switch
-id: 60
-r#  21798  364  30
+id: 61
+r#  21799  364  30
 
 
 --- Sentence//end
-id: 60
-r#  21851  365  16
+id: 61
+r#  21852  365  16
 p: ?
 t. 
 |  Your Honor, can I have that stricken
@@ -1396,50 +1408,29 @@ t.
 
 
 --- Sentence//end
-id: 60
-r#  21854  367  1
+id: 61
+r#  21855  367  1
 p: 
 t. 
 .  
 
 
 --- Sentence/switch
-id: 61
-r#  21874  367  21
+id: 62
+r#  21875  367  21
 
 
 --- Sentence//end
-id: 61
-r#  21888  367  35
+id: 62
+r#  21889  367  35
 p: !
 t. 
 .  No, it’s real
 
 
 --- Sentence//end
-id: 61
-r#  21891  369  1
-p: 
-t. 
-.  
-
-
---- Sentence/switch
 id: 62
-r#  21910  369  20
-
-
---- Sentence//end
-id: 62
-r#  21924  369  34
-p: .
-t. 
-.  We’re through
-
-
---- Sentence//end
-id: 62
-r#  21927  371  1
+r#  21892  369  1
 p: 
 t. 
 .  
@@ -1447,7 +1438,28 @@ t.
 
 --- Sentence/switch
 id: 63
-r#  21945  371  19
+r#  21911  369  20
+
+
+--- Sentence//end
+id: 63
+r#  21925  369  34
+p: .
+t. 
+.  We’re through
+
+
+--- Sentence//end
+id: 63
+r#  21928  371  1
+p: 
+t. 
+.  
+
+
+--- Sentence/switch
+id: 64
+r#  21946  371  19
 
 --- Paragraph/end 
 id: 34
@@ -1456,16 +1468,16 @@ y: N/A
 
 --- Paragraph/start
 id: 35
-r#  21975  374  1
+r#  21976  374  1
 
 
 --- Sentence/start
-id: 64
-r#  21975  374  1
+id: 65
+r#  21976  374  1
 
 --- Sentence//end
-id: 64
-r#  22232  377  50
+id: 65
+r#  22233  377  50
 p: .
 t. 
 |  Thank you, Your Honor.\15
@@ -1475,8 +1487,8 @@ t.
 .  they might be abused again, or die, at any moment
 
 --- Sentence/end 
-id: 64
-r#  22233  377  51
+id: 65
+r#  22234  377  51
 
 --- Paragraph/end 
 id: 35
@@ -1485,16 +1497,16 @@ y: N/A
 
 --- Paragraph/start
 id: 36
-r#  22235  379  1
+r#  22236  379  1
 
 
 --- Sentence/start
-id: 65
-r#  22235  379  1
+id: 66
+r#  22236  379  1
 
 --- Sentence//end
-id: 65
-r#  22456  381  83
+id: 66
+r#  22457  381  83
 p: .
 t. 
 |  A law guardian appointed in a Maryland divorce showed similar
@@ -1502,8 +1514,8 @@ t.
 .  of the case in order to aid a father accused of abusing the law guardian’s clients
 
 --- Sentence/end 
-id: 65
-r#  22457  381  84
+id: 66
+r#  22458  381  84
 
 --- Paragraph/end 
 id: 36
@@ -1512,16 +1524,16 @@ y: N/A
 
 --- Paragraph/start
 id: 37
-r#  22459  383  1
+r#  22460  383  1
 
 
 --- Sentence/start
-id: 66
-r#  22459  383  1
+id: 67
+r#  22460  383  1
 
 --- Sentence//end
-id: 66
-r#  22805  386  65
+id: 67
+r#  22806  386  65
 p: .
 t. 
 |  The divorcing couple had two small boys. Six months after the couple
@@ -1530,8 +1542,8 @@ t.
 .  the boys to spend roughly equal periods of time with each parent
 
 --- Sentence/end 
-id: 66
-r#  22806  386  66
+id: 67
+r#  22807  386  66
 
 --- Paragraph/end 
 id: 37
@@ -1540,12 +1552,12 @@ y: N/A
 
 --- Paragraph/start
 id: 38
-r#  22808  388  1
+r#  22809  388  1
 
 
 --- Sentence/start
-id: 67
-r#  22808  388  1
+id: 68
+r#  22809  388  1
 --- Paragraph/end 
 id: 38
 y: N/A
@@ -1553,12 +1565,12 @@ y: N/A
 
 --- Paragraph/start
 id: 39
-r#  23401  396  1
+r#  23402  396  1
 
 
 --- Sentence/start
-id: 68
-r#  23401  396  1
+id: 69
+r#  23402  396  1
 --- Paragraph/end 
 id: 39
 y: N/A
@@ -1566,16 +1578,16 @@ y: N/A
 
 --- Paragraph/start
 id: 40
-r#  24193  407  1
+r#  24194  407  1
 
 
 --- Sentence/start
-id: 69
-r#  24193  407  1
+id: 70
+r#  24194  407  1
 
 --- Sentence//end
-id: 69
-r#  25217  418  50
+id: 70
+r#  25218  418  50
 p: .
 t. 
 |  The GAL had taken no action at all in response to the abuse allegations against the father. However, less than two months after the parties
@@ -1607,8 +1619,8 @@ t.
 .  ill and was making false allegations of abuse
 
 --- Sentence/end 
-id: 69
-r#  25218  418  51
+id: 70
+r#  25219  418  51
 
 --- Paragraph/end 
 id: 40
@@ -1617,12 +1629,12 @@ y: N/A
 
 --- Paragraph/start
 id: 41
-r#  25220  420  1
+r#  25221  420  1
 
 
 --- Sentence/start
-id: 70
-r#  25220  420  1
+id: 71
+r#  25221  420  1
 --- Paragraph/end 
 id: 41
 y: N/A
@@ -1630,16 +1642,16 @@ y: N/A
 
 --- Paragraph/start
 id: 42
-r#  26553  439  1
+r#  26554  439  1
 
 
 --- Sentence/start
-id: 71
-r#  26553  439  1
+id: 72
+r#  26554  439  1
 
 --- Sentence//end
-id: 71
-r#  27300  447  47
+id: 72
+r#  27301  447  47
 p: .
 t. 
 |  Indeed, the most extraordinary thing about the GAL’s action is that
@@ -1670,8 +1682,8 @@ t.
 .  interests of the children they place at risk
 
 --- Sentence/end 
-id: 71
-r#  27301  447  48
+id: 72
+r#  27302  447  48
 
 --- Paragraph/end 
 id: 42
@@ -1680,16 +1692,16 @@ y: N/A
 
 --- Paragraph/start
 id: 43
-r#  27303  449  1
+r#  27304  449  1
 
 
 --- Sentence/start
-id: 72
-r#  27303  449  1
+id: 73
+r#  27304  449  1
 
 --- Sentence//end
-id: 72
-r#  27635  453  53
+id: 73
+r#  27636  453  53
 p: .
 t. 
 |  A Brooklyn, New York, family court case featured a law guardian
@@ -1699,8 +1711,8 @@ t.
 .  district attorney officials to prevent a prosecution
 
 --- Sentence/end 
-id: 72
-r#  27636  453  54
+id: 73
+r#  27637  453  54
 
 --- Paragraph/end 
 id: 43
@@ -1709,12 +1721,12 @@ y: N/A
 
 --- Paragraph/start
 id: 44
-r#  27638  455  1
+r#  27639  455  1
 
 
 --- Sentence/start
-id: 73
-r#  27638  455  1
+id: 74
+r#  27639  455  1
 --- Paragraph/end 
 id: 44
 y: N/A
@@ -1722,16 +1734,16 @@ y: N/A
 
 --- Paragraph/start
 id: 45
-r#  28674  469  1
+r#  28675  469  1
 
 
 --- Sentence/start
-id: 74
-r#  28674  469  1
+id: 75
+r#  28675  469  1
 
 --- Sentence//end
-id: 74
-r#  29614  479  74
+id: 75
+r#  29615  479  74
 p: .
 t. 
 |  The law guardian’s priorities\25 were evident almost immediately,
@@ -1760,8 +1772,8 @@ t.
 
 
 --- Sentence/switch
-id: 75
-r#  29615  479  75
+id: 76
+r#  29616  479  75
 
 --- Paragraph/end 
 id: 45
@@ -1770,16 +1782,16 @@ y: N/A
 
 --- Paragraph/start
 id: 46
-r#  29747  483  1
+r#  29748  483  1
 
 
 --- Sentence/start
-id: 76
-r#  29747  483  1
+id: 77
+r#  29748  483  1
 
 --- Sentence//end
-id: 76
-r#  30601  491  12
+id: 77
+r#  30602  491  12
 p: .
 t. 
 |  In other words, the girl’s lawyer had knowingly denied the truth about
@@ -1790,12 +1802,12 @@ t.
 |  Brooklyn Family Court), the law guardian reportedly called the district attorney’s office to state, falsely, that the child had recanted her
 |  charges.\28 He also sent the DA a psychological report that was critical of the mother, but failed to send the more favorable report that had
 |  been requested and obtained by his own agency. He also fulminated to
-|  the mother’s lawyer, who told her that her effort to have the father prosecuted was going to hurt [her] bad ...\ real bad in the family court
+|  the mother’s lawyer, who told her that her effort to have the father prosecuted was going to hurt [her] bad . . real bad in the family court
 .  proceedings
 
 --- Sentence/end 
-id: 76
-r#  30602  491  13
+id: 77
+r#  30603  491  13
 
 --- Paragraph/end 
 id: 46
@@ -1804,16 +1816,16 @@ y: N/A
 
 --- Paragraph/start
 id: 47
-r#  30604  493  1
+r#  30605  493  1
 
 
 --- Sentence/start
-id: 77
-r#  30604  493  1
+id: 78
+r#  30605  493  1
 
 --- Sentence//end
-id: 77
-r#  30961  497  72
+id: 78
+r#  30962  497  72
 p: .
 t. 
 |  In an Idaho case in the early 1990s, the court-appointed law guardian,
@@ -1824,8 +1836,8 @@ t.
 
 
 --- Sentence/switch
-id: 78
-r#  30962  497  73
+id: 79
+r#  30963  497  73
 
 --- Paragraph/end 
 id: 47
@@ -1834,16 +1846,16 @@ y: N/A
 
 --- Paragraph/start
 id: 48
-r#  31499  506  1
+r#  31500  506  1
 
 
 --- Sentence/start
-id: 79
-r#  31499  506  1
+id: 80
+r#  31500  506  1
 
 --- Sentence//end
-id: 79
-r#  31985  511  67
+id: 80
+r#  31986  511  67
 p: .
 t. 
 |  In the face of a pediatrician’s testimony supporting the boy’s report, the
@@ -1860,8 +1872,8 @@ t.
 .  to place the boys with the man one of them accused of abusing them
 
 --- Sentence/end 
-id: 79
-r#  31986  511  68
+id: 80
+r#  31987  511  68
 
 --- Paragraph/end 
 id: 48
@@ -1870,12 +1882,12 @@ y: N/A
 
 --- Paragraph/start
 id: 49
-r#  31988  513  1
+r#  31989  513  1
 
 
 --- Sentence/start
-id: 80
-r#  31988  513  1
+id: 81
+r#  31989  513  1
 --- Paragraph/end 
 id: 49
 y: N/A
@@ -1883,12 +1895,12 @@ y: N/A
 
 --- Paragraph/start
 id: 50
-r#  32614  523  1
+r#  32615  523  1
 
 
 --- Sentence/start
-id: 81
-r#  32614  523  1
+id: 82
+r#  32615  523  1
 --- Paragraph/end 
 id: 50
 y: N/A
@@ -1896,12 +1908,12 @@ y: N/A
 
 --- Paragraph/start
 id: 51
-r#  33209  531  1
+r#  33210  531  1
 
 
 --- Sentence/start
-id: 82
-r#  33209  531  1
+id: 83
+r#  33210  531  1
 --- Paragraph/end 
 id: 51
 y: N/A
@@ -1909,16 +1921,16 @@ y: N/A
 
 --- Paragraph/start
 id: 52
-r#  33567  536  1
+r#  33568  536  1
 
 
 --- Sentence/start
-id: 83
-r#  33567  536  1
+id: 84
+r#  33568  536  1
 
 --- Sentence//end
-id: 83
-r#  33918  539  143
+id: 84
+r#  33919  539  143
 p: .
 t. 
 |  Just before a court hearing held about a month after the boys were
@@ -1932,7 +1944,7 @@ t.
 |  with her children during the day, while the father worked.\32The law guardian defended the father even as more evidence of abuse
 |  continued to surface. Over two years after the boys were placed with
 |  their father - on the law guardian’s recommendation - a clinical psychologist who interviewed the boys concluded that these boys were
-|  sexually abused by their father ...\ in [the younger boy’s] case, particularly, the abuse was ongoing.\33 Once again, the law guardian’s reaction
+|  sexually abused by their father . . in [the younger boy’s] case, particularly, the abuse was ongoing.\33 Once again, the law guardian’s reaction
 |  to the news was not an expression of concern for his young clients;
 |  rather, he set out anew to punish the mother - this time, for bringing
 |  the children to a psychologist.\34In a Colorado case, the mother had observed several troubling
@@ -1945,8 +1957,8 @@ t.
 
 
 --- Sentence/switch
-id: 84
-r#  33919  539  144
+id: 85
+r#  33920  539  144
 
 --- Paragraph/end 
 id: 52
@@ -1955,16 +1967,16 @@ y: N/A
 
 --- Paragraph/start
 id: 53
-r#  34293  547  1
+r#  34294  547  1
 
 
 --- Sentence/start
-id: 85
-r#  34293  547  1
+id: 86
+r#  34294  547  1
 
 --- Sentence//end
-id: 85
-r#  34358  547  66
+id: 86
+r#  34359  547  66
 p: .
 t. 
 |  vertical laceration on the posterior fourchette; it found the child to be
@@ -1976,8 +1988,8 @@ t.
 
 
 --- Sentence/switch
-id: 86
-r#  34359  547  67
+id: 87
+r#  34360  547  67
 
 --- Paragraph/end 
 id: 53
@@ -1986,16 +1998,16 @@ y: N/A
 
 --- Paragraph/start
 id: 54
-r#  34670  553  1
+r#  34671  553  1
 
 
 --- Sentence/start
-id: 87
-r#  34670  553  1
+id: 88
+r#  34671  553  1
 
 --- Sentence//end
-id: 87
-r#  35393  562  6
+id: 88
+r#  35394  562  6
 p: .
 t. 
 |  But the law guardian appointed by a family court judge had her own
@@ -2013,8 +2025,8 @@ t.
 .  court
 
 --- Sentence/end 
-id: 87
-r#  35394  562  7
+id: 88
+r#  35395  562  7
 
 --- Paragraph/end 
 id: 54
@@ -2023,16 +2035,16 @@ y: N/A
 
 --- Paragraph/start
 id: 55
-r#  35396  564  1
+r#  35397  564  1
 
 
 --- Sentence/start
-id: 88
-r#  35396  564  1
+id: 89
+r#  35397  564  1
 
 --- Sentence//end
-id: 88
-r#  35781  569  8
+id: 89
+r#  35782  569  8
 p: .
 t. 
 |  The law guardian’s use of Gardner’s dubious theories was particularly questionable in this case for two reasons: no expert witness had
@@ -2043,8 +2055,8 @@ t.
 .  depends
 
 --- Sentence/end 
-id: 88
-r#  35782  569  9
+id: 89
+r#  35783  569  9
 
 --- Paragraph/end 
 id: 55
@@ -2053,12 +2065,12 @@ y: N/A
 
 --- Paragraph/start
 id: 56
-r#  35784  571  1
+r#  35785  571  1
 
 
 --- Sentence/start
-id: 89
-r#  35784  571  1
+id: 90
+r#  35785  571  1
 --- Paragraph/end 
 id: 56
 y: N/A
@@ -2066,16 +2078,16 @@ y: N/A
 
 --- Paragraph/start
 id: 57
-r#  36117  577  1
+r#  36118  577  1
 
 
 --- Sentence/start
-id: 90
-r#  36117  577  1
+id: 91
+r#  36118  577  1
 
 --- Sentence//end
-id: 90
-r#  36338  580  12
+id: 91
+r#  36339  580  12
 p: .
 t. 
 |  Yet the law guardian, after going to such lengths to place her young
@@ -2088,8 +2100,8 @@ t.
 .  family life
 
 --- Sentence/end 
-id: 90
-r#  36339  580  13
+id: 91
+r#  36340  580  13
 
 --- Paragraph/end 
 id: 57
@@ -2098,16 +2110,16 @@ y: N/A
 
 --- Paragraph/start
 id: 58
-r#  36341  582  1
+r#  36342  582  1
 
 
 --- Sentence/start
-id: 91
-r#  36341  582  1
+id: 92
+r#  36342  582  1
 
 --- Sentence//end
-id: 91
-r#  36876  589  49
+id: 92
+r#  36877  589  49
 p: .
 t. 
 |  A case involving allegations of child abuse that reached the Kentucky
@@ -2120,8 +2132,8 @@ t.
 .  made sexual abuse allegations against the father
 
 --- Sentence/end 
-id: 91
-r#  36877  589  50
+id: 92
+r#  36878  589  50
 
 --- Paragraph/end 
 id: 58
@@ -2130,12 +2142,12 @@ y: N/A
 
 --- Paragraph/start
 id: 59
-r#  36879  591  1
+r#  36880  591  1
 
 
 --- Sentence/start
-id: 92
-r#  36879  591  1
+id: 93
+r#  36880  591  1
 --- Paragraph/end 
 id: 59
 y: N/A
@@ -2143,12 +2155,12 @@ y: N/A
 
 --- Paragraph/start
 id: 60
-r#  37238  598  1
+r#  37239  598  1
 
 
 --- Sentence/start
-id: 93
-r#  37238  598  1
+id: 94
+r#  37239  598  1
 --- Paragraph/end 
 id: 60
 y: N/A
@@ -2156,12 +2168,12 @@ y: N/A
 
 --- Paragraph/start
 id: 61
-r#  38025  608  1
+r#  38026  608  1
 
 
 --- Sentence/start
-id: 94
-r#  38025  608  1
+id: 95
+r#  38026  608  1
 --- Paragraph/end 
 id: 61
 y: N/A
@@ -2169,12 +2181,12 @@ y: N/A
 
 --- Paragraph/start
 id: 62
-r#  39115  628  1
+r#  39116  628  1
 
 
 --- Sentence/start
-id: 95
-r#  39115  628  1
+id: 96
+r#  39116  628  1
 --- Paragraph/end 
 id: 62
 y: N/A
@@ -2182,16 +2194,16 @@ y: N/A
 
 --- Paragraph/start
 id: 63
-r#  40398  649  1
+r#  40399  649  1
 
 
 --- Sentence/start
-id: 96
-r#  40398  649  1
+id: 97
+r#  40399  649  1
 
 --- Sentence//end
-id: 96
-r#  40853  654  35
+id: 97
+r#  40854  654  35
 p: .
 t. 
 |  And Judge McDonald had particularly sharp words for the boy’s
@@ -2201,7 +2213,7 @@ t.
 |  relationship with the father’s good friend and the godfather of the
 |  child.\41The sex abuse allegations against the father, Judge McDonald wrote,
 |  deserved serious attention from the child’s lawyer (and the court):
-|  the boy’s treating psychiatrist ...\ first raised the possibility of sexual abuse ...\ due to symptoms [the child] was experiencing; then, a
+|  the boy’s treating psychiatrist . . first raised the possibility of sexual abuse . . due to symptoms [the child] was experiencing; then, a
 |  forensic pediatrician examined the child’s anus and [found] significant scarring [and] concluded the child had been sexually abused.\42
 |  Unaccountably, wrote McDonald, the court upon the guardian ad
 |  litem’s ex parte urgings,\43 ordered that the child be released from Ten
@@ -2229,7 +2241,7 @@ t.
 |  the suspicion that the court did not want his dissent to appear in public
 |  because he desecrated the temple by criticizing the trial court judge for
 |  being biased and ignoring evidence of a child’s sexual abuse. He added,
-|  I was taken aback by the way the case was dealt with.... In my opinion
+|  I was taken aback by the way the case was dealt with. . In my opinion
 |  it was an impact case and it very much needed to stand for something.\49
 |  Unfortunately, as he himself sadly noted in his dissent, the case was certain to stand for something even without being published - though
 |  without his published dissent, it could not stand for the truth:I am uncomfortable with the majority’s closing thoughts [Judge
@@ -2246,8 +2258,8 @@ t.
 .  retirement to family court madness
 
 --- Sentence/end 
-id: 96
-r#  40854  654  36
+id: 97
+r#  40855  654  36
 
 --- Paragraph/end 
 id: 63
@@ -2262,16 +2274,16 @@ y: N/A
 
 --- Paragraph/start
 id: 64
-r#  40909  659  4
+r#  40910  659  4
 
 
 --- Sentence/start
-id: 97
-r#  40909  659  4
+id: 98
+r#  40910  659  4
 
 --- Sentence//end
-id: 97
-r#  41470  665  8
+id: 98
+r#  41471  665  8
 p: .
 t. 
 |  Law guardian misconduct is particularly damaging to protective mothers because, no matter how law guardians misbehave, it is next to
@@ -2283,8 +2295,8 @@ t.
 .  clients
 
 --- Sentence/end 
-id: 97
-r#  41471  665  9
+id: 98
+r#  41472  665  9
 
 --- Paragraph/end 
 id: 64
@@ -2293,16 +2305,16 @@ y: N/A
 
 --- Paragraph/start
 id: 65
-r#  41473  667  1
+r#  41474  667  1
 
 
 --- Sentence/start
-id: 98
-r#  41473  667  1
+id: 99
+r#  41474  667  1
 
 --- Sentence//end
-id: 98
-r#  41734  670  53
+id: 99
+r#  41735  670  53
 p: .
 t. 
 |  Such was the experience of a Long Island, New York, protective
@@ -2311,8 +2323,8 @@ t.
 .  that his clients (her sons) had been sexually abused
 
 --- Sentence/end 
-id: 98
-r#  41735  670  54
+id: 99
+r#  41736  670  54
 
 --- Paragraph/end 
 id: 65
@@ -2321,16 +2333,16 @@ y: N/A
 
 --- Paragraph/start
 id: 66
-r#  41737  672  1
+r#  41738  672  1
 
 
 --- Sentence/start
-id: 99
-r#  41737  672  1
+id: 100
+r#  41738  672  1
 
 --- Sentence//end
-id: 99
-r#  42568  682  38
+id: 100
+r#  42569  682  38
 p: .
 t. 
 |  In November 1993, the law guardian appeared before a New York appellate court to oppose the request of the mother’s counsel for a stay
@@ -2346,8 +2358,8 @@ t.
 .  rectum for age in the four-year-old
 
 --- Sentence/end 
-id: 99
-r#  42569  682  39
+id: 100
+r#  42570  682  39
 
 --- Paragraph/end 
 id: 66
@@ -2356,16 +2368,16 @@ y: N/A
 
 --- Paragraph/start
 id: 67
-r#  42571  684  1
+r#  42572  684  1
 
 
 --- Sentence/start
-id: 100
-r#  42571  684  1
+id: 101
+r#  42572  684  1
 
 --- Sentence//end
-id: 100
-r#  42917  688  9
+id: 101
+r#  42918  688  9
 p: .
 t. 
 |  According to the mother, the law guardian then rose and told the
@@ -2375,8 +2387,8 @@ t.
 .  sentence
 
 --- Sentence/end 
-id: 100
-r#  42918  688  10
+id: 101
+r#  42919  688  10
 
 --- Paragraph/end 
 id: 67
@@ -2385,12 +2397,12 @@ y: N/A
 
 --- Paragraph/start
 id: 68
-r#  42920  690  1
+r#  42921  690  1
 
 
 --- Sentence/start
-id: 101
-r#  42920  690  1
+id: 102
+r#  42921  690  1
 --- Paragraph/end 
 id: 68
 y: N/A
@@ -2398,16 +2410,16 @@ y: N/A
 
 --- Paragraph/start
 id: 69
-r#  43593  700  1
+r#  43594  700  1
 
 
 --- Sentence/start
-id: 102
-r#  43593  700  1
+id: 103
+r#  43594  700  1
 
 --- Sentence//end
-id: 102
-r#  43857  703  69
+id: 103
+r#  43858  703  69
 p: .
 t. 
 |  The mother reacted by filing an official complaint with New York
@@ -2425,8 +2437,8 @@ t.
 
 
 --- Sentence/switch
-id: 103
-r#  43858  703  70
+id: 104
+r#  43859  703  70
 
 --- Paragraph/end 
 id: 69
@@ -2435,16 +2447,16 @@ y: N/A
 
 --- Paragraph/start
 id: 70
-r#  44027  708  1
+r#  44028  708  1
 
 
 --- Sentence/start
-id: 104
-r#  44027  708  1
+id: 105
+r#  44028  708  1
 
 --- Sentence//end
-id: 104
-r#  44180  710  11
+id: 105
+r#  44181  710  11
 p: .
 t. 
 |  Only to him could she complain about the conduct of a lawyer who had
@@ -2454,8 +2466,8 @@ t.
 .  small boys
 
 --- Sentence/end 
-id: 104
-r#  44181  710  12
+id: 105
+r#  44182  710  12
 
 --- Paragraph/end 
 id: 70
@@ -2464,16 +2476,16 @@ y: N/A
 
 --- Paragraph/start
 id: 71
-r#  44183  712  1
+r#  44184  712  1
 
 
 --- Sentence/start
-id: 105
-r#  44183  712  1
+id: 106
+r#  44184  712  1
 
 --- Sentence//end
-id: 105
-r#  44557  714  74
+id: 106
+r#  44558  714  74
 p: .
 t. 
 |  Giving the family court judges who appoint the law guardians, in the first place, the sole authority to review their conduct actually feeds the system of family court madness, as the collaborative achievement of judges and law
@@ -2481,8 +2493,8 @@ t.
 .  possibility of redress. Yet this is exactly what the system appears to do
 
 --- Sentence/end 
-id: 105
-r#  44558  714  75
+id: 106
+r#  44559  714  75
 
 --- Paragraph/end 
 id: 71
@@ -2491,24 +2503,24 @@ y: N/A
 
 --- Paragraph/start
 id: 72
-r#  44560  716  1
+r#  44561  716  1
 
 
 --- Sentence/start
-id: 106
-r#  44560  716  1
+id: 107
+r#  44561  716  1
 
 --- Sentence//end
-id: 106
-r#  44735  717  106
+id: 107
+r#  44736  717  106
 p: .
 t. 
 |  And the situation is no more promising to the children themselves if,
 .  upon reaching majority, they seek redress for wrongs allegedly committed by their court-appointed lawyers
 
 --- Sentence/end 
-id: 106
-r#  44736  717  107
+id: 107
+r#  44737  717  107
 
 --- Paragraph/end 
 id: 72
@@ -2517,16 +2529,16 @@ y: N/A
 
 --- Paragraph/start
 id: 73
-r#  44738  719  1
+r#  44739  719  1
 
 
 --- Sentence/start
-id: 107
-r#  44738  719  1
+id: 108
+r#  44739  719  1
 
 --- Sentence//end
-id: 107
-r#  45205  725  38
+id: 108
+r#  45207  725  38
 p: .
 t. 
 |  Alanna Krause, an eighteen-year-old college honor student, may be
@@ -2538,8 +2550,8 @@ t.
 .  abuse charges filed in another county
 
 --- Sentence/end 
-id: 107
-r#  45206  725  39
+id: 108
+r#  45208  725  39
 
 --- Paragraph/end 
 id: 73
@@ -2548,16 +2560,16 @@ y: N/A
 
 --- Paragraph/start
 id: 74
-r#  45208  727  1
+r#  45210  727  1
 
 
 --- Sentence/start
-id: 108
-r#  45208  727  1
+id: 109
+r#  45210  727  1
 
 --- Sentence//end
-id: 108
-r#  45494  728  144
+id: 109
+r#  45497  728  144
 p: .
 t. 
 |  Once the facts of her abuse had finally been admitted, Ms. Krause decided to take legal action. Her 2002 lawsuit alleged that her law guardian
@@ -2565,13 +2577,13 @@ t.
 
 
 --- Sentence/switch
-id: 109
-r#  45495  728  145
+id: 110
+r#  45498  728  145
 
 
 --- Sentence//end
-id: 109
-r#  45663  731  24
+id: 110
+r#  45666  731  24
 p: .
 t. 
 |  She also complained that the law guardian had billed nearly $17,000
@@ -2579,8 +2591,8 @@ t.
 .  mother’s family support
 
 --- Sentence/end 
-id: 109
-r#  45664  731  25
+id: 110
+r#  45667  731  25
 
 --- Paragraph/end 
 id: 74
@@ -2589,16 +2601,16 @@ y: N/A
 
 --- Paragraph/start
 id: 75
-r#  45666  733  1
+r#  45669  733  1
 
 
 --- Sentence/start
-id: 110
-r#  45666  733  1
+id: 111
+r#  45669  733  1
 
 --- Sentence//end
-id: 110
-r#  45799  734  68
+id: 111
+r#  45803  734  69
 p: .
 t. 
 |  Remarkably, a federal court dismissed the lawsuit against the law
@@ -2606,8 +2618,8 @@ t.
 
 
 --- Sentence/switch
-id: 111
-r#  45800  734  69
+id: 112
+r#  45804  734  70
 
 --- Paragraph/end 
 id: 75
@@ -2616,23 +2628,23 @@ y: N/A
 
 --- Paragraph/start
 id: 76
-r#  46549  746  1
+r#  46553  746  1
 
 
 --- Sentence/start
-id: 112
-r#  46549  746  1
+id: 113
+r#  46553  746  1
 
 --- Sentence//end
-id: 112
-r#  47015  752  39
+id: 113
+r#  47020  752  39
 p: .
 t. 
 |  The reason? The court claimed that the law guardian was entitled to
 |  quasi-judicial immunity, a doctrine that protects court officials from
 |  civil liability when they carry out a judge’s orders or perform functions
-|  equivalent to those of a judge. The court ruled: Under governing California law ...\ therapists, guardians and court-appointed attorneys, are
-|  accorded quasi-judicial immunity ...\ attorneys for children in child
+|  equivalent to those of a judge. The court ruled: Under governing California law . . therapists, guardians and court-appointed attorneys, are
+|  accorded quasi-judicial immunity . . attorneys for children in child
 |  abuse actions are granted immunity from damages claims.\54 The court
 |  apparently did not see the irony of placing an attorney who had allegedly
 |  defrauded a court, improperly enriched herself, and helped to make her
@@ -2646,8 +2658,8 @@ t.
 .  other sort of client in a court of law
 
 --- Sentence/end 
-id: 112
-r#  47016  752  40
+id: 113
+r#  47021  752  40
 
 --- Paragraph/end 
 id: 76
@@ -2656,12 +2668,30 @@ y: N/A
 
 --- Paragraph/start
 id: 77
-r#  47018  754  1
+r#  47023  754  1
 
 
 --- Sentence/start
-id: 113
-r#  47018  754  1
+id: 114
+r#  47023  754  1
+
+--- Sentence//end
+id: 114
+r#  47541  762  69
+p: .
+t. 
+|  This leaves children who have been victims of negligent or unscrupulous law guardians helpless to obtain justice, even when the law allows
+|  them to speak for themselves. As Ms. Krause stated in a column she
+|  wrote two years before filing her lawsuit:We children have no choice and no recourse when those adults
+|  [who represent us] have their own agendas. . My father . . is
+|  an abuser, and living with him was a mental and physical hell. .
+.  Yet . . [t]he lawyer appointed to represent my best interests . 
+
+
+--- Sentence/switch
+id: 115
+r#  47542  762  70
+
 --- Paragraph/end 
 id: 77
 y: N/A
@@ -2675,12 +2705,12 @@ y: N/A
 
 --- Paragraph/start
 id: 78
-r#  48036  775  4
+r#  48042  775  4
 
 
 --- Sentence/start
-id: 114
-r#  48036  775  4
+id: 116
+r#  48042  775  4
 --- Paragraph/end 
 id: 78
 y: N/A
@@ -2688,26 +2718,20 @@ y: N/A
 
 --- Paragraph/start
 id: 79
-r#  48544  783  1
+r#  48550  783  1
 
 
 --- Sentence/start
-id: 115
-r#  48544  783  1
+id: 117
+r#  48550  783  1
 
 --- Sentence//end
-id: 115
-r#  48953  788  57
+id: 117
+r#  48959  788  57
 p: .
 t. 
-|  This leaves children who have been victims of negligent or unscrupulous law guardians helpless to obtain justice, even when the law allows
-|  them to speak for themselves. As Ms. Krause stated in a column she
-|  wrote two years before filing her lawsuit:We children have no choice and no recourse when those adults
-|  [who represent us] have their own agendas.... My father ...\ is
-|  an abuser, and living with him was a mental and physical hell....
-|  Yet ...\ [t]he lawyer appointed to represent my best interests ...\
 |  spent her allotted time with me parroting my father’s words, attempting to convince me that I really wanted to live with him. She
-|  ignored my reports of abuse.......\ I couldn’t replace my lawyer with one who would speak for
+|  ignored my reports of abuse. .. . I couldn’t replace my lawyer with one who would speak for
 |  me nor could I speak for myself in court. I couldn’t cross-examine
 |  the court evaluators or therapists and their claims were thus untouchable. I felt like I was witnessing the proceedings from the
 |  wrong side of soundproof glass.\56
@@ -2725,8 +2749,8 @@ t.
 .  depends on the unique culture of the family court system
 
 --- Sentence/end 
-id: 115
-r#  48954  788  58
+id: 117
+r#  48960  788  58
 
 --- Paragraph/end 
 id: 79
@@ -2735,16 +2759,16 @@ y: N/A
 
 --- Paragraph/start
 id: 80
-r#  48956  790  1
+r#  48962  790  1
 
 
 --- Sentence/start
-id: 116
-r#  48956  790  1
+id: 118
+r#  48962  790  1
 
 --- Sentence//end
-id: 116
-r#  49347  795  13
+id: 118
+r#  49353  795  13
 p: .
 t. 
 |  Take the famous Baby M case, which brought national attention to the issue of surrogate motherhood. A New Jersey mother
@@ -2755,8 +2779,8 @@ t.
 .  obtained it)
 
 --- Sentence/end 
-id: 116
-r#  49348  795  14
+id: 118
+r#  49354  795  14
 
 --- Paragraph/end 
 id: 80
@@ -2765,16 +2789,16 @@ y: N/A
 
 --- Paragraph/start
 id: 81
-r#  49350  797  1
+r#  49356  797  1
 
 
 --- Sentence/start
-id: 117
-r#  49350  797  1
+id: 119
+r#  49356  797  1
 
 --- Sentence//end
-id: 117
-r#  50483  809  6
+id: 119
+r#  50489  809  6
 p: .
 t. 
 |  The New Jersey Supreme Court, although concluding that the child’s
@@ -2792,8 +2816,8 @@ t.
 .  cases
 
 --- Sentence/end 
-id: 117
-r#  50484  809  7
+id: 119
+r#  50490  809  7
 
 --- Paragraph/end 
 id: 81
@@ -2802,16 +2826,16 @@ y: N/A
 
 --- Paragraph/start
 id: 82
-r#  50486  811  1
+r#  50492  811  1
 
 
 --- Sentence/start
-id: 118
-r#  50486  811  1
+id: 120
+r#  50492  811  1
 
 --- Sentence//end
-id: 118
-r#  50678  813  56
+id: 120
+r#  50684  813  56
 p: .
 t. 
 |  Unfortunately, few protective mothers - with cases involving only
@@ -2819,8 +2843,8 @@ t.
 .  a hearing before judges outside the family court system
 
 --- Sentence/end 
-id: 118
-r#  50679  813  57
+id: 120
+r#  50685  813  57
 
 --- Paragraph/end 
 id: 82
@@ -2835,12 +2859,12 @@ y: N/A
 
 --- Paragraph/start
 id: 83
-r#  50769  818  4
+r#  50775  818  4
 
 
 --- Sentence/start
-id: 119
-r#  50769  818  4
+id: 121
+r#  50775  818  4
 --- Paragraph/end 
 id: 83
 y: N/A
@@ -2848,16 +2872,16 @@ y: N/A
 
 --- Paragraph/start
 id: 84
-r#  51488  828  1
+r#  51494  828  1
 
 
 --- Sentence/start
-id: 120
-r#  51488  828  1
+id: 122
+r#  51494  828  1
 
 --- Sentence//end
-id: 120
-r#  52157  837  45
+id: 122
+r#  52163  837  45
 p: .
 t. 
 |  For protective mothers, the offense of law guardian misconduct is compounded by the law guardian’s usurpation of the mother’s role. Whether
@@ -2880,8 +2904,8 @@ t.
 .  informed of developments involving the child
 
 --- Sentence/end 
-id: 120
-r#  52158  837  46
+id: 122
+r#  52164  837  46
 
 --- Paragraph/end 
 id: 84
@@ -2890,16 +2914,16 @@ y: N/A
 
 --- Paragraph/start
 id: 85
-r#  52160  839  1
+r#  52166  839  1
 
 
 --- Sentence/start
-id: 121
-r#  52160  839  1
+id: 123
+r#  52166  839  1
 
 --- Sentence//end
-id: 121
-r#  52518  843  7
+id: 123
+r#  52524  843  7
 p: .
 t. 
 |  After experiences like these, displaced mothers confront feelings of
@@ -2909,8 +2933,8 @@ t.
 .  groups
 
 --- Sentence/end 
-id: 121
-r#  52519  843  8
+id: 123
+r#  52525  843  8
 
 --- Paragraph/end 
 id: 85
@@ -2919,16 +2943,16 @@ y: N/A
 
 --- Paragraph/start
 id: 86
-r#  52521  845  1
+r#  52527  845  1
 
 
 --- Sentence/start
-id: 122
-r#  52521  845  1
+id: 124
+r#  52527  845  1
 
 --- Sentence//end
-id: 122
-r#  53109  852  20
+id: 124
+r#  53115  852  20
 p: .
 t. 
 |  Many of the displaced mothers we spoke with said they no longer visited parks or other places where many children are found. They avoided
@@ -2941,8 +2965,8 @@ t.
 .  by the family court
 
 --- Sentence/end 
-id: 122
-r#  53110  852  21
+id: 124
+r#  53116  852  21
 
 --- Paragraph/end 
 id: 86
@@ -2951,24 +2975,24 @@ y: N/A
 
 --- Paragraph/start
 id: 87
-r#  53112  854  1
+r#  53118  854  1
 
 
 --- Sentence/start
-id: 123
-r#  53112  854  1
+id: 125
+r#  53118  854  1
 
 --- Sentence//end
-id: 123
-r#  53278  855  32
+id: 125
+r#  53284  855  32
 p: .
 t. 
 |  Maternal displacement, however, can be more than just a set of psychosocial reactive symptoms. The displacement may have drastic legal
 .  and administrative consequences
 
 --- Sentence/end 
-id: 123
-r#  53279  855  33
+id: 125
+r#  53285  855  33
 
 --- Paragraph/end 
 id: 87
@@ -2977,16 +3001,16 @@ y: N/A
 
 --- Paragraph/start
 id: 88
-r#  53281  857  1
+r#  53287  857  1
 
 
 --- Sentence/start
-id: 124
-r#  53281  857  1
+id: 126
+r#  53287  857  1
 
 --- Sentence//end
-id: 124
-r#  53882  863  38
+id: 126
+r#  53888  863  38
 p: .
 t. 
 |  For instance, the law guardian in one high-profile New York case directed the medical staff at a hospital, where an allegedly abused child
@@ -2998,8 +3022,8 @@ t.
 .  not even certain the child would live
 
 --- Sentence/end 
-id: 124
-r#  53883  863  39
+id: 126
+r#  53889  863  39
 
 --- Paragraph/end 
 id: 88
@@ -3008,16 +3032,16 @@ y: N/A
 
 --- Paragraph/start
 id: 89
-r#  53885  865  1
+r#  53891  865  1
 
 
 --- Sentence/start
-id: 125
-r#  53885  865  1
+id: 127
+r#  53891  865  1
 
 --- Sentence//end
-id: 125
-r#  54098  867  73
+id: 127
+r#  54104  867  73
 p: .
 t. 
 |  Through some bizarre administrative twist, the child’s case was later
@@ -3026,13 +3050,13 @@ t.
 
 
 --- Sentence/switch
-id: 126
-r#  54099  867  74
+id: 128
+r#  54105  867  74
 
 
 --- Sentence//end
-id: 126
-r#  54561  874  29
+id: 128
+r#  54567  874  29
 p: .
 t. 
 |  She was repeatedly told that information could be given only to the law
@@ -3044,8 +3068,8 @@ t.
 .  intervened in their families
 
 --- Sentence/end 
-id: 126
-r#  54562  874  30
+id: 128
+r#  54568  874  30
 
 --- Paragraph/end 
 id: 89
@@ -3054,16 +3078,16 @@ y: N/A
 
 --- Paragraph/start
 id: 90
-r#  54564  876  1
+r#  54570  876  1
 
 
 --- Sentence/start
-id: 127
-r#  54564  876  1
+id: 129
+r#  54570  876  1
 
 --- Sentence//end
-id: 127
-r#  54813  879  38
+id: 129
+r#  54819  879  38
 p: .
 t. 
 |  The role of displaced mother is the situated achievement of
@@ -3072,8 +3096,8 @@ t.
 .  elaborate on two characteristic cases
 
 --- Sentence/end 
-id: 127
-r#  54814  879  39
+id: 129
+r#  54820  879  39
 
 --- Paragraph/end 
 id: 90
@@ -3088,16 +3112,16 @@ y: N/A
 
 --- Paragraph/start
 id: 91
-r#  54880  884  4
+r#  54886  884  4
 
 
 --- Sentence/start
-id: 128
-r#  54880  884  4
+id: 130
+r#  54886  884  4
 
 --- Sentence//end
-id: 128
-r#  55637  893  33
+id: 130
+r#  55643  893  33
 p: .
 t. 
 |  First, we consider the previously mentioned case of the Idaho mother
@@ -3112,8 +3136,8 @@ t.
 .  the father agreed to permit them
 
 --- Sentence/end 
-id: 128
-r#  55638  893  34
+id: 130
+r#  55644  893  34
 
 --- Paragraph/end 
 id: 91
@@ -3122,16 +3146,16 @@ y: N/A
 
 --- Paragraph/start
 id: 92
-r#  55640  895  1
+r#  55646  895  1
 
 
 --- Sentence/start
-id: 129
-r#  55640  895  1
+id: 131
+r#  55646  895  1
 
 --- Sentence//end
-id: 129
-r#  56750  909  45
+id: 131
+r#  56756  909  45
 p: .
 t. 
 |  The contorted legal proceedings proved a perfect breeding ground
@@ -3151,8 +3175,8 @@ t.
 .  approval, the mother lost custody altogether
 
 --- Sentence/end 
-id: 129
-r#  56751  909  46
+id: 131
+r#  56757  909  46
 
 --- Paragraph/end 
 id: 92
@@ -3161,12 +3185,12 @@ y: N/A
 
 --- Paragraph/start
 id: 93
-r#  56753  911  1
+r#  56759  911  1
 
 
 --- Sentence/start
-id: 130
-r#  56753  911  1
+id: 132
+r#  56759  911  1
 --- Paragraph/end 
 id: 93
 y: N/A
@@ -3174,16 +3198,16 @@ y: N/A
 
 --- Paragraph/start
 id: 94
-r#  57465  922  1
+r#  57471  922  1
 
 
 --- Sentence/start
-id: 131
-r#  57465  922  1
+id: 133
+r#  57471  922  1
 
 --- Sentence//end
-id: 131
-r#  58033  929  8
+id: 133
+r#  58039  929  8
 p: .
 t. 
 |  Throughout all this, she practically accomplished her role as a displaced mother, particularly on family holidays. In the days before each
@@ -3205,8 +3229,8 @@ t.
 .  holiday
 
 --- Sentence/end 
-id: 131
-r#  58034  929  9
+id: 133
+r#  58040  929  9
 
 --- Paragraph/end 
 id: 94
@@ -3221,16 +3245,16 @@ y: N/A
 
 --- Paragraph/start
 id: 95
-r#  58082  934  4
+r#  58088  934  4
 
 
 --- Sentence/start
-id: 132
-r#  58082  934  4
+id: 134
+r#  58088  934  4
 
 --- Sentence//end
-id: 132
-r#  58415  938  57
+id: 134
+r#  58421  938  57
 p: .
 t. 
 |  The most tragic reaction to Displaced Mother Syndrome occurred in
@@ -3240,8 +3264,8 @@ t.
 .  ex-husband, who had been accused of sexually abusing her
 
 --- Sentence/end 
-id: 132
-r#  58416  938  58
+id: 134
+r#  58422  938  58
 
 --- Paragraph/end 
 id: 95
@@ -3250,12 +3274,12 @@ y: N/A
 
 --- Paragraph/start
 id: 96
-r#  58418  940  1
+r#  58424  940  1
 
 
 --- Sentence/start
-id: 133
-r#  58418  940  1
+id: 135
+r#  58424  940  1
 --- Paragraph/end 
 id: 96
 y: N/A
@@ -3263,12 +3287,12 @@ y: N/A
 
 --- Paragraph/start
 id: 97
-r#  59457  956  1
+r#  59463  956  1
 
 
 --- Sentence/start
-id: 134
-r#  59457  956  1
+id: 136
+r#  59463  956  1
 --- Paragraph/end 
 id: 97
 y: N/A
@@ -3276,16 +3300,16 @@ y: N/A
 
 --- Paragraph/start
 id: 98
-r#  59835  962  1
+r#  59841  962  1
 
 
 --- Sentence/start
-id: 135
-r#  59835  962  1
+id: 137
+r#  59841  962  1
 
 --- Sentence//end
-id: 135
-r#  60259  968  5
+id: 137
+r#  60265  968  5
 p: .
 t. 
 |  Much of the mother’s anguish arose from the conduct of the girl’s
@@ -3315,8 +3339,8 @@ t.
 .  days
 
 --- Sentence/end 
-id: 135
-r#  60260  968  6
+id: 137
+r#  60266  968  6
 
 --- Paragraph/end 
 id: 98
@@ -3325,12 +3349,12 @@ y: N/A
 
 --- Paragraph/start
 id: 99
-r#  60262  970  1
+r#  60268  970  1
 
 
 --- Sentence/start
-id: 136
-r#  60262  970  1
+id: 138
+r#  60268  970  1
 --- Paragraph/end 
 id: 99
 y: N/A
@@ -3338,16 +3362,16 @@ y: N/A
 
 --- Paragraph/start
 id: 100
-r#  60716  978  1
+r#  60722  978  1
 
 
 --- Sentence/start
-id: 137
-r#  60716  978  1
+id: 139
+r#  60722  978  1
 
 --- Sentence//end
-id: 137
-r#  61214  984  75
+id: 139
+r#  61220  984  75
 p: .
 t. 
 |  Throughout the trial, the law guardian had strenuously supported
@@ -3366,20 +3390,20 @@ t.
 
 
 --- Sentence/switch
-id: 138
-r#  61215  984  76
+id: 140
+r#  61221  984  76
 
 
 --- Sentence//end
-id: 138
-r#  61270  985  55
+id: 140
+r#  61276  985  55
 p: .
 t. 
 .  A few hours later, she and her daughter were both dead
 
 --- Sentence/end 
-id: 138
-r#  61271  985  56
+id: 140
+r#  61277  985  56
 
 --- Paragraph/end 
 id: 100
@@ -3388,22 +3412,22 @@ y: N/A
 
 --- Paragraph/start
 id: 101
-r#  61273  987  1
+r#  61279  987  1
 
 
 --- Sentence/start
-id: 139
-r#  61273  987  1
+id: 141
+r#  61279  987  1
 
 --- Sentence//end
-id: 139
-r#  62231  997  42
+id: 141
+r#  62237  997  42
 p: .
 t. 
 |  Judge Warren told the National Law Journal, I cannot explain irrational acts.\64 But shocking as the mother’s actions may have been,
 |  they were not without historical precedent. Henrietta Buckmaster, in
 |  a study of the Underground Railroad for escaping American slaves,
-|  reports that resistance to slavery took many forms other than escape ...\ [including] ...\ killings by mothers of their children when they
+|  reports that resistance to slavery took many forms other than escape . . [including] . . killings by mothers of their children when they
 |  heard they were to be sold apart [and] in repeated suicides.\65 Writings
 |  that have survived from medieval pogroms similarly show that Jewish
 |  parents sometimes killed their children - and then themselves - rather
@@ -3413,8 +3437,8 @@ t.
 .  behave just as this protective mother did
 
 --- Sentence/end 
-id: 139
-r#  62232  997  43
+id: 141
+r#  62238  997  43
 
 --- Paragraph/end 
 id: 101
@@ -3423,16 +3447,16 @@ y: N/A
 
 --- Paragraph/start
 id: 102
-r#  62234  999  1
+r#  62240  999  1
 
 
 --- Sentence/start
-id: 140
-r#  62234  999  1
+id: 142
+r#  62240  999  1
 
 --- Sentence//end
-id: 140
-r#  62648  1004  66
+id: 142
+r#  62654  1004  66
 p: ?
 t. 
 |  Judge Warren - and the father’s supporters - naturally stressed that
@@ -3443,8 +3467,8 @@ t.
 .  children’s lives - seeking a gruesome escape from the intolerable
 
 --- Sentence/end 
-id: 140
-r#  62649  1004  67
+id: 142
+r#  62655  1004  67
 
 --- Paragraph/end 
 id: 102
@@ -3453,16 +3477,16 @@ y: N/A
 
 --- Paragraph/start
 id: 103
-r#  62651  1006  1
+r#  62657  1006  1
 
 
 --- Sentence/start
-id: 141
-r#  62651  1006  1
+id: 143
+r#  62657  1006  1
 
 --- Sentence//end
-id: 141
-r#  62977  1013  64
+id: 143
+r#  62983  1013  64
 p: .
 t. 
 |  The mother’s suicide note (addressed to two adult children from
@@ -3473,8 +3497,8 @@ t.
 
 
 --- Sentence/switch
-id: 142
-r#  62978  1013  65
+id: 144
+r#  62984  1013  65
 
 --- Paragraph/end 
 id: 103
@@ -3483,16 +3507,16 @@ y: N/A
 
 --- Paragraph/start
 id: 104
-r#  63206  1020  1
+r#  63212  1020  1
 
 
 --- Sentence/start
-id: 143
-r#  63206  1020  1
+id: 145
+r#  63212  1020  1
 
 --- Sentence//end
-id: 143
-r#  63792  1025  73
+id: 145
+r#  63798  1025  73
 p: .
 t. 
 |  Abigail is also my child. I cannot knowingly allow her to be sexually
@@ -3507,8 +3531,8 @@ t.
 .  live to see herself driven out of the life of her child by court rulings
 
 --- Sentence/end 
-id: 143
-r#  63793  1025  74
+id: 145
+r#  63799  1025  74
 
 --- Paragraph/end 
 id: 104
@@ -3517,16 +3541,16 @@ y: N/A
 
 --- Paragraph/start
 id: 105
-r#  63795  1027  1
+r#  63801  1027  1
 
 
 --- Sentence/start
-id: 144
-r#  63795  1027  1
+id: 146
+r#  63801  1027  1
 
 --- Sentence//end
-id: 144
-r#  64105  1031  22
+id: 146
+r#  64111  1031  22
 p: .
 t. 
 |  Thus, in a last-ditch attempt to (situatedly) fulfill the role of
@@ -3536,8 +3560,8 @@ t.
 .  from her child’s life
 
 --- Sentence/end 
-id: 144
-r#  64106  1031  23
+id: 146
+r#  64112  1031  23
 
 --- Paragraph/end 
 id: 105
@@ -3546,12 +3570,12 @@ y: N/A
 
 --- Paragraph/start
 id: 106
-r#  64109  1034  1
+r#  64115  1034  1
 
 
 --- Sentence/start
-id: 145
-r#  64109  1034  1
+id: 147
+r#  64115  1034  1
 --- Paragraph/end 
 id: 106
 y: N/A
@@ -3566,16 +3590,16 @@ Disregarded  by Law Guardian
 
 --- Paragraph/start
 id: 107
-r#  64234  1040  4
+r#  64240  1040  4
 
 
 --- Sentence/start
-id: 146
-r#  64234  1040  4
+id: 148
+r#  64240  1040  4
 
 --- Sentence//end
-id: 146
-r#  64752  1045  21
+id: 148
+r#  64758  1045  21
 p: .
 t. 
 |  \writeAddendum{}In the intervening years since the first publication of From Madness to
@@ -3586,8 +3610,8 @@ t.
 .  child’s law guardian
 
 --- Sentence/end 
-id: 146
-r#  64753  1045  22
+id: 148
+r#  64759  1045  22
 
 --- Paragraph/end 
 id: 107
@@ -3596,16 +3620,16 @@ y: N/A
 
 --- Paragraph/start
 id: 108
-r#  64755  1047  1
+r#  64761  1047  1
 
 
 --- Sentence/start
-id: 147
-r#  64755  1047  1
+id: 149
+r#  64761  1047  1
 
 --- Sentence//end
-id: 147
-r#  65354  1053  28
+id: 149
+r#  65360  1053  28
 p: .
 t. 
 |  Although not all criminal records indicate high risk to children, certainly crimes involving substance abuse, harm to children or adults, and
@@ -3617,8 +3641,8 @@ t.
 .  evidence against the father
 
 --- Sentence/end 
-id: 147
-r#  65355  1053  29
+id: 149
+r#  65361  1053  29
 
 --- Paragraph/end 
 id: 108
@@ -3627,12 +3651,12 @@ y: N/A
 
 --- Paragraph/start
 id: 109
-r#  65357  1055  1
+r#  65363  1055  1
 
 
 --- Sentence/start
-id: 148
-r#  65357  1055  1
+id: 150
+r#  65363  1055  1
 --- Paragraph/end 
 id: 109
 y: N/A
@@ -3640,16 +3664,16 @@ y: N/A
 
 --- Paragraph/start
 id: 110
-r#  66087  1066  1
+r#  66093  1066  1
 
 
 --- Sentence/start
-id: 149
-r#  66087  1066  1
+id: 151
+r#  66093  1066  1
 
 --- Sentence//end
-id: 149
-r#  66447  1070  72
+id: 151
+r#  66453  1070  72
 p: .
 t. 
 |  What follows is a description of a protective mother from Contra
@@ -3669,13 +3693,13 @@ t.
 
 
 --- Sentence/switch
-id: 150
-r#  66448  1070  73
+id: 152
+r#  66454  1070  73
 
 
 --- Sentence//end
-id: 150
-r#  67125  1078  41
+id: 152
+r#  67131  1078  41
 p: .
 t. 
 |  It began with a conviction for criminal endangerment of the welfare of
@@ -3688,8 +3712,8 @@ t.
 .  trauma and urged protection of the child
 
 --- Sentence/end 
-id: 150
-r#  67126  1078  42
+id: 152
+r#  67132  1078  42
 
 --- Paragraph/end 
 id: 110
@@ -3698,16 +3722,16 @@ y: N/A
 
 --- Paragraph/start
 id: 111
-r#  67128  1080  1
+r#  67134  1080  1
 
 
 --- Sentence/start
-id: 151
-r#  67128  1080  1
+id: 153
+r#  67134  1080  1
 
 --- Sentence//end
-id: 151
-r#  68260  1100  38
+id: 153
+r#  68266  1100  38
 p: .
 t. 
 |  The father’s criminal activities would continue over the years. In 2018,
@@ -3729,8 +3753,8 @@ t.
 .  documented in the record of this case
 
 --- Sentence/end 
-id: 151
-r#  68261  1100  39
+id: 153
+r#  68267  1100  39
 
 --- Paragraph/end 
 id: 111
@@ -3745,16 +3769,16 @@ y: N/A
 
 --- Paragraph/start
 id: 112
-r#  68367  1105  4
+r#  68373  1105  4
 
 
 --- Sentence/start
-id: 152
-r#  68367  1105  4
+id: 154
+r#  68373  1105  4
 
 --- Sentence//end
-id: 152
-r#  68640  1108  74
+id: 154
+r#  68646  1108  74
 p: .
 t. 
 |  The mother brought her four-year-old daughter to the Marin General
@@ -3764,8 +3788,8 @@ t.
 
 
 --- Sentence/switch
-id: 153
-r#  68641  1108  75
+id: 155
+r#  68647  1108  75
 
 --- Paragraph/end 
 id: 112
@@ -3774,12 +3798,12 @@ y: N/A
 
 --- Paragraph/start
 id: 113
-r#  69974  1130  1
+r#  69980  1130  1
 
 
 --- Sentence/start
-id: 154
-r#  69974  1130  1
+id: 156
+r#  69980  1130  1
 --- Paragraph/end 
 id: 113
 y: N/A
@@ -3787,16 +3811,16 @@ y: N/A
 
 --- Paragraph/start
 id: 114
-r#  70620  1140  1
+r#  70626  1140  1
 
 
 --- Sentence/start
-id: 155
-r#  70620  1140  1
+id: 157
+r#  70626  1140  1
 
 --- Sentence//end
-id: 155
-r#  70761  1141  72
+id: 157
+r#  70767  1141  72
 p: .
 t. 
 |  The emergency room doctor noted the following in his report when
@@ -3827,8 +3851,8 @@ t.
 
 
 --- Sentence/switch
-id: 156
-r#  70762  1141  73
+id: 158
+r#  70768  1141  73
 
 --- Paragraph/end 
 id: 114
@@ -3837,16 +3861,16 @@ y: N/A
 
 --- Paragraph/start
 id: 115
-r#  71352  1151  1
+r#  71358  1151  1
 
 
 --- Sentence/start
-id: 157
-r#  71352  1151  1
+id: 159
+r#  71358  1151  1
 
 --- Sentence//end
-id: 157
-r#  72228  1162  69
+id: 159
+r#  72234  1162  69
 p: .
 t. 
 |  The state paid for this extensive evaluation, which included the use of
@@ -3870,8 +3894,8 @@ t.
 .  a week with her young preschool children. She never regained custody
 
 --- Sentence/end 
-id: 157
-r#  72229  1162  70
+id: 159
+r#  72235  1162  70
 
 --- Paragraph/end 
 id: 115
@@ -3880,16 +3904,16 @@ y: N/A
 
 --- Paragraph/start
 id: 116
-r#  72231  1164  1
+r#  72237  1164  1
 
 
 --- Sentence/start
-id: 158
-r#  72231  1164  1
+id: 160
+r#  72237  1164  1
 
 --- Sentence//end
-id: 158
-r#  72674  1169  13
+id: 160
+r#  72680  1169  13
 p: .
 t. 
 |  In the years that followed, the children showed disturbances. Sadly,
@@ -3900,8 +3924,8 @@ t.
 .  and reckless
 
 --- Sentence/end 
-id: 158
-r#  72675  1169  14
+id: 160
+r#  72681  1169  14
 
 --- Paragraph/end 
 id: 116

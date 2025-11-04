@@ -251,15 +251,15 @@ int main(int argc, char *argv[])
 
 // _main(file, folder, manfolder);
 
- file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch4/ch4.gt";
- folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch4";
-
- _main(file, folder, manfolder);
-
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5/ch5.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5";
+// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch4/ch4.gt";
+// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch4";
 
 // _main(file, folder, manfolder);
+
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5/ch5.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5";
+
+ _main(file, folder, manfolder);
 
 // file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch6/ch6.gt";
 // folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch6";
@@ -306,10 +306,10 @@ int main(int argc, char *argv[])
 
 // _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ack/ack.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ack";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ack/ack.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ack";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
 #ifdef HIDE
  QString outstr;

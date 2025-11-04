@@ -311,6 +311,7 @@ public:
  void footnote_marker(QString text);
 
  void ell_count(u1 count, QString follow = "");
+ void ell_2_nonbreak();
 
  void desc_item(QString text);
 

@@ -1465,16 +1465,16 @@ y: N/A
 
 --- Paragraph/start
 id: 40
-r#  31575  467  1
+r#  31581  467  1
 
 
 --- Sentence/start
 id: 53
-r#  31575  467  1
+r#  31581  467  1
 
 --- Sentence//end
 id: 53
-r#  32370  476  7
+r#  32376  476  7
 p: .
 t. 
 |  As part of our study of judicial madness, we closely examined the participation of child protective service agencies and, in particular, their
@@ -1490,7 +1490,7 @@ t.
 
 --- Sentence/end 
 id: 53
-r#  32371  476  8
+r#  32377  476  8
 
 --- Paragraph/end 
 id: 40
@@ -1499,16 +1499,16 @@ y: N/A
 
 --- Paragraph/start
 id: 41
-r#  32373  478  1
+r#  32379  478  1
 
 
 --- Sentence/start
 id: 54
-r#  32373  478  1
+r#  32379  478  1
 
 --- Sentence//end
 id: 54
-r#  32830  483  9
+r#  32836  483  9
 p: .
 t. 
 |  Albert J. Meehan (1997), in studying the record-keeping practices of police,
@@ -1520,7 +1520,7 @@ t.
 
 --- Sentence/end 
 id: 54
-r#  32831  483  10
+r#  32837  483  10
 
 --- Paragraph/end 
 id: 41
@@ -1529,16 +1529,16 @@ y: N/A
 
 --- Paragraph/start
 id: 42
-r#  32833  485  1
+r#  32839  485  1
 
 
 --- Sentence/start
 id: 55
-r#  32833  485  1
+r#  32839  485  1
 
 --- Sentence//end
 id: 55
-r#  33461  491  217
+r#  33467  491  217
 p: .
 t. 
 |  In much the same way, in our study of the family courts and their
@@ -1551,7 +1551,7 @@ t.
 
 --- Sentence/end 
 id: 55
-r#  33462  491  218
+r#  33468  491  218
 
 --- Paragraph/end 
 id: 42
@@ -1560,16 +1560,16 @@ y: N/A
 
 --- Paragraph/start
 id: 43
-r#  33464  493  1
+r#  33470  493  1
 
 
 --- Sentence/start
 id: 56
-r#  33464  493  1
+r#  33470  493  1
 
 --- Sentence//end
 id: 56
-r#  34498  504  147
+r#  34504  504  147
 p: .
 t. 
 |  This fact helps to explain the otherwise baffling tendency of CPS agencies to make contradictory charges against protective mothers in the
@@ -1588,12 +1588,12 @@ t.
 
 --- Sentence/switch
 id: 57
-r#  34499  504  148
+r#  34505  504  148
 
 
 --- Sentence//end
 id: 57
-r#  34823  509  33
+r#  34829  509  33
 p: .
 t. 
 |  The second charge - brainwashing - can be used against the mother as
@@ -1604,7 +1604,7 @@ t.
 
 --- Sentence/end 
 id: 57
-r#  34824  509  34
+r#  34830  509  34
 
 --- Paragraph/end 
 id: 43
@@ -1613,16 +1613,16 @@ y: N/A
 
 --- Paragraph/start
 id: 44
-r#  34826  511  1
+r#  34832  511  1
 
 
 --- Sentence/start
 id: 58
-r#  34826  511  1
+r#  34832  511  1
 
 --- Sentence//end
 id: 58
-r#  35795  521  57
+r#  35801  521  57
 p: .
 t. 
 |  If CPS records were truly intended to serve an actuarial
@@ -1639,7 +1639,7 @@ t.
 
 --- Sentence/end 
 id: 58
-r#  35796  521  58
+r#  35802  521  58
 
 --- Paragraph/end 
 id: 44
@@ -1648,16 +1648,16 @@ y: N/A
 
 --- Paragraph/start
 id: 45
-r#  35798  523  1
+r#  35804  523  1
 
 
 --- Sentence/start
 id: 59
-r#  35798  523  1
+r#  35804  523  1
 
 --- Sentence//end
 id: 59
-r#  36377  529  67
+r#  36383  529  67
 p: .
 t. 
 |  Meehan’s research on record-keeping practices is helpful in our study
@@ -1670,7 +1670,7 @@ t.
 
 --- Sentence/end 
 id: 59
-r#  36378  529  68
+r#  36384  529  68
 
 --- Paragraph/end 
 id: 45
@@ -1679,16 +1679,16 @@ y: N/A
 
 --- Paragraph/start
 id: 46
-r#  36380  531  1
+r#  36386  531  1
 
 
 --- Sentence/start
 id: 60
-r#  36380  531  1
+r#  36386  531  1
 
 --- Sentence//end
 id: 60
-r#  37721  545  42
+r#  37727  545  42
 p: .
 t. 
 |  We likewise have found that CPS agencies, law guardians, judges, and
@@ -1709,7 +1709,7 @@ t.
 
 --- Sentence/end 
 id: 60
-r#  37722  545  43
+r#  37728  545  43
 
 --- Paragraph/end 
 id: 46
@@ -1718,16 +1718,16 @@ y: N/A
 
 --- Paragraph/start
 id: 47
-r#  37724  547  1
+r#  37730  547  1
 
 
 --- Sentence/start
 id: 61
-r#  37724  547  1
+r#  37730  547  1
 
 --- Sentence//end
 id: 61
-r#  38246  552  26
+r#  38252  552  26
 p: .
 t. 
 |  This is one reason why, when state and federal investigators have
@@ -1739,7 +1739,7 @@ t.
 
 --- Sentence/end 
 id: 61
-r#  38247  552  27
+r#  38253  552  27
 
 --- Paragraph/end 
 id: 47
@@ -1748,16 +1748,16 @@ y: N/A
 
 --- Paragraph/start
 id: 48
-r#  38249  554  1
+r#  38255  554  1
 
 
 --- Sentence/start
 id: 62
-r#  38249  554  1
+r#  38255  554  1
 
 --- Sentence//end
 id: 62
-r#  38748  559  12
+r#  38754  559  12
 p: .
 t. 
 |  We have found that running records have become so prevalent in
@@ -1769,7 +1769,7 @@ t.
 
 --- Sentence/end 
 id: 62
-r#  38749  559  13
+r#  38755  559  13
 
 --- Paragraph/end 
 id: 48
@@ -1778,16 +1778,16 @@ y: N/A
 
 --- Paragraph/start
 id: 49
-r#  38751  561  1
+r#  38757  561  1
 
 
 --- Sentence/start
 id: 63
-r#  38751  561  1
+r#  38757  561  1
 
 --- Sentence//end
 id: 63
-r#  39517  571  47
+r#  39523  571  47
 p: .
 t. 
 |  Meehan observed that these running records are evoked at key
@@ -1804,7 +1804,7 @@ t.
 
 --- Sentence/end 
 id: 63
-r#  39518  571  48
+r#  39524  571  48
 
 --- Paragraph/end 
 id: 49
@@ -1813,16 +1813,16 @@ y: N/A
 
 --- Paragraph/start
 id: 50
-r#  39520  573  1
+r#  39526  573  1
 
 
 --- Sentence/start
 id: 64
-r#  39520  573  1
+r#  39526  573  1
 
 --- Sentence//end
 id: 64
-r#  40027  577  35
+r#  40033  577  35
 p: .
 t. 
 |  We can thus begin to see how the application of the ethnomethodological form of sociological inquiry to the family court system provides special insight into how judges and their auxiliaries produce
@@ -1833,7 +1833,7 @@ t.
 
 --- Sentence/end 
 id: 64
-r#  40028  577  36
+r#  40034  577  36
 
 --- Paragraph/end 
 id: 50

@@ -427,6 +427,17 @@ void GTagML_Graph_Build::force_switch_sentence()
  end_sentence("");
 }
 
+void GTagML_Graph_Build::ell_2_nonbreak()
+{
+ reset_primary();
+
+ if(!flags.sentences_only)
+   latex_stream_ << ".~";
+
+ if(!flags.latex_only)
+   sentences_text_stream_ << ". ";
+}
+
 void GTagML_Graph_Build::ell_count(u1 count, QString follow)
 {
  reset_primary();
