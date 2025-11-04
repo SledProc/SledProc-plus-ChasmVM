@@ -312,7 +312,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
  add_rule( flags_all_(parse_context ,justline),
    gtagml_context, "leave-justline",
-   " (?<pretext> -+) % (?<follow> \\s* = \\d [\\d.]* )? \\s* \\}  "
+   " (?<pretext> \\s* [|-]+) % (?<follow> \\s* = \\d [\\d.]* )? \\s* \\}  "
    ,[&]
  {
   graph_build.leave_justline(p.matched("pretext"), p.matched("follow"));

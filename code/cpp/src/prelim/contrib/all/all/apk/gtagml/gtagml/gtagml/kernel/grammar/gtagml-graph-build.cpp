@@ -751,7 +751,7 @@ void GTagML_Graph_Build::enter_justline(QString pretext)
 }
 
 void GTagML_Graph_Build::leave_justline(QString pretext, QString follow)
-{
+{ 
  follow = follow.simplified().replace(' ', "");
 
  if(follow.startsWith("="))
@@ -764,8 +764,11 @@ void GTagML_Graph_Build::leave_justline(QString pretext, QString follow)
 
  reset_primary();
 
- parse_context_.flags.justline = false;
- parse_context_.flags.heading_acc = flags.heading_acc;
+ if(pretext != "|-")
+ {
+  parse_context_.flags.justline = false;
+  parse_context_.flags.heading_acc = flags.heading_acc;
+ }
 
  if(!flags.sentences_only)
  {
