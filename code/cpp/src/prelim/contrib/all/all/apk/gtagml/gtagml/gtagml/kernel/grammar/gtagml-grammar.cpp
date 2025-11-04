@@ -573,7 +573,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
  add_rule( gtagml_context, "enter-single-quote-mode",
-   " '(?<pre> \\w*)/ "
+   " '/ "
    ,[&]
  {
   graph_build.enter_single_quote_mode();

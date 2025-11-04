@@ -256,10 +256,10 @@ int main(int argc, char *argv[])
 
 // _main(file, folder, manfolder);
 
- file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5/ch5.gt";
- folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5";
+// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5/ch5.gt";
+// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5";
 
- _main(file, folder, manfolder);
+// _main(file, folder, manfolder);
 
 // file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch6/ch6.gt";
 // folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch6";
@@ -291,10 +291,10 @@ int main(int argc, char *argv[])
 
 // _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes/notes.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes/notes.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
 // file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references/references.gt";
 // folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references";
