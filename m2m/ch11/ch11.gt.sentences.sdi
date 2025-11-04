@@ -1101,7 +1101,7 @@ r#  23041  385  1
 
 --- Sentence//end
 id: 45
-r#  23501  389  39
+r#  23503  389  39
 p: .
 t. 
 |  When the objective test results he obtained were reviewed by another
@@ -1137,12 +1137,12 @@ t.
 |  Examples and statements like these make it clear that custody evaluators do not always follow even minimally proper procedures.\13 Courts
 |  must therefore look carefully at all such evaluations and must explain,
 |  in their decisions, exactly how their judicial conclusions have been
-|  reached.\14 Such a procedure tends to expose reliance on skewed or biased analysis on the part of the evaluator and thus tends to minimize the
+|  reach\-ed.\14 Such a procedure tends to expose reliance on skewed or biased analysis on the part of the evaluator and thus tends to minimize the
 .  abuse of the system by a biased expert
 
 --- Sentence/end 
 id: 45
-r#  23502  389  40
+r#  23504  389  40
 
 --- Paragraph/end 
 id: 30
@@ -1151,12 +1151,12 @@ y: N/A
 
 --- Paragraph/start
 id: 31
-r#  23504  391  1
+r#  23506  391  1
 
 
 --- Sentence/start
 id: 46
-r#  23504  391  1
+r#  23506  391  1
 --- Paragraph/end 
 id: 31
 y: N/A
@@ -1164,16 +1164,16 @@ y: N/A
 
 --- Paragraph/start
 id: 32
-r#  24087  400  1
+r#  24089  400  1
 
 
 --- Sentence/start
 id: 47
-r#  24087  400  1
+r#  24089  400  1
 
 --- Sentence//end
 id: 47
-r#  24205  401  53
+r#  24207  401  53
 p: .
 t. 
 |  As one judge on New York’s highest court observed in a 1997 case:
@@ -1188,7 +1188,7 @@ t.
 
 --- Sentence/end 
 id: 47
-r#  24206  401  54
+r#  24208  401  54
 
 --- Paragraph/end 
 id: 32
@@ -1197,16 +1197,16 @@ y: N/A
 
 --- Paragraph/start
 id: 33
-r#  24208  403  1
+r#  24210  403  1
 
 
 --- Sentence/start
 id: 48
-r#  24208  403  1
+r#  24210  403  1
 
 --- Sentence//end
 id: 48
-r#  24922  410  62
+r#  24924  410  62
 p: .
 t. 
 |  For one thing, although it is already spelled out in the Code of Judicial Conduct that a judge should not hold ex parte communication with
@@ -1220,7 +1220,7 @@ t.
 
 --- Sentence/end 
 id: 48
-r#  24923  410  63
+r#  24925  410  63
 
 --- Paragraph/end 
 id: 33
@@ -1229,16 +1229,16 @@ y: N/A
 
 --- Paragraph/start
 id: 34
-r#  24925  412  1
+r#  24927  412  1
 
 
 --- Sentence/start
 id: 49
-r#  24925  412  1
+r#  24927  412  1
 
 --- Sentence//end
 id: 49
-r#  25421  417  68
+r#  25423  417  68
 p: .
 t. 
 |  Second, Timothy Tippins has argued - rightly, we believe - that the common
@@ -1251,12 +1251,12 @@ t.
 
 --- Sentence/switch
 id: 50
-r#  25422  417  69
+r#  25424  417  69
 
 
 --- Sentence//end
 id: 50
-r#  26083  427  52
+r#  26085  427  52
 p: .
 t. 
 |  As a result, the expert’s conclusions - which can be devastating to one
@@ -1272,7 +1272,7 @@ t.
 
 --- Sentence/end 
 id: 50
-r#  26084  427  53
+r#  26086  427  53
 
 --- Paragraph/end 
 id: 34
@@ -1281,16 +1281,16 @@ y: N/A
 
 --- Paragraph/start
 id: 35
-r#  26086  429  1
+r#  26088  429  1
 
 
 --- Sentence/start
 id: 51
-r#  26086  429  1
+r#  26088  429  1
 
 --- Sentence//end
 id: 51
-r#  26372  432  69
+r#  26374  432  69
 p: .
 t. 
 |  At the same time, it is critical that the expert’s report, together with
@@ -1301,7 +1301,7 @@ t.
 
 --- Sentence/switch
 id: 52
-r#  26373  432  70
+r#  26375  432  70
 
 --- Paragraph/end 
 id: 35
@@ -1310,16 +1310,16 @@ y: N/A
 
 --- Paragraph/start
 id: 36
-r#  26763  443  1
+r#  26765  443  1
 
 
 --- Sentence/start
 id: 53
-r#  26763  443  1
+r#  26765  443  1
 
 --- Sentence//end
 id: 53
-r#  27262  447  69
+r#  27264  447  69
 p: .
 t. 
 |  Martindale, PhD, has written:The role of an expert ...\ is to assist the trier of fact. Doing so requires that evaluators report all pertinent information, including
@@ -1336,12 +1336,12 @@ t.
 
 --- Sentence/switch
 id: 54
-r#  27263  447  70
+r#  27265  447  70
 
 
 --- Sentence//end
 id: 54
-r#  27690  452  67
+r#  27692  452  67
 p: .
 t. 
 |  This tactic neatly turns a judge against an impecunious mother before
@@ -1353,12 +1353,12 @@ t.
 
 --- Sentence/switch
 id: 55
-r#  27691  452  68
+r#  27693  452  68
 
 
 --- Sentence//end
 id: 55
-r#  27837  454  75
+r#  27839  454  75
 p: .
 t. 
 |  It is possible that the use of junk science theories can be banned
@@ -1367,12 +1367,12 @@ t.
 
 --- Sentence/switch
 id: 56
-r#  27838  454  76
+r#  27840  454  76
 
 
 --- Sentence//end
 id: 56
-r#  28349  460  6
+r#  28351  460  6
 p: .
 t. 
 |  Controversial theories such as PAS were the targets of proposed legislation in 2003 in two states, Texas and Virginia, but neither remedial bill
@@ -1384,7 +1384,7 @@ t.
 
 --- Sentence/end 
 id: 56
-r#  28350  460  7
+r#  28352  460  7
 
 --- Paragraph/end 
 id: 36
@@ -1399,16 +1399,16 @@ y: N/A
 
 --- Paragraph/start
 id: 37
-r#  28380  465  4
+r#  28382  465  4
 
 
 --- Sentence/start
 id: 57
-r#  28380  465  4
+r#  28382  465  4
 
 --- Sentence//end
 id: 57
-r#  29039  474  26
+r#  29041  474  26
 p: .
 t. 
 |  Every reader of this book will know, from reading Chapter 6, that many
@@ -1424,7 +1424,7 @@ t.
 
 --- Sentence/end 
 id: 57
-r#  29040  474  27
+r#  29042  474  27
 
 --- Paragraph/end 
 id: 37
@@ -1439,16 +1439,16 @@ y: N/A
 
 --- Paragraph/start
 id: 38
-r#  29063  478  4
+r#  29065  478  4
 
 
 --- Sentence/start
 id: 58
-r#  29063  478  4
+r#  29065  478  4
 
 --- Sentence//end
 id: 58
-r#  29362  482  13
+r#  29364  482  13
 p: .
 t. 
 |  Obviously, CPS workers must (and do) receive training before they can
@@ -1459,7 +1459,7 @@ t.
 
 --- Sentence/end 
 id: 58
-r#  29363  482  14
+r#  29365  482  14
 
 --- Paragraph/end 
 id: 38
@@ -1468,16 +1468,16 @@ y: N/A
 
 --- Paragraph/start
 id: 39
-r#  29365  484  1
+r#  29367  484  1
 
 
 --- Sentence/start
 id: 59
-r#  29365  484  1
+r#  29367  484  1
 
 --- Sentence//end
 id: 59
-r#  29696  491  33
+r#  29698  491  33
 p: .
 t. 
 |  We propose that every social worker employed by a state CPS agency
@@ -1489,12 +1489,12 @@ t.
 
 --- Sentence/switch
 id: 60
-r#  29701  493  3
+r#  29703  493  3
 
 
 --- Sentence//end
 id: 60
-r#  29872  495  59
+r#  29874  495  59
 p: .
 t. 
 |  Accusing a parent of abuse or neglect when there is no
@@ -1504,12 +1504,12 @@ t.
 
 --- Sentence/switch
 id: 61
-r#  29877  497  3
+r#  29879  497  3
 
 
 --- Sentence//end
 id: 61
-r#  29967  498  28
+r#  29969  498  28
 p: .
 t. 
 |  Accusing a mother of child abuse or neglect based on theories
@@ -1518,12 +1518,12 @@ t.
 
 --- Sentence/switch
 id: 62
-r#  29972  500  3
+r#  29974  500  3
 
 
 --- Sentence//end
 id: 62
-r#  30095  501  61
+r#  30097  501  61
 p: .
 t. 
 |  Accusing a mother of abuse or neglect when the definitions of
@@ -1532,12 +1532,12 @@ t.
 
 --- Sentence/switch
 id: 63
-r#  30096  501  62
+r#  30098  501  62
 
 
 --- Sentence//end
 id: 63
-r#  30509  507  8
+r#  30511  507  8
 p: .
 t. 
 |  In addition, caseworkers should be trained in the basic elements
@@ -1550,7 +1550,7 @@ t.
 
 --- Sentence/switch
 id: 64
-r#  30510  507  9
+r#  30512  507  9
 
 --- Paragraph/end 
 id: 39
@@ -1565,16 +1565,16 @@ y: N/A
 
 --- Paragraph/start
 id: 40
-r#  30538  513  4
+r#  30540  513  4
 
 
 --- Sentence/start
 id: 65
-r#  30538  513  4
+r#  30540  513  4
 
 --- Sentence//end
 id: 65
-r#  30922  516  36
+r#  30924  516  36
 p: .
 t. 
 |  Again, it should be obvious that certain procedural reforms should be
@@ -1584,7 +1584,7 @@ t.
 
 --- Sentence/end 
 id: 65
-r#  30923  516  37
+r#  30925  516  37
 
 --- Paragraph/end 
 id: 40
@@ -1593,16 +1593,16 @@ y: N/A
 
 --- Paragraph/start
 id: 41
-r#  30925  518  1
+r#  30927  518  1
 
 
 --- Sentence/start
 id: 66
-r#  30925  518  1
+r#  30927  518  1
 
 --- Sentence//end
 id: 66
-r#  31325  523  49
+r#  31327  523  49
 p: .
 t. 
 |  First, no CPS agency has the right to withhold agency records from a
@@ -1614,7 +1614,7 @@ t.
 
 --- Sentence/end 
 id: 66
-r#  31326  523  50
+r#  31328  523  50
 
 --- Paragraph/end 
 id: 41
@@ -1623,16 +1623,16 @@ y: N/A
 
 --- Paragraph/start
 id: 42
-r#  31328  525  1
+r#  31330  525  1
 
 
 --- Sentence/start
 id: 67
-r#  31328  525  1
+r#  31330  525  1
 
 --- Sentence//end
 id: 67
-r#  32182  535  141
+r#  32184  535  141
 p: .
 t. 
 |  In most states, abuse or neglect petitions are signed by an employee
@@ -1650,12 +1650,12 @@ t.
 
 --- Sentence/switch
 id: 68
-r#  32183  535  142
+r#  32185  535  142
 
 
 --- Sentence//end
 id: 68
-r#  32618  540  71
+r#  32620  540  71
 p: .
 t. 
 |  But we believe that the relevant statutes should require that all such affidavits state explicitly that the signatory is personally familiar with the
@@ -1667,12 +1667,12 @@ t.
 
 --- Sentence/switch
 id: 69
-r#  32619  540  72
+r#  32621  540  72
 
 
 --- Sentence//end
 id: 69
-r#  33112  546  63
+r#  33114  546  63
 p: .
 t. 
 |  Such affidavits should be treated as legal nullities - but in practice they
@@ -1684,7 +1684,7 @@ t.
 
 --- Sentence/end 
 id: 69
-r#  33113  546  64
+r#  33115  546  64
 
 --- Paragraph/end 
 id: 42
@@ -1693,16 +1693,16 @@ y: N/A
 
 --- Paragraph/start
 id: 43
-r#  33115  548  1
+r#  33117  548  1
 
 
 --- Sentence/start
 id: 70
-r#  33115  548  1
+r#  33117  548  1
 
 --- Sentence//end
 id: 70
-r#  33351  551  25
+r#  33353  551  25
 p: .
 t. 
 |  We further recommend, as a deterrent to the use of invalid petitions
@@ -1712,7 +1712,7 @@ t.
 
 --- Sentence/end 
 id: 70
-r#  33352  551  26
+r#  33354  551  26
 
 --- Paragraph/end 
 id: 43
@@ -1721,16 +1721,16 @@ y: N/A
 
 --- Paragraph/start
 id: 44
-r#  33354  553  1
+r#  33356  553  1
 
 
 --- Sentence/start
 id: 71
-r#  33354  553  1
+r#  33356  553  1
 
 --- Sentence//end
 id: 71
-r#  33546  554  129
+r#  33548  554  129
 p: .
 t. 
 |  Finally, state statutes should guarantee that CPS employees who
@@ -1738,7 +1738,7 @@ t.
 
 --- Sentence/end 
 id: 71
-r#  33547  554  130
+r#  33549  554  130
 
 --- Paragraph/end 
 id: 44
@@ -1753,16 +1753,16 @@ y: N/A
 
 --- Paragraph/start
 id: 45
-r#  33585  559  4
+r#  33587  559  4
 
 
 --- Sentence/start
 id: 72
-r#  33585  559  4
+r#  33587  559  4
 
 --- Sentence//end
 id: 72
-r#  34864  573  23
+r#  34866  573  23
 p: .
 t. 
 |  We noted that law guardians have, for too long, enjoyed virtually
@@ -1783,7 +1783,7 @@ t.
 
 --- Sentence/end 
 id: 72
-r#  34865  573  24
+r#  34867  573  24
 
 --- Paragraph/end 
 id: 45
@@ -1792,16 +1792,16 @@ y: N/A
 
 --- Paragraph/start
 id: 46
-r#  34867  575  1
+r#  34869  575  1
 
 
 --- Sentence/start
 id: 73
-r#  34867  575  1
+r#  34869  575  1
 
 --- Sentence//end
 id: 73
-r#  35451  581  21
+r#  35453  581  21
 p: .
 t. 
 |  We also believe that each state’s commissioner of social services (or
@@ -1814,7 +1814,7 @@ t.
 
 --- Sentence/end 
 id: 73
-r#  35452  581  22
+r#  35454  581  22
 
 --- Paragraph/end 
 id: 46
@@ -1829,16 +1829,16 @@ y: N/A
 
 --- Paragraph/start
 id: 47
-r#  35477  586  4
+r#  35479  586  4
 
 
 --- Sentence/start
 id: 74
-r#  35477  586  4
+r#  35479  586  4
 
 --- Sentence//end
 id: 74
-r#  35799  590  30
+r#  35801  590  30
 p: .
 t. 
 |  We have set out a rather lengthy list of reforms in Part III. Most of them,
@@ -1849,7 +1849,7 @@ t.
 
 --- Sentence/end 
 id: 74
-r#  35800  590  31
+r#  35802  590  31
 
 --- Paragraph/end 
 id: 47
@@ -1858,16 +1858,16 @@ y: N/A
 
 --- Paragraph/start
 id: 48
-r#  35802  592  1
+r#  35804  592  1
 
 
 --- Sentence/start
 id: 75
-r#  35802  592  1
+r#  35804  592  1
 
 --- Sentence//end
 id: 75
-r#  36682  601  43
+r#  36684  601  43
 p: .
 t. 
 |  In the last analysis, we will have a healthy family court system only
@@ -1883,7 +1883,7 @@ t.
 
 --- Sentence/end 
 id: 75
-r#  36683  601  44
+r#  36685  601  44
 
 --- Paragraph/end 
 id: 48
@@ -1892,16 +1892,16 @@ y: N/A
 
 --- Paragraph/start
 id: 49
-r#  36685  603  1
+r#  36687  603  1
 
 
 --- Sentence/start
 id: 76
-r#  36685  603  1
+r#  36687  603  1
 
 --- Sentence//end
 id: 76
-r#  37091  607  50
+r#  37093  607  50
 p: .
 t. 
 |  When American mothers realize just how vulnerable they and their
@@ -1912,7 +1912,7 @@ t.
 
 --- Sentence/end 
 id: 76
-r#  37092  607  51
+r#  37094  607  51
 
 --- Paragraph/end 
 id: 49
@@ -1921,12 +1921,12 @@ y: N/A
 
 --- Paragraph/start
 id: 50
-r#  37095  610  1
+r#  37097  610  1
 
 
 --- Sentence/start
 id: 77
-r#  37095  610  1
+r#  37097  610  1
 --- Paragraph/end 
 id: 50
 y: N/A
@@ -1934,16 +1934,16 @@ y: N/A
 
 --- Paragraph/start
 id: 51
-r#  37116  612  4
+r#  37118  612  4
 
 
 --- Sentence/start
 id: 78
-r#  37116  612  4
+r#  37118  612  4
 
 --- Sentence//end
 id: 78
-r#  37299  613  48
+r#  37301  613  48
 p: .
 t. 
 |  \writeAddendum{}Since this book’s original publication in 2005, some promising developments have occurred within the system, although in our view their
@@ -1951,7 +1951,7 @@ t.
 
 --- Sentence/end 
 id: 78
-r#  37300  613  49
+r#  37302  613  49
 
 --- Paragraph/end 
 id: 51
@@ -1960,16 +1960,16 @@ y: N/A
 
 --- Paragraph/start
 id: 52
-r#  37302  615  1
+r#  37304  615  1
 
 
 --- Sentence/start
 id: 79
-r#  37302  615  1
+r#  37304  615  1
 
 --- Sentence//end
 id: 79
-r#  38013  625  9
+r#  38015  625  9
 p: .
 t. 
 |  One vector of system reform has been the gradual adoption by some
@@ -1986,7 +1986,7 @@ t.
 
 --- Sentence/end 
 id: 79
-r#  38014  625  10
+r#  38016  625  10
 
 --- Paragraph/end 
 id: 52
@@ -1995,12 +1995,12 @@ y: N/A
 
 --- Paragraph/start
 id: 53
-r#  38016  627  1
+r#  38018  627  1
 
 
 --- Sentence/start
 id: 80
-r#  38016  627  1
+r#  38018  627  1
 --- Paragraph/end 
 id: 53
 y: N/A
@@ -2008,12 +2008,12 @@ y: N/A
 
 --- Paragraph/start
 id: 54
-r#  38833  637  1
+r#  38835  637  1
 
 
 --- Sentence/start
 id: 81
-r#  38833  637  1
+r#  38835  637  1
 --- Paragraph/end 
 id: 54
 y: N/A
@@ -2021,16 +2021,16 @@ y: N/A
 
 --- Paragraph/start
 id: 55
-r#  39789  651  1
+r#  39791  651  1
 
 
 --- Sentence/start
 id: 82
-r#  39789  651  1
+r#  39791  651  1
 
 --- Sentence//end
 id: 82
-r#  40477  658  50
+r#  40479  658  50
 p: .
 t. 
 |  A notable example of this sort of reform involves a 1999 publication
@@ -2064,7 +2064,7 @@ t.
 
 --- Sentence/end 
 id: 82
-r#  40478  658  51
+r#  40480  658  51
 
 --- Paragraph/end 
 id: 55
@@ -2073,12 +2073,12 @@ y: N/A
 
 --- Paragraph/start
 id: 56
-r#  40480  660  1
+r#  40482  660  1
 
 
 --- Sentence/start
 id: 83
-r#  40480  660  1
+r#  40482  660  1
 --- Paragraph/end 
 id: 56
 y: N/A
@@ -2086,16 +2086,16 @@ y: N/A
 
 --- Paragraph/start
 id: 57
-r#  41678  679  1
+r#  41680  679  1
 
 
 --- Sentence/start
 id: 84
-r#  41678  679  1
+r#  41680  679  1
 
 --- Sentence//end
 id: 84
-r#  42417  690  69
+r#  42419  690  69
 p: .
 t. 
 |  Greenbook-inspired advocates have also criticized the family court
@@ -2125,7 +2125,7 @@ t.
 
 --- Sentence/switch
 id: 85
-r#  42418  690  70
+r#  42420  690  70
 
 --- Paragraph/end 
 id: 57
@@ -2134,12 +2134,12 @@ y: N/A
 
 --- Paragraph/start
 id: 58
-r#  42510  695  1
+r#  42512  695  1
 
 
 --- Sentence/start
 id: 86
-r#  42510  695  1
+r#  42512  695  1
 --- Paragraph/end 
 id: 58
 y: N/A
@@ -2147,12 +2147,12 @@ y: N/A
 
 --- Paragraph/start
 id: 59
-r#  43066  702  1
+r#  43068  702  1
 
 
 --- Sentence/start
 id: 87
-r#  43066  702  1
+r#  43068  702  1
 --- Paragraph/end 
 id: 59
 y: N/A
@@ -2160,12 +2160,12 @@ y: N/A
 
 --- Paragraph/start
 id: 60
-r#  44801  732  1
+r#  44803  732  1
 
 
 --- Sentence/start
 id: 88
-r#  44801  732  1
+r#  44803  732  1
 --- Paragraph/end 
 id: 60
 y: N/A
@@ -2173,16 +2173,16 @@ y: N/A
 
 --- Paragraph/start
 id: 61
-r#  45903  748  1
+r#  45905  748  1
 
 
 --- Sentence/start
 id: 89
-r#  45903  748  1
+r#  45905  748  1
 
 --- Sentence//end
 id: 89
-r#  47181  762  26
+r#  47183  762  26
 p: .
 t. 
 |  There’s still work to be done on this issue, but significant progress
@@ -2245,7 +2245,7 @@ t.
 
 --- Sentence/end 
 id: 89
-r#  47182  762  27
+r#  47184  762  27
 
 --- Paragraph/end 
 id: 61

@@ -406,11 +406,11 @@ r#  6434  112  1
 
 --- Sentence//end
 id: 17
-r#  6888  116  56
+r#  6890  116  56
 p: .
 t. 
 |  Consider the case of a Brooklyn, New York, mother who was a
-|  schoolteacher with a master’s degree in education. After two anguished years in a custody battle against her ex-husband - who was
+|  school\-teacher with a master’s degree in education. After two anguished years in a custody battle against her ex-husband - who was
 |  supported by CPS despite evidence that he had sexually abused both
 |  children - she was forced to quit the job she loved because of the number of days she had to take off for court appearances and court-ordered
 .  mental health examinations for herself and her children
@@ -418,7 +418,7 @@ t.
 
 --- Sentence/switch
 id: 18
-r#  6889  116  57
+r#  6891  116  57
 
 --- Paragraph/end 
 id: 12
@@ -427,12 +427,12 @@ y: N/A
 
 --- Paragraph/start
 id: 13
-r#  7228  122  1
+r#  7230  122  1
 
 
 --- Sentence/start
 id: 19
-r#  7228  122  1
+r#  7230  122  1
 --- Paragraph/end 
 id: 13
 y: N/A
@@ -440,12 +440,12 @@ y: N/A
 
 --- Paragraph/start
 id: 14
-r#  7867  130  1
+r#  7869  130  1
 
 
 --- Sentence/start
 id: 20
-r#  7867  130  1
+r#  7869  130  1
 --- Paragraph/end 
 id: 14
 y: N/A
@@ -453,16 +453,16 @@ y: N/A
 
 --- Paragraph/start
 id: 15
-r#  8638  140  1
+r#  8640  140  1
 
 
 --- Sentence/start
 id: 21
-r#  8638  140  1
+r#  8640  140  1
 
 --- Sentence//end
 id: 21
-r#  8704  140  67
+r#  8706  140  67
 p: .
 t. 
 |  CPS’s lawyer grilled the mother for twenty-one days, accusing her of
@@ -487,12 +487,12 @@ t.
 
 --- Sentence/switch
 id: 22
-r#  8705  140  68
+r#  8707  140  68
 
 
 --- Sentence//end
 id: 22
-r#  9406  147  8
+r#  9408  147  8
 p: .
 t. 
 |  Every morning, after sending her children to school and doing the minimal necessary chores, this woman found herself almost paralyzed.
@@ -505,7 +505,7 @@ t.
 
 --- Sentence/end 
 id: 22
-r#  9407  147  9
+r#  9409  147  9
 
 --- Paragraph/end 
 id: 15
@@ -514,16 +514,16 @@ y: N/A
 
 --- Paragraph/start
 id: 16
-r#  9409  149  1
+r#  9411  149  1
 
 
 --- Sentence/start
 id: 23
-r#  9409  149  1
+r#  9411  149  1
 
 --- Sentence//end
 id: 23
-r#  9762  153  72
+r#  9764  153  72
 p: .
 t. 
 |  In the end, the persecution was more than she could bear; between
@@ -535,12 +535,12 @@ t.
 
 --- Sentence/switch
 id: 24
-r#  9763  153  73
+r#  9765  153  73
 
 
 --- Sentence//end
 id: 24
-r#  10152  157  41
+r#  10154  157  41
 p: ?
 t. 
 |  However, the mother and her daughters eluded capture - their whereabouts remain a mystery. Questioned about the case years later by a
@@ -550,7 +550,7 @@ t.
 
 --- Sentence/end 
 id: 24
-r#  10153  157  42
+r#  10155  157  42
 
 --- Paragraph/end 
 id: 16
@@ -559,16 +559,16 @@ y: N/A
 
 --- Paragraph/start
 id: 17
-r#  10155  159  1
+r#  10157  159  1
 
 
 --- Sentence/start
 id: 25
-r#  10155  159  1
+r#  10157  159  1
 
 --- Sentence//end
 id: 25
-r#  10511  163  4
+r#  10513  163  4
 p: .
 t. 
 |  A similar irony can be seen in the case of an Idaho protective mother
@@ -579,7 +579,7 @@ t.
 
 --- Sentence/end 
 id: 25
-r#  10512  163  5
+r#  10514  163  5
 
 --- Paragraph/end 
 id: 17
@@ -588,16 +588,16 @@ y: N/A
 
 --- Paragraph/start
 id: 18
-r#  10514  165  1
+r#  10516  165  1
 
 
 --- Sentence/start
 id: 26
-r#  10514  165  1
+r#  10516  165  1
 
 --- Sentence//end
 id: 26
-r#  10906  170  41
+r#  10908  170  41
 p: .
 t. 
 |  In the course of family court litigation, two of her minor children
@@ -609,7 +609,7 @@ t.
 
 --- Sentence/end 
 id: 26
-r#  10907  170  42
+r#  10909  170  42
 
 --- Paragraph/end 
 id: 18
@@ -618,12 +618,12 @@ y: N/A
 
 --- Paragraph/start
 id: 19
-r#  10909  172  1
+r#  10911  172  1
 
 
 --- Sentence/start
 id: 27
-r#  10909  172  1
+r#  10911  172  1
 --- Paragraph/end 
 id: 19
 y: N/A
@@ -637,16 +637,16 @@ y: N/A
 
 --- Paragraph/start
 id: 20
-r#  11617  183  4
+r#  11619  183  4
 
 
 --- Sentence/start
 id: 28
-r#  11617  183  4
+r#  11619  183  4
 
 --- Sentence//end
 id: 28
-r#  12106  187  75
+r#  12108  187  75
 p: .
 t. 
 |  After several years of this treatment, when the father sought full custody of the minor children, the mother allegedly began to exhibit some
@@ -664,7 +664,7 @@ t.
 
 --- Sentence/switch
 id: 29
-r#  12107  187  76
+r#  12109  187  76
 
 --- Paragraph/end 
 id: 20
@@ -673,12 +673,12 @@ y: N/A
 
 --- Paragraph/start
 id: 21
-r#  12223  191  1
+r#  12225  191  1
 
 
 --- Sentence/start
 id: 30
-r#  12223  191  1
+r#  12225  191  1
 --- Paragraph/end 
 id: 21
 y: N/A
@@ -686,16 +686,16 @@ y: N/A
 
 --- Paragraph/start
 id: 22
-r#  12951  210  1
+r#  12953  210  1
 
 
 --- Sentence/start
 id: 31
-r#  12951  210  1
+r#  12953  210  1
 
 --- Sentence//end
 id: 31
-r#  13371  216  9
+r#  13373  216  9
 p: .
 t. 
 |  Phones go unanswered, doorbells ignored. Some act like sleepwalkers,
@@ -723,7 +723,7 @@ t.
 
 --- Sentence/end 
 id: 31
-r#  13372  216  10
+r#  13374  216  10
 
 --- Paragraph/end 
 id: 22
@@ -732,16 +732,16 @@ y: N/A
 
 --- Paragraph/start
 id: 23
-r#  13374  218  1
+r#  13376  218  1
 
 
 --- Sentence/start
 id: 32
-r#  13374  218  1
+r#  13376  218  1
 
 --- Sentence//end
 id: 32
-r#  13982  226  24
+r#  13984  226  24
 p: .
 t. 
 |  In fact, some protective mothers speak of themselves as if they were
@@ -757,12 +757,12 @@ t.
 
 --- Sentence/switch
 id: 33
-r#  13983  226  25
+r#  13985  226  25
 
 
 --- Sentence//end
 id: 33
-r#  14292  231  20
+r#  14294  231  20
 p: .
 t. 
 |  Protective mothers often use the word emptiness to describe a grief
@@ -773,7 +773,7 @@ t.
 
 --- Sentence/end 
 id: 33
-r#  14293  231  21
+r#  14295  231  21
 
 --- Paragraph/end 
 id: 23
@@ -782,16 +782,16 @@ y: N/A
 
 --- Paragraph/start
 id: 24
-r#  14295  233  1
+r#  14297  233  1
 
 
 --- Sentence/start
 id: 34
-r#  14295  233  1
+r#  14297  233  1
 
 --- Sentence//end
 id: 34
-r#  15147  245  16
+r#  15149  245  16
 p: .
 t. 
 |  Another special aspect of protective mothers’ grief is that time
@@ -810,7 +810,7 @@ t.
 
 --- Sentence/end 
 id: 34
-r#  15148  245  17
+r#  15150  245  17
 
 --- Paragraph/end 
 id: 24
@@ -825,16 +825,16 @@ y: N/A
 
 --- Paragraph/start
 id: 25
-r#  15195  250  4
+r#  15197  250  4
 
 
 --- Sentence/start
 id: 35
-r#  15195  250  4
+r#  15197  250  4
 
 --- Sentence//end
 id: 35
-r#  15521  254  34
+r#  15523  254  34
 p: .
 t. 
 |  Some protective mothers, despairing of any other way of regaining their
@@ -845,7 +845,7 @@ t.
 
 --- Sentence/end 
 id: 35
-r#  15522  254  35
+r#  15524  254  35
 
 --- Paragraph/end 
 id: 25
@@ -854,12 +854,12 @@ y: N/A
 
 --- Paragraph/start
 id: 26
-r#  15524  256  1
+r#  15526  256  1
 
 
 --- Sentence/start
 id: 36
-r#  15524  256  1
+r#  15526  256  1
 --- Paragraph/end 
 id: 26
 y: N/A
@@ -867,16 +867,16 @@ y: N/A
 
 --- Paragraph/start
 id: 27
-r#  15928  263  1
+r#  15930  263  1
 
 
 --- Sentence/start
 id: 37
-r#  15928  263  1
+r#  15930  263  1
 
 --- Sentence//end
 id: 37
-r#  16064  264  68
+r#  16066  264  68
 p: .
 t. 
 |  Taken to its extreme, this pattern can end with the mother’s suicide. In
@@ -890,12 +890,12 @@ t.
 
 --- Sentence/switch
 id: 38
-r#  16065  264  69
+r#  16067  264  69
 
 
 --- Sentence//end
 id: 38
-r#  16993  275  8
+r#  16995  275  8
 p: .
 t. 
 |  She had come to feel that resistance was hopeless. The judge and law
@@ -912,7 +912,7 @@ t.
 
 --- Sentence/end 
 id: 38
-r#  16994  275  9
+r#  16996  275  9
 
 --- Paragraph/end 
 id: 27
@@ -921,12 +921,12 @@ y: N/A
 
 --- Paragraph/start
 id: 28
-r#  16996  277  1
+r#  16998  277  1
 
 
 --- Sentence/start
 id: 39
-r#  16996  277  1
+r#  16998  277  1
 --- Paragraph/end 
 id: 28
 y: N/A
@@ -940,16 +940,16 @@ y: N/A
 
 --- Paragraph/start
 id: 29
-r#  17216  284  4
+r#  17218  284  4
 
 
 --- Sentence/start
 id: 40
-r#  17216  284  4
+r#  17218  284  4
 
 --- Sentence//end
 id: 40
-r#  17702  289  68
+r#  17704  289  68
 p: .
 t. 
 |  Hers is not the only such case. Just a few years earlier, the New York
@@ -964,12 +964,12 @@ t.
 
 --- Sentence/switch
 id: 41
-r#  17703  289  69
+r#  17705  289  69
 
 
 --- Sentence//end
 id: 41
-r#  18001  294  12
+r#  18003  294  12
 p: .
 t. 
 |  For example, one Texas protective mother, faced with a custody battle
@@ -980,7 +980,7 @@ t.
 
 --- Sentence/end 
 id: 41
-r#  18002  294  13
+r#  18004  294  13
 
 --- Paragraph/end 
 id: 29
@@ -989,16 +989,16 @@ y: N/A
 
 --- Paragraph/start
 id: 30
-r#  18004  296  1
+r#  18006  296  1
 
 
 --- Sentence/start
 id: 42
-r#  18004  296  1
+r#  18006  296  1
 
 --- Sentence//end
 id: 42
-r#  18614  303  70
+r#  18616  303  70
 p: .
 t. 
 |  A mother from Woodstock, New York, who lost custody of her son in
@@ -1013,12 +1013,12 @@ t.
 
 --- Sentence/switch
 id: 43
-r#  18615  303  71
+r#  18617  303  71
 
 
 --- Sentence//end
 id: 43
-r#  18672  304  57
+r#  18674  304  57
 p: .
 t. 
 .  She was forty-one and had been in good health until then
@@ -1026,12 +1026,12 @@ t.
 
 --- Sentence/switch
 id: 44
-r#  18673  304  58
+r#  18675  304  58
 
 
 --- Sentence//end
 id: 44
-r#  18953  308  9
+r#  18955  308  9
 p: .
 t. 
 |  Still other women put up a wall of denial around the damage they
@@ -1041,7 +1041,7 @@ t.
 
 --- Sentence/end 
 id: 44
-r#  18954  308  10
+r#  18956  308  10
 
 --- Paragraph/end 
 id: 30
@@ -1050,16 +1050,16 @@ y: N/A
 
 --- Paragraph/start
 id: 31
-r#  18956  310  1
+r#  18958  310  1
 
 
 --- Sentence/start
 id: 45
-r#  18956  310  1
+r#  18958  310  1
 
 --- Sentence//end
 id: 45
-r#  19418  315  44
+r#  19420  315  44
 p: .
 t. 
 |  One North Carolina woman - now a high-level employee of the federal government - told one of us she had lost a child ten years earlier,
@@ -1072,12 +1072,12 @@ t.
 
 --- Sentence/switch
 id: 46
-r#  19419  315  45
+r#  19421  315  45
 
 
 --- Sentence//end
 id: 46
-r#  19776  321  7
+r#  19778  321  7
 p: .
 t. 
 |  Other mothers we have interviewed gradually pulled away from their
@@ -1089,7 +1089,7 @@ t.
 
 --- Sentence/end 
 id: 46
-r#  19777  321  8
+r#  19779  321  8
 
 --- Paragraph/end 
 id: 31
@@ -1104,12 +1104,12 @@ y: N/A
 
 --- Paragraph/start
 id: 32
-r#  19808  326  4
+r#  19810  326  4
 
 
 --- Sentence/start
 id: 47
-r#  19808  326  4
+r#  19810  326  4
 --- Paragraph/end 
 id: 32
 y: N/A
@@ -1117,12 +1117,12 @@ y: N/A
 
 --- Paragraph/start
 id: 33
-r#  20900  345  1
+r#  20902  345  1
 
 
 --- Sentence/start
 id: 48
-r#  20900  345  1
+r#  20902  345  1
 --- Paragraph/end 
 id: 33
 y: N/A
@@ -1130,16 +1130,16 @@ y: N/A
 
 --- Paragraph/start
 id: 34
-r#  21534  358  1
+r#  21536  358  1
 
 
 --- Sentence/start
 id: 49
-r#  21534  358  1
+r#  21536  358  1
 
 --- Sentence//end
 id: 49
-r#  22122  365  15
+r#  22124  365  15
 p: .
 t. 
 |  Protective mothers suffer more than the loss of a child. They also suffer deep feelings of helplessness and of remorse for having been unable
@@ -1175,7 +1175,7 @@ t.
 
 --- Sentence/end 
 id: 49
-r#  22123  365  16
+r#  22125  365  16
 
 --- Paragraph/end 
 id: 34
@@ -1184,16 +1184,16 @@ y: N/A
 
 --- Paragraph/start
 id: 35
-r#  22125  367  1
+r#  22127  367  1
 
 
 --- Sentence/start
 id: 50
-r#  22125  367  1
+r#  22127  367  1
 
 --- Sentence//end
 id: 50
-r#  22807  374  64
+r#  22809  374  64
 p: .
 t. 
 |  This mother did make what efforts she could to fight the system in
@@ -1207,7 +1207,7 @@ t.
 
 --- Sentence/end 
 id: 50
-r#  22808  374  65
+r#  22810  374  65
 
 --- Paragraph/end 
 id: 35
@@ -1222,16 +1222,16 @@ y: N/A
 
 --- Paragraph/start
 id: 36
-r#  22851  379  4
+r#  22853  379  4
 
 
 --- Sentence/start
 id: 51
-r#  22851  379  4
+r#  22853  379  4
 
 --- Sentence//end
 id: 51
-r#  22983  380  62
+r#  22985  380  62
 p: .
 t. 
 |  In a few cases, the psychic damage wrought by family courts has driven
@@ -1240,7 +1240,7 @@ t.
 
 --- Sentence/switch
 id: 52
-r#  22984  380  63
+r#  22986  380  63
 
 --- Paragraph/end 
 id: 36
@@ -1249,16 +1249,16 @@ y: N/A
 
 --- Paragraph/start
 id: 37
-r#  23335  387  1
+r#  23337  387  1
 
 
 --- Sentence/start
 id: 53
-r#  23335  387  1
+r#  23337  387  1
 
 --- Sentence//end
 id: 53
-r#  23625  390  15
+r#  23627  390  15
 p: .
 t. 
 |  In 2003, a New York City mother took the law into her own hands,
@@ -1272,7 +1272,7 @@ t.
 
 --- Sentence/end 
 id: 53
-r#  23626  390  16
+r#  23628  390  16
 
 --- Paragraph/end 
 id: 37
@@ -1281,12 +1281,12 @@ y: N/A
 
 --- Paragraph/start
 id: 38
-r#  23628  392  1
+r#  23630  392  1
 
 
 --- Sentence/start
 id: 54
-r#  23628  392  1
+r#  23630  392  1
 --- Paragraph/end 
 id: 38
 y: N/A
@@ -1294,16 +1294,16 @@ y: N/A
 
 --- Paragraph/start
 id: 39
-r#  24377  402  1
+r#  24379  402  1
 
 
 --- Sentence/start
 id: 55
-r#  24377  402  1
+r#  24379  402  1
 
 --- Sentence//end
 id: 55
-r#  24951  408  72
+r#  24953  408  72
 p: .
 t. 
 |  All this changed after she endured a six-year battle in a futile effort to regain custody of her daughter from her ex-husband. Medical
@@ -1325,7 +1325,7 @@ t.
 
 --- Sentence/switch
 id: 56
-r#  24952  408  73
+r#  24954  408  73
 
 --- Paragraph/end 
 id: 39
@@ -1334,16 +1334,16 @@ y: N/A
 
 --- Paragraph/start
 id: 40
-r#  25571  418  1
+r#  25573  418  1
 
 
 --- Sentence/start
 id: 57
-r#  25571  418  1
+r#  25573  418  1
 
 --- Sentence//end
 id: 57
-r#  26516  429  8
+r#  26518  429  8
 p: .
 t. 
 |  After the court ordered the change of custody, the mother became
@@ -1368,7 +1368,7 @@ t.
 
 --- Sentence/end 
 id: 57
-r#  26517  429  9
+r#  26519  429  9
 
 --- Paragraph/end 
 id: 40
@@ -1377,16 +1377,16 @@ y: N/A
 
 --- Paragraph/start
 id: 41
-r#  26519  431  1
+r#  26521  431  1
 
 
 --- Sentence/start
 id: 58
-r#  26519  431  1
+r#  26521  431  1
 
 --- Sentence//end
 id: 58
-r#  27027  438  14
+r#  27029  438  14
 p: .
 t. 
 |  This is equally true of those rare protective mothers who resort to
@@ -1400,7 +1400,7 @@ t.
 
 --- Sentence/end 
 id: 58
-r#  27028  438  15
+r#  27030  438  15
 
 --- Paragraph/end 
 id: 41
@@ -1409,12 +1409,12 @@ y: N/A
 
 --- Paragraph/start
 id: 42
-r#  27030  440  1
+r#  27032  440  1
 
 
 --- Sentence/start
 id: 59
-r#  27030  440  1
+r#  27032  440  1
 --- Paragraph/end 
 id: 42
 y: N/A
@@ -1422,16 +1422,16 @@ y: N/A
 
 --- Paragraph/start
 id: 43
-r#  27784  450  1
+r#  27786  450  1
 
 
 --- Sentence/start
 id: 60
-r#  27784  450  1
+r#  27786  450  1
 
 --- Sentence//end
 id: 60
-r#  28219  455  22
+r#  28221  455  22
 p: .
 t. 
 |  But family court changed her. First, her allegations that the children’s
@@ -1451,7 +1451,7 @@ t.
 
 --- Sentence/end 
 id: 60
-r#  28220  455  23
+r#  28222  455  23
 
 --- Paragraph/end 
 id: 43
@@ -1460,16 +1460,16 @@ y: N/A
 
 --- Paragraph/start
 id: 44
-r#  28222  457  1
+r#  28224  457  1
 
 
 --- Sentence/start
 id: 61
-r#  28222  457  1
+r#  28224  457  1
 
 --- Sentence//end
 id: 61
-r#  28706  464  5
+r#  28708  464  5
 p: .
 t. 
 |  The mother reported to one of us that her boys continued to describe
@@ -1483,7 +1483,7 @@ t.
 
 --- Sentence/end 
 id: 61
-r#  28707  464  6
+r#  28709  464  6
 
 --- Paragraph/end 
 id: 44
@@ -1492,16 +1492,16 @@ y: N/A
 
 --- Paragraph/start
 id: 45
-r#  28709  466  1
+r#  28711  466  1
 
 
 --- Sentence/start
 id: 62
-r#  28709  466  1
+r#  28711  466  1
 
 --- Sentence//end
 id: 62
-r#  29343  472  71
+r#  29345  472  71
 p: .
 t. 
 |  Branded insane, watching a lawless process unfold around her, helpless to protect children she believed were being abused, accused of
@@ -1515,12 +1515,12 @@ t.
 
 --- Sentence/switch
 id: 63
-r#  29344  472  72
+r#  29346  472  72
 
 
 --- Sentence//end
 id: 63
-r#  29491  475  7
+r#  29493  475  7
 p: .
 t. 
 |  Both women were soon arrested and eventually convicted: the mother’s
@@ -1529,7 +1529,7 @@ t.
 
 --- Sentence/end 
 id: 63
-r#  29492  475  8
+r#  29494  475  8
 
 --- Paragraph/end 
 id: 45
@@ -1538,16 +1538,16 @@ y: N/A
 
 --- Paragraph/start
 id: 46
-r#  29494  477  1
+r#  29496  477  1
 
 
 --- Sentence/start
 id: 64
-r#  29494  477  1
+r#  29496  477  1
 
 --- Sentence//end
 id: 64
-r#  31299  500  62
+r#  31301  500  62
 p: .
 t. 
 |  It is typical of the popular attitude toward such stories that although
@@ -1577,7 +1577,7 @@ t.
 
 --- Sentence/end 
 id: 64
-r#  31300  500  63
+r#  31302  500  63
 
 --- Paragraph/end 
 id: 46
