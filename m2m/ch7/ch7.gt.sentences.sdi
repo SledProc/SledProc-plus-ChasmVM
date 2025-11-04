@@ -388,7 +388,7 @@ r#  8305  133  75
 
 --- Sentence//end
 id: 15
-r#  8768  139  33
+r#  8770  139  33
 p: .
 t. 
 |  An Israeli newspaper that covered the trial quoted Dr. Paul Fink, a
@@ -400,7 +400,7 @@ t.
 
 --- Sentence/end 
 id: 15
-r#  8769  139  34
+r#  8771  139  34
 
 --- Paragraph/end 
 id: 10
@@ -409,16 +409,16 @@ y: N/A
 
 --- Paragraph/start
 id: 11
-r#  8771  141  1
+r#  8773  141  1
 
 
 --- Sentence/start
 id: 16
-r#  8771  141  1
+r#  8773  141  1
 
 --- Sentence//end
 id: 16
-r#  9507  151  16
+r#  9510  151  16
 p: .
 t. 
 |  Until his death in 1998, Dr. Arthur Green was, like Gardner, a highly
@@ -435,7 +435,7 @@ t.
 
 --- Sentence/end 
 id: 16
-r#  9508  151  17
+r#  9511  151  17
 
 --- Paragraph/end 
 id: 11
@@ -444,12 +444,12 @@ y: N/A
 
 --- Paragraph/start
 id: 12
-r#  9510  153  1
+r#  9513  153  1
 
 
 --- Sentence/start
 id: 17
-r#  9510  153  1
+r#  9513  153  1
 --- Paragraph/end 
 id: 12
 y: N/A
@@ -457,16 +457,16 @@ y: N/A
 
 --- Paragraph/start
 id: 13
-r#  10234  167  1
+r#  10240  167  1
 
 
 --- Sentence/start
 id: 18
-r#  10234  167  1
+r#  10240  167  1
 
 --- Sentence//end
 id: 18
-r#  10429  169  56
+r#  10435  169  56
 p: .
 t. 
 |  Both these (typical) claims of Dr. Green have been strenuously criticized by his colleagues outside the family court system. One outspoken
@@ -485,12 +485,12 @@ t.
 
 --- Sentence/switch
 id: 19
-r#  10430  169  57
+r#  10436  169  57
 
 
 --- Sentence//end
 id: 19
-r#  11331  180  35
+r#  11337  180  35
 p: .
 t. 
 |  Psychologist Ira Turkat, writing along the lines laid down by Gardner
@@ -507,7 +507,7 @@ t.
 
 --- Sentence/end 
 id: 19
-r#  11332  180  36
+r#  11338  180  36
 
 --- Paragraph/end 
 id: 13
@@ -516,16 +516,16 @@ y: N/A
 
 --- Paragraph/start
 id: 14
-r#  11334  182  1
+r#  11340  182  1
 
 
 --- Sentence/start
 id: 20
-r#  11334  182  1
+r#  11340  182  1
 
 --- Sentence//end
 id: 20
-r#  11465  183  64
+r#  11471  183  64
 p: .
 t. 
 |  Below we dissect the significant elements of these suspect theories
@@ -533,7 +533,7 @@ t.
 
 --- Sentence/end 
 id: 20
-r#  11466  183  65
+r#  11472  183  65
 
 --- Paragraph/end 
 id: 14
@@ -548,16 +548,16 @@ y: N/A
 
 --- Paragraph/start
 id: 15
-r#  11525  188  4
+r#  11531  188  4
 
 
 --- Sentence/start
 id: 21
-r#  11525  188  4
+r#  11531  188  4
 
 --- Sentence//end
 id: 21
-r#  12617  200  22
+r#  12623  200  22
 p: .
 t. 
 |  Family courts are charged with an extremely difficult and often unrewarding task in cases involving child abuse allegations. Such charges are
@@ -576,7 +576,7 @@ t.
 
 --- Sentence/end 
 id: 21
-r#  12618  200  23
+r#  12624  200  23
 
 --- Paragraph/end 
 id: 15
@@ -585,12 +585,12 @@ y: N/A
 
 --- Paragraph/start
 id: 16
-r#  12620  202  1
+r#  12626  202  1
 
 
 --- Sentence/start
 id: 22
-r#  12620  202  1
+r#  12626  202  1
 --- Paragraph/end 
 id: 16
 y: N/A
@@ -598,12 +598,12 @@ y: N/A
 
 --- Paragraph/start
 id: 17
-r#  13069  210  1
+r#  13075  210  1
 
 
 --- Sentence/start
 id: 23
-r#  13069  210  1
+r#  13075  210  1
 --- Paragraph/end 
 id: 17
 y: N/A
@@ -611,16 +611,16 @@ y: N/A
 
 --- Paragraph/start
 id: 18
-r#  13510  215  1
+r#  13517  215  1
 
 
 --- Sentence/start
 id: 24
-r#  13510  215  1
+r#  13517  215  1
 
 --- Sentence//end
 id: 24
-r#  13836  217  67
+r#  13843  217  67
 p: .
 t. 
 |  The difficulty of evaluating children’s disclosures accurately is well
@@ -639,7 +639,7 @@ t.
 
 --- Sentence/switch
 id: 25
-r#  13837  217  68
+r#  13844  217  68
 
 --- Paragraph/end 
 id: 18
@@ -648,12 +648,12 @@ y: N/A
 
 --- Paragraph/start
 id: 19
-r#  14123  223  1
+r#  14130  223  1
 
 
 --- Sentence/start
 id: 26
-r#  14123  223  1
+r#  14130  223  1
 --- Paragraph/end 
 id: 19
 y: N/A
@@ -661,16 +661,16 @@ y: N/A
 
 --- Paragraph/start
 id: 20
-r#  14367  228  1
+r#  14374  228  1
 
 
 --- Sentence/start
 id: 27
-r#  14367  228  1
+r#  14374  228  1
 
 --- Sentence//end
 id: 27
-r#  14658  231  69
+r#  14665  231  69
 p: .
 t. 
 |  The Arizona Coalition against Domestic Violence, in its 2003 study
@@ -687,12 +687,12 @@ t.
 
 --- Sentence/switch
 id: 28
-r#  14659  231  70
+r#  14666  231  70
 
 
 --- Sentence//end
 id: 28
-r#  14737  232  78
+r#  14744  232  78
 p: .
 t. 
 .  If a mother is crazy and vindictive, then the court’s obligation is clear
@@ -700,12 +700,12 @@ t.
 
 --- Sentence/switch
 id: 29
-r#  14738  232  79
+r#  14745  232  79
 
 
 --- Sentence//end
 id: 29
-r#  15004  236  48
+r#  15011  236  48
 p: .
 t. 
 |  That the course taken by the court in such cases - silencing the accuser,
@@ -715,7 +715,7 @@ t.
 
 --- Sentence/end 
 id: 29
-r#  15005  236  49
+r#  15012  236  49
 
 --- Paragraph/end 
 id: 20
@@ -724,16 +724,16 @@ y: N/A
 
 --- Paragraph/start
 id: 21
-r#  15007  238  1
+r#  15014  238  1
 
 
 --- Sentence/start
 id: 30
-r#  15007  238  1
+r#  15014  238  1
 
 --- Sentence//end
 id: 30
-r#  16261  254  7
+r#  16268  254  7
 p: .
 t. 
 |  Thus, family courts have come to rely on psychological theories that,
@@ -756,7 +756,7 @@ t.
 
 --- Sentence/end 
 id: 30
-r#  16262  254  8
+r#  16269  254  8
 
 --- Paragraph/end 
 id: 21
@@ -765,12 +765,12 @@ y: N/A
 
 --- Paragraph/start
 id: 22
-r#  16264  256  1
+r#  16271  256  1
 
 
 --- Sentence/start
 id: 31
-r#  16264  256  1
+r#  16271  256  1
 --- Paragraph/end 
 id: 22
 y: N/A
@@ -778,12 +778,12 @@ y: N/A
 
 --- Paragraph/start
 id: 23
-r#  17384  269  1
+r#  17392  269  1
 
 
 --- Sentence/start
 id: 32
-r#  17384  269  1
+r#  17392  269  1
 --- Paragraph/end 
 id: 23
 y: N/A
@@ -791,16 +791,16 @@ y: N/A
 
 --- Paragraph/start
 id: 24
-r#  17992  278  1
+r#  18000  278  1
 
 
 --- Sentence/start
 id: 33
-r#  17992  278  1
+r#  18000  278  1
 
 --- Sentence//end
 id: 33
-r#  18426  284  8
+r#  18436  284  8
 p: .
 t. 
 |  Another controversial evaluator, Dr. Arthur Green, fits the same
@@ -831,7 +831,7 @@ t.
 
 --- Sentence/end 
 id: 33
-r#  18427  284  9
+r#  18437  284  9
 
 --- Paragraph/end 
 id: 24
@@ -840,16 +840,16 @@ y: N/A
 
 --- Paragraph/start
 id: 25
-r#  18429  286  1
+r#  18439  286  1
 
 
 --- Sentence/start
 id: 34
-r#  18429  286  1
+r#  18439  286  1
 
 --- Sentence//end
 id: 34
-r#  18560  287  71
+r#  18570  287  71
 p: .
 t. 
 |  Indeed, both Gardner and Green sometimes went to astonishing
@@ -858,12 +858,12 @@ t.
 
 --- Sentence/switch
 id: 35
-r#  18561  287  72
+r#  18571  287  72
 
 
 --- Sentence//end
 id: 35
-r#  19153  298  62
+r#  19163  298  62
 p: .
 t. 
 |  For example, they argued that sex abuse accusations endorsed by a
@@ -878,7 +878,7 @@ t.
 
 --- Sentence/switch
 id: 36
-r#  19154  298  63
+r#  19164  298  63
 
 --- Paragraph/end 
 id: 25
@@ -887,12 +887,12 @@ y: N/A
 
 --- Paragraph/start
 id: 26
-r#  19410  304  1
+r#  19420  304  1
 
 
 --- Sentence/start
 id: 37
-r#  19410  304  1
+r#  19420  304  1
 --- Paragraph/end 
 id: 26
 y: N/A
@@ -900,16 +900,16 @@ y: N/A
 
 --- Paragraph/start
 id: 27
-r#  19922  315  1
+r#  19932  315  1
 
 
 --- Sentence/start
 id: 38
-r#  19922  315  1
+r#  19932  315  1
 
 --- Sentence//end
 id: 38
-r#  20432  321  5
+r#  20442  321  5
 p: .
 t. 
 |  It is as if each time she entertains the pedophilic fantasy (of her
@@ -931,7 +931,7 @@ t.
 
 --- Sentence/end 
 id: 38
-r#  20433  321  6
+r#  20443  321  6
 
 --- Paragraph/end 
 id: 27
@@ -940,16 +940,16 @@ y: N/A
 
 --- Paragraph/start
 id: 28
-r#  20435  323  1
+r#  20445  323  1
 
 
 --- Sentence/start
 id: 39
-r#  20435  323  1
+r#  20445  323  1
 
 --- Sentence//end
 id: 39
-r#  20687  326  40
+r#  20697  326  40
 p: .
 t. 
 |  As a matter of fact, a large body of peer-reviewed literature shows why
@@ -959,7 +959,7 @@ t.
 
 --- Sentence/end 
 id: 39
-r#  20688  326  41
+r#  20698  326  41
 
 --- Paragraph/end 
 id: 28
@@ -968,12 +968,12 @@ y: N/A
 
 --- Paragraph/start
 id: 29
-r#  20690  328  1
+r#  20700  328  1
 
 
 --- Sentence/start
 id: 40
-r#  20690  328  1
+r#  20700  328  1
 --- Paragraph/end 
 id: 29
 y: N/A
@@ -981,16 +981,16 @@ y: N/A
 
 --- Paragraph/start
 id: 30
-r#  21357  342  1
+r#  21367  342  1
 
 
 --- Sentence/start
 id: 41
-r#  21357  342  1
+r#  21367  342  1
 
 --- Sentence//end
 id: 41
-r#  21707  348  66
+r#  21718  348  66
 p: .
 t. 
 |  For example, as David Corwin and his coauthors have argued, the losses,
@@ -1010,7 +1010,7 @@ t.
 
 --- Sentence/switch
 id: 42
-r#  21708  348  67
+r#  21719  348  67
 
 --- Paragraph/end 
 id: 30
@@ -1019,16 +1019,16 @@ y: N/A
 
 --- Paragraph/start
 id: 31
-r#  22086  357  1
+r#  22097  357  1
 
 
 --- Sentence/start
 id: 43
-r#  22086  357  1
+r#  22097  357  1
 
 --- Sentence//end
 id: 43
-r#  22647  364  50
+r#  22658  364  50
 p: .
 t. 
 |  First, is the loss of structure of family life; second, the feelings
@@ -1049,12 +1049,12 @@ t.
 
 --- Sentence/switch
 id: 44
-r#  22648  364  51
+r#  22659  364  51
 
 
 --- Sentence//end
 id: 44
-r#  23017  368  74
+r#  23028  368  74
 p: .
 t. 
 |  In light of all this published work pointing to the greater likelihood of
@@ -1065,12 +1065,12 @@ t.
 
 --- Sentence/switch
 id: 45
-r#  23018  368  75
+r#  23029  368  75
 
 
 --- Sentence//end
 id: 45
-r#  23094  370  6
+r#  23105  370  6
 p: .
 t. 
 |  Sadly, that is precisely what makes such theorizing popular in family
@@ -1078,7 +1078,7 @@ t.
 
 --- Sentence/end 
 id: 45
-r#  23095  370  7
+r#  23106  370  7
 
 --- Paragraph/end 
 id: 31
@@ -1093,16 +1093,16 @@ y: N/A
 
 --- Paragraph/start
 id: 32
-r#  23150  375  4
+r#  23161  375  4
 
 
 --- Sentence/start
 id: 46
-r#  23150  375  4
+r#  23161  375  4
 
 --- Sentence//end
 id: 46
-r#  23403  378  40
+r#  23414  378  40
 p: .
 t. 
 |  The psychological theories unique to family courts have several unusual
@@ -1112,7 +1112,7 @@ t.
 
 --- Sentence/end 
 id: 46
-r#  23404  378  41
+r#  23415  378  41
 
 --- Paragraph/end 
 id: 32
@@ -1121,16 +1121,16 @@ y: N/A
 
 --- Paragraph/start
 id: 33
-r#  23406  380  1
+r#  23417  380  1
 
 
 --- Sentence/start
 id: 47
-r#  23406  380  1
+r#  23417  380  1
 
 --- Sentence//end
 id: 47
-r#  23937  386  31
+r#  23948  386  31
 p: .
 t. 
 |  The first odd feature of the theories we are examining is that they
@@ -1143,7 +1143,7 @@ t.
 
 --- Sentence/end 
 id: 47
-r#  23938  386  32
+r#  23949  386  32
 
 --- Paragraph/end 
 id: 33
@@ -1152,16 +1152,16 @@ y: N/A
 
 --- Paragraph/start
 id: 34
-r#  23940  388  1
+r#  23951  388  1
 
 
 --- Sentence/start
 id: 48
-r#  23940  388  1
+r#  23951  388  1
 
 --- Sentence//end
 id: 48
-r#  24346  392  35
+r#  24357  392  35
 p: .
 t. 
 |  Protective mothers are described by these experts in highly predictable language. In lay terms they are self-absorbed, manipulative, calculating, rigid and judgmental, and overly opinionated.
@@ -1173,12 +1173,12 @@ t.
 
 --- Sentence/switch
 id: 49
-r#  24347  392  36
+r#  24358  392  36
 
 
 --- Sentence//end
 id: 49
-r#  24561  396  12
+r#  24572  396  12
 p: .
 t. 
 |  Many mothers trying to prove their charges of sexual abuse
@@ -1188,7 +1188,7 @@ t.
 
 --- Sentence/end 
 id: 49
-r#  24562  396  13
+r#  24573  396  13
 
 --- Paragraph/end 
 id: 34
@@ -1197,16 +1197,16 @@ y: N/A
 
 --- Paragraph/start
 id: 35
-r#  24564  398  1
+r#  24575  398  1
 
 
 --- Sentence/start
 id: 50
-r#  24564  398  1
+r#  24575  398  1
 
 --- Sentence//end
 id: 50
-r#  25245  406  9
+r#  25256  406  9
 p: .
 t. 
 |  These terms reappear with depressing frequency in expert evaluations rendered in family courts. It should be borne in mind that a mother
@@ -1221,7 +1221,7 @@ t.
 
 --- Sentence/end 
 id: 50
-r#  25246  406  10
+r#  25257  406  10
 
 --- Paragraph/end 
 id: 35
@@ -1236,16 +1236,16 @@ y: N/A
 
 --- Paragraph/start
 id: 36
-r#  25318  411  4
+r#  25329  411  4
 
 
 --- Sentence/start
 id: 51
-r#  25318  411  4
+r#  25329  411  4
 
 --- Sentence//end
 id: 51
-r#  26216  419  8
+r#  26227  419  8
 p: .
 t. 
 |  A particularly strange feature of family court mental illness theories
@@ -1260,7 +1260,7 @@ t.
 
 --- Sentence/end 
 id: 51
-r#  26217  419  9
+r#  26228  419  9
 
 --- Paragraph/end 
 id: 36
@@ -1269,12 +1269,12 @@ y: N/A
 
 --- Paragraph/start
 id: 37
-r#  26219  421  1
+r#  26230  421  1
 
 
 --- Sentence/start
 id: 52
-r#  26219  421  1
+r#  26230  421  1
 --- Paragraph/end 
 id: 37
 y: N/A
@@ -1282,12 +1282,12 @@ y: N/A
 
 --- Paragraph/start
 id: 38
-r#  26660  427  1
+r#  26671  427  1
 
 
 --- Sentence/start
 id: 53
-r#  26660  427  1
+r#  26671  427  1
 --- Paragraph/end 
 id: 38
 y: N/A
@@ -1295,16 +1295,16 @@ y: N/A
 
 --- Paragraph/start
 id: 39
-r#  27817  443  1
+r#  27828  443  1
 
 
 --- Sentence/start
 id: 54
-r#  27817  443  1
+r#  27828  443  1
 
 --- Sentence//end
 id: 54
-r#  28309  449  13
+r#  28321  449  13
 p: .
 t. 
 |  Arthur Green, the New York psychiatrist whose theories drew sharp criticism from his colleagues (as we previously discussed), dodged this fatal
@@ -1335,7 +1335,7 @@ t.
 
 --- Sentence/end 
 id: 54
-r#  28310  449  14
+r#  28322  449  14
 
 --- Paragraph/end 
 id: 39
@@ -1344,12 +1344,12 @@ y: N/A
 
 --- Paragraph/start
 id: 40
-r#  28312  451  1
+r#  28324  451  1
 
 
 --- Sentence/start
 id: 55
-r#  28312  451  1
+r#  28324  451  1
 --- Paragraph/end 
 id: 40
 y: N/A
@@ -1357,16 +1357,16 @@ y: N/A
 
 --- Paragraph/start
 id: 41
-r#  29138  462  1
+r#  29150  462  1
 
 
 --- Sentence/start
 id: 56
-r#  29138  462  1
+r#  29150  462  1
 
 --- Sentence//end
 id: 56
-r#  29514  465  14
+r#  29527  465  14
 p: .
 t. 
 |  But even Green’s clinical assumption - that a circumscribed psychosis is a legitimate sort of diagnosis in a wide range of family court
@@ -1385,7 +1385,7 @@ t.
 
 --- Sentence/end 
 id: 56
-r#  29515  465  15
+r#  29528  465  15
 
 --- Paragraph/end 
 id: 41
@@ -1400,16 +1400,16 @@ y: N/A
 
 --- Paragraph/start
 id: 42
-r#  29568  470  4
+r#  29581  470  4
 
 
 --- Sentence/start
 id: 57
-r#  29568  470  4
+r#  29581  470  4
 
 --- Sentence//end
 id: 57
-r#  29781  471  73
+r#  29794  471  73
 p: .
 t. 
 |  Another claim almost unique to family courts is that mothers who suffer from an illness that makes them believe their children have been
@@ -1418,12 +1418,12 @@ t.
 
 --- Sentence/switch
 id: 58
-r#  29782  471  74
+r#  29795  471  74
 
 
 --- Sentence//end
 id: 58
-r#  30450  480  16
+r#  30463  480  16
 p: .
 t. 
 |  Mothers are accused of inducing paranoia in their children, who join
@@ -1438,7 +1438,7 @@ t.
 
 --- Sentence/end 
 id: 58
-r#  30451  480  17
+r#  30464  480  17
 
 --- Paragraph/end 
 id: 42
@@ -1447,16 +1447,16 @@ y: N/A
 
 --- Paragraph/start
 id: 43
-r#  30453  482  1
+r#  30466  482  1
 
 
 --- Sentence/start
 id: 59
-r#  30453  482  1
+r#  30466  482  1
 
 --- Sentence//end
 id: 59
-r#  31001  489  34
+r#  31014  489  34
 p: .
 t. 
 |  Faller, Corwin, and Olafson emphatically deny that such an application of
@@ -1470,7 +1470,7 @@ t.
 
 --- Sentence/end 
 id: 59
-r#  31002  489  35
+r#  31015  489  35
 
 --- Paragraph/end 
 id: 43
@@ -1479,16 +1479,16 @@ y: N/A
 
 --- Paragraph/start
 id: 44
-r#  31004  491  1
+r#  31017  491  1
 
 
 --- Sentence/start
 id: 60
-r#  31004  491  1
+r#  31017  491  1
 
 --- Sentence//end
 id: 60
-r#  31142  492  73
+r#  31155  492  73
 p: .
 t. 
 |  Despite the deeply flawed foundation of this theory, however, the
@@ -1497,7 +1497,7 @@ t.
 
 --- Sentence/switch
 id: 61
-r#  31143  492  74
+r#  31156  492  74
 
 --- Paragraph/end 
 id: 44
@@ -1506,16 +1506,16 @@ y: N/A
 
 --- Paragraph/start
 id: 45
-r#  31520  499  1
+r#  31534  499  1
 
 
 --- Sentence/start
 id: 62
-r#  31520  499  1
+r#  31534  499  1
 
 --- Sentence//end
 id: 62
-r#  31949  503  72
+r#  31963  503  72
 p: .
 t. 
 |  In the 1980s, Dr. Richard Gardner used it as part of his
@@ -1531,12 +1531,12 @@ t.
 
 --- Sentence/switch
 id: 63
-r#  31950  503  73
+r#  31964  503  73
 
 
 --- Sentence//end
 id: 63
-r#  32018  504  68
+r#  32032  504  68
 p: .
 t. 
 .  What was more, the children’s reports appeared sincere and credible
@@ -1544,12 +1544,12 @@ t.
 
 --- Sentence/switch
 id: 64
-r#  32019  504  69
+r#  32033  504  69
 
 
 --- Sentence//end
 id: 64
-r#  32202  507  29
+r#  32216  507  29
 p: .
 t. 
 |  Gardner avoided the difficulty by introducing folie à deux, arguing that
@@ -1558,7 +1558,7 @@ t.
 
 --- Sentence/end 
 id: 64
-r#  32203  507  30
+r#  32217  507  30
 
 --- Paragraph/end 
 id: 45
@@ -1567,16 +1567,16 @@ y: N/A
 
 --- Paragraph/start
 id: 46
-r#  32205  509  1
+r#  32219  509  1
 
 
 --- Sentence/start
 id: 65
-r#  32205  509  1
+r#  32219  509  1
 
 --- Sentence//end
 id: 65
-r#  32907  517  40
+r#  32921  517  40
 p: .
 t. 
 |  In fact, Gardner’s theory forced him to go even further than that. He
@@ -1591,7 +1591,7 @@ t.
 
 --- Sentence/end 
 id: 65
-r#  32908  517  41
+r#  32922  517  41
 
 --- Paragraph/end 
 id: 46
@@ -1600,16 +1600,16 @@ y: N/A
 
 --- Paragraph/start
 id: 47
-r#  32910  519  1
+r#  32924  519  1
 
 
 --- Sentence/start
 id: 66
-r#  32910  519  1
+r#  32924  519  1
 
 --- Sentence//end
 id: 66
-r#  33658  529  20
+r#  33672  529  20
 p: .
 t. 
 |  Law professor Carol Bruch, in a critique of Gardner’s theories published
@@ -1626,7 +1626,7 @@ t.
 
 --- Sentence/end 
 id: 66
-r#  33659  529  21
+r#  33673  529  21
 
 --- Paragraph/end 
 id: 47
@@ -1635,16 +1635,16 @@ y: N/A
 
 --- Paragraph/start
 id: 48
-r#  33661  531  1
+r#  33675  531  1
 
 
 --- Sentence/start
 id: 67
-r#  33661  531  1
+r#  33675  531  1
 
 --- Sentence//end
 id: 67
-r#  34032  536  18
+r#  34046  536  18
 p: .
 t. 
 |  Another theory of induced mental illness that has flourished in
@@ -1656,7 +1656,7 @@ t.
 
 --- Sentence/end 
 id: 67
-r#  34033  536  19
+r#  34047  536  19
 
 --- Paragraph/end 
 id: 48
@@ -1665,16 +1665,16 @@ y: N/A
 
 --- Paragraph/start
 id: 49
-r#  34035  538  1
+r#  34049  538  1
 
 
 --- Sentence/start
 id: 68
-r#  34035  538  1
+r#  34049  538  1
 
 --- Sentence//end
 id: 68
-r#  34964  548  32
+r#  34978  548  32
 p: .
 t. 
 |  Munchausen Syndrome, named after the eccentric writer Baron von
@@ -1691,7 +1691,7 @@ t.
 
 --- Sentence/end 
 id: 68
-r#  34965  548  33
+r#  34979  548  33
 
 --- Paragraph/end 
 id: 49
@@ -1700,16 +1700,16 @@ y: N/A
 
 --- Paragraph/start
 id: 50
-r#  34967  550  1
+r#  34981  550  1
 
 
 --- Sentence/start
 id: 69
-r#  34967  550  1
+r#  34981  550  1
 
 --- Sentence//end
 id: 69
-r#  35280  554  67
+r#  35294  554  67
 p: .
 t. 
 |  Evidently, a theory that can stigmatize a mother who seems to be an
@@ -1721,12 +1721,12 @@ t.
 
 --- Sentence/switch
 id: 70
-r#  35281  554  68
+r#  35295  554  68
 
 
 --- Sentence//end
 id: 70
-r#  36344  568  40
+r#  36359  568  40
 p: .
 t. 
 |  Perhaps the first step in the growth of this branch of the theory occurred when Herbert A. Schreier, a Florida psychiatrist, argued that it
@@ -1746,7 +1746,7 @@ t.
 
 --- Sentence/end 
 id: 70
-r#  36345  568  41
+r#  36360  568  41
 
 --- Paragraph/end 
 id: 50
@@ -1755,16 +1755,16 @@ y: N/A
 
 --- Paragraph/start
 id: 51
-r#  36347  570  1
+r#  36362  570  1
 
 
 --- Sentence/start
 id: 71
-r#  36347  570  1
+r#  36362  570  1
 
 --- Sentence//end
 id: 71
-r#  36752  574  50
+r#  36767  574  50
 p: .
 t. 
 |  In 1986, British psychologists Sinanan and Haughton argued ominously that the probable range of variations in the presentation of
@@ -1775,7 +1775,7 @@ t.
 
 --- Sentence/end 
 id: 71
-r#  36753  574  51
+r#  36768  574  51
 
 --- Paragraph/end 
 id: 51
@@ -1784,12 +1784,12 @@ y: N/A
 
 --- Paragraph/start
 id: 52
-r#  36755  576  1
+r#  36770  576  1
 
 
 --- Sentence/start
 id: 72
-r#  36755  576  1
+r#  36770  576  1
 --- Paragraph/end 
 id: 52
 y: N/A
@@ -1797,12 +1797,12 @@ y: N/A
 
 --- Paragraph/start
 id: 53
-r#  37484  587  1
+r#  37499  587  1
 
 
 --- Sentence/start
 id: 73
-r#  37484  587  1
+r#  37499  587  1
 --- Paragraph/end 
 id: 53
 y: N/A
@@ -1810,16 +1810,16 @@ y: N/A
 
 --- Paragraph/start
 id: 54
-r#  38264  600  1
+r#  38279  600  1
 
 
 --- Sentence/start
 id: 74
-r#  38264  600  1
+r#  38279  600  1
 
 --- Sentence//end
 id: 74
-r#  38436  601  36
+r#  38451  601  36
 p: .
 t. 
 |  Sinanan and Haughton did not claim to have actually observed any
@@ -1847,7 +1847,7 @@ t.
 
 --- Sentence/end 
 id: 74
-r#  38437  601  37
+r#  38452  601  37
 
 --- Paragraph/end 
 id: 54
@@ -1856,16 +1856,16 @@ y: N/A
 
 --- Paragraph/start
 id: 55
-r#  38439  603  1
+r#  38454  603  1
 
 
 --- Sentence/start
 id: 75
-r#  38439  603  1
+r#  38454  603  1
 
 --- Sentence//end
 id: 75
-r#  38912  609  51
+r#  38927  609  51
 p: .
 t. 
 |  A Long Island, New York, mother whose seven-year-old daughter was
@@ -1878,7 +1878,7 @@ t.
 
 --- Sentence/end 
 id: 75
-r#  38913  609  52
+r#  38928  609  52
 
 --- Paragraph/end 
 id: 55
@@ -1887,16 +1887,16 @@ y: N/A
 
 --- Paragraph/start
 id: 56
-r#  38915  611  1
+r#  38930  611  1
 
 
 --- Sentence/start
 id: 76
-r#  38915  611  1
+r#  38930  611  1
 
 --- Sentence//end
 id: 76
-r#  39506  615  126
+r#  39521  615  126
 p: .
 t. 
 |  For seven years, the mother was the child’s primary caretaker, working extensively with doctors and nurses in treating her daughter’s complex and chronic condition. Not one health care professional ever so
@@ -1908,7 +1908,7 @@ t.
 
 --- Sentence/switch
 id: 77
-r#  39507  615  127
+r#  39522  615  127
 
 --- Paragraph/end 
 id: 56
@@ -1917,16 +1917,16 @@ y: N/A
 
 --- Paragraph/start
 id: 57
-r#  39659  619  1
+r#  39674  619  1
 
 
 --- Sentence/start
 id: 78
-r#  39659  619  1
+r#  39674  619  1
 
 --- Sentence//end
 id: 78
-r#  39796  621  5
+r#  39811  621  5
 p: .
 t. 
 |  [The mother] always had objective findings and ...\ was appropriate in bringing [the child] into the office or hospital as the situation
@@ -1936,7 +1936,7 @@ t.
 
 --- Sentence/end 
 id: 78
-r#  39797  621  6
+r#  39812  621  6
 
 --- Paragraph/end 
 id: 57
@@ -1945,12 +1945,12 @@ y: N/A
 
 --- Paragraph/start
 id: 58
-r#  39799  623  1
+r#  39814  623  1
 
 
 --- Sentence/start
 id: 79
-r#  39799  623  1
+r#  39814  623  1
 --- Paragraph/end 
 id: 58
 y: N/A
@@ -1958,16 +1958,16 @@ y: N/A
 
 --- Paragraph/start
 id: 59
-r#  40026  628  1
+r#  40041  628  1
 
 
 --- Sentence/start
 id: 80
-r#  40026  628  1
+r#  40041  628  1
 
 --- Sentence//end
 id: 80
-r#  40352  630  128
+r#  40367  630  128
 p: .
 t. 
 |  A court-appointed evaluator, a PhD in psychoanalysis, reported to
@@ -1980,7 +1980,7 @@ t.
 
 --- Sentence/switch
 id: 81
-r#  40353  630  129
+r#  40368  630  129
 
 --- Paragraph/end 
 id: 59
@@ -1989,16 +1989,16 @@ y: N/A
 
 --- Paragraph/start
 id: 60
-r#  40507  635  1
+r#  40522  635  1
 
 
 --- Sentence/start
 id: 82
-r#  40507  635  1
+r#  40522  635  1
 
 --- Sentence//end
 id: 82
-r#  41067  641  49
+r#  41082  641  49
 p: .
 t. 
 |  The current forensic evaluation does strongly speculate that the sex
@@ -2014,7 +2014,7 @@ t.
 
 --- Sentence/switch
 id: 83
-r#  41068  641  50
+r#  41083  641  50
 
 --- Paragraph/end 
 id: 60
@@ -2023,16 +2023,16 @@ y: N/A
 
 --- Paragraph/start
 id: 61
-r#  41820  653  1
+r#  41835  653  1
 
 
 --- Sentence/start
 id: 84
-r#  41820  653  1
+r#  41835  653  1
 
 --- Sentence//end
 id: 84
-r#  42172  657  6
+r#  42187  657  6
 p: .
 t. 
 |  The same expert who labeled the mother as a case of MSBP because
@@ -2052,7 +2052,7 @@ t.
 
 --- Sentence/end 
 id: 84
-r#  42173  657  7
+r#  42188  657  7
 
 --- Paragraph/end 
 id: 61
@@ -2061,12 +2061,12 @@ y: N/A
 
 --- Paragraph/start
 id: 62
-r#  42175  659  1
+r#  42190  659  1
 
 
 --- Sentence/start
 id: 85
-r#  42175  659  1
+r#  42190  659  1
 --- Paragraph/end 
 id: 62
 y: N/A
@@ -2074,16 +2074,16 @@ y: N/A
 
 --- Paragraph/start
 id: 63
-r#  42539  664  1
+r#  42554  664  1
 
 
 --- Sentence/start
 id: 86
-r#  42539  664  1
+r#  42554  664  1
 
 --- Sentence//end
 id: 86
-r#  42838  668  16
+r#  42853  668  16
 p: .
 t. 
 |  The psychoanalyst explained this peculiar application of MSBP by
@@ -2097,7 +2097,7 @@ t.
 
 --- Sentence/end 
 id: 86
-r#  42839  668  17
+r#  42854  668  17
 
 --- Paragraph/end 
 id: 63
@@ -2106,16 +2106,16 @@ y: N/A
 
 --- Paragraph/start
 id: 64
-r#  42841  670  1
+r#  42856  670  1
 
 
 --- Sentence/start
 id: 87
-r#  42841  670  1
+r#  42856  670  1
 
 --- Sentence//end
 id: 87
-r#  43776  681  57
+r#  43791  681  57
 p: .
 t. 
 |  Despite the shaky evidence of mental illness in this case,
@@ -2134,12 +2134,12 @@ t.
 
 --- Sentence/switch
 id: 88
-r#  43777  681  58
+r#  43792  681  58
 
 
 --- Sentence//end
 id: 88
-r#  44004  684  19
+r#  44019  684  19
 p: .
 t. 
 |  But this was family court. The mother had made a sex abuse allegation; the allegation had not been proved; therefore, the mother required
@@ -2148,7 +2148,7 @@ t.
 
 --- Sentence/end 
 id: 88
-r#  44005  684  20
+r#  44020  684  20
 
 --- Paragraph/end 
 id: 64
@@ -2163,16 +2163,16 @@ y: N/A
 
 --- Paragraph/start
 id: 65
-r#  44057  689  4
+r#  44072  689  4
 
 
 --- Sentence/start
 id: 89
-r#  44057  689  4
+r#  44072  689  4
 
 --- Sentence//end
 id: 89
-r#  44189  690  66
+r#  44204  690  66
 p: .
 t. 
 |  Another suspicious feature of family court mental health diagnoses
@@ -2181,12 +2181,12 @@ t.
 
 --- Sentence/switch
 id: 90
-r#  44190  690  67
+r#  44205  690  67
 
 
 --- Sentence//end
 id: 90
-r#  44687  696  6
+r#  44702  696  6
 p: .
 t. 
 |  None of the mothers we studied who were given mental illness labels
@@ -2198,7 +2198,7 @@ t.
 
 --- Sentence/end 
 id: 90
-r#  44688  696  7
+r#  44703  696  7
 
 --- Paragraph/end 
 id: 65
@@ -2207,16 +2207,16 @@ y: N/A
 
 --- Paragraph/start
 id: 66
-r#  44690  698  1
+r#  44705  698  1
 
 
 --- Sentence/start
 id: 91
-r#  44690  698  1
+r#  44705  698  1
 
 --- Sentence//end
 id: 91
-r#  45179  702  56
+r#  45194  702  56
 p: .
 t. 
 |  But, according to most experts, this is not the way mental illnesses
@@ -2228,7 +2228,7 @@ t.
 
 --- Sentence/switch
 id: 92
-r#  45180  702  57
+r#  45195  702  57
 
 --- Paragraph/end 
 id: 66
@@ -2237,16 +2237,16 @@ y: N/A
 
 --- Paragraph/start
 id: 67
-r#  45714  711  1
+r#  45729  711  1
 
 
 --- Sentence/start
 id: 93
-r#  45714  711  1
+r#  45729  711  1
 
 --- Sentence//end
 id: 93
-r#  46213  716  7
+r#  46228  716  7
 p: .
 t. 
 |  In fact, at a conference cosponsored in 1999 by the National Alliance
@@ -2264,7 +2264,7 @@ t.
 
 --- Sentence/end 
 id: 93
-r#  46214  716  8
+r#  46229  716  8
 
 --- Paragraph/end 
 id: 67
@@ -2279,16 +2279,16 @@ y: N/A
 
 --- Paragraph/start
 id: 68
-r#  46279  721  4
+r#  46294  721  4
 
 
 --- Sentence/start
 id: 94
-r#  46279  721  4
+r#  46294  721  4
 
 --- Sentence//end
 id: 94
-r#  46450  722  28
+r#  46465  722  28
 p: .
 t. 
 |  Another damning feature of these theories is that the treatment recommended for the illnesses they propound is exactly what is worst in
@@ -2296,7 +2296,7 @@ t.
 
 --- Sentence/end 
 id: 94
-r#  46451  722  29
+r#  46466  722  29
 
 --- Paragraph/end 
 id: 68
@@ -2305,16 +2305,16 @@ y: N/A
 
 --- Paragraph/start
 id: 69
-r#  46453  724  1
+r#  46468  724  1
 
 
 --- Sentence/start
 id: 95
-r#  46453  724  1
+r#  46468  724  1
 
 --- Sentence//end
 id: 95
-r#  47006  729  59
+r#  47021  729  59
 p: .
 t. 
 |  What do the believers in these theories recommend? Isolation of the
@@ -2326,7 +2326,7 @@ t.
 
 --- Sentence/end 
 id: 95
-r#  47007  729  60
+r#  47022  729  60
 
 --- Paragraph/end 
 id: 69
@@ -2335,12 +2335,12 @@ y: N/A
 
 --- Paragraph/start
 id: 70
-r#  47009  731  1
+r#  47024  731  1
 
 
 --- Sentence/start
 id: 96
-r#  47009  731  1
+r#  47024  731  1
 --- Paragraph/end 
 id: 70
 y: N/A
@@ -2348,16 +2348,16 @@ y: N/A
 
 --- Paragraph/start
 id: 71
-r#  47320  736  1
+r#  47335  736  1
 
 
 --- Sentence/start
 id: 97
-r#  47320  736  1
+r#  47335  736  1
 
 --- Sentence//end
 id: 97
-r#  48742  751  6
+r#  48757  751  6
 p: .
 t. 
 |  Richard Gardner, for example, wrote emphatically that the most potent therapeutic measure that one can utilize for PAS children is the reduction of
@@ -2382,7 +2382,7 @@ t.
 
 --- Sentence/end 
 id: 97
-r#  48743  751  7
+r#  48758  751  7
 
 --- Paragraph/end 
 id: 71
@@ -2391,16 +2391,16 @@ y: N/A
 
 --- Paragraph/start
 id: 72
-r#  48745  753  1
+r#  48760  753  1
 
 
 --- Sentence/start
 id: 98
-r#  48745  753  1
+r#  48760  753  1
 
 --- Sentence//end
 id: 98
-r#  49354  761  18
+r#  49369  761  18
 p: .
 t. 
 |  Psychiatrist Johnathan Gould (whose work was mentioned earlier in this chapter) clearly
@@ -2415,7 +2415,7 @@ t.
 
 --- Sentence/end 
 id: 98
-r#  49355  761  19
+r#  49370  761  19
 
 --- Paragraph/end 
 id: 72
@@ -2430,16 +2430,16 @@ y: N/A
 
 --- Paragraph/start
 id: 73
-r#  49440  766  4
+r#  49455  766  4
 
 
 --- Sentence/start
 id: 99
-r#  49440  766  4
+r#  49455  766  4
 
 --- Sentence//end
 id: 99
-r#  50293  774  11
+r#  50308  774  11
 p: .
 t. 
 |  The theories we have been examining are not only questionable as
@@ -2454,7 +2454,7 @@ t.
 
 --- Sentence/end 
 id: 99
-r#  50294  774  12
+r#  50309  774  12
 
 --- Paragraph/end 
 id: 73
@@ -2469,12 +2469,12 @@ y: N/A
 
 --- Paragraph/start
 id: 74
-r#  50332  779  4
+r#  50347  779  4
 
 
 --- Sentence/start
 id: 100
-r#  50332  779  4
+r#  50347  779  4
 --- Paragraph/end 
 id: 74
 y: N/A
@@ -2482,16 +2482,16 @@ y: N/A
 
 --- Paragraph/start
 id: 75
-r#  50570  784  1
+r#  50585  784  1
 
 
 --- Sentence/start
 id: 101
-r#  50570  784  1
+r#  50585  784  1
 
 --- Sentence//end
 id: 101
-r#  51718  796  9
+r#  51733  796  9
 p: .
 t. 
 |  It is a fundamental principle of family court jurisprudence that courts
@@ -2513,7 +2513,7 @@ t.
 
 --- Sentence/end 
 id: 101
-r#  51719  796  10
+r#  51734  796  10
 
 --- Paragraph/end 
 id: 75
@@ -2522,16 +2522,16 @@ y: N/A
 
 --- Paragraph/start
 id: 76
-r#  51721  798  1
+r#  51736  798  1
 
 
 --- Sentence/start
 id: 102
-r#  51721  798  1
+r#  51736  798  1
 
 --- Sentence//end
 id: 102
-r#  52298  803  7
+r#  52313  803  7
 p: .
 t. 
 |  A single case illustrates this point. A Brooklyn, New York, protective
@@ -2543,7 +2543,7 @@ t.
 
 --- Sentence/end 
 id: 102
-r#  52299  803  8
+r#  52314  803  8
 
 --- Paragraph/end 
 id: 76
@@ -2552,12 +2552,12 @@ y: N/A
 
 --- Paragraph/start
 id: 77
-r#  52301  805  1
+r#  52316  805  1
 
 
 --- Sentence/start
 id: 103
-r#  52301  805  1
+r#  52316  805  1
 --- Paragraph/end 
 id: 77
 y: N/A
@@ -2565,12 +2565,12 @@ y: N/A
 
 --- Paragraph/start
 id: 78
-r#  53246  817  1
+r#  53261  817  1
 
 
 --- Sentence/start
 id: 104
-r#  53246  817  1
+r#  53261  817  1
 --- Paragraph/end 
 id: 78
 y: N/A
@@ -2578,16 +2578,16 @@ y: N/A
 
 --- Paragraph/start
 id: 79
-r#  53699  824  1
+r#  53714  824  1
 
 
 --- Sentence/start
 id: 105
-r#  53699  824  1
+r#  53714  824  1
 
 --- Sentence//end
 id: 105
-r#  53911  826  8
+r#  53926  826  8
 p: .
 t. 
 |  The psychiatrist’s report illustrates the correct way to handle an examination for mental illness in such a case. She noted that the mother’s
@@ -2611,7 +2611,7 @@ t.
 
 --- Sentence/end 
 id: 105
-r#  53912  826  9
+r#  53927  826  9
 
 --- Paragraph/end 
 id: 79
@@ -2620,12 +2620,12 @@ y: N/A
 
 --- Paragraph/start
 id: 80
-r#  53914  828  1
+r#  53929  828  1
 
 
 --- Sentence/start
 id: 106
-r#  53914  828  1
+r#  53929  828  1
 --- Paragraph/end 
 id: 80
 y: N/A
@@ -2633,16 +2633,16 @@ y: N/A
 
 --- Paragraph/start
 id: 81
-r#  55184  845  1
+r#  55200  845  1
 
 
 --- Sentence/start
 id: 107
-r#  55184  845  1
+r#  55200  845  1
 
 --- Sentence//end
 id: 107
-r#  56145  854  17
+r#  56161  854  17
 p: .
 t. 
 |  The family court judge later ordered an evaluation of the mother by
@@ -2673,7 +2673,7 @@ t.
 
 --- Sentence/end 
 id: 107
-r#  56146  854  18
+r#  56162  854  18
 
 --- Paragraph/end 
 id: 81
@@ -2682,16 +2682,16 @@ y: N/A
 
 --- Paragraph/start
 id: 82
-r#  56148  856  1
+r#  56164  856  1
 
 
 --- Sentence/start
 id: 108
-r#  56148  856  1
+r#  56164  856  1
 
 --- Sentence//end
 id: 108
-r#  56653  861  71
+r#  56669  861  71
 p: .
 t. 
 |  Green’s evaluation formed the basis of the family court’s decision in
@@ -2704,12 +2704,12 @@ t.
 
 --- Sentence/switch
 id: 109
-r#  56654  861  72
+r#  56670  861  72
 
 
 --- Sentence//end
 id: 109
-r#  56773  863  41
+r#  56789  863  41
 p: .
 t. 
 |  She eventually lost all visitation, too, including the right to write letters
@@ -2717,7 +2717,7 @@ t.
 
 --- Sentence/end 
 id: 109
-r#  56774  863  42
+r#  56790  863  42
 
 --- Paragraph/end 
 id: 82
@@ -2726,12 +2726,12 @@ y: N/A
 
 --- Paragraph/start
 id: 83
-r#  56776  865  1
+r#  56792  865  1
 
 
 --- Sentence/start
 id: 110
-r#  56776  865  1
+r#  56792  865  1
 --- Paragraph/end 
 id: 83
 y: N/A
@@ -2745,16 +2745,16 @@ y: N/A
 
 --- Paragraph/start
 id: 84
-r#  57745  880  4
+r#  57761  880  4
 
 
 --- Sentence/start
 id: 111
-r#  57745  880  4
+r#  57761  880  4
 
 --- Sentence//end
 id: 111
-r#  58050  883  22
+r#  58066  883  22
 p: .
 t. 
 |  Another problem caused when the evaluator takes over the judge’s
@@ -2774,7 +2774,7 @@ t.
 
 --- Sentence/end 
 id: 111
-r#  58051  883  23
+r#  58067  883  23
 
 --- Paragraph/end 
 id: 84
@@ -2783,16 +2783,16 @@ y: N/A
 
 --- Paragraph/start
 id: 85
-r#  58053  885  1
+r#  58069  885  1
 
 
 --- Sentence/start
 id: 112
-r#  58053  885  1
+r#  58069  885  1
 
 --- Sentence//end
 id: 112
-r#  58379  888  51
+r#  58395  888  51
 p: .
 t. 
 |  This occurs when mental health evaluators claim that a mother’s sex
@@ -2802,7 +2802,7 @@ t.
 
 --- Sentence/end 
 id: 112
-r#  58380  888  52
+r#  58396  888  52
 
 --- Paragraph/end 
 id: 85
@@ -2811,16 +2811,16 @@ y: N/A
 
 --- Paragraph/start
 id: 86
-r#  58382  890  1
+r#  58398  890  1
 
 
 --- Sentence/start
 id: 113
-r#  58382  890  1
+r#  58398  890  1
 
 --- Sentence//end
 id: 113
-r#  58959  897  7
+r#  58975  897  7
 p: .
 t. 
 |  Under ordinary circumstances, a mother who makes an accusation of
@@ -2834,7 +2834,7 @@ t.
 
 --- Sentence/end 
 id: 113
-r#  58960  897  8
+r#  58976  897  8
 
 --- Paragraph/end 
 id: 86
@@ -2843,16 +2843,16 @@ y: N/A
 
 --- Paragraph/start
 id: 87
-r#  58962  899  1
+r#  58978  899  1
 
 
 --- Sentence/start
 id: 114
-r#  58962  899  1
+r#  58978  899  1
 
 --- Sentence//end
 id: 114
-r#  59343  904  29
+r#  59359  904  29
 p: .
 t. 
 |  But if she is simply mistaken in her suspicions, no penalty may be
@@ -2864,7 +2864,7 @@ t.
 
 --- Sentence/end 
 id: 114
-r#  59344  904  30
+r#  59360  904  30
 
 --- Paragraph/end 
 id: 87
@@ -2873,16 +2873,16 @@ y: N/A
 
 --- Paragraph/start
 id: 88
-r#  59346  906  1
+r#  59362  906  1
 
 
 --- Sentence/start
 id: 115
-r#  59346  906  1
+r#  59362  906  1
 
 --- Sentence//end
 id: 115
-r#  59790  911  16
+r#  59806  911  16
 p: .
 t. 
 |  But this, of course, assumes that beliefs are not automatically translated into action. That is, a woman who knows her belief that sexual
@@ -2894,7 +2894,7 @@ t.
 
 --- Sentence/end 
 id: 115
-r#  59791  911  17
+r#  59807  911  17
 
 --- Paragraph/end 
 id: 88
@@ -2903,16 +2903,16 @@ y: N/A
 
 --- Paragraph/start
 id: 89
-r#  59793  913  1
+r#  59809  913  1
 
 
 --- Sentence/start
 id: 116
-r#  59793  913  1
+r#  59809  913  1
 
 --- Sentence//end
 id: 116
-r#  60564  921  50
+r#  60580  921  50
 p: .
 t. 
 |  But exactly this assumption is challenged when a mother’s belief that
@@ -2927,7 +2927,7 @@ t.
 
 --- Sentence/end 
 id: 116
-r#  60565  921  51
+r#  60581  921  51
 
 --- Paragraph/end 
 id: 89
@@ -2936,16 +2936,16 @@ y: N/A
 
 --- Paragraph/start
 id: 90
-r#  60567  923  1
+r#  60583  923  1
 
 
 --- Sentence/start
 id: 117
-r#  60567  923  1
+r#  60583  923  1
 
 --- Sentence//end
 id: 117
-r#  60764  925  55
+r#  60780  925  55
 p: .
 t. 
 |  Therefore, the woman whose accusations are said to result from PAS
@@ -2955,12 +2955,12 @@ t.
 
 --- Sentence/switch
 id: 118
-r#  60765  925  56
+r#  60781  925  56
 
 
 --- Sentence//end
 id: 118
-r#  61675  934  50
+r#  61691  934  50
 p: .
 t. 
 |  This gives family courts a dangerously appealing excuse to treat protective mothers as guilty until proved innocent. If they are said to be
@@ -2975,7 +2975,7 @@ t.
 
 --- Sentence/end 
 id: 118
-r#  61676  934  51
+r#  61692  934  51
 
 --- Paragraph/end 
 id: 90
@@ -2990,16 +2990,16 @@ y: N/A
 
 --- Paragraph/start
 id: 91
-r#  61710  939  4
+r#  61726  939  4
 
 
 --- Sentence/start
 id: 119
-r#  61710  939  4
+r#  61726  939  4
 
 --- Sentence//end
 id: 119
-r#  61925  941  61
+r#  61941  941  61
 p: .
 t. 
 |  While family court evaluators play judge, family court judges often find
@@ -3009,12 +3009,12 @@ t.
 
 --- Sentence/switch
 id: 120
-r#  61926  941  62
+r#  61942  941  62
 
 
 --- Sentence//end
 id: 120
-r#  62118  944  42
+r#  62134  944  42
 p: .
 t. 
 |  When, for instance, a judge tells a custody evaluator that the mother
@@ -3023,7 +3023,7 @@ t.
 
 --- Sentence/end 
 id: 120
-r#  62119  944  43
+r#  62135  944  43
 
 --- Paragraph/end 
 id: 91
@@ -3032,12 +3032,12 @@ y: N/A
 
 --- Paragraph/start
 id: 92
-r#  62121  946  1
+r#  62137  946  1
 
 
 --- Sentence/start
 id: 121
-r#  62121  946  1
+r#  62137  946  1
 --- Paragraph/end 
 id: 92
 y: N/A
@@ -3045,12 +3045,12 @@ y: N/A
 
 --- Paragraph/start
 id: 93
-r#  62536  953  1
+r#  62552  953  1
 
 
 --- Sentence/start
 id: 122
-r#  62536  953  1
+r#  62552  953  1
 --- Paragraph/end 
 id: 93
 y: N/A
@@ -3058,12 +3058,12 @@ y: N/A
 
 --- Paragraph/start
 id: 94
-r#  64247  974  1
+r#  64263  974  1
 
 
 --- Sentence/start
 id: 123
-r#  64247  974  1
+r#  64263  974  1
 --- Paragraph/end 
 id: 94
 y: N/A
@@ -3077,16 +3077,16 @@ y: N/A
 
 --- Paragraph/start
 id: 95
-r#  64889  985  4
+r#  64905  985  4
 
 
 --- Sentence/start
 id: 124
-r#  64889  985  4
+r#  64905  985  4
 
 --- Sentence//end
 id: 124
-r#  65267  990  9
+r#  65283  990  9
 p: .
 t. 
 |  A Texas judge, in 2001, played doctor when he removed a
@@ -3129,7 +3129,7 @@ t.
 
 --- Sentence/end 
 id: 124
-r#  65268  990  10
+r#  65284  990  10
 
 --- Paragraph/end 
 id: 95
@@ -3138,19 +3138,20 @@ y: N/A
 
 --- Paragraph/start
 id: 96
-r#  65270  992  1
+r#  65286  992  1
 
 
 --- Sentence/start
 id: 125
-r#  65270  992  1
+r#  65286  992  1
 
 --- Sentence//end
 id: 125
-r#  66611  1006  33
+r#  66628  1007  33
 p: .
 t. 
-|  Dr. Richard Gardner provides a very clear example of the way in which psychological evaluators have crossed over into a judge’s role on the
+|  Dr. Richard Gardner provides a very clear example of the way in which
+|  psychological evaluators have crossed over into a judge’s role on the
 |  strength of questionable theories. In fact, Gardner’s published work
 |  proves again and again that he could not offer an evaluation of Parental Alienation
 |  Syndrome (as
@@ -3168,7 +3169,7 @@ t.
 
 --- Sentence/end 
 id: 125
-r#  66612  1006  34
+r#  66629  1007  34
 
 --- Paragraph/end 
 id: 96
@@ -3177,16 +3178,16 @@ y: N/A
 
 --- Paragraph/start
 id: 97
-r#  66614  1008  1
+r#  66631  1009  1
 
 
 --- Sentence/start
 id: 126
-r#  66614  1008  1
+r#  66631  1009  1
 
 --- Sentence//end
 id: 126
-r#  67725  1023  67
+r#  67742  1024  67
 p: ?
 t. 
 |  Indeed, Gardner seemed to don a judge’s hat in family court litigation
@@ -3209,12 +3210,12 @@ t.
 
 --- Sentence/switch
 id: 127
-r#  67726  1023  68
+r#  67743  1024  68
 
 
 --- Sentence//end
 id: 127
-r#  67939  1025  145
+r#  67956  1026  145
 p: .
 t. 
 |  When a clinician wears a judge’s hat, even the law can be rewritten
@@ -3222,7 +3223,7 @@ t.
 
 --- Sentence/end 
 id: 127
-r#  67940  1025  146
+r#  67957  1026  146
 
 --- Paragraph/end 
 id: 97
@@ -3231,16 +3232,16 @@ y: N/A
 
 --- Paragraph/start
 id: 98
-r#  67942  1027  1
+r#  67959  1028  1
 
 
 --- Sentence/start
 id: 128
-r#  67942  1027  1
+r#  67959  1028  1
 
 --- Sentence//end
 id: 128
-r#  68119  1032  1
+r#  68136  1033  1
 p: 
 t. 
 |  This occurred in a case in Buffalo, New York, that
@@ -3250,12 +3251,12 @@ t.
 
 --- Sentence/switch
 id: 129
-r#  68150  1032  32
+r#  68167  1033  32
 
 
 --- Sentence//end
 id: 129
-r#  68260  1033  16
+r#  68277  1034  16
 p: ?
 t. 
 |   If a seven year old consented to sexual touching, then that would not be sexual abuse in
@@ -3264,7 +3265,7 @@ t.
 
 --- Sentence//end
 id: 129
-r#  68263  1035  1
+r#  68280  1036  1
 p: 
 t. 
 .  
@@ -3272,7 +3273,7 @@ t.
 
 --- Sentence/switch
 id: 130
-r#  68289  1035  27
+r#  68306  1036  27
 
 --- Paragraph/end 
 id: 98
@@ -3281,12 +3282,12 @@ y: N/A
 
 --- Paragraph/start
 id: 99
-r#  68367  1039  1
+r#  68384  1040  1
 
 
 --- Sentence/start
 id: 131
-r#  68367  1039  1
+r#  68384  1040  1
 --- Paragraph/end 
 id: 99
 y: N/A
@@ -3300,16 +3301,16 @@ y: N/A
 
 --- Paragraph/start
 id: 100
-r#  69409  1055  4
+r#  69426  1056  4
 
 
 --- Sentence/start
 id: 132
-r#  69409  1055  4
+r#  69426  1056  4
 
 --- Sentence//end
 id: 132
-r#  69730  1059  31
+r#  69747  1060  31
 p: .
 t. 
 |   I would say that’s inappropriate. I would
@@ -3333,7 +3334,7 @@ t.
 
 --- Sentence/end 
 id: 132
-r#  69731  1059  32
+r#  69748  1060  32
 
 --- Paragraph/end 
 id: 100
@@ -3342,16 +3343,16 @@ y: N/A
 
 --- Paragraph/start
 id: 101
-r#  69733  1061  1
+r#  69750  1062  1
 
 
 --- Sentence/start
 id: 133
-r#  69733  1061  1
+r#  69750  1062  1
 
 --- Sentence//end
 id: 133
-r#  70902  1078  67
+r#  70919  1079  67
 p: .
 t. 
 |  A Sex Abuse Allegation as Proof of the Mother’s Fantasy
@@ -3373,7 +3374,7 @@ t.
 
 --- Sentence/switch
 id: 134
-r#  70903  1078  68
+r#  70920  1079  68
 
 --- Paragraph/end 
 id: 101
@@ -3382,12 +3383,12 @@ y: N/A
 
 --- Paragraph/start
 id: 102
-r#  71111  1084  1
+r#  71128  1085  1
 
 
 --- Sentence/start
 id: 135
-r#  71111  1084  1
+r#  71128  1085  1
 --- Paragraph/end 
 id: 102
 y: N/A
@@ -3395,12 +3396,12 @@ y: N/A
 
 --- Paragraph/start
 id: 103
-r#  71371  1089  1
+r#  71388  1090  1
 
 
 --- Sentence/start
 id: 136
-r#  71371  1089  1
+r#  71388  1090  1
 --- Paragraph/end 
 id: 103
 y: N/A
@@ -3408,12 +3409,12 @@ y: N/A
 
 --- Paragraph/start
 id: 104
-r#  71772  1095  1
+r#  71789  1096  1
 
 
 --- Sentence/start
 id: 137
-r#  71772  1095  1
+r#  71789  1096  1
 --- Paragraph/end 
 id: 104
 y: N/A
@@ -3421,16 +3422,16 @@ y: N/A
 
 --- Paragraph/start
 id: 105
-r#  72017  1100  1
+r#  72034  1101  1
 
 
 --- Sentence/start
 id: 138
-r#  72017  1100  1
+r#  72034  1101  1
 
 --- Sentence//end
 id: 138
-r#  72556  1105  41
+r#  72573  1106  41
 p: .
 t. 
 |  This is a particularly destructive stylistic tendency for [the mother]
@@ -3455,7 +3456,7 @@ t.
 
 --- Sentence/end 
 id: 138
-r#  72557  1105  42
+r#  72574  1106  42
 
 --- Paragraph/end 
 id: 105
@@ -3464,12 +3465,12 @@ y: N/A
 
 --- Paragraph/start
 id: 106
-r#  72559  1107  1
+r#  72576  1108  1
 
 
 --- Sentence/start
 id: 139
-r#  72559  1107  1
+r#  72576  1108  1
 --- Paragraph/end 
 id: 106
 y: N/A
@@ -3477,12 +3478,12 @@ y: N/A
 
 --- Paragraph/start
 id: 107
-r#  73715  1130  1
+r#  73732  1131  1
 
 
 --- Sentence/start
 id: 140
-r#  73715  1130  1
+r#  73732  1131  1
 --- Paragraph/end 
 id: 107
 y: N/A
@@ -3490,12 +3491,12 @@ y: N/A
 
 --- Paragraph/start
 id: 108
-r#  74019  1136  1
+r#  74036  1137  1
 
 
 --- Sentence/start
 id: 141
-r#  74019  1136  1
+r#  74036  1137  1
 --- Paragraph/end 
 id: 108
 y: N/A
@@ -3503,12 +3504,12 @@ y: N/A
 
 --- Paragraph/start
 id: 109
-r#  74345  1141  1
+r#  74362  1142  1
 
 
 --- Sentence/start
 id: 142
-r#  74345  1141  1
+r#  74362  1142  1
 --- Paragraph/end 
 id: 109
 y: N/A
@@ -3516,16 +3517,16 @@ y: N/A
 
 --- Paragraph/start
 id: 110
-r#  75773  1161  1
+r#  75790  1162  1
 
 
 --- Sentence/start
 id: 143
-r#  75773  1161  1
+r#  75790  1162  1
 
 --- Sentence//end
 id: 143
-r#  76319  1166  11
+r#  76336  1167  11
 p: .
 t. 
 |  Louisiana attorney and national child abuse advocate Richard
@@ -3580,7 +3581,7 @@ t.
 
 --- Sentence/end 
 id: 143
-r#  76320  1166  12
+r#  76337  1167  12
 
 --- Paragraph/end 
 id: 110
@@ -3595,16 +3596,16 @@ y: N/A
 
 --- Paragraph/start
 id: 111
-r#  76386  1171  4
+r#  76403  1172  4
 
 
 --- Sentence/start
 id: 144
-r#  76386  1171  4
+r#  76403  1172  4
 
 --- Sentence//end
 id: 144
-r#  76830  1175  19
+r#  76847  1176  19
 p: .
 t. 
 |  In 1995, a California mother who had been divorced for about a year
@@ -3616,12 +3617,12 @@ t.
 
 --- Sentence/switch
 id: 145
-r#  76831  1175  20
+r#  76848  1176  20
 
 
 --- Sentence//end
 id: 145
-r#  77281  1181  22
+r#  77298  1182  22
 p: .
 t. 
 |  The court battle, which began several months before the mother lost
@@ -3633,7 +3634,7 @@ t.
 
 --- Sentence/end 
 id: 145
-r#  77282  1181  23
+r#  77299  1182  23
 
 --- Paragraph/end 
 id: 111
@@ -3642,16 +3643,16 @@ y: N/A
 
 --- Paragraph/start
 id: 112
-r#  77284  1183  1
+r#  77301  1184  1
 
 
 --- Sentence/start
 id: 146
-r#  77284  1183  1
+r#  77301  1184  1
 
 --- Sentence//end
 id: 146
-r#  77787  1186  143
+r#  77804  1187  143
 p: .
 t. 
 |  The mother’s concern that her children were being abused was supported by several facts. First, both of the children’s therapists strongly suspected sexual abuse. The four-year-old’s therapist reported that she
@@ -3662,7 +3663,7 @@ t.
 
 --- Sentence/switch
 id: 147
-r#  77788  1186  144
+r#  77805  1187  144
 
 --- Paragraph/end 
 id: 112
@@ -3671,12 +3672,12 @@ y: N/A
 
 --- Paragraph/start
 id: 113
-r#  77874  1190  1
+r#  77891  1191  1
 
 
 --- Sentence/start
 id: 148
-r#  77874  1190  1
+r#  77891  1191  1
 --- Paragraph/end 
 id: 113
 y: N/A
@@ -3684,12 +3685,12 @@ y: N/A
 
 --- Paragraph/start
 id: 114
-r#  78163  1195  1
+r#  78182  1196  1
 
 
 --- Sentence/start
 id: 149
-r#  78163  1195  1
+r#  78182  1196  1
 --- Paragraph/end 
 id: 114
 y: N/A
@@ -3697,23 +3698,23 @@ y: N/A
 
 --- Paragraph/start
 id: 115
-r#  78605  1202  1
+r#  78624  1203  1
 
 
 --- Sentence/start
 id: 150
-r#  78605  1202  1
+r#  78624  1203  1
 
 --- Sentence//end
 id: 150
-r#  79111  1211  1
+r#  79130  1212  1
 p: 
 t. 
 |  Stop doing that because it hurts! Why didn’t you stop when I told you
 |  to stop?\89Second, a medical examination of the older girl showed genital abnormalities that raised the question of sexual abuse. The girl had been
 |  examined with a colposcope that showed a narrow irregular thickened
 |  hymen, and generalized increased vascularity of the perihymenal
-|  tissue.\90Third, the older girl was interviewed by the Multidisciplinary Interview Center (MDIC), a team of forensic scientists used by the local
+|  tis\-sue.\90Third, the older girl was interviewed by the Multidisciplinary Interview Center (MDIC), a team of forensic scientists used by the local
 |  district attorney’s office. The girl had told them: He [the father] pulled
 |  down my pants ...\ put his finger in there [pointing to her genitals] and
 |  then he pulled up my pants and put his ‘wee-wee’ in my mouth.\91 This
@@ -3729,12 +3730,12 @@ t.
 
 --- Sentence/switch
 id: 151
-r#  79145  1211  35
+r#  79164  1212  35
 
 
 --- Sentence//end
 id: 151
-r#  79332  1212  157
+r#  79351  1213  157
 p: .
 t. 
 |  My recommendation is that all
@@ -3743,12 +3744,12 @@ t.
 
 --- Sentence/switch
 id: 152
-r#  79333  1212  158
+r#  79352  1213  158
 
 
 --- Sentence//end
 id: 152
-r#  79409  1214  22
+r#  79428  1215  22
 p: ?
 t. 
 |  father’s counsel: You are basing that on what concept
@@ -3757,7 +3758,7 @@ t.
 
 --- Sentence//end
 id: 152
-r#  79412  1216  1
+r#  79431  1217  1
 p: 
 t. 
 .  
@@ -3765,12 +3766,12 @@ t.
 
 --- Sentence/switch
 id: 153
-r#  79446  1216  35
+r#  79465  1217  35
 
 
 --- Sentence//end
 id: 153
-r#  79693  1219  108
+r#  79712  1220  108
 p: .
 t. 
 |  Well, this is part of this Parental
@@ -3781,12 +3782,12 @@ t.
 
 --- Sentence/switch
 id: 154
-r#  79694  1219  109
+r#  79713  1220  109
 
 
 --- Sentence//end
 id: 154
-r#  79751  1220  57
+r#  79770  1221  57
 p: .
 t. 
 .  Children are not born with the gene to hate their father
@@ -3794,12 +3795,12 @@ t.
 
 --- Sentence/switch
 id: 155
-r#  79752  1220  58
+r#  79771  1221  58
 
 
 --- Sentence//end
 id: 155
-r#  79995  1224  23
+r#  80014  1225  23
 p: .
 t. 
 |  So I see that all this alienation that’s been going on by
@@ -3810,7 +3811,7 @@ t.
 
 --- Sentence//end
 id: 155
-r#  79998  1226  1
+r#  80017  1227  1
 p: 
 t. 
 .  
@@ -3818,12 +3819,12 @@ t.
 
 --- Sentence/switch
 id: 156
-r#  80028  1226  31
+r#  80047  1227  31
 
 
 --- Sentence//end
 id: 156
-r#  80213  1229  44
+r#  80232  1230  44
 p: ?
 t. 
 |  So now you are saying since what
@@ -3834,7 +3835,7 @@ t.
 
 --- Sentence//end
 id: 156
-r#  80216  1231  1
+r#  80235  1232  1
 p: 
 t. 
 .  
@@ -3842,20 +3843,7 @@ t.
 
 --- Sentence/switch
 id: 157
-r#  80250  1231  35
-
-
---- Sentence//end
-id: 157
-r#  80280  1231  65
-p: .
-t. 
-.  This is an example of what Dr
-
-
---- Sentence/switch
-id: 158
-r#  80281  1231  66
+r#  80269  1232  35
 
 --- Paragraph/end 
 id: 115
@@ -3864,12 +3852,12 @@ y: N/A
 
 --- Paragraph/start
 id: 116
-r#  80581  1240  1
+r#  80601  1241  1
 
 
 --- Sentence/start
-id: 159
-r#  80581  1240  1
+id: 158
+r#  80601  1241  1
 --- Paragraph/end 
 id: 116
 y: N/A
@@ -3877,18 +3865,19 @@ y: N/A
 
 --- Paragraph/start
 id: 117
-r#  80907  1247  1
+r#  80927  1248  1
 
 
 --- Sentence/start
-id: 160
-r#  80907  1247  1
+id: 159
+r#  80927  1248  1
 
 --- Sentence//end
-id: 160
-r#  81380  1255  69
+id: 159
+r#  81400  1256  69
 p: .
 t. 
+|  This is an example of what Dr.
 |  Gardner calls escalating of more bizarre, more unusual
 |  allegations to try to get the father out of the children’s
 |  lives and when these don’t work, they get stranger and
@@ -3909,13 +3898,13 @@ t.
 
 
 --- Sentence/switch
-id: 161
-r#  81381  1255  70
+id: 160
+r#  81401  1256  70
 
 
 --- Sentence//end
-id: 161
-r#  81843  1260  48
+id: 160
+r#  81863  1261  48
 p: .
 t. 
 |  Otherwise I would ask children which stocks and bonds I should
@@ -3926,8 +3915,8 @@ t.
 
 
 --- Sentence/switch
-id: 162
-r#  81844  1260  49
+id: 161
+r#  81864  1261  49
 
 --- Paragraph/end 
 id: 117
@@ -3936,16 +3925,16 @@ y: N/A
 
 --- Paragraph/start
 id: 118
-r#  81848  1263  1
+r#  81868  1264  1
 
 
 --- Sentence/start
-id: 163
-r#  81848  1263  1
+id: 162
+r#  81868  1264  1
 
 --- Sentence//end
-id: 163
-r#  82506  1271  26
+id: 162
+r#  82526  1272  26
 p: .
 t. 
 |  After almost six months of complete isolation, the court ordered
@@ -3959,8 +3948,8 @@ t.
 .  the children’s therapists
 
 --- Sentence/end 
-id: 163
-r#  82507  1271  27
+id: 162
+r#  82527  1272  27
 
 --- Paragraph/end 
 id: 118
@@ -3969,16 +3958,16 @@ y: N/A
 
 --- Paragraph/start
 id: 119
-r#  82509  1273  1
+r#  82529  1274  1
 
 
 --- Sentence/start
-id: 164
-r#  82509  1273  1
+id: 163
+r#  82529  1274  1
 
 --- Sentence//end
-id: 164
-r#  83247  1280  13
+id: 163
+r#  83267  1281  13
 p: .
 t. 
 |  It was not enough for the mother to be constantly monitored during her short visits with her children. Soon, the program director of the
@@ -3991,8 +3980,8 @@ t.
 .  court agreed
 
 --- Sentence/end 
-id: 164
-r#  83248  1280  14
+id: 163
+r#  83268  1281  14
 
 --- Paragraph/end 
 id: 119
@@ -4001,12 +3990,12 @@ y: N/A
 
 --- Paragraph/start
 id: 120
-r#  83250  1282  1
+r#  83270  1283  1
 
 
 --- Sentence/start
-id: 165
-r#  83250  1282  1
+id: 164
+r#  83270  1283  1
 --- Paragraph/end 
 id: 120
 y: N/A
@@ -4014,16 +4003,16 @@ y: N/A
 
 --- Paragraph/start
 id: 121
-r#  83784  1291  1
+r#  83804  1292  1
 
 
 --- Sentence/start
-id: 166
-r#  83784  1291  1
+id: 165
+r#  83804  1292  1
 
 --- Sentence//end
-id: 166
-r#  83854  1291  71
+id: 165
+r#  83874  1292  71
 p: .
 t. 
 |  Now the mother lived in a closed world of mental health insanity. She
@@ -4037,13 +4026,13 @@ t.
 
 
 --- Sentence/switch
-id: 167
-r#  83855  1291  72
+id: 166
+r#  83875  1292  72
 
 
 --- Sentence//end
-id: 167
-r#  84438  1298  72
+id: 166
+r#  84458  1299  72
 p: ?
 t. 
 |  For example, at the time the judge stripped the mother of custody of the three
@@ -4056,20 +4045,20 @@ t.
 
 
 --- Sentence/switch
-id: 168
-r#  84439  1298  73
+id: 167
+r#  84459  1299  73
 
 
 --- Sentence//end
-id: 168
-r#  84490  1299  51
+id: 167
+r#  84510  1300  51
 p: .
 t. 
 .  The mother was telling the children she loved them
 
 --- Sentence/end 
-id: 168
-r#  84491  1299  52
+id: 167
+r#  84511  1300  52
 
 --- Paragraph/end 
 id: 121
@@ -4078,16 +4067,16 @@ y: N/A
 
 --- Paragraph/start
 id: 122
-r#  84493  1301  1
+r#  84513  1302  1
 
 
 --- Sentence/start
-id: 169
-r#  84493  1301  1
+id: 168
+r#  84513  1302  1
 
 --- Sentence//end
-id: 169
-r#  85249  1312  16
+id: 168
+r#  85269  1313  16
 p: .
 t. 
 |  In an affidavit written in response to this expert attack on the
@@ -4104,8 +4093,8 @@ t.
 .  several minutes
 
 --- Sentence/end 
-id: 169
-r#  85250  1312  17
+id: 168
+r#  85270  1313  17
 
 --- Paragraph/end 
 id: 122
@@ -4114,16 +4103,16 @@ y: N/A
 
 --- Paragraph/start
 id: 123
-r#  85252  1314  1
+r#  85272  1315  1
 
 
 --- Sentence/start
-id: 170
-r#  85252  1314  1
+id: 169
+r#  85272  1315  1
 
 --- Sentence//end
-id: 170
-r#  85746  1320  39
+id: 169
+r#  85766  1321  39
 p: ?
 t. 
 |  The program director criticizes [the mother] for talking with
@@ -4135,8 +4124,8 @@ t.
 .  activities, what is left to talk about
 
 --- Sentence/end 
-id: 170
-r#  85747  1320  40
+id: 169
+r#  85767  1321  40
 
 --- Paragraph/end 
 id: 123
@@ -4145,12 +4134,12 @@ y: N/A
 
 --- Paragraph/start
 id: 124
-r#  85749  1322  1
+r#  85769  1323  1
 
 
 --- Sentence/start
-id: 171
-r#  85749  1322  1
+id: 170
+r#  85769  1323  1
 --- Paragraph/end 
 id: 124
 y: N/A
@@ -4158,16 +4147,16 @@ y: N/A
 
 --- Paragraph/start
 id: 125
-r#  86049  1327  1
+r#  86069  1328  1
 
 
 --- Sentence/start
-id: 172
-r#  86049  1327  1
+id: 171
+r#  86069  1328  1
 
 --- Sentence//end
-id: 172
-r#  86273  1330  15
+id: 171
+r#  86293  1331  15
 p: .
 t. 
 |  It appears from the entire tone of the letter from [the program director] that no matter what [the mother] said or did, [the program
@@ -4179,8 +4168,8 @@ t.
 .  for four years
 
 --- Sentence/end 
-id: 172
-r#  86274  1330  16
+id: 171
+r#  86294  1331  16
 
 --- Paragraph/end 
 id: 125
@@ -4195,16 +4184,16 @@ y: N/A
 
 --- Paragraph/start
 id: 126
-r#  86336  1335  4
+r#  86356  1336  4
 
 
 --- Sentence/start
-id: 173
-r#  86336  1335  4
+id: 172
+r#  86356  1336  4
 
 --- Sentence//end
-id: 173
-r#  86955  1343  6
+id: 172
+r#  86975  1344  6
 p: .
 t. 
 |  In 1991, a New York mother, who had previously stipulated to joint
@@ -4218,8 +4207,8 @@ t.
 .  night
 
 --- Sentence/end 
-id: 173
-r#  86956  1343  7
+id: 172
+r#  86976  1344  7
 
 --- Paragraph/end 
 id: 126
@@ -4228,16 +4217,16 @@ y: N/A
 
 --- Paragraph/start
 id: 127
-r#  86958  1345  1
+r#  86978  1346  1
 
 
 --- Sentence/start
-id: 174
-r#  86958  1345  1
+id: 173
+r#  86978  1346  1
 
 --- Sentence//end
-id: 174
-r#  87600  1355  60
+id: 173
+r#  87620  1356  60
 p: .
 t. 
 |  The psychologist suggested to the mother that the child be evaluated
@@ -4251,8 +4240,8 @@ t.
 
 
 --- Sentence/switch
-id: 175
-r#  87601  1355  61
+id: 174
+r#  87621  1356  61
 
 --- Paragraph/end 
 id: 127
@@ -4261,16 +4250,16 @@ y: N/A
 
 --- Paragraph/start
 id: 128
-r#  87853  1362  1
+r#  87873  1363  1
 
 
 --- Sentence/start
-id: 176
-r#  87853  1362  1
+id: 175
+r#  87873  1363  1
 
 --- Sentence//end
-id: 176
-r#  88313  1368  16
+id: 175
+r#  88333  1369  16
 p: .
 t. 
 |  I co-authored the chapter Medical Protocol for Evaluation of Sexual
@@ -4286,8 +4275,8 @@ t.
 .  with her father
 
 --- Sentence/end 
-id: 176
-r#  88314  1368  17
+id: 175
+r#  88334  1369  17
 
 --- Paragraph/end 
 id: 128
@@ -4296,12 +4285,12 @@ y: N/A
 
 --- Paragraph/start
 id: 129
-r#  88316  1370  1
+r#  88336  1371  1
 
 
 --- Sentence/start
-id: 177
-r#  88316  1370  1
+id: 176
+r#  88336  1371  1
 --- Paragraph/end 
 id: 129
 y: N/A
@@ -4309,16 +4298,16 @@ y: N/A
 
 --- Paragraph/start
 id: 130
-r#  89013  1384  1
+r#  89033  1385  1
 
 
 --- Sentence/start
-id: 178
-r#  89013  1384  1
+id: 177
+r#  89033  1385  1
 
 --- Sentence//end
-id: 178
-r#  89409  1388  44
+id: 177
+r#  89429  1389  44
 p: .
 t. 
 |  In her report to the court, the expert not only made the
@@ -4337,8 +4326,8 @@ t.
 .  a precipitous drop in her blood sugar level
 
 --- Sentence/end 
-id: 178
-r#  89410  1388  45
+id: 177
+r#  89430  1389  45
 
 --- Paragraph/end 
 id: 130
@@ -4347,12 +4336,12 @@ y: N/A
 
 --- Paragraph/start
 id: 131
-r#  89412  1390  1
+r#  89432  1391  1
 
 
 --- Sentence/start
-id: 179
-r#  89412  1390  1
+id: 178
+r#  89432  1391  1
 --- Paragraph/end 
 id: 131
 y: N/A
@@ -4360,12 +4349,12 @@ y: N/A
 
 --- Paragraph/start
 id: 132
-r#  90492  1408  1
+r#  90512  1409  1
 
 
 --- Sentence/start
-id: 180
-r#  90492  1408  1
+id: 179
+r#  90512  1409  1
 --- Paragraph/end 
 id: 132
 y: N/A
@@ -4373,16 +4362,16 @@ y: N/A
 
 --- Paragraph/start
 id: 133
-r#  91216  1422  1
+r#  91236  1423  1
 
 
 --- Sentence/start
-id: 181
-r#  91216  1422  1
+id: 180
+r#  91236  1423  1
 
 --- Sentence//end
-id: 181
-r#  92249  1434  31
+id: 180
+r#  92269  1435  31
 p: .
 t. 
 |  The mother had always carefully followed the pediatrician’s instructions. But now that she had been labeled an alienator, her conscientious behavior became one more weapon against her. The mother was
@@ -4422,8 +4411,8 @@ t.
 .  world of family court quackery
 
 --- Sentence/end 
-id: 181
-r#  92250  1434  32
+id: 180
+r#  92270  1435  32
 
 --- Paragraph/end 
 id: 133
@@ -4432,16 +4421,16 @@ y: N/A
 
 --- Paragraph/start
 id: 134
-r#  92252  1436  1
+r#  92272  1437  1
 
 
 --- Sentence/start
-id: 182
-r#  92252  1436  1
+id: 181
+r#  92272  1437  1
 
 --- Sentence//end
-id: 182
-r#  92708  1442  31
+id: 181
+r#  92728  1443  31
 p: .
 t. 
 |  As time went on, the father made the child less and less available for
@@ -4453,8 +4442,8 @@ t.
 .  drained to continue the battle
 
 --- Sentence/end 
-id: 182
-r#  92709  1442  32
+id: 181
+r#  92729  1443  32
 
 --- Paragraph/end 
 id: 134
@@ -4463,16 +4452,16 @@ y: N/A
 
 --- Paragraph/start
 id: 135
-r#  92711  1444  1
+r#  92731  1445  1
 
 
 --- Sentence/start
-id: 183
-r#  92711  1444  1
+id: 182
+r#  92731  1445  1
 
 --- Sentence//end
-id: 183
-r#  92897  1446  44
+id: 182
+r#  92917  1447  44
 p: .
 t. 
 |  Adding one injury to another, the father - even though he continued
@@ -4480,8 +4469,8 @@ t.
 .  demand weekly child support from the mother
 
 --- Sentence/end 
-id: 183
-r#  92898  1446  45
+id: 182
+r#  92918  1447  45
 
 --- Paragraph/end 
 id: 135
@@ -4490,16 +4479,16 @@ y: N/A
 
 --- Paragraph/start
 id: 136
-r#  92900  1448  1
+r#  92920  1449  1
 
 
 --- Sentence/start
-id: 184
-r#  92900  1448  1
+id: 183
+r#  92920  1449  1
 
 --- Sentence//end
-id: 184
-r#  93881  1458  56
+id: 183
+r#  93901  1459  56
 p: .
 t. 
 |  For the child’s eighth birthday, the father seemed to relent, agreeing to allow the mother to visit the girl on her birthday. When the
@@ -4515,8 +4504,8 @@ t.
 .  her ex-husband refused to allow her to see her daughter
 
 --- Sentence/end 
-id: 184
-r#  93882  1458  57
+id: 183
+r#  93902  1459  57
 
 --- Paragraph/end 
 id: 136
@@ -4525,16 +4514,16 @@ y: N/A
 
 --- Paragraph/start
 id: 137
-r#  93884  1460  1
+r#  93904  1461  1
 
 
 --- Sentence/start
-id: 185
-r#  93884  1460  1
+id: 184
+r#  93904  1461  1
 
 --- Sentence//end
-id: 185
-r#  94016  1461  68
+id: 184
+r#  94036  1462  68
 p: .
 t. 
 |  While visits between the mother and daughter were being stymied,
@@ -4542,13 +4531,13 @@ t.
 
 
 --- Sentence/switch
-id: 186
-r#  94017  1461  69
+id: 185
+r#  94037  1462  69
 
 
 --- Sentence//end
-id: 186
-r#  94719  1471  51
+id: 185
+r#  94739  1472  51
 p: .
 t. 
 |  Eventually the child did not even take her mother’s phone calls. But
@@ -4563,8 +4552,8 @@ t.
 .  to speak to the daughter she once tried to protect
 
 --- Sentence/end 
-id: 186
-r#  94720  1471  52
+id: 185
+r#  94740  1472  52
 
 --- Paragraph/end 
 id: 137
@@ -4579,16 +4568,16 @@ y: N/A
 
 --- Paragraph/start
 id: 138
-r#  94770  1476  4
+r#  94790  1477  4
 
 
 --- Sentence/start
-id: 187
-r#  94770  1476  4
+id: 186
+r#  94790  1477  4
 
 --- Sentence//end
-id: 187
-r#  95373  1483  42
+id: 186
+r#  95393  1484  42
 p: .
 t. 
 |  Mothers on the receiving end of the labels we have been examining feel
@@ -4601,8 +4590,8 @@ t.
 .  ill - are not treated as other people are
 
 --- Sentence/end 
-id: 187
-r#  95374  1483  43
+id: 186
+r#  95394  1484  43
 
 --- Paragraph/end 
 id: 138
@@ -4611,16 +4600,16 @@ y: N/A
 
 --- Paragraph/start
 id: 139
-r#  95376  1485  1
+r#  95396  1486  1
 
 
 --- Sentence/start
-id: 188
-r#  95376  1485  1
+id: 187
+r#  95396  1486  1
 
 --- Sentence//end
-id: 188
-r#  96128  1495  29
+id: 187
+r#  96148  1496  29
 p: .
 t. 
 |  For instance, one New York protective mother was found in the
@@ -4636,8 +4625,8 @@ t.
 .  testified before legislators
 
 --- Sentence/end 
-id: 188
-r#  96129  1495  30
+id: 187
+r#  96149  1496  30
 
 --- Paragraph/end 
 id: 139
@@ -4646,12 +4635,12 @@ y: N/A
 
 --- Paragraph/start
 id: 140
-r#  96131  1497  1
+r#  96151  1498  1
 
 
 --- Sentence/start
-id: 189
-r#  96131  1497  1
+id: 188
+r#  96151  1498  1
 --- Paragraph/end 
 id: 140
 y: N/A
@@ -4659,12 +4648,12 @@ y: N/A
 
 --- Paragraph/start
 id: 141
-r#  96462  1503  1
+r#  96482  1504  1
 
 
 --- Sentence/start
-id: 190
-r#  96462  1503  1
+id: 189
+r#  96482  1504  1
 --- Paragraph/end 
 id: 141
 y: N/A
@@ -4678,16 +4667,16 @@ y: N/A
 
 --- Paragraph/start
 id: 142
-r#  96595  1509  4
+r#  96615  1510  4
 
 
 --- Sentence/start
-id: 191
-r#  96595  1509  4
+id: 190
+r#  96615  1510  4
 
 --- Sentence//end
-id: 191
-r#  97492  1521  20
+id: 190
+r#  97512  1522  20
 p: .
 t. 
 |  \jjustline{Such mothers suffer feelings of self-blame, inferiority, worthless-}ness.\112 One Kansas protective mother said, after she had finished a
@@ -4708,8 +4697,8 @@ t.
 .  domestic litigation
 
 --- Sentence/end 
-id: 191
-r#  97493  1521  21
+id: 190
+r#  97513  1522  21
 
 --- Paragraph/end 
 id: 142
@@ -4718,16 +4707,16 @@ y: N/A
 
 --- Paragraph/start
 id: 143
-r#  97495  1523  1
+r#  97515  1524  1
 
 
 --- Sentence/start
-id: 192
-r#  97495  1523  1
+id: 191
+r#  97515  1524  1
 
 --- Sentence//end
-id: 192
-r#  97741  1526  34
+id: 191
+r#  97761  1527  34
 p: .
 t. 
 |  What follows are two case narratives that show how such variations of
@@ -4736,8 +4725,8 @@ t.
 .  mothers and their abused children
 
 --- Sentence/end 
-id: 192
-r#  97742  1526  35
+id: 191
+r#  97762  1527  35
 
 --- Paragraph/end 
 id: 143
@@ -4752,12 +4741,12 @@ y: N/A
 
 --- Paragraph/start
 id: 144
-r#  97879  1531  1
+r#  97899  1532  1
 
 
 --- Sentence/start
-id: 193
-r#  97879  1531  1
+id: 192
+r#  97899  1532  1
 --- Paragraph/end 
 id: 144
 y: N/A
@@ -4765,16 +4754,16 @@ y: N/A
 
 --- Paragraph/start
 id: 145
-r#  99611  1556  1
+r#  99631  1557  1
 
 
 --- Sentence/start
-id: 194
-r#  99611  1556  1
+id: 193
+r#  99631  1557  1
 
 --- Sentence//end
-id: 194
-r#  100564  1571  71
+id: 193
+r#  100584  1572  71
 p: .
 t. 
 |  In early 2022, the court-appointed custody evaluator in a North Carolina divorce case gave both parents of a seven-year-old girl a lengthy
@@ -4816,8 +4805,8 @@ t.
 
 
 --- Sentence/switch
-id: 195
-r#  100565  1571  72
+id: 194
+r#  100585  1572  72
 
 --- Paragraph/end 
 id: 145
@@ -4826,16 +4815,16 @@ y: N/A
 
 --- Paragraph/start
 id: 146
-r#  100569  1574  1
+r#  100589  1575  1
 
 
 --- Sentence/start
-id: 196
-r#  100569  1574  1
+id: 195
+r#  100589  1575  1
 
 --- Sentence//end
-id: 196
-r#  101534  1589  60
+id: 195
+r#  101554  1590  60
 p: .
 t. 
 |  The mother reported:When [the child] was a baby/toddler, on 3 or more occasions, there
@@ -4854,13 +4843,13 @@ t.
 
 
 --- Sentence/switch
-id: 197
-r#  101537  1591  1
+id: 196
+r#  101557  1592  1
 
 
 --- Sentence//end
-id: 197
-r#  101995  1597  67
+id: 196
+r#  102015  1598  67
 p: .
 t. 
 |  On another occasion, [the child], then a toddler, and [father]
@@ -4873,13 +4862,13 @@ t.
 
 
 --- Sentence/switch
-id: 198
-r#  101996  1597  68
+id: 197
+r#  102016  1598  68
 
 
 --- Sentence//end
-id: 198
-r#  102853  1611  64
+id: 197
+r#  102873  1612  64
 p: .
 t. 
 |  From that point on, I was uncomfortable with [father] bathing
@@ -4897,8 +4886,8 @@ t.
 .  these issues and trying to place the father in a negative light
 
 --- Sentence/end 
-id: 198
-r#  102854  1611  65
+id: 197
+r#  102874  1612  65
 
 --- Paragraph/end 
 id: 146
@@ -4907,16 +4896,16 @@ y: N/A
 
 --- Paragraph/start
 id: 147
-r#  102856  1613  1
+r#  102876  1614  1
 
 
 --- Sentence/start
-id: 199
-r#  102856  1613  1
+id: 198
+r#  102876  1614  1
 
 --- Sentence//end
-id: 199
-r#  103180  1616  33
+id: 198
+r#  103200  1617  33
 p: .
 t. 
 |  For example, after visits with the father, the child
@@ -4925,8 +4914,8 @@ t.
 .  overnight visits with the father
 
 --- Sentence/end 
-id: 199
-r#  103181  1616  34
+id: 198
+r#  103201  1617  34
 
 --- Paragraph/end 
 id: 147
@@ -4935,24 +4924,24 @@ y: N/A
 
 --- Paragraph/start
 id: 148
-r#  103183  1618  1
+r#  103203  1619  1
 
 
 --- Sentence/start
-id: 200
-r#  103183  1618  1
+id: 199
+r#  103203  1619  1
 
 --- Sentence//end
-id: 200
-r#  103252  1618  70
+id: 199
+r#  103272  1619  70
 p: .
 t. 
 .  First, the father constantly insisted on changing the child’s clothes
 
 
 --- Sentence/switch
-id: 201
-r#  103253  1618  71
+id: 200
+r#  103273  1619  71
 
 --- Paragraph/end 
 id: 148
@@ -4961,12 +4950,12 @@ y: N/A
 
 --- Paragraph/start
 id: 149
-r#  103861  1629  1
+r#  103881  1630  1
 
 
 --- Sentence/start
-id: 202
-r#  103861  1629  1
+id: 201
+r#  103881  1630  1
 --- Paragraph/end 
 id: 149
 y: N/A
@@ -4974,16 +4963,16 @@ y: N/A
 
 --- Paragraph/start
 id: 150
-r#  104292  1636  1
+r#  104312  1637  1
 
 
 --- Sentence/start
-id: 203
-r#  104292  1636  1
+id: 202
+r#  104312  1637  1
 
 --- Sentence//end
-id: 203
-r#  104498  1637  69
+id: 202
+r#  104518  1638  69
 p: .
 t. 
 |  Even when picking up the child at the mother’s home, he would often
@@ -5004,13 +4993,13 @@ t.
 
 
 --- Sentence/switch
-id: 204
-r#  104499  1637  70
+id: 203
+r#  104519  1638  70
 
 
 --- Sentence//end
-id: 204
-r#  106047  1667  6
+id: 203
+r#  106067  1668  6
 p: .
 t. 
 |  Amazingly, however, the therapist saw nothing in the mother’s report
@@ -5037,8 +5026,8 @@ t.
 .  abuse
 
 --- Sentence/end 
-id: 204
-r#  106048  1667  7
+id: 203
+r#  106068  1668  7
 
 --- Paragraph/end 
 id: 150
@@ -5047,16 +5036,16 @@ y: N/A
 
 --- Paragraph/start
 id: 151
-r#  106050  1669  1
+r#  106070  1670  1
 
 
 --- Sentence/start
-id: 205
-r#  106050  1669  1
+id: 204
+r#  106070  1670  1
 
 --- Sentence//end
-id: 205
-r#  106917  1679  7
+id: 204
+r#  106937  1680  7
 p: .
 t. 
 |  As demonstrated here, notwithstanding the evidence of sexual misconduct, this mental health expert enthusiastically supported steadily
@@ -5072,8 +5061,8 @@ t.
 .  mother
 
 --- Sentence/end 
-id: 205
-r#  106918  1679  8
+id: 204
+r#  106938  1680  8
 
 --- Paragraph/end 
 id: 151
@@ -5088,12 +5077,12 @@ y: N/A
 
 --- Paragraph/start
 id: 152
-r#  106992  1684  4
+r#  107012  1685  4
 
 
 --- Sentence/start
-id: 206
-r#  106992  1684  4
+id: 205
+r#  107012  1685  4
 --- Paragraph/end 
 id: 152
 y: N/A
@@ -5101,12 +5090,12 @@ y: N/A
 
 --- Paragraph/start
 id: 153
-r#  108029  1696  1
+r#  108049  1697  1
 
 
 --- Sentence/start
-id: 207
-r#  108029  1696  1
+id: 206
+r#  108049  1697  1
 --- Paragraph/end 
 id: 153
 y: N/A
@@ -5121,12 +5110,12 @@ Characterizations of Her Behavior
 
 --- Paragraph/start
 id: 154
-r#  108704  1706  4
+r#  108724  1707  4
 
 
 --- Sentence/start
-id: 208
-r#  108704  1706  4
+id: 207
+r#  108724  1707  4
 --- Paragraph/end 
 id: 154
 y: N/A
@@ -5134,16 +5123,16 @@ y: N/A
 
 --- Paragraph/start
 id: 155
-r#  109192  1714  1
+r#  109212  1715  1
 
 
 --- Sentence/start
-id: 209
-r#  109192  1714  1
+id: 208
+r#  109212  1715  1
 
 --- Sentence//end
-id: 209
-r#  109332  1714  141
+id: 208
+r#  109352  1715  141
 p: .
 t. 
 |  Although one may be tempted to dismiss the enmeshment theories
@@ -5171,13 +5160,13 @@ t.
 
 
 --- Sentence/switch
-id: 210
-r#  109333  1714  142
+id: 209
+r#  109353  1715  142
 
 
 --- Sentence//end
-id: 210
-r#  109558  1718  6
+id: 209
+r#  109578  1719  6
 p: .
 t. 
 |  The experts’ own words - children need to grow away from us - served
@@ -5186,8 +5175,8 @@ t.
 .  value
 
 --- Sentence/end 
-id: 210
-r#  109559  1718  7
+id: 209
+r#  109579  1719  7
 
 --- Paragraph/end 
 id: 155
@@ -5196,16 +5185,16 @@ y: N/A
 
 --- Paragraph/start
 id: 156
-r#  109561  1720  1
+r#  109581  1721  1
 
 
 --- Sentence/start
-id: 211
-r#  109561  1720  1
+id: 210
+r#  109581  1721  1
 
 --- Sentence//end
-id: 211
-r#  110083  1726  30
+id: 210
+r#  110103  1727  30
 p: .
 t. 
 |  Words have an impact, especially when uttered in court. In this case
@@ -5217,8 +5206,8 @@ t.
 .  presumably shows signs of PAS
 
 --- Sentence/end 
-id: 211
-r#  110084  1726  31
+id: 210
+r#  110104  1727  31
 
 --- Paragraph/end 
 id: 156
@@ -5234,12 +5223,12 @@ Parental Alienation Syndrome
 
 --- Paragraph/start
 id: 157
-r#  110212  1731  4
+r#  110232  1732  4
 
 
 --- Sentence/start
-id: 212
-r#  110212  1731  4
+id: 211
+r#  110232  1732  4
 --- Paragraph/end 
 id: 157
 y: N/A
@@ -5247,16 +5236,16 @@ y: N/A
 
 --- Paragraph/start
 id: 158
-r#  111140  1743  1
+r#  111160  1744  1
 
 
 --- Sentence/start
-id: 213
-r#  111140  1743  1
+id: 212
+r#  111160  1744  1
 
 --- Sentence//end
-id: 213
-r#  111560  1749  33
+id: 212
+r#  111580  1750  33
 p: .
 t. 
 |  The next case narrative describes the case of a Brooklyn mother who
@@ -5278,8 +5267,8 @@ t.
 .  in the relatively distant future
 
 --- Sentence/end 
-id: 213
-r#  111561  1749  34
+id: 212
+r#  111581  1750  34
 
 --- Paragraph/end 
 id: 158
@@ -5288,16 +5277,16 @@ y: N/A
 
 --- Paragraph/start
 id: 159
-r#  111563  1751  1
+r#  111583  1752  1
 
 
 --- Sentence/start
-id: 214
-r#  111563  1751  1
+id: 213
+r#  111583  1752  1
 
 --- Sentence//end
-id: 214
-r#  112593  1763  6
+id: 213
+r#  112613  1764  6
 p: .
 t. 
 |  Another advantage of this theory over the old PAS, according
@@ -5315,8 +5304,8 @@ t.
 .  cause
 
 --- Sentence/end 
-id: 214
-r#  112594  1763  7
+id: 213
+r#  112614  1764  7
 
 --- Paragraph/end 
 id: 159
@@ -5325,16 +5314,16 @@ y: N/A
 
 --- Paragraph/start
 id: 160
-r#  112596  1765  1
+r#  112616  1766  1
 
 
 --- Sentence/start
-id: 215
-r#  112596  1765  1
+id: 214
+r#  112616  1766  1
 
 --- Sentence//end
-id: 215
-r#  112965  1769  21
+id: 214
+r#  112985  1770  21
 p: .
 t. 
 |  Thus, employing a theory like R-RD - designed to operate without
@@ -5344,8 +5333,8 @@ t.
 .  the use of the label
 
 --- Sentence/end 
-id: 215
-r#  112966  1769  22
+id: 214
+r#  112986  1770  22
 
 --- Paragraph/end 
 id: 160
@@ -5354,16 +5343,16 @@ y: N/A
 
 --- Paragraph/start
 id: 161
-r#  112968  1771  1
+r#  112988  1772  1
 
 
 --- Sentence/start
-id: 216
-r#  112968  1771  1
+id: 215
+r#  112988  1772  1
 
 --- Sentence//end
-id: 216
-r#  113959  1783  10
+id: 215
+r#  113979  1784  10
 p: .
 t. 
 |  What this means is that one could assign blame to the mother by
@@ -5381,8 +5370,8 @@ t.
 .  prototype
 
 --- Sentence/end 
-id: 216
-r#  113960  1783  11
+id: 215
+r#  113980  1784  11
 
 --- Paragraph/end 
 id: 161
@@ -5398,16 +5387,16 @@ Disregarded by the Family Court because of ``Resist and Refuse Dynamics'' Used a
 
 --- Paragraph/start
 id: 162
-r#  114160  1789  4
+r#  114180  1790  4
 
 
 --- Sentence/start
-id: 217
-r#  114160  1789  4
+id: 216
+r#  114180  1790  4
 
 --- Sentence//end
-id: 217
-r#  114785  1795  14
+id: 216
+r#  114805  1796  14
 p: .
 t. 
 |  The history of this Brooklyn case is telling. Just two years before the
@@ -5419,8 +5408,8 @@ t.
 .  investigation
 
 --- Sentence/end 
-id: 217
-r#  114786  1795  15
+id: 216
+r#  114806  1796  15
 
 --- Paragraph/end 
 id: 162
@@ -5429,12 +5418,12 @@ y: N/A
 
 --- Paragraph/start
 id: 163
-r#  114788  1797  1
+r#  114808  1798  1
 
 
 --- Sentence/start
-id: 218
-r#  114788  1797  1
+id: 217
+r#  114808  1798  1
 --- Paragraph/end 
 id: 163
 y: N/A
@@ -5448,16 +5437,16 @@ y: N/A
 
 --- Paragraph/start
 id: 164
-r#  115541  1809  4
+r#  115561  1810  4
 
 
 --- Sentence/start
-id: 219
-r#  115541  1809  4
+id: 218
+r#  115561  1810  4
 
 --- Sentence//end
-id: 219
-r#  116066  1815  27
+id: 218
+r#  116086  1816  27
 p: .
 t. 
 |  The report was comprehensive and clear. It stated that although the
@@ -5476,8 +5465,8 @@ t.
 .  sole custody to the father
 
 --- Sentence/end 
-id: 219
-r#  116067  1815  28
+id: 218
+r#  116087  1816  28
 
 --- Paragraph/end 
 id: 164
@@ -5486,12 +5475,12 @@ y: N/A
 
 --- Paragraph/start
 id: 165
-r#  116069  1817  1
+r#  116089  1818  1
 
 
 --- Sentence/start
-id: 220
-r#  116069  1817  1
+id: 219
+r#  116089  1818  1
 --- Paragraph/end 
 id: 165
 y: N/A
@@ -5499,16 +5488,16 @@ y: N/A
 
 --- Paragraph/start
 id: 166
-r#  117687  1840  1
+r#  117707  1841  1
 
 
 --- Sentence/start
-id: 221
-r#  117687  1840  1
+id: 220
+r#  117707  1841  1
 
 --- Sentence//end
-id: 221
-r#  118732  1852  36
+id: 220
+r#  118752  1853  36
 p: .
 t. 
 |  In the thirty-three-page written decision to take the young boy
@@ -5544,8 +5533,8 @@ t.
 .  expert peddling the variants of PAS
 
 --- Sentence/end 
-id: 221
-r#  118733  1852  37
+id: 220
+r#  118753  1853  37
 
 --- Paragraph/end 
 id: 166
@@ -5554,16 +5543,16 @@ y: N/A
 
 --- Paragraph/start
 id: 167
-r#  118735  1854  1
+r#  118755  1855  1
 
 
 --- Sentence/start
-id: 222
-r#  118735  1854  1
+id: 221
+r#  118755  1855  1
 
 --- Sentence//end
-id: 222
-r#  119620  1863  28
+id: 221
+r#  119640  1864  28
 p: .
 t. 
 |  As it turned out, the investigators for the New York City Administration for Children’s Services (ACS) found nothing of the kind. They
@@ -5578,8 +5567,8 @@ t.
 .  award custody to the father
 
 --- Sentence/end 
-id: 222
-r#  119621  1863  29
+id: 221
+r#  119641  1864  29
 
 --- Paragraph/end 
 id: 167
@@ -5595,16 +5584,16 @@ in Hospitalization after Trying to Jump off the Brooklyn Bridge) of No Consequen
 
 --- Paragraph/start
 id: 168
-r#  119852  1869  4
+r#  119872  1870  4
 
 
 --- Sentence/start
-id: 223
-r#  119852  1869  4
+id: 222
+r#  119872  1870  4
 
 --- Sentence//end
-id: 223
-r#  120334  1874  46
+id: 222
+r#  120354  1875  46
 p: .
 t. 
 |  The ACS report showed that the father had been diagnosed with Type I
@@ -5615,8 +5604,8 @@ t.
 .  details of which were filled in by the mother
 
 --- Sentence/end 
-id: 223
-r#  120335  1874  47
+id: 222
+r#  120355  1875  47
 
 --- Paragraph/end 
 id: 168
@@ -5625,16 +5614,16 @@ y: N/A
 
 --- Paragraph/start
 id: 169
-r#  120337  1876  1
+r#  120357  1877  1
 
 
 --- Sentence/start
-id: 224
-r#  120337  1876  1
+id: 223
+r#  120357  1877  1
 
 --- Sentence//end
-id: 224
-r#  121102  1886  49
+id: 223
+r#  121122  1887  49
 p: .
 t. 
 |  She explained to ACS that her child’s father had told her that, having
@@ -5650,8 +5639,8 @@ t.
 .  theory - leaving the mother with nowhere to turn
 
 --- Sentence/end 
-id: 224
-r#  121103  1886  50
+id: 223
+r#  121123  1887  50
 
 --- Paragraph/end 
 id: 169
@@ -5660,16 +5649,16 @@ y: N/A
 
 --- Paragraph/start
 id: 170
-r#  121105  1888  1
+r#  121125  1889  1
 
 
 --- Sentence/start
-id: 225
-r#  121105  1888  1
+id: 224
+r#  121125  1889  1
 
 --- Sentence//end
-id: 225
-r#  121650  1894  37
+id: 224
+r#  121670  1895  37
 p: .
 t. 
 |  Alas, this case is not an anomaly. A psychiatric history, cocaine usage,
@@ -5681,8 +5670,8 @@ t.
 .  science on a family court proceeding
 
 --- Sentence/end 
-id: 225
-r#  121651  1894  38
+id: 224
+r#  121671  1895  38
 
 --- Paragraph/end 
 id: 170

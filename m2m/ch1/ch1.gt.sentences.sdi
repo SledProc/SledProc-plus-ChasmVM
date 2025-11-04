@@ -1385,16 +1385,16 @@ y: N/A
 
 --- Paragraph/start
 id: 47
-r#  33328  493  1
+r#  33329  493  1
 
 
 --- Sentence/start
 id: 58
-r#  33328  493  1
+r#  33329  493  1
 
 --- Sentence//end
 id: 58
-r#  34389  506  6
+r#  34392  506  6
 p: .
 t. 
 |  In 1988, the Journal of the American Academy of Child and Adolescent
@@ -1421,7 +1421,7 @@ t.
 
 --- Sentence/end 
 id: 58
-r#  34390  506  7
+r#  34393  506  7
 
 --- Paragraph/end 
 id: 47
@@ -1430,12 +1430,12 @@ y: N/A
 
 --- Paragraph/start
 id: 48
-r#  34392  508  1
+r#  34395  508  1
 
 
 --- Sentence/start
 id: 59
-r#  34392  508  1
+r#  34395  508  1
 --- Paragraph/end 
 id: 48
 y: N/A
@@ -1450,16 +1450,16 @@ JUDGE CHAMPIONS MOTHERS’ CAUSE
 
 --- Paragraph/start
 id: 49
-r#  35997  530  4
+r#  36000  530  4
 
 
 --- Sentence/start
 id: 60
-r#  35997  530  4
+r#  36000  530  4
 
 --- Sentence//end
 id: 60
-r#  36373  535  18
+r#  36376  535  18
 p: .
 t. 
 |  In fact, when a family court judge departs from the mad logic typical
@@ -1487,7 +1487,7 @@ t.
 
 --- Sentence/end 
 id: 60
-r#  36374  535  19
+r#  36377  535  19
 
 --- Paragraph/end 
 id: 49
@@ -1496,12 +1496,12 @@ y: N/A
 
 --- Paragraph/start
 id: 50
-r#  36376  537  1
+r#  36379  537  1
 
 
 --- Sentence/start
 id: 61
-r#  36376  537  1
+r#  36379  537  1
 --- Paragraph/end 
 id: 50
 y: N/A
@@ -1509,16 +1509,16 @@ y: N/A
 
 --- Paragraph/start
 id: 51
-r#  36898  543  1
+r#  36901  543  1
 
 
 --- Sentence/start
 id: 62
-r#  36898  543  1
+r#  36901  543  1
 
 --- Sentence//end
 id: 62
-r#  37784  552  37
+r#  37787  552  37
 p: .
 t. 
 |  In Nicholson v. ACS,\39 Judge Weinstein considered the claims of
@@ -1538,7 +1538,7 @@ t.
 
 --- Sentence/end 
 id: 62
-r#  37785  552  38
+r#  37788  552  38
 
 --- Paragraph/end 
 id: 51
@@ -1547,16 +1547,16 @@ y: N/A
 
 --- Paragraph/start
 id: 52
-r#  37787  554  1
+r#  37790  554  1
 
 
 --- Sentence/start
 id: 63
-r#  37787  554  1
+r#  37790  554  1
 
 --- Sentence//end
 id: 63
-r#  38307  558  21
+r#  38310  558  21
 p: .
 t. 
 |  In summarizing the facts concerning removals of children from battered mothers, Judge Weinstein declared: the Thirteenth Amendment
@@ -1567,7 +1567,7 @@ t.
 
 --- Sentence/end 
 id: 63
-r#  38308  558  22
+r#  38311  558  22
 
 --- Paragraph/end 
 id: 52
@@ -1582,12 +1582,12 @@ y: N/A
 
 --- Paragraph/start
 id: 53
-r#  38356  564  4
+r#  38359  564  4
 
 
 --- Sentence/start
 id: 64
-r#  38356  564  4
+r#  38359  564  4
 --- Paragraph/end 
 id: 53
 y: N/A
@@ -1595,16 +1595,16 @@ y: N/A
 
 --- Paragraph/start
 id: 54
-r#  39307  581  1
+r#  39310  581  1
 
 
 --- Sentence/start
 id: 65
-r#  39307  581  1
+r#  39310  581  1
 
 --- Sentence//end
 id: 65
-r#  39369  581  63
+r#  39372  581  63
 p: .
 t. 
 |  In light of all this, it is not surprising that more and more mothers who
@@ -1624,7 +1624,7 @@ t.
 
 --- Sentence/switch
 id: 66
-r#  39370  581  64
+r#  39373  581  64
 
 --- Paragraph/end 
 id: 54
@@ -1633,16 +1633,16 @@ y: N/A
 
 --- Paragraph/start
 id: 55
-r#  39766  588  1
+r#  39769  588  1
 
 
 --- Sentence/start
 id: 67
-r#  39766  588  1
+r#  39769  588  1
 
 --- Sentence//end
 id: 67
-r#  40076  591  28
+r#  40079  591  28
 p: .
 t. 
 |  Phyllis Chesler’s Mothers on Trial (1986) surveyed the literature on child
@@ -1656,7 +1656,7 @@ t.
 
 --- Sentence/end 
 id: 67
-r#  40077  591  29
+r#  40080  591  29
 
 --- Paragraph/end 
 id: 55
@@ -1665,12 +1665,12 @@ y: N/A
 
 --- Paragraph/start
 id: 56
-r#  40079  593  1
+r#  40082  593  1
 
 
 --- Sentence/start
 id: 68
-r#  40079  593  1
+r#  40082  593  1
 --- Paragraph/end 
 id: 56
 y: N/A
@@ -1678,16 +1678,16 @@ y: N/A
 
 --- Paragraph/start
 id: 57
-r#  40813  604  1
+r#  40816  604  1
 
 
 --- Sentence/start
 id: 69
-r#  40813  604  1
+r#  40816  604  1
 
 --- Sentence//end
 id: 69
-r#  40877  604  65
+r#  40880  604  65
 p: .
 t. 
 |  Activist mothers have aggressively sought the attention of lawmakers. Although new legislation seldom results from this activism, the
@@ -1704,7 +1704,7 @@ t.
 
 --- Sentence/switch
 id: 70
-r#  40878  604  66
+r#  40881  604  66
 
 --- Paragraph/end 
 id: 57
@@ -1719,16 +1719,16 @@ y: N/A
 
 --- Paragraph/start
 id: 58
-r#  41776  617  4
+r#  41779  617  4
 
 
 --- Sentence/start
 id: 71
-r#  41776  617  4
+r#  41779  617  4
 
 --- Sentence//end
 id: 71
-r#  42522  625  43
+r#  42525  625  43
 p: .
 t. 
 |  Nationally recognized attorneys, advocates, and protective mothers
@@ -1751,7 +1751,7 @@ t.
 
 --- Sentence/end 
 id: 71
-r#  42523  625  44
+r#  42526  625  44
 
 --- Paragraph/end 
 id: 58
@@ -1760,16 +1760,16 @@ y: N/A
 
 --- Paragraph/start
 id: 59
-r#  42525  627  1
+r#  42528  627  1
 
 
 --- Sentence/start
 id: 72
-r#  42525  627  1
+r#  42528  627  1
 
 --- Sentence//end
 id: 72
-r#  43371  636  57
+r#  43374  636  57
 p: .
 t. 
 |  As a strategy, however, pro se rebellion is not particularly beneficial
@@ -1785,7 +1785,7 @@ t.
 
 --- Sentence/end 
 id: 72
-r#  43372  636  58
+r#  43375  636  58
 
 --- Paragraph/end 
 id: 59
@@ -1800,16 +1800,16 @@ y: N/A
 
 --- Paragraph/start
 id: 60
-r#  43394  640  4
+r#  43397  640  4
 
 
 --- Sentence/start
 id: 73
-r#  43394  640  4
+r#  43397  640  4
 
 --- Sentence//end
 id: 73
-r#  43486  641  23
+r#  43489  641  23
 p: .
 t. 
 |  Another way women may rebel against the family courts is by literally
@@ -1817,7 +1817,7 @@ t.
 
 --- Sentence/end 
 id: 73
-r#  43487  641  24
+r#  43490  641  24
 
 --- Paragraph/end 
 id: 60
@@ -1826,16 +1826,16 @@ y: N/A
 
 --- Paragraph/start
 id: 61
-r#  43489  643  1
+r#  43492  643  1
 
 
 --- Sentence/start
 id: 74
-r#  43489  643  1
+r#  43492  643  1
 
 --- Sentence//end
 id: 74
-r#  44105  650  46
+r#  44108  650  46
 p: .
 t. 
 |  An organized underground movement for protective mothers began in 1987 when two Mississippi mothers, Karen Newsom and Dorrie
@@ -1849,7 +1849,7 @@ t.
 
 --- Sentence/end 
 id: 74
-r#  44106  650  47
+r#  44109  650  47
 
 --- Paragraph/end 
 id: 61
@@ -1858,16 +1858,16 @@ y: N/A
 
 --- Paragraph/start
 id: 62
-r#  44108  652  1
+r#  44111  652  1
 
 
 --- Sentence/start
 id: 75
-r#  44108  652  1
+r#  44111  652  1
 
 --- Sentence//end
 id: 75
-r#  44354  655  32
+r#  44357  655  32
 p: .
 t. 
 |  Neither story ended happily. After forty-three days in jail, Newsom
@@ -1877,7 +1877,7 @@ t.
 
 --- Sentence/end 
 id: 75
-r#  44355  655  33
+r#  44358  655  33
 
 --- Paragraph/end 
 id: 62
@@ -1886,12 +1886,12 @@ y: N/A
 
 --- Paragraph/start
 id: 63
-r#  44357  657  1
+r#  44360  657  1
 
 
 --- Sentence/start
 id: 76
-r#  44357  657  1
+r#  44360  657  1
 --- Paragraph/end 
 id: 63
 y: N/A
@@ -1899,16 +1899,16 @@ y: N/A
 
 --- Paragraph/start
 id: 64
-r#  44627  662  1
+r#  44630  662  1
 
 
 --- Sentence/start
 id: 77
-r#  44627  662  1
+r#  44630  662  1
 
 --- Sentence//end
 id: 77
-r#  44833  664  7
+r#  44836  664  7
 p: .
 t. 
 |  At almost the same time, Virginia LaLonde of Massachusetts spent
@@ -1920,7 +1920,7 @@ t.
 
 --- Sentence/end 
 id: 77
-r#  44834  664  8
+r#  44837  664  8
 
 --- Paragraph/end 
 id: 64
@@ -1929,16 +1929,16 @@ y: N/A
 
 --- Paragraph/start
 id: 65
-r#  44836  666  1
+r#  44839  666  1
 
 
 --- Sentence/start
 id: 78
-r#  44836  666  1
+r#  44839  666  1
 
 --- Sentence//end
 id: 78
-r#  45656  677  61
+r#  45659  677  61
 p: .
 t. 
 |  Yager, a successful entrepreneur and the wife of an Atlanta family
@@ -1956,7 +1956,7 @@ t.
 
 --- Sentence/end 
 id: 78
-r#  45657  677  62
+r#  45660  677  62
 
 --- Paragraph/end 
 id: 65
@@ -1965,12 +1965,12 @@ y: N/A
 
 --- Paragraph/start
 id: 66
-r#  45659  679  1
+r#  45662  679  1
 
 
 --- Sentence/start
 id: 79
-r#  45659  679  1
+r#  45662  679  1
 --- Paragraph/end 
 id: 66
 y: N/A
@@ -1978,12 +1978,12 @@ y: N/A
 
 --- Paragraph/start
 id: 67
-r#  46271  686  1
+r#  46274  686  1
 
 
 --- Sentence/start
 id: 80
-r#  46271  686  1
+r#  46274  686  1
 --- Paragraph/end 
 id: 67
 y: N/A
@@ -1997,16 +1997,16 @@ y: N/A
 
 --- Paragraph/start
 id: 68
-r#  46752  696  4
+r#  46755  696  4
 
 
 --- Sentence/start
 id: 81
-r#  46752  696  4
+r#  46755  696  4
 
 --- Sentence//end
 id: 81
-r#  46887  697  70
+r#  46890  697  70
 p: .
 t. 
 |  Yager’s expansion of the new Underground Railroad (she would
@@ -2025,12 +2025,12 @@ t.
 
 --- Sentence/switch
 id: 82
-r#  46888  697  71
+r#  46891  697  71
 
 
 --- Sentence//end
 id: 82
-r#  47033  698  145
+r#  47036  698  145
 p: .
 t. 
 .  This is not an easy task. It generally requires a mother to assemble copious documentation on her own case and (if possible) other similar cases
@@ -2038,12 +2038,12 @@ t.
 
 --- Sentence/switch
 id: 83
-r#  47034  698  146
+r#  47037  698  146
 
 
 --- Sentence//end
 id: 83
-r#  47209  701  34
+r#  47212  701  34
 p: .
 t. 
 |  And few legislators and newspaper editors are prepared to challenge the
@@ -2052,7 +2052,7 @@ t.
 
 --- Sentence/end 
 id: 83
-r#  47210  701  35
+r#  47213  701  35
 
 --- Paragraph/end 
 id: 68
@@ -2061,16 +2061,16 @@ y: N/A
 
 --- Paragraph/start
 id: 69
-r#  47212  703  1
+r#  47215  703  1
 
 
 --- Sentence/start
 id: 84
-r#  47212  703  1
+r#  47215  703  1
 
 --- Sentence//end
 id: 84
-r#  47866  710  15
+r#  47869  710  15
 p: .
 t. 
 |  Organizations such as Justice for Children (based in Houston, Texas)
@@ -2084,7 +2084,7 @@ t.
 
 --- Sentence/end 
 id: 84
-r#  47867  710  16
+r#  47870  710  16
 
 --- Paragraph/end 
 id: 69
@@ -2093,16 +2093,16 @@ y: N/A
 
 --- Paragraph/start
 id: 70
-r#  47869  712  1
+r#  47872  712  1
 
 
 --- Sentence/start
 id: 85
-r#  47869  712  1
+r#  47872  712  1
 
 --- Sentence//end
 id: 85
-r#  48536  717  10
+r#  48539  717  10
 p: .
 t. 
 |  In some instances, protective mothers’ assiduous preparation and
@@ -2114,7 +2114,7 @@ t.
 
 --- Sentence/end 
 id: 85
-r#  48537  717  11
+r#  48540  717  11
 
 --- Paragraph/end 
 id: 70

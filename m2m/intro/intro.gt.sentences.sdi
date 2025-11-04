@@ -298,7 +298,7 @@ r#  6170  96  1
 
 --- Sentence//end
 id: 12
-r#  6684  102  25
+r#  6686  102  25
 p: .
 t. 
 |  Our own look into the bad dream of the family court
@@ -311,7 +311,7 @@ t.
 
 --- Sentence/end 
 id: 12
-r#  6685  102  26
+r#  6687  102  26
 
 --- Paragraph/end 
 id: 11
@@ -320,16 +320,16 @@ y: N/A
 
 --- Paragraph/start
 id: 12
-r#  6687  104  1
+r#  6689  104  1
 
 
 --- Sentence/start
 id: 13
-r#  6687  104  1
+r#  6689  104  1
 
 --- Sentence//end
 id: 13
-r#  7104  108  11
+r#  7106  108  11
 p: .
 t. 
 |  HURT advertised itself to protective mothers primarily by word of
@@ -340,7 +340,7 @@ t.
 
 --- Sentence/end 
 id: 13
-r#  7105  108  12
+r#  7107  108  12
 
 --- Paragraph/end 
 id: 12
@@ -349,16 +349,16 @@ y: N/A
 
 --- Paragraph/start
 id: 13
-r#  7107  110  1
+r#  7109  110  1
 
 
 --- Sentence/start
 id: 14
-r#  7107  110  1
+r#  7109  110  1
 
 --- Sentence//end
 id: 14
-r#  7532  115  70
+r#  7534  115  70
 p: .
 t. 
 |  The results were astonishing. HURT was contacted in well over four
@@ -371,12 +371,12 @@ t.
 
 --- Sentence/switch
 id: 15
-r#  7533  115  71
+r#  7535  115  71
 
 
 --- Sentence//end
 id: 15
-r#  7815  120  50
+r#  7817  120  50
 p: .
 t. 
 |  The authors found that those cases tragically confirmed the warnings of
@@ -387,7 +387,7 @@ t.
 
 --- Sentence/end 
 id: 15
-r#  7816  120  51
+r#  7818  120  51
 
 --- Paragraph/end 
 id: 13
@@ -396,16 +396,16 @@ y: N/A
 
 --- Paragraph/start
 id: 14
-r#  7818  122  1
+r#  7820  122  1
 
 
 --- Sentence/start
 id: 16
-r#  7818  122  1
+r#  7820  122  1
 
 --- Sentence//end
 id: 16
-r#  8446  130  7
+r#  8448  130  7
 p: .
 t. 
 |  Of those mothers who lost custody to allegedly abusive ex-husbands
@@ -420,7 +420,7 @@ t.
 
 --- Sentence/end 
 id: 16
-r#  8447  130  8
+r#  8449  130  8
 
 --- Paragraph/end 
 id: 14
@@ -429,16 +429,16 @@ y: N/A
 
 --- Paragraph/start
 id: 15
-r#  8449  132  1
+r#  8451  132  1
 
 
 --- Sentence/start
 id: 17
-r#  8449  132  1
+r#  8451  132  1
 
 --- Sentence//end
 id: 17
-r#  8652  133  71
+r#  8654  133  71
 p: .
 t. 
 |  We found that such results cut straight across the American demographic pie. Both rich and poor women lost custody of their children
@@ -447,12 +447,12 @@ t.
 
 --- Sentence/switch
 id: 18
-r#  8653  133  72
+r#  8655  133  72
 
 
 --- Sentence//end
 id: 18
-r#  8738  135  15
+r#  8740  135  15
 p: .
 t. 
 |  The judicial outcomes were largely the same in large metropolises and
@@ -460,7 +460,7 @@ t.
 
 --- Sentence/end 
 id: 18
-r#  8739  135  16
+r#  8741  135  16
 
 --- Paragraph/end 
 id: 15
@@ -469,16 +469,16 @@ y: N/A
 
 --- Paragraph/start
 id: 16
-r#  8741  137  1
+r#  8743  137  1
 
 
 --- Sentence/start
 id: 19
-r#  8741  137  1
+r#  8743  137  1
 
 --- Sentence//end
 id: 19
-r#  9193  143  40
+r#  9195  143  40
 p: .
 t. 
 |  The evidence we have collected has enabled us to demonstrate in
@@ -492,12 +492,12 @@ t.
 
 --- Sentence/switch
 id: 20
-r#  9194  143  41
+r#  9196  143  41
 
 
 --- Sentence//end
 id: 20
-r#  9418  146  13
+r#  9420  146  13
 p: .
 t. 
 |  Just as the evidence we have amassed enables us to remove any doubt
@@ -506,7 +506,7 @@ t.
 
 --- Sentence/end 
 id: 20
-r#  9419  146  14
+r#  9421  146  14
 
 --- Paragraph/end 
 id: 16
@@ -515,16 +515,16 @@ y: N/A
 
 --- Paragraph/start
 id: 17
-r#  9421  148  1
+r#  9423  148  1
 
 
 --- Sentence/start
 id: 21
-r#  9421  148  1
+r#  9423  148  1
 
 --- Sentence//end
 id: 21
-r#  10270  158  61
+r#  10272  158  61
 p: .
 t. 
 |  First, we do not claim - nor do we believe - that the miscarriages of
@@ -541,7 +541,7 @@ t.
 
 --- Sentence/end 
 id: 21
-r#  10271  158  62
+r#  10273  158  62
 
 --- Paragraph/end 
 id: 17
@@ -550,16 +550,16 @@ y: N/A
 
 --- Paragraph/start
 id: 18
-r#  10273  160  1
+r#  10275  160  1
 
 
 --- Sentence/start
 id: 22
-r#  10273  160  1
+r#  10275  160  1
 
 --- Sentence//end
 id: 22
-r#  11309  170  138
+r#  11311  170  138
 p: .
 t. 
 |  Take the case of Childhelp USA. Founded in 1959 as a groundbreaking purveyor of child abuse prevention information, Childhelp later
@@ -577,7 +577,7 @@ t.
 
 --- Sentence/switch
 id: 23
-r#  11310  170  139
+r#  11312  170  139
 
 --- Paragraph/end 
 id: 18
@@ -586,16 +586,16 @@ y: N/A
 
 --- Paragraph/start
 id: 19
-r#  11913  179  1
+r#  11915  179  1
 
 
 --- Sentence/start
 id: 24
-r#  11913  179  1
+r#  11915  179  1
 
 --- Sentence//end
 id: 24
-r#  12486  184  8
+r#  12488  184  8
 p: .
 t. 
 |  A full 10 percent of the questionnaires were completed and returned
@@ -613,7 +613,7 @@ t.
 
 --- Sentence/end 
 id: 24
-r#  12487  184  9
+r#  12489  184  9
 
 --- Paragraph/end 
 id: 19
@@ -622,16 +622,16 @@ y: N/A
 
 --- Paragraph/start
 id: 20
-r#  12489  186  1
+r#  12491  186  1
 
 
 --- Sentence/start
 id: 25
-r#  12489  186  1
+r#  12491  186  1
 
 --- Sentence//end
 id: 25
-r#  13968  203  26
+r#  13970  203  26
 p: .
 t. 
 |  Second, we are well aware that not every father accused of sexual
@@ -655,7 +655,7 @@ t.
 
 --- Sentence/end 
 id: 25
-r#  13969  203  27
+r#  13971  203  27
 
 --- Paragraph/end 
 id: 20
@@ -664,12 +664,12 @@ y: N/A
 
 --- Paragraph/start
 id: 21
-r#  13971  205  1
+r#  13973  205  1
 
 
 --- Sentence/start
 id: 26
-r#  13971  205  1
+r#  13973  205  1
 --- Paragraph/end 
 id: 21
 y: N/A
@@ -677,16 +677,16 @@ y: N/A
 
 --- Paragraph/start
 id: 22
-r#  15878  229  1
+r#  15880  229  1
 
 
 --- Sentence/start
 id: 27
-r#  15878  229  1
+r#  15880  229  1
 
 --- Sentence//end
 id: 27
-r#  16271  233  44
+r#  16273  233  44
 p: .
 t. 
 |  Nor is it true that sex abuse charges must be met with judicial resistance because such accusations are all too easily made and all too readily
@@ -719,7 +719,7 @@ t.
 
 --- Sentence/end 
 id: 27
-r#  16272  233  45
+r#  16274  233  45
 
 --- Paragraph/end 
 id: 22
@@ -728,23 +728,23 @@ y: N/A
 
 --- Paragraph/start
 id: 23
-r#  16274  235  1
+r#  16276  235  1
 
 
 --- Sentence/start
 id: 28
-r#  16274  235  1
+r#  16276  235  1
 
 --- Sentence//end
 id: 28
-r#  16306  235  33
+r#  16308  235  33
 p: .
 t. 
 .  That is the purpose of this book
 
 --- Sentence/end 
 id: 28
-r#  16307  235  34
+r#  16309  235  34
 
 --- Paragraph/end 
 id: 23
@@ -753,16 +753,16 @@ y: N/A
 
 --- Paragraph/start
 id: 24
-r#  16309  237  1
+r#  16311  237  1
 
 
 --- Sentence/start
 id: 29
-r#  16309  237  1
+r#  16311  237  1
 
 --- Sentence//end
 id: 29
-r#  16916  242  70
+r#  16918  242  70
 p: .
 t. 
 |  As the reader will find, there is no shortage of madness to discuss. Family courts can punish protective mothers in a bewildering
@@ -775,12 +775,12 @@ t.
 
 --- Sentence/switch
 id: 30
-r#  16917  242  71
+r#  16919  242  71
 
 
 --- Sentence//end
 id: 30
-r#  17064  245  8
+r#  17066  245  8
 p: .
 t. 
 |  In one California case, a mother was criticized by a family court judge
@@ -789,7 +789,7 @@ t.
 
 --- Sentence/end 
 id: 30
-r#  17065  245  9
+r#  17067  245  9
 
 --- Paragraph/end 
 id: 24
@@ -798,16 +798,16 @@ y: N/A
 
 --- Paragraph/start
 id: 25
-r#  17067  247  1
+r#  17069  247  1
 
 
 --- Sentence/start
 id: 31
-r#  17067  247  1
+r#  17069  247  1
 
 --- Sentence//end
 id: 31
-r#  17266  248  137
+r#  17268  248  137
 p: .
 t. 
 |  Hand in hand with family court madness is a growing pattern of
@@ -816,7 +816,7 @@ t.
 
 --- Sentence/switch
 id: 32
-r#  17267  248  138
+r#  17269  248  138
 
 --- Paragraph/end 
 id: 25
@@ -825,16 +825,16 @@ y: N/A
 
 --- Paragraph/start
 id: 26
-r#  17648  255  1
+r#  17650  255  1
 
 
 --- Sentence/start
 id: 33
-r#  17648  255  1
+r#  17650  255  1
 
 --- Sentence//end
 id: 33
-r#  18077  260  20
+r#  18079  260  20
 p: .
 t. 
 |  Faced with judicial rulings that seem to them contrary to the most basic parental instincts and values, they have begun to rebel. In defiance
@@ -850,7 +850,7 @@ t.
 
 --- Sentence/end 
 id: 33
-r#  18078  260  21
+r#  18080  260  21
 
 --- Paragraph/end 
 id: 26
@@ -859,16 +859,16 @@ y: N/A
 
 --- Paragraph/start
 id: 27
-r#  18080  262  1
+r#  18082  262  1
 
 
 --- Sentence/start
 id: 34
-r#  18080  262  1
+r#  18082  262  1
 
 --- Sentence//end
 id: 34
-r#  18766  270  32
+r#  18768  270  32
 p: .
 t. 
 |  Some mothers have pursued legislative reform, becoming unpaid activists. They offer lawmakers and administrators a grim look into the
@@ -883,7 +883,7 @@ t.
 
 --- Sentence/end 
 id: 34
-r#  18767  270  33
+r#  18769  270  33
 
 --- Paragraph/end 
 id: 27
@@ -892,16 +892,16 @@ y: N/A
 
 --- Paragraph/start
 id: 28
-r#  18769  272  1
+r#  18771  272  1
 
 
 --- Sentence/start
 id: 35
-r#  18769  272  1
+r#  18771  272  1
 
 --- Sentence//end
 id: 35
-r#  19279  277  16
+r#  19281  277  16
 p: .
 t. 
 |  Our goal in this book is to provide a thorough picture of the infestation of the family courts by a special form of judicial madness, and
@@ -913,7 +913,7 @@ t.
 
 --- Sentence/end 
 id: 35
-r#  19280  277  17
+r#  19282  277  17
 
 --- Paragraph/end 
 id: 28
@@ -922,16 +922,16 @@ y: N/A
 
 --- Paragraph/start
 id: 29
-r#  19282  279  1
+r#  19284  279  1
 
 
 --- Sentence/start
 id: 36
-r#  19282  279  1
+r#  19284  279  1
 
 --- Sentence//end
 id: 36
-r#  19636  282  72
+r#  19638  282  72
 p: .
 t. 
 |  It should be stressed that our study of the backlash against mothers by the family courts is an empirical analysis, concentrating on how
@@ -942,12 +942,12 @@ t.
 
 --- Sentence/switch
 id: 37
-r#  19637  282  73
+r#  19639  282  73
 
 
 --- Sentence//end
 id: 37
-r#  19868  286  15
+r#  19870  286  15
 p: .
 t. 
 |  This is not to say that some writers, aware of the same phenomenon, have
@@ -957,7 +957,7 @@ t.
 
 --- Sentence/end 
 id: 37
-r#  19869  286  16
+r#  19871  286  16
 
 --- Paragraph/end 
 id: 29
@@ -966,16 +966,16 @@ y: N/A
 
 --- Paragraph/start
 id: 30
-r#  19871  288  1
+r#  19873  288  1
 
 
 --- Sentence/start
 id: 38
-r#  19871  288  1
+r#  19873  288  1
 
 --- Sentence//end
 id: 38
-r#  20587  298  60
+r#  20589  298  60
 p: .
 t. 
 |  Armstrong argues that charges of sexual abuse provoke such a hostile
@@ -992,7 +992,7 @@ t.
 
 --- Sentence/end 
 id: 38
-r#  20588  298  61
+r#  20590  298  61
 
 --- Paragraph/end 
 id: 30
@@ -1001,16 +1001,16 @@ y: N/A
 
 --- Paragraph/start
 id: 31
-r#  20590  300  1
+r#  20592  300  1
 
 
 --- Sentence/start
 id: 39
-r#  20590  300  1
+r#  20592  300  1
 
 --- Sentence//end
 id: 39
-r#  21512  310  7
+r#  21514  310  7
 p: .
 t. 
 |  Such a theory is, of course, extremely difficult to prove. It is clear that
@@ -1027,7 +1027,7 @@ t.
 
 --- Sentence/end 
 id: 39
-r#  21513  310  8
+r#  21515  310  8
 
 --- Paragraph/end 
 id: 31
@@ -1036,16 +1036,16 @@ y: N/A
 
 --- Paragraph/start
 id: 32
-r#  21515  312  1
+r#  21517  312  1
 
 
 --- Sentence/start
 id: 40
-r#  21515  312  1
+r#  21517  312  1
 
 --- Sentence//end
 id: 40
-r#  21575  312  61
+r#  21577  312  61
 p: .
 t. 
 .  A word about our research methods is certainly in order here
@@ -1053,12 +1053,12 @@ t.
 
 --- Sentence/switch
 id: 41
-r#  21576  312  62
+r#  21578  312  62
 
 
 --- Sentence//end
 id: 41
-r#  22480  324  7
+r#  22482  324  7
 p: .
 t. 
 |  As previously noted, it is impossible to undertake a large-scale, random review of family court case files since these are not available
@@ -1076,7 +1076,7 @@ t.
 
 --- Sentence/end 
 id: 41
-r#  22481  324  8
+r#  22483  324  8
 
 --- Paragraph/end 
 id: 32
@@ -1085,16 +1085,16 @@ y: N/A
 
 --- Paragraph/start
 id: 33
-r#  22483  326  1
+r#  22485  326  1
 
 
 --- Sentence/start
 id: 42
-r#  22483  326  1
+r#  22485  326  1
 
 --- Sentence//end
 id: 42
-r#  23514  338  45
+r#  23516  338  45
 p: .
 t. 
 |  To enhance this book’s analysis of family courts, we have employed
@@ -1113,7 +1113,7 @@ t.
 
 --- Sentence/end 
 id: 42
-r#  23515  338  46
+r#  23517  338  46
 
 --- Paragraph/end 
 id: 33
@@ -1122,12 +1122,12 @@ y: N/A
 
 --- Paragraph/start
 id: 34
-r#  23517  340  1
+r#  23519  340  1
 
 
 --- Sentence/start
 id: 43
-r#  23517  340  1
+r#  23519  340  1
 --- Paragraph/end 
 id: 34
 y: N/A
@@ -1135,16 +1135,16 @@ y: N/A
 
 --- Paragraph/start
 id: 35
-r#  24298  349  1
+r#  24300  349  1
 
 
 --- Sentence/start
 id: 44
-r#  24298  349  1
+r#  24300  349  1
 
 --- Sentence//end
 id: 44
-r#  24580  351  69
+r#  24582  351  69
 p: .
 t. 
 |  One particularly important feature of our case research is our emphasis on studying the progress of a single case over time. Judicial
@@ -1161,12 +1161,12 @@ t.
 
 --- Sentence/switch
 id: 45
-r#  24581  351  70
+r#  24583  351  70
 
 
 --- Sentence//end
 id: 45
-r#  24782  354  59
+r#  24784  354  59
 p: .
 t. 
 |  After protracted court proceedings, in which (they believe) issues of
@@ -1175,7 +1175,7 @@ t.
 
 --- Sentence/end 
 id: 45
-r#  24783  354  60
+r#  24785  354  60
 
 --- Paragraph/end 
 id: 35
@@ -1184,16 +1184,16 @@ y: N/A
 
 --- Paragraph/start
 id: 36
-r#  24785  356  1
+r#  24787  356  1
 
 
 --- Sentence/start
 id: 46
-r#  24785  356  1
+r#  24787  356  1
 
 --- Sentence//end
 id: 46
-r#  26094  371  10
+r#  26096  371  10
 p: .
 t. 
 |  One other comment seems appropriate here. As we have written,
@@ -1215,7 +1215,7 @@ t.
 
 --- Sentence/end 
 id: 46
-r#  26095  371  11
+r#  26097  371  11
 
 --- Paragraph/end 
 id: 36
@@ -1224,16 +1224,16 @@ y: N/A
 
 --- Paragraph/start
 id: 37
-r#  26097  373  1
+r#  26099  373  1
 
 
 --- Sentence/start
 id: 47
-r#  26097  373  1
+r#  26099  373  1
 
 --- Sentence//end
 id: 47
-r#  26452  378  5
+r#  26454  378  5
 p: .
 t. 
 |  On the other hand, simply to identify the abuses perpetrated by the
@@ -1245,7 +1245,7 @@ t.
 
 --- Sentence/end 
 id: 47
-r#  26453  378  6
+r#  26455  378  6
 
 --- Paragraph/end 
 id: 37
@@ -1254,16 +1254,16 @@ y: N/A
 
 --- Paragraph/start
 id: 38
-r#  26455  380  1
+r#  26457  380  1
 
 
 --- Sentence/start
 id: 48
-r#  26455  380  1
+r#  26457  380  1
 
 --- Sentence//end
 id: 48
-r#  26594  381  70
+r#  26596  381  70
 p: .
 t. 
 |  This book is divided into three parts. The first gives an overview of
@@ -1272,12 +1272,12 @@ t.
 
 --- Sentence/switch
 id: 49
-r#  26595  381  71
+r#  26597  381  71
 
 
 --- Sentence//end
 id: 49
-r#  26989  387  28
+r#  26991  387  28
 p: .
 t. 
 |  We outline the madness that has infected the family courts and describe
@@ -1289,7 +1289,7 @@ t.
 
 --- Sentence/end 
 id: 49
-r#  26990  387  29
+r#  26992  387  29
 
 --- Paragraph/end 
 id: 38
@@ -1298,16 +1298,16 @@ y: N/A
 
 --- Paragraph/start
 id: 39
-r#  26992  389  1
+r#  26994  389  1
 
 
 --- Sentence/start
 id: 50
-r#  26992  389  1
+r#  26994  389  1
 
 --- Sentence//end
 id: 50
-r#  27386  394  54
+r#  27388  394  54
 p: .
 t. 
 |  For example, one important modern development is the increased
@@ -1319,7 +1319,7 @@ t.
 
 --- Sentence/end 
 id: 50
-r#  27387  394  55
+r#  27389  394  55
 
 --- Paragraph/end 
 id: 39
@@ -1328,16 +1328,16 @@ y: N/A
 
 --- Paragraph/start
 id: 40
-r#  27389  396  1
+r#  27391  396  1
 
 
 --- Sentence/start
 id: 51
-r#  27389  396  1
+r#  27391  396  1
 
 --- Sentence//end
 id: 51
-r#  27648  399  51
+r#  27650  399  51
 p: .
 t. 
 |  Corresponding to this new legal landscape is a new sort of parental
@@ -1347,7 +1347,7 @@ t.
 
 --- Sentence/end 
 id: 51
-r#  27649  399  52
+r#  27651  399  52
 
 --- Paragraph/end 
 id: 40
@@ -1356,16 +1356,16 @@ y: N/A
 
 --- Paragraph/start
 id: 41
-r#  27651  401  1
+r#  27653  401  1
 
 
 --- Sentence/start
 id: 52
-r#  27651  401  1
+r#  27653  401  1
 
 --- Sentence//end
 id: 52
-r#  27716  401  66
+r#  27718  401  66
 p: .
 t. 
 .  The book’s second part presents our observations in greater depth
@@ -1373,12 +1373,12 @@ t.
 
 --- Sentence/switch
 id: 53
-r#  27717  401  67
+r#  27719  401  67
 
 
 --- Sentence//end
 id: 53
-r#  28939  417  5
+r#  28941  417  5
 p: .
 t. 
 |  First, we discuss in some detail the history and applications of ethnomethodologists’ approach to sociological inquiry, and demonstrate
@@ -1400,7 +1400,7 @@ t.
 
 --- Sentence/end 
 id: 53
-r#  28940  417  6
+r#  28942  417  6
 
 --- Paragraph/end 
 id: 41
@@ -1409,12 +1409,12 @@ y: N/A
 
 --- Paragraph/start
 id: 42
-r#  28942  419  1
+r#  28944  419  1
 
 
 --- Sentence/start
 id: 54
-r#  28942  419  1
+r#  28944  419  1
 --- Paragraph/end 
 id: 42
 y: N/A
@@ -1422,16 +1422,16 @@ y: N/A
 
 --- Paragraph/start
 id: 43
-r#  29621  428  1
+r#  29623  428  1
 
 
 --- Sentence/start
 id: 55
-r#  29621  428  1
+r#  29623  428  1
 
 --- Sentence//end
 id: 55
-r#  29897  431  62
+r#  29899  431  62
 p: .
 t. 
 |  The third, and last, part of this book discusses possible ways of
@@ -1448,7 +1448,7 @@ t.
 
 --- Sentence/end 
 id: 55
-r#  29898  431  63
+r#  29900  431  63
 
 --- Paragraph/end 
 id: 43
