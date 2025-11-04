@@ -1256,26 +1256,34 @@ void GTagML_Graph_Build::leave_double_quote_mode()
 
 void GTagML_Graph_Build::enter_single_quote_mode()
 {
+ reset_primary();
  parse_context_.flags.single_quote_mode = true;
 
+ latex_stream_ << "\\sq{";
 }
 
 void GTagML_Graph_Build::leave_single_quote_mode()
 {
- parse_context_.flags.single_quote_mode = false;
+ reset_primary();
 
+ parse_context_.flags.single_quote_mode = false;
+ latex_stream_ << "}";
 }
 
 void GTagML_Graph_Build::enter_single_quote_mode_doubled()
 {
+ reset_primary();
  parse_context_.flags.single_quote_mode_doubled = true;
 
+ latex_stream_ << "\\sqq{";
 }
 
 void GTagML_Graph_Build::leave_single_quote_mode_doubled()
 {
+ reset_primary();
  parse_context_.flags.single_quote_mode_doubled = false;
 
+ latex_stream_ << "}";
 }
 
 void GTagML_Graph_Build::enter_single_quote_mode_trebled()

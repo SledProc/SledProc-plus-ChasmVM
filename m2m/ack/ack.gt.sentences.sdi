@@ -558,7 +558,7 @@ r#  14170  188  1
 
 --- Sentence//end
 id: 21
-r#  14800  196  8
+r#  14802  196  8
 p: .
 t. 
 |  We would also like to thank Fort Lee, New Jersey, resident Martin
@@ -571,7 +571,7 @@ t.
 |  The Jewish Press, he wrote a poignant Letter to the Editor stating that he
 |  davened [prayed] for a reunion ...\ for all the mothers across America
 |  who have been bereft of their children.Activist, educator, and Orthodox community leader Evelyn
-|  Haies (Founder of Rachel's Children Reclamation Foundation),
+|  Haies (Fou\-nder of Rachel's Children Reclamation Foundation),
 |  who unfortunately succumbed to melanoma before this second edition
 |  was completed, determinedly reached out, even in her last years of life,
 |  to mothers harmed by the family courts and child welfare system. Evelyn referred their cases to us, as she was resolved to see a solution to this
@@ -582,7 +582,7 @@ t.
 
 --- Sentence/end 
 id: 21
-r#  14801  196  9
+r#  14803  196  9
 
 --- Paragraph/end 
 id: 14
@@ -591,16 +591,16 @@ y: N/A
 
 --- Paragraph/start
 id: 15
-r#  14803  198  1
+r#  14805  198  1
 
 
 --- Sentence/start
 id: 22
-r#  14803  198  1
+r#  14805  198  1
 
 --- Sentence//end
 id: 22
-r#  15341  203  46
+r#  15343  203  46
 p: .
 t. 
 |  We also want to acknowledge, among this group of sympathetic ears,
@@ -612,7 +612,7 @@ t.
 
 --- Sentence/end 
 id: 22
-r#  15342  203  47
+r#  15344  203  47
 
 --- Paragraph/end 
 id: 15
@@ -621,16 +621,16 @@ y: N/A
 
 --- Paragraph/start
 id: 16
-r#  15344  205  1
+r#  15346  205  1
 
 
 --- Sentence/start
 id: 23
-r#  15344  205  1
+r#  15346  205  1
 
 --- Sentence//end
 id: 23
-r#  16212  213  154
+r#  16214  213  154
 p: .
 t. 
 |  We would like to give special acknowledgment to David Holzel,
@@ -646,12 +646,12 @@ t.
 
 --- Sentence/switch
 id: 24
-r#  16213  213  155
+r#  16215  213  155
 
 
 --- Sentence//end
 id: 24
-r#  16386  216  52
+r#  16388  216  52
 p: .
 t. 
 |  We knew, then and there, that the protective mothers
@@ -660,7 +660,7 @@ t.
 
 --- Sentence/end 
 id: 24
-r#  16387  216  53
+r#  16389  216  53
 
 --- Paragraph/end 
 id: 16
@@ -669,16 +669,16 @@ y: N/A
 
 --- Paragraph/start
 id: 17
-r#  16389  218  1
+r#  16391  218  1
 
 
 --- Sentence/start
 id: 25
-r#  16389  218  1
+r#  16391  218  1
 
 --- Sentence//end
 id: 25
-r#  16921  224  49
+r#  16923  224  49
 p: .
 t. 
 |  And lastly, among our personal circle of friends and neighbors, we
@@ -691,7 +691,7 @@ t.
 
 --- Sentence/end 
 id: 25
-r#  16922  224  50
+r#  16924  224  50
 
 --- Paragraph/end 
 id: 17
@@ -700,28 +700,28 @@ y: N/A
 
 --- Paragraph/start
 id: 18
-r#  16937  227  13
+r#  16939  227  13
 
 
 --- Sentence/start
 id: 26
-r#  16937  227  13
+r#  16939  227  13
 
 --- Sentence//end
 id: 26
-r#  16951  227  27
+r#  16953  227  27
 g. 
-|   @l(-%>) +16925/227/1
-|   +16929/227/5:0=16929/227/5
-|   +16936/227/12:0=16936/227/12
-.   @l() -16936/227/12
+|   @l(-%>) +16927/227/1
+|   +16931/227/5:0=16931/227/5
+|   +16938/227/12:0=16938/227/12
+.   @l() -16938/227/12
 p: .
 t. 
 .  A. N. and M. L
 
 --- Sentence/end 
 id: 26
-r#  16952  227  28
+r#  16954  227  28
 
 --- Paragraph/end 
 id: 18
@@ -730,12 +730,12 @@ y: N/A
 
 --- Paragraph/start
 id: 19
-r#  16966  229  13
+r#  16968  229  13
 
 
 --- Sentence/start
 id: 27
-r#  16966  229  13
+r#  16968  229  13
 --- Paragraph/end 
 id: 19
 y: N/A

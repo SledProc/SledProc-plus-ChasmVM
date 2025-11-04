@@ -105,25 +105,13 @@ t.
 |  not necessarily have to be achieved one state at a time. Rather, reform
 .  can be effected at one point - namely, at the level of federal legislation
 
---- Sentence/end 
-id: 4
+
+--- Sentence/switch
+id: 5
 r#  1754  31  76
 
 --- Paragraph/end 
 id: 3
-y: N/A
-
-
---- Paragraph/start
-id: 4
-r#  1756  33  1
-
-
---- Sentence/start
-id: 5
-r#  1756  33  1
---- Paragraph/end 
-id: 4
 y: N/A
 
 
@@ -134,17 +122,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 5
-r#  2411  47  4
+id: 4
+r#  2410  46  4
 
 
 --- Sentence/start
 id: 6
-r#  2411  47  4
+r#  2410  46  4
 
 --- Sentence//end
 id: 6
-r#  2553  48  72
+r#  2552  47  72
 p: .
 t. 
 |  This is because under the federal
@@ -162,23 +150,35 @@ t.
 
 --- Sentence/switch
 id: 7
-r#  2554  48  73
+r#  2553  47  73
 
 
 --- Sentence//end
 id: 7
-r#  2818  51  50
+r#  2817  50  50
 p: .
 t. 
 |  In practice, it generally protects the guilty - particularly family court
 |  personnel guilty of malfeasance. It has long been recognized that secrecy contributes to abuses of proper legal norms. This is why criminal
 .  defendants are generally guaranteed public trials
 
+--- Sentence/end 
+id: 7
+r#  2818  50  51
 
---- Sentence/switch
+--- Paragraph/end 
+id: 4
+y: N/A
+
+
+--- Paragraph/start
+id: 5
+r#  2820  52  1
+
+
+--- Sentence/start
 id: 8
-r#  2819  51  51
-
+r#  2820  52  1
 
 --- Sentence//end
 id: 8
@@ -213,10 +213,23 @@ r#  3712  63  1
 --- Sentence/start
 id: 9
 r#  3712  63  1
+--- Paragraph/end 
+id: 6
+y: N/A
+
+
+--- Paragraph/start
+id: 7
+r#  4404  73  1
+
+
+--- Sentence/start
+id: 10
+r#  4404  73  1
 
 --- Sentence//end
-id: 9
-r#  4764  77  6
+id: 10
+r#  4765  78  6
 p: .
 t. 
 |  These rules do not protect children. There is no evidence that abused
@@ -227,8 +240,7 @@ t.
 |  a state legislative committee that she did not believe the judge could
 |  have behaved so outrageously had the transcripts of his closed-doors
 |  interviews with the child been available to the public.\3 But they were
-|  sealed - supposedly for the child’s protection.
-|  Confidentiality rules are unnecessary. By informal agreement, news
+|  sealed - supposedly for the child’s protection.Confidentiality rules are unnecessary. By informal agreement, news
 |  organizations almost universally withhold the names of rape victims in
 |  their reports, as well as the names of certain other people whose need
 |  for privacy is obvious. This informal system, coupled with open trials,
@@ -236,26 +248,26 @@ t.
 .  tried
 
 --- Sentence/end 
-id: 9
-r#  4765  77  7
+id: 10
+r#  4766  78  7
 
 --- Paragraph/end 
-id: 6
+id: 7
 y: N/A
 
 
 --- Paragraph/start
-id: 7
-r#  4767  79  1
+id: 8
+r#  4768  80  1
 
 
 --- Sentence/start
-id: 10
-r#  4767  79  1
+id: 11
+r#  4768  80  1
 
 --- Sentence//end
-id: 10
-r#  4973  80  140
+id: 11
+r#  4974  81  140
 p: .
 t. 
 |  Finally, confidentiality rules are hypocritical. One notorious New
@@ -263,13 +275,13 @@ t.
 
 
 --- Sentence/switch
-id: 11
-r#  4974  80  141
+id: 12
+r#  4975  81  141
 
 
 --- Sentence//end
-id: 11
-r#  6126  95  11
+id: 12
+r#  6127  96  11
 p: .
 t. 
 |  When one of us investigated the case, more than one official of the CPS
@@ -289,26 +301,26 @@ t.
 .  be checked
 
 --- Sentence/end 
-id: 11
-r#  6127  95  12
+id: 12
+r#  6128  96  12
 
 --- Paragraph/end 
-id: 7
+id: 8
 y: N/A
 
 
 --- Paragraph/start
-id: 8
-r#  6129  97  1
+id: 9
+r#  6130  98  1
 
 
 --- Sentence/start
-id: 12
-r#  6129  97  1
+id: 13
+r#  6130  98  1
 
 --- Sentence//end
-id: 12
-r#  6642  103  18
+id: 13
+r#  6643  104  18
 p: ?
 t. 
 |  It is logical that records of all family court proceedings should be
@@ -320,26 +332,26 @@ t.
 .  defendants do not
 
 --- Sentence/end 
-id: 12
-r#  6643  103  19
+id: 13
+r#  6644  104  19
 
 --- Paragraph/end 
-id: 8
+id: 9
 y: N/A
 
 
 --- Paragraph/start
-id: 9
-r#  6645  105  1
+id: 10
+r#  6646  106  1
 
 
 --- Sentence/start
-id: 13
-r#  6645  105  1
+id: 14
+r#  6646  106  1
 
 --- Sentence//end
-id: 13
-r#  7647  115  139
+id: 14
+r#  7648  116  139
 p: .
 t. 
 |  Sometimes a litigant before a family court tries to share the proceedings with the press. On many such occasions, family courts insulate
@@ -354,26 +366,14 @@ t.
 |  being informed about the inequities rampant in the system.\4 In many
 .  cases judges have extended the force of such orders by warning mothers not even to talk about their cases to other mothers or to advocates
 
---- Sentence/end 
-id: 13
-r#  7648  115  140
 
---- Paragraph/end 
-id: 9
-y: N/A
+--- Sentence/switch
+id: 15
+r#  7649  116  140
 
-
---- Paragraph/start
-id: 10
-r#  7650  117  1
-
-
---- Sentence/start
-id: 14
-r#  7650  117  1
 
 --- Sentence//end
-id: 14
+id: 15
 r#  7877  119  20
 p: .
 t. 
@@ -382,7 +382,7 @@ t.
 .  should be abolished
 
 --- Sentence/end 
-id: 14
+id: 15
 r#  7878  119  21
 
 --- Paragraph/end 
@@ -396,11 +396,11 @@ r#  7880  121  1
 
 
 --- Sentence/start
-id: 15
+id: 16
 r#  7880  121  1
 
 --- Sentence//end
-id: 15
+id: 16
 r#  9281  135  51
 p: .
 t. 
@@ -421,7 +421,7 @@ t.
 .  attack on constitutional principles of due process
 
 --- Sentence/end 
-id: 15
+id: 16
 r#  9282  135  52
 
 --- Paragraph/end 
@@ -435,11 +435,11 @@ r#  9284  137  1
 
 
 --- Sentence/start
-id: 16
+id: 17
 r#  9284  137  1
 
 --- Sentence//end
-id: 16
+id: 17
 r#  9779  143  69
 p: .
 t. 
@@ -453,12 +453,12 @@ t.
 
 
 --- Sentence/switch
-id: 17
+id: 18
 r#  9780  143  70
 
 
 --- Sentence//end
-id: 17
+id: 18
 r#  9918  145  70
 p: .
 t. 
@@ -466,7 +466,7 @@ t.
 .  recording, if it exists) of such an interview be sealed from a parent
 
 --- Sentence/end 
-id: 17
+id: 18
 r#  9919  145  71
 
 --- Paragraph/end 
@@ -480,11 +480,11 @@ r#  9921  147  1
 
 
 --- Sentence/start
-id: 18
+id: 19
 r#  9921  147  1
 
 --- Sentence//end
-id: 18
+id: 19
 r#  10199  150  70
 p: .
 t. 
@@ -493,27 +493,15 @@ t.
 |  are not recorded by transcribers, and no official record of them is ever
 .  generated. But they can have momentous effects on a family court case
 
---- Sentence/end 
-id: 18
+
+--- Sentence/switch
+id: 20
 r#  10200  150  71
 
---- Paragraph/end 
-id: 13
-y: N/A
-
-
---- Paragraph/start
-id: 14
-r#  10202  152  1
-
-
---- Sentence/start
-id: 19
-r#  10202  152  1
 
 --- Sentence//end
-id: 19
-r#  10762  158  64
+id: 20
+r#  10761  157  64
 p: .
 t. 
 |  What is more, these conferences are often off-limits to the parties themselves, so that mothers learn what happened only afterward and only
@@ -525,26 +513,26 @@ t.
 .  yet a mother can never prove, afterward, what actually happened
 
 --- Sentence/end 
-id: 19
-r#  10763  158  65
+id: 20
+r#  10762  157  65
 
 --- Paragraph/end 
-id: 14
+id: 13
 y: N/A
 
 
 --- Paragraph/start
-id: 15
-r#  10765  160  1
+id: 14
+r#  10764  159  1
 
 
 --- Sentence/start
-id: 20
-r#  10765  160  1
+id: 21
+r#  10764  159  1
 
 --- Sentence//end
-id: 20
-r#  11896  175  65
+id: 21
+r#  11895  174  65
 p: .
 t. 
 |  To take a single example: in a New York case, after a child reported
@@ -564,14 +552,26 @@ t.
 |  that very day and placed into foster care. But there was never any record
 .  of this, since it all took place in an unofficial conference
 
-
---- Sentence/switch
+--- Sentence/end 
 id: 21
-r#  11897  175  66
+r#  11896  174  66
 
+--- Paragraph/end 
+id: 14
+y: N/A
+
+
+--- Paragraph/start
+id: 15
+r#  11898  176  1
+
+
+--- Sentence/start
+id: 22
+r#  11898  176  1
 
 --- Sentence//end
-id: 21
+id: 22
 r#  12115  179  12
 p: .
 t. 
@@ -581,7 +581,7 @@ t.
 .  proceedings
 
 --- Sentence/end 
-id: 21
+id: 22
 r#  12116  179  13
 
 --- Paragraph/end 
@@ -595,7 +595,7 @@ r#  12118  181  1
 
 
 --- Sentence/start
-id: 22
+id: 23
 r#  12118  181  1
 --- Paragraph/end 
 id: 16
@@ -610,16 +610,16 @@ y: N/A
 
 --- Paragraph/start
 id: 17
-r#  12467  189  1
+r#  12470  189  4
 
 
 --- Sentence/start
-id: 23
-r#  12467  189  1
+id: 24
+r#  12470  189  4
 
 --- Sentence//end
-id: 23
-r#  12764  193  15
+id: 24
+r#  12767  193  15
 p: .
 t. 
 |  Finally, in any case in which a judge uses private proceedings to intimidate or threaten a child or parent, this should be grounds, in and
@@ -632,8 +632,8 @@ t.
 .  direct reforms
 
 --- Sentence/end 
-id: 23
-r#  12765  193  16
+id: 24
+r#  12768  193  16
 
 --- Paragraph/end 
 id: 17
@@ -642,16 +642,16 @@ y: N/A
 
 --- Paragraph/start
 id: 18
-r#  12767  195  1
+r#  12770  195  1
 
 
 --- Sentence/start
-id: 24
-r#  12767  195  1
+id: 25
+r#  12770  195  1
 
 --- Sentence//end
-id: 24
-r#  13840  207  69
+id: 25
+r#  13843  207  69
 p: .
 t. 
 |  First, no state should permit a change of custody from one parent or
@@ -669,8 +669,8 @@ t.
 .  way, many a protective mother has lost custody of her child for good
 
 --- Sentence/end 
-id: 24
-r#  13841  207  70
+id: 25
+r#  13844  207  70
 
 --- Paragraph/end 
 id: 18
@@ -679,16 +679,16 @@ y: N/A
 
 --- Paragraph/start
 id: 19
-r#  13843  209  1
+r#  13846  209  1
 
 
 --- Sentence/start
-id: 25
-r#  13843  209  1
+id: 26
+r#  13846  209  1
 
 --- Sentence//end
-id: 25
-r#  15020  222  45
+id: 26
+r#  15023  222  45
 p: .
 t. 
 |  It is true that some sort of mechanism must exist by which the relevant government agency can seek the emergency removal of a child from
@@ -706,15 +706,27 @@ t.
 |  parental alienation and so forth. State law should specify that a parent’s mere belief that a child has been abused is never, in and of itself,
 .  grounds for a temporary or emergency removal
 
-
---- Sentence/switch
+--- Sentence/end 
 id: 26
-r#  15021  222  46
+r#  15024  222  46
 
+--- Paragraph/end 
+id: 19
+y: N/A
+
+
+--- Paragraph/start
+id: 20
+r#  15026  224  1
+
+
+--- Sentence/start
+id: 27
+r#  15026  224  1
 
 --- Sentence//end
-id: 26
-r#  15748  230  23
+id: 27
+r#  15752  231  23
 p: .
 t. 
 |  A court order granting an emergency removal must reflect the seriousness of its consequences. When a family court grants the state’s
@@ -727,26 +739,26 @@ t.
 .  notice to both parties
 
 --- Sentence/end 
-id: 26
-r#  15749  230  24
+id: 27
+r#  15753  231  24
 
 --- Paragraph/end 
-id: 19
+id: 20
 y: N/A
 
 
 --- Paragraph/start
-id: 20
-r#  15751  232  1
+id: 21
+r#  15755  233  1
 
 
 --- Sentence/start
-id: 27
-r#  15751  232  1
+id: 28
+r#  15755  233  1
 
 --- Sentence//end
-id: 27
-r#  16549  242  12
+id: 28
+r#  16553  243  12
 p: .
 t. 
 |  There is another loophole in the laws that allow emergency removal
@@ -762,26 +774,39 @@ t.
 .  immediately
 
 --- Sentence/end 
-id: 27
-r#  16550  242  13
+id: 28
+r#  16554  243  13
 
 --- Paragraph/end 
-id: 20
+id: 21
 y: N/A
 
 
 --- Paragraph/start
-id: 21
-r#  16552  244  1
+id: 22
+r#  16556  245  1
 
 
 --- Sentence/start
-id: 28
-r#  16552  244  1
+id: 29
+r#  16556  245  1
+--- Paragraph/end 
+id: 22
+y: N/A
+
+
+--- Paragraph/start
+id: 23
+r#  17758  260  1
+
+
+--- Sentence/start
+id: 30
+r#  17758  260  1
 
 --- Sentence//end
-id: 28
-r#  18589  269  37
+id: 30
+r#  18594  271  37
 p: .
 t. 
 |  This catch-22 must be banned. State laws should specify that a parent or guardian’s right to seek the return of a temporarily removed
@@ -797,8 +822,7 @@ t.
 |  ground that it was not procedurally proper or that no proper emergency
 |  was established. (And if the appeals court upholds the removal, it must
 |  state, in writing, the reasons no procedural impropriety was found and
-|  an adequate basis for a finding that an emergency existed.)
-|  In addition to these reforms, some of the abuses described in this
+|  an adequate basis for a finding that an emergency existed.)In addition to these reforms, some of the abuses described in this
 |  book make it clear that a statutory clarification is needed of at least one
 |  other civil rights issue. It is clear that, in the system as it exists, children
 |  can be removed from their mothers on the basis of fundamentally flawed
@@ -812,26 +836,26 @@ t.
 .  meeting the required legal standards
 
 --- Sentence/end 
-id: 28
-r#  18590  269  38
+id: 30
+r#  18595  271  38
 
 --- Paragraph/end 
-id: 21
+id: 23
 y: N/A
 
 
 --- Paragraph/start
-id: 22
-r#  18592  271  1
+id: 24
+r#  18597  273  1
 
 
 --- Sentence/start
-id: 29
-r#  18592  271  1
+id: 31
+r#  18597  273  1
 
 --- Sentence//end
-id: 29
-r#  19479  281  9
+id: 31
+r#  19484  283  9
 p: .
 t. 
 |  This should be explicitly rejected by statute, since
@@ -847,11 +871,11 @@ t.
 .  children
 
 --- Sentence/end 
-id: 29
-r#  19480  281  10
+id: 31
+r#  19485  283  10
 
 --- Paragraph/end 
-id: 22
+id: 24
 y: N/A
 
 
@@ -862,17 +886,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 23
-r#  19511  286  4
+id: 25
+r#  19516  288  4
 
 
 --- Sentence/start
-id: 30
-r#  19511  286  4
+id: 32
+r#  19516  288  4
 
 --- Sentence//end
-id: 30
-r#  19855  290  63
+id: 32
+r#  19860  292  63
 p: .
 t. 
 |  We have seen, throughout this book, how family courts use rulings on
@@ -881,15 +905,27 @@ t.
 |  evidence of sex abuse by fathers. This practice is obviously wrong, and
 .  it is so common that it should be explicitly banned by statute
 
+--- Sentence/end 
+id: 32
+r#  19861  292  64
 
---- Sentence/switch
-id: 31
-r#  19856  290  64
+--- Paragraph/end 
+id: 25
+y: N/A
 
+
+--- Paragraph/start
+id: 26
+r#  19863  294  1
+
+
+--- Sentence/start
+id: 33
+r#  19863  294  1
 
 --- Sentence//end
-id: 31
-r#  21000  306  6
+id: 33
+r#  21008  311  6
 p: .
 t. 
 |  To begin with, states should adopt specific language in the statutes
@@ -901,7 +937,9 @@ t.
 |  that already exist in many states that promise immunity to anyone who
 |  makes a report of suspected abuse, unless the report can be shown to be
 |  made maliciously. These laws protect nonparents from being sued for
-|  damages by someone they have accused of abuse, if that report is not ultimately confirmed by a court. However, mothers who report suspicions of
+|  damages by someone they have accused of abuse, if
+|  that report is not ultimately confirmed by a
+|  court. However, mothers who report suspicions of
 |  abuse are not immune from the kinds of legal action that threaten them
 |  most: they can lose their children either to foster care or by means of a
 |  change of custody, even when their report was made in good faith. The
@@ -910,26 +948,26 @@ t.
 .  funds
 
 --- Sentence/end 
-id: 31
-r#  21001  306  7
+id: 33
+r#  21009  311  7
 
 --- Paragraph/end 
-id: 23
+id: 26
 y: N/A
 
 
 --- Paragraph/start
-id: 24
-r#  21003  308  1
+id: 27
+r#  21011  313  1
 
 
 --- Sentence/start
-id: 32
-r#  21003  308  1
+id: 34
+r#  21011  313  1
 
 --- Sentence//end
-id: 32
-r#  22540  327  20
+id: 34
+r#  22548  332  20
 p: .
 t. 
 |  Something along these lines has already been enacted into law in California. In October 1999, California adopted an amendment to its Family
@@ -952,26 +990,26 @@ t.
 
 
 --- Sentence/switch
-id: 33
-r#  22541  327  21
+id: 35
+r#  22549  332  21
 
 --- Paragraph/end 
-id: 24
+id: 27
 y: N/A
 
 
 --- Paragraph/start
-id: 25
-r#  22545  330  1
+id: 28
+r#  22553  335  1
 
 
 --- Sentence/start
-id: 34
-r#  22545  330  1
+id: 36
+r#  22553  335  1
 
 --- Sentence//end
-id: 34
-r#  22686  331  75
+id: 36
+r#  22694  336  75
 p: .
 t. 
 |  Whether this reform has had the intended effect is debatable. Some
@@ -979,13 +1017,13 @@ t.
 
 
 --- Sentence/switch
-id: 35
-r#  22687  331  76
+id: 37
+r#  22695  336  76
 
 
 --- Sentence//end
-id: 35
-r#  23290  338  46
+id: 37
+r#  23298  343  46
 p: .
 t. 
 |  Moreover, the new law does not specify that its effect should be retroactive, and the family courts have refused to give it such effect, which
@@ -997,26 +1035,26 @@ t.
 .  means of interfering with the father’s rights
 
 --- Sentence/end 
-id: 35
-r#  23291  338  47
+id: 37
+r#  23299  343  47
 
 --- Paragraph/end 
-id: 25
+id: 28
 y: N/A
 
 
 --- Paragraph/start
-id: 26
-r#  23293  340  1
+id: 29
+r#  23301  345  1
 
 
 --- Sentence/start
-id: 36
-r#  23293  340  1
+id: 38
+r#  23301  345  1
 
 --- Sentence//end
-id: 36
-r#  23673  345  16
+id: 38
+r#  23681  350  16
 p: .
 t. 
 |  In that case, and in two others like it, the aggrieved mothers sought to
@@ -1027,26 +1065,26 @@ t.
 .  to restrictions
 
 --- Sentence/end 
-id: 36
-r#  23674  345  17
+id: 38
+r#  23682  350  17
 
 --- Paragraph/end 
-id: 26
+id: 29
 y: N/A
 
 
 --- Paragraph/start
-id: 27
-r#  23676  347  1
+id: 30
+r#  23684  352  1
 
 
 --- Sentence/start
-id: 37
-r#  23676  347  1
+id: 39
+r#  23684  352  1
 
 --- Sentence//end
-id: 37
-r#  25138  368  11
+id: 39
+r#  25146  373  11
 p: .
 t. 
 |  In light of this, protective parent advocates have proposed a further
@@ -1071,26 +1109,26 @@ t.
 
 
 --- Sentence/switch
-id: 38
-r#  25139  368  12
+id: 40
+r#  25147  373  12
 
 --- Paragraph/end 
-id: 27
+id: 30
 y: N/A
 
 
 --- Paragraph/start
-id: 28
-r#  25143  371  1
+id: 31
+r#  25151  376  1
 
 
 --- Sentence/start
-id: 39
-r#  25143  371  1
+id: 41
+r#  25151  376  1
 
 --- Sentence//end
-id: 39
-r#  25986  380  10
+id: 41
+r#  25994  385  10
 p: .
 t. 
 |  It is typical of the warped state of America’s family court system that
@@ -1105,41 +1143,53 @@ t.
 .  State Bar
 
 --- Sentence/end 
-id: 39
-r#  25987  380  11
+id: 41
+r#  25995  385  11
 
 --- Paragraph/end 
-id: 28
+id: 31
 y: N/A
 
 
 --- Paragraph/start
-id: 29
-r#  25989  382  1
+id: 32
+r#  25997  387  1
 
 
 --- Sentence/start
-id: 40
-r#  25989  382  1
+id: 42
+r#  25997  387  1
 
 --- Sentence//end
-id: 40
-r#  26258  384  64
+id: 42
+r#  26266  389  64
 p: !
 t. 
 |  The reasoning offered by the opponents was depressingly disingenuous: they claimed that the new bill amounted to undue interference
 |  with the courts’ discretion (even in cases in which judges’ decisions had
 .  contravened the legal standards set by the legislature in 1999)
 
+--- Sentence/end 
+id: 42
+r#  26267  389  65
 
---- Sentence/switch
-id: 41
-r#  26259  384  65
+--- Paragraph/end 
+id: 32
+y: N/A
 
+
+--- Paragraph/start
+id: 33
+r#  26269  391  1
+
+
+--- Sentence/start
+id: 43
+r#  26269  391  1
 
 --- Sentence//end
-id: 41
-r#  26921  389  8
+id: 43
+r#  26930  395  8
 p: ?
 t. 
 |  California’s example supports our suggestion that a reform protecting parents from punishment for making a non-malicious accusation of sex abuse against the other parent (or anyone else) should
@@ -1149,11 +1199,11 @@ t.
 .  support
 
 --- Sentence/end 
-id: 41
-r#  26922  389  9
+id: 43
+r#  26931  395  9
 
 --- Paragraph/end 
-id: 29
+id: 33
 y: N/A
 
 
@@ -1164,17 +1214,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 30
-r#  26952  394  4
+id: 34
+r#  26961  400  4
 
 
 --- Sentence/start
-id: 42
-r#  26952  394  4
+id: 44
+r#  26961  400  4
 
 --- Sentence//end
-id: 42
-r#  27168  397  7
+id: 44
+r#  27177  403  7
 p: .
 t. 
 |  Family courts are empowered, as are all courts, to hold a recalcitrant
@@ -1183,26 +1233,26 @@ t.
 .  courts
 
 --- Sentence/end 
-id: 42
-r#  27169  397  8
+id: 44
+r#  27178  403  8
 
 --- Paragraph/end 
-id: 30
+id: 34
 y: N/A
 
 
 --- Paragraph/start
-id: 31
-r#  27171  399  1
+id: 35
+r#  27180  405  1
 
 
 --- Sentence/start
-id: 43
-r#  27171  399  1
+id: 45
+r#  27180  405  1
 
 --- Sentence//end
-id: 43
-r#  27452  402  68
+id: 45
+r#  27461  408  68
 p: .
 t. 
 |  All too often, contempt of court is used as a disingenuous label that
@@ -1212,13 +1262,13 @@ t.
 
 
 --- Sentence/switch
-id: 44
-r#  27453  402  69
+id: 46
+r#  27462  408  69
 
 
 --- Sentence//end
-id: 44
-r#  27980  408  15
+id: 46
+r#  27989  414  15
 p: .
 t. 
 |  In some cases, this is even done before a mother has violated an order - as
@@ -1229,52 +1279,52 @@ t.
 .  lost her child
 
 --- Sentence/end 
-id: 44
-r#  27981  408  16
+id: 46
+r#  27990  414  16
 
 --- Paragraph/end 
-id: 31
+id: 35
 y: N/A
 
 
 --- Paragraph/start
-id: 32
-r#  27983  410  1
+id: 36
+r#  27992  416  1
 
 
 --- Sentence/start
-id: 45
-r#  27983  410  1
+id: 47
+r#  27992  416  1
 
 --- Sentence//end
-id: 45
-r#  28090  411  37
+id: 47
+r#  28099  417  37
 p: .
 t. 
 |  We propose some basic reforms that allow family courts to retain their
 .  contempt powers without abusing them
 
 --- Sentence/end 
-id: 45
-r#  28091  411  38
+id: 47
+r#  28100  417  38
 
 --- Paragraph/end 
-id: 32
+id: 36
 y: N/A
 
 
 --- Paragraph/start
-id: 33
-r#  28093  413  1
+id: 37
+r#  28102  419  1
 
 
 --- Sentence/start
-id: 46
-r#  28093  413  1
+id: 48
+r#  28102  419  1
 
 --- Sentence//end
-id: 46
-r#  29001  423  48
+id: 48
+r#  29010  429  48
 p: .
 t. 
 |  First, the exact basis of any contempt ruling, criminal or civil, must
@@ -1290,26 +1340,26 @@ t.
 .  to correct the behavior frowned on by the court
 
 --- Sentence/end 
-id: 46
-r#  29002  423  49
+id: 48
+r#  29011  429  49
 
 --- Paragraph/end 
-id: 33
+id: 37
 y: N/A
 
 
 --- Paragraph/start
-id: 34
-r#  29004  425  1
+id: 38
+r#  29013  431  1
 
 
 --- Sentence/start
-id: 47
-r#  29004  425  1
+id: 49
+r#  29013  431  1
 
 --- Sentence//end
-id: 47
-r#  29888  433  22
+id: 49
+r#  29897  439  22
 p: .
 t. 
 |  The abuse of contempt powers in family courts does not affect only litigants. Judges sometimes issue contempt citations against social workers
@@ -1323,26 +1373,26 @@ t.
 .  abuse contempt powers
 
 --- Sentence/end 
-id: 47
-r#  29889  433  23
+id: 49
+r#  29898  439  23
 
 --- Paragraph/end 
-id: 34
+id: 38
 y: N/A
 
 
 --- Paragraph/start
-id: 35
-r#  29891  435  1
+id: 39
+r#  29900  441  1
 
 
 --- Sentence/start
-id: 48
-r#  29891  435  1
+id: 50
+r#  29900  441  1
 
 --- Sentence//end
-id: 48
-r#  30995  448  42
+id: 50
+r#  31004  454  42
 p: .
 t. 
 |  Accordingly, we propose the following: each state, in order to continue to receive funding under CAPTA, must require child protective
@@ -1361,11 +1411,11 @@ t.
 .  citations for attempting to do their jobs
 
 --- Sentence/end 
-id: 48
-r#  30996  448  43
+id: 50
+r#  31005  454  43
 
 --- Paragraph/end 
-id: 35
+id: 39
 y: N/A
 
 
@@ -1376,17 +1426,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 36
-r#  31035  453  4
+id: 40
+r#  31044  459  4
 
 
 --- Sentence/start
-id: 49
-r#  31035  453  4
+id: 51
+r#  31044  459  4
 
 --- Sentence//end
-id: 49
-r#  31435  457  51
+id: 51
+r#  31444  463  51
 p: .
 t. 
 |  Judges enjoy virtually unlimited immunity from civil suits, no matter
@@ -1395,15 +1445,27 @@ t.
 |  never perform their job in an independent manner. For the same reason,
 .  it is very difficult to remove a judge from office
 
+--- Sentence/end 
+id: 51
+r#  31445  463  52
 
---- Sentence/switch
-id: 50
-r#  31436  457  52
+--- Paragraph/end 
+id: 40
+y: N/A
 
+
+--- Paragraph/start
+id: 41
+r#  31447  465  1
+
+
+--- Sentence/start
+id: 52
+r#  31447  465  1
 
 --- Sentence//end
-id: 50
-r#  32017  466  7
+id: 52
+r#  32027  473  7
 p: .
 t. 
 |  This, however, only makes it imperative that family court judges - 
@@ -1417,26 +1479,26 @@ t.
 .  public
 
 --- Sentence/end 
-id: 50
-r#  32018  466  8
+id: 52
+r#  32028  473  8
 
 --- Paragraph/end 
-id: 36
+id: 41
 y: N/A
 
 
 --- Paragraph/start
-id: 37
-r#  32020  468  1
+id: 42
+r#  32030  475  1
 
 
 --- Sentence/start
-id: 51
-r#  32020  468  1
+id: 53
+r#  32030  475  1
 
 --- Sentence//end
-id: 51
-r#  32414  473  36
+id: 53
+r#  32424  480  36
 p: .
 t. 
 |  The same periodic review should be applied to the judicial hearing
@@ -1447,26 +1509,26 @@ t.
 .  judge who assigned the case to them
 
 --- Sentence/end 
-id: 51
-r#  32415  473  37
+id: 53
+r#  32425  480  37
 
 --- Paragraph/end 
-id: 37
+id: 42
 y: N/A
 
 
 --- Paragraph/start
-id: 38
-r#  32417  475  1
+id: 43
+r#  32427  482  1
 
 
 --- Sentence/start
-id: 52
-r#  32417  475  1
+id: 54
+r#  32427  482  1
 
 --- Sentence//end
-id: 52
-r#  33620  487  71
+id: 54
+r#  33630  494  71
 p: .
 t. 
 |  The importance of applying judicial review procedures to JHOs is illustrated by the example of Leon S. Deutsch, a Brooklyn, New York,
@@ -1485,13 +1547,13 @@ t.
 
 
 --- Sentence/switch
-id: 53
-r#  33621  487  72
+id: 55
+r#  33631  494  72
 
 
 --- Sentence//end
-id: 53
-r#  33853  490  24
+id: 55
+r#  33863  497  24
 p: .
 t. 
 |  But he continued to hear and decide exactly the sort of matrimonial
@@ -1499,26 +1561,26 @@ t.
 .  for family court judges
 
 --- Sentence/end 
-id: 53
-r#  33854  490  25
+id: 55
+r#  33864  497  25
 
 --- Paragraph/end 
-id: 38
+id: 43
 y: N/A
 
 
 --- Paragraph/start
-id: 39
-r#  33856  492  1
+id: 44
+r#  33866  499  1
 
 
 --- Sentence/start
-id: 54
-r#  33856  492  1
+id: 56
+r#  33866  499  1
 
 --- Sentence//end
-id: 54
-r#  34472  499  63
+id: 56
+r#  34482  506  63
 p: .
 t. 
 |  We also believe that, given the systemic malfunction of the family
@@ -1530,15 +1592,27 @@ t.
 |  they should release annual reports. These commissions should consist of judges, psychologists (who are not court-appointed experts and
 .  therefore not dependent on judicial referrals), and laypersons
 
+--- Sentence/end 
+id: 56
+r#  34483  506  64
 
---- Sentence/switch
-id: 55
-r#  34473  499  64
+--- Paragraph/end 
+id: 44
+y: N/A
 
+
+--- Paragraph/start
+id: 45
+r#  34485  508  1
+
+
+--- Sentence/start
+id: 57
+r#  34485  508  1
 
 --- Sentence//end
-id: 55
-r#  35032  506  137
+id: 57
+r#  35043  514  137
 p: .
 t. 
 |  Finally, it should be noted that many states have already established
@@ -1550,11 +1624,11 @@ t.
 .  examine the penalization of mothers (and their lawyers, and sympathetic experts) for bringing sex abuse matters to the courts’ attention
 
 --- Sentence/end 
-id: 55
-r#  35033  506  138
+id: 57
+r#  35044  514  138
 
 --- Paragraph/end 
-id: 39
+id: 45
 y: N/A
 
 
@@ -1565,17 +1639,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 40
-r#  35067  511  4
+id: 46
+r#  35078  519  4
 
 
 --- Sentence/start
-id: 56
-r#  35067  511  4
+id: 58
+r#  35078  519  4
 
 --- Sentence//end
-id: 56
-r#  35499  515  139
+id: 58
+r#  35510  523  139
 p: .
 t. 
 |  Many states permit appeals only from final judgments. That is, only
@@ -1586,13 +1660,13 @@ t.
 
 
 --- Sentence/switch
-id: 57
-r#  35500  515  140
+id: 59
+r#  35511  523  140
 
 
 --- Sentence//end
-id: 57
-r#  36959  533  15
+id: 59
+r#  36970  541  15
 p: .
 t. 
 |  States that bar nonfinal appeals - interlocutory appeals, as lawyers call
@@ -1615,26 +1689,26 @@ t.
 .  removal orders
 
 --- Sentence/end 
-id: 57
-r#  36960  533  16
+id: 59
+r#  36971  541  16
 
 --- Paragraph/end 
-id: 40
+id: 46
 y: N/A
 
 
 --- Paragraph/start
-id: 41
-r#  36962  535  1
+id: 47
+r#  36973  543  1
 
 
 --- Sentence/start
-id: 58
-r#  36962  535  1
+id: 60
+r#  36973  543  1
 
 --- Sentence//end
-id: 58
-r#  37176  536  147
+id: 60
+r#  37187  544  147
 p: .
 t. 
 |  We further propose that the relevant statutes require the appellate
@@ -1642,11 +1716,11 @@ t.
 
 
 --- Sentence/switch
-id: 59
-r#  37177  536  148
+id: 61
+r#  37188  544  148
 
 --- Paragraph/end 
-id: 41
+id: 47
 y: N/A
 
 
@@ -1657,17 +1731,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 42
-r#  37480  544  4
+id: 48
+r#  37491  552  4
 
 
 --- Sentence/start
-id: 60
-r#  37480  544  4
+id: 62
+r#  37491  552  4
 
 --- Sentence//end
-id: 60
-r#  38146  552  21
+id: 62
+r#  38157  560  21
 p: .
 t. 
 |  (Some reasons for challenging these removals: the state’s failure to give
@@ -1683,24 +1757,24 @@ t.
 .  state action turn to
 
 --- Sentence/end 
-id: 60
-r#  38147  552  22
+id: 62
+r#  38158  560  22
 
 --- Paragraph/end 
-id: 42
+id: 48
 y: N/A
 
 
 --- Paragraph/start
-id: 43
-r#  38149  554  1
+id: 49
+r#  38160  562  1
 
 
 --- Sentence/start
-id: 61
-r#  38149  554  1
+id: 63
+r#  38160  562  1
 --- Paragraph/end 
-id: 43
+id: 49
 y: N/A
 
 
@@ -1711,43 +1785,43 @@ y: N/A
 
 
 --- Paragraph/start
-id: 44
-r#  39303  570  4
-
-
---- Sentence/start
-id: 62
-r#  39303  570  4
---- Paragraph/end 
-id: 44
-y: N/A
-
-
---- Paragraph/start
-id: 45
-r#  40461  587  1
-
-
---- Sentence/start
-id: 63
-r#  40461  587  1
---- Paragraph/end 
-id: 45
-y: N/A
-
-
---- Paragraph/start
-id: 46
-r#  40671  592  1
+id: 50
+r#  39314  578  4
 
 
 --- Sentence/start
 id: 64
-r#  40671  592  1
+r#  39314  578  4
+--- Paragraph/end 
+id: 50
+y: N/A
+
+
+--- Paragraph/start
+id: 51
+r#  40472  595  1
+
+
+--- Sentence/start
+id: 65
+r#  40472  595  1
+--- Paragraph/end 
+id: 51
+y: N/A
+
+
+--- Paragraph/start
+id: 52
+r#  40682  600  1
+
+
+--- Sentence/start
+id: 66
+r#  40682  600  1
 
 --- Sentence//end
-id: 64
-r#  41068  597  53
+id: 66
+r#  41079  605  53
 p: .
 t. 
 |  We propose that this be changed when it comes to cases that assert civil rights claims, even if these claims pertain to the removal of
@@ -1787,24 +1861,24 @@ t.
 .  facing for years at the hands of ill-informed judges
 
 --- Sentence/end 
-id: 64
-r#  41069  597  54
+id: 66
+r#  41080  605  54
 
 --- Paragraph/end 
-id: 46
+id: 52
 y: N/A
 
 
 --- Paragraph/start
-id: 47
-r#  41071  599  1
+id: 53
+r#  41082  607  1
 
 
 --- Sentence/start
-id: 65
-r#  41071  599  1
+id: 67
+r#  41082  607  1
 --- Paragraph/end 
-id: 47
+id: 53
 y: N/A
 
 
@@ -1815,17 +1889,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 48
-r#  41801  612  4
+id: 54
+r#  41812  620  4
 
 
 --- Sentence/start
-id: 66
-r#  41801  612  4
+id: 68
+r#  41812  620  4
 
 --- Sentence//end
-id: 66
-r#  41944  613  72
+id: 68
+r#  41955  621  72
 p: .
 t. 
 |  These training programs will yield particular benefits if they include
@@ -1841,13 +1915,13 @@ t.
 
 
 --- Sentence/switch
-id: 67
-r#  41945  613  73
+id: 69
+r#  41956  621  73
 
 
 --- Sentence//end
-id: 67
-r#  42319  618  15
+id: 69
+r#  42330  626  15
 p: .
 t. 
 |  Experience shows that a biased, hostile, or overtly misbehaving judge
@@ -1857,39 +1931,39 @@ t.
 .  conduct occurs
 
 --- Sentence/end 
-id: 67
-r#  42320  618  16
-
---- Paragraph/end 
-id: 48
-y: N/A
-
-
---- Paragraph/start
-id: 49
-r#  42322  620  1
-
-
---- Sentence/start
-id: 68
-r#  42322  620  1
---- Paragraph/end 
-id: 49
-y: N/A
-
-
---- Paragraph/start
-id: 50
-r#  42723  627  1
-
-
---- Sentence/start
 id: 69
-r#  42723  627  1
+r#  42331  626  16
+
+--- Paragraph/end 
+id: 54
+y: N/A
+
+
+--- Paragraph/start
+id: 55
+r#  42333  628  1
+
+
+--- Sentence/start
+id: 70
+r#  42333  628  1
+--- Paragraph/end 
+id: 55
+y: N/A
+
+
+--- Paragraph/start
+id: 56
+r#  42734  635  1
+
+
+--- Sentence/start
+id: 71
+r#  42734  635  1
 
 --- Sentence//end
-id: 69
-r#  43048  629  72
+id: 71
+r#  43059  637  72
 p: .
 t. 
 |  Such disqualifying conduct should include, at least: (1) refusal to hear
@@ -1903,13 +1977,13 @@ t.
 
 
 --- Sentence/switch
-id: 70
-r#  43049  629  73
+id: 72
+r#  43060  637  73
 
 --- Paragraph/end 
-id: 50
+id: 56
 y: N/A
 
 --- Paragraph/end 
-id: 50
+id: 56
 y: N/A
