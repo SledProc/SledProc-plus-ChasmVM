@@ -60,8 +60,8 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
    ,footnote_id_(0)
 //   ,jats_stream_(&jats_)
 {
-// flags.use_latex_sdi_markers = true;
-// flags.use_latex_sdi_markers = true;
+// flags.use_latex_sdi_all_markers = true;
+ flags.use_latex_sdi_paragraph_markers = true;
 }
 
 
@@ -193,7 +193,7 @@ void GTagML_Graph_Build::primary_acc(QString text)
 
   if(count < 2)
   {
-   if(flags.use_latex_sdi_markers)
+   if(flags.use_latex_sdi_all_markers)
      latex_stream_ << " \\> ";
 
    ++sentence_id_;
@@ -213,7 +213,7 @@ void GTagML_Graph_Build::primary_acc(QString text)
   if(flags.await_paragraph_start)
   {
    flags.await_paragraph_start = false;
-   if(flags.use_latex_sdi_markers)
+   if(flags.use_latex_sdi_all_markers || flags.use_latex_sdi_paragraph_markers)
      latex_stream_ << "\\:";
 
    ++paragraph_id_;
@@ -227,7 +227,7 @@ void GTagML_Graph_Build::primary_acc(QString text)
   if(flags.await_sentence_start)
   {
    flags.await_sentence_start = false;
-   if(flags.use_latex_sdi_markers)
+   if(flags.use_latex_sdi_all_markers)
      latex_stream_ << "\\+";
 
    ++sentence_id_;
@@ -724,6 +724,14 @@ void GTagML_Graph_Build::enter_heading(u1 count1, u1 count2)
 
  heading_counts_ = {count1, count2};
 
+ if(heading_counts_ == QPair<u1, u1> {3, 2})
+ {
+  latex_stream_ << "\n\n";
+  parse_context_.flags.auto_paragraph_mode = false;
+  return;
+ }
+
+
  flags.heading_acc = true;
  parse_context_.flags.heading_acc = true;
 }
@@ -834,7 +842,7 @@ void GTagML_Graph_Build::close_paragraph()
 
  if(flags.just_ended_sentence)
  {
-  if(flags.use_latex_sdi_markers)
+  if(flags.use_latex_sdi_all_markers)
     latex_stream_ << "\\<";
 
   sentences_sdi_stream_ << "\n--- Sentence/end \nid: "
@@ -848,7 +856,7 @@ void GTagML_Graph_Build::close_paragraph()
   }
  }
 
- if(flags.use_latex_sdi_markers)
+ if(flags.use_latex_sdi_all_markers || flags.use_latex_sdi_paragraph_markers)
    latex_stream_ << "\\;";
 
  sentences_sdi_stream_ << "\n--- Paragraph/end \nid: " << paragraph_id_
@@ -862,8 +870,14 @@ void GTagML_Graph_Build::close_paragraph()
   set_paragraph_bridge();
  }
  else
-   latex_stream_ << "\n}% end paragraph \n"; // pLevel
-   ; //latex_stream_ << "\n} % end paragraph";
+ {
+//  if(flags.use_latex_sdi_paragraph_markers)
+//    latex_stream_ << "\n}\\;% end paragraph \n";
+//  else
+    latex_stream_ << "\n}% end paragraph \n"; // pLevel
+    ; //latex_stream_ << "\n} % end paragraph";
+
+ }
 
  flags.just_ended_sentence = false;
 }
@@ -898,6 +912,11 @@ void GTagML_Graph_Build::auto_new_paragraph(QString cmd)
 
  xml_writer_.writeStartElement(cmd);
  latex_stream_ << "\n\\" << cmd << "{%\n";
+
+// if(flags.use_latex_sdi_paragraph_markers)
+//   latex_stream_ << "\\:";
+
+
 //? latex_stream_ << "\n\n\\pLevelOne{";
 
 //? latex_stream_ << "\n\n\\pLevelOne{";

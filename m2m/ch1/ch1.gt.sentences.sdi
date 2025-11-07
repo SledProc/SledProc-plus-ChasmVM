@@ -69,7 +69,7 @@ t.
 |  (Court T.V., January 24, 2003) to discuss the same issue. Professor
 |  Waller had produced a film documentary in 2001 (Small Justice: Little Justice in America’s Family Courts)\2 that profiled several protective
 |  mothers and the children who had been taken from them after they reported their suspicions about the children’s fathers. On Crier’s show,
-|  Waller was blunt and passionate: Our family courts have become a national scandal ...\ a system unto itself in which mothers pleading for
+|  Waller was blunt and passionate: Our family courts have become a national scandal . . a system unto itself in which mothers pleading for
 |  protection [for their sexually abused children] are often punished by
 |  the judge with loss of custody and even deprivation of their right to
 |  visit their children.\3 She called for immediate action to redress this
@@ -201,8 +201,8 @@ t.
 |  Children’s Cries for Help Deserve More Attention (1993) and Judges
 |  Sentence Kids to Life of Pain (1995). Former New York Times columnist
 |  Anna Quindlen, in one of her last columns for the paper, wrote: While
-|  we are quick to believe in the stranger pedophile ...\ conventional wisdom has it that sexual abuse is the cry-wolf of the vindictive, a common
-|  ploy in custody battles. That’s simply wrong.... Yet some judges, out of
+|  we are quick to believe in the stranger pedophile . . conventional wisdom has it that sexual abuse is the cry-wolf of the vindictive, a common
+|  ploy in custody battles. That’s simply wrong. . Yet some judges, out of
 |  denial or ignorance, continue to label women who insist their children
 |  are being molested as crazy, bitter, unfit.\6Michael Lesher, one of the authors of this book, co-wrote
 |  a major article for the Village Voice in the fall of 1996 on a mother’s futile struggle
@@ -336,11 +336,11 @@ t.
 |  lawyers and social scientists. A growing body of professional literature
 |  is reporting that the family courts are failing to protect sexually abused
 |  children, while punishing mothers who report abuse. Sharon S. Keating,
-|  a Louisiana lawyer, wrote in 1988 for the Loyola Law Review:{[I]}t is feared that if a parent makes ...\ an allegation [of abuse against
+|  a Louisiana lawyer, wrote in 1988 for the Loyola Law Review:{[I]}t is feared that if a parent makes . . an allegation [of abuse against
 |  the other parent], that parent will be automatically bran\-ded as a
-|  paranoid, vindictive person.... These attitudes can easily lead to
+|  paranoid, vindictive person. . These attitudes can easily lead to
 |  a prejudice so strong that the likelihood that a court will choose
-|  an accusing parent as future caretaker for the child is greatly diminished. Thus the parent is in a no-win situation. If the ...\ parent
+|  an accusing parent as future caretaker for the child is greatly diminished. Thus the parent is in a no-win situation. If the . . parent
 |  remains silent about the abuse, it will surely continue. But if accusations are made, the [nonoffending] parent could lose custody
 |  completely, placing the child in constant danger.\9
 |  In the Journal of Child Sexual Abuse, Neustein and Goetting (1999)
@@ -436,7 +436,7 @@ t.
 |  children (pp. 142–143). Clearly, sexual abuse of one’s child does not
 |  appear to preclude an award of custody to the abuser: [T]he current
 |  trend which effectively refuses protection to children whose mothers allege sexual abuse and punishes their mothers, may be seen as part of the
-|  backlash against feminism ...\ [wherein] mother’s rights had been deteriorating for some time before the main backlash received the [feminist]
+|  backlash against feminism . . [wherein] mother’s rights had been deteriorating for some time before the main backlash received the [feminist]
 .  movement’s attention (p. 144)
 
 --- Sentence/end 
@@ -573,7 +573,7 @@ t.
 |  mothers who reported both intimate partner violence (abuse by a partner or spouse) against themselves and sexual abuse of their child or
 |  children by the allegedly violent partner. The 106-page report, titled Battered Mothers Speak Out: A Human Rights Report on Domestic Violence
 |  and Child Custody in the Massachusetts Family Courts, documented
-|  instances in which the Massachusetts family courts are violating internationally accepted human rights laws and standards ...\ [and] are
+|  instances in which the Massachusetts family courts are violating internationally accepted human rights laws and standards . . [and] are
 |  violating Massachusetts law and policy (p. iv).\16 In the June 2004 issue of
 |  the American Journal of Public Health, the authors summarized
 |  their findings, which revealed a consistent pattern of potential human
@@ -606,6 +606,31 @@ r#  14852  216  1
 --- Sentence/start
 id: 25
 r#  14852  216  1
+
+--- Sentence//end
+id: 25
+r#  15632  228  65
+p: .
+t. 
+|  The authors stated: state law was violated virtually at every turn, and
+|  Constitutional issues such as due process, equal protection and the fundamental right of parenting were violated by arbitrary rules and actual
+|  practice. The report concluded with a call for action to policy makers, the legal community, state government and, most importantly, the
+|  public (p. 7).\18The findings of such reports documenting serious abuses by the family
+|  court system in its treatment of protective mothers, startling as they are,
+|  were not unprecedented. The state-funded Judicial Council of California
+|  Administrative Office of the Courts produced a lengthy report in 1990
+|  (Achieving Equal Justice for Women and Men in the Courts)\19 that found
+|  evidence of gender bias in the courts, including serious problems . . in
+|  decision making, court practices and procedures, the fair allocation of
+|  judicial resources, and in the courtroom environment (p. 1):Similarly, the Judicial Council Advisory Committee showed that
+|  while the conduct of judges constituting gender bias has resulted in
+.  judicial discipline by the Commission on Judicial performance . 
+
+
+--- Sentence/switch
+id: 26
+r#  15633  228  66
+
 --- Paragraph/end 
 id: 21
 y: N/A
@@ -617,7 +642,7 @@ r#  16064  236  1
 
 
 --- Sentence/start
-id: 26
+id: 27
 r#  16064  236  1
 --- Paragraph/end 
 id: 22
@@ -630,29 +655,16 @@ r#  16742  250  1
 
 
 --- Sentence/start
-id: 27
+id: 28
 r#  16742  250  1
 
 --- Sentence//end
-id: 27
+id: 28
 r#  17607  260  20
 p: .
 t. 
-|  The authors stated: state law was violated virtually at every turn, and
-|  Constitutional issues such as due process, equal protection and the fundamental right of parenting were violated by arbitrary rules and actual
-|  practice. The report concluded with a call for action to policy makers, the legal community, state government and, most importantly, the
-|  public (p. 7).\18The findings of such reports documenting serious abuses by the family
-|  court system in its treatment of protective mothers, startling as they are,
-|  were not unprecedented. The state-funded Judicial Council of California
-|  Administrative Office of the Courts produced a lengthy report in 1990
-|  (Achieving Equal Justice for Women and Men in the Courts)\19 that found
-|  evidence of gender bias in the courts, including serious problems ...\ in
-|  decision making, court practices and procedures, the fair allocation of
-|  judicial resources, and in the courtroom environment (p. 1):Similarly, the Judicial Council Advisory Committee showed that
-|  while the conduct of judges constituting gender bias has resulted in
-|  judicial discipline by the Commission on Judicial performance ...\
 |  many more examples of conduct exhibiting gender bias or the appearance of gender bias have occurred that have not resulted in
-|  judicial discipline and include ...\ openly hostile behavior; the
+|  judicial discipline and include . . openly hostile behavior; the
 |  utterance of sexual innuendos or dirty jokes; the occasional and
 |  offensive use of terms of endearment to refer to women participants in the courtroom; hostility and impatience toward causes of
 |  action uniquely involving women. (pp. 5–6)
@@ -678,7 +690,7 @@ t.
 .  California counties
 
 --- Sentence/end 
-id: 27
+id: 28
 r#  17608  260  21
 
 --- Paragraph/end 
@@ -692,7 +704,7 @@ r#  17610  262  1
 
 
 --- Sentence/start
-id: 28
+id: 29
 r#  17610  262  1
 --- Paragraph/end 
 id: 24
@@ -705,7 +717,7 @@ r#  18139  270  1
 
 
 --- Sentence/start
-id: 29
+id: 30
 r#  18139  270  1
 --- Paragraph/end 
 id: 25
@@ -718,18 +730,18 @@ r#  18599  276  1
 
 
 --- Sentence/start
-id: 30
+id: 31
 r#  18599  276  1
 
 --- Sentence//end
-id: 30
+id: 31
 r#  18666  276  68
 p: .
 t. 
-|  Here are some of Winner’s conclusions regarding cases she investigated: the judge and commissioner put power ...\ and self-interest over
+|  Here are some of Winner’s conclusions regarding cases she investigated: the judge and commissioner put power . . and self-interest over
 |  the welfare and safety of children and litigants;\20 pedophile-friendly
-|  views ...\ are deeply entrenched in the Sacramento court system
-|  and surrounding areas.... This report [shows] that the psychological evaluations
+|  views . . are deeply entrenched in the Sacramento court system
+|  and surrounding areas. . This report [shows] that the psychological evaluations
 |  produced for the courts were so flawed and skewed in many cases, that
 |  they amounted to hoaxes perpetrated on the litigants and on the judges
 |  deciding the outcomes.\21In fact, Winner expressed to us the urgent need for civil disobedience to combat the disastrous treatment of protective mothers and their
@@ -740,12 +752,12 @@ t.
 
 
 --- Sentence/switch
-id: 31
+id: 32
 r#  18667  276  69
 
 
 --- Sentence//end
-id: 31
+id: 32
 r#  19376  286  60
 p: .
 t. 
@@ -762,12 +774,12 @@ t.
 
 
 --- Sentence/switch
-id: 32
+id: 33
 r#  19377  286  61
 
 
 --- Sentence//end
-id: 32
+id: 33
 r#  19742  291  118
 p: .
 t. 
@@ -778,7 +790,7 @@ t.
 .  into oppressive, biased dispensers of justice, whose decisions so often run counter to the best interests of children
 
 --- Sentence/end 
-id: 32
+id: 33
 r#  19743  291  119
 
 --- Paragraph/end 
@@ -798,11 +810,11 @@ r#  19785  296  4
 
 
 --- Sentence/start
-id: 33
+id: 34
 r#  19785  296  4
 
 --- Sentence//end
-id: 33
+id: 34
 r#  19956  297  31
 p: .
 t. 
@@ -810,7 +822,7 @@ t.
 .  bar of the family court system
 
 --- Sentence/end 
-id: 33
+id: 34
 r#  19957  297  32
 
 --- Paragraph/end 
@@ -830,11 +842,11 @@ r#  19979  301  4
 
 
 --- Sentence/start
-id: 34
+id: 35
 r#  19979  301  4
 
 --- Sentence//end
-id: 34
+id: 35
 r#  20190  302  68
 p: .
 t. 
@@ -843,7 +855,7 @@ t.
 
 
 --- Sentence/switch
-id: 35
+id: 36
 r#  20191  302  69
 
 --- Paragraph/end 
@@ -857,7 +869,7 @@ r#  20763  311  1
 
 
 --- Sentence/start
-id: 36
+id: 37
 r#  20763  311  1
 --- Paragraph/end 
 id: 29
@@ -870,11 +882,11 @@ r#  21824  325  1
 
 
 --- Sentence/start
-id: 37
+id: 38
 r#  21824  325  1
 
 --- Sentence//end
-id: 37
+id: 38
 r#  21973  326  76
 p: .
 t. 
@@ -901,7 +913,7 @@ t.
 
 
 --- Sentence/switch
-id: 38
+id: 39
 r#  21974  326  77
 
 --- Paragraph/end 
@@ -915,7 +927,7 @@ r#  22930  340  1
 
 
 --- Sentence/start
-id: 39
+id: 40
 r#  22930  340  1
 --- Paragraph/end 
 id: 31
@@ -928,11 +940,11 @@ r#  23326  346  1
 
 
 --- Sentence/start
-id: 40
+id: 41
 r#  23326  346  1
 
 --- Sentence//end
-id: 40
+id: 41
 r#  23808  351  57
 p: .
 t. 
@@ -940,7 +952,7 @@ t.
 |  child sexual abuse rarely gives the mother an advantage (contrary to
 |  popular belief) because [w]omen who claim such abuse in a custody
 |  proceeding are often met with immediate suspicion. Even if true, the
-|  abuse allegation is difficult to prove ...\ [and if] the allegations are not
+|  abuse allegation is difficult to prove . . [and if] the allegations are not
 |  substantiated, the complaining parent risks losing custody, even if he or
 |  she would have won on the merits without such a claim.\26 As a result,
 |  most protective mothers are likely to find themselves without eager representation. A prominent Brooklyn matrimonial attorney (and former
@@ -959,7 +971,7 @@ t.
 .  might be regarded as highly questionable in other arenas
 
 --- Sentence/end 
-id: 40
+id: 41
 r#  23809  351  58
 
 --- Paragraph/end 
@@ -973,11 +985,11 @@ r#  23811  353  1
 
 
 --- Sentence/start
-id: 41
+id: 42
 r#  23811  353  1
 
 --- Sentence//end
-id: 41
+id: 42
 r#  24754  364  25
 p: .
 t. 
@@ -995,7 +1007,7 @@ t.
 .  advocate for these steps
 
 --- Sentence/end 
-id: 41
+id: 42
 r#  24755  364  26
 
 --- Paragraph/end 
@@ -1009,11 +1021,11 @@ r#  24757  366  1
 
 
 --- Sentence/start
-id: 42
+id: 43
 r#  24757  366  1
 
 --- Sentence//end
-id: 42
+id: 43
 r#  25730  376  44
 p: .
 t. 
@@ -1030,7 +1042,7 @@ t.
 .  he would probably see again in future cases
 
 --- Sentence/end 
-id: 42
+id: 43
 r#  25731  376  45
 
 --- Paragraph/end 
@@ -1044,11 +1056,11 @@ r#  25733  378  1
 
 
 --- Sentence/start
-id: 43
+id: 44
 r#  25733  378  1
 
 --- Sentence//end
-id: 43
+id: 44
 r#  26240  384  36
 p: .
 t. 
@@ -1061,7 +1073,7 @@ t.
 .  Scheindlin could even hear her case
 
 --- Sentence/end 
-id: 43
+id: 44
 r#  26241  384  37
 
 --- Paragraph/end 
@@ -1081,11 +1093,11 @@ r#  26291  388  4
 
 
 --- Sentence/start
-id: 44
+id: 45
 r#  26291  388  4
 
 --- Sentence//end
-id: 44
+id: 45
 r#  26573  391  74
 p: .
 t. 
@@ -1096,7 +1108,7 @@ t.
 
 
 --- Sentence/switch
-id: 45
+id: 46
 r#  26574  391  75
 
 --- Paragraph/end 
@@ -1110,11 +1122,11 @@ r#  26955  399  1
 
 
 --- Sentence/start
-id: 46
+id: 47
 r#  26955  399  1
 
 --- Sentence//end
-id: 46
+id: 47
 r#  27025  399  71
 p: .
 t. 
@@ -1127,12 +1139,12 @@ t.
 
 
 --- Sentence/switch
-id: 47
+id: 48
 r#  27026  399  72
 
 
 --- Sentence//end
-id: 47
+id: 48
 r#  27680  406  22
 p: .
 t. 
@@ -1145,7 +1157,7 @@ t.
 .  in custody litigation
 
 --- Sentence/end 
-id: 47
+id: 48
 r#  27681  406  23
 
 --- Paragraph/end 
@@ -1159,7 +1171,7 @@ r#  27683  408  1
 
 
 --- Sentence/start
-id: 48
+id: 49
 r#  27683  408  1
 --- Paragraph/end 
 id: 38
@@ -1172,7 +1184,7 @@ r#  28214  417  1
 
 
 --- Sentence/start
-id: 49
+id: 50
 r#  28214  417  1
 --- Paragraph/end 
 id: 39
@@ -1185,7 +1197,7 @@ r#  28670  424  1
 
 
 --- Sentence/start
-id: 50
+id: 51
 r#  28670  424  1
 --- Paragraph/end 
 id: 40
@@ -1198,11 +1210,11 @@ r#  29645  439  1
 
 
 --- Sentence/start
-id: 51
+id: 52
 r#  29645  439  1
 
 --- Sentence//end
-id: 51
+id: 52
 r#  29948  443  20
 p: .
 t. 
@@ -1223,11 +1235,11 @@ t.
 |  Middleton disclosed to her that Shoulson’s advocacy for Judge Deutsch,
 |  and his implicit attack on one of the judge’s victims, was prearranged
 |  with Deutsch himself. Shoulson, he wrote, had boasted of his relationship with Brooklyn Family Court judges including Deutsch:He [Shoulson] went on to say that he was connected with Judge
-|  Deutsch and that as a favor to the Judge he had promised to discredit [you] whenever possible.... One of the things that Rabbi
+|  Deutsch and that as a favor to the Judge he had promised to discredit [you] whenever possible. . One of the things that Rabbi
 |  Shoulson requested of me was to inform him of everything and
 |  every time you had some involvement with the Fathers Rights Association of which I am a member. When I refused and told him
 |  that I did not have the time or desire to
-|  monitor your activities ...\ that triggered another response from him.\30
+|  monitor your activities . . that triggered another response from him.\30
 |  According to Middleton, Shoulson in effect had volunteered to be
 |  both advocate and spy for a family court judge. What is more, he saw no
 |  reason not to boast of it to a client. This anecdote has much to say about
@@ -1235,7 +1247,7 @@ t.
 .  least in some cases
 
 --- Sentence/end 
-id: 51
+id: 52
 r#  29949  443  21
 
 --- Paragraph/end 
@@ -1255,7 +1267,7 @@ r#  29970  447  4
 
 
 --- Sentence/start
-id: 52
+id: 53
 r#  29970  447  4
 --- Paragraph/end 
 id: 42
@@ -1268,11 +1280,11 @@ r#  30810  458  1
 
 
 --- Sentence/start
-id: 53
+id: 54
 r#  30810  458  1
 
 --- Sentence//end
-id: 53
+id: 54
 r#  31484  464  29
 p: .
 t. 
@@ -1283,8 +1295,8 @@ t.
 |  justice for the state’s Second Judicial Department - told investigative
 |  journalist Karen Winner, You know what happens in every matrimonial case
 |  now? They go to the lawyer and the lawyer says, You know we’re going
-|  to holler sexual abuse. Everything stops.... That’s become the password
-|  now.... Holler sexual abuse and every goddamn thing slows down. It’s
+|  to holler sexual abuse. Everything stops. . That’s become the password
+|  now. . Holler sexual abuse and every goddamn thing slows down. It’s
 |  getting to be a disaster now because that’s the password now.\31Beliefs like these have much to do with the family court system’s persistent mishandling of sex abuse allegations and its tendency to make
 |  the accuser, rather than the accused, pay the price of such charges. In
 |  1992, New York State Senator David A. Paterson declared at a press conference, the purpose of which was to bring public attention to the family
@@ -1294,7 +1306,7 @@ t.
 .  at the same press conference
 
 --- Sentence/end 
-id: 53
+id: 54
 r#  31485  464  30
 
 --- Paragraph/end 
@@ -1308,7 +1320,7 @@ r#  31487  466  1
 
 
 --- Sentence/start
-id: 54
+id: 55
 r#  31487  466  1
 --- Paragraph/end 
 id: 44
@@ -1321,11 +1333,11 @@ r#  31879  473  1
 
 
 --- Sentence/start
-id: 55
+id: 56
 r#  31879  473  1
 
 --- Sentence//end
-id: 55
+id: 56
 r#  32285  478  53
 p: .
 t. 
@@ -1333,7 +1345,7 @@ t.
 |  held in 1989, New York State Assemblyman (now Congressman) Jerrold
 |  Nadler exclaimed: I’ve been shocked to discover in case after case the
 |  consistent denial of due process rights to women attempting to protect
-|  their children from sexual abuse ...\ [and] the public is not aware of the
+|  their children from sexual abuse . . [and] the public is not aware of the
 |  terrible miscarriages of justice.\33Midway through the hearing, after listening to so many cases where
 |  the child is handed over to the abuser and the mother is punished,
 |  Nadler referred to what was happening in the family courts as the
@@ -1342,7 +1354,7 @@ t.
 .  publicly challenged Nadler to retract it. He refused
 
 --- Sentence/end 
-id: 55
+id: 56
 r#  32286  478  54
 
 --- Paragraph/end 
@@ -1362,11 +1374,11 @@ r#  32336  482  4
 
 
 --- Sentence/start
-id: 56
+id: 57
 r#  32336  482  4
 
 --- Sentence//end
-id: 56
+id: 57
 r#  32622  483  140
 p: .
 t. 
@@ -1375,7 +1387,7 @@ t.
 
 
 --- Sentence/switch
-id: 57
+id: 58
 r#  32623  483  141
 
 --- Paragraph/end 
@@ -1389,11 +1401,11 @@ r#  33329  493  1
 
 
 --- Sentence/start
-id: 58
+id: 59
 r#  33329  493  1
 
 --- Sentence//end
-id: 58
+id: 59
 r#  34392  506  6
 p: .
 t. 
@@ -1401,7 +1413,7 @@ t.
 |  Psychiatry published an extraordinary public rebuke of a popular expert
 |  witness in child sexual abuse cases, Dr. Arthur Green, signed by psychiatrist Graeme Hanson and eighteen cosignatories, all of them specialists
 |  in child sexual abuse, which stated: Our major concern is that Green’s
-|  assertions may be taken as a standard of practice by those clinicians relatively inexperienced in the area of child sexual abuse ...\ [and] it is our
+|  assertions may be taken as a standard of practice by those clinicians relatively inexperienced in the area of child sexual abuse . . [and] it is our
 |  fear that Green’s [assertions are] likely to be used in judicial settings to
 |  the detriment of a large number of children caught in custody battles
 |  who have actually been sexually abused.\35That sharp criticism, however, had no apparent impact on Green’s
@@ -1420,7 +1432,7 @@ t.
 .  peers
 
 --- Sentence/end 
-id: 58
+id: 59
 r#  34393  506  7
 
 --- Paragraph/end 
@@ -1434,7 +1446,7 @@ r#  34395  508  1
 
 
 --- Sentence/start
-id: 59
+id: 60
 r#  34395  508  1
 --- Paragraph/end 
 id: 48
@@ -1454,11 +1466,11 @@ r#  36000  530  4
 
 
 --- Sentence/start
-id: 60
+id: 61
 r#  36000  530  4
 
 --- Sentence//end
-id: 60
+id: 61
 r#  36376  535  18
 p: .
 t. 
@@ -1486,7 +1498,7 @@ t.
 .  court malfunction
 
 --- Sentence/end 
-id: 60
+id: 61
 r#  36377  535  19
 
 --- Paragraph/end 
@@ -1500,7 +1512,7 @@ r#  36379  537  1
 
 
 --- Sentence/start
-id: 61
+id: 62
 r#  36379  537  1
 --- Paragraph/end 
 id: 50
@@ -1513,11 +1525,11 @@ r#  36901  543  1
 
 
 --- Sentence/start
-id: 62
+id: 63
 r#  36901  543  1
 
 --- Sentence//end
-id: 62
+id: 63
 r#  37787  552  37
 p: .
 t. 
@@ -1537,7 +1549,7 @@ t.
 .  protection of the children (p. 50)
 
 --- Sentence/end 
-id: 62
+id: 63
 r#  37788  552  38
 
 --- Paragraph/end 
@@ -1551,11 +1563,11 @@ r#  37790  554  1
 
 
 --- Sentence/start
-id: 63
+id: 64
 r#  37790  554  1
 
 --- Sentence//end
-id: 63
+id: 64
 r#  38310  558  21
 p: .
 t. 
@@ -1566,7 +1578,7 @@ t.
 .  family court madness
 
 --- Sentence/end 
-id: 63
+id: 64
 r#  38311  558  22
 
 --- Paragraph/end 
@@ -1586,7 +1598,7 @@ r#  38359  564  4
 
 
 --- Sentence/start
-id: 64
+id: 65
 r#  38359  564  4
 --- Paragraph/end 
 id: 53
@@ -1599,11 +1611,11 @@ r#  39310  581  1
 
 
 --- Sentence/start
-id: 65
+id: 66
 r#  39310  581  1
 
 --- Sentence//end
-id: 65
+id: 66
 r#  39372  581  63
 p: .
 t. 
@@ -1614,7 +1626,7 @@ t.
 |  Cases, with this announcement:Recently there has been an increase in the number of cases in which
 |  mothers who are convinced that their children have been sexually
 |  abused by their fathers have taken away or hidden their children,
-|  sometimes in violation of court orders ...\ because they have concluded that the legal system will not protect the children. These
+|  sometimes in violation of court orders . . because they have concluded that the legal system will not protect the children. These
 |  mothers believe that they have only one way left to them in order
 |  to protect their child. In many situations, friends, family, or a network of supporters have helped the mothers and children leave the
 |  area and go into hiding. This has become popularly known as The
@@ -1623,7 +1635,7 @@ t.
 
 
 --- Sentence/switch
-id: 66
+id: 67
 r#  39373  581  64
 
 --- Paragraph/end 
@@ -1637,11 +1649,11 @@ r#  39769  588  1
 
 
 --- Sentence/start
-id: 67
+id: 68
 r#  39769  588  1
 
 --- Sentence//end
-id: 67
+id: 68
 r#  40079  591  28
 p: .
 t. 
@@ -1655,7 +1667,7 @@ t.
 .  as aberrations or anomalies
 
 --- Sentence/end 
-id: 67
+id: 68
 r#  40080  591  29
 
 --- Paragraph/end 
@@ -1669,7 +1681,7 @@ r#  40082  593  1
 
 
 --- Sentence/start
-id: 68
+id: 69
 r#  40082  593  1
 --- Paragraph/end 
 id: 56
@@ -1682,11 +1694,11 @@ r#  40816  604  1
 
 
 --- Sentence/start
-id: 69
+id: 70
 r#  40816  604  1
 
 --- Sentence//end
-id: 69
+id: 70
 r#  40880  604  65
 p: .
 t. 
@@ -1703,7 +1715,7 @@ t.
 
 
 --- Sentence/switch
-id: 70
+id: 71
 r#  40881  604  66
 
 --- Paragraph/end 
@@ -1723,11 +1735,11 @@ r#  41779  617  4
 
 
 --- Sentence/start
-id: 71
+id: 72
 r#  41779  617  4
 
 --- Sentence//end
-id: 71
+id: 72
 r#  42525  625  43
 p: .
 t. 
@@ -1750,7 +1762,7 @@ t.
 .  court personnel simply seem to ignore them
 
 --- Sentence/end 
-id: 71
+id: 72
 r#  42526  625  44
 
 --- Paragraph/end 
@@ -1764,11 +1776,11 @@ r#  42528  627  1
 
 
 --- Sentence/start
-id: 72
+id: 73
 r#  42528  627  1
 
 --- Sentence//end
-id: 72
+id: 73
 r#  43374  636  57
 p: .
 t. 
@@ -1784,7 +1796,7 @@ t.
 .  parenting but for their awkward conduct in the courtroom
 
 --- Sentence/end 
-id: 72
+id: 73
 r#  43375  636  58
 
 --- Paragraph/end 
@@ -1804,11 +1816,11 @@ r#  43397  640  4
 
 
 --- Sentence/start
-id: 73
+id: 74
 r#  43397  640  4
 
 --- Sentence//end
-id: 73
+id: 74
 r#  43489  641  23
 p: .
 t. 
@@ -1816,7 +1828,7 @@ t.
 .  running away from them
 
 --- Sentence/end 
-id: 73
+id: 74
 r#  43490  641  24
 
 --- Paragraph/end 
@@ -1830,11 +1842,11 @@ r#  43492  643  1
 
 
 --- Sentence/start
-id: 74
+id: 75
 r#  43492  643  1
 
 --- Sentence//end
-id: 74
+id: 75
 r#  44108  650  46
 p: .
 t. 
@@ -1848,7 +1860,7 @@ t.
 .  impromptu underground network of sympathizers
 
 --- Sentence/end 
-id: 74
+id: 75
 r#  44109  650  47
 
 --- Paragraph/end 
@@ -1862,11 +1874,11 @@ r#  44111  652  1
 
 
 --- Sentence/start
-id: 75
+id: 76
 r#  44111  652  1
 
 --- Sentence//end
-id: 75
+id: 76
 r#  44357  655  32
 p: .
 t. 
@@ -1876,7 +1888,7 @@ t.
 .  brain aneurysm while on the run
 
 --- Sentence/end 
-id: 75
+id: 76
 r#  44358  655  33
 
 --- Paragraph/end 
@@ -1890,7 +1902,7 @@ r#  44360  657  1
 
 
 --- Sentence/start
-id: 76
+id: 77
 r#  44360  657  1
 --- Paragraph/end 
 id: 63
@@ -1903,11 +1915,11 @@ r#  44630  662  1
 
 
 --- Sentence/start
-id: 77
+id: 78
 r#  44630  662  1
 
 --- Sentence//end
-id: 77
+id: 78
 r#  44836  664  7
 p: .
 t. 
@@ -1919,7 +1931,7 @@ t.
 .  houses
 
 --- Sentence/end 
-id: 77
+id: 78
 r#  44837  664  8
 
 --- Paragraph/end 
@@ -1933,11 +1945,11 @@ r#  44839  666  1
 
 
 --- Sentence/start
-id: 78
+id: 79
 r#  44839  666  1
 
 --- Sentence//end
-id: 78
+id: 79
 r#  45659  677  61
 p: .
 t. 
@@ -1955,7 +1967,7 @@ t.
 .  Lydia Rayner, the wife of a popular Mississippi obstetrician
 
 --- Sentence/end 
-id: 78
+id: 79
 r#  45660  677  62
 
 --- Paragraph/end 
@@ -1969,7 +1981,7 @@ r#  45662  679  1
 
 
 --- Sentence/start
-id: 79
+id: 80
 r#  45662  679  1
 --- Paragraph/end 
 id: 66
@@ -1982,7 +1994,7 @@ r#  46274  686  1
 
 
 --- Sentence/start
-id: 80
+id: 81
 r#  46274  686  1
 --- Paragraph/end 
 id: 67
@@ -2001,11 +2013,11 @@ r#  46755  696  4
 
 
 --- Sentence/start
-id: 81
+id: 82
 r#  46755  696  4
 
 --- Sentence//end
-id: 81
+id: 82
 r#  46890  697  70
 p: .
 t. 
@@ -2018,18 +2030,18 @@ t.
 |  by fathers whose children she had placed in hiding. In the late 1990s,
 |  Yager - having spent all her money on her own legal defense - finally
 |  quit the Underground Railroad. Nevertheless, she continued in her
-|  harsh criticism of the family court system. In 2001, she told a Pennsylvania newspaper: It’s a crisis.... We’re not free from anything if we
+|  harsh criticism of the family court system. In 2001, she told a Pennsylvania newspaper: It’s a crisis. . We’re not free from anything if we
 |  can’t free our own children.\47Many protective parents who do not seek refuge in the Underground
 .  Railroad do, however, seek the attention of legislators and the media
 
 
 --- Sentence/switch
-id: 82
+id: 83
 r#  46891  697  71
 
 
 --- Sentence//end
-id: 82
+id: 83
 r#  47036  698  145
 p: .
 t. 
@@ -2037,12 +2049,12 @@ t.
 
 
 --- Sentence/switch
-id: 83
+id: 84
 r#  47037  698  146
 
 
 --- Sentence//end
-id: 83
+id: 84
 r#  47212  701  34
 p: .
 t. 
@@ -2051,7 +2063,7 @@ t.
 .  gain leverage in custody disputes
 
 --- Sentence/end 
-id: 83
+id: 84
 r#  47213  701  35
 
 --- Paragraph/end 
@@ -2065,11 +2077,11 @@ r#  47215  703  1
 
 
 --- Sentence/start
-id: 84
+id: 85
 r#  47215  703  1
 
 --- Sentence//end
-id: 84
+id: 85
 r#  47869  710  15
 p: .
 t. 
@@ -2083,7 +2095,7 @@ t.
 .  will persevere
 
 --- Sentence/end 
-id: 84
+id: 85
 r#  47870  710  16
 
 --- Paragraph/end 
@@ -2097,28 +2109,24 @@ r#  47872  712  1
 
 
 --- Sentence/start
-id: 85
+id: 86
 r#  47872  712  1
 
 --- Sentence//end
-id: 85
+id: 86
 r#  48539  717  10
 p: .
 t. 
 |  In some instances, protective mothers’ assiduous preparation and
 |  politicking have paid off to some extent. New York State Senator David A. Paterson, in a 1995 letter to the deputy acting chief
 |  of the Child Exploitation and Obscenity Section of the US Department of Justice, was sufficiently convinced by one Brooklyn,
-|  New York, mother’s case to write: there is such an intensely ferocious effort made by judges, social services and law guardian agencies ...\ to protect the father from an [abuse] investigation. Still,
+|  New York, mother’s case to write: there is such an intensely ferocious effort made by judges, social services and law guardian agencies . . to protect the father from an [abuse] investigation. Still,
 |  the Department of Justice took no action. The details of mothers’ rebellion against the family courts will be described in Part II,
 .  Chapter 8
 
 --- Sentence/end 
-id: 85
+id: 86
 r#  48540  717  11
-
---- Paragraph/end 
-id: 70
-y: N/A
 
 --- Paragraph/end 
 id: 70

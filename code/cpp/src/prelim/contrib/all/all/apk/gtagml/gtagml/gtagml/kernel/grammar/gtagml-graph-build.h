@@ -56,7 +56,8 @@ class GTagML_Graph_Build
   bool just_ended_sentence:1;
   bool await_paragraph_start:1;
   bool await_sentence_start:1;
-  bool use_latex_sdi_markers:1;
+  bool use_latex_sdi_all_markers:1;
+  bool use_latex_sdi_paragraph_markers:1;
   bool heading_acc:1;
  _flags
 
