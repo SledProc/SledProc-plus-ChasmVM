@@ -473,15 +473,61 @@ with data sets and/or multimedia presentations.}
 \vspace*{5pt}
 
   
-\p{The remainder of this document will discuss how 
-\PacTk{} can streamline editing, indexing, and document-preparation 
-tasks, as well as improve User Experience for human readers.  
-Later sections will also address how \PacTk{} can contribute 
-to broader projects where text documents are published together 
-with data sets and/or multimedia presentations.}
+\p{The computational foundation of \PacTk{} is the collection of 
+classes that represented individual sentences and other 
+textual elements in the \TSOM{} family (\PDF{} pages, annotations, 
+footnotes, block quotes, edits or changes across document versions, etc.).  
+In order to initialize these objects, \PacTk{} provides a distinct 
+input format called \GTagML{}, or \q{grounded} \TagML{}.  
+The term \q{grounded} reflects how certain structures-sites 
+may be specifically marked as serializing a typed object: 
+i.e., tags, attributes, or text nodes in the neighborhood 
+of a site supply the data fields needed to initialize an 
+object-instance during deserialization.  In other respects 
+\GTagML{} follows most of the principles advocated by 
+\TagML{}, with novel extensions; for example, \GTagML{} 
+encourages the exploitation of Unicode Private Use Planes 
+to disambiguate visibly similar but logically distinct characters/glyphs 
+(e.g., periods may embody punctuation, acronyms, or abbreviations).  
+In source files, \GTagML{} is loosely based on Markdown, so 
+authors who use Markdown in more informal contexts 
+(e.g., social media, chat rooms, \GIT{} documentation, etc.) 
+will recognize many of the \GTagML{} styling commands.  
+\lGTagML{} sources might be provided by authors directly, or 
+derived from author inputs by digital copy editors or 
+others on the publishing workflow.  To support 
+\GTagML{}, \PacTk{} provides a new \Cpp{} parsing library 
+that is readily extensible (more so than parsers for 
+\XML{}, \JSON{}, and so forth), allowing publishers to 
+customize the \GTagML{} format with new tags, syntax, and 
+data structures specific to their in-house styles and 
+disciplinary focus areas (e.g., specialized tags/data for 
+different scientific fields --- chemistry, physics, medicine, 
+etc. --- or whatever subject-areas are addressed by individual 
+publishers, journals, and book series).  Alternatively, 
+\TSOM{} objects can be compiled from sources such as 
+\JATS{} or \BITS{} directly.}
+
+\p{For workflows that feature \JATS{}, \BITS{}, or 
+\LaTeX{}, \TSOM{} object bundles would be used as 
+adjunct data sources through which edits, queries, 
+and other computational artifacts would be routed.  
+\lPacTk{} data can then be mapped both to 
+archiving formats (like \XML{}) and camera-ready 
+generators (like \LaTeX{}), but with a common 
+\TSOM{} background these two different representational 
+facets may be integrated (for example, \XML{} elements 
+mapped to corresponding \PDF{} page coordinates).  
+In effect, \PacTk{} serves to triangulate human-visible 
+presentations (like \PDF{}) with behind-the-scenes 
+\JATS{}-style formats.  Analyses that are currently 
+implemented against \XML{} structures may be more 
+efficiently coded via \PacTk{} objects, with concrete 
+benefits in areas such as copy-editing and indexing.}
 
 
-\sstitle{Shapefiles and Layer Styles}
+
+\sstitle{PacTk for Editing}
 
 \p{In the case of \GIS{} data, digital mapping software such as 
 \QGIS{} (to cite the most popular open-source application; \ArcGIS{}
