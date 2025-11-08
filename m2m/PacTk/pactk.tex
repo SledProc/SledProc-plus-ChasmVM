@@ -667,18 +667,170 @@ structured formats such as \XML{} and \LaTeX{}.
 
 
 
-
-
 \vspace*{10pt}
 {\semihr{0.387\textwidth}}
 \vspace*{5pt}
 %\sectnum{1.}
-\hspace{2pt}\secttitle{{Compiler and Virtual Machine (\lVM) Components}}
+\hspace{2pt}\secttitle{{PacTk for Indexing and Search Engines}}
 \vspace*{5pt}
 {\semihr{0.387\textwidth}}
 
 \vspace*{5pt}
 
+\p{Authors might use several methods to compile an index.  
+They can start with a list of important headings 
+(names, concepts, etc.) and search for relevant passages in the 
+manuscript.  Alternatively, authors could read through a 
+document and identify when a particular paragraph mentions a 
+named entity suitable for indexing.  Depending 
+on representations or tag sets used (e.g., the 
+\JATS{} \textbf{string-name} element) annotated spans 
+and citations may also form the privisional heading-list 
+for an index.}
+
+
+\p{Given these various index-preparation methods, it is useful to 
+extend front-end tools with capabilities specific to indexing 
+workflows, such as query matching and manipulating index entry objects.  
+Structured formats like \JATS{} do not provide sufficient 
+computational tractability in themselves.  For example, the most 
+popular desktop \GUI{} framework are the \Qt{} \Cpp{} libraries, 
+which are the basis of cross-platform \PDF{} viewers such as 
+Poppler and \XPDF{}.  \lPacTk{} can seamlessly interoperate 
+with \Qt{}, exposing sentence text as \QString{} objects and 
+expressing \GTagML{} parsing grammars as \textbf{QRegularExpression} 
+instances paired with lambda callbacks activated by the first matching 
+rule (relative to the current parse-position).  More precisely, 
+\GTagML{} has context-sensitive grammars that can include or 
+skip over rule-tests via activated contexts; this allows sections 
+of a \GTagML{} file to utilize syntax different from the default.  
+With respect to indexing, \GTagML{} has its own notation for 
+index entries (headings, locators, and \q{see also} style redirections), 
+to serialize indexes in a human-readable format.  Correspondingly, 
+\PacTk{} has classes specifically for index entries and 
+associated data.  These objects could be initialized from 
+\GTagML{} files or specialized windows floating atop 
+\PDF{} viewers.}
+
+
+\p{Building indexes on the basis of native sentence and index-entry objects 
+has certain benefits as compared to generic (e.g., \XML{}) manuscript 
+formats.  These include:
+
+\begin{description}
+
+\item[Separating Data from Presentation]  Different publishers 
+or book series may choose different visual styles for their 
+indexes.  Representing indexes behind the scenes via structured 
+data objects allows indexes to be curated in abstraction from the 
+specific layout chosen for final publications.  
+
+\item[PDF Context Menus]  Authors/editors can add new index entries 
+or locators directly from \PDF{} pages.  \lPacTk{}-compliant 
+viewers will read metadata that specifies which paragraphs are 
+in scope at different page-coordinate regions, so paragraph ids 
+for any location can be ascertain from mouse events (e.g., 
+the dropdown point of a context menu).
+
+\item[Multiple Match Strategies]  Index locators are typically 
+identified by matching text against entry-headings, but the parameters 
+of these searches will vary by context.  Sometimes locators are 
+only relevant when the local sentence includes only the exact 
+heading label, but in other places a desired match could 
+include words in different order (e.g., either first-name/last-name 
+or vice-versa), or only selected words (e.g., last name only), 
+or associated concepts with different language entirely 
+(e.g., \q{The White House} in lieu of a president).  In the 
+presence of a specific index entry, front-end displays can 
+give users options to fine-tune which match strategies are 
+appropriate for query text for locators specific to each entry.
+
+\item[Index-Building GUI Components]  Index entries are multi-faceted 
+objects that naturally lend themselves to dedicated front-end displays, 
+such as dialog windows.  For example, entries typically include a heading 
+label and then one or more locators (e.g., paragraph ids), 
+then possible subheadings with their own 
+locators, plus \q{redirectors} (\textit{see} or \textit{see also}) applied 
+either to overall entries or subheadings.  This represents a lot 
+of information to keep track of for each entry, and indexes can include 
+hundreds of entries.  Although indexes of course are eventually shown 
+to readers as ordinary \PDF{} pages (or similar formats), 
+during document prep it is useful to subdivide indexes into 
+individual \GUI{} windows for each entry, with options to 
+navigate between adjacent entries, as well as traverse on larger 
+scales (e.g., one chapter to another) and to create new 
+entries on the fly.
+
+\item[Index-Guided Text Searching]  Indexes are curated lists 
+of headings and locators selected by authors/editors for 
+relevance.  Whenever a search is posed against a manuscript in 
+any context --- e.g., in the query bar of a \PDF{} viewer, or 
+an online search engine, or \XQuery{}-style terms evaluated 
+\visavis{} \JATS{} files --- index metadata can be consulted 
+just in case a search term overlaps with headings already included 
+in an index.  Such functionality may be augmented by extending 
+index metadata to include concepts related to index entries 
+even if those secondary concepts are not indexed themselves.  
+In effect, index metadata may declare that all locators 
+modeled as relevant for their specific entry are also relevant 
+to some list of associated concepts, such that whenever those 
+latter concepts are targeted in a query the explicit 
+locators are included among the query results.   
+
+\item[Series or Archival Meta-Indexes]  Once a standard format 
+is developed for indexes in some document-collection, it becomes 
+possible to pool multiple indexes into a common resource.  
+Every time a new publiction is finalized, all of its index 
+terms could be inserted into a bibliographic database 
+allowing users to search across multiple books/manuscripts 
+in a given book series, journal collection, or document 
+depository.  Such meta-indexes can support searches 
+that are more precise and granular than conventional 
+search-engine technologies based on occurance vectors 
+and stemming/lemmatization.
+
+\item[Academic Search Engines]  In online contexts, \q{indexing} typically 
+refers not to human-visible book indexes but rather to 
+compressed data files that that catalog nontrivial words 
+and concepts in a manuscript.  Such indexing is typically 
+non-contextual; for instance, it is not represented whether a 
+word/phrase is present in text with a special purpose 
+(quotes, footnotes, chapter/section titles, etc.) or its 
+discursive role (e.g., a document may be identified as 
+\textit{about} some topic, but more specific criteria 
+such as arguing \textit{for}, \textit{against}, or neutrally 
+\textit{evaluating} some theory or claims are not modeled).  
+The scope of an archive may affect such technology, because 
+efficient queries can only expend a few seconds per 
+document if searches are to be evaluated against a large collection.  
+
+\pseudoIndent{} Nonetheless, search functionality can take 
+steps to increase query specificity via meta-indexes and 
+related metadata.  For one thing, users may specifically 
+consult search areas that a restricted in scope --- say, a single 
+University Press, book series, repository (PubMedCentral, for example), 
+or journal collection.  Publishers who curate meta-indexes 
+for mid-size collections can support much more detailed 
+evaluations per document; a book series might have several 
+dozen titles, not tens of thousands.  \lPacTk{} support 
+construction of corpora query languages that express 
+granular searches over multiple documents, with 
+similar logic to filtered/contextualized text searches 
+in a single \PDF{} document.
+
+\pseudoIndent{} Even where queries are executed via conventional 
+vector-database methods, \PacTk{} allows authors or digital editors 
+to exercise control over how word-occurance lists are compiled.  
+For exaple, \TSOM{} objects can include lemmatized word-lists 
+per sentence; authors can then control for 
+circumstances such as two different meanings reduced to the 
+same linguistic stem, which might not be properly 
+ingested by search engines indexing documents 
+through their default algorithms.
+
+\end{description}
+
+ }
 
 
 
