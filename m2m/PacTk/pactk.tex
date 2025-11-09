@@ -392,13 +392,13 @@ discrepancies between \XML{} inputs and user-visible output.}
 
 \p{Given the limitataions of \XML{} for natural-language 
 documents, numerous competing formats have been developed 
-that provide alternatives or extensions to \XML{} structures, 
-including \TEI{} (Text Encoding Initiative), \TagML{} 
+that provide alternatives or extensions to \XML{}.  These  
+include \TEI{} (Text Encoding Initiative), \TagML{} 
 (Text-as-Graph Markup Language), \BioC{} (a biomedical text mining 
 standard defined by PubMed Central), and Research Object Bundles 
 (a Semantic-Web based specification that convers both text and 
 data sets).  With a proliferation of different text-encoding standards, 
-query and traversal protocols that are developed for one specific 
+query and traversal protocols that are developed for one  
 format (e.g., \JATS{} and its derivatives) cannot be directly applied 
 to others.  For example, the \XML{} parent-child element relationship 
 is replaced in \TagML{} with two different containment styles 
@@ -423,7 +423,7 @@ in any systematic manner (e.g., via auxiliary files) except
 for intermediate spacing.  In \TEI{} and \BioC{}, individual 
 sentences \textit{can} be represented, but this is not 
 mandatory (thus \textbf{s} and \textbf{sentence} tags 
-are available but not guaranteed in any particular document).  
+are available but not guaranteed to be present in any particular document).  
 By contrast, \PacTk{} is explicitly built around 
 sentence-level units, specifically a \q{topomorphic 
 sentence-level object model} (\TSOM{}).  When all regular 
@@ -437,7 +437,7 @@ editing, indexing, and user-interface tasks become feasible
 of code libaries and classes, with data types representing 
 specific textual elements (sentences, paragraphs, \PDF{} pages, 
 annotations and comment-boxes, etc.).  Query and traversal 
-protocols modeled via \XQuery{}, \DOM{}, etc., become 
+protocols modeled via \XQuery{}, \DOM{}, and so on, become 
 expressed by object methods and operators exposed to 
 \Cpp{} code, for example (\PacTk{} is thus \q{topomorphic} 
 in the sense that navigation between objects is determined 
@@ -447,7 +447,7 @@ individual structure-sites and their interrelationships).
 In short, the \PacTk{} object system synthesizes distinct 
 structuring protocols found in competing formats such as 
 \JATS{}, \TagML{}, and \BioC{}, allowing publishers' workflows 
-to inclduing each of these formats (and others) without 
+to encompass each of these formats (and others) without 
 sacrificing compatibility.  \lPacTk{} is particularly 
 aimed at publishers who feel constrained by the limitations 
 of \JATS{} or \BITS{} but are reluctant to try alternatives 
@@ -486,7 +486,7 @@ textual elements in the \TSOM{} family (\PDF{} pages, annotations,
 footnotes, block quotes, edits or changes across document versions, etc.).  
 In order to initialize these objects, \PacTk{} provides a distinct 
 input format called \GTagML{}, or \q{grounded} \TagML{}.  
-The term \q{grounded} reflects how certain structures-sites 
+The term \q{grounded} reflects how certain structure-sites 
 may be specifically marked as serializing a typed object: 
 i.e., tags, attributes, or text nodes in the neighborhood 
 of a site supply the data fields needed to initialize an 
@@ -495,9 +495,10 @@ object-instance during deserialization.  In other respects
 \TagML{}, with novel extensions; for example, \GTagML{} 
 encourages the exploitation of Unicode Private Use Planes 
 to disambiguate visibly similar but logically distinct characters/glyphs 
-(e.g., periods may embody punctuation, acronyms, or abbreviations).  
-In source files, \GTagML{} is loosely based on Markdown, so 
-authors who use Markdown in more informal contexts 
+(e.g., periods may embody punctuation, acronyms, or abbreviations).}
+
+\p{In source files, \GTagML{} is loosely based on Markdown, so 
+authors familiar with Markdown from more informal contexts 
 (e.g., social media, chat rooms, \GIT{} documentation, etc.) 
 will recognize many of the \GTagML{} styling commands.  
 \lGTagML{} sources might be provided by authors directly, or 
@@ -538,7 +539,7 @@ benefits in areas such as copy-editing and indexing.}
 
 \p{\lPacTk{} has an advanced query framework to help find 
 specific locations in text where edits may be warranted 
-(e.g., to comport with journal or book-series styles) and 
+(e.g., to comport with journal or book-series conventions) and 
 to correctly review and process such edits.  Here are some features:
 
 \begin{description}
@@ -572,7 +573,7 @@ or where a user wants to find a specific piece of
 text known to have a given context.
 
 \item[Sentence-Level Queries]  Siting queries relative 
-to sentence boundaries can significantly improve 
+to sentence boundaries can improve 
 precision and express query rationales more succinctly.  
 For instance, the proper punctuation around a word or 
 phrase often depends on whether that content appears 
@@ -588,9 +589,9 @@ evaluated on \TSOM{} data (such boundaries are
 unambiguously notated via input sources, rather 
 than detected approximatively using Natural Language 
 Processing).  \lPacTk{} likewise models 
-\q{topomorphic} and potentially-navigational 
+\q{topomorphic} navigational 
 relations between sentences, such as between 
-adjacent siblings of parent containers (typically 
+adjacent siblings of parent objects (typically 
 paragraphs) and also nestings where a multi-sentence 
 footnote, for example, occurs in a parent-sentence 
 context, or where a block quotes functions in part as a 
@@ -598,7 +599,7 @@ logical child of the sentence that introduces it.
 
 \item[PDF Page Coordinates]  Human readers post-publication 
 --- plus authors and copy-editors beforehand --- typically 
-view documents in PDF format for normal reading, even if 
+view documents in \PDF{} format for normal reading, even if 
 edits/changes are made on intermediary files.  As a result, 
 a bitmapped page-image is the primary medium through 
 which users view single publication pages.  Failure to 
@@ -613,7 +614,7 @@ algorithms within pipelines whose formats can generate
 Page coordinates for significant discursive locations 
 (e.g., sentence and paragraph boundaries, footnote markers, 
 keyphrases and named entities, citations) can thereby be 
-exposed to \PDF{} viewers which could thereby implement 
+exposed to \PDF{} viewers which could accordingly implement 
 novel front-end features such as overlays, context menus, 
 and dialog windows positioned nearby relevant content.  
 For example, a context menu action may include copying the 
@@ -624,23 +625,23 @@ sentences during mouseover events.
   
 \item[PDF Comments and Annotations]  In addition to sentence 
 objects, \PacTk{} classes model data specifically relevant to 
-the \PDF{} front-end milieu, including single pages, and 
-\PDF{} comments/annotations.  Objects such as comment-boxes 
+the \PDF{} front-end milieu, including single pages, links/anchors, and 
+comments/annotations.  Objects such as comment-boxes 
 may thereby be leveraged systematically in an editing/review pipeline.
 
 \pseudoIndent{} In particular, \PacTk{} supports construction of hashtag- or handle-style 
 controlled vocabularies that can annotate \PDF{} comments 
 introduced by copy editors or typesetters.  Many modifications considered 
-during the editing process follow some common patterns, such as 
+during the editing process follow common patterns, such as 
 proper use of commas around subordinate clauses, or correct formatting 
 of ellipses and bracketed content within inline/block quotes.  Assuming 
 that editors consistently include notations for recurring patterns, 
 \PacTk{} code can filter queries specifically to \PDF{} comment 
-boxes which indicate a specific editing pattern.  Index codes within 
+boxes which indicate a specific editing category.  Index codes within 
 \PDF{} comments can likewise indicate which individual sentence 
 surrounds the annotation, so that the \PDF{} view may be cross-referenced 
-against input sources, which facilitates the review and processing 
-of edit-related comments.
+against input sources, which facilitates review and processing 
+of manuscript changes.
 
 \pseudoIndent{} For similar reasons, \PacTk{} supports abstractions 
 such as \XML{} custom character entities and \LaTeX{} macros.  
@@ -652,7 +653,9 @@ are lacking when mixing different filetypes (e.g., \LaTeX{} and
 \XML{}, such as \JATS{} or \BITS{}) in a single workflow.  
 \lPacTk{} has a flexible abstraction system that allows 
 character and macro codes to propagate across different 
-generated files.  A related problem is that abstraction codes should 
+generated files.
+
+\pseudoIndent{} A related problem is that abstraction codes should 
 generally be opaque to human users in contexts such as 
 comment boxes and copy-paste between software applications.  
 \lPacTk{} therefore supports declarations for how 
@@ -663,8 +666,19 @@ structured formats such as \XML{} and \LaTeX{}.
 \end{description}
 }
 
-\p{}
-
+\p{Often users may prefer to initiate or review edits though \PDF{} files 
+directly, but in other cases plain-text files may be appropriate 
+instead, without \GUI{} overhead.  With \PacTk{}, for example, 
+authors could receive two text files (or collections of files 
+indexed, for instance, by chapter) summarizing changes between 
+two manuscript versions.  Via sentence-level filtering, 
+such files could be organized such that only sentences that 
+differ from one version to the next are included, with each 
+sentence listed separately.  This may be a more convenient 
+setup for authors to review changes than working through 
+typical \GUI{}s.  Of course, such breakdown is only possible 
+when the text encoding systematically identifies individual 
+sentences, as with the \PacTk{}'s \TSOM{} object model.}
 
 
 \vspace*{10pt}
@@ -697,9 +711,9 @@ computational tractability in themselves.  For example, the most
 popular desktop \GUI{} framework are the \Qt{} \Cpp{} libraries, 
 which are the basis of cross-platform \PDF{} viewers such as 
 Poppler and \XPDF{}.  \lPacTk{} can seamlessly interoperate 
-with \Qt{}, exposing sentence text as \QString{} objects and 
+with \Qt{}, exposing sentence texts as \textbf{QString} objects and 
 expressing \GTagML{} parsing grammars as \textbf{QRegularExpression} 
-instances paired with lambda callbacks activated by the first matching 
+instances, paired with lambda callbacks activated by the first matching 
 rule (relative to the current parse-position).  More precisely, 
 \GTagML{} has context-sensitive grammars that can include or 
 skip over rule-tests via activated contexts; this allows sections 
@@ -725,7 +739,7 @@ indexes.  Representing indexes behind the scenes via structured
 data objects allows indexes to be curated in abstraction from the 
 specific layout chosen for final publications.  
 
-\item[PDF Context Menus]  Authors/editors can add new index entries 
+\item[PDF Context Menus]  Authors/editors may prefer add new index entries 
 or locators directly from \PDF{} pages.  \lPacTk{}-compliant 
 viewers will read metadata that specifies which paragraphs are 
 in scope at different page-coordinate regions, so paragraph ids 
