@@ -743,21 +743,21 @@ specific layout chosen for final publications.
 or locators directly from \PDF{} pages.  \lPacTk{}-compliant 
 viewers will read metadata that specifies which paragraphs are 
 in scope at different page-coordinate regions, so paragraph ids 
-for any location can be ascertain from mouse events (e.g., 
+for any location can be ascertained from mouse events (e.g., 
 the dropdown point of a context menu).
 
 \item[Multiple Match Strategies]  Index locators are typically 
 identified by matching text against entry-headings, but the parameters 
 of these searches will vary by context.  Sometimes locators are 
-only relevant when the local sentence includes only the exact 
+only relevant when the local sentence includes just the exact 
 heading label, but in other places a desired match could 
 include words in different order (e.g., either first-name/last-name 
-or vice-versa), or only selected words (e.g., last name only), 
+or vice-versa), or selected words (e.g., last name only), 
 or associated concepts with different language entirely 
-(e.g., \q{The White House} in lieu of a president).  In the 
+(e.g., \q{The White House} in lieu of a president's name).  In the 
 presence of a specific index entry, front-end displays can 
 give users options to fine-tune which match strategies are 
-appropriate for query text for locators specific to each entry.
+appropriate for query text seeking locators specific to each entry.
 
 \item[Index-Building GUI Components]  Index entries are multi-faceted 
 objects that naturally lend themselves to dedicated front-end displays, 
@@ -765,9 +765,9 @@ such as dialog windows.  For example, entries typically include a heading
 label and then one or more locators (e.g., paragraph ids), 
 then possible subheadings with their own 
 locators, plus \q{redirectors} (\textit{see} or \textit{see also}) applied 
-either to overall entries or subheadings.  This represents a lot 
+either to overall entries or to subheadings.  This represents a lot 
 of information to keep track of for each entry, and indexes can include 
-hundreds of entries.  Although indexes of course are eventually shown 
+hundreds of entries.  Although indexes are eventually shown 
 to readers as ordinary \PDF{} pages (or similar formats), 
 during document prep it is useful to subdivide indexes into 
 individual \GUI{} windows for each entry, with options to 
@@ -794,11 +794,11 @@ locators are included among the query results.
 \item[Series or Archival Meta-Indexes]  Once a standard format 
 is developed for indexes in some document-collection, it becomes 
 possible to pool multiple indexes into a common resource.  
-Every time a new publiction is finalized, all of its index 
+Each time a new publiction is finalized, all of its index 
 terms could be inserted into a bibliographic database 
 allowing users to search across multiple books/manuscripts 
 in a given book series, journal collection, or document 
-depository.  Such meta-indexes can support searches 
+repository.  Such meta-indexes can support searches 
 that are more precise and granular than conventional 
 search-engine technologies based on occurance vectors 
 and stemming/lemmatization.
@@ -809,12 +809,12 @@ compressed data files that that catalog nontrivial words
 and concepts in a manuscript.  Such indexing is typically 
 non-contextual; for instance, it is not represented whether a 
 word/phrase is present in text with a special purpose 
-(quotes, footnotes, chapter/section titles, etc.) or its 
-discursive role (e.g., a document may be identified as 
+(quotes, footnotes, chapter/section titles, etc.) and 
+discursive roles are ignored (e.g., a document may be identified as 
 \textit{about} some topic, but more specific criteria 
 such as arguing \textit{for}, \textit{against}, or neutrally 
-\textit{evaluating} some theory or claims are not modeled).  
-The scope of an archive may affect such technology, because 
+\textit{evaluating} theories or claims are not modeled).  
+Granularity may be limited by the scope of an archive, because 
 efficient queries can only expend a few seconds per 
 document if searches are to be evaluated against a large collection.  
 
@@ -836,37 +836,195 @@ in a single \PDF{} document.
 vector-database methods, \PacTk{} allows authors or digital editors 
 to exercise control over how word-occurance lists are compiled.  
 For exaple, \TSOM{} objects can include lemmatized word-lists 
-per sentence; authors can then control for 
+per sentence; authors may then control for 
 circumstances such as two different meanings reduced to the 
 same linguistic stem, which might not be properly 
 ingested by search engines indexing documents 
 through their default algorithms.
 
 \end{description}
-
- }
-
+}
 
 
-\sstitle{Constraint Declarations and Other VM Use-Cases}
 
+%\sstitle{Constraint Declarations and Other VM Use-Cases}
 
 
 
 \vspace*{10pt}
-{\semihr{0.467\textwidth}}
+{\semihr{0.26\textwidth}}
 \vspace*{5pt}
 %\sectnum{1.}
-\hspace{2pt}\secttitle{{Cross-Referencing Across Diverse Multimedia Content Types}}
+\hspace{2pt}\secttitle{{Data Publishing and Multimedia}}
 \vspace*{5pt}
-{\semihr{0.467\textwidth}}
+{\semihr{0.26\textwidth}}
 
 \vspace*{5pt}
+
+\p{Contporary data transparency and \q{FAIRSharing} 
+(Findable, Accessible, Interoperable, Reusable) standards 
+introduce new challenges for publishers.  In this environment, 
+published documents such as \PDF{}s serve as only 
+one part of a package of files, alongside research data 
+sets and, often, numerous forms of multimedia content 
+(potentially including audio, video, image series, \ThreeD{} graphics, 
+and statistical/data-visualization tools and diagrams).}
+
+\p{As a \q{publishing accelerator} toolkit, \PacTk{} has 
+several components to help publishers construct these 
+supplemental materials, including cross-referencing 
+text documents with supplemental data/media assets, and 
+ensuring \FAIR{} usability.  Here are several 
+components under development:
+
+\begin{description}
+
+\item[Deserialization and Dataset Tools]  Individual scientific disciplines are often 
+associated with domain-specific data publishing formats that are paired with 
+dedicated deserialization tools (i.e., computer code which 
+reads raw data files into live memory, without relying on special-purpose 
+software).  Such code libraries are often maintained by individual 
+institutions or organizations, such as academic departments, on behalf of a 
+broad research community.  Examples include (among many others) \FASTQ{} and \VCF{} for genomics; 
+\FITS{} and \netCDF{} in astronomy and earth sciences; \PDB{} and \MOL{} in biochemistry; 
+\IFC{} in engineering; \SEGY{} and \BAG{} 
+for geophysics and oceanography; \CoNLLU{} in computational linguistics; 
+\DICOM{} and \OMETIFF{} for bioimaging; and \GIS{}-indexed attribute layers 
+and shapefiles for geospatial data sets.
+
+\pseudoIndent{} Some domain-specific file formats are derived from general-purpose formats 
+such as \CSV{}, \XML{}, and \JSON{}.  Others use idiosyncratic text and/or binary 
+serialization protocols, so that custom parsers are necessary so as to consume byte or character 
+streams from raw data files.  Even when the actual encoding is performed via a 
+generic standard like \XML{}, dedicated deserialization code will still be needed --- 
+generic parsers can convert a given \XML{} document to a %Document Object Model 
+\DOM{} infoset, but algorithms will have to navigate the document hierarchy and extract 
+text strings from element nodes, which become the input for initializing 
+object data fields.
+
+
+\pseudoIndent{} \lPacTk{} seeks to address these concerns by offering a 
+platform-independent Virtual Machine that is easy to embed in 
+scientific applications or build as a standalone program.  Scripting 
+or query language can then emit code for this specific \VM{} to 
+take respondibility for deserializing encoded data sets.  Depend 
+on the format, the \VM{} instructions might navigate through 
+graph-like structures in a standardized profile (like \XML{}) 
+or implement and/or integrate with (via postprocessors or 
+rule-match callbacks) parsers for custom imput file types.
+
+\pseudoIndent{} Via these technologies, publishers can ensure that 
+data sets are accessible so long as there are deserialization 
+libraries targing a \PacTk{} \VML{}, rather than duplicating 
+effort and requiring multiple libraries for different operating 
+systems and programming environments.  
+ 
+
+\item[Analytic and Demonstrative Code]  Many data sets are published 
+alongside copies or samples of code used to analyze the raw data.  
+Code sharing is important for transparency (allowing outsiders 
+to double-check the accuracy of calculations and conclusion 
+drawn therefrom) as well as reuse.  
+
+\pseudoIndent{} Although such accompanying code may be implemented 
+in many different languages and environments, the \VM{} principles 
+identified above for deserialization tasks also apply 
+to code specific to research data sets.  Here, too, accessibility 
+implies that dataset code should be available in a cross-platform 
+manner.  Moreover, implementations should proceed via 
+conventions suitable for \GUI{} wrappers and interop, because 
+research methods will often depend on domain-specific 
+scientific or academic software.  Ideally, data sets will 
+be examined via plugins specific to applications familiar to 
+the relevant research community, or at least custom-built 
+software that can interoperate with domain-specific technologies.  
+Unfortunately, many of the most popular scripting formats 
+in scientific/research contexts (e.g., Python, JavaScript, and \R{}) 
+have noticeable limitations \visavis{} native-\GUI{} integration.  
+
+\pseudoIndent{} \lPacTk{} enables a different approach where 
+languages can be customized to individual data sets and target 
+pure-\Cpp{} \VM{}s whose entire parsing, \IR{}, and runtime stack 
+can be embedded (as source code) in \Cpp{} \GUI{} applications with no outside 
+dependencies.  Compilers and runtime engines for dataset code may 
+thereby be released as part of the publication package itself.  
+The \VM{} and peer components could also be built directly 
+in \PDF{} viewers, multimedia applications (for videos, digital 
+maps, etc.) and scientific computing platforms.
+
+\pseudoIndent{} Another \PacTk{} benefit for dataset code involves 
+documentation and pedagogical features.  In these contexts, code 
+serves not merely to derive specific computations but also 
+to demonstrate the acquisition methods and analytic protocols relevant 
+for a research project.  Such details as units of measurement, 
+expected ranges, typed coordinate systems (e.g., ensuring that 
+procedures expecting horizontal-then-vertical coordinate 
+pairs are never called with the converse), 
+compile-time/statically-analyzable pre- and post-conditions, and so forth, 
+help dataset code to serve as a resource clarifying scientific 
+principles and theoretical models that drive published findings.  
+The \PacTk{} machine includes overload-by-contract, dependent-typing 
+(via a framework compatible with template metaprogramming), native 
+interop (with dynamically loaded as well as statically compiled libraries) 
+and \q{user-defined} calling convention features that different 
+in some technical details from typical language interpreters, 
+resulting in a scripting environment specifically built for 
+open-access data sharing and the deployment of data packages 
+as pedagogical tools.    
+
+\item[Full-Text Query Languages]  As discussed earlier in this 
+document, \PacTk{} can be utilized as a code libary by 
+calling methods on \Cpp{} (specifically, \TSOM{}) objects.  
+At the same time, a \PacTk{} virtual machine supplies an  
+environment for compiling scripting or query languages.  
+These functionalities can be merged, such that the process 
+of extracting information from a \PDF{} manuscript, 
+meta-indexed repository, or bibliographic database might be 
+achieved by evaluating formulating part of the code in a 
+specialized query language.  The techniques involved 
+would be similar to employing \XQuery{} or \XQSE{} 
+expressions to work with \JATS{} or \BITS{} files.
+
+\pseudoIndent{} \lPacTk{} features its own flexible front-end parsing 
+framework (mentioned above relative to \GTagML{}) that 
+could be used to program query grammars in an extensible, 
+adaptable manner.  By leveraging full regular expression 
+capabilities, callbacks to arbitrary code (instead of 
+generative production rules), and directly-executable 
+grammar files (with no separate compilation steps), 
+the \PacTk{} parsers are more flexible than conventional 
+\LEX{}/\YACC{}-style compilers.  Meanwhile, the \VM{} 
+runtimes allows query evaluators to recgonize basic 
+scripting constructions such as locally-scoped variables 
+and calls to arbitrary boolean-valued procedures as 
+filter parameters.
+
+\pseudoIndent{} In totality, such features allow 
+text/bibliographic query systems to be implemented 
+in a self-contained and cross-platform manner, 
+with customizations specific to individual publishers 
+and even to each particular journal or book series.  
+
+\item[Science and Humanities GUIs]   
+    
+
+\end{description}
+
+}
+
+%\p{}
+%\p{}
 
 
 
 \sstitle{Texture Annotations}
 
+
+
+courts may let this little girl fie
+k -- lisa steinberg horror
+k -- state-pol-act- 
+Ohel-Agency-Under-Baby-Selling-Probe
 
 
 %\p{}
