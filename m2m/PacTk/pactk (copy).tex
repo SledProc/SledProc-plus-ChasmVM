@@ -295,7 +295,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\thispagestyle{empty}
 \thispagestyle{firstpage}
 
-\vspace*{20pt}
+\vspace*{90pt}
 
 %\vspace*{1em}
 
@@ -357,9 +357,9 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 %\section{Overview}
 %\vspace{}
-\noindent\subtitle{{Class Libraries and Full-Text Search/Encoding Tools for   \\
+\noindent\subtitle{{A Collection of Software, Compiler, and Runtime Tools \\
 \vspace{4pt}
-Publishing Documents, Data Sets, and Multimedia Resources }}
+for Managing and Visualizing Multimedia Data Sets }}
 %\sectvspace{}
 
 \vspace*{-3pt}
@@ -470,12 +470,12 @@ that are typically unavailable in other publishing tools.}
 
 
 \vspace*{10pt}
-{\semihr{0.380\textwidth}}
+{\semihr{0.387\textwidth}}
 \vspace*{5pt}
 %\sectnum{1.}
 \hspace{2pt}\secttitle{{Features for Editing, Indexing, and PDF Viewers}}
 \vspace*{5pt}
-{\semihr{0.380\textwidth}}
+{\semihr{0.387\textwidth}}
 
 \vspace*{5pt}
 
@@ -496,7 +496,6 @@ object-instance during deserialization.  In other respects
 encourages the exploitation of Unicode Private Use Planes 
 to disambiguate visibly similar but logically distinct characters/glyphs 
 (e.g., periods may embody punctuation, acronyms, or abbreviations).}
-
 
 \p{In source files, \GTagML{} is loosely based on Markdown, so 
 authors familiar with Markdown from more informal contexts 
@@ -535,11 +534,7 @@ efficiently coded via \PacTk{} objects, with concrete
 benefits in areas such as copy-editing and indexing.}
 
 
-\begin{figure}[ht]
-\includegraphics[scale=0.83]{fin/single.png}
-\caption{An index entry dialog window (and context menu for single and meta-index views)}
-\label{fig:ss1}
-\end{figure}
+
 \sstitle{PacTk for Editing}
 
 \p{\lPacTk{} has an advanced query framework to help find 
@@ -569,8 +564,6 @@ system allows programmers to define lists of boolean
 parameters that apply to text-sequences and then 
 activate those flags automatically in specific tag contexts.
 
-
-
 \pseudoIndent{} In general, \PacTk{} supports queries where ordinary 
 textual restrictions may be augmented with filters 
 for a wide variety of layout and discursive contexts.  
@@ -578,14 +571,6 @@ Such queries could then be used for editing
 tasks that should be localized to specific contexts, 
 or where a user wants to find a specific piece of 
 text known to have a given context.
-
-
-\begin{figure}[ht]
-\includegraphics[scale=0.83]{fin/meta.png}
-\caption{Dialog window for local and meta-index searches}
-\label{fig:ss2}
-\end{figure}
-
 
 \item[Sentence-Level Queries]  Siting queries relative 
 to sentence boundaries can improve 
@@ -621,7 +606,6 @@ which users view single publication pages.  Failure to
 interoperate these images with structured text formats 
 is a significant hindrance to efficient document 
 preparation and editing.
-
 
 \pseudoIndent{} By design, \PacTk{} supports post-processing 
 algorithms within pipelines whose formats can generate 
@@ -659,13 +643,6 @@ surrounds the annotation, so that the \PDF{} view may be cross-referenced
 against input sources, which facilitates review and processing 
 of manuscript changes.
 
-\begin{figure}[ht]
-\includegraphics[scale=0.4]{fin/ie.png}
-\caption{GUI functionality for compiling and curating indexes}
-\label{fig:ss3}
-\end{figure}
-
-
 \pseudoIndent{} For similar reasons, \PacTk{} supports abstractions 
 such as \XML{} custom character entities and \LaTeX{} macros.  
 Many familiar textual components --- ellipses, m- and n-dashes, 
@@ -677,7 +654,6 @@ are lacking when mixing different filetypes (e.g., \LaTeX{} and
 \lPacTk{} has a flexible abstraction system that allows 
 character and macro codes to propagate across different 
 generated files.
-
 
 \pseudoIndent{} A related problem is that abstraction codes should 
 generally be opaque to human users in contexts such as 
@@ -704,19 +680,14 @@ typical \GUI{}s.  Of course, such breakdown is only possible
 when the text encoding systematically identifies individual 
 sentences, as with the \PacTk{}'s \TSOM{} object model.}
 
-\begin{figure}[ht]
-\includegraphics[scale=0.8]{fin/tox.png}
-\caption{Mapping PDF pages to SVG views for improved annotation support}
-\label{fig:ss4}
-\end{figure}
 
 \vspace*{10pt}
-{\semihr{0.31\textwidth}}
+{\semihr{0.387\textwidth}}
 \vspace*{5pt}
 %\sectnum{1.}
 \hspace{2pt}\secttitle{{PacTk for Indexing and Search Engines}}
 \vspace*{5pt}
-{\semihr{0.31\textwidth}}
+{\semihr{0.387\textwidth}}
 
 \vspace*{5pt}
 
@@ -774,22 +745,6 @@ viewers will read metadata that specifies which paragraphs are
 in scope at different page-coordinate regions, so paragraph ids 
 for any location can be ascertained from mouse events (e.g., 
 the dropdown point of a context menu).
-
-
-\begin{figure}[ht]
-\includegraphics[scale=0.5]{fin/sah.png}
-\caption{A category-based web-accessible index table for SVG pages}
-\label{fig:ss5}
-\end{figure}
-
-\begin{figure}[t!]
-\includegraphics[scale=0.5]{fin/stark-mi.png}
-\includegraphics[scale=0.5]{fin/stark.png}
-\caption{Meta-Index Search through a Web Portal}
-\label{fig:ss6}
-\end{figure}
-
-
 
 \item[Multiple Match Strategies]  Index locators are typically 
 identified by matching text against entry-headings, but the parameters 
@@ -891,18 +846,18 @@ through their default algorithms.
 }
 
 
+
 %\sstitle{Constraint Declarations and Other VM Use-Cases}
 
-\pagebreak{}\newpage{}\clearpage{}
 
 
-%\vspace*{10pt}
-{\semihr{0.257\textwidth}}
+\vspace*{10pt}
+{\semihr{0.26\textwidth}}
 \vspace*{5pt}
 %\sectnum{1.}
 \hspace{2pt}\secttitle{{Data Publishing and Multimedia}}
 \vspace*{5pt}
-{\semihr{0.257\textwidth}}
+{\semihr{0.26\textwidth}}
 
 \vspace*{5pt}
 
@@ -914,13 +869,6 @@ one part of a package of files, alongside research data
 sets and, often, numerous forms of multimedia content 
 (potentially including audio, video, image series, \ThreeD{} graphics, 
 and statistical/data-visualization tools and diagrams).}
-
-\begin{figure}[ht]
-\includegraphics[scale=0.5]{fin/oct.png}
-\caption{Flexible range-select features}
-\label{fig:ss7}
-\end{figure}
-
 
 \p{As a \q{publishing accelerator} toolkit, \PacTk{} has 
 several components to help publishers construct these 
@@ -954,11 +902,6 @@ generic parsers can convert a given \XML{} document to a %Document Object Model
 text strings from element nodes, which become the input for initializing 
 object data fields.
 
-\begin{figure}[ht]
-\includegraphics[scale=0.45]{fin/ling.png}
-\caption{Enhanced GUI capabilities enabled by machine-readable text encoding}
-\label{fig:ss8}
-\end{figure}
 
 \pseudoIndent{} \lPacTk{} seeks to address these concerns by offering a 
 platform-independent Virtual Machine that is easy to embed in 
@@ -1121,7 +1064,9 @@ numerous project-specific resources in addition
 to raw data files.  Fellow researchers typically 
 need visualization and computational tools to 
 fully leveraged published data sets for 
-evaluation and re-use.  Unfortunately, relying on generic 
+evaluation and re-use.
+
+\pseudoIndent{}  Unfortunately, relying on generic 
 software to access published data packages is often 
 suboptimal.  For example, \CSV{} files can be 
 loaded into spreadsheets and/or statistical applications, 
@@ -1134,8 +1079,8 @@ both visual overviews (e.g., via charts and figures)
 and functionality for examining individual data objects 
 in detail (e.g., via custom-designed \GUI{} windows).
 
-\pseudoIndent{}  Furthermore, many data sets span multiple 
-data profiles.  For example, consider information 
+\pseudoIndent{}  Many data sets, moreover, combine multiple 
+data structures.  For example, consider information 
 tracking environmental pollutants, such as published 
 by the US \EPA{} Toxic Release Inventory (\TRI{}) project.
 Software tools for properly examining such data could 
@@ -1161,7 +1106,8 @@ to view/analyze domain-specific file types.  Similar
 comments apply to humanities environments, such as 
 front-ends for studying linguistics corpora and/or 
 parse-structures; or graphics tools for digital humanities.
-\lPacTk{} can be beneficial this context 
+
+\pseudoIndent{}  \lPacTk{} can be beneficial this context 
 because a single \PacTk{} plugin could serve as middleware 
 on top of which plguins can run that are individualized 
 to specific publications/manuscripts.  This may be more 
@@ -1177,7 +1123,82 @@ native plugin mechanisms directly.
 
 
 
-%\vspace*{3pt}
+\sstitle{Texture Annotations}
+
+
+
+courts may let this little girl fie
+k -- lisa steinberg horror
+k -- state-pol-act- 
+Ohel-Agency-Under-Baby-Selling-Probe
+
+
+%\p{}
+%\p{}
+%\p{}
+
+
+\vspace*{10pt}
+{\semihr{0.276\textwidth}}
+\vspace*{5pt}
+%\sectnum{1.}
+\hspace{2pt}\secttitle{{Software, Cloud, and \stGUI{} Modules}}
+\vspace*{5pt}
+{\semihr{0.276\textwidth}}
+
+
+
+
+%\vspace*{10pt}
+%{\semihr{0.137\textwidth}}
+%\vspace*{5pt}
+%\sectnum{1.}
+%\hspace{2pt}\secttitle{{Data Sets, Queries, and Database Architecture}}
+%\vspace*{5pt}
+%{\semihr{0.137\textwidth}}
+
+\sstitle{Data Sets, Queries, and Database Architecture}
+
+
+
+\vspace*{10pt}
+{\semihr{0.137\textwidth}}
+\vspace*{5pt}
+%\sectnum{1.}
+\hspace{2pt}\secttitle{{Some References}}
+\vspace*{5pt}
+{\semihr{0.137\textwidth}}
+
+
+
+
+\vspace*{14pt}
+
+{\semihr{0.095\textwidth}}
+\vspace*{6pt}
+%\sectnum{1.}
+\hspace{2pt}\secttitle{{Video Links}}
+\vspace*{4pt}
+{\semihr{0.095\textwidth}}
+
+\p{For more information, please see our software demo vidoes:
+
+%\vspace*{14pt}
+
+% \href{http://www.lingtechsys.com/videos/qmt-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.3]{pm/qmt-composite.png}\\GIS}}%
+% \hspace{10pt}\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.255]{pm/dhax-composite.png}\\360\textdegree{} photography}}%
+% \hspace{25pt}\href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.35]{pm/xcsd-composite.png}\\Image Processing}}%
+
+}
+
+
+%\newpage{}
+
+
+
+
+
+\vspace*{3pt}
 
 \pagestyle{lastpage}
 %
