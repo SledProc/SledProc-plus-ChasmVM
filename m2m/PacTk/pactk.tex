@@ -3,9 +3,8 @@
 
 \documentclass[11pt]{article}
 
-\usepackage[top=.8in, bottom=.6in, left=.56in, right=.45in, footskip=0pt,
-paperheight=13.4in,paperwidth=9.25in]{geometry}
-
+\usepackage[top=.85in, bottom=.65in, left=.56in, right=.45in, footskip=0pt,
+paperheight=13.5in,paperwidth=9.25in]{geometry}
 
 
 
@@ -150,12 +149,14 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 }
 
 
-\fancypagestyle{lastpage}{
+\fancypagestyle{lastpagey}{
     \renewcommand{\headrulewidth}{0pt}    
     \renewcommand{\footrulewidth}{0pt}
 
      \fancyfoot[C] {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
 \fndiamond{\usepage}}}}
+
+
 
 %     \fancyfoot[L] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
 %\fndiamondX{\usepage}}}}
@@ -201,8 +202,19 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
     \fancyfoot[RO, LE] {Pre \thepage}
 }
 
+\fancypagestyle{lastpage}{
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}
+    \fancyfoot[C] {}
+}
+
+
 
 \pagestyle{default}
+
+
+
+
 
 
 
@@ -280,8 +292,47 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{360\textdegree{} photography}, and \href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{image processing}.}}}}}
 %}\fi
 
-
 }
+
+\usetikzlibrary{arrows}
+
+
+\input{PacTkOverlays}
+
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=12{
+\AtTextLowerLeft{
+\hspace{266pt}\raisebox{-21pt}{%  
+{\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fndiamond{\usepage} }}}
+}}
+
+\AtTextLowerLeft{
+\raisebox{86pt}{%
+ \href{http://www.lingtechsys.com/videos/qmt-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.4]{pm/qmt-composite.png}\\GIS}}%
+ \hspace{10pt}\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.255]{pm/dhax-composite.png}\\360\textdegree{} photography}}%
+ \hspace{25pt}\href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.35]{pm/xcsd-composite.png}\\Image Processing}}%
+}}}\fi
+}
+
+
+
+
+
+%\AddToShipoutPicture*{%
+%\ifnum\value{page}=12{
+%  \AtPageLowerLeft{%
+%    \raisebox{20pt}{%
+      
+%\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamond{\usepage}}}
+%
+%    }%
+%  }
+%\fi}
+%}
 
 
 
@@ -895,6 +946,13 @@ through their default algorithms.
 
 \pagebreak{}\newpage{}\clearpage{}
 
+\begin{figure}[ht]
+\includegraphics[scale=0.5]{fin/oct.png}
+\caption{Flexible range-select features}
+\label{fig:ss7}
+\end{figure}
+
+
 
 %\vspace*{10pt}
 {\semihr{0.257\textwidth}}
@@ -914,12 +972,6 @@ one part of a package of files, alongside research data
 sets and, often, numerous forms of multimedia content 
 (potentially including audio, video, image series, \ThreeD{} graphics, 
 and statistical/data-visualization tools and diagrams).}
-
-\begin{figure}[ht]
-\includegraphics[scale=0.5]{fin/oct.png}
-\caption{Flexible range-select features}
-\label{fig:ss7}
-\end{figure}
 
 
 \p{As a \q{publishing accelerator} toolkit, \PacTk{} has 
@@ -1062,6 +1114,14 @@ in a self-contained and cross-platform manner,
 with customizations specific to individual publishers 
 and even to each particular journal or book series.  
 
+
+\begin{figure}[h!]
+\includegraphics[scale=0.66, trim=8.4cm 0 0 0, clip]{fin/pisa.png}
+\caption{Configuring Default Back-End Queries}
+\label{fig:ss9}
+\end{figure}
+
+
 \item[Multimedia Cross-Referencing]  When a document (book or article) is explicitly paired with a 
 published data set, information about the data set should be 
 included in index/search metadata.  This would allow 
@@ -1172,9 +1232,34 @@ native plugin mechanisms directly.
 
 }
 
+%\newgeometry{bottom=.7in}
+
+
 %\p{}
 %\p{}
 
+\vspace*{11pt}
+
+{\semihr{0.097\textwidth}}
+\vspace*{4pt}
+%\sectnum{1.}
+\hspace{2pt}\secttitle{{Video Links}}
+\vspace*{4pt}
+{\semihr{0.097\textwidth}}
+
+\vspace*{4pt}
+
+\p{For more information, please see our software demo videos, which show 
+software components that could be integrated into dataset applications 
+and \PDF{} viewers:
+
+\vspace*{14pt}
+
+% \href{http://www.lingtechsys.com/videos/qmt-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.3]{pm/qmt-composite.png}\\\GIS{}}}%
+% \hspace{10pt}\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.255]{pm/dhax-composite.png}\\360\textdegree{} photography}}%
+% \hspace{25pt}\href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.35]{pm/xcsd-composite.png}\\Image Processing}}%
+
+}
 
 
 %\vspace*{3pt}
