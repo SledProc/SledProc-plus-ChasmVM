@@ -553,14 +553,22 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \colorlet{orb}{green!60!blue}
 \colorlet{orbb}{green!30!blue}
 
+\definecolor{ss}{RGB}{230, 57, 0}
 
+\usepackage{mathabx}
 
 \newcommand{\usstitle}[1]{\vspace{.4em}\raisebox{-1.2em}{{\fontfamily{gar}\fontsize{12}{14}%
 \fontseries{sb}\selectfont{{\textcolor{orbb!65!black}{#1}}}}}}}
 
 
-\newcommand{\sstitle}[1]{\vspace{1.4em}\raisebox{-1.2em}{{\fontfamily{gar}\fontsize{12}{14}%
-\fontseries{sb}\selectfont{{\textcolor{orbb!65!black}{#1}}}}}}}
+\newcommand{\sstitle}[1]{\vspace{1.4em}\raisebox{-1.2em}{{%
+\fontfamily{ccr}\fontsize{17}{14}%
+\fontseries{b}\selectfont{{%
+\hspace{-2pt}\raisebox{1pt}{\resizebox{7pt}{9pt}{%
+\textcolor{ss!85!black}{$\triangleright$}}}%
+\hspace{7pt}\raisebox{2.25pt}{\textcolor{ss!85!blue}{\resizebox{7pt}{6pt}{$\blacktriangleleft$}}}%
+\hspace{7pt}\textcolor{ss}{#1}%
+}}}}}}
 
 \newcommand{\DaSemio}{{\fontfamily{fvs}\fontsize{9}{14}%
 \selectfont{\textbf{\textcolor{orb!75!black}{Da\resizebox{6.25pt}{!}{S}emio}}}}}}
@@ -1152,7 +1160,7 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \selectfont{\textbf{\textcolor{orb!75!black}{GTagML}}}}}}
 
 
-\setlist[description]{leftmargin=13pt}
+\setlist[description]{leftmargin=13pt, itemsep=9pt}
 
 
 

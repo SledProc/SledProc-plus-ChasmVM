@@ -277,7 +277,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 
 
-\setlength{\itemsep}{10pt}
+%\setlength{\itemsep}{50pt}
 
 
 \AddToShipoutPictureBG{%
@@ -351,7 +351,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\thispagestyle{empty}
 \thispagestyle{firstpage}
 
-\vspace*{20pt}
+\vspace*{-41pt}
 
 %\vspace*{1em}
 
@@ -359,7 +359,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 {\cyanhr}
 
-\vspace*{11pt}
+\vspace*{15pt}
 
 {\color{red!70!black}\fontfamily{phv}\fontseries{b}\selectfont
 
@@ -385,7 +385,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 {\cyanhr}
 
-\vspace*{55pt}
+\vspace*{35pt}
 
 \hspace{-32pt}Amy Neustein, Ph.D.\\
 \hspace{-32pt}CEO and Founder\\
@@ -396,7 +396,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 \end{center}
 
-\vspace*{26pt}
+\vspace*{3pt}
 
 %{\large{}}
 
@@ -432,23 +432,24 @@ Publishing Documents, Data Sets, and Multimedia Resources }}
 
 \p{In contemporary publishing, the standard workflow includes \XML{}-based 
 formats such as \JATS{} or \BITS{} from which are compiled 
-reader-visible documents such as \PDF{}s.  These intermediate 
-files are distinct from those that authors submit directly, and they 
-can be computationally accessed via generic \XML{}-oriented 
-protocols such as \SAX{} (Simple \API{} for \XML{}), \XQuery{}, 
+\PDF{}s and other reader-visible documents.  Intermediate \XML{} and 
+similar files are distinct from those that authors submit directly; 
+they have their own tool stacks and 
+are computationally accessed via protocols 
+such as \SAX{} (Simple \API{} for \XML{}), \XQuery{}, 
 and \XQSE{} (\XQuery{} scripting extension).  Unfortunately, 
 \XML{} itself is not explicitly built for representing 
 textual data, and examining \JATS{} or \BITS{} files via 
-generic \XML{} technology renders certain query and editing 
-tasks difficult or impossible to implement.  The \PDF{} format 
+generic \XML{} technology renders certain publishing-related 
+query and editing tasks difficult to implement.  The \PDF{} format 
 is similarly opaque because internal \PDF{} representations 
 of document text include many anomalies due to 
 ligatures, hyphenation, font specs, and other layout-related 
 discrepancies between \XML{} inputs and user-visible output.}
 
 \p{Given the limitations of \XML{} for natural-language 
-documents, numerous competing formats have been developed 
-that provide alternatives or extensions to \XML{}.  These  
+documents, numerous competing formats have been developed, 
+providing potential alternatives or extensions to \XML{}.  These  
 include \TEI{} (Text Encoding Initiative), \TagML{} 
 (Text-as-Graph Markup Language), \BioC{} (a biomedical text mining 
 standard defined by PubMed Central), and Research Object Bundles 
@@ -460,23 +461,39 @@ to others.  For example, the \XML{} parent-child element relationship
 is replaced in \TagML{} with two different containment styles 
 (logical and extensional), such that \DOM{} and event-based 
 parsers targeted at the simpler \XML{} hierarchy must be reimplemented 
-for the \TagML{} system.  From the perspective of 
+for the \TagML{} system.}
+
+\p{From the perspective of 
 \PacTk{}, text-encoding evinces a spectrum of distinct 
 \textit{topomorphic regimes} where a proliferation of 
 incompatible document structures prohibits the emergence 
-of common query, traversal, and metadata formats.}
+of common query, traversal, and metadata formats.  The obvious 
+problem is that workflows have to be reconstructed 
+for each incompatible document specification.  
+In practice, such difficulties have almost certainly 
+hindered the adoption of theoretically well-founded 
+formats such as \TagML{}.}
 
+\p{The idea behind \PacTk{} is that divergent 
+formats cannot be satisfactorily reconciled simply by 
+proposing yet another format to insert into 
+analogous workflows.  Instead, building a more 
+sophisticated publishing platform involves 
+constructing integrated computational 
+tableaux weaving together text-encoding, 
+query-evaluation, compiler-theoretic, and 
+front-end concerns.} 
 
 \p{One important variation amongst text-encoding formats is 
-the level of granularity for most textual elements.  In 
+the level of granularity for textual elements.  In 
 \JATS{}, \BITS{}, and most \JSON{} encodings, the fundamental 
 discursive unit is the individual paragraph.  Elements on smaller 
 scales (such as sentences or block quotes) are notated 
 haphazardly at best.  \LaTeX{} employs reasonable 
-sentence-boundary heuristics (that can be overridden via 
-macros when necessary), but sentence objects are not expressed 
-in any systematic manner (e.g., via auxiliary files) except 
-for intermediate spacing.  In \TEI{} and \BioC{}, individual 
+sentence-boundary heuristics --- which can be overridden via 
+macros when necessary --- but sentence objects are not expressed 
+in any systematic manner (e.g., via auxiliary files) for 
+any purposes other then visual spacing.  In \TEI{} and \BioC{}, individual 
 sentences \textit{can} be represented, but this is not 
 mandatory (thus \textbf{s} and \textbf{sentence} tags 
 are available but not guaranteed to be present in any particular document).  
@@ -499,7 +516,7 @@ expressed by object methods and operators exposed to
 in the sense that navigation between objects is determined 
 by structural properties of divergent document formats, 
 that manifest in competing notions of individuation for 
-individual structure-sites and their interrelationships).  
+structure-sites and any interrelationships declared between them).  
 In short, the \PacTk{} object system synthesizes distinct 
 structuring protocols found in competing formats such as 
 \JATS{}, \TagML{}, and \BioC{}, allowing publishers' workflows 
@@ -513,19 +530,19 @@ and the lack of standardized \XQuery{} and \DOM{}-style interfaces.}
 \p{The remainder of this document will discuss how 
 \PacTk{} can streamline editing, indexing, and document-preparation 
 tasks, as well as improve User Experience for human readers.  
-Later sections will also address how \PacTk{} can contribute 
-to broader projects where text documents are published together 
-with data sets and/or multimedia presentations.  Overall, 
+Later sections will also address how \PacTk{} could contribute 
+to broader projects where text documents are published alongside 
+data sets and/or multimedia presentations.  Overall, 
 \PacTk{} presents a unified model and coding interface for 
 text queries operating in diverse contexts, including 
 \PDF{} viewers, search engines, and document-preparation code.
 Similarly, software employing \PacTk{} to navigate through 
-document objects can leverage interop metadata across different 
+document objects can leverage interop metadata across multiple 
 formats, such as \XML{} elements and \PDF{} page coordinates, 
 that are typically unavailable in other publishing tools.}
 
 
-\vspace*{10pt}
+\vspace*{24pt}
 {\semihr{0.380\textwidth}}
 \vspace*{5pt}
 %\sectnum{1.}
@@ -536,7 +553,7 @@ that are typically unavailable in other publishing tools.}
 \vspace*{5pt}
 
   
-\p{The computational foundation of \PacTk{} is the collection of 
+\p{The computational foundation of \PacTk{} is a collection of 
 classes that represented individual sentences and other 
 textual elements in the \TSOM{} family (\PDF{} pages, annotations, 
 footnotes, block quotes, edits or changes across document versions, etc.).  
@@ -545,7 +562,7 @@ input format called \GTagML{}, or \q{grounded} \TagML{}.
 The term \q{grounded} reflects how certain structure-sites 
 may be specifically marked as serializing a typed object: 
 i.e., tags, attributes, or text nodes in the neighborhood 
-of a site supply the data fields needed to initialize an 
+of a site supply the information necessary to initialize an 
 object-instance during deserialization.  In other respects 
 \GTagML{} follows most of the principles advocated by 
 \TagML{}, with novel extensions; for example, \GTagML{} 
@@ -574,9 +591,9 @@ publishers, journals, and book series).  Alternatively,
 \JATS{} or \BITS{} directly.}
 
 \p{For workflows that feature \JATS{}, \BITS{}, or 
-\LaTeX{}, \TSOM{} object bundles would be used as 
+\LaTeX{}, \TSOM{} objects could be employed as 
 adjunct data sources through which edits, queries, 
-and other computational artifacts would be routed.  
+and other computational artifacts are routed.  
 \lPacTk{} data can then be mapped both to 
 archiving formats (like \XML{}) and camera-ready 
 generators (like \LaTeX{}), but with a common 
@@ -596,7 +613,10 @@ benefits in areas such as copy-editing and indexing.}
 \caption{An index entry dialog window (and context menu for single and meta-index views)}
 \label{fig:ss1}
 \end{figure}
+
 \sstitle{PacTk for Editing}
+
+\vspace*{8pt}
 
 \p{\lPacTk{} has an advanced query framework to help find 
 specific locations in text where edits may be warranted 
@@ -607,7 +627,7 @@ to correctly review and process such edits.  Here are some features:
 
 \item[Contextual Filters for Text Locations]  Often it is 
 useful to restrict the scope of text searches to 
-characters with specific presentation features (italics, alternative 
+content with specific presentation characteristics (italics, alternative 
 typefaces, citations), discursive roles (inline/block quotes, 
 footnote text, section/subsection titles), or semantic 
 significance (acronyms, annotations, proper/place names).  
@@ -615,10 +635,10 @@ significance (acronyms, annotations, proper/place names).
 \pseudoIndent{} Implementing such filters via \XPath{}/tag 
 restrictions can be inaccurate, because relevant filter 
 criteria may be orthogonal to \DOM{} hierarchies.  For 
-example, \XML{} or \LaTeX{} code may wish to wrap 
+example, \XML{} or \LaTeX{} code might wish to wrap 
 elements such as footnotes or block quotes in 
 custom environments, to ensure desired pre- or 
-post-processing.  Content that is functionally 
+post-processing.  Material that is functionally 
 footnote or quoted text, therefore, may not necessarily 
 be indicated with those specific tag names.  The \PacTk{} 
 system allows programmers to define lists of boolean 
