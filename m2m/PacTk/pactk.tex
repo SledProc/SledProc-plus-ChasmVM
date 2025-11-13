@@ -334,7 +334,12 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\fi}
 %}
 
+\definecolor{bkgr}{HTML}{228AFE}
 
+\renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}%
+{\fontfamily{lmss}\fontseries{bx}\fontsize{12}{12}\selectfont%
+\textcolor{bkgr!50!black}{#1}\hspace*{1.5em}}
+}
 
 
 \begin{document}
@@ -631,13 +636,6 @@ or where a user wants to find a specific piece of
 text known to have a given context.
 
 
-\begin{figure}[ht]
-\includegraphics[scale=0.83]{fin/meta.png}
-\caption{Dialog window for local and meta-index searches}
-\label{fig:ss2}
-\end{figure}
-
-
 \item[Sentence-Level Queries]  Siting queries relative 
 to sentence boundaries can improve 
 precision and express query rationales more succinctly.  
@@ -710,12 +708,6 @@ surrounds the annotation, so that the \PDF{} view may be cross-referenced
 against input sources, which facilitates review and processing 
 of manuscript changes.
 
-\begin{figure}[ht]
-\includegraphics[scale=0.4]{fin/ie.png}
-\caption{GUI functionality for compiling and curating indexes}
-\label{fig:ss3}
-\end{figure}
-
 
 \pseudoIndent{} For similar reasons, \PacTk{} supports abstractions 
 such as \XML{} custom character entities and \LaTeX{} macros.  
@@ -741,6 +733,15 @@ structured formats such as \XML{} and \LaTeX{}.
 \end{description}
 }
 
+
+\begin{figure}[ht]
+\includegraphics[scale=0.83]{fin/meta.png}
+\caption{Dialog window for local and meta-index searches}
+\label{fig:ss2}
+\end{figure}
+
+
+
 \p{Often users may prefer to initiate or review edits though \PDF{} files 
 directly, but in other cases plain-text files may be appropriate 
 instead, without \GUI{} overhead.  With \PacTk{}, for example, 
@@ -756,10 +757,11 @@ when the text encoding systematically identifies individual
 sentences, as with the \PacTk{}'s \TSOM{} object model.}
 
 \begin{figure}[ht]
-\includegraphics[scale=0.8]{fin/tox.png}
-\caption{Mapping PDF pages to SVG views for improved annotation support}
-\label{fig:ss4}
+\includegraphics[scale=0.4]{fin/ie.png}
+\caption{GUI functionality for compiling and curating indexes}
+\label{fig:ss3}
 \end{figure}
+
 
 \vspace*{10pt}
 {\semihr{0.31\textwidth}}
@@ -806,6 +808,12 @@ associated data.  These objects could be initialized from
 \GTagML{} files or specialized windows floating atop 
 \PDF{} viewers.}
 
+
+\begin{figure}[ht]
+\includegraphics[scale=0.8]{fin/tox.png}
+\caption{Mapping PDF pages to SVG views for improved annotation support}
+\label{fig:ss4}
+\end{figure}
 
 \p{Building indexes on the basis of native sentence and index-entry objects 
 has certain benefits as compared to generic (e.g., \XML{}) manuscript 
@@ -1006,12 +1014,6 @@ generic parsers can convert a given \XML{} document to a %Document Object Model
 text strings from element nodes, which become the input for initializing 
 object data fields.
 
-\begin{figure}[ht]
-\includegraphics[scale=0.45]{fin/ling.png}
-\caption{Enhanced GUI capabilities enabled by machine-readable text encoding}
-\label{fig:ss8}
-\end{figure}
-
 \pseudoIndent{} \lPacTk{} seeks to address these concerns by offering a 
 platform-independent Virtual Machine that is easy to embed in 
 scientific applications or build as a standalone program.  Scripting 
@@ -1080,6 +1082,14 @@ in some technical details from typical language interpreters,
 resulting in a scripting environment specifically built for 
 open-access data sharing and the deployment of data packages 
 as pedagogical tools.    
+
+\begin{figure}[ht]
+\includegraphics[scale=0.45]{fin/ling.png}
+\caption{Enhanced GUI capabilities enabled by machine-readable text encoding}
+\label{fig:ss8}
+\end{figure}
+
+
 
 \item[Full-Text Query Languages]  As discussed earlier in this 
 document, \PacTk{} can be utilized as a code library by 
