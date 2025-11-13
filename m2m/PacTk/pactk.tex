@@ -387,16 +387,16 @@ generic \XML{} technology renders certain query and editing
 tasks difficult or impossible to implement.  The \PDF{} format 
 is similarly opaque because internal \PDF{} representations 
 of document text include many anomalies due to 
-ligatures, hypenation, font specs, and other layout-related 
+ligatures, hyphenation, font specs, and other layout-related 
 discrepancies between \XML{} inputs and user-visible output.}
 
-\p{Given the limitataions of \XML{} for natural-language 
+\p{Given the limitations of \XML{} for natural-language 
 documents, numerous competing formats have been developed 
 that provide alternatives or extensions to \XML{}.  These  
 include \TEI{} (Text Encoding Initiative), \TagML{} 
 (Text-as-Graph Markup Language), \BioC{} (a biomedical text mining 
 standard defined by PubMed Central), and Research Object Bundles 
-(a Semantic-Web based specification that convers both text and 
+(a Semantic-Web based specification that covers both text and 
 data sets).  With a proliferation of different text-encoding standards, 
 query and traversal protocols that are developed for one  
 format (e.g., \JATS{} and its derivatives) cannot be directly applied 
@@ -417,7 +417,7 @@ the level of granularity for most textual elements.  In
 discursive unit is the individual paragraph.  Elements on smaller 
 scales (such as sentences or block quotes) are notated 
 haphazardly at best.  \LaTeX{} employs reasonable 
-sentence-boundary heuristics (that can be overriden via 
+sentence-boundary heuristics (that can be overridden via 
 macros when necessary), but sentence objects are not expressed 
 in any systematic manner (e.g., via auxiliary files) except 
 for intermediate spacing.  In \TEI{} and \BioC{}, individual 
@@ -434,7 +434,7 @@ editing, indexing, and user-interface tasks become feasible
 
 \p{In contrast to the other formats mentioned here, 
 \PacTk{} is not a single file format but rather a collection 
-of code libaries and classes, with data types representing 
+of code libraries and classes, with data types representing 
 specific textual elements (sentences, paragraphs, \PDF{} pages, 
 annotations and comment-boxes, etc.).  Query and traversal 
 protocols modeled via \XQuery{}, \DOM{}, and so on, become 
@@ -728,7 +728,7 @@ document and identify when a particular paragraph mentions a
 named entity suitable for indexing.  Depending 
 on representations or tag sets used (e.g., the 
 \JATS{} \textbf{string-name} element) annotated spans 
-and citations may also form the privisional heading-list 
+and citations may also form the provisional heading-list 
 for an index.}
 
 
@@ -839,13 +839,13 @@ locators are included among the query results.
 \item[Series or Archival Meta-Indexes]  Once a standard format 
 is developed for indexes in some document-collection, it becomes 
 possible to pool multiple indexes into a common resource.  
-Each time a new publiction is finalized, all of its index 
+Each time a new publication is finalized, all of its index 
 terms could be inserted into a bibliographic database 
 allowing users to search across multiple books/manuscripts 
 in a given book series, journal collection, or document 
 repository.  Such meta-indexes can support searches 
 that are more precise and granular than conventional 
-search-engine technologies based on occurance vectors 
+search-engine technologies based on occurrence vectors 
 and stemming/lemmatization.
 
 \item[Academic Search Engines]  In online contexts, \q{indexing} typically 
@@ -879,8 +879,8 @@ in a single \PDF{} document.
 
 \pseudoIndent{} Even where queries are executed via conventional 
 vector-database methods, \PacTk{} allows authors or digital editors 
-to exercise control over how word-occurance lists are compiled.  
-For exaple, \TSOM{} objects can include lemmatized word-lists 
+to exercise control over how word-occurrence lists are compiled.  
+For example, \TSOM{} objects can include lemmatized word-lists 
 per sentence; authors may then control for 
 circumstances such as two different meanings reduced to the 
 same linguistic stem, which might not be properly 
@@ -964,11 +964,11 @@ object data fields.
 platform-independent Virtual Machine that is easy to embed in 
 scientific applications or build as a standalone program.  Scripting 
 or query language can then emit code for this specific \VM{} to 
-take respondibility for deserializing encoded data sets.  Depend 
+take responsibility for deserializing encoded data sets.  Depend 
 on the format, the \VM{} instructions might navigate through 
 graph-like structures in a standardized profile (like \XML{}) 
 or implement and/or integrate with (via postprocessors or 
-rule-match callbacks) parsers for custom imput file types.
+rule-match callbacks) parsers for custom input file types.
 
 \pseudoIndent{} Via these technologies, publishers can ensure that 
 data sets are accessible so long as there are deserialization 
@@ -1030,7 +1030,7 @@ open-access data sharing and the deployment of data packages
 as pedagogical tools.    
 
 \item[Full-Text Query Languages]  As discussed earlier in this 
-document, \PacTk{} can be utilized as a code libary by 
+document, \PacTk{} can be utilized as a code library by 
 calling methods on \Cpp{} (specifically, \TSOM{}) objects.  
 At the same time, a \PacTk{} virtual machine supplies an  
 environment for compiling scripting or query languages.  
@@ -1051,7 +1051,7 @@ generative production rules), and directly-executable
 grammar files (with no separate compilation steps), 
 the \PacTk{} parsers are more flexible than conventional 
 \LEX{}/\YACC{}-style compilers.  Meanwhile, the \VM{} 
-runtimes allows query evaluators to recgonize basic 
+runtimes allows query evaluators to recogonize basic 
 scripting constructions such as locally-scoped variables 
 and calls to arbitrary boolean-valued procedures as 
 filter parameters.
@@ -1156,14 +1156,14 @@ releasing raw data files.  Instead, open-access materials should
 in general include plugins or source-code extensions (either 
 developed individual for one manuscript or collectively 
 for a book series, journal title, or document repository) 
-targeting science applications with requisite capbilities 
+targeting science applications with requisite capabilities 
 to view/analyze domain-specific file types.  Similar 
 comments apply to humanities environments, such as 
 front-ends for studying linguistics corpora and/or 
 parse-structures; or graphics tools for digital humanities.
 \lPacTk{} can be beneficial this context 
 because a single \PacTk{} plugin could serve as middleware 
-on top of which plguins can run that are individualized 
+on top of which plugins can run that are individualized 
 to specific publications/manuscripts.  This may be more 
 efficient than building components against applications' 
 native plugin mechanisms directly. 
