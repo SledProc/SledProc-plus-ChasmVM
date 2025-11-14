@@ -799,14 +799,22 @@ typical \GUI{}s.  Of course, such breakdown is only possible
 when the text encoding systematically identifies individual 
 sentences, as with the \PacTk{}'s \TSOM{} object model.}
 
-\begin{figure}[ht]
+\begin{figure}[b!]
 \includegraphics[scale=0.4]{fin/ie.png}
 \caption{GUI functionality for compiling and curating indexes}
 \label{fig:ss3}
 \end{figure}
 
 
-\vspace*{10pt}
+
+\begin{figure}[t]
+\includegraphics[scale=0.83, trim=0 3cm 0 1cm, clip]{fin/single.png}
+\caption{An index entry dialog window (and context menu for single and meta-index views)}
+\label{fig:ss4}
+\end{figure}
+
+
+%\vspace*{10pt}
 {\semihr{0.31\textwidth}}
 \vspace*{5pt}
 %\sectnum{1.}
@@ -851,13 +859,6 @@ associated data.  These objects could be initialized from
 \GTagML{} files or specialized windows floating atop 
 \PDF{} viewers.}
 
-
-
-\begin{figure}[ht]
-\includegraphics[scale=0.83]{fin/single.png}
-\caption{An index entry dialog window (and context menu for single and meta-index views)}
-\label{fig:ss4}
-\end{figure}
 
 
 \p{Building indexes on the basis of native sentence and index-entry objects 
@@ -905,7 +906,8 @@ appropriate for query text seeking locators specific to each entry.
 
 \item[Index-Building GUI Components]  Index entries are multi-faceted 
 objects that naturally lend themselves to dedicated front-end displays, 
-such as dialog windows.  For example, entries typically include a heading 
+such as dialog windows (Figures~\ref{fig:ss3}~and~\ref{fig:ss4}).  
+For example, entries typically include a heading 
 label and then one or more locators (e.g., paragraph ids), 
 then possible subheadings with their own 
 locators, plus \q{redirectors} (\textit{see} or \textit{see also}) applied 
@@ -945,7 +947,7 @@ in a given book series, journal collection, or document
 repository.  Such meta-indexes can support searches 
 that are more precise and granular than conventional 
 search-engine technologies based on occurrence vectors 
-and stemming/lemmatization.
+and stemming/lemmatization (Figure~\ref{fig:ss5}).
 
 \item[Academic Search Engines]  In online contexts, \q{indexing} typically 
 refers not to human-visible book indexes but rather to 
@@ -989,27 +991,18 @@ through their default algorithms.
 \end{description}
 
 
-
 \begin{figure}[h!]
-\includegraphics[scale=0.5]{fin/stark-mi.png}
-\includegraphics[scale=0.5]{fin/stark.png}
-\caption{Meta-Index Search Through a Web Portal}
+\includegraphics[scale=0.66, trim=8.4cm 0 0 0, clip]{fin/pisa.png}
+\caption{Configuring Default Back-End Queries}
 \label{fig:ss6}
 \end{figure}
-
 
 }
 
 
 %\sstitle{Constraint Declarations and Other VM Use-Cases}
 
-\pagebreak{}\newpage{}\clearpage{}
-
-\begin{figure}[ht]
-\includegraphics[scale=0.5]{fin/oct.png}
-\caption{Flexible range-select features}
-\label{fig:ss7}
-\end{figure}
+%\pagebreak{}\newpage{}\clearpage{}
 
 
 
@@ -1030,7 +1023,18 @@ published documents such as \PDF{}s serve as only
 one part of a package of files, alongside research data 
 sets and, often, numerous forms of multimedia content 
 (potentially including audio, video, image series, \ThreeD{} graphics, 
-and statistical/data-visualization tools and diagrams).}
+and statistical/data-visualization tools and diagrams).  If desired, 
+\PDF{} viewers could themselves be implemented as one 
+portion of a multimedia suite, with functional motifs 
+duplicated across the various components (Figures~\ref{fig:ss8}~and~\ref{fig:ss9}).}
+
+
+\begin{figure}[t!]
+\includegraphics[scale=0.5]{fin/stark-mi.png}
+\includegraphics[scale=0.5]{fin/stark.png}
+\caption{Meta-Index Search Through a Web Portal}
+\label{fig:ss7}
+\end{figure}
 
 
 \p{As a \q{publishing accelerator} toolkit, \PacTk{} has 
@@ -1065,6 +1069,7 @@ generic parsers can convert a given \XML{} document to a %Document Object Model
 text strings from element nodes, which become the input for initializing 
 object data fields.
 
+%\newpage{}\clearpage{}
 \pseudoIndent{} \lPacTk{} seeks to address these concerns by offering a 
 platform-independent Virtual Machine that is easy to embed in 
 scientific applications or build as a standalone program.  Scripting 
@@ -1081,6 +1086,13 @@ libraries targing a \PacTk{} \VM{}, rather than duplicating
 effort and requiring multiple libraries for different operating 
 systems and programming environments.  
  
+\begin{figure}[ht]
+\includegraphics[scale=0.5]{fin/oct.png}
+\caption{Flexible range-select features}
+\label{fig:ss8}
+\end{figure}
+
+
 
 \item[Analytic and Demonstrative Code]  Many data sets are published 
 alongside copies or samples of code used to analyze the raw data.  
@@ -1141,10 +1153,12 @@ as pedagogical tools.
 %\label{fig:ss8}
 %\end{figure}
 
-\begin{figure}[ht]
+\vspace*{14pt}
+
+\begin{figure}[h!]
 \includegraphics[scale=0.5]{fin/sah.png}
 \caption{A category-based web-accessible index table for SVG pages}
-\label{fig:ss5}
+\label{fig:ss9}
 \end{figure}
 
 
@@ -1181,12 +1195,6 @@ in a self-contained and cross-platform manner,
 with customizations specific to individual publishers 
 and even to each particular journal or book series.  
 
-
-\begin{figure}[h!]
-\includegraphics[scale=0.66, trim=8.4cm 0 0 0, clip]{fin/pisa.png}
-\caption{Configuring Default Back-End Queries}
-\label{fig:ss9}
-\end{figure}
 
 
 \item[Multimedia Cross-Referencing]  When a document (book or article) is explicitly paired with a 
