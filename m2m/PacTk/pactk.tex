@@ -351,7 +351,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\thispagestyle{empty}
 \thispagestyle{firstpage}
 
-\vspace*{-41pt}
+\vspace*{-46pt}
 
 %\vspace*{1em}
 
@@ -431,7 +431,7 @@ Publishing Documents, Data Sets, and Multimedia Resources }}
 \vspace*{3pt}
 
 \p{In contemporary publishing, the standard workflow includes \XML{}-based 
-formats such as \JATS{} or \BITS{} from which are compiled 
+formats such as \JATS{} or \BITS{}, from which are compiled 
 \PDF{}s and other reader-visible documents.  Intermediate \XML{} and 
 similar files are distinct from those that authors submit directly; 
 they have their own tool stacks and 
@@ -445,9 +445,11 @@ query and editing tasks difficult to implement.  The \PDF{} format
 is similarly opaque because internal \PDF{} representations 
 of document text include many anomalies due to 
 ligatures, hyphenation, font specs, and other layout-related 
-discrepancies between \XML{} inputs and user-visible output.}
+discrepancies between \XML{} inputs and user-visible output.  
+As a result, interal \PDF{} text only partially corresponds 
+to textual content as understood by authors and editors.}
 
-\p{Given the limitations of \XML{} for natural-language 
+\p{Given the limitations of \PDF{} and \XML{} for natural-language 
 documents, numerous competing formats have been developed, 
 providing potential alternatives or extensions to \XML{}.  These  
 include \TEI{} (Text Encoding Initiative), \TagML{} 
@@ -463,6 +465,15 @@ is replaced in \TagML{} with two different containment styles
 parsers targeted at the simpler \XML{} hierarchy must be reimplemented 
 for the \TagML{} system.}
 
+\p{Meanwhile, with regard to \PDF{}, effective search and text-interaction 
+capabilities depend on supplementing this format's internal 
+natural-language representation with machine-readable text encoding, 
+which might be embedded in \PDF{} files or available as sibling 
+assets.  In principle, \XML{} documents could supply such 
+content, although current pipelines are not set up to 
+share \JATS{}/\BITS{} files (for example) in end-user contexts.}
+
+
 \p{From the perspective of 
 \PacTk{}, text-encoding evinces a spectrum of distinct 
 \textit{topomorphic regimes} where a proliferation of 
@@ -473,6 +484,7 @@ for each incompatible document specification.
 In practice, such difficulties have almost certainly 
 hindered the adoption of theoretically well-founded 
 formats such as \TagML{}.}
+
 
 \p{The idea behind \PacTk{} is that divergent 
 formats cannot be satisfactorily reconciled simply by 
@@ -490,7 +502,7 @@ the level of granularity for textual elements.  In
 discursive unit is the individual paragraph.  Elements on smaller 
 scales (such as sentences or block quotes) are notated 
 haphazardly at best.  \LaTeX{} employs reasonable 
-sentence-boundary heuristics --- which can be overridden via 
+sentence-boundary heuristics --- which may be overridden via 
 macros when necessary --- but sentence objects are not expressed 
 in any systematic manner (e.g., via auxiliary files) for 
 any purposes other then visual spacing.  In \TEI{} and \BioC{}, individual 
@@ -506,11 +518,11 @@ editing, indexing, and user-interface tasks become feasible
 (as outlined in the next section).}
 
 \p{In contrast to the other formats mentioned here, 
-\PacTk{} is not a single file format but rather a collection 
+\PacTk{} is not a single file type but rather a collection 
 of code libraries and classes, with data types representing 
 specific textual elements (sentences, paragraphs, \PDF{} pages, 
 annotations and comment-boxes, etc.).  Query and traversal 
-protocols modeled via \XQuery{}, \DOM{}, and so on, become 
+protocols modeled via \XQuery{}, \DOM{}, and so on become 
 expressed by object methods and operators exposed to 
 \Cpp{} code, for example (\PacTk{} is thus \q{topomorphic} 
 in the sense that navigation between objects is determined 
@@ -530,7 +542,7 @@ and the lack of standardized \XQuery{} and \DOM{}-style interfaces.}
 \p{The remainder of this document will discuss how 
 \PacTk{} can streamline editing, indexing, and document-preparation 
 tasks, as well as improve User Experience for human readers.  
-Later sections will also address how \PacTk{} could contribute 
+Later sections will also address how \PacTk{} may contribute 
 to broader projects where text documents are published alongside 
 data sets and/or multimedia presentations.  Overall, 
 \PacTk{} presents a unified model and coding interface for 
@@ -538,8 +550,8 @@ text queries operating in diverse contexts, including
 \PDF{} viewers, search engines, and document-preparation code.
 Similarly, software employing \PacTk{} to navigate through 
 document objects can leverage interop metadata across multiple 
-formats, such as \XML{} elements and \PDF{} page coordinates, 
-that are typically unavailable in other publishing tools.}
+formats --- such as \XML{} elements and \PDF{} page 
+coordinates --- that is typically unavailable in other publishing tools.}
 
 
 \vspace*{24pt}
@@ -610,7 +622,7 @@ benefits in areas such as copy-editing and indexing.}
 
 
 \begin{figure}[ht]
-\includegraphics[scale=0.8]{fin/tox.png}
+\includegraphics[scale=0.8, trim=0 18pt 0 0, clip]{fin/tox.png}
 \caption{Mapping PDF pages to SVG views for improved annotation support}
 \label{fig:ss1}
 \end{figure}
@@ -660,7 +672,8 @@ text known to have a given context.
 
 \item[Sentence-Level Queries]  Siting queries relative 
 to sentence boundaries can improve 
-precision and express query rationales more succinctly.  
+precision and express query rationales more succinctly 
+(when compared to paragraph-based organization).
 For instance, the proper punctuation around a word or 
 phrase often depends on whether that content appears 
 at the beginning, middle, or end of a sentence.  
@@ -678,7 +691,7 @@ Processing).  \lPacTk{} likewise models
 \q{topomorphic} navigational 
 relations between sentences, such as between 
 adjacent siblings of parent objects (typically 
-paragraphs) and also nestings where a multi-sentence 
+paragraphs) and also nestings wherein a multi-sentence 
 footnote, for example, occurs in a parent-sentence 
 context, or where a block quotes functions in part as a 
 logical child of the sentence that introduces it.
