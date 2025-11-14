@@ -1217,7 +1217,7 @@ and even to each particular journal or book series.
 
 
 \item[Multimedia Cross-Referencing]  When a document (book or article) is explicitly paired with a 
-published data set, information about the data set should be 
+published data set, information about the supplemental package should be 
 included in index/search metadata.  This would allow 
 keyword searches to be extended to raw data fields, as well 
 as data-structure parameters (such as column labels, source-code 
@@ -1227,12 +1227,12 @@ as well as individual objects/records.  For example, a specific
 column or field in tabular data structures can be cross-referenced 
 with the paragraph in article text where that field is 
 discussed (its observation/acquisition methodology, units of measurement, 
-statistical distribution, etc.).
+valid range delineation, statistical distribution, etc.).
 
 \pseudoIndent{} Cross-referencing between research papers and data sets 
 is a special case of multi-media cross-referencing, where annotations defined 
 in the context of a specific media type assert semantic or thematic 
-relations to content with a different modality.  Concrete examples 
+relations to contents of a different modality.  Concrete examples 
 of multimedia cross-referencing include geotagging video frames; linking 
 \CAD{} digital twins with product specs; annotating Regions of Interest 
 within image series with coded labels associated with published raw data; 
@@ -1249,11 +1249,11 @@ other context so that users can reconstruct a specific \ThreeD{} state,
 as constituted by camera angle/location and zoom settings).
 
 \pseudoIndent{}  The challenge when implementing multimedia cross-references is to 
-ensure that viewers for two divergent media types can properly 
+ensure that viewers for two divergent media types may properly 
 interoperate.  With correctly interpreted cross-references, application users should be able 
 to navigate from a window dedicated to one media/file to a 
 window rendering a different format, and correctly isolate the 
-portion of a file (not just the overall file) implicate in a cross-reference.  
+portion of a file (not just the overall file) implicated in a cross-reference.  
 For example, geotagging video frames should enable users to pause a video 
 at a particular location and then, via the geotag, switch to a map 
 display centered on the geospatial coordinates visible in the video 
@@ -1274,16 +1274,16 @@ according to \FAIRsharing{} standards often requires
 numerous project-specific resources in addition 
 to raw data files.  Fellow researchers typically 
 need visualization and computational tools to 
-fully leveraged published data sets for 
+fully leverage published data sets for 
 evaluation and re-use.  Unfortunately, relying on generic 
 software to access published data packages is often 
-suboptimal.  For example, \CSV{} files can be 
+suboptimal.  For example, \CSV{} files might be 
 loaded into spreadsheets and/or statistical applications, 
 but simply viewing data files in tabular fashion 
 (even if the information is conducive to such structures) 
 provides only limited value.  The same is true for 
 statistical plots and diagrams.  Effective evaluation 
-and re-use involves front-end programs that can provide 
+and re-use involves front-end programs that could provide 
 both visual overviews (e.g., via charts and figures) 
 and functionality for examining individual data objects 
 in detail (e.g., via custom-designed \GUI{} windows).
@@ -1291,7 +1291,8 @@ in detail (e.g., via custom-designed \GUI{} windows).
 \pseudoIndent{}  Furthermore, many data sets span multiple 
 data profiles.  For example, consider information 
 tracking environmental pollutants, such as published 
-by the US \EPA{} Toxic Release Inventory (\TRI{}) project.
+by the Environmental Protection Agency's 
+Toxic Release Inventory (\TRI{}) project.
 Software tools for properly examining such data could 
 supply both \GIS{} maps (for understanding 
 geospatial details and patterns about where environmental 
@@ -1314,8 +1315,9 @@ targeting science applications with requisite capabilities
 to view/analyze domain-specific file types.  Similar 
 comments apply to humanities environments, such as 
 front-ends for studying linguistics corpora and/or 
-parse-structures; or graphics tools for digital humanities.
-\lPacTk{} can be beneficial this context 
+parse-structures; sociological/economic 
+statistics; or graphics tools for digital humanities.
+\lPacTk{} can help in this context 
 because a single \PacTk{} plugin could serve as middleware 
 on top of which plugins can run that are individualized 
 to specific publications/manuscripts.  This may be more 
@@ -1332,7 +1334,7 @@ native plugin mechanisms directly.
 %\p{}
 %\p{}
 
-\vspace*{7pt}
+\vspace*{3pt}
 
 {\semihr{0.097\textwidth}}
 \vspace*{4pt}
