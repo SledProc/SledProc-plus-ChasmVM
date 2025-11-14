@@ -608,11 +608,13 @@ efficiently coded via \PacTk{} objects, with concrete
 benefits in areas such as copy-editing and indexing.}
 
 
+
 \begin{figure}[ht]
-\includegraphics[scale=0.83]{fin/single.png}
-\caption{An index entry dialog window (and context menu for single and meta-index views)}
+\includegraphics[scale=0.8]{fin/tox.png}
+\caption{Mapping PDF pages to SVG views for improved annotation support}
 \label{fig:ss1}
 \end{figure}
+
 
 \sstitle{PacTk for Editing}
 
@@ -686,11 +688,31 @@ logical child of the sentence that introduces it.
 view documents in \PDF{} format for normal reading, even if 
 edits/changes are made on intermediary files.  As a result, 
 a bitmapped page-image is the primary medium through 
-which users view single publication pages.  Failure to 
+which users view single publication pages.  Such graphics are 
+typically rendered by \PDF{} viewers, but other 
+techniques might be used, such as converting page images 
+to \SVG{} (illustrated here in Figure~\ref{fig:ss1}, 
+where the relevant component is an embedded web engine 
+that communicated with a \PDF{} viewer by 
+\textbf{QWebChannel}; so \SVG{} events are 
+processed by \Cpp{} code directly, with only a 
+minimal \JavaScript{} routing layer).  Failure to 
 interoperate these images with structured text formats 
 is a significant hindrance to efficient document 
 preparation and editing.
 
+\begin{figure}[ht]
+\includegraphics[scale=0.45]{fin/ling.png}
+\caption{Enhanced GUI capabilities enabled by machine-readable text encoding}
+\label{fig:ss2}
+\end{figure}
+
+
+%\begin{figure}[h!]
+%\includegraphics[scale=0.66, trim=8.4cm 0 0 0, clip]{fin/pisa.png}
+%\caption{Configuring Default Back-End Queries}
+%\label{fig:ss9}
+%\end{figure}
 
 \pseudoIndent{} By design, \PacTk{} supports post-processing 
 algorithms within pipelines whose formats can generate 
@@ -701,7 +723,8 @@ Page coordinates for significant discursive locations
 keyphrases and named entities, citations) can thereby be 
 exposed to \PDF{} viewers which could accordingly implement 
 novel front-end features such as overlays, context menus, 
-and dialog windows positioned nearby relevant content.  
+and dialog windows positioned nearby relevant content 
+(Figure~\ref{fig:ss2}).  
 For example, a context menu action may include copying the 
 full text of a current sentence to clipboard, based on the 
 screen position where the menu is activated; semitransparent 
@@ -754,11 +777,11 @@ structured formats such as \XML{} and \LaTeX{}.
 }
 
 
-\begin{figure}[ht]
-\includegraphics[scale=0.83]{fin/meta.png}
-\caption{Dialog window for local and meta-index searches}
-\label{fig:ss2}
-\end{figure}
+%\begin{figure}[ht]
+%\includegraphics[scale=0.83]{fin/meta.png}
+%\caption{Dialog window for local and meta-index searches}
+%\label{fig:ss2}
+%\end{figure}
 
 
 
@@ -829,11 +852,13 @@ associated data.  These objects could be initialized from
 \PDF{} viewers.}
 
 
+
 \begin{figure}[ht]
-\includegraphics[scale=0.8]{fin/tox.png}
-\caption{Mapping PDF pages to SVG views for improved annotation support}
+\includegraphics[scale=0.83]{fin/single.png}
+\caption{An index entry dialog window (and context menu for single and meta-index views)}
 \label{fig:ss4}
 \end{figure}
+
 
 \p{Building indexes on the basis of native sentence and index-entry objects 
 has certain benefits as compared to generic (e.g., \XML{}) manuscript 
@@ -855,17 +880,12 @@ for any location can be ascertained from mouse events (e.g.,
 the dropdown point of a context menu).
 
 
-\begin{figure}[ht]
-\includegraphics[scale=0.5]{fin/sah.png}
-\caption{A category-based web-accessible index table for SVG pages}
-\label{fig:ss5}
-\end{figure}
 
-\begin{figure}[t!]
-\includegraphics[scale=0.5]{fin/stark-mi.png}
-\includegraphics[scale=0.5]{fin/stark.png}
-\caption{Meta-Index Search through a Web Portal}
-\label{fig:ss6}
+
+\begin{figure}[ht]
+\includegraphics[scale=0.83]{fin/meta.png}
+\caption{Dialog window for local and meta-index searches}
+\label{fig:ss5}
 \end{figure}
 
 
@@ -950,11 +970,11 @@ University Press, book series, repository (PubMedCentral, for example),
 or journal collection.  Publishers who curate meta-indexes 
 for mid-size collections can support much more detailed 
 evaluations per document; a book series might have several 
-dozen titles, not tens of thousands.  \lPacTk{} support 
+dozen titles, not tens of thousands.  \lPacTk{} supports 
 construction of corpora query languages that express 
 granular searches over multiple documents, with 
 similar logic to filtered/contextualized text searches 
-in a single \PDF{} document.
+in a single \PDF{} document (Figure~\ref{fig:ss6}).
 
 \pseudoIndent{} Even where queries are executed via conventional 
 vector-database methods, \PacTk{} allows authors or digital editors 
@@ -967,6 +987,17 @@ ingested by search engines indexing documents
 through their default algorithms.
 
 \end{description}
+
+
+
+\begin{figure}[h!]
+\includegraphics[scale=0.5]{fin/stark-mi.png}
+\includegraphics[scale=0.5]{fin/stark.png}
+\caption{Meta-Index Search Through a Web Portal}
+\label{fig:ss6}
+\end{figure}
+
+
 }
 
 
@@ -1103,12 +1134,18 @@ resulting in a scripting environment specifically built for
 open-access data sharing and the deployment of data packages 
 as pedagogical tools.    
 
-\begin{figure}[ht]
-\includegraphics[scale=0.45]{fin/ling.png}
-\caption{Enhanced GUI capabilities enabled by machine-readable text encoding}
-\label{fig:ss8}
-\end{figure}
 
+%\begin{figure}[ht]
+%\includegraphics[scale=0.45]{fin/ling.png}
+%\caption{Enhanced GUI capabilities enabled by machine-readable text encoding}
+%\label{fig:ss8}
+%\end{figure}
+
+\begin{figure}[ht]
+\includegraphics[scale=0.5]{fin/sah.png}
+\caption{A category-based web-accessible index table for SVG pages}
+\label{fig:ss5}
+\end{figure}
 
 
 \item[Full-Text Query Languages]  As discussed earlier in this 
