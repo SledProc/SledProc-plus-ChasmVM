@@ -570,16 +570,39 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \hspace{7pt}\textcolor{ss}{#1}%
 }}}}}}
 
+\newcommand{\sstri}{%
+\raisebox{1pt}{\resizebox{7pt}{9pt}{%
+\textcolor{ss!85!black}{$\triangleright$}}}}
 
 \newcommand{\sstitle}[1]{\vspace{1.4em}\raisebox{-1.2em}{{%
 \fontfamily{ccr}\fontsize{15}{14}%
 \fontseries{b}\selectfont{{%
-\hspace{-1pt}\textcolor{ss}{\underline{ {\hspace{6em} #1}}%
+\hspace{-1pt}\textcolor{ss}{\underline{ \sstri {\hspace{6em} #1}}%
 %\hspace{12pt}\raisebox{1pt}{\resizebox{7pt}{9pt}{%
 %\textcolor{ss!85!black}{$\triangleright$}}}%
 %\hspace{7pt}\raisebox{2.25pt}{\textcolor{ss!85!cyan}%
 %{\resizebox{7pt}{6pt}{$\blacktriangleright$}}}%
 }}}}}}
+
+
+\newcommand{\sstitlev}[1]{\vspace{1.4em}\raisebox{-1.2em}{{%
+\fontfamily{ccr}\fontsize{15}{14}%
+\fontseries{b}\selectfont{{%
+\hspace{-1pt}\textcolor{ss}{#1}%
+%\hspace{12pt}\raisebox{1pt}{\resizebox{7pt}{9pt}{%
+%\textcolor{ss!85!black}{$\triangleright$}}}%
+%
+\hspace{7pt}\raisebox{1.25pt}{\textcolor{ss!85!cyan}%
+{\resizebox{7pt}{6pt}{$\blacktriangleright$}}}%
+\hspace{7pt}\raisebox{1.25pt}{\textcolor{ss!85!cyan}%
+{\resizebox{7pt}{6pt}{$\blacktriangleright$}}}%
+
+}}}}}}
+
+
+
+\newcommand{\sstitletri}[1]{\hspace{#1pt}\raisebox{1.25pt}{\textcolor{ss!85!cyan}%
+{\resizebox{7pt}{6pt}{$\blacktriangleright$}}}}
 
 
 
