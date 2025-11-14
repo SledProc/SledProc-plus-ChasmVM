@@ -304,13 +304,13 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 \AddToShipoutPicture{%
 \ifnum\value{page}=12{
 \AtTextLowerLeft{
-\hspace{266pt}\raisebox{-21pt}{%  
+\hspace{266pt}\raisebox{-27pt}{%  
 {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
 \fndiamond{\usepage} }}}
 }}
 
 \AtTextLowerLeft{
-\raisebox{95pt}{%
+\raisebox{66pt}{%
  \href{http://www.lingtechsys.com/videos/qmt-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.4]{pm/qmt-composite.png}\\GIS}}%
  \hspace{10pt}\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.255]{pm/dhax-composite.png}\\360\textdegree{} photography}}%
  \hspace{25pt}\href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.35]{pm/xcsd-composite.png}\\Image Processing}}%
@@ -751,7 +751,7 @@ comments/annotations.  Objects such as comment-boxes
 may thereby be leveraged systematically in an editing/review pipeline.
 
 \pseudoIndent{} In particular, \PacTk{} supports construction of hashtag- or handle-style 
-controlled vocabularies that can annotate \PDF{} comments 
+controlled vocabularies that could annotate \PDF{} comments 
 introduced by copy editors or typesetters.  Many modifications considered 
 during the editing process follow common patterns, such as 
 proper use of commas around subordinate clauses, or correct formatting 
@@ -759,15 +759,16 @@ of ellipses and bracketed content within inline/block quotes.  Assuming
 that editors consistently include notations for recurring patterns, 
 \PacTk{} code can filter queries specifically to \PDF{} comment 
 boxes which indicate a specific editing category.  Index codes within 
-\PDF{} comments can likewise indicate which individual sentence 
-surrounds the annotation, so that the \PDF{} view may be cross-referenced 
+\PDF{} comments may likewise indicate which individual sentence 
+surrounds the annotation, so that the \PDF{} view could be cross-referenced 
 against input sources, which facilitates review and processing 
 of manuscript changes.
 
 
 \pseudoIndent{} For similar reasons, \PacTk{} supports abstractions 
 such as \XML{} custom character entities and \LaTeX{} macros.  
-Many familiar textual components --- ellipses, m- and n-dashes, 
+Many familiar textual components --- ellipses, 
+\textit{m-} and \textit{n-}dashes, 
 quotation and footnote marks, etc. --- are typically represented 
 not via their visible characters but rather through standardized 
 codes or glyphs.  The problem is that systematic mappings 
@@ -821,13 +822,13 @@ sentences, as with the \PacTk{}'s \TSOM{} object model.}
 
 
 \begin{figure}[t]
-\includegraphics[scale=0.83, trim=0 3cm 0 1cm, clip]{fin/single.png}
+\includegraphics[scale=0.83, trim=0 4.1cm 0 0, clip]{fin/single.png}
 \caption{An index entry dialog window (and context menu for single and meta-index views)}
 \label{fig:ss4}
 \end{figure}
 
 
-%\vspace*{10pt}
+\vspace*{30pt}
 {\semihr{0.31\textwidth}}
 \vspace*{5pt}
 %\sectnum{1.}
@@ -910,12 +911,12 @@ of these searches will vary by context.  Sometimes locators are
 only relevant when the local sentence includes just the exact 
 heading label, but in other places a desired match could 
 include words in different order (e.g., either first-name/last-name 
-or vice-versa), or selected words (e.g., last name only), 
+or vice-versa), or a subset (e.g., last name only), 
 or associated concepts with different language entirely 
 (e.g., \q{The White House} in lieu of a president's name).  In the 
 presence of a specific index entry, front-end displays can 
 give users options to fine-tune which match strategies are 
-appropriate for query text seeking locators specific to each entry.
+appropriate for query strings seeking locators specific to each entry.
 
 \item[Index-Building GUI Components]  Index entries are multi-faceted 
 objects that naturally lend themselves to dedicated front-end displays, 
@@ -930,8 +931,8 @@ hundreds of entries.  Although indexes are eventually shown
 to readers as ordinary \PDF{} pages (or similar formats), 
 during document prep it is useful to subdivide indexes into 
 individual \GUI{} windows for each entry, with options to 
-navigate between adjacent entries, as well as traverse on larger 
-scales (e.g., one chapter to another) and to create new 
+navigate between adjacent entries or to traverse on larger 
+scales (e.g., one chapter to another), plus to create new 
 entries on the fly.
 
 \item[Index-Guided Text Searching]  Indexes are curated lists 
@@ -940,7 +941,7 @@ relevance.  Whenever a search is posed against a manuscript in
 any context --- e.g., in the query bar of a \PDF{} viewer, or 
 an online search engine, or \XQuery{}-style terms evaluated 
 \visavis{} \JATS{} files --- index metadata can be consulted 
-just in case a search term overlaps with headings already included 
+just in case search terms overlap with headings already included 
 in an index.  Such functionality may be augmented by extending 
 index metadata to include concepts related to index entries 
 even if those secondary concepts are not indexed themselves.  
@@ -960,7 +961,9 @@ in a given book series, journal collection, or document
 repository.  Such meta-indexes can support searches 
 that are more precise and granular than conventional 
 search-engine technologies based on occurrence vectors 
-and stemming/lemmatization (Figure~\ref{fig:ss5}).
+and stemming/lemmatization alone (Figure~\ref{fig:ss5}).
+
+{\textcolor{white}X}\vspace*{1em}
 
 \item[Academic Search Engines]  In online contexts, \q{indexing} typically 
 refers not to human-visible book indexes but rather to 
@@ -969,7 +972,7 @@ and concepts in a manuscript.  Such indexing is typically
 non-contextual; for instance, it is not represented whether a 
 word/phrase is present in text with a special purpose 
 (quotes, footnotes, chapter/section titles, etc.) and 
-discursive roles are ignored (e.g., a document may be identified as 
+sentiment/discursive roles are ignored (e.g., a document may be identified as 
 \textit{about} some topic, but more specific criteria 
 such as arguing \textit{for}, \textit{against}, or neutrally 
 \textit{evaluating} theories or claims are not modeled).  
@@ -1029,14 +1032,15 @@ through their default algorithms.
 
 \vspace*{5pt}
 
-\p{Contporary data transparency and \FAIRSharing{} 
+\p{Contporary data transparency and \FAIRsharing{} 
 (Findable, Accessible, Interoperable, Reusable) standards 
 introduce new challenges for publishers.  In this environment, 
 published documents such as \PDF{}s serve as only 
 one part of a package of files, alongside research data 
 sets and, often, numerous forms of multimedia content 
 (potentially including audio, video, image series, \ThreeD{} graphics, 
-and statistical/data-visualization tools and diagrams).  If desired, 
+and statistical/data-visualization tools and diagrams, plus domain-specific 
+interactive formats).  If desired, 
 \PDF{} viewers could themselves be implemented as one 
 portion of a multimedia suite, with functional motifs 
 duplicated across the various components (Figures~\ref{fig:ss8}~and~\ref{fig:ss9}).}
@@ -1072,10 +1076,10 @@ for geophysics and oceanography; \CoNLLU{} in computational linguistics;
 \DICOM{} and \OMETIFF{} for bioimaging; and \GIS{}-indexed attribute layers 
 and shapefiles for geospatial data sets.
 
-\pseudoIndent{} Some domain-specific file formats are derived from general-purpose formats 
-such as \CSV{}, \XML{}, and \JSON{}.  Others use idiosyncratic text and/or binary 
+\pseudoIndent{} Some domain-specific file formats are derived from general-purpose 
+specifications such as \CSV{}, \XML{}, and \JSON{}.  Others use idiosyncratic text and/or binary 
 serialization protocols, so that custom parsers are necessary so as to consume byte or character 
-streams from raw data files.  Even when the actual encoding is performed via a 
+streams from relevant raw data files.  Even when the actual encoding is performed via a 
 generic standard like \XML{}, dedicated deserialization code will still be needed --- 
 generic parsers can convert a given \XML{} document to a %Document Object Model 
 \DOM{} infoset, but algorithms will have to navigate the document hierarchy and extract 
@@ -1087,25 +1091,26 @@ object data fields.
 platform-independent Virtual Machine that is easy to embed in 
 scientific applications or build as a standalone program.  Scripting 
 or query language can then emit code for this specific \VM{} to 
-take responsibility for deserializing encoded data sets.  Depend 
-on the format, the \VM{} instructions might navigate through 
+take responsibility for deserializing encoded data sets.  Depending 
+on format, \VM{} instructions might navigate through 
 graph-like structures in a standardized profile (like \XML{}) 
-or implement and/or integrate with (via postprocessors or 
-rule-match callbacks) parsers for custom input file types.
+or implement and/or integrate with parsers for custom input file types, 
+via postprocessors or rule-match callbacks.
 
 \pseudoIndent{} Via these technologies, publishers can ensure that 
 data sets are accessible so long as there are deserialization 
 libraries targing a \PacTk{} \VM{}, rather than duplicating 
 effort and requiring multiple libraries for different operating 
-systems and programming environments.  
+systems and programming environments.\vspace{6pt}  
  
 \begin{figure}[ht]
-\includegraphics[scale=0.5]{fin/oct.png}
+\hspace*{1em}\includegraphics[scale=0.47, 
+trim=0 10pt 0 4pt, clip]{fin/oct.png}
 \caption{Flexible range-select features}
 \label{fig:ss8}
 \end{figure}
 
-
+\vspace{20pt}
 
 \item[Analytic and Demonstrative Code]  Many data sets are published 
 alongside copies or samples of code used to analyze the raw data.  
@@ -1174,6 +1179,7 @@ as pedagogical tools.
 \label{fig:ss9}
 \end{figure}
 
+\vspace{20pt}
 
 \item[Full-Text Query Languages]  As discussed earlier in this 
 document, \PacTk{} can be utilized as a code library by 
@@ -1326,7 +1332,7 @@ native plugin mechanisms directly.
 %\p{}
 %\p{}
 
-\vspace*{11pt}
+\vspace*{7pt}
 
 {\semihr{0.097\textwidth}}
 \vspace*{4pt}
