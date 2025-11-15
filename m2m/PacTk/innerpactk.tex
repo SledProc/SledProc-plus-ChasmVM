@@ -1054,20 +1054,6 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \usepackage{xcolor}
 
 
-\definecolor{ulinkColor}{RGB}{47, 152, 196}
-\definecolor{clinkColor}{RGB}{7, 152, 96}
-\definecolor{alinkColor}{RGB}{147, 152, 46}
-
-
-\usepackage[colorlinks = true,
-            linkcolor = clinkColor,
-            urlcolor  = clinkColor!70!purple,
-            citecolor = clinkColor,
-            anchorcolor = clinkColor]{hyperref}
-
-\renewcommand{\thefootnote}{\textcolor{ulinkColor!50!black}{{\fontfamily{phv}\fontseries{b}\fontsize{7}{4}\selectfont\arabic{footnote}}}}
-
-
 
 %\hypersetup{
 %	colorlinks=true,
@@ -1181,24 +1167,49 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \selectfont{\textbf{\textcolor{orb!75!black}{\resizebox{8pt}{!}{D}aSemio}}}}}}
 
 
+
+\definecolor{ulinkColor}{RGB}{47, 152, 196}
+\definecolor{clinkColor}{RGB}{7, 152, 96}
+\definecolor{alinkColor}{RGB}{147, 152, 46}
+
+%\colorlet{textGreen}{orb!75!black}
+%\colorlet{clinkGreen}{clinkColor}
+
+\colorlet{clinkGreen}{orb!75!black}
+
+\colorlet{textGreen}{clinkColor!70!purple}
+
+%\colorlet{textGreen}{orb!40!black}
+
+
 \newcommand{\lPacTk}{{\fontfamily{fvs}\fontsize{8}{14}%
-\selectfont{\textbf{\textcolor{orb!75!black}{\resizebox{8pt}{!}{P}acTk}}}}}}
+\selectfont{\textbf{\textcolor{textGreen}{\resizebox{8pt}{!}{P}acTk}}}}}}
 
 \newcommand{\lGTagML}{{\fontfamily{fvs}\fontsize{8}{14}%
-\selectfont{\textbf{\textcolor{orb!75!black}{\resizebox{8pt}{!}{G}TagML}}}}}}
+\selectfont{\textbf{\textcolor{textGreen}{\resizebox{8pt}{!}{G}TagML}}}}}}
 
 \newcommand{\PacTk}{{\fontfamily{fvs}\fontsize{9}{14}%
-\selectfont{\textbf{\textcolor{orb!75!black}{PacTk}}}}}}
+\selectfont{\textbf{\textcolor{textGreen}{PacTk}}}}}}
 
 \newcommand{\TSOM}{{\fontfamily{fvs}\fontsize{8}{14}%
-\selectfont{\textbf{\textcolor{orb!75!black}{TSOM}}}}}}
+\selectfont{\textbf{\textcolor{textGreen}{TSOM}}}}}}
 
 \newcommand{\GTagML}{{\fontfamily{fvs}\fontsize{9}{14}%
-\selectfont{\textbf{\textcolor{orb!75!black}{GTagML}}}}}}
+\selectfont{\textbf{\textcolor{textGreen}{GTagML}}}}}}
 
 
 \setlist[description]{leftmargin=13pt, itemsep=9pt}
 
+
+
+
+\usepackage[colorlinks = true,
+            linkcolor = clinkGreen,
+            urlcolor  = clinkGreen,%!70!purple,
+            citecolor = clinkGreen,
+            anchorcolor = clinkGreen]{hyperref}
+
+\renewcommand{\thefootnote}{\textcolor{ulinkColor!50!black}{{\fontfamily{phv}\fontseries{b}\fontsize{7}{4}\selectfont\arabic{footnote}}}}
 
 
 
