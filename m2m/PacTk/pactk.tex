@@ -828,7 +828,7 @@ sentences, as with the \PacTk{}'s \TSOM{} object model.}
 \end{figure}
 
 
-\vspace*{9pt}
+\vspace*{6pt}
 %{\semihr{0.31\textwidth}}
 %\vspace*{5pt}
 %%\sectnum{1.}
@@ -906,8 +906,6 @@ the dropdown point of a context menu).
 \label{fig:ss5}
 \end{figure}
 
-{\textcolor{white}X}\vspace*{2pt}
-
 
 \item[Multiple Match Strategies]  Index locators are typically 
 identified by matching text against entry-headings, but the parameters 
@@ -962,11 +960,15 @@ Each time a new publication is finalized, all of its index
 terms could be inserted into a bibliographic database 
 allowing users to search across multiple books/manuscripts 
 in a given book series, journal %{\textcolor{white}X}\vspace*{2pt}
-\textcolor{white}{collection, or document repository.  Such meta-indexes can support searches that are more precise and granular than conventional}
+%\textcolor{white}{collection, or document repository.  Such meta-indexes can support searches that are more precise and granular than conventional}
 collection, or document repository.  Such meta-indexes can support searches 
 that are more precise and granular than conventional
 search-engine technologies based on occurrence vectors 
 and stemming/lemmatization alone (Figure~\ref{fig:ss5}).
+
+%\vspace*{-2pt}{\tiny XXXXXXX}
+
+\par\noindent\vspace*{-17.5pt}\textcolor{white}{\rule{\textwidth}{0.4pt}}
 
 \item[Academic Search Engines]  In online contexts, \q{indexing} typically 
 refers not to human-visible book indexes but rather to 
@@ -996,8 +998,7 @@ construction of corpora query languages that express
 granular searches over multiple documents, with 
 similar logic to filtered/contextualized text searches 
 in a single \PDF{} document (Figures~\ref{fig:ss6}~and~\ref{fig:ss7}).
-
-\pseudoIndent{} Even where queries are executed via conventional 
+Even where queries are executed via conventional 
 vector-database methods, \PacTk{} allows authors or digital editors 
 to exercise control over how word-occurrence lists are compiled.  
 For example, \TSOM{} objects can include lemmatized word-lists 
@@ -1006,6 +1007,21 @@ circumstances such as two different meanings reduced to the
 same linguistic stem, which might not be properly 
 ingested by search engines indexing documents 
 through their default algorithms.
+
+\pseudoIndent{} Although \lPacTk{}'s primary focus is publishing 
+--- where the primary components of a repository are 
+manuscripts/documents in formats like \PDF{} --- this technology 
+could potentially be used in other environments.  For instance, 
+in clinical trials and point-of-care software the fundamental assets 
+are Electronic Health Records; but search features, 
+as well as plugins and multimedia (discussed next),
+might be extended to include resources such as diagnostic 
+images, cytometry gating, assay graphics, 
+tumorogenesis simulations, etc.
+
+ 
+
+
 
 \end{description}
 
@@ -1033,7 +1049,7 @@ through their default algorithms.
 \vspace*{5pt}
 {\semihr{0.257\textwidth}}
 
-\vspace*{5pt}
+\vspace*{8pt}
 
 \p{Contemporary data transparency and \FAIRsharing{} 
 (Findable, Accessible, Interoperable, Reusable) standards 
