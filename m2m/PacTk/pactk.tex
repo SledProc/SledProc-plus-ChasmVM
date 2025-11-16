@@ -1108,19 +1108,27 @@ systems and programming environments).\vspace{6pt}
  
 \begin{figure}[ht]
 \hspace*{1em}\includegraphics[scale=0.47, 
-trim=0 10pt 0 4pt, clip]{fin/oct.png}
+trim=0 12pt 0 11pt, clip]{fin/oct.png}
 \caption{Flexible range-select features}
 \label{fig:ss8}
 \end{figure}
 
-\vspace{20pt}
+\vspace{4pt}
 
 \item[Analytic and Demonstrative Code]  Many data sets are published 
 alongside copies or samples of code used to analyze the raw data.  
 Code sharing is important for transparency (allowing outsiders 
 to double-check the accuracy of calculations and conclusion 
-drawn therefrom) as well as reuse.  
-
+drawn therefrom) and reuse (replication of experiments/research projects).  
+Data publications (bundled as Research Objects or similar scientific 
+packages) may also include implementations for plugins targeted at 
+applications charged with loading the raw data files.  
+\lPacTk{}'s object system includes several classes encapsulating 
+plugin functionality (such as dynamic-library symbol resolution) 
+and components exposed by host applications to extension 
+modules (main-window taskbars, top/context menus, 
+filesystem access, etc.).
+  
 \pseudoIndent{} Although such accompanying code may be implemented 
 in many different languages and environments, the \VM{} principles 
 identified above for deserialization tasks also apply 
@@ -1182,7 +1190,7 @@ as pedagogical tools.
 \label{fig:ss9}
 \end{figure}
 
-\vspace{20pt}
+\vspace{4pt}
 
 \item[Full-Text Query Languages]  As discussed earlier in this 
 document, \PacTk{} can be utilized as a code library by 
