@@ -475,7 +475,7 @@ share \JATS{}/\BITS{} files (for example) in end-user contexts.}
 
 
 \p{From the perspective of 
-\PacTk{}, text-encoding evinces a spectrum of distinct 
+\PacTk{}, text encoding evinces a spectrum of distinct 
 \textit{topomorphic regimes} where a proliferation of 
 incompatible document structures prohibits the emergence 
 of common query, traversal, and metadata formats.  The obvious 
@@ -589,7 +589,7 @@ authors familiar with Markdown from more informal contexts
 will recognize many of the \GTagML{} styling commands.  
 \lGTagML{} sources might be provided by authors directly, or 
 derived from author inputs by digital copy editors or 
-others on the publishing workflow.  To support 
+others on the manuscript pipeline.  To support 
 \GTagML{}, \PacTk{} provides a new \Cpp{} parsing library 
 that is readily extensible (more so than parsers for 
 \XML{}, \JSON{}, and so forth), allowing publishers to 
@@ -597,13 +597,13 @@ customize the \GTagML{} format with new tags, syntax, and
 data structures specific to their in-house styles and 
 disciplinary focus areas (e.g., specialized tags/data for 
 different scientific fields --- chemistry, physics, medicine, 
-etc. --- or whatever subject-areas are addressed by individual 
+etc.; or whatever subject areas are addressed by given 
 publishers, journals, and book series).  Alternatively, 
-\TSOM{} objects can be compiled from sources such as 
+\TSOM{} objects could be compiled from sources such as 
 \JATS{} or \BITS{} directly.}
 
 \p{For workflows that feature \JATS{}, \BITS{}, or 
-\LaTeX{}, \TSOM{} objects could be employed as 
+\LaTeX{}, \TSOM{} objects may be employed as 
 adjunct data sources through which edits, queries, 
 and other computational artifacts are routed.  
 \lPacTk{} data can then be mapped both to 
@@ -633,7 +633,7 @@ benefits in areas such as copy-editing and indexing.}
 \vspace*{8pt}
 
 \p{\lPacTk{} has an advanced query framework to help find 
-specific locations in text where edits may be warranted 
+specific locations in text where edits might be warranted 
 (e.g., to comport with journal or book-series conventions) and 
 to correctly review and process such edits.  Here are some features:
 
@@ -648,7 +648,7 @@ significance (acronyms, annotations, proper/place names).
 
 \pseudoIndent{} Implementing such filters via \XPath{}/tag 
 restrictions can be inaccurate, because relevant filter 
-criteria may be orthogonal to \DOM{} hierarchies.  For 
+criteria could be orthogonal to \DOM{} hierarchies.  For 
 example, \XML{} or \LaTeX{} code might wish to wrap 
 elements such as footnotes or block quotes in 
 custom environments, to ensure desired pre- or 
@@ -677,7 +677,7 @@ precision and express query rationales more succinctly
 For instance, the proper punctuation around a word or 
 phrase often depends on whether that content appears 
 at the beginning, middle, or end of a sentence.  
-Some query expressions may similarly depend on 
+Some query expressions might similarly depend on 
 stipulating that two or more search targets 
 (e.g., two proper names) occur in the same sentence.
 
@@ -697,7 +697,7 @@ context, or where a block quotes functions in part as a
 logical child of the sentence that introduces it.
 
 \item[PDF Page Coordinates]  Human readers post-publication 
---- plus authors and copy-editors beforehand --- typically 
+--- plus authors and copy editors beforehand --- typically 
 view documents in \PDF{} format for normal reading, even if 
 edits/changes are made on intermediary files.  As a result, 
 a bitmapped page-image is the primary medium through 
@@ -706,7 +706,7 @@ typically rendered by \PDF{} viewers, but other
 techniques might be used, such as converting page images 
 to \SVG{} (illustrated here in Figure~\ref{fig:ss1}, 
 where the relevant component is an embedded web engine 
-that communicated with a \PDF{} viewer by 
+that communicates with a \PDF{} viewer by 
 \textbf{QWebChannel}; so \SVG{} events are 
 processed by \Cpp{} code directly, with only a 
 minimal \JavaScript{} routing layer).  Failure to 
