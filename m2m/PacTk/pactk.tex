@@ -800,9 +800,9 @@ structured formats such as \XML{} and \LaTeX{}.
 
 
 \p{Often users may prefer to initiate or review edits through \PDF{} files 
-directly, but in other cases plain-text files may be appropriate 
+directly, but in other cases plain-text files might be appropriate 
 instead, without \GUI{} overhead.  With \PacTk{}, for example, 
-authors could receive two text files (or collections of files 
+authors could receive a pair of text files (or collections of files 
 indexed, for instance, by chapter) summarizing changes between 
 two manuscript versions.  Via sentence-level filtering, 
 such files could be organized such that only sentences that 
@@ -811,7 +811,7 @@ sentence listed separately.  This may be a more convenient
 setup for authors to review changes than working through 
 typical \GUI{}s.  Of course, such breakdown is only possible 
 when the text encoding systematically identifies individual 
-sentences, as with the \PacTk{}'s \TSOM{} object model.}
+sentences, as with \PacTk{}'s \TSOM{} object model.}
 
 \begin{figure}[b!]
 \includegraphics[scale=0.4]{fin/ie.png}
@@ -828,7 +828,7 @@ sentences, as with the \PacTk{}'s \TSOM{} object model.}
 \end{figure}
 
 
-\vspace*{6pt}
+\vspace*{4pt}
 %{\semihr{0.31\textwidth}}
 %\vspace*{5pt}
 %%\sectnum{1.}
@@ -867,8 +867,9 @@ instances, paired with lambda callbacks activated by the first matching
 rule (relative to the current parse-position).  More precisely, 
 \GTagML{} has context-sensitive grammars that can include or 
 skip over rule-tests via activated contexts; this allows sections 
-of a \GTagML{} file to utilize syntax different from the default.  
-With respect to indexing, \GTagML{} has its own notation for 
+of a \GTagML{} file to utilize syntax different from the default.}
+
+\p{With respect to indexing, \GTagML{} has its own notation for 
 index entries (headings, locators, and \q{see also} style redirections), 
 to serialize indexes in a human-readable format.  Correspondingly, 
 \PacTk{} has classes specifically for index entries and 
@@ -888,7 +889,7 @@ formats.  These include:
 or book series may choose different visual styles for their 
 indexes.  Representing indexes behind the scenes via structured 
 data objects allows indexes to be curated in abstraction from the 
-specific layout chosen for final publications.  
+specific layout chosen for final publication.  
 
 \item[PDF Context Menus]  Authors/editors may prefer to add new index entries 
 or locators directly from \PDF{} pages.  \lPacTk{}-compliant 
@@ -916,15 +917,16 @@ include words in different order (e.g., either first-name/last-name
 or vice-versa), or a subset (e.g., last name only), 
 or associated concepts with different language entirely 
 (e.g., \q{The White House} in lieu of a president's name).  In the 
-presence of a specific index entry, front-end displays can 
+presence of a particular index entry, front-end displays can 
 give users options to fine-tune which match strategies are 
-appropriate for query strings seeking locators specific to each entry.
+appropriate for query strings seeking locators specific to that entry.
 
 \item[Index-Building GUI Components]  Index entries are multi-faceted 
 objects that naturally lend themselves to dedicated front-end displays, 
 such as dialog windows (Figures~\ref{fig:ss3}~and~\ref{fig:ss4}).  
 For example, entries typically include a heading 
-label and then one or more locators (e.g., paragraph ids), 
+label and then one or more locators (e.g., paragraph ids, replaced 
+eventually with page numbers), 
 then possible subheadings with their own 
 locators, plus \q{redirectors} (\textit{see} or \textit{see also}) applied 
 either to overall entries or to subheadings.  This represents a lot 
@@ -954,7 +956,7 @@ latter concepts are targeted in a query the explicit
 locators are included among the query results.   
 
 \item[Series or Archival Meta-Indexes]  Once a standard format 
-is developed for indexes in some document-collection, it becomes 
+is developed for indexes in some document collection, it becomes 
 possible to pool multiple indexes into a common resource.  
 Each time a new publication is finalized, all of its index 
 terms could be inserted into a bibliographic database 
@@ -983,7 +985,7 @@ such as arguing \textit{for}, \textit{against}, or neutrally
 \textit{evaluating} theories or claims are not modeled).  
 Granularity may be limited by the scope of an archive, because 
 efficient queries can only expend a few seconds per 
-document if searches are to be evaluated against a large collection.  
+document if searches are to be conducted against a large collection.  
 
 \pseudoIndent{} Nonetheless, search functionality can take 
 steps to increase query specificity via meta-indexes and 
@@ -1008,7 +1010,7 @@ same linguistic stem, which might not be properly
 ingested by search engines indexing documents 
 through their default algorithms.
 
-\pseudoIndent{} Although \lPacTk{}'s primary focus is publishing 
+\pseudoIndent{} Although \lPacTk{}'s originating focus is publishing 
 --- where the primary components of a repository are 
 manuscripts/documents in formats like \PDF{} --- this technology 
 could potentially be used in other environments.  For instance, 
@@ -1076,7 +1078,7 @@ duplicated across the various components (Figures~\ref{fig:ss8}~and~\ref{fig:ss9
 \p{As a \q{publishing accelerator} toolkit, \PacTk{} has 
 several components to help publishers construct these 
 supplemental materials, including cross-referencing 
-text documents with supplemental data/media assets, and 
+text documents with associated data/media assets, and 
 ensuring \FAIR{} usability.  Here are several 
 components under development:
 
@@ -1087,10 +1089,11 @@ associated with domain-specific data publishing formats that are paired with
 dedicated deserialization tools (i.e., computer code which 
 reads raw data files into live memory, without relying on special-purpose 
 software).  Such code libraries are often maintained by individual 
-institutions or organizations, such as academic departments, on behalf of a 
-broad research community.  Examples include (among many others) \FASTQ{} and \VCF{} for genomics; 
+institutions or organizations --- which might be academic departments, research 
+labs, or independent groups --- on behalf of a 
+broader research community.  Examples include (among many others) \FASTQ{} and \VCF{} for genomics; \HDFfive{} and \ROOT{} for physics;
 \FITS{} and \netCDF{} in astronomy and earth sciences; \PDB{} and \MOL{} in biochemistry; 
-\IFC{} in engineering; \SEGY{} and \BAG{} 
+\IFC{} and \BIM{} for architecture/engineering; \SEGY{} and \BAG{} 
 for geophysics and oceanography; \CoNLLU{} in computational linguistics; 
 \DICOM{} and \OMETIFF{} for bioimaging; and \GIS{}-indexed attribute layers 
 and shapefiles for geospatial data sets.
@@ -1100,7 +1103,7 @@ specifications such as \CSV{}, \XML{}, and \JSON{}.  Others use idiosyncratic te
 serialization protocols, so that custom parsers are necessary so as to consume byte or character 
 streams from relevant raw data files.  Even when the actual encoding is performed via a 
 generic standard like \XML{}, dedicated deserialization code will still be needed --- 
-generic parsers can convert a given \XML{} document to a %Document Object Model 
+generic parsers may convert a given \XML{} document to a %Document Object Model 
 \DOM{} infoset, but algorithms will have to navigate the document hierarchy and extract 
 text strings from element nodes, which become the input for initializing 
 object data fields.
@@ -1168,7 +1171,7 @@ can be embedded (as source code) in \Cpp{} \GUI{} applications with no outside
 dependencies.  Compilers and runtime engines for dataset code may 
 thereby be released as part of the publication package itself.  
 The \VM{} and peer components could also be built directly 
-in \PDF{} viewers, multimedia applications (for videos, digital 
+into \PDF{} viewers, multimedia applications (for videos, digital 
 maps, etc.) and scientific computing platforms.
 
 \pseudoIndent{} Another \PacTk{} benefit for dataset code involves 
@@ -1182,10 +1185,10 @@ pairs are never called with the converse),
 compile-time/statically-analyzable pre- and post-conditions, and so forth, 
 help dataset code to serve as a resource clarifying scientific 
 principles and theoretical models that drive published findings.  
-The \PacTk{} machine includes overload-by-contract, dependent-typing 
+The \PacTk{} Virtual Machine includes overload-by-contract, dependent-typing 
 (via a framework compatible with template metaprogramming), native 
 interop (with dynamically loaded as well as statically compiled libraries) 
-and \q{user-defined} calling convention features that different 
+and \q{user-defined} calling-convention features that differ 
 in some technical details from typical language interpreters, 
 resulting in a scripting environment specifically built for 
 open-access data sharing and the deployment of data packages 
@@ -1216,7 +1219,7 @@ environment for compiling scripting or query languages.
 These functionalities can be merged, such that the process 
 of extracting information from a \PDF{} manuscript, 
 meta-indexed repository, or bibliographic database might be 
-achieved by evaluating formulating part of the code in a 
+achieved by formulating and evaluating part of the code in a 
 specialized query language.  The techniques involved 
 would be similar to employing \XQuery{} or \XQSE{} 
 expressions to work with \JATS{} or \BITS{} files.
