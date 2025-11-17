@@ -1250,9 +1250,9 @@ and even to each particular journal or book series.
 published data set, information about the supplemental package should be 
 included in index/search metadata.  This would allow 
 keyword searches to be extended to raw data fields, as well 
-as data-structure parameters (such as column labels, source-code 
+as data-structure parameters (column labels, source-code 
 annotations, procedure names, etc.).  Moreover, sections of text 
-can be isolated as cross-references for data-structure parameters 
+can be isolated as cross-reference targets for data-structure parameters 
 as well as individual objects/records.  For example, a specific 
 column or field in tabular data structures can be cross-referenced 
 with the paragraph in article text where that field is 
@@ -1267,19 +1267,19 @@ of multimedia cross-referencing include geotagging video frames; linking
 \CAD{} digital twins with product specs; annotating Regions of Interest 
 within image series with coded labels associated with published raw data; 
 embedding tags in 360\textdegree{} displays whose content includes 
-\URL{} strings that encode identifiers for data set objects; developing 
+\URL{} strings that encode identifiers for dataset objects; developing 
 color- and/or shape-coded attribute layers for \GIS{} overlays (so users 
 can browse between digital maps and structured object 
 displays); and constructing numeric tuples from \ThreeD{} graphics scenes 
 such that particular camera orientation/location and zoom levels 
 can be recorded as a unit, allowing the relevant \ThreeD{} content to be 
-repeatedly visualized from a specific perspective (in other words, 
+repeatedly visualized from an identical perspective (in other words, 
 links can be embedded in \PDF{} files, web pages, software, or any 
 other context so that users can reconstruct a specific \ThreeD{} state, 
 as constituted by camera angle/location and zoom settings).
 
 \pseudoIndent{}  The challenge when implementing multimedia cross-references is to 
-ensure that viewers for two divergent media types may properly 
+ensure that viewers for two or more divergent media types may properly 
 interoperate.  With correctly interpreted cross-references, application users should be able 
 to navigate from a window dedicated to one media/file to a 
 window rendering a different format, and correctly isolate the 
@@ -1306,7 +1306,7 @@ to raw data files.  Fellow researchers typically
 need visualization and computational tools to 
 fully leverage published data sets for 
 evaluation and re-use.  Unfortunately, relying on generic 
-software to access published data packages is often 
+software to access published information packages is often 
 suboptimal.  For example, \CSV{} files might be 
 loaded into spreadsheets and/or statistical applications, 
 but simply viewing data files in tabular fashion 
@@ -1323,15 +1323,15 @@ data profiles.  For example, consider information
 tracking environmental pollutants, such as published 
 by the Environmental Protection Agency's 
 Toxic Release Inventory (\TRI{}) project.
-Software tools for properly examining such data could 
-supply both \GIS{} maps (for understanding 
+Software tools for rigorously studying and analyzing such data could 
+furnish both \GIS{} maps (for understanding 
 geospatial details and patterns about where environmental 
-hazards are present) and chemistry-related software 
-for molecular visualization, and other features that 
-help document the biomedical effects, ecological 
-consequences, and cleanup/remediation protocols for 
+hazards are present) and (bio)chemical software 
+for molecular visualization, or other features to 
+help document public-health and eco\-logical 
+consequences, plus cleanup/remediation protocols for 
 different classes of contaminants.  Such components 
-might further be extended by economic data 
+might be further ex- tended by economic data 
 profiling social impacts on surrounding communities, 
 public health information, video and image series. etc.
 
@@ -1339,7 +1339,7 @@ public health information, video and image series. etc.
 assume that \FAIR{} transparency is achieved simply by 
 releasing raw data files.  Instead, open-access materials should 
 in general include plugins or source-code extensions (developed 
-individually for one manuscript or collectively 
+individually for one manuscript; or collectively 
 for a book series, journal title, or document repository) 
 targeting science applications with requisite capabilities 
 to view/analyze domain-specific file types.  Similar 
