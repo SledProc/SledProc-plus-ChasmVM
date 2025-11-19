@@ -351,7 +351,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\thispagestyle{empty}
 \thispagestyle{firstpage}
 
-\vspace*{-46pt}
+\vspace*{-76pt}
 
 %\vspace*{1em}
 
@@ -385,7 +385,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 {\cyanhr}
 
-\vspace*{35pt}
+\vspace*{15pt}
 
 \hspace{-32pt}Amy Neustein, Ph.D.\\
 \hspace{-32pt}CEO and Founder\\
@@ -396,7 +396,6 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 \end{center}
 
-\vspace*{3pt}
 
 %{\large{}}
 
@@ -406,7 +405,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %}
 
 
-\vspace*{12pt}
+\vspace*{1pt}
 
 {\setstretch{1.12}
 
@@ -418,9 +417,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 Publishing Documents, Datasets, and Multimedia Resources}}
 %\sectvspace{}
 
-\vspace*{-3pt}
-
-\vspace*{10pt}
+\vspace*{2pt}
 {\semihr{0.077\textwidth}}
 \vspace*{3pt}
 %\sectnum{1.}
@@ -463,9 +460,8 @@ to others.  For example, the \XML{} parent-child element relationship
 is replaced in \TagML{} with two different containment styles 
 (logical and extensional), such that \DOM{} and event-based 
 parsers targeted at the simpler \XML{} hierarchy must be reimplemented 
-for the \TagML{} system.}
-
-\p{Meanwhile, with regard to \PDF{}, effective search and text-interaction 
+for the \TagML{} system.  Meanwhile, with 
+regard to \PDF{}, effective search and text-interaction 
 capabilities depend on supplementing this format's internal 
 natural-language representation with machine-readable text encoding, 
 which might be embedded in \PDF{} files or available as sibling 
@@ -484,7 +480,6 @@ for each incompatible document specification.
 In practice, such difficulties have almost certainly 
 hindered the adoption of theoretically well-founded 
 formats such as \TagML{}.}
-
 
 \p{The idea behind \PacTk{} is that divergent 
 formats cannot be satisfactorily reconciled simply by 
@@ -537,8 +532,32 @@ sacrificing compatibility.  \lPacTk{} is particularly
 aimed at publishers who feel constrained by the limitations 
 of \JATS{} or \BITS{} but are reluctant to try alternatives 
 (\TagML{}, \BioC{}, etc.) due to minimal software-ecosystem support 
-and the lack of standardized \XQuery{} and \DOM{}-style interfaces.} 
-  
+and the lack of standardized \XQuery{} and \DOM{}-style interfaces.}\clearpage{} 
+
+\vspace*{-2em}
+\p{\lPacTk{}'s design also reflects trends in scientific research 
+and the emergence of interdisciplinary fields such as 
+social ecology, translational medicine, and medical humanities. 
+It is the viewpoint of \PacTk{}'s developers that 
+the value of new investigations cannot be fully 
+expressed in single-disciplinary terms, nor does an individual's 
+publication mark the end of a well-conceived research 
+project.  Instead, publications are milestones in the 
+unfolding of projects that, in the best case, 
+progress to socially-beneficial deployments.  
+More so than in the past, research projects 
+(summarized but not fully articulated by 
+academic papers) can serve as foundations 
+for scholars' and scientists' technical \q{identity,} 
+potentially more significant than details such as degree specialization 
+or disciplinary affiliation.  In recognition of 
+these paradigms, \PacTk{} seeks to help 
+authors build multi-faceted presentations 
+covering data, code, and foundations for practical 
+applications, which authors could build upon 
+for future research work, funding, translational 
+implementation, and implementational feedback.}  
+
 \p{The remainder of this document will discuss how 
 \PacTk{} can streamline editing, indexing, and document-preparation 
 tasks, as well as improve User Experience for human readers.  
@@ -554,7 +573,7 @@ formats --- such as \XML{} elements and \PDF{} page
 coordinates --- that is typically unavailable in other publishing tools.}
 
 
-\vspace*{24pt}
+\vspace*{20pt}
 {\semihr{0.380\textwidth}}
 \vspace*{5pt}
 %\sectnum{1.}
@@ -627,6 +646,8 @@ benefits in areas such as copy-editing and indexing.}
 \label{fig:ss1}
 \end{figure}
 
+
+\vspace*{-2pt}
 
 \sstitle{PacTk for Editing}
 
@@ -1161,7 +1182,7 @@ be examined via plugins specific to applications familiar to
 the relevant research community, or at least custom-built 
 software that can interoperate with domain-specific technologies.  
 Unfortunately, many of the most popular scripting formats 
-in scientific/research contexts (e.g., Python, JavaScript, and \R{}) 
+in scientific/research contexts (e.g., \Python{}, \JavaScript{}, and \R{}) 
 have noticeable limitations \visavis{} native-\GUI{} integration.  
 
 \pseudoIndent{} \lPacTk{} enables a different approach where 
@@ -1185,9 +1206,11 @@ pairs are never called with the converse),
 compile-time/statically-analyzable pre- and post-conditions, and so forth, 
 help dataset code to serve as a resource clarifying scientific 
 principles and theoretical models that drive published findings.  
-The \PacTk{} Virtual Machine includes overload-by-contract, dependent-typing 
-(via a framework compatible with template metaprogramming), native 
-interop (with dynamically loaded as well as statically compiled libraries) 
+The \PacTk{} Virtual Machine includes overload-by-contract, 
+dependent typing 
+(a version thereof compatible with template metaprogramming, as such 
+with some technical differences from, say, \Idris{}), native 
+interop (with statically compiled as well as dynamically loaded libraries) 
 and \q{user-defined} calling-convention features that differ 
 in some technical details from typical language interpreters, 
 resulting in a scripting environment specifically built for 
