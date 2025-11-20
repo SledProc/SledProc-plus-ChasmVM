@@ -1215,4 +1215,24 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \renewcommand{\thefootnote}{\textcolor{ulinkColor!50!black}{{\fontfamily{phv}\fontseries{b}\fontsize{7}{4}\selectfont\arabic{footnote}}}}
 
 
+\usepackage{dashrule}
+
+\newcommand{\bfnr}{\textcolor{hrfn}{\hdashrule{1.05\columnwidth}{0.4pt}{6pt 2pt}}}
+
+\newcommand{\fnr}{%
+  \kern -3pt
+  %\hrule width 100pt height .4pt
+  %\hdashrule{100pt}{0.4pt}{1mm,1mm} 
+  \hspace*{-16pt} \vspace{-13pt} \bfnr{} \vspace{3pt}
+}
+
+\definecolor{hrfn}{RGB}{124, 83, 140}
+
+
+\renewcommand{\footnoterule}{\fnr}
+
+
+
+
+
 
