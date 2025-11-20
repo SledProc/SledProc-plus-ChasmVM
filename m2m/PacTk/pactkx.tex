@@ -302,7 +302,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=12{
+\ifnum\value{page}=13{
 \AtTextLowerLeft{
 \hspace{266pt}\raisebox{-27pt}{%  
 {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
@@ -1043,21 +1043,28 @@ images, cytometry gating, assay graphics,
 tumorogenesis simulations, etc.
 
 \begin{figure}[h!]
-\includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/x2.png}
-\caption{HTML Transcription Errors}
-\label{fig:ss6a}
+\includegraphics[scale=0.66, trim=8.4cm 0 0 1cm, clip]{fin/pisa.png}
+\caption{Configuring default back-end queries}
+\label{fig:ss6}
 \end{figure}
+
+%\begin{figure}[h!]
+%\includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/x2.png}
+%\caption{HTML Transcription Errors}
+%\label{fig:ss6a}
+%\end{figure}
 
 \item[Accurate Search Portals]  For users accessing search functionality 
 through online \HTML{} portals, extra programming is necessary to 
-properly show results derived from \PDF{} documents.  Figure \ref{fig:ss6a} 
-shows two examples of excerpts taken from publications included among 
+properly show results derived from \PDF{} documents.  Figure \ref{fig:ss10} 
+(last page)  
+shows two excerpts taken from publications included among 
 one publisher's lists of subconcepts under the \q{engineering} heading.  
 Both examples show irregular line spacing and improper rendering 
 of text with distinct font-styles.  It is clear that the 
 intermediate files, from which \PDF{} was produced as expected, 
 were less successful in the context of \HTML{} generation 
-(an accurate \PDF{} is displayed bottom-right).  
+(an accurate \PDF{} is displayed at the graphics bottom).  
 These pages show a weakness in \JATS{}-style encodings 
 that can be alleviated by a sentence-object model where 
 styling objects have both \LaTeX{} and \HTML{} output content.     
@@ -1082,8 +1089,8 @@ special-purpose and ordinary text representation, \AItwo{} issued a
 \q{call to arms} encouraging publishers to adopt standardized 
 machine-readable encodings as supplements to their \PDF{} (and 
 \HTML{}) outputs: \q{Existing schemas like [JATS] can be too coarse-grained to
-capture all ... metadata elements, [and]
-representations ... vary greatly across 
+capture all ...\hspace{3pt}metadata elements, [and]
+representations ...\hspace{1pt}vary greatly across 
 publishers who use them. To
 improve metadata coherence across sources, the
 community must define and agree upon an 
@@ -1094,31 +1101,152 @@ that could satisfy these goals.
 
 \clearpage{}
 
+%\begin{figure}[h!]
+%\includegraphics[scale=0.71, trim=0 7cm 0 0, clip]{x/x3.png}
+%\caption{HTML Transcription Errors}
+%\label{fig:ss6a}
+%\end{figure}
 
-\begin{figure}[h!]
-\includegraphics[scale=0.66, trim=8.4cm 0 0 0, clip]{fin/pisa.png}
-\caption{Configuring default back-end queries}
-\label{fig:ss6}
-\end{figure}
-
+%\begin{figure}[h!]
+%\includegraphics[scale=0.66, trim=8.4cm 0 0 0, clip]{fin/pisa.png}
+%\caption{Configuring default back-end queries}
+%\label{fig:ss6}
+%\end{figure}
 
 \end{description}
 }
 
+\vspace*{-39pt}
 
+
+{\semihr{0.289\textwidth}}
+\vspace*{5pt}
+\hspace{2pt}\secttitle{{Extending Beyond Single Documents}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
+\vspace*{5pt}
+{\semihr{0.289\textwidth}}
+
+\vspace*{9pt}
+
+%\p{}
+
+\p{Although all biomedical research (and scientific work in general) 
+is motivated in principle by practical benefits, translational 
+emphases promote the informatics and institutional foundations 
+to ensure that \q{bench to bedside} translation 
+occurs as quickly and comprehensively as possible.  
+Scholars in the field of \q{translational science,} for 
+example, have developed a five-part model of the 
+evolution of practical interventions,\footnote{Also 
+called the \q{translational continuum}; see 
+for instance \href{https://www.iths.org/investigators/definitions/translational-research}
+{https://www.iths.org/investigators/definitions/translational-research}} of which the 
+fourth involves commonplace adoption of (once-)novel 
+practices in clinical settings and the fifth 
+marks concerted efforts to adopt useful 
+interventions in a wide variety of settings 
+(e.g., not restricted to experimental protocols 
+available only in a few hospitals).  
+Such models suggest roadmaps to help 
+guide deployment once research progresses through  
+stages of concrete implementation.}
+
+\p{Apart from such theoretical models, however, the 
+key details of translational deployment are often 
+institutional and socioeconomic in nature.  
+Sustaining a research project long enough to 
+rigorously assess empirical outcomes is a different 
+process than procuring funding, labs, and teams 
+to work through the initial research goals in 
+purely scientific terms.  As a case in point, 
+in the \textit{Data Integration} book mentioned previously 
+the authors identified numerous innovative 
+software projects --- e.g., the Digital Model 
+Repository from the Cancer Biomedical Grid (\CaBIG{}) 
+--- that were discontinued despite promising 
+provisional results.  Other frameworks, such as 
+the University of Pennsylvania's Cancer Phenomics 
+Toolkit, evince novel biocomputational ideas but have not been 
+scaled up or replicated beyond their academic point of origin.  
+These suggest fortuitous connections between 
+technical and translational priorities.  Beyond 
+originart research, the impetus 
+for further development and adoption of promising 
+software, interventions, or clinical protocols can 
+be supplied by social responsibility and a 
+desire to make effective health care options 
+(for example) available to a broad spectrum of 
+the community.  Research initially funded 
+and supported on purely technical grounds might 
+then be able to further develop and expand 
+by emphasizing social/translational benefits.} 
+
+\p{From a publishing standpoint, translational science 
+implies that a research infrastructure should sustain and 
+evolve over multiple phases of a scientific project, 
+which extends beyond the time-frame of individual 
+books or articles.  This is reflected in part by 
+protocols such as Research Objects where supplemental 
+materials (graphics, data sets, and so on) are presented 
+in standardized ways.  It is also manifest 
+in notions of replication and data transparency 
+--- models such as Minimum Information Standards 
+that illustrate experimental/acquisition modalities to facilitate 
+subsequent investigations confirming or extending the 
+scope of published work.}
+
+\p{More broadly, translation priorities imply that 
+variegated stakeholders --- not only scientists 
+but also practitioners, funders, government representatives, 
+etc. --- are best served by an integrated package describing 
+the scope, goals, and (possibly intermediate) results of research 
+projects.  In current practice, different files and resources 
+associated with academic publications are often scattered 
+in different places, without clear provenance or interoperation.  
+Specifications such as the Research Object protocol only 
+partially alleviate this problem.}  
+
+\p{Here, \PacTk{} proposes a \q{Translational Research Object 
+Protocol} that honors the goals of both Research Objects 
+(as a paradigm for dissemination of scientific works) 
+and Translational Science (as a collation of best 
+practices for emphasizing social benefits of research projects).
+According to this protocol, individual publications 
+exist in the context of \q{Project Archives} that have 
+singular entry points both online (potentially 
+integrated with publishers' search portals) and 
+through downloaded resources/data sets.  
+Materials associated through this entry 
+point would summarize translational 
+possibilities for the documented research 
+and provide a foundation for institutional 
+deployment(s).  Individual scientists or students 
+could also utilize Project Archives as encapsulations 
+introducing their interests, background, and expertise 
+to fellow researchers as well as those 
+whose responsibilities include assess the 
+merits and adaptation potential of projects 
+originating in academic (as well as private/independent) 
+environments.}
+
+%\vspace{11pt}
+ 
+
+%\clearpage{}
+
+%\begin{figure}[h!]
+%\includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/x2.png}
+%\caption{HTML Transcription Errors}
+%\label{fig:ss6a}
+%\end{figure}
 
 %\sstitle{Constraint Declarations and Other VM Use-Cases}
 
 %\pagebreak{}\newpage{}\clearpage{}
 
 
-%\vspace*{10pt}
-{\semihr{0.257\textwidth}}
-\vspace*{5pt}
-%\sectnum{1.}
-\hspace{2pt}\secttitle{{Data Publishing and Multimedia}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
-\vspace*{5pt}
-{\semihr{0.257\textwidth}}
+
+\sstitle{Data Publishing and Multimedia}
+
 
 \vspace*{8pt}
 
@@ -1469,6 +1597,15 @@ and \PDF{} viewers:
 \pagestyle{lastpage}
 %
 
+\clearpage{}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/x3.png}
+\caption{HTML Transcription Errors}
+\label{fig:ss10}
+\end{figure}
+
+%x/
 
 %\p{}
 

@@ -300,6 +300,77 @@ adopted for annotation text.
 
 
 
+\ifnum\value{page}=14{
+\AtTextLowerLeft{\raisebox{-55pt}{
+
+\begin{tikzpicture}
+
+\node at (0,0) [text=white] {X};
+
+
+
+\node [draw=red!60!black, fill=blue, anchor = south west, rounded corners,
+text width=14.8cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+(s1) at (3.34, 1.9) {{Two book excerpts showing inaccurate HTML generation 
+from intermediate files whose primary purpose is to produce 
+PDF documents (\tcircledb{1} and \tcircled{2}). 
+The common problem visible in the two examples 
+is that textual or character segments which should be treated as 
+horizontal units (subject to glue-spacing algorithms 
+vis-\'a-vis words to their left and right) are, incorrectly, isolated 
+on their own line, as if they were \q{vertical mode} boxes instead.  
+Such errors naturally disrupt the surrounding lines with normal 
+content instead.  The proper way to address these issues is to 
+specify project-specific HTML encoding rules for non-standard tag entities and/or 
+sentence-level (or smaller) objects, rather than relying on 
+relying on generic HTML generators.  The excerpt at the bottom of the 
+screenshot shows a correct rendering of the left-hand passage
+(\tcircled{3}).}
+};
+
+
+\node [draw=red!60!black, fill=white, anchor = south west, rounded corners,
+text width=14.7cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (3.33, 1.8) {{Two book excerpts showing inaccurate HTML generation 
+from intermediate files whose primary purpose is to produce 
+PDF documents (\tcircledb{1} and \tcircled{2}).  
+The common problem visible in the two examples 
+is that textual or character segments which should be treated as 
+horizontal units (subject to glue-spacing algorithms 
+vis-\'a-vis words to their left and right) are, incorrectly, isolated 
+on their own line, as if they were \q{vertical mode} boxes instead.  
+Such errors naturally disrupt the surrounding lines with normal 
+content instead.  The proper way to address these issues is to 
+specify project-specific HTML encoding rules for non-standard tag entities and/or 
+sentence-level (or smaller) objects, rather than relying on 
+relying on generic HTML generators.  The excerpt at the bottom of the 
+screenshot shows a correct rendering of the left-hand passage
+(\tcircled{3}).}
+};
+
+\node[shape=circle,draw=circ!40,line width=4pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2,25) {1};
+
+\node[shape=circle,draw=circ,line width=1pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2,25) {1};
+
+
+
+\node[shape=circle,draw=circ!40,line width=4pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (12,25) {2};
+
+\node[shape=circle,draw=circ,line width=1pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (12,25) {2};
+
+
+
+\node[shape=circle,draw=circ!40,line width=4pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2.3,11) {3};
+
+\node[shape=circle,draw=circ,line width=1pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2.3,11) {3};
+
+
+
+\end{tikzpicture}
+}}
+
+}\fi
+
 
 
 
@@ -427,8 +498,8 @@ are conceptually relevant to the specific heading-word or -phrase.
 
 
 
-\ifnum\value{page}=9{
-\AtTextLowerLeft{\raisebox{298pt}{
+\ifnum\value{page}=8{
+\AtTextLowerLeft{\raisebox{314pt}{
 
 \begin{tikzpicture}
 

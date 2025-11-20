@@ -92,7 +92,7 @@
 
 
 \AddToShipoutPictureBG{%
-\ifnum\value{page}=14
+\ifnum\value{page}=114
 
 \put(7,678){
 	\transparent{1}{
@@ -1232,7 +1232,15 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \renewcommand{\footnoterule}{\fnr}
 
 
+\definecolor{circ}{rgb}{.2,.3,.5}
 
 
+\newcommand*\tcircled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw=circ,text=circ,text width=3pt,inner sep=1pt] (char) 
+ {{\fontsize{7}{5}\selectfont{}#1}};}}
+
+\newcommand*\tcircledb[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw=circ,text=circ,text width=3pt,inner sep=1pt] (char) 
+ {{\fontsize{7}{5}\selectfont{}\hspace{-.5pt}#1}};}}
 
 
