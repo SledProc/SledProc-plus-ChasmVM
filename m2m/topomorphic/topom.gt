@@ -1,0 +1,406 @@
+
+
+
+
+/>>
+
+
+
+The concept of "/Research Objects/" emerged during the first two decades of 
+this century in relation to developments such as the 
+observed "/replication crisis/" that began to catch scientists' 
+attention at this time %-- specifically, the 
+difficulties faced by fellow investigators in reproducing the 
+results of (even well-executed) published research work.  A concomitant 
+and related notion is "/data transparency/", again related to 
+priorities for researchers to document as clearly and openly 
+as possible the protocols, data acquisition methods, and 
+analytic processes (and assumptions) that underlie published 
+findings.  So-called "/Minimum Information Standards/" 
+such as MIBBI (Minimum Information for Biological and 
+Biomedical Investigations) provide a kind of checklist 
+for authors to ensure desired levels and comprehensiveness 
+of data transparency.  Simultaneously, open-access 
+data sets and deposition of raw data files in 
+special-purposes curation sites (Open Science Framework, 
+Dataverse, Dryad, etc.) has become commonplace, at 
+least in principle.  Publishers often encourage 
+(or even require) authors to ensure that raw data is 
+available to any one reading research articles, or at 
+least to explain explicitly why open data sharing 
+is impossible in specific cases.  Some funding 
+sources (e.g., the Bill and Melinda Gates Foundation) 
+similarly require commit to data transparency as a 
+precondition for research teams to have their work supported.  
+
+The term Research Object in itself was apparently coined 
+in 2013 to describe a proposed specification for 
+how the totality of information related to a scientific 
+publication should be packaged.  The underlying idea, 
+of course, predates that.  It has become evident for a while 
+now that the basic unit of research dissemination is not a 
+single document (published article, book, or chapter) 
+but rather a collection of text documents, data 
+files, potentially analytic code, and (often) 
+multimedia materials and graphics; such resources 
+collectively should serve as a single entity that 
+may be cited, referenced, and downloaded, and users 
+should find it straightforward to browse the 
+disparate content types and find that information 
+or presentations most relevant to them.  The 
+Research Object specification is one proposal 
+to facilitate these goals, but the general term 
+"/research object/" may be used for any package 
+that is deliberately structured around data-transparency 
+and multi-modal publishing in general (insofar as 
+text documents are, in the typical case, understood 
+to be accompanied by other content types).
+
+Meanwhile, "/translational science/" has a similar timeline.  
+It seems that "/translational medicine/" as a phrase 
+first appeared in the 1990's (although the concept is 
+older), referencing protocols that 
+emphasize practical applications of biomedical research 
+and "/bench to bedside/" translation %-- once 
+specific clinical interventions or other scientific 
+breakthroughs are consolidated in a theoretical 
+and/or experimental context, there are then  
+further steps needed to deploy novel paradigms 
+for concrete benefits.  Almost all scientific research, 
+to be sure, is motivated by concern for the social good 
+at some level, but the idea behind translational science 
+is that self-identified academic focus and specialization 
+can augment the probability that practical benefits 
+are realized judiciously, in contrast to rather inchoate 
+notions of the scientific knowledge's long-term advantages.  
+For example, translational scientists have identified 
+five general stages in the evolution of health-care 
+interventions from abstract ideas to established 
+practice %-- the so-called "/translational continuum"/ %-- of which 
+the fourth involves commonplace 
+adoption of (once-)novel practices in clinical settings 
+and the fifth marks concerted efforts to adopt useful interventions in a wide variety of settings (e.g., not restricted to experimental protocols 
+available only in a few hospitals, or to a small, select 
+population).  Such models suggest roadmaps 
+to help guide deployment once research progresses through 
+stages of concrete implementation.  Project might unfold 
+in roughly this pattern organically, but establishing 
+the continuum as a technical model can help the 
+progress to advance expeditiously.
+
+Along similar lines, translational science is concerned 
+with informatics themes as far as managing data to 
+gauge the effectiveness of practical deployments; 
+establishing concrete goals and benchmarks as an intrinsic 
+dimension of research applicability, plus methods to check 
+how empirical results compare to initial projections; 
+structuring research to scale up and/or replicate 
+concrete implementations; and other ways of 
+including practical considerations as intrinsic to the 
+foundational research work.  For example, computer 
+code and software used (or developed) to analyze 
+originary data sets might be repurposed into 
+point-of-care modules in concrete deployment contexts.  
+As guided by translational concerns, scientists should 
+be attentive when setting up and then operating within 
+their overall investigatory ecosystem %-- the equipment, 
+technology, software, technology, data sources, etc. %-- 
+to how such lab/academic settings can be translated to 
+operational environments once abstract research progresses 
+to concrete, socially-mediated practice.
+
+Although "/transational medicine/" might be the 
+most recognizable term, the usefulness of this 
+phrasing has extended to other disciplines.  Thus 
+we have, for instance, translational chemistry, 
+translational engineering, translational sustainability, 
+translational humanities, and so forth.  Such 
+fields (more or less neatly delineated as subdisciplines) 
+focus in on dimensions of their parent specializations 
+(chemistry, etc.) that are particularly relevant to 
+social improvement, practical benefits, applied 
+research, and so forth.  Translational chemistry, 
+as a case in point, emphasizes population health 
+and ecological issues related to pollution and 
+contamination %-- and insofar as principles 
+of chemistry clarify the causative mechanisms 
+behind compounds' hazards to people and ecosystems 
+%-- while also focusing on concrete 
+practices to correct social and environmental damage 
+(e.g., site remediation) and develop new, better 
+forms of molecules and materials (sustainable 
+manufacturing, architecture, pharmaceuticals, etc.).  
+
+Translational science is inherently interdisciplinary, 
+and often challenges the divisions commonly 
+recognized between humanities and natural sciences.  
+Theoretical models (such as the translational continuum) aside, 
+many of the concrete issues affecting concrete deployments 
+are cultural and socioeconomic in nature.  For example, the 
+resources and standards of care available in "/inner-city/" 
+hospitals differ noticeably from wealthier community's medical 
+centers.  Practical challenges when planning 
+socially-beneficial implementations of health-care 
+ideas driven by new research, as such, derive 
+to an important degree from such imbalances in wealth and 
+political influence, and the funding, community, and 
+institutional infrastructure that can overcome 
+such disparities in the translation 
+of fortuitous research to operational practice.
+
+It should be obvious that the rationales behind 
+Research Objects and Translational Science overlap in 
+significant ways.  These specific terms consolidate 
+trends in science and academia that are broadly applicable, 
+regardless of how scholars involves specifically 
+conceputalize them.  A lot of research work is  
+motivated by concerns parallel to those of translational 
+medicine, whether or not this wording is specifically 
+chosen.  Likewise, any author who plans to develop 
+a structure set of supplemental materials in consort 
+with a single publication (a traditional human-readable 
+text document) is confronting challenges that motivate 
+the Research Object model.  Moreover, researchers 
+committed (explicitly or not) to translational 
+principles are likely to structure presentations 
+of the work in the multi-modal fashion associated 
+with open-access information sharing and data transparency.  
+In short, there are strong grounds for formulating 
+"/Translational Research Object/" protocols that 
+address both of these areas, with application beyond 
+just those projects that explicitly invoke 
+each one individually. 
+
+Given the socioeconomic issues recently mentioned, 
+one might also stipulate that both Translational 
+Science and Research Objects reflect an ongoing 
+evolution in the assessment of and institutional 
+logistics for investigations.  If present trends 
+continue, the individual peer-reviewed article 
+is likely to lose its status as the pre-eminent 
+certificate of merit for individuals as well 
+as research projects in general.  This reflects 
+both technical and social factors.  On the 
+one hand, to the degree that the documentary 
+and pedagogical manifestation of research work 
+expands outside individual publications to 
+encompass data packages and multimedia content, 
+the procedures for peer review and assessment 
+need to change accordingly.  Evidently, 
+common practice (still) is for reviewers to 
+evaluate */papers/*, but largely pass over 
+data sets, computer code, or GUI materials %-- which 
+could in principle represent a more substantial 
+authors' time commitment and innovation 
+compared to, say, a single journal article itself.  
+Meanwhile, the ideal settings for translational 
+science are not restricted to academic labs or 
+campuses as commonly understood, and the provenance, 
+funding, and credentials associated with translational 
+research may not fit conventional assessment models.  
+For instance, the majority of work and observations 
+critical to a paper on public health may have been 
+performed by scientists or technicians 
+(or, say, social workers) at an inner-city 
+hospital, rather than either faculty or students 
+at a university.  
+
+Part of translational science's 
+entrenchment may, indeed, be the migration 
+of academic practices and expertise outside the 
+college campus into a broader spectrum of institutions 
+and social environments.  This is not to downplay the 
+special focus necessary to conduct science on a rigorous, 
+academic level.  Specialists with hands-on expertise 
+in practical settings may not have the theoretical 
+instincts to triangulate the observations or 
+day-to-day functioning of practical deployment 
+against the abstract structures of a particular 
+field if scholarship.  Extra work is needed to 
+marshal practical know-how, experience, and information 
+into data relevant to theory-confirmation (or disconfirmation).  
+At the same time, practitioners of abstract research 
+do not necessarily have (or develop) expertise 
+forged from everyday practice in institutional/implementational 
+settings.  Translational science points to a hybrid 
+academic culture that synthesizes elements from both 
+on-campus and "/in-the-field/" environments.
+
+As a way of grounding this (itself somewhat abstract) 
+discussion, consider the phenomnon of open-source code 
+libraries.  GIT repositories, for example, are 
+not peer-reviewed, and indeed content available on a platform 
+such as Github can vary substantially in quality and interest 
+to relevant communities.  Some repos may be essentially 
+just some person's schoolwork or experimentation for 
+personal use.  On the other hand, some reposities 
+created by a single individual are substantial 
+resources that deserve attention comparable to an influential 
+book or article, and other excellent libraries merge 
+the contributions of many experts.  The variegated 
+status and purposes of repos does not, in general, prevent 
+programmers and scientists from finding open-access code 
+relevant to their work.  A quick look at "/readme/" files 
+can usually clarify whether a particular repository 
+is intended as a serious contribution envision for 
+use by multiple third parties, or a work-in-progress toward 
+that end, or rather something much smaller.  And in the 
+former category a review of the actual code can serve as an 
+indication of the project's overall status %-- 
+whether it is actively maintained, compatible with current 
+compiler and language standards, interopable with other 
+code bases, and so forth.  Successful projects often acquire 
+their own momentum insofar as additional programmers can add 
+their own components or adaptations %-- porting to 
+new environments, scripting-language wrappers, adding 
+new functionality, etc. %-- thereby expanding the 
+scope and usability of the project overall.  Open-source 
+libraries (and the coders who create them) thereby acquire a 
+hierarchy of status and influence in an emergent manner.  
+Notions of merit are not dependent on subjective impressions 
+of peer reviewers nor on institutional bureaucracies.
+
+Of course, technical facets of the computing ecosystem play a 
+role too.  Object files either compile or don't; 
+test suites pass or fail.  A reviewer reading a 
+late-stage manuscript draft relies on personal impressions 
+as to whether the writing fits in familiar ways into 
+the disciplinary contexts which the paper evokes, 
+as far as whether terminology, methods, analyses, 
+and presuppositions are characteristic of the 
+expected audience (or if deviations from those paradigms 
+are noted and explained).  Reviewers need to judge whether 
+article introduce new ideas and whether these open 
+avenues for additional research.  This process is subjective, 
+especially insofar as the reviewer is working solely with a 
+text document.  An open-source library, conversely, 
+can be manipulated more tangibly: one can follow 
+documented instructed, compile the sources, run test 
+suites, etc., and eventually launch whatever executable 
+binaries are produced.  Such hands-on activity offers a lot 
+of feedback beyond subjective impressions of code quality.
+
+This comparison between peer-reviewed articles and open-source 
+code libraries is relevant to contemporary publishing 
+because, one might opine, disseminating research in 
+the context of translational science is more like 
+maintaining and open-source library than preparing  
+a submission for a refereed journal.  Those who 
+develop translational-science publications, presumably, 
+are often immersed in concrete practice (outside 
+the scope of academic institution per se) and seek 
+to impose investigatory discipline on the information 
+and observations that are implicitly available 
+in their logistical environment.  Mining the 
+"/ambient/" data that exists in clinical, governmental, or 
+nonprofit settings is a different pathway to rigorous 
+science that constructing artificial data-acquisition 
+locales (e.g., research labs).  Such differences also 
+affect the initiation and evolution of research projects.  
+A graduate student progressing toward a doctoral 
+dissertation, for example, will go through a multi-step 
+process of exploring topics, finding an adviser, 
+forming a comittee, project approval, and so forth, 
+each of which has the result of outsiders molding 
+and nudging the eventual work in particular paradigmatic 
+directions.  Contrast this to a hypothetical 
+social worker or medical humanities specialist who 
+works in a clinical or governmental setting and, 
+with insights shaped by their day-to-day experience, 
+decide to seek out public-access data sets and similar 
+empirical resources to help translate their 
+emerging (on-the-ground-based) personal perspectives into 
+systematic presentations accorded scientific merit.  
+
+Publisher need to be aware of the special status evinced 
+by translational and multi-disciplinary research so 
+that they can best adopt dissemination practices 
+proper to the goals of translational sciences, 
+and best support authors and investigators who 
+pursue them.  For example, researchers traditionally 
+have a personal stake in publications because they 
+represent a larger community's endorsement of 
+someone's general knowledge and competence as a scientist.  
+Having a paper accepted by a high-impact journal 
+not only means that other will read one's words, but also 
+confers a measure of prestige and recognition.  
+In a more translational context %-- where a single 
+document is not only the basic unit of dissemination 
+%-- considerations are somewhat different.  Multi-faceted 
+publications documenting the practical success of an 
+innovative project, for instance, are valuable to 
+the authors not primarily for the venue's name-recognition 
+(with respect to a particular scientist looking for 
+future grants, tenure, etc.) but because researcher 
+are motivated to continue and expand operations 
+on the ground (where funding might come from 
+government programs for social good, or nonprofits).  
+The typical audience for publications in the latter 
+context is not necessarily an acedemic reader 
+familiar with a particular document format 
+(abstract, similar-research statement, summary of 
+findings, etc.) but rather interested 
+parties from multiple backgrounds (nonprofit 
+administrators, civil servants, software engineers) 
+who may be most interested in the nontraditional 
+resources of a publication package: data sets, 
+computer code, statistical graphics, and so forth.  
+
+All of these points have tangible consequences 
+for publishing technology as well.  Translational 
+science implies not only an intellectual 
+transition to multi-disciplinary research 
+but also a physical displacement of the 
+scientific environment away from academic 
+and laboratory settings and toward on-the-ground 
+implementations (plus communities of independent 
+researchers).  In terms of digital artifacts, 
+this is mirrored in the weight of dissimenation 
+shiting from conventonal text documents to 
+computational and multimedia artifacts.  At 
+one level, this means that a reader seeking to 
+learn about a public health, or environmental 
+remediation, or government/nonprofit partnership 
+initiative (as examples) might look 
+toward videos, code libaries, "/story maps"/, or 
+other digital resources in addition to 
+reading a journal-style article.  At another level, 
+the expertise and innovations manifest in research 
+projects might be expressed in such "/supplemental/" 
+materials more than papers themselves.  Publishing 
+software therefore bears the burden of helping 
+authors develop such materials to the highest quality 
+possible.  The continued funding and deployment 
+of projects may depend on the success of content 
+such as code libraries, data-acquisition, information 
+management, and empirical review all of which 
+are unified (in whole or in part) into publication 
+packages  
+
+ 
+   
+ 
+
+ 
+       
+  
+
+  
+
+
+   
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
