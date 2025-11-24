@@ -260,6 +260,12 @@ hierarchy of status and influence in an emergent manner.
 Notions of merit are not dependent on subjective impressions 
 of peer reviewers nor on institutional bureaucracies.
 
+Obviously, meanwhile, open-source code implicitly adhered to 
+the (more recent) "/diamond/" open-access model.  Neither 
+programmers nor users face financial burdens at least 
+for the basic hosting and cloning of repositories 
+(free as in "/beer/" as well as "/speech/").
+
 Of course, technical facets of the computing ecosystem play a 
 role too.  Object files either compile or don't; 
 test suites pass or fail.  A reviewer reading a 
@@ -375,9 +381,287 @@ of projects may depend on the success of content
 such as code libraries, data-acquisition, information 
 management, and empirical review all of which 
 are unified (in whole or in part) into publication 
-packages  
+packages.
+
+So, to bring this introductory discussion to a close, 
+contemporary publishing technology needs to 
+support authors in a variety of contexts and to 
+help authors produce a variety of content 
+%-- text documents but also multimedia, analytic 
+and GUI codedata sets, and so on.  Such requirements 
+apply in particular to code that may be published 
+as part of a Research Object (or similar 
+bundle format).  There are at least five functions 
+that such dataset-oriented code might perform:   
+
+%/ desc
+
+Deserialization:  Perhaps the most obvious use for 
+dataset code is reading raw data files themselves.  
+Individual scientific disciplines are often associated with domain-specific data publishing formats that are paired with dedicated deserialization tools (i.e., computer code which reads raw data files into live memory, without
+relying on special-purpose software). Such code libraries are often maintained by individual institutions or organizations — which
+might be academic departments, research labs, or independent groups — on behalf of a broader research community. Examples include (among many others) FASTQ and VCF for genomics; HDF5 and ROOT for physics; FITS and NETCDF in astronomy and earth sciences;
+PDB and MOL in biochemistry; IFC and BIM for architecture/engineering; SEGY and BAG for geophysics and oceanography; CONLL-U in
+computational linguistics; DICOM and OMETIFF for bioimaging; and GIS-indexed attribute layers and shapefiles for geospatial data sets.
+
+
+/
+
+
+Intuitively, one might reason that code included in data sets should in general 
+be implemented in a style (and programming languages) commonplace in the 
+research community which would primarily assess and reuse a research object.  
+Among the natural sciences, for example, the most widely used languages 
+include C++, Python, R, Java, and Matlab.  
+
+However, there are also nontrivial reasons why distinct programming 
+environments should be developed specifically for the "/research object/" 
+context (again, taking this term as descriptive and not limited to 
+the explicit Research Object specification).  For one thing, 
+there are requirements (or at least desirable characteristics) of 
+data-publication context code that is different from other 
+scientific and software environments.  For example, FAIRsharing 
+principles suggest that authors should be particular attuned to 
+the accessibility and interoperability of published data.  Scientists 
+may have special-purpose software and equipment in their labs 
+(or workplace) but many readers interested in a thorough 
+study of their work may not have the same technology on hand, 
+especially if it is based on closed-source and/or commercial software.
+Authors may indeed take steps to help scientists who 
+*/do/* have access to the best software properly 
+access and reust data publications (e.g., by documenting 
+all steps necessarily to load data files into scientific 
+applications similar to those the authors themselves employed), 
+but data sets should in general be prepared under the assumption 
+that some readers will need to take advantage of published 
+materials through freely-available, open-source components 
+(which may entail partial or scaled-back reuse or functionality).  
+
+Moreover, the basic capabilities of loading/deserializing 
+raw files often depends on special libraries maintained 
+by relatively small groups (as mentioned above).  Data-encoding 
+formats tend to evolve as the relevant science progresses, 
+so deserialization code often needs relatively frequent 
+updates (not to mention that language versions and third-party 
+libraries can become outdated).  Deserialization code therefore 
+must be kept in sync both with specifications of the relevant 
+encoding format and with dependencies on the overall toolchain 
+(compilers, system kernels, etc.).  Duplicating such 
+efforts among a multiplicity of operating systems and 
+languages makes maintenance a more expansive task.  A plausible 
+solution is the dissemination of a single deserialization 
+component (e.g., a Virtual Machine) which is sufficiently 
+autonomous to run in a multitude of host environments, 
+such that deserialization libaries can be targeted for 
+that specific component at least as a precursor to other 
+implementations (maintainers might still prepare 
+native-compiled libraries, for example, but a 
+canonical VM-based version could provide a stopgap 
+while such components are under development).
+
+A further consideration is that dataset-related code 
+spans a variety of distinct use-cases, as listed 
+earlier.  A potential outcome is tension between 
+competing priorities of implementing all 
+dataset code in a single programming language 
+and, on the other hand, writing code in each 
+area of functionality in a style most conducive 
+to its own requirements.
+
+This paper assumes that a plausible solution to these questions 
+involves a dedicated Virtual Machine and Compiler Infrastructure 
+that would be explicit designed around data publication, 
+research objects (as a general concept), and translational 
+science (or, more broadly, interdisciplinary approach which 
+brodge, or have the potential to migrate between, 
+pure and applied research, as well as natural science and 
+humanistic/social science foci and implementations).
+
+A further presupposition is that such compiler and VM 
+components can and should be implemented in a mostly 
+self-contained manner, with as few external dependencies 
+as possible.  In particular, the entire code base 
+for these tools should be isolated and, potentially, 
+distributed alongside any code specific to a 
+single data set.  Anyone with access to the 
+overall package would therefore have the necessary 
+software environment available to run included code.  
+Of course, the compiler/VM components would need to be 
+built from source, so users would need, for instance, 
+a typical C++ toolchain.  But such affordances 
+might be necessary to run other dataset code anyhow.
+
+Providing an integrated environment for running 
+dataset code does not imply that all such code 
+must be written in a single language.  Full-text 
+searches might be expressed in code that reads 
+more like a query language, in contrast to a 
+more script-style deserialization library.  
+Plugins to host applications loading data sets 
+might be written in a declarative style 
+emphasizing cross-component interop, alluding 
+to (e.g.) the Common Workflow Language or various 
+protocol-definition formats.  It is a reasonable 
+goal, however, to design a VM that would be a 
+common */compilation target/* even if surface-level 
+code is expressed in terms consistent with the 
+relevant area of functionality (query versus script versus, 
+say, workflow definition).  Of course, if not constrained 
+by existing language standards, a single front-end 
+language could adopt a flexible syntax that supports 
+multiple functionality-related styles 
+(consider LINQ as a DSL vis-a-vis C#).
+
+In any case, this paper will assume that creating such a 
+compiler and VM toolchain is a worthwhile project, and 
+will discuss certain featuers and implementation details that 
+reflect the specific goals of those hypothetical 
+components.  In particular, the compiler/VM would be 
+specifically built to support Research Object development 
+and facilitate data-sharing in multi-disciplinary and 
+translational contexts.  I will cover several 
+topics, including VM design and instruction sets, 
+front-end parsing, intermediate representations, 
+static analysis, interop with native-compiled procedures, 
+embedding the toolchain in host applications, 
+and taking steps to ensure that the toolchain 
+can be built with minimal external dependencies.
+
+For sake of exposition, the discussion will start with 
+perspectives particularly relevent to full-text search 
+and text encoding.  These themes may seem tangential 
+to typical topics in compiler theory, but they 
+serve as a useful precursor to further discussion of 
+the more-familiar topics.  Subsequent sections 
+will address such issues as object lifetimes, 
+calling conventions, resource (de-)allocation, design-by-contract, 
+dependent types, and other topics that are 
+currently at the forefront of programming-language theory.
+
+
+Full-Text Search and Representation
+
+The term "/full-text/" search is defined in contrast to 
+document portals where users may only access abstracts and 
+excerpts from published manuscripts.  By implication, 
+in full-text search the entire content of a book are 
+article is available to match against query terms.  
+This does not automatically mean that all the text 
+is accessible to all users; parts of documents might 
+be behind a paywall even if full-text is included 
+in the search process.  Also, queries might 
+be evaluated against compressed files (or 
+database records) that are distinct from 
+document content as undertood when reading 
+from beginning to end.  A "/vector/" datanase, 
+for instance, might only record the number 
+of times a given word (or phrase) occurs in a 
+given resource, on the assumption that 
+more mentions imply greater relevance.  This is, 
+of course, a crudy metric; more granular 
+models of relevance might distinguish, for 
+example, a publication arguing */for/* some 
+theory, versus */against/*, or neutrally 
+*/evaluation/* pro and con.  
+
+For sake of discussion, it is reasonable to assume 
+that full-text search capabilities */do/* include 
+matching input strings against document text 
+in its entirety.  Ideally, a bibliographic database 
+will support relevance-based queries as well, and 
+--- in the best case scenario --- author annotations, 
+or some other sentiment/rhetorical declaration method, 
+will offer a more granular model of inter-textual 
+relationships (how one document comments on, 
+endorses, rebufs, etc., some other text, or theory, 
+or line of argument).  If nothing else, relevance 
+matches could provide an initial pool of candidates 
+that are further analyzed.  But in many cases 
+exact phrase-match is indeed the best strategy for 
+query evaluation, notwithstanding how the semantics 
+of a passage can overlap with those of a search phrase 
+even without the query content appearing as such 
+%-- the words might occur partially, or in a different 
+order, or replaced by (near-)synonyms.  Such possibilities 
+imply that brute-force matching is often less than ideal, 
+but still, sometimes a reader is trying to re-locate a 
+sentence or paragraph they had seen sometime before, and 
+remember specific words therein.  Or, users are reasonably 
+confident that any relevant passage will have an exact 
+match with just one or two query variants (e.g., first-name-last-name 
+for a person or vice-versa).  In still other cases, technical 
+terms and idioms are often embraced precisely because they 
+yield a canonical vocabulary that one can expect to 
+find in relevant publications.  A manuscript which has 
+nontrivial discussion about the Rust "/borrow checker/", for 
+instance, will almost certainly use that exact phrase somewhere.  
+
+With that said, it can be surpringly complicated to establish 
+what exactly */is/* a manuscript text.  The most common 
+format for a person just */reading/* publications is 
+PDF, but PDF viewers' internal text representation 
+differens from what users "/think/" they're reading 
+in some important ways.  One obvious artifact of 
+the digital (or printed) page is hyphenation %--  
+but PDF also introduces anomalies via ligatures; 
+inconsistent spacing; mixing header/footer, sidebar, 
+and other "/marginal/" content with the primary 
+text; and potentially error-prone treatment 
+of characters with special typesetting or presentation 
+requirements.  PDF software can compensate for such 
+issues to varying degrees, but in general searches against 
+documents in PDF format should not be performed via 
+viewers' internal search functionality, or against 
+document text as reported by PDF components 
+(e.g., poppler's get-page-text ...).  
+
+PDFs, of course, are generated from files of some other type.  
+This might be LaTeX; or, more recently, XML-based 
+formats such as JATS or BITS.  Searching against 
+well-structured (e.g., XML-based) representations 
+presumably offers more consistent results than targeting 
+text as seen by PDF applications internally.  
+Unfortunately, current publishing practice does 
+not include disseminating JATS (for instance) as a 
+supplemental resource sibling to PDF files, for full-text 
+query purposes.  There seems to be no technical 
+arguments */against/* sharing XML (or similar) 
+manuscript encodings, however.  Of course, 
+not all users of search capabilities will have 
+documents on hand to begin with; they may perform a search 
+seeking to find relevant content ab initio.  Obviously, 
+though, document archives can store at least 
+moderately-sized collections of machine-readable 
+encodings and execute the same search algorithms 
+therewith as a sophisticated PDF viewer might perform 
+were PDF files augmented with associated (or 
+embedded) machine-readable text encoding.fn: with 
+the caveat that queries which take a comparatively 
+long time to evaluate on a single manuscript are 
+obviously impractical against thousands or 
+millions of candidates.  This is why vector-database 
+relevance methods may be important as an initial 
+step; or why publishers are advised to maintain 
+smaller-scale collections of materials that share a 
+similar topic, or subdivide their collections 
+in such a manner, so that user can 
+explicit constraint their searches to 
+collections with a specific semantic marker.
+
+
 
  
+   
+
+
+  
+   
+
+
+
+
+
+
    
  
 
