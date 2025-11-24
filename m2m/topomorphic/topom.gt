@@ -645,9 +645,106 @@ step; or why publishers are advised to maintain
 smaller-scale collections of materials that share a 
 similar topic, or subdivide their collections 
 in such a manner, so that user can 
-explicit constraint their searches to 
+explicitly constrain their searches to 
 collections with a specific semantic marker.
 
+Even granted that full-text representations are available, 
+however, leaves unresolved numerous issues with respect to 
+what content is actually modeled for text-search 
+purposes.  Authors and typically readers will usually 
+have a pretty clear picture about the basic components 
+of sentences and individual words, distinguishing 
+such information from artifacts of layout and presentation.  
+For instance, hyphenation is not an intrinsic 
+part of text content, and two parts of a hyphenated word 
+should be fused together when building machine-readable 
+encodings.  Likewise, character-sequences such as 
+"/ffi/" might have the visual appearance of a ligature 
+character (Unicode ?? in this case) but the underlying 
+content is merely those three Ascii/Latin1 letters.  
+
+There are other, subtler cases, however.  For example, 
+footnote markers, citations, number or bullet icons 
+for enumerations, and emendments within quoted 
+material (ellipses, square brackets, and so forth) may or 
+may not be content that a user deems "/part/" of a sentence.  
+This could manifest in multiple ways.  In the case of an 
+exact-match query with a given search string, presumably 
+details such as the presence of a footnote marker 
+after an intermediate word would not affect whether a 
+portion of a sentence properly satisfies the match 
+(relevant to the user's intentions; although there 
+may be exceptions here, such as when the query 
+string originates from a copy-paste in a PDF viewer).
+On the other hand, if the user wants to */copy/* 
+a specific sentence they may wish to include 
+foonote markers, ellipses inside quoted material, 
+etc.  At least, copy actions might be performed 
+through a dialog box or other GUI component 
+that allows specifying options (whether of not 
+to include footnotes, etc.).  
+
+Further considerations involve how basic discursive 
+units such as sentences are to be modeled.  
+Most text has straightforward subdivision into 
+sections, paragraphs, sentences, etc.  But sometimes 
+the hierarchy is more ambiguous; a footnote whose 
+marker lies in the interior of a sentence might 
+itself span multiple sentences, which thereby 
+exhibit a kind of parent/child relationship 
+with the one in the main text.  Similarly, 
+sentences within block (or sometimes inline) quotes 
+or enumerations function in some regards as children 
+of the sentence through which that material is 
+introduced.  If the latter sentence (or part thereof) 
+ends with a colon rather than a period, it may be a 
+judgment call as to whether the beginning of 
+the relevant quote/enumeration is the start of a 
+new sentence or a continuation of the previous one.
+
+Another set of questions relates to styling and 
+presentation features such as italics, hyperrefs, 
+figure captions, etc.  A robust 
+search functionality might allow users to explicitly 
+request matches in italicized text (let's say they 
+remember a passage, include its being 
+in slanted script, but not which page contained it).
+Nonetheless, in a typical case users presumably 
+will not distinguish font-face when deeming a 
+phrase-match to be accurate.  The case might 
+be different vis-a-vis copying the text of a 
+sentence, constructing PDF comment boxes, and 
+so forth.  A reasonable question is 
+
+
+There may not be definitive rules to resolve all 
+such issues.  The larger point is that text-encoding 
+is not a trivial matter of preserving intermediate 
+files, but rather that authors (or editors) should 
+consciously mold machine-readable representations 
+with deliberate acknowledgment of where principles 
+may be ambiguous (such as what qualifies as a 
+sentence-boundary) or development of encoding 
+protocols that give end-users choice when there are 
+nultiple reasonable options.  Of course, publishers and 
+digital editors can develop default "/house/" styles 
+to which authors might defer %-- pondering these 
+minutiae should not have to be a precondition for 
+submitting manuscripts %-- but in any case a 
+self-conscious protocol or meta-model for text 
+encoding could still be part of the document-preparation pipeline.
+
+Given this background, we should assume that any "/machine-readable 
+text encoding/" will include a set of rules for 
+how variegated phenomenon (not just words and characters) 
+are to be modeled (e.g., sentence boundaries and 
+inter-sentence relationships and hierarchies) and detailed 
+consideration of potential ambiguities or underdetermination 
+within search and text-access (such as copy/paste) functionality  
+
+
+  
+  
 
 
  
