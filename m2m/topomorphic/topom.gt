@@ -714,8 +714,29 @@ will not distinguish font-face when deeming a
 phrase-match to be accurate.  The case might 
 be different vis-a-vis copying the text of a 
 sentence, constructing PDF comment boxes, and 
-so forth.  A reasonable question is 
-
+so forth.  A reasonable question is how users would 
+want result text presented, if, for example, a 
+query asks for the contents of one specific 
+sentence, or if the "/query/" is actually a 
+response to gestures, such as selecting a 
+copy-sentence option from a context menu.  
+Plausible encoding formats specifically 
+for query-results (in this sense) could be 
+HTML, Markdown (or similar), plain text 
+(ignoring details such as italics), etc. 
+(of course, specifying which of these 
+is desired could be part of the query parameters).  
+Even if presentation facets such as italics vs. 
+normalfont are ignored, query results would still need 
+to consider how to represent quotations %-- use the 
+same quote marks as the document, or revert to 
+simplier Latin1 quotes (which do not distinguish 
+left and wrote), or employ some encoding to 
+surround quoted materials with tags (or analogous 
+markers); and, should block quotes (since 
+they are indicated by marginal indentation rather 
+than quote characters) be handled  
+differently from inline?
 
 There may not be definitive rules to resolve all 
 such issues.  The larger point is that text-encoding 
@@ -741,7 +762,9 @@ are to be modeled (e.g., sentence boundaries and
 inter-sentence relationships and hierarchies) and detailed 
 consideration of potential ambiguities or underdetermination 
 within search and text-access (such as copy/paste) functionality  
-
+(meaning that users, perhaps via GUI components, 
+or query-parameters fill in details to resolve questions 
+where results might be presented in multiple ways.   
 
   
   
