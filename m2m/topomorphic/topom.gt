@@ -764,7 +764,377 @@ consideration of potential ambiguities or underdetermination
 within search and text-access (such as copy/paste) functionality  
 (meaning that users, perhaps via GUI components, 
 or query-parameters fill in details to resolve questions 
-where results might be presented in multiple ways.   
+where results might be presented in multiple ways).  A thorough 
+text-encoding standard would thereby be relatively complex, 
+perhaps more so than suggested by current 
+technologies.  For example, the Journal Article 
+Tag Suite (JATS) has a fairly comprehensive 
+vocabulary of XML elements, but most of these 
+are designed for preparatory information 
+declared before the start of actual text 
+(JAPS supports a wide range of metadata 
+related to bibliographic info, provenance, 
+copyright, and so forth).  
+
+It's worth noting in this context that most text-encoding 
+standards are built around */paragraphs/* as the basic 
+units of discourse.  The BioC format (used by a 
+subset of PubMed Central), and Text Encoding Initiative 
+(TEI), have !<s> or !<sentence> tags available, but 
+even here these are not guaranteed to be present in documents.
+LaTex has rules for determining sentence boundaries 
+in normal cases (and macros to override those defaults 
+when necessary), but these most simplistic conventions 
+do not address all (or even most) sentence-related 
+ambiguities, and moreover they have no impact 
+on document preparation except for subtle 
+spacing policies (specifically, unless so-called "/french/" 
+spacing is indicated, PDF and other generated publications 
+will have a small extra space between the punctuation 
+ending one sentence and the start of the next, as 
+compared to the normal inter-word space on the 
+relevant line of print).  Without extra packages, 
+one cannot use the LaTeX pipeline to save sentence-level 
+metadata (e.g., the PDF page coordinates of sentences's 
+start and end points, which in theory can be tracked 
+via the pgfpos commands and auxiliary files).
+
+In short, in almost all publishing workflows there 
+is little effort made to introduces individual 
+sentences as a recognized discursive unit.  
+Similar points can be made about repositories 
+such as CORD19, a collection of open-access 
+documents about Covid and Coronaviruses, first curated 
+by the Allen Institute for AI (AI2) in the early months 
+of the pandemic.  CORD19 was engineered with accmmodation 
+for limitations in publising practice %-- in particular, 
+most articles were accessed only in PDF form, so CORD19 
+had to rely on error-prone transcription of internal 
+PDF representations to create (ostensibly) machine-readable 
+text encoding.  AI2 explicitly recognized this 
+limitation and even issued a "/call to arms/" encouraging 
+publishers to create more rigorous standards.  But, in any 
+case, the JSON format adopted by CORD19 broke down 
+text content only to the level of individual paragraphs.  
+Finer-grained details (e.g., in the context of annotations) 
+were modeled via "/standoff/" markup (using character-indices 
+to declare start and end point, where each paragraph is understood 
+as an internally-indexable stream); however, that system was 
+not extended to sentence-boundaries themselves.
+
+It is not entirely clear why so few formats are built around 
+the sentence (rather than paragraph) scale, especially because 
+many queries or search scenarios would seem to implicitly 
+rely on sentence identification.  For example, it would be 
+quite reasonable for a query to request matches wherein 
+two distinct terms are both present in the same sentence.  
+Also, in many cases a credible default response 
+convention for queries would be to return the full 
+text of a sentence where matches occur (this is just as 
+plausible as returning a "/window/" around the match 
+hits dilated by several words on either side).  Tracking individual 
+sentences could also be valuable in use-cases such as 
+PDF comment boxes and "/track change/" functionality.  Visibly comparing 
+two versions of a manuscript, say, could be restricted to showing 
+sentences which differ between the two (or also, maybe, 
+sentences present in one but not the other).  Similarly, 
+suppose someone using a PDF file creates a comment box 
+to indicate an edit that they recommend.  With proper 
+metadata about page coordinates, the PDF viewer could 
+obtain an identifier for the specific sentence 
+wherein the comment box is pinned, and such 
+id could even be included in the comment text itself 
+(maybe in the style of a social-media handle) so that 
+"/track changes/" software could cross-reference the 
+PDF without intermediate sources (e.g., XML files).
+
+Even if sentence-level encoding is not currently 
+the norm, there is no technical reason why it 
+would not become more prevalent in the future.  
+Properly identifying almost all boundaries 
+can literally be a simple as employing two 
+spaces instead of one in input sources, with 
+special notation needed only in rare anomalies 
+(another plausible solution is to adopt LaTeX 
+conventions that distinguish periods as punctuation 
+versus in abbreviations in most normal cases, 
+deferring to \SlashAt{} macros only on occasion; 
+although here the need for special notation 
+arises more frequently than with a two-space-versus-one 
+rule).  In any case, the remainder of this discussion 
+will assume that text encoding standards are 
+adopted (or developed) which treat sentences as 
+the basic units, and paragraphs as compound 
+objects (for lack of a canonical term, I will 
+call this "/sentence-level encoding/").
+
+Much of the preceding material serves 
+mostly as a preamble to this section's primary 
+theme, which is the best structure to employ 
+for natural-language markup.  Numerous 
+(at least partially) theoretical discussions exist 
+about the unique challenges for defining machine-readable 
+text representations, and which generic formats 
+(XML, JSON, something else %-- SGML, even) are best suited 
+for this case.  Although LaTeX has long been used for 
+typesetting specifically, publishers currently appear to 
+prefer XML-based formats (particularly JATS and its 
+derivates, including BITS %-- the Book Interchange Tag Suite) 
+as the primary intermediary files (grounding the 
+central processes of a workflow flanked, on one side, 
+by documents actually submitted by authors %-- in formats 
+such as Microsoft Word %-- and on the other by publications 
+read by humans, in PDF or, for instance, HTML).  
+
+At the same time, bear in mind that XML is itself essentially a 
+simplified version of SGML which was in use for many years in 
+academic/technical publishing, and some programmers argue that 
+features excluded from XML %-- notably, concurrant 
+markup %-- are still useful for text-encoding purposes.  There 
+are, then, contrarian models that are self-consciously 
+incompatible with XML and present a more complex markup 
+conception which, in principle, may be more effective for 
+describing the contents of text documents.  XML, of course, 
+is not explicitly designed for representing long text 
+*/documents/*, like books or articles (nor are other generic 
+formats, such as JSON).  There are subtleties in the 
+nature of human language, in its written form, that 
+require special treatment irregardless of how the 
+information is encoded overall.  To put it differently, 
+natural-language text is not just a "/data structure/"; or, 
+if we do see it as such (on the premise that almost 
+"/anything/" is a data structure) it is one with 
+intricate details and corner-cases.
+
+Among the XML alternatives that have been proposed 
+(and implemented, to varying degrees) a noteworthy 
+case if TagML (the Text-as-Graph markup language) 
+which features concurrent markup, among other 
+generalizations (from the simple document hierarchy 
+evinced in XML).  Concurrency means that multiple 
+hierarchical structures can exist in parallel; 
+the start of one element (e.g., a start tag) may 
+exist after the start but before the end of some 
+other element, while the former's end outlasts the 
+latter's.  That is, in some instances elements 
+exhibit overlapping rather than parent-child, sibling, 
+or disjoint relationships.  For a concrete example, 
+when recording poetry it may be desirable to adopt, 
+as basic units, both sentences and verse-lines.  
+One line may include the second half of one sentence 
+and first half of the next.  Concurrent markup 
+may therefore be an intrinsic feature of certain 
+academic domains, although the relevant 
+structures could be enulated in "/pure/" XML 
+via "/landmarks/" (zero-width elements that, in pairs, mark 
+beginning and end milestones for some state or condition 
+that cannot be represented by XML tags directly).  
+Meanwhile, in exceptional circumstances for ordinary 
+manuscripts (not just verse) there can be similar requirements 
+to identify printed lines as a distinct markup 
+layer.fn: { One example involves fine-tuning PDFs created 
+by, for instance, LaTeX; suppose we have a worflow 
+where XML (or similar) encoding applies for the 
+main text but LaTeX is still used for typesetting 
+the final PDFs.  The LaTeX-to-PDF generators 
+(anecdotally, at least) can be problemmatic 
+when it comes to handling (i.e., creating) 
+widows or orphans, both in the case of words and of 
+lines (by "/anecdotally/" I mean this is something 
+I have found repeatedly to be a pain in the arse).  
+In some cases authors/editors can get better results 
+by manually manipulating the LaTeX rubber-length 
+mechanism (which usually works well) and that 
+sometimes involves stipulating that some precise 
+string of words or characters should be exactly 
+one double-justified print line, which of course 
+might overlap with but neither include nor stand inside 
+one sentence.  In this case line/sentence 
+concurrency becomes a factor even in mundane prose. }  
+Apart from concurrency, TagML also differs from 
+XML in that attribute values (attributes are 
+string-indexed, so the "/keys/" are structurally 
+isomoporphic to XML) are not (necessarily) 
+simple strings, but can potentially have the same spectrum 
+of (semi)-hierarchical content as the overall 
+document (according to the TagML standard, each 
+attribute value is itself a root note).  
+
+Debating the relative merits of JATS, for example, versus 
+a non-XML alternative (such as TagML) %-- and whether 
+these considerations justifying departing from 
+XML entirely as opposed to emulating other structures 
+via conventions such as landmark/milestone tags %-- 
+is outside the scope of this paper.  I */will/* 
+comment that XML has become entrenched not only 
+due to the format itself but also associated 
+languages and tooling, such as XPath, XQuery, 
+XSLT, XQSE (XQuery Scripting Extensions) and the 
+XML Document Object Model.  Projects that 
+envision an XML alternative need to address the 
+possibilities of similar */associated/* languages 
+as well.  In the case of TagML, for example, 
+there does not appear to be a concomitant 
+format for querying TagML files analogous to 
+XQuery, or a way of individuation parts of 
+documents in the sense of XPath.  Articulating a 
+non-XML paradigm, however well-motivated, 
+is only a first step; on that basis one 
+would then need to progress to replacements 
+for DOM, XQuery, etc.
+
+But the main point I intent to emphasize %-- which 
+the XML/TagML contrast exemplifies nicely %-- is that 
+the superficial structures of any format are not 
+the primary factor when considering which languages are best 
+suited for text representation.  The important 
+difference from markup with or without concurrent 
+tag-overlap is not whether start/end tag pairs are 
+consistently nested in source files.  The more significant 
+implications come to the fore when one is writing code 
+to traverse, navigate, transform, and isolate/extrast 
+specific parts or values from the represented 
+data structures.  In the case of XML, for example, 
+one maneuvers around documents by visiting children 
+(or parent) nodes by turn, and/or sibling nodes 
+in sequence.  Simple hierarchy makes such navigation 
+straightforward.  With concurrent markup such as 
+TagML, code that traverses a document 
+looking for some specific content (or apply transforms 
+to most/all elements) has to address a wider variety of 
+cases.  When elements start inside others but end outside, 
+determining the proper sequence for visiting nodes is 
+(at least potentially) more complex.  This is not an argument 
+against, say, TagML %-- conceivably such complexity 
+actually makes traversal easier to implement, because it 
+brings complex cases to the forefront rather than 
+addressing them obliquely, such as when overlap is 
+emulated indirectly in XML via landmarks, since in the second 
+cases programmers might be more likely to code up ad-hoc 
+tools to keep track of data relationships basically 
+sutured on to the XML foundation (e.g., maintaining a 
+separate stack-object to keep track of start/end milestones).  
+But it does mean that the best format, all else 
+being equal, is the one which is most conducive 
+to intuitive implementation of traversal/navigation 
+code.  
+
+In short, the distinguishing factor of any markup format 
+involves how code might move from one node or "/site/" 
+in a document to another, as well as how it extracts 
+information on the current "/focus/" site.  For instance, 
+in XML, the main "/sites/" are element nodes and the principle 
+operations available on any given such node are reading 
+the tagname, attribute values, and the element's text 
+content (if any).  The primary */navigation/* possibilities 
+are moving from parent to (first) child node, and from 
+(any) child to parent, as well as between sibling nodes.  
+The crucial details of XML's specific format is that such 
+traversal possibilities are presumed from the 
+outset, and navigation/extraction code can orient 
+itself against this architectural paradigm.
+
+For sake of discussion, commpare these XML conventions 
+with a graph database; let's say, a property-hypergraph 
+model which supports at least two levels of (hyper-)nodes 
+(hypernodes are, in general, a tuple of nodes at the 
+lower level) as well as labeled edges between hypernodes, and 
+key/value attribute lists available for multiple kinds 
+(nodes, hypernodes, edges, etc.).  Edges themselves 
+may actually be "/triples/" where a directed edge (in addition 
+to its source and target hypernode) has its hypernode 
+(the middle slot in the subject-predicate-object triple model), 
+although the nodes specific to hyperedges may carry the 
+stipulation of a "/label/" attribute that conforms to 
+some Ontology.  Also, it is reasonable to assume that 
+any hypernode can be referenced via a globally unique 
+identifier, which in turn may be the value of a node, 
+so nodes can act as proxies or handles to hypernodes, 
+permitting containment hierarchies */de facto/* 
+(even if hypernodes can only nest one level of contained 
+nodes, those nodes may proxy other hypernodes, and so 
+on iteratively).
+
+This schematic picture of property-hypergraph database theory 
+(which does not corespond to actual engines in use, necessarily) 
+is tangential to my discussion, but it illustrates a noticeably 
+*/different/* conception of navigation and traversal compared 
+to XML.  Visitor code could switch focus from a hypernode 
+to a node contained therein; or from one hypernode to another 
+via a labeled edge (maybe following one specific label 
+as defined by an Ontology or controlled vocabulary); or, 
+alternatively, migrate to a different hypernode via a 
+node-proxy (equivalent to moving between XML elements by 
+reading the destination's id from an attribute value).  
+Code could also read a property-value at the current 
+site, or read "/predicate/" details (in the subject/predicate/object 
+triple sense) from an edge-annotation.  While some of these 
+protocols vaguely resemble XML, the details are different.  
+XML has no equivalent to edge-triples, for example.  On the other 
+hand, each XML element potentially has its own text content, 
+whereas in the graph model sketched here text would only belong 
+to a node as an integral whole (without internal/nested elements).
+
+There are a wide variety of domain-specific formats, like 
+DICOM (for medical images) and IFC (Industry Foundation Classes, 
+for engineering) that have their own variation on 
+themes familiar to, say, XML.  For example, IFC distinguishes 
+*/attributes/* from */properties/*, where the latter are more 
+free-form.  Document-type schemas can restrict (and require) 
+the presence and scope of attributes, but sources can 
+introduce idiosyncratic properties with few restrictions.  
+A similar distinction is achieved in DICOM via "/public/" 
+versus "/private/" element-labels (DICOM has the further 
+detail that field labels, which function in effect like 
+attribute keys, in DICOM have both string 
+and number codes; private attributes employ odd numbers).  
+DICOM also uses a two-part-code system (somewhat comparable to 
+XML namespaces).  Each of these formats evince algorithmic 
+differences in terms of traversing and extracting information 
+from documents.
+
+Structural differences of these sorts are sufficiently 
+widespread that it is helpful to refer to them 
+in general, and existing jargon (such as traversal 
+or navigation, or terms related to the "/visitor pattern/") 
+do not cover proper generality.  For sake of 
+exposition, here I borrow the term "/topomorphic/" (which 
+apparently exists in chemistry but not, usually, computer 
+science).  Formats such as XML, TagML, DICOM, IFC, differ 
+in terms of what I propose to call */topomorphic regimes/", 
+in that there are subtle (or not-so-subtle) differences 
+in the computational processes involved in moving from 
+site to site and extracting data thereby.  A central idea 
+here is */site/* itself, which I envision to be a 
+generic concept for a "/place/" in a structured document 
+%-- one that could be the current value of a source-code 
+variable or object %-- such that code can, via 
+one "/foreground/" or "/focal/" site, read specific 
+kinds of information (an attribute value, tag name, 
+element text, etc.).  Moreover, there are specific 
+options to "/move/" from one site to another 
+(e.g., by reassigning the value of a source-code 
+object to point to a different node).  The data 
+available at a given site, plus other sites immediately 
+accessible therefrom, could be called the "/neighborhood/" 
+of a site.  Where formats differ is the parameters of the 
+"/shape/" of such neighborhoods.  For instance, the neighborhood 
+of an XML node includes its parent and child nodes, previous and next 
+siblings, and its attributes and text content.  Given the 
+differences outlined above between XML and TagML, the neighborhood 
+of a TagML node would be structurally different.  In terminology 
+I adopt here, these are */topomorphic/* differences and 
+illustrate how XML and TagML exhibit/implement distinct "/topomorphic regimes/".
+
+
+    
+
+
+ 
+
+    
+ 
+     
 
   
   
