@@ -1400,7 +1400,7 @@ dependency or interconnection with other
 objects, such that they do not feel 
 to a human reader as entirely self-contained).
 
-All of these variotions need to be addressed by a 
+All of these variations need to be addressed by a 
 rigorous "/topomorphic model/" of sentence-objects 
 and natural-language text in general.  
 "/Visitor patterns/" have to consider the 
@@ -1412,6 +1412,105 @@ where hierarchical relations are ambiguous
 (e.g., between containing sentences 
 and quotes, parentheticals, or footnotes).
     
+A detailed sentence-object model is important partly because 
+we may assume sentence-level content canonically 
+forms the basis of a query interface.  The prototypical 
+constructions for a full-text/bibliographic search, 
+that is, would be a string indicating 
+desired matches (in the simplest case a 
+phrase to be located word-for-word, but of 
+course with more nuanced variation) and the 
+results would be contents of those sentences 
+where a match occurs.  Of course, for a 
+particular "/hit/" a relevant question 
+is what */is/* the containing sentence, so 
+minutiae about how a particular text-encoding 
+handles sentence boundaries/hierarchy need to be 
+known to any code that issues queries against 
+such representations.
+
+The other question in this context is how 
+sentence contents are to be reported; 
+that is, how must stylistic, layout, 
+presentation, and discursive detail 
+should be returned.  These issues are 
+more granular than the sentence level, 
+though not necessarily on a letter-by-letter 
+scale.  For instance, semantically noteworthy 
+segments within a sentence should (as 
+much as possible) be noted, with annotations, 
+extra markup, or other detailing.  
+Examples include acronyms, abbreviations, proper and place 
+names, keywords/phrases, jargon, 
+and text with special formatting because 
+of some technical significance (e.g., printed 
+computer code).  Often such material 
+has visible differences anyhow %-- for example, 
+I believe abbreviations should be typeset 
+in a different font or color than other characters, 
+and so they would be isolated both visually 
+and within the encoding.  Technical artifacts 
+like chemical formulae or phonetics symbols 
+as used in linguistics (more generally, the 
+practice of notating a sample/utterance in multiple 
+ways, perhaps including translations %-- into 
+English, say, if that is the language of the 
+manuscript but not of some sentence being 
+analyzed %-- along with "/literal/" translations 
+that explains grammatical structures and 
+inflections/morphology) typically need 
+special formatting in any case.  The question 
+in a query-interface context is how these details 
+should be reported.  A reasonable convention 
+is that (at least by default) match results should 
+as much as possible be described as plain 
+character-strings, with no markup or 
+decoding necessary; material with special 
+features could be indicated with simple ASCII-style 
+notation (based on Markdown, for instance) or 
+just as ordinary text, so an acronym would be 
+merely its constituent letters.  Alternatively, 
+results might be returned in a commonplace 
+format like HTML, or some internal format 
+designed as a bidirectional compromise between 
+code that evaluates queries and code that 
+produces them (and processes results).
+
+Moving on to what is typically the smallest scale, 
+a query-interface should also specify the basic 
+encoding for single characters.  Paradigmatically, 
+such a standard would be based on Unicode, but a 
+systematic text-encoding might want to 
+address some limitations of the Unicode system.  
+In particular, Unicode does not (at least in many 
+contexts) distinguish glyphs with similar 
+appearance but distinct roles.  As a paradigmatic 
+example, period may be punctuations, parts of 
+acronyms, the last character in an abbreviation, 
+strung into ellipses, a decimal point, etc.  
+If we are concerned not just with visual output 
+but recording discursive structures, these differences 
+are clearly significant.  Arguably, the Unicode 
+could have adopted distinct codepoints for various 
+incarnations of periods (similarly for, e.g., 
+quote characters as repurposed for feet/inches, 
+or commas in the role of numeric separators, etc.).  
+Such might still be achieved by convention 
+via Unicode Private Use Areas.  
+
+As a case in point, consider ellipses.  Readers generally 
+see them merely as strings of three (or four dots).  Unicode 
+actually has several codepoints for ellipses as single 
+characters 
+
+  
+ 
+  
+ 
+ 
+
+
+
 
 
 
