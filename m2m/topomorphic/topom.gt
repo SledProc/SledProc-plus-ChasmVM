@@ -1124,7 +1124,322 @@ siblings, and its attributes and text content.  Given the
 differences outlined above between XML and TagML, the neighborhood 
 of a TagML node would be structurally different.  In terminology 
 I adopt here, these are */topomorphic/* differences and 
-illustrate how XML and TagML exhibit/implement distinct "/topomorphic regimes/".
+illustrate how XML and TagML exhibit/implement 
+distinct "/topomorphic regimes/".
+
+When describing site-neighborhoods we can consider several 
+degrees of specificity.fn: {there's a similar 
+ambiguity in the term "/data structure/", which could 
+mean an abstract specification %-- array, list, 
+stack, queue, deque (double-ended queue), 
+associative array, etc.; or one specific 
+instance of such a structure.}  Merely knowing that a 
+file is XML, say, does not tell you much 
+about what you might find at any given place 
+in the DOM.  A Document Type Declaration (DTD), more substantially, 
+will confirm that a given attribute value is present, or that 
+the first child node of a particular element will 
+have a given tag name.  At a higher level of 
+abstraction, the XML format itself indicates the 
+basic components out of which such specifications 
+can be formulated: tag names, namespaces, attribute 
+keys, parent/child and next/previous sibling relationships, 
+etc. (but not, say, an insertion-order on attribute 
+pairs except for implicit alphanumeric ordering on keys).  
+Just by convention, some documents might further 
+adopt abstract policies such as each element either 
+having text content or child nodes but not both (or at 
+least that such retriction applies to and among 
+all nodes tagged from a given namespace).  Conversely, 
+any element of an actual file will have a concrete 
+neighborhood where text content and attibute values 
+are fully specified.  Outside of XML, the 
+Shapes Constraint Language (SHACL) express models 
+that provide guarantees on RDF and Semantic Web graphs 
+similar to DTDs for XML.
+
+I propose to discuss the */shape/* of a neighborhood 
+as that mid-level of abstraction, such that shapes 
+can be constrained by concrete instantiations 
+of certain aspects (tag names, attribute keys, etc.) 
+plus relationships like parent/child and siblings, 
+but not at the level of specificity where specific 
+*/values/* (of attributes, element text, etc.) are 
+concretized.  I propose the term "/regime/" 
+for the higher level of abstraction where the basic 
+parameters of shape constraints are introduced; 
+i.e., different topomorphic regimes present 
+(to some degree) different details that must be 
+articulated when defining shape constraints.  
+Traversal and navigability are facets 
+*/of/* topomorphic structures.  By way of example, 
+in some file formats it is possible to extract 
+information simply via "/scraping/" or using 
+Regular Expressions (for instance) to locate 
+text- (or content-) spans of interest.  Such algorithms 
+vaguely resemble working off an XML DOM in that 
+one seeks to extract data, but the specifics are 
+meaningfully different; one does not "/navigate/" 
+from one place to another, and parsers do not 
+necessarily need to convert entire files to 
+structures with individuated nodes, like graphs or trees.
+
+My point is that not all data-extraction routines 
+whose preliminary inputs are text files need to be 
+implemented through techniques such as traversal and 
+navigation; as such, those formats which */do/* support 
+that algorithm-design should be described as a 
+specific class or category in some sense.  I propose 
+to use the term */topomorphic structures/*; as such, 
+the defining feature of topomorphic structures is that 
+extracting information therefrom is a two-step 
+process in which some input source (typically 
+a single file or group of files, which could be textual 
+or binary) needs first to be fully processes, meaning 
+that every interior component (say, every string of 
+characters that functions as a meaningful unit) has 
+to be isolated and modeled as a site in some 
+larger structure; then, all such sites are interconnected 
+via protocols of traversal/navigation, moving from 
+one site to another according to specific 
+criteria.  So "/topomorphic/" structures are those 
+that are conducive to data-extraction via 
+traversal/navigation algorithms.  Similarly, 
+topomorphic structures are those amenable to 
+code designed according to a "/visitor/" pattern.
+
+As an example of how topomorphic regimes may differ, 
+consider XML containment in contrast to TagML.  
+Given that overlap is possible with the latter, 
+in the case that the content of one element 
+*/does/* lie inside another, this could 
+express a logical relationship between them %-- as 
+in a sentence to paragraph, or a last-name field in a 
+larger proper-name structure %-- or it may 
+be happenstance (as in, say, a paragraph to a 
+PDF page; there is no discursive convention 
+that restricts a paragraph to a single 
+page, even if most of them are so bounded).  
+TagML refers to these two different scenarios 
+as */domination/* versus */containment/*, and 
+both concepts subsume the XML parent/child 
+relationship.  As a result, traversal strategies 
+in XML based on element-nesting need to be 
+revised for TagML; when specifying movement to a 
+"/child/" node we have to specify whether that 
+child is located in terms of domination relationships, 
+containment, or both.  Of course, movement between 
+two (only) partially overlapping elements must be 
+distinghuished from both domination */and/* containment.
+
+"/Visitor pattern/" algorithms against TagML are therefore 
+more complex than with XML.  This is not 
+necessarily a flaw; after all, the containment/domination 
+contrast is semantically meaningful, and (as already 
+suggested) explicit concurrent markup may yield more 
+expressive traversal code than emulating 
+overlap-semantics via workarounds such as landmark nodes.  
+Nonetheless, it does point to the principle that 
+data-extraction routines have to be designed 
+specifically around the topomorphic parameters 
+embraced by a given regime (i.e., file type/format).  
+Traversal code designed for XML cannot be applied, 
+without some level of re-implementation, to TagML 
+(for example).
+
+These ideas are relevant to compilers insofar as 
+one of their possible input-formats (either 
+as independent languages or as some form of 
+DSL) would express evaluations sensitive 
+to topomorphic details, such as XQuery, 
+XSLT, XPath, SHACL, and so forth.  I will revisit 
+these concerns later; but, at present, I want to 
+continue analysis of encoding formats for text representation.
+
+Discussion of whether (for example) XML or TagML are the 
+best modes for such representation %-- or so I 
+claim %-- really amount behind to scenes to questions about 
+which topomorphic regimes is most effective for text encoding.  
+Such questions, of course, depend on what 
+role traversal/extraction code is play.  In particular, 
+what functionality is the main concern for full-text 
+representation, bibliographic database, search 
+facilities in PDF viewers, etc.?  
+
+To address these questions, my idea here is to 
+examine the topomorphic properies of natural-language 
+text in its own terms.  Encoding documents 
+in any format (XML, TagML, LaTeX, etc.) will 
+endow the representations with topomorphic 
+characteristics of the "/host/" format.  
+But when working with text itself, we are primarily 
+concerned with traversal, navigation, and extraction 
+specifically of text-related content: words, sentences, 
+discursive features (quoted text, italics, footnotes) 
+and so on.  As such, we can analyze the topomorphic 
+properties of natural-language text while 
+bracketing consideration of which source-file format 
+will hold any actual input content.
+
+As I see it, a core principle of text-topomorphics 
+(however much existing technologies do not 
+honor this paradigm) is that the crucial discursive 
+unit is the single sentence.  Thus, within a 
+text document, most (or at least many) of the 
+most important sites, and the basic structure or 
+"/scaffolding/" of the manuscript, are comprised 
+by sentence nods.  Usually, their interrelationships 
+are straightforward: sentences follow one another 
+in sequence, and they are contained in paragraphs 
+that do likewise.  There are exceptions, however.  
+For example, a footnote may contain 
+multiple sentences; even, occasionally, multiple 
+paragraphs, all of which are in some sense 
+"/children/" of an enclosing sentence.  There 
+are actually numerous cases wherein sentences 
+might have something resembling parent/child 
+relationships.  Some parenthetical comments, 
+for example, read as independent sentences 
+(usally for rhetorical flourish) with their 
+own punctuation, often question or exclamation marks.  
+Both block and inline quotes, likewise, can extend 
+over multiple sentences, and it may be ambiguous 
+whether the continuations are perceived 
+as */following/* the original sentence or "/children/" 
+in some sense.  
+
+Similar ambiguities are evident in the case of a 
+footnote, for example, which reads as if 
+forming the second part of the sentence up 
+to where its footnote-marker appears; in effect a 
+footnote of this form presents a kind of 
+"/alternate ending/" as if the sentence 
+splits into two versions.  Likewise, a quote 
+sometimes */concludes/* the sentence that 
+introduces it, so it becomes */part of/* more so 
+than "/nested inside/".  But then, quotes may 
+continue on to other sentences.  Even parenthetical 
+comments that are clearly intended to be 
+read as interregna in the context of a single 
+containing sentence may have the appearance 
+of multiple individual sentences, with punctuation.  
+Also, in the case of a footnote that */follows/* 
+the end of a sentence (rather than being marked 
+*/inside/* one) the footnote's contents 
+(maybe multiple sentences of its own) are 
+in one sense succedent to that precursor 
+but the latter, of course, is (in general) 
+followed by other sentences in the main text; 
+so the sentence-sequence appears to split into 
+two distinct threads, unless we are include 
+to model the footnote as always child to a 
+sentence where it appears (even if after 
+the parent concludes).  
+
+To some extent, related ambiguities apply to paragraphs: 
+does a block quote succeed or nest inside the paragraph 
+where it is introduced?  What about material 
+*/after/* the blockquote if it is typeset 
+so as to suggest (e.g., with no indentation) that it 
+continue prior content?  In practical terms, for 
+manuscripts that employ paragraph ids to 
+facilitate indexing (or processing edits, etc.), 
+this yields a question of whether quotes and/or 
+continuations (potentially splitting a paragraph 
+into three parts) get separate id codes. 
+
+For a computational handle on textual content, 
+document-preparation software might %-- in light 
+of the complicating factors I just outlined 
+%-- adopt simplifying conventions such as 
+treating even (apprent) "/parts/" of sentences 
+and paragraphs to be their own objects, 
+with distinct ids, notwithstanding ambiguous 
+discursive status.  For instance, the material 
+introducing a block quote would be one 
+paragraph object %-- on whole paragraph 
+for programming purposes %-- and the block 
+quote(s) another, plus continuing content a 
+third.  From a reader's perspective, 
+the three parts might seem like one 
+single overarching paragraph, but that 
+impression need not necessarily correspond 
+to the semantics of a paragraph object 
+as a computational artifact.  Along similar 
+lines, the material introducing a block 
+quote %-- potentially ending with a colon, 
+or even no punctuation at all %-- could 
+*/always/* be considered a separate sentence 
+object, such that block quotes 
+and sentences never overlap (each instance of 
+the latter would always contain at least 
+one sentence-object, and possibly more).
+
+This discussion implicitly leverages a 
+distinction between "/sentences/" %-- elements 
+of discourse/rhetoric and as such "/real world/" 
+phenomena %-- and sentence */objects/", which 
+are computational entities and 
+(as would be the case for any digitization 
+or "/digital twins/") simulate their real-world 
+models only approximately.  On the other 
+hand, complications such as the (potentially subtle) 
+status of sentences as siblings or children to 
+each other must still be represented; assuming 
+a programming style which favors smaller rather 
+than larger sentence (respectively, paragraph) 
+objects, this could be achieved by noting 
+particular inter-object relationships, plus 
+perhaps flags or typologies that might represent 
+special discursive features of a sentence 
+that disrupts the usual linear model 
+(special status might be noted for 
+sentence-objects representing textual 
+segments that have some rhetorical 
+dependency or interconnection with other 
+objects, such that they do not feel 
+to a human reader as entirely self-contained).
+
+All of these variotions need to be addressed by a 
+rigorous "/topomorphic model/" of sentence-objects 
+and natural-language text in general.  
+"/Visitor patterns/" have to consider the 
+differences between main versus footnote material 
+when "/moving/" from one object to its next 
+sibling; or contrasts between depth-first 
+and breadth-first search in cases 
+where hierarchical relations are ambiguous 
+(e.g., between containing sentences 
+and quotes, parentheticals, or footnotes).
+    
+
+
+
+
+ 
+ 
+
+ 
+
+
+   
+
+
+
+
+
+
+   
+
+ 
+
+    
+
+
+
+
+ 
+
 
 
     
