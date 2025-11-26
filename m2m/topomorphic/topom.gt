@@ -1557,6 +1557,53 @@ how special content might come into
 play (for instance, whether an abbreviation 
 qualifies as matching the expression  
 which it shorthands, and vice-versa). 
+
+Italics are a case in point.  One question (already 
+mentioned) is how to best represent italicized 
+text in (what might be called) "/external/" or 
+"/exchange/" representation such as query 
+results.  Internal encoding for italics is a 
+different matter.  There are multiple reasons 
+why phrases might be italicized: for emphasis, 
+for titles, when introducing a technical term, 
+etc.  Encoding protocols might well distinguish 
+these cases, just in case they matter in 
+some contexts.  At any rate one cannot assume a 
+consistent set of (e.g.) tag names: the print 
+representation of a named title might be 
+in cursive font, but the underlying element 
+could be a b:title, b:textit, just an b:i, or 
+something else.  
+
+A reasonable solution to this situation is to 
+nominate some set of presentation characteristics 
+that are more general than a specific element name 
+%-- familiar styles such as boldface, italics, 
+technical (e.g., printed code) and so forth.  
+A set of policies could then specify that such 
+characteristics implicitly apply to any 
+content delimited by specific tags (for tag-based 
+markup, or similar formations otherwise).  Something 
+like a DTD could then indicate that a given 
+tag name automatically applies a "/flag/", such as 
+italics, to its text content.
+
+From a (human) reader's point of view, a relatively 
+limited collection of features might well 
+cover all material found in a presentation: often 
+all text will be in just one of two font series, 
+especially normal and italic (along with larger 
+characters for section titles and such), and 
+most visible symbols will be ordinary letters and numbers.  
+Only a few constructions would disrupt these 
+norms: footnote markers and content, block quotes, 
+enumerated lists where each item introduced by a 
+number or, say, a bullet symbol %-- which raises 
+the question of how to record those symbols 
+when copying PDF (for instance) or reporting 
+query results %-- and so forth. 
+
+
   
  
   
