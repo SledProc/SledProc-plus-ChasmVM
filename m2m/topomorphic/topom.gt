@@ -1501,8 +1501,62 @@ via Unicode Private Use Areas.
 As a case in point, consider ellipses.  Readers generally 
 see them merely as strings of three (or four dots).  Unicode 
 actually has several codepoints for ellipses as single 
-characters 
+characters.  A text-encoding system might 
+use one or more of these, or three actual 
+dot characters, or perhaps an empty XML tag.  
+Keep in mind also that there are subtle differences 
+in how ellipses are used.  The four-dot version 
+usually indicates that, within quoted material, 
+one sentence ends and the content immediately following 
+has been excluded from the quotation; whereas 
+three dots suggest elision inside a single sentence.  
+As such, the four dots "/hug/" the last word 
+before the ellipsis (since the first of those dots 
+is understood as punctuation) whereas there 
+should be space both before and after three-dot ellipses, 
+according to most style guides.  These details are 
+consequential in terms of how text content 
+is interpreted for purposes of query-evaluation, 
+for instance; e.g., material around an ellipsis 
+might be considered a continuous string 
+(as if the ellipses were not present at all), 
+although that might be handled differently 
+in the three- and four-dot version.  Whether or 
+not the ellipsis is internally stored as a 
+single character, in any case, it is not "/just/" 
+a character but rather introduces extra structuration 
+in its surrounding context (similar comments 
+could be made about en- and em-dashes).  
 
+However, alternative conventions might apply to 
+sentence-content rendered for purposes of 
+query results: as a neutral exchange format 
+it may be appropriate simply to report ellipses 
+as three or four consecutive dot characters, 
+and en-dashes just as dashes (or pairs therefore); 
+likewise em-dashes might be encoded as a single 
+dash with space on either side.  Quotations 
+also have multiple possibilities in "/exchange/" 
+representation: delimeted by Latin1-marks 
+which have not left/right distinction, or using characters 
+slanted one way or another (as in Unicode U+201C and U+201D), 
+or some other balanced characters (this document, 
+for what it's worth, employs quote-slash and slash-quote), 
+or perhaps some sort of tags instead.  In other
+words, a text-encoding system should consider 
+both */internal/* and (so to speak) "/external/" 
+representations, where the latter addresses 
+how phenomena such as ellipses, em/en-dashes, 
+footnotes (markers and content), etc.; 
+the former, meanwhile, should take into consideration 
+that many codepoints and symbols have special 
+meaning that effects how sentences and match-strings 
+are processed, in terms of what counts as 
+max, how sentences are internally structured, 
+how special content might come into 
+play (for instance, whether an abbreviation 
+qualifies as matching the expression  
+which it shorthands, and vice-versa). 
   
  
   
