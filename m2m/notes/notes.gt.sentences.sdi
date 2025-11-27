@@ -3361,7 +3361,7 @@ p: .
 t. 
 |  According to Meehan, the running record can be conceptually distinguished
 |  from an officer’s ‘mental dossier,’ the term used by Cicourel (1968) to refer to
-|  the personal recollection of events or persons . . [because] it is an occasion
+|  the personal recollection of events or persons ...\ [because] it is an occasion
 |  for revealing selected aspects of one’s mental dossier on an individual, place, or
 .  event (p. 199, emphasis added).8
 
@@ -3453,7 +3453,7 @@ t.
 |  their case occurs in other legal matters as well. As discussed in the previous
 |  chapter, Lynch (1997) points out that in criminal proceedings attorneys invoke
 |  the judge as an organizational principle that locally governs the presentation of
-|  the case at hand . . they incorporate the judge into the practical organization of
+|  the case at hand ...\ they incorporate the judge into the practical organization of
 |  the projected cases, and by so doing they realize the judge in their procedures
 .  for presenting cases at hand (p. 103).2
 
@@ -3531,8 +3531,8 @@ r#  26668  488  2
 p: .
 t. 
 |  Dennison [the mother] was doing her share of badmouthing, so to speak, her
-|  former husband. . Mrs. Dennison has been in there pitching so to speak, against
-|  visitation with Mr. Ridley. I do believe that is infectious. . Clearly, it is defendant [the mother] who has, by overt and covert means, influenced the children.
+|  former husband.... Mrs. Dennison has been in there pitching so to speak, against
+|  visitation with Mr. Ridley. I do believe that is infectious.... Clearly, it is defendant [the mother] who has, by overt and covert means, influenced the children.
 |  An appellate court reversed the judge, stating, We find no basis in the record
 |  for his conclusions. Ridley v. Dennison, 689 A.2d 793 (App. Div., 1997). Such
 .  reversals appear to be more the exception than the rule.4
@@ -10057,7 +10057,7 @@ t.
 |  to many others made regularly by CPS agencies across the country. Investigative
 |  reporter Richard Wexler found that CPS agencies readily place children in foster
 |  homes rather than provide preventive services aimed at keeping families together. In Wounded Innocents, Wexler argues that the reason for this is that the
-|  orientation of practitioners and the financial incentives . . encourage taking
+|  orientation of practitioners and the financial incentives ...\ encourage taking
 .  children away from their parents (p. 250).38
 
 
@@ -13934,7 +13934,7 @@ p: .
 t. 
 |  Gardner, Rebuttal to Kathleen Faller’s Article, p. 310. Despite intense public
 |  criticism, Gardner repeated the same assertions about PAS in an article published in 2001 (see preceding note), claiming the use of a consistent definition of
-|  the parental alienation syndrome . . since [his] first publication on the disorder
+|  the parental alienation syndrome ...\ since [his] first publication on the disorder
 .  in 1985.73
 
 
@@ -15001,7 +15001,7 @@ t.
 |  against her ex-husband. Hayward-Brown describes a mother’s tortuous progress
 |  through the courts: Her story became a stream of consciousness throughout an
 |  entire day - anxiety, stress and emotion became clearly evident. Her narrative
-|  was punctuated by high levels of fear and anger . . [and] her distress could
+|  was punctuated by high levels of fear and anger ...\ [and] her distress could
 |  particularly be seen in her attempts to try and comprehend what happened to
 .  her (p. 180).113
 
@@ -17305,24 +17305,6 @@ t.
 id: 1252
 r#  112283  2153  9
 
-
---- Sentence//end
-id: 1252
-r#  112912  2158  81
-p: .
-t. 
-|  Congress, in its enactment of CAPTA, evidently anticipated future amendments
-|  to its guidelines by establishing the National Center on Child Abuse and Neglect
-|  (NCCAN). NCCAN’s stated purpose is to review how child abuse cases are handled by the courts and the child protective service agencies, to see whether their
-|  performance is in compliance with the goals of child protection set forth under
-|  CAPTA. The findings of a preliminary study funded by NCCAN (that were confirmed when the study was completed) showed a consistent pattern of punitive
-.  responses [to the nonoffending parent] to the reporting of child maltreatment . 
-
-
---- Sentence/switch
-id: 1253
-r#  112913  2158  82
-
 --- Paragraph/end 
 id: 609
 y: N/A
@@ -17334,22 +17316,28 @@ r#  113275  2167  1
 
 
 --- Sentence/start
-id: 1254
+id: 1253
 r#  113275  2167  1
 
 --- Sentence//end
-id: 1254
+id: 1253
 r#  113276  2167  2
 p: .
 t. 
-|  a pattern of obstruction of investigations . . in apparent contradiction of the legal requirements of CAPTA (Carol Rippey Massat, coprincipal investigator of
+|  Congress, in its enactment of CAPTA, evidently anticipated future amendments
+|  to its guidelines by establishing the National Center on Child Abuse and Neglect
+|  (NCCAN). NCCAN’s stated purpose is to review how child abuse cases are handled by the courts and the child protective service agencies, to see whether their
+|  performance is in compliance with the goals of child protection set forth under
+|  CAPTA. The findings of a preliminary study funded by NCCAN (that were confirmed when the study was completed) showed a consistent pattern of punitive
+|  responses [to the nonoffending parent] to the reporting of child maltreatment ...\
+|  a pattern of obstruction of investigations ...\ in apparent contradiction of the legal requirements of CAPTA (Carol Rippey Massat, coprincipal investigator of
 |  the NCCAN-funded study, in a letter to George Burgasser, acting chief of Child
 |  Exploitation and Obscenity Section, US Department of Justice, February 8, 1994,
 .  p. 2).1
 
 
 --- Sentence/switch
-id: 1255
+id: 1254
 r#  113282  2167  8
 
 --- Paragraph/end 
@@ -17363,11 +17351,11 @@ r#  114002  2177  1
 
 
 --- Sentence/start
-id: 1256
+id: 1255
 r#  114002  2177  1
 
 --- Sentence//end
-id: 1256
+id: 1255
 r#  114003  2177  2
 p: .
 t. 
@@ -17376,14 +17364,14 @@ t.
 |  sue the court-appointed attorney who had urged her placement with her father
 |  when she was a minor, despite allegedly knowing of his abusive behavior and
 |  conspiring to manipulate the family court proceeding. The court stated, Under
-|  governing California law . . therapists, guardians and court-appointed attorneys, are accorded quasi-judicial immunity . . attorneys for children in child
+|  governing California law ...\ therapists, guardians and court-appointed attorneys, are accorded quasi-judicial immunity ...\ attorneys for children in child
 |  abuse actions are granted immunity from damages claims. A similar holding is
 |  found in Fox v. Wills, Docket No. 01075, Court of Special Appeals of Maryland,
 .  2002.2
 
 
 --- Sentence/switch
-id: 1257
+id: 1256
 r#  114009  2177  8
 
 --- Paragraph/end 
@@ -17397,11 +17385,11 @@ r#  114321  2181  1
 
 
 --- Sentence/start
-id: 1258
+id: 1257
 r#  114321  2181  1
 
 --- Sentence//end
-id: 1258
+id: 1257
 r#  114322  2181  2
 p: .
 t. 
@@ -17411,7 +17399,7 @@ t.
 
 
 --- Sentence/switch
-id: 1259
+id: 1258
 r#  114328  2181  8
 
 --- Paragraph/end 
@@ -17425,11 +17413,11 @@ r#  114711  2187  1
 
 
 --- Sentence/start
-id: 1260
+id: 1259
 r#  114711  2187  1
 
 --- Sentence//end
-id: 1260
+id: 1259
 r#  114712  2187  2
 p: .
 t. 
@@ -17441,7 +17429,7 @@ t.
 
 
 --- Sentence/switch
-id: 1261
+id: 1260
 r#  114718  2187  8
 
 --- Paragraph/end 
@@ -17455,11 +17443,11 @@ r#  115163  2194  1
 
 
 --- Sentence/start
-id: 1262
+id: 1261
 r#  115163  2194  1
 
 --- Sentence//end
-id: 1262
+id: 1261
 r#  115164  2194  2
 p: .
 t. 
@@ -17472,12 +17460,12 @@ t.
 
 
 --- Sentence/switch
-id: 1263
+id: 1262
 r#  115170  2194  8
 
 
 --- Sentence//end
-id: 1263
+id: 1262
 r#  115771  2201  37
 p: .
 t. 
@@ -17491,7 +17479,7 @@ t.
 .  be only with a radically new mandate
 
 --- Sentence/end 
-id: 1263
+id: 1262
 r#  115777  2201  43
 
 --- Paragraph/end 
@@ -17505,11 +17493,11 @@ r#  115779  2203  1
 
 
 --- Sentence/start
-id: 1264
+id: 1263
 r#  115779  2203  1
 
 --- Sentence//end
-id: 1264
+id: 1263
 r#  115780  2203  2
 p: .
 t. 
@@ -17517,7 +17505,7 @@ t.
 
 
 --- Sentence/switch
-id: 1265
+id: 1264
 r#  115786  2203  8
 
 --- Paragraph/end 
@@ -17531,11 +17519,11 @@ r#  115832  2205  1
 
 
 --- Sentence/start
-id: 1266
+id: 1265
 r#  115832  2205  1
 
 --- Sentence//end
-id: 1266
+id: 1265
 r#  115833  2205  2
 p: .
 t. 
@@ -17543,7 +17531,7 @@ t.
 
 
 --- Sentence/switch
-id: 1267
+id: 1266
 r#  115839  2205  8
 
 --- Paragraph/end 
@@ -17557,11 +17545,11 @@ r#  115914  2207  1
 
 
 --- Sentence/start
-id: 1268
+id: 1267
 r#  115914  2207  1
 
 --- Sentence//end
-id: 1268
+id: 1267
 r#  115915  2207  2
 p: .
 t. 
@@ -17569,7 +17557,7 @@ t.
 
 
 --- Sentence/switch
-id: 1269
+id: 1268
 r#  115921  2207  8
 
 --- Paragraph/end 
@@ -17583,11 +17571,11 @@ r#  116273  2212  1
 
 
 --- Sentence/start
-id: 1270
+id: 1269
 r#  116273  2212  1
 
 --- Sentence//end
-id: 1270
+id: 1269
 r#  116274  2212  2
 p: .
 t. 
@@ -17598,7 +17586,7 @@ t.
 
 
 --- Sentence/switch
-id: 1271
+id: 1270
 r#  116280  2212  8
 
 --- Paragraph/end 
@@ -17612,11 +17600,11 @@ r#  116346  2214  1
 
 
 --- Sentence/start
-id: 1272
+id: 1271
 r#  116346  2214  1
 
 --- Sentence//end
-id: 1272
+id: 1271
 r#  116348  2214  3
 p: .
 t. 
@@ -17624,7 +17612,7 @@ t.
 
 
 --- Sentence/switch
-id: 1273
+id: 1272
 r#  116354  2214  9
 
 --- Paragraph/end 
@@ -17638,11 +17626,11 @@ r#  116413  2216  1
 
 
 --- Sentence/start
-id: 1274
+id: 1273
 r#  116413  2216  1
 
 --- Sentence//end
-id: 1274
+id: 1273
 r#  116415  2216  3
 p: .
 t. 
@@ -17650,12 +17638,12 @@ t.
 
 
 --- Sentence/switch
-id: 1275
+id: 1274
 r#  116421  2216  9
 
 
 --- Sentence//end
-id: 1275
+id: 1274
 r#  116482  2216  70
 p: .
 t. 
@@ -17663,12 +17651,12 @@ t.
 
 
 --- Sentence/switch
-id: 1276
+id: 1275
 r#  116483  2216  71
 
 
 --- Sentence//end
-id: 1276
+id: 1275
 r#  116560  2217  77
 p: .
 t. 
@@ -17676,7 +17664,7 @@ t.
 
 
 --- Sentence/switch
-id: 1277
+id: 1276
 r#  116561  2217  78
 
 --- Paragraph/end 
@@ -17690,11 +17678,11 @@ r#  116575  2220  1
 
 
 --- Sentence/start
-id: 1278
+id: 1277
 r#  116575  2220  1
 
 --- Sentence//end
-id: 1278
+id: 1277
 r#  116577  2220  3
 p: .
 t. 
@@ -17702,7 +17690,7 @@ t.
 
 
 --- Sentence/switch
-id: 1279
+id: 1278
 r#  116583  2220  9
 
 --- Paragraph/end 
@@ -17716,11 +17704,11 @@ r#  117079  2227  1
 
 
 --- Sentence/start
-id: 1280
+id: 1279
 r#  117079  2227  1
 
 --- Sentence//end
-id: 1280
+id: 1279
 r#  117081  2227  3
 p: .
 t. 
@@ -17733,7 +17721,7 @@ t.
 
 
 --- Sentence/switch
-id: 1281
+id: 1280
 r#  117087  2227  9
 
 --- Paragraph/end 
@@ -17747,11 +17735,11 @@ r#  117249  2230  1
 
 
 --- Sentence/start
-id: 1282
+id: 1281
 r#  117249  2230  1
 
 --- Sentence//end
-id: 1282
+id: 1281
 r#  117251  2230  3
 p: .
 t. 
@@ -17760,7 +17748,7 @@ t.
 
 
 --- Sentence/switch
-id: 1283
+id: 1282
 r#  117257  2230  9
 
 --- Paragraph/end 
@@ -17774,11 +17762,11 @@ r#  117417  2233  1
 
 
 --- Sentence/start
-id: 1284
+id: 1283
 r#  117417  2233  1
 
 --- Sentence//end
-id: 1284
+id: 1283
 r#  117419  2233  3
 p: .
 t. 
@@ -17787,7 +17775,7 @@ t.
 
 
 --- Sentence/switch
-id: 1285
+id: 1284
 r#  117425  2233  9
 
 --- Paragraph/end 
@@ -17801,11 +17789,11 @@ r#  117522  2235  1
 
 
 --- Sentence/start
-id: 1286
+id: 1285
 r#  117522  2235  1
 
 --- Sentence//end
-id: 1286
+id: 1285
 r#  117524  2235  3
 p: .
 t. 
@@ -17813,7 +17801,7 @@ t.
 
 
 --- Sentence/switch
-id: 1287
+id: 1286
 r#  117530  2235  9
 
 --- Paragraph/end 
@@ -17827,11 +17815,11 @@ r#  117693  2238  1
 
 
 --- Sentence/start
-id: 1288
+id: 1287
 r#  117693  2238  1
 
 --- Sentence//end
-id: 1288
+id: 1287
 r#  117695  2238  3
 p: .
 t. 
@@ -17840,7 +17828,7 @@ t.
 
 
 --- Sentence/switch
-id: 1289
+id: 1288
 r#  117701  2238  9
 
 --- Paragraph/end 
@@ -17854,11 +17842,11 @@ r#  117722  2240  1
 
 
 --- Sentence/start
-id: 1290
+id: 1289
 r#  117722  2240  1
 
 --- Sentence//end
-id: 1290
+id: 1289
 r#  117724  2240  3
 p: .
 t. 
@@ -17866,7 +17854,7 @@ t.
 
 
 --- Sentence/switch
-id: 1291
+id: 1290
 r#  117730  2240  9
 
 --- Paragraph/end 
@@ -17880,11 +17868,11 @@ r#  117784  2242  1
 
 
 --- Sentence/start
-id: 1292
+id: 1291
 r#  117784  2242  1
 
 --- Sentence//end
-id: 1292
+id: 1291
 r#  117786  2242  3
 p: .
 t. 
@@ -17892,7 +17880,7 @@ t.
 
 
 --- Sentence/switch
-id: 1293
+id: 1292
 r#  117792  2242  9
 
 --- Paragraph/end 
@@ -17906,11 +17894,11 @@ r#  117896  2244  1
 
 
 --- Sentence/start
-id: 1294
+id: 1293
 r#  117896  2244  1
 
 --- Sentence//end
-id: 1294
+id: 1293
 r#  117898  2244  3
 p: .
 t. 
@@ -17918,7 +17906,7 @@ t.
 
 
 --- Sentence/switch
-id: 1295
+id: 1294
 r#  117904  2244  9
 
 --- Paragraph/end 
@@ -17932,11 +17920,11 @@ r#  117918  2246  1
 
 
 --- Sentence/start
-id: 1296
+id: 1295
 r#  117918  2246  1
 
 --- Sentence//end
-id: 1296
+id: 1295
 r#  117920  2246  3
 p: .
 t. 
@@ -17944,12 +17932,12 @@ t.
 
 
 --- Sentence/switch
-id: 1297
+id: 1296
 r#  117926  2246  9
 
 
 --- Sentence//end
-id: 1297
+id: 1296
 r#  118007  2246  90
 p: .
 t. 
@@ -17957,7 +17945,7 @@ t.
 
 
 --- Sentence/switch
-id: 1298
+id: 1297
 r#  118008  2246  91
 
 --- Paragraph/end 
@@ -17971,11 +17959,11 @@ r#  118022  2249  1
 
 
 --- Sentence/start
-id: 1299
+id: 1298
 r#  118022  2249  1
 
 --- Sentence//end
-id: 1299
+id: 1298
 r#  118024  2249  3
 p: .
 t. 
@@ -17983,12 +17971,12 @@ t.
 
 
 --- Sentence/switch
-id: 1300
+id: 1299
 r#  118030  2249  9
 
 
 --- Sentence//end
-id: 1300
+id: 1299
 r#  118096  2249  75
 p: .
 t. 
@@ -17996,7 +17984,7 @@ t.
 
 
 --- Sentence/switch
-id: 1301
+id: 1300
 r#  118097  2249  76
 
 --- Paragraph/end 
@@ -18010,11 +17998,11 @@ r#  118119  2252  1
 
 
 --- Sentence/start
-id: 1302
+id: 1301
 r#  118119  2252  1
 
 --- Sentence//end
-id: 1302
+id: 1301
 r#  118121  2252  3
 p: .
 t. 
@@ -18022,7 +18010,7 @@ t.
 
 
 --- Sentence/switch
-id: 1303
+id: 1302
 r#  118127  2252  9
 
 --- Paragraph/end 
@@ -18036,11 +18024,11 @@ r#  118209  2254  1
 
 
 --- Sentence/start
-id: 1304
+id: 1303
 r#  118209  2254  1
 
 --- Sentence//end
-id: 1304
+id: 1303
 r#  118211  2254  3
 p: .
 t. 
@@ -18048,12 +18036,12 @@ t.
 
 
 --- Sentence/switch
-id: 1305
+id: 1304
 r#  118217  2254  9
 
 
 --- Sentence//end
-id: 1305
+id: 1304
 r#  118293  2254  85
 p: .
 t. 
@@ -18061,7 +18049,7 @@ t.
 
 
 --- Sentence/switch
-id: 1306
+id: 1305
 r#  118294  2254  86
 
 --- Paragraph/end 
@@ -18075,11 +18063,11 @@ r#  118310  2257  1
 
 
 --- Sentence/start
-id: 1307
+id: 1306
 r#  118310  2257  1
 
 --- Sentence//end
-id: 1307
+id: 1306
 r#  118312  2257  3
 p: .
 t. 
@@ -18087,7 +18075,7 @@ t.
 
 
 --- Sentence/switch
-id: 1308
+id: 1307
 r#  118318  2257  9
 
 --- Paragraph/end 
@@ -18101,11 +18089,11 @@ r#  118430  2260  1
 
 
 --- Sentence/start
-id: 1309
+id: 1308
 r#  118430  2260  1
 
 --- Sentence//end
-id: 1309
+id: 1308
 r#  118432  2260  3
 p: .
 t. 
@@ -18114,7 +18102,7 @@ t.
 
 
 --- Sentence/switch
-id: 1310
+id: 1309
 r#  118438  2260  9
 
 --- Paragraph/end 
@@ -18128,11 +18116,11 @@ r#  118548  2263  1
 
 
 --- Sentence/start
-id: 1311
+id: 1310
 r#  118548  2263  1
 
 --- Sentence//end
-id: 1311
+id: 1310
 r#  118550  2263  3
 p: .
 t. 
@@ -18141,7 +18129,7 @@ t.
 
 
 --- Sentence/switch
-id: 1312
+id: 1311
 r#  118556  2263  9
 
 --- Paragraph/end 
@@ -18155,11 +18143,11 @@ r#  118620  2265  1
 
 
 --- Sentence/start
-id: 1313
+id: 1312
 r#  118620  2265  1
 
 --- Sentence//end
-id: 1313
+id: 1312
 r#  118622  2265  3
 p: .
 t. 
@@ -18167,12 +18155,8 @@ t.
 
 
 --- Sentence/switch
-id: 1314
+id: 1313
 r#  118628  2265  9
-
---- Paragraph/end 
-id: 637
-y: N/A
 
 --- Paragraph/end 
 id: 637

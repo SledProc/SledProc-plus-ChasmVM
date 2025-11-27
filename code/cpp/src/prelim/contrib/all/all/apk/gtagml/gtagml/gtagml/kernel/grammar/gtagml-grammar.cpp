@@ -103,13 +103,6 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.noindent_marker();
  });
 
- add_rule( gtagml_context, "ell-2-nonbreak",
-   " [.]{2} (?= \\S) "
-   ,[&]
- {
-  graph_build.ell_2_nonbreak();
- });
-
 
  add_rule( gtagml_context, "ell-count-restrict-space",
    " [.]{3} (?= \\s) "
@@ -118,6 +111,12 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.ell_count(p.match_text().size(), "\\");
  });
 
+ add_rule( gtagml_context, "ell-2-nonbreak",
+   " [.]{2} (?= [^\\s.]) "
+   ,[&]
+ {
+  graph_build.ell_2_nonbreak();
+ });
 
  add_rule( gtagml_context, "ell-count",
    " [.]{2,} "

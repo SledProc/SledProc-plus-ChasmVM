@@ -61,7 +61,7 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
 //   ,jats_stream_(&jats_)
 {
 // flags.use_latex_sdi_all_markers = true;
- flags.use_latex_sdi_paragraph_markers = true;
+// flags.use_latex_sdi_paragraph_markers = true;
 }
 
 
@@ -579,7 +579,7 @@ void GTagML_Graph_Build::end_document()
 {
  reset_primary();
 
- check_close_paragraph();
+//?? check_close_paragraph();
 
  latex_stream_ << "\n%END-TEMPLATE%\n";
 
@@ -728,6 +728,9 @@ void GTagML_Graph_Build::enter_heading(u1 count1, u1 count2)
  {
   latex_stream_ << "\n\n";
   parse_context_.flags.auto_paragraph_mode = false;
+
+  end_document();
+
   return;
  }
 
