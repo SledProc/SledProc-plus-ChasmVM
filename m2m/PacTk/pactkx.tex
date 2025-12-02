@@ -429,11 +429,12 @@ Publishing Documents, Datasets, and Multimedia Resources}}
 
 \p{In contemporary publishing, the standard workflow includes \XML{}-based 
 formats such as \JATS{} or \BITS{}, from which are compiled 
-\PDF{}s and other reader-visible documents.  Intermediate \XML{} and 
+\PDF{}s and other human-visible documents.  Intermediate \XML{} and 
 similar files are distinct from those that authors submit directly; 
 they have their own tool stacks and 
 are computationally accessed via protocols 
 such as \SAX{} (Simple \API{} for \XML{}), \XQuery{}, 
+\DOM{} (Document Object Model),  
 and \XQSE{} (\XQuery{} scripting extension).  Unfortunately, 
 \XML{} itself is not explicitly built for representing 
 textual data, and examining \JATS{} or \BITS{} files via 
@@ -444,7 +445,7 @@ of document text include many anomalies due to
 ligatures, hyphenation, font specs, and other layout-related 
 discrepancies between \XML{} inputs and user-visible output.  
 As a result, internal \PDF{} text only partially corresponds 
-to textual content as understood by authors and editors.}
+to textual content as understood by authors, editors, and human readers.}
 
 \p{Given the limitations of \PDF{} and \XML{} for natural-language 
 documents, numerous competing formats have been developed, 
@@ -498,7 +499,7 @@ discursive unit is the individual paragraph.  Elements on smaller
 scales (such as sentences or block quotes) are notated 
 haphazardly at best.  \LaTeX{} employs reasonable 
 sentence-boundary heuristics --- which may be overridden via 
-macros when necessary --- but sentence objects are not expressed 
+macros when necessary --- but \LaTeX{} sentences are not expressed 
 in any systematic manner (e.g., via auxiliary files) for 
 any purposes other than visual spacing.  In \TEI{} and \BioC{}, individual 
 sentences \textit{can} be represented, but this is not 
@@ -506,7 +507,7 @@ mandatory (thus \textbf{s} and \textbf{sentence} tags
 are available but not guaranteed to be present in any particular document).  
 By contrast, \PacTk{} is explicitly built around 
 sentence-level units, specifically a \q{topomorphic 
-sentence-level object model} (\TSOM{}).  When all regular 
+sentence-level object model} (\TSOM{}): when all regular 
 text in a natural-language document is explicitly 
 contextualized in a delineated sentence object, many 
 editing, indexing, and user-interface tasks become feasible 
@@ -540,7 +541,7 @@ and the emergence of interdisciplinary fields such as
 social ecology, translational medicine, and medical humanities. 
 It is the viewpoint of \PacTk{}'s developers that 
 the value of new investigations cannot be fully 
-expressed in single-disciplinary terms, nor does an individual's 
+expressed in single-disciplinary terms, nor does one individual 
 publication mark the end of a well-conceived research 
 project.  Instead, publications are milestones in the 
 unfolding of projects that, in the best case, 
@@ -566,7 +567,8 @@ to broader projects where text documents are published alongside
 data sets and/or multimedia presentations.  Overall, 
 \PacTk{} presents a unified model and coding interface for 
 text queries operating in diverse contexts, including 
-\PDF{} viewers, search engines, and document-preparation code.
+\PDF{} viewers, search engines, document-preparation code, 
+and editing/typedetting.
 Similarly, software employing \PacTk{} to navigate through 
 document objects can leverage interop metadata across multiple 
 formats --- such as \XML{} elements and \PDF{} page 
@@ -597,7 +599,7 @@ of a site supply the information necessary to initialize an
 object-instance during deserialization.  In other respects 
 \GTagML{} follows most of the principles advocated by 
 \TagML{}, with novel extensions; for example, \GTagML{} 
-encourages the exploitation of Unicode Private Use Planes 
+encourages the exploitation of Unicode Private Use areas 
 to disambiguate visibly similar but logically distinct characters/glyphs 
 (e.g., periods may embody punctuation, acronyms, or abbreviations).}
 
@@ -624,6 +626,7 @@ publishers, journals, and book series).  Alternatively,
 \p{For workflows that feature \JATS{}, \BITS{}, or 
 \LaTeX{}, \TSOM{} objects may be employed as 
 adjunct data sources through which edits, queries, 
+document version-comparisons, 
 and other computational artifacts are routed.  
 \lPacTk{} data can then be mapped both to 
 archiving formats (like \XML{}) and camera-ready 
@@ -729,7 +732,7 @@ to \SVG{} (illustrated here in Figure~\ref{fig:ss1},
 where the relevant component is an embedded web engine 
 that communicates with a \PDF{} viewer by 
 \textbf{QWebChannel}; so \SVG{} events are 
-processed by \Cpp{} code directly, with only a 
+processed by \Cpp{} code directly, having only a 
 minimal \JavaScript{} routing layer).  Failure to 
 interoperate these images with structured text formats 
 is a significant hindrance to efficient document 
@@ -804,7 +807,8 @@ generated files.
 generally be opaque to human users in contexts such as 
 comment boxes and copy-paste between software applications.  
 \lPacTk{} therefore supports declarations for how 
-custom entities/macros and Unicode Private Use Area codepoints 
+custom entities/macros and Unicode Private Use Plane 
+(or area) codepoints 
 should be rendered in plain-text contexts as well as 
 structured formats such as \XML{} and \LaTeX{}.        
  
@@ -818,7 +822,7 @@ structured formats such as \XML{} and \LaTeX{}.
 %\label{fig:ss2}
 %\end{figure}
 
-
+\vspace{-.85em}\enlargethispage{.5em}
 
 \p{Often users may prefer to initiate or review edits through \PDF{} files 
 directly, but in other cases plain-text files might be appropriate 
@@ -830,7 +834,11 @@ such files could be organized such that only sentences that
 differ from one version to the next are included, with each 
 sentence listed separately.  This may be a more convenient 
 setup for authors to review changes than working through 
-typical \GUI{}s.  Of course, such breakdown is only possible 
+typical \GUI{}s (structured text encoding is 
+important because it ensures that version comparisons 
+show valid differences, rather than anomalies 
+due to inconsistent characters and symbolization).
+Of course, such breakdown is only possible 
 when the text encoding systematically identifies individual 
 sentences, as with \PacTk{}'s \TSOM{} object model.}
 
@@ -862,7 +870,7 @@ sentences, as with \PacTk{}'s \TSOM{} object model.}
 
 \vspace*{7pt}
 
-\p{Authors might use several methods to compile an index.  
+\p{Authors might use one of several methods to compile an index.  
 They can start with a list of important headings 
 (names, concepts, etc.) and search for relevant passages in the 
 manuscript.  Alternatively, authors could read through a 
@@ -906,29 +914,6 @@ formats.  These include:
 
 \begin{description}
 
-\item[Separating Data from Presentation]  Different publishers 
-or book series may choose different visual styles for their 
-indexes.  Representing indexes behind the scenes via structured 
-data objects allows indexes to be curated in abstraction from the 
-specific layout chosen for final publication.  
-
-\item[PDF Context Menus]  Authors/editors may prefer to add new index entries 
-or locators directly from \PDF{} pages.  \lPacTk{}-compliant 
-viewers will read metadata that specifies which paragraphs are 
-in scope at different page-coordinate regions, so paragraph ids 
-for any location can be ascertained from mouse events (e.g., 
-the dropdown point of a context menu).
-
-
-
-
-\begin{figure}[ht]
-\includegraphics[scale=0.83]{fin/meta.png}
-\caption{Dialog window for local and meta-index searches}
-\label{fig:ss5}
-\end{figure}
-
-
 \item[Multiple Match Strategies]  Index locators are typically 
 identified by matching text against entry-headings, but the parameters 
 of these searches will vary by context.  Sometimes locators are 
@@ -937,10 +922,33 @@ heading label, but in other places a desired match could
 include words in different order (e.g., either first-name/last-name 
 or vice-versa), or a subset (e.g., last name only), 
 or associated concepts with different language entirely 
-(e.g., \q{The White House} in lieu of a president's name).  In the 
+(e.g., \q{The White House} in lieu of a president's name). 
+Concepts can also be grouped into semantic \q{clusters} 
+(consider \textit{ranson}, \textit{extortion}, \textit{bribery}, 
+\textit{corruption}, \textit{lobbying}), 
+with internal similarity-weight matrices.  In the 
 presence of a particular index entry, front-end displays can 
 give users options to fine-tune which match strategies are 
 appropriate for query strings seeking locators specific to that entry.
+
+
+
+\item[Separating Data from Presentation]  Different publishers 
+or book series may choose different visual styles for their 
+indexes.  Representing indexes behind the scenes via structured 
+data objects allows them to be curated in abstraction from the 
+specific layout chosen for final publication.  
+
+\vspace{-3pt}
+
+\item[PDF Context Menus]  Authors/editors may prefer to add new index entries 
+or locators directly from \PDF{} pages.  \lPacTk{}-compliant 
+viewers will read metadata that specifies which paragraphs are 
+in scope at different page-coordinate regions, so paragraph ids 
+for any location can be ascertained from mouse events (e.g., 
+the dropdown point of a context menu).
+
+\vspace{-3pt}
 
 \item[Index-Building GUI Components]  Index entries are multi-faceted 
 objects that naturally lend themselves to dedicated front-end displays, 
@@ -960,6 +968,8 @@ navigate between adjacent entries or to traverse on larger
 scales (e.g., one chapter to another), plus to create new 
 entries on the fly.
 
+\vspace{-3pt}
+
 \item[Index-Guided Text Searching]  Indexes are curated lists 
 of headings and locators selected by authors/editors for 
 relevance.  Whenever a search is posed against a manuscript in 
@@ -969,16 +979,19 @@ an online search engine, or \XQuery{}-style terms evaluated
 just in case search terms overlap with headings already included 
 in an index.  Such functionality may be augmented by extending 
 index metadata to include concepts related to index entries 
-even if those secondary concepts are not indexed themselves.  
+even if those secondary concepts are not indexed themselves 
+(as with semantic clusters, mentioned above).
 In effect, index metadata may declare that all locators 
 modeled as relevant for their specific entry are also relevant 
 to some list of associated concepts, such that whenever those 
 latter concepts are targeted in a query the explicit 
 locators are included among the query results.   
 
+\vspace{-3pt}
+
 \item[Series or Archival Meta-Indexes]  Once a standard format 
 is developed for indexes in some document collection, it becomes 
-possible to pool multiple indexes into a common resource.  
+possible to pool multiple instances into a common archive.  
 Each time a new publication is finalized, all of its index 
 terms could be inserted into a bibliographic database 
 allowing users to search across multiple books/manuscripts 
@@ -987,20 +1000,29 @@ in a given book series, journal %{\textcolor{white}X}\vspace*{2pt}
 collection, or document repository.  Such meta-indexes can support searches 
 that are more precise and granular than conventional
 search-engine technologies based on occurrence vectors 
-and stemming/lemmatization alone (Figure~\ref{fig:ss5}).
+and stemming/lemmatization alone (Figure~\ref{fig:ss5}).\clearpage
 
 %\vspace*{-2pt}{\tiny XXXXXXX}
 
-\par\noindent\vspace*{-17.5pt}\textcolor{white}{\rule{\textwidth}{0.4pt}}
+
+\begin{figure}[h!]
+\includegraphics[scale=0.83]{fin/meta.png}
+\caption{Dialog window for local and meta-index searches}
+\label{fig:ss5}
+\end{figure}
+
+
+\par\noindent\vspace*{-24.5pt}%\textcolor{red}{\rule{\textwidth}{0.4pt}}
+\enlargethispage{4em}
 
 \item[Academic Search Engines]  In online contexts, \q{indexing} typically 
 refers not to human-visible book indexes but rather to 
 compressed data files that catalog nontrivial words 
 and concepts in a manuscript.  Such indexing is typically 
-non-contextual; for instance, it is not represented whether a 
+non-contextual; for example, it is not represented whether a 
 word/phrase is present in text with a special purpose 
 (quotes, footnotes, chapter/section titles, etc.) and 
-sentiment/discursive roles are ignored (e.g., a document may be identified as 
+sentiment/discursive roles are ignored (e.g., a document might be identified as 
 \textit{about} some topic, but more specific criteria 
 such as arguing \textit{for}, \textit{against}, or neutrally 
 \textit{evaluating} theories or claims are not modeled).  
@@ -1008,7 +1030,7 @@ Granularity may be limited by the scope of an archive, because
 efficient queries can only expend a few seconds per 
 document if searches are to be conducted against a large collection.  
 
-\pseudoIndent{} Nonetheless, search functionality can take 
+\pseudoIndent{} Nevertheless, search functionality can take 
 steps to increase query specificity via meta-indexes and 
 related metadata.  For one thing, users may specifically 
 consult search areas that are restricted in scope --- say, a single 
@@ -1040,7 +1062,9 @@ are Electronic Health Records; but search features,
 as well as plugins and multimedia (discussed next),
 might be extended to include resources such as diagnostic 
 images, cytometry gating, assay graphics, 
-tumorogenesis simulations, etc.
+tumorogenesis simulations, etc.  Pulishing-related plugin architecture 
+(e.g., document viewers in scientific software) may be 
+adapted and resued for these \EHR{} contexts.\clearpage
 
 \begin{figure}[h!]
 \includegraphics[scale=0.66, trim=8.4cm 0 0 1cm, clip]{fin/pisa.png}
@@ -1076,14 +1100,14 @@ left in the Figure \ref{fig:ss10}\footnote{\hspace*{4pt}Amy Neustein
 and Nathaniel Christen, \textit{Innovative Data Integration and Conceptual Space Modeling for COVID, Cancer, and Cardiac Care} 
 (Elsevier, 2022).} was a survey of biomedical software engineering in
 several domains, including text mining, radiomics, and immuno-oncology.  
-Vis-\'a-vis text mining, the book reviewed \CORDNineteen{}, a 
+Vis-\`a-vis text mining, the book reviewed \CORDNineteen{}, a 
 large open-access document repository curated by the Allen Institute 
 for \AI{} (\AItwo{}) to spearhead Coronavirus research.  This corpus, unfortunately 
 (and as acknowledged by \AItwo{}) had inconsistent (\PDF{}-based) text 
-extraction; in the aforementioned analysis the authors gave one example of a 
+extraction; e.g., in the aforementioned analysis the authors gave examples of a 
 chemical formula that was printed in different styles in distinct 
 publications reproduced within \CORDNineteen{}, which could cause the 
-overlap on that common semantic element to go un-recognized by 
+overlap on that common semantic element to go unrecognized by 
 text mining algorithms.  In response to problems both with 
 special-purpose and ordinary text representation, \AItwo{} issued a 
 \q{call to arms} encouraging publishers to adopt standardized 
@@ -1119,18 +1143,18 @@ for index preparation, although numeric locators still appear
 in the human-visible digital (and, of course, printed) versions.  
 For best accuracy, it is worthwhile to partition paragraphs 
 that contain block quotes, enumerations, or other subdivisions 
-and assign unique ids to each part (see Figure~\ref{fig:NC}).  
+and assign unique ids to each part (see Figure~\ref{fig:xNC}).  
 For example, segments of text before and after a block quote 
 (plus the quote itself) can have distinct ids, even if they 
-are part of an encompassing paragraph.
+are part of the same larger, encompassing paragraph.
 
-\pseudoIndent{} Given this precision, digital indexes even in PDF documents 
-can benefit from paragraph ids.  The bottom part of 
-Figure~\ref{fig:NC} shows an index with color-coding to 
+\pseudoIndent{} Given this precision, digital indexes even in \PDF{} documents 
+can benefit from paragraph ids.  The right-hand part of 
+Figure~\ref{fig:xNC} shows an index with color-coding to 
 indicate such details as subdivisions (e.g., block quotes) 
 and paragraphs split between two pages.  In the 
 depicted document, all locators are clickable and 
-scroll to the a precise location (top of paragraph or of page).
+scroll to a precise location (top of paragraph or of page).
 
 \item[Bidirectional Indexes and Text Extraction]  Assuming index 
 entries are pooled into an archival data structure, each entry 
@@ -1140,16 +1164,17 @@ publication; from any one digital index users could initiate
 searches for matching entries in other books or articles.
 
 \pseudoIndent{} To support such functionality, text encoding should describe 
-structured objects (such as \textbf{date} and \textbf{proper-name} tags in 
-JATS) wherever segments follow standard encodings beyond 
+structured objects (such as \textbf{date} and \textbf{string-name} tags in 
+JATS) wherever segments follow canonical encodings beyond 
 just natural language (e.g., citations, references, bibliographic 
-entries, and quoting-transcription conventions).  Also, via \PacTk{} 
+entries, and quoting/transcription conventions).  Also, via \PacTk{} 
 meta-indexes can enforce consistent encoding for special characters 
 (e.g., quote marks) and structured segments (e.g., proper-name initials) 
 in cases where different style guides have inconsistent recommendations 
 (for example, whether or not to include spaces between consecutive initials).  
-Treating such portions of a document as unstructured text material 
-can obscure cross-references and potential micro-citations.
+Treating such portions of a document as unstructured text content 
+can obscure cross-references and potential micro-citations, 
+as well as cause errors within manuscripts internally. 
 
 \enlargethispage{4em}
      

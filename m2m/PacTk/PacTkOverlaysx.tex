@@ -8,7 +8,7 @@
 \AddToShipoutPictureFG{
 
 \ifnum\value{page}=5{
-\AtTextLowerLeft{\raisebox{16pt}{
+\AtTextLowerLeft{\raisebox{14pt}{
 
 \begin{tikzpicture}
 
@@ -228,33 +228,92 @@ about pollutants/contamination (documentation plus raw CSV data).};
 \definecolor{cdotchere}{RGB}{186, 60, 6}
 \definecolor{cdotcherer}{RGB}{53, 214, 222}
 
+\definecolor{clrmcrAlt}{RGB}{130, 89, 68}
+
+\definecolor{clrmcr}{RGB}{0, 148, 123}
+\definecolor{clrmcrr}{RGB}{7, 165, 232}
+
+
+\newcommand{\clrmrAltFmt}[2]{%
+\textcolor{clrmcrr}{%
+\raisebox{-1.5pt}{\resizebox{4pt}{5pt}{\ensuremath{\Rsh}}}}%
+\textcolor{clrmcr}{%
+{\fontsize{8}{6}\selectfont{#1}}}%
+\hspace{.5pt}\raisebox{.5pt}{%
+\textcolor{clrmcrAlt}{%
+{\fontsize{7}{6}\selectfont{#2}}}}%
+}
+
+
+\definecolor{cdotc}{RGB}{186, 99, 11}
+
+
+\newcommand{\clrmAltDot}{%
+\resizebox{1.5pt}{1.5pt}{\textbullet}}
+
+
+\newcommand{\clrmAltFmt}[1]{%
+\textcolor{clrmcMid}{%
+\raisebox{.5pt}{%\resizebox{6pt}{.5pt}{%
+\textcolor{cdotc}{\clrmAltDot{}\hspace{1pt}%
+\clrmAltDot{}\hspace{1pt}\clrmAltDot{}%
+%\ensuremath{\blacksquare}
+}%
+}%
+{\fontsize{8}{6}\selectfont{#1}}}}
+
+
+\definecolor{margin}{RGB}{133, 20, 12}
 
 
 \node [draw=red!60!black, fill=blue, anchor = south west, rounded corners,
-text width=8.5cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
-(s1) at (1.4, 5.4) {{Paragraph ids for this PacTk document 
-are color-coded, with circled numbers for ordinary 
-paragraphs, roman numerals (\textcolor{clrmcMid!20!gray}{$i$}, 
+text width=8.2cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+(s1) at (1.4, 5.1) {{Paragraph ids for this PacTk document 
+are color-coded, with outlined numbers (42., etc.) for ordinary 
+paragraphs, roman\\numerals (\textcolor{clrmcMid!20!gray}{$i$}, 
 \textcolor{clrmcMid!20!gray}{$ii$}) for block quotes, 
 and English letters (\textcolor{cdotchere}{a}, \textcolor{cdotchere}{b}, etc.) for 
 continuations after quotes or enumerations.  Special formats 
-are also applied to the portion of paragraphs at the top 
-of a page or column. 
+are also applied to the portion of paragraphs at the\\top 
+of a page/column (near the bottom of the screenshot, 
+these styles are visible in the continuation 
+45 and \clrmrAltFmt{48}{a} symbols).\vspace*{-5pt}
 }
 };
 
 
 \node [draw=red!60!black, fill=white, anchor = south west, rounded corners,
-text width=8.5cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
- at (1.33, 5.34) {Paragraph ids for this PacTk document 
-are color-coded, with circled numbers for ordinary 
-paragraphs, roman numerals (\textcolor{clrmcMid!20!gray}{$i$}, 
+text width=8.2cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (1.33, 5) {Paragraph ids for this PacTk document 
+are color-coded, with outlined numbers (\textcolor{white}{42.}, etc.) for ordinary 
+paragraphs, roman\\numerals (\textcolor{clrmcMid!20!gray}{$i$}, 
 \textcolor{clrmcMid!20!gray}{$ii$}) for block quotes, 
 and English letters (\textcolor{cdotchere}{a}, \textcolor{cdotchere}{b}, etc.) for 
 continuations after quotes or enumerations.  Special formats 
-are also applied to the portion of paragraphs at the top 
-of a page or column.
+are also applied to the portion of paragraphs at the\\top 
+of a page/column (near the bottom of the screenshot, 
+these styles are visible in the continuation 
+\clrmAltFmt{45} and \clrmrAltFmt{48}{a} symbols).\vspace*{-4pt}
 };
+
+\begin{scope}[transform canvas={scale=.6}]
+%\begin{scope}[xscale=6]
+
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill = margin!10, inner sep=1pt] at (7.36, 12.1) (char)
+{42};
+
+ \node[shape=regular polygon, regular polygon sides = 8,
+fill opacity=0, line width=2pt, draw=yellow!5, inner sep=1pt] 
+at (char) 
+%top color=white, bottom color=blggr!6,
+%fill opacity=1, yscale=.7, shape border rotate=39,
+%inner sep=6.5pt, shading angle=90,label={}] (bk) 
+{\phantom{42}};
+
+
+\end{scope}
+
 
 \begin{scope}[shift={(190pt,-40pt)}]
 
