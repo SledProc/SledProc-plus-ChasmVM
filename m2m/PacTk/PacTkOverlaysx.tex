@@ -223,40 +223,56 @@ about pollutants/contamination (documentation plus raw CSV data).};
 \node at (0,0) [text=white] {X};
 
 
+\definecolor{clrmcMidr}{RGB}{53, 143, 222}
+\definecolor{clrmcMid}{RGB}{165, 10, 18}
+\definecolor{cdotchere}{RGB}{186, 60, 6}
+\definecolor{cdotcherer}{RGB}{53, 214, 222}
+
 
 
 \node [draw=red!60!black, fill=blue, anchor = south west, rounded corners,
-text width=15cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
-(s1) at (2.4, 12.4) {{By translating PDF files to collections of SVG pages, PDF annotations 
-can be converted to SVG overlays.  This \makebox{ensures} the annotations' visual presentation 
-is standardized, and their text may be enlarged for readability.  Also, background 
-graphics can highlight which segments of PDF texts are annotation targets.
+text width=8.5cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+(s1) at (1.4, 5.4) {{Paragraph ids for this PacTk document 
+are color-coded, with circled numbers for ordinary 
+paragraphs, roman numerals (\textcolor{clrmcMid!20!gray}{$i$}, 
+\textcolor{clrmcMid!20!gray}{$ii$}) for block quotes, 
+and English letters (\textcolor{cdotchere}{a}, \textcolor{cdotchere}{b}, etc.) for 
+continuations after quotes or enumerations.  Special formats 
+are also applied to the portion of paragraphs at the top 
+of a page or column. 
 }
 };
 
 
 \node [draw=red!60!black, fill=white, anchor = south west, rounded corners,
-text width=15cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
- at (2.33, 12.34) {By translating PDF files to collections of SVG pages, PDF annotations 
-can be converted to SVG overlays.  This \makebox{ensures} the annotations' visual presentation 
-is standardized, and their text may be enlarged for readability.  Also, background 
-graphics can highlight which segments of PDF texts are annotation targets.
+text width=8.5cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (1.33, 5.34) {Paragraph ids for this PacTk document 
+are color-coded, with circled numbers for ordinary 
+paragraphs, roman numerals (\textcolor{clrmcMid!20!gray}{$i$}, 
+\textcolor{clrmcMid!20!gray}{$ii$}) for block quotes, 
+and English letters (\textcolor{cdotchere}{a}, \textcolor{cdotchere}{b}, etc.) for 
+continuations after quotes or enumerations.  Special formats 
+are also applied to the portion of paragraphs at the top 
+of a page or column.
+};
+
+\begin{scope}[shift={(190pt,-40pt)}]
+
+\node [draw=purple!60!red, fill=white, anchor = south west, rounded corners,
+text width=4.6cm, inner sep=14.5pt, font={\fontsize{9}{9}\selectfont}] (ltext-lower)
+ at (2.28, 0.28) {The document's index incorporates the same paragraph-id 
+symbols\\as printed on the margins, to\\create clickable locators 
+targeted at individual paragraphs and their subdivisions. 
 };
 
 
-\node [draw=purple!60!red, fill=white, anchor = south west, rounded corners,
-text width=15cm, inner sep=14.5pt, font={\fontsize{9}{9}\selectfont}] (ltext-lower)
- at (2.28, 2.28) {The current screenshot shows part of a presentation reviewing 
-files published by the Environmental Protection Agency 
-about pollutants/contamination (documentation plus raw CSV data).};
-
-
 \node [draw=orange!60!black, fill=white, anchor = south west, rounded corners,
-text width=15cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-lower)
- at (2.33, 2.34) {The current screenshot shows part of a presentation reviewing 
-files published by the Environmental Protection Agency 
-about pollutants/contamination (documentation plus raw CSV data).};
+text width=4.6cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-lower)
+ at (2.33, 0.34) {The document's index incorporates the same paragraph-id 
+symbols\\as printed on the margins, to\\create clickable locators 
+targeted at individual paragraphs and their subdivisions.};
 
+\end{scope}
 
 
 \end{tikzpicture}
