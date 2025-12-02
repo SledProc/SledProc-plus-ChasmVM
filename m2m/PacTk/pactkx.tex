@@ -302,7 +302,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=13{
+\ifnum\value{page}=14{
 \AtTextLowerLeft{
 \hspace{266pt}\raisebox{-27pt}{%  
 {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
@@ -1112,6 +1112,54 @@ that could satisfy these goals.
 %\caption{Configuring default back-end queries}
 %\label{fig:ss6}
 %\end{figure}
+
+\item[Granular Locators]  Current indexing 
+tools are migrating to paragraph ids (rather than page numbers) 
+for index preparation, although numeric locators still appear 
+in the human-visible digital (and, of course, printed) versions.  
+For best accuracy, it is worthwhile to partition paragraphs 
+that contain block quotes, enumerations, or other subdivisions 
+and assign unique ids to each part (see Figure~\ref{fig:NC}).  
+For example, segments of text before and after a block quote 
+(plus the quote itself) can have distinct ids, even if they 
+are part of an encompassing paragraph.
+
+\pseudoIndent{} Given this precision, digital indexes even in PDF documents 
+can benefit from paragraph ids.  The bottom part of 
+Figure~\ref{fig:NC} shows an index with color-coding to 
+indicate such details as subdivisions (e.g., block quotes) 
+and paragraphs split between two pages.  In the 
+depicted document, all locators are clickable and 
+scroll to the a precise location (top of paragraph or of page).
+
+\item[Bidirectional Indexes and Text Extraction]  Assuming index 
+entries are pooled into an archival data structure, each entry 
+is a potential cross-reference point between multiple documents.  
+The concept of a \q{locator} may thereby extend beyond a single 
+publication; from any one digital index users could initiate 
+searches for matching entries in other books or articles.
+
+\pseudoIndent{} To support such functionality, text encoding should describe 
+structured objects (such as \textbf{date} and \textbf{proper-name} tags in 
+JATS) wherever segments follow standard encodings beyond 
+just natural language (e.g., citations, references, bibliographic 
+entries, and quoting-transcription conventions).  Also, via \PacTk{} 
+meta-indexes can enforce consistent encoding for special characters 
+(e.g., quote marks) and structured segments (e.g., proper-name initials) 
+in cases where different style guides have inconsistent recommendations 
+(for example, whether or not to include spaces between consecutive initials).  
+Treating such portions of a document as unstructured text material 
+can obscure cross-references and potential micro-citations.
+
+\enlargethispage{4em}
+     
+\begin{figure}[h!]
+\hspace{-5em}\includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/xNC.png}
+\caption{Subdivision Formats for Paragraph IDs}
+\label{fig:xNC}
+\end{figure}
+
+\clearpage{}
 
 \end{description}
 }
