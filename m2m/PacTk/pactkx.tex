@@ -1192,21 +1192,26 @@ as well as cause errors within manuscripts internally.
 \vspace*{-39pt}
 
 
-{\semihr{0.289\textwidth}}
+{\semihr{0.647\textwidth}}
 \vspace*{5pt}
-\hspace{2pt}\secttitle{{Extending Beyond Single Documents}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
+\hspace{2pt}\secttitle{{Extending Beyond Single 
+Documents: Data Transparency and Translational 
+Science}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
 \vspace*{5pt}
-{\semihr{0.289\textwidth}}
+{\semihr{0.647\textwidth}}
 
 \vspace*{9pt}
 
 %\p{}
 
-\p{Although all biomedical research (and scientific work in general) 
+\p{Rethinking the relationship between pure and applied 
+research, between universities and communities, 
+means a changing landscape for publishers as well.
+Although all biomedical research (and scientific work in general) 
 is motivated in principle by practical benefits, translational 
 emphases promote the institutional and informatics foundations 
-to ensure that \q{bench to bedside} translation 
-occurs as quickly and comprehensively as possible.  
+for \q{bench to bedside} translation to happen   
+as quickly and comprehensively as possible.  
 Scholars in the field of \q{translational science,} for 
 example, have developed a five-part model of the 
 evolution of practical interventions,\footnote{\hspace*{4pt}Also 
@@ -1217,13 +1222,15 @@ fourth involves commonplace adoption of (once-)novel
 practices in clinical settings and the fifth 
 marks concerted efforts to adopt useful 
 interventions in a wide variety of settings 
-(e.g., not restricted to experimental protocols 
+(e.g., not restricted to protocols 
 available only in a few hospitals).  
 Such models suggest roadmaps to help 
 guide deployment once research progresses through  
-stages of concrete implementation.}
+multiple stages of concrete imple- mentation.  Published materials 
+(not necessarily restricted to journal articles) 
+may reflect data and observations at each of these stages.}
 
-\p{Apart from such theoretical models, however, the 
+\p{Apart from theoretical models along these lines, the 
 key details of translational deployment are often 
 institutional and socioeconomic in nature.  
 Sustaining a research project long enough to 
@@ -1258,12 +1265,12 @@ implies that a research infrastructure should sustain and
 evolve over multiple phases of a scientific project, 
 which extends beyond the time-frame of individual 
 books or articles.  This is reflected in part by 
-protocols such as Research Objects where supplemental 
-materials (graphics, data sets, and so on) are presented 
+protocols such as \q{Research Objects} where supplemental 
+materials (graphics, data sets, utility computer code, and so on) are presented 
 in standardized ways.  It is also manifest 
-in notions of replication and data transparency 
---- models such as Minimum Information Standards 
-that illustrate experimental/acquisition modalities to facilitate 
+in notions of replication and data transparency: 
+models such as Minimum Information Standards 
+that illustrate experimental/data-acquisition modalities to facilitate 
 subsequent investigations confirming or extending the 
 scope of published work.}
 
@@ -1316,7 +1323,7 @@ environments.}
 
 %\pagebreak{}\newpage{}\clearpage{}
 
-
+\vspace*{-4pt}
 
 \sstitle{Data Publishing and Multimedia}
 
@@ -1356,7 +1363,7 @@ components under development:
 
 \item[Deserialization and Dataset Tools]  Individual scientific disciplines are often 
 associated with domain-specific data publishing formats that are paired with 
-dedicated deserialization tools (i.e., computer code which 
+dedicated deserialization tools (i.e., computer code that 
 reads raw data files into live memory, without relying on special-purpose 
 software).  Such code libraries are often maintained by individual 
 institutions or organizations --- which might be academic departments, research 
@@ -1369,12 +1376,14 @@ for geophysics and oceanography; \CoNLLU{} in computational linguistics;
 and shapefiles for geospatial data sets.
 
 \pseudoIndent{} Some domain-specific file formats are derived from general-purpose 
-specifications such as \CSV{}, \XML{}, and \JSON{}.  Others use idiosyncratic text and/or binary 
+specifications such as \XML{}, \CSV{}, and \JSON{}.  Others 
+employ idiosyncratic text and/or binary 
 serialization protocols, so that custom parsers are necessary so as to consume byte or character 
 streams from relevant raw data files.  Even when the actual encoding is performed via a 
 generic standard like \XML{}, dedicated deserialization code will still be needed --- 
-generic parsers may convert a given \XML{} document to a %Document Object Model 
-\DOM{} infoset, but algorithms will have to navigate the document hierarchy and extract 
+ordinary parsers may convert a given \XML{} document to a %Document Object Model 
+\DOM{} infoset, but extraction algorithms 
+still must navigate the document hierarchy and obtain 
 text strings from element nodes, which become the input for initializing 
 object data fields.
 
@@ -1389,7 +1398,7 @@ graph-like structures in a standardized profile (like \XML{})
 or implement and/or integrate with parsers for custom input file types, 
 via postprocessors or rule-match callbacks.
 
-\pseudoIndent{} Via these technologies, publishers can ensure that 
+\pseudoIndent{} Via these technologies, publishers may ensure that 
 data sets are accessible so long as there are deserialization 
 libraries targeting a \PacTk{} \VM{}, rather than duplicating 
 effort (requiring multiple libraries for different operating 
@@ -1407,7 +1416,7 @@ trim=0 12pt 0 11pt, clip]{fin/oct.png}
 \item[Analytic and Demonstrative Code]  Many data sets are published 
 alongside copies or samples of code used to analyze the raw data.  
 Code sharing is important for transparency (allowing outsiders 
-to double-check the accuracy of calculations and conclusion 
+to double-check the accuracy of calculations and conclusions 
 drawn therefrom) and reuse (replication of experiments/research projects).  
 Data publications (bundled as Research Objects or similar scientific 
 packages) may also include implementations for plugins targeted at 
@@ -1418,7 +1427,7 @@ and components exposed by host applications to extension
 modules (main-window taskbars, top/context menus, 
 filesystem access, etc.).
   
-\pseudoIndent{} Although such accompanying code may be implemented 
+\pseudoIndent{} Although such accompanying code might be implemented 
 in many different languages and environments, the \VM{} principles 
 identified above for deserialization tasks also apply 
 to code specific to research data sets.  Here, too, accessibility 
@@ -1429,15 +1438,15 @@ research methods will often depend on domain-specific
 scientific or academic software.  Ideally, data sets will 
 be examined via plugins specific to applications familiar to 
 the relevant research community, or at least custom-built 
-software that can interoperate with domain-specific technologies.  
+software that can interoperate with those domain-specific technologies.  
 Unfortunately, many of the most popular scripting formats 
 in scientific/research contexts (e.g., \Python{}, \JavaScript{}, and \R{}) 
 have noticeable limitations \visavis{} native-\GUI{} integration.  
 
-\pseudoIndent{} \lPacTk{} enables a different approach where 
+\pseudoIndent{} \lPacTk{} enables a different approach, wherein 
 languages can be customized to individual data sets and target 
 pure-\Cpp{} \VM{}s whose entire parsing, \IR{}, and runtime stack 
-can be embedded (as source code) in \Cpp{} \GUI{} applications with no outside 
+is embeddable (as source files) in \Cpp{} \GUI{} applications with no outside 
 dependencies.  Compilers and runtime engines for dataset code may 
 thereby be released as part of the publication package itself.  
 The \VM{} and peer components could also be built directly 
@@ -1473,15 +1482,15 @@ as pedagogical tools.
 %\label{fig:ss8}
 %\end{figure}
 
-\vspace*{14pt}
+\vspace*{8pt}
 
 \begin{figure}[h!]
-\includegraphics[scale=0.5]{fin/sah.png}
+\hspace{18pt}\includegraphics[scale=0.5, trim=0 2mm 0 6mm, clip]{fin/sah.png}
 \caption{A category-based web-accessible index table for SVG pages}
 \label{fig:ss9}
 \end{figure}
 
-\vspace{4pt}
+\vspace*{-4pt}
 
 \item[Full-Text Query Languages]  As discussed earlier in this 
 document, \PacTk{} can be utilized as a code library by 
@@ -1516,6 +1525,7 @@ in a self-contained and cross-platform manner,
 with customizations specific to individual publishers 
 and even to each particular journal or book series.  
 
+\vspace*{-4pt}
 
 
 \item[Multimedia Cross-Referencing]  When a document (book or article) is explicitly paired with a 
