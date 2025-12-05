@@ -1210,10 +1210,19 @@ can be subsumed under the research grid \API{}
 policies; the shared versioning system can be 
 applied to iterations of a manuscript; and 
 and metadata can cross-reference text publications 
-with other submissions by the same (or affiliated) authors.
+with other submissions by the same (or affiliated) authors.  
+
+\pseudoIndent{}  Similarly, according to standards such as 
+\FAIR{}data, publishing findable, accessible, 
+interoperable, and reusable data sets goes beyong 
+just making raw data available on an open-access platform.  
+In addition, \FAIR{}data defines documentation and metadata 
+protocols, so that each statistical parameter (for example) 
+is described with range, measurement, distribution, and 
+similar analytic information. 
 
 \pseudoIndent{}  On a scientific grid such as 
-\caBIG{}, many assets are executable code 
+\CaBIG{}, many assets are executable code 
 for \q{\textit{in silico}} simulations.  
 From a user's perspective, however, such 
 executables often function as multimedia 
@@ -1231,19 +1240,18 @@ mathematical models for stages of regeneration
 at which point in time).  Indexing and cross-referencing 
 policies that are adapted for image and video material 
 can thereby be extended to code libraries as 
-well.
-
-\pseudoIndent{}  Controlled vocabularies and other semantic 
-standards certainly apply to the familiar elements 
+well.  Controlled vocabularies and other semantic 
+standards apply to the familiar elements 
 of computer code --- procedures, classes, data types, 
-inheritance/containment hierarchies, pre- and post-conditions, etc. 
---- but in a \q{research grid} context graphical displays 
+inheritance/containment hierarchies, pre- and post-conditions, 
+etc.\@ --- but in a \q{research grid} context graphical displays 
 often function as assets in their own right and can 
 be annotated and indexed as such.  A \ThreeD{} simulation, 
 for instance, functions essentially as a video whose 
 specific frames evolve algorithmically as a product 
 of parameters and initial conditions that may 
-be modified for each run.    
+be modified for each run (indeed, videos could be 
+taken directly from dynamically evolving \GUI{} windows).
   
 \pseudoIndent{}  Disciplines such as systems biology, 
 environmental science, quantum cosmology, and neurophysics 
@@ -1252,6 +1260,32 @@ systems from multiple angles, and leverage resources
 combining data, code, graphics, simulations, and natural-language 
 text.  \lPacTk{} can help authors expand indexing protocols 
 to encompass this wider range of scientific content.  
+
+\pseudoIndent{}  In particular, we propose a \q{\FAIR{}data 
+Systems Biology Dialect} (\FSBD{}) to standardize \Cpp{} 
+code annotations according to \FAIR{}data principles.  
+While not restricted to systems biology, this protocol 
+would reflect coding requirements for architectures such 
+as \CaBIG{}, with the goal of a unified meta-index 
+paradigm encompassing data, code, and 
+visual assets on decentralized scientific research grids.
+In addition to metadata, \FSBD{} would address 
+concerns specific to modular software engineering, 
+such as merging component-local changes to a 
+common database; discovery, validation, and integration of new modules; 
+and reading intracomponent 
+annotations to create shared, searchable 
+documentation (form fields, user-initiated 
+operations, authentication, component capabilities, etc.). 
+\enlargethispage{25pt}
+
+%\vspace{15pt}
+     
+\begin{figure}[h!]
+\hspace{5pt}\includegraphics[scale=0.55, trim=0 0 0 0, clip]{x/m2m.png}
+\caption{Index Search in a PDF Front-End Context}
+\label{fig:m2m}
+\end{figure}
 
 
 \clearpage{}
