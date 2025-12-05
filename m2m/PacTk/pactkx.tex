@@ -302,7 +302,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=14{
+\ifnum\value{page}=15{
 \AtTextLowerLeft{
 \hspace{266pt}\raisebox{-27pt}{%  
 {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
@@ -1186,6 +1186,77 @@ as well as cause errors within manuscripts internally.
 
 \clearpage{}
 
+\item[Indexing Digital/Multimedia Repositories]  For 
+some initiatives, authors deposit content in a 
+variety of media, including but not limited to 
+text documents.  For example, the 
+Cancer Biomedical Informatics Grid (\CaBIG{}) 
+project is an oncology research network 
+across multiple continents; institutions can join 
+the network if they adhere to \q{Vocabularies and Common Data Elements} 
+(\VCDE{}) standards applying to \API{}s, metadata, provenance 
+declarations, execution models, and so on, to 
+support cross-network interoperability 
+(for example, data from one institution could be 
+plugged in to simulations from another).  Preparing 
+indexes for publications deposited to 
+a structured research network such as \CaBIG{} 
+(now succeeded by the National Cancer Informatics 
+Project) optimally includes aligning each 
+index with semantic protocols.  For example, index 
+entries can be linked to \VCDE{} terms wherever 
+possible.  Likewise, text- and index-search \API{}s 
+can be subsumed under the research grid \API{} 
+policies; the shared versioning system can be 
+applied to iterations of a manuscript; and 
+and metadata can cross-reference text publications 
+with other submissions by the same (or affiliated) authors.
+
+\pseudoIndent{}  On a scientific grid such as 
+\caBIG{}, many assets are executable code 
+for \q{\textit{in silico}} simulations.  
+From a user's perspective, however, such 
+executables often function as multimedia 
+resources, producing two- or three-dimensional 
+graphics that are pedagagoically analogous 
+to image series or videos.  Such computer code 
+thereby connects to publications with a 
+similar rationale as videos, digital maps, and 
+other highly-visual content types.  For instance, 
+analysis of habitat regrowth after a forest 
+fire can be based on footage of actual locations 
+or of agent-oriented simulations that provide 
+mathematical models for stages of regeneration 
+(which plant and animal species become reestablished 
+at which point in time).  Indexing and cross-referencing 
+policies that are adapted for image and video material 
+can thereby be extended to code libraries as 
+well.
+
+\pseudoIndent{}  Controlled vocabularies and other semantic 
+standards certainly apply to the familiar elements 
+of computer code --- procedures, classes, data types, 
+inheritance/containment hierarchies, pre- and post-conditions, etc. 
+--- but in a \q{research grid} context graphical displays 
+often function as assets in their own right and can 
+be annotated and indexed as such.  A \ThreeD{} simulation, 
+for instance, functions essentially as a video whose 
+specific frames evolve algorithmically as a product 
+of parameters and initial conditions that may 
+be modified for each run.    
+  
+\pseudoIndent{}  Disciplines such as systems biology, 
+environmental science, quantum cosmology, and neurophysics 
+are characterized by research networks that explore complex 
+systems from multiple angles, and leverage resources 
+combining data, code, graphics, simulations, and natural-language 
+text.  \lPacTk{} can help authors expand indexing protocols 
+to encompass this wider range of scientific content.  
+
+
+\clearpage{}
+
+
 \end{description}
 }
 
@@ -1240,8 +1311,8 @@ to work through the initial research goals on
 purely scientific grounds.  In the \textit{Data Integration} book 
 mentioned previously, 
 the authors identified numerous innovative 
-software initiatives --- e.g., the Digital Model 
-Repository from the Cancer Biomedical Informatics Grid (\CaBIG{}) 
+software initiatives --- e.g., the \CaBIG{} Digital Model 
+Repository (\DMR{}) mentioned on the previous page  
 --- that were discontinued despite promising 
 provisional results.  Other frameworks, such as 
 the University of Pennsylvania's Cancer Phenomics 
