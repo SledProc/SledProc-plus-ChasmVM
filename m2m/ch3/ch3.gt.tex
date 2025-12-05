@@ -13,6 +13,13 @@
 
 \input{setup}
 
+\usepackage{amssymb}
+\usepackage{bbding}
+
+%\usepackage{marginpar}
+
+
+
 %%
 
 
@@ -110,25 +117,86 @@ through their situated actions continually re-create the setting that gives
 contextually relevant meaning to their interactive work.
 }% end paragraph 
 
+\definecolor{b2}{RGB}{0, 148, 123}
+\definecolor{b1}{RGB}{148, 0, 123}
+
+\definecolor{a2}{RGB}{0, 248, 223}
+\definecolor{a1}{RGB}{248, 0, 223}
+
+\definecolor{a3}{RGB}{22, 100, 23}
+
+
+\newcommand{\spindexmark}{%
+\hspace{-9pt}\raisebox{5pt}{%
+\resizebox{6pt}{3pt}{\textcolor{a3}{$\mapsto$}}}\hspace{3pt}}
+
+\newcommand{\epindexmark}{%
+\hspace{3pt}\raisebox{-2pt}{%
+\resizebox{4pt}{4pt}{\textcolor{a3}{$\blacksquare$}}}}
+
+%nearrow logix
+
+\newcommand{\secondaryindexmark}{%
+\hspace{-2pt}\raisebox{5pt}{%
+\resizebox{6pt}{4pt}{\textcolor{a2}{$\blacklozenge$}}}}
+
+\newcommand{\primaryindexmark}{%
+\hspace{-2pt}\raisebox{5pt}{%
+\resizebox{6pt}{5pt}{\textcolor{a1}{\ArrowBoldRightShort}}}}
+
+%mapsto
+
+\definecolor{m1}{RGB}{177, 49, 10}
+\definecolor{m2}{RGB}{77, 49, 10}
+
+\newcommand{\marginal}[1]{%
+{\fontfamily{qhv}\fontsize{10}{9}\selectfont%
+#1}}
+
+\newcommand{\mcll}[1]{\textcolor{m1}{#1}}
+\newcommand{\mcl}[1]{\textcolor{m2}{#1}}
+
+\marginpar[\marginal{
+
+\vspace*{3em}
+\hspace*{53pt}\mcll{Garfinkel},\\\hspace*{63pt}\mcll{Harold}%
+\\\hspace*{53pt}\mcl{Lynch},\\\hspace*{63pt}\mcl{Michael}%
+\\\hspace*{53pt}\mcl{Durkheim},\\\hspace*{63pt}\mcl{Emile}}]{}
+
 \p.1{%
-For example, Lynch (1997) studied \q{the judge (in criminal court) as
+\spindexmark{}For example, \textcolor{b2}{\secondaryindexmark{}Lynch} 
+(1997) studied \q{the judge (in criminal court) as
 a figure within the collaborative production of a courtroom hearing \ellThree{2pt}{2pt}}
-(p. 99). Lynch followed Garfinkel, who \q{transforms Durkheim’s (1938)
+(p.\@ 99). \textcolor{b2}{\secondaryindexmark{}Lynch} 
+followed \textcolor{b1}{\primaryindexmark{}Garfinkel}, 
+who \q{transforms \textcolor{b2}{\secondaryindexmark{}Durkheim}’s (1938)
 classic aphorism, ‘the objective reality of social facts is sociology’s fundamental phenomenon,’ by setting out an ethnomethodological alternative
-to Durkheim’s analytic sociology \ellThree{2pt}{2pt}\ [which is] to examine the regularities \ellThree{2pt}{2pt}\ [of social life] \ellThree{2pt}{2pt}\ and to explicate how social order is achieved
+to \textcolor{b2}{\secondaryindexmark{}Durkheim}’s analytic sociology \ellThree{2pt}{2pt}\ [which is] to examine the regularities \ellThree{2pt}{2pt}\ [of social life] \ellThree{2pt}{2pt}\ and to explicate how social order is achieved
 reflexively in and through the unrelenting practices of local parties who
-dwell in a society} (p. 100).
-In keeping with the ethnomethodological tradition, Lynch did not
+dwell in a society} (p. 100).\epindexmark{}}
+
+\marginpar[\marginal{
+
+\vspace*{3em}
+\\\hspace*{53pt}\mcl{Lynch},\\\hspace*{63pt}\mcl{Michael}%
+}]{}
+
+
+\p.1{%
+\spindexmark{}In keeping with the ethnomethodological tradition, Lynch did not
 \q{objectify} judges’ work by imposing social-psychological interpretations on their social actions\mdash{}examining gender or race, or trying to go
 \q{behind the scenes [to uncover what was] ‘in the judge’s head,’ behind
 the closed doors of the judge’s chambers, or in the judge’s social background} (p. 99). Instead, he studied how judges were \q{publicly available
-in the embodied production of the hearing} (p. 99) and examined closely
+in the embodied production of the hearing} (p.\@ 99) and examined closely
 how they displayed an orderly, publicly observable (by interactants in
 the courtroom setting)\fnm{3} accounting of \q{their judicial actions and reasons
-as constituents of the courtroom hearings} (p. 125).
+as constituents of the courtroom hearings} (p.\hspace{1pt}125).\epindexmark{}
+}
+
+\p.1{%
 Like Lynch, we, in our study of the family courts, do not treat judicial decision making as \q{a composite of variables in a regression analysis
 [that is] specified by measures of socio-economic status, gender, educational attainment, ethnicity, regional background, or any other social
-factor or combination of factors} (p. 100). If we were to do so, we might
+factor or combination of factors} (p.\@ 100). If we were to do so, we might
 learn nothing more about judicial decision making than our own predetermined variables would allow. We would also be in a quandary when
 forced to produce some rational explanation (assuming we could) for
 the fact that female judges in the family courts have handed down the

@@ -1,0 +1,281 @@
+2022-06-22 v1.13
+
+   1. Added small circled plus, times and star: \SmCircPlus, and \SmCircTimes.
+      Renamed \CircPlus to \LgCircPlus, \CircTimes to \LgCircTimes, and
+      \CircStar to \SmCircStar. Added \LgCircStar.
+
+   2. Added circled relation operators: \CircLs, \CircLse, \CircEq,
+      \CircSm, \CircGre, and \CircGr.
+
+   3. Added circled arithmetic operators: \CircMinus, \CircPls, \CircPlusMinus,
+      \CircMinusPlus, \CircAsterick, \CircDivide, \CircDivd, and \CircTimes.
+
+   4. Added circled logical operators: \CircNd, \CircOr, \CircNt, \CircNand,
+      \CircNor, \CircXor, \CircInvNt and \CircNgt.
+
+   5. Added \Catenate as an alternate concatenation operator.
+
+   6. Added \Divd as an alternate division operator.
+
+   7. Add partial function symbols in five different lengths: \SParFunc,
+      \ParFunc, \LParFunc, \XParFunc and \VParFunc.
+
+   8. Added four new stretchy delimiters: \OpnDblCeil, \OpnDblFloor,
+      \ClsDblCeil and \ClsDblFloor.
+
+   9. Added support for some Refinement Calculus symbols: \ForComp, \End,
+      and \Alt.
+
+2022-05-25 v1.12
+
+   1. Added 30 new arrows as additonal variants of existing arrows. Each MapTo,
+      Func, and logical implication / equivalence now has 5 length variants
+      instead of four.
+
+   2. Tweaked the fixed width soft hyphen U+00AD to be identical to the hyphen
+      U+002D to improve consistency. Normally U+00AD is normally not displayed,
+      so this only makes a difference when it is forced to be displayed.
+
+   3. Improved documentation for Logic Mono font.
+
+   4. Corrected glyph names, NotOwned changed to NotOwns and SbNotXxx changed
+      to NotSbXxx so that NotXxx is consistently the negated form of Xxx and
+      so that \NotXxx is consistently the same as \not \Xxx.
+
+   5. Added 4 glyphs for finite subsets: \StrctFntSbset, \NotStrctFntSbset,
+      \FntSbset, and \NotFntSbSet.
+
+   6. Added 8 wavy turnstiles: \TurnWavy, \TurnDWavy, \DTurnWavy, \DTurnDWavy,
+      and their negations" \NotTurnWavy, \NotTurnDWavy, \NotDTurnWavy, and
+      \NotDTurnDWavy.
+
+   7. Added 20 new arrows: \DashArrowRight, \DashArrowLeft, \HookArrowRight,
+      \HookArrowLeft, \FlatArrowRight, \FlatArrowLeft, \ForkArrowRight,
+      \ForkArrowLeft, \HarpoonUpRight, \HarpoonUpLeft, \HarpoonDnRight,
+      \HarpoonDnLeft, \ZigArrowRight, \ZigArrowLeft, \WavyArrowRight,
+      \WavyArrowLeft, \LoopArrowRight, \LoopArrowLeft, \FishArrowRight,
+      and \FishArrowLeft.
+
+2021-11-12 v1.11
+
+   1. Added \Choices as an upper case version of \Choice.
+
+2021-07-28 v1.10
+
+   1. Added \Dnd, \Dor, \Dnt, \DAsterisk, \DTimes, \DPlus, \DMinus -- dotted
+      conjunction, disjunction, and negation, asterisk, times, plus and minus
+      operators.
+
+   2. Renamed \Lxor to \Mnd (for use with linear logic).
+
+   3. Added linear logic operators: \AAnd, \Aor, \Mnd, \Mor, \OfCrse, \WhyNot,
+      \MulMap, \NotMulMap, \MulMapInv, \NotMulMapInv, \MulMapDual, \NotMulMapDual,
+      \Coh, \InCoh, \SCoh, \SInCoh, \Perp, \SimPerp, \QuantAAnd and \QuantMor.
+      
+      Several of these have multiple uses in linear logic, in particular \Mor,
+      \QuantMor, \Perp and \SimPerp.
+      
+      Possibly the names and descriptions of these could be improved. Suggestions,
+      as always, are welcome. The names assigned here differ from those assigned
+      in the cmll package by Emmanuel Beffara (Linear Logic symbols for Computer
+      Modern). Their design is consistent with STIX2 rather than Computer Modern.
+
+   4. Added \InvNt
+
+   5. Triple turnstiles added: \TrpTurn, \NotTrpTurn, \DTrpTurn, \NotDTrpTurn.
+
+   6. Added \Owns and \NotOwned.
+
+2021-07-06 v1.09
+
+   1. Corrected \Tild to point to non-monospace version of character.
+
+   2. Added \Cpyrght for non-monospace version of character.
+
+   3. Reverted change from /OpnTurn and /ClsTurn to /OpnForce and /ClsForce since the
+      change is non-intuitive and the use as "force" does not appear to be widespread.
+
+   4. Corrected outline for RplcEquvRight.
+
+   5. Added \RplcAllBnd, \RplcAll, \RplcFree, \RplcEquv, \RplcAny, \RplcAnyRight, 
+      and \RplcAnyLeft.
+
+   6. \EmptyBunch renamed to \VoidBunch.
+
+   7. The modal operator names were shifted around, with two new sets of modal operators
+      added.
+
+   8. Added Sheffer's stroke (\Shfr), logical nand (\Lnand) and logical nor (Lnor).
+
+   9. Added zero width space (\NoSpace) as glyph, whereas \KntZZ is not an actual glyph.
+
+  10. Exported \Lxor for logical XOR symbol.
+
+  11. Added \Vmeet and \Vjoin, respectively as up and down hooked arrow.
+
+  12. Added \NtExists, \HdnExists and \HdnForAll, \BnchNtExists, \BnchHdnExists and
+      \BnchHdnForAll.
+
+  13. Added \SbNd, \SbOr, \SbNand, \SbNor, \SbXor, \SbLs, \SbNotLs, \SbLse, \SbNotLse,
+      \SbGre, \SbNoteGre, \SbGr and \SbNotGr.
+
+  14. The LogixProof and LogixSequent environments now use braces for justification
+      references rather than brackets.
+
+  15. Added \Cover.
+
+  16. The \Defn symbol sidebearings tweaked to improve readability and the LogixDefn
+      environment modified to provide alignment on the definition symbol, which is now
+      incorporated into the environment. The LogixAxiom environment has been added to
+      provide formatted axioms or postulates.
+
+  17. The LogixTable environment was added to provide a consistent appearance for
+      semantic maps and tableau.
+
+  18. The LgcCohrnc and BncCohrnc symbols were renamed to LgcBistab and BncBistab.
+
+  19. The mathtools package is now included automatically.
+
+  20. The Blnk line option was added for the LogixProof and LogixSeqnt environment.
+
+2021-01-17 v1.08
+
+   1. The \OpnTurn and \ClsTurn symbols have been renamed to \OpenForce and \ClsForce,
+      respectively, to match existing usage.
+
+2020-09-18 v1.07
+
+   1. The normal sans serif script was moved from the Latin-1 area to the Private Use Area
+      removing the last overlap between Logix symbols and Unicode symbols.
+
+   2. The remaining glpyhs in the Latin-1 area were not useful and were removed.
+
+   3. Modified glyphs of the highly regarded BitStream Vera mono font have been incorporated.
+      The modifications were make to make the glyphs more consistent with the STIX2 Math
+      font. Thus the Logix font can be directly used as a monospace font.
+
+   4. Some older applications may not display correctly when using the Logix font. So
+      the monospace glpyhs are also entirely contained in a new Logix Mono font which
+      does not contain any other symbols, making it a smaller, lightweight font.
+
+2020-05-24 v1.06
+
+   1. Four symbols were added
+
+         \SMapTo
+         \MapTo
+         \LMapTo
+         \XMapTo
+
+2020-05-23 v1.05
+
+   1. Font loading was tweaked to accomodate a change in the luaotfload package
+      which broke stretchy delimiters in LuaLaTeX.
+
+   2. Three symbols were renamed.
+
+         \Ng           --> \Ngt
+         \DottedCircle --> \DottedCircl
+         \Dts          --> \CDots
+
+   3. Several existing symbols were exported:
+
+         \TFNone
+         \NTrue
+         \TFBoth
+         \NFalse
+         \Bot
+         \Top
+         \VDots
+
+   4. Two symbols were added
+
+         \TripleQuote
+         \LDots
+
+   5. A pair of stretchy delimiters were added
+
+         \OpnTrpBar
+         \ClsTrpBar
+
+   6. A bold calligraphic script was added.
+
+   7. Since many (most) Unicode fonts do not provide a systematic set of the basic
+      geometric shapes in different sizes, 126 new geometric symbols are provided.
+      Nine sizes (each) for circles, squares, diamonds, right triangle, left
+      triangle, up triangle and down triangle for both white and black variants
+      were added. Unlike the existing geometric symbols which are vertically
+      centered at 0.25 em for use in logic, these are vertically centered at
+      0.50 em for general use, with side bearings of 0.1 em.  The smallest shapes
+      have basic dimension of 0.2 em, and each larger shape increases in size by
+      0.1 em, up to 1.0 em. These symbols are name:
+
+         \WhiteCircleA ... \WhiteCircleI
+         \BlackCircleA ... \BlackCircleI
+         \WhiteSquareA ... \WhiteSquareI
+         \BlackSquareA ... \BlackSquareI
+         \WhiteDiamondA ... \WhiteDiamondI
+         \BlackDiamondA ... \BlackDiamondI
+         \WhiteRightTriangleA ... \WhiteRightTriangleI
+         \BlackRightTriangleA ... \BlackRightTriangleI
+         \WhiteLeftTriangleA ... \WhiteLeftTriangleI
+         \BlackLeftTriangleA ... \BlackLeftTriangleI
+         \WhiteUpTriangleA ... \WhiteUpTriangleI
+         \BlackUpTriangleA ... \BlackUpTriangleI
+         \WhiteDownTriangleA ... \WhiteDownTriangleI
+         \BlackDownTriangleA ... \BlackDownTriangleI
+
+   8. The environments for logic proofs were slightly tweaked for improved readability.
+
+2020-05-01 v1.04
+
+   1. Two new Knot symbols were added, \KntHDASH and \KntVDASH.
+
+   2. A few symbols were renamed to avoid conflict with standard Unicode names.
+
+         \Comma   --> \Coma
+         \Number  --> \Numbr
+         \Percent --> \Percnt
+         \Plus    --> \Pls
+
+2020-03-07 v1.03
+
+   1. Some macros were tweaked which were not expanding correctly in some circumstances.
+
+   2. The "bold-style=ISO" option is now used for unicode-math. This causes \symbf to
+      use italic bold, \mathbf remains non-italic. See the unicode-math package
+      documentation for more information.
+
+   3. LaTeX2e version 2020-02-02 patch level 5 is now required. Some updates prior to
+      patch level 5 were causing errors.
+
+2020-01-04 v1.02
+
+   1. Version number corrected in logix.sty.
+
+   2. Two new stretchy delimiters added.
+
+   3. \DelimS variants added for automatic stretchy delimiter \Delim.
+
+   4. Corresponding updates to README file, documentation and the logix.sty file.
+
+   5. Changes made to match changes in other packages.
+
+2019-07-07 v1.01
+
+   1. Minor additions and corrections to README file, documentation and
+      logix.sty comments.
+
+   2. Corrected widths and macro names for several \Knt symbols.
+
+   3. Added \KntlgX macros for changing the height of \Knt symbols.
+
+   4. Added a dozen half width or height symbols to facilitate drawing knot bridges.
+
+   5. Additional examples added to the documentation for using the \Knt symbols.
+
+2019-07-01 v1.00
+
+   Initial release.
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

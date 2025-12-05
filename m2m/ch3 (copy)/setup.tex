@@ -1,0 +1,182 @@
+
+
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+%\pagenumbering{roman}
+
+\setcounter{page}{39}
+
+\fancyhf{} % Clear all headers and footers first
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyheadoffset[reh]{0pt}
+\fancyheadoffset[loh]{0pt}
+    
+\fancyhead[RO]{\textbf{\arabic{page}}} % Page number on the right of odd pages
+    
+\fancyhead[LE]{\textbf{\arabic{page}}} % Page number on the left of even pages
+    
+\fancyhead[LO]{{\fontfamily{bch}{FROM MADNESS TO MUTINY}}} % Title on the left of odd pages
+    
+\fancyhead[RE]{Research Methods} % Author on the right of even pages
+    
+%\fancyfoot[C]{Confidential} % "Confidential" in the center of all footers
+
+\setlength{\headsep}{35pt}
+
+
+\newcommand\dunderline[3][-1pt]{{%
+  \sbox0{#3}%
+  \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+
+
+\usepackage[top=1.4in, bottom=1.1in, left=1.1in, right=1.1in, %marginparwidth=75pt, 
+paperheight=11in,paperwidth=8.5in]{geometry}
+
+\reversemarginpar
+
+%\usepackage[oneside, marginparwidth=75pt]{geometry}    "(@Pr\d+)"
+
+\usepackage{xcolor}
+
+%\newcommand{\notePage}[1]{ === page #1 === }
+
+\newcommand{\notePage}[1]{}
+
+\newcommand{\ndash}{--}
+
+\newcommand{\quasiPar}[1]{
+
+\hspace{15pt}}
+
+\newcommand{\ellThree}[2]{%
+\makebox{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}}
+
+\newcommand{\ellFour}[2]{%
+\makebox{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}}
+
+%\newcommand{\prQuote}[1]{``{#1}''}
+
+\newcommand{\prQuote}[1]{%
+\vspace{1em}
+\begin{quote}
+#1
+\end{quote}
+\vspace{1em}
+}
+
+
+\newcommand{\qq}[1]{``#1''} \newcommand{\sq}[1]{\hspace*{2pt}`#1'\hspace*{1pt}}
+
+\newcommand{\sq}[1]{\hspace*{2pt}`#1'\hspace*{1pt}}
+
+\newcommand{\fnm}[1]{%
+\raisebox{5pt}{{\scriptsize \textbf{#1}}}}
+
+\newcommand{\mdash}{---}
+
+%\usepackage{arimo}
+%\usepackage{cmbright}
+%\usepackage[scaled]{berasans}
+%\usepackage[defaultsans]{cantarell}
+%\usepackage[light]{Chivo}
+%\usepackage[sfdefault]{classico}
+%\usepackage{biolinum}
+%\usepackage{comfortaa}
+%
+%\usepackage[extralight]{FiraSans}
+%\usepackage{gillius}
+%\usepackage{avant}  % need ls
+%\usepackage{libertinus}
+
+%--
+  \usepackage[extralight,tabular,lining]{montserrat}
+
+%- \usepackage{raleway}
+
+%\usepackage[light]{roboto} 
+
+\usepackage[T1]{fontenc}
+
+
+\newcommand{\prSect}[1]{
+\noindent{%\LARGE{#1}
+%\fontfamily{fmv}%
+\fontsize{25}{14}\selectfont%
+\textsf{#1}%
+%#1
+}\vspace{2em}
+}
+
+\newcommand{\prS}{\hspace*{15.4pt}}
+
+
+\newcommand{\prPart}[1]{\vspace{4em}
+\noindent{%\LARGE{#1}
+\fontsize{15}{14}\selectfont%
+\textsf{#1}%
+}\vspace{2em}
+}
+
+
+%\newcommand{\prPart}[1]{
+%\vspace{15pt}\noindent{\Large{#1}}\vspace{1em}
+%}
+
+\usepackage{setspace}
+
+
+%qzc
+\newcommand{\prsa}{\hspace*{7pt}}
+\newcommand{\prsb}{\hspace*{1.5pt}}
+\newcommand{\prsc}{\hspace*{2pt}}
+
+
+
+\newcommand{\prSs}{\hspace*{3pt}}
+\newcommand{\prSa}{\hspace*{5pt}}
+
+\newcommand{\prSb}{\hspace*{10pt}}
+\newcommand{\prSc}{\hspace*{6pt}}
+
+
+\newcommand{\prSdd}{\hspace*{13pt}}
+
+\newcommand{\prSd}{\hspace*{12pt}}
+\newcommand{\prSe}{\hspace*{6pt}}
+
+
+\newcommand{\prSf}{\hspace*{9pt}}
+\newcommand{\prSg}{\hspace*{7.5pt}}
+
+
+\newcommand{\prHead}[2]{
+\vspace{9pt}\noindent{% {\Large{#1}}
+%
+\fontfamily{qpl}\fontsize{#1}{22}\selectfont%
+#2\par
+}
+\vspace{2em}
+}
+
+
+
+
+\newcounter{prPar}
+
+
+%\DeclareRobustCommand{\mymarginpar}[1]{%
+% \marginpar[\hspace{200pt}\raggedleft#1]{\raggedright#1}}
+
+
+%\newcommand{\pfl}{\stepcounter{prPar}% -\theprPar= 
+%\vspace{10pt}\marginpar{\raisebox{-30pt}{@Pr\theprPar}}
+%}
+
+\newcommand{\pfl}{\vspace*{2pt}}
+
+

@@ -1,0 +1,156 @@
+The logix package.
+
+This is the README for the logix package, version 2022-06-22 v1.13.
+
+This package provides supplemental symbols for use in logic and mathematics
+which are largely not present in Unicode. Some symbols are in Unicode but
+are included because they are variants that may look better in some 
+applications. Logic tends not to have the complex layouts that is common for 
+more general mathematics, but has different requirements for readability.
+This font is intended to supplement, but not replace the AMS STIX2 fonts. 
+However, it may used with any mathematical font since it does not replace or 
+redefine any symbols. This package also provides an environment for drawing
+knots using the \Knt drawing symbols and several environments for Hilbert
+style logic definitions, axioms and theorems.
+
+This is an OpenType font where all of the symbols (more than 4,000) other than 
+the ASCII codepage are in the private use area. As such, the package requires
+XeLaTeX or LuaLaTeX. Not all of those symbols are directly exported, since
+there are many variants present for possible future use. While only the 
+OpenType font file is usable for LaTeX, the .ttf, .woff, .woff2 and .eot font
+files are also supplied in this distribution.
+
+Other than many miscellaneous symbols, there are a large number of arrows, 
+geometrical symbols, Knot drawing symbols, 72 stretchy delimiters plus a
+stretchy binding bar, of which 64 are fully stretchable. The remaining 8 are
+stretchy up to 5 times the original size. Some of the delimiters are present
+in Unicode, but their design in STIX2 does not work as well for logic. In
+particular, STIX2 delimiters tend to not extend as far below the baseline
+and above the baseline as would be desirable. Also, some STIX2 delimiters
+take more horizontal space than necessary.
+
+There are twenty one scripts, each of which (except for the two Greek scripts) 
+have matching numeric, lower case and upper case glyphs. All symbols in this 
+font are designed to be compatible with the STIX2 mathematical font by AMS.
+Some of these scripts overlap the Unicode math scripts, but are not intended 
+to be replacements for those. Unicode does not include everything for a specific
+script -- digits or lower case letters may be missing, or even individual letters 
+(although that may have changed). That is an issue when using a script for 
+variable naming. Some script variants are omitted in Unicode. Many of those
+variants are useful in logic. The scripts included are sans serif, slab serif,
+normal serif (each of these has upright, italic, bold and bold italic versions)
+as well as a calligraphic font (italic and bold), blackboard, fraktur (upright
+and bold), monospace, monospace italic with normal serif, and Greek (upright
+and italic).
+
+Licenses:
+
+   The logix font is licensed under the Open Font License, version 1.1 or 
+   later.
+
+   The font contains modified serif alphanumeric and Greek symbols from the 
+   STIX2 fonts, Copyright © 2001-2016 by the STI Pub Companies (OFL license 
+   1.1), modified slab serif alphanumeric symbols from the Zilla Slab fonts, 
+   Copyright © 2017 The Mozilla Foundation (OFL license 1.1) and modified sans 
+   serif alphanumeric symbols from the Clear Sans font, Copyright © 2012 Intel 
+   Corporation (Apache License 2.0).
+
+   The OFL license can be found at: http://scripts.sil.org/OFL.
+
+   The Apache license can be found at: http://www.apache.org/licenses/LICENSE-2.0.html.
+
+   This file, the documentation and the logix.sty file are distributed and/or 
+   modified under the conditions of the LaTeX Project Public License, either 
+   version 1.3 of this license or (at your option) any later version. The 
+   latest version of this license can be found at:
+   
+       http://www.latex-project.org/lppl.txt
+   
+   and version 1.3c or later is part of all distributions of LaTeX version
+   2005-12-01 or later.
+
+   This font contains modified symbols from the Bitstream Vera Sans Mono font,
+   Release 1.10, according to the following license.
+
+      Copyright (c) 2003 by Bitstream, Inc.
+      All Rights Reserved.
+      Bitstream Vera is a trademark of Bitstream, Inc.
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy
+   of the fonts accompanying this license ("Fonts") and associated documentation
+   files (the "Font Software"), to reproduce and distribute the Font Software,
+   including without limitation the rights to use, copy, merge, publish, distribute,
+   and/or sell copies of the Font Software, and to permit persons to whom the Font
+   Software is furnished to do so, subject to the following conditions:
+
+   The above copyright and trademark notices and this permission notice shall be
+   included in all copies of one or more of the Font Software typefaces.
+
+   The Font Software may be modified, altered, or added to, and in particular the
+   designs of glyphs or characters in the Fonts may be modified and additional
+   glyphs or characters may be added to the Fonts, only if the fonts are renamed
+   to names not containing either the words "Bitstream" or the word "Vera".
+
+   This License becomes null and void to the extent applicable to Fonts or Font
+   Software that has been modified and is distributed under the "Bitstream Vera"
+   names.
+
+   The Font Software may be sold as part of a larger software package but no copy
+   of one or more of the Font Software typefaces may be sold by itself.
+
+   THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+   OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT,
+   TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL BITSTREAM OR THE GNOME FOUNDATION
+   BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL,
+   SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION
+   OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO
+   USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.
+
+   Except as contained in this notice, the names of Gnome, the Gnome Foundation,
+   and Bitstream Inc., shall not be used in advertising or otherwise to promote
+   the sale, use or other dealings in this Font Software without prior written
+   authorization from the Gnome Foundation or Bitstream Inc., respectively. For
+   further information, contact: fonts at gnome dot org.
+   
+This work has the LPPL maintenance status `maintained'.
+
+The Current Maintainer of this work is Michael Lee Finney who can be reached 
+at ctan@metachaos.net.
+
+This work consists of the files CHANGELOG, README, logix.sty, logix.tex, logix.pdf, 
+logix.otf, logix.ttf, logix.woff, logix.woff2, logix.eot and logix.vfc.
+
+To use this package, add
+
+   \usepackage{logix}
+
+it has no options. If the array package is used, it must be loaded prior to the
+logix package due to a conflict between the array package and the arydshln
+package. The public interface is defined in logix.sty and documented in logix.pdf.
+For example:
+
+   \usepackage{array}            % Only if required, must load before logix.
+   \usepackage{logix}            % Load logix font for supplemental symbols.
+
+   \setmainfont{STIX Two Text}   % AMS STIX2 used for main font.
+   \setmathfont{STIX Two Math}   % AMS STIX2 used for math font.
+   \setmonofont{Logix Mono}      % Only if using Logix for listings.
+
+This distribution also contains logix.vfc and logixMono.vfc, which are the master
+font files used to build the actual font files. It is not needed for LaTeX usage,
+but is provided should I become unable to maintain the package, and is picked up
+by another maintainer. This is a FontLab (currently version 7.2.0) source file.
+
+As briefly mentioned above, the various web font files (.eot, .ttf, .woff and
+.woff2) are provided so that any user who wishes to use the font on a web page
+does not need to convert font files.
+
+Users can report bugs or request support at
+
+   ctan@metachaos.net
+   
+which is an email address devoted exclusively to my interaction with CTAN. 
+There are no web pages, URLs, repositories etc. that the user can access.
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
