@@ -15,6 +15,38 @@
 
 \usepackage{amssymb}
 \usepackage{bbding}
+\usepackage{ulem}
+
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+\definecolor{ru}{RGB}{199, 99, 4}
+
+\newcommand\reduline{\bgroup\markoverwith
+{\textcolor{ru}{\rule[-0.25ex]{2pt}{0.4pt}}}\ULon}
+
+\newcommand{\myuuline}[1]{\reduline{#1}
+\llap{\dashuline{\phantom{#1}}}%
+}
+
+
+\newcommand{\myuulinex}[1]{%
+  \dashuline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+%\newcommand{\uuline}[1]{%
+
+%}
+
 
 %\usepackage{marginpar}
 
@@ -164,14 +196,14 @@ contextually relevant meaning to their interactive work.
 \\\hspace*{53pt}\mcl{Durkheim},\\\hspace*{63pt}\mcl{Emile}}]{}
 
 \p.1{%
-\spindexmark{}For example, \textcolor{b2}{\secondaryindexmark{}Lynch} 
+\spindexmark{}For example, \textcolor{b2}{\secondaryindexmark{}\myuline{Lynch}} 
 (1997) studied \q{the judge (in criminal court) as
 a figure within the collaborative production of a courtroom hearing \ellThree{2pt}{2pt}}
-(p.\@ 99). \textcolor{b2}{\secondaryindexmark{}Lynch} 
-followed \textcolor{b1}{\primaryindexmark{}Garfinkel}, 
-who \q{transforms \textcolor{b2}{\secondaryindexmark{}Durkheim}’s (1938)
+(p.\@ 99). \textcolor{b2}{\secondaryindexmark{}\myuline{Lynch}} 
+followed \textcolor{b1}{\primaryindexmark{}\myuuline{Garfinkel}}, 
+who \q{transforms \textcolor{b2}{\secondaryindexmark{}\myuline{Durkheim}}’s (1938)
 classic aphorism, ‘the objective reality of social facts is sociology’s fundamental phenomenon,’ by setting out an ethnomethodological alternative
-to \textcolor{b2}{\secondaryindexmark{}Durkheim}’s analytic sociology \ellThree{2pt}{2pt}\ [which is] to examine the regularities \ellThree{2pt}{2pt}\ [of social life] \ellThree{2pt}{2pt}\ and to explicate how social order is achieved
+to \textcolor{b2}{\secondaryindexmark{}\myuline{Durkheim}}’s analytic sociology \ellThree{2pt}{2pt}\ [which is] to examine the regularities \ellThree{2pt}{2pt}\ [of social life] \ellThree{2pt}{2pt}\ and to explicate how social order is achieved
 reflexively in and through the unrelenting practices of local parties who
 dwell in a society} (p. 100).\epindexmark{}}
 
@@ -183,7 +215,8 @@ dwell in a society} (p. 100).\epindexmark{}}
 
 
 \p.1{%
-\spindexmark{}In keeping with the ethnomethodological tradition, Lynch did not
+\spindexmark{}In keeping with the ethnomethodological tradition, 
+\textcolor{b2}{\secondaryindexmark{}\myuline{Lynch}} did not
 \q{objectify} judges’ work by imposing social-psychological interpretations on their social actions\mdash{}examining gender or race, or trying to go
 \q{behind the scenes [to uncover what was] ‘in the judge’s head,’ behind
 the closed doors of the judge’s chambers, or in the judge’s social background} (p. 99). Instead, he studied how judges were \q{publicly available

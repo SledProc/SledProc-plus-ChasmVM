@@ -342,7 +342,7 @@ targeted at individual paragraphs and their subdivisions.};
 
 
 
-\ifnum\value{page}=14{
+\ifnum\value{page}=15{
 \AtTextLowerLeft{\hspace{18pt}\raisebox{328pt}{
 
 \begin{tikzpicture}
@@ -428,7 +428,7 @@ adopted for annotation text.
 
 
 
-\ifnum\value{page}=16{
+\ifnum\value{page}=17{
 \AtTextLowerLeft{\raisebox{-55pt}{
 
 \begin{tikzpicture}
@@ -501,8 +501,62 @@ screenshot shows a correct rendering of the left-hand passage
 
 
 
+\ifnum\value{page}=10{
+\AtTextLowerLeft{\raisebox{11pt}{
 
-\ifnum\value{page}=13{
+\begin{tikzpicture}
+
+\node at (0,0) [text=white] {X};
+
+
+
+\colorlet{bgray}{blue!30!gray}
+\colorlet{ou}{purple!60!red}
+\colorlet{in}{orange!60!black}
+
+
+\node [draw=ou!30, fill=bgray!49, anchor = south west, rounded corners,
+text width=7.5cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+(s1) at (3.9, .9) {{Paragraphs where the matches are located 
+are also highlighted at their start and end points, plus with sidebars.
+}
+};
+
+
+\node [draw=in!60, fill=white, anchor = south west, rounded corners,
+text width=7.5cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (3.83, .8) {Paragraphs where the matches are located 
+are also highlighted at their start and end points, plus with sidebars.
+};
+
+\node [draw=ou!30, fill=bgray!49, anchor = south west, rounded corners,
+text width=8.8cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+(s1) at (8.4, 5.9) {{Using highlights to indicate index entry locators.  
+This paragraph shows highlights applied after a user selects the 
+main entry \\(Harold Garfinkel), with related entries indicated as well.
+}
+};
+
+
+\node [draw=in!60, fill=white, anchor = south west, rounded corners,
+text width=8.8cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (8.25, 5.7) {Using highlights to indicate index entry locators.  
+This paragraph shows highlights applied after a user selects the 
+main entry \\(Harold Garfinkel), with related entries indicated as well.
+};
+
+
+
+
+\end{tikzpicture}
+}}
+
+}\fi
+
+
+
+
+\ifnum\value{page}=14{
 \AtTextLowerLeft{\raisebox{281pt}{
 
 \begin{tikzpicture}
@@ -688,7 +742,7 @@ completed with the words for a given sentence
 
 
 
-\ifnum\value{page}=12{
+\ifnum\value{page}=13{
 \AtTextLowerLeft{\raisebox{70pt}{
 
 \begin{tikzpicture}

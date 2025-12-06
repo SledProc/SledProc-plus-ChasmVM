@@ -302,7 +302,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=15{
+\ifnum\value{page}=16{
 \AtTextLowerLeft{
 \hspace{266pt}\raisebox{-27pt}{%  
 {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
@@ -985,7 +985,7 @@ In effect, index metadata may declare that all locators
 modeled as relevant for their specific entry are also relevant 
 to some list of associated concepts, such that whenever those 
 latter concepts are targeted in a query the explicit 
-locators are included among the query results.   
+locators are included among the query results (Figure~\ref{fig:m2m}).   
 
 \vspace{-3pt}
 
@@ -1165,7 +1165,7 @@ searches for matching entries in other books or articles.
 
 \pseudoIndent{} To support such functionality, text encoding should describe 
 structured objects (such as \textbf{date} and \textbf{string-name} tags in 
-JATS) wherever segments follow canonical encodings beyond 
+\JATS{}) wherever segments follow canonical encodings beyond 
 just natural language (e.g., citations, references, bibliographic 
 entries, and quoting/transcription conventions).  Also, via \PacTk{} 
 meta-indexes can enforce consistent encoding for special characters 
@@ -1201,7 +1201,7 @@ support cross-network interoperability
 plugged in to simulations from another).  Preparing 
 indexes for publications deposited to 
 a structured research network such as \CaBIG{} 
-(now succeeded by the National Cancer Informatics 
+(now succeeded by \NCIP{}, the National Cancer Informatics 
 Project) optimally includes aligning each 
 index with semantic protocols.  For example, index 
 entries can be linked to \VCDE{} terms wherever 
@@ -1296,8 +1296,109 @@ operations, authentication, component capabilities, etc.).
 \end{description}
 }
 
-\vspace*{-39pt}
+\sstitle{PacTk's Proposed \q{FAIRdata Microcomponent Protocol} (FMCP)}
 
+\p{In component-oriented programming, the term \q{microcomponent} is 
+sometimes used for a visually and functionally isolated part 
+of a larger application, such as a single web page within a web site, 
+or (in the desktop context) a single application window.  
+Modular software can be designed as an aggregate of 
+many microcomponents.  When reading publications, for 
+example, microcomponents could provide functionality to 
+view specific kinds of dynamic graphics connected with 
+a manuscript, or review raw data files in an associated data set.}
+
+\p{To illustrate how microcomponent programming affects 
+indexing and document-preparation, consider the screenshot 
+reproduced in Figure~\ref{fig:oh}, left (taken from the OpenHospital 
+user manual).  Although this is part of a \Java{} application, 
+a \Qt{} developer could readily implement a \Cpp{} version 
+of the same component; assume, then, that in so doing 
+we intend to annotate the relevant classes with \FMCP{} metadata.}
+
+\p{In particular, there are numerous areas within the \GUI{} 
+window with selections/options that may be connected 
+to controlled vocabularies, including the list of 
+checkbox labels for test results, and the drop-down 
+(combobox) values for \q{material} (note that, in the 
+existing code, there is no way to find a list of 
+possible entries for this field without running 
+the software or examining the \Java{} code directly).  
+There are also multiple actions users can perform 
+through this component, including finding a patient 
+id via their personal info; selecting a from a 
+calendar display; and recording exam results 
+to a hospital database.  Although these usage and semantic details may 
+be implicit in code documentation or user instructions, 
+\FMCP{} employs code annotations to specify this metadata 
+in a machine-readable fashion;  
+the entire software base can then have a single indexing 
+and search entry-point (e.g., a query for the 
+term \q{urinanalysis,} should match this microcomponent 
+as one option for the exam-type field).  In addition, 
+new microcomponents could be added to the hospital software 
+systematically.  Consider, for instance, that a more 
+specialized exam report is needed for a particular clinical 
+trial.  Via microcomponent programming, that special-purpose 
+page could be integrated, and accessed 
+by users, similarly to this generic exam window.}
+
+\p{In the context of a research grid such as \CaBIG{}, 
+content from disparate institutions are designed 
+to interoperate.  For example, one resource might be a 
+Geographic Information Systems (\GIS{}) data set 
+tracking carcinogens in air or ground polution plus 
+incidents of different types of cancer; another 
+resource might be software specifically designed 
+to analyze and display this data (on a digital map).  
+Such \GIS{} attribute layers have a domain-specific 
+nature that is difficult to accommodate with 
+generic software such as \textbf{ArcGIS}.  In particular, 
+the \GIS{} data points will represent either incidents 
+(or measurements) of carcinogenic contamination or 
+cancer diagnoses (organized by tumor classification).  
+Apart from being governed by controlled vocabularies, 
+such data points would have distinct \GUI{} 
+requirements.  For instance, oncological labels 
+can be a terminological bridge for multiple 
+data sets and leveraged via search \API{}s; 
+lists of known carcinogens can likewise 
+be incporated into software that works 
+with multiple repositories curated 
+by the \EPA{} and other organizations.}
+
+\p{For publishing and indexing, apart from semantic 
+metadata such as standard nomenclature and 
+\q{Common Data Elements} (defined by \NCIP{}, for 
+example), some \GUI{} components (as discussed above) 
+may function as graphics displays properly indexed 
+as multimedia content.  On the right in Figure~\ref{fig:oh} 
+is a screenshot from the Cancer Imaging Phenomics 
+Toolkit which has multiple data fields suitable 
+for \FMCP{} indexing, including textural segmentation 
+and feature-extraction algorithms.  In addition, 
+the bioimage displays together with region-of-interest 
+markings may function as \q{nanopublication} resources 
+on a research grid, particularly with case-study 
+examples used to demonstrate analytic methods (as with this 
+picture).  Illustrations appearing in publications may 
+thereby be linked to microcomponents from which the 
+graphics were obtained.}
+\enlargethispage{2em}
+\vspace{-11pt}
+
+\begin{figure}[h!]
+\hspace{-45pt}\raisebox{-6pt}{\includegraphics[page=53, scale=.56, trim=0 11cm 0 0, clip]{UserManual.pdf}}%
+\hspace{-18pt}\includegraphics[scale=1.1, trim=0 3cm 0 1cm, clip]{baseScreenshot.png}
+\caption{OpenHospital form (left) and cancer imaging window (right) 
+as microcomponent examples}
+\label{fig:oh}
+\end{figure}
+
+
+\clearpage{}
+
+\vspace*{-39pt}
 
 {\semihr{0.647\textwidth}}
 \vspace*{5pt}
