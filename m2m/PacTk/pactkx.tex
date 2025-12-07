@@ -1333,7 +1333,7 @@ There are also multiple actions users can perform
 through this component, including finding a patient 
 id via their personal info; selecting a from a 
 calendar display; and recording exam results 
-to a hospital database.  Although these usage and semantic details may 
+to a hospital database.  Although these logistic and semantic details may 
 be implicit in code documentation or user instructions, 
 \FMCP{} employs code annotations to specify this metadata 
 in a machine-readable fashion;  
@@ -1345,7 +1345,7 @@ new microcomponents could be added to the hospital software
 systematically.  Consider, for instance, that a more 
 specialized exam report is needed for a particular clinical 
 trial.  Via microcomponent programming, that special-purpose 
-page could be integrated, and accessed 
+page/dialog box could be integrated, and accessed 
 by users, similarly to this generic exam window.}
 
 \p{In the context of a research grid such as \CaBIG{}, 
@@ -1564,6 +1564,7 @@ interactive formats).  If desired,
 portion of a multimedia suite, with functional motifs 
 duplicated across the various components (Figures~\ref{fig:ss8}~and~\ref{fig:ss9}).}
 
+\setlength{\belowcaptionskip}{9pt}
 
 \begin{figure}[t!]
 \includegraphics[scale=0.5]{fin/stark-mi.png}
@@ -1589,11 +1590,12 @@ reads raw data files into live memory, without relying on special-purpose
 software).  Such code libraries are often maintained by individual 
 institutions or organizations --- which might be academic departments, research 
 labs, or independent groups --- on behalf of a 
-broader research community.  Examples include (among many others) \FASTQ{} and \VCF{} for genomics; \HDFfive{} and \ROOT{} for physics;
-\FITS{} and \netCDF{} in astronomy and earth sciences; \PDB{} and \MOL{} in biochemistry; 
-\IFC{} and \BIM{} for architecture/engineering; \SEGY{} and \BAG{} 
-for geophysics and oceanography; \CoNLLU{} in computational linguistics; 
-\DICOM{} and \OMETIFF{} for bioimaging; and \GIS{}-indexed attribute layers 
+broader research community.  Examples include (among many) \FASTQ{} and \VCF{} for genomics; \HDFfive{} and \ROOT{} for physics; 
+\FITS{} and \netCDF{} (astronomy and earth sciences); \PDB{}, \MOL{}, 
+\SBML{}, and \CELLML{} (biochemistry); 
+\IFC{} and \BIM{} (architecture/engineering); \SEGY{} and \BAG{} 
+(geophysics and oceanography); \CoNLLU{} (computational linguistics); 
+\DICOM{} and \OMETIFF{} (bioimaging); and \GIS{}-indexed attribute layers 
 and shapefiles for geospatial data sets.
 
 \pseudoIndent{} Some domain-specific file formats are derived from general-purpose 
@@ -1654,7 +1656,7 @@ identified above for deserialization tasks also apply
 to code specific to research data sets.  Here, too, accessibility 
 implies that dataset code should be available in a cross-platform 
 manner.  Broadly-usable code libraries for (e.g.) deserialization 
-obviates the need to achieve interoperability via reified/canonical  
+obviate the need to achieve interoperability via reified/canonical  
 model-representation standards alone.  For example, 
 Semantic Web nodes could be annotated with information about 
 libraries that could unpack objects whose data fields 
