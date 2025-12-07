@@ -1296,7 +1296,12 @@ operations, authentication, component capabilities, etc.).
 \end{description}
 }
 
+\vspace*{-43pt}
+
+
 \sstitle{PacTk's Proposed \q{FAIRdata Microcomponent Protocol} (FMCP)}
+
+\vspace*{7pt}
 
 \p{In component-oriented programming, the term \q{microcomponent} is 
 sometimes used for a visually and functionally isolated part 
@@ -1366,7 +1371,11 @@ data sets and leveraged via search \API{}s.
 Lists of known carcinogens can likewise 
 be incorporated into software that works 
 with repositories curated 
-by the \EPA{} and other organizations.}
+by the \EPA{} and other organizations.
+In general, context/menubar options, 
+check/radio buttons, comboboxes, and  
+clickable elements may all be 
+indexed according to grid schemas.}
 
 \p{For publishing and indexing, apart from semantic 
 metadata such as standard nomenclature and 
@@ -1388,6 +1397,8 @@ graphics were obtained.}
 \enlargethispage{2em}
 \vspace{-17pt}
 
+\setlength{\abovecaptionskip}{2pt}
+
 \begin{figure}[h!]
 \hspace{-45pt}\raisebox{-6pt}{\includegraphics[page=53, scale=.56, trim=0 11cm 0 0, clip]{UserManual.pdf}}%
 \hspace{-18pt}\includegraphics[scale=1.1, trim=0 3cm 0 1cm, clip]{baseScreenshot.png}
@@ -1399,7 +1410,9 @@ as microcomponent examples}
 
 \clearpage{}
 
-\vspace*{-39pt}
+\setlength{\abovecaptionskip}{9pt}
+
+\vspace*{-43pt}
 
 {\semihr{0.647\textwidth}}
 \vspace*{5pt}
@@ -1411,6 +1424,7 @@ Science}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
 
 \vspace*{9pt}
 
+%\setlength{\footskip}{2pt}
 %\p{}
 
 \p{Rethinking the relationship between pure and applied 
@@ -1423,10 +1437,12 @@ for \q{bench to bedside} translation to happen
 as quickly and comprehensively as possible.  
 Scholars in the field of \q{translational science,} for 
 example, have developed a five-part model of the 
-evolution of practical interventions,\footnote{\hspace*{4pt}Also 
+evolution of practical interventions %,\footnote{\hspace*{4pt}
+(also 
 called the \q{translational continuum}; see 
 for instance \href{https://www.iths.org/investigators/definitions/translational-research}
-{https://www.iths.org/investigators/definitions/translational-research}} of which the 
+{https://www.iths.org/investigators/definitions/translational-research}) %}
+of which the 
 fourth involves commonplace adoption of (once-)novel 
 practices in clinical settings and the fifth 
 marks concerted efforts to adopt useful 
@@ -1442,31 +1458,27 @@ may reflect data and observations at each of these stages.}
 \p{Apart from theoretical models along these lines, the 
 key details of translational deployment are often 
 institutional and socioeconomic in nature.  
-Sustaining a research project long enough to 
+Sustaining research projects enough to 
 rigorously assess empirical outcomes is a different 
 process than procuring funding, labs, and teams 
-to work through the initial research goals on 
-purely scientific grounds.  In the \textit{Data Integration} book 
-mentioned previously, 
-the authors identified numerous innovative 
-software initiatives --- e.g., the \CaBIG{} Digital Model 
-Repository (\DMR{}) mentioned on the previous page  
---- that were discontinued despite promising 
-provisional results.  Other frameworks, such as 
+to work through initial objectives on 
+purely scientific grounds.  Some innovative 
+software initiatives (e.g., the \CaBIG{} \DMR{} 
+mentioned above) were discontinued; other 
+frameworks, such as 
 the University of Pennsylvania's Cancer Phenomics 
 Toolkit, evince novel biocomputational ideas but have not been 
 scaled up or replicated beyond their academic point of origin.  
 These suggest fortuitous connections between 
-technical and translational priorities.  Beyond 
-originary research, the impetus 
-for further development and adoption of promising 
+technical and translational priorities.  Further development 
+and adoption of promising 
 software, interventions, or clinical protocols can 
-be supplied by social responsibility and a 
-desire to make effective health care options 
+be spurred by goals 
+to make effective health care options 
 (for example) available to a broad spectrum of 
-the community.  Research initially funded 
-and supported on purely technical grounds might 
-then be able to further develop and expand 
+the community.  Research initially supported on purely 
+technical grounds might 
+then further expand 
 by emphasizing social/translational benefits.} 
 
 \p{From a publishing standpoint, translational science 
@@ -1566,7 +1578,7 @@ several components to help publishers construct these
 supplemental materials, including cross-referencing 
 text documents with associated data/media assets, and 
 ensuring \FAIR{} usability.  Here are several 
-components under development:
+examples:%\enlargethispage{1em}
 
 \begin{description}
 
@@ -1641,11 +1653,18 @@ in many different languages and environments, the \VM{} principles
 identified above for deserialization tasks also apply 
 to code specific to research data sets.  Here, too, accessibility 
 implies that dataset code should be available in a cross-platform 
-manner.  Moreover, implementations should proceed via 
-conventions suitable for \GUI{} wrappers and interop, because 
-research methods will often depend on domain-specific 
-scientific or academic software.  Ideally, data sets will 
-be examined via plugins specific to applications familiar to 
+manner.  Broadly-usable code libraries for (e.g.) deserialization 
+obviates the need to achieve interoperability via reified/canonical  
+model-representation standards alone.  For example, 
+Semantic Web nodes could be annotated with information about 
+libraries that could unpack objects whose data fields 
+supply values to nearby sites in the node's shape-constrained 
+neighborhood.  Moreover, implementations should proceed via 
+conventions suitable for \GUI{} wrappers and interop (in particular, 
+microcomponent protocols described earlier) because 
+research methods will often rely on domain-specific 
+scientific or academic software.  Ideally, users will examine data 
+sets with the aid of plugins for applications familiar to 
 the relevant research community, or at least custom-built 
 software that can interoperate with those domain-specific technologies.  
 Unfortunately, many of the most popular scripting formats 
