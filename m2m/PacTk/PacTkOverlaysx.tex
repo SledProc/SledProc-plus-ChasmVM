@@ -453,7 +453,7 @@ specify project-specific HTML encoding rules for non-standard tag entities and/o
 sentence-level (or smaller) objects, rather than relying on 
 relying on generic HTML generators.  The excerpt at the bottom of the 
 screenshot shows a correct rendering of the left-hand passage
-(\tcircled{3}).}
+(\tcircledl{3}).}
 };
 
 
@@ -473,7 +473,7 @@ specify project-specific HTML encoding rules for non-standard tag entities and/o
 sentence-level (or smaller) objects, rather than relying on 
 relying on generic HTML generators.  The excerpt at the bottom of the 
 screenshot shows a correct rendering of the left-hand passage
-(\tcircled{3}).}
+(\tcircledl{3}).}
 };
 
 \node[shape=circle,draw=circ!40,line width=4pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2,25) {1};
@@ -491,6 +491,86 @@ screenshot shows a correct rendering of the left-hand passage
 \node[shape=circle,draw=circ!40,line width=4pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2.3,11) {3};
 
 \node[shape=circle,draw=circ,line width=1pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2.3,11) {3};
+
+
+
+\end{tikzpicture}
+}}
+
+}\fi
+
+
+\ifnum\value{page}=18{
+\AtTextLowerLeft{\raisebox{-55pt}{
+
+
+\begin{tikzpicture}
+
+\node at (0,0) [text=white] {X};
+
+
+
+
+
+\node [draw=red!60!black, fill=blue, anchor = south west, rounded corners,
+text width=13.1cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+(s1) at (6.74, 19.9) {{The top part of this figure comes from a 
+ProPublica study of communities with exceptionally high 
+cancer rates (here, the map is centered near 
+East Greenville, PA).  The bottom map shows locations of 
+PFAS (Per- and Polyfluoroalkyl Substances) contamination 
+in a similar geographic region.}
+};
+
+
+\node [draw=red!60!black, fill=white, anchor = south west, rounded corners,
+text width=13cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (6.73, 19.8) {{The top part of this figure comes from a 
+ProPublica study of communities with exceptionally high 
+cancer rates (here, the map is centered near 
+East Greenville, PA).  The bottom map shows locations of 
+PFAS (Per- and Polyfluoroalkyl Substances) contamination 
+in a similar geographic region.}
+};
+
+
+
+
+
+\node [draw=red!60!black, fill=blue, anchor = south west, rounded corners,
+text width=13.8cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+(s1) at (6.74, 1.9) {{The specific subject-matter of 
+environmental pollution and its relation to cancer 
+incidents gives rise to software requirements which, 
+ideally, are more specific than basic GIS functionality.  
+Each geospatial area can be correlated with both 
+cancer diagnoses (potentially with more specific 
+tumor-classification data) and reported or measured 
+air or ground contamination.  The desire to 
+connect these two sources of information 
+has implications for context menus, formation 
+of API queries, supplemental visualization 
+windows, and other coding facets 
+suited for domain-specific microcomponent programming.}
+};
+
+
+\node [draw=red!60!black, fill=white, anchor = south west, rounded corners,
+text width=13.7cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (6.73, 1.8) {{The specific subject-matter of 
+environmental pollution and its relation to cancer 
+incidents gives rise to software requirements which, 
+ideally, are more specific than basic GIS functionality.  
+Each geospatial area can be correlated with both 
+cancer diagnoses (potentially with more specific 
+tumor-classification data) and reported or measured 
+air or ground contamination.  The desire to 
+connect these two sources of information 
+has implications for context menus, formation 
+of API queries, supplemental visualization 
+windows, and other coding facets 
+suited for domain-specific microcomponent programming.}
+};
 
 
 
