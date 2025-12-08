@@ -512,8 +512,8 @@ screenshot shows a correct rendering of the left-hand passage
 
 
 
-\node [draw=red!60!black, fill=blue, anchor = south west, rounded corners,
-text width=13.1cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+\node [draw=purple!60!red, fill=purple!40!orange, anchor = south west, rounded corners,
+text width=13.1cm, inner sep=14pt, xshift=-3pt, yshift=-4pt, font={\fontsize{9}{9}\selectfont}] (ltext)
 (s1) at (6.74, 19.9) {{The top part of this figure comes from a 
 ProPublica study of communities with exceptionally high 
 cancer rates (here, the map is centered near 
@@ -523,7 +523,7 @@ in a similar geographic region.}
 };
 
 
-\node [draw=red!60!black, fill=white, anchor = south west, rounded corners,
+\node [draw=orange!60!black, fill=white, fill=white, anchor = south west, rounded corners,
 text width=13cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
  at (6.73, 19.8) {{The top part of this figure comes from a 
 ProPublica study of communities with exceptionally high 
@@ -534,12 +534,11 @@ in a similar geographic region.}
 };
 
 
+\colorlet{bgray}{blue!30!gray}
 
-
-
-\node [draw=red!60!black, fill=blue, anchor = south west, rounded corners,
-text width=13.8cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
-(s1) at (6.74, 1.9) {{The specific subject-matter of 
+\node [draw=red!60!black, fill=bgray!49, anchor = south west, rounded corners,
+text width=13.4cm, inner sep=13pt, xshift=-2pt, yshift=-5pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+(s1) at (6.94, 1.9) {{The specific subject-matter of 
 environmental pollution and its relation to cancer 
 incidents gives rise to software requirements which, 
 ideally, are more specific than basic GIS functionality.  
@@ -556,8 +555,8 @@ suited for domain-specific microcomponent programming.}
 
 
 \node [draw=red!60!black, fill=white, anchor = south west, rounded corners,
-text width=13.7cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
- at (6.73, 1.8) {{The specific subject-matter of 
+text width=13.4cm, inner sep=11pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (6.94, 1.8) {{The specific subject-matter of 
 environmental pollution and its relation to cancer 
 incidents gives rise to software requirements which, 
 ideally, are more specific than basic GIS functionality.  
@@ -567,7 +566,7 @@ tumor-classification data) and reported or measured
 air or ground contamination.  The desire to 
 connect these two sources of information 
 has implications for context menus, formation 
-of API queries, supplemental visualization 
+of API queries, supplemental visual\-ization 
 windows, and other coding facets 
 suited for domain-specific microcomponent programming.}
 };
@@ -837,21 +836,19 @@ completed with the words for a given sentence
 \end{scope}
 
 
+\definecolor{fillc}{RGB}{130, 89, 68}
 
-
-\node [draw=red!60!black, fill=blue, anchor = north west, rounded corners,
+\node [draw=fillc!80!cyan, fill=fillc!50!red, anchor = north west, rounded corners,
 text width=7.64cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
-at (3.52, 10.64) {{
-A meta-index search routed from a local PDF file through a 
+at (3.52, 10.54) {{A meta-index search routed from a local PDF file through a 
 web portal, resulting in the retrieval of another 
 book title in the same series, with a page-match 
 showing that is relevant to the  
-theme of the initial book's current page.
-}
+theme of the initial book's current page.}
 };
 
 
-\node [draw=red!60!black, fill=white, anchor = north west, rounded corners,
+\node [draw=fillc!80!cyan, fill=white, anchor = north west, rounded corners,
 text width=7.64cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-inner)
  at (3.37, 10.1) {
 A meta-index search routed from a local PDF file through a 

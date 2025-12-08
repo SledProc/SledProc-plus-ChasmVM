@@ -1614,14 +1614,18 @@ object data fields.
 
 %\newpage{}\clearpage{}
 \pseudoIndent{} \lPacTk{} seeks to address these issues by offering a 
-platform-independent Virtual Machine that is easy to embed in 
-scientific applications or build as a standalone program.  Scripting 
-or query language can then emit code for this specific \VM{} to 
-take responsibility for deserializing encoded data sets.  Depending 
+platform-independent Virtual Machine that is easy to host within 
+scientific applications or build as a plugin or standalone program.  
+Scripting 
+or query languages can then emit code for this \VM{} to 
+take responsibility for deserializing encoded data sets 
+(while, as another use-case, the \VM{} could be embedded in 
+\Cpp{} classes/microcomponents   
+as a runtime contract-verification tool).  Depending 
 on format, \VM{} instructions might navigate through 
 graph-like structures in a standardized profile (like \XML{}) 
 or implement and/or integrate with parsers for custom input file types, 
-via postprocessors or rule-match callbacks.
+through postprocessors or rule-match callbacks.  
 
 \pseudoIndent{} Via these technologies, publishers may ensure that 
 data sets are accessible so long as there are deserialization 
@@ -1631,7 +1635,7 @@ systems and programming environments).\vspace{6pt}
  
 \begin{figure}[ht]
 \hspace*{1em}\includegraphics[scale=0.47, 
-trim=0 12pt 0 11pt, clip]{fin/oct.png}
+trim=0 12pt 0 22pt, clip]{fin/oct.png}
 \caption{Flexible range-select features}
 \label{fig:ss8}
 \end{figure}
