@@ -6,7 +6,7 @@
 \usepackage[top=.85in, bottom=.65in, left=.56in, right=.45in, footskip=0pt,
 paperheight=13.5in,paperwidth=9.25in]{geometry}
 
-
+\usepackage{csquotes}
 
 \newcommand{\Ldown}[1]{\hspace{-2pt}\raisebox{-1pt}{{%\fontfamily{lmhh}
 \fontsize{14}{11}\selectfont{}{\textnormal{#1.}}}}\hspace{3pt}}
@@ -1251,7 +1251,8 @@ for instance, functions essentially as a video whose
 specific frames evolve algorithmically as a product 
 of parameters and initial conditions that may 
 be modified for each run (indeed, videos could be 
-taken directly from dynamically evolving \GUI{} windows).
+taken directly from dynamically evolving \GUI{} windows; 
+see Figure~\ref{fig:pcbi}).
   
 \pseudoIndent{}  Disciplines such as systems biology, 
 environmental science, quantum cosmology, and neurophysics 
@@ -1918,6 +1919,88 @@ and \PDF{} viewers:
 
 \clearpage{}
 
+\vspace*{-40pt}
+
+{\semihr{0.1745\textwidth}}
+\vspace*{5pt}
+\hspace{2pt}\secttitle{{Quotations of Interest}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
+\vspace*{5pt}
+{\semihr{0.1745\textwidth}}
+
+\vspace{9pt}
+
+\begin{displayquote}
+
+Researchers cannot readily search across multiple repositories to find models of interest, and when a researcher does retrieve a relevant model, they must determine whether it (or part of it) can be repurposed for use in their modeling work. Similarity measures and pattern-matching algorithms can help identify relevant modeling components, but existing proposals for cross-repository search and retrieval are mostly theoretical and not yet applicable in practice. Applying semantic annotations in a standardized way across model repositories would provide a common ground for such cross-repository searches, allowing models encoded in diverse formats to be retrieved based on their shared semantic descriptions. 
+
+The amount of time required to select a model for reuse increases when the researcher must choose from a large set of potentially usable models. With only limited means to compare models automatically, researchers must manually assess the content, scope and underlying assumptions of each candidate model as well as the biological questions each was designed to answer. While semantic annotations cannot yet capture the purpose for which a model was built or modified, they can make the biological content of a model explicit and therefore help researchers decide whether or not to repurpose it....
+
+An additional impediment to model reuse is the lack of integration between model repositories and online collections of experimental data. If such integration existed, modelers could readily find data appropriate for validating or constraining the models they repurpose, and experimentalists could find models for use in data analysis pipelines. 
+
+\vspace{-2pt}
+\hfill\q{Harmonizing semantic annotations for computational models in biology}
+
+\vspace{-2pt}
+\hfill\href{https://pmc.ncbi.nlm.nih.gov/articles/PMC6433895/}{https://pmc.ncbi.nlm.nih.gov/articles/PMC6433895/}
+
+\end{displayquote}
+
+\vspace{1pt}
+
+
+\begin{displayquote}
+
+\textbf{Call to action}
+
+Though the full text of many scientific papers are
+available to researchers through CORD-19, a number of 
+challenges prevent easy application of NLP
+and text mining techniques to these papers. First,
+the primary distribution format of scientific papers
+--- PDF --- is not amenable to text processing. The
+PDF file format is designed to share electronic documents rendered faithfully for reading and printing, and mixes visual with semantic information.
+Significant effort is needed to coerce PDF into a
+format more amenable to text mining, such as JATS
+XML,26 BioC (Comeau et al., 2019), or S2ORC
+JSON ... [W]e can still benefit from better PDF parsing tools
+for scientific documents. As a complement, 
+scientific papers should also be made available in a
+structured format like JSON, XML, or HTML.
+
+\vspace{-2pt}
+\hfill\q{CORD-19: The COVID-19 Open Research Dataset}
+
+\vspace{-2pt}
+\hfill\href{https://aclanthology.org/2020.nlpcovid19-acl.1.pdf}{https://aclanthology.org/2020.nlpcovid19-acl.1.pdf}
+
+\end{displayquote}
+
+\definecolor{rray}{RGB}{161, 110, 52}
+\definecolor{rgray}{RGB}{200, 107, 49}
+
+
+\textcolor{rgray}{\hrule}
+\vspace{1pt}
+\textcolor{rray}{\hrule}
+\vspace{1pt}
+\textcolor{rgray}{\hrule}
+
+\enlargethispage{3em}
+
+\vspace*{-26pt}
+
+\begin{figure}[h!]
+\hspace{125pt}\includegraphics[page=5, scale=.85, trim=0 13.4cm 0 0, clip]{x/pcbi_1002970.pdf}%
+\vspace{3em}
+\caption{Potential locations for code/data/multimedia cross-reference annotations}
+\label{fig:pcbi}
+\end{figure}
+
+
+\clearpage{}
+
+
+
 \begin{figure}[h!]
 \includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/x3.png}
 \caption{HTML Transcription Errors}
@@ -1925,14 +2008,16 @@ and \PDF{} viewers:
 \end{figure}
 
 
-
 \clearpage{}
+
+
 
 \begin{figure}[h!]
 \hspace{-25pt}\includegraphics[scale=0.61, trim=0 1.3cm 0 0, clip]{x/car/car.png}
 \caption{GIS/Public Health Interoperability}
 \label{fig:car}
 \end{figure}
+
 
 
 

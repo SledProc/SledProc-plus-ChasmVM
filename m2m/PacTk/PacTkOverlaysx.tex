@@ -428,7 +428,7 @@ adopted for annotation text.
 
 
 
-\ifnum\value{page}=17{
+\ifnum\value{page}=18{
 \AtTextLowerLeft{\raisebox{-55pt}{
 
 \begin{tikzpicture}
@@ -500,7 +500,7 @@ screenshot shows a correct rendering of the left-hand passage
 }\fi
 
 
-\ifnum\value{page}=18{
+\ifnum\value{page}=19{
 \AtTextLowerLeft{\raisebox{-55pt}{
 
 
@@ -817,6 +817,126 @@ completed with the words for a given sentence
 }}
 
 }\fi
+
+
+
+\ifnum\value{page}=17{
+\AtTextLowerLeft{\hspace{-28pt}\raisebox{-26pt}{
+
+\begin{tikzpicture}
+
+\node at (0,0) [text=white] {X};
+
+\definecolor{fillc}{RGB}{130, 89, 68}
+
+\node [draw=fillc!80!cyan, fill=fillc!50!red, anchor = north west, %rounded corners,
+text width=5.44cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+at (.07, 13.84) {{A simulation via CHASTE (Cancer, Heart And Soft Tissue Environment).  
+An indexed grid hosting these simulation files would be able to read 
+annotations from a variery of sources in the C++ code, including 
+the \textbf{MultipleCryptGeometryBoundaryCondition} class 
+(a subtype of \textbf{AbstractCellPopulationBoundaryCondition}, 
+which is templated on the count of spatial dimensions in the model) 
+which is specific to this model, and the 
+\textbf{OffLatticeSimulation} class (similarly templated) 
+within the CHASTE core, implementing the basic quantitative 
+logic.  
+
+\vspace{4pt}
+
+Likewise, the steps needed to create the 
+video sampled and referenced in the publication 
+should be identified.  If CHASTE had included a video 
+player component, this could be registered as a 
+GUI asset (in practice CHASTE videos are derived 
+externally via command-line tools, but that 
+pipeline could be reimplemented by a host grid). 
+A PacTk grid would program a microcomponent 
+specifically designed to show CHASTE videos 
+and enable context menus on paused movie frames 
+to simulation data, parameters, provenance, 
+and publication links.  
+
+\vspace{4pt}
+
+Analogous cross-annotation 
+schemes could be put into practice for sources 
+potentially distributed alongside CHASTE, 
+such as libCELLML and libSBML.
+}
+};
+
+
+\node [draw=fillc!80!cyan, fill=white, anchor = north west, % rounded corners,
+text width=5.44cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-inner)
+ at (0, 13.4) {A simulation via CHASTE (Cancer, Heart And Soft Tissue Environment).  
+An indexed grid hosting these simulation files would be able to read 
+annotations from a variery of sources in the C++ code, including 
+the \textbf{MultipleCryptGeometryBoundaryCondition} class 
+(a subtype of \textbf{AbstractCellPopulationBoundaryCondition}, 
+which is templated on the count of spatial dimensions in the model) 
+which is specific to this model, and the 
+\textbf{OffLatticeSimulation} class (similarly templated) 
+within the CHASTE core, implementing the basic quantitative 
+logic.  
+
+\vspace{4pt}
+Likewise, the steps needed to create the 
+video sampled and referenced in the publication 
+should be identified.  If CHASTE had included a video 
+player component, this could be registered as a 
+GUI asset (in practice CHASTE videos are derived 
+externally via command-line tools, but that 
+pipeline could be reimplemented by a host grid).  
+A PacTk grid would program a microcomponent 
+specifically designed to show CHASTE videos 
+and enable context menus on paused movie frames 
+to simulation data, parameters, provenance, 
+and publication links.  
+
+\vspace{4pt}
+Analogous cross-annotation 
+schemes could be put into practice for sources 
+potentially distributed alongside CHASTE, 
+such as libCELLML and libSBML.
+};
+
+
+%xshift=-2pt, yshift=-5pt, 
+
+\colorlet{bgray}{blue!30!gray}
+
+%https://pmc.ncbi.nlm.nih.gov/articles/instance/3597547/bin/pcbi.1002970.s001.zip
+
+\node [draw=red!20!black, fill=white, anchor = south west, rounded corners,
+text width=13.4cm, inner sep=6.5pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (7.24, .75) {{Sources: ``Chaste: An Open Source C++ Library for Computational
+Physiology and Biology'' 
+(\href{https://pmc.ncbi.nlm.nih.gov/articles/PMC3597547/pdf/pcbi.1002970.pdf}{https://pmc.ncbi.nlm.nih.gov/articles/PMC3597547/pdf/pcbi.1002970.pdf});
+and the supplemental data files at \href{https://pmc.ncbi.nlm.nih.gov/articles/instance/3597547/bin/pcbi.1002970.s001.zip}%
+{https://pmc.ncbi.nlm.nih.gov/articles/instance/3597547/bin/pcbi.1002970.s001.zip}.
+}
+};
+
+\node [draw=bgray!59!yellow, line width=1pt, fill=white, anchor = south west, rounded corners,
+text width=13.4cm, inner sep=6pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (7.24, .75) {{Sources: ``Chaste: An Open Source C++ Library for Computational
+Physiology and Biology'' 
+(\href{https://pmc.ncbi.nlm.nih.gov/articles/PMC3597547/pdf/pcbi.1002970.pdf}{https://pmc.ncbi.nlm.nih.gov/articles/PMC3597547/pdf/pcbi.1002970.pdf});
+and the supplemental data files at \href{https://pmc.ncbi.nlm.nih.gov/articles/instance/3597547/bin/pcbi.1002970.s001.zip}%
+{https://pmc.ncbi.nlm.nih.gov/articles/instance/3597547/bin/pcbi.1002970.s001.zip}.
+}
+};
+
+
+
+
+\end{tikzpicture}
+}}
+
+}\fi
+
+
 
 
 
