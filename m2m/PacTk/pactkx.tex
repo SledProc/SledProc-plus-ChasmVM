@@ -1416,7 +1416,7 @@ as microcomponent examples}
 \vspace*{-6em}
 \sstitle{Grid Architecture According to FAIR Principles}
 
-\vspace*{15pt}
+\vspace*{14pt}
 
 \p{Grid Computing is an important part of contemporary scientific 
 research.  In general, a \q{grid} --- in contrast to a 
@@ -1427,9 +1427,7 @@ via the grid, and that their primary reason for doing so is
 because the software encapsulates novel research: 
 quantitative or qualitative (e.g., agent-based) simulations, 
 \q{in silico} experiments, analysis of newly-available empirical data, 
-algorithmically generated graphics, and so forth.}
-
-\p{In some instances, code packages may be downloaded and run privately, 
+algorithmically generated graphics, and so forth.  In some instances, code packages may be downloaded and run privately, 
 e.g., on a scientist's own computer.  In other cases, the code 
 specifically requires special hardware (e.g., supercomputing/massive 
 parallelization) and a grid enables researchers to execute remotely, 
@@ -1489,20 +1487,13 @@ text discussions featured in document manuscripts.}
 with \q{counter-examples} that discuss lacunae 
 in \textit{existing} implementations of research networks.}
 
-\begin{description}
-
-\item[Computer Simulations and Videos]  A publication presents a 
-new \q{in silico} investigation, such as the simulation of 
-interrelated biological processes on a cellular or tissue scale.  
-The paper includes frames from a simulation video and 
-supplemental materials link to the video in its entirety.  
-The video itself records the output of a particular run of 
-the simulation, with a given set of initial conditions.
-
-\newcommand{\counterx}[1]{\textcolor{red!30!black}{#1}}
+\newcommand{\counterx}[1]{\vspace{-1em}\textcolor{red!30!black}{#1}}
 
 \newcommand{\counterex}{\counterx{Counterexample}}
-\newcommand{\counterexs{\counterx{Counterexamples}}
+
+\newcommand{\counterexs}{\counterx{Counterexamples}}
+
+%\newcommand{\counterexs{\counterx{Counterexamples}}
 
 %\newcommand{\counterex}{Counterexample}
 
@@ -1511,7 +1502,17 @@ the simulation, with a given set of initial conditions.
 
 \newcommand{\mic}{\micf{A Microcomponents Alaternative}}
 
-\pseudoIndent{} When reaching that point in the manuscript, 
+
+\begin{description}
+
+\item[Computer Simulations and Videos]  A publication presents a 
+new \q{in silico} investigation, such as the simulation of 
+interrelated biological processes on a cellular or tissue scale 
+(the paper includes frames from a simulation video and 
+supplemental materials link to the video in its entirety.)
+The video itself records the output of a particular run of 
+the simulation, with a given set of initial conditions.
+When reaching that point in the manuscript, 
 the first thing someone might want to do is watch the video.  
 It is entirely possible for \PDF{} viewers to include 
 video-playback capabilities, even if few currently 
@@ -1525,7 +1526,9 @@ for data-transparency reasons).  It should
 be relatively easy for users to examine \textit{both} 
 the video and the \textit{in silico} run that produces it.
 
-\counterex{} The graphic pictured in Figure~\ref{fig:pcbi} is taken 
+\end{description}
+
+\p{\counterex{} The graphic pictured in Figure~\ref{fig:pcbi} is taken 
 from a Computational Biology journal; the relevant article 
 introduces \CHASTE{} (Cancer, Heart And Soft Tissue Environment), a 
 simulation framework written in \Cpp{}.  Switching from 
@@ -1535,9 +1538,9 @@ section to download the \textbf{.avi} files, and manually
 find and launch the movies through a media player (this 
 has no bearing on \CHASTE{} as an important research tool; 
 interop with text documents is as much the responsibility 
-of publishers --- PlosOne in this case --- as scientific code).
+of publishers --- PlosOne in this case --- as scientific code).}
 
-\pseudoIndent{} More substantially, the process of actually 
+\p{More substantially, the process of actually 
 identifying those components responsible for the 
 video's content is convolution, even after a reader 
 obtains the relevant source code.  The \CHASTE{} package 
@@ -1551,9 +1554,9 @@ specific \GUI{} component whose role is to display
 \CHASTE{} simulations directly.  As a consequence, 
 actually generating a viewable simulation that 
 mimics the video requires detailed examination of the 
-\CHASTE{} source code and filesytem layout.
+\CHASTE{} source code and filesytem layout.}
 
-\mic{} According to \FAIR{} standards, the process of 
+\p{\mic{} According to \FAIR{} standards, the process of 
 switching between reading \textit{about} the simulation 
 in a \PDF{} publication and \textit{viewing} the simulation 
 should occur as seamlessly as possible.  One obvious step 
@@ -1561,29 +1564,32 @@ in this direction is to provision the \PDF{} viewer
 with a video player.  For example, the player could be 
 launched by selecting such an action from a context 
 menu activated with the cursor over the graphic 
-showing one of the video's frames.
+showing one of the video's frames.}
 
-Once the actual source code is downloaded, \FAIR{} principles suggest 
+\enlargethispage{1em}
+\p{Once the actual source code is downloaded, \FAIR{} principles suggest 
 that (1) there should be instructions directly addressing how 
 to find and run the code specifically associated with the 
 referenced video; and (2) there should be a single \GUI{} 
 class and component whose specific purpose is to display 
-(visuals of) simulations of the relevant kind.
+(visuals of) simulations of the relevant kind.}
+\clearpage{}
 
-More precisely, notice that there are several interrelated assets 
+\vspace*{-2em}
+\p{More precisely, notice that there are several interrelated assets 
 which could all be grid-hosted and indexed: the video; the 
 \GUI{} class (plus relevant \textbf{.cpp} files) implementing 
 the window which actually shows the graphics it captures, both the 
 overall window (presumably with various navigation and configuration 
 controls) and the specific \q{widget} whose display directly 
 yields the video feed; and the \Cpp{} code for the 
-simulations \q{business logic} (in Figure~\ref{fig:pcbi}, 
-this code performs calculations like computing iteration 
-updates and preparing values for a differential equation solver).  
+simulation's logic (in Figure~\ref{fig:pcbi}, 
+this code performs calculations like iteration-step computations 
+and preparing values for a differential equation solver).  
 There may also be a separate \GUI{} window specifically 
-dedicated to showing the simulation's initial parameters.  
+dedicated to showing the simulation's initial parameters.}
 
-Such interrelationships should be noted on a multimedia 
+\p{Such interrelationships should be noted on a multimedia 
 grid --- if the video file itself is a nanopublication, 
 independently indexable and citeable, certainly the same 
 applies to the \GUI{} window which it records.  
@@ -1594,9 +1600,9 @@ for instance, context menus could allow users to navigate
 from the simulation display \GUI{} to a video player and 
 vice-versa.  Similarly, context menus should launch a 
 separate window showing initial values (as well 
-as model metadata, potentially) in both contexts.  
+as model metadata, potentially) in both contexts.}
   
-In terms of search and indexing, all four components 
+\p{In terms of search and indexing, all four components 
 can be linked to any publication which discusses that 
 specific video or includes illustrations derived 
 therefrom.  Terms specific to the computer 
@@ -1605,15 +1611,102 @@ form (e.g., \q{DeltaNotchOdeSystem}) alongside
 a natural-language equivalent (\q{Delta Notch Ode System}) 
 and related terms (Notch signaling pathway, Ordinary 
 Differential Equation).  Such semantics could 
-be annotated on the \Cpp{} files directly and 
-then read/indexed when the overall package is 
-deposited on a \FAIR{} grid.  
+be annotated on \Cpp{} files directly and 
+then indexed when the overall package is 
+deposited on a \FAIR{} grid.} 
 
  
+\begin{description}
 
-\item[GIS Attribute Layers Reflecting Multiple Scientific Disciplines]
+\item[GIS Attribute Layers Reflecting Multiple Scientific Disciplines]   Digital 
+maps are an obvious example of cross-disciplinary integration, because 
+disparate data sets can share a common reference point vis-\`a-vis 
+latitude and longitude coordinates.  Public and environmental 
+health is a case in point: such information as mortality 
+rates and cancer diagnoses may be cross-referenced with data 
+tracking environmental contamination (compiled either 
+via testing air, soil, or water samples or by self-reporting 
+from companies that use or transport hazardous materials).  
 
-\item[Curating Corpora of Linguistics Examples]
+\pseudoIndent{} To visualize statistical correlations between these data categories, 
+a good starting-point would be viewing all information together 
+superimposed on a \GIS{} display.  At the same time, rigorous 
+examination of the underlying data should not depend on visual 
+judgments, but can be confirmed by analyzing data sets computationally; 
+for instance, quantitative methods could test whether there is an 
+above-chance correspondance between particular environmental 
+carcinogens and particular cancers.  For such research, users need 
+to navigate between map displays and digital \q{reports}, or 
+specialized windows for examining a cluster of interrelated 
+data points: meter readings for detecting a particular class 
+of chemicals at specific time intervals, say, or \q{toxic release} 
+records with numerous geospatial, company, and location fields 
+as well as cheminformatic details about 
+individual accidental discharge incidents.  Effective \GIS{} 
+components will merge both the geospatial and the records 
+or \q{attribute} data in systematic ways.
+
+\end{description}
+
+
+\p{\counterexs{}  The preeminent commercial digitam cartography software is 
+\ArcGIS{}, and many geospatial data sets are designed to be accessed 
+specifically by this application.  As a free (\FAIR{}) alternative, 
+authors also often create web-based map displays, where base maps and 
+domain-specific data layers can be superimposed with only a few 
+lines of \JavaScript{} code.}
+
+\p{The problem with web-based maps is that merging disparate \GIS{} data layers 
+is more difficult than create a display for a single data set; and, also, 
+navigation between browser maps and dataset record displays is harder 
+to implement.  On the desktop, modifying \ArcGIS{} directly is 
+infeasible.  Open-source alternatives such as \QGIS{} are available, 
+but they are not well suited for domain-specific data profiles.  
+For example, \QGIS{} only allows users to examine \GIS{} records 
+when transformed to the columnar formats specific to digital 
+maps, which is often much different than the 
+information's internal structure.}
+
+\p{\mic{}  In lieu of an open-source \GIS{} \textit{application}, a \FAIR{}data grid 
+should provide \GIS{} \textit{components} for reuse by individual publications.  
+Here, Figures~\ref{fig:ss8} and \ref{fig:car} are taken from ProPublica 
+reporting about pollution.  In the latter example ProPublica provides 
+maps centered at regions with (apparently) elevated environmental-health 
+risks, but epidemioligical and contamination data is not directly 
+included, although (as in Figure~\ref{fig:car}) researchers can locate related 
+data sets elsewhere.  In an academic publication, authors might wish to 
+build an integrated map with attribute layers reflecting 
+\textit{both} contamination (toxic release; carcinogen) and 
+public health (cancer diagnoses; mortality rates) data sets.}
+
+\p{For publications on a \FAIR{} research grid, the grid itself 
+could provide a skeletal \GIS{} microcomponent that authors 
+may complete with their project-specific information.  
+Such a component would feature a window showing base-map 
+layers alongside \GIS{} point- or region-locations using 
+icons or coloration to signal data points or categories.  
+The display should be annotated as a multimedia resources, 
+cross-referenced with associated publications, by analogy 
+to how an iterative display of \textit{in silico} simulations 
+functions (similar to videos) as multimedia content as in the 
+previous use-case.}
+
+\p{When implemented as a microcomponent, such a map display would 
+have control over context menus and other features for 
+navigating between \GIS{} and data-record views.  
+Moreover, the component could be embedded in software specific 
+to the disciplines being integrated --- for example, 
+embedded simultaneously in a hospital consortium 
+\EMR{} system (suppose a clinical collaboration adopts a program 
+to study correlations between public and environmental health) 
+and in cheminformatics applications (e.g., to investigate 
+biochemical properties of hazardous compounds through 
+molecular visualization, biosimulations, etc.).}
+  
+
+%\item[Curating Corpora of Linguistics Examples]
+
+\begin{description}
 
 \item[A Modular EMR System]  At the basis of any Clinical or Hospital Information 
 System is a collection of \EMR{} \q{forms} (in common usage, an 
@@ -1630,7 +1723,7 @@ text-entry areas and/or drop-down selectors so that
 someone (with proper authentication) could modify as well as 
 view the form's contents.
 
-In this sense, \GUI{} forms are not grid assets \textit{per se}, 
+\pseudoIndent{} In this sense, \GUI{} forms are not grid assets \textit{per se}, 
 but they have many similar qualities from a microcomponent 
 viewpoint.  Individual forms are largely autonomous, each 
 one's contents not intrinsically dependent on anothers.  
@@ -1639,10 +1732,10 @@ patients' personal details needs to be synchronized.
 Nonetheless, it is certainly possible to initialize forms 
 with mockup data for development and pedagogical purposes.
 
-Meanwhile, \EMR{} technology does link up with bonafide grid 
+\pseudoIndent{} Meanwhile, \EMR{} technology does align with bonafide grid 
 applications in some contexts.  For example, clinical 
 trial management software, as well as diagnostic technology, 
-may involve patient and cohort reports structurally 
+has patient and cohort reports structurally 
 similar to \EMR{} forms --- and, if translationally the 
 research yields concrete benefits, some version 
 of those reports may indeed become \EMR{} records 
@@ -1656,7 +1749,9 @@ migrate to a new class of radiomic reports
 --- thereby integrated with \EMR{} systems --- under 
 translational deployment.     
 
-\counterex{} Several open-source \EMR{} and Hospital 
+\end{description}
+
+\p{\counterex{} Several open-source \EMR{} and Hospital 
 Information Systems libraries provide a good reference-point 
 for analyzing software implementations.  These components 
 are especially important for patient care in \q{under-resourced} 
@@ -1673,9 +1768,10 @@ desktop-oriented and designed to operate despite
 intermittent (or nonexistent) internet access, 
 which can benefit communities with spotty web 
 connections and also clinics operating 
-under emergency-response conditions.
+under emergency-response conditions.}
 
-\pseudoIndent{} Taking FreeMedForms and OpenHospital as 
+\p{Taking FreeMedForms and OpenHospital 
+(see the left part of Figure~\ref{fig:oh}) as 
 examples, one noteworthy issue is that of 
 \textit{internal} dependencies.  Principles of \FAIR{} grids 
 should emphasize \textit{external} dependencies, but 
@@ -1686,9 +1782,9 @@ any \Java{} or \Cpp{} developer would counsel that applications
 should not be \textit{crashed} by faulty database connections 
 (database configuration can be notoriously complicated).  
 Unfortunately, neither FreeMedForms nor OpenHospital appear 
-to be capable of operating around a missing \SQL{} connection. 
+to be capable of operating around a missing \SQL{} connection.}
 
-\pseudoIndent{} Another issue evident with FreeMedForms 
+\p{Another issue evident with FreeMedForms 
 is an overreliance on plugin architecture.  In principle, 
 projects that concentrate much of their implementations 
 within semi-autonomous plugins have proper, flexible 
@@ -1697,9 +1793,9 @@ as a plugin has the opposite effect, because the entire
 plugin architecture becomes an internal dependency 
 upon which all components rest.  A simple error in the 
 build workflow, or rearranging folders from one version 
-to the next, can make plugin-dependent code unusable.
+to the next, can make plugin-dependent code unusable.}
 
-\mic{} A \FAIR{} grid approach to \EMR{}s would 
+\p{\mic{} A \FAIR{} grid approach to \EMR{}s would 
 recognize that forms have use-cases even in the 
 actual data.  Simply previewing a form with no 
 information at all --- fields left blank or 
@@ -1711,9 +1807,9 @@ populated with fiat sample data for testing and
 documentation purposes.  As a workaround for broken 
 database connections, local filesystem-based persistence 
 could be employed to track a few records for users 
-who are first learning how to use the software.
+who are first learning how to use the software.}
 
-\pseudoIndent{} The facets in which forms are \textit{not} autonomous 
+\p{The facets in which forms are \textit{not} autonomous 
 are those involving real-life patients, as well as 
 interconnections between \EMR{} varieties (from 
 lab results to inpatient equipment readings, for example).  
@@ -1736,9 +1832,9 @@ study this application in an intuitive manner; in \Cpp{},
 say, there should be exactly one \textbf{main.cpp} file, 
 or at least an obvious folder location where that file 
 is understood to be a starting-point for viewing 
-essential \EMR{} types.
+essential \EMR{} types.}
 
-\pseudoIndent{} Where plugins \textit{should} be used is 
+\p{Where plugins \textit{should} be used is 
 to allow third-party developers to extend and fine-tune the 
 system for an individual institution.  The digital 
 portions of projects such as clinical trials, community 
@@ -1759,10 +1855,8 @@ according to systemwide protocols requires supporting
 code more detailed than just the basic \textbf{QMenu}/\textbf{QAction} 
 mechanism from \Qt{}.  In this sense, balancing 
 component autonomy with systemwide protocols is a concern 
-common to \EMR{}s and \FAIR{} microcomponent grids.   
+common to \EMR{}s and \FAIR{} microcomponent grids. 
 }
-
-\end{description}
 
 \clearpage{}
 
