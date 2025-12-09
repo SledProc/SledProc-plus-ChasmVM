@@ -1277,6 +1277,45 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
  {{\fontsize{7}{5}\selectfont{}\hspace{-.5pt}#1}};}}
 
 
+
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+\definecolor{ru}{RGB}{199, 99, 4}
+\definecolor{bl}{RGB}{9, 99, 194}
+
+
+\newcommand\reduline{\bgroup\markoverwith
+{\textcolor{ru!30}{\rule[-0.25ex]{2pt}{0.4pt}}}\ULon}
+
+\newcommand{\ruuline}[1]{\reduline{#1}
+\llap{\textcolor{ru!60}{\uline{\phantom{#1}}}}%
+}
+
+
+
+\newcommand\blueuline{\bgroup\markoverwith
+{\textcolor{bl!30}{\rule[-0.25ex]{2pt}{0.4pt}}}\ULon}
+
+\newcommand{\buuline}[1]{\blueuline{#1}
+\llap{\textcolor{bl!60}{\uline{\phantom{#1}}}}%
+}
+
+
+%\newcommand{\ruuline}[1]{\myuuline{#1}}
+
+
+\usepackage[letterspace=115]{microtype}
+
+
 %\usepackage{amssymb}
 
 %\usepackage{amsmath}%

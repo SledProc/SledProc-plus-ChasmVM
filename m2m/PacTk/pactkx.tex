@@ -1427,7 +1427,8 @@ via the grid, and that their primary reason for doing so is
 because the software encapsulates novel research: 
 quantitative or qualitative (e.g., agent-based) simulations, 
 \q{in silico} experiments, analysis of newly-available empirical data, 
-algorithmically generated graphics, and so forth.  In some instances, code packages may be downloaded and run privately, 
+algorithmically generated graphics, and so forth.  In some instances, 
+code packages may be downloaded and run privately, 
 e.g., on a scientist's own computer.  In other cases, the code 
 specifically requires special hardware (e.g., supercomputing/massive 
 parallelization) and a grid enables researchers to execute remotely, 
@@ -1487,7 +1488,12 @@ text discussions featured in document manuscripts.}
 with \q{counter-examples} that discuss lacunae 
 in \textit{existing} implementations of research networks.}
 
-\newcommand{\counterx}[1]{\vspace{-1em}\textcolor{red!30!black}{#1}}
+\colorlet{\ygr}{yellow!40!gray}
+
+\newcommand{\ygrbox}[1]{\colorbox{ygr!10}{#1}}
+
+\newcommand{\counterx}[1]{\vspace{-1em}\textcolor{red!30!black}{\ygrbox{%
+{\fontfamily{pbk}\fontsize{9}{9}\selectfont\textls{\ruuline{#1}}}}}\hspace{3pt}}
 
 \newcommand{\counterex}{\counterx{Counterexample}}
 
@@ -1498,9 +1504,10 @@ in \textit{existing} implementations of research networks.}
 %\newcommand{\counterex}{Counterexample}
 
 
-\newcommand{\micf}[1]{\textcolor{blue!30!black}{#1}}
+\newcommand{\micf}[1]{\textcolor{blue!30!black}{\ygrbox{%
+{\fontfamily{pbk}\fontsize{9}{9}\selectfont\textls{\buuline{#1}}}}}\hspace{3pt}}
 
-\newcommand{\mic}{\micf{A Microcomponents Alaternative}}
+\newcommand{\mic}{\micf{A Microcomponents Alternative}}
 
 
 \begin{description}
@@ -1615,11 +1622,12 @@ be annotated on \Cpp{} files directly and
 then indexed when the overall package is 
 deposited on a \FAIR{} grid.} 
 
+\vspace*{5pt}
  
 \begin{description}
 
 \item[GIS Attribute Layers Reflecting Multiple Scientific Disciplines]   Digital 
-maps are an obvious example of cross-disciplinary integration, because 
+maps are an obvious example of cross-disci\-plinary integration, because 
 disparate data sets can share a common reference point vis-\`a-vis 
 latitude and longitude coordinates.  Public and environmental 
 health is a case in point: such information as mortality 
@@ -1627,8 +1635,7 @@ rates and cancer diagnoses may be cross-referenced with data
 tracking environmental contamination (compiled either 
 via testing air, soil, or water samples or by self-reporting 
 from companies that use or transport hazardous materials).  
-
-\pseudoIndent{} To visualize statistical correlations between these data categories, 
+To visualize statistical correlations between these data categories, 
 a good starting-point would be viewing all information together 
 superimposed on a \GIS{} display.  At the same time, rigorous 
 examination of the underlying data should not depend on visual 
@@ -1648,6 +1655,7 @@ or \q{attribute} data in systematic ways.
 
 \end{description}
 
+\vspace*{5pt}
 
 \p{\counterexs{}  The preeminent commercial digitam cartography software is 
 \ArcGIS{}, and many geospatial data sets are designed to be accessed 
@@ -1667,13 +1675,15 @@ when transformed to the columnar formats specific to digital
 maps, which is often much different than the 
 information's internal structure.}
 
+\vspace*{5pt}
+
 \p{\mic{}  In lieu of an open-source \GIS{} \textit{application}, a \FAIR{}data grid 
 should provide \GIS{} \textit{components} for reuse by individual publications.  
 Here, Figures~\ref{fig:ss8} and \ref{fig:car} are taken from ProPublica 
 reporting about pollution.  In the latter example ProPublica provides 
 maps centered at regions with (apparently) elevated environmental-health 
 risks, but epidemioligical and contamination data is not directly 
-included, although (as in Figure~\ref{fig:car}) researchers can locate related 
+included, although (as in the bottom portion of Figure~\ref{fig:car}) researchers can locate related 
 data sets elsewhere.  In an academic publication, authors might wish to 
 build an integrated map with attribute layers reflecting 
 \textit{both} contamination (toxic release; carcinogen) and 
@@ -1689,9 +1699,7 @@ The display should be annotated as a multimedia resources,
 cross-referenced with associated publications, by analogy 
 to how an iterative display of \textit{in silico} simulations 
 functions (similar to videos) as multimedia content as in the 
-previous use-case.}
-
-\p{When implemented as a microcomponent, such a map display would 
+previous use-case.  When implemented as a microcomponent, such a map display would 
 have control over context menus and other features for 
 navigating between \GIS{} and data-record views.  
 Moreover, the component could be embedded in software specific 
@@ -1705,6 +1713,9 @@ molecular visualization, biosimulations, etc.).}
   
 
 %\item[Curating Corpora of Linguistics Examples]
+
+\vspace*{4pt}
+\enlargethispage{4pt}
 
 \begin{description}
 
@@ -1751,7 +1762,9 @@ translational deployment.
 
 \end{description}
 
-\p{\counterex{} Several open-source \EMR{} and Hospital 
+\vspace*{5pt}
+
+\p{\counterexs{} Several open-source \EMR{} and Hospital 
 Information Systems libraries provide a good reference-point 
 for analyzing software implementations.  These components 
 are especially important for patient care in \q{under-resourced} 
@@ -1767,17 +1780,17 @@ in October 2025).  All of these libraries are
 desktop-oriented and designed to operate despite 
 intermittent (or nonexistent) internet access, 
 which can benefit communities with spotty web 
-connections and also clinics operating 
+connections, and also clinics operating 
 under emergency-response conditions.}
 
 \p{Taking FreeMedForms and OpenHospital 
-(see the left part of Figure~\ref{fig:oh}) as 
+(left part of Figure~\ref{fig:oh}) as 
 examples, one noteworthy issue is that of 
-\textit{internal} dependencies.  Principles of \FAIR{} grids 
-should emphasize \textit{external} dependencies, but 
-projects should be designed around minimizing internal-dependency 
-complications as well.  For example, both FreeMedForms and OpenHospital 
-are build around \SQL{} databases.  That's to be expecte, but 
+\textit{internal} dependencies.  Principles of \FAIR{}data 
+address \textit{external} dependencies, but 
+internal-dependency complications should be minimized  
+as well.  For example, both FreeMedForms and OpenHospital 
+are build around \SQL{} databases.  That's to be expected, but 
 any \Java{} or \Cpp{} developer would counsel that applications 
 should not be \textit{crashed} by faulty database connections 
 (database configuration can be notoriously complicated).  
@@ -1794,6 +1807,8 @@ plugin architecture becomes an internal dependency
 upon which all components rest.  A simple error in the 
 build workflow, or rearranging folders from one version 
 to the next, can make plugin-dependent code unusable.}
+
+\vspace*{5pt}
 
 \p{\mic{} A \FAIR{} grid approach to \EMR{}s would 
 recognize that forms have use-cases even in the 
@@ -1820,12 +1835,15 @@ specific type of \EMR{} (e.g., if they wish
 to create a similar form for use during a clinical trial).  
 In other cases, users could be offerred at least a small 
 collection of particularly important forms, which they 
-could use for tutorials and other exploratory contexts.  
+could use for tutorials and other exploratory contexts 
+(imagine the scenario where a HospitalRun administrator 
+seeks to evaluate still-maintained alternatives; part of the 
+comparison is applications' \q{look and feel,} which is data-agnostic).    
 Any \EMR{} system should have a collection of basic 
 controls that are \q{core} components built alongside 
 the main non-\GUI{} logic (\textit{not} as plugins), 
 and there should be one clearly identified primary 
-application which is essentially a container for those 
+application that is essentially a container for those 
 core components, with users being able to choose one 
 in particular.  Third-party developers should find and 
 study this application in an intuitive manner; in \Cpp{}, 
@@ -1834,7 +1852,7 @@ or at least an obvious folder location where that file
 is understood to be a starting-point for viewing 
 essential \EMR{} types.}
 
-\p{Where plugins \textit{should} be used is 
+\p{Where a plugin system \textit{should} be adopted is 
 to allow third-party developers to extend and fine-tune the 
 system for an individual institution.  The digital 
 portions of projects such as clinical trials, community 
@@ -1853,7 +1871,7 @@ for such modularization to proceed without dedicated
 effort; for example, implementing context menus 
 according to systemwide protocols requires supporting 
 code more detailed than just the basic \textbf{QMenu}/\textbf{QAction} 
-mechanism from \Qt{}.  In this sense, balancing 
+mechanisms from \Qt{}.  In this sense, balancing 
 component autonomy with systemwide protocols is a concern 
 common to \EMR{}s and \FAIR{} microcomponent grids. 
 }
