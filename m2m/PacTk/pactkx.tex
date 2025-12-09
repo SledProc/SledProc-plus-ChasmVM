@@ -302,7 +302,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=17{
+\ifnum\value{page}=18{
 \AtTextLowerLeft{
 \hspace{266pt}\raisebox{-27pt}{%  
 {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
@@ -1499,14 +1499,140 @@ supplemental materials link to the video in its entirety.
 The video itself records the output of a particular run of 
 the simulation, with a given set of initial conditions.
 
-\pseudoIndent{} 
+\newcommand{\counterx}[1]{\textcolor{red!30!black}{#1}}
+
+\newcommand{\counterex}{\counterx{Counterexample}}
+\newcommand{\counterexs{\counterx{Counterexamples}}
+
+%\newcommand{\counterex}{Counterexample}
+
+
+\newcommand{\micf}[1]{\textcolor{blue!30!black}{#1}}
+
+\newcommand{\mic}{\micf{A Microcomponents Alaternative}}
+
+\pseudoIndent{} When reaching that point in the manuscript, 
+the first thing someone might want to do is watch the video.  
+It is entirely possible for \PDF{} viewers to include 
+video-playback capabilities, even if few currently 
+do.  A \FAIR{} grid could well include a \PDF{} 
+application with requisite multimedia functionality.  
+Meanwhile, interested readers could also wish to 
+examine the computer code which generated that 
+video.  Specifically, the video itself is merely 
+a recording of simulation output (hopefully unedited, 
+for data-transparency reasons).  It should 
+be relatively easy for users to examine \textit{both} 
+the video and the \textit{in silico} run that produces it.
+
+\counterex{} The graphic pictured in Figure~\ref{fig:pcbi} is taken 
+from a Computational Biology journal; the relevant article 
+introduces \CHASTE{} (Cancer, Heart And Soft Tissue Environment), a 
+simulation framework written in \Cpp{}.  Switching from 
+the \PDF{} view to the relevant code and video is a tedious 
+process: readers need to scroll to a \q{supplemental materials} 
+section to download the \textbf{.avi} files, and manually 
+find and launch the movies through a media player (this 
+has no bearing on \CHASTE{} as an important research tool; 
+interop with text documents is as much the responsibility 
+of publishers --- PlosOne in this case --- as scientific code).
+
+\pseudoIndent{} More substantially, the process of actually 
+identifying those components responsible for the 
+video's content is convolution, even after a reader 
+obtains the relevant source code.  The \CHASTE{} package 
+generates video files circuitously, and there is not 
+straightforward documentation of what steps someone 
+might take the reproduce the published video from the 
+specific source files that run the depicted 
+simulation.  Moreover, neither \CHASTE{} itself nor 
+the project-specific simulation package includes a 
+specific \GUI{} component whose role is to display 
+\CHASTE{} simulations directly.  As a consequence, 
+actually generating a viewable simulation that 
+mimics the video requires detailed examination of the 
+\CHASTE{} source code and filesytem layout.
+
+\mic{} According to \FAIR{} standards, the process of 
+switching between reading \textit{about} the simulation 
+in a \PDF{} publication and \textit{viewing} the simulation 
+should occur as seamlessly as possible.  One obvious step 
+in this direction is to provision the \PDF{} viewer 
+with a video player.  For example, the player could be 
+launched by selecting such an action from a context 
+menu activated with the cursor over the graphic 
+showing one of the video's frames.
+
+Once the actual source code is downloaded, \FAIR{} principles suggest 
+that (1) there should be instructions directly addressing how 
+to find and run the code specifically associated with the 
+referenced video; and (2) there should be a single \GUI{} 
+class and component whose specific purpose is to display 
+(visuals of) simulations of the relevant kind.
+
+More precisely, notice that there are several interrelated assets 
+which could all be grid-hosted and indexed: the video; the 
+\GUI{} class (plus relevant \textbf{.cpp} files) implementing 
+the window which actually shows the graphics it captures, both the 
+overall window (presumably with various navigation and configuration 
+controls) and the specific \q{widget} whose display directly 
+yields the video feed; and the \Cpp{} code for the 
+simulations \q{business logic} (in Figure~\ref{fig:pcbi}, 
+this code performs calculations like computing iteration 
+updates and preparing values for a differential equation solver).  
+There may also be a separate \GUI{} window specifically 
+dedicated to showing the simulation's initial parameters.  
+
+Such interrelationships should be noted on a multimedia 
+grid --- if the video file itself is a nanopublication, 
+independently indexable and citeable, certainly the same 
+applies to the \GUI{} window which it records.  
+But these connections are more substantial than 
+just grid metadata.  Interdependent components 
+should have front-ends that are connected accordingly; 
+for instance, context menus could allow users to navigate 
+from the simulation display \GUI{} to a video player and 
+vice-versa.  Similarly, context menus should launch a 
+separate window showing initial values (as well 
+as model metadata, potentially) in both contexts.  
   
+In terms of search and indexing, all four components 
+can be linked to any publication which discusses that 
+specific video or includes illustrations derived 
+therefrom.  Terms specific to the computer 
+code should be indexed in their source-file 
+form (e.g., \q{DeltaNotchOdeSystem}) alongside 
+a natural-language equivalent (\q{Delta Notch Ode System}) 
+and related terms (Notch signaling pathway, Ordinary 
+Differential Equation).  Such semantics could 
+be annotated on the \Cpp{} files directly and 
+then read/indexed when the overall package is 
+deposited on a \FAIR{} grid.  
+
+ 
 
 \item[GIS Attribute Layers Reflecting Multiple Scientific Disciplines]
 
 \item[Curating Corpora of Linguistics Examples]
 
-\item[A Modular EMR System]
+\item[A Modular EMR System]  At the basis of any Clinical or Hospital Information 
+System is a collection of \EMR{} \q{forms} (in common usage, an 
+electronic \textit{medical} record is one primarily used internally 
+in a single institution or medical practice, whereas an electronic 
+\textit{health} record --- \EHR{} --- is more \q{longitudinal} 
+and can share data about a single patient \textit{between} care 
+locations).  The term \q{form} is informal, and \EMR{} displays 
+are not exactly like web forms, for example, but the 
+basic idea is the same: forms have a collection of labeled 
+data fields, potentially alongside areas for graphics as well 
+as navigation links to other forms.  Typically forms have 
+text-entry areas and/or drop-down selectors so that 
+someone (with proper authentication) could modify as well as 
+view the form's contents.
+
+In this sense, \GUI{} forms are not grid assets \textit{per se}, 
+but they have many similar qualities from a microcomponent 
+viewpoint.       
 
 
 
