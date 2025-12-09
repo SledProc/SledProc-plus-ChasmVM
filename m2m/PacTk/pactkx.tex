@@ -302,7 +302,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=18{
+\ifnum\value{page}=19{
 \AtTextLowerLeft{
 \hspace{266pt}\raisebox{-27pt}{%  
 {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
@@ -1656,8 +1656,111 @@ migrate to a new class of radiomic reports
 --- thereby integrated with \EMR{} systems --- under 
 translational deployment.     
 
-\counterex{} 
+\counterex{} Several open-source \EMR{} and Hospital 
+Information Systems libraries provide a good reference-point 
+for analyzing software implementations.  These components 
+are especially important for patient care in \q{under-resourced} 
+communities, where the option of selecting 
+open-source environments (such as BioLinux) can 
+eliminate license fees (a considerable savings 
+in hospitals with a large staff).  Among extant 
+projects, FreeMedForms (\Cpp{}) and OpenHospital 
+(\Java{}) are representative examples, embodying 
+years of development effots by large programming teams 
+(an analogous project, HospitalRun, was discontinued 
+in October 2025).  All of these libraries are 
+desktop-oriented and designed to operate despite 
+intermittent (or nonexistent) internet access, 
+which can benefit communities with spotty web 
+connections and also clinics operating 
+under emergency-response conditions.
 
+\pseudoIndent{} Taking FreeMedForms and OpenHospital as 
+examples, one noteworthy issue is that of 
+\textit{internal} dependencies.  Principles of \FAIR{} grids 
+should emphasize \textit{external} dependencies, but 
+projects should be designed around minimizing internal-dependency 
+complications as well.  For example, both FreeMedForms and OpenHospital 
+are build around \SQL{} databases.  That's to be expecte, but 
+any \Java{} or \Cpp{} developer would counsel that applications 
+should not be \textit{crashed} by faulty database connections 
+(database configuration can be notoriously complicated).  
+Unfortunately, neither FreeMedForms nor OpenHospital appear 
+to be capable of operating around a missing \SQL{} connection. 
+
+\pseudoIndent{} Another issue evident with FreeMedForms 
+is an overreliance on plugin architecture.  In principle, 
+projects that concentrate much of their implementations 
+within semi-autonomous plugins have proper, flexible 
+modularization.  However, designing \textit{everything} 
+as a plugin has the opposite effect, because the entire 
+plugin architecture becomes an internal dependency 
+upon which all components rest.  A simple error in the 
+build workflow, or rearranging folders from one version 
+to the next, can make plugin-dependent code unusable.
+
+\mic{} A \FAIR{} grid approach to \EMR{}s would 
+recognize that forms have use-cases even in the 
+actual data.  Simply previewing a form with no 
+information at all --- fields left blank or 
+completed with default values --- can help 
+a user understand how the form is organized, 
+and become familiar with the window's \GUI controls.  
+For more substantial work, \EMR{}s could be 
+populated with fiat sample data for testing and 
+documentation purposes.  As a workaround for broken 
+database connections, local filesystem-based persistence 
+could be employed to track a few records for users 
+who are first learning how to use the software.
+
+\pseudoIndent{} The facets in which forms are \textit{not} autonomous 
+are those involving real-life patients, as well as 
+interconnections between \EMR{} varieties (from 
+lab results to inpatient equipment readings, for example).  
+Outside of these details, forms can be implemented 
+as individual standalone programs; in some contexts 
+a user or researcher might be interested in just one 
+specific type of \EMR{} (e.g., if they wish 
+to create a similar form for use during a clinical trial).  
+In other cases, users could be offerred at least a small 
+collection of particularly important forms, which they 
+could use for tutorials and other exploratory contexts.  
+Any \EMR{} system should have a collection of basic 
+controls that are \q{core} components built alongside 
+the main non-\GUI{} logic (\textit{not} as plugins), 
+and there should be one clearly identified primary 
+application which is essentially a container for those 
+core components, with users being able to choose one 
+in particular.  Third-party developers should find and 
+study this application in an intuitive manner; in \Cpp{}, 
+say, there should be exactly one \textbf{main.cpp} file, 
+or at least an obvious folder location where that file 
+is understood to be a starting-point for viewing 
+essential \EMR{} types.
+
+\pseudoIndent{} Where plugins \textit{should} be used is 
+to allow third-party developers to extend and fine-tune the 
+system for an individual institution.  The digital 
+portions of projects such as clinical trials, community 
+outreach, standardized treatment protocols, patient-centered 
+approaches, and so forth, should be implemented through 
+collections of special-purpose \EMR{} forms which are 
+coded using existing forms as reference examples.  
+When properly tested and vetted, new \EMR{} types should 
+be introduced into the system using semantic annotations 
+and interface-design conventions such that the basic 
+usage patterns (context menus, cross-component navigation, 
+user authentication, etc.) are consistent across 
+all microcomponents.  This may seem self-evident, but 
+existing frameworks do not provide sufficient support 
+for such modularization to proceed without dedicated 
+effort; for example, implementing context menus 
+according to systemwide protocols requires supporting 
+code more detailed than just the basic \textbf{QMenu}/\textbf{QAction} 
+mechanism from \Qt{}.  In this sense, balancing 
+component autonomy with systemwide protocols is a concern 
+common to \EMR{}s and \FAIR{} microcomponent grids.   
+}
 
 \end{description}
 
