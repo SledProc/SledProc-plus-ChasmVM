@@ -302,7 +302,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=16{
+\ifnum\value{page}=17{
 \AtTextLowerLeft{
 \hspace{266pt}\raisebox{-27pt}{%  
 {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
@@ -1412,6 +1412,109 @@ as microcomponent examples}
 \clearpage{}
 
 \setlength{\abovecaptionskip}{9pt}
+
+\vspace*{-6em}
+\sstitle{Grid Architecture According to FAIR Principles}
+
+\vspace*{15pt}
+
+\p{Grid Computing is an important part of contemporary scientific 
+research.  In general, a \q{grid} --- in contrast to a 
+just data-sharing network --- combines data, code, and multimedia 
+content.  More specifically, a grid is designed with the assumption 
+that users will execute software packages which are accessible 
+via the grid, and that their primary reason for doing so is 
+because the software encapsulates novel research: 
+quantitative or qualitative (e.g., agent-based) simulations, 
+\q{in silico} experiments, analysis of newly-available empirical data, 
+algorithmically generated graphics, and so forth.}
+
+\p{In some instances, code packages may be downloaded and run privately, 
+e.g., on a scientist's own computer.  In other cases, the code 
+specifically requires special hardware (e.g., supercomputing/massive 
+parallelization) and a grid enables researchers to execute remotely, 
+on computing nodes that have the requisite capabilities.}  
+
+\p{It would be a mistake, however, to assume that grid computing 
+necessarily involves technologies that require atypical 
+execution environments.  Instead, grid principles can 
+overlap with \FAIR{} priorities, because openly sharing 
+simulations and analyses is one dimension of research 
+transparency.  Given a simulation with specific 
+initial parameters, for example, any interested 
+scientist should be able to execute the code 
+themselves and achieve the same results (or, 
+if probabilistic/stochastic methods are involved, at least 
+\textit{similar} results).  Moreover, variations 
+in initial conditions should affect simulation 
+output in predictable (or at least explainable) ways.}
+
+\p{There is also a pedagogical value in running and examining 
+simulation and/or analytic code.  Academic papers often 
+present research methods in abstract, mathematical terms; 
+observing visuals and experimenting with code 
+parameters can help make the underlying research 
+more understandable.  This inures to the benefit 
+of scientists who wish to assess (and perhaps 
+replicate) published research, as well as students 
+who might use specific experiments or investigations 
+as tools to learn about their ambient disciplines.} 
+
+\p{With this in mind, we can formulate several 
+core principles of \q{\FAIR{}} grid computing, 
+including: \textbullet{} code packages hosted 
+on a grid should be designed with as few 
+mandatory external dependencies as possible; 
+\textbullet{} where a given package has software 
+or hardware requirements that are difficult to 
+satisfy, a simplified version should be made 
+available that would at least allow some 
+provisional learning and evaluation of published 
+results; \textbullet{} every effort should be 
+made to ensure that the software executes in a 
+usable fashion even in the absense of dependencies 
+or preconditions that held true for those developing 
+the code; and \textbullet{} there should be a 
+clear set of actions, with as few steps as 
+possible, allowing someone newly acquainted 
+with a grid-hosted package --- in particular, someone 
+who learns about the code from a technical publication 
+--- to obtain and execute the relevant code.  
+In particular, they should be able to build and 
+use the software in parallel with figures and 
+text discussions featured in document manuscripts.}
+
+\p{The following are several examples of how a properly 
+\FAIR{} grid might work, which are paired 
+with \q{counter-examples} that discuss lacunae 
+in \textit{existing} implementations of research networks.}
+
+\begin{description}
+
+\item[Computer Simulations and Videos]  A publication presents a 
+new \q{in silico} investigation, such as the simulation of 
+interrelated biological processes on a cellular or tissue scale.  
+The paper includes frames from a simulation video and 
+supplemental materials link to the video in its entirety.  
+The video itself records the output of a particular run of 
+the simulation, with a given set of initial conditions.
+
+\pseudoIndent{} 
+  
+
+\item[GIS Attribute Layers Reflecting Multiple Scientific Disciplines]
+
+\item[Curating Corpora of Linguistics Examples]
+
+\item[A Modular EMR System]
+
+
+
+
+\end{description}
+
+\clearpage{}
+
 
 \vspace*{-43pt}
 
