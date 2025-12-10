@@ -1321,11 +1321,21 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
    \item\relax}
   {\endlist}
 
+%\usepackage{colortbl}
+\usepackage{tabu}
+
+\definecolor{sb}{RGB}{199, 9, 114}
+
+\taburulecolor{sb!50}
+
+\setlength\tabcolsep{10pt}
+
 \usepackage{csquotes}
-\newenvironment{blockQuote}{\begin{displayquote}\begin{group}\fontfamily{pbk}\fontsize{9.5pt}{12pt}\selectfont}%
-{\end{group}\end{displayquote}}
+\newenvironment{blockQuote}{\begin{displayquote}\begin{group}%
+\begin{tabu}{|p{.98\textwidth}}\fontfamily{pbk}\fontsize{9.5pt}{12pt}\selectfont}%
+{\end{tabu}\end{group}\end{displayquote}}
 
-
+\newcommand{\citeref}[1]{{\fontfamily{qhv}\fontsize{10pt}{10pt}\selectfont #1}}
 
 %\usepackage{amssymb}
 
