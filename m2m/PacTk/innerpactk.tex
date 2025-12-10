@@ -1316,6 +1316,17 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \usepackage[letterspace=115]{microtype}
 
 
+\renewenvironment{quote}
+  {\small\list{}{\rightmargin=5pt \leftmargin=5pt}%
+   \item\relax}
+  {\endlist}
+
+\usepackage{csquotes}
+\newenvironment{blockQuote}{\begin{displayquote}\begin{group}\fontfamily{pbk}\fontsize{9.5pt}{12pt}\selectfont}%
+{\end{group}\end{displayquote}}
+
+
+
 %\usepackage{amssymb}
 
 %\usepackage{amsmath}%
