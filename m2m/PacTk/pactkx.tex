@@ -1297,7 +1297,7 @@ operations, authentication, component capabilities, etc.).
 \end{description}
 }
 
-\vspace*{-43pt}
+\vspace*{-52pt}
 
 
 \sstitle{PacTk's Proposed \q{FAIRdata Microcomponent Protocol} (FMCP)}
@@ -1332,15 +1332,15 @@ possible entries for this field without running
 the software or examining the \Java{} code directly).  
 There are also multiple actions users can perform 
 through this component, including finding a patient 
-id via their personal info; selecting a from a 
+id via their personal info; selecting dates from a 
 calendar display; and recording exam results 
 to a hospital database.  Although these logistic and semantic details may 
 be implicit in code documentation or user instructions, 
-\FMCP{} employs code annotations to specify this metadata 
+\FMCP{} would employ code annotations to specify this metadata 
 in a machine-readable fashion;  
 the entire software base can then have a single indexing 
 and search entry-point (e.g., a query for the 
-term \q{urinanalysis,} should match this microcomponent 
+term \q{urinanalysis} should match this microcomponent 
 as one option for the exam-type field).  In addition, 
 new microcomponents could be added to the hospital software 
 systematically.  Consider, for instance, that a more 
@@ -1359,13 +1359,13 @@ resource might be software specifically designed
 to analyze and display this data (on a digital map).  
 Such \GIS{} attribute layers have a domain-specific 
 nature that is difficult to accommodate with 
-generic software such as \textbf{ArcGIS}.  In particular, 
+generic software such as \ArcGIS{}.  In particular, 
 the \GIS{} data points will represent either incidents 
 (or measurements) of carcinogenic contamination or 
 cancer diagnoses (organized by tumor classification).  
 Apart from being governed by controlled vocabularies, 
 such data points would have distinct \GUI{} 
-requirements (Figure~\ref{fig:car}).  For instance, 
+requirements (Figure~\ref{fig:car} is an example).  For instance, 
 cancer varieties 
 can be a terminological bridge for multiple 
 data sets and leveraged via search \API{}s. 
@@ -1386,7 +1386,7 @@ may function as graphics displays properly indexed
 as multimedia content.  On the right in Figure~\ref{fig:oh} 
 is a screenshot from the Cancer Imaging Phenomics 
 Toolkit which has multiple data fields suitable 
-for \FMCP{} indexing, including textural segmentation 
+for proposed \FMCP{} indexing, including textural segmentation 
 and feature-extraction algorithms.  In addition, 
 the bioimage displays together with region-of-interest 
 markings may function as \q{nanopublication} resources 
@@ -1398,7 +1398,7 @@ graphics were obtained.}
 \enlargethispage{2em}
 \vspace{-17pt}
 
-\setlength{\abovecaptionskip}{2pt}
+\setlength{\abovecaptionskip}{6pt}
 
 \begin{figure}[h!]
 \hspace{-45pt}\raisebox{-6pt}{\includegraphics[page=53, scale=.56, trim=0 11cm 0 0, clip]{UserManual.pdf}}%
@@ -1424,9 +1424,10 @@ just data-sharing network --- combines data, code, and multimedia
 content.  More specifically, a grid is designed with the assumption 
 that users will execute software packages which are accessible 
 via the grid, and that their primary reason for doing so is 
+participating in large, decentralized computations, or 
 because the software encapsulates novel research: 
 quantitative or qualitative (e.g., agent-based) simulations, 
-\q{in silico} experiments, analysis of newly-available empirical data, 
+\q{in silico} experiments, analysis of new empirical data, 
 algorithmically generated graphics, and so forth.  In some instances, 
 code packages may be downloaded and run privately, 
 e.g., on a scientist's own computer.  In other cases, the code 
@@ -1439,7 +1440,8 @@ necessarily involves technologies that require atypical
 execution environments.  Instead, grid principles can 
 overlap with \FAIR{} priorities, because openly sharing 
 simulations and analyses is one dimension of research 
-transparency.  Given a simulation with specific 
+transparency; and replication is a form of 
+decentralization.  Given a simulation with specific 
 initial parameters, for example, any interested 
 scientist should be able to execute the code 
 themselves and achieve the same results (or, 
@@ -1450,12 +1452,12 @@ output in predictable (or at least explainable) ways.}
 
 \p{There is also a pedagogical value in running and examining 
 simulation and/or analytic code.  Academic papers often 
-present research methods in abstract, mathematical terms; 
+present research methods and theoretical models in abstract, mathematical terms; 
 observing visuals and experimenting with code 
 parameters can help make the underlying research 
 more understandable.  This inures to the benefit 
 of scientists who wish to assess (and perhaps 
-replicate) published research, as well as students 
+reproduce) published research, as well as students 
 who might use specific experiments or investigations 
 as tools to learn about their ambient disciplines.} 
 
@@ -1473,7 +1475,8 @@ results; \textb{} every effort should be
 made to ensure that the software executes in a 
 usable fashion even in the absence of dependencies 
 or preconditions that held true for those developing 
-the code; and \textb{} there should be a 
+the code; \textb{} grid collaborations should offer 
+replication-focused coding tools; and \makebox{\textb{} there} should be a 
 clear set of actions, with as few steps as 
 possible, allowing someone newly acquainted 
 with a grid-hosted package --- in particular, someone 
@@ -1514,13 +1517,13 @@ in \textit{existing} implementations of research networks.}
 
 \item[Computer Simulations and Videos]  A publication presents a 
 new \q{\textit{in silico}} investigation, such as the simulation of 
-interrelated biological processes on a cellular or tissue scale 
-(the paper includes frames from a simulation video and 
+interrelated biological processes on a cellular or tissue scale.
+(Assume that the paper includes frames from a simulation video and 
 supplemental materials link to the video in its entirety).
 The video itself records the output of a particular run of 
 the simulation, with a given set of initial conditions.
 When reaching that point in the manuscript, 
-the first thing someone might want to do is watch the video.  
+the first thing someone might want to do, naturally, is watch the video.  
 It is entirely possible for \PDF{} viewers to include 
 video-playback capabilities, even if few currently 
 do.  A \FAIR{} grid could well include a \PDF{} 
@@ -1549,11 +1552,11 @@ of publishers --- PLOS One in this case --- as scientific code).}
 
 \p{More substantially, the process of actually 
 identifying those components responsible for the 
-video's content is convolution, even after a reader 
+video's content is convoluted, even after a reader 
 obtains the relevant source code.  The \CHASTE{} package 
-generates video files circuitously, and there is not 
+generates video files circuitously, and there is no 
 straightforward documentation of what steps someone 
-might take the reproduce the published video from the 
+might take to reproduce the published video from the 
 specific source files that run the depicted 
 simulation.  Moreover, neither \CHASTE{} itself nor 
 the project-specific simulation package includes a 
@@ -1590,7 +1593,7 @@ the window which actually shows the graphics it captures, both the
 overall window (presumably with various navigation and configuration 
 controls) and the specific \q{widget} whose display directly 
 yields the video feed; and the \Cpp{} code for the 
-simulation's logic (in Figure~\ref{fig:pcbi}, 
+simulation's logic (in Figure~\ref{fig:pcbi}'s example, 
 this code performs calculations like iteration-step computations 
 and preparing values for a differential equation solver).  
 There may also be a separate \GUI{} window specifically 
@@ -1615,9 +1618,10 @@ specific video or includes illustrations derived
 therefrom.  Terms specific to the computer 
 code should be indexed in their source-file 
 form (e.g., \q{DeltaNotchOdeSystem}) alongside 
-a natural-language equivalent (\q{Delta Notch Ode System}) 
-and related terms (Notch signaling pathway, Ordinary 
-Differential Equation).  Such semantics could 
+a natural-language equivalent (\q{Delta Notch ODE System}) 
+and related terms (\textit{Notch signaling pathway}, 
+\textit{Ordinary 
+Differential Equation}).  Such semantics could 
 be annotated on \Cpp{} files directly and 
 then indexed when the overall package is 
 deposited on a \FAIR{} grid.} 
@@ -1636,14 +1640,14 @@ tracking environmental contamination (compiled either
 via testing air, soil, or water samples or by self-reporting 
 from companies that use or transport hazardous materials).  
 To visualize statistical correlations between these data categories, 
-a good starting-point would be viewing all information together 
+a good starting-point would be viewing all information together, 
 superimposed on a \GIS{} display.  At the same time, rigorous 
 examination of the underlying data should not depend on visual 
 judgments, but can be confirmed by analyzing data sets computationally; 
 for instance, quantitative methods could test whether there is an 
 above-chance correspondence between particular environmental 
 carcinogens and particular cancers.  For such research, users need 
-to navigate between map displays and digital \q{reports}, or 
+to navigate between map displays and digital \q{reports,} or 
 specialized windows for examining a cluster of interrelated 
 data points: meter readings for detecting a particular class 
 of chemicals at specific time intervals, say, or \q{toxic release} 
@@ -1665,7 +1669,7 @@ domain-specific data layers can be superimposed with only a few
 lines of \JavaScript{} code.}
 
 \p{The problem with web-based maps is that merging disparate \GIS{} data layers 
-is more difficult than create a display for a single data set; and, also, 
+is more difficult than creating a display for a single data set; and, also, 
 navigation between browser maps and dataset record displays is harder 
 to implement.  On the desktop, modifying \ArcGIS{} directly is 
 infeasible.  Open-source alternatives such as \QGIS{} are available, 
@@ -1673,14 +1677,14 @@ but they are not well suited for domain-specific data profiles.
 For example, \QGIS{} only allows users to examine \GIS{} records 
 when transformed to the columnar formats specific to digital 
 maps, which is often much different than the 
-information's internal structure.}
+information's internal structure.  Web maps, lacking multi-window display, tend to have a similar problem.}
 
 \vspace*{5pt}
 
 \p{\mic{}  In lieu of an open-source \GIS{} \textit{application}, a \FAIR{}data grid 
 should provide \GIS{} \textit{components} for reuse by individual publications.  
-Here, Figures~\ref{fig:ss8} and \ref{fig:car} are taken from ProPublica 
-reporting about pollution.  In the latter example ProPublica provides 
+Here in the current document, Figures~\ref{fig:ss8} and \ref{fig:car} are taken from ProPublica 
+reporting about pollution (from 2019 and 2021, respectively).  For the latter example, ProPublica provides 
 maps centered at regions with (apparently) elevated environmental-health 
 risks, but epidemiological and contamination data is not directly 
 included, although (as in the bottom portion of Figure~\ref{fig:car}) researchers can locate related 
@@ -1695,7 +1699,7 @@ may complete with their project-specific information.
 Such a component would feature a window showing base-map 
 layers alongside \GIS{} point- or region-locations using 
 icons or coloration to signal data points or categories.  
-The display should be annotated as a multimedia resources, 
+The display should be annotated as a multimedia resource, 
 cross-referenced with associated publications, by analogy 
 to how an iterative display of \textit{in silico} simulations 
 functions (similar to videos) as multimedia content as in the 
@@ -1736,12 +1740,12 @@ view the form's contents.
 
 \pseudoIndent{} In this sense, \GUI{} forms are not grid assets \textit{per se}, 
 but they have many similar qualities from a microcomponent 
-viewpoint.  Individual forms are largely autonomous, each 
+viewpoint.  Individual forms are largely autonomous: each 
 one's contents not intrinsically dependent on another's.  
 In a real clinical setting, of course, information such as 
-patients' personal details needs to be synchronized.  
-Nonetheless, it is certainly possible to initialize forms 
-with mockup data for development and pedagogical purposes.
+patients' personal details needs to be synchronized, so \EMR{} instances  
+are interdependent.  Nonetheless, it is certainly possible to initialize forms 
+with mockup data for development, testing, training, and pedagogical purposes.
 
 \pseudoIndent{} Meanwhile, \EMR{} technology does align with bonafide grid 
 applications in some contexts.  For example, clinical 
@@ -1816,7 +1820,7 @@ actual data.  Simply previewing a form with no
 information at all --- fields left blank or 
 completed with default values --- can help 
 a user understand how the form is organized, 
-and become familiar with the window's \GUI controls.  
+and become familiar with the window's \GUI{} controls.  
 For more substantial work, \EMR{}s could be 
 populated with fiat sample data for testing and 
 documentation purposes.  As a workaround for broken 
@@ -1835,7 +1839,7 @@ specific type of \EMR{} (e.g., if they wish
 to create a similar form for use during a clinical trial).  
 In other cases, users could be offered at least a small 
 collection of particularly important forms, which they 
-could use for tutorials and other exploratory contexts 
+could visit for tutorials and other exploratory contexts 
 (imagine the scenario where a HospitalRun administrator 
 seeks to evaluate still-maintained alternatives; part of the 
 comparison is applications' \q{look and feel,} which is data-agnostic).    
@@ -1844,8 +1848,8 @@ controls that are \q{core} components built alongside
 the main non-\GUI{} logic (\textit{not} as plugins), 
 and there should be one clearly identified primary 
 application that is essentially a container for those 
-core components, with users being able to choose one 
-in particular.  Third-party developers should find and 
+core components, with users being able to select and visit them 
+in turn.  Third-party developers should find and 
 study this application in an intuitive manner; in \Cpp{}, 
 say, there should be exactly one \textbf{main.cpp} file, 
 or at least an obvious folder location where that file 
@@ -1856,8 +1860,9 @@ essential \EMR{} types.}
 to allow third-party developers to extend and fine-tune the 
 system for an individual institution.  The digital 
 portions of projects such as clinical trials, community 
-outreach, standardized treatment protocols, patient-centered 
-approaches, and so forth, should be implemented through 
+outreach (e.g., specialized maternity, vaccination, or mental-health projects), 
+standardized treatment protocols, patient-centered 
+approaches, etc., should be implemented through 
 collections of special-purpose \EMR{} forms which are 
 coded using existing forms as reference examples.  
 When properly tested and vetted, new \EMR{} types should 
@@ -1867,13 +1872,13 @@ usage patterns (context menus, cross-component navigation,
 user authentication, etc.) are consistent across 
 all microcomponents.  This may seem self-evident, but 
 existing frameworks do not provide sufficient support 
-for such modularization to proceed without dedicated 
+for such modularization to occur absent concerted  
 effort; for example, implementing context menus 
 according to systemwide protocols requires supporting 
 code more detailed than just the basic \textbf{QMenu}/\textbf{QAction} 
 mechanisms from \Qt{}.  In this sense, balancing 
 component autonomy with systemwide protocols is a concern 
-common to \EMR{}s and \FAIR{} microcomponent grids. 
+common to \EMR{}s and to \FAIR{} microcomponents. 
 }
 
 \clearpage{}
