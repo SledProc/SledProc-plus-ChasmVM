@@ -583,7 +583,7 @@ r#  5889  119  29
 
 --- Sentence//end
 id: 30
-r#  6285  126  34
+r#  6288  126  34
 p: .
 t. 
 |   For our startup, our general
@@ -598,12 +598,12 @@ t.
 
 --- Sentence/switch
 id: 31
-r#  6286  126  35
+r#  6289  126  35
 
 
 --- Sentence//end
 id: 31
-r#  6521  129  62
+r#  6527  129  62
 p: .
 t. 
 |   Our theory is that grid-computing
@@ -613,7 +613,7 @@ t.
 
 --- Sentence/end 
 id: 31
-r#  6522  129  63
+r#  6528  129  63
 
 --- Paragraph/end 
 id: 12
@@ -622,16 +622,16 @@ y: N/A
 
 --- Paragraph/start
 id: 13
-r#  6524  131  1
+r#  6530  131  1
 
 
 --- Sentence/start
 id: 32
-r#  6524  131  1
+r#  6530  131  1
 
 --- Sentence//end
 id: 32
-r#  6713  133  54
+r#  6719  133  54
 p: .
 t. 
 |  Unfortunately, the Covid pandemic made it difficult to continue unfunded
@@ -641,12 +641,12 @@ t.
 
 --- Sentence/switch
 id: 33
-r#  6714  133  55
+r#  6720  133  55
 
 
 --- Sentence//end
 id: 33
-r#  7006  138  27
+r#  7012  138  27
 p: .
 t. 
 |   During this
@@ -659,12 +659,12 @@ t.
 
 --- Sentence/switch
 id: 34
-r#  7007  138  28
+r#  7013  138  28
 
 
 --- Sentence//end
 id: 34
-r#  7202  141  23
+r#  7208  141  23
 p: .
 t. 
 |   In addition to science technology (as
@@ -675,12 +675,12 @@ t.
 
 --- Sentence/switch
 id: 35
-r#  7203  141  24
+r#  7209  141  24
 
 
 --- Sentence//end
 id: 35
-r#  7417  144  37
+r#  7423  144  37
 p: .
 t. 
 |   During the pandemic, we essentially
@@ -691,12 +691,12 @@ t.
 
 --- Sentence/switch
 id: 36
-r#  7418  144  38
+r#  7424  144  38
 
 
 --- Sentence//end
 id: 36
-r#  7590  146  76
+r#  7596  146  76
 p: .
 t. 
 |   In some cases we built custom
@@ -705,7 +705,7 @@ t.
 
 --- Sentence/end 
 id: 36
-r#  7591  146  77
+r#  7597  146  77
 
 --- Paragraph/end 
 id: 13
@@ -714,16 +714,16 @@ y: N/A
 
 --- Paragraph/start
 id: 14
-r#  7595  148  1
+r#  7601  148  1
 
 
 --- Sentence/start
 id: 37
-r#  7595  148  1
+r#  7601  148  1
 
 --- Sentence//end
 id: 37
-r#  7983  153  25
+r#  7989  153  25
 p: .
 t. 
 |  I received a book contract and some compensation for working on legal documents,
@@ -736,12 +736,12 @@ t.
 
 --- Sentence/switch
 id: 38
-r#  7984  153  26
+r#  7990  153  26
 
 
 --- Sentence//end
 id: 38
-r#  8138  155  32
+r#  8144  155  32
 p: .
 t. 
 |   In exchange, she arranged for me to stay with a
@@ -751,12 +751,12 @@ t.
 
 --- Sentence/switch
 id: 39
-r#  8139  155  33
+r#  8145  155  33
 
 
 --- Sentence//end
 id: 39
-r#  8361  158  43
+r#  8367  158  43
 p: .
 t. 
 |   Recently my landlady sold her house,
@@ -766,7 +766,7 @@ t.
 
 --- Sentence/end 
 id: 39
-r#  8362  158  44
+r#  8368  158  44
 
 --- Paragraph/end 
 id: 14
@@ -775,16 +775,16 @@ y: N/A
 
 --- Paragraph/start
 id: 15
-r#  8366  160  1
+r#  8372  160  1
 
 
 --- Sentence/start
 id: 40
-r#  8366  160  1
+r#  8372  160  1
 
 --- Sentence//end
 id: 40
-r#  8602  163  31
+r#  8611  163  31
 p: .
 t. 
 |  Leveraging rent-free housing in exchange for in kind work isn't a
@@ -795,12 +795,12 @@ t.
 
 --- Sentence/switch
 id: 41
-r#  8603  163  32
+r#  8612  163  32
 
 
 --- Sentence//end
 id: 41
-r#  8813  166  59
+r#  8822  166  59
 p: .
 t. 
 |   Meanwhile, instead of one-off
@@ -811,12 +811,12 @@ t.
 
 --- Sentence/switch
 id: 42
-r#  8814  166  60
+r#  8823  166  60
 
 
 --- Sentence//end
 id: 42
-r#  8988  169  46
+r#  8997  169  46
 p: .
 t. 
 |   I have
@@ -826,8 +826,416 @@ t.
 
 --- Sentence/end 
 id: 42
-r#  8989  169  47
+r#  8998  169  47
 
 --- Paragraph/end 
 id: 15
+y: N/A
+
+
+--- Paragraph/start
+id: 16
+r#  9000  171  1
+
+
+--- Sentence/start
+id: 43
+r#  9000  171  1
+--- Paragraph/end 
+id: 16
+y: N/A
+
+
+--- Paragraph/start
+id: 17
+r#  9011  173  1
+
+
+--- Sentence/start
+id: 44
+r#  9011  173  1
+--- Paragraph/end 
+id: 17
+y: N/A
+
+
+--- Paragraph/start
+id: 18
+r#  9030  176  4
+
+
+--- Sentence/start
+id: 45
+r#  9030  176  4
+
+--- Sentence//end
+id: 45
+r#  9111  177  53
+p: .
+t. 
+|  \ghrule{}\Supplement{}A few brief comments about
+.  science and publishing technology, for clarification
+
+--- Sentence/end 
+id: 45
+r#  9112  177  54
+
+--- Paragraph/end 
+id: 18
+y: N/A
+
+
+--- Paragraph/start
+id: 19
+r#  9114  179  1
+
+
+--- Sentence/start
+id: 46
+r#  9114  179  1
+
+--- Sentence//end
+id: 46
+r#  9243  181  20
+p: .
+t. 
+|  Research networks or grids are an increasingly popular
+|  architecture for collaborative and decentralized
+.  science communities
+
+
+--- Sentence/switch
+id: 47
+r#  9244  181  21
+
+
+--- Sentence//end
+id: 47
+r#  9469  185  56
+p: .
+t. 
+|   Examples include the
+|  Cancer Bioinformatics Grid (caBIG),
+|  Data Infrastructure Building Blocks (from the
+|  National Science Foundation), Open Science Grid (OSG),
+.  Worldwide LHC Computing Grid (WLCG), and many others
+
+
+--- Sentence/switch
+id: 48
+r#  9470  185  57
+
+--- Paragraph/end 
+id: 19
+y: N/A
+
+
+--- Paragraph/start
+id: 20
+r#  9932  194  1
+
+
+--- Sentence/start
+id: 49
+r#  9932  194  1
+
+--- Sentence//end
+id: 49
+r#  9991  194  60
+p: .
+t. 
+|  Although originally designed to support decentralized
+|  parallel computing  -  that is, for original
+|  research  -  grids have evolved into
+|  pedagogical and reproduction tools as well
+|  as hosts for initial experiments.\footnote{\raggedright\citeref{\q{%
+|  caGrid 1.0: An Enterprise Grid Infrastructure for Biomedical Research} (2008)} %
+.  \hspace*{19pt}(\href{https://pmc.ncbi.nlm.nih.gov/articles/PMC2274794/}{https://pmc.ncbi.nlm.nih.gov/articles/PMC2274794/})}Grid specifications are often focused on metadata standards
+
+
+--- Sentence/switch
+id: 50
+r#  9992  194  61
+
+
+--- Sentence//end
+id: 50
+r#  10146  197  41
+p: .
+t. 
+|  There are not necessarily standard guidelines for writing
+|  code in common science-computing languages for
+.  components that will be hosted on a grid
+
+
+--- Sentence/switch
+id: 51
+r#  10147  197  42
+
+
+--- Sentence//end
+id: 51
+r#  10398  202  21
+p: .
+t. 
+|   There are,
+|  however, detailed features and annotations that may be
+|  applied to help grid components interoperate, and to
+|  increase overall usability, especially with an
+|  emphasis on FAIR (Findable, Accessible, Interoperable,
+.  Reusable) priorities
+
+
+--- Sentence/switch
+id: 52
+r#  10399  202  22
+
+
+--- Sentence//end
+id: 52
+r#  10628  206  29
+p: .
+t. 
+|   One rationale for grid computing
+|  is to provide remote services for investigations that
+|  require special-purpose equipment  -  i.e., computing
+|  power beyond that of ordinary systems that scientists
+.  might use for everyday dasks
+
+
+--- Sentence/switch
+id: 53
+r#  10629  206  30
+
+
+--- Sentence//end
+id: 53
+r#  10869  211  24
+p: .
+t. 
+|   However, a different
+|  aspect of grid architecture is effectively the
+|  opposite: allowing scientists to replicate
+|  research (perhaps in a scaled-down version) both
+|  for data-transparency and to understand published
+.  results more thoroughly
+
+
+--- Sentence/switch
+id: 54
+r#  10870  211  25
+
+
+--- Sentence//end
+id: 54
+r#  10998  213  47
+p: .
+t. 
+|   In this case, it is important
+|  for executable research objects to be developed
+.  which do not need special-purpose hardware
+
+--- Sentence/end 
+id: 54
+r#  10999  213  48
+
+--- Paragraph/end 
+id: 20
+y: N/A
+
+
+--- Paragraph/start
+id: 21
+r#  11001  215  1
+
+
+--- Sentence/start
+id: 55
+r#  11001  215  1
+
+--- Sentence//end
+id: 55
+r#  11124  217  26
+p: .
+t. 
+|  There are many advanced science applications that
+|  are designed in a self-contained manner, with
+.  few external dependencies
+
+
+--- Sentence/switch
+id: 56
+r#  11125  217  27
+
+
+--- Sentence//end
+id: 56
+r#  11238  219  40
+p: .
+t. 
+|   These can be compiled
+|  and executed on ordinary desktop computers, and
+.  can form the basis of FAIR data sets
+
+
+--- Sentence/switch
+id: 57
+r#  11239  219  41
+
+
+--- Sentence//end
+id: 57
+r#  11485  224  40
+p: .
+t. 
+|  It is possible to design executable research objects
+|  wherein data visualization and analysis tools are
+|  provided as source code files internal to the
+|  data set, perhaps by including discipline-specific
+.  application sources in whole or in part
+
+
+--- Sentence/switch
+id: 58
+r#  11486  224  41
+
+
+--- Sentence//end
+id: 58
+r#  11659  227  53
+p: .
+t. 
+|   These
+|  data packages can likewise contain customized
+|  PDF viewers, and the relevant PDF and scientific software
+.  can be integrated for indexing and cross-referencing
+
+--- Sentence/end 
+id: 58
+r#  11660  227  54
+
+--- Paragraph/end 
+id: 21
+y: N/A
+
+
+--- Paragraph/start
+id: 22
+r#  11664  229  1
+
+
+--- Sentence/start
+id: 59
+r#  11664  229  1
+
+--- Sentence//end
+id: 59
+r#  11870  233  9
+p: .
+t. 
+|  The resulting Research Object model is based on
+|  code packages distributed as source files with
+|  minimal external dependencies, rather than as binary
+|  components or as assets that require external
+.  software
+
+
+--- Sentence/switch
+id: 60
+r#  11871  233  10
+
+
+--- Sentence//end
+id: 60
+r#  11953  234  48
+p: .
+t. 
+|   This paradigm is different than
+.  how Research Objects are typically disseminated
+
+
+--- Sentence/switch
+id: 61
+r#  11954  234  49
+
+
+--- Sentence//end
+id: 61
+r#  12142  238  46
+p: .
+t. 
+|  This difference has compelled our startup to
+|  work on science-grid technology even though we
+|  have no direct affiliation with univeristies
+.  that participate in one or more grid networks
+
+--- Sentence/end 
+id: 61
+r#  12143  238  47
+
+--- Paragraph/end 
+id: 22
+y: N/A
+
+
+--- Paragraph/start
+id: 23
+r#  12145  240  1
+
+
+--- Sentence/start
+id: 62
+r#  12145  240  1
+
+--- Sentence//end
+id: 62
+r#  12341  243  48
+p: .
+t. 
+|  Not speaking for everyone involved with the startup,
+|  but I personally remain committed to work we did
+|  earlier on clinical information systems and
+.  EMR software for under-resourced communities
+
+
+--- Sentence/switch
+id: 63
+r#  12342  243  49
+
+
+--- Sentence//end
+id: 63
+r#  12584  248  29
+p: .
+t. 
+|   There
+|  are technical similarities between source-focused
+|  grid packages and extensible EMR platforms, and
+|  I hope that concrete deployment of instances of the
+|  former can help us transition to implementation
+.  of latter components as well
+
+
+--- Sentence/switch
+id: 64
+r#  12585  248  30
+
+
+--- Sentence//end
+id: 64
+r#  12767  252  11
+p: .
+t. 
+|   Building
+|  EMR software via science-grid components can help
+|  with migrating research results to on-site
+|  clinical practice, in accord with Translational Medicine
+.  techniques
+
+--- Sentence/end 
+id: 64
+r#  12768  252  12
+
+--- Paragraph/end 
+id: 23
 y: N/A
