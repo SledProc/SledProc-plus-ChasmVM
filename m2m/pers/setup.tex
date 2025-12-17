@@ -6,12 +6,12 @@
 
 \newcommand{\dunderline}[3][-1pt]{{%
   \sbox0{#3}%
-  \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+  \ooalign{\copy0\cr{\color{hrcb!50!black}\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}}
 
 
 
 
-\newcommand{\eA}[1]{\resizebox{!}{7pt}{{\fontfamily{ppl}\selectfont #1}}}
+\newcommand{\eA}[1]{\resizebox{!}{8pt}{{\fontfamily{ppl}\selectfont #1}}}
 
 
 
@@ -41,7 +41,8 @@
   \llap{\contour{white}{#1}}%
 }
 
-\newcommand{\Supplement}{\vspace*{3pt}\noindent{}\textbf{Supplement}\vspace*{.5em}}
+\newcommand{\Supplement}{\vspace*{3pt}\noindent{}\textbf{\textcolor{hrcb!50!black}{%
+{\fontfamily{ppl}\fontsize{15}{14}\selectfont{}Sup\hspace{-.5pt}plement}}}\vspace*{.5em}}
 
 \usepackage[colorlinks=true]{hyperref}
 
@@ -62,6 +63,8 @@
 
 \definecolor{cn}{RGB}{16, 88, 12}
 
+\definecolor{hrcb}{RGB}{60, 88, 220}
+
 \newcommand{\cn}{\textcolor{cn}{\myuline{Case\hspace{2pt}\raisebox{3pt}{\resizebox{5pt}{5pt}{\#}} 328806759}}}
 
 \newcommand{\citeref}[1]{{\fontfamily{qhv}\fontsize{10pt}{10pt}\selectfont #1}}
@@ -77,8 +80,8 @@
 \fancyheadoffset[reh]{0pt}
 \fancyheadoffset[loh]{0pt}
     
-\fancyhead[RO]{\raisebox{-1pt}{\textbf{\textcolor{hrc!30!gray}{{\large \arabic{page}}}}}} % Page number on the right of odd pages
-\fancyhead[RE]{\raisebox{-1pt}{\textbf{\textcolor{hrc!30!gray}{{\large \arabic{page}}}}}} % Page number on the right of odd pages
+\fancyhead[RO]{\raisebox{-1pt}{\textbf{\textcolor{hrcb!80!gray}{{\large \arabic{page}}}}}} % Page number on the right of odd pages
+\fancyhead[RE]{\raisebox{-1pt}{\textbf{\textcolor{hrcb!80!gray}{{\large \arabic{page}}}}}} % Page number on the right of odd pages
     
     
 \fancyhead[LO]{{\fontfamily{bch}{{\cn}}}} % Title on the left of odd pages
@@ -87,7 +90,7 @@
     
 %\fancyfoot[C]{Confidential} % "Confidential" in the center of all footers
 
-\setlength{\headsep}{35pt}
+\setlength{\headsep}{41pt}
 
 
 \newcommand{\parbreak}{
@@ -96,7 +99,7 @@
 
 
 
-\usepackage[top=1.1in, bottom=.8in, left=.85in, right=.85in, %marginparwidth=75pt, 
+\usepackage[top=1.5in, bottom=.8in, left=.75in, right=.75in, %marginparwidth=75pt, 
 paperheight=11in,paperwidth=8.5in]{geometry}
 
 \reversemarginpar
@@ -104,6 +107,32 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 %\usepackage[oneside, marginparwidth=75pt]{geometry}    "(@Pr\d+)"
 
 \usepackage{xcolor}
+
+\usepackage{eso-pic}
+
+
+
+\definecolor{codegr}{RGB}{165, 150, 118}
+\definecolor{fnc}{RGB}{65, 150, 8}
+
+
+\AddToShipoutPicture{%
+ \ifnum\value{page}=2{
+  \AtPageLowerLeft{%
+    \hspace*{11pt}
+ \rotatebox{90}{%
+        \begin{minipage}{\paperheight}
+   \centering 
+   {\color{codegr}Nathaniel Christen -{}-{}- SNAP Personal Statement
+   } 
+        \end{minipage} %
+      }
+    } %
+   }\fi
+  }%
+
+
+
 
 %\newcommand{\notePage}[1]{ === page #1 === }
 
@@ -256,7 +285,8 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 \newcommand{\pfl}{\vspace*{2pt}}
 
 
-\newcommand{\ghrule}{\vspace*{12pt}\textcolor{hrc}{\hrule}\vspace*{22pt}}
+\newcommand{\ghrule}{\vspace*{26pt}\moveright .15\textwidth \vbox{%
+\textcolor{hrc}{\hrule width .7\textwidth}\vspace*{18pt}}}
 
 \renewcommand{\footnoterule}{%
 \kern 7pt
