@@ -1263,14 +1263,14 @@ text.  \lPacTk{} can help authors expand indexing protocols
 to encompass this wider range of scientific content.  
 
 \pseudoIndent{}  In particular, we propose a \q{Science Grid Node}   
-protocol (\Scign{}-index) to standardize 
+protocol (\Scign{}-index) to standardize \Cpp{} 
 code annotations according to \FAIR{}data principles, 
 with an emphasis on indexing \GUI{} logistics (\q{action-maps}) 
 and source-declared contracts.  This protocol 
 would reflect requirements for grid-computing 
 architectures, with a unified meta-index 
 paradigm encompassing data, code, and 
-visual assets for \FAIR{}-aligned research networks. 
+visual assets for \FAIR{}-aligned research networks.
 The \Scign{}-index model addresses 
 concerns specific to modular software engineering, 
 such as merging component-local with shared-database updates; 
@@ -1300,18 +1300,17 @@ operations, authentication, component capabilities, etc.).
 
 \vspace*{-66pt}
 
+
 \sstitle{%\hspace*{-50pt}
-PacTk's \q{Scign-index} Protocol for Executable Research Objects}
+PacTk's \q{Scign-index} Protocol for Executable Research Objects}}
 
 \vspace*{11pt}
 
-{%\setstretch{1}
-
 \p{The \Scign{}-index protocol just mentioned is particularly aligned with 
-\q{Executable} Research Objects (alternatively termed 
+\q{Executable} Research Objects (alternatively called 
 \q{Research Compendia}), yielding a proposed component-oriented  
-model that \PacTk{} calls \ScignTier{} (Scienge Grid Node/Text-Indexed 
-Executable Research Object).  In component-oriented programming, 
+model that \PacTk{} calls \ScignTier{} (\Scign-indexed/text-integrated 
+Executable Research components).  In component-oriented programming, 
 \q{microcomponents} are 
 visually and functionally isolated parts 
 of a larger application, such as a single web page within a web site, 
@@ -1331,13 +1330,19 @@ compiling to a binary executable that serves as an entry-point for both text and
 \p{To illustrate how microcomponent programming affects 
 indexing and document-preparation, consider the screenshot 
 reproduced in Figure~\ref{fig:oh}, left (taken from the OpenHospital 
-user manual).  There are numerous areas within the \GUI{} 
+user manual).  Although this is part of a \Java{} application, 
+a \Qt{} developer could readily implement a \Cpp{} version 
+of the same component; assume, then, that in so doing 
+we intend to annotate the relevant classes with \ScignTier{} metadata.}
+
+\p{In particular, there are numerous areas within the \GUI{} 
 window with selections/options that may be connected 
 to controlled vocabularies, including the list of 
 checkbox labels for test results, and the drop-down 
-(combobox) values for \q{material} (there is no way to find a list of 
+(combobox) values for \q{material} (note that, in the 
+existing code, there is no way to find a list of 
 possible entries for this field without running 
-the software or examining the code directly).  
+the software or examining the \Java{} code directly).  
 There are also multiple actions users can perform 
 through this component, including finding a patient 
 id via their personal info; selecting dates from a 
@@ -1403,13 +1408,14 @@ examples used to demonstrate analytic methods (as with this
 picture).  Illustrations appearing in publications may 
 thereby be linked to microcomponents from which the 
 graphics were obtained.}
-}
 \enlargethispage{2em}
-\vspace{-25pt}
+\vspace{-17pt}
+
+\setlength{\abovecaptionskip}{4pt}
 
 \begin{figure}[h!]
-\hspace{-45pt}\raisebox{-6pt}{\includegraphics[page=53, scale=.55, trim=0 11cm 0 0, clip]{UserManual.pdf}}%
-\hspace{-18pt}\includegraphics[scale=1.03, trim=0 3cm 0 1cm, clip]{baseScreenshot.png}\vspace{-7pt}
+\hspace{-45pt}\raisebox{-6pt}{\includegraphics[page=53, scale=.56, trim=0 11cm 0 0, clip]{UserManual.pdf}}%
+\hspace{-18pt}\includegraphics[scale=1.1, trim=0 3cm 0 1cm, clip]{baseScreenshot.png}
 \caption{OpenHospital form (left) and cancer imaging window (right) 
 as microcomponent examples}
 \label{fig:oh}

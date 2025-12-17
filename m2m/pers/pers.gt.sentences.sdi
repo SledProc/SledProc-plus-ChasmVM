@@ -1,0 +1,833 @@
+--- Global/start
+
+
+
+--- Paragraph/start
+id: 1
+r#  11  6  4
+
+
+--- Sentence/start
+id: 1
+r#  11  6  4
+
+--- Sentence//end
+id: 1
+r#  217  9  52
+p: .
+t. 
+|  
+|  During a phone interview on December 16, 2025, I
+|  was asked to compose a Personal Statement outlining
+|  my source of income and other relevant information
+.  to upload via the Maryland Benefits document portal
+
+--- Sentence/end 
+id: 1
+r#  218  9  53
+
+--- Paragraph/end 
+id: 1
+y: N/A
+
+
+--- Paragraph/start
+id: 2
+r#  220  11  1
+
+
+--- Sentence/start
+id: 2
+r#  220  11  1
+
+--- Sentence//end
+id: 2
+r#  413  14  51
+p: .
+t. 
+|  I did not receive any specific instructions
+|  about the desired format for this document, so I
+|  have constructed it in paragraph form; I could
+.  put together a more structured statement if needed
+
+
+--- Sentence/switch
+id: 3
+r#  414  14  52
+
+
+--- Sentence//end
+id: 3
+r#  564  17  57
+p: .
+t. 
+|  I will briefly mention de facto part time
+|  work and then discuss longer-term projects
+.  relevant to my current housing and employment situations
+
+--- Sentence/end 
+id: 3
+r#  565  17  58
+
+--- Paragraph/end 
+id: 2
+y: N/A
+
+
+--- Paragraph/start
+id: 3
+r#  567  19  1
+
+
+--- Sentence/start
+id: 4
+r#  567  19  1
+--- Paragraph/end 
+id: 3
+y: N/A
+
+
+--- Paragraph/start
+id: 4
+r#  578  21  1
+
+
+--- Sentence/start
+id: 5
+r#  578  21  1
+
+--- Sentence//end
+id: 5
+r#  890  26  49
+p: .
+t. 
+|  \ghrule{}With respect to part-time gigs, shortly after
+|  moving to Maryland in May of 2025, I met a few
+|  neighbors who needed help with dog-walking (I myself
+|  had a pitbull mix in Brookyln that had to be rehomed
+|  with a friend of the family before I left, and I've had
+.  experience in the past with dog walking/sitting)
+
+
+--- Sentence/switch
+id: 6
+r#  891  26  50
+
+
+--- Sentence//end
+id: 6
+r#  1197  32  38
+p: .
+t. 
+|  Currently I walks dogs for roughly 3-4 hours per
+|  day (every day) mostly from approximately 10:00 -- 11:30,
+|  4:15 -- 5:15, and 6:00 -- 7:00, ocasionally with a
+|  couple other owners as well when they are out of town
+|  or exceptionally busy (for one owner I sometimes
+.  feed her birds and clean a bird cage)
+
+
+--- Sentence/switch
+id: 7
+r#  1198  32  39
+
+
+--- Sentence//end
+id: 7
+r#  1522  38  33
+p: .
+t. 
+|   I haven't
+|  established a fixed fee schedule, but in general I've
+|  received $40 per week from one owner, and $80 per month
+|  from another (the latter was affected by the government
+|  shutdown however so I did not receive payment for two
+|  months around September and October), so in general
+.  I receive about $240 each month
+
+
+--- Sentence/switch
+id: 8
+r#  1523  38  34
+
+
+--- Sentence//end
+id: 8
+r#  1905  44  21
+p: .
+t. 
+|   For the aforementioned
+|  owner with birds (and two small dogs I've walked on occasion)
+|  I might get an additional $20/month on average.\footnote{Subtracting
+|  the government shutdown-related gap essentially cancels that out}
+|  I sometimes also walk for a neighbor with a very charming chocolate
+|  lab, but that's not for monetary compensation, rather I join them
+.  afterward for dinner
+
+--- Sentence/end 
+id: 8
+r#  1906  44  22
+
+--- Paragraph/end 
+id: 4
+y: N/A
+
+
+--- Paragraph/start
+id: 5
+r#  1908  46  1
+
+
+--- Sentence/start
+id: 9
+r#  1908  46  1
+
+--- Sentence//end
+id: 9
+r#  2057  48  21
+p: .
+t. 
+|  On numerous occasions I've heard from other neighbors that they
+|  too need dog walking services, or cat sitting on one occasion,
+.  but never heard back
+
+
+--- Sentence/switch
+id: 10
+r#  2058  48  22
+
+
+--- Sentence//end
+id: 10
+r#  2136  49  40
+p: .
+t. 
+|   It seems difficult to make informal
+.  pet care one's primary source of income
+
+--- Sentence/end 
+id: 10
+r#  2137  49  41
+
+--- Paragraph/end 
+id: 5
+y: N/A
+
+
+--- Paragraph/start
+id: 6
+r#  2139  51  1
+
+
+--- Sentence/start
+id: 11
+r#  2139  51  1
+
+--- Sentence//end
+id: 11
+r#  2236  52  21
+p: .
+t. 
+|  So when the dust settles I can figure roughly $200-$250 per month working
+.  3.5 -- 4 hours a day
+
+
+--- Sentence/switch
+id: 12
+r#  2237  52  22
+
+
+--- Sentence//end
+id: 12
+r#  2393  54  71
+p: .
+t. 
+|   This helps with incidental
+|  expenses (food, mostly) but I need to provide a little
+.  backstory to address the situation with where I am living, for example
+
+--- Sentence/end 
+id: 12
+r#  2394  54  72
+
+--- Paragraph/end 
+id: 6
+y: N/A
+
+
+--- Paragraph/start
+id: 7
+r#  2396  56  1
+
+
+--- Sentence/start
+id: 13
+r#  2396  56  1
+--- Paragraph/end 
+id: 7
+y: N/A
+
+
+--- Paragraph/start
+id: 8
+r#  2407  58  1
+
+
+--- Sentence/start
+id: 14
+r#  2407  58  1
+
+--- Sentence//end
+id: 14
+r#  2578  60  33
+p: .
+t. 
+|  \ghrule{}Since rougly 2015 I have been\footnote{informally, at least} employed by a
+|  small start-up based in New Jersey which is currently focused
+.  primary on publishing technology
+
+
+--- Sentence/switch
+id: 15
+r#  2579  60  34
+
+
+--- Sentence//end
+id: 15
+r#  2660  61  50
+p: .
+t. 
+|   Before the Covid pandemic we
+.  had also devoted attention to biomedical software
+
+--- Sentence/end 
+id: 15
+r#  2661  61  51
+
+--- Paragraph/end 
+id: 8
+y: N/A
+
+
+--- Paragraph/start
+id: 9
+r#  2663  63  1
+
+
+--- Sentence/start
+id: 16
+r#  2663  63  1
+
+--- Sentence//end
+id: 16
+r#  2786  64  65
+p: .
+t. 
+|  I have a BA-level computer science degree, but I ended up
+.  pursuing a PhD in philosophy, specifically philosophy of science
+
+
+--- Sentence/switch
+id: 17
+r#  2787  64  66
+
+
+--- Sentence//end
+id: 17
+r#  2995  68  11
+p: .
+t. 
+|  Academically, I was especially interested in philosophy of science
+|  and Congnitive Linguistics (both linguistics as a science and,
+|  conversely, analyzing the cognitive foundations of scientific
+.  reasoning)
+
+--- Sentence/end 
+id: 17
+r#  2996  68  12
+
+--- Paragraph/end 
+id: 9
+y: N/A
+
+
+--- Paragraph/start
+id: 10
+r#  3000  70  1
+
+
+--- Sentence/start
+id: 18
+r#  3000  70  1
+
+--- Sentence//end
+id: 18
+r#  3451  76  38
+p: .
+t. 
+|  Cotemporous with my doctoral studies (which were in Canada), I
+|  was helping with my parents' business, implementing an e-commerce
+|  platform.\footnote{There was actually a science connection, because my
+|  father was trying to launch a store as an antiques collector, and
+|  much of his inventory was scientific instruments or other devices
+|  with patents, or other information we could investigate about how the tools
+.  or machines were constructed and used
+
+
+--- Sentence/switch
+id: 19
+r#  3452  76  39
+
+
+--- Sentence//end
+id: 19
+r#  3798  81  67
+p: .
+t. 
+|   I built a software tool
+|  that connected to the US Patent Office and helped us match patent
+|  images with our inventory items.}  While rewarding --- and
+|  profitable online --- the brick-and-mortar business did
+|  not really pan out and my family ended up struggling (my father
+.  committed suicide; my mother had a stroke and needed live-in help)
+
+
+--- Sentence/switch
+id: 20
+r#  3799  81  68
+
+
+--- Sentence//end
+id: 20
+r#  4036  85  32
+p: .
+t. 
+|  In the end, splitting time between the US and Canada, I had trouble
+|  renewing my Canadian visa and did not defend my dissertation, although
+|  I did complete a second version after getting feedback for the
+.  initial draft from my committee
+
+
+--- Sentence/switch
+id: 21
+r#  4037  85  33
+
+
+--- Sentence//end
+id: 21
+r#  4183  87  33
+p: .
+t. 
+|   After my father died we continued the
+|  business for several years in solely-digital fashion, during which time
+.  we moved (back) to New York City
+
+
+--- Sentence/switch
+id: 22
+r#  4184  87  34
+
+
+--- Sentence//end
+id: 22
+r#  4446  90  67
+p: .
+t. 
+|   In NYC, I attended small-business seminars,
+|  regular meetup groups and other programming-related activities, with the
+|  goal of potentially migrating the family business from our own e-commerce
+.  shop to providing website-management software for other businesses
+
+
+--- Sentence/switch
+id: 23
+r#  4447  90  68
+
+
+--- Sentence//end
+id: 23
+r#  4520  91  71
+p: .
+t. 
+.  This was how I eventually connected with the startup mentioned earlier
+
+--- Sentence/end 
+id: 23
+r#  4521  91  72
+
+--- Paragraph/end 
+id: 10
+y: N/A
+
+
+--- Paragraph/start
+id: 11
+r#  4523  93  1
+
+
+--- Sentence/start
+id: 24
+r#  4523  93  1
+
+--- Sentence//end
+id: 24
+r#  4705  95  57
+p: .
+t. 
+|  As a doctoral student I had at one point sat on a committee that
+|  was redesigning our departmental website, with the goal of
+.  providing a publishing platform for students and faculty
+
+
+--- Sentence/switch
+id: 25
+r#  4706  95  58
+
+
+--- Sentence//end
+id: 25
+r#  4935  99  36
+p: .
+t. 
+|   From
+|  a philosophy of science perspective, I was interested in
+|  how executable research objects and other science grid
+|  technologies could help document theoretical and methdological
+.  foundations for scientific research
+
+--- Sentence/end 
+id: 25
+r#  4936  99  37
+
+--- Paragraph/end 
+id: 11
+y: N/A
+
+
+--- Paragraph/start
+id: 12
+r#  4940  101  1
+
+
+--- Sentence/start
+id: 26
+r#  4940  101  1
+
+--- Sentence//end
+id: 26
+r#  5181  105  51
+p: .
+t. 
+|  The startup founder
+|  had similar interests; she was initially focused on
+|  Natural Language Processing, but also health-care
+|  applications.\footnote{She had done volunteer work at an Israeli
+.  hospital, and several of her advisers were doctors
+
+
+--- Sentence/switch
+id: 27
+r#  5182  105  52
+
+
+--- Sentence//end
+id: 27
+r#  5414  110  43
+p: .
+t. 
+|  As a student I
+|  had also briefly worked at a refugee camp in Thailand.}
+|  She had contacts in the government and we put together
+|  numerous slide decks and presentations for US scouts
+.  as well as hospitals and medical practices
+
+
+--- Sentence/switch
+id: 28
+r#  5415  110  44
+
+
+--- Sentence//end
+id: 28
+r#  5698  115  50
+p: .
+t. 
+|   The government
+|  contacts encouraged us to develop software for
+|  under-resourced communities and we eventually began
+|  collaborating with a startup who was supported by an NYU
+|  incubator, but doing field work in India, deploying
+.  informatics and diagnostic tools to rural clinics
+
+
+--- Sentence/switch
+id: 29
+r#  5699  115  51
+
+
+--- Sentence//end
+id: 29
+r#  5888  119  28
+p: .
+t. 
+|  Open-source Hospital Information Systems, Electronic
+|  Medical Records, and Operating Systems (such as
+|  BioLinux) can offer an important savings for hospitals
+.  and point-of-care providers
+
+
+--- Sentence/switch
+id: 30
+r#  5889  119  29
+
+
+--- Sentence//end
+id: 30
+r#  6285  126  34
+p: .
+t. 
+|   For our startup, our general
+|  paradigm was that such open-source components should be
+|  designed as embeded plugins, or via similar coding
+|  conventions and interoperability, to existing
+|  software focused on research, bioimaging, immuno-oncology,
+|  and other bioinformatics areas (this is in contrast to
+|  the way EMR systems are usually designed, which are more
+.  isolated to the clinical setting)
+
+
+--- Sentence/switch
+id: 31
+r#  6286  126  35
+
+
+--- Sentence//end
+id: 31
+r#  6521  129  62
+p: .
+t. 
+|   Our theory is that grid-computing
+|  techniques are more conducive to EMR systems that are more adaptable
+|  (e.g., for hospitals that develop community-oriented initiatives,
+.  or require special forms for clinical trial management, etc.)
+
+--- Sentence/end 
+id: 31
+r#  6522  129  63
+
+--- Paragraph/end 
+id: 12
+y: N/A
+
+
+--- Paragraph/start
+id: 13
+r#  6524  131  1
+
+
+--- Sentence/start
+id: 32
+r#  6524  131  1
+
+--- Sentence//end
+id: 32
+r#  6713  133  54
+p: .
+t. 
+|  Unfortunately, the Covid pandemic made it difficult to continue unfunded
+|  projects in perpetuity, and the startup's founder decided to
+.  shift attention to technology for academic publishing
+
+
+--- Sentence/switch
+id: 33
+r#  6714  133  55
+
+
+--- Sentence//end
+id: 33
+r#  7006  138  27
+p: .
+t. 
+|   During this
+|  time I wrote an Elsevier book on biomedical software, plus eight
+|  chapters or articles on various computer-science topics
+|  (e.g., computational linguistics and compiler theory); she
+|  (the founder) was working on her own book contract and many op-eds
+.  and popular-media articles
+
+
+--- Sentence/switch
+id: 34
+r#  7007  138  28
+
+
+--- Sentence//end
+id: 34
+r#  7202  141  23
+p: .
+t. 
+|   In addition to science technology (as
+|  editor of a Springer Nature journal and book series) the founder
+|  has been involved in political activism particularly in the area
+.  of family court reform
+
+
+--- Sentence/switch
+id: 35
+r#  7203  141  24
+
+
+--- Sentence//end
+id: 35
+r#  7417  144  37
+p: .
+t. 
+|   During the pandemic, we essentially
+|  became a small-scale publishing house, compiling legal documents,
+|  newsletters, graphics design (e.g., for real estate ads), translation,
+.  and other document-preparation tasks
+
+
+--- Sentence/switch
+id: 36
+r#  7418  144  38
+
+
+--- Sentence//end
+id: 36
+r#  7590  146  76
+p: .
+t. 
+|   In some cases we built custom
+|  publishing software, including producing two full-length books
+.  (eventually published by Elsevier and Oxford University Press respectively)
+
+--- Sentence/end 
+id: 36
+r#  7591  146  77
+
+--- Paragraph/end 
+id: 13
+y: N/A
+
+
+--- Paragraph/start
+id: 14
+r#  7595  148  1
+
+
+--- Sentence/start
+id: 37
+r#  7595  148  1
+
+--- Sentence//end
+id: 37
+r#  7983  153  25
+p: .
+t. 
+|  I received a book contract and some compensation for working on legal documents,
+|  graphics design, translation, etc., but on a day-to-day basis much of
+|  my work was centered on the founder's advocacy, maintaining a web site
+|  and preparing/preserving articles, op-eds, and other materials
+|  she published in venues including the New York Times and Washington Post,
+.  plus many smaller papers
+
+
+--- Sentence/switch
+id: 38
+r#  7984  153  26
+
+
+--- Sentence//end
+id: 38
+r#  8138  155  32
+p: .
+t. 
+|   In exchange, she arranged for me to stay with a
+|  colleague and paid rent on my behalf (probably the equivalent of about
+.  $850/month on the open market)
+
+
+--- Sentence/switch
+id: 39
+r#  8139  155  33
+
+
+--- Sentence//end
+id: 39
+r#  8361  158  43
+p: .
+t. 
+|   Recently my landlady sold her house,
+|  which led to my relocating to Baltimore under a similar arrangement
+|  with a close associate of my boss who has coauthored with her and
+.  shared her interest in family court reform
+
+--- Sentence/end 
+id: 39
+r#  8362  158  44
+
+--- Paragraph/end 
+id: 14
+y: N/A
+
+
+--- Paragraph/start
+id: 15
+r#  8366  160  1
+
+
+--- Sentence/start
+id: 40
+r#  8366  160  1
+
+--- Sentence//end
+id: 40
+r#  8602  163  31
+p: .
+t. 
+|  Leveraging rent-free housing in exchange for in kind work isn't a
+|  great long-term solution, so I hope SNAP benefits would allow me to
+|  reallocate funds I receive for more informal gig work toward
+.  a more secure rental situation
+
+
+--- Sentence/switch
+id: 41
+r#  8603  163  32
+
+
+--- Sentence//end
+id: 41
+r#  8813  166  59
+p: .
+t. 
+|   Meanwhile, instead of one-off
+|  work on individual publishing projects we are trying to build
+|  more substantial software for use either by publishing
+.  houses or curatorial organizations, such as PubMed Central
+
+
+--- Sentence/switch
+id: 42
+r#  8814  166  60
+
+
+--- Sentence//end
+id: 42
+r#  8988  169  46
+p: .
+t. 
+|   I have
+|  implemented numerous code prototypes and documentation about
+|  unique features of our software, which has been used to
+.  build full-scale books and research data sets
+
+--- Sentence/end 
+id: 42
+r#  8989  169  47
+
+--- Paragraph/end 
+id: 15
+y: N/A

@@ -1,0 +1,6 @@
+
+--- Global/start
++file  pers.tex
++global-baseline-skip  13.6pt
++global-baseline-stretch  1.0
+
