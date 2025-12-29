@@ -1236,13 +1236,21 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \setlist[description]{leftmargin=13pt, itemsep=9pt}
 
 
-
+\definecolor{hru}{RGB}{199, 99, 4}
 
 \usepackage[colorlinks = true,
-            linkcolor = clinkGreen,
+            linkcolor = clinkGreen, %hru!60!black,
             urlcolor  = clinkGreen,%!70!purple,
             citecolor = clinkGreen,
             anchorcolor = clinkGreen]{hyperref}
+
+
+%\usepackage{cleveref} 
+%\definecolor{viola}{rgb}{0.42,0.05,0.09}
+%\crefformat{figure}{\protect\textcolor{viola}{\bfseries\textsf{fig.~#2#1#3}}}
+%\Crefformat{figure}{\protect\textcolor{viola}{\bfseries\textsf{Fig.~#2#1#3}}}
+
+
 
 \renewcommand{\thefootnote}{\textcolor{ulinkColor!50!black}{{\fontfamily{phv}\fontseries{b}\fontsize{7}{4}\selectfont\arabic{footnote}}}}
 

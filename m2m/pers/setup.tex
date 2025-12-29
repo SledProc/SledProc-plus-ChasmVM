@@ -285,8 +285,15 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 \newcommand{\pfl}{\vspace*{2pt}}
 
 
-\newcommand{\ghrule}{\vspace*{26pt}\moveright .15\textwidth \vbox{%
+\newcommand{\ghrulex}{\vspace*{26pt}\moveright .15\textwidth \vbox{%
 \textcolor{hrc}{\hrule width .7\textwidth}\vspace*{18pt}}}
+
+\newcommand{\ghrule}{\vspace*{26pt}\moveright .15\textwidth \vbox{%
+\textcolor{hrc}{\hbox to .7\textwidth{\leaders\hbox to 2pt{\hss . \hss}\hfil}}\vspace*{18pt}}}
+
+
+%\hbox to 5cm{\leaders\hbox to 10pt{\hss . \hss}\hfil}
+
 
 \renewcommand{\footnoterule}{%
 \kern 7pt

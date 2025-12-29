@@ -36,6 +36,8 @@ paperheight=13.5in,paperwidth=9.25in]{geometry}
 %\usepackage{soul}
 \newcommand{\ul}[1]{\underline{#1}}
 
+
+
 \newcommand*\fndiamondX[1]{\tikz[baseline=(char.base), x=2cm,y=1.5cm]{
 
  \node[shape=regular polygon, regular polygon sides=4, 
@@ -52,6 +54,91 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\ul{{#1}}};
 
 
 }}
+
+
+
+\definecolor{bkgr}{HTML}{228AFE}
+
+\colorlet{rgrAt}{rgr!30!bkgr}
+
+\definecolor{ru}{RGB}{199, 99, 4}
+
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{.7pt}
+\contourlength{0.3pt}
+
+\newcommand\reduline{\bgroup\markoverwith
+{\textcolor{ru}{\rule[-.25ex]{3pt}{3.4pt}}}\ULon}
+
+\DeclareRobustCommand{\xfigunderline}[1]{\reduline{#1}
+\llap{\dashuline{\phantom{#1}}}%
+}
+
+
+\DeclareRobustCommand{\figunderline}[1]{%
+\raisebox{-.5pt}{\large%
+  \textcolor{ru}{\uline{\phantom{#1}}}%
+  \llap{\contour{white}{#1}}}%
+}
+
+%Figure~
+
+\def\figureautorefname{}
+
+%\DeclareRobustCommand{\Atref}[1]{{\ref{\textcolor{blue}{#1}}}}
+
+
+%\let\Oldautoref\autoref
+\renewcommand{\Atref}[1]{\textcolor{rgrAt!30}{\xfigunderline{\hspace{-2pt}\autoref{#1}\hspace*{-2pt}}}}
+
+%\let{\Oldref}{\ref}
+%\renewcommand{\ref}[1]{\Oldref{#1} on page \pageref{#1}}
+
+
+\usepackage[all]{hypcap}
+
+\usepackage{caption}
+
+%\let\svthefigure\thefigure
+
+%\let\svthefiguretxt\thefigure
+%\renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefiguretxt}}}
+
+
+\let\svthefigure\thefigure
+\let\svfigurename\figurename
+\newcommand\figcolortxt{%
+  \renewcommand\thefigure{\bfseries\sffamily\color{blue}\svthefigure}%
+  \renewcommand\figurename{\bfseries\sffamily\color{blue}\svfigurename}%
+}
+
+%  
+%\renewcommand\figurename{\color{rgr!70!ybk}\svfigurename}
+ % \renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefigure}}}
+
+\newcommand{\figm}[1]{{\color{rgrAt}\figunderline{\large #1}}}
+
+\let\svthefigure\thefigure
+\let\svfigurename\figurename
+\renewcommand\thefigure{\protect\myfigmarkup\svthefigure}
+\renewcommand\figurename{\protect\myfigmarkupn\svfigurename}
+\let\myfigmarkup\relax
+\newcommand\figcolor{%
+  \def\myfigmarkupn{\color{rgr!70!ybk}}%
+  \def\myfigmarkup{\figm}}%
+}
+
+
+%\newcommand\figcolor{%
+%\renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefigure}}}
+%}
+
+%\newcommand\figcolorundo{\renewcommand\thefigure{\svthefigure}}
+
+
+%\figcolor{}
 
 
 \newcommand*\fndiamond[1]{\tikz[baseline=(char.base)]{
@@ -177,13 +264,16 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
 %\fndiamond{\usepage}}}}
 
-\fancypagestyle{firstpage}{
+\fancypagestyle{firstpagex}{
     \fancyhf{}
     \renewcommand{\headrulewidth}{0pt}    
     \renewcommand{\footrulewidth}{0pt}   
     \fancyfoot[C] {\fontsize{12}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
-\fnacircled{\usepage}}}}}
+\fnacircled{\textheight}}}}}
 }
+
+
+
 
 
 \fancypagestyle{default}{
@@ -300,6 +390,51 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 \input{PacTkOverlaysx}
 
 
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+{\hspace*{278pt}\raisebox{-27pt}{\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fnacircled{\usepage}} }}}
+}
+}\fi
+}
+
+
+\definecolor{rgr}{RGB}{61, 38, 48}
+
+\definecolor{ybk}{RGB}{187, 228, 240}
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+{\hspace*{431pt}\raisebox{857pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
+\colorbox{ybk}{\textls*[-50]{\textit{\textcolor{rgr}{``Scientific Publishing is\ }}}}}
+}
+}
+}
+}\fi
+}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+{\hspace*{433pt}\raisebox{839pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
+\colorbox{ybk}{\textls*[-50]{\textit{\textcolor{rgr}{\ \ a Scientific Discipline''\ }}}}}
+}
+}
+}
+}\fi
+}
+
+
+
+
+
+
+
+
+
 
 \AddToShipoutPicture{%
 \ifnum\value{page}=19{
@@ -334,12 +469,11 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\fi}
 %}
 
-\definecolor{bkgr}{HTML}{228AFE}
-
 \renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}%
 {\fontfamily{lmss}\fontseries{bx}\fontsize{12}{12}\selectfont%
 \textcolor{bkgr!50!black}{#1}\hspace*{1.5em}}
 }
+
 
 
 \begin{document}
@@ -348,8 +482,8 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\setlength{\footskip}{22pt}
 
 
-%\thispagestyle{empty}
-\thispagestyle{firstpage}
+\thispagestyle{empty}
+%\thispagestyle{firstpage}
 
 \vspace*{-76pt}
 
@@ -396,6 +530,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 \end{center}
 
+%\newgeometry{}
 
 %{\large{}}
 
@@ -429,8 +564,8 @@ Publishing Documents, Datasets, and Multimedia Resources}}
 
 \p{In contemporary publishing, the standard workflow includes \XML{}-based 
 formats such as \JATS{} or \BITS{}, from which are compiled 
-\PDF{}s and other human-visible documents.  Intermediate \XML{} and 
-similar files are distinct from those that authors submit directly; 
+\PDF{}s and other human-visible documents.  The intermediate \XML{} and 
+similar files --- those midway in the pipeline --- are distinct from files that authors submit directly; 
 they have their own tool stacks and 
 are computationally accessed via protocols 
 such as \SAX{} (Simple \API{} for \XML{}), \XQuery{}, 
@@ -452,7 +587,8 @@ documents, numerous competing formats have been developed,
 providing potential alternatives or extensions to \XML{}.  These  
 include \TEI{} (Text Encoding Initiative), \TagML{} 
 (Text-as-Graph Markup Language), \BioC{} (a biomedical text mining 
-standard defined by PubMed Central), and Research Object Bundles 
+standard defined by PubMed Central), Markdown (popular for wikis and social media),
+ and Research Object Bundles 
 (a Semantic Web based specification that covers both text and 
 data sets).  With a proliferation of different text-encoding standards, 
 query and traversal protocols that are developed for one  
@@ -461,10 +597,12 @@ to others.  For example, the \XML{} parent-child element relationship
 is replaced in \TagML{} with two different containment styles 
 (logical and extensional), such that \DOM{} and event-based 
 parsers targeted at the simpler \XML{} hierarchy must be reimplemented 
-for the \TagML{} system.  Meanwhile, with 
-regard to \PDF{}, effective search and text-interaction 
+for the \TagML{} system.}
+
+\p{Meanwhile, with 
+regard to \PDF{}, effective search and interaction 
 capabilities depend on supplementing this format's internal 
-natural-language representation with machine-readable text encoding, 
+natural-language representation with machine-readable text encodings, 
 which might be embedded in \PDF{} files or available as sibling 
 assets.  In principle, \XML{} documents could supply such 
 content, although current pipelines are not set up to 
@@ -475,7 +613,8 @@ share \JATS{}/\BITS{} files (for example) in end-user contexts.}
 \PacTk{}, text encoding evinces a spectrum of distinct 
 \textit{topomorphic regimes} where a proliferation of 
 incompatible document structures prohibits the emergence 
-of common query, traversal, and metadata formats.  The obvious 
+of common query, traversal, and metadata formats (this nonstandard 
+terminology will be clarified below).  The obvious 
 problem is that workflows have to be reconstructed 
 for each incompatible document specification.  
 In practice, such difficulties have almost certainly 
@@ -486,19 +625,19 @@ formats such as \TagML{}.}
 formats cannot be satisfactorily reconciled simply by 
 proposing yet another format to insert into 
 analogous workflows.  Instead, building a more 
-sophisticated publishing platform involves 
+sophisticated and computationally rigorous publishing platform involves 
 constructing integrated computational 
 tableaux weaving together text-encoding, 
 query-evaluation, compiler-theoretic, and 
 front-end concerns.} 
 
 \p{One important variation amongst text-encoding formats is 
-the level of granularity for textual elements.  In 
+the level of granularity recognized for textual elements.  In 
 \JATS{}, \BITS{}, and most \JSON{} representations, the fundamental 
 discursive units are individual paragraphs.  Elements on smaller 
 scales (such as sentences or block quotes) are notated 
-haphazardly at best.  \LaTeX{} employs reasonable 
-sentence-boundary heuristics --- which may be overridden via 
+haphazardly at best.  \LaTeX{}, for its part, employs reasonable 
+sentence-boundary heuristics --- potentially overridden via 
 macros when necessary --- but \LaTeX{} sentences are not expressed 
 in a systematic manner (e.g., via auxiliary files) for 
 any purposes other than visual spacing.  In \TEI{} and \BioC{}, individual 
@@ -510,7 +649,7 @@ sentence-level units, specifically a \q{topomorphic
 sentence-level object model} (\TSOM{}).  When all regular 
 text in a natural-language document is explicitly 
 contextualized in delineated sentence objects, many 
-editing, indexing, and user-interface tasks become feasible 
+editing, indexing, and user-interface tasks become more tractable 
 (as outlined in the next section).}
 
 \p{In contrast to the other formats mentioned here, 
@@ -521,6 +660,7 @@ annotations and comment-boxes, etc.).  Query and traversal
 protocols modeled via \XQuery{}, \DOM{}, and so on become 
 expressed by object methods and operators exposed to 
 \Cpp{} code, for example (\PacTk{} is thus \q{topomorphic} 
+--- literally meaning \q{shape of place} --- 
 in the sense that navigation between objects is determined 
 by structural properties of divergent document formats, 
 that manifest in competing notions of individuation for 
@@ -539,8 +679,8 @@ and the lack of standardized \XQuery{} and \DOM{}-style interfaces.}\clearpage{}
 \p{\lPacTk{}'s design also reflects trends in scientific research 
 and the emergence of interdisciplinary fields such as 
 social ecology, translational medicine, and medical humanities. 
-It is the viewpoint of \PacTk{}'s developers that 
-the value of new investigations cannot be fully 
+It is the view of \PacTk{}'s developers that 
+the value of new investigations often cannot be fully 
 expressed in single-disciplinary terms; nor does one individual 
 publication mark the end of a well-conceived research 
 project.  Instead, any single publications are milestones in the 
@@ -557,7 +697,7 @@ authors build multi-faceted presentations
 covering data, code, and foundations for practical 
 applications, which authors could build upon 
 for future research work, funding, translational 
-implementation, and implementational feedback.}  
+implementation, and then implementational feedback.}  
 
 \p{The remainder of this document will discuss how 
 \PacTk{} can streamline editing, indexing, and document-preparation 
@@ -606,7 +746,7 @@ to disambiguate visibly similar but logically distinct characters/glyphs
 
 \p{In source files, \GTagML{} is loosely based on Markdown, so 
 authors familiar with Markdown from more informal contexts 
-(such as social media, chat rooms, \GIT{} documentation, etc.) 
+(social networking sites, chat rooms, \GIT{} documentation, etc.) 
 will recognize many of the \GTagML{} styling commands.  
 \lGTagML{} sources might be provided by authors directly, or 
 derived from author inputs by digital copy editors or 
@@ -640,14 +780,6 @@ presentations (such as \PDF{}) with behind-the-scenes
 implemented against \XML{} structures may be more 
 efficiently coded via \PacTk{} objects, with concrete 
 benefits in areas such as copy-editing and indexing.}
-
-
-
-\begin{figure}[ht]
-\includegraphics[scale=0.8, trim=0 18pt 0 0, clip]{fin/tox.png}
-\caption{Mapping PDF pages to SVG views for improved annotation support}
-\label{fig:ss1}
-\end{figure}
 
 
 \vspace*{-2pt}
@@ -691,8 +823,7 @@ for a wide variety of layout and discursive contexts.
 Such queries could then be used for editing 
 tasks that should be localized to specific contexts, 
 or where a user wants to find a specific piece of 
-text known to have a given context.
-
+text known to have a given context.\clearpage{}
 
 \item[Sentence-Level Queries]  Siting queries relative 
 to sentence boundaries can improve 
@@ -728,7 +859,7 @@ a bitmapped page-image is the primary medium through
 which users view single publication pages.  Such graphics are 
 typically rendered by \PDF{} viewers, but other 
 techniques might be used, such as converting page images 
-to \SVG{} (illustrated here in Figure~\ref{fig:ss1}, 
+to \SVG{} (illustrated here in Figure~\Atref{fig:ss1}, 
 where the relevant component is an embedded web engine 
 that communicates with a \PDF{} viewer by 
 \textbf{QWebChannel}; so \SVG{} events are 
@@ -736,9 +867,21 @@ processed by \Cpp{} code directly, having only a
 minimal \JavaScript{} routing layer).  Failure to 
 interoperate these images with structured text formats 
 is a significant hindrance to efficient document 
-preparation and editing.
+preparation and editing.\enlargethispage{2em}
+
+
+\begin{figure}[h!]
+\figcolor
+\vspace*{1pt}
+\includegraphics[scale=0.8, trim=0 18pt 0 0, clip]{fin/tox.png}
+\caption{Mapping PDF pages to SVG views for improved annotation support}
+\label{fig:ss1}
+\end{figure}
+
+\clearpage{}
 
 \begin{figure}[ht]
+\figcolor
 \includegraphics[scale=0.45]{fin/ling.png}
 \caption{Enhanced GUI capabilities enabled by machine-readable text encoding}
 \label{fig:ss2}
@@ -761,7 +904,7 @@ keyphrases and named entities, citations) can thereby be
 exposed to \PDF{} viewers which could accordingly implement 
 novel front-end features such as overlays, context menus, 
 and dialog windows positioned nearby relevant content 
-(Figure~\ref{fig:ss2}).  
+(Figure~\Atref{fig:ss2}).  
 For example, a context menu action may include copying the 
 full text of a current sentence to clipboard, based on the 
 screen position where the menu is activated; semitransparent 
@@ -780,7 +923,8 @@ introduced by copy editors or typesetters.  Many modifications considered
 during the editing process follow common patterns, such as 
 proper use of commas around subordinate clauses, or correct formatting 
 of ellipses and bracketed content within inline/block quotes.  Assuming 
-that editors consistently include notations for recurring patterns, 
+that editors consistently include notations for recurring patterns 
+(\textit{insert/delete comma}, \textit{respell word}, etc.), 
 \PacTk{} code can filter queries specifically to \PDF{} comment 
 boxes which indicate a specific editing category.  Index codes within 
 \PDF{} comments (automatically inserted by compliant software) 
@@ -795,7 +939,8 @@ such as \XML{} custom character entities and \LaTeX{} macros.
 Many familiar textual components --- ellipses, 
 \textit{m-} and \textit{n-}dashes, 
 quotation and footnote marks, etc. --- are typically represented 
-not via their visible characters but rather through standardized 
+in text encoding not via similar visible characters (like two individual dashes 
+or three periods in sequence) but rather through standardized 
 codes or glyphs.  The problem is that systematic mappings 
 are lacking when mixing different file types (e.g., \LaTeX{} and 
 \XML{}, such as \JATS{} or \BITS{}) in a single workflow.  
@@ -844,6 +989,7 @@ when the text encoding systematically identifies individual
 sentences, as with \PacTk{}'s \TSOM{} object model.}
 
 \begin{figure}[b!]
+\figcolor
 \includegraphics[scale=0.4]{fin/ie.png}
 \caption{GUI functionality for compiling and curating indexes}
 \label{fig:ss3}
@@ -852,6 +998,7 @@ sentences, as with \PacTk{}'s \TSOM{} object model.}
 
 
 \begin{figure}[t]
+\figcolor
 \includegraphics[scale=0.83, trim=0 4.1cm 0 0, clip]{fin/single.png}
 \caption{An index entry dialog window (and context menu for single and meta-index views)}
 \label{fig:ss4}
@@ -879,7 +1026,7 @@ document and identify when a particular paragraph mentions a
 named entity suitable for indexing.  Depending 
 on representations or tag sets used (e.g., the 
 \JATS{} \textbf{string-name} element) annotated spans 
-and citations may also form the provisional heading-list 
+and citations (particularly titles and author names) may also precipitate the provisional heading-list 
 for an index.}
 
 
@@ -953,7 +1100,7 @@ the dropdown point of a context menu).
 
 \item[Index-Building GUI Components]  Index entries are multi-faceted 
 objects that naturally lend themselves to dedicated front-end displays, 
-such as dialog windows (Figures~\ref{fig:ss3}~and~\ref{fig:ss4}).  
+such as dialog windows (Figures~\Atref{fig:ss3}~and~\Atref{fig:ss4}).  
 For example, entries typically include a heading 
 label and then one or more locators (e.g., paragraph ids, replaced 
 eventually with page numbers), 
@@ -986,7 +1133,7 @@ In effect, index metadata may declare that all locators
 modeled as relevant for their specific entry are also relevant 
 to some list of associated concepts, such that whenever those 
 latter concepts are targeted in a query the explicit 
-locators are included among the query results (Figure~\ref{fig:m2m}).   
+locators are included among the query results (Figure~\Atref{fig:m2m}).   
 
 \vspace{-3pt}
 
@@ -1001,12 +1148,13 @@ in a given book series, journal %{\textcolor{white}X}\vspace*{2pt}
 collection, or document repository.  Such meta-indexes can support searches 
 that are more precise and granular than conventional
 search-engine technologies based on occurrence vectors 
-and stemming/lemmatization alone (Figure~\ref{fig:ss5}).\clearpage
+and stemming/lemmatization alone (Figure~\Atref{fig:ss5}).\clearpage
 
 %\vspace*{-2pt}{\tiny XXXXXXX}
 
 
 \begin{figure}[h!]
+\figcolor
 \includegraphics[scale=0.83]{fin/meta.png}
 \caption{Dialog window for local and meta-index searches}
 \label{fig:ss5}
@@ -1043,7 +1191,7 @@ dozen titles, not tens of thousands.  \lPacTk{} supports
 construction of corpora query languages that express 
 granular searches over multiple documents, with 
 similar logic to filtered/contextualized text searches 
-in a single \PDF{} document (Figures~\ref{fig:ss6}~and~\ref{fig:ss7}).
+in a single \PDF{} document (Figures~\Atref{fig:ss6}~and~\Atref{fig:ss7}).
 Even where queries are executed via conventional 
 vector-database methods, \PacTk{} allows authors or digital editors 
 to exercise control over how word-occurrence lists are compiled.  
@@ -1068,6 +1216,7 @@ tumorogenesis simulations, etc.  Publishing-related plugin architecture
 adapted and resued for these \EHR{} contexts.\clearpage
 
 \begin{figure}[h!]
+\figcolor
 \includegraphics[scale=0.66, trim=8.4cm 0 0 1cm, clip]{fin/pisa.png}
 \caption{Configuring default back-end queries}
 \label{fig:ss6}
@@ -1081,8 +1230,8 @@ adapted and resued for these \EHR{} contexts.\clearpage
 
 \item[Accurate Search Portals]  For users accessing search functionality 
 through online \HTML{} portals, extra programming is necessary to 
-properly show results derived from \PDF{} documents.  Figure \ref{fig:ss10} 
-(last page)  
+properly show results derived from \PDF{} documents.  Figure~\Atref{fig:ss10} 
+(second to last page)  
 shows two excerpts taken from publications included among 
 one publisher's lists of subconcepts under the \q{engineering} heading.  
 Both examples show irregular line spacing and improper rendering 
@@ -1097,7 +1246,7 @@ styling objects have both \LaTeX{} and \HTML{} output content.
 \pseudoIndent{} Another source of transcription errors is 
 character strings which are not ordinary language and therefore 
 require special encoding rules.  The book on the 
-left in the Figure \ref{fig:ss10}\footnote{\hspace*{4pt}Amy Neustein 
+left in the Figure \Atref{fig:ss10}\footnote{\hspace*{4pt}Amy Neustein 
 and Nathaniel Christen, \textit{Innovative Data Integration and Conceptual Space Modeling for COVID, Cancer, and Cardiac Care} 
 (Elsevier, 2022).} was a survey of biomedical software engineering in
 several domains, including text mining, radiomics, and immuno-oncology.  
@@ -1144,14 +1293,14 @@ for index preparation, although numeric locators still appear
 in the human-visible digital (and, of course, printed) versions.  
 For best accuracy, it is worthwhile to partition paragraphs 
 that contain block quotes, enumerations, or other subdivisions 
-and assign unique ids to each part (see Figure~\ref{fig:xNC}).  
+and assign unique ids to each part (see Figure~\Atref{fig:xNC}).  
 For example, segments of text before and after a block quote 
 (plus the quote itself) can have distinct ids, even if they 
 are each part of the same larger, encompassing paragraph.
 
 \pseudoIndent{} Given this precision, digital indexes even in \PDF{} documents 
 can benefit from paragraph ids.  The right-hand part of 
-Figure~\ref{fig:xNC} shows an index with color-coding to 
+Figure~\Atref{fig:xNC} shows an index with color-coding to 
 indicate such details as subdivisions (e.g., block quotes) 
 and paragraphs split between two pages.  In the 
 depicted document, all locators are clickable and 
@@ -1180,6 +1329,7 @@ as well as cause errors within manuscripts internally.
 \enlargethispage{4em}
      
 \begin{figure}[h!]
+\figcolor
 \hspace{-5em}\includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/xNC.png}
 \caption{Subdivision formats for Paragraph IDs}
 \label{fig:xNC}
@@ -1253,7 +1403,7 @@ specific frames evolve algorithmically as a product
 of parameters and initial conditions that may 
 be modified for each run (indeed, videos could be 
 taken directly from dynamically evolving \GUI{} windows; 
-see Figure~\ref{fig:pcbi}).
+see Figure~\Atref{fig:pcbi}).
   
 \pseudoIndent{}  Disciplines such as systems biology, 
 environmental science, quantum cosmology, and neurophysics 
@@ -1287,6 +1437,7 @@ operations, authentication, component capabilities, etc.).
 %\setlength{\abovecaptionskip}{-5pt}
 
 \begin{figure}[h!]
+\figcolor
 \hspace{-25pt}\includegraphics[scale=.95, trim=0 4cm 0 0, clip]{x/m2m.png}
 \caption{Index Search in a PDF Front-End Context}
 \label{fig:m2m}
@@ -1331,7 +1482,7 @@ compiling to a binary executable that serves as an entry-point for both text and
 
 \p{To illustrate how microcomponent programming affects 
 indexing and document-preparation, consider the screenshot 
-reproduced in Figure~\ref{fig:oh}, left (taken from the OpenHospital 
+reproduced in Figure~\Atref{fig:oh}, left (taken from the OpenHospital 
 user manual).  There are numerous areas within the \GUI{} 
 window with selections/options that may be connected 
 to controlled vocabularies, including the list of 
@@ -1374,7 +1525,7 @@ the \GIS{} data points will represent either incidents
 cancer diagnoses (organized by tumor classification).  
 Apart from being governed by controlled vocabularies, 
 such data points would have distinct \GUI{} 
-requirements (Figure~\ref{fig:car} is an example).  For instance, 
+requirements (Figure~\Atref{fig:car} is an example).  For instance, 
 cancer varieties 
 can be a terminological bridge for multiple 
 data sets and leveraged via search \API{}s. 
@@ -1392,7 +1543,7 @@ metadata such as standard nomenclature and
 \q{Common Data Elements} (defined by \NCIP{}, for 
 example), some \GUI{} components (as discussed above) 
 may function as graphics displays properly indexed 
-as multimedia content.  On the right in Figure~\ref{fig:oh} 
+as multimedia content.  On the right in Figure~\Atref{fig:oh} 
 is a screenshot from the Cancer Imaging Phenomics 
 Toolkit which has multiple data fields suitable 
 for proposed \ScignTier{} indexing, including textural segmentation 
@@ -1409,6 +1560,7 @@ graphics were obtained.}
 \vspace{-25pt}
 
 \begin{figure}[h!]
+\figcolor
 \hspace{-45pt}\raisebox{-6pt}{\includegraphics[page=53, scale=.55, trim=0 11cm 0 0, clip]{UserManual.pdf}}%
 \hspace{-18pt}\includegraphics[scale=1.03, trim=0 3cm 0 1cm, clip]{baseScreenshot.png}\vspace{-7pt}
 \caption{OpenHospital form (left) and cancer imaging window (right) 
@@ -1546,7 +1698,7 @@ the video and the \textit{in silico} run that produces it.
 
 \end{description}
 
-\p{\counterex{} The graphic pictured in Figure~\ref{fig:pcbi} is taken 
+\p{\counterex{} The graphic pictured in Figure~\Atref{fig:pcbi} is taken 
 from a Computational Biology journal; the relevant article 
 introduces \CHASTE{} (Cancer, Heart And Soft Tissue Environment), a 
 simulation framework written in \Cpp{}.  Switching from 
@@ -1602,7 +1754,7 @@ the window which actually shows the graphics it captures, both the
 overall window (presumably with various navigation and configuration 
 controls) and the specific \q{widget} whose display directly 
 yields the video feed; and the \Cpp{} code for the 
-simulation's logic (in Figure~\ref{fig:pcbi}'s example, 
+simulation's logic (in Figure~\Atref{fig:pcbi}'s example, 
 this code performs calculations like iteration-step computations 
 and preparing values for a differential equation solver).  
 There may also be a separate \GUI{} window specifically 
@@ -1692,11 +1844,11 @@ information's internal structure.  Web maps, lacking multi-window displays, tend
 
 \p{\mic{}  In lieu of an open-source \GIS{} \textit{application}, a \FAIR{}data grid 
 should provide \GIS{} \textit{components} for reuse by individual publications.  
-Here in the current document, Figures~\ref{fig:ss8} and \ref{fig:car} are taken from ProPublica 
+Here in the current document, Figures~\Atref{fig:ss8} and \Atref{fig:car} are taken from ProPublica 
 reporting about pollution (from 2019 and 2021, respectively).  For the latter example, ProPublica provides 
 maps centered at regions with (apparently) elevated environmental-health 
 risks, but epidemiological and contamination data is not directly 
-included, although (as in the bottom portion of Figure~\ref{fig:car}) researchers can locate related 
+included, although (as in the bottom portion of Figure~\Atref{fig:car}) researchers can locate related 
 data sets elsewhere.  In an academic publication, authors might wish to 
 build an integrated map with attribute layers reflecting 
 \textit{both} contamination (toxic release; carcinogen) and 
@@ -1797,7 +1949,7 @@ connections, and also clinics operating
 under emergency-response conditions.}
 
 \p{Taking FreeMedForms and OpenHospital 
-(left part of Figure~\ref{fig:oh}) as 
+(left part of Figure~\Atref{fig:oh}) as 
 examples, one noteworthy issue is that of 
 \textit{internal} dependencies.  Principles of \FAIR{}data 
 address \textit{external} dependencies, but 
@@ -2045,11 +2197,12 @@ and statistical/data-visualization tools and diagrams, plus domain-specific
 interactive formats).  If desired, 
 \PDF{} viewers could themselves be implemented as one 
 portion of a multimedia suite, with functional motifs 
-duplicated across the various components (Figures~\ref{fig:ss8}~and~\ref{fig:ss9}).}
+duplicated across the various components (Figures~\Atref{fig:ss8}~and~\Atref{fig:ss9}).}
 
 \setlength{\belowcaptionskip}{5pt}
 
 \begin{figure}[t!]
+\figcolor
 \includegraphics[scale=0.5]{fin/stark-mi.png}
 \includegraphics[scale=0.5]{fin/stark.png}
 \caption{Meta-index search through a web portal}
@@ -2118,6 +2271,7 @@ effort (requiring multiple libraries for different operating
 systems and programming environments).\vspace{6pt}  
  
 \begin{figure}[ht]
+\figcolor
 \hspace*{1em}\includegraphics[scale=0.47, 
 trim=0 12pt 0 22pt, clip]{fin/oct.png}
 \caption{Flexible range-select features}
@@ -2208,6 +2362,7 @@ manipulation, and bytecode generators.
 \vspace*{3pt}
 
 \begin{figure}[h!]
+\figcolor
 \hspace{18pt}\includegraphics[scale=0.5, trim=0 7mm 0 8mm, clip]{fin/sah.png}
 \caption{A category-based web-accessible index table for SVG pages}
 \label{fig:ss9}
@@ -2495,6 +2650,7 @@ structured format like JSON, XML, or HTML.
 \vspace*{-26pt}
 
 \begin{figure}[h!]
+\figcolor
 \hspace{125pt}\includegraphics[page=5, scale=.85, trim=0 13.4cm 0 0, clip]{x/pcbi_1002970.pdf}%
 \vspace{1.5em}
 \caption{Potential locations for code/data/multimedia cross-reference annotations}
@@ -2508,6 +2664,7 @@ structured format like JSON, XML, or HTML.
 \pagestyle{empty}
 
 \begin{figure}[h!]
+\figcolor
 \includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/x3.png}
 \caption{HTML Transcription Errors}
 \label{fig:ss10}
@@ -2519,6 +2676,7 @@ structured format like JSON, XML, or HTML.
 \pagestyle{empty}
 
 \begin{figure}[h!]
+\figcolor
 \hspace{-25pt}\includegraphics[scale=0.61, trim=0 1.3cm 0 0, clip]{x/car/car.png}
 \caption{GIS/Public Health Interoperability}
 \label{fig:car}

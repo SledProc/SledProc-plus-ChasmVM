@@ -23,7 +23,7 @@ neighbors who needed help with dog-walking (I myself
 had a pitbull mix in Brooklyn that had to be rehomed 
 with a friend of the family before I left, and I've had 
 experience in the past with dog walking/sitting).  
-Currently I walks dogs for roughly 3-4 hours per 
+Currently I walk dogs for roughly 3%-4 hours per 
 day (every day) mostly from approximately 10:00 %- 11:30, 
 4:15 %- 5:15, and 6:00 %- 7:00, occasionally with a 
 couple other owners as well when they are out of town 
@@ -32,7 +32,7 @@ feed her birds and clean a bird cage).  I haven't
 established a fixed fee schedule, but in general I've 
 received %$40 per week from one owner, and %$80 per month 
 from another (the latter was affected by the government 
-shutdown however so I did not receive payment for two 
+shutdown, such that I did not receive payment for two 
 months around September and October), so in general 
 I receive about %$240 each month.  For the aforementioned 
 owner with birds (and two small dogs I've walked on occasion) 
@@ -42,12 +42,12 @@ I sometimes also walk for a neighbor with a very charming chocolate
 lab, but that's not for monetary compensation.\footnote{Rather, I join them 
 afterward for dinner.}
 
-On numerous occasions I have heard from other neighbors that they 
+Several times I have heard from other neighbors that they 
 too need dog walking services (or cat-sitting on one occasion), 
 but never got contacted back.  It seems difficult to make informal 
 pet care one's primary source of income.
 
-So when the dust settles I can figure roughly %$200-%$250 per month working 
+In sum, when the dust settles I can figure roughly %$200-%$250 per month working 
 3.5 %- 4 hours a day.  This helps with incidental 
 expenses (food, mostly) but I need to provide a little 
 backstory to address the situation with where I am living and related details.
@@ -86,12 +86,12 @@ business for several years in solely-digital fashion, during which time
 we moved (back) to New York City.  There I attended small-business seminars, 
 tech meetup groups, and other programming-related activities, with the 
 goal of potentially migrating the family business from our own e-commerce 
-shop to providing website-management software for other businesses.  
+shop toward providing website-management software for other businesses.  
 This was how I eventually connected with the startup mentioned earlier.
 
 As a doctoral student I had at one point served on a committee that 
 was redesigning our departmental website, with the goal of 
-providing a publishing platform for students and faculty.  From 
+providing a publishing platform and search/annotation system for our students and faculty.  From 
 a philosophy of science perspective, I was interested in 
 how "/executable research objects/" and other Science Grid 
 technologies could help document theoretical and methodological 
@@ -140,12 +140,12 @@ chapters or articles on various computer-science topics
 (the founder) was working on her own book contract and many op-eds 
 and popular-media articles.  In short, we both had multiple publishing 
 projects and I found it worthwhile to implement new publishing software, 
-even if (at that point) for just our own internal use.  
+even if (at that point) just for our own internal use.  
 
-In addition to science technology (as 
-editor of a Springer Nature journal and book series) the founder 
+In addition to science (as 
+editor of a Springer Nature journal and a book series) the founder 
 has been involved in political activism, particularly in the area 
-of family court reform.  In this capacity she sometimes provides 
+of family-court reform.  In this capacity she sometimes provides 
 counseling to mothers engaged in custody battles, or restricted 
 to visiting children as non-custodial parents.  During the pandemic, we essentially 
 became a small-scale publishing house, compiling legal documents, 
@@ -166,13 +166,13 @@ plus many smaller papers.  In exchange, she arranged for me to stay with a
 colleague and paid rent on my behalf (probably the equivalent of about 
 %$850/month on the open market).  Recently my landlady sold her house, 
 which led to my relocating to Baltimore under a similar arrangement 
-with a close associate of my "/boss/" who has coauthored with her and 
-shares her interest in family court reform.  
+with a close associate of the founder, who has coauthored with her and 
+shares her interest in family-court reform.  
 
 Leveraging rent-free housing in exchange for "/in kind/" work isn't a 
 great long-term solution, so I hope ;/SNAP/ benefits would allow me to 
 reallocate funds I receive from more informal "/gig/" engagements toward 
-a more secure rental situation.  Meanwhile, instead of one-off 
+a more secure rental situation.  Meanwhile, instead of relying on one-off 
 work on individual publishing projects we are building 
 more substantial software for potential use either by publishing 
 houses or curatorial organizations, such as PubMed Central and 
@@ -194,7 +194,7 @@ architecture for collaborative and decentralized
 science communities.  Examples include the 
 Cancer Bioinformatics Grid (;/caBIG/), 
 Center for the Development of 
-a Virtual Tumor (;/CVIT/), National Cancer Informatics Program (;/NCIP/),
+a Virtual Tumor (;/CViT/), National Cancer Informatics Program (;/NCIP/),
 Data Infrastructure Building Blocks (from the 
 National Science Foundation), Open Science Grid (;/OSG/), 
 Worldwide ;/LHC/ Computing Grid (;/WLCG/), EarthCube, Earth System Grid Federation (;/ESGF/), and many others.  
@@ -209,12 +209,14 @@ caGrid 1.0: An Enterprise Grid Infrastructure for Biomedical Research} (2008)} %
 Grid specifications are often focused on metadata standards.  
 There are not necessarily standard guidelines for actual 
 */code/*, as written in common science-computing languages, for 
-components that will be hosted on a grid.  There are, 
-however, detailed features and annotations that may be 
+components that will be hosted on a grid.   I consider this a 
+lacuna, because there are detailed features and annotations that may be 
 applied to help grid components interoperate, and to 
 increase overall usability, especially with an 
 emphasis on ;/FAIR/ (Findable, Accessible, Interoperable, 
-Reusable) priorities.  One rationale for grid computing 
+Reusable) priorities.  
+
+One rationale for grid computing 
 is to provide remote services for investigations that 
 require special-purpose equipment %-- i.e., computing 
 power beyond that typically accessible for researchers.  However, a different 
