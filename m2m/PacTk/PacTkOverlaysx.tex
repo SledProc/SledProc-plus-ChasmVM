@@ -580,6 +580,60 @@ suited for domain-specific microcomponent programming.}
 
 
 
+
+\ifnum\value{page}=11{
+\AtTextLowerLeft{\raisebox{11pt}{
+
+\begin{tikzpicture}
+
+\node at (0,0) [text=white] {X};
+
+
+
+\colorlet{tbgray}{red!70!gray}
+\colorlet{tou}{purple!20!orange}
+\colorlet{tin}{red!60!black}
+
+
+\node [draw=tou!30, fill=tbgray!49, anchor = south west, rounded corners,
+text width=4.5cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+(s1) at (-.3, 4.4) {{Excerpted from OpenHospital manual.
+}
+};
+
+
+\node [draw=tin!60, fill=white, anchor = south west, rounded corners,
+text width=4.5cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (-.39, 4.3) {Excerpted from OpenHospital manual.
+};
+
+
+
+\node [draw=tou!30, fill=tbgray!49, anchor = south west, rounded corners,
+text width=4.5cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+(s1) at (11.32, 4.1) {{Excerpted from published article.
+}
+};
+
+
+\node [draw=tin!60, fill=white, anchor = south west, rounded corners,
+text width=4.4cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+ at (11.3, 4) {Excerpted from published article.
+};
+
+
+
+
+
+\end{tikzpicture}
+}}
+
+}\fi
+
+
+
+
+
 \ifnum\value{page}=10{
 \AtTextLowerLeft{\raisebox{11pt}{
 
