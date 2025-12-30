@@ -1086,6 +1086,8 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \newcommand{\SVG}{\resizebox{!}{6.25pt}{\ATxt{SVG}}}
 \newcommand{\PNG}{\resizebox{!}{6.25pt}{\ATxt{PNG}}}
 
+\newcommand{\PLOSOne}{\resizebox{!}{6.25pt}{\ATxt{PLOS One}}}
+
 
 \newcommand{\mGIS}{\resizebox{!}{6.25pt}{\ATxt{GIS}}}
 \newcommand{\mAEC}{\resizebox{!}{6.25pt}{\ATxt{AEC}}}
@@ -1098,6 +1100,15 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \newcommand{\sGIS}{\resizebox{!}{6.25pt}{\ATxt{GIS}}}
 \newcommand{\sAPI}{\resizebox{!}{6.25pt}{\ATxt{AEC}}}
 \newcommand{\sDSL}{\resizebox{!}{6.25pt}{\ATxt{DSL}}}
+
+
+\newcommand{\cleft}[2][.]{%
+  \begingroup\colorlet{savedleftcolor}{.}%
+  \color{#1}\left#2\color{savedleftcolor}%
+}
+\newcommand{\cright}[2][.]{%
+  \color{#1}\right#2\endgroup
+}
 
 
 
@@ -1160,6 +1171,7 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \newcommand{\VCDE}{\resizebox{!}{6.25pt}{\AcronymText{VCDE}}}
 
 
+\newcommand{\ODE}{\resizebox{!}{6.25pt}{\AcronymText{ODE}}}
 
 %\newcommand{\CapTk}{\resizebox{!}{6.25pt}{\AcronymText{DMR}}}
 
@@ -1203,6 +1215,26 @@ trim=0 14mm 0 10mm, clip]{pm/7a.png}}}
 \colorlet{textGreen}{clinkColor!70!purple}
 
 %\colorlet{textGreen}{orb!40!black}
+
+%\definecolor{parenc}{RGB}{93, 129, 194}
+%\definecolor{parenc}{RGB}{153, 106, 121}
+%\definecolor{parenc}{RGB}{232, 12, 81}
+%\definecolor{parenc}{RGB}{102, 99, 39}
+%\definecolor{parenc}{RGB}{102, 46, 39}
+\definecolor{parenc}{RGB}{191, 95, 33}
+
+\definecolor{textemc}{RGB}{102, 99, 39}
+\newcommand{\textemph}[1]{\textcolor{textemc}{#1}}
+
+\definecolor{textbfcc}{RGB}{232, 12, 81}
+\newcommand{\textbfc}[1]{\textcolor{textbfcc}{\textbf{#1}}}
+
+\definecolor{textitcc}{RGB}{153, 106, 121}
+\newcommand{\textitc}[1]{\textcolor{textitcc}{\textit{#1}}}
+
+\definecolor{textatcc}{RGB}{93, 129, 194}
+\newcommand{\textatc}[1]{\textcolor{textatcc}{\textbf{\textsf{{#1}}}}}
+
 
 
 \newcommand{\lPacTk}{{\fontfamily{fvs}\fontsize{8}{14}%

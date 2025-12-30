@@ -642,7 +642,7 @@ macros when necessary --- but \LaTeX{} sentences are not expressed
 in a systematic manner (e.g., via auxiliary files) for 
 any purposes other than visual spacing.  In \TEI{} and \BioC{}, individual 
 sentences \textit{can} be represented, but this is not 
-mandatory (thus \textbf{s} and \textbf{sentence} tags 
+mandatory (thus \textatc{s} and \textatc{sentence} tags 
 are available but not guaranteed to be present in any particular document).  
 By contrast, \PacTk{} is explicitly built around 
 sentence-level units, specifically a \q{topomorphic 
@@ -862,7 +862,7 @@ techniques might be used, such as converting page images
 to \SVG{} (illustrated here in Figure~\Atref{fig:ss1}, 
 where the relevant component is an embedded web engine 
 that communicates with a \PDF{} viewer by 
-\textbf{QWebChannel}; so \SVG{} events are 
+\textatc{QWebChannel}; so \SVG{} events are 
 processed by \Cpp{} code directly, having only a 
 minimal \JavaScript{} routing layer).  Failure to 
 interoperate these images with structured text formats 
@@ -897,7 +897,7 @@ preparation and editing.\enlargethispage{2em}
 \pseudoIndent{} By design, \PacTk{} supports post-processing 
 algorithms within pipelines whose formats can generate 
 \PDF{}-coordinate metadata, such as \LaTeX{} 
-\textbf{pgfsavepos} (and auxiliary \textbf{write}) commands.  
+\textatc{pgfsavepos} (and auxiliary \textatc{write}) commands.  
 Page coordinates for significant discursive locations 
 (e.g., sentence and paragraph boundaries, footnote markers, 
 keyphrases and named entities, citations) can thereby be 
@@ -924,7 +924,7 @@ during the editing process follow common patterns, such as
 proper use of commas around subordinate clauses, or correct formatting 
 of ellipses and bracketed content within inline/block quotes.  Assuming 
 that editors consistently include notations for recurring patterns 
-(\textit{insert/delete comma}, \textit{respell word}, etc.), 
+(\textitc{insert/delete comma}, \textitc{respell word}, etc.), 
 \PacTk{} code can filter queries specifically to \PDF{} comment 
 boxes which indicate a specific editing category.  Index codes within 
 \PDF{} comments (automatically inserted by compliant software) 
@@ -1025,7 +1025,7 @@ manuscript.  Alternatively, authors could read through a
 document and identify when a particular paragraph mentions a 
 named entity suitable for indexing.  Depending 
 on representations or tag sets used (e.g., the 
-\JATS{} \textbf{string-name} element) annotated spans 
+\JATS{} \textatc{string-name} element) annotated spans 
 and citations (particularly titles and author names) may also precipitate the provisional heading-list 
 for an index.}
 
@@ -1038,8 +1038,8 @@ computational tractability in themselves.  For example, the most
 popular desktop \GUI{} framework are the \Qt{} \Cpp{} libraries, 
 which are the basis of cross-platform \PDF{} viewers such as 
 Poppler and \XPDF{}.  \lPacTk{} can seamlessly interoperate 
-with \Qt{}, exposing sentence texts as \textbf{QString} objects and 
-expressing \GTagML{} parsing grammars as \textbf{QRegularExpression} 
+with \Qt{}, exposing sentence texts as \textatc{QString} objects and 
+expressing \GTagML{} parsing grammars as \textatc{QRegularExpression} 
 instances, paired with lambda callbacks activated by the first matching 
 rule (relative to the current parse-position).  More precisely, 
 \GTagML{} has context-sensitive grammars that can include or 
@@ -1072,8 +1072,8 @@ or vice-versa), or a subset (e.g., last name only),
 or associated concepts with different language entirely 
 (e.g., \q{The White House} in lieu of a president's name). 
 Concepts can also be grouped into semantic \q{clusters} 
-(consider \textit{ranson}, \textit{extortion}, \textit{bribery}, 
-\textit{corruption}, \textit{influence peddling}, \textit{lobbying}), 
+(consider \textitc{ranson}, \textitc{extortion}, \textitc{bribery}, 
+\textitc{corruption}, \textitc{influence peddling}, \textitc{lobbying}), 
 with internal similarity-weight matrices.  In the 
 presence of a particular index entry, front-end displays can 
 give users options to fine-tune which match strategies are 
@@ -1105,7 +1105,7 @@ For example, entries typically include a heading
 label and then one or more locators (e.g., paragraph ids, replaced 
 eventually with page numbers), 
 then possible subheadings with their own 
-locators, plus \q{redirectors} (\textit{see} or \textit{see also}) applied 
+locators, plus \q{redirectors} (\textitc{see} or \textitc{see also}) applied 
 either to overall entries or to subheadings.  This represents a lot 
 of information to keep track of for each entry, and indexes can include 
 hundreds of entries.  Although indexes are eventually shown 
@@ -1207,8 +1207,8 @@ through their default algorithms.
 manuscripts/documents in formats like \PDF{} --- this technology 
 could potentially be used in other environments.  For instance, 
 in clinical trials and point-of-care software the fundamental assets 
-are Electronic Health Records; but search features, 
-as well as plugins and multimedia (discussed next),
+are health/medical records; but search features, 
+as well as plugins and multimedia (discussed plugins),
 might be extended to include resources such as diagnostic 
 images, cytometry gating, assay graphics, 
 tumorogenesis simulations, etc.  Publishing-related plugin architecture 
@@ -1240,13 +1240,13 @@ intermediate files, from which \PDF{} was produced as expected,
 were less successful in the context of \HTML{} generation 
 (an accurate \PDF{} is displayed at the graphics bottom).  
 These pages show a weakness in \JATS{}-style encodings 
-that can be alleviated by a sentence-object model where 
+that can be alleviated by a sentence-data model where 
 styling objects have both \LaTeX{} and \HTML{} output content.     
 
 \pseudoIndent{} Another source of transcription errors is 
 character strings which are not ordinary language and therefore 
 require special encoding rules.  The book on the 
-left in the Figure \Atref{fig:ss10}\footnote{\hspace*{4pt}Amy Neustein 
+left in Figure \Atref{fig:ss10}\footnote{\hspace*{4pt}Amy Neustein 
 and Nathaniel Christen, \textit{Innovative Data Integration and Conceptual Space Modeling for COVID, Cancer, and Cardiac Care} 
 (Elsevier, 2022).} was a survey of biomedical software engineering in
 several domains, including text mining, radiomics, and immuno-oncology.  
@@ -1314,11 +1314,11 @@ publication; from any one digital index users could initiate
 searches for matching entries in other books or articles.
 
 \pseudoIndent{} To support such functionality, text encoding should describe 
-structured objects (such as the \textbf{date} and \textbf{string-name} tags in 
-\JATS{}) wherever segments follow canonical encodings beyond 
+structured objects (such as the \textatc{date} and \textatc{string-name} tags in 
+\JATS{}) wherever segments follow canonical notations beyond 
 just natural language (e.g., citations, references, bibliographic 
-entries, and quoting/transcription conventions).  Also, via \PacTk{} 
-meta-indexes can enforce consistent encoding for special characters 
+entries, and quoting/transcription conventions).  Also,  
+meta-indexes via \PacTk{} can enforce consistent encoding for special characters 
 (e.g., quote marks) and structured segments (e.g., proper-name initials) 
 in cases where different style guides have inconsistent recommendations 
 (for example, whether or not to include spaces between consecutive initials).  
@@ -1389,7 +1389,7 @@ similar rationale as videos, digital maps, and
 other highly-visual content types.  As an example, 
 analysis of habitat regrowth after a forest 
 fire can be based on footage of actual locations 
-or of agent-oriented simulations that provide 
+\textit{or} on agent-oriented simulations that provide 
 mathematical models for stages of regeneration 
 (which plant and animal species become reestablished 
 at which point in time).  Indexing and cross-referencing 
@@ -1597,7 +1597,7 @@ code packages may be downloaded and executed privately,
 e.g., on a scientist's own computer.  In other cases, the code 
 specifically requires special hardware (e.g., supercomputing/massive 
 parallelization) and a grid enables researchers to run programs remotely, 
-on computing nodes that have the requisite capabilities.}  
+on software-hosting nodes that have the requisite capabilities.}  
 
 \p{It would be a mistake, however, to assume that grid computing 
 necessarily involves technologies that require atypical 
@@ -1708,11 +1708,11 @@ introduces \CHASTE{} (Cancer, Heart And Soft Tissue Environment), a
 simulation framework written in \Cpp{}.  Switching from 
 the \PDF{} view to the relevant code and video is a tedious 
 process: readers need to scroll to a \q{supplemental materials} 
-section to download the \textbf{.avi} files, and manually 
+section to download the \textbfc{.avi} files, and manually 
 find and launch the movies through a media player (this 
 has no bearing on \CHASTE{} as an important research tool; 
 interop with text documents is as much the responsibility 
-of publishers --- PLOS One in this case --- but in any event the process is needlessly burdensome).}
+of publishers --- \PLOSOne{} in this case --- but in any event the process is needlessly burdensome).}
 
 \p{More substantially, the process of actually 
 identifying those components responsible for the 
@@ -1723,8 +1723,8 @@ straightforward documentation of what steps someone
 might take to reproduce the published video from the 
 specific source files that run the depicted 
 simulation.  Moreover, neither \CHASTE{} itself nor 
-the project-specific simulation package includes a 
-specific \GUI{} component whose role is to display 
+the project-specific simulation package (from Figure~\Atref{fig:pcbi}) includes a 
+\GUI{} component whose explicit role is to display 
 \CHASTE{} simulations directly.  As a consequence, 
 actually generating a viewable simulation that 
 mimics the video requires detailed examination of the 
@@ -1743,9 +1743,9 @@ showing one of the video's frames.}
 
 \enlargethispage{1em}
 \p{Once the actual source code is downloaded, \FAIR{} principles suggest 
-that (1) there should be instructions directly addressing how 
+that \cleft[parenc](1\cright[parenc]) there should be instructions directly addressing how 
 to find and run the code specifically associated with the 
-referenced video; and (2) there should be a single \GUI{} 
+referenced video; and \cleft[parenc](2\cright[parenc]) there should be a single \GUI{} 
 class and component whose specific purpose is to display 
 (visuals of) simulations of the relevant kind.}
 \clearpage{}
@@ -1753,7 +1753,7 @@ class and component whose specific purpose is to display
 \vspace*{-2em}
 \p{More precisely, notice that there are several interrelated assets 
 which could all be grid-hosted and indexed: the video; the 
-\GUI{} class (plus relevant \textbf{.cpp} files) implementing 
+\GUI{} class (plus relevant \textbfc{.cpp} files) implementing 
 the window which actually shows the graphics it captures, both the 
 overall window (presumably with various navigation and configuration 
 controls) and the specific \q{widget} whose display directly 
@@ -1775,17 +1775,17 @@ for instance, context menus could allow users to navigate
 from the simulation display \GUI{} to a video player and 
 vice-versa.  Similarly, context menus should launch a 
 separate window showing initial values (as well 
-as model metadata, potentially) in both contexts.}
+as metadata for the current model, potentially) in both contexts.}
   
 \p{In terms of search and indexing, all four components 
 can be linked to any publication which discusses that 
 specific video or includes illustrations derived 
 therefrom.  Terms specific to the computer 
 code should be indexed in their source-file 
-form (e.g., \q{DeltaNotchOdeSystem}) alongside 
-a natural-language equivalent (\q{Delta Notch ODE System}) 
-and related terms (\textit{Notch signaling pathway}, 
-\textit{Ordinary 
+form (e.g., \q{\textemph{DeltaNotchOdeSystem}}) alongside 
+a natural-language equivalent (\q{Delta Notch \ODE{} System}) 
+and related terms (\textitc{Notch signaling pathway}, 
+\textitc{Ordinary 
 Differential Equation}).  Such semantics could 
 be annotated on \Cpp{} files directly and 
 then indexed when the overall package is 
@@ -2017,7 +2017,7 @@ application that is essentially a container for those
 core components, with users being able to select and visit them 
 in turn.  Third-party developers should find and 
 study this application in an intuitive manner; in \Cpp{}, 
-say, there should be exactly one \textbf{main.cpp} file, 
+say, there should be exactly one \textatc{main.cpp} file, 
 or at least an obvious folder location where that file 
 is understood to be a starting-point for viewing 
 essential \EMR{} types.}
@@ -2041,7 +2041,7 @@ existing frameworks do not provide sufficient support
 for such modularization to occur absent concerted  
 effort; for example, implementing context menus 
 according to systemwide protocols requires supporting 
-code more detailed than just the basic \textbf{QMenu}/\textbf{QAction} 
+code more detailed than just the basic \textatc{QMenu}/\textatc{QAction} 
 mechanisms from \Qt{}.  In this sense, balancing 
 component autonomy with systemwide protocols is a concern 
 common to \EMR{}s and to \FAIR{} microcomponents. 
