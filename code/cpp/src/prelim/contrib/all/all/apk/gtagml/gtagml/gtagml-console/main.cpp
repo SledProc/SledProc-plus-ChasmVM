@@ -311,10 +311,18 @@ int main(int argc, char *argv[])
 
 // _main(file, folder, manfolder);
 
-  file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/pers/pers.gt";
-  folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/pers";
+//  file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/pers/pers.gt";
+//  folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/pers";
 
-  _main(file, folder, manfolder);
+//  _main(file, folder, manfolder);
+
+
+
+   file = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/conf/paper-conf.gt";
+   folder = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/src";
+
+   _main(file, folder, manfolder);
+
 
 #ifdef HIDE
  QString outstr;

@@ -1233,7 +1233,7 @@ through online \HTML{} portals, extra programming is necessary to
 properly show results derived from \PDF{} documents.  Figure~\Atref{fig:ss10} 
 (second to last page)  
 shows two excerpts taken from publications included among 
-one publisher's lists of subconcepts under the \q{engineering} heading.  
+one publisher's lists of subconcepts under the \q{\textemph{engineering}} heading.  
 Both examples show irregular line spacing and improper rendering 
 of text with distinct font-styles.  It is clear that the 
 intermediate files, from which \PDF{} was produced as expected, 
@@ -1344,7 +1344,7 @@ text documents.  For example, the
 Cancer Biomedical Informatics Grid (\CaBIG{}) 
 project is an oncology research network 
 across multiple continents; institutions can join 
-the network if they adhere to \q{Vocabularies and Common Data Elements} 
+the network if they adhere to \q{\textemph{Vocabularies and Common Data Elements}} 
 (\VCDE{}) standards applying to \API{}s, metadata, provenance 
 declarations, execution models, and so on, to 
 support cross-network interoperability 
@@ -1505,7 +1505,7 @@ in a machine-readable fashion;
 the entire software base can then have a single indexing 
 and search entry-point (e.g., a query for the 
 term \q{urinanalysis} should match this microcomponent 
-as one option for the exam-type field).  In addition, 
+as one option for the \textatc{exam-type} field).  In addition, 
 new microcomponents could be added to the hospital software 
 systematically.  Consider, for instance, that a more 
 specialized exam report is needed for a particular clinical 
@@ -1953,7 +1953,7 @@ connections, and also clinics operating
 under emergency-response conditions.}
 
 \p{Taking FreeMedForms and OpenHospital 
-(left part of Figure~\Atref{fig:oh}) as 
+(see the left part of Figure~\Atref{fig:oh}) as 
 examples, one noteworthy issue is that of 
 \textit{internal} dependencies.  Principles of \FAIR{}data 
 address \textit{external} dependencies, but 
@@ -2052,13 +2052,13 @@ common to \EMR{}s and to \FAIR{} microcomponents.
 
 \vspace*{-43pt}
 
-{\semihr{0.647\textwidth}}
+{\semihr{0.649\textwidth}}
 \vspace*{5pt}
 \hspace{2pt}\secttitle{{Extending Beyond Single 
 Documents: Data Transparency and Translational 
 Science}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
 \vspace*{5pt}
-{\semihr{0.647\textwidth}}
+{\semihr{0.649\textwidth}}
 
 \vspace*{9pt}
 
@@ -2066,7 +2066,7 @@ Science}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
 %\p{}
 
 \p{Rethinking the relationship between pure and applied 
-research, between universities and communities, 
+research --- and between universities and communities ---  
 means a changing landscape for publishers as well.
 Although all biomedical research (and scientific work in general) 
 is motivated in principle by practical benefits, translational 
@@ -2090,7 +2090,7 @@ available only in a few hospitals).
 Such models suggest roadmaps to help 
 guide deployment once research progresses through  
 multiple stages of concrete implementation.  Published materials 
-(not necessarily restricted to journal articles) 
+(not necessarily restricted to books and journal articles) 
 may reflect data and observations at each of these stages.}
 
 \p{Apart from theoretical models along these lines, the 
@@ -2124,9 +2124,9 @@ implies that a research infrastructure should sustain and
 evolve over multiple phases of a scientific project, 
 which extends beyond the time-frame of individual 
 books or articles.  This is reflected in part by 
-protocols such as \q{Research Objects} where supplemental 
-materials (graphics, data sets, utility computer code, and so on) are presented 
-in standardized ways.  It is also manifest 
+protocols such as Executable Research Objects where \q{supplemental} 
+materials (graphics, data sets, utility computer code, and so on) are  
+standardized.  It is also manifest 
 in notions of replication and data transparency: 
 models such as Minimum Information Standards 
 that illustrate experimental/data-acquisition modalities to facilitate 
@@ -2158,7 +2158,7 @@ through downloadable resources/data sets.
 Materials associated with a given publication, aggregated through this entry 
 point, would summarize translational 
 possibilities for the documented research 
-and provide a foundation for institutional 
+and hopefully provide a foundation for institutional 
 deployment(s).  Individual scientists or students 
 could also utilize Project Archives as encapsulations 
 introducing their interests, background, and expertise 
@@ -2244,8 +2244,9 @@ and shapefiles for geospatial data sets.
 \pseudoIndent{} Some domain-specific file formats are derived from general-purpose 
 specifications such as \XML{}, \CSV{}, and \JSON{}.  Others 
 employ idiosyncratic text and/or binary 
-serialization protocols, such that custom parsers are necessary so as to consume byte or character 
-streams from relevant raw data files.  Even when the actual encoding is performed via a 
+serialization protocols, such that custom parsers are necessary so as to consume 
+byte- or character-streams from 
+relevant raw data files.  Even when the actual encoding is performed via a 
 generic standard like \XML{}, dedicated deserialization code will still be needed --- 
 ordinary parsers may convert a given \XML{} document to a %Document Object Model 
 \DOM{} infoset, but extraction algorithms 
@@ -2258,9 +2259,9 @@ object data fields.
 platform-independent Virtual Machine that is easy to host within 
 scientific applications or also build as a plugin or standalone program.  
 Scripting 
-or query languages can then emit code for this \VM{} to 
+or query languages can then emit code proper to this \VM{} to 
 take responsibility for deserializing encoded data sets 
-(while, as another use-case, the \VM{} could be embedded in 
+(whilst, as another use-case, the \VM{} could be embedded in 
 \Cpp{} classes/microcomponents   
 as a runtime contract-verification tool).  Depending 
 on format, \VM{} instructions might navigate through 
@@ -2307,7 +2308,7 @@ manner.  Broadly-usable code libraries for (e.g.) deserialization
 obviate the need to achieve interoperability via reified/canonical  
 model-representation standards alone.  For example, 
 Semantic Web nodes could be annotated with information about 
-libraries that could unpack objects whose data fields 
+libraries that are able to unpack objects whose data fields 
 supply values to nearby sites in the node's shape-constrained 
 neighborhood.  Moreover, implementations should proceed via 
 conventions suitable for \GUI{} wrappers and interop (in particular, 
@@ -2396,12 +2397,12 @@ generative production rules), and directly-executable
 grammar files (with no separate compilation steps), 
 the \PacTk{} parsers are more flexible than conventional 
 \LEX{}/\YACC{}-style compilers.  Meanwhile, the \VM{} 
-runtimes allows query evaluators to recognize basic 
+runtimes allow query evaluators to recognize basic 
 scripting constructions such as locally-scoped variables 
 and calls to arbitrary boolean-valued procedures as 
 filter parameters.
 
-\pseudoIndent{} In totality, such features allow 
+\pseudoIndent{} In totality, such features permit 
 text/bibliographic query systems to be implemented 
 in a self-contained and cross-platform manner, 
 with customizations specific to individual publishers 
@@ -2412,7 +2413,7 @@ and even to each particular journal or book series.
 
 \item[Multimedia Cross-Referencing]  When a document (book or article) is explicitly paired with a 
 published data set, information about the supplemental package should be 
-included in index/search metadata.  This would allow 
+included in index/search metadata.  This would enable 
 keyword searches to be extended to raw data fields, as well 
 as data-structure parameters (column labels, source-code 
 annotations, procedure names, etc.).  Moreover, sections of text 
@@ -2461,7 +2462,7 @@ to watch the relevant videos starting from the appropriate time-point.
 Such interoperability is only possible if the components and/or applications 
 responsible for rendering the two content-types share a common 
 annotation and message-passing protocol.  In the context of \PacTk{}, 
-this may be achieved via \TSOM{} \q{message} objects that encapsulate 
+this could be achieved via \TSOM{} \q{message} objects that encapsulate 
 remote-method requests and parameter serialization via 
 \TagML{}-like structures.
  
