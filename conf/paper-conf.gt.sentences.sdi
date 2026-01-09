@@ -1,0 +1,160 @@
+--- Global/start
+
+
+
+--- Abstract/start
+
+
+--- Sentence//end
+id: 0
+r#  159  8  22
+g. 
+|   @l(-%>) +19/6/1
+|   +23/6/5:0=23/6/5
+|   +33/6/15:0=33/6/15
+|   +38/6/20:0=38/6/20
+.   @l() -38/6/20
+p: .
+t. 
+|  This paper examines methodological foundations for
+|  linguistics in terms of phenomenology and the
+.  philosophy of science
+
+
+--- Sentence/switch
+id: 1
+r#  160  8  23
+
+
+--- Sentence//end
+id: 1
+r#  320  11  36
+p: .
+t. 
+|   I argue for explanatory
+|  paradigms that model the interdependence of
+|  linguistic and extra-linguistic knowledge/faculties
+.  for understanding typical sentences
+
+
+--- Sentence/switch
+id: 2
+r#  321  11  37
+
+
+--- Sentence//end
+id: 2
+r#  600  17  14
+p: .
+t. 
+|   In lieu
+|  of set theory or predicate logic formalization, I
+|  point out some similarities between natural and computer
+|  languages, so that formal structures related to
+|  compilers and programming-language implementation
+|  may offer useful simplified models for human
+.  communication
+
+
+--- Sentence/switch
+id: 3
+r#  601  17  15
+
+
+--- Sentence//end
+id: 3
+r#  872  22  45
+p: .
+t. 
+|   In particular, I emphasize how
+|  surface discourse may be transformed to sequences
+|  of operations toward conceptual aggregation/synthesis,
+|  while maintaining that most details concerning how
+|  concepts are pairwise combined
+.  depend on extralinguistic cognitive activity
+
+--- Sentence/end 
+id: 3
+r#  873  22  46
+
+--- Paragraph/end 
+id: 0
+y: Abstract
+
+
+--- Section/start
+-l  1
+-i  1
+-t  Introduction
+
+
+--- Paragraph/start
+id: 1
+r#  896  27  1
+
+
+--- Sentence/start
+id: 4
+r#  896  27  1
+
+--- Sentence//end
+id: 4
+r#  1082  30  10
+p: .
+t. 
+|  It is clearly true that an
+|  important part of human language is governed by rules or
+|  structures, ones that can be (at least to a useful extent) formalized and computationally
+.  simulated
+
+
+--- Sentence/switch
+id: 5
+r#  1083  30  11
+
+
+--- Sentence//end
+id: 5
+r#  1387  33  73
+p: .
+t. 
+|   And yet, language was not designed by committee: claiming that a
+|  particular semantic or syntactic pattern has become entrenched is not a
+|  complete argument, as if language were intrinsically a collection of formal rules, and we
+.  need merely infer them (like reverse-engineering compiled computer code)
+
+
+--- Sentence/switch
+id: 6
+r#  1388  33  74
+
+
+--- Sentence//end
+id: 6
+r#  1453  34  59
+p: .
+t. 
+|   The
+.  question is why patterns become entrenched and stay so
+
+--- Sentence/end 
+id: 6
+r#  1454  34  60
+
+--- Paragraph/end 
+id: 1
+y: N/A
+
+--- Paragraph/end 
+id: 1
+y: N/A
+
+
+--- Paragraph/start
+id: 2
+r#  1493  41  7
+
+
+--- Sentence/start
+id: 7
+r#  1493  41  7

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---->
+<document>
+<doc-abstract>!noindent%!!pgl%!This paper examines methodological foundations for
+linguistics in terms of phenomenology and the
+philosophy of science I argue for explanatory
+paradigms that model the interdependence of
+linguistic and extra-linguistic knowledge/faculties
+for understanding typical sentences In lieu
+of set theory or predicate logic formalization, I
+point out some similarities between natural and computer
+languages, so that formal structures related to
+compilers and programming-language implementation
+may offer useful simplified models for human
+communication In particular, I emphasize how
+surface discourse may be transformed to sequences
+of operations toward conceptual aggregation/synthesis,
+while maintaining that most details concerning how
+concepts are pairwise combined
+depend on extralinguistic cognitive activity</doc-abstract>
+    <s1>Introduction</s1><p.1>It is clearly true that an
+important part of human language is governed by rules or
+structures, ones that can be (at least to a useful extent) formalized and computationally
+simulated And yet, language was not designed by committee: claiming that a
+particular semantic or syntactic pattern has become entrenched is not a
+complete argument, as if language were intrinsically a collection of formal rules, and we
+need merely infer them (like reverse-engineering compiled computer code) The
+question is <i>why</i> patterns become entrenched and stay so</p.1>
+    <pa.1>!input:biblio-conf%!</pa.1></document>

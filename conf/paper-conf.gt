@@ -1,0 +1,700 @@
+
+/>>
+
+%. Abstract
+
+-%> `noindent;`pgl; This paper examines methodological foundations for 
+linguistics in terms of phenomenology and the 
+philosophy of science.  I argue for explanatory 
+paradigms that model the interdependence of 
+linguistic and extra-linguistic knowledge/faculties 
+for understanding typical sentences.  In lieu 
+of set theory or predicate logic formalization, I 
+point out some similarities between natural and computer 
+languages, so that formal structures related to 
+compilers and programming-language implementation 
+may offer useful simplified models for human 
+communication.  In particular, I emphasize how 
+surface discourse may be transformed to sequences 
+of operations toward conceptual aggregation/synthesis, 
+while maintaining that most details concerning how  
+concepts are pairwise combined  
+depend on extralinguistic cognitive activity. 
+
+
+///  Introduction
+
+In the context of "/publishing technology/", one would traditionally 
+understand a "/publication/" to be a natural-language document 
+(e.g. an article, book, or book chapter).  Several 
+more recent trends in publishing and science have complicated 
+this picture; for example, the idea of a "/replication crisis/" 
+insofar as results of influential experiments in natural and social 
+scientists proved difficult to reproduce during updated studies. 
+Reaction to this "/crisis/" (however much real versus perceived) 
+spurred the goal of "/data transparency/" and initiatives to 
+document more rigorously the raw data, methodology, and analytic 
+details behind published findings.  Such initiatives in turn 
+led to "/Minimum Information/" standards (e.g., 
+Minimum Information for Biological and Biomedical Investigations, or 
+MIBBI, which encompasses several dozen more specific specifications) 
+and to mixed data/code/multimedia formats such as FAIRsharing  
+(Findable, Accessible, Interoperable, Reusable) and 
+Research Objects (including "/Executable Research Objects/", 
+Research Object "/Bundles/", Research "/Compendia/", and so forth).
+
+A common theme of these various formats is that the basic unit of 
+disseminating scientific or academic is not a single document, but a 
+collection of distinct files representing text, data, and potentially 
+graphics or computer code.  Natural-language text is still important 
+%-- readers are most likely to learn about data sets or Research 
+Objects via publications that introduce them %-- but in a Research 
+Object context manuscripts are packages alongside sibling assets 
+with their own requisite functionality.  This affects functionality 
+intrinsic to text documents insofar as the various components 
+of a data package can be cross-referenced.  For instance, 
+terms and keyphrases within a manuscript could be annotated 
+with links to data, code, or graphics content, if the 
+same concepts appear as statistical parameters, units of 
+measurement, data types, record fields, etc., within raw 
+data files, supporting code, or visual materials 
+(e.g., axes on a scatter plot).
+
+Relatedly, researchers have explored the use of text mining 
+and Natural Language Processing tools to promote 
+the dissemination of scientific work.  In principle, say, 
+computational methods can highlight which additional 
+papers might benefit a particular researcher, given ones 
+they have already cited or written themselves.  As an example, 
+the CORD19 corpus was curated by the 
+Allen Institute for Artificial Intelligence, early in the Covid-19 pandemic, 
+as a large repository of open-access materials about SARS and Coronaviruses 
+(much of which would ordinarily be paywalled but were made freely 
+available by their publishers).  Since Covid research was a matter 
+of fitting different pieces of a puzzle together %-- especially 
+early on, when the morphology, infectious mechanisms, treatment 
+options, and vaccination strategies of SARS-Cov-2 were still 
+under investigation %-- a computationally analyzable corpus 
+held potential for scientists with one specialization to 
+find useful information in articles they might not 
+discover by mere chance.  
+
+In effect, the goal of CORD19 was not just to free up 
+a large volume of documents to be browsed by human 
+readers, but to augment their research via text mining.  
+Unfortunately, the most common format for dissemination 
+of those publications %-- PDF %-- is flawed from a 
+computational perspective because the internal PDF 
+representation of natural language often differs 
+from how human readers would transcribe the same 
+content when seeing it rendered in a PDF viewer.  Such  
+details as ligatures, headers/footers, hyphenation, and 
+font-face variations can introduce artifacts in 
+text extraction (or "/scraping/") from PDF files.  In addition 
+to problems with "/ordinary/" language, encoding errors 
+also arose in the context of "/special/" character 
+strings such as organic or chemical formulae; the CORD19 
+documents did not use a consistent mechanism for 
+notating these (potentially semantically significant) 
+textual elements (or, at least, structured data 
+was not preserved in the final PDF).  These problems 
+were openly acknowledged by the team behind CORD19, who 
+described the steps they took to (imperfectly) convert 
+PDF files to a machine-readable JSON format.  They even issused   
+a "/call to arms/" encouraging publishers to adopt a 
+more consistent text representation.
+
+Text Mining and Natural Language Processing are sophisticated 
+use-cases for machine-readable text encoding, but more 
+mundane functionality is relevant as well, such as searching 
+within PDF documents.  Given the imperfections of PDF 
+text representation, it would be reasonable for PDF viewers to 
+run text searches first through more-precise data about 
+text content %-- if PDF files provide as much %-- in lieu of 
+PDF-internal text objects.  For example, many PDF files in 
+current publishing are produced from XML format such as 
+JATS or BITS; if such intermediate assets were embedded in PDF 
+directly then they could be extracted and employed by PDF 
+viewers as structured text encoding, in preference to the 
+more "/semi-structured/" data one may obtain from 
+methods such as "/pageToText/" in the Poppler library.  
+Similar use-cases might be compiling human-readable document 
+indexes, or comparing two different versions of a manuscript 
+during an editing/reviewing changes cycle.
+
+For contemporary publishing, in short, natural-language content 
+should be considered a computational artifact that 
+often co-exists with raw data and computer code in 
+Research Object contexts.  Natural Language Processing 
+proper %-- e.g., deriving parse-graphs or Syntactic Categories 
+(parts of speech) for sentence components %-- is at least 
+tangentially connected to these trends, but the 
+(at best approximative) methods of NLP are outside the 
+scope of topics addressed here.  Instead, the instantiation of 
+"/natural language/" content in this present context involves 
+fully-deterministic encoding of textual material in the 
+specifically */written/* environment of academic and scientific 
+presentation, which includes not only linguistic conventions but 
+also normative practices for inline and block quotes, citations, 
+footnotes, figure illustrations, book indexes, and so forth.  Given the co-existence 
+of text with raw data and/or code within unified data packages, 
+we can consider to what extent User Experience and structural 
+models should be conceptualized as applying simultaneously to 
+text and to data sets, as well as GUI components that present 
+then respectively as visual resources.
+
+For example, we can isolate specific areas of potential GUI 
+functionality in contexts where human readers are seeing 
+renderings of text documents (or pages therefrom): copying 
+the words of a sentence to the clipboard; searching for 
+information about a single word, phrase, or term; examining the 
+original text from which a quote was sampled; accessing a data 
+set and/or multimedia resources that are indirectly included 
+in text documents through figures/graphics (for instance, 
+if a picture shows one frame from a video, finding and 
+watching the video in its entirety); etc.  We can 
+then identify related capabilities operational in the 
+context of data sets and supporting/analytic code: the 
+data fields of tuple-like records, for instance, are semantic 
+objects potentially governed by analogous conventions as 
+technical terms present in text; algorithms described in a 
+manuscript can be studied concrete in the implementation 
+bodies of data-set functions; readers could replicate simulations 
+discussed in research papers with their own parameters.  
+
+It's not obvious that the same computational toolsets that 
+might be used to implement functionality related to 
+text documents would also be applicable to Research Objects 
+and data sets.  Certainly there are structural differences 
+between text elements (sentences, paragraphs, etc.) and 
+most forms of scientific data (especially table/record style 
+formats).  Nonetheless, the increasing interpenetration of 
+text and raw data in Research Object like contexts implies 
+that implementations regarding text and data as part of a 
+common computational value-space should be seriously considered.  
+For example, the code supporting an Executable Research Object 
+might be engineered to treat both text elements (e.g., 
+sentences and keywords/phrases/annotations) and data-set 
+records as objects accessed and GUI-rendered via similar 
+protocols.  As a concrete example, similar methods might be 
+used to populate context menus whether activated in the area 
+of a keyphrase within a PDF window or of a table-view 
+(or any other intra-window control) that shows an individual 
+data field, record/tuple, or statistical aggregate.  Likewise, 
+search protocols %-- whether triggered by an actual query language 
+or rather by a query-like interface within a (for instance) 
+C++ code library %-- might be engineered in parallel within 
+text-manuscript and data-set contexts.         
+  
+For the purpose of this paper, text/data integration will 
+be envisioned to be performed via a dedicated Virtual Machine.  
+This perspective remains agnostic as to whether the VM 
+would be concretely utilized to implement a query language, 
+scripting environment, middleware tools, or any other 
+tactic in relation to published Research Objects.  I */will/* 
+work under the assumption that authors and digital editors 
+seek to align with FIAR priorities, which means in particular 
+that data sets are */executable/* with minimal external dependencies.  
+In othre words, as much as possible, interested readers 
+should be able to obtain the content of an Executable Research 
+Object */in source code/* fashion and use those sources 
+%-- e.g., by building an entry-point executable %-- without having to 
+separately obstain and/or compile or install additional resources 
+not packaged in the data set itself.  Programmers producing a 
+self-contained package in this sense may reasonably assume that 
+readers have access to a working and relatively up-to-date development 
+environment typical for their language of choice %-- for example, 
+a C++-based bundle obviously requires a C++ compiler, and 
+canonical libraries such as boost or Qt are acceptable external 
+dependencies.  Nonetheless, publishers should be careful to 
+ensure that clear instructions are given for users who need to 
+set up a prototypical development environment to begin with [, and external 
+dependencies should be favored which].  Source files obviously have 
+*/some/* dependencies (at least, either compilers or scripting-language 
+interpreters).  However, I make the assumption here that Executable 
+Research Objects are predominantly disseminated in source-code fashion.  
+This is difference from projects such as Kaggle (or other digital-notebook 
+software, holding out the possibility that data sets might be 
+distributed as Kaggle notebooks or similar), or reprozip (which packages 
+up all necessary binary components that can be identified as preconditions 
+for data-set code to run on the developer's own computer).  
+
+I will not specifically address the question of whether binary or source-based 
+dissemination is easier for end-users, either in general or visavis any 
+particular data set.  My goal is rather to examine requirements for a 
+Virtual Machine that can function in the former context; in particular, 
+that itself can be built with minimal external dependencies.  I assume 
+that, even in a context where Research Object code is published 
+as source files in a mainstream programming language (C++, Java, etc.), 
+there are some domain-specific or fine-tuning implementations that 
+can usefully be coded in a special-purpose language.  For example, the 
+information encoded in a data set might be approached */de facto/* as a 
+database which accepts queries in an SQL-like (or some flavor of NoSQL) 
+format %-- potentially extended to "/full-text search/" visavis 
+associated text documents.  In other scenarios, an Executable Research Object 
+may employ something like a built-in scripting language to run 
+analytic code, fine-tune GUIs, compose plugins for external scientific applications, 
+etc.  (The principle that Research Object code should be self-contained and source-based 
+does not preclude users exploring data sets, or individual files therein, 
+via disipline-specific applications that have analytic or visualization capabilities 
+conducive to advanced research %-- the idea of Executable Research Object is not necessarily 
+to replace the tools that scientists use for their core investigations, but rather to 
+provide accessible code for evaluative and pedagogical purposes).
+
+To clarify why a VM may have specific roles in a Research Object context, I will 
+identify potential VM use-cases.  One obvious example is that of deserializing data sets.  
+Many subject areas have special-purpose data formats reflecting the unique kinds of 
+information pertinent to given scientific fields.  Some of these are narrowings of 
+canonical formats like XML or JSON, but even in these cases dedicated code is 
+needed to traverse a DOM hierarchy, respond to SAX events, or otherwise 
+walk through nodes of the generic data structure to extract individual values that 
+populate fields of domain-specific data types.  Other formats have their 
+own text and/or binary encodings, such that some form of parsing library is also 
+necessary for deserialization (usually in conjunction with post-processing analogous 
+to DOM navigation).  Even a simple standard like CSV often does not map precisely 
+to serialized objects, given that most aggregate values cannot be fully decomposed 
+into tuples of scalar data points (instead, CSV circuitously encodes vector/array 
+structures, or values sampled from enumerated classes, or special-purpose fields 
+that are usually undefined or default-initialized and thus encoded as empty cells). 
+That is, code to deserialize CSV can be equally complex to XML or JSON (likewise for 
+alternatives such as RDF, multi-dimensional arrays, and so on).
+
+Any researcher presented with raw data files that must be loaded as in-memory objects 
+(or typed values generally) will hopefully not have to write deserialization code 
+from scratch; instead, scientific communities often endeavor to publish 
+code libraries to parse/traverse the relevant file types.  Nonetheless, such 
+libraries are often maintained by individual academic departments or other 
+groups working with limited resources, and they can have problems related 
+to versioning (the code being incompatible with newer, or older, representation specs), 
+lack of breadth for different programming languages or operating systems, 
+external dependencies (or other details that make the libaries hard to build and/or 
+use, for some environments), and other issues affecting FAIR-style accessibility.  
+     
+In principle, a VM in this context could provide a common environment for 
+implementing deserialization libraries, at least as a supplement to those 
+provided via traditional programming languages.  For widely-used 
+data formats, we can assume that many different published data set 
+will require users to parse data files sharing a particular format.  
+In principle, the VM instruction set could be interpreted by 
+multiple languages in variegated environments %-- i.e., the VM runtime itself 
+could be ported to multiple language and operating-system contexts, 
+and then distributed in source form alongside dataset-specific code 
+(including deserialization algorithms in bytecode form).  Alternatively, the 
+VM runtime might be made available as a binary component so long as it is 
+tested against multiple platforms.
+
+Assuming that this is indeed a primary use-case, notice that the VM would not 
+need to be highly optimized in terms of execution speed, multi-threading support, 
+fault-tolerance, and so forth.  Even as the compilation target of a special-purpose 
+scripting format, the VM would not primarily function as host to a 
+general-purpose language like Python or JavaScript.  Instead, it could be designed 
+from the ground up around requirements specific to data publishing and 
+Executable Research Objects.
+
+After a data set is loaded, it will typically be viewed and studied by the researcher 
+who downloaded it.  Potentially, this involves both dedicated GUI windows 
+showing details both about object-collections in aggregate and individual 
+objects/records (e.g., something like a GUI "/form/" showing the values 
+of individual data fields in an organized layout, perhaps with list-views 
+or hierarchical "/accordians/" for non-scalar information) as well as statistical 
+overviews, presented via (interactive) graphics (charts, plots, 
+diagrams, histograms, etc.).  This is another area where VMs might be 
+pressed into service.  Suppose a Research Object is implemented in C++: 
+although in principle all the GUI code could be built specifically for that 
+one publication, to avoid reduplication of effort the authors might 
+prefer to reuse components provided for the relevant book series, 
+journal title, science grid, and so on.  Assume, again, that such 
+C++ sources are included within the data set itself; in principle, 
+each Research Object could thereby reuse generic components but 
+adopt the underlying C++ code for their own purposes, given the 
+unique research methods and data profiles driving their investigation.  
+At least visavis some functionality, however, such adaptations might 
+fit predictable patterns conducive to a special-purpose script or 
+query format rather than manually rewriting C++ code.  For instance, 
+context menus tend to need specific action options unique to the 
+current data set, so "/scripts/" against an embedded VM might be 
+employed to populate context menus, being called somewhere after 
+the triggering event (such as a right mouse-button click) 
+is registered.  Similar comments could be made about areas of 
+functionality such as setting up initial parameters for a 
+simulation; managing text/data cross-references; logic for 
+preserving application state and user preferences; etc.
+
+Another potential VM use-case involves data analysis.  
+Not to imply that a dataset-embedded VM would be part of 
+the ecosystem producing published findings; but 
+analytic code might be separately produced that illustrates 
+algorithms and information profiles in a more pedagogical 
+and demonstrative manner.  More precisely, computer code 
+can serve as a tangible resource for studying algorithms 
+and data structures, insofar as code constructions or annotations 
+are able to clarify details such as expected value ranges, 
+ccordinate systems,  
+scales and units of measurement, cross-unit conversions, 
+unit-decorated types,  
+pre- and post-conditions, type invariants, etc.  
+This degree of in-code specificity is not usually present 
+in mainstream languages, so a Research Object VM could 
+supporting scripting dialects which attempt to 
+make code assumptions and pedagogical use-cases 
+as transparent as possible.
+
+Lastly, I mentioned earlier that researchers may prefer to 
+load data sets with external software even if FAIR principles 
+ensure that Research Objects can be used on their own.  
+Although authors should attempt to provide sufficient 
+internal resources that someone with access to a data set 
+can find some value just with the materials explicitly included, 
+one may reasonably anticipate that some scientists will 
+seek out the additional capabilities of dedicated 
+software for their field, and data sets can be 
+designed to facilitate being loaded and visualized 
+via such discipline-specific applications.  Even when 
+raw data files are encoded in a format that a given 
+application recognizes, this does not necessarily 
+mean that raw files alone are sufficient to ensure 
+that users can access them properly (for example, 
+any program with spreadsheet-like functionality can load 
+CSV files, but such data rendered as table cells 
+may not properly convey its structure and properties).  
+To address these situations, many scientific applications 
+supply a plugin mechanism such that data sets with 
+special prepatory requirements can provide plugins 
+in turn, alongside their raw data.  The problem 
+here is that plugins can be tricky to compile and install.  
+On solution is to develop a generic plugin that enables 
+an application to execute VM instructions, which then 
+serves as middleware such that Research Object plugins 
+could be implemented as scripts compiling to that VM, rather 
+than interfacing with the host software's plugin mechanism directly.
+
+Having thereby outlined several use-cases on the data-set side, 
+I will also touch on how VM technology could support text-related 
+tasks, such as indexing and full-text search.  One obvious 
+possibility is to achieve search functionality via a 
+dedicated query language.  If we assume that textual elements 
+are stored as objects in some mainstream language (e.g., 
+C++), then in principle queries such as "/find the first sentence 
+including the name of the author/" (of a given bibliographic entry) 
+could be satisfied by calling (in this case) C++ methods.  
+However, for development and prototyping it might be 
+easier to express searches through text files or string-lists 
+than can layer over the relevant class methods.
+
+Other possible use-cases arise in the context of PDF viewers, 
+in which could be embedded a VM interpreter/runtime.  
+New functionality may then be intrduced via PDF-related 
+scripts; for instance, extra context-menu options, 
+interactive features pertaining to figures/graphics, 
+customizations for PDF annotations and comment 
+boxes, working with indexes, or building domain-specific 
+search capabilities (aware of semantics specific to a 
+given scientific subject area, for instance).  
+ 
+The range of use-cases addressing both text and data content 
+suggest that VMs embedded in Executable Research Objects 
+can be useful across the different asset-types (documents, 
+code, raw data, graphics/multimedia).  Under the assumption 
+that a compiler and runtime environment (bytecode interpreter) 
+is offerred among the data-set package, then other 
+components %-- GUI classes, a customized PDF viewer, deserialization 
+code %-- could each utilize (e.g., link against) the VM 
+implementation in turn, achieving consistent scripting/query 
+design across the various components.  
+
+Having thereby identified the */purpose/* of a VM engineered 
+for the data-publishing context, the remainder of this 
+paper will examine certain theoretical and implementational 
+details relevant for these use-cases in particular.  
+The discussion will address both compiler and runtime 
+concerns, and also consider the forms of information 
+structures %-- both textual and data sets %-- that 
+VM-compiled components would likely 
+need to traverse/navigate, insofar as the relevant 
+structural details may be directly incorporated 
+into the VM's instruction roster.
+
+
+s:  Sentence Objects and Other Textual Elements
+       
+Conceptually, we assume that a Research Object VM 
+will operate over a tableau of information 
+structures, including both text and dataset content.  
+That is, natural-language documents are computational 
+artifacts that are coextensive with raw data 
+files and other reseach assets, subject to 
+similar algorithms (or even the exact same 
+procedures, in contexts such as semantic searches 
+applied both to documents and to data files). 
+
+Text-encoding specialists have devoted some attention 
+to investigating the best formats 
+for representing written text.  In recent years, 
+XML-based standards such as JATS and BITS have become 
+popular, producing human-readable PDFs through techniques 
+such as XSL-FO while also enabling natural-language 
+content to be analyzed via generic XML protocols, such as 
+XQuery and XQSE (XQuery Scripting Extentions).  JSON-based 
+formats are also used, such as the JSON-??? protocol adopted 
+by CORD19 (mentioned earlier).  Specifications such as the 
+Text Encoding Initiative (TEI) may employ a generic 
+representation for convenience (e.g., TEI-XML) but they are 
+intrinsically a special-purpose data format optimized 
+for natural language (for instance, TEI, established 
+in 1987, predates XML itself).  In a similar vein, 
+special markup languages such as TagML (the Text-as-Graph 
+Markup Language) %-- which are structurally 
+distinct from straightforward tag hierarchies (and therefore 
+not just a realization or dialect of XML) have been proposed as more faithful 
+to the inner structure of text content than generic 
+formats (XML, JSON, etc.).
+
+Debating the merits of, say, TagML versus JATS/BITS %-- or 
+alternative XML languages such as BioC, developed for 
+PubMed Central %-- is outside the scope of this paper.  
+I will note, however, that the important details 
+for questions about the most efficient text representation 
+is less the actual structures modeled by a given format 
+but rather how particular structural details 
+affect algorithms that need to transform and/or 
+extract data from from structure-instances.  For example, 
+an important contrast between XML and TagML is that 
+the latter supports concurrent/overlapping markup, 
+which can only be achieved in the former indirectly 
+(e.g., via empty "/milestone/" nodes).  Endorsing one 
+approach over the other is a rather abstract question; 
+a more concrete assessment can consider actual processing 
+tasks and address whether algorithms that "/quantify/" 
+over concurrent markup structures, or conversely 
+purely hierarchical ones, are easer to implement/test/maintain.  
+Assuming that most algorithms navigate around a structure 
+by tracking a "/foreground/" node %-- some kind of visitor 
+pattern where one node at a time is the one visited 
+%-- then TagML-style overlap complicates the decision-space 
+for node-to-node transitions.  For instance, an element 
+that begins in the */interior/* of some quasi-parent node, 
+but */ends/* properly after the latter, does not have a 
+single unambiguous parent.  After completing whatever 
+processing is needed for an element in this case, would one 
+more profitably revert to the "/quasi/"-parent in scope 
+at the */beginning/* of the element or, rather, at its end?
+
+Moreover, TagML recognizes two distinct forms of de-facto 
+parent/child relations, namely "/containment/" versus 
+"/domination/".  In the latter case, one node has a 
+logical or semantic nesting inside another; the parent 
+forms a context which is semantically intrinsic to the 
+child (e.g., a "/last-name/" field in an overarching 
+"/proper-name/" tag).  In */containment/*, on the other 
+hand, one node's content lies inside another's, but 
+there is no logical mandate for this relationship 
+(for instance, paragraphs often do end up as contained 
+in a single PDF page, but paragraphs are not intrinsically 
+situated within pages).  There are then, at least 
+four different varieties of nesting: overlap either 
+visavis beginning and end, and interiority either 
+via domination or containment.  By contrast, XML 
+has a single parent/child relationship.  The more 
+complex TagML architecture may or may not make 
+any particular algorithm easier to implement, 
+but at least we can be sure that the structural 
+differences between the two formats are tangible 
+in how code targeting TagML has to keep track of a 
+more complex space of parent-like internode connections.
+
+Conversely, XML algorithms would presumably be more 
+complex in situations where concurrency actually 
+is a natural representation of an underlying 
+semantics.  Falling back on zero-width elements 
+as start/end landmarks for structures crossing 
+against a DOM hierarchy is not a seamless translation 
+of node-overlap semantics to a non-concurrent 
+environment.  It's not like the presence of 
+milestone tags can be directly incorporated into 
+tools such as XPath and XQuery.  If an XML file does 
+indeed use milestones to emulate overlapping markup, 
+then the presence of landmark tags would have to be 
+tracked by XML processors as state data or 
+a parallel hierarchy separate from the XML structure 
+itself.  As such, algorithms would need to maintain 
+a separate stash of parsing/processing objects, 
+which presumably complicates the implemented procedures.
+
+Added complexity is not necessarily a bad thing, but these 
+examples suggest that markup formats come with different 
+tradeoffs; features that make some processing 
+routines easier to implement can render others more difficult, 
+and vice-versa.  But in the context of text encoding, 
+discussing such tradeoffs solely with respect to 
+*/generic/* formats like XML or TagML skirts the 
+key point that here we are primarily concerned with 
+representing of */text/* content, not generic 
+data structures.  It is one thing to serialize and deserialize 
+information in general through the nodes of a hierarchical 
+or concurrent document format.  It is another to focus 
+specifically on the structural properties of natural-language texts.
+
+Insofar as XML, TagML, JSON, RDF, and so forth are */structurally/* 
+different, such variation may more properly be 
+described as "/meta/"-structural, or concerning those 
+parameters that articulate the individual properties of an 
+XML (etc.) structure in general.  Any given instance 
+of XML (etc.) structure takes its identity from the 
+full set of details endemic to the XML format: element 
+names, attribute keys and values, text content (if any), 
+and nodes' parent/child and sibling relationship.  
+The parameters constituting a TagML instance are 
+different, given the latter's alternative approach 
+to nesting (discussed above), attributes (which are 
+more complex than key/value tuples), and text 
+content (potentially split into hypernodes).  It is 
+difficult to compare XML and TagML structure 
+*/instances/* because what it means to be a structure 
+in the former case is not quite the same as in the latter.  
+We can, however, compare "/meta/" structures in that 
+we can present the suite of parameters through which 
+any single XML instance is individuated, and by comparison 
+the analogous parameters constituting the TagML architecture.  
+Similar comparisons can be made visavis JSON and 
+RDF-like formats (e.g., text encoding via property-hypergraphs).
+
+For purposes of discussion, I will use terminology here to the 
+effect that different markup/representation formats 
+evince different "/topomorphic regimes/", where "/topomorphic/" 
+literally means "/shape of place/".  This term, 
+found occasionally in chemistry and mathematics, does 
+not appear to be defined in a computer science context; 
+but I think it is a useful neologism to address the 
+overall class of algorithms and data structures subject 
+to "/visitor patterns/" and variegated constructions 
+as to criteria of individuation for individual structures.  
+That is, a given representational protocol is associated 
+with a distinct topomorphic profile insofar as 
+data is encoded via an aggregate of "/sites/" with 
+specific navigational possibilities from one site 
+to another.  A topomorphic */algorithm/* is one 
+that extracts information by navigating to a site 
+of interest, being able to obstain specific data points 
+in the context of any one foreground site %-- e.g., the 
+text content and attributes values (per key) of an 
+XML element %-- before traversing to a different site.  
+The "/neighborhood/" of a site groups all data that 
+can be extracted directly as well as nearby sites 
+accessible via a single transition-step.  For 
+instance, the neighborhood of an XML node 
+includes its text, attributes, next and previous 
+siblings, parent node, and first child; potentially 
+expand to its full child-node set and parent-ancestry.  
+The neighborhood of a TagML node is similar but 
+more complex due to TagML's looser attribute and 
+containment protocols.  The neighborhood of an 
+RDF-style site %-- for instance, a hypernode 
+in a property hypergraph %-- would be 
+(in this case, more involved than simpler 
+Semantic Web triples) any contained nodes 
+inside the hypernode, its key-value properties, 
+and other hypernodes reachable via labeled 
+graph edges.  The neighborhood of a JSON 
+"/node/" would be a tuple of values 
+(for an array), or key/value pairs (for an object), 
+or a single scalar value, depending on where a given 
+node was positioned in a JSON hierarchy.
+
+When text content is encoded via XML, TagML, JSON, etc., 
+it takes on the "/topomorphic/" properties of the 
+underlying representation.  For instance, 
+navigation between consecutive paragraphs 
+amounts to navigating between sibling paragraph 
+elements in an XML tree, assuming that paragraphs 
+are the basic units of encoding.  However, natural-language 
+text has its own topomorphic profile which is only 
+approximately captured by topomorphic regimes of 
+generic formats adopted for text encoding.  In this 
+second I will consider topomorphic properties of 
+text on its own terms, separate and apart from 
+how it is "/serialized/" via markup.
+
+I will assume that the basic unit of intrinsic 
+text representation is a single sentence %-- even 
+if this is not how most encoding standards 
+are designed.  Among common formats, only BioC and 
+TEI appear to employ distinct sentence tags, and 
+even here these are optional %-- thus, documents 
+in those formats may have "/sentence/" or "/s/" 
+elements (respectively) but there is no 
+guarantee that documents will identify textual 
+boundaries with that granularity.  The far 
+more common approach is to model documents 
+as series of paragraphs.
+
+Nonetheless, it neems obvious that written 
+text is fundamentally a stream of sentences 
+and that paragraphs are a separate, aggregative 
+layer.  So, the "/base/" layer for text-representation 
+is that of individual sentences.  Here I 
+am concerned not with how text is recorded in an 
+encoding file %-- e.g., XML or TagML %-- but internally 
+as a computational artifact, which we might reasonably 
+assume exists in an Object-Oriented context.  
+As such, text content (however conveyed via markup) 
+should be conceptualized first as a collection of 
+sentence objects.  From that basis we can then 
+model intrasentence entities (e.g., keyphrases 
+and annotatable word-sequences) and larger-scale 
+units (paragraphs, sections, etc.).
+
+Characterizing inter-sentence relationships is a little 
+subtle, because */usually/* sentences follow one another 
+in a straightforward sequence, but sometimes documents 
+can take on more of a hierarchical character.  For instance, 
+a footnote may contain multiple sentences, each in a 
+sense "/nested inside/" the sentence where the footnote 
+marker appears (although conversely footnote contents 
+may be a clause on a scale smaller than that of 
+single sentences, akin to a parenthetical comment).  Similarly, 
+all the sentences of a block quote might be considered 
+"/children/" of the sentence that introduces 
+(which in turn, potentially, ends with a colon %-- or 
+no punctuation at all %-- rather than the usual 
+period or question/exclamation mark).   
+
+
+
+
+
+
+
+
+  
+
+
+
+
+ 
+   
+
+
+
+
+
+ 
+         
+ 
+  
+       
+   
+
+  
+   
+
+
+
+
+
+
+%.pa
+`input<biblio-conf>;
+
+/// //
+
+

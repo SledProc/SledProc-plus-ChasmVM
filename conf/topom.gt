@@ -1,0 +1,1695 @@
+
+
+
+
+/>>
+
+
+
+The concept of "/Research Objects/" emerged during the first two decades of 
+this century in relation to developments such as the 
+observed "/replication crisis/" that began to catch scientists' 
+attention at this time %-- specifically, the 
+difficulties faced by fellow investigators in reproducing the 
+results of (even well-executed) published research work.  A concomitant 
+and related notion is "/data transparency/", again related to 
+priorities for researchers to document as clearly and openly 
+as possible the protocols, data acquisition methods, and 
+analytic processes (and assumptions) that underlie published 
+findings.  So-called "/Minimum Information Standards/" 
+such as MIBBI (Minimum Information for Biological and 
+Biomedical Investigations) provide a kind of checklist 
+for authors to ensure desired levels and comprehensiveness 
+of data transparency.  Simultaneously, open-access 
+data sets and deposition of raw data files in 
+special-purposes curation sites (Open Science Framework, 
+Dataverse, Dryad, etc.) has become commonplace, at 
+least in principle.  Publishers often encourage 
+(or even require) authors to ensure that raw data is 
+available to any one reading research articles, or at 
+least to explain explicitly why open data sharing 
+is impossible in specific cases.  Some funding 
+sources (e.g., the Bill and Melinda Gates Foundation) 
+similarly require commit to data transparency as a 
+precondition for research teams to have their work supported.  
+
+The term Research Object in itself was apparently coined 
+in 2013 to describe a proposed specification for 
+how the totality of information related to a scientific 
+publication should be packaged.  The underlying idea, 
+of course, predates that.  It has become evident for a while 
+now that the basic unit of research dissemination is not a 
+single document (published article, book, or chapter) 
+but rather a collection of text documents, data 
+files, potentially analytic code, and (often) 
+multimedia materials and graphics; such resources 
+collectively should serve as a single entity that 
+may be cited, referenced, and downloaded, and users 
+should find it straightforward to browse the 
+disparate content types and find that information 
+or presentations most relevant to them.  The 
+Research Object specification is one proposal 
+to facilitate these goals, but the general term 
+"/research object/" may be used for any package 
+that is deliberately structured around data-transparency 
+and multi-modal publishing in general (insofar as 
+text documents are, in the typical case, understood 
+to be accompanied by other content types).
+
+Meanwhile, "/translational science/" has a similar timeline.  
+It seems that "/translational medicine/" as a phrase 
+first appeared in the 1990's (although the concept is 
+older), referencing protocols that 
+emphasize practical applications of biomedical research 
+and "/bench to bedside/" translation %-- once 
+specific clinical interventions or other scientific 
+breakthroughs are consolidated in a theoretical 
+and/or experimental context, there are then  
+further steps needed to deploy novel paradigms 
+for concrete benefits.  Almost all scientific research, 
+to be sure, is motivated by concern for the social good 
+at some level, but the idea behind translational science 
+is that self-identified academic focus and specialization 
+can augment the probability that practical benefits 
+are realized judiciously, in contrast to rather inchoate 
+notions of the scientific knowledge's long-term advantages.  
+For example, translational scientists have identified 
+five general stages in the evolution of health-care 
+interventions from abstract ideas to established 
+practice %-- the so-called "/translational continuum"/ %-- of which 
+the fourth involves commonplace 
+adoption of (once-)novel practices in clinical settings 
+and the fifth marks concerted efforts to adopt useful interventions in a wide variety of settings (e.g., not restricted to experimental protocols 
+available only in a few hospitals, or to a small, select 
+population).  Such models suggest roadmaps 
+to help guide deployment once research progresses through 
+stages of concrete implementation.  Project might unfold 
+in roughly this pattern organically, but establishing 
+the continuum as a technical model can help the 
+progress to advance expeditiously.
+
+Along similar lines, translational science is concerned 
+with informatics themes as far as managing data to 
+gauge the effectiveness of practical deployments; 
+establishing concrete goals and benchmarks as an intrinsic 
+dimension of research applicability, plus methods to check 
+how empirical results compare to initial projections; 
+structuring research to scale up and/or replicate 
+concrete implementations; and other ways of 
+including practical considerations as intrinsic to the 
+foundational research work.  For example, computer 
+code and software used (or developed) to analyze 
+originary data sets might be repurposed into 
+point-of-care modules in concrete deployment contexts.  
+As guided by translational concerns, scientists should 
+be attentive when setting up and then operating within 
+their overall investigatory ecosystem %-- the equipment, 
+technology, software, technology, data sources, etc. %-- 
+to how such lab/academic settings can be translated to 
+operational environments once abstract research progresses 
+to concrete, socially-mediated practice.
+
+Although "/transational medicine/" might be the 
+most recognizable term, the usefulness of this 
+phrasing has extended to other disciplines.  Thus 
+we have, for instance, translational chemistry, 
+translational engineering, translational sustainability, 
+translational humanities, and so forth.  Such 
+fields (more or less neatly delineated as subdisciplines) 
+focus in on dimensions of their parent specializations 
+(chemistry, etc.) that are particularly relevant to 
+social improvement, practical benefits, applied 
+research, and so forth.  Translational chemistry, 
+as a case in point, emphasizes population health 
+and ecological issues related to pollution and 
+contamination %-- and insofar as principles 
+of chemistry clarify the causative mechanisms 
+behind compounds' hazards to people and ecosystems 
+%-- while also focusing on concrete 
+practices to correct social and environmental damage 
+(e.g., site remediation) and develop new, better 
+forms of molecules and materials (sustainable 
+manufacturing, architecture, pharmaceuticals, etc.).  
+
+Translational science is inherently interdisciplinary, 
+and often challenges the divisions commonly 
+recognized between humanities and natural sciences.  
+Theoretical models (such as the translational continuum) aside, 
+many of the concrete issues affecting concrete deployments 
+are cultural and socioeconomic in nature.  For example, the 
+resources and standards of care available in "/inner-city/" 
+hospitals differ noticeably from wealthier community's medical 
+centers.  Practical challenges when planning 
+socially-beneficial implementations of health-care 
+ideas driven by new research, as such, derive 
+to an important degree from such imbalances in wealth and 
+political influence, and the funding, community, and 
+institutional infrastructure that can overcome 
+such disparities in the translation 
+of fortuitous research to operational practice.
+
+It should be obvious that the rationales behind 
+Research Objects and Translational Science overlap in 
+significant ways.  These specific terms consolidate 
+trends in science and academia that are broadly applicable, 
+regardless of how scholars involves specifically 
+conceputalize them.  A lot of research work is  
+motivated by concerns parallel to those of translational 
+medicine, whether or not this wording is specifically 
+chosen.  Likewise, any author who plans to develop 
+a structure set of supplemental materials in consort 
+with a single publication (a traditional human-readable 
+text document) is confronting challenges that motivate 
+the Research Object model.  Moreover, researchers 
+committed (explicitly or not) to translational 
+principles are likely to structure presentations 
+of the work in the multi-modal fashion associated 
+with open-access information sharing and data transparency.  
+In short, there are strong grounds for formulating 
+"/Translational Research Object/" protocols that 
+address both of these areas, with application beyond 
+just those projects that explicitly invoke 
+each one individually. 
+
+Given the socioeconomic issues recently mentioned, 
+one might also stipulate that both Translational 
+Science and Research Objects reflect an ongoing 
+evolution in the assessment of and institutional 
+logistics for investigations.  If present trends 
+continue, the individual peer-reviewed article 
+is likely to lose its status as the pre-eminent 
+certificate of merit for individuals as well 
+as research projects in general.  This reflects 
+both technical and social factors.  On the 
+one hand, to the degree that the documentary 
+and pedagogical manifestation of research work 
+expands outside individual publications to 
+encompass data packages and multimedia content, 
+the procedures for peer review and assessment 
+need to change accordingly.  Evidently, 
+common practice (still) is for reviewers to 
+evaluate */papers/*, but largely pass over 
+data sets, computer code, or GUI materials %-- which 
+could in principle represent a more substantial 
+authors' time commitment and innovation 
+compared to, say, a single journal article itself.  
+Meanwhile, the ideal settings for translational 
+science are not restricted to academic labs or 
+campuses as commonly understood, and the provenance, 
+funding, and credentials associated with translational 
+research may not fit conventional assessment models.  
+For instance, the majority of work and observations 
+critical to a paper on public health may have been 
+performed by scientists or technicians 
+(or, say, social workers) at an inner-city 
+hospital, rather than either faculty or students 
+at a university.  
+
+Part of translational science's 
+entrenchment may, indeed, be the migration 
+of academic practices and expertise outside the 
+college campus into a broader spectrum of institutions 
+and social environments.  This is not to downplay the 
+special focus necessary to conduct science on a rigorous, 
+academic level.  Specialists with hands-on expertise 
+in practical settings may not have the theoretical 
+instincts to triangulate the observations or 
+day-to-day functioning of practical deployment 
+against the abstract structures of a particular 
+field if scholarship.  Extra work is needed to 
+marshal practical know-how, experience, and information 
+into data relevant to theory-confirmation (or disconfirmation).  
+At the same time, practitioners of abstract research 
+do not necessarily have (or develop) expertise 
+forged from everyday practice in institutional/implementational 
+settings.  Translational science points to a hybrid 
+academic culture that synthesizes elements from both 
+on-campus and "/in-the-field/" environments.
+
+As a way of grounding this (itself somewhat abstract) 
+discussion, consider the phenomnon of open-source code 
+libraries.  GIT repositories, for example, are 
+not peer-reviewed, and indeed content available on a platform 
+such as Github can vary substantially in quality and interest 
+to relevant communities.  Some repos may be essentially 
+just some person's schoolwork or experimentation for 
+personal use.  On the other hand, some reposities 
+created by a single individual are substantial 
+resources that deserve attention comparable to an influential 
+book or article, and other excellent libraries merge 
+the contributions of many experts.  The variegated 
+status and purposes of repos does not, in general, prevent 
+programmers and scientists from finding open-access code 
+relevant to their work.  A quick look at "/readme/" files 
+can usually clarify whether a particular repository 
+is intended as a serious contribution envision for 
+use by multiple third parties, or a work-in-progress toward 
+that end, or rather something much smaller.  And in the 
+former category a review of the actual code can serve as an 
+indication of the project's overall status %-- 
+whether it is actively maintained, compatible with current 
+compiler and language standards, interopable with other 
+code bases, and so forth.  Successful projects often acquire 
+their own momentum insofar as additional programmers can add 
+their own components or adaptations %-- porting to 
+new environments, scripting-language wrappers, adding 
+new functionality, etc. %-- thereby expanding the 
+scope and usability of the project overall.  Open-source 
+libraries (and the coders who create them) thereby acquire a 
+hierarchy of status and influence in an emergent manner.  
+Notions of merit are not dependent on subjective impressions 
+of peer reviewers nor on institutional bureaucracies.
+
+Obviously, meanwhile, open-source code implicitly adhered to 
+the (more recent) "/diamond/" open-access model.  Neither 
+programmers nor users face financial burdens at least 
+for the basic hosting and cloning of repositories 
+(free as in "/beer/" as well as "/speech/").
+
+Of course, technical facets of the computing ecosystem play a 
+role too.  Object files either compile or don't; 
+test suites pass or fail.  A reviewer reading a 
+late-stage manuscript draft relies on personal impressions 
+as to whether the writing fits in familiar ways into 
+the disciplinary contexts which the paper evokes, 
+as far as whether terminology, methods, analyses, 
+and presuppositions are characteristic of the 
+expected audience (or if deviations from those paradigms 
+are noted and explained).  Reviewers need to judge whether 
+article introduce new ideas and whether these open 
+avenues for additional research.  This process is subjective, 
+especially insofar as the reviewer is working solely with a 
+text document.  An open-source library, conversely, 
+can be manipulated more tangibly: one can follow 
+documented instructed, compile the sources, run test 
+suites, etc., and eventually launch whatever executable 
+binaries are produced.  Such hands-on activity offers a lot 
+of feedback beyond subjective impressions of code quality.
+
+This comparison between peer-reviewed articles and open-source 
+code libraries is relevant to contemporary publishing 
+because, one might opine, disseminating research in 
+the context of translational science is more like 
+maintaining and open-source library than preparing  
+a submission for a refereed journal.  Those who 
+develop translational-science publications, presumably, 
+are often immersed in concrete practice (outside 
+the scope of academic institution per se) and seek 
+to impose investigatory discipline on the information 
+and observations that are implicitly available 
+in their logistical environment.  Mining the 
+"/ambient/" data that exists in clinical, governmental, or 
+nonprofit settings is a different pathway to rigorous 
+science that constructing artificial data-acquisition 
+locales (e.g., research labs).  Such differences also 
+affect the initiation and evolution of research projects.  
+A graduate student progressing toward a doctoral 
+dissertation, for example, will go through a multi-step 
+process of exploring topics, finding an adviser, 
+forming a comittee, project approval, and so forth, 
+each of which has the result of outsiders molding 
+and nudging the eventual work in particular paradigmatic 
+directions.  Contrast this to a hypothetical 
+social worker or medical humanities specialist who 
+works in a clinical or governmental setting and, 
+with insights shaped by their day-to-day experience, 
+decide to seek out public-access data sets and similar 
+empirical resources to help translate their 
+emerging (on-the-ground-based) personal perspectives into 
+systematic presentations accorded scientific merit.  
+
+Publisher need to be aware of the special status evinced 
+by translational and multi-disciplinary research so 
+that they can best adopt dissemination practices 
+proper to the goals of translational sciences, 
+and best support authors and investigators who 
+pursue them.  For example, researchers traditionally 
+have a personal stake in publications because they 
+represent a larger community's endorsement of 
+someone's general knowledge and competence as a scientist.  
+Having a paper accepted by a high-impact journal 
+not only means that other will read one's words, but also 
+confers a measure of prestige and recognition.  
+In a more translational context %-- where a single 
+document is not only the basic unit of dissemination 
+%-- considerations are somewhat different.  Multi-faceted 
+publications documenting the practical success of an 
+innovative project, for instance, are valuable to 
+the authors not primarily for the venue's name-recognition 
+(with respect to a particular scientist looking for 
+future grants, tenure, etc.) but because researcher 
+are motivated to continue and expand operations 
+on the ground (where funding might come from 
+government programs for social good, or nonprofits).  
+The typical audience for publications in the latter 
+context is not necessarily an acedemic reader 
+familiar with a particular document format 
+(abstract, similar-research statement, summary of 
+findings, etc.) but rather interested 
+parties from multiple backgrounds (nonprofit 
+administrators, civil servants, software engineers) 
+who may be most interested in the nontraditional 
+resources of a publication package: data sets, 
+computer code, statistical graphics, and so forth.  
+
+All of these points have tangible consequences 
+for publishing technology as well.  Translational 
+science implies not only an intellectual 
+transition to multi-disciplinary research 
+but also a physical displacement of the 
+scientific environment away from academic 
+and laboratory settings and toward on-the-ground 
+implementations (plus communities of independent 
+researchers).  In terms of digital artifacts, 
+this is mirrored in the weight of dissimenation 
+shiting from conventonal text documents to 
+computational and multimedia artifacts.  At 
+one level, this means that a reader seeking to 
+learn about a public health, or environmental 
+remediation, or government/nonprofit partnership 
+initiative (as examples) might look 
+toward videos, code libaries, "/story maps"/, or 
+other digital resources in addition to 
+reading a journal-style article.  At another level, 
+the expertise and innovations manifest in research 
+projects might be expressed in such "/supplemental/" 
+materials more than papers themselves.  Publishing 
+software therefore bears the burden of helping 
+authors develop such materials to the highest quality 
+possible.  The continued funding and deployment 
+of projects may depend on the success of content 
+such as code libraries, data-acquisition, information 
+management, and empirical review all of which 
+are unified (in whole or in part) into publication 
+packages.
+
+So, to bring this introductory discussion to a close, 
+contemporary publishing technology needs to 
+support authors in a variety of contexts and to 
+help authors produce a variety of content 
+%-- text documents but also multimedia, analytic 
+and GUI codedata sets, and so on.  Such requirements 
+apply in particular to code that may be published 
+as part of a Research Object (or similar 
+bundle format).  There are at least five functions 
+that such dataset-oriented code might perform:   
+
+%/ desc
+
+Deserialization:  Perhaps the most obvious use for 
+dataset code is reading raw data files themselves.  
+Individual scientific disciplines are often associated with domain-specific data publishing formats that are paired with dedicated deserialization tools (i.e., computer code which reads raw data files into live memory, without
+relying on special-purpose software). Such code libraries are often maintained by individual institutions or organizations — which
+might be academic departments, research labs, or independent groups — on behalf of a broader research community. Examples include (among many others) FASTQ and VCF for genomics; HDF5 and ROOT for physics; FITS and NETCDF in astronomy and earth sciences;
+PDB and MOL in biochemistry; IFC and BIM for architecture/engineering; SEGY and BAG for geophysics and oceanography; CONLL-U in
+computational linguistics; DICOM and OMETIFF for bioimaging; and GIS-indexed attribute layers and shapefiles for geospatial data sets.
+
+
+/
+
+
+Intuitively, one might reason that code included in data sets should in general 
+be implemented in a style (and programming languages) commonplace in the 
+research community which would primarily assess and reuse a research object.  
+Among the natural sciences, for example, the most widely used languages 
+include C++, Python, R, Java, and Matlab.  
+
+However, there are also nontrivial reasons why distinct programming 
+environments should be developed specifically for the "/research object/" 
+context (again, taking this term as descriptive and not limited to 
+the explicit Research Object specification).  For one thing, 
+there are requirements (or at least desirable characteristics) of 
+data-publication context code that is different from other 
+scientific and software environments.  For example, FAIRsharing 
+principles suggest that authors should be particular attuned to 
+the accessibility and interoperability of published data.  Scientists 
+may have special-purpose software and equipment in their labs 
+(or workplace) but many readers interested in a thorough 
+study of their work may not have the same technology on hand, 
+especially if it is based on closed-source and/or commercial software.
+Authors may indeed take steps to help scientists who 
+*/do/* have access to the best software properly 
+access and reust data publications (e.g., by documenting 
+all steps necessarily to load data files into scientific 
+applications similar to those the authors themselves employed), 
+but data sets should in general be prepared under the assumption 
+that some readers will need to take advantage of published 
+materials through freely-available, open-source components 
+(which may entail partial or scaled-back reuse or functionality).  
+
+Moreover, the basic capabilities of loading/deserializing 
+raw files often depends on special libraries maintained 
+by relatively small groups (as mentioned above).  Data-encoding 
+formats tend to evolve as the relevant science progresses, 
+so deserialization code often needs relatively frequent 
+updates (not to mention that language versions and third-party 
+libraries can become outdated).  Deserialization code therefore 
+must be kept in sync both with specifications of the relevant 
+encoding format and with dependencies on the overall toolchain 
+(compilers, system kernels, etc.).  Duplicating such 
+efforts among a multiplicity of operating systems and 
+languages makes maintenance a more expansive task.  A plausible 
+solution is the dissemination of a single deserialization 
+component (e.g., a Virtual Machine) which is sufficiently 
+autonomous to run in a multitude of host environments, 
+such that deserialization libaries can be targeted for 
+that specific component at least as a precursor to other 
+implementations (maintainers might still prepare 
+native-compiled libraries, for example, but a 
+canonical VM-based version could provide a stopgap 
+while such components are under development).
+
+A further consideration is that dataset-related code 
+spans a variety of distinct use-cases, as listed 
+earlier.  A potential outcome is tension between 
+competing priorities of implementing all 
+dataset code in a single programming language 
+and, on the other hand, writing code in each 
+area of functionality in a style most conducive 
+to its own requirements.
+
+This paper assumes that a plausible solution to these questions 
+involves a dedicated Virtual Machine and Compiler Infrastructure 
+that would be explicit designed around data publication, 
+research objects (as a general concept), and translational 
+science (or, more broadly, interdisciplinary approach which 
+brodge, or have the potential to migrate between, 
+pure and applied research, as well as natural science and 
+humanistic/social science foci and implementations).
+
+A further presupposition is that such compiler and VM 
+components can and should be implemented in a mostly 
+self-contained manner, with as few external dependencies 
+as possible.  In particular, the entire code base 
+for these tools should be isolated and, potentially, 
+distributed alongside any code specific to a 
+single data set.  Anyone with access to the 
+overall package would therefore have the necessary 
+software environment available to run included code.  
+Of course, the compiler/VM components would need to be 
+built from source, so users would need, for instance, 
+a typical C++ toolchain.  But such affordances 
+might be necessary to run other dataset code anyhow.
+
+Providing an integrated environment for running 
+dataset code does not imply that all such code 
+must be written in a single language.  Full-text 
+searches might be expressed in code that reads 
+more like a query language, in contrast to a 
+more script-style deserialization library.  
+Plugins to host applications loading data sets 
+might be written in a declarative style 
+emphasizing cross-component interop, alluding 
+to (e.g.) the Common Workflow Language or various 
+protocol-definition formats.  It is a reasonable 
+goal, however, to design a VM that would be a 
+common */compilation target/* even if surface-level 
+code is expressed in terms consistent with the 
+relevant area of functionality (query versus script versus, 
+say, workflow definition).  Of course, if not constrained 
+by existing language standards, a single front-end 
+language could adopt a flexible syntax that supports 
+multiple functionality-related styles 
+(consider LINQ as a DSL vis-a-vis C#).
+
+In any case, this paper will assume that creating such a 
+compiler and VM toolchain is a worthwhile project, and 
+will discuss certain featuers and implementation details that 
+reflect the specific goals of those hypothetical 
+components.  In particular, the compiler/VM would be 
+specifically built to support Research Object development 
+and facilitate data-sharing in multi-disciplinary and 
+translational contexts.  I will cover several 
+topics, including VM design and instruction sets, 
+front-end parsing, intermediate representations, 
+static analysis, interop with native-compiled procedures, 
+embedding the toolchain in host applications, 
+and taking steps to ensure that the toolchain 
+can be built with minimal external dependencies.
+
+For sake of exposition, the discussion will start with 
+perspectives particularly relevent to full-text search 
+and text encoding.  These themes may seem tangential 
+to typical topics in compiler theory, but they 
+serve as a useful precursor to further discussion of 
+the more-familiar topics.  Subsequent sections 
+will address such issues as object lifetimes, 
+calling conventions, resource (de-)allocation, design-by-contract, 
+dependent types, and other topics that are 
+currently at the forefront of programming-language theory.
+
+
+Full-Text Search and Representation
+
+The term "/full-text/" search is defined in contrast to 
+document portals where users may only access abstracts and 
+excerpts from published manuscripts.  By implication, 
+in full-text search the entire content of a book are 
+article is available to match against query terms.  
+This does not automatically mean that all the text 
+is accessible to all users; parts of documents might 
+be behind a paywall even if full-text is included 
+in the search process.  Also, queries might 
+be evaluated against compressed files (or 
+database records) that are distinct from 
+document content as undertood when reading 
+from beginning to end.  A "/vector/" datanase, 
+for instance, might only record the number 
+of times a given word (or phrase) occurs in a 
+given resource, on the assumption that 
+more mentions imply greater relevance.  This is, 
+of course, a crudy metric; more granular 
+models of relevance might distinguish, for 
+example, a publication arguing */for/* some 
+theory, versus */against/*, or neutrally 
+*/evaluation/* pro and con.  
+
+For sake of discussion, it is reasonable to assume 
+that full-text search capabilities */do/* include 
+matching input strings against document text 
+in its entirety.  Ideally, a bibliographic database 
+will support relevance-based queries as well, and 
+--- in the best case scenario --- author annotations, 
+or some other sentiment/rhetorical declaration method, 
+will offer a more granular model of inter-textual 
+relationships (how one document comments on, 
+endorses, rebufs, etc., some other text, or theory, 
+or line of argument).  If nothing else, relevance 
+matches could provide an initial pool of candidates 
+that are further analyzed.  But in many cases 
+exact phrase-match is indeed the best strategy for 
+query evaluation, notwithstanding how the semantics 
+of a passage can overlap with those of a search phrase 
+even without the query content appearing as such 
+%-- the words might occur partially, or in a different 
+order, or replaced by (near-)synonyms.  Such possibilities 
+imply that brute-force matching is often less than ideal, 
+but still, sometimes a reader is trying to re-locate a 
+sentence or paragraph they had seen sometime before, and 
+remember specific words therein.  Or, users are reasonably 
+confident that any relevant passage will have an exact 
+match with just one or two query variants (e.g., first-name-last-name 
+for a person or vice-versa).  In still other cases, technical 
+terms and idioms are often embraced precisely because they 
+yield a canonical vocabulary that one can expect to 
+find in relevant publications.  A manuscript which has 
+nontrivial discussion about the Rust "/borrow checker/", for 
+instance, will almost certainly use that exact phrase somewhere.  
+
+With that said, it can be surpringly complicated to establish 
+what exactly */is/* a manuscript text.  The most common 
+format for a person just */reading/* publications is 
+PDF, but PDF viewers' internal text representation 
+differens from what users "/think/" they're reading 
+in some important ways.  One obvious artifact of 
+the digital (or printed) page is hyphenation %--  
+but PDF also introduces anomalies via ligatures; 
+inconsistent spacing; mixing header/footer, sidebar, 
+and other "/marginal/" content with the primary 
+text; and potentially error-prone treatment 
+of characters with special typesetting or presentation 
+requirements.  PDF software can compensate for such 
+issues to varying degrees, but in general searches against 
+documents in PDF format should not be performed via 
+viewers' internal search functionality, or against 
+document text as reported by PDF components 
+(e.g., poppler's get-page-text ...).  
+
+PDFs, of course, are generated from files of some other type.  
+This might be LaTeX; or, more recently, XML-based 
+formats such as JATS or BITS.  Searching against 
+well-structured (e.g., XML-based) representations 
+presumably offers more consistent results than targeting 
+text as seen by PDF applications internally.  
+Unfortunately, current publishing practice does 
+not include disseminating JATS (for instance) as a 
+supplemental resource sibling to PDF files, for full-text 
+query purposes.  There seems to be no technical 
+arguments */against/* sharing XML (or similar) 
+manuscript encodings, however.  Of course, 
+not all users of search capabilities will have 
+documents on hand to begin with; they may perform a search 
+seeking to find relevant content ab initio.  Obviously, 
+though, document archives can store at least 
+moderately-sized collections of machine-readable 
+encodings and execute the same search algorithms 
+therewith as a sophisticated PDF viewer might perform 
+were PDF files augmented with associated (or 
+embedded) machine-readable text encoding.fn: with 
+the caveat that queries which take a comparatively 
+long time to evaluate on a single manuscript are 
+obviously impractical against thousands or 
+millions of candidates.  This is why vector-database 
+relevance methods may be important as an initial 
+step; or why publishers are advised to maintain 
+smaller-scale collections of materials that share a 
+similar topic, or subdivide their collections 
+in such a manner, so that user can 
+explicitly constrain their searches to 
+collections with a specific semantic marker.
+
+Even granted that full-text representations are available, 
+however, leaves unresolved numerous issues with respect to 
+what content is actually modeled for text-search 
+purposes.  Authors and typically readers will usually 
+have a pretty clear picture about the basic components 
+of sentences and individual words, distinguishing 
+such information from artifacts of layout and presentation.  
+For instance, hyphenation is not an intrinsic 
+part of text content, and two parts of a hyphenated word 
+should be fused together when building machine-readable 
+encodings.  Likewise, character-sequences such as 
+"/ffi/" might have the visual appearance of a ligature 
+character (Unicode ?? in this case) but the underlying 
+content is merely those three Ascii/Latin1 letters.  
+
+There are other, subtler cases, however.  For example, 
+footnote markers, citations, number or bullet icons 
+for enumerations, and emendments within quoted 
+material (ellipses, square brackets, and so forth) may or 
+may not be content that a user deems "/part/" of a sentence.  
+This could manifest in multiple ways.  In the case of an 
+exact-match query with a given search string, presumably 
+details such as the presence of a footnote marker 
+after an intermediate word would not affect whether a 
+portion of a sentence properly satisfies the match 
+(relevant to the user's intentions; although there 
+may be exceptions here, such as when the query 
+string originates from a copy-paste in a PDF viewer).
+On the other hand, if the user wants to */copy/* 
+a specific sentence they may wish to include 
+foonote markers, ellipses inside quoted material, 
+etc.  At least, copy actions might be performed 
+through a dialog box or other GUI component 
+that allows specifying options (whether of not 
+to include footnotes, etc.).  
+
+Further considerations involve how basic discursive 
+units such as sentences are to be modeled.  
+Most text has straightforward subdivision into 
+sections, paragraphs, sentences, etc.  But sometimes 
+the hierarchy is more ambiguous; a footnote whose 
+marker lies in the interior of a sentence might 
+itself span multiple sentences, which thereby 
+exhibit a kind of parent/child relationship 
+with the one in the main text.  Similarly, 
+sentences within block (or sometimes inline) quotes 
+or enumerations function in some regards as children 
+of the sentence through which that material is 
+introduced.  If the latter sentence (or part thereof) 
+ends with a colon rather than a period, it may be a 
+judgment call as to whether the beginning of 
+the relevant quote/enumeration is the start of a 
+new sentence or a continuation of the previous one.
+
+Another set of questions relates to styling and 
+presentation features such as italics, hyperrefs, 
+figure captions, etc.  A robust 
+search functionality might allow users to explicitly 
+request matches in italicized text (let's say they 
+remember a passage, include its being 
+in slanted script, but not which page contained it).
+Nonetheless, in a typical case users presumably 
+will not distinguish font-face when deeming a 
+phrase-match to be accurate.  The case might 
+be different vis-a-vis copying the text of a 
+sentence, constructing PDF comment boxes, and 
+so forth.  A reasonable question is how users would 
+want result text presented, if, for example, a 
+query asks for the contents of one specific 
+sentence, or if the "/query/" is actually a 
+response to gestures, such as selecting a 
+copy-sentence option from a context menu.  
+Plausible encoding formats specifically 
+for query-results (in this sense) could be 
+HTML, Markdown (or similar), plain text 
+(ignoring details such as italics), etc. 
+(of course, specifying which of these 
+is desired could be part of the query parameters).  
+Even if presentation facets such as italics vs. 
+normalfont are ignored, query results would still need 
+to consider how to represent quotations %-- use the 
+same quote marks as the document, or revert to 
+simplier Latin1 quotes (which do not distinguish 
+left and wrote), or employ some encoding to 
+surround quoted materials with tags (or analogous 
+markers); and, should block quotes (since 
+they are indicated by marginal indentation rather 
+than quote characters) be handled  
+differently from inline?
+
+There may not be definitive rules to resolve all 
+such issues.  The larger point is that text-encoding 
+is not a trivial matter of preserving intermediate 
+files, but rather that authors (or editors) should 
+consciously mold machine-readable representations 
+with deliberate acknowledgment of where principles 
+may be ambiguous (such as what qualifies as a 
+sentence-boundary) or development of encoding 
+protocols that give end-users choice when there are 
+nultiple reasonable options.  Of course, publishers and 
+digital editors can develop default "/house/" styles 
+to which authors might defer %-- pondering these 
+minutiae should not have to be a precondition for 
+submitting manuscripts %-- but in any case a 
+self-conscious protocol or meta-model for text 
+encoding could still be part of the document-preparation pipeline.
+
+Given this background, we should assume that any "/machine-readable 
+text encoding/" will include a set of rules for 
+how variegated phenomenon (not just words and characters) 
+are to be modeled (e.g., sentence boundaries and 
+inter-sentence relationships and hierarchies) and detailed 
+consideration of potential ambiguities or underdetermination 
+within search and text-access (such as copy/paste) functionality  
+(meaning that users, perhaps via GUI components, 
+or query-parameters fill in details to resolve questions 
+where results might be presented in multiple ways).  A thorough 
+text-encoding standard would thereby be relatively complex, 
+perhaps more so than suggested by current 
+technologies.  For example, the Journal Article 
+Tag Suite (JATS) has a fairly comprehensive 
+vocabulary of XML elements, but most of these 
+are designed for preparatory information 
+declared before the start of actual text 
+(JAPS supports a wide range of metadata 
+related to bibliographic info, provenance, 
+copyright, and so forth).  
+
+It's worth noting in this context that most text-encoding 
+standards are built around */paragraphs/* as the basic 
+units of discourse.  The BioC format (used by a 
+subset of PubMed Central), and Text Encoding Initiative 
+(TEI), have !<s> or !<sentence> tags available, but 
+even here these are not guaranteed to be present in documents.
+LaTex has rules for determining sentence boundaries 
+in normal cases (and macros to override those defaults 
+when necessary), but these most simplistic conventions 
+do not address all (or even most) sentence-related 
+ambiguities, and moreover they have no impact 
+on document preparation except for subtle 
+spacing policies (specifically, unless so-called "/french/" 
+spacing is indicated, PDF and other generated publications 
+will have a small extra space between the punctuation 
+ending one sentence and the start of the next, as 
+compared to the normal inter-word space on the 
+relevant line of print).  Without extra packages, 
+one cannot use the LaTeX pipeline to save sentence-level 
+metadata (e.g., the PDF page coordinates of sentences's 
+start and end points, which in theory can be tracked 
+via the pgfpos commands and auxiliary files).
+
+In short, in almost all publishing workflows there 
+is little effort made to introduces individual 
+sentences as a recognized discursive unit.  
+Similar points can be made about repositories 
+such as CORD19, a collection of open-access 
+documents about Covid and Coronaviruses, first curated 
+by the Allen Institute for AI (AI2) in the early months 
+of the pandemic.  CORD19 was engineered with accmmodation 
+for limitations in publising practice %-- in particular, 
+most articles were accessed only in PDF form, so CORD19 
+had to rely on error-prone transcription of internal 
+PDF representations to create (ostensibly) machine-readable 
+text encoding.  AI2 explicitly recognized this 
+limitation and even issued a "/call to arms/" encouraging 
+publishers to create more rigorous standards.  But, in any 
+case, the JSON format adopted by CORD19 broke down 
+text content only to the level of individual paragraphs.  
+Finer-grained details (e.g., in the context of annotations) 
+were modeled via "/standoff/" markup (using character-indices 
+to declare start and end point, where each paragraph is understood 
+as an internally-indexable stream); however, that system was 
+not extended to sentence-boundaries themselves.
+
+It is not entirely clear why so few formats are built around 
+the sentence (rather than paragraph) scale, especially because 
+many queries or search scenarios would seem to implicitly 
+rely on sentence identification.  For example, it would be 
+quite reasonable for a query to request matches wherein 
+two distinct terms are both present in the same sentence.  
+Also, in many cases a credible default response 
+convention for queries would be to return the full 
+text of a sentence where matches occur (this is just as 
+plausible as returning a "/window/" around the match 
+hits dilated by several words on either side).  Tracking individual 
+sentences could also be valuable in use-cases such as 
+PDF comment boxes and "/track change/" functionality.  Visibly comparing 
+two versions of a manuscript, say, could be restricted to showing 
+sentences which differ between the two (or also, maybe, 
+sentences present in one but not the other).  Similarly, 
+suppose someone using a PDF file creates a comment box 
+to indicate an edit that they recommend.  With proper 
+metadata about page coordinates, the PDF viewer could 
+obtain an identifier for the specific sentence 
+wherein the comment box is pinned, and such 
+id could even be included in the comment text itself 
+(maybe in the style of a social-media handle) so that 
+"/track changes/" software could cross-reference the 
+PDF without intermediate sources (e.g., XML files).
+
+Even if sentence-level encoding is not currently 
+the norm, there is no technical reason why it 
+would not become more prevalent in the future.  
+Properly identifying almost all boundaries 
+can literally be a simple as employing two 
+spaces instead of one in input sources, with 
+special notation needed only in rare anomalies 
+(another plausible solution is to adopt LaTeX 
+conventions that distinguish periods as punctuation 
+versus in abbreviations in most normal cases, 
+deferring to \SlashAt{} macros only on occasion; 
+although here the need for special notation 
+arises more frequently than with a two-space-versus-one 
+rule).  In any case, the remainder of this discussion 
+will assume that text encoding standards are 
+adopted (or developed) which treat sentences as 
+the basic units, and paragraphs as compound 
+objects (for lack of a canonical term, I will 
+call this "/sentence-level encoding/").
+
+Much of the preceding material serves 
+mostly as a preamble to this section's primary 
+theme, which is the best structure to employ 
+for natural-language markup.  Numerous 
+(at least partially) theoretical discussions exist 
+about the unique challenges for defining machine-readable 
+text representations, and which generic formats 
+(XML, JSON, something else %-- SGML, even) are best suited 
+for this case.  Although LaTeX has long been used for 
+typesetting specifically, publishers currently appear to 
+prefer XML-based formats (particularly JATS and its 
+derivates, including BITS %-- the Book Interchange Tag Suite) 
+as the primary intermediary files (grounding the 
+central processes of a workflow flanked, on one side, 
+by documents actually submitted by authors %-- in formats 
+such as Microsoft Word %-- and on the other by publications 
+read by humans, in PDF or, for instance, HTML).  
+
+At the same time, bear in mind that XML is itself essentially a 
+simplified version of SGML which was in use for many years in 
+academic/technical publishing, and some programmers argue that 
+features excluded from XML %-- notably, concurrant 
+markup %-- are still useful for text-encoding purposes.  There 
+are, then, contrarian models that are self-consciously 
+incompatible with XML and present a more complex markup 
+conception which, in principle, may be more effective for 
+describing the contents of text documents.  XML, of course, 
+is not explicitly designed for representing long text 
+*/documents/*, like books or articles (nor are other generic 
+formats, such as JSON).  There are subtleties in the 
+nature of human language, in its written form, that 
+require special treatment irregardless of how the 
+information is encoded overall.  To put it differently, 
+natural-language text is not just a "/data structure/"; or, 
+if we do see it as such (on the premise that almost 
+"/anything/" is a data structure) it is one with 
+intricate details and corner-cases.
+
+Among the XML alternatives that have been proposed 
+(and implemented, to varying degrees) a noteworthy 
+case if TagML (the Text-as-Graph markup language) 
+which features concurrent markup, among other 
+generalizations (from the simple document hierarchy 
+evinced in XML).  Concurrency means that multiple 
+hierarchical structures can exist in parallel; 
+the start of one element (e.g., a start tag) may 
+exist after the start but before the end of some 
+other element, while the former's end outlasts the 
+latter's.  That is, in some instances elements 
+exhibit overlapping rather than parent-child, sibling, 
+or disjoint relationships.  For a concrete example, 
+when recording poetry it may be desirable to adopt, 
+as basic units, both sentences and verse-lines.  
+One line may include the second half of one sentence 
+and first half of the next.  Concurrent markup 
+may therefore be an intrinsic feature of certain 
+academic domains, although the relevant 
+structures could be enulated in "/pure/" XML 
+via "/landmarks/" (zero-width elements that, in pairs, mark 
+beginning and end milestones for some state or condition 
+that cannot be represented by XML tags directly).  
+Meanwhile, in exceptional circumstances for ordinary 
+manuscripts (not just verse) there can be similar requirements 
+to identify printed lines as a distinct markup 
+layer.fn: { One example involves fine-tuning PDFs created 
+by, for instance, LaTeX; suppose we have a worflow 
+where XML (or similar) encoding applies for the 
+main text but LaTeX is still used for typesetting 
+the final PDFs.  The LaTeX-to-PDF generators 
+(anecdotally, at least) can be problemmatic 
+when it comes to handling (i.e., creating) 
+widows or orphans, both in the case of words and of 
+lines (by "/anecdotally/" I mean this is something 
+I have found repeatedly to be a pain in the arse).  
+In some cases authors/editors can get better results 
+by manually manipulating the LaTeX rubber-length 
+mechanism (which usually works well) and that 
+sometimes involves stipulating that some precise 
+string of words or characters should be exactly 
+one double-justified print line, which of course 
+might overlap with but neither include nor stand inside 
+one sentence.  In this case line/sentence 
+concurrency becomes a factor even in mundane prose. }  
+Apart from concurrency, TagML also differs from 
+XML in that attribute values (attributes are 
+string-indexed, so the "/keys/" are structurally 
+isomoporphic to XML) are not (necessarily) 
+simple strings, but can potentially have the same spectrum 
+of (semi)-hierarchical content as the overall 
+document (according to the TagML standard, each 
+attribute value is itself a root note).  
+
+Debating the relative merits of JATS, for example, versus 
+a non-XML alternative (such as TagML) %-- and whether 
+these considerations justifying departing from 
+XML entirely as opposed to emulating other structures 
+via conventions such as landmark/milestone tags %-- 
+is outside the scope of this paper.  I */will/* 
+comment that XML has become entrenched not only 
+due to the format itself but also associated 
+languages and tooling, such as XPath, XQuery, 
+XSLT, XQSE (XQuery Scripting Extensions) and the 
+XML Document Object Model.  Projects that 
+envision an XML alternative need to address the 
+possibilities of similar */associated/* languages 
+as well.  In the case of TagML, for example, 
+there does not appear to be a concomitant 
+format for querying TagML files analogous to 
+XQuery, or a way of individuation parts of 
+documents in the sense of XPath.  Articulating a 
+non-XML paradigm, however well-motivated, 
+is only a first step; on that basis one 
+would then need to progress to replacements 
+for DOM, XQuery, etc.
+
+But the main point I intent to emphasize %-- which 
+the XML/TagML contrast exemplifies nicely %-- is that 
+the superficial structures of any format are not 
+the primary factor when considering which languages are best 
+suited for text representation.  The important 
+difference from markup with or without concurrent 
+tag-overlap is not whether start/end tag pairs are 
+consistently nested in source files.  The more significant 
+implications come to the fore when one is writing code 
+to traverse, navigate, transform, and isolate/extrast 
+specific parts or values from the represented 
+data structures.  In the case of XML, for example, 
+one maneuvers around documents by visiting children 
+(or parent) nodes by turn, and/or sibling nodes 
+in sequence.  Simple hierarchy makes such navigation 
+straightforward.  With concurrent markup such as 
+TagML, code that traverses a document 
+looking for some specific content (or apply transforms 
+to most/all elements) has to address a wider variety of 
+cases.  When elements start inside others but end outside, 
+determining the proper sequence for visiting nodes is 
+(at least potentially) more complex.  This is not an argument 
+against, say, TagML %-- conceivably such complexity 
+actually makes traversal easier to implement, because it 
+brings complex cases to the forefront rather than 
+addressing them obliquely, such as when overlap is 
+emulated indirectly in XML via landmarks, since in the second 
+cases programmers might be more likely to code up ad-hoc 
+tools to keep track of data relationships basically 
+sutured on to the XML foundation (e.g., maintaining a 
+separate stack-object to keep track of start/end milestones).  
+But it does mean that the best format, all else 
+being equal, is the one which is most conducive 
+to intuitive implementation of traversal/navigation 
+code.  
+
+In short, the distinguishing factor of any markup format 
+involves how code might move from one node or "/site/" 
+in a document to another, as well as how it extracts 
+information on the current "/focus/" site.  For instance, 
+in XML, the main "/sites/" are element nodes and the principle 
+operations available on any given such node are reading 
+the tagname, attribute values, and the element's text 
+content (if any).  The primary */navigation/* possibilities 
+are moving from parent to (first) child node, and from 
+(any) child to parent, as well as between sibling nodes.  
+The crucial details of XML's specific format is that such 
+traversal possibilities are presumed from the 
+outset, and navigation/extraction code can orient 
+itself against this architectural paradigm.
+
+For sake of discussion, commpare these XML conventions 
+with a graph database; let's say, a property-hypergraph 
+model which supports at least two levels of (hyper-)nodes 
+(hypernodes are, in general, a tuple of nodes at the 
+lower level) as well as labeled edges between hypernodes, and 
+key/value attribute lists available for multiple kinds 
+(nodes, hypernodes, edges, etc.).  Edges themselves 
+may actually be "/triples/" where a directed edge (in addition 
+to its source and target hypernode) has its hypernode 
+(the middle slot in the subject-predicate-object triple model), 
+although the nodes specific to hyperedges may carry the 
+stipulation of a "/label/" attribute that conforms to 
+some Ontology.  Also, it is reasonable to assume that 
+any hypernode can be referenced via a globally unique 
+identifier, which in turn may be the value of a node, 
+so nodes can act as proxies or handles to hypernodes, 
+permitting containment hierarchies */de facto/* 
+(even if hypernodes can only nest one level of contained 
+nodes, those nodes may proxy other hypernodes, and so 
+on iteratively).
+
+This schematic picture of property-hypergraph database theory 
+(which does not corespond to actual engines in use, necessarily) 
+is tangential to my discussion, but it illustrates a noticeably 
+*/different/* conception of navigation and traversal compared 
+to XML.  Visitor code could switch focus from a hypernode 
+to a node contained therein; or from one hypernode to another 
+via a labeled edge (maybe following one specific label 
+as defined by an Ontology or controlled vocabulary); or, 
+alternatively, migrate to a different hypernode via a 
+node-proxy (equivalent to moving between XML elements by 
+reading the destination's id from an attribute value).  
+Code could also read a property-value at the current 
+site, or read "/predicate/" details (in the subject/predicate/object 
+triple sense) from an edge-annotation.  While some of these 
+protocols vaguely resemble XML, the details are different.  
+XML has no equivalent to edge-triples, for example.  On the other 
+hand, each XML element potentially has its own text content, 
+whereas in the graph model sketched here text would only belong 
+to a node as an integral whole (without internal/nested elements).
+
+There are a wide variety of domain-specific formats, like 
+DICOM (for medical images) and IFC (Industry Foundation Classes, 
+for engineering) that have their own variation on 
+themes familiar to, say, XML.  For example, IFC distinguishes 
+*/attributes/* from */properties/*, where the latter are more 
+free-form.  Document-type schemas can restrict (and require) 
+the presence and scope of attributes, but sources can 
+introduce idiosyncratic properties with few restrictions.  
+A similar distinction is achieved in DICOM via "/public/" 
+versus "/private/" element-labels (DICOM has the further 
+detail that field labels, which function in effect like 
+attribute keys, in DICOM have both string 
+and number codes; private attributes employ odd numbers).  
+DICOM also uses a two-part-code system (somewhat comparable to 
+XML namespaces).  Each of these formats evince algorithmic 
+differences in terms of traversing and extracting information 
+from documents.
+
+Structural differences of these sorts are sufficiently 
+widespread that it is helpful to refer to them 
+in general, and existing jargon (such as traversal 
+or navigation, or terms related to the "/visitor pattern/") 
+do not cover proper generality.  For sake of 
+exposition, here I borrow the term "/topomorphic/" (which 
+apparently exists in chemistry but not, usually, computer 
+science).  Formats such as XML, TagML, DICOM, IFC, differ 
+in terms of what I propose to call */topomorphic regimes/", 
+in that there are subtle (or not-so-subtle) differences 
+in the computational processes involved in moving from 
+site to site and extracting data thereby.  A central idea 
+here is */site/* itself, which I envision to be a 
+generic concept for a "/place/" in a structured document 
+%-- one that could be the current value of a source-code 
+variable or object %-- such that code can, via 
+one "/foreground/" or "/focal/" site, read specific 
+kinds of information (an attribute value, tag name, 
+element text, etc.).  Moreover, there are specific 
+options to "/move/" from one site to another 
+(e.g., by reassigning the value of a source-code 
+object to point to a different node).  The data 
+available at a given site, plus other sites immediately 
+accessible therefrom, could be called the "/neighborhood/" 
+of a site.  Where formats differ is the parameters of the 
+"/shape/" of such neighborhoods.  For instance, the neighborhood 
+of an XML node includes its parent and child nodes, previous and next 
+siblings, and its attributes and text content.  Given the 
+differences outlined above between XML and TagML, the neighborhood 
+of a TagML node would be structurally different.  In terminology 
+I adopt here, these are */topomorphic/* differences and 
+illustrate how XML and TagML exhibit/implement 
+distinct "/topomorphic regimes/".
+
+When describing site-neighborhoods we can consider several 
+degrees of specificity.fn: {there's a similar 
+ambiguity in the term "/data structure/", which could 
+mean an abstract specification %-- array, list, 
+stack, queue, deque (double-ended queue), 
+associative array, etc.; or one specific 
+instance of such a structure.}  Merely knowing that a 
+file is XML, say, does not tell you much 
+about what you might find at any given place 
+in the DOM.  A Document Type Declaration (DTD), more substantially, 
+will confirm that a given attribute value is present, or that 
+the first child node of a particular element will 
+have a given tag name.  At a higher level of 
+abstraction, the XML format itself indicates the 
+basic components out of which such specifications 
+can be formulated: tag names, namespaces, attribute 
+keys, parent/child and next/previous sibling relationships, 
+etc. (but not, say, an insertion-order on attribute 
+pairs except for implicit alphanumeric ordering on keys).  
+Just by convention, some documents might further 
+adopt abstract policies such as each element either 
+having text content or child nodes but not both (or at 
+least that such retriction applies to and among 
+all nodes tagged from a given namespace).  Conversely, 
+any element of an actual file will have a concrete 
+neighborhood where text content and attibute values 
+are fully specified.  Outside of XML, the 
+Shapes Constraint Language (SHACL) express models 
+that provide guarantees on RDF and Semantic Web graphs 
+similar to DTDs for XML.
+
+I propose to discuss the */shape/* of a neighborhood 
+as that mid-level of abstraction, such that shapes 
+can be constrained by concrete instantiations 
+of certain aspects (tag names, attribute keys, etc.) 
+plus relationships like parent/child and siblings, 
+but not at the level of specificity where specific 
+*/values/* (of attributes, element text, etc.) are 
+concretized.  I propose the term "/regime/" 
+for the higher level of abstraction where the basic 
+parameters of shape constraints are introduced; 
+i.e., different topomorphic regimes present 
+(to some degree) different details that must be 
+articulated when defining shape constraints.  
+Traversal and navigability are facets 
+*/of/* topomorphic structures.  By way of example, 
+in some file formats it is possible to extract 
+information simply via "/scraping/" or using 
+Regular Expressions (for instance) to locate 
+text- (or content-) spans of interest.  Such algorithms 
+vaguely resemble working off an XML DOM in that 
+one seeks to extract data, but the specifics are 
+meaningfully different; one does not "/navigate/" 
+from one place to another, and parsers do not 
+necessarily need to convert entire files to 
+structures with individuated nodes, like graphs or trees.
+
+My point is that not all data-extraction routines 
+whose preliminary inputs are text files need to be 
+implemented through techniques such as traversal and 
+navigation; as such, those formats which */do/* support 
+that algorithm-design should be described as a 
+specific class or category in some sense.  I propose 
+to use the term */topomorphic structures/*; as such, 
+the defining feature of topomorphic structures is that 
+extracting information therefrom is a two-step 
+process in which some input source (typically 
+a single file or group of files, which could be textual 
+or binary) needs first to be fully processes, meaning 
+that every interior component (say, every string of 
+characters that functions as a meaningful unit) has 
+to be isolated and modeled as a site in some 
+larger structure; then, all such sites are interconnected 
+via protocols of traversal/navigation, moving from 
+one site to another according to specific 
+criteria.  So "/topomorphic/" structures are those 
+that are conducive to data-extraction via 
+traversal/navigation algorithms.  Similarly, 
+topomorphic structures are those amenable to 
+code designed according to a "/visitor/" pattern.
+
+As an example of how topomorphic regimes may differ, 
+consider XML containment in contrast to TagML.  
+Given that overlap is possible with the latter, 
+in the case that the content of one element 
+*/does/* lie inside another, this could 
+express a logical relationship between them %-- as 
+in a sentence to paragraph, or a last-name field in a 
+larger proper-name structure %-- or it may 
+be happenstance (as in, say, a paragraph to a 
+PDF page; there is no discursive convention 
+that restricts a paragraph to a single 
+page, even if most of them are so bounded).  
+TagML refers to these two different scenarios 
+as */domination/* versus */containment/*, and 
+both concepts subsume the XML parent/child 
+relationship.  As a result, traversal strategies 
+in XML based on element-nesting need to be 
+revised for TagML; when specifying movement to a 
+"/child/" node we have to specify whether that 
+child is located in terms of domination relationships, 
+containment, or both.  Of course, movement between 
+two (only) partially overlapping elements must be 
+distinghuished from both domination */and/* containment.
+
+"/Visitor pattern/" algorithms against TagML are therefore 
+more complex than with XML.  This is not 
+necessarily a flaw; after all, the containment/domination 
+contrast is semantically meaningful, and (as already 
+suggested) explicit concurrent markup may yield more 
+expressive traversal code than emulating 
+overlap-semantics via workarounds such as landmark nodes.  
+Nonetheless, it does point to the principle that 
+data-extraction routines have to be designed 
+specifically around the topomorphic parameters 
+embraced by a given regime (i.e., file type/format).  
+Traversal code designed for XML cannot be applied, 
+without some level of re-implementation, to TagML 
+(for example).
+
+These ideas are relevant to compilers insofar as 
+one of their possible input-formats (either 
+as independent languages or as some form of 
+DSL) would express evaluations sensitive 
+to topomorphic details, such as XQuery, 
+XSLT, XPath, SHACL, and so forth.  I will revisit 
+these concerns later; but, at present, I want to 
+continue analysis of encoding formats for text representation.
+
+Discussion of whether (for example) XML or TagML are the 
+best modes for such representation %-- or so I 
+claim %-- really amount behind to scenes to questions about 
+which topomorphic regimes is most effective for text encoding.  
+Such questions, of course, depend on what 
+role traversal/extraction code is play.  In particular, 
+what functionality is the main concern for full-text 
+representation, bibliographic database, search 
+facilities in PDF viewers, etc.?  
+
+To address these questions, my idea here is to 
+examine the topomorphic properies of natural-language 
+text in its own terms.  Encoding documents 
+in any format (XML, TagML, LaTeX, etc.) will 
+endow the representations with topomorphic 
+characteristics of the "/host/" format.  
+But when working with text itself, we are primarily 
+concerned with traversal, navigation, and extraction 
+specifically of text-related content: words, sentences, 
+discursive features (quoted text, italics, footnotes) 
+and so on.  As such, we can analyze the topomorphic 
+properties of natural-language text while 
+bracketing consideration of which source-file format 
+will hold any actual input content.
+
+As I see it, a core principle of text-topomorphics 
+(however much existing technologies do not 
+honor this paradigm) is that the crucial discursive 
+unit is the single sentence.  Thus, within a 
+text document, most (or at least many) of the 
+most important sites, and the basic structure or 
+"/scaffolding/" of the manuscript, are comprised 
+by sentence nods.  Usually, their interrelationships 
+are straightforward: sentences follow one another 
+in sequence, and they are contained in paragraphs 
+that do likewise.  There are exceptions, however.  
+For example, a footnote may contain 
+multiple sentences; even, occasionally, multiple 
+paragraphs, all of which are in some sense 
+"/children/" of an enclosing sentence.  There 
+are actually numerous cases wherein sentences 
+might have something resembling parent/child 
+relationships.  Some parenthetical comments, 
+for example, read as independent sentences 
+(usally for rhetorical flourish) with their 
+own punctuation, often question or exclamation marks.  
+Both block and inline quotes, likewise, can extend 
+over multiple sentences, and it may be ambiguous 
+whether the continuations are perceived 
+as */following/* the original sentence or "/children/" 
+in some sense.  
+
+Similar ambiguities are evident in the case of a 
+footnote, for example, which reads as if 
+forming the second part of the sentence up 
+to where its footnote-marker appears; in effect a 
+footnote of this form presents a kind of 
+"/alternate ending/" as if the sentence 
+splits into two versions.  Likewise, a quote 
+sometimes */concludes/* the sentence that 
+introduces it, so it becomes */part of/* more so 
+than "/nested inside/".  But then, quotes may 
+continue on to other sentences.  Even parenthetical 
+comments that are clearly intended to be 
+read as interregna in the context of a single 
+containing sentence may have the appearance 
+of multiple individual sentences, with punctuation.  
+Also, in the case of a footnote that */follows/* 
+the end of a sentence (rather than being marked 
+*/inside/* one) the footnote's contents 
+(maybe multiple sentences of its own) are 
+in one sense succedent to that precursor 
+but the latter, of course, is (in general) 
+followed by other sentences in the main text; 
+so the sentence-sequence appears to split into 
+two distinct threads, unless we are include 
+to model the footnote as always child to a 
+sentence where it appears (even if after 
+the parent concludes).  
+
+To some extent, related ambiguities apply to paragraphs: 
+does a block quote succeed or nest inside the paragraph 
+where it is introduced?  What about material 
+*/after/* the blockquote if it is typeset 
+so as to suggest (e.g., with no indentation) that it 
+continue prior content?  In practical terms, for 
+manuscripts that employ paragraph ids to 
+facilitate indexing (or processing edits, etc.), 
+this yields a question of whether quotes and/or 
+continuations (potentially splitting a paragraph 
+into three parts) get separate id codes. 
+
+For a computational handle on textual content, 
+document-preparation software might %-- in light 
+of the complicating factors I just outlined 
+%-- adopt simplifying conventions such as 
+treating even (apprent) "/parts/" of sentences 
+and paragraphs to be their own objects, 
+with distinct ids, notwithstanding ambiguous 
+discursive status.  For instance, the material 
+introducing a block quote would be one 
+paragraph object %-- on whole paragraph 
+for programming purposes %-- and the block 
+quote(s) another, plus continuing content a 
+third.  From a reader's perspective, 
+the three parts might seem like one 
+single overarching paragraph, but that 
+impression need not necessarily correspond 
+to the semantics of a paragraph object 
+as a computational artifact.  Along similar 
+lines, the material introducing a block 
+quote %-- potentially ending with a colon, 
+or even no punctuation at all %-- could 
+*/always/* be considered a separate sentence 
+object, such that block quotes 
+and sentences never overlap (each instance of 
+the latter would always contain at least 
+one sentence-object, and possibly more).
+
+This discussion implicitly leverages a 
+distinction between "/sentences/" %-- elements 
+of discourse/rhetoric and as such "/real world/" 
+phenomena %-- and sentence */objects/", which 
+are computational entities and 
+(as would be the case for any digitization 
+or "/digital twins/") simulate their real-world 
+models only approximately.  On the other 
+hand, complications such as the (potentially subtle) 
+status of sentences as siblings or children to 
+each other must still be represented; assuming 
+a programming style which favors smaller rather 
+than larger sentence (respectively, paragraph) 
+objects, this could be achieved by noting 
+particular inter-object relationships, plus 
+perhaps flags or typologies that might represent 
+special discursive features of a sentence 
+that disrupts the usual linear model 
+(special status might be noted for 
+sentence-objects representing textual 
+segments that have some rhetorical 
+dependency or interconnection with other 
+objects, such that they do not feel 
+to a human reader as entirely self-contained).
+
+All of these variations need to be addressed by a 
+rigorous "/topomorphic model/" of sentence-objects 
+and natural-language text in general.  
+"/Visitor patterns/" have to consider the 
+differences between main versus footnote material 
+when "/moving/" from one object to its next 
+sibling; or contrasts between depth-first 
+and breadth-first search in cases 
+where hierarchical relations are ambiguous 
+(e.g., between containing sentences 
+and quotes, parentheticals, or footnotes).
+    
+A detailed sentence-object model is important partly because 
+we may assume sentence-level content canonically 
+forms the basis of a query interface.  The prototypical 
+constructions for a full-text/bibliographic search, 
+that is, would be a string indicating 
+desired matches (in the simplest case a 
+phrase to be located word-for-word, but of 
+course with more nuanced variation) and the 
+results would be contents of those sentences 
+where a match occurs.  Of course, for a 
+particular "/hit/" a relevant question 
+is what */is/* the containing sentence, so 
+minutiae about how a particular text-encoding 
+handles sentence boundaries/hierarchy need to be 
+known to any code that issues queries against 
+such representations.
+
+The other question in this context is how 
+sentence contents are to be reported; 
+that is, how must stylistic, layout, 
+presentation, and discursive detail 
+should be returned.  These issues are 
+more granular than the sentence level, 
+though not necessarily on a letter-by-letter 
+scale.  For instance, semantically noteworthy 
+segments within a sentence should (as 
+much as possible) be noted, with annotations, 
+extra markup, or other detailing.  
+Examples include acronyms, abbreviations, proper and place 
+names, keywords/phrases, jargon, 
+and text with special formatting because 
+of some technical significance (e.g., printed 
+computer code).  Often such material 
+has visible differences anyhow %-- for example, 
+I believe abbreviations should be typeset 
+in a different font or color than other characters, 
+and so they would be isolated both visually 
+and within the encoding.  Technical artifacts 
+like chemical formulae or phonetics symbols 
+as used in linguistics (more generally, the 
+practice of notating a sample/utterance in multiple 
+ways, perhaps including translations %-- into 
+English, say, if that is the language of the 
+manuscript but not of some sentence being 
+analyzed %-- along with "/literal/" translations 
+that explains grammatical structures and 
+inflections/morphology) typically need 
+special formatting in any case.  The question 
+in a query-interface context is how these details 
+should be reported.  A reasonable convention 
+is that (at least by default) match results should 
+as much as possible be described as plain 
+character-strings, with no markup or 
+decoding necessary; material with special 
+features could be indicated with simple ASCII-style 
+notation (based on Markdown, for instance) or 
+just as ordinary text, so an acronym would be 
+merely its constituent letters.  Alternatively, 
+results might be returned in a commonplace 
+format like HTML, or some internal format 
+designed as a bidirectional compromise between 
+code that evaluates queries and code that 
+produces them (and processes results).
+
+Moving on to what is typically the smallest scale, 
+a query-interface should also specify the basic 
+encoding for single characters.  Paradigmatically, 
+such a standard would be based on Unicode, but a 
+systematic text-encoding might want to 
+address some limitations of the Unicode system.  
+In particular, Unicode does not (at least in many 
+contexts) distinguish glyphs with similar 
+appearance but distinct roles.  As a paradigmatic 
+example, period may be punctuations, parts of 
+acronyms, the last character in an abbreviation, 
+strung into ellipses, a decimal point, etc.  
+If we are concerned not just with visual output 
+but recording discursive structures, these differences 
+are clearly significant.  Arguably, the Unicode 
+could have adopted distinct codepoints for various 
+incarnations of periods (similarly for, e.g., 
+quote characters as repurposed for feet/inches, 
+or commas in the role of numeric separators, etc.).  
+Such might still be achieved by convention 
+via Unicode Private Use Areas.  
+
+As a case in point, consider ellipses.  Readers generally 
+see them merely as strings of three (or four dots).  Unicode 
+actually has several codepoints for ellipses as single 
+characters.  A text-encoding system might 
+use one or more of these, or three actual 
+dot characters, or perhaps an empty XML tag.  
+Keep in mind also that there are subtle differences 
+in how ellipses are used.  The four-dot version 
+usually indicates that, within quoted material, 
+one sentence ends and the content immediately following 
+has been excluded from the quotation; whereas 
+three dots suggest elision inside a single sentence.  
+As such, the four dots "/hug/" the last word 
+before the ellipsis (since the first of those dots 
+is understood as punctuation) whereas there 
+should be space both before and after three-dot ellipses, 
+according to most style guides.  These details are 
+consequential in terms of how text content 
+is interpreted for purposes of query-evaluation, 
+for instance; e.g., material around an ellipsis 
+might be considered a continuous string 
+(as if the ellipses were not present at all), 
+although that might be handled differently 
+in the three- and four-dot version.  Whether or 
+not the ellipsis is internally stored as a 
+single character, in any case, it is not "/just/" 
+a character but rather introduces extra structuration 
+in its surrounding context (similar comments 
+could be made about en- and em-dashes).  
+
+However, alternative conventions might apply to 
+sentence-content rendered for purposes of 
+query results: as a neutral exchange format 
+it may be appropriate simply to report ellipses 
+as three or four consecutive dot characters, 
+and en-dashes just as dashes (or pairs therefore); 
+likewise em-dashes might be encoded as a single 
+dash with space on either side.  Quotations 
+also have multiple possibilities in "/exchange/" 
+representation: delimeted by Latin1-marks 
+which have not left/right distinction, or using characters 
+slanted one way or another (as in Unicode U+201C and U+201D), 
+or some other balanced characters (this document, 
+for what it's worth, employs quote-slash and slash-quote), 
+or perhaps some sort of tags instead.  In other
+words, a text-encoding system should consider 
+both */internal/* and (so to speak) "/external/" 
+representations, where the latter addresses 
+how phenomena such as ellipses, em/en-dashes, 
+footnotes (markers and content), etc.; 
+the former, meanwhile, should take into consideration 
+that many codepoints and symbols have special 
+meaning that effects how sentences and match-strings 
+are processed, in terms of what counts as 
+max, how sentences are internally structured, 
+how special content might come into 
+play (for instance, whether an abbreviation 
+qualifies as matching the expression  
+which it shorthands, and vice-versa). 
+
+Italics are a case in point.  One question (already 
+mentioned) is how to best represent italicized 
+text in (what might be called) "/external/" or 
+"/exchange/" representation such as query 
+results.  Internal encoding for italics is a 
+different matter.  There are multiple reasons 
+why phrases might be italicized: for emphasis, 
+for titles, when introducing a technical term, 
+etc.  Encoding protocols might well distinguish 
+these cases, just in case they matter in 
+some contexts.  At any rate one cannot assume a 
+consistent set of (e.g.) tag names: the print 
+representation of a named title might be 
+in cursive font, but the underlying element 
+could be a b:title, b:textit, just an b:i, or 
+something else.  
+
+A reasonable solution to this situation is to 
+nominate some set of presentation characteristics 
+that are more general than a specific element name 
+%-- familiar styles such as boldface, italics, 
+technical (e.g., printed code) and so forth.  
+A set of policies could then specify that such 
+characteristics implicitly apply to any 
+content delimited by specific tags (for tag-based 
+markup, or similar formations otherwise).  Something 
+like a DTD could then indicate that a given 
+tag name automatically applies a "/flag/", such as 
+italics, to its text content.
+
+From a (human) reader's point of view, a relatively 
+limited collection of features might well 
+cover all material found in a presentation: often 
+all text will be in just one of two font series, 
+especially normal and italic (along with larger 
+characters for section titles and such), and 
+most visible symbols will be ordinary letters and numbers.  
+Only a few constructions would disrupt these 
+norms: footnote markers and content, block quotes, 
+enumerated lists where each item introduced by a 
+number or, say, a bullet symbol %-- which raises 
+the question of how to record those symbols 
+when copying PDF (for instance) or reporting 
+query results %-- and so forth. 
+
+
+  
+ 
+  
+ 
+ 
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+
+   
+
+
+
+
+
+
+   
+
+ 
+
+    
+
+
+
+
+ 
+
+
+
+    
+
+
+ 
+
+    
+ 
+     
+
+  
+  
+
+
+ 
+   
+
+
+  
+   
+
+
+
+
+
+
+   
+ 
+
+ 
+       
+  
+
+  
+
+
+   
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
