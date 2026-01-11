@@ -93,6 +93,11 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\ul{{#1}}};
 %\let\Oldautoref\autoref
 \renewcommand{\Atref}[1]{\textcolor{rgrAt!30}{\xfigunderline{\hspace{-2pt}\autoref{#1}\hspace*{-2pt}}}}
 
+\newcommand{\Athref}[2]{\textcolor{rgrAt!30}{\xfigunderline{\hspace{-2pt}\hyperlink{#1}{#2}\hspace*{-2pt}}}}
+
+
+
+
 %\let{\Oldref}{\ref}
 %\renewcommand{\ref}[1]{\Oldref{#1} on page \pageref{#1}}
 
@@ -1609,7 +1614,7 @@ for Markdown users.}
 (including \XSLFO{}, which uses style-sheet transforms to 
 convert formats like \JATS{} to final publications) 
 are becoming increasingly popular for generating 
-\PDF{}s, \LaTeX{} remains a powerful tools for this 
+\PDF{}s, \LaTeX{} remains a powerful tool for this 
 specific part of the workflow.  It appears that 
 \LaTeX{} offers authors and editors more fine-grained 
 control over the final appearance of a publication, 
@@ -1622,7 +1627,7 @@ to perfect manuscripts according to the
 author's vision.  As such, \PacTk{} supports \LaTeX{} generation and 
 arbitrary \LaTeX{} code may be embedded 
 in \PacTk{} input sources (without 
-affecting the extraction of \TSOM{}-modeled language/discource 
+affecting the extraction of \TSOM{}-modeled language/discourse 
 content proper).  However, \LaTeX{} is 
 problematic for \textit{internal} text representation.  
 While some discursive elements may be 
@@ -1651,7 +1656,7 @@ Executable Research Objects is to package analytic code
 that yields or supports conclusions presented 
 in a publication (or at least demonstrates 
 programming methods, assumptions, and algorithms 
-intrinsic to that analysis).  Fellow researches 
+intrinsic to that analysis).  Fellow researchers 
 can then examine analyses in depth (and possibly 
 seek to reproduce conclusions).  Ideally, researchers could 
 rerun essentially the exact same code, perhaps 
@@ -1696,7 +1701,7 @@ Also, digital twins to historic papers --- whether
 as images, transcribed to text, or both --- typically 
 need more detailed markup than manuscripts prepared 
 as digital resources to begin with (for instance, 
-transciption ambiguities are recorded, or 
+transcription ambiguities are recorded, or 
 scribbled marginal notes notated alongside the 
 corresponding text).  This is a primary 
 rationale for \XML{} formats like \TEI{} 
@@ -1725,7 +1730,7 @@ Computer Vision algorithms may emulate
 or model the biological visual acuity of humans or animals.  
 In these cases, presentation tools can be especially 
 useful if they illustrate Computer Vision workflows 
-(perhaps showing individual stages in the trasformation 
+(perhaps showing individual stages in the transformation 
 of pixel-data) and then explain how such processes 
 might functionally or neurologically model phenomena within eyes and brains/minds. 
 
@@ -1748,8 +1753,8 @@ as much as natural science (the former tends to be more generalizing and
 philosophical; while \q{hard} science often narrows in on very specific research questions/experiments).  
 Written papers are still a major avenue for disseminating research, and herein 
 science becomes absorbed into discursive and rhetorical spaces primarily modeled 
-in the humanities.  For instace, the book referenced on page 10 weaves together 
-topics of law, ethnometholody, and popular media; it endorses certain 
+in the humanities.  \makebox{For instance, the book referenced on page \Athref{page.10}{10}} weaves together 
+topics of law, ethnomethodology, and popular media; it endorses certain 
 theories for family courts and critiques others.  These rhetorical patterns 
 could, in principle, be incorporated into document-view \GUI{}s as interactive features, 
 helping researchers find those parts of the book that most interest them.    
@@ -1780,7 +1785,7 @@ PacTk's \q{Scign-index} Protocol for Executable Research Objects}
 
 {\setstretch{1.12}
 
-\p{The \Scign{}-index protocol mentioned on page 10 particularly aligned with 
+\p{The \Scign{}-index protocol mentioned on page \Athref{page.10}{10} is particularly aligned with 
 \q{Executable} Research Objects (alternatively termed 
 \q{Research Compendia}), yielding a proposed component-oriented  
 model that \PacTk{} calls \q{\ScignTier{}} (Scienge Grid Node/Text-Integrated 
