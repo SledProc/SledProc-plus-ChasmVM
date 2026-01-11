@@ -437,7 +437,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=19{
+\ifnum\value{page}=20{
 \AtTextLowerLeft{
 \hspace{266pt}\raisebox{-27pt}{%  
 {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
@@ -1454,16 +1454,176 @@ operations, authentication, component capabilities, etc.).
 \end{description}
 }
 
+\vspace*{-68pt}
+
+\sstitle{%\hspace*{-50pt}
+PacTk in Comparison to Other Formats}
+
+\vspace*{11pt}
+
+\p{Here are several points of contrast between \PacTk{} and other text-representation 
+formats that are currently popular.  \lPacTk{} does not necessarily 
+compete with these alternatives, because \TSOM{} data can be converted 
+to other representations as needed.  However, it is useful to 
+describe the strengths and weaknesses of some alternatives as a point of contrast.
+
+%\begin{description}
+
+%\item[JATS and BITS]  
+\p{\textbf{JATS}: The \q{Journal Archiving and Interchange Tag Suite} is currently 
+the format that is closest to a \textit{de facto} standard for 
+academic publishing (\BITS{}, or Book Interchange Tag Suite, is an extension 
+of \JATS{} to cover full-length books rather than individual articles).  
+\lJATS{} is an \XML{} format with over 300 tags having standardized 
+semantics and inter-relationships.  Many of these are for metadata related 
+to publications' provenance, authors, dates of publication, and so forth, 
+but some tags also define textual content in a structured manner.  
+Because \JATS{} is readily customizable, different publishers 
+can add on their own extensions and tools to the basic tag set.  As a result, there 
+are often inconsistencies in how textual content is represented by 
+different publishers even if they are both using \JATS{} overall.  Moreover, 
+some publishers employ their own private (and/or legacy) \XML{} formats 
+for internal processing but map their files to \JATS{} or \BITS{} for 
+sharing with other organizations.  In totality, then, publishers' 
+adopting \JATS{} does not automatically alleviate typographic or content 
+anomalies which can delay efficient document preparation.  \lJATS{} by 
+itself does not spare authors the work of carefully proofing intermediate 
+manuscript versions.}
+
+\p{At the same time, although there 
+exists a \JATS{} \q{Article Authoring Model} for those 
+writers who prefer to submit \JATS{} manuscripts directly, in most 
+cases documents are delivered to publishers in formats such as 
+Microsoft Word or \LaTeX{} and must then be converted to \JATS{} by 
+copy-editors or others working internally on the publisher's side.
+This process cannot be fully automated, and many kinds of errors 
+may be introduced at this stage.  For example, numerous character 
+sequences have to be modeled in \XML{} via character entities 
+or specialized tags, which among input sources may instead 
+be present as Word symbols or \LaTeX{} macros.  
+Unless manually corrected, these transcription errors 
+can produce subtle flaws that degrade the quality 
+of final publications, due to inconsistent 
+spacing (around quotes, parentheses, ellipses, long dashes, etc.), 
+glyphs (e.g., straight versus angled quote delimiters and apostrophes), 
+citations, and other text-discourse conventions.}
+
+%\pseudoIndent{} 
+\p{One difference between \PacTk{} and \JATS{} is that for \PacTk{} 
+all textual elements are \Cpp{} objects, rather than tags or character 
+entities.  Another important contrast is that \TSOM{} focuses on representations 
+at the sentence scale, whereas most \XML{} encodings are oriented 
+to paragraphs instead.  In \PacTk{}, such materials as quotes, 
+footnotes, citations, discipline-specific symbols, and content set off 
+via parentheses or em-dashes are treated as objects either nested 
+inside sentences or as containers holding one or more sentences 
+in sequence (or, in some cases, both).  Discursive structures such as 
+citations, quotations (with ellipsis and emendation protocols), 
+and terms or proper names matching index headings are modeled 
+as class-instances computationally isolated from surrounding 
+text, more tractably than \XML{} conventions via tags or character entities.  
+This forestalls many transcription errors that result from 
+treating objects or delimiters with special functional 
+roles (in quote, citation, or formula-notation contexts) as 
+ordinary symbols or characters (such that \PacTk{} is more computationally reliable).}
+       
+
+%\item[BioC and TEI]  
+\p{\textbf{BioC} and \textbf{TEI}: these are two \XML{} languages that are more 
+granular than \JATS{}/\BITS{} in that they support sentence-level 
+tags (although, as mentioned previously, such tags are optional 
+and might be excluded from any encoded documents).  Although \TEI{} originated in 
+response to requirements for humanities scholarship (e.g., preservation 
+of historical documents) it has more recently been adopted 
+in the natural sciences for tasks such as text mining 
+(as in the \ISTEX{}, or \q{Service infrastructure for text mining,} project); 
+\BioC{}, meanwhile, is predominantly focused on biology and medicine.  
+Both \BioC{} and \TEI{} only partially 
+model the discursive constructions (quotes, footnotes, citations, etc.) 
+that are the source of many transcription errors just mentioned, 
+and also hallmarks of well-structured academic writing.  
+As a result, they have limited value as internal representations 
+for scientific manuscripts, although they serve well as  
+interchange formats for environments such as PubMed.  
+As pure-\XML{} solutions, \BioC{} and \TEI{} need to be 
+parsed into live objects of languages such as \Cpp{} 
+in order for detailed processing to be performed.  
+For this reason, these formats are not direct alternatives 
+to object-based representations such as \TSOM{}.} 
+
+%\item[JSON]  
+\p{\textbf{JSON}: Text-mining corpora %such as CORD-19 
+often employ \JSON{} (JavaScript 
+Object Notation) formats such as \StwoORC{} (from \q{Semantic Scholar Open Research Corpus}) 
+primarily to encode 
+written documents for text-mining methods based on Natural Language Processing.  
+Given this focus, typical \JSON{} formats do not rigorously 
+model the \textit{discursive} (as opposed to purely linguistic) 
+facets which are important to academic writing, such as 
+quoting and citation protocols.  This is one reason why \JSON{} 
+is not currently a feasible option for publishing workflows.}
+
+%\pseudoIndent{} 
+\p{Also, as with \XML{}, \JSON{} is only computationally 
+tractable when first converted into programmable 
+(canonically, Object-Oriented) data structures.  
+These will necessarily be much more complex topomorphically 
+than \JSON{}'s object/array meta-model; consequently, code mapping 
+to and from \JSON{} encodings will be more complex 
+and hard-to-maintain than direct \TSOM{} serialization.}
+
+%\item[Markdown]  
+\p{\textbf{Markdown}: Dating to 2004, Markdown is a popular 
+format for material that needs only basic styling, such as 
+italics, underline, boldface, code excerpts, hyperlinks, 
+and bulleted/enumerated lists.  Markdown is widely used 
+in social media, collaborative editing (including \q{wikis}), 
+code documentation, and technology-oriented websites such as 
+Github and Stack Overflow.}
+
+%\pseudoIndent{} 
+\p{In itself, Markdown does not have sufficient 
+detail to be useful as a publisher's internal text-encoding 
+language.  On the other hand, for many documents the 
+authors' own contributions need not necessarily 
+take on presentation details outside Markdown's scope, 
+so it is reasonable for publishers to accept Markdown 
+as a submission format.  Because social media and 
+tech sites are widely used, many authors have 
+some knowledge of Markdown and, by extension, are 
+not locked in to \WYSIWYG{} (What You See Is What You Get) 
+word processors.  Non-\WYSIWYG{} input sources are, 
+in general, less error-prone than alternatives such as Microsoft Word.}
+
+\enlargethispage{1em}
+\p{For these reasons, although offering many more 
+features than conventional Markdown, \GTagML{} is based on 
+Markdown and designed to have a smooth learning curve 
+for Markdown users.}
+
+%\item[LaTeX]
+
+%\item[HTML]
+
+%\item[TagML]
+
+%\end{description}
+
+}
+
+\clearpage
+
 \vspace*{-66pt}
 
 \sstitle{%\hspace*{-50pt}
 PacTk's \q{Scign-index} Protocol for Executable Research Objects}
 
+
 \vspace*{11pt}
 
-{%\setstretch{1}
+{\setstretch{1.12}
 
-\p{The \Scign{}-index protocol just mentioned is particularly aligned with 
+\p{The \Scign{}-index protocol mentioned on page 10 particularly aligned with 
 \q{Executable} Research Objects (alternatively termed 
 \q{Research Compendia}), yielding a proposed component-oriented  
 model that \PacTk{} calls \q{\ScignTier{}} (Scienge Grid Node/Text-Integrated 
@@ -2624,7 +2784,7 @@ the primary distribution format of scientific papers
 PDF file format is designed to share electronic documents rendered faithfully for reading and printing, and mixes visual with semantic information.
 Significant effort is needed to coerce PDF into a
 format more amenable to text mining, such as JATS
-XML,26 BioC (Comeau et al., 2019), or S2ORC
+XML, BioC (Comeau et al., 2019), or S2ORC
 JSON ... [W]e can still benefit from better PDF parsing tools
 for scientific documents. As a complement, 
 scientific papers should also be made available in a

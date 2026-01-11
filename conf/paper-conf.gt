@@ -656,7 +656,508 @@ all the sentences of a block quote might be considered
 "/children/" of the sentence that introduces 
 (which in turn, potentially, ends with a colon %-- or 
 no punctuation at all %-- rather than the usual 
-period or question/exclamation mark).   
+period or question/exclamation mark).  In short, sentences 
+are not */directly/* nested in others, but they can 
+have containment relationships through intermediaries 
+like footnotes and block quotes.
+
+Note also that written discourse has constructions that 
+go beyond just transcribing verbal speech.  Footnotes, 
+block quotes, citations, parenthetic material, and 
+special organizational patterns outside normal 
+paragraph flow (e.g., enumerations and bulleted lists) 
+all embody conventions of published manuscripts 
+that have no direct correlations in spoken language.  
+From the topomorphic perspective, such details 
+inform how we model text content as a "/space/" to 
+be navigated within and traversed across.  This, 
+in turn, is dependent on the goals of algorithms 
+that operate against textual objects.
+
+An obvious class of procedures are those which 
+attempt to locate matches to query strings (typically 
+words or phrases).  In the general case, it is reasonable 
+to assume that successful hits will lie on the 
+interior of single sentences (rather than straddling 
+sentence boundaries) and that query results 
+will be a list of sentence objects where the desired 
+phrase is found (perhaps augmented with PDF page coordinates 
+for the sentence as a whole or the page-area spanned just 
+by the matched text %-- which is how 
+results are typically presented by PDF libraries' own search routines 
+%-- assuming PDF coordinate data is available).  In the absence 
+of any restrictions, every sentence in a document should 
+thus be checked, with potential branching to account 
+for "/nesting/" relationships (as with footnotes and block quotes, potentially) 
+as well as divergent possibilities for "/next sibling/" (consider a footnote 
+marked just after the end of one sentence: we can consider the discourse 
+as continuing on two tracks, one within the footnote and one the main text.
+
+In some cases, however, whomever initiates a search might 
+explicitly narrow the scope to exclude or include specific 
+areas of text.  They might filter searches to consider 
+only main document content, not (say) footnotes or endnotes; 
+conversely, perhaps they */only/* want to search within 
+footnote, quotes, bulleted content, etc.  From a topomorphic 
+perspective, the relevant details here are not so much 
+the explicit "/tags/" or other markup via which special 
+segments like quotes and footnotes are introduced, but 
+rather the distinct varieties of textual material that 
+are woven together into an overall document.  The property 
+of */being/* a footnote, block quote, inline quote, citation, 
+etc., is a */characteristic/* of text subsumed under the 
+relevant element, and users restricting query scope 
+should be understood as narrowing focus to content 
+with one or more specific facets.  This can apply to 
+presentational features as well, such as italics or sans-serif.  
+Such restrictions might come into effect if a user is seeking 
+to find a passage they had read earlier, for instance, 
+and remembers certain words that were present and also 
+that the passage was italicized.
+
+In a written context, moreover, some words or phrases have 
+semantic and/or structural properties that can be 
+modeled apart from just notating the underlying verbiage.  
+For instance, JATS/BITS has tags specific to personal 
+names, and their presence in article text allows 
+search tools to disambiguate proper names from their 
+homonyms ("/Robin Hunter/", an actor, might also be 
+a description of someone bird watching, or  
+a predatory cat).  Visible citations 
+should be backed by structured data allowing the current 
+document viewer to search for the referenced resources.  
+Quotations, similarly, follow conventions with ellipses 
+and bracketed paraphrasing that have to be accounted 
+for by algorithms for searching and related tasks 
+(should bracketed words be included if they permit 
+some string to match a query, and if so, how 
+should their special status be notated in the match-result 
+context)?  Meanwhile, specialized segments such as 
+chemical formulae, phonemic transcriptions (for linguistics 
+papers), etc., might need both distinct representations 
+and customized treatment for query matching.
+
+It is similarly non-trivial to define the scope of 
+individual letters and symbols.  Conceptually, a 
+reasonable assumption is that every character in a 
+document (at least for English and most other languages) 
+can be reported as a two-byte UTF-16 code point.  
+But, expressive as it is, Unicode is arguably 
+flawed in the context of representing glyphs that 
+are visibly identical but functionally distinct, 
+such as end-of-sentence periods in contrast to 
+dots for abbreviations, acronyms, decimal numbers, 
+etc.; or, say, apostrophes versus 
+right-single-quotes.  This may be a case for 
+Unicode Private Use areas, to ensure something 
+closer to a one-to-one match between symbols' 
+code points and their discursive roles.
+
+Such details of */internal/* representation, however, 
+are distinct from user functionality such as copy-paste 
+or PDF annotations.  For example, consider requests 
+to copy the current sentence to clipboard.  Presumably 
+the user then intends to paste those contents into some 
+other location, but that could be many things 
+%-- LaTeX, MS Word, email, a note-taking program, etc.  
+With no separate specification, "/exported/" content 
+for things like copy/paste should be as simple as 
+possible, perhaps even restricted to Latin1 (so 
+that "/curly/" single and double quotes, say, are 
+replaced by their straight and non-chiral versions).  
+On the other hand, multiple forms might 
+be present in query/search strings.  For example, 
+suppose a desired match is one single word enclosed 
+in double quotes.  Quite plausibly the "/input/" to 
+that query could have either the straight/ASCII form 
+(if the user is typing from a keyboard) or 
+the curved left-versus-right forms (if they've copied 
+from some other document, perhaps).  Internally, meanwhile, 
+the encoded text elements might not use quote delimeters at 
+all, but rather some form of quotation object.  
+Thus, testing whether an input string matches text/discourse 
+objects at a particular point in the character-stream 
+is more involved than simply comparing numeric glyph-codes.  
+Likewise, a text-query engine should assume that results 
+might be requested in a variety of formats (Latin1, UTF-16, 
+HTML, etc.) such that how text is conveyed, in a variety of 
+potential reporting protocol, becomes data for each 
+text element (e.g., sentence objects) that might deviate 
+from how such content is internally represented.  Similarly, 
+how should results note the presence of footnote markers; 
+of citations (in the form of numbers in square brackets, for instance); 
+of ellipses and emendations for quotes; etc.? 
+
+In short, there are structural differences between */query input/* 
+formats, internal (object-based) encoding, and various result 
+*/output/* formats, and nontrivial algorithms might be 
+needed to map both the first to second (and evaluate potential 
+matches) and the second to the third.  All of these details 
+should be considered by a VM whose roles include serving as a 
+compilation target for a text-query language.  Suppose 
+that all discursive content is stored internally as 
+C++ objects, and that methods on those objects 
+handle all the complicating factors related to whether a 
+specific part of a given sentence (canonically) is a successful 
+match to a query string.  Robust query-evaluation algorithms 
+would presumably encompass a variety of parameters/flags and 
+protocol variation, considering the range of discursive 
+contexts which have somewhat different match-evaluation 
+characteristics, both visavis fairly canonical 
+writing conventions (block quotes, citations, etc.) and 
+special-purpose symbols, formulae, or character strings that 
+might be commonplace in a particular academic/scientific discipline.
+A VM could be engineered such that calls to a few general-purpose 
+C++ methods are reified as built-in bytecode instructions, 
+but such calls would need to be preceded by steps 
+to initialize all data relevant for the C++ evaluative procedures.
+
+Meanwhile, a text-query VM might have opcodes specifically 
+focused on navigation between/within sentence objects and 
+related text elements.  Defining a rigorous "/topomorphic/" 
+model of written discoure's structures is a nontrivial 
+task because of complications to the straightforward 
+sentence-sequence norm, such as how the words directly 
+preceding a block quote appear to form the first half of a 
+sentence which is in turn completed by the beginning of 
+the quote: should this be modeled as one sentence or two?  
+Can sentences straddle boundaries between ordinary text 
+and special areas like quotes, or enumerations?  Here 
+I am not interested in concrete answers to these questions, 
+but merely the more abstract observation that these are 
+the kinds of issues that have to be resolved 
+for a "/topomorphic regime/" supporting traversal 
+across text documents, with a detailed model of 
+what constitutes a single discourse "/site/", 
+what data is immediately accessible from a site-neighborhood, 
+and what criteria come into play when navigating 
+from one site to another.   
+
+In a Research Object context, a VM might be applied both for 
+text-search queries against documents and queries in general 
+(or scripting) for data sets.  In this sense, apart from 
+topomorphic capabilities specific to the structures of 
+written discourse, the VM's operations might also navigate 
+through various raw data formats, depending on how the 
+Research Object is encoded.  VMs, that is, may need to be 
+adaptable for multiple kinds of "/topomorphic regimes/".  
+But algorithms specific to text searches may also 
+be applied to these different data formats, insofar as 
+a query might be applied against data entities 
+(column labels, text which is an individual field for some 
+record) and/or computer code.  Questions about character 
+encoding and converting from query-input formats are relevant 
+to text-search in this more general context as well as against 
+document manuscripts specifically.
+
+With that said, I will defer further discussion about text 
+searching for now and pivot to an examination of 
+Research Object VMs in more general data-encoding contexts.
+
+
+s: Building a Self-Contained Compiler and VM Runtime
+
+
+For reasons already discussed, the kind of VM relevant for this 
+paper would be designed for an Executable Research Object 
+context and, in particular, an environment where 
+most or all component are distributed in source-code 
+fashion.  Special attention is therefore necessary 
+to ensure that a stack sufficient to support (at least modest) 
+script and query-language capabilities can be developed 
+in an accordingly standalone fashion, with limited 
+external dependencies, included compilers for front-end 
+code and whatever logic is relevant for processing and 
+transforms applicable to intermediate representations.  
+For obvious reasons, these requirements preclude 
+heavyweight Software Language Engineering environments 
+such as LLVM or the JDK.
+
+In the landscape of programming languages, a few are 
+mostly self-contained in the sense that installing the 
+language from a source package is relatively straightforward, 
+and does not require a user to first have something like 
+LLVM or libClang on hand.  Two examples that I 
+am familiar with, and which might be relevant as case-studies, 
+are ECL (Embeddable Common Lisp) and AngelScript.  These 
+languages still are slightly different from what I envision 
+here, partly because %-- despite being well-designed from the 
+perspective of (and to the extent that such as desired to be 
+begin with) the languages in their totality, as 
+computational artifacts (i.e., the full stack needed to 
+execute scripts, with compilation and bytecode as implementation 
+needed) are comparatively easy to build from source %-- these 
+components are not primarily intended as providing 
+scripting/query layers for other code which is */also/* 
+distributed from source.  For whatever reason, 
+almost surely ECL and AngelScript are not used very 
+often for code supporting (and packaged within) 
+data sets or Research Objects.  Moreover (and 
+granted this is a more subjective point) these languages 
+do not appear to be implemented in a fashion that is 
+explicitly oriented toward customization and adaptation 
+for individual data sets.  The kind of compiler and 
+VM I consider here might well have special instructions 
+and/or front-end syntax rules that are unique to 
+the specific research being published, such that 
+front-end parsers, IR and bytecode formats, and native-function 
+interop are designed to be extensible in a relatively 
+straightforward manner.  This is admittedly a speculative 
+issue without a compiler and VM tested in real-world context, 
+but at least by */intent/* the concepts I propose 
+here yield architecture and paradigms that offer more 
+accessible "/hooks/" for customization in contrast to 
+the internal code for languages like ECL and AngelScript.
+
+In this discussion I will assume that the language and 
+any components it interacts with are written in C++.  
+This is partly because the prototype compiler and VM 
+I will occasionally refer to are written in C++, 
+and partly because I assume Executable Research Objects 
+will in general include certain GUI components 
+(potentially including PDF viewers themselves) and the 
+most straightforward path to effective cross-platform 
+GUI applications is via C++, particularly in conjunction 
+with the Qt libraries.  At the same time, as far as I am 
+aware, very little of the implementation details 
+I discuss involve techniques specific to C++, so it 
+is entirely possible that similar VM, potentially 
+executing the exact same bytecode, could be programmed 
+in other languages (Java, JavaScript, etc.) %-- 
+which of course would be more conducive to some use-cases 
+I identified above, such as cross-platform deserialization.
+
+To be clear then, I envision Executable Research Objects 
+where */both/* an internal scripting and/or query language 
+and */also/* major GUI and analytic components 
+are coded in C++ and distributed within the data set 
+as source files.  This need not entail everything 
+built from scratch; instead publishers or grid collaborations 
+could provide a suite of mostly-usable classes which 
+authors (or programmers on their behalf) could customize 
+for their own data publications.  Nonetheless, if 
+each Research Object has its own specialized C++ 
+code, it may be unclear what role a VM would play.  
+This is not analogous to largescale scientific 
+applications that that embeds a scripting interpreter 
+for customizations, like Python in the context of 
+ParaView or ArcGIS, JavaScript visavis OpenCV.js, 
+or C++ itself (as an interpreted language) in CERN-ROOT.  
+Clearly the entirety of ParaView, ArcGIS, OpenCV, 
+or ROOT (not to mention LLVM and Clang for the latter) 
+and all their dependencies cannot feasbily be included 
+within a single data set.  These are conceived instead 
+as tools scientists install (probably from binary) 
+and use on many occasions for their research work.  
+Published investigations could well be conducted 
+through use of the same software, so for assessment 
+or reproduction other scientists might indeed wish 
+to work in an environment similar to how the 
+stated findings originated.  The relevant platforms 
+therefore embed script interpreters to handle 
+the relatively modest fine-tuning that might be 
+needed to sync the research tools of the 
+authors with those of potential readers (at least, 
+those seeking to go so far as replicate or analyze 
+the published material in depth).
+
+While acknowledging such scenarios as entirely proper and 
+common, my point here is that there are other purposes 
+for research publications wherein steering around 
+dependencies on large, external platforms is desirable.  
+It is preferable for an interested reader to 
+examine research on Image Processing, for instance, 
+*/without/* needing to install OpenCV, or for 
+scientists to assess multidimensional data spaces 
+without having ParaView (or comparable visualization 
+software) on their computer.  This can be achieved 
+if Research Objects provide more light-weight, perhaps 
+scaled-down, but functionally similar components 
+(as source code) to the tools offered within 
+larger platforms (ParaView, ROOT, etc.).
+
+But with that said, having to micro-customize 
+scientific C++ code can still add extra development 
+time to a data-publishing project.  Again, I am 
+envisioning data sets including C++ classes that 
+are derived, at least in part, from libraries 
+intended to be used for many different projects.  
+Research Objects should avoid */depending/* on 
+external software such as ParaView (though 
+*/facilitating/* its use is fine), and this 
+may be achived by leveraging simpler components 
+for tasks such as interactive 2D visualization 
+(based on QtCharts and/or QGraphicsView, for instance).  
+Such components may take the form of a class or "/widget/" 
+library made available to users by publishers, book series, 
+journals, grid maintainers, etc. (similar comments apply 
+to digital cartography GUIs in lieu of ArcGIS, image graphics 
+to interactively demonstrate processing steps 
+originarily executed via OpenCV, and so forth, just 
+to reuse those examples).  If the components are 
+included as source code within data sets, it is  
+possible for all project-specific customizations to be 
+implemented simply by modifying the relevant C++ code.  
+Nonetheless, adapting them to a given data publications 
+may be less time-consuming if done via a scripting 
+or query language explicitly built for components 
+like those being fine-tuned.
+
+I therefore see many use-cases for a VM to buttress 
+scripting or query languages that express 
+customizations that would be more complex  
+to achieve via manually editing C++ code itself.  
+At the same time, computational intensive routines 
+%-- or simply ones that for stylistic reasons are 
+better suited for it %-- might still be 
+coded (specifically for the data set) in C++.  
+One consequence is that interfacing with C++ 
+should be easy.  Making calls to C++ procedures 
+(and marshaling input/return arguments) should 
+require less effort that evident in languages 
+like Python, JavaScript, or Haskell, which 
+serve more as generic languages in their own right.
+
+% 
+Conceptually, a "/foreign-function interface/" (FFI) to C++ 
+procedures is relatively straightforward.  The called 
+procedures themselves can be identified via function 
+pointers (in the case of pointer-to-members, a trivial 
+proxy class may stand in for any method-declaring type; 
+i.e., supply the left side of a CLASS::*METHOD-PTR construction).  
+Methods and procedures can be called, in general, through 
+type-agnostic function pointers so long as the byte-lengths 
+of all arguments match what the procedure expects.
+
+Details such as mutable references, exceptions, the presence 
+or absence of return values, and static versus object methods 
+complicate the picture a little, but still for */most/* 
+C++ procedures it is possible to compress all data needed 
+to call the function indirectly (through a pointer) to a 
+single two- or four-byte integer, which (for the lack of an 
+agreed-upon term) I will call a "/micro-signature/".  
+"/Registering/" a C++ procedure with a VM/script engine 
+thereby reduces to providing a name (potentially including 
+class and namespace scopes), function pointer, and the 
+micro-signature code (by contrast, note that the analogous 
+FFI step is noticeably more complex in ECL and AngelScript).
+The code libary published along with this paper 
+demonstrates who micro-signatures map to 
+steps for arriving at the action function-call, 
+via a series of switch blocks %-- in this context 
+AngelScript defers to inline assembly code, and 
+other languages fall back on "/smoke/" bindings 
+or other pre-processors, or else load in a large 
+dependency such as libClang, so the approach described 
+here, by comparison, is much more aligned with the 
+idea of a compiler and VM being both standalone and 
+(fairly) easily customizable.
+
+Some of the demo code which works off of micro-signatures 
+was generated automatically, and it does have the 
+limitation that not every semantically meaningful micro-signature 
+code "/works/" with the switch-branching mechanism  
+(this is a necessary compromise, because too many 
+switch cases can make a binary uncompilable).  
+The goal however is that */most/* C++ procedures that a 
+data set would want to expose to script engines have signatures 
+that reduce to a supported microsignature code.  
+For those that do not %-- considering that the 
+Research Object is expected to have some C++ code of its own 
+%-- it should not be difficult to implement wrapper 
+functions.  Overall, any collection of exposed 
+procedures can be grouped into equivalence classes via their 
+micro-signatures.  If two procedures have the same code, 
+they can called via the same cast of a function-pointer 
+(or pointer-to-member).  Wrappers are needed only for 
+those functons whose codes do not fall within any 
+of the supported equivalence classes.
+
+Another idiosyncratic of the demo VM is what the code 
+calls "/channels/".  The goal here is to design an 
+abstract/generic model that 
+could be adopted to different calling conventions and 
+ABIs relevant to the VM environment, both the 
+host language (which, in the general case, is not 
+necessarily C++) and calls to procedures 
+implemented via the VM itself (i.e., as opcode/argument 
+sequences).  Instead of a single program stack, 
+procedure inputs and outputs are instead split 
+into a series of channels, each with specific 
+roles and semantics.  Each call is performed 
+through a "/channel package/" that models 
+the transformation of values (and references) 
+present at the call-site to parameters of the 
+callee.  A "/stack/" of channel packages 
+plays a role akin to stack frames, but in 
+contrast to a basic push/pop stack for machine code 
+these packages are (by design) much less optimized, 
+and can take a lot more memory (this is 
+deemed acceptable because scripts for this kind of 
+VM are expected to be relatively small and have 
+only modest resource usage).  
+
+Although other use-cases will be mentioned later, the main 
+purpose of channels is to supply a larger perimeter of 
+"/hooks/" where observer code can identify either via 
+static analysis or at runtime.  For one thing, channels 
+have names, and the VM places no restriction on the strings 
+chosen for this.  As an example, a separate channel can be allocated 
+for "/this/" objects (which the demo code calls "/sigma/" 
+after the sigma calculus) such that calling conventions 
+could be implemented (an honored) where one may have 
+two or more distinct "/message receiver/" objects 
+(use-cases would be multiple-dispatch across multiple 
+arguments, as well as overloads for binary operations).  
+For another example, a separate channel could be 
+named for result values returned from */constructors/* 
+as compared to ordinary procedures.  This would be a 
+way to focus specifically on constructions as 
+the point of origination for 
+any values handled by a program, in contrast 
+to already-initialized value simply passed 
+between procedures.   
+    
+
+  
+
+ 
+  
+
+
+
+
+  
+ 
+
+ 
+     
+
+
+
+
+
+
+
+
+  
+
+
+As introduced earlier, 
+
+    
+
+   
+     
+  
+
+  
+
+
+  
+  
+
+   
 
 
 
