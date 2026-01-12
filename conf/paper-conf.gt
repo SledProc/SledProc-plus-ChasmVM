@@ -1115,8 +1115,408 @@ as compared to ordinary procedures.  This would be a
 way to focus specifically on constructions as 
 the point of origination for 
 any values handled by a program, in contrast 
-to already-initialized value simply passed 
-between procedures.   
+to already-initialized values simply passed 
+between procedures.
+
+More generally, the channel system yields well-defined execution 
+points pertaining to phenomena such as value-reassignment 
+(for mutable variables) and type-casts.  Channels are 
+technically deques (double-ended queues) where values 
+(called "/carriers/") may be pushed in front or from behind.  
+The operation to do so is an execution point that 
+can involve "/effects/" such as a value being read 
+(possibly relevant for race conditions) or cast 
+(relevant for narrowing type-conversions).  The channel's 
+names, value type(s), variable names, and their 
+relevant lexical (or global) scope are all pieces of 
+information that could be used to isolate these 
+points in particular, and potential install runtime 
+handlers or monitors.  It's worth noting that the 
+VM "/instructions/" are themselves actually calls 
+to ordinary C++ methods, which can be extended, reimplemented, 
+or debugged (or "/breakpointed/") like any other C++ 
+procedure.  This gives the VM greater operational transparency 
+than other scripting languages, I believe.
+
+Another purpose for channels is to support a wider range of 
+inter-procedure communication behind the scenes, 
+some use cases for which will be discussed in the next section.
+
+
+%. Proof-Scope and Contract Overloads
+
+As discussed, one purpose for scripts within Executable Research Objects 
+is to document analyses and data structures pertinent to 
+published investigations.  The resulting programs are not necessarily 
+exactly the same as originary code, but they can introduce or 
+summarize that code for illustrative or pedagogical reasons.  
+To put it differently, the demonstrative code should foreground 
+details such as procedure preconditions, type invariants, 
+units of measurement, and value ranges whether or not 
+these factor directly into algorithm implementations.  
+The code serves not merely computational ends but 
+also expressive roles as concrete tools for human 
+examiners to understand theoretical models and programming 
+techniques that affect the code.
+
+There are multiple ways of handling such details as 
+algorithm preconditions, including "/assert/" statements, 
+boolean checks performs prior to a procedure entering 
+its primary logic, exceptions, comments, and code 
+annotations.  Insofar has code has a documentary/pedagogical 
+role, precondition requirements (and/or axiom/postcondition when applicable) 
+should potentially be handled in a more structured manner 
+via (for instance) typeclasses (subdividing types' extensions 
+into functionally distinct regions), decorations 
+(where details like scales and units of measurement 
+become explicit parts of a class interface, so that 
+procedures expecting values scaled to one type of 
+unit cannot be called with other types), and 
+Design by Contract (DbC).  In this section I will 
+consider how VMs can facilitate scripting languages 
+that incorporate these features.
+
+Consider DbC in particular.  The fundamental insight 
+behind code contracts is that procedures' implementation 
+bodies will often make specific assumptions about 
+their parameters (or other relevant values) that are 
+more detailed than ensured by data types alone.  
+For example, writing to a file only possible if the 
+file exists; and dividing by an integer is only 
+possible if it is non-zero.  Some invariants 
+ae extensional properties of types themselves (for 
+instance, a signed one-byte integer can never have 
+values above 127 or below -128).  However, 
+many properties of interest are true only of 
+*/some/* instances for a given type.  For example, 
+in most file-system libraries there is no separate 
+type specifically for files that are known to 
+exist (i.e., their path is checked against the local 
+directories); and built-in integer almost 
+universally include zero as a possible value.  
+Preconditions such as demanding existent files 
+or non-zero numbers cannot, then, be enforced 
+simply via procedures' type signatures.
+
+For another concrete example, consider a procedure 
+whose role is to initialize a "/double-associative/" 
+array; that is, a tuple of pairs that uniquely map 
+each key to a unique value, so the association 
+may be inverted.  Keys can be obtained from values 
+as much as vice-versa.  To build such a mapping, 
+one must naturally start with two lists of instances, 
+the first corresponding to the key type and the 
+second to the value type; moreover, for invertability, 
+the two lists must be the same size.  An implementation 
+may thereby assume this as a precondition (conceptually, the 
+double-array could be thought of as two regular map-structures, 
+each one the inversion of the other; although this is 
+memory-inefficient and may not literally be how the data 
+is laid out).
+
+Procedures creating a double-array might therefore 
+take two lists and moreover stipulate that the 
+lists are the same size.  One question is then 
+how to enfore this.  Such a procedure could simply 
+check the two sizes and refuse to continue if 
+they are unequal; the question then is 
+what to return (perhaps an empty map, but 
+such would also be the result of a call with 
+two empty lists, and in that case the same-size 
+requirement is technically satisfied).  The 
+procedure could throw an exception.  Or, it could 
+simply assume that the lists are indeed same-sized.
+
+Explicitly checking preconditions via if/then 
+tests is better than blind faith, all else being 
+equal, but that convention does violate 
+"/separation of concerns/": arguably, checking 
+that arguments agree to stipulated contracts 
+is a separate process than actually carrying out 
+the procedure's computations, and should be factored 
+into a different procedure.  In other words, some 
+distinct code should perform the "/gatekeeping/" 
+role of rejecting contract-violating inputs, 
+and the visible separation of that logic from 
+the main procedure-body can help one 
+understand and maintain the code.
+
+Steps to guarantee that contract-annotated procedures 
+are */only/* called with preconditions duly satisfied 
+can be taken either at runtime or compile time (or both).  
+In general, compilers can assess whether it is */possible/* 
+for a contract to be violated at a given call-site.  
+If this */is/* possible, then the compiler can insert 
+an extra runtime call that serves as a "/gatekeeping/" 
+check.  If it is evident that a contract necessarily 
+*/cannot/* be upheld, then this could be a compiler 
+error immediately.  Otherwise, if the compiler 
+can ensure that for all execution branches, external states, 
+or value-combinations a contract is */guaranteed/*, then 
+the compiler can emit code for the call without further 
+intervention.
+
+A related question is how to handle execution paths when 
+we get to the point where it is established that a precondition 
+is not honored.  The most common approach appears to be 
+falling back on a language's exception mechanism, or something 
+similar.  For example, recent C++ contract specifications 
+imply that the typical results of a contract violation 
+are either calls to a "/handler/" (which might implement 
+some alternative sequence that avoid depending on the precondition 
+givens, or potentially throw an exception) or immediate 
+program-termination.  Structurally this is not too far off 
+from the handler being a */de facto/* "/catch/" block that 
+could either rescue or propagate an exception.  As far as 
+I can tell, these semantics are similar to those 
+employed by most DbC supporting languages.
+https://open-std.org/jtc1/sc22/wg21/docs/papers/2025/p2900r13.pdf
+ 
+This all seems wrong.  I believe a more intuitive 
+framework would employ what might be called "/overload by contract/", 
+in which the presence of absence of violations serves as 
+state-variations suitable for overloading.  I hesitate 
+to claim definitively that something along those lines 
+is indeed rather counter-paradigmatic in programming language 
+design, because its omission is puzzling, which might 
+signal that I'm missing something.  But in any case, a 
+VM use-case I wish to examine here is to support "/Overload by Contract/" 
+(ObC) as one version of DbC.
+
+Consider again the double-array example.  At any point in time, there are 
+essentially three possibilities: we might have enough information 
+to confirm that the list-size precondition is satisfied; or, we might 
+know that it is */not/* satisfied; or, that status might still be 
+unresolved.  At the moment when we do need to call the relevant procedure, 
+conceptually (and perhaps literally) we are in effect overloading 
+on that information-state.  In other words, the procedure needs 
+three versions.  If the contract is violated, there are several 
+options (short of exceptions or termination).  The result could be 
+an empty map, or the code could scale the longer list down in size 
+to match the shorter, or supply default values for unpaired keys 
+(or vice-versa).  A VM compiler and runtime should not attept to 
+guess which approach is better for a given program.  Instead, it 
+can stipulate that whenever a procedure is annotated as governed 
+by a contract precondition, it must be paired with an implementation 
+that addresses violations.  By analogy, when inherting from an 
+abstract base class, all overloads of virtual methods have to be 
+implemented for the derived class.
+
+On the other hand, if we are in a program-state where the precondition 
+is not known to either pass or fail, an obvious solution in general 
+is simply to test it, and then call one or the other 
+"/overload/" in response.  In a same-size list case, logic 
+for that test is fairly straightforward.  In other cases, it may 
+be more complex, and the compiler might insist on the code-author 
+providing an explicit implementation for the test.  That test 
+function wuold then be analogous to an entry-point for 
+multiple-value dispatch, returning some code that indicates 
+which of several possible follow-up procedures should be called.
+
+Continuing the double-array case, suppose the main procedure 
+is called within the scope of a statement-block wherein the 
+size of the two lists is explicitly checked.  If they 
+evaluate equal (as in x.size() == y.size() or similar) and no 
+intermediate statement could alter them, then 
+the compiler may safely choose the version of procedure 
+governed by the contract.  
+
+We should avoid, however, designing a compiler where too much subtle reasoning 
+is expected.  For one thing, compilers in this lightweight context should 
+be as simple as possible.  For another, it is helpfor for preconditions 
+to be explicitly notated in code %-- both at call-sites and within 
+signatures %-- rather than enforced by invisible machinery behind the scenes.  
+In short, I advocate for more transparent approaches that dependent-type 
+systems whereby pre- and post-conditions are chained as if computing 
+over states and effects (wherein, for instance, the length of an array 
+is part of its type, and any operation to add a value increases the length 
+by one and thereby changes its types).
+
+In practice, then, we should not assume even that the compiler would recognize an 
+if-expression like "/x.size() == y.size()/" as testing the exact same state of affairs 
+that is reported necessary for a contract.  Instead, accept the notion 
+that programmers need to hold the compiler's hand somewhat, both to make 
+assumptions visible and to simplify compiler implementations.  In the present 
+context, one way to achieve this is via what might be termed a "/reified boolean/".  
+In this sense, the result of "/x.size() == y.size()/" is not just a boolean 
+true or fale, but a more substantial object that */evaluates/* to boolean 
+in the first clause of the if-then expression, but also persists as an 
+object in the subsequent code blocks (whether the true branch or, if present, 
+a false one).  I assume that some added syntax is available to indicate that 
+the programmer in that kind of context wants apparent boolean expressions 
+to evaluate not only to a boolean return value but a "/reified/" object.
+
+When an if/then construction involves a */reified/* boolean I assume 
+this object remains "/in scope/" for the associated code blocks; and 
+that similar branching or loop formations could have similar 
+conventions.  Conceptually, if-then-else, do-while, etc., don't 
+necessarily have to be special constructions in the language; 
+they could possibly be expressed as ordinary procedures, taking 
+code blocks as arguments.  In this case, the language could 
+have a mechanism such that procedures which */call/* code blocks 
+have the ability to attached reified booleans to them (by 
+analogy to how a closure captures variables from enclosing scopes).
+
+The notion of */channels/* comes into play.  
+Conceptually, channels capture data from a call-site scope.  If a procedure 
+declares its reliance on or assumption of a contract %-- e.g., 
+two of its parameters have the same list-size %-- then in the 
+current context I interpret this as requesting a "/proof/" 
+object to be passed in through some specific kind of contract-verification 
+channel.  Obvious that channel would not "/look/" in code 
+like regular input arguments, but a compiler could observe the 
+presence of that channel in the callee signature and endeavor 
+to popuate it with objects in the current lexical scope.  
+A reified boolean such as one passed into the scope 
+by an if/then test could potentially serve this purpose.  
+That object would need to be declared and initialized in such a 
+manner as to clarify that it does indeed prove the contract's 
+validity, which depends on both the proof "/type/" and 
+the values involved.  For example, the relevant proof-type 
+here is one that two lists have the same size; this 
+information, together with pointer values or some other 
+confirmation that the lists in question are indeed the 
+ones that factor into the procedure's preconditions, 
+would supply the data requisite for a compiler to 
+recognize that the specific proof object (here a reified boolean) 
+which it finds in the caller's scope is a genre of 
+proof object that matches the callee's contract.
+
+Notice that operations performed in the same scope as 
+the proof object could render the proof invalid; 
+if, say, new values are added to the key-list but not 
+the list paired with it for the double-array.  In 
+principle, one might imagine the compiler trying to 
+prevent such invalidation from happening.  This could 
+be achieved simplistically by refusing to allow 
+any call that could modify values involved with the 
+proof-object in any way (in other words, permit 
+only calls by constant reference while a proof object 
+is in scope).  A more refined approach is to reject 
+only mutable calls whose effects are (or include) 
+changing the size of one or the other list.  But one 
+might certainly imagine cases where, although a given 
+method */might/* change a size, it would do so 
+only in circumstances which the programmer knows 
+do not apply in the current scope.
+
+A reasonable alternative is to assume that a proof 
+in scope will remain valid through the duration of the 
+scope.  It is then the programmer's responsibility 
+to avoid conflicting calls.  The point here is not 
+to perform all analysis on the programmer's behalf, but 
+rather to make the proof object a visual part of 
+the source code and thus a reminder of contract 
+obligations that need to be fulfilled.
+
+There are also cases where a codewriter might be confident 
+that the kind of proof embodied by a reified boolean 
+applies even in the absense of a test like 
+"/x.size() == y.size()/".  If the second list 
+is contained from the first by something like an 
+std::transform, they will be guaranteed to have the 
+same length.  Likewise if they are constructed from initializer 
+lists that in the source code obviously line up, 
+or built by pushing values pairwise.  In these 
+cases, the called procedure might still be looking 
+for a proof in scope.  Here that proof would not be 
+supplied by a reified boolean, but the programmer 
+could explicitly declare such a proof as invariant in the 
+current scope (if desired, the expression which achieves 
+this could, under debug modes, also serve behaviorally 
+as an assertion).
+
+This arrangement %-- coupled with an Overload by Contract 
+convention that procedures requiring that contracts 
+are overload in several versions (at least, those for 
+pass, fail, and testing of a relevant contract) %-- may 
+not be the most powerful engineering of a DbC system, 
+but I believe it makes the compiler's role straightforward.  
+Correspondingly, it is clear how the compiler should issue the relevant 
+VM instructions.  I believe this serves as an example of 
+how channel-based calling conventions provide a roadmap 
+to guide compilation steps that might be convoluted otherwise.  
+   
+%. Variable lifetimes and memory management.
+
+Another situation where channels can have a similar comes 
+into play in cases where procedures return values that are 
+too large (in number of bytes) for return-by-value semantics.
+
+Consider return and/or initialization options in C++, on the 
+assumption that we're not simply returning by value directly 
+due to size concerns.  One option is to allocate a pointer 
+in the callee, ownership of which is taken over by the 
+caller (those who dislike raw pointers might prefer 
+smart or auto pointers instead).  Another option is for the 
+caller to pass a value of the relevant type by mutable 
+reference, trusting the callee to initialize it.  One limitation 
+of the second alternative is that it only works with types 
+that can be given a default or preliminary initialization 
+and then have their "/real/" values (of internal data fields) 
+supplied later.  This cannot be assumed for all types.
+
+A more exotic solution that circumvents the issue just noted 
+is for the caller to allocate a buffer with the proper 
+memory-size and the callee to initialize */that/* via 
+placement new.  The memory itself could then come either 
+from the stack or the heap, whereas there is no way 
+for a callee to allocate values on the */caller's/* stack.  
+Unfortunately, there is no way to implement this kind 
+of arrangement in ordinary-looking C++.
+
+
+
+
+    
+
+
+
+ 
+
+ 
+ 
+      
+
+
+   
+
+   
+
+
+
+
+
+ 
+
+
+   
+
+ 
+    
+
+    
+   
+
+   
+
+
+ 
+
+
+  
+     
+ 
+
+ 
+
+    
+ 
+
+   
+
+
+ 
     
 
   
