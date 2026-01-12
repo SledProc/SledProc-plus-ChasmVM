@@ -1166,7 +1166,7 @@ its primary logic, exceptions, comments, and code
 annotations.  Insofar has code has a documentary/pedagogical 
 role, precondition requirements (and/or axiom/postcondition when applicable) 
 should potentially be handled in a more structured manner 
-via (for instance) typeclasses (subdividing types' extensions 
+via (for instance) typestates (subdividing types' extensions 
 into functionally distinct regions), decorations 
 (where details like scales and units of measurement 
 become explicit parts of a class interface, so that 
@@ -1465,9 +1465,508 @@ for a callee to allocate values on the */caller's/* stack.
 Unfortunately, there is no way to implement this kind 
 of arrangement in ordinary-looking C++.
 
+Which alernative is most convenient from a caller's point 
+of view?  Pass-by-reference is a common C++ pattern: 
+simply declare an object, which (assuming it is a class instance 
+and not a primitive type) will trigger calling 
+to a default constructor.  The only imperfection 
+here %-- apart from cases of non-default-constructible 
+types already mentioned %-- is that there is a visible 
+separation between the point of declaration (which is 
+also a minimal initialization) and the "/de facto/" 
+intialization effectuated by the called procedure.  
+
+This might seem to be a minor annoyance, but admittedly 
+a form where a procedure returns a pointer, which is 
+assigned to a variable initialized at that point, 
+is closer to the how the code is conceived: the 
+purpose of the call is to initialize that pointed-to value.  
+Initializing a mutable reference is behaviorally 
+similar, but it less clearly documents the relationship 
+between the callee and the initialized variable. 
+Moreover, sometimes the callee */wants/* a 
+pointer return because the value should outlast 
+its lifetime.
+
+From the callee's perspective, the question of how to 
+package its result is tangential to the main 
+concern, which is to perform whatever 
+steps and calculations needed to fully initialize 
+the sought-after data structure.  This leaves open 
+the possibility that a compiler could manipulate 
+procedures in such contexts to support multiple 
+interfaces, depending on the call site.  That 
+is, a procedure could be engineered to 
+to work on a value/object */either/* passed 
+by reference, or constructed on the heap prior 
+to the main body, or constructed (wherever the 
+caller wants) via placement new.  This idea 
+essentially generalizes Return Value Optimization, 
+which used memory buffers behind-the-scene 
+to eliminate the construction and copying 
+of temporary objects.
+
+Apart from illustrating one use for channels, these 
+points are relevant to the general protocols 
+and style of a scripting language.  Observe 
+that passing an object/value by (non-constant) reference 
+can serve one of several purposes:
+
+1.  The primary purpose of the callee is to initialize or modify 
+that object
+
+2.  The object serves mostly to provide information the callee 
+needs for its main purpose, but cannot be made constant 
+either because one of the callee's secondary roles 
+might be to update some field ni the object, or else 
+it may need non-constant members (for example) even 
+if in this case the object is unchanged 
+
+3.  Modifying the object is a primary role of the callee, 
+but a return value is separately needed (perhaps to 
+provide information about the status of that modification 
+or other side-effects associated with it)
+
+Woven with these alternatives are questions about 
+potential modifications: e.g., whether the callee 
+is */guaranteed/* to modify (as when a default-initialized 
+object is in an invalid state).  All modifications 
+are not the same: some may be necessary to render the 
+object usable; some may be important to keep the 
+object in sync with its peers or overall program state; 
+others may be secondary and just represent a 
+report on the various effects a procedure has triggered.
+
+Likewise, consider a procedure that has certain side 
+effects and then returns a value.  It may be that the 
+*/primary/* purpose of the procedure are those 
+effects, and that the return value is mostly a sanity 
+check.  Conversely, it may be that the primary purpose 
+is to compute that value, but side effects may be 
+unavoidable while doing so.
+
+These various possibilities probably are not clearly 
+demarcated, and it might be a subjective judgment as 
+to what purposes or effects are "/primary/" and "/secondary/".  
+Nonetheless, programmers and maintainers will reason 
+along these lines when understanding source code.  
+One might then argue that programming languages 
+should use syntactic cues to help clarify 
+these issues, more so than in C++, for example.  
+For instance, with pass-by-reference there is no 
+visible mechanism to distinguish object that 
+will */necessarily/* be modified, or will be 
+so assuming the callee returns normally, 
+or instead only */might/* be modified.
+
+In C++, pass-by-reference serves as a workaround 
+against both multiple-value-return limitations 
+and reluctance to return large byte-sizes.  
+In other words, often objects are passed 
+by referenec even if, behaviorally, the 
+role the callee vis-a-vis the object is 
+more like that object being */returned by/* 
+the callee.
+
+A scripting language %-- with more freedom to tweak its 
+syntax %-- could do a better job of flagging its caller/callee 
+semantics.  For example, assignments (in C++, the left 
+side of a basic operator equals) may be 
+*/initializations/* (for a variable that, beforehand, 
+was only declared) or else "/re-initializations/"; 
+there is no syntactic difference.  A variable declared 
+and then passed by reference will first be 
+*/uninitialized/* (for built-in types) or "/default initialized/* 
+(for class types).  There is no visual distinction of the two cases.
+
+A scripting language could be more plofrigate in using 
+separate syntactic forms to differentiate these various 
+semantic possibilities.  In the case of pointer-return 
+versus pass-by-reference (or Return Value Optimization) 
+one option would be what might be called "/Janus/" 
+(metaphorically "/two-faced/") channels 
+that (unlike most) may be either input or output.  
+For sake of discussion, suppose we call a "/Janus pointer/" 
+to be an object that, depending on context, could 
+serve as a pointer, reference, or non-initialized memory buffer.  
+Here "/Janus/" is not some pointer typeclass but 
+instead a formation placed inside a Janus channel.  
+When assembling the "/channel package/" for a procedure-call, 
+the compiler can check whether an */initialized object/value/* 
+or else a */memory buffer/* has been pushed into the channel.  
+If so, that gets passed as */input/* to the callee (in the 
+latter case the callee is orchestrated to call placement 
+new prior to its main execution).  If a Janus channel 
+is present but empty, the compiler expects the callee 
+to allocate on the heap (again, perhaps prior to its 
+running its actual implementation block) and push that 
+into the Janus, to serve as a return value.
+
+My overarching point is that, for procedures that employ 
+a Janus channel, their interface subsumes both pass-by-(nonconst)reference 
+and pointer-return semantics.  An important detail here is the 
+lifetime for Janus values.  Supposing an object is initialized 
+within the preamble portion of an if/then or for-loop expression, 
+one obvious question is whether the object 
+is associated with the */inner/* code block or the surrounding scope 
+(and, hence, when its lifetime ends and destructors are 
+called, if relevant).  In C++, the specifics are forced by 
+syntax.  I envision languages where (perhaps with inobstrusive 
+notated cues) programmers can request specific lifetime/storage-duration 
+options in the context of procedure-calls that look mostly the 
+same otherwise.  For example, for-loops should 
+be visually consistent whether or not a value declared in the preamble 
+is bound to inner or outer scope; this is merely one detail 
+among numerous points of attention (terminating conditions, iterators, etc.).
+
+Procedures' "/interface/" is more than just an implementation detail, 
+moreover, because at least some procedures within a code library 
+are "/semantic/" entities that should be searched and documented 
+alongside other textual and data content.  An Executable Research 
+Object, we can assume, provides some 
+mechanism to search over its variegated components as well as 
+an introduction or "/manual/" outlining its content.  
+Among text materials, searching might include keyphrase 
+or index-based queries over sentence objects, along lines 
+discussed previously.  For data, searches could be performed 
+over individual records and (at least for table-like profiles) 
+column labels (plus columns' types, units, etc.).
+
+The analogous documentation for computer code would be serching 
+data types, fields, procedures, and so forth.  We can assume 
+Research Objects will try to compile a sort of concordance 
+listing (at least public-interface) procedure names, signatures, 
+and pre-/post-conditions.  Many projects automate this kind of step 
+via (e.g.) Doxygen, but for data-set code a concordance 
+should be more fine-grained.  For instance, detailes such as 
+functions' assumed units should be both notated in code and 
+described in documentation in a structured manner, rather than 
+relying on source comments.
+
+One possibility is to run scripts at the point where the 
+"/executable/" resource(s) of an Executable Research Object 
+start up; scripts with the responsibility of building 
+a search/documentation concordance, carrying more 
+information than just declarative code comments (for example).  
+Because the VM is designed to support formations 
+such as contract overloads and special-purpose channels 
+in the context of procedure-calls, it could recognize 
+the concomitant annotations and incorporate them 
+into search and documentation assets.
+
+
+%.  Decorated Types and Axiation
+
+Similar to contracts and channels, units and scales of 
+measurement straddle implementation and documentation.  
+The key goal in this context is to ensure that 
+procedures are called with quantities scaled in a consistent 
+manner; at the least, that two different function-arguments 
+are scaled the same.  These concerns are endemic 
+to dimensional analysis and (for instance) SI Units 
+in a scientific context, but they also extend to areas 
+which do not obviously employ numbers measuring physical 
+magnitudes such as size, time, temperature, etc.
+
+Consider the case of 2D graphics.  There are many 
+C++ graphics and image libraries, and they are inconsistent 
+with respect to what the horizontal and vertical axes are 
+called, as well as which quantity comes first in a pair.  
+A Qt rectangle, for example (e.g., in QGraphicsScenes) 
+is constructed either by naming two points (diagonally-opposed 
+corners) or by giving one point and two scalar values representing 
+width and height.  QPoints are integer pairs (QPointF is floating-point instead) 
+in x-then-y order.  Here the dimensions are conceptualized 
+as x and y axes; but in other contexts pixels are treated 
+rather as "/cells/" as if in a table, and coordinate-pairs 
+are in row-then-column (i.e., vertical-then-horizontal) order.  
+In the case of QRectangle, one similarly must commit 
+to memory that the first scalar is "/width/" and the second "/height/".
+
+For both implementation and documentation, one might argue 
+that aggregating magnitudes into coordinate groups is more 
+rigorous than employing lists of individual scalars, 
+so procedures' interface should nudge toward coordinate 
+rather than scalar types wherever possible.  For instance, 
+"/moving/" a point some distance left/right and/or up/down 
+can be notated by convoluting the point with a 
+transform pair rather than disconnected scalars 
+(as with QTransform, affine translations are one 
+part of a larger transform matrix).  Similarly,    
+arguably a better rectangle constructor would take, 
+if not two opposing corners, then a width and height 
+merged into a single "/size/"-like parameter.  
+If coordinates are just integer-pairs, then there 
+is no way to overload these two rectangle constructors, 
+but that can be alleviated if pairs explicitly decorated 
+as "/width-then-height/" are a different type than 
+"/x-then-y/".  More substantially, we can consider a 
+spectrum of distinct 2D coordinate types representing 
+how horizontal and vertical axes are conceptualized: 
+x-then-y; row-then-column; first-then-second (as with 
+generic pairs); width-then-height; or horizontal-then-vertical 
+itself (plus inverses of all these).  The strings 
+"/s4wh/" or "/u2cr/", sat, might encode signed 4-byte 
+width-then-height pairs and unsigned 2-byte column-then-row pairs, 
+respectively ("/negative/" width or height could represent 
+such cases as initializing a rectangle via its bottom-right rather 
+than top-left corner).
+
+These might be called "/axiation/" concerns, and they are separate 
+an apart from whether the relevant magnitudes are measured 
+pixels, typographic points (1/72 of an inch), millimeters, 
+window-area percentages, etc.  Particular types 
+could synthesize both coordinates and units details.  
+There is no reason why a VM could not internally 
+work with types along these lines, especially the 
+sort of VM I am considering here which is 
+far removed from assembly language and the physical 
+substratum of computers (the instruction set is 
+much differenet from machine code).  For example, 
+in the demo VM, channels are populated in general 
+by first loading a type object and then pushing a 
+value that gets associated to that object.  
+Type objects may be fairly robust C++ structures 
+that cover numerous internal details, including 
+potentially a mashup of byte-length, axiation, and 
+unit decoration ("/u4xy/" in pixels and so forth); 
+or dimensional aggregates in the sense of 
+mp-units and similar (e.g., boost::units) libraries.
+
+A straightforward use-case would be as follows: 
+suppose a procedure-call is being prepared and two 
+successive values are pushed to a channel, preceded 
+by loading type objects.  A check could be 
+performed (either at compile or runtime) that 
+the two type objects are dimensionally compatible 
+(not necessarily exactly the same, since we might 
+accept something like casting from two to four 
+bytes for raw magnitudes).  The callee might specifically 
+declare that it expects types associated with a 
+particular axiation, coordinate system, or units; in that 
+case, it could also be checked that the channel's type 
+objets are compatible with the procedure.  Alternatively, 
+the callee might declare that its calculations are not 
+affected by dimensional minutiae, but still reject channel  
+packages wherein two parameters have incompatible coordinates. 
+ 
+Modeling coordinate details explicitly may 
+avoid certain programming errors, but a further benefit 
+is how dimensions become an intrinsic part of a 
+procedure's signature, propagating to documentation, 
+unit tests, GUI design, and so forth.  For example, 
+a Research Object whose multimedia contains videos, 
+and with code included to play them, is intrinsically 
+working with scales such as Frames per Second (FPS) 
+or Hertz.  Presumably, at least some internal 
+procedures would thereby take and/or return 
+arguments with analogous dimension, and so those 
+procedures and their signatures would be relevant 
+matches for searches given such terms as "/FPS/", 
+"/kilohertz/", etc.  Insofar as a code-domentation "/concordance/" 
+is exposed to the package's overall query system, 
+granular typing such a unit-decoration facilitates the 
+integration between data-set code and the overall Research Object.
+
+Similar points could be made about value-ranges.  Annotations 
+might declare that the value held by some variable 
+(or reference, object-field, etc.) will/should always 
+fall within some range (narrower than its type's 
+overall extension).  Channel semantics offer a roadmap 
+toward the execution-points that have to be checked to 
+guarantee such restrictions.  For instance, the demo code 
+uses the term "/carrier-handoff/" to refer to 
+actions such as transfering a value from one package's 
+"/return/" channel to another's "/lambda/" channel 
+(which is the default for inputs).  This would be a natural 
+place for runtime "/hooks/" confirming a range.
+
+In brief, in a channel-oriented framework */most/* of a compiler's 
+operations involve pushing values into a channel and then transferring 
+control to a callee.  This is probably underwhelming, because 
+for normal compilers one could equally say that much of their work 
+comes down to pushing and popping values to a program stack.  
+However, channel packages are more complex data structures 
+than a single stack, and they offer more sites for analysis 
+or intervention, such as when outputs from one context become 
+inputs to another.  The VM instructions which are */not/* focused 
+on channels tend to be engaged with lexically-scoped variables 
+and steps to enter and exit code blocks, including lifetime 
+management and the proper moments to call constructors and destructors.  
+In general, if someone wants to customize a compiler to perform 
+extra checks (or schedule them at runtime), implement new 
+kinds of contracts, etc., the extra code would generally apply 
+either to channel-manipulation (especially points where values are 
+pushed, carrier-handoffs, and validations executed immediate 
+prior to a control-transfer) or to code-block operations 
+(enter, leaving, and registering lexical symbols within a local or parent scope).
+
+These comments apply mostly to */semantic/* customization.  They pair 
+naturally with the issue of extending */syntax/*, which I discuss next.
+
+
+%.  
+External tools like LEX and YACC make compilers less self-contained, 
+so here I assume that initial parsing is performed via techniques 
+that could be built into source code directly.  In particular, 
+I assume that language grammars are defined via regular expressions, which 
+are matched against input files via conventional Regex libraries.  
+Several of these exist for C++; within Research Objects employing 
+Qt for cross-platform GUI, the QRegularExpression classes are quite adequate.
+
+Meanwhile, most C++ regular expression libraries take ordinary 
+strings as initializers for regex patterns.  This makes it possible 
+to add features to the basic regex language, so long as these 
+may be expressed via ordinary regex patterns that are computationally 
+generated.
+
+Here (consistent with the demo code) I make the following assumptions: first, all 
+grammar rules are expressed in terms of patterns that are implicitly 
+anchored on the current point in a left-to-right parser (corresponding 
+to a "/slash-A/" in Perl-compatible expressions).  That is, no rule 
+will "/skip over/" characters, and rules will not in general shift the "/current/" 
+parse-point except via the matches they consume.  Fallback rules may 
+implement logic to skip over characters or parts of the input that 
+really are extraneous (e.g., superfluous whitespace).  Also, 
+rules are declared and tested in sequence: the first rule whose 
+regex matches at the current parse-point takes effect.  More 
+precisely, each rule is associated with a callback function (typically 
+an anonymous procedure, like a C++ "/lambda/") and the first matching 
+rule's callback is executed, preempting other potential 
+matches (since all patterns are anchored at the same place, there 
+is no need or a "/rating/" or backtracking due to some matces being further 
+forward than others).  Finally, grammars are assumed to be context-sensitive, 
+and it is possible to implement contexts and/or flags that 
+enable or disable rules.  A deactivated rule would be skipped over 
+in the test-sequence.
+
+Conceptually, the goal of an initial parsing run would be to construct 
+an Intermediate Representation or "/parse graph/".  Schematically, the 
+match-text of the successful regex (or some capture group therein) becomes 
+the basis for a parse-graph node, and the rule's callback 
+is charged with constructing the node and adding it to the graph.  
+That's a good mental image, but practical implementations 
+may well deviate from this paradigm.  This observation may be 
+anecdotal more than theoretical, but by trial-and-error 
+I've come to believe that implementations that first 
+work through all parsing steps to build a complete parse-graph, before 
+doing anything else, are more difficult to maintain 
+than those which mix graph-construction with operations that, in 
+theory, are logically subsequent.
+
+It's worth noting here that the parsing techniques under discussion 
+are considered both for markup and scripting/query languages; that is, 
+they might be used for an input language to create textual 
+documents as well as programs in a scripting or query format.  Suppose 
+that one intends manuscripts eventually to be shared as 
+LaTeX files.  Sometimes the desired output is evident immediately 
+from a grammar rule, and waiting for some future graph-traversal 
+step to produce that LaTeX code makes the overall pipeline more obfuscated.
+
+For sake of discussion, then (this is the apprach taken by the demo code) 
+each rule's callback works primarily by emitting code for a kind 
+of preliminary or preparatory VM.  This is not */the/* VM whose 
+bytecode is the overall compilation target, but rather a kind of 
+miniature VM whose operations are oriented either to 
+building up a parse graph or emitting instructions of the "/real/" 
+VM (or both).  In general, particular nodes of the parse graph 
+can be associated with lists of VM statements, and the eventual 
+bytecode output generated by just walking these nodes and setting 
+out the instruction in sequence.  Prior to that step, however, 
+middle-end transformers can be given a chance to manipulate and/or 
+expand the graph by editing or adding new nodes.  Conversely, the 
+workflow might proceed by creating a "/rough draft/" of the 
+eventual bytecode while also notating intermediate points 
+associated with parse-graph nodes.  Middle-end logic working 
+off the nodes could then add material to the bytecode at 
+those insertion points.
+
+The bytecode statements themselves need not be very complex 
+(again, we need not engage directly with things like 
+x86 registers).  Both for the "/preliminary/" and "/primary/" 
+VMs a single instruction can take either a single value 
+or no value at all.  The instructions in general could 
+be interpreted by a C++ class, such that each instruction 
+maps onto a C++ method.  For development and testing, 
+the "/bytecode/" files could actually be stored 
+as human-readable strings naming instructions together 
+with characters representing the argument, if present 
+(and irrespective of its actual type).  That is, 
+one version of the VM interpreter can be 
+engineered to read two-part statements with a 
+textual representation of the desired method 
+and a string encoding of a possible 
+single parameter (a string-to-method table 
+can convert the instructions to pointer-to-member-function 
+values).  For optimized bytecode, of course, 
+stringized method-names would be replaced by 
+numeric opcodes (with a similar method-pointer 
+table for the interpreter) and arguments 
+expressed as byte-sequences rather than literal strings.
 
 
 
+
+  
+ 
+  
+
+   
+
+
+
+
+ 
+
+
+
+
+  
+
+  
+
+ 
+
+
+
+
+      
+
+ 
+
+
+ 
+
+
+
+
+  
+
+ 
+       
+ 
+    
+
+
+    
+
+   
+
+  
+
+
+
+
+
+
+
+
+
+
+   
+
+ 
+   
     
 
 
