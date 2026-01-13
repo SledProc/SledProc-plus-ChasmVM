@@ -1520,12 +1520,12 @@ entities.  Another important contrast is that \TSOM{} focuses on representations
 at the sentence scale, whereas most \XML{} encodings are oriented 
 to paragraphs instead.  In \PacTk{}, such materials as quotes, 
 footnotes, citations, discipline-specific symbols, and content set off 
-via parentheses or em-dashes are treated as objects either nested 
+via parentheses or em-dashes, are treated as objects either nested 
 inside sentences or as containers holding one or more sentences 
-in sequence (or, in some cases, both).  Discursive structures such as 
+in sequence (in some cases both).  Discursive structures such as 
 citations, quotations (with ellipsis and emendation protocols), 
-and terms or proper names matching index headings are modeled 
-as class-instances computationally isolated from surrounding 
+and terms or proper names matching index headings, are modeled 
+as class-instances algorithmically isolated from surrounding 
 text, more tractably than \XML{} conventions via tags or character entities.  
 This forestalls many transcription errors that result from 
 treating objects or delimiters with special functional 
@@ -1536,7 +1536,7 @@ ordinary symbols or characters (such that \PacTk{} is more computationally relia
 %\item[BioC and TEI]  
 \p{\textbf{BioC} and \textbf{TEI}: these are two \XML{} languages that are more 
 granular than \JATS{}/\BITS{} in that they support sentence-level 
-tags (although, as mentioned previously, such tags are optional 
+tags (although, as mentioned on page~~\Athref{page.1}{1}, such tags are optional 
 and might be excluded from any encoded documents).  Although \TEI{} originated in 
 response to requirements for humanities scholarship (e.g., preservation 
 of historical documents) it has more recently been adopted 
@@ -1558,7 +1558,7 @@ to object-based representations such as \TSOM{}.}
 
 %\item[JSON]  
 \p{\textbf{JSON}: Text-mining corpora %such as CORD-19 
-often employ \JSON{} (JavaScript 
+frquently utilize \JSON{} (JavaScript 
 Object Notation) formats such as \StwoORC{} (from \q{Semantic Scholar Open Research Corpus}) 
 primarily to encode 
 written documents for text-mining methods based on Natural Language Processing.  
@@ -1580,11 +1580,11 @@ and hard-to-maintain than direct \TSOM{} serialization.}
 %\item[Markdown]  
 \p{\textbf{Markdown}: Dating to 2004, Markdown is a popular 
 format for material that needs only basic styling, such as 
-italics, underline, boldface, code excerpts, hyperlinks, 
+headers, italics, underline, boldface, code excerpts, hyperlinks, 
 and bulleted/enumerated lists.  Markdown is widely used 
 in social media, collaborative editing (including \q{wikis}), 
 code documentation, and technology-oriented websites such as 
-Github and Stack Overflow.}
+GitHub and Stack Overflow.}
 
 %\pseudoIndent{} 
 \p{In itself, Markdown does not have sufficient 
@@ -1610,9 +1610,9 @@ for Markdown users.}
 
 \vspace*{-23pt}
 
-\p{\textbf{LaTeX}: Although \XML{}-based technologies 
-(including \XSLFO{}, which uses style-sheet transforms to 
-convert formats like \JATS{} to final publications) 
+\p{\textbf{LaTeX}: Notwithstanding that \XML{}-based technologies 
+(including \XSLFO{}, which employs style-sheet transforms to 
+convert formats such as \JATS{} to final publications) 
 are becoming increasingly popular for generating 
 \PDF{}s, \LaTeX{} remains a powerful tool for this 
 specific part of the workflow.  It appears that 
@@ -1643,10 +1643,10 @@ PacTk in the Context of a ``Humanities Grid''}
 
 \vspace*{8pt}
 
-\p{Use-cases for \PacTk{} in the context of scientific grid computing 
+\p{Use cases for \PacTk{} in the context of scientific grid computing 
 will be discussed below, but one should observe that many 
-grid uses cases for natural sciences have analogs in social 
-science and humanities as well:
+of the benefits inuring to research grids for physical science have analogs in 
+the social sciences and humanities as well.  Here are several use-case examples:
 
 \begin{description}
 
@@ -1665,7 +1665,7 @@ examine the robustness/flexibility of theoretical
 models.  Data transparency is also served, however, 
 when researchers obtain simplified versions 
 of the originary code for assessment and teaching.  
-Dissemination is not \textit{only} replication.
+Dissemination \textit{includes} but is not \textit{restricted to} replication.
 
 \pseudoIndent{} There are many branches of economics, 
 sociology, law, political science, linguistics, etc., that 
@@ -1674,9 +1674,9 @@ subject to \FAIR{}data standards, so that raw
 data should be published alongside analytic 
 code and (as applicable) statistical graphics.  To the degree 
 that communities of scholars across multiple 
-institutions agree to use common protocols 
+institutions jointly employ common protocols 
 and link their research into searchable 
-repositories, the end-result becomes in 
+repositories, the end result becomes in 
 effect a \q{humanities grid.}  In the case of 
 linguistics, computational methods apply both to 
 Natural Language Processing (which can aid in the 
@@ -1696,10 +1696,10 @@ Archiving is more complex in this context than
 vis-\`a-vis contemporary publications because 
 (for one thing) documents themselves --- as physical 
 objects --- are often tracked and curated 
-similarly to artistic and archaeological artifacts.  
+similarly to artistic or archaeological artifacts.  
 Also, digital twins to historic papers --- whether 
 as images, transcribed to text, or both --- typically 
-need more detailed markup than manuscripts prepared 
+demand more detailed markup than manuscripts prepared 
 as digital resources to begin with (for instance, 
 transcription ambiguities are recorded, or 
 scribbled marginal notes notated alongside the 
@@ -1714,17 +1714,17 @@ have similar requirements.
 
 \vspace*{-6pt}
 
-\item[Interactive Graphics] Numerous use-cases in humanities 
+\item[Interactive Graphics] Numerous use cases in humanities 
 scholarship involve interactive \GUI{}s displaying \TwoD{} or 
 \ThreeD{} graphics or multimedia.  Analogous to historical 
-documents, old photographs or videos sometimes need 
-analysis and preservation, a process that often includes 
-picture or video annotations.  Actions such as showing or hiding 
+documents, old photographs or videos often need 
+analysis and preservation, a process that frequently includes 
+picture or video annotations.  Actions such as showing/hiding 
 annotations, extracting video frames, navigating within image 
-series, or executing image-processing algorithms, all 
+series, or invoking image-processing algorithms, all 
 require \GUI{}s that not only show the relevant 
 media content but also have interactive capabilities.  
-Moreover, image analysis often comes into play in fields within  
+Moreover, image analysis sometimes comes into play in fields within  
 cognitive science/phenomenology.  For example, 
 Computer Vision algorithms may emulate 
 or model the biological visual acuity of humans or animals.  
@@ -1750,10 +1750,10 @@ or in addition to a scientific) background, focusing specifically on social impa
 \pseudoIndent{} Meanwhile, data modeling, meta-science, and document preparation 
 arguably solicit modes of theory and technique that are typical of humanities 
 as much as natural science (the former tends to be more generalizing and 
-philosophical; while \q{hard} science often narrows in on very specific research questions/experiments).  
+philosophical; while \q{hard} science frequently hones in on narrow research questions/experiments).  
 Written papers are still a major avenue for disseminating research, and herein 
 science becomes absorbed into discursive and rhetorical spaces primarily modeled 
-in the humanities.  \makebox{For instance, the book referenced on page \Athref{page.10}{10}} weaves together 
+in the humanities.  \makebox{For instance, the book referenced on page\hspace{4pt}\Athref{page.10}{10}} weaves together 
 topics of law, ethnomethodology, and popular media; it endorses certain 
 theories for family courts and critiques others.  These rhetorical patterns 
 could, in principle, be incorporated into document-view \GUI{}s as interactive features, 

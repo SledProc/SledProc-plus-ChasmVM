@@ -205,11 +205,11 @@ self-contained package in this sense may reasonably assume that
 readers have access to a working and relatively up-to-date development 
 environment typical for their language of choice %-- for example, 
 a C++-based bundle obviously requires a C++ compiler, and 
-canonical libraries such as boost or Qt are acceptable external 
+canonical libraries such as boost or ;/Qt/ are acceptable external 
 dependencies.  Nonetheless, publishers should be careful to 
 ensure that clear instructions are given for users who need to 
-set up a prototypical development environment to begin with [, and external 
-dependencies should be favored which].  Source files obviously have 
+set up a prototypical development environment to begin with.  
+Source files obviously have 
 */some/* dependencies (at least, either compilers or scripting-language 
 interpreters).  However, I make the assumption here that Executable 
 Research Objects are predominantly disseminated in source-code fashion.  
@@ -918,7 +918,7 @@ will in general include certain GUI components
 (potentially including PDF viewers themselves) and the 
 most straightforward path to effective cross-platform 
 GUI applications is via C++, particularly in conjunction 
-with the Qt libraries.  At the same time, as far as I am 
+with the ;/Qt/ libraries.  At the same time, as far as I am 
 aware, very little of the implementation details 
 I discuss involve techniques specific to C++, so it 
 is entirely possible that similar VM, potentially 
@@ -987,7 +987,7 @@ external software such as ParaView (though
 */facilitating/* its use is fine), and this 
 may be achived by leveraging simpler components 
 for tasks such as interactive 2D visualization 
-(based on QtCharts and/or QGraphicsView, for instance).  
+(based on ;/Qt/Charts and/or QGraphicsView, for instance).  
 Such components may take the form of a class or "/widget/" 
 library made available to users by publishers, book series, 
 journals, grid maintainers, etc. (similar comments apply 
@@ -1672,7 +1672,7 @@ Consider the case of 2D graphics.  There are many
 C++ graphics and image libraries, and they are inconsistent 
 with respect to what the horizontal and vertical axes are 
 called, as well as which quantity comes first in a pair.  
-A Qt rectangle, for example (e.g., in QGraphicsScenes) 
+A ;/Qt/ rectangle, for example (e.g., in QGraphicsScenes) 
 is constructed either by naming two points (diagonally-opposed 
 corners) or by giving one point and two scalar values representing 
 width and height.  QPoints are integer pairs (QPointF is floating-point instead) 
@@ -1757,12 +1757,12 @@ procedure's signature, propagating to documentation,
 unit tests, GUI design, and so forth.  For example, 
 a Research Object whose multimedia contains videos, 
 and with code included to play them, is intrinsically 
-working with scales such as Frames per Second (FPS) 
+working with scales such as Frames per Second (;/FPS/) 
 or Hertz.  Presumably, at least some internal 
 procedures would thereby take and/or return 
 arguments with analogous dimension, and so those 
 procedures and their signatures would be relevant 
-matches for searches given such terms as "/FPS/", 
+matches for searches given such terms as "/;/FPS//", 
 "/kilohertz/", etc.  Insofar as a code-domentation "/concordance/" 
 is exposed to the package's overall query system, 
 granular typing such a unit-decoration facilitates the 
@@ -1812,7 +1812,7 @@ that could be built into source code directly.  In particular,
 I assume that language grammars are defined via regular expressions, which 
 are matched against input files via conventional Regex libraries.  
 Several of these exist for C++; within Research Objects employing 
-Qt for cross-platform GUI, the QRegularExpression classes are quite adequate.
+;/Qt/ for cross-platform GUI, the QRegularExpression classes are quite adequate.
 
 Meanwhile, most C++ regular expression libraries take ordinary 
 strings as initializers for regex patterns.  This makes it possible 
