@@ -1339,8 +1339,8 @@ void GTagML_Graph_Build::enter_acronym_mode()
 
  xml_writer_.writeStartElement("eA");
  latex_stream_ << "\\eA{";
-
 }
+
 
 void GTagML_Graph_Build::leave_acronym_mode()
 {
@@ -1351,6 +1351,42 @@ void GTagML_Graph_Build::leave_acronym_mode()
  xml_writer_.writeEndElement();
  latex_stream_ << "}";
 }
+
+void GTagML_Graph_Build::enter_short_macro_mode()
+{
+ reset_primary();
+
+ parse_context_.flags.short_macro_mode = true;
+
+ xml_writer_.writeStartElement("sM");
+ latex_stream_ << "\\";
+}
+
+
+void GTagML_Graph_Build::leave_short_macro_mode()
+{
+ QString latex = primary_acc_;
+ latex.replace("0", "Zero");
+ latex.replace("1", "One");
+ latex.replace("2", "Two");
+ latex.replace("3", "Three");
+ latex.replace("4", "Four");
+ latex.replace("5", "Fice");
+ latex.replace("6", "Six");
+ latex.replace("7", "Seven");
+ latex.replace("8", "Eight");
+ latex.replace("9", "Nine");
+
+ parse_context_.flags.short_macro_mode = false;
+
+ xml_writer_.writeCDATA(primary_acc_);
+ xml_writer_.writeEndElement();
+
+ primary_acc_.clear();
+
+ latex_stream_ << latex << "{}";
+}
+
 
 void GTagML_Graph_Build::enter_alt_display_mode()
 {

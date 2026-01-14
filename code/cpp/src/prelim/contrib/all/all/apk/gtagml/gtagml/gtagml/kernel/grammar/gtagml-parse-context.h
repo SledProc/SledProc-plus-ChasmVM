@@ -31,7 +31,8 @@ public:
   flag_(3, double_quote_mode)
   flag_(4, single_quote_mode)
   flag_(5, single_quote_mode_doubled)
-  flag_(6, single_quote_mode_trebled)
+
+  flag_(6, short_macro_mode)
 
   flag_(7, acronym_mode)
   flag_(8, alt_display_mode)
@@ -71,6 +72,8 @@ public:
   flag_(26, inside_attribute_sequence)
 
   flag_(27, inside_html_tag_body)
+
+
   flag_(28, inside_tag_body)
 
 
@@ -78,6 +81,7 @@ public:
   flag_(30, inside_inline_multi_parent)
   flag_(31, inside_multiline_comment)
 
+  flag_(32, single_quote_mode_trebled)
 
  _flags_
 

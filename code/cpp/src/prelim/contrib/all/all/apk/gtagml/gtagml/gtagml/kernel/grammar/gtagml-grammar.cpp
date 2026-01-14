@@ -508,8 +508,6 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.leave_footnote(p.matched("pretext"), p.matched("space"));
  });
 
-
-
  add_rule( flags_all_(parse_context ,acronym_mode),
    gtagml_context, "leave-acronym-mode",
    " / "
@@ -518,11 +516,26 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.leave_acronym_mode();
  });
 
+ add_rule( flags_all_(parse_context ,short_macro_mode),
+   gtagml_context, "leave-short-maco-mode",
+   " / "
+   ,[&]
+ {
+  graph_build.leave_short_macro_mode();
+ });
+
  add_rule( gtagml_context, "enter-acronym-mode",
    " ;/ (?=\\w) "
    ,[&]
  {
   graph_build.enter_acronym_mode();
+ });
+
+ add_rule( gtagml_context, "enter-short-macro-mode",
+   " ,/ (?=\\w) "
+   ,[&]
+ {
+  graph_build.enter_short_macro_mode();
  });
 
 

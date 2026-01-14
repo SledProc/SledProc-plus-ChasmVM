@@ -395,6 +395,9 @@ public:
  void enter_block_float_mode();
  void leave_block_float_mode();
 
+ void enter_short_macro_mode();
+ void leave_short_macro_mode();
+
  void enter_italics_mode();
  void leave_italics_mode();
  void enter_double_quote_mode();
