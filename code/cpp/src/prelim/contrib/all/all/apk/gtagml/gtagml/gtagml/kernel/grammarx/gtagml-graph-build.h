@@ -395,18 +395,11 @@ public:
  void enter_block_float_mode();
  void leave_block_float_mode();
 
- void short_macro(QString text, u1 size);
- void short_acronym(QString text, u1 size);
- void short_emph_sample(QString text);
+ void short_macro(QString text);
+ void short_acronym(QString text);
 
- void enter_short_macro_mode(u1 size);
+ void enter_short_macro_mode();
  void leave_short_macro_mode();
-
- void enter_highlight_mode();
- void leave_highlight_mode();
-
- void enter_sample_mode();
- void leave_sample_mode();
 
  void enter_italics_mode();
  void leave_italics_mode();
@@ -418,10 +411,10 @@ public:
  void leave_single_quote_mode_doubled();
  void enter_single_quote_mode_trebled();
  void leave_single_quote_mode_trebled();
- void enter_acronym_mode(u1 size);
+ void enter_acronym_mode();
  void leave_acronym_mode();
- void enter_emph_italics_mode();
- void leave_emph_italics_mode();
+ void enter_alt_display_mode();
+ void leave_alt_display_mode();
 
  void special_character_sequence(QString text);
  void show_latex();

@@ -34,11 +34,10 @@ public:
   flag_(5, emph_sample_mode)
   flag_(6, short_macro_mode)
 
-  flag_(7, emph_highlight_mode)
-  flag_(8, acronym_mode)
-  flag_(9, emph_italics_mode)
+  flag_(7, acronym_mode)
+  flag_(8, alt_display_mode)
 
-//?  flag_(9, code_display_mode)
+  flag_(9, code_display_mode)
 
   flag_(10, underline_mode)
 

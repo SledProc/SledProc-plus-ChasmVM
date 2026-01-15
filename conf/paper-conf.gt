@@ -3,56 +3,71 @@
 
 %. Abstract
 
--%> `noindent;`pgl; This paper examines methodological foundations for 
-linguistics in terms of phenomenology and the 
-philosophy of science.  I argue for explanatory 
-paradigms that model the interdependence of 
-linguistic and extra-linguistic knowledge/faculties 
-for understanding typical sentences.  In lieu 
-of set theory or predicate logic formalization, I 
-point out some similarities between natural and computer 
-languages, so that formal structures related to 
-compilers and programming-language implementation 
-may offer useful simplified models for human 
-communication.  In particular, I emphasize how 
-surface discourse may be transformed to sequences 
-of operations toward conceptual aggregation/synthesis, 
-while maintaining that most details concerning how  
-concepts are pairwise combined  
-depend on extralinguistic cognitive activity. 
+-%> `noindent;`pgl; In data sharing and publishing 
+contexts such as "/Executable Research Objects/", 
+natural-language documents coexist with raw 
+data files and, potentially, multimedia resources.  
+In principle, these materials may be unified 
+into a common search, indexing, and ;/GUI/ framework.  
+In the context of scientific research grids 
+or other decentralized collaborations, the 
+basic units of scholarly dissemination 
+are no longer single manuscripts but rather 
+composite packages including text, code, and 
+data, and according to ;/FAIR/ (Findable, 
+Accessible, Interopable, Reusable) principles 
+such content should be in available in a 
+largely standalone fashion, hopefully 
+usable as soon as downloaded.  To this 
+end, this paper will consider 
+how compiler and Virtual Machine tools 
+may be embedded within data-set 
+code, built from source files with 
+few external dependencies, and how a 
+self-contained environment for scripting 
+or query language implementations 
+can promote text search, raw-data 
+deserialization, ;/GUI/ integration, 
+and other tasks to promote 
+Executable Research Objects as 
+insular applications helping 
+scientists and investigators 
+understand and assess published 
+findings or theories.  
 
 
 ///  Introduction
 
 In the context of "/publishing technology/", one would traditionally 
 understand a "/publication/" to be a natural-language document 
-(e.g. an article, book, or book chapter).  Several 
+(e.g. an article, book, or book chapter).  But several 
 more recent trends in publishing and science have complicated 
-this picture; for example, the idea of a "/replication crisis/" 
-insofar as results of influential experiments in natural and social 
-scientists proved difficult to reproduce during updated studies. 
-Reaction to this "/crisis/" (however much real versus perceived) 
+this picture.  For example: the idea of a "/replication crisis/" 
+%-- concernts that results of influential experiments in natural and social 
+sciences have proven difficult to reproduce during updated studies. 
+Reaction to this "/crisis/"  
 spurred the goal of "/data transparency/" and initiatives to 
 document more rigorously the raw data, methodology, and analytic 
 details behind published findings.  Such initiatives in turn 
 led to "/Minimum Information/" standards (e.g., 
 Minimum Information for Biological and Biomedical Investigations, or 
-MIBBI, which encompasses several dozen more specific specifications) 
+;/MIBBI/, which encompasses several dozen more specific specifications) 
 and to mixed data/code/multimedia formats such as ;/FAIR/sharing  
 (Findable, Accessible, Interoperable, Reusable) and 
 Research Objects (including "/Executable Research Objects/", 
 Research Object "/Bundles/", Research "/Compendia/", and so forth).
 
 A common theme of these various formats is that the basic unit of 
-disseminating scientific or academic is not a single document, but a 
+disseminating scientific or academic research is not (or no longer) 
+a single document, but rather a 
 collection of distinct files representing text, data, and potentially 
 graphics or computer code.  Natural-language text is still important 
 %-- readers are most likely to learn about data sets or Research 
 Objects via publications that introduce them %-- but in a Research 
-Object context manuscripts are packages alongside sibling assets 
+Object context manuscripts are packaged alongside sibling assets 
 with their own requisite functionality.  This affects functionality 
-intrinsic to text documents insofar as the various components 
-of a data package can be cross-referenced.  For instance, 
+intrinsic to text documents insofar as, to begin with, the various components 
+of a data package can be mutually cross-referenced.  For instance, 
 terms and keyphrases within a manuscript could be annotated 
 with links to data, code, or graphics content, if the 
 same concepts appear as statistical parameters, units of 
@@ -65,40 +80,58 @@ and Natural Language Processing tools to promote
 the dissemination of scientific work.  In principle, say, 
 computational methods can highlight which additional 
 papers might benefit a particular researcher, given ones 
-they have already cited or written themselves.  As an example, 
-the ;/CORD19/ corpus was curated by the 
+they have already cited or written themselves.  As one example, 
+the ,/CORD19/ corpus was curated by the 
 Allen Institute for Artificial Intelligence, early in the Covid-19 pandemic, 
-as a large repository of open-access materials about SARS and Coronaviruses 
+as a large repository of open-access materials about ;/SARS/ and Coronaviruses 
 (much of which would ordinarily be paywalled but were made freely 
 available by their publishers).  Since Covid research was a matter 
 of fitting different pieces of a puzzle together %-- especially 
 early on, when the morphology, infectious mechanisms, treatment 
-options, and vaccination strategies of SARS-Cov-2 were still 
+options, and vaccination strategies of ;/SARS-Cov-2/ were still 
 under investigation %-- a computationally analyzable corpus 
 held potential for scientists with one specialization to 
 find useful information in articles they might not 
 discover by mere chance.  
 
-In effect, the goal of ;/CORD19/ was not just to free up 
+In effect, the goal of ,CORD19 was not just to free up 
 a large volume of documents to be browsed by human 
 readers, but to augment their research via text mining.  
 Unfortunately, the most common format for dissemination 
-of those publications %-- ;/PDF/ %-- is flawed from a 
+of those publications %-- ;PDF %-- is flawed from a 
 computational perspective because the internal 
 ;/PDF/ representation of natural language often differs 
 from how human readers would transcribe the same 
 content when seeing it rendered in a ;/PDF/ viewer.  Such  
 details as ligatures, headers/footers, hyphenation, and 
 font-face variations can introduce artifacts in 
-text extraction (or "/scraping/") from ;/PDF/ files.  In addition 
+text extraction (or "/scraping/") from ;/PDF/ files.{< 
+`label<fn:poppler>; To clarify these remarks: ;PDF code libraries typically 
+have some procedure that can be called to obtain text 
+from one page and/or window area.  In ;/C++/, for example, 
+the ;Poppler library has a ;text method of 
+;;/Poppler::Page/ which optionally takes a rectangular subarea (this allows 
+scraper to eliminate headers and footers, for instance).  
+The strings returned by this method, however, will 
+usually differ from the input sources captured as 
+;/JATS/, for example.  The most straightfoward 
+contast would be among hyphenated words, but other anomalies 
+may occur, such as unexpected space characters distributed 
+between letters of words in special fonts (small spaces 
+may be present in the internal ;PDF text that are invisible to 
+human readers, but methods like ;;/Page::text/ have no mechanism 
+to report different sizes of text characters.  Likewise, depending 
+on the library being used, text-extraction routines 
+may or may not "/unpack/" ligatures like "/ffi/" to their 
+constituent letters. >}  In addition 
 to problems with "/ordinary/" language, encoding errors 
 also arose in the context of "/special/" character 
 strings such as organic or chemical formulae; the 
-;/CORD19/ documents did not use a consistent mechanism for 
+,/CORD19/ documents did not use a consistent mechanism for 
 notating these (potentially semantically significant) 
 textual elements (or, at least, structured data 
 was not preserved in the final ;/PDF/).  These problems 
-were openly acknowledged by the team behind ;/CORD19/, who 
+were openly acknowledged by the team behind ,/CORD19/, who 
 described the steps they took to (imperfectly) convert 
 ;/PDF/ files to a machine-readable ;/JSON/ format.  They even issused   
 a "/call to arms/" encouraging publishers to adopt a 
@@ -117,7 +150,8 @@ current publishing are produced from ;/XML/ format such as
 ;/PDF/ directly then they could be extracted and employed by 
 ;/PDF/ viewers as structured text encoding, in preference to the 
 more "/semi-structured/" data one may obtain from 
-methods such as "/pageToText/" in the Poppler library.  
+methods such as ;;/text()/ in the ;Poppler library 
+(which I've mentioned in footnote `lfRef<fn:poppler>;).  
 Similar use-cases might be compiling human-readable document 
 indexes, or comparing two different versions of a manuscript 
 during an editing/reviewing changes cycle.
@@ -129,7 +163,7 @@ Research Object contexts.  Natural Language Processing
 proper %-- e.g., deriving parse-graphs or Syntactic Categories 
 (parts of speech) for sentence components %-- is at least 
 tangentially connected to these trends, but the 
-(at best approximative) methods of NLP are outside the 
+(at best approximative) methods of ;/NLP/ are outside the 
 scope of topics addressed here.  Instead, the instantiation of 
 "/natural language/" content in this present context involves 
 fully-deterministic encoding of textual material in the 
@@ -169,7 +203,7 @@ and data sets.  Certainly there are structural differences
 between text elements (sentences, paragraphs, etc.) and 
 most forms of scientific data (especially table/record style 
 formats).  Nonetheless, the increasing interpenetration of 
-text and raw data in Research Object like contexts implies 
+text and raw data in Research-Object-like contexts implies 
 that implementations regarding text and data as part of a 
 common computational value-space should be seriously considered.  
 For example, the code supporting an Executable Research Object 
@@ -229,7 +263,7 @@ as source files in a mainstream programming language (;/C++/, Java, etc.),
 there are some domain-specific or fine-tuning implementations that 
 can usefully be coded in a special-purpose language.  For example, the 
 information encoded in a data set might be approached */de facto/* as a 
-database which accepts queries in an SQL-like (or some flavor of NoSQL) 
+database which accepts queries in an ;/SQL/-like (or some flavor of ;/NoSQL/) 
 format %-- potentially extended to "/full-text search/" visavis 
 associated text documents.  In other scenarios, an Executable Research Object 
 may employ something like a built-in scripting language to run 
@@ -436,7 +470,7 @@ such as ;/XSL-FO/ while also enabling natural-language
 content to be analyzed via generic ;/XML/ protocols, such as 
 ;/XQuery/ and ;/XQSE/ (;/XQuery/ Scripting Extentions).  ;/JSON/-based 
 formats are also used, such as the ;/JSON/-??? protocol adopted 
-by ;/CORD19/ (mentioned earlier).  Specifications such as the 
+by ,/CORD19/ (mentioned earlier).  Specifications such as the 
 Text Encoding Initiative (;/TEI/) may employ a generic 
 representation for convenience (e.g., ;/TEI/-;/XML/) but they are 
 intrinsically a special-purpose data format optimized 

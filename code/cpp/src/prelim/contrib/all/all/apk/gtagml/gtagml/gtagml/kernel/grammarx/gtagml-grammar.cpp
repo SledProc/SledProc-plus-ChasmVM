@@ -96,22 +96,6 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
 
- add_rule( flags_all_(parse_context ,emph_italics_mode),
-   gtagml_context, "leave-emph-italics-mode",
-   " / (?=\\s) "
-   ,[&]
- {
-  graph_build.leave_emph_italics_mode();
- });
-
- add_rule( gtagml_context, "enter-emph-italics-mode",
-   " &/ "
-   ,[&]
- {
-  graph_build.enter_emph_italics_mode();
- });
-
-
  add_rule( gtagml_context, "noindent-marker",
    " (?<! \\S) --- (?= \\S) "
    ,[&]
@@ -540,51 +524,34 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.leave_short_macro_mode();
  });
 
- add_rule( flags_all_(parse_context ,emph_sample_mode),
-   gtagml_context, "leave-sample-mode",
-   " / "
-   ,[&]
- {
-  graph_build.leave_sample_mode();
- });
-
- add_rule( flags_all_(parse_context ,emph_highlight_mode),
-   gtagml_context, "leave-highlight-mode",
-   " / "
-   ,[&]
- {
-  graph_build.leave_highlight_mode();
- });
-
  add_rule( gtagml_context, "enter-acronym-mode",
-   " (?<pre> ;+) / (?=\\w) "
+   " ;/ (?=\\w) "
    ,[&]
  {
-  QString pre = p.matched("pre");
-  graph_build.enter_acronym_mode(pre.size());
+  graph_build.enter_acronym_mode();
  });
 
  add_rule( gtagml_context, "enter-short-macro-mode",
-   " (?<pre> ,+) / (?=\\w) "
+   " ,/ (?=\\w) "
    ,[&]
  {
-  graph_build.enter_short_macro_mode(p.matched("pre").size());
+  graph_build.enter_short_macro_mode();
  });
 
  add_rule( gtagml_context, "short-macro",
-   " (?<=\\s) (?<pre> ,+) (?<text> \\S+) "
+   " (?<=\\s) , (?<text> \\S+) "
    ,[&]
  {
   QString text = p.matched("text");
-  graph_build.short_macro(text, p.matched("pre").size());
+  graph_build.short_macro(text);
  });
 
  add_rule( gtagml_context, "short-acronym",
-   " (?<=\\s) (?<pre> ;+) (?<text> \\S+) "
+   " (?<=\\s) ; (?<text> \\S+) "
    ,[&]
  {
   QString text = p.matched("text");
-  graph_build.short_acronym(text, p.matched("pre").size());
+  graph_build.short_acronym(text);
  });
 
 
@@ -597,6 +564,21 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
 
+
+ add_rule( flags_all_(parse_context ,alt_display_mode),
+   gtagml_context, "leave-alt-display-mode",
+   " / "
+   ,[&]
+ {
+  graph_build.leave_alt_display_mode();
+ });
+
+ add_rule( gtagml_context, "enter-alt-display-mode",
+   " %/ "
+   ,[&]
+ {
+  graph_build.enter_alt_display_mode();
+ });
 
 
 
@@ -712,7 +694,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 // flag_(6, single_quote_mode_trebled)
 
 // flag_(7, acronym_mode)
-// flag_(8, emph_italics_mode)
+// flag_(8, alt_display_mode)
 
 
 

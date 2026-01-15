@@ -1331,14 +1331,8 @@ void GTagML_Graph_Build::leave_single_quote_mode_trebled()
 
 }
 
-void GTagML_Graph_Build::enter_acronym_mode(u1 size)
+void GTagML_Graph_Build::enter_acronym_mode()
 {
- if(size == 2)
- {
-  enter_sample_mode();
-  return;
- }
-
  reset_primary();
 
  parse_context_.flags.acronym_mode = true;
@@ -1358,92 +1352,22 @@ void GTagML_Graph_Build::leave_acronym_mode()
  latex_stream_ << "}";
 }
 
-void GTagML_Graph_Build::enter_sample_mode()
+void GTagML_Graph_Build::short_macro(QString text)
 {
- reset_primary();
-
- parse_context_.flags.emph_sample_mode = true;
-
- xml_writer_.writeStartElement("eS");
- latex_stream_ << "\\eS{";
-}
-
-
-void GTagML_Graph_Build::leave_sample_mode()
-{
- reset_primary();
-
- parse_context_.flags.emph_sample_mode = false;
-
- xml_writer_.writeEndElement();
- latex_stream_ << "}";
-}
-
-
-void GTagML_Graph_Build::short_macro(QString text, u1 size)
-{
- if(size == 2)
- {
-  enter_highlight_mode();
-  primary_acc_ = text;
-  leave_highlight_mode();
-  return;
- }
- enter_short_macro_mode(1);
+ enter_short_macro_mode();
  primary_acc_ = text;
  leave_short_macro_mode();
 }
 
-void GTagML_Graph_Build::short_acronym(QString text, u1 size)
+void GTagML_Graph_Build::short_acronym(QString text)
 {
- if(size == 2)
- {
-  enter_sample_mode();
-  primary_acc_ = text;
-  leave_sample_mode();
-  return;
- }
-
- enter_acronym_mode(1);
+ enter_acronym_mode();
  primary_acc_ = text;
  leave_acronym_mode();
 }
 
-void GTagML_Graph_Build::short_emph_sample(QString text)
+void GTagML_Graph_Build::enter_short_macro_mode()
 {
- enter_sample_mode();
- primary_acc_ = text;
- leave_sample_mode();
-}
-
-void GTagML_Graph_Build::enter_highlight_mode()
-{
- reset_primary();
-
- parse_context_.flags.emph_highlight_mode = true;
-
- xml_writer_.writeStartElement("eH");
- latex_stream_ << "\\eH{";
-}
-
-void GTagML_Graph_Build::leave_highlight_mode()
-{
- reset_primary();
-
- parse_context_.flags.emph_highlight_mode = false;
-
- xml_writer_.writeEndElement();
- latex_stream_ << "}";
-}
-
-void GTagML_Graph_Build::enter_short_macro_mode(u1 size)
-{
- if(size == 2)
- {
-  enter_highlight_mode();
-  return;
- }
-
  reset_primary();
 
  parse_context_.flags.short_macro_mode = true;
@@ -1478,24 +1402,15 @@ void GTagML_Graph_Build::leave_short_macro_mode()
 }
 
 
-void GTagML_Graph_Build::enter_emph_italics_mode()
+void GTagML_Graph_Build::enter_alt_display_mode()
 {
- reset_primary();
+ parse_context_.flags.alt_display_mode = true;
 
- parse_context_.flags.emph_italics_mode = true;
-
- xml_writer_.writeStartElement("eI");
- latex_stream_ << "\\eI{";
 }
 
-void GTagML_Graph_Build::leave_emph_italics_mode()
+void GTagML_Graph_Build::leave_alt_display_mode()
 {
- reset_primary();
-
- parse_context_.flags.emph_italics_mode = false;
-
- xml_writer_.writeEndElement();
- latex_stream_ << "}";
+ parse_context_.flags.alt_display_mode = false;
 }
 
 
@@ -1568,14 +1483,14 @@ void GTagML_Graph_Build::special_character_sequence(QString text)
 void GTagML_Graph_Build::enter_multiline_comment(QString semis, QString tildes)
 {
  markup_position_.enter_multiline_comment(cutmax(semis.length()), cutmax(tildes.length()));
-//? parse_context_.flags.inside_multiline_comment = true;
+ //?parse_context_.flags.inside_multiline_comment = true;
 }
 
 void GTagML_Graph_Build::check_leave_multiline_comment(QString semis, QString tildes)
 {
  if(markup_position_.check_leave_multiline_comment(cutmax(tildes.length()),
   cutmax(tildes.length())));
-//?  parse_context_.flags.inside_multiline_comment = false;
+ //?parse_context_.flags.inside_multiline_comment = false;
 }
 
 void GTagML_Graph_Build::tile_acc(QString str)

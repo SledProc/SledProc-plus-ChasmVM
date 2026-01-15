@@ -831,7 +831,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \newcommand{\onethandft}{\onethrn{} and \exsRef(13)-\exsRef(14)}
 
 
-\newcommand{\eS}[1]{\textbf{{\fontsize{9}{9}%
+\newcommand{\eSc}[1]{\textbf{{\fontsize{9}{9}%
 \fontfamily{ppl}\selectfont{\textcolor{red!40!black}{#1}}}}}
 
 \newcommand{\q}[1]{``#1''}
@@ -1045,17 +1045,33 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 \newcommand{\tinyurl}[1]{\raisebox{2pt}{{\scriptsize \url{#1}}}}
 
-\usepackage[colorlinks=true]{hyperref}
+%\usepackage[colorlinks=true]{hyperref}
+%\colorlet{urlclr}{red!40!magenta!50!orange}
+%\hypersetup{
+% urlcolor = urlclr,
+% urlbordercolor = cyan!60!black,
+% linkcolor = red!30!black,
+% citecolor = orange!30!black,
+% citebordercolor = yellow!30!black,
+%}
 
-\colorlet{urlclr}{red!40!magenta!50!orange}
 
-\hypersetup{
- urlcolor = urlclr,
- urlbordercolor = cyan!60!black,
- linkcolor = red!30!black,
- citecolor = orange!30!black,
- citebordercolor = yellow!30!black,
-} 
+\colorlet{orr}{orange!60!red}
+
+\colorlet{orb}{green!60!blue}
+\colorlet{orbb}{green!30!blue}
+
+
+\colorlet{clinkGreen}{orb!75!black}
+\colorlet{textGreen}{clinkColor!70!purple}
+
+
+\usepackage[colorlinks = true,
+            linkcolor = clinkGreen, %hru!60!black,
+            urlcolor  = clinkGreen,%!70!purple,
+            citecolor = clinkGreen,
+            anchorcolor = clinkGreen]{hyperref}
+ 
 
 \usepackage{setspace}
 
@@ -1146,9 +1162,84 @@ breaklines=true
 
 \usepackage{graphicx}
 
+
+
+\definecolor{eScolor}{RGB}{93, 129, 194}
+\newcommand{\eS}[1]{\textcolor{eScolor}{\textbf{\textsf{{#1}}}}}
+
+
+\definecolor{eHcolor}{RGB}{232, 12, 81}
+\newcommand{\eH}[1]{\textcolor{eHcolor}{\textbf{#1}}}
+
+
+\definecolor{eIcolor}{RGB}{153, 106, 121}
+\newcommand{\eI}[1]{\textcolor{eIcolor}{\textit{#1}}}
+
+
+
 \newcommand{\eA}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
 
 \newcommand{\eAfn}[1]{\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}}
+
+
+
+
+\definecolor{rgr}{RGB}{61, 38, 48}
+
+\definecolor{bkgr}{HTML}{228AFE}
+
+\colorlet{rgrAt}{rgr!30!bkgr}
+
+\definecolor{ru}{RGB}{199, 99, 4}
+
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{1.2pt}
+\contourlength{0.3pt}
+
+\newcommand\reduline{\bgroup\markoverwith
+{\textcolor{ru}{\rule[-.25ex]{1pt}{.4pt}}}\ULon}
+
+\DeclareRobustCommand{\xfigunderline}[1]{\reduline{#1}
+\hspace*{-4pt}\llap{\uline{\phantom{#1}}}\hspace*{2pt}%
+}
+
+\DeclareRobustCommand{\figunderline}[1]{%
+\raisebox{-.5pt}{\large%
+  \textcolor{ru}{\uline{\phantom{#1}}}%
+  \llap{\contour{white}{#1}}}%
+}
+
+\def\figureautorefname{}
+\def\labelautorefname{}
+
+\newcommand{\laRef}[1]{\textcolor{rgrAt!30}{\hspace{1pt}\xfigunderline{\hspace{-2pt}\autoref{#1}\hspace*{-2pt}}}}
+\newcommand{\lhRef}[2]{\textcolor{rgrAt!30}{\hspace{3pt}\xfigunderline{%
+\hspace{-3pt}\hyperlink{#1}{#2}\hspace*{1pt}}}}
+
+\newcommand{\lRef}[1]{\textcolor{rgrAt!30}{\hspace{1pt}\xfigunderline{%
+\hspace{-1pt}\hyperlink{#1}{#2}\hspace*{-2pt}}}}
+
+\newcommand{\lfRef}[1]{\textcolor{rgrAt!30}{\hspace{1pt}\xfigunderline{%
+\hspace{-1pt}\raisebox{-6pt}{\resizebox{!}{12pt}{\footref{#1}}}}\hspace*{-2pt}}}}
+
+%\newcommand{\lfRef}[1]{\raisebox{-6pt}{\resizebox{!}{12pt}{\footref{#1}}}}
+
+%\raisebox{-6pt}{\resizebox{!}{12pt}{\footref{fn:poppler}}
+
+%\newcommand{\lRef}[1]{\textcolor{rgrAt!30}{\xfigunderline{\hspace{-2pt}XXXXX\hspace*{-2pt}}}}
+
+%\newcommand{\lRef}[1]{\textcolor{rgrAt!30}{XX}}
+
+%\newcommand{\lRef}[2]{\lhRef{fn:poppler}{fn:poppler}}
+
+
+
+
+
+
+
 
 %\newcommand{\eA}[1]{{\iffootnote\begin{footnotesize}{\textsc{#1}}\end{footnotesize}%
 %\else\begin{OldFootnoteSize}{\textsc{#1}}\end{OldFootnoteSize}\fi}}
@@ -1170,7 +1261,7 @@ breaklines=true
 \setcitestyle{square}
 
 \title{\vspace{-1em}{\fontsize{15}{18}\selectfont%
-Ordering Conceptual Synthesis: The Implications of Cognitive Phenomenology\\for Syntactic Theory}%
+Merging Full-Text Query with Data Sets: A perspective from compiler theory}%
 \vspace{-2em}}
 
 \date{}
@@ -1457,24 +1548,28 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \ifnum\presetStretch=2{\fnminidbl{#2}}\else{\fnmini{#2}}\fi%
 }
 
+\definecolor{fnMarkColor}{RGB}{52, 105, 125}
 
 \renewcommand\@makefnmark{%
-\raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{black}\@thefnmark}}}}
+\raisebox{3.5pt}{\resizebox{!}{5pt}{{\color{fnMarkColor}\textbf{\@thefnmark}}}}}
 
 \newcommand{\fnm}{\setcounter{footnote}{1}%
-\raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{black}1}}}}
+\raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{fnMarkColor}1}}}}
 
 
-\AddToShipoutPicture{%
-\ifnum\value{page}=1{
-\AtTextLowerLeft{
-\hspace*{-3pt}\raisebox{-4pt}{%
-\mmakefntext{\footnotesize{This paper's examples are 
-embedded in its Journal Article Tag Suite (\eAfn{JATS}) sources 
-according to a standardized encoding.  See 
-the \eAfn{JATS} (\eAfn{XML}) files for more information.}}
-}}}\fi
-}
+%\AddToShipoutPicture{%
+%\ifnum\value{page}=1{
+%\AtTextLowerLeft{
+%\hspace*{-3pt}\raisebox{-4pt}{%
+%\mmakefntext{\footnotesize{This paper's examples are 
+%embedded in its Journal Article Tag Suite (\eAfn{JATS}) sources 
+%according to a standardized encoding.  See 
+%the \eAfn{JATS} (\eAfn{XML}) files for more information.}}
+%}}}\fi
+%}
+
+
+\newcommand{\CORDOneNine}{\eA{CORD-19}}
 
 \usepackage{dashrule}
 
@@ -1498,8 +1593,7 @@ the \eAfn{JATS} (\eAfn{XML}) files for more information.}}
 \ifnum\value{page}=1{
 \AtTextLowerLeft{
 \hspace*{-2pt}\raisebox{6pt}{%
-%\par\noindent\rule{100pt}{0.4pt}
-\par\noindent\bfnr
+%\par\noindent\bfnr
 }}}\fi
 }
 
