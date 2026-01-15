@@ -36,8 +36,6 @@ paperheight=13.5in,paperwidth=9.25in]{geometry}
 %\usepackage{soul}
 \newcommand{\ul}[1]{\underline{#1}}
 
-
-
 \newcommand*\fndiamondX[1]{\tikz[baseline=(char.base), x=2cm,y=1.5cm]{
 
  \node[shape=regular polygon, regular polygon sides=4, 
@@ -54,96 +52,6 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\ul{{#1}}};
 
 
 }}
-
-
-
-\definecolor{bkgr}{HTML}{228AFE}
-
-\colorlet{rgrAt}{rgr!30!bkgr}
-
-\definecolor{ru}{RGB}{199, 99, 4}
-
-\usepackage{contour}
-\usepackage{ulem}
-
-\renewcommand{\ULdepth}{.7pt}
-\contourlength{0.3pt}
-
-\newcommand\reduline{\bgroup\markoverwith
-{\textcolor{ru}{\rule[-.25ex]{3pt}{3.4pt}}}\ULon}
-
-\DeclareRobustCommand{\xfigunderline}[1]{\reduline{#1}
-\llap{\dashuline{\phantom{#1}}}%
-}
-
-
-\DeclareRobustCommand{\figunderline}[1]{%
-\raisebox{-.5pt}{\large%
-  \textcolor{ru}{\uline{\phantom{#1}}}%
-  \llap{\contour{white}{#1}}}%
-}
-
-%Figure~
-
-\def\figureautorefname{}
-
-%\DeclareRobustCommand{\Atref}[1]{{\ref{\textcolor{blue}{#1}}}}
-
-
-%\let\Oldautoref\autoref
-\renewcommand{\Atref}[1]{\textcolor{rgrAt!30}{\xfigunderline{\hspace{-2pt}\autoref{#1}\hspace*{-2pt}}}}
-
-\newcommand{\Athref}[2]{\textcolor{rgrAt!30}{\xfigunderline{\hspace{-2pt}\hyperlink{#1}{#2}\hspace*{-2pt}}}}
-
-
-
-
-%\let{\Oldref}{\ref}
-%\renewcommand{\ref}[1]{\Oldref{#1} on page \pageref{#1}}
-
-
-\usepackage[all]{hypcap}
-
-\usepackage{caption}
-
-%\let\svthefigure\thefigure
-
-%\let\svthefiguretxt\thefigure
-%\renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefiguretxt}}}
-
-
-\let\svthefigure\thefigure
-\let\svfigurename\figurename
-\newcommand\figcolortxt{%
-  \renewcommand\thefigure{\bfseries\sffamily\color{blue}\svthefigure}%
-  \renewcommand\figurename{\bfseries\sffamily\color{blue}\svfigurename}%
-}
-
-%  
-%\renewcommand\figurename{\color{rgr!70!ybk}\svfigurename}
- % \renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefigure}}}
-
-\newcommand{\figm}[1]{{\color{rgrAt}\figunderline{\large #1}}}
-
-\let\svthefigure\thefigure
-\let\svfigurename\figurename
-\renewcommand\thefigure{\protect\myfigmarkup\svthefigure}
-\renewcommand\figurename{\protect\myfigmarkupn\svfigurename}
-\let\myfigmarkup\relax
-\newcommand\figcolor{%
-  \def\myfigmarkupn{\color{rgr!70!ybk}}%
-  \def\myfigmarkup{\figm}}%
-}
-
-
-%\newcommand\figcolor{%
-%\renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefigure}}}
-%}
-
-%\newcommand\figcolorundo{\renewcommand\thefigure{\svthefigure}}
-
-
-%\figcolor{}
 
 
 \newcommand*\fndiamond[1]{\tikz[baseline=(char.base)]{
@@ -269,16 +177,13 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
 %\fndiamond{\usepage}}}}
 
-\fancypagestyle{firstpagex}{
+\fancypagestyle{firstpage}{
     \fancyhf{}
     \renewcommand{\headrulewidth}{0pt}    
     \renewcommand{\footrulewidth}{0pt}   
     \fancyfoot[C] {\fontsize{12}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
-\fnacircled{\textheight}}}}}
+\fnacircled{\usepage}}}}}
 }
-
-
-
 
 
 \fancypagestyle{default}{
@@ -395,54 +300,9 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 \input{PacTkOverlaysx}
 
 
-\AddToShipoutPicture{%
-\ifnum\value{page}=1{
-\AtTextLowerLeft{
-{\hspace*{278pt}\raisebox{-27pt}{\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
-\fnacircled{\usepage}} }}}
-}
-}\fi
-}
-
-
-\definecolor{rgr}{RGB}{61, 38, 48}
-
-\definecolor{ybk}{RGB}{187, 228, 240}
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=1{
-\AtTextLowerLeft{
-{\hspace*{431pt}\raisebox{857pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
-\colorbox{ybk}{\textls*[-50]{\textit{\textcolor{rgr}{``Scientific Publishing is\ }}}}}
-}
-}
-}
-}\fi
-}
-
-
-\AddToShipoutPicture{%
-\ifnum\value{page}=1{
-\AtTextLowerLeft{
-{\hspace*{433pt}\raisebox{839pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
-\colorbox{ybk}{\textls*[-50]{\textit{\textcolor{rgr}{\ \ a Scientific Discipline''\ }}}}}
-}
-}
-}
-}\fi
-}
-
-
-
-
-
-
-
-
-
-
-\AddToShipoutPicture{%
-\ifnum\value{page}=22{
+\ifnum\value{page}=19{
 \AtTextLowerLeft{
 \hspace{266pt}\raisebox{-27pt}{%  
 {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
@@ -474,11 +334,12 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\fi}
 %}
 
+\definecolor{bkgr}{HTML}{228AFE}
+
 \renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}%
 {\fontfamily{lmss}\fontseries{bx}\fontsize{12}{12}\selectfont%
 \textcolor{bkgr!50!black}{#1}\hspace*{1.5em}}
 }
-
 
 
 \begin{document}
@@ -487,8 +348,8 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\setlength{\footskip}{22pt}
 
 
-\thispagestyle{empty}
-%\thispagestyle{firstpage}
+%\thispagestyle{empty}
+\thispagestyle{firstpage}
 
 \vspace*{-76pt}
 
@@ -535,7 +396,6 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 \end{center}
 
-%\newgeometry{}
 
 %{\large{}}
 
@@ -569,8 +429,8 @@ Publishing Documents, Datasets, and Multimedia Resources}}
 
 \p{In contemporary publishing, the standard workflow includes \XML{}-based 
 formats such as \JATS{} or \BITS{}, from which are compiled 
-\PDF{}s and other human-visible documents.  The intermediate \XML{} and 
-similar files --- those midway in the pipeline --- are distinct from files that authors submit directly; 
+\PDF{}s and other human-visible documents.  Intermediate \XML{} and 
+similar files are distinct from those that authors submit directly; 
 they have their own tool stacks and 
 are computationally accessed via protocols 
 such as \SAX{} (Simple \API{} for \XML{}), \XQuery{}, 
@@ -592,9 +452,8 @@ documents, numerous competing formats have been developed,
 providing potential alternatives or extensions to \XML{}.  These  
 include \TEI{} (Text Encoding Initiative), \TagML{} 
 (Text-as-Graph Markup Language), \BioC{} (a biomedical text mining 
-standard defined by PubMed Central), Markdown (popular for wikis and social media),
- and Research Object Bundles 
-(a Semantic Web based specification that covers both text and 
+standard defined by PubMed Central), and Research Object Bundles 
+(a Semantic-Web based specification that covers both text and 
 data sets).  With a proliferation of different text-encoding standards, 
 query and traversal protocols that are developed for one  
 format (e.g., \JATS{} and its derivatives) cannot be directly applied 
@@ -602,12 +461,10 @@ to others.  For example, the \XML{} parent-child element relationship
 is replaced in \TagML{} with two different containment styles 
 (logical and extensional), such that \DOM{} and event-based 
 parsers targeted at the simpler \XML{} hierarchy must be reimplemented 
-for the \TagML{} system.}
-
-\p{Meanwhile, with 
-regard to \PDF{}, effective search and interaction 
+for the \TagML{} system.  Meanwhile, with 
+regard to \PDF{}, effective search and text-interaction 
 capabilities depend on supplementing this format's internal 
-natural-language representation with machine-readable text encodings, 
+natural-language representation with machine-readable text encoding, 
 which might be embedded in \PDF{} files or available as sibling 
 assets.  In principle, \XML{} documents could supply such 
 content, although current pipelines are not set up to 
@@ -618,8 +475,7 @@ share \JATS{}/\BITS{} files (for example) in end-user contexts.}
 \PacTk{}, text encoding evinces a spectrum of distinct 
 \textit{topomorphic regimes} where a proliferation of 
 incompatible document structures prohibits the emergence 
-of common query, traversal, and metadata formats (this nonstandard 
-terminology will be clarified below).  The obvious 
+of common query, traversal, and metadata formats.  The obvious 
 problem is that workflows have to be reconstructed 
 for each incompatible document specification.  
 In practice, such difficulties have almost certainly 
@@ -630,31 +486,31 @@ formats such as \TagML{}.}
 formats cannot be satisfactorily reconciled simply by 
 proposing yet another format to insert into 
 analogous workflows.  Instead, building a more 
-sophisticated and computationally rigorous publishing platform involves 
+sophisticated publishing platform involves 
 constructing integrated computational 
 tableaux weaving together text-encoding, 
 query-evaluation, compiler-theoretic, and 
 front-end concerns.} 
 
 \p{One important variation amongst text-encoding formats is 
-the level of granularity recognized for textual elements.  In 
-\JATS{}, \BITS{}, and most \JSON{} representations, the fundamental 
-discursive units are individual paragraphs.  Elements on smaller 
+the level of granularity for textual elements.  In 
+\JATS{}, \BITS{}, and most \JSON{} encodings, the fundamental 
+discursive unit is the individual paragraph.  Elements on smaller 
 scales (such as sentences or block quotes) are notated 
-haphazardly at best.  \LaTeX{}, for its part, employs reasonable 
-sentence-boundary heuristics --- potentially overridden via 
+haphazardly at best.  \LaTeX{} employs reasonable 
+sentence-boundary heuristics --- which may be overridden via 
 macros when necessary --- but \LaTeX{} sentences are not expressed 
-in a systematic manner (e.g., via auxiliary files) for 
+in any systematic manner (e.g., via auxiliary files) for 
 any purposes other than visual spacing.  In \TEI{} and \BioC{}, individual 
 sentences \textit{can} be represented, but this is not 
-mandatory (thus \textatc{s} and \textatc{sentence} tags 
+mandatory (thus \textbf{s} and \textbf{sentence} tags 
 are available but not guaranteed to be present in any particular document).  
 By contrast, \PacTk{} is explicitly built around 
 sentence-level units, specifically a \q{topomorphic 
-sentence-level object model} (\TSOM{}).  When all regular 
+sentence-level object model} (\TSOM{}): when all regular 
 text in a natural-language document is explicitly 
-contextualized in delineated sentence objects, many 
-editing, indexing, and user-interface tasks become more tractable 
+contextualized in a delineated sentence object, many 
+editing, indexing, and user-interface tasks become feasible 
 (as outlined in the next section).}
 
 \p{In contrast to the other formats mentioned here, 
@@ -665,7 +521,6 @@ annotations and comment-boxes, etc.).  Query and traversal
 protocols modeled via \XQuery{}, \DOM{}, and so on become 
 expressed by object methods and operators exposed to 
 \Cpp{} code, for example (\PacTk{} is thus \q{topomorphic} 
---- literally meaning \q{shape of place} --- 
 in the sense that navigation between objects is determined 
 by structural properties of divergent document formats, 
 that manifest in competing notions of individuation for 
@@ -684,11 +539,11 @@ and the lack of standardized \XQuery{} and \DOM{}-style interfaces.}\clearpage{}
 \p{\lPacTk{}'s design also reflects trends in scientific research 
 and the emergence of interdisciplinary fields such as 
 social ecology, translational medicine, and medical humanities. 
-It is the view of \PacTk{}'s developers that 
-the value of new investigations often cannot be fully 
-expressed in single-disciplinary terms; nor does one individual 
+It is the viewpoint of \PacTk{}'s developers that 
+the value of new investigations cannot be fully 
+expressed in single-disciplinary terms, nor does one individual 
 publication mark the end of a well-conceived research 
-project.  Instead, any single publications are milestones in the 
+project.  Instead, publications are milestones in the 
 unfolding of projects that, in the best case, 
 progress to socially-beneficial deployments.  
 More so than in the past, research projects 
@@ -702,22 +557,22 @@ authors build multi-faceted presentations
 covering data, code, and foundations for practical 
 applications, which authors could build upon 
 for future research work, funding, translational 
-implementation, and then implementational feedback.}  
+implementation, and implementational feedback.}  
 
 \p{The remainder of this document will discuss how 
 \PacTk{} can streamline editing, indexing, and document-preparation 
 tasks, as well as improve User Experience for human readers.  
 Later sections will also address how \PacTk{} may contribute 
-to broader projects wherein text documents are published alongside 
-data sets and/or multimedia presentations (Research Objects/Compendia).  Overall, 
+to broader projects where text documents are published alongside 
+data sets and/or multimedia presentations.  Overall, 
 \PacTk{} presents a unified model and coding interface for 
 text queries operating in diverse contexts, including 
 \PDF{} viewers, search engines, document-preparation code, 
 and editing/typesetting.
-Software employing \PacTk{} to navigate through 
+Similarly, software employing \PacTk{} to navigate through 
 document objects can leverage interop metadata across multiple 
 formats --- such as \XML{} elements and \PDF{} page 
-coordinates --- that are typically unavailable in other publishing tools.}
+coordinates --- that is typically unavailable in other publishing tools.}
 
 
 \vspace*{20pt}
@@ -751,7 +606,7 @@ to disambiguate visibly similar but logically distinct characters/glyphs
 
 \p{In source files, \GTagML{} is loosely based on Markdown, so 
 authors familiar with Markdown from more informal contexts 
-(social networking sites, chat rooms, \GIT{} documentation, etc.) 
+(e.g., social media, chat rooms, \GIT{} documentation, etc.) 
 will recognize many of the \GTagML{} styling commands.  
 \lGTagML{} sources might be provided by authors directly, or 
 derived from author inputs by digital copy editors or 
@@ -780,11 +635,19 @@ generators (like \LaTeX{}), but with a common
 facets may be integrated (for example, \XML{} elements 
 mapped to corresponding \PDF{} page coordinates).  
 In effect, \PacTk{} serves to triangulate human-visible 
-presentations (such as \PDF{}) with behind-the-scenes 
+presentations (like \PDF{}) with behind-the-scenes 
 \JATS{}-style formats.  Analyses that are currently 
 implemented against \XML{} structures may be more 
 efficiently coded via \PacTk{} objects, with concrete 
 benefits in areas such as copy-editing and indexing.}
+
+
+
+\begin{figure}[ht]
+\includegraphics[scale=0.8, trim=0 18pt 0 0, clip]{fin/tox.png}
+\caption{Mapping PDF pages to SVG views for improved annotation support}
+\label{fig:ss1}
+\end{figure}
 
 
 \vspace*{-2pt}
@@ -805,7 +668,7 @@ useful to restrict the scope of text searches to
 content with specific presentation characteristics (italics, alternative 
 typefaces, citations), discursive roles (inline/block quotes, 
 footnote text, section/subsection titles), or semantic 
-significance (acronyms, annotations, proper names and place names).  
+significance (acronyms, annotations, proper/place names).  
 
 \pseudoIndent{} Implementing such filters via \XPath{}/tag 
 restrictions can be inaccurate, because relevant filter 
@@ -828,14 +691,15 @@ for a wide variety of layout and discursive contexts.
 Such queries could then be used for editing 
 tasks that should be localized to specific contexts, 
 or where a user wants to find a specific piece of 
-text known to have a given context.\clearpage{}
+text known to have a given context.
+
 
 \item[Sentence-Level Queries]  Siting queries relative 
 to sentence boundaries can improve 
 precision and express query rationales more succinctly 
 (when compared to paragraph-based organization).
 For instance, the proper punctuation around a word or 
-phrase is often determined by whether that content appears 
+phrase often depends on whether that content appears 
 at the beginning, middle, or end of a sentence.  
 Some query expressions might similarly depend on 
 stipulating that two or more search targets 
@@ -849,7 +713,7 @@ unambiguously notated via input sources, rather
 than detected approximatively using Natural Language 
 Processing).  \lPacTk{} likewise models 
 \q{topomorphic} navigational 
-relations among sentences, such as between 
+relations between sentences, such as between 
 adjacent siblings of parent objects (typically 
 paragraphs) and also nestings wherein a multi-sentence 
 footnote, for example, occurs in a parent-sentence 
@@ -864,29 +728,17 @@ a bitmapped page-image is the primary medium through
 which users view single publication pages.  Such graphics are 
 typically rendered by \PDF{} viewers, but other 
 techniques might be used, such as converting page images 
-to \SVG{} (illustrated here in Figure~\Atref{fig:ss1}, 
+to \SVG{} (illustrated here in Figure~\ref{fig:ss1}, 
 where the relevant component is an embedded web engine 
 that communicates with a \PDF{} viewer by 
-\textatc{QWebChannel}; so \SVG{} events are 
+\textbf{QWebChannel}; so \SVG{} events are 
 processed by \Cpp{} code directly, having only a 
 minimal \JavaScript{} routing layer).  Failure to 
 interoperate these images with structured text formats 
 is a significant hindrance to efficient document 
-preparation and editing.\enlargethispage{2em}
-
-
-\begin{figure}[h!]
-\figcolor
-\vspace*{1pt}
-\includegraphics[scale=0.8, trim=0 18pt 0 0, clip]{fin/tox.png}
-\caption{Mapping PDF pages to SVG views for improved annotation support}
-\label{fig:ss1}
-\end{figure}
-
-\clearpage{}
+preparation and editing.
 
 \begin{figure}[ht]
-\figcolor
 \includegraphics[scale=0.45]{fin/ling.png}
 \caption{Enhanced GUI capabilities enabled by machine-readable text encoding}
 \label{fig:ss2}
@@ -902,14 +754,14 @@ preparation and editing.\enlargethispage{2em}
 \pseudoIndent{} By design, \PacTk{} supports post-processing 
 algorithms within pipelines whose formats can generate 
 \PDF{}-coordinate metadata, such as \LaTeX{} 
-\textatc{pgfsavepos} (and auxiliary \textatc{write}) commands.  
+\textbf{pgfsavepos} (and auxiliary \textbf{write}) commands.  
 Page coordinates for significant discursive locations 
 (e.g., sentence and paragraph boundaries, footnote markers, 
 keyphrases and named entities, citations) can thereby be 
 exposed to \PDF{} viewers which could accordingly implement 
 novel front-end features such as overlays, context menus, 
 and dialog windows positioned nearby relevant content 
-(Figure~\Atref{fig:ss2}).  
+(Figure~\ref{fig:ss2}).  
 For example, a context menu action may include copying the 
 full text of a current sentence to clipboard, based on the 
 screen position where the menu is activated; semitransparent 
@@ -928,12 +780,10 @@ introduced by copy editors or typesetters.  Many modifications considered
 during the editing process follow common patterns, such as 
 proper use of commas around subordinate clauses, or correct formatting 
 of ellipses and bracketed content within inline/block quotes.  Assuming 
-that editors consistently include notations for recurring patterns 
-(\textitc{insert/delete comma}, \textitc{respell word}, etc.), 
+that editors consistently include notations for recurring patterns, 
 \PacTk{} code can filter queries specifically to \PDF{} comment 
 boxes which indicate a specific editing category.  Index codes within 
-\PDF{} comments (automatically inserted by compliant software) 
-may likewise indicate which individual sentence 
+\PDF{} comments may likewise indicate which individual sentence 
 surrounds the annotation, so that the \PDF{} view could be cross-referenced 
 against input sources, which facilitates review and processing 
 of manuscript changes.
@@ -944,8 +794,7 @@ such as \XML{} custom character entities and \LaTeX{} macros.
 Many familiar textual components --- ellipses, 
 \textit{m-} and \textit{n-}dashes, 
 quotation and footnote marks, etc. --- are typically represented 
-in text encoding not via similar visible characters (like two individual dashes 
-or three periods in sequence) but rather through standardized 
+not via their visible characters but rather through standardized 
 codes or glyphs.  The problem is that systematic mappings 
 are lacking when mixing different file types (e.g., \LaTeX{} and 
 \XML{}, such as \JATS{} or \BITS{}) in a single workflow.  
@@ -959,7 +808,7 @@ generally be opaque to human users in contexts such as
 comment boxes and copy-paste between software applications.  
 \lPacTk{} therefore supports declarations for how 
 custom entities/macros and Unicode Private Use Plane 
-(or Area) codepoints 
+(or area) codepoints 
 should be rendered in plain-text contexts as well as 
 structured formats such as \XML{} and \LaTeX{}.        
  
@@ -978,23 +827,22 @@ structured formats such as \XML{} and \LaTeX{}.
 \p{Often users may prefer to initiate or review edits through \PDF{} files 
 directly, but in other cases plain-text files might be appropriate 
 instead, without \GUI{} overhead.  With \PacTk{}, for example, 
-authors could receive a pair of text files (or of collections of files 
-indexed, for instance, by chapter) summarizing discrepancies between 
+authors could receive a pair of text files (or collections of files 
+indexed, for instance, by chapter) summarizing changes between 
 two manuscript versions.  Via sentence-level filtering, 
 such files could be organized such that only sentences that 
 differ from one version to the next are included, with each 
 sentence listed separately.  This may be a more convenient 
 setup for authors to review changes than working through 
-typical \GUI{}s (structured encoding is 
+typical \GUI{}s (structured text encoding is 
 important because it ensures that version comparisons 
-show valid differences, rather than just anomalies 
-due to divergent font/character styles and line/page breaks or layout).
-Such breakdown is only possible 
-when the text encoding systematically identifies individual  
+show valid differences, rather than anomalies 
+due to inconsistent characters and symbolization).
+Of course, such breakdown is only possible 
+when the text encoding systematically identifies individual 
 sentences, as with \PacTk{}'s \TSOM{} object model.}
 
 \begin{figure}[b!]
-\figcolor
 \includegraphics[scale=0.4]{fin/ie.png}
 \caption{GUI functionality for compiling and curating indexes}
 \label{fig:ss3}
@@ -1003,7 +851,6 @@ sentences, as with \PacTk{}'s \TSOM{} object model.}
 
 
 \begin{figure}[t]
-\figcolor
 \includegraphics[scale=0.83, trim=0 4.1cm 0 0, clip]{fin/single.png}
 \caption{An index entry dialog window (and context menu for single and meta-index views)}
 \label{fig:ss4}
@@ -1030,8 +877,8 @@ manuscript.  Alternatively, authors could read through a
 document and identify when a particular paragraph mentions a 
 named entity suitable for indexing.  Depending 
 on representations or tag sets used (e.g., the 
-\JATS{} \textatc{string-name} element) annotated spans 
-and citations (particularly titles and author names) may also precipitate the provisional heading-list 
+\JATS{} \textbf{string-name} element) annotated spans 
+and citations may also form the provisional heading-list 
 for an index.}
 
 
@@ -1043,8 +890,8 @@ computational tractability in themselves.  For example, the most
 popular desktop \GUI{} framework are the \Qt{} \Cpp{} libraries, 
 which are the basis of cross-platform \PDF{} viewers such as 
 Poppler and \XPDF{}.  \lPacTk{} can seamlessly interoperate 
-with \Qt{}, exposing sentence texts as \textatc{QString} objects and 
-expressing \GTagML{} parsing grammars as \textatc{QRegularExpression} 
+with \Qt{}, exposing sentence texts as \textbf{QString} objects and 
+expressing \GTagML{} parsing grammars as \textbf{QRegularExpression} 
 instances, paired with lambda callbacks activated by the first matching 
 rule (relative to the current parse-position).  More precisely, 
 \GTagML{} has context-sensitive grammars that can include or 
@@ -1077,8 +924,8 @@ or vice-versa), or a subset (e.g., last name only),
 or associated concepts with different language entirely 
 (e.g., \q{The White House} in lieu of a president's name). 
 Concepts can also be grouped into semantic \q{clusters} 
-(consider \textitc{ranson}, \textitc{extortion}, \textitc{bribery}, 
-\textitc{corruption}, \textitc{influence peddling}, \textitc{lobbying}), 
+(consider \textit{ranson}, \textit{extortion}, \textit{bribery}, 
+\textit{corruption}, \textit{influence peddling}, \textit{lobbying}), 
 with internal similarity-weight matrices.  In the 
 presence of a particular index entry, front-end displays can 
 give users options to fine-tune which match strategies are 
@@ -1105,12 +952,12 @@ the dropdown point of a context menu).
 
 \item[Index-Building GUI Components]  Index entries are multi-faceted 
 objects that naturally lend themselves to dedicated front-end displays, 
-such as dialog windows (Figures~\Atref{fig:ss3}~and~\Atref{fig:ss4}).  
+such as dialog windows (Figures~\ref{fig:ss3}~and~\ref{fig:ss4}).  
 For example, entries typically include a heading 
 label and then one or more locators (e.g., paragraph ids, replaced 
 eventually with page numbers), 
 then possible subheadings with their own 
-locators, plus \q{redirectors} (\textitc{see} or \textitc{see also}) applied 
+locators, plus \q{redirectors} (\textit{see} or \textit{see also}) applied 
 either to overall entries or to subheadings.  This represents a lot 
 of information to keep track of for each entry, and indexes can include 
 hundreds of entries.  Although indexes are eventually shown 
@@ -1138,7 +985,7 @@ In effect, index metadata may declare that all locators
 modeled as relevant for their specific entry are also relevant 
 to some list of associated concepts, such that whenever those 
 latter concepts are targeted in a query the explicit 
-locators are included among the query results (Figure~\Atref{fig:m2m}).   
+locators are included among the query results (Figure~\ref{fig:m2m}).   
 
 \vspace{-3pt}
 
@@ -1153,13 +1000,12 @@ in a given book series, journal %{\textcolor{white}X}\vspace*{2pt}
 collection, or document repository.  Such meta-indexes can support searches 
 that are more precise and granular than conventional
 search-engine technologies based on occurrence vectors 
-and stemming/lemmatization alone (Figure~\Atref{fig:ss5}).\clearpage
+and stemming/lemmatization alone (Figure~\ref{fig:ss5}).\clearpage
 
 %\vspace*{-2pt}{\tiny XXXXXXX}
 
 
 \begin{figure}[h!]
-\figcolor
 \includegraphics[scale=0.83]{fin/meta.png}
 \caption{Dialog window for local and meta-index searches}
 \label{fig:ss5}
@@ -1191,12 +1037,12 @@ consult search areas that are restricted in scope --- say, a single
 University Press, book series, repository (PubMed Central, for example), 
 or journal collection.  Publishers who curate meta-indexes 
 for mid-size collections can support much more detailed 
-evaluations per document: a book series might have several 
+evaluations per document; a book series might have several 
 dozen titles, not tens of thousands.  \lPacTk{} supports 
 construction of corpora query languages that express 
 granular searches over multiple documents, with 
 similar logic to filtered/contextualized text searches 
-in a single \PDF{} document (Figures~\Atref{fig:ss6}~and~\Atref{fig:ss7}).
+in a single \PDF{} document (Figures~\ref{fig:ss6}~and~\ref{fig:ss7}).
 Even where queries are executed via conventional 
 vector-database methods, \PacTk{} allows authors or digital editors 
 to exercise control over how word-occurrence lists are compiled.  
@@ -1212,8 +1058,8 @@ through their default algorithms.
 manuscripts/documents in formats like \PDF{} --- this technology 
 could potentially be used in other environments.  For instance, 
 in clinical trials and point-of-care software the fundamental assets 
-are health/medical records; but search features, 
-as well as plugins and multimedia (discussed plugins),
+are Electronic Health Records; but search features, 
+as well as plugins and multimedia (discussed next),
 might be extended to include resources such as diagnostic 
 images, cytometry gating, assay graphics, 
 tumorogenesis simulations, etc.  Publishing-related plugin architecture 
@@ -1221,7 +1067,6 @@ tumorogenesis simulations, etc.  Publishing-related plugin architecture
 adapted and resued for these \EHR{} contexts.\clearpage
 
 \begin{figure}[h!]
-\figcolor
 \includegraphics[scale=0.66, trim=8.4cm 0 0 1cm, clip]{fin/pisa.png}
 \caption{Configuring default back-end queries}
 \label{fig:ss6}
@@ -1235,23 +1080,23 @@ adapted and resued for these \EHR{} contexts.\clearpage
 
 \item[Accurate Search Portals]  For users accessing search functionality 
 through online \HTML{} portals, extra programming is necessary to 
-properly show results derived from \PDF{} documents.  Figure~\Atref{fig:ss10} 
-(second to last page)  
+properly show results derived from \PDF{} documents.  Figure \ref{fig:ss10} 
+(last page)  
 shows two excerpts taken from publications included among 
-one publisher's lists of subconcepts under the \q{\textemph{engineering}} heading.  
+one publisher's lists of subconcepts under the \q{engineering} heading.  
 Both examples show irregular line spacing and improper rendering 
 of text with distinct font-styles.  It is clear that the 
 intermediate files, from which \PDF{} was produced as expected, 
 were less successful in the context of \HTML{} generation 
 (an accurate \PDF{} is displayed at the graphics bottom).  
 These pages show a weakness in \JATS{}-style encodings 
-that can be alleviated by a sentence-data model where 
+that can be alleviated by a sentence-object model where 
 styling objects have both \LaTeX{} and \HTML{} output content.     
 
 \pseudoIndent{} Another source of transcription errors is 
 character strings which are not ordinary language and therefore 
 require special encoding rules.  The book on the 
-left in Figure \Atref{fig:ss10}\footnote{\hspace*{4pt}Amy Neustein 
+left in the Figure \ref{fig:ss10}\footnote{\hspace*{4pt}Amy Neustein 
 and Nathaniel Christen, \textit{Innovative Data Integration and Conceptual Space Modeling for COVID, Cancer, and Cardiac Care} 
 (Elsevier, 2022).} was a survey of biomedical software engineering in
 several domains, including text mining, radiomics, and immuno-oncology.  
@@ -1298,14 +1143,14 @@ for index preparation, although numeric locators still appear
 in the human-visible digital (and, of course, printed) versions.  
 For best accuracy, it is worthwhile to partition paragraphs 
 that contain block quotes, enumerations, or other subdivisions 
-and assign unique ids to each part (see Figure~\Atref{fig:xNC}).  
+and assign unique ids to each part (see Figure~\ref{fig:xNC}).  
 For example, segments of text before and after a block quote 
 (plus the quote itself) can have distinct ids, even if they 
-are each part of the same larger, encompassing paragraph.
+are part of the same larger, encompassing paragraph.
 
 \pseudoIndent{} Given this precision, digital indexes even in \PDF{} documents 
 can benefit from paragraph ids.  The right-hand part of 
-Figure~\Atref{fig:xNC} shows an index with color-coding to 
+Figure~\ref{fig:xNC} shows an index with color-coding to 
 indicate such details as subdivisions (e.g., block quotes) 
 and paragraphs split between two pages.  In the 
 depicted document, all locators are clickable and 
@@ -1319,11 +1164,11 @@ publication; from any one digital index users could initiate
 searches for matching entries in other books or articles.
 
 \pseudoIndent{} To support such functionality, text encoding should describe 
-structured objects (such as the \textatc{date} and \textatc{string-name} tags in 
-\JATS{}) wherever segments follow canonical notations beyond 
+structured objects (such as \textbf{date} and \textbf{string-name} tags in 
+\JATS{}) wherever segments follow canonical encodings beyond 
 just natural language (e.g., citations, references, bibliographic 
-entries, and quoting/transcription conventions).  Also,  
-meta-indexes via \PacTk{} can enforce consistent encoding for special characters 
+entries, and quoting/transcription conventions).  Also, via \PacTk{} 
+meta-indexes can enforce consistent encoding for special characters 
 (e.g., quote marks) and structured segments (e.g., proper-name initials) 
 in cases where different style guides have inconsistent recommendations 
 (for example, whether or not to include spaces between consecutive initials).  
@@ -1334,7 +1179,6 @@ as well as cause errors within manuscripts internally.
 \enlargethispage{4em}
      
 \begin{figure}[h!]
-\figcolor
 \hspace{-5em}\includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/xNC.png}
 \caption{Subdivision formats for Paragraph IDs}
 \label{fig:xNC}
@@ -1349,7 +1193,7 @@ text documents.  For example, the
 Cancer Biomedical Informatics Grid (\CaBIG{}) 
 project is an oncology research network 
 across multiple continents; institutions can join 
-the network if they adhere to \q{\textemph{Vocabularies and Common Data Elements}} 
+the network if they adhere to \q{Vocabularies and Common Data Elements} 
 (\VCDE{}) standards applying to \API{}s, metadata, provenance 
 declarations, execution models, and so on, to 
 support cross-network interoperability 
@@ -1361,22 +1205,18 @@ a structured research network such as \CaBIG{}
 Project) optimally includes aligning each 
 index with semantic protocols.  For example, index 
 entries can be linked to \VCDE{} terms wherever 
-possible.  \lGUI{} indexing can likewise address 
-problems where users struggle to enact desired functionality because 
-they are seeing outdated 
-submenu instructions. 
-Or, text- and index-search \API{}s 
-may be subsumed under a grid's \API{} 
-policies; the shared versioning system could be 
+possible.  Likewise, text- and index-search \API{}s 
+can be subsumed under the research grid \API{} 
+policies; the shared versioning system can be 
 applied to iterations of a manuscript; and 
-metadata might cross-reference text publications 
+and metadata can cross-reference text publications 
 with other submissions by the same (or affiliated) authors.  
 
 \pseudoIndent{}  Similarly, according to standards such as 
 \FAIR{}data, publishing findable, accessible, 
 interoperable, and reusable data sets goes beyond 
 just making raw data available on an open-access platform.  
-For instance, \FAIR{}data defines documentation and metadata 
+In addition, \FAIR{}data defines documentation and metadata 
 protocols, so that each statistical parameter (for example) 
 is described with range, measurement, distribution, and 
 similar analytic information. 
@@ -1391,10 +1231,10 @@ graphics that are pedagogically analogous
 to image series or videos.  Such computer code 
 thereby connects to publications with a 
 similar rationale as videos, digital maps, and 
-other highly-visual content types.  As an example, 
+other highly-visual content types.  For instance, 
 analysis of habitat regrowth after a forest 
 fire can be based on footage of actual locations 
-\textit{or} on agent-oriented simulations that provide 
+or of agent-oriented simulations that provide 
 mathematical models for stages of regeneration 
 (which plant and animal species become reestablished 
 at which point in time).  Indexing and cross-referencing 
@@ -1405,14 +1245,14 @@ standards apply to the familiar elements
 of computer code --- procedures, classes, data types, 
 inheritance/containment hierarchies, pre- and post-conditions, 
 etc.\@ --- but in a \q{research grid} context graphical displays 
-often also function as assets in their own right and can 
+often function as assets in their own right and can 
 be annotated and indexed as such.  A \ThreeD{} simulation, 
 for instance, functions essentially as a video whose 
 specific frames evolve algorithmically as a product 
 of parameters and initial conditions that may 
 be modified for each run (indeed, videos could be 
 taken directly from dynamically evolving \GUI{} windows; 
-see Figure~\Atref{fig:pcbi}).
+see Figure~\ref{fig:pcbi}).
   
 \pseudoIndent{}  Disciplines such as systems biology, 
 environmental science, quantum cosmology, and neurophysics 
@@ -1446,8 +1286,7 @@ operations, authentication, component capabilities, etc.).
 %\setlength{\abovecaptionskip}{-5pt}
 
 \begin{figure}[h!]
-\figcolor
-\hspace{-25pt}\includegraphics[scale=.95, trim=0 4.34cm 0 0, clip]{x/m2m.png}
+\hspace{-25pt}\includegraphics[scale=.95, trim=0 4cm 0 0, clip]{x/m2m.png}
 \caption{Index Search in a PDF Front-End Context}
 \label{fig:m2m}
 \end{figure}
@@ -1459,497 +1298,18 @@ operations, authentication, component capabilities, etc.).
 \end{description}
 }
 
-\vspace*{-49pt}
-
-\newcommand{\shortenp}{\vspace*{-5pt}\hspace*{11pt}}
-
-\sstitle{%\hspace*{-50pt}
-PacTk in Comparison to Other Formats}
-
-\vspace*{11pt}
-
-\p{Here are several points of contrast between \PacTk{} and other text-representation 
-formats that are currently popular.  \lPacTk{} does not necessarily 
-compete with these alternatives, because \TSOM{} data can be converted 
-to other representations as needed.  However, it is useful to 
-describe the strengths and weaknesses of some alternatives as a point of contrast.
-
-%\begin{description}
-
-%\item[JATS and BITS]  
-\p{\textbf{JATS}: The \q{Journal Archiving and Interchange Tag Suite} is currently 
-the format that is closest to a \textit{de facto} standard for 
-academic publishing (\BITS{}, or Book Interchange Tag Suite, is an extension 
-of \JATS{} to cover full-length books rather than individual articles).  
-\lJATS{} is an \XML{} format with over 300 tags having standardized 
-semantics and inter-relationships.  Many of these are for metadata related 
-to publications' provenance, authors, dates of publication, and so forth, 
-but some tags also define textual content in a structured manner.  
-Because \JATS{} is readily customizable, different publishers 
-can add on their own extensions and tools to the basic tag set.  As a result, there 
-are often inconsistencies in how textual content is represented by 
-different publishers even if they are both using \JATS{} overall.  Moreover, 
-some publishers employ their own private (and/or legacy) \XML{} formats 
-for internal processing but map their files to \JATS{} or \BITS{} for 
-sharing with other organizations.  In totality, then, publishers' 
-adopting \JATS{} does not automatically alleviate typographic or content 
-anomalies which can delay efficient document preparation.  \lJATS{} by 
-itself does not spare authors the work of carefully proofing intermediate 
-manuscript versions.}
-
-\p{{\shortenp}At the same time, although there 
-exists a \JATS{} \q{Article Authoring Model} for those 
-writers who prefer to submit \JATS{} manuscripts directly, in most 
-cases documents are delivered to publishers in formats such as 
-Microsoft Word or \LaTeX{} and must then be converted to \JATS{} by 
-copy-editors or others working internally on the publisher's side.
-This process cannot be fully automated, and many kinds of errors 
-may be introduced at this stage.  For example, numerous character 
-sequences have to be modeled in \XML{} via character entities 
-or specialized tags, which among input sources may instead 
-be present as Word symbols or \LaTeX{} macros.  
-Unless manually corrected, these transcription errors 
-can produce subtle flaws that degrade the quality 
-of final publications, due to inconsistent 
-spacing (around quotes, parentheses, ellipses, long dashes, etc.), 
-glyphs (e.g., straight versus angled quote delimiters and apostrophes), 
-citations, and other text-discourse conventions.}
-
-%\pseudoIndent{} 
-\p{{\shortenp}One difference between \PacTk{} and \JATS{} is that for \PacTk{} 
-all textual elements are \Cpp{} objects, rather than tags or character 
-entities.  Another important contrast is that \TSOM{} focuses on representations 
-at the sentence scale, whereas most \XML{} encodings are oriented 
-to paragraphs instead.  In \PacTk{}, such materials as quotes, 
-footnotes, citations, discipline-specific symbols, and content set off 
-via parentheses or em-dashes, are treated as objects either nested 
-inside sentences or as containers holding one or more sentences 
-in sequence (in some cases both).  Discursive structures such as 
-citations, quotations (with ellipsis and emendation protocols), 
-and terms or proper names matching index headings, are modeled 
-as class-instances algorithmically isolated from surrounding 
-text, more tractably than \XML{} conventions via tags or character entities.  
-This forestalls many transcription errors that result from 
-treating objects or delimiters with special functional 
-roles (in quote, citation, or formula-notation contexts) as 
-ordinary symbols or characters (such that \PacTk{} is more computationally reliable).}
-       
-
-%\item[BioC and TEI]  
-\p{\textbf{BioC} and \textbf{TEI}: these are two \XML{} languages that are more 
-granular than \JATS{}/\BITS{} in that they support sentence-level 
-tags (although, as mentioned on page~~\Athref{page.1}{1}, such tags are optional 
-and might be excluded from any encoded documents).  Although \TEI{} originated in 
-response to requirements for humanities scholarship (e.g., preservation 
-of historical documents) it has more recently been adopted 
-in the natural sciences for tasks such as text mining 
-(as in the \ISTEX{}, or \q{Service infrastructure for text mining,} project); 
-\BioC{}, meanwhile, is predominantly focused on biology and medicine.  
-Both \BioC{} and \TEI{} only partially 
-model the discursive constructions (quotes, footnotes, citations, etc.) 
-that are the source of many transcription errors just mentioned, 
-and also hallmarks of well-structured academic writing.  
-As a result, they have limited value as internal representations 
-for scientific manuscripts, although they serve well as  
-interchange formats for environments such as PubMed.  
-As pure-\XML{} solutions, \BioC{} and \TEI{} need to be 
-parsed into live objects of languages such as \Cpp{} 
-in order for detailed processing to be performed.  
-For this reason, these formats are not direct alternatives 
-to object-based representations such as \TSOM{}.} 
-
-%\item[JSON]  
-\p{\textbf{JSON}: Text-mining corpora %such as CORD-19 
-frquently utilize \JSON{} (JavaScript 
-Object Notation) formats such as \StwoORC{} (from \q{Semantic Scholar Open Research Corpus}) 
-primarily to encode 
-written documents for text-mining methods based on Natural Language Processing.  
-Given this focus, typical \JSON{} formats do not rigorously 
-model the \textit{discursive} (as opposed to purely linguistic) 
-facets which are important to academic writing, such as 
-quoting and citation protocols.  This is one reason why \JSON{} 
-is not currently a feasible option for publishing workflows.}
-
-%\pseudoIndent{} 
-\p{{\shortenp}Also, as with \XML{}, \JSON{} is only computationally 
-tractable when first converted into programmable 
-(canonically, Object-Oriented) data structures.  
-These will necessarily be much more complex topomorphically 
-than \JSON{}'s object/array meta-model; consequently, code mapping 
-to and from \JSON{} encodings will be more complex 
-and hard-to-maintain than direct \TSOM{} serialization.}
-
-%\item[Markdown]  
-\p{\textbf{Markdown}: Dating to 2004, Markdown is a popular 
-format for material that needs only basic styling, such as 
-headers, italics, underline, boldface, code excerpts, hyperlinks, 
-and bulleted/enumerated lists.  Markdown is widely used 
-in social media, collaborative editing (including \q{wikis}), 
-code documentation, and technology-oriented websites such as 
-GitHub and Stack Overflow.}
-
-%\pseudoIndent{} 
-\p{{\shortenp}In itself, Markdown does not have sufficient 
-detail to be useful as a publisher's internal text-encoding 
-language.  On the other hand, for many documents the 
-authors' own contributions need not necessarily 
-take on presentation details outside Markdown's scope, 
-so it is reasonable for publishers to accept Markdown 
-as a submission format.  Because social media and 
-tech sites are widely used, many authors have 
-some knowledge of Markdown and, by extension, are 
-not locked in to \WYSIWYG{} (What You See Is What You Get) 
-word processors.  Non-\WYSIWYG{} input sources are, 
-in general, less error-prone than alternatives such as Microsoft Word.}
-
-\enlargethispage{1em}
-\p{{\shortenp}For these reasons, although offering many more 
-features than conventional Markdown, \GTagML{} is based on 
-Markdown and designed to have a smooth learning curve 
-for Markdown users.}
-
-\clearpage{}
-
-\vspace*{-23pt}
-
-\p{\textbf{LaTeX}: Notwithstanding that \XML{}-based technologies 
-(including \XSLFO{}, which employs style-sheet transforms to 
-convert formats such as \JATS{} to final publications) 
-are becoming increasingly popular for generating 
-\PDF{}s, \LaTeX{} remains a powerful tool for this 
-specific part of the workflow.  It appears that 
-\LaTeX{} offers authors and editors more fine-grained 
-control over the final appearance of a publication, 
-with the ability to manually override anomalies 
-such as widowed or orphaned words and lines; to 
-support details such as margin-notes, shipout 
-overlays, and the use of sophisticated graphics 
-for non-font symbols; and in general 
-to perfect manuscripts according to the 
-author's vision.  As such, \PacTk{} supports \LaTeX{} generation and 
-arbitrary \LaTeX{} code may be embedded 
-in \PacTk{} input sources (without 
-affecting the extraction of \TSOM{}-modeled language/discourse 
-content proper).  However, \LaTeX{} is 
-problematic for \textit{internal} text representation.  
-While some discursive elements may be 
-represented as \LaTeX{} commands or macros, 
-extracting these from presentation or 
-utility code is a non-trivial process.}
-
-\vspace{-2pt}
-
-\sstitle{%\hspace*{-50pt}
-Examples of Analyses Requiring Sentence Objects}
-
-\vspace{10pt}
-
-The following cases may help to clarify why markup formats 
---- when they are used not just for the interchange of text or metadata, but 
-as intrinsic components of publishing workflows --- can be 
-difficult to use for certain kinds of search and content-management 
-requirements.  These are situations where computing 
-over text/discourse elements represented as objects in computer 
-memory is more efficient than traversing \DOM{} nodes 
-and hierarchies.  As such, a framework such as \TSOM{}, 
-where sentences and other discursive units are already 
-converted to code objects, is more convenient 
-than (for example) \XML{} files where nodes must be 
-mapped to objects as a preliminary step.
-
-
-%\begin{description}
-
-%\item[Categorizing Inner Documents via Annotations]  
-\p{\textbf{Categorizing Inner Documents via Annotations}:
-You are working with a 
-large manuscript assembled from many smaller documents.  Their authors 
-have contributed \PDF{} comment boxes associated with specific sentences, 
-paragraphs, or sections of their text, and have employed a \q{handle} 
-syntax to mark themes relevant to these content units, according to a 
-standardized vocabulary.  You goal is to scan each of the comment boxes 
-so as to identify all inner documents which address specific themes.  
-That is, you want to build a mapping from theme labels 
-to lists of inner documents (or chapters, etc.) which could be 
-pressed into service after splitting the larger manuscript into smaller parts;  
-or utilized to assemble glossaries, enhanced \ToC{} pages, web navigators, and so forth.}
-
-%\psuedoIndent{} 
-\p{{\shortenp}To complete this task it is necessary to execute procedures that 
-can obtain the content of all \PDF{} annotations, indexed by 
-page number.  One would then search each annotation-text for 
-every characteristic handles that indicates relevance vis-\`a-vis individual themes, building 
-up an \textatc{std::map} style data structure whose keys 
-are theme objects/labels.  Following the comment box page number, 
-one could moreover identify the chapter or inner document including 
-that page, to serve as a value set for the aforementioned map (depending 
-on the set up, more granular locations such as paragraph ids 
-may be available as well).  On the basis of that map data structure, 
-the algorithms could generate additional code (e.g., for a glossary) 
-or manipulate secondary files: suppose, for instance, 
-that one goal is to split the manuscript into one file 
-per chapter, or per inner document.  The algorithm would 
-then traverse the map structure to build a second one 
-whose values are file names (while creating those files 
-as necessary).  These coding requirements --- working with 
-object-based data structures and local filesystems --- call 
-for programming in full-fledged languages such as \Cpp{} rather 
-than queries or \XML{} transforms.}
-
-%\psuedoIndent{}  
-\p{{\shortenp}As a related use case, consider how comment boxes 
-might be leveraged to construct a printed index (or also, secondarily, 
-a search-engine/vector-database sort of index) with attention to 
-rhetorical details.  When the text of a manuscript provides a 
-citation or names a person or theory, authors could be 
-encouraged --- either directly through input sources or via \PDF{} 
-annotations --- to summarize positions taken vis-\`a-vis 
-that subject matter (e.g., endorse, critique, or neutral/evaluative).  
-When the sources or comments are analyzed to extract those 
-notations, the printed index could be extended by 
-incorporating that material into index entries.  For example, 
-instead of an undifferentiated heading locating \q{Keynesian economics,} 
-the index could produce subheadings such as 
-\q{Keynesian economics, arguments for}; \q{Keynesian economics, arguments against}; 
-\q{Keynesian economics, mathematical models}; 
-\q{Keynesian economics, and macroeconomic theory} \makebox{and etc.}}
-
-%\item[Extracting Linguistics Annotations]  
-\p{\textbf{Extracting Linguistics Annotations}:
-You are working with a 
-linguistic article that contains a list of sample sentences/passages, 
-according to a common linguistics presentation style.  These 
-examples are intended to demonstrate specific claims (about 
-parsing structure, conceptualization, etc.) or to serve 
-as a basis for subsequent analysis.  Such samples --- which 
-might be obtained from written corpora, audio records, or simply 
-invented by the author to highlight specific linguistic topics 
---- are commonly used in this discipline and typeset in 
-formats that visually distinguish examples from primary 
-text.  Moreover, the samples are often printed with id numbers, 
-contextual comments, and sometimes special symbols representing 
-phonology, agglutination, word order, morphosyntactic patterns, syntactic categories, etc.}
- 
-%\psuedoIndent{}  
-\p{{\shortenp}Because this mode of presentation is so common, 
-researchers could benefit from a searchable repository of these examples, 
-as a special kind of language corpus.  That is, multiple linguistics 
-papers may be scanned for listed samples and each of those 
-examples extracted into a common format, to be included in a 
-multi-publication database.  Interested readers could then 
-browse the samples to find articles that address specific 
-syntactic or semantic themes, particularly if each sample 
-is classified according to the linguistic subject they 
-exemplify (or serve thereto as a basis for analysis).  Moreover, it is not uncommon 
-for the same case study 
-to be analyzed by multiple linguists, potentially creating 
-interesting contrasts in theories and paradigms.  
-The whole process would be accelerated if authors employ a 
-common format (e.g., distinct \XML{} tags) to notate the examples;  
-but the full extracting and database persistence logic 
-would need specialized programming.}
-
-%\item[Embedding a Publication Viewer in a Chemistry Application]  
-\p{\textbf{Embedding a Publication Viewer in a Chemistry Application}:
-You are 
-working with an article about biochemistry, and the text 
-includes discussions of compounds identified either by a common name 
-or a chemical formula.  The authors and/or editors have been 
-attentive to encode these special terms in a structured format 
-(e.g., special \XML{} tags) and have also added informative 
-suggestions via \PDF{} comments.  Your goal is to find all 
-chemical terms/formulae which can be associated with 
-molecular-structure files in formats such as \PDB{} 
-(Protein Data Bank), \MOL{}, \CML{} (Chemical Markup 
-Language), or similar standards.  Those files may then be opened 
-via science applications dedicated to 
-visualizing and analyzing chemical structures in three 
-dimensions (showing positions of atoms, atomic groups/arrangements, 
-bonding strength, sub- and inter-molecular 
-forces, and so forth).  A similar example might be a chemistry textbook, with custom classroom software.}
-
-%\pseudoIndent{}  
-\p{{\shortenp}For this kind of context, special programming is needed to extract 
-textual data about chemical names and formulae, 
-and potentially to search for molecular files via science 
-\API{}s.  Furthermore --- in the hopes of best leveraging \ThreeD{} visualization 
-capabilities --- the \PDF{} viewer has to interoperate 
-with science applications, either through a common message-passing 
-protocol or by embedding the entire \PDF{} code base itself as a 
-plugin or extension.  Ideally, one or more molecular visualization 
-applications themselves can be modified to work directly 
-with these special \PDF{} components, because --- once 
-\ThreeD{} files are loaded into the software --- the 
-specific chemical compound being studied, and its properties, 
-could be cross-referenced to locations in 
-the original research manuscript (or, analogously, the students' textbooks).}
-
-%\end{description}
-
-\vspace*{-1pt}
-
-\sstitle{%\hspace*{-50pt}
-PacTk in the Context of a ``Humanities Grid''}
-
-\vspace*{8pt}
-
-\p{Use cases for \PacTk{} in the context of scientific grid computing 
-will be discussed below, but one should observe that many 
-of the benefits inuring to research grids for physical science have analogs in 
-the social sciences and humanities as well.  Here are several use-case examples:
-
-%\begin{description}
-
-%\item[Research with Computational Requirements] 
-\p{\textbf{Research with Computational Requirements}:
-As with 
-natural science, a primary rationale for 
-Executable Research Objects is to package analytic code 
-that yields or supports conclusions presented 
-in a publication (or at least demonstrates 
-programming methods, assumptions, and algorithms 
-intrinsic to that analysis).  Fellow researchers 
-can then examine analyses in depth (and possibly 
-seek to reproduce conclusions).  Ideally, researchers could 
-rerun essentially the exact same code, perhaps 
-against new data sets or tweaking parameters to 
-examine the robustness/flexibility of theoretical 
-models.  Data transparency is also served, however, 
-when researchers obtain simplified versions 
-of the originary code for assessment and teaching.  
-Dissemination \textit{includes} but is not \textit{restricted to} replication.}
-
-%\pseudoIndent{}
-\p{{\shortenp} There are many branches of economics, 
-sociology, law, political science, linguistics, etc., that 
-work with empirical data sets and are therefore 
-subject to \FAIR{}data standards, so that raw 
-data should be published alongside analytic 
-code and (as applicable) statistical graphics.  To the degree 
-that communities of scholars across multiple 
-institutions jointly employ common protocols 
-and link their research into searchable 
-repositories, the end result becomes in 
-effect a \q{humanities grid.}  In the case of 
-linguistics, computational methods apply both to 
-Natural Language Processing (e.g.,  
-\LAPPS{} --- the
-\q{Language Applications Grid} --- and Europe's 
-\CLARIN{} infrastructure) 
-%which can aid in the analysis of syntactic, semantic, prosodic, and parsing 
-%structures) 
-and corpora curation/maintenance; in 
-both cases textual content is represented 
-in a structured manner suitable for annotation 
-metadata to track parts of speech, 
-dependency-grammar relations, lexical morphology, prosody, 
-vocal inflection, and enunciation stress patterns/meter.}
-
-%\item[Document Collections]
-\p{\textbf{Document Collections}: Preserving historical documents 
-is important in many fields, either because the documents 
-are themselves objects of study or as assets to scholarship 
-(e.g., the collected papers of an influential writer).  
-Archiving is more complex in this context than 
-vis-\`a-vis contemporary publications because 
-(for one thing) documents themselves --- as physical 
-objects --- are often tracked and curated 
-similarly to artistic or archaeological artifacts.  
-Also, digital twins to historic papers --- whether 
-as images, transcribed to text, or both --- typically 
-demand more detailed markup than manuscripts prepared 
-as digital resources to begin with (for instance, 
-transcription ambiguities are recorded, or 
-scribbled marginal notes notated alongside the 
-corresponding text).  This is a primary 
-rationale for \XML{} formats like \TEI{} 
-(which was originally based on the more 
-expressive \SGML{} standard) and concurrent-markup 
-languages like \TagML{}, both of which may be 
-subsumed into \TSOM{} objects.  Corpora of 
-linguistic/acoustic samples (recent or historic) 
-have similar requirements.}
-
-%\vspace*{-6pt}
-
-%\item[Interactive Graphics]
-\p{\textbf{Interactive Graphics}: Numerous use cases in humanities 
-scholarship involve interactive \GUI{}s displaying \TwoD{} or 
-\ThreeD{} graphics or multimedia.  Analogous to historical 
-documents, old photographs or videos often need 
-analysis and preservation, a process that frequently includes 
-picture or video annotations.  Actions such as showing/hiding 
-annotations, extracting video frames, navigating within image 
-series, or invoking image-processing algorithms, all 
-require \GUI{}s that not only show the relevant 
-media content but also have interactive capabilities.  
-Moreover, image analysis sometimes comes into play in fields within  
-cognitive science/phenomenology.  For example, 
-Computer Vision algorithms may emulate 
-or model the biological visual acuity of humans or animals.  
-In these cases, presentation tools can be especially 
-useful if they illustrate Computer Vision workflows 
-(perhaps showing individual stages in the transformation 
-of pixel-data) and then explain how such processes 
-might functionally or neurologically model phenomena within eyes and brains/minds.}
-
-%\vspace*{-6pt}
-%\item[Translational Science]
-\p{\textbf{Translational Science} Concerted efforts to \q{translate} 
-scientific research into interventions or policies that 
-benefit society --- medicine, public health, environmental wellness, 
-engineering, etc. --- usually must recognize cultural and community 
-factors alongside purely scientific ones.  Public health collaborations, 
-for instance, often depend on sociocultural and language experts 
-to work directly with local communities.  As translational science becomes 
-more systematized, we can expect research teams/labs to increasingly 
-include one or more individuals with a humanistic (in place of 
-or in addition to a scientific) background, focusing specifically on social impact.}
-
-%\pseudoIndent{}
-\p{{\shortenp}Meanwhile, data modeling, meta-science, and document preparation 
-arguably solicit modes of theory and technique that are typical of humanities 
-as much as natural science (the former tends to be more generalizing and 
-philosophical; while \q{hard} science frequently hones in on narrow research questions/experiments).  
-Written papers are still a major avenue for disseminating research, and herein 
-science becomes absorbed into discursive and rhetorical spaces primarily modeled 
-in the humanities.  \makebox{For instance, the book referenced on page\hspace{4pt}\Athref{page.10}{10}} weaves together 
-topics of law, ethnomethodology, and popular media; it endorses certain 
-theories for family courts and critiques others.  These rhetorical patterns 
-could, in principle, be incorporated into document-view \GUI{}s as interactive features, 
-helping researchers find those parts of the book that most interest them.}
-\enlargethispage{5em} 
-%\end{description}
-}
-
-
-%\item[LaTeX]
-
-%\item[HTML]
-
-%\item[TagML]
-
-%\end{description}
-
-}
-
-\clearpage
-
 \vspace*{-66pt}
 
 \sstitle{%\hspace*{-50pt}
 PacTk's \q{Scign-index} Protocol for Executable Research Objects}
 
-
 \vspace*{11pt}
 
-{\setstretch{1.12}
-
-\p{The \Scign{}-index protocol mentioned on page \Athref{page.10}{10} is particularly aligned with 
-\q{Executable} Research Objects (alternatively termed 
+\p{The \Scign{}-index protocol just mentioned is particularly aligned with 
+\q{Executable} Research Objects (alternatively called 
 \q{Research Compendia}), yielding a proposed component-oriented  
-model that \PacTk{} calls \q{\ScignTier{}} (Scienge Grid Node/Text-Integrated 
-Executable Research Objects).  In component-oriented programming, 
+model that \PacTk{} calls \ScignTier{} (\Scign-indexed/text-integrated 
+Executable Research components).  In component-oriented programming, 
 \q{microcomponents} are 
 visually and functionally isolated parts 
 of a larger application, such as a single web page within a web site, 
@@ -1960,7 +1320,7 @@ example, microcomponents could provide functionality to
 view specific kinds of dynamic graphics connected with  
 a manuscript, or review raw data files in an associated data set.  
 \PacTk{}'s \ScignTier{} model extends the aforementioned 
-\Scign{}-index protocol to research-grid nodes (\textit{Executable Research Objects} 
+\Scign{}-index protocol to research-grid nodes (Executable Research Objects 
 in particular).  In this form of shared 
 data, publications and accompanying materials are bundled into a 
 single downloadable application --- ideally as a mostly self-contained source file package, 
@@ -1968,15 +1328,21 @@ compiling to a binary executable that serves as an entry-point for both text and
 
 \p{To illustrate how microcomponent programming affects 
 indexing and document-preparation, consider the screenshot 
-reproduced in \makebox{Figure~\Atref{fig:oh}}, left (taken from the Open Hospital
-user manual).  There are numerous areas within the \GUI{} 
+reproduced in Figure~\ref{fig:oh}, left (taken from the OpenHospital 
+user manual).  Although this is part of a \Java{} application, 
+a \Qt{} developer could readily implement a \Cpp{} version 
+of the same component; assume, then, that in so doing 
+we intend to annotate the relevant classes with \ScignTier{} metadata.}
+
+\p{In particular, there are numerous areas within the \GUI{} 
 window with selections/options that may be connected 
 to controlled vocabularies, including the list of 
-checkbox labels for test results, and drop-down 
-(combobox) values for \q{material} (there is no way to find a list of 
+checkbox labels for test results, and the drop-down 
+(combobox) values for \q{material} (note that, in the 
+existing code, there is no way to find a list of 
 possible entries for this field without running 
-the software or examining the code directly).  
-There are also some varied actions users can perform 
+the software or examining the \Java{} code directly).  
+There are also multiple actions users can perform 
 through this component, including finding a patient 
 id via their personal info; selecting dates from a 
 calendar display; and recording exam results 
@@ -1987,7 +1353,7 @@ in a machine-readable fashion;
 the entire software base can then have a single indexing 
 and search entry-point (e.g., a query for the 
 term \q{urinanalysis} should match this microcomponent 
-as one option for the \textatc{exam-type} field).  In addition, 
+as one option for the exam-type field).  In addition, 
 new microcomponents could be added to the hospital software 
 systematically.  Consider, for instance, that a more 
 specialized exam report is needed for a particular clinical 
@@ -2011,7 +1377,7 @@ the \GIS{} data points will represent either incidents
 cancer diagnoses (organized by tumor classification).  
 Apart from being governed by controlled vocabularies, 
 such data points would have distinct \GUI{} 
-requirements (Figure~\Atref{fig:car} is an example).  For instance, 
+requirements (Figure~\ref{fig:car} is an example).  For instance, 
 cancer varieties 
 can be a terminological bridge for multiple 
 data sets and leveraged via search \API{}s. 
@@ -2029,7 +1395,7 @@ metadata such as standard nomenclature and
 \q{Common Data Elements} (defined by \NCIP{}, for 
 example), some \GUI{} components (as discussed above) 
 may function as graphics displays properly indexed 
-as multimedia content.  On the right in Figure~\Atref{fig:oh} 
+as multimedia content.  On the right in Figure~\ref{fig:oh} 
 is a screenshot from the Cancer Imaging Phenomics 
 Toolkit which has multiple data fields suitable 
 for proposed \ScignTier{} indexing, including textural segmentation 
@@ -2041,15 +1407,13 @@ examples used to demonstrate analytic methods (as with this
 picture).  Illustrations appearing in publications may 
 thereby be linked to microcomponents from which the 
 graphics were obtained.}
-}
 \enlargethispage{2em}
 \vspace{-25pt}
 
 \begin{figure}[h!]
-\figcolor
-\hspace{-45pt}\raisebox{-6pt}{\includegraphics[page=53, scale=.55, trim=0 11cm 0 0, clip]{UserManual.pdf}}%
-\hspace{-18pt}\includegraphics[scale=1.03, trim=0 3cm 0 1cm, clip]{baseScreenshot.png}\vspace{-7pt}
-\caption{Open Hospital form (left) and cancer imaging window (right)
+\hspace{-45pt}\raisebox{-6pt}{\includegraphics[page=53, scale=.56, trim=0 11cm 0 0, clip]{UserManual.pdf}}%
+\hspace{-18pt}\includegraphics[scale=1.1, trim=0 3cm 0 1cm, clip]{baseScreenshot.png}
+\caption{OpenHospital form (left) and cancer imaging window (right) 
 as microcomponent examples}
 \label{fig:oh}
 \end{figure}
@@ -2065,8 +1429,8 @@ as microcomponent examples}
 \vspace*{14pt}
 
 \p{Grid Computing is an important part of contemporary scientific 
-research.  In general, a \q{grid} --- in contrast to 
-just a data-sharing network --- combines data, code, and multimedia 
+research.  In general, a \q{grid} --- in contrast to a 
+just data-sharing network --- combines data, code, and multimedia 
 content.  More specifically, a grid is designed with the assumption 
 that users will execute software packages which are accessible 
 via the grid, and that their primary reason for doing so is 
@@ -2075,11 +1439,11 @@ because the software encapsulates novel research:
 quantitative or qualitative (e.g., agent-based) simulations, 
 \q{in silico} experiments, analysis of new empirical data, 
 algorithmically generated graphics, and so forth.  In some instances, 
-code packages may be downloaded and executed privately, 
+code packages may be downloaded and run privately, 
 e.g., on a scientist's own computer.  In other cases, the code 
 specifically requires special hardware (e.g., supercomputing/massive 
-parallelization) and a grid enables researchers to run programs remotely, 
-on software-hosting nodes that have the requisite capabilities.}  
+parallelization) and a grid enables researchers to execute remotely, 
+on computing nodes that have the requisite capabilities.}  
 
 \p{It would be a mistake, however, to assume that grid computing 
 necessarily involves technologies that require atypical 
@@ -2128,7 +1492,7 @@ possible, allowing someone newly acquainted
 with a grid-hosted package --- in particular, someone 
 who learns about the code from a technical publication 
 --- to obtain and execute the relevant code.  
-Researchers, especially, should be able to build and 
+In particular, they should be able to build and 
 use the software in parallel with figures and 
 text discussions featured in document manuscripts.}
 
@@ -2164,8 +1528,8 @@ in \textit{existing} implementations of research networks.}
 \item[Computer Simulations and Videos]  A publication presents a 
 new \q{\textit{in silico}} investigation, such as the simulation of 
 interrelated biological processes on a cellular or tissue scale.
-(Assume that the paper includes frames from a simulation video, and that 
-a ``supplemental materials'' section links to the video in its entirety).
+(Assume that the paper includes frames from a simulation video and 
+supplemental materials link to the video in its entirety).
 The video itself records the output of a particular run of 
 the simulation, with a given set of initial conditions.
 When reaching that point in the manuscript, 
@@ -2184,17 +1548,17 @@ the video and the \textit{in silico} run that produces it.
 
 \end{description}
 
-\p{\counterex{} The graphic pictured in Figure~\Atref{fig:pcbi} is taken 
+\p{\counterex{} The graphic pictured in Figure~\ref{fig:pcbi} is taken 
 from a Computational Biology journal; the relevant article 
 introduces \CHASTE{} (Cancer, Heart And Soft Tissue Environment), a 
 simulation framework written in \Cpp{}.  Switching from 
 the \PDF{} view to the relevant code and video is a tedious 
 process: readers need to scroll to a \q{supplemental materials} 
-section to download the \textbfc{.avi} files, and manually 
+section to download the \textbf{.avi} files, and manually 
 find and launch the movies through a media player (this 
 has no bearing on \CHASTE{} as an important research tool; 
 interop with text documents is as much the responsibility 
-of publishers --- \PLOSOne{} in this case --- but in any event the process is needlessly burdensome).}
+of publishers --- PLOS One in this case --- as scientific code).}
 
 \p{More substantially, the process of actually 
 identifying those components responsible for the 
@@ -2205,13 +1569,12 @@ straightforward documentation of what steps someone
 might take to reproduce the published video from the 
 specific source files that run the depicted 
 simulation.  Moreover, neither \CHASTE{} itself nor 
-the project-specific simulation package (from Figure~\Atref{fig:pcbi}) includes a 
-\GUI{} component whose explicit role is to display 
+the project-specific simulation package includes a 
+specific \GUI{} component whose role is to display 
 \CHASTE{} simulations directly.  As a consequence, 
 actually generating a viewable simulation that 
 mimics the video requires detailed examination of the 
-\CHASTE{} source code and filesystem layout.  Ideally, instead, 
-that functionality would be localized to a single \Cpp{} class.}
+\CHASTE{} source code and filesystem layout.}
 
 \p{\mic{} According to \FAIR{} standards, the process of 
 switching between reading \textit{about} the simulation 
@@ -2225,9 +1588,9 @@ showing one of the video's frames.}
 
 \enlargethispage{1em}
 \p{Once the actual source code is downloaded, \FAIR{} principles suggest 
-that \cleft[parenc](1\cright[parenc]) there should be instructions directly addressing how 
+that (1) there should be instructions directly addressing how 
 to find and run the code specifically associated with the 
-referenced video; and \cleft[parenc](2\cright[parenc]) there should be a single \GUI{} 
+referenced video; and (2) there should be a single \GUI{} 
 class and component whose specific purpose is to display 
 (visuals of) simulations of the relevant kind.}
 \clearpage{}
@@ -2235,12 +1598,12 @@ class and component whose specific purpose is to display
 \vspace*{-2em}
 \p{More precisely, notice that there are several interrelated assets 
 which could all be grid-hosted and indexed: the video; the 
-\GUI{} class (plus relevant \textbfc{.cpp} files) implementing 
+\GUI{} class (plus relevant \textbf{.cpp} files) implementing 
 the window which actually shows the graphics it captures, both the 
 overall window (presumably with various navigation and configuration 
 controls) and the specific \q{widget} whose display directly 
 yields the video feed; and the \Cpp{} code for the 
-simulation's logic (in Figure~\Atref{fig:pcbi}'s example, 
+simulation's logic (in Figure~\ref{fig:pcbi}'s example, 
 this code performs calculations like iteration-step computations 
 and preparing values for a differential equation solver).  
 There may also be a separate \GUI{} window specifically 
@@ -2257,17 +1620,17 @@ for instance, context menus could allow users to navigate
 from the simulation display \GUI{} to a video player and 
 vice-versa.  Similarly, context menus should launch a 
 separate window showing initial values (as well 
-as metadata for the current model, potentially) in both contexts.}
+as model metadata, potentially) in both contexts.}
   
 \p{In terms of search and indexing, all four components 
 can be linked to any publication which discusses that 
 specific video or includes illustrations derived 
 therefrom.  Terms specific to the computer 
 code should be indexed in their source-file 
-form (e.g., \q{\textemph{DeltaNotchOdeSystem}}) alongside 
-a natural-language equivalent (\q{Delta Notch \ODE{} System}) 
-and related terms (\textitc{Notch signaling pathway}, 
-\textitc{Ordinary 
+form (e.g., \q{DeltaNotchOdeSystem}) alongside 
+a natural-language equivalent (\q{Delta Notch ODE System}) 
+and related terms (\textit{Notch signaling pathway}, 
+\textit{Ordinary 
 Differential Equation}).  Such semantics could 
 be annotated on \Cpp{} files directly and 
 then indexed when the overall package is 
@@ -2323,18 +1686,18 @@ infeasible.  Open-source alternatives such as \QGIS{} are available,
 but they are not well suited for domain-specific data profiles.  
 For example, \QGIS{} only allows users to examine \GIS{} records 
 when transformed to the columnar formats specific to digital 
-maps, which are often much different than the 
-information's internal structure.  Web maps, lacking multi-window displays, tend to have a similar problem.}
+maps, which is often much different than the 
+information's internal structure.  Web maps, lacking multi-window display, tend to have a similar problem.}
 
 \vspace*{5pt}
 
 \p{\mic{}  In lieu of an open-source \GIS{} \textit{application}, a \FAIR{}data grid 
 should provide \GIS{} \textit{components} for reuse by individual publications.  
-Here in the current document, Figures~\Atref{fig:ss8} and \Atref{fig:car} are taken from ProPublica 
+Here in the current document, Figures~\ref{fig:ss8} and \ref{fig:car} are taken from ProPublica 
 reporting about pollution (from 2019 and 2021, respectively).  For the latter example, ProPublica provides 
 maps centered at regions with (apparently) elevated environmental-health 
 risks, but epidemiological and contamination data is not directly 
-included, although (as in the bottom portion of Figure~\Atref{fig:car}) researchers can locate related 
+included, although (as in the bottom portion of Figure~\ref{fig:car}) researchers can locate related 
 data sets elsewhere.  In an academic publication, authors might wish to 
 build an integrated map with attribute layers reflecting 
 \textit{both} contamination (toxic release; carcinogen) and 
@@ -2346,7 +1709,7 @@ may complete with their project-specific information.
 Such a component would feature a window showing base-map 
 layers alongside \GIS{} point- or region-locations using 
 icons or coloration to signal data points or categories.  
-The display could then be annotated as a multimedia resource, 
+The display should be annotated as a multimedia resource, 
 cross-referenced with associated publications, by analogy 
 to how an iterative display of \textit{in silico} simulations 
 functions (similar to videos) as multimedia content as in the 
@@ -2360,7 +1723,7 @@ embedded simultaneously in a hospital consortium
 to study correlations between public and environmental health) 
 and in cheminformatics applications (e.g., to investigate 
 biochemical properties of hazardous compounds through 
-molecular visualization, atomic force metrics, biosimulations, etc.).}
+molecular visualization, biosimulations, etc.).}
   
 
 %\item[Curating Corpora of Linguistics Examples]
@@ -2387,8 +1750,8 @@ view the form's contents.
 
 \pseudoIndent{} In this sense, \GUI{} forms are not grid assets \textit{per se}, 
 but they have many similar qualities from a microcomponent 
-point of view.  Individual forms are largely autonomous: each 
-one's contents are not intrinsically dependent on another's.  
+viewpoint.  Individual forms are largely autonomous: each 
+one's contents not intrinsically dependent on another's.  
 In a real clinical setting, of course, information such as 
 patients' personal details needs to be synchronized, so \EMR{} instances  
 are interdependent.  Nonetheless, it is certainly possible to initialize forms 
@@ -2401,7 +1764,7 @@ has patient and cohort reports structurally
 similar to \EMR{} forms --- and, if translationally the 
 research yields concrete benefits, some version 
 of those reports may indeed become \EMR{} records 
-\textit{de facto}.  Thus, \FAIR{} grids might certainly 
+\textit{de facto}.  Thus, \FAIR{} grids should certainly 
 host assets that functionally have an \EMR{} profile.  
 For instance, research on novel bioimaging techniques 
 could provide a computational platform to annotate 
@@ -2421,9 +1784,9 @@ for analyzing software implementations.  These components
 are especially important for patient care in \q{under-resourced} 
 communities, where the option of selecting 
 open-source environments (such as BioLinux) can 
-eliminate licensing fees (a considerable savings 
-in hospitals with a large staff, needing multiple installs per program).  Among extant 
-projects, FreeMedForms (\Cpp{}) and Open Hospital
+eliminate license fees (a considerable savings 
+in hospitals with a large staff).  Among extant 
+projects, FreeMedForms (\Cpp{}) and OpenHospital 
 (\Java{}) are representative examples, embodying 
 years of development efforts by large programming teams 
 (an analogous project, HospitalRun, was discontinued 
@@ -2434,18 +1797,18 @@ which can benefit communities with spotty web
 connections, and also clinics operating 
 under emergency-response conditions.}
 
-\p{Taking FreeMedForms and Open Hospital
-(see the left part of Figure~\Atref{fig:oh}) as 
+\p{Taking FreeMedForms and OpenHospital 
+(left part of Figure~\ref{fig:oh}) as 
 examples, one noteworthy issue is that of 
 \textit{internal} dependencies.  Principles of \FAIR{}data 
 address \textit{external} dependencies, but 
 internal-dependency complications should be minimized  
-as well.  For example, both FreeMedForms and Open Hospital
+as well.  For example, both FreeMedForms and OpenHospital 
 are build around \SQL{} databases.  That's to be expected, but 
 any \Java{} or \Cpp{} developer would counsel that applications 
 should not be \textit{crashed} by faulty database connections 
 (database configuration can be notoriously complicated).  
-Unfortunately, neither FreeMedForms nor Open Hospital appear
+Unfortunately, neither FreeMedForms nor OpenHospital appear 
 to be capable of operating around a missing \SQL{} connection.}
 
 \p{Another issue evident with FreeMedForms 
@@ -2462,18 +1825,17 @@ to the next, can make plugin-dependent code unusable.}
 \vspace*{5pt}
 
 \p{\mic{} A \FAIR{} grid approach to \EMR{}s would 
-recognize that forms have use-cases even without 
+recognize that forms have use-cases even in the 
 actual data.  Simply previewing a form with no 
 information at all --- fields left blank or 
 completed with default values --- can help 
 a user understand how the form is organized, 
-and become familiar with the window's \GUI{} 
-controls and capabilities.  
+and become familiar with the window's \GUI{} controls.  
 For more substantial work, \EMR{}s could be 
 populated with fiat sample data for testing and 
 documentation purposes.  As a workaround for broken 
 database connections, local filesystem-based persistence 
-might be employed to track a few records for users 
+could be employed to track a few records for users 
 who are first learning how to use the software.}
 
 \p{The facets in which forms are \textit{not} autonomous 
@@ -2481,13 +1843,13 @@ are those involving real-life patients, as well as
 interconnections between \EMR{} varieties (from 
 lab results to inpatient equipment readings, for example).  
 Outside of these details, forms can be implemented 
-as individual standalone programs.  In some contexts, 
+as individual standalone programs; in some contexts 
 a user or researcher might be interested in just one 
 specific type of \EMR{} (e.g., if they wish 
 to create a similar form for use during a clinical trial).  
 In other cases, users could be offered at least a small 
 collection of particularly important forms, which they 
-could visit for tutorials and other exploratory goals 
+could visit for tutorials and other exploratory contexts 
 (imagine the scenario where a HospitalRun administrator 
 seeks to evaluate still-maintained alternatives; part of the 
 comparison is applications' \q{look and feel,} which is data-agnostic).    
@@ -2499,7 +1861,7 @@ application that is essentially a container for those
 core components, with users being able to select and visit them 
 in turn.  Third-party developers should find and 
 study this application in an intuitive manner; in \Cpp{}, 
-say, there should be exactly one \textatc{main.cpp} file, 
+say, there should be exactly one \textbf{main.cpp} file, 
 or at least an obvious folder location where that file 
 is understood to be a starting-point for viewing 
 essential \EMR{} types.}
@@ -2523,7 +1885,7 @@ existing frameworks do not provide sufficient support
 for such modularization to occur absent concerted  
 effort; for example, implementing context menus 
 according to systemwide protocols requires supporting 
-code more detailed than just the basic \textatc{QMenu}/\textatc{QAction} 
+code more detailed than just the basic \textbf{QMenu}/\textbf{QAction} 
 mechanisms from \Qt{}.  In this sense, balancing 
 component autonomy with systemwide protocols is a concern 
 common to \EMR{}s and to \FAIR{} microcomponents. 
@@ -2534,13 +1896,13 @@ common to \EMR{}s and to \FAIR{} microcomponents.
 
 \vspace*{-43pt}
 
-{\semihr{0.649\textwidth}}
+{\semihr{0.647\textwidth}}
 \vspace*{5pt}
 \hspace{2pt}\secttitle{{Extending Beyond Single 
 Documents: Data Transparency and Translational 
 Science}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
 \vspace*{5pt}
-{\semihr{0.649\textwidth}}
+{\semihr{0.647\textwidth}}
 
 \vspace*{9pt}
 
@@ -2548,7 +1910,7 @@ Science}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
 %\p{}
 
 \p{Rethinking the relationship between pure and applied 
-research --- and between universities and communities ---  
+research, between universities and communities, 
 means a changing landscape for publishers as well.
 Although all biomedical research (and scientific work in general) 
 is motivated in principle by practical benefits, translational 
@@ -2564,27 +1926,27 @@ for instance \href{https://www.iths.org/investigators/definitions/translational-
 {https://www.iths.org/investigators/definitions/translational-research}) %}
 of which the 
 fourth involves commonplace adoption of (once-)novel 
-practices in clinical settings, and the fifth 
+practices in clinical settings and the fifth 
 marks concerted efforts to adopt useful 
-interventions in a wide variety of care environments 
+interventions in a wide variety of settings 
 (e.g., not restricted to protocols 
 available only in a few hospitals).  
 Such models suggest roadmaps to help 
 guide deployment once research progresses through  
-multiple stages of concrete implementation.  Published materials 
-(not necessarily restricted to books and journal articles) 
+multiple stages of concrete imple- mentation.  Published materials 
+(not necessarily restricted to journal articles) 
 may reflect data and observations at each of these stages.}
 
 \p{Apart from theoretical models along these lines, the 
 key details of translational deployment are often 
 institutional and socioeconomic in nature.  
-Sustaining research projects sufficiently to 
+Sustaining research projects enough to 
 rigorously assess empirical outcomes is a different 
 process than procuring funding, labs, and teams 
 to work through initial objectives on 
 purely scientific grounds.  Some innovative 
-software initiatives (e.g., the \CaBIG{} Digital 
-Model Repository) have been discontinued; other 
+software initiatives (e.g., the \CaBIG{} \DMR{} 
+mentioned above) were discontinued; other 
 frameworks, such as 
 the University of Pennsylvania's Cancer Phenomics 
 Toolkit, evince novel biocomputational ideas but have not been 
@@ -2595,10 +1957,10 @@ and adoption of promising
 software, interventions, or clinical protocols can 
 be spurred by goals 
 to make effective health care options 
-available to a broader spectrum of 
+(for example) available to a broad spectrum of 
 the community.  Research initially supported on purely 
 technical grounds might 
-then be further expanded 
+then further expand 
 by emphasizing social/translational benefits.} 
 
 \p{From a publishing standpoint, translational science 
@@ -2606,9 +1968,9 @@ implies that a research infrastructure should sustain and
 evolve over multiple phases of a scientific project, 
 which extends beyond the time-frame of individual 
 books or articles.  This is reflected in part by 
-protocols such as Executable Research Objects where \q{supplemental} 
-materials (graphics, data sets, utility computer code, and so on) are  
-standardized.  It is also manifest 
+protocols such as \q{Research Objects} where supplemental 
+materials (graphics, data sets, utility computer code, and so on) are presented 
+in standardized ways.  It is also manifest 
 in notions of replication and data transparency: 
 models such as Minimum Information Standards 
 that illustrate experimental/data-acquisition modalities to facilitate 
@@ -2627,20 +1989,20 @@ Specifications such as the Research Object protocol only
 partially alleviate this problem.}  
 
 \p{Against this background, \PacTk{}'s proposed  
-\ScignTier{} specification  
+\ScignTier{} protocol 
 honors the goals of both Executable Research Objects 
 (as a paradigm for dissemination of scientific works) 
 and Translational Science (as a collation of best 
 practices for emphasizing social benefits of research innovations).
 According to this protocol, individual publications 
-exist in the context of a \q{Project Archive} that has 
-a singular entry point both online (potentially 
+exist in the context of \q{Project Archives} that have 
+singular entry points both online (potentially 
 integrated with publishers' search portals) and 
 through downloadable resources/data sets.  
-Materials associated with a given publication, aggregated through this entry 
+Materials associated with a publication, aggregated through this entry 
 point, would summarize translational 
 possibilities for the documented research 
-and hopefully provide a foundation for institutional 
+and provide a foundation for institutional 
 deployment(s).  Individual scientists or students 
 could also utilize Project Archives as encapsulations 
 introducing their interests, background, and expertise 
@@ -2683,12 +2045,11 @@ and statistical/data-visualization tools and diagrams, plus domain-specific
 interactive formats).  If desired, 
 \PDF{} viewers could themselves be implemented as one 
 portion of a multimedia suite, with functional motifs 
-duplicated across the various components (Figures~\Atref{fig:ss8}~and~\Atref{fig:ss9}).}
+duplicated across the various components (Figures~\ref{fig:ss8}~and~\ref{fig:ss9}).}
 
 \setlength{\belowcaptionskip}{5pt}
 
 \begin{figure}[t!]
-\figcolor
 \includegraphics[scale=0.5]{fin/stark-mi.png}
 \includegraphics[scale=0.5]{fin/stark.png}
 \caption{Meta-index search through a web portal}
@@ -2714,8 +2075,7 @@ reads raw data files into live memory, without relying on special-purpose
 software).  Such code libraries are often maintained by individual 
 institutions or organizations --- which might be academic departments, research 
 labs, or independent groups --- on behalf of a 
-broader research community.  Examples include (among many others) 
-\FASTQ{} and \VCF{} for genomics; \HDFfive{} and \ROOT{} for physics; 
+broader research community.  Examples include (among many) \FASTQ{} and \VCF{} for genomics; \HDFfive{} and \ROOT{} for physics; 
 \FITS{} and \netCDF{} (astronomy and earth sciences); \PDB{}, \MOL{}, 
 \SBML{}, and \CELLML{} (biochemistry); 
 \IFC{} and \BIM{} (architecture/engineering); \SEGY{} and \BAG{} 
@@ -2726,9 +2086,8 @@ and shapefiles for geospatial data sets.
 \pseudoIndent{} Some domain-specific file formats are derived from general-purpose 
 specifications such as \XML{}, \CSV{}, and \JSON{}.  Others 
 employ idiosyncratic text and/or binary 
-serialization protocols, such that custom parsers are necessary so as to consume 
-byte- or character-streams from 
-relevant raw data files.  Even when the actual encoding is performed via a 
+serialization protocols, so that custom parsers are necessary so as to consume byte or character 
+streams from relevant raw data files.  Even when the actual encoding is performed via a 
 generic standard like \XML{}, dedicated deserialization code will still be needed --- 
 ordinary parsers may convert a given \XML{} document to a %Document Object Model 
 \DOM{} infoset, but extraction algorithms 
@@ -2739,11 +2098,11 @@ object data fields.
 %\newpage{}\clearpage{}
 \pseudoIndent{} \lPacTk{} seeks to address these issues by offering a 
 platform-independent Virtual Machine that is easy to host within 
-scientific applications or also build as a plugin or standalone program.  
+scientific applications or build as a plugin or standalone program.  
 Scripting 
-or query languages can then emit code proper to this \VM{} to 
+or query languages can then emit code for this \VM{} to 
 take responsibility for deserializing encoded data sets 
-(whilst, as another use-case, the \VM{} could be embedded in 
+(while, as another use-case, the \VM{} could be embedded in 
 \Cpp{} classes/microcomponents   
 as a runtime contract-verification tool).  Depending 
 on format, \VM{} instructions might navigate through 
@@ -2754,11 +2113,10 @@ through postprocessors or rule-match callbacks.
 \pseudoIndent{} Via these technologies, publishers may ensure that 
 data sets are accessible so long as there are deserialization 
 libraries targeting a \PacTk{} \VM{}, rather than duplicating 
-effort (requiring numerous libraries for different operating 
+effort (requiring multiple libraries for different operating 
 systems and programming environments).\vspace{6pt}  
  
 \begin{figure}[ht]
-\figcolor
 \hspace*{1em}\includegraphics[scale=0.47, 
 trim=0 12pt 0 22pt, clip]{fin/oct.png}
 \caption{Flexible range-select features}
@@ -2790,7 +2148,7 @@ manner.  Broadly-usable code libraries for (e.g.) deserialization
 obviate the need to achieve interoperability via reified/canonical  
 model-representation standards alone.  For example, 
 Semantic Web nodes could be annotated with information about 
-libraries that are able to unpack objects whose data fields 
+libraries that could unpack objects whose data fields 
 supply values to nearby sites in the node's shape-constrained 
 neighborhood.  Moreover, implementations should proceed via 
 conventions suitable for \GUI{} wrappers and interop (in particular, 
@@ -2815,7 +2173,7 @@ into \PDF{} viewers, multimedia applications (for videos, digital
 maps, etc.), and scientific computing platforms.
 
 \pseudoIndent{} Another \PacTk{} benefit for dataset code involves 
-documentation and pedagogical features.  Here, code 
+documentation and pedagogical features.  In these contexts, code 
 serves not merely to derive specific computations but also 
 to demonstrate the acquisition methods and analytic protocols relevant 
 for a research project.  Such details as units of measurement, 
@@ -2825,19 +2183,16 @@ pairs are never called with the converse),
 compile-time/statically-analyzable pre- and post-conditions, and so forth, 
 help dataset code to serve as a resource clarifying scientific 
 principles and theoretical models that drive published findings.  
-The \PacTk{} \VM{} includes overload-by-contract, 
+The \PacTk{} Virtual Machine includes overload-by-contract, 
 dependent typing 
 (a version thereof compatible with template metaprogramming, as such 
 with some technical differences from, say, \Idris{}), native 
-interop (with static-compiled as well as dynamically loaded libraries) 
-and user-defined calling-convention features differing 
+interop (with statically compiled as well as dynamically loaded libraries) 
+and \q{user-defined} calling-convention features that differ 
 in some technical details from typical language interpreters, 
 resulting in a scripting environment specifically built for 
-open-access data sharing and deployment of data packages 
-as pedagogical tools.  Also, script syntax can be extended 
-through a \VM{}-like macro system supporting customization 
-via novel grammar rules, parse-graph 
-manipulation, and bytecode generators.   
+open-access data sharing and the deployment of data packages 
+as pedagogical tools.    
 
 
 %\begin{figure}[ht]
@@ -2846,11 +2201,10 @@ manipulation, and bytecode generators.
 %\label{fig:ss8}
 %\end{figure}
 
-\vspace*{3pt}
+\vspace*{8pt}
 
 \begin{figure}[h!]
-\figcolor
-\hspace{18pt}\includegraphics[scale=0.5, trim=0 7mm 0 8mm, clip]{fin/sah.png}
+\hspace{18pt}\includegraphics[scale=0.5, trim=0 2mm 0 6mm, clip]{fin/sah.png}
 \caption{A category-based web-accessible index table for SVG pages}
 \label{fig:ss9}
 \end{figure}
@@ -2879,12 +2233,12 @@ generative production rules), and directly-executable
 grammar files (with no separate compilation steps), 
 the \PacTk{} parsers are more flexible than conventional 
 \LEX{}/\YACC{}-style compilers.  Meanwhile, the \VM{} 
-runtimes allow query evaluators to recognize basic 
+runtimes allows query evaluators to recognize basic 
 scripting constructions such as locally-scoped variables 
 and calls to arbitrary boolean-valued procedures as 
 filter parameters.
 
-\pseudoIndent{} In totality, such features permit 
+\pseudoIndent{} In totality, such features allow 
 text/bibliographic query systems to be implemented 
 in a self-contained and cross-platform manner, 
 with customizations specific to individual publishers 
@@ -2895,13 +2249,13 @@ and even to each particular journal or book series.
 
 \item[Multimedia Cross-Referencing]  When a document (book or article) is explicitly paired with a 
 published data set, information about the supplemental package should be 
-included in index/search metadata.  This would enable 
+included in index/search metadata.  This would allow 
 keyword searches to be extended to raw data fields, as well 
 as data-structure parameters (column labels, source-code 
 annotations, procedure names, etc.).  Moreover, sections of text 
 may be isolated as cross-reference targets for data-structure parameters 
 as well as individual objects/records.  For example, a specific 
-column or field in tabular data structures could be cross-referenced 
+column or field in tabular data structures can be cross-referenced 
 with the paragraph in article text where that field is 
 discussed (its observation/acquisition methodology, units of measurement, 
 valid range delineation, statistical distribution, and so forth).
@@ -2930,7 +2284,7 @@ as constituted by camera angle/position and zoom settings).
 \pseudoIndent{}  The challenge when implementing multimedia cross-references is to 
 ensure that viewers for two or more divergent media types may properly 
 interoperate.  With correctly interpreted cross-references, application users should be able 
-to navigate from a window dedicated to one media/file type to a 
+to navigate from a window dedicated to one media/file to a 
 window rendering a different format, and correctly isolate the 
 portion of a file (not just the overall file) implicated in a cross-reference.  
 For example, geotagging video frames should enable users to pause a video 
@@ -2938,13 +2292,13 @@ at a particular location and then, via the geotag, switch to a map
 display centered on the geospatial coordinates visible in the video 
 (consider videos documenting progress in an environmental 
 remediation site; or infrastructural and socioeconomic implications of 
-Zoning and Land Use ordinances).  Conversely, a \GIS{} attribute layer might represent 
+Zoning and Land Use ordinances).  Conversely, a \GIS{} attribute layer could represent 
 locations for which video content is available, allowing users 
 to watch the relevant videos starting from the appropriate time-point.  
 Such interoperability is only possible if the components and/or applications 
 responsible for rendering the two content-types share a common 
 annotation and message-passing protocol.  In the context of \PacTk{}, 
-this could be achieved via \TSOM{} \q{message} objects that encapsulate 
+this may be achieved via \TSOM{} \q{message} objects that encapsulate 
 remote-method requests and parameter serialization via 
 \TagML{}-like structures.
  
@@ -2968,7 +2322,7 @@ both visual overviews (e.g., via charts, graphs, or histograms)
 and functionality for examining individual data objects 
 in detail (e.g., via custom-designed \GUI{} windows).
 
-\pseudoIndent{}  Furthermore, many data sets span a variety of  
+\pseudoIndent{}  Furthermore, many data sets span multiple 
 structural profiles.  For example, consider information 
 tracking environmental pollutants, such as published 
 by the Environmental Protection Agency's 
@@ -2985,7 +2339,7 @@ might be further extended by economic data
 profiling social impacts on surrounding communities, 
 public health information, video and image series. etc.
 
-\pseudoIndent{}  In general, then, publishers cannot 
+\pseudoIndent{}  In general, then, publishers should not 
 assume that \FAIR{} transparency is achieved simply by 
 sharing raw data files.  Instead, open-access materials should 
 in general include plugins or source-code extensions (developed 
@@ -2998,9 +2352,9 @@ front-ends for studying linguistics corpora and/or
 parse-structures; sociological/economic 
 statistics; or graphics tools for digital humanities.
 \lPacTk{} can help in this context 
-because a single \PacTk{} plugin may serve as middleware 
+because a single \PacTk{} plugin could serve as middleware 
 on top of which extensions could operate that are individualized 
-to specific publications/manuscripts.  This can be more 
+to specific publications/manuscripts.  This may be more 
 efficient than building components against applications' 
 native plugin mechanisms directly. 
 
@@ -3057,22 +2411,6 @@ and \PDF{} viewers:
 
 \vspace{9pt}
 
-
-
-\begin{blockQuote}
-
-Grid computing was initially conceived to enable secure access to high-end computing facilities across multiple supercomputer centers.   Technologies and standards developed by the Grid computing community have evolved it into a platform to facilitate development, sharing, and integration of distributed data and analytical resources and to support applications that make use of those resources. Grid computing has been employed in a wide range of projects and applications in biomedical research. A common theme across these different application projects is the need for support for query, retrieval, and integration of data from heterogeneous resources, discovery of relevant resources, and analysis of data using one or more analytical services. 
-\end{blockQuote}
-
-\vspace{6pt}
-\hfill\citeref{\q{caGrid 1.0: An Enterprise Grid Infrastructure for Biomedical Research} (2008)}
-
-%\vspace{-2pt}
-\hfill\href{https://pmc.ncbi.nlm.nih.gov/articles/PMC2274794/}{https://pmc.ncbi.nlm.nih.gov/articles/PMC2274794/}
-
-
-\vspace*{12pt}
-
 \begin{blockQuote}
 
 Researchers cannot readily search across multiple repositories to find models of interest, and when a researcher does retrieve a relevant model, they must determine whether it (or part of it) can be repurposed for use in their modeling work. Similarity measures and pattern-matching algorithms can help identify relevant modeling components, but existing proposals for cross-repository search and retrieval are mostly theoretical and not yet applicable in practice. Applying semantic annotations in a standardized way across model repositories would provide a common ground for such cross-repository searches, allowing models encoded in diverse formats to be retrieved based on their shared semantic descriptions. 
@@ -3088,7 +2426,22 @@ Researchers cannot readily search across multiple repositories to find models of
 %\vspace{-2pt}
 \hfill\href{https://pmc.ncbi.nlm.nih.gov/articles/PMC6433895/}{https://pmc.ncbi.nlm.nih.gov/articles/PMC6433895/}
 
-\vspace*{9pt}
+
+\vspace*{6pt}
+
+
+\begin{blockQuote}
+
+Grid computing was initially conceived to enable secure access to high-end computing facilities across multiple supercomputer centers.   Technologies and standards developed by the Grid computing community have evolved it into a platform to facilitate development, sharing, and integration of distributed data and analytical resources and to support applications that make use of those resources. Grid computing has been employed in a wide range of projects and applications in biomedical research. A common theme across these different application projects is the need for support for query, retrieval, and integration of data from heterogeneous resources, discovery of relevant resources, and analysis of data using one or more analytical services. 
+\end{blockQuote}
+
+\vspace{6pt}
+\hfill\citeref{\q{caGrid 1.0: An Enterprise Grid Infrastructure for Biomedical Research} (2008)}
+
+%\vspace{-2pt}
+\hfill\href{https://pmc.ncbi.nlm.nih.gov/articles/PMC2274794/}{https://pmc.ncbi.nlm.nih.gov/articles/PMC2274794/}
+
+\vspace*{6pt}
 
 
 \begin{blockQuote}
@@ -3106,7 +2459,7 @@ the primary distribution format of scientific papers
 PDF file format is designed to share electronic documents rendered faithfully for reading and printing, and mixes visual with semantic information.
 Significant effort is needed to coerce PDF into a
 format more amenable to text mining, such as JATS
-XML, BioC (Comeau et al., 2019), or S2ORC
+XML,26 BioC (Comeau et al., 2019), or S2ORC
 JSON ... [W]e can still benefit from better PDF parsing tools
 for scientific documents. As a complement, 
 scientific papers should also be made available in a
@@ -3137,7 +2490,6 @@ structured format like JSON, XML, or HTML.
 \vspace*{-26pt}
 
 \begin{figure}[h!]
-\figcolor
 \hspace{125pt}\includegraphics[page=5, scale=.85, trim=0 13.4cm 0 0, clip]{x/pcbi_1002970.pdf}%
 \vspace{1.5em}
 \caption{Potential locations for code/data/multimedia cross-reference annotations}
@@ -3151,7 +2503,6 @@ structured format like JSON, XML, or HTML.
 \pagestyle{empty}
 
 \begin{figure}[h!]
-\figcolor
 \includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/x3.png}
 \caption{HTML Transcription Errors}
 \label{fig:ss10}
@@ -3163,7 +2514,6 @@ structured format like JSON, XML, or HTML.
 \pagestyle{empty}
 
 \begin{figure}[h!]
-\figcolor
 \hspace{-25pt}\includegraphics[scale=0.61, trim=0 1.3cm 0 0, clip]{x/car/car.png}
 \caption{GIS/Public Health Interoperability}
 \label{fig:car}
