@@ -135,7 +135,7 @@ were openly acknowledged by the team behind ,/CORD19/, who
 described the steps they took to (imperfectly) convert 
 ;/PDF/ files to a machine-readable ;/JSON/ format.  They even issused   
 a "/call to arms/" encouraging publishers to adopt a 
-more consistent text representation.
+more consistent text representation. -%> \thispagestyle{two}
 
 Text Mining and Natural Language Processing are sophisticated 
 use-cases for machine-readable text encoding, but more 
@@ -644,14 +644,177 @@ are the basic units of encoding.  However, natural-language
 text has its own topomorphic profile which is only 
 approximately captured by topomorphic regimes of 
 generic formats adopted for text encoding.  In this 
-second I will consider topomorphic properties of 
+section I will consider topomorphic properties of 
 text on its own terms, separate and apart from 
 how it is "/serialized/" via markup.
+
+
+// //  Examples of Analyses Requiring Sentence Objects
+
+The following cases may help to clarify why markup formats 
+%-- when they are used not just for the interchange of text or metadata, but 
+as intrinsic components of publishing workflows %-- can be 
+difficult to use for certain kinds of search and content-management 
+requirements.  These are situations where computing 
+over text/discourse elements represented as objects in computer 
+memory is more efficient than traversing ;DOM nodes 
+and hierarchies.  As such, a framework such as ;/TSOM/, 
+where sentences and other discursive units are already 
+converted to code objects, is more convenient 
+than (for example) ;XML files where nodes must be 
+mapped to objects as a preliminary step.
+
+%/ desc
+
+[|Categorizing Inner Documents via Annotations|] `hback<5pt>; You are working with a 
+large manuscript assembled from many smaller documents.  Their authors 
+have contributed ;PDF comment boxes associated with specific sentences, 
+paragraphs, or sections of their text, and have employed a "/handle/" 
+syntax to mark themes relevant to these content units, according to a 
+standardized vocabulary.  You goal is to scan each of the comment boxes 
+so as to identify all inner documents which address specific themes.  
+That is, you want to build a mapping from theme labels 
+to lists of inner documents (or chapters, etc.) which could be 
+pressed into service after splitting the larger manuscript into smaller parts;  
+or utilized to assemble glossaries, enhanced ;ToC pages, 
+web navigators, and so forth.
+
+ -.> 
+
+To complete this task it is necessary to execute procedures that 
+can obtain the content of all ;PDF annotations, indexed by 
+page number.  One would then search each annotation-text for 
+every characteristic handles that indicates relevance visavis individual themes, building 
+up an ;;/std::map/ style data structure whose keys 
+are theme objects/labels.  Following the comment box page number, 
+one could moreover identify the chapter or inner document including 
+that page, to serve as a value set for the aforementioned map (depending 
+on the set up, more granular locations such as paragraph ids 
+may be available as well).  On the basis of that map data structure, 
+the algorithms could generate additional code (e.g., for a glossary) 
+or manipulate secondary files: suppose, for instance, 
+that one goal is to split the manuscript into one file 
+per chapter, or per inner document.  The algorithm would 
+then traverse the map structure to build a second one 
+whose values are file names (while creating those files 
+as necessary).  These coding requirements %-- working with 
+object-based data structures and local filesystems %-- call 
+for programming in full-fledged languages such as ;/Cpp/ rather 
+than queries or ;/XML/ transforms.
+
+ -.> 
+
+As a related use case, consider how comment boxes 
+might be leveraged to construct a printed index (or also, secondarily, 
+a search-engine/vector-database sort of index) with attention to 
+rhetorical details.  When the text of a manuscript provides a 
+citation or names a person or theory, authors could be 
+encouraged --- either directly through input sources or via ;PDF  
+annotations --- to summarize positions taken visavis 
+that subject matter (e.g., endorse, critique, or neutral/evaluative).  
+When the sources or comments are analyzed to extract those 
+notations, the printed index could be extended by 
+incorporating that material into index entries.  For example, 
+instead of an undifferentiated heading locating \q{Keynesian economics,} 
+the index could produce subheadings such as 
+"/Keynesian economics, arguments for/"; "/Keynesian economics, arguments against/"; 
+"/Keynesian economics, mathematical models/"; 
+"/Keynesian economics, and macroeconomic theory/" and etc.
+
+[|Extracting Linguistics Annotations|]  You are working with a 
+linguistic article that contains a list of sample sentences/passages, 
+according to a common linguistics presentation style.  These 
+examples are intended to demonstrate specific claims (about 
+parsing structure, conceptualization, etc.) or to serve 
+as a basis for subsequent analysis.  Such samples %-- which 
+might be obtained from written corpora, audio records, or simply 
+invented by the author to highlight specific linguistic topics 
+%-- are commonly used in this discipline and typeset in 
+formats that visually distinguish examples from primary 
+text.  Moreover, the samples are often printed with id numbers, 
+contextual comments, and sometimes special symbols representing 
+phonology, agglutination, word order, morphosyntactic patterns, syntactic categories, etc.
+
+ -.> 
+
+Because this mode of presentation is so common, 
+researchers could benefit from a searchable repository of these examples, 
+as a special kind of language corpus.  That is, multiple linguistics 
+papers may be scanned for listed samples and each of those 
+examples extracted into a common format, to be included in a 
+multi-publication database.  Interested readers could then 
+browse the samples to find articles that address specific 
+syntactic or semantic themes, particularly if each sample 
+is classified according to the linguistic subject they 
+exemplify (or serve thereto as a basis for analysis).  Moreover, it is not uncommon 
+for the same case study 
+to be analyzed by multiple linguists, potentially creating 
+interesting contrasts in theories and paradigms.  
+The whole process would be accelerated if authors employ a 
+common format (e.g., distinct ;XML tags) to notate the examples;  
+but the full extracting and database persistence logic 
+would need specialized programming.
+
+[;Embedding a Publication Viewer in a Chemistry Application;]   You are 
+working with an article about biochemistry, and the text 
+includes discussions of compounds identified either by a common name 
+or a chemical formula.  The authors and/or editors have been 
+attentive to encode these special terms in a structured format 
+(e.g., special ;/XML/ tags) and have also added informative 
+suggestions via ;PDF comments.  Your goal is to find all 
+chemical terms/formulae which can be associated with 
+molecular-structure files in formats such as ;PDB 
+(Protein Data Bank), ;/MOL/, ;/CML/ (Chemical Markup 
+Language), or similar standards.  Those files may then be opened 
+via science applications dedicated to 
+visualizing and analyzing chemical structures in three 
+dimensions (showing positions of atoms, atomic groups/arrangements, 
+bonding strength, sub- and inter-molecular 
+forces, and so forth).  A similar example might be a chemistry textbook, with custom classroom software. 
+
+ -.> 
+
+For this kind of context, special programming is needed to extract 
+textual data about chemical names and formulae, 
+and potentially to search for molecular files via science 
+;/API/s.  Furthermore %-- in the hopes of best leveraging \ThreeD{} visualization 
+capabilities %-- the ;PDF viewer has to interoperate 
+with science applications, either through a common message-passing 
+protocol or by embedding the entire ;PDF code base itself as a 
+plugin or extension.  Ideally, one or more molecular visualization 
+applications themselves can be modified to work directly 
+with these special ;PDF components, because %-- once 
+,/ThreeD/ files are loaded into the software %-- the 
+specific chemical compound being studied, and its properties, 
+could be cross-referenced to locations in 
+the original research manuscript (or, analogously, the students' textbooks).}
+
+/+
+
+These hypothetical examples (which actually are inspired by 
+projects I have worked on in the past) are cases where 
+extra programming is needed for some important part 
+of the document-prep workflow that stands apart from 
+familiar publishing pipelines.  Such applications 
+as comparing manuscript versions side-by-side 
+on a sentence-by-sentence basis, coding up  
+customized search algorithms to help 
+construct a print index, and 
+running searches to locate stretches of text 
+that should be subsumed under tags (or other 
+specialized object) are a different category 
+%-- requirements that could well apply to 
+many or all of the documents typically 
+handled by publishing software. 
+
+
+
+// //  Sentences are Preeminent Units of Discourse
 
 I will assume that the basic unit of intrinsic 
 text representation is a single sentence %-- even 
 if this is not how most encoding standards 
-are designed.  Among common formats, only BioC and 
+are designed.  Among common formats, only ;/BioC/ and 
 ;/TEI/ appear to employ distinct sentence tags, and 
 even here these are optional %-- thus, documents 
 in those formats may have "/sentence/" or "/s/" 

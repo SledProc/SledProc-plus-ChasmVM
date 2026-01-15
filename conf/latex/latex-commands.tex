@@ -482,7 +482,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 %\label{alt#2}
 %
 \AddToShipoutPicture{%
-\ifnum\value{page}=#1{%
+\ifnum\value{page}=91{%  #1
 \AtTextUpperLeft{%
 \hspace*{-37pt}\raisebox{-14pt}{%
 %{#1:#2}
@@ -526,7 +526,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 \newcommand{\clrmrImpl}[2]{%
 \AddToShipoutPicture{%
-\ifnum\value{page}=#1{%
+\ifnum\value{page}==91{#1%
 \AtTextUpperLeft{%
 \clrmrDs{#1}%
 \clrmrImplRaise{#1}{%
@@ -541,7 +541,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 \newcommand{\clrmrAltImpl}[3]{%
 \AddToShipoutPicture{%
-\ifnum\value{page}=#1{%
+\ifnum\value{page}=91{%#1
 \AtTextUpperLeft{%
 \clrmrAltDs{#1}%
 \clrmrImplRaise{#1}{%
@@ -659,7 +659,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=11{
+\ifnum\value{page}=91{%11
 \AtTextLowerLeft{
 \hspace*{-37pt}\raisebox{14pt}{%
 \clrmMidFmt{a}
@@ -1221,8 +1221,8 @@ breaklines=true
 \newcommand{\lRef}[1]{\textcolor{rgrAt!30}{\hspace{1pt}\xfigunderline{%
 \hspace{-1pt}\hyperlink{#1}{#2}\hspace*{-2pt}}}}
 
-\newcommand{\lfRef}[1]{\textcolor{rgrAt!30}{\hspace{1pt}\xfigunderline{%
-\hspace{-1pt}\raisebox{-6pt}{\resizebox{!}{12pt}{\footref{#1}}}}\hspace*{-2pt}}}}
+\newcommand{\lfRef}[1]{\textcolor{rgrAt!30}{\hspace{1pt}\raisebox{-1pt}{\xfigunderline{%
+\hspace{-1pt}\raisebox{-5pt}{\resizebox{!}{12pt}{\footref{#1}}}}}\hspace*{-2pt}}}}
 
 %\newcommand{\lfRef}[1]{\raisebox{-6pt}{\resizebox{!}{12pt}{\footref{#1}}}}
 
@@ -1334,20 +1334,9 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \fancyfoot[C]{}
 \fancyfoot[L]{\hspace{-33pt}\raisebox{3pt}{\fnellipsed{\thepage}}}
 
-%\fancyfoot[L]{}
-
-%\hspace{-33pt}%\ifnum\presetStretch=2%
-%{\ifnum\thepage=3{RRR}%
-%\raisebox{13pt}{\fncircled{zzxx}}
-%\else%
-%\raisebox{3pt}{\fncircled{PPP}}
-%\fi}
-%}
-
 \fancyfoot[R]{}
 
 \renewcommand{\headrulewidth}{0pt}    
-
 }
 
 
@@ -1463,7 +1452,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \newcommand{\lbs}{\raisebox{-.5pt}{\resizebox{9pt}{!}{\bls}}}
 
 \AddToShipoutPicture{%
- \ifnum\value{page}=2{
+ \ifnum\value{page}=91{%2
   \AtPageLowerLeft{%
     \hspace*{22pt}
  \rotatebox{90}{%
@@ -1488,15 +1477,41 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}1}}}}
 
 
+%\usepackage{tcolorbox}
 
-\newcommand{\fnmini}[1]{\begin{minipage}[t]{0.97\columnwidth}#1\end{minipage}}
-\newcommand{\fnminidbl}[1]{\begin{minipage}[t]{0.97\columnwidth}{\begin{spacing}{2.0}#1\end{spacing}}\end{minipage}}
+\newcommand{\fnminiX}[1]{\begin{minipage}[t]{0.97\columnwidth}#1\end{minipage}}
+
+%\setlength{\footnotemargin}{22mm}
+
+%\newcommand{\fnminidbl}[1]{\begin{minipage}[t]{0.97\columnwidth}{\begin{spacing}{2.0}#1\end{spacing}}\end{minipage}}
+
+\usepackage[usestackEOL]{stackengine}
+
+\definecolor{descc}{RGB}{17, 39, 128}
+
+\newcommand{\hback}[1]{\hspace*{-#1}}
+
+\newcommand{\descLabelFormat}[1]{\textcolor{descc}{#1}\hspace*{5pt}}
+
+\newcommand{\descItemBlank}{\item[]}
+
+\colorlet{dsl}{purple!20!brown}
+\colorlet{dslr}{dsl!30!blue}
+
+\newcommand{\descItem}[1]{\item[\descLabelFormat{#1}]}
+
+\newcommand{\descMLabel}[1]{\hspace{-4pt}\textbf{{\fontsize{11pt}\selectfont \descLabelFormat{#1}}}}
+
+\setlist[description]{leftmargin=4pt}
 
 
 \usepackage{titling}
 
 \renewcommand\maketitlehookc{\vspace{-35pt}}
 
+\newcommand{\pseudoIndent}{%
+%
+\vspace{-1pt}\hspace*{13pt}}
 
 \usepackage{etoolbox}
 
@@ -1507,20 +1522,67 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \ifnum\presetStretch=2\else\enlargethispage{#1}\fi%
 }
 
+\usepackage{tabu}
+
+\definecolor{sb}{RGB}{199, 9, 114}
+
+\taburulecolor{sb!50}
+
+\setlength\tabcolsep{10pt}
+
+\usepackage{csquotes}
+\newenvironment{fnContentX}{\begin{displayquote}\begin{group}%
+\begin{tabu}{|p{.98\textwidth}}\fontfamily{pbk}\fontsize{9.5pt}{12pt}\selectfont}%
+{\end{tabu}\end{group}\end{displayquote}}
 
 
-\AtEndPreamble{
-\ifnum\presetStretch=2\setstretch{2}\fi	
+\usepackage[skins,breakable]{tcolorbox}
+
+\newenvironment{fnContent}{%
+\begin{tcolorbox}[width=.98\columnwidth,
+                  boxsep=0pt,
+                  left=0pt,
+                  right=0pt,
+                  top=2pt,
+                  arc=0pt,
+                  boxrule=0pt,toprule=0pt,
+                  colback=white,
+                  breakable=true
+                  ]%
+}%
+{\end{tcolorbox}}
+
+
+\newenvironment{fnContentTest}{%
+\begin{tcolorbox}[width=.98\columnwidth,
+                  boxsep=0pt,
+                  left=0pt,
+                  right=0pt,
+                  top=2pt,
+                  arc=0pt,
+                  boxrule=0pt,toprule=0pt,
+                  colback=red!40,
+                  breakable = true
+                  ]%
+}%
+{\end{tcolorbox}}
+
+
+
+%\newcommand{\fnmini}[1]{\begin{fnContentTest}#1\end{fnContentTest}}
+\newcommand{\fnmini}[1]{#1}
+
+
+
+
+\renewcommand{\@makefntext}[1]{\hspace{-8pt}\@makefnmarkfn\hspace{3.5pt}%
+\leftskip=9pt #1%\fnmini{#1}%
 }
 
-\renewcommand{\@makefntext}[1]{\@makefnmarkfn\hskip.5em\relax%
-\ifnum\presetStretch=2{\fnminidbl{#1}}\else{\fnmini{#1}}\fi%
-}
+\renewcommand{\@makefntextX}[1]{\begin{group}#1\end{group}}
 
+%\renewcommand{\@makefntext}[1]{\fnmini{#1}}
 
-\newcommand{\mmakefntext}[1]{\makefnmarkfnOne\hskip.5em\relax%
-\ifnum\presetStretch=2{\fnminidbl{#1}}\else{\fnmini{#1}}\fi%
-}
 
 \definecolor{fncAlt}{RGB}{165, 10, 18}
 
@@ -1548,10 +1610,12 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \ifnum\presetStretch=2{\fnminidbl{#2}}\else{\fnmini{#2}}\fi%
 }
 
-\definecolor{fnMarkColor}{RGB}{52, 105, 125}
+
+%\definecolor{fnMarkColor}{RGB}{52, 105, 125}
+\definecolor{fnMarkColor}{RGB}{218, 56, 97}
 
 \renewcommand\@makefnmark{%
-\raisebox{3.5pt}{\resizebox{!}{5pt}{{\color{fnMarkColor}\textbf{\@thefnmark}}}}}
+\raisebox{3.5pt}{\resizebox{!}{5pt}{{\color{fnMarkColor}\@thefnmark}}}}
 
 \newcommand{\fnm}{\setcounter{footnote}{1}%
 \raisebox{4.5pt}{\resizebox{!}{4.5pt}{{\color{fnMarkColor}1}}}}
@@ -1590,7 +1654,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=1{
+\ifnum\value{page}=91{%1
 \AtTextLowerLeft{
 \hspace*{-2pt}\raisebox{6pt}{%
 %\par\noindent\bfnr

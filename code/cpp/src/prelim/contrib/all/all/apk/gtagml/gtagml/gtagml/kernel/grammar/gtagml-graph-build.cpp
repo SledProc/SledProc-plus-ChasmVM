@@ -928,6 +928,15 @@ void GTagML_Graph_Build::auto_new_paragraph(QString cmd)
  flags.await_sentence_start = true;
 }
 
+void GTagML_Graph_Build::pseudo_paragraph()
+{
+ reset_primary();
+
+ xml_writer_.writeTextElement("<pp>", "");
+ latex_stream_ << "\n\n\\pseudoIndent{} ";
+}
+
+
 void GTagML_Graph_Build::enter_subparagraph(QString text)
 {
  reset_primary();
@@ -1180,12 +1189,21 @@ void GTagML_Graph_Build::enums_item(u2 number, QString text, QString follow)
  xml_writer_.writeTextElement("enums-item", "");
 }
 
+void GTagML_Graph_Build::desc_item_with_multiline_label(QString text)
+{
+ reset_primary();
+
+ latex_stream_ << "\n\n\\descItemBlank{} \\descMLabel{" << text << "}";
+//? xml_writer_.writeTextElement("exs-item", "");
+
+ end_sentence();
+}
 
 void GTagML_Graph_Build::desc_item(QString text)
 {
  reset_primary();
 
- latex_stream_ << "\n\\item[" << text << "]";
+ latex_stream_ << "\n\n\\descItem{" << text << "}";
 //? xml_writer_.writeTextElement("exs-item", "");
 
  end_sentence();

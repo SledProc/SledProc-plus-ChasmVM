@@ -379,6 +379,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.end_sentence();
  });
 
+// -.>
+
+ add_rule( gtagml_context, "pseud-paragraph",
+   " - \\. > "
+   ,[&]
+ {
+  graph_build.pseudo_paragraph();
+ });
 
  add_rule( gtagml_context, "special-section",
    " .blank-lines. %\\. \\s* (?<text> \\S+) \\s+"
@@ -420,6 +428,14 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   graph_build.desc_item(text);
  });
 
+ add_rule( flags_all_(parse_context ,read_desc_label),
+   gtagml_context, "desc-item-with-multiline-label",
+   " \\[; (?<text> [^;]+) ;\\] "
+   ,[&]
+ {
+  QString text = p.matched("text");
+  graph_build.desc_item_with_multiline_label(text);
+ });
 
  add_rule( flags_all_(parse_context ,ignore_blank_lines),
    gtagml_context, "consume-blank-line",

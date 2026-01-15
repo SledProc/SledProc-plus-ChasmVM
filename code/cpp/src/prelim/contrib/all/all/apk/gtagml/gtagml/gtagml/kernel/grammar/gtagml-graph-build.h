@@ -307,6 +307,8 @@ public:
   end_sentence("", Nesting_Codes::Signal_Default, {});
  }
 
+ void pseudo_paragraph();
+
  void noindent_marker();
 
  void footnote_marker(QString text);
@@ -315,6 +317,8 @@ public:
  void ell_2_nonbreak();
 
  void desc_item(QString text);
+ void desc_item_with_multiline_label(QString text);
+
 
  void exs_item(u2 number, QString text);
  void paren_ref(u2 number, QString text);
