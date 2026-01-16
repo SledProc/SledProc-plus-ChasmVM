@@ -55,7 +55,13 @@ Minimum Information for Biological and Biomedical Investigations, or
 and to mixed data/code/multimedia formats such as ;/FAIR/sharing  
 (Findable, Accessible, Interoperable, Reusable) and 
 Research Objects (including "/Executable Research Objects/", 
-Research Object "/Bundles/", Research "/Compendia/", and so forth).
+"/Executable Papers/",  
+Research Object "/Bundles/", Research "/Compendia/", 
+or %-- as with the name of one US "/Data Infrastructure Building Blocks/" (;/DIBBs/)  
+initiative %-- "/the Whole Tale/".{< For the "/compendium/" 
+model, see [/LimorPeerEtAl/].  For "/executable papers/", 
+[/RudolfStrijkersEtAl/].  For FAIRdata,   
+[/NickGarabedianEtAl/].  For the "/Whole Tale/", [/BertramLudascherEtAl/]. >}  
 
 A common theme of these various formats is that the basic unit of 
 disseminating scientific or academic research is not (or no longer) 
@@ -135,7 +141,7 @@ were openly acknowledged by the team behind ,/CORD19/, who
 described the steps they took to (imperfectly) convert 
 ;/PDF/ files to a machine-readable ;/JSON/ format.  They even issused   
 a "/call to arms/" encouraging publishers to adopt a 
-more consistent text representation. -%> \thispagestyle{two}
+more consistent text representation. -%> `thispagestyle<empty>;
 
 Text Mining and Natural Language Processing are sophisticated 
 use-cases for machine-readable text encoding, but more 
@@ -446,8 +452,7 @@ structures %-- both textual and data sets %-- that
 ;/VM/-compiled components would likely 
 need to traverse/navigate, insofar as the relevant 
 structural details may be directly incorporated 
-into the ;/VM/'s instruction roster.
-
+into the ;/VM/'s instruction roster. -%> `vspace<21pt>; 
 
 ///  Sentence Objects and Other Textual Elements
        
@@ -468,8 +473,8 @@ for representing written text.  In recent years,
 popular, producing human-readable ;/PDF/s through techniques 
 such as ;/XSL-FO/ while also enabling natural-language 
 content to be analyzed via generic ;/XML/ protocols, such as 
-;/XQuery/ and ;/XQSE/ (;/XQuery/ Scripting Extentions).  ;/JSON/-based 
-formats are also used, such as the ;/JSON/-??? protocol adopted 
+;/XQuery/ and ;/XQSE/ (;/XQuery/ Scripting Extentions).  ,/lJSON/-based 
+formats are also used, such as the ;/JSON/-;/S2ORC/ protocol adopted 
 by ,/CORD19/ (mentioned earlier).  Specifications such as the 
 Text Encoding Initiative (;/TEI/) may employ a generic 
 representation for convenience (e.g., ;/TEI/-;/XML/) but they are 
@@ -807,6 +812,57 @@ specialized object) are a different category
 many or all of the documents typically 
 handled by publishing software. 
 
+For example, suppose a manuscript takes a place among a 
+Research Object with geospatial data, with 
+;GIS "/attribute layers/" encoded via columns 
+in the so-called ;XYZ format (which is an alternative 
+to latitude/longitude more directly usable by 
+digital map displays).  It is entirely possible 
+that the main publication will include some 
+discussion about this format, which establishes 
+cross-reference points between the text and data 
+sets.  Meanwhile, included code %-- if it does 
+indeed seek to make the raw files usable for 
+analysis %-- will almost certainly include 
+procedures for ;XYZ to ;/lat/lon/ conversion, 
+as well as distance metrics in the former, 
+computations related to Mercatur projections, 
+and so forth.  These calculations thereby 
+yield cross-reference points between the source 
+code and components both of the textual and raw 
+data varieties.
+
+Along similar lines, suppose a chemistry paper 
+includes various terms for named compounds, amino 
+acids, and so on (just considered in the molecular-visualization 
+context).  With these specific technical entities, special-purpose 
+supplemental data and annotations can be relevant, such as 
+;PDB assession numbers, launch-requests for external 
+visualization tools, transcriptions between names and 
+formulae, etc.  It would be reasonable to include access to 
+such information among context-menus activated both in the 
+;PDF window areas proximate to names/formulas in text 
+form, and in software tools that might be drafted 
+for interactive displays or scientific analysis.  
+In other words, context-menu implementations 
+%-- or at least hooks into points where menu options 
+are populated %-- will ideally be synchronized 
+among different parts of a Research Object, including 
+text (e.g., ;/PDF/) viewers.
+
+The presence of textual elements requirement special treatments 
+along these lines may be notated by conventions like 
+domain-specific ;XML tags, but actually implementing 
+the cross-component interop needed to leverage this 
+kind of metadata almost certain requires programming over 
+textual content as well as data-set materials as a whole.  
+In other words, these are concrete User Interaction 
+features that illustrate the principle that 
+text content (including objects modeleing rhetorical/discourse 
+structures) is now situated as a computational 
+artifact among variegated information spaces, 
+like fibres of a differentiable manifold.  
+    
 
 
 // //  Sentences are Preeminent Units of Discourse

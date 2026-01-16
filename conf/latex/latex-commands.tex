@@ -3,7 +3,7 @@
             bindingoffset=0.2in,
             left=.35in,
             right=.35in,
-            top=.5in,
+            top=.8in,
             bottom=.5in,
             footskip=.35in]{geometry}
 
@@ -1181,6 +1181,13 @@ breaklines=true
 
 \newcommand{\eAfn}[1]{\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}}
 
+\newcommand{\leA}[1]{\resizebox{!}{6.5pt}{{\fontfamily{qcs}\selectfont #1}}}
+
+\newcommand{\seA}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
+
+\newcommand{\lJSON}{\leA{J}\sea{SON}}
+
+
 
 
 
@@ -1328,7 +1335,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \setlength{\headsep}{9pt}
 
 \fancyhead[C]{}
-\fancyhead[L]{\raisebox{-19pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
+\fancyhead[L]{\hspace{-7pt}\raisebox{-4pt}{\textcolor{tlc-main}{{\fontfamily{qcs}\fontsize{10}{10}\selectfont\thepage}}}}
 \fancyhead[R]{}
 
 \fancyfoot[C]{}
@@ -1355,6 +1362,27 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \renewcommand{\headrulewidth}{0pt}    
 
 }
+
+
+
+
+\fancypagestyle{test}{
+
+\setlength{\headsep}{25pt}
+
+\fancyhead[C]{}
+\fancyhead[L]{XXXX}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[L]{XXX}
+\fancyfoot[R]{}
+
+\renewcommand{\headrulewidth}{0pt}    
+
+}
+
+
 
 
 
