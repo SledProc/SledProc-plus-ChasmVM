@@ -648,7 +648,7 @@ void GTagML_Graph_Build::enter_footnote(QString pretext, QString space)
   ++sentence_nesting_depth_;
  }
 
- latex_stream_ << "\\footnote{" << latex_space;
+ latex_stream_ << "\\docFootnote{" << latex_space;
 }
 
 QString GTagML_Graph_Build::line_and_column_string_tight()
@@ -1496,14 +1496,22 @@ void GTagML_Graph_Build::leave_short_macro_mode()
 }
 
 
-void GTagML_Graph_Build::enter_emph_italics_mode()
+void GTagML_Graph_Build::enter_emph_italics_mode(QString mid)
 {
  reset_primary();
 
  parse_context_.flags.emph_italics_mode = true;
 
- xml_writer_.writeStartElement("eI");
- latex_stream_ << "\\eI{";
+ if(mid == "=")
+ {
+  xml_writer_.writeStartElement("eIbox");
+  latex_stream_ << "\\eIbox{";
+ }
+ else
+ {
+  xml_writer_.writeStartElement("eI");
+  latex_stream_ << "\\eI{";
+ }
 }
 
 void GTagML_Graph_Build::leave_emph_italics_mode()

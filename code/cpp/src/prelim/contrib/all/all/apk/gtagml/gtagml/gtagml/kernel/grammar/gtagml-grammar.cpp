@@ -98,17 +98,17 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
  add_rule( flags_all_(parse_context ,emph_italics_mode),
    gtagml_context, "leave-emph-italics-mode",
-   " / (?=\\s) "
+   " / (?!=/) "
    ,[&]
  {
   graph_build.leave_emph_italics_mode();
  });
 
  add_rule( gtagml_context, "enter-emph-italics-mode",
-   " &/ "
+   " & (?<mid> =?) / "
    ,[&]
  {
-  graph_build.enter_emph_italics_mode();
+  graph_build.enter_emph_italics_mode(p.matched("mid"));
  });
 
 

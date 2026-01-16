@@ -424,7 +424,7 @@ public:
  void leave_single_quote_mode_trebled();
  void enter_acronym_mode(u1 size);
  void leave_acronym_mode();
- void enter_emph_italics_mode();
+ void enter_emph_italics_mode(QString mid);
  void leave_emph_italics_mode();
 
  void special_character_sequence(QString text);

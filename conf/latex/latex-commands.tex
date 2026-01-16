@@ -1174,10 +1174,28 @@ breaklines=true
 
 \definecolor{eIcolor}{RGB}{153, 106, 121}
 \newcommand{\eI}[1]{\textcolor{eIcolor}{\textit{#1}}}
+\newcommand{\eIbox}[1]{\makebox{\textcolor{eIcolor}{\textit{#1}}}}
 
 
+\newif\ifcurrentfootnote
+\currentfootnotefalse
 
-\newcommand{\eA}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
+%\let\origfootnote\footnote
+
+\newcommand{\docFootnote}[1]{\currentfootnotetrue\footnote{#1}\currentfootnotefalse}
+ 
+\newcommand{\visavis}{vis-\`a-vis}
+
+%\newcommand{\eA}[1]{\iffoot%
+%\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}
+%\else%
+%\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}
+%\fi}
+
+\newcommand{\eAnonfoot}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
+\newcommand{\eAfoot}[1]{\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}}
+
+\newcommand{\eA}[1]{\ifcurrentfootnote\eAfoot{#1}\else\eAnonfoot{#1}\fi}
 
 \newcommand{\eAfn}[1]{\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}}
 
@@ -1600,6 +1618,12 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 %\newcommand{\fnmini}[1]{\begin{fnContentTest}#1\end{fnContentTest}}
 \newcommand{\fnmini}[1]{#1}
 
+
+\newcommand{\ellThree}[2]{%
+\makebox{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}}
+
+\newcommand{\ellFour}[2]{%
+\makebox{\hspace{#1}.\hspace{2pt}.\hspace{2pt}.\hspace{2pt}.\hspace{#2}}}
 
 
 

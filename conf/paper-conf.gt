@@ -98,7 +98,14 @@ options, and vaccination strategies of ;/SARS-Cov-2/ were still
 under investigation %-- a computationally analyzable corpus 
 held potential for scientists with one specialization to 
 find useful information in articles they might not 
-discover by mere chance.  
+discover by mere chance.{< For a general introduction 
+to ,CORD19 see [/LucyLuWangEtAl/].  Several other 
+publications have described analysis that */used/* 
+the repository, in contrast to presenting computational 
+details about its implementation.  Also as relevant in 
+this context (I hope), I wrote an extended 
+analysis of ,CORD19 in the second half of 
+Chapter 3 of [/NCDataIntegration/]. >}   
 
 In effect, the goal of ,CORD19 was not just to free up 
 a large volume of documents to be browsed by human 
@@ -136,12 +143,41 @@ strings such as organic or chemical formulae; the
 ,/CORD19/ documents did not use a consistent mechanism for 
 notating these (potentially semantically significant) 
 textual elements (or, at least, structured data 
-was not preserved in the final ;/PDF/).  These problems 
+was not preserved in the final ;/PDF/).{< 
+In my own analysis of ,/CORD19/ mentioned above, 
+I gave the example of a compound &=/2'-C-ethynyl/, 
+which is also notated as &=/2 0-C-ethynyl/.  With 
+these alternatives, and also the fact that the ;JSON 
+markup appeared in places to incorrectly parse 
+the strings %-- i.e., breaking the formula 
+at the wrong location %-- the corpus overall 
+has multiple different representations for 
+the same formula.  This obvious obscured the 
+fact that each of these represent the 
+same concept, and indicate how semantic
+annotation would be more reliable.  
+>}  These problems 
 were openly acknowledged by the team behind ,/CORD19/, who 
 described the steps they took to (imperfectly) convert 
 ;/PDF/ files to a machine-readable ;/JSON/ format.  They even issused   
 a "/call to arms/" encouraging publishers to adopt a 
-more consistent text representation. -%> `thispagestyle<empty>;
+more consistent text representation.{<
+Under a section explicitly titled "/call to arms/" they 
+counsel that "/a number of 
+challenges prevent easy application of ;NLP
+and text mining techniques to these papers.... [T]he 
+primary distribution format of scientific papers
+%-- ;PDF %-- is not amenable to text processing. The
+;PDF file format is designed to share electronic documents 
+rendered faithfully for reading and printing, and 
+mixes visual with semantic information.
+Significant effort is needed to coerce ;PDF into a
+format more amenable to text mining, such as ;JATS
+;XML, ;BioC ... or ;S2ORC ;JSON.... [T]he
+community must define and agree upon an 
+appropriate standard of representation 
+[/LucyLuWangEtAl:6/].
+>} -%> `thispagestyle<empty>;
 
 Text Mining and Natural Language Processing are sophisticated 
 use-cases for machine-readable text encoding, but more 
@@ -175,13 +211,15 @@ scope of topics addressed here.  Instead, the instantiation of
 fully-deterministic encoding of textual material in the 
 specifically */written/* environment of academic and scientific 
 presentation, which includes not only linguistic conventions but 
-also normative practices for inline and block quotes, citations, 
-footnotes, figure illustrations, book indexes, and so forth.  Given the co-existence 
+also normative practices for written manuscripts: inline and block quotes, citations, 
+footnotes, figure illustrations, book indexes, and so forth.  Collectively, 
+these might be designated as facets of */discourse/* rather than 
+language proper.  Given the co-existence 
 of text with raw data and/or code within unified data packages, 
 we can consider to what extent User Experience and structural 
 models should be conceptualized as applying simultaneously to 
 text and to data sets, as well as ;/GUI/ components that present 
-then respectively as visual resources.
+them respectively in the form of visual resources.
 
 For example, we can isolate specific areas of potential 
 ;/GUI/ functionality in contexts where human readers are seeing 
@@ -190,19 +228,19 @@ the words of a sentence to the clipboard; searching for
 information about a single word, phrase, or term; examining the 
 original text from which a quote was sampled; accessing a data 
 set and/or multimedia resources that are indirectly included 
-in text documents through figures/graphics (for instance, 
+in text documents through figures/ graphics (for instance, 
 if a picture shows one frame from a video, finding and 
-watching the video in its entirety); etc.  We can 
+watching the video in its entirety).  We can 
 then identify related capabilities operational in the 
 context of data sets and supporting/analytic code: the 
 data fields of tuple-like records, for instance, are semantic 
 objects potentially governed by analogous conventions as 
 technical terms present in text; algorithms described in a 
-manuscript can be studied concrete in the implementation 
+manuscript can be studied concretely in the implementation 
 bodies of data-set functions; readers could replicate simulations 
 discussed in research papers with their own parameters.  
 
-It's not obvious that the same computational toolsets that 
+Perhaps it is not obvious that the same computational toolsets that 
 might be used to implement functionality related to 
 text documents would also be applicable to Research Objects 
 and data sets.  Certainly there are structural differences 
@@ -218,7 +256,7 @@ sentences and keywords/phrases/annotations) and data-set
 records as objects accessed and ;/GUI/-rendered via similar 
 protocols.  As a concrete example, similar methods might be 
 used to populate context menus whether activated in the area 
-of a keyphrase within a ;/PDF/ window or of a table-view 
+of a keyphrase within a ;/PDF/ window, or of a table-view 
 (or any other intra-window control) that shows an individual 
 data field, record/tuple, or statistical aggregate.  Likewise, 
 search protocols %-- whether triggered by an actual query language 
@@ -235,7 +273,7 @@ tactic in relation to published Research Objects.  I */will/*
 work under the assumption that authors and digital editors 
 seek to align with ;/FAIR/ priorities, which means in particular 
 that data sets are */executable/* with minimal external dependencies.  
-In othre words, as much as possible, interested readers 
+In other words, as much as possible, interested readers 
 should be able to obtain the content of an Executable Research 
 Object */in source code/* fashion and use those sources 
 %-- e.g., by building an entry-point executable %-- without having to 
@@ -245,57 +283,84 @@ self-contained package in this sense may reasonably assume that
 readers have access to a working and relatively up-to-date development 
 environment typical for their language of choice %-- for example, 
 a ;/C++/-based bundle obviously requires a ;/C++/ compiler, and 
-canonical libraries such as boost or ;/Qt/ are acceptable external 
+canonical libraries such as ;/boost/ or ;/Qt/ are acceptable external 
 dependencies.  Nonetheless, publishers should be careful to 
 ensure that clear instructions are given for users who need to 
-set up a prototypical development environment to begin with [, and external 
-dependencies should be favored which].  Source files obviously have 
-*/some/* dependencies (at least, either compilers or scripting-language 
+set up a prototypical development environment to begin with.{< And external 
+dependencies should be favored which are easier to use.  For instance, 
+if two ;/C++/ libraries provide similar functionality, developers should 
+comparse them based on how easy or difficult it is to install 
+the libaries assuming they are not already present on one's 
+system (while taking into account that the package manager 
+for a user's linux distro, for example, may not be up-to-date).  
+If one library is noticeably better in this regard, the Research 
+Object should put more emphasis into code that works with that 
+library as a dependency as opposed to the alternative. >}  Source files obviously 
+have */some/* dependencies (at least, either compilers or scripting-language 
 interpreters).  However, I make the assumption here that Executable 
 Research Objects are predominantly disseminated in source-code fashion.  
-This is difference from projects such as Kaggle (or other digital-notebook 
+This is different from projects such as Kaggle (or other digital-notebook 
 software, holding out the possibility that data sets might be 
-distributed as Kaggle notebooks or similar), or reprozip (which packages 
+distributed as Kaggle notebooks or similar), or ;/reprozip/ [/VickyStevensEtAl/] (which packages 
 up all necessary binary components that can be identified as preconditions 
-for data-set code to run on the developer's own computer).  
+for data-set code to run on the developer's own computer). 
 
 I will not specifically address the question of whether binary or source-based 
-dissemination is easier for end-users, either in general or visavis any 
+dissemination is easier for end-users, either in general or ,visavis any 
 particular data set.  My goal is rather to examine requirements for a 
-Virtual Machine that can function in the former context; in particular, 
-that itself can be built with minimal external dependencies.  I assume 
+Virtual Machine that can function in the former context %-- in particular, 
+that itself could be built with minimal external dependencies.  I assume 
 that, even in a context where Research Object code is published 
-as source files in a mainstream programming language (;/C++/, Java, etc.), 
-there are some domain-specific or fine-tuning implementations that 
-can usefully be coded in a special-purpose language.  For example, the 
-information encoded in a data set might be approached */de facto/* as a 
+as source files in a mainstream programming language (;/C++/, ;/Java/, etc.), 
+there are some domain-specific or fine-tuning details that 
+might usefully be coded in a special-purpose language.  For example, the 
+information encoded in a data set may be approached */de facto/* as a 
 database which accepts queries in an ;/SQL/-like (or some flavor of ;/NoSQL/) 
-format %-- potentially extended to "/full-text search/" visavis 
+format %-- potentially extended to "/full-text search/" ,visavis 
 associated text documents.  In other scenarios, an Executable Research Object 
-may employ something like a built-in scripting language to run 
+could employ something like a built-in scripting language to run 
 analytic code, fine-tune ;/GUI/s, compose plugins for external scientific applications, 
 etc.  (The principle that Research Object code should be self-contained and source-based 
 does not preclude users exploring data sets, or individual files therein, 
 via disipline-specific applications that have analytic or visualization capabilities 
 conducive to advanced research %-- the idea of Executable Research Object is not necessarily 
 to replace the tools that scientists use for their core investigations, but rather to 
-provide accessible code for evaluative and pedagogical purposes).
+provide accessible code for evaluative and pedagogical purposes for 
+users not familiar with or able to run the "/professional/" software).
 
-To clarify why a ;/VM/ may have specific roles in a Research Object context, I will 
-identify potential ;/VM/ use-cases.  One obvious example is that of deserializing data sets.  
+// //  Deserialization and Other User Cases
+
+To clarify why a ;/VM/ can have nontrivial roles in a Research Object context, I will 
+identify potential ;/VM/ use cases.  One obvious example is that of deserializing data sets.  
 Many subject areas have special-purpose data formats reflecting the unique kinds of 
-information pertinent to given scientific fields.  Some of these are narrowings of 
+information pertinent to their scientific field.  Some of these are narrowings of 
 canonical formats like ;/XML/ or ;/JSON/, but even in these cases dedicated code is 
 needed to traverse a ;/DOM/ hierarchy, respond to ;/SAX/ events, or otherwise 
 walk through nodes of the generic data structure to extract individual values that 
 populate fields of domain-specific data types.  Other formats have their 
 own text and/or binary encodings, such that some form of parsing library is also 
-necessary for deserialization (usually in conjunction with post-processing analogous 
-to ;/DOM/ navigation).  Even a simple standard like ;/CSV/ often does not map precisely 
+necessary for deserialization (possibly in conjunction with post-processing logic analogous 
+to, say, ;/DOM/ navigation).  Even a simple standard like ;/CSV/ often does not map precisely 
 to serialized objects, given that most aggregate values cannot be fully decomposed 
 into tuples of scalar data points (instead, ;/CSV/ circuitously encodes vector/array 
 structures, or values sampled from enumerated classes, or special-purpose fields 
-that are usually undefined or default-initialized and thus encoded as empty cells). 
+that are usually undefined or default-initialized and thus encoded as empty cells).{< 
+One example I am familiar with is the Toxic Release Inventory (;/TRI/) project 
+of the Environmental Protection Agency.  The ;EPA publishes annual reports, 
+available on a state-by-state basis, recording incidents of 
+environmental contamination due to toxic leaks (from a list of several 
+dozen known harmful substances).  The raw data takes the form of ;CSV files 
+with over 200 columns, but there certainly is not a one-to-one correlation 
+between those columns and reasonable data fields of deserialized objects. 
+Instead, some groups of columns serve to indirectly encode vectors 
+of similarly-typed value, with up to perhaps five elements; others 
+encode special conditions that are applicable to only a few records 
+in the collection; still others encode text strings which have to comform 
+to a restricted list of enumerated values.  In short, a class type 
+holding record-data would use a collection of vector-like collections, 
+,,/enum/s, boolean flags, and so forth to represent many of the 
+data-points.  All of this obviously complicates the deserialization 
+process ("/;/CSV/-to-Object mapping/", so to speak). >} 
 That is, code to deserialize ;/CSV/ can be equally complex to ;/XML/ or ;/JSON/ (likewise for 
 alternatives such as ;/RDF/, multi-dimensional arrays, and so on).
 
@@ -308,38 +373,45 @@ groups working with limited resources, and they can have problems related
 to versioning (the code being incompatible with newer, or older, representation specs), 
 lack of breadth for different programming languages or operating systems, 
 external dependencies (or other details that make the libaries hard to build and/or 
-use, for some environments), and other issues affecting ;/FAIR/-style accessibility.  
+use for some people), and other issues affecting ;/FAIR/-style accessibility.  
      
 In principle, a ;/VM/ in this context could provide a common environment for 
 implementing deserialization libraries, at least as a supplement to those 
 provided via traditional programming languages.  For widely-used 
-data formats, we can assume that many different published data set 
+data formats, we can assume that many different published data sets 
 will require users to parse data files sharing a particular format.  
-In principle, the ;/VM/ instruction set could be interpreted by 
+The ;/VM/ instruction set could be interpreted by 
 multiple languages in variegated environments %-- i.e., the ;/VM/ runtime itself 
 could be ported to multiple language and operating-system contexts, 
 and then distributed in source form alongside dataset-specific code 
 (including deserialization algorithms in bytecode form).  Alternatively, the 
-;/VM/ runtime might be made available as a binary component so long as it is 
-tested against multiple platforms.
+;/VM/ runtime might be made available as a binary component (so long as it is 
+tested against multiple platforms, to the extent that it serves as a 
+"/;/FAIR//" component).
 
 Assuming that this is indeed a primary use-case, notice that the ;/VM/ would not 
 need to be highly optimized in terms of execution speed, multi-threading support, 
 fault-tolerance, and so forth.  Even as the compilation target of a special-purpose 
 scripting format, the ;/VM/ would not primarily function as host to a 
-general-purpose language like Python or JavaScript.  Instead, it could be designed 
+general-purpose language like ;/Python/ or ;/JavaScript/.  Instead, it could be designed 
 from the ground up around requirements specific to data publishing and 
 Executable Research Objects.
 
 After a data set is loaded, it will typically be viewed and studied by the researcher 
 who downloaded it.  Potentially, this involves both dedicated ;/GUI/ windows 
-showing details both about object-collections in aggregate and individual 
+showing details about object-collections in aggregate and also individual 
 objects/records (e.g., something like a ;/GUI/ "/form/" showing the values 
 of individual data fields in an organized layout, perhaps with list-views 
-or hierarchical "/accordians/" for non-scalar information) as well as statistical 
+or hierarchical "/accordiaos/" for non-scalar information) as well as statistical 
 overviews, presented via (interactive) graphics (charts, plots, 
-diagrams, histograms, etc.).  This is another area where ;/VM/s might be 
-pressed into service.  Suppose a Research Object is implemented in ;/C++/: 
+diagrams, histograms, etc.).{< "/Accordion/" is a common term for a sort 
+of ;GUI control that has multiple inner segments, of each 
+which can be independently expanded or contracted (i.e., fully hidden).  
+In the latter state only a (typically one-line) header remains 
+visible. >}  This is another area where ;/VM/s might be 
+pressed into service.  
+
+Suppose a Research Object is implemented in ;/C++/: 
 although in principle all the ;/GUI/ code could be built specifically for that 
 one publication, to avoid reduplication of effort the authors might 
 prefer to reuse components provided for the relevant book series, 
@@ -348,19 +420,45 @@ journal title, science grid, and so on.  Assume, again, that such
 each Research Object could thereby reuse generic components but 
 adopt the underlying ;/C++/ code for their own purposes, given the 
 unique research methods and data profiles driving their investigation.  
-At least visavis some functionality, however, such adaptations might 
+At least ,visavis some functionality, however, such adaptations might 
 fit predictable patterns conducive to a special-purpose script or 
 query format rather than manually rewriting ;/C++/ code.  For instance, 
 context menus tend to need specific action options unique to the 
 current data set, so "/scripts/" against an embedded ;/VM/ might be 
-employed to populate context menus, being called somewhere after 
-the triggering event (such as a right mouse-button click) 
+employed to populate those menus, being called somewhere after 
+the triggering event (a right mouse-button click or ,,/ctrl/ ;;/+/ left button) 
 is registered.  Similar comments could be made about areas of 
 functionality such as setting up initial parameters for a 
 simulation; managing text/data cross-references; logic for 
 preserving application state and user preferences; etc.
 
-Another potential ;/VM/ use-case involves data analysis.  
+Context menus are a good case in point because, in a ;PDF display, 
+most of a reader's attention is focused on the document and not 
+on ;GUI controls scatterred by the edge of the window.  Therefore, 
+functionality requested in the document's context would 
+typically be activated via a context menu rather than a 
+;GUI button or other clickable area (the context menu could be 
+localized to individual words/text segments, particularly 
+for keyphrases and indexed headings; or figure graphics, 
+hyperlinks, and other components of a publication that 
+might have extra programming attached).  However, 
+similar comments apply to other interactive controls: for 
+instance, when a user enters a term into the ;PDF search 
+box, viewers operating in a Research Object context might 
+well ask whether the search should be applied to 
+the entire package, not just the current ;PDF file 
+(exactly how to interpret searches over, say, raw 
+data files depends on the data set in question).  A 
+;PDF viewers designed specifically to embed 
+in Executable Research Objects could moreover adopt 
+a standard protocol for adding ;GUI buttons/controls 
+to interactive screen areas where individual projects 
+could place clickable elements that invoke functionality 
+more general than just those localized to 
+particular areas of text/documents (and therefore 
+less suitable to context menus). 
+
+Another potential ;/VM/ use case involves data analysis.  
 Not to imply that a dataset-embedded ;/VM/ would be part of 
 the ecosystem producing published findings; but 
 analytic code might be separately produced that illustrates 
@@ -531,7 +629,7 @@ there is no logical mandate for this relationship
 in a single ;/PDF/ page, but paragraphs are not intrinsically 
 situated within pages).  There are then, at least 
 four different varieties of nesting: overlap either 
-visavis beginning and end, and interiority either 
+,visavis beginning and end, and interiority either 
 via domination or containment.  By contrast, 
 ;/XML/ has a single parent/child relationship.  The more 
 complex ;/TagML/ architecture may or may not make 
@@ -594,7 +692,7 @@ We can, however, compare "/meta/" structures in that
 we can present the suite of parameters through which 
 any single ;/XML/ instance is individuated, and by comparison 
 the analogous parameters constituting the ;/TagML/ architecture.  
-Similar comparisons can be made visavis ;/JSON/ and 
+Similar comparisons can be made ,visavis ;/JSON/ and 
 ;/RDF/-like formats (e.g., text encoding via property-hypergraphs).
 
 For purposes of discussion, I will use terminology here to the 
@@ -689,7 +787,7 @@ web navigators, and so forth.
 To complete this task it is necessary to execute procedures that 
 can obtain the content of all ;PDF annotations, indexed by 
 page number.  One would then search each annotation-text for 
-every characteristic handles that indicates relevance visavis individual themes, building 
+every characteristic handles that indicates relevance ,visavis individual themes, building 
 up an ;;/std::map/ style data structure whose keys 
 are theme objects/labels.  Following the comment box page number, 
 one could moreover identify the chapter or inner document including 
@@ -715,7 +813,7 @@ a search-engine/vector-database sort of index) with attention to
 rhetorical details.  When the text of a manuscript provides a 
 citation or names a person or theory, authors could be 
 encouraged --- either directly through input sources or via ;PDF  
-annotations --- to summarize positions taken visavis 
+annotations --- to summarize positions taken ,visavis 
 that subject matter (e.g., endorse, critique, or neutral/evaluative).  
 When the sources or comments are analyzed to extract those 
 notations, the printed index could be extended by 
@@ -1056,7 +1154,7 @@ match to a query string.  Robust query-evaluation algorithms
 would presumably encompass a variety of parameters/flags and 
 protocol variation, considering the range of discursive 
 contexts which have somewhat different match-evaluation 
-characteristics, both visavis fairly canonical 
+characteristics, both ,visavis fairly canonical 
 writing conventions (block quotes, citations, etc.) and 
 special-purpose symbols, formulae, or character strings that 
 might be commonplace in a particular academic/scientific discipline.
@@ -1194,7 +1292,7 @@ each Research Object has its own specialized
 This is not analogous to largescale scientific 
 applications that that embeds a scripting interpreter 
 for customizations, like Python in the context of 
-;/ParaView/ or ;/ArcGIS/, JavaScript visavis ;/OpenCV.js/, 
+;/ParaView/ or ;/ArcGIS/, JavaScript ,visavis ;/OpenCV.js/, 
 or ;/C++/ itself (as an interpreted language) in ;/CERN/-;/ROOT/.  
 Clearly the entirety of ;/ParaView/, ;/ArcGIS/, ;/OpenCV/, 
 or ;/ROOT/ (not to mention ;/LLVM/ and Clang for the latter) 
