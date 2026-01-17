@@ -651,6 +651,15 @@ void GTagML_Graph_Build::enter_footnote(QString pretext, QString space)
  latex_stream_ << "\\docFootnote{" << latex_space;
 }
 
+void GTagML_Graph_Build::latex_command_via_semantic_annotation(QString concept, QString text)
+{
+ reset_primary();
+
+ xml_writer_.writeTextElement("SA-%1"_qt.arg(concept), text);
+ latex_stream_ << "\\SA" << concept << "{" << text << "}";
+}
+
+
 QString GTagML_Graph_Build::line_and_column_string_tight()
 {
  return line_and_column_string_tight(parser_->current_position());
@@ -1120,6 +1129,7 @@ void GTagML_Graph_Build::paren_ref(u2 number, QString text)
  xml_writer_.writeTextElement("-exsRef", "r");
 }
 
+
 void GTagML_Graph_Build::latex_command_auto_closed(QString command_name, QString arg)
 {
  reset_primary();
@@ -1281,8 +1291,15 @@ void GTagML_Graph_Build::emph_acronym(QString text)
 {
  reset_primary();
 
- xml_writer_.writeTextElement("eA", text);
- latex_stream_ << "\\eA{" << text << "}";
+ QString version;
+
+ if(text == text.toLower())
+   version = "AllLower";
+ else if(text != text.toUpper())
+   version = "SomeLower";
+
+ xml_writer_.writeTextElement("eA" + version, text);
+ latex_stream_ << "\\eA" << version << "{" << text << "}";
 }
 
 void GTagML_Graph_Build::enter_double_quote_mode()
@@ -1361,13 +1378,36 @@ void GTagML_Graph_Build::enter_acronym_mode(u1 size)
 
  parse_context_.flags.acronym_mode = true;
 
- xml_writer_.writeStartElement("eA");
- latex_stream_ << "\\eA{";
+ held_macro_string_ = "eA";
+// xml_writer_.writeStartElement("eA");
+// latex_stream_ << "\\eA{";
 }
 
 
 void GTagML_Graph_Build::leave_acronym_mode()
 {
+ QString version;
+
+ if(primary_acc_ == primary_acc_.toLower())
+   version = "AllLower";
+ else if(primary_acc_ != primary_acc_.toUpper())
+ {
+  // //  what to do
+  if(primary_acc_.endsWith("s"))
+  {
+   QString t = primary_acc_;
+   t.chop(1);
+   if(t == t.toUpper())
+     goto skip_this;
+  }
+  version = "SomeLower";
+ }
+
+skip_this:
+
+ xml_writer_.writeStartElement(held_macro_string_ + version);
+ latex_stream_ << "\\" + held_macro_string_ << version << "{";
+
  reset_primary();
 
  parse_context_.flags.acronym_mode = false;

@@ -87,6 +87,17 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
  });
 
 
+ add_rule( gtagml_context, "latex-command-via-annotation",
+   " @\\[(?<concept> \\w+):(?<text> [^\\]]+)\\] "
+   ,[&]
+ {
+  QString concept = p.matched("concept");
+  QString text = p.matched("text");
+
+  graph_build.latex_command_via_semantic_annotation(concept, text);
+ });
+
+
  add_rule( comment_context, "leave-multi-line-comment",
    " (?<tail> [~-]{2,}) ; ;+  "
    ,[gtagml_context, comment_context, this, &p] //raw_context, &graph_build, this, &p]
@@ -95,6 +106,13 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
   check_activate_with_depth_mark(gtagml_context, comment_context, tail.length());
  });
 
+ add_rule( flags_all_(parse_context ,emph_italics_mode),
+   gtagml_context, "leave-emph-italics-mode",
+   " /\\\\ (?=/) "
+   ,[&]
+ {
+  graph_build.leave_emph_italics_mode();
+ });
 
  add_rule( flags_all_(parse_context ,emph_italics_mode),
    gtagml_context, "leave-emph-italics-mode",

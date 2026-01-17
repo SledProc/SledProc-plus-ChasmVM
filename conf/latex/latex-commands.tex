@@ -1029,7 +1029,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 \newcommand{\repeatName}{\_\_\_\_\_}
 
-\newcommand{\visavis}{vis-`a-vis}
+%\newcommand{\visavis}{vis-`a-vis}
 
 
 \usepackage{enumitem}
@@ -1171,10 +1171,15 @@ breaklines=true
 \definecolor{eHcolor}{RGB}{232, 12, 81}
 \newcommand{\eH}[1]{\textcolor{eHcolor}{\textbf{#1}}}
 
+\newcommand{\lLen}{\textcolor{eHcolor}{\ensuremath{l}}}
 
 \definecolor{eIcolor}{RGB}{153, 106, 121}
 \newcommand{\eI}[1]{\textcolor{eIcolor}{\textit{#1}}}
 \newcommand{\eIbox}[1]{\makebox{\textcolor{eIcolor}{\textit{#1}}}}
+
+
+\newcommand{\ctrlleft}{\eH{ctrl}\eS{+}left}
+
 
 
 \newif\ifcurrentfootnote
@@ -1184,7 +1189,7 @@ breaklines=true
 
 \newcommand{\docFootnote}[1]{\currentfootnotetrue\footnote{#1}\currentfootnotefalse}
  
-\newcommand{\visavis}{vis-\`a-vis}
+%\newcommand{\visavis}{vis-\`a-vis}
 
 %\newcommand{\eA}[1]{\iffoot%
 %\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}
@@ -1195,7 +1200,19 @@ breaklines=true
 \newcommand{\eAnonfoot}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
 \newcommand{\eAfoot}[1]{\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}}
 
+\newcommand{\eASomeLowernonfoot}[1]{\resizebox{!}{6.5pt}{{\fontfamily{qcs}\selectfont #1}}}
+\newcommand{\eASomeLowerfoot}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
+
+\newcommand{\eAAllLowernonfoot}[1]{\resizebox{!}{7.5pt}{{\fontfamily{qcs}\selectfont #1}}}
+\newcommand{\eAAllLowerfoot}[1]{\resizebox{!}{6.5pt}{{\fontfamily{qcs}\selectfont #1}}}
+
 \newcommand{\eA}[1]{\ifcurrentfootnote\eAfoot{#1}\else\eAnonfoot{#1}\fi}
+
+\newcommand{\eASomeLower}[1]{\ifcurrentfootnote\eASomeLowerfoot{#1}\else\eASomeLowernonfoot{#1}\fi}
+\newcommand{\eAAllLower}[1]{\ifcurrentfootnote\eAAllLowerfoot{#1}\else\eAAllLowernonfoot{#1}\fi}
+
+
+
 
 \newcommand{\eAfn}[1]{\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}}
 
@@ -1203,10 +1220,15 @@ breaklines=true
 
 \newcommand{\seA}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
 
-\newcommand{\lJSON}{\leA{J}\sea{SON}}
+\newcommand{\lJSON}{\leA{J}\seA{SON}}
 
+\newcommand{\SAsmall}[1]{{\small{}#1}}
 
+\def\SAyear\SAsmall
+\def\SAnumber\SAsmall
 
+%\newcommand{\SAyear}[1]{{\small{}#1}}
+%\newcommand{\SAnumber}[1]{{\small{}#1}}
 
 
 \definecolor{rgr}{RGB}{61, 38, 48}

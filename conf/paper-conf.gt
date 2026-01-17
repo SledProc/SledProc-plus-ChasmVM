@@ -405,7 +405,8 @@ of individual data fields in an organized layout, perhaps with list-views
 or hierarchical "/accordiaos/" for non-scalar information) as well as statistical 
 overviews, presented via (interactive) graphics (charts, plots, 
 diagrams, histograms, etc.).{< "/Accordion/" is a common term for a sort 
-of ;GUI control that has multiple inner segments, of each 
+of ;GUI control that has multiple inner segments, usually stacked 
+vertically (i.e., higher on the screen to lower) each of  
 which can be independently expanded or contracted (i.e., fully hidden).  
 In the latter state only a (typically one-line) header remains 
 visible. >}  This is another area where ;/VM/s might be 
@@ -426,37 +427,67 @@ query format rather than manually rewriting ;/C++/ code.  For instance,
 context menus tend to need specific action options unique to the 
 current data set, so "/scripts/" against an embedded ;/VM/ might be 
 employed to populate those menus, being called somewhere after 
-the triggering event (a right mouse-button click or ,,/ctrl/ ;;/+/ left button) 
+the triggering event (a right mouse-button click or ,/ctrlleft/ button) 
 is registered.  Similar comments could be made about areas of 
 functionality such as setting up initial parameters for a 
 simulation; managing text/data cross-references; logic for 
 preserving application state and user preferences; etc.
+
+For another example, suppose one graphic in a publication
+shows a video frame.  An obvious context action 
+for menus near that image is for the user to watch 
+the video in question (perhaps with an option to 
+start shortly before the still that is depicted).  If 
+the video actually records the run of 
+one computer simulation, the 
+user could instead be brought to ;GUI controls 
+where they can (as needed) set up parameters 
+and then execute a similar simulation on their own.
+
+Here is a related case: suppose a publication names 
+chemical compounds or formulae, and it is possible 
+to obtain (from a service such as Protein Data Bank, or 
+;/PDB/) data files that certain applications are able to use 
+for constructing ,3D molecular visualizations, modeling 
+that subtantce's atomic structure.  If the ;PDF viewer 
+interoperates with such software/components 
+(I will review possible strategies later) then 
+launching the graphics' window with that 
+specific molecular file loaded would be a useful 
+context option, assuming the menu is 
+activated in proximity to the annotated text 
+(viz., where the name/formula is present).   
 
 Context menus are a good case in point because, in a ;PDF display, 
 most of a reader's attention is focused on the document and not 
 on ;GUI controls scatterred by the edge of the window.  Therefore, 
 functionality requested in the document's context would 
 typically be activated via a context menu rather than a 
-;GUI button or other clickable area (the context menu could be 
+;GUI button or other clickable area (the menu could be 
 localized to individual words/text segments, particularly 
 for keyphrases and indexed headings; or figure graphics, 
 hyperlinks, and other components of a publication that 
 might have extra programming attached).  However, 
 similar comments apply to other interactive controls: for 
 instance, when a user enters a term into the ;PDF search 
-box, viewers operating in a Research Object context might 
+box, windows operating in a Research Object context might 
 well ask whether the search should be applied to 
 the entire package, not just the current ;PDF file 
 (exactly how to interpret searches over, say, raw 
 data files depends on the data set in question).  A 
-;PDF viewers designed specifically to embed 
+;PDF viewer designed specifically to embed 
 in Executable Research Objects could moreover adopt 
 a standard protocol for adding ;GUI buttons/controls 
 to interactive screen areas where individual projects 
-could place clickable elements that invoke functionality 
+would place clickable elements that invoke functionality 
 more general than just those localized to 
 particular areas of text/documents (and therefore 
 less suitable to context menus). 
+
+
+
+
+// //  Text Search and Data Analyses (or demonstrative summaries thereof)
 
 Another potential ;/VM/ use case involves data analysis.  
 Not to imply that a dataset-embedded ;/VM/ would be part of 
@@ -465,9 +496,12 @@ analytic code might be separately produced that illustrates
 algorithms and information profiles in a more pedagogical 
 and demonstrative manner.  More precisely, computer code 
 can serve as a tangible resource for studying algorithms 
-and data structures, insofar as code constructions or annotations 
-are able to clarify details such as expected value ranges, 
-ccordinate systems,  
+and data structures, because most programming languages are 
+more readable than, say, inscrutable mathematical formulae.
+Even more so, source files may be written in a 
+style that accentuates this expository role: code constructions 
+or annotations are able to clarify details such as expected 
+value ranges, ccordinate systems,  
 scales and units of measurement, cross-unit conversions, 
 unit-decorated types,  
 pre- and post-conditions, type invariants, etc.  
@@ -475,32 +509,40 @@ This degree of in-code specificity is not usually present
 in mainstream languages, so a Research Object ;/VM/ could 
 supporting scripting dialects which attempt to 
 make code assumptions and pedagogical use-cases 
-as transparent as possible.
+as transparent as possible.{< To put it differently, the original 
+analysis might be performed in ;/C/, ;/Python/, 
+;/Matlab/, ;/fortran/, etc., but all or some 
+of that code would then get reimplemented in a more 
+explicitly "/pedagogical/" language, as 
+if developers seek to explain the code to an outside party. >} 
 
 Lastly, I mentioned earlier that researchers may prefer to 
 load data sets with external software even if ;/FAIR/ principles 
-ensure that Research Objects can be used on their own.  
-Although authors should attempt to provide sufficient 
+imply that Research Objects can be used on their own.  
+So %-- although authors should attempt to provide sufficient 
 internal resources that someone with access to a data set 
-can find some value just with the materials explicitly included, 
-one may reasonably anticipate that some scientists will 
+can find some value just with the materials explicitly 
+included %-- one may reasonably anticipate that some scientists will 
 seek out the additional capabilities of dedicated 
-software for their field, and data sets can be 
+software for their field (at least if a Research Objech 
+involves information of a variety where such software exists).  
+Data sets (without violating ;/FAIR/) could be 
 designed to facilitate being loaded and visualized 
-via such discipline-specific applications.  Even when 
+via such discipline-specific applications where applicable.  
+Yet, in these cases, even when 
 raw data files are encoded in a format that a given 
-application recognizes, this does not necessarily 
-mean that raw files alone are sufficient to ensure 
-that users can access them properly (for example, 
+application recognizes, raw files alone are 
+not necessarily sufficient to ensure 
+that loading applications can access them properly (for example, 
 any program with spreadsheet-like functionality can load 
 ;/CSV/ files, but such data rendered as table cells 
 may not properly convey its structure and properties).  
 To address these situations, many scientific applications 
 supply a plugin mechanism such that data sets with 
 special prepatory requirements can provide plugins 
-in turn, alongside their raw data.  The problem 
+to implement these, alongside the raw data.  The problem 
 here is that plugins can be tricky to compile and install.  
-On solution is to develop a generic plugin that enables 
+One solution is to develop a generic plugin that enables 
 an application to execute ;/VM/ instructions, which then 
 serves as middleware such that Research Object plugins 
 could be implemented as scripts compiling to that ;/VM/, rather 
@@ -513,11 +555,11 @@ possibility is to achieve search functionality via a
 dedicated query language.  If we assume that textual elements 
 are stored as objects in some mainstream language (e.g., 
 ;/C++/), then in principle queries such as "/find the first sentence 
-including the name of the author/" (of a given bibliographic entry) 
+including the name of &/this author/\/" (the author of a given bibliographic entry) 
 could be satisfied by calling (in this case) ;/C++/ methods.  
 However, for development and prototyping it might be 
 easier to express searches through text files or string-lists 
-than can layer over the relevant class methods.
+that can layer over the relevant class methods.
 
 Other possible use-cases arise in the context of ;/PDF/ viewers, 
 in which could be embedded a ;/VM/ interpreter/runtime.  
@@ -578,15 +620,26 @@ Text Encoding Initiative (;/TEI/) may employ a generic
 representation for convenience (e.g., ;/TEI/-;/XML/) but they are 
 intrinsically a special-purpose data format optimized 
 for natural language (for instance, ;/TEI/, established 
-in 1987, predates ;/XML/ itself).  In a similar vein, 
-special markup languages such as ;/TagML/ (the Text-as-Graph 
+in @[year:1987], predates ;/XML/ itself).  In a similar vein, 
+special markup languages such as ;/TAGML/ (the Text-as-Graph 
 Markup Language) %-- which are structurally 
 distinct from straightforward tag hierarchies (and therefore 
 not just a realization or dialect of ;/XML/) have been proposed as more faithful 
 to the inner structure of text content than generic 
-formats (;/XML/, ;/JSON/, etc.).
+formats (;/XML/, ;/JSON/, etc.).{< For ;/TAGML/, see 
+[/ElliBleekerEtAl/] or [/ElliBleekerEtAlTEI/].  This 
+is one of the more recent proposals for markup languages 
+that incorporate ;/SGML/-style features such as 
+concurrent/overlapping markup, and on theoretical grounds 
+might be considered a better conceptual match to 
+natural-language text than ;/XML/.  Of course, 
+although ;/XML/ was originally conceived as a more 
+practical and standardized version of ;/SGML/, 
+not all ;/SGML/ features were preserved, which 
+to some extent limited ;/XML/'s 
+expressiveness. >}
 
-Debating the merits of, say, ;/TagML/ versus ;/JATS//;/BITS/ %-- or 
+Debating the merits of, say, ;/TAGML/ versus ;/JATS//;/BITS/ %-- or 
 alternative ;/XML/ languages such as BioC, developed for 
 PubMed Central %-- is outside the scope of this paper.  
 I will note, however, that the important details 
@@ -595,7 +648,7 @@ is less the actual structures modeled by a given format
 but rather how particular structural details 
 affect algorithms that need to transform and/or 
 extract data from from structure-instances.  For example, 
-an important contrast between ;/XML/ and ;/TagML/ is that 
+an important contrast between ;/XML/ and ;/TAGML/ is that 
 the latter supports concurrent/overlapping markup, 
 which can only be achieved in the former indirectly 
 (e.g., via empty "/milestone/" nodes).  Endorsing one 
@@ -607,7 +660,7 @@ purely hierarchical ones, are easer to implement/test/maintain.
 Assuming that most algorithms navigate around a structure 
 by tracking a "/foreground/" node %-- some kind of visitor 
 pattern where one node at a time is the one visited 
-%-- then ;/TagML/-style overlap complicates the decision-space 
+%-- then ;/TAGML/-style overlap complicates the decision-space 
 for node-to-node transitions.  For instance, an element 
 that begins in the */interior/* of some quasi-parent node, 
 but */ends/* properly after the latter, does not have a 
@@ -616,7 +669,7 @@ processing is needed for an element in this case, would one
 more profitably revert to the "/quasi/"-parent in scope 
 at the */beginning/* of the element or, rather, at its end?
 
-Moreover, ;/TagML/ recognizes two distinct forms of de-facto 
+Moreover, ;/TAGML/ recognizes two distinct forms of de-facto 
 parent/child relations, namely "/containment/" versus 
 "/domination/".  In the latter case, one node has a 
 logical or semantic nesting inside another; the parent 
@@ -632,11 +685,11 @@ four different varieties of nesting: overlap either
 ,visavis beginning and end, and interiority either 
 via domination or containment.  By contrast, 
 ;/XML/ has a single parent/child relationship.  The more 
-complex ;/TagML/ architecture may or may not make 
+complex ;/TAGML/ architecture may or may not make 
 any particular algorithm easier to implement, 
 but at least we can be sure that the structural 
 differences between the two formats are tangible 
-in how code targeting ;/TagML/ has to keep track of a 
+in how code targeting ;/TAGML/ has to keep track of a 
 more complex space of parent-like internode connections.
 
 Conversely, ;/XML/ algorithms would presumably be more 
@@ -663,7 +716,7 @@ tradeoffs; features that make some processing
 routines easier to implement can render others more difficult, 
 and vice-versa.  But in the context of text encoding, 
 discussing such tradeoffs solely with respect to 
-*/generic/* formats like ;/XML/ or ;/TagML/ skirts the 
+*/generic/* formats like ;/XML/ or ;/TAGML/ skirts the 
 key point that here we are primarily concerned with 
 representing of */text/* content, not generic 
 data structures.  It is one thing to serialize and deserialize 
@@ -671,7 +724,7 @@ information in general through the nodes of a hierarchical
 or concurrent document format.  It is another to focus 
 specifically on the structural properties of natural-language texts.
 
-Insofar as ;/XML/, ;/TagML/, ;/JSON/, ;/RDF/, and so forth are */structurally/* 
+Insofar as ;/XML/, ;/TAGML/, ;/JSON/, ;/RDF/, and so forth are */structurally/* 
 different, such variation may more properly be 
 described as "/meta/"-structural, or concerning those 
 parameters that articulate the individual properties of an 
@@ -680,18 +733,18 @@ of ;/XML/ (etc.) structure takes its identity from the
 full set of details endemic to the ;/XML/ format: element 
 names, attribute keys and values, text content (if any), 
 and nodes' parent/child and sibling relationship.  
-The parameters constituting a ;/TagML/ instance are 
+The parameters constituting a ;/TAGML/ instance are 
 different, given the latter's alternative approach 
 to nesting (discussed above), attributes (which are 
 more complex than key/value tuples), and text 
 content (potentially split into hypernodes).  It is 
-difficult to compare ;/XML/ and ;/TagML/ structure 
+difficult to compare ;/XML/ and ;/TAGML/ structure 
 */instances/* because what it means to be a structure 
 in the former case is not quite the same as in the latter.  
 We can, however, compare "/meta/" structures in that 
 we can present the suite of parameters through which 
 any single ;/XML/ instance is individuated, and by comparison 
-the analogous parameters constituting the ;/TagML/ architecture.  
+the analogous parameters constituting the ;/TAGML/ architecture.  
 Similar comparisons can be made ,visavis ;/JSON/ and 
 ;/RDF/-like formats (e.g., text encoding via property-hypergraphs).
 
@@ -722,8 +775,8 @@ instance, the neighborhood of an ;/XML/ node
 includes its text, attributes, next and previous 
 siblings, parent node, and first child; potentially 
 expand to its full child-node set and parent-ancestry.  
-The neighborhood of a ;/TagML/ node is similar but 
-more complex due to ;/TagML/'s looser attribute and 
+The neighborhood of a ;/TAGML/ node is similar but 
+more complex due to ;/TAGML/'s looser attribute and 
 containment protocols.  The neighborhood of an 
 ;/RDF/-style site %-- for instance, a hypernode 
 in a property hypergraph %-- would be 
@@ -737,7 +790,7 @@ graph edges.  The neighborhood of a
 or a single scalar value, depending on where a given 
 node was positioned in a ;/JSON/ hierarchy.
 
-When text content is encoded via ;/XML/, ;/TagML/, ;/JSON/, etc., 
+When text content is encoded via ;/XML/, ;/TAGML/, ;/JSON/, etc., 
 it takes on the "/topomorphic/" properties of the 
 underlying representation.  For instance, 
 navigation between consecutive paragraphs 
@@ -984,7 +1037,7 @@ and that paragraphs are a separate, aggregative
 layer.  So, the "/base/" layer for text-representation 
 is that of individual sentences.  Here I 
 am concerned not with how text is recorded in an 
-encoding file %-- e.g., ;/XML/ or ;/TagML/ %-- but internally 
+encoding file %-- e.g., ;/XML/ or ;/TAGML/ %-- but internally 
 as a computational artifact, which we might reasonably 
 assume exists in an Object-Oriented context.  
 As such, text content (however conveyed via markup) 
@@ -2006,6 +2059,213 @@ the concomitant annotations and incorporate them
 into search and documentation assets.
 
 
+// //  Dependent Types and Intermediate Representation
+
+Constraints such as two lists having the same size, 
+which here I have examined via contracts, are also studied 
+via dependent type theory.  A type whose instances 
+are lists of length ,/lLen/ is "/dependent/" in that 
+its specification depends on a */value/* 
+(by contrast to */meta-types/* that depend on a 
+*/type/* to be specialized, as in 
+;;/vector<T>/ where ;;T could be ;;/int/, ;;/double/, etc.).  
+If the aforementioned ,/lLen/ is a compile-time 
+constant, then the relevant type 
+is sometimes called */weakly/* dependent.  
+However, the running example of lists for a 
+reversible map would involve a */strongly/* 
+dependent type if the relevant constraint 
+is expressed via the type system alone 
+(without the added machinery of contracts 
+or something similar).  Specifically, the 
+type of the second list would depend 
+on a length ,/lLen/, but the actual value of 
+,/lLen/ is (in the general case) unspecified 
+until the actual procedure-call, and 
+derived from the list's sibling argument 
+in the channel package.
+
+It is */not/* (intrinsically) a matter of strong dependence  
+to construct a type whose instances are */pairs of/* 
+lists having the same size.  Here one would merely 
+check in the constructor that this invariant 
+holds, and ensure that any methods modifying 
+the lists in the pair do not alter their sizes 
+differently.  In short, what makes the hypothetical 
+procedure-signature with a second type strongly dependent 
+on a first argument is not just the constraint 
+semantics, but also that the two arguments 
+are conceived as distinct parameters.  With normal 
+type systems, types express constraints on single 
+values.  A constraint on two distinct function-parameters 
+is not typically understood as a phenomenon of 
+either type, but rather a more holistic limitation 
+involving the */procedure/* being called (and so 
+implemented via contracts or other precondition enforcement).
+
+Expressing relevant constraints via "/just/" the type 
+system is an interesting possibility because we then 
+have a single framework for expressing a wide variety 
+of preconditions, rather than dividing this into 
+types (for single values) and contracts 
+(for disconnected values passed to a procedure).  
+However, reasoning through dependent types 
+is not straightforward.  For one thing, 
+it is important to stress that a fundamental 
+distinction exists (in the context of Software Language 
+Engineering, if not mathematics) between 
+types and their extensions.  This is not 
+true of all types; one has no issue equating 
+the extension of a ;;byte type with unsigned 
+integers less than or equal to @[number:255]. 
+However, the fact that a hypothetical 
+value ,,v would be one instance of a type ,,t 
+does not confirm that ,,v belongs to 
+,,/t/'s */practical/* extension at any point 
+in time (i.e., the values that are actually 
+available for use by a program, given limitations 
+with memory size, filesystem credentials, network 
+traffic, etc.).  In general, in computer 
+code the */purpose/* of a type is not 
+simply to offer a shorthand expression for 
+some extension-set.  Rather, types' 
+primary role is to enable function overloads.  
+Function signatures are distinct if two parameters 
+have different types, even if those types 
+are extensionally equivalent.
+
+In a language such as ;/Idris/, where dependent 
+typing is built in intrinsically, types 
+become essentially "/runtime/" phenomena 
+not substantially different from values as such.  
+This is an alternative perspective on type 
+theory, and while it certainly has a formal 
+foundation there are numerous non-obvious 
+concerns that differentiate this latter 
+kind of type system from (what we might call) 
+"/non-extensional/" type theory.  
+
+Consider what happens when a dependent type 
+is passed to a procedure.  Suppose the 
+value is a list ,,y of length @[number:5].  
+This is a */runtime/* detail 
+and therefore that specific value cannot 
+be manipulated at compile time.  Instead, 
+one presumably would need something like a 
+*/variable/* ,/lLen/ that holds ,,/y/'s size.  
+Such ,/lLen/ functions as a constant 
+only within one execution of the procedure's 
+implementation body; it works 
+*/de facto/* like a parameter.  
+The procedure needs to be prepared to 
+handle any possible ,/lLen/ value 
+within its overall range (which in turn 
+depends on the maximum legal size for ,,/y/).  
+Any dispatch or fine-tuning which relies on 
+particular values for ,/lLen/ has to be 
+implemented in terms of runtime 
+checks (;;if/else and so on).  By extension, 
+the same applies to ,,/y/, at least 
+in the context of behavior affected by ,,/y/'s size.
+
+However, if we end up treating this size as 
+only a runtime detail, we aren't really 
+exploiting ,,/y/'s */dependent/* type 
+in the first case.  In effect, any procedure 
+that accepts such as "/dependent/" type 
+has to treat ,,y non-dependently, as if 
+it were actually assigned a more general 
+type (e.g., the relevant list type without 
+any size data).  At best the dependent 
+specification is ornamental, for documentation 
+but not computational purposes.
+
+One way to see this explicitly is to consider 
+the procedure being templated in terms 
+of ,,/y/'s type.  In a ;VM context, we 
+can assume that each different template 
+instantion yields a distinct block of bytecode 
+instructions.  So, for any potential type 
+of ,,/y/, the procedure will have a 
+corresponding (distinct) bytecode block.  
+Obviously, it would be infeasible to duplicate 
+such blocks with thousands of copies.  
+So the space of variation for ,,/y/'s type 
+has to be restricted.  If one still wants to 
+conceive of ,,/y/ as having a range of 
+possible types comparable in cardinality 
+to a range of ordinary values, then the 
+specific runtime type ,,/y/ inhabits 
+must be modeled as a runtime value.  Within 
+the bytecode for a template instantiation, 
+there must be some dynamic symbol or holder 
+representing the runtime granule of 
+,,/y/'s fine-grained type.  But from a 
+;VM perspective we are entitled to 
+argue that details represented 
+via dynamic bytecode symbols are 
+not */types/* but rather some 
+runtime data associated with an 
+object/value.  In other words, although 
+a language could give these dependent 
+constructions the flavor of a type system, 
+details like ,,/y/'s "/granular/" characterization 
+are not types per se, but rather 
+something like an annotation or 
+axiom asserted relative to ,,/y/.
+
+None of which precludes developing something 
+like a dependent type system, but the 
+class of "/dependent/" types has to be 
+recognized as fundamentally different 
+formations than types themselves.  In particular, 
+in no construction would bytecode 
+use a runtime value to stand in for 
+some range of types (at least directly; 
+indirection is of course possible 
+with a pointer-to-void, let's say, 
+reinterpreted to something else).  Any 
+typed symbol present in bytecode 
+has one fixed type; if it is necessary 
+to work with a range of possible types, 
+the relevant code has to be templated and 
+then compiled to different bytecode 
+blocks, one for each "/tapset/" (we 
+might say, meaning "/type-attribution 
+per symbol/").  Some form of dependent 
+types could be allowed if they may be 
+implemented more as value-annotations 
+consistent with this templating mechanisms 
+than as actual types attributed to their bearers.  
+Not only does this approach clarify 
+dependent-typing possibilities, it also 
+indicates how template metaprogramming 
+might be supported in a ;VM context.
+
+Of course, I have implicitly 
+made assumptions about the 
+;/VM/ in question.  Clearly the 
+;/VM/ would work in general with 
+full type objects and rarely 
+if ever practice type erasure.  
+Implementing templates 
+via duplicate generated bytecode-blocks 
+is not the only tactic.  But, 
+for ;/VM/s in the Research Object 
+milieu relevant to this paper, 
+these are reasonable assumptions. 
+
+
+///   Extensibility ,Visavis Grammar and Intermediate Representation
+
+Here I address some further details about how 
+such ;/VM/s could employ robust type objects.  
+This will lead to points about language 
+extensibility, that belong to a broader 
+issue spanning front-end parsers as well 
+as back-end code generators.
+
+
 // //  Decorated Types and Axiation
 
 Similar to contracts and channels, units and scales of 
@@ -2014,7 +2274,7 @@ The key goal in this context is to ensure that
 procedures are called with quantities scaled in a consistent 
 manner; at the least, that two different function-arguments 
 are scaled the same.  These concerns are endemic 
-to dimensional analysis and (for instance) SI Units 
+to dimensional analysis and (for instance) ;SI Units 
 in a scientific context, but they also extend to areas 
 which do not obviously employ numbers measuring physical 
 magnitudes such as size, time, temperature, etc.
@@ -2084,7 +2344,7 @@ unit decoration ("/u4xy/" in pixels and so forth);
 or dimensional aggregates in the sense of 
 mp-units and similar (e.g., boost::units) libraries.
 
-A straightforward use-case would be as follows: 
+A straightforward use case would be as follows: 
 suppose a procedure-call is being prepared and two 
 successive values are pushed to a channel, preceded 
 by loading type objects.  A check could be 

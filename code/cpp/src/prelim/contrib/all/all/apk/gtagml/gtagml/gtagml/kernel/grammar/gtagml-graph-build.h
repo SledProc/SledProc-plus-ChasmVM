@@ -137,6 +137,8 @@ class GTagML_Graph_Build
  QString latex_;
  QTextStream latex_stream_;
 
+ QString held_macro_string_;
+
  struct Nesting_Codes {
 
   static constexpr u1 Signal_Default = 255;
@@ -319,6 +321,7 @@ public:
  void desc_item(QString text);
  void desc_item_with_multiline_label(QString text);
 
+ void latex_command_via_semantic_annotation(QString concept, QString text);
 
  void exs_item(u2 number, QString text);
  void paren_ref(u2 number, QString text);
