@@ -611,17 +611,17 @@ to investigating the best formats
 for representing written text.  In recent years, 
 ;/XML/-based standards such as ;/JATS/ and ;/BITS/ have become 
 popular, producing human-readable ;/PDF/s through techniques 
-such as ;/XSL-FO/ while also enabling natural-language 
+like ;/XSL-FO/ while also enabling natural-language 
 content to be analyzed via generic ;/XML/ protocols, such as 
 ;/XQuery/ and ;/XQSE/ (;/XQuery/ Scripting Extentions).  ,/lJSON/-based 
-formats are also used, such as the ;/JSON/-;/S2ORC/ protocol adopted 
+formats are also used, like the ;/JSON/-;/S2ORC/ protocol adopted 
 by ,/CORD19/ (mentioned earlier).  Specifications such as the 
 Text Encoding Initiative (;/TEI/) may employ a generic 
 representation for convenience (e.g., ;/TEI/-;/XML/) but they are 
 intrinsically a special-purpose data format optimized 
 for natural language (for instance, ;/TEI/, established 
 in @[year:1987], predates ;/XML/ itself).  In a similar vein, 
-special markup languages such as ;/TAGML/ (the Text-as-Graph 
+special markup languages like ;/TAGML/ (the Text-as-Graph 
 Markup Language) %-- which are structurally 
 distinct from straightforward tag hierarchies (and therefore 
 not just a realization or dialect of ;/XML/) have been proposed as more faithful 
@@ -640,20 +640,68 @@ to some extent limited ;/XML/'s
 expressiveness. >}
 
 Debating the merits of, say, ;/TAGML/ versus ;/JATS//;/BITS/ %-- or 
-alternative ;/XML/ languages such as BioC, developed for 
-PubMed Central %-- is outside the scope of this paper.  
+alternative ;/XML/ languages like ;/BioC/, developed for 
+PubMed Central [/DonaldCComeauEtAl/] %-- is outside the scope of this paper.  
 I will note, however, that the important details 
 for questions about the most efficient text representation 
 is less the actual structures modeled by a given format 
 but rather how particular structural details 
-affect algorithms that need to transform and/or 
-extract data from from structure-instances.  For example, 
-an important contrast between ;/XML/ and ;/TAGML/ is that 
+affect */algorithms/* that target the relevant 
+information.  Any encoded data structure 
+is conceptually a */space/* in the sense 
+that we can use some terms of discrete topology 
+therein: we have a notion of "/movement/" within 
+the space; some parts are closer to each other 
+than others; we can consider indivisible 
+elements of the structure and picture them 
+as a "/foreground/" or "/cursor/" that 
+an algorithm visits before moving onward.  
+Discrete information spaces are 
+analogous to graphs in this sense, but 
+they may entertain structural parameters 
+that are more involved that ordinary 
+graphs: for instance, "/property hypergraphs/" 
+have nodes inside other nodes, plus 
+key/value attribute lists on nodes and/or edges.{<
+For property hypergraphs, see [/ArunaBansal/].  
+There is extensive literature on both 
+property graphs (conventional graphs 
+with key/value tuples added) and hypergraphs 
+(where hypernodes contain other nodes, and 
+hyperedged contain other edges); the 
+property hypergraph paradigm merges 
+both of those representational devices.  
+I have an overview of how different graph 
+formats extend one another, in terms 
+of expressiveness and structural 
+features [/NCDataIntegration;pp.x--x/].  
+The property-hypergraph model can itself 
+be subsumed into others.  For instance, 
+(hyper)edges may be associated with contexts 
+which render them valid on some occasions 
+but not others.  The collection of 
+edges leading from a node can be 
+ordered into a priority or sequence ranking. 
+Connected hypernode and hyperedge sets may 
+form subgraphs which are also 
+available for key/value properties.  
+All of these variations are meta-modeling factors 
+which here I try to convey via the 
+concept of "/topomorphic regimes/". >}
+
+The structural facets of any meta-model 
+determines how algorithms transform and/or 
+extract data from structure-instances.  The issue 
+is not the explicit structure of a single 
+instance of a model, but rather 
+the various criteria which may 
+define a "/structure/" to begin with.
+For example, an important contrast between ;/XML/ and ;/TAGML/ is that 
 the latter supports concurrent/overlapping markup, 
 which can only be achieved in the former indirectly 
 (e.g., via empty "/milestone/" nodes).  Endorsing one 
-approach over the other is a rather abstract question; 
-a more concrete assessment can consider actual processing 
+approach over the other is a rather abstract question. 
+A more concrete assessment can consider actual processing 
 tasks and address whether algorithms that "/quantify/" 
 over concurrent markup structures, or conversely 
 purely hierarchical ones, are easer to implement/test/maintain.  
@@ -699,9 +747,12 @@ semantics.  Falling back on zero-width elements
 as start/end landmarks for structures crossing 
 against a ;/DOM/ hierarchy is not a seamless translation 
 of node-overlap semantics to a non-concurrent 
-environment.  It's not like the presence of 
-milestone tags can be directly incorporated into 
-tools such as XPath and ;/XQuery/.  If an ;/XML/ file does 
+environment.{< Milestone tags, in their 
+structural (emulative) purpose, are not 
+intrinsic parts of tools such as ;XPath and ;/XQuery/ 
+%-- apart from their basic status as zero-width 
+elements, which does not by itself convey their special 
+role. >}  If an ;/XML/ file does 
 indeed use milestones to emulate overlapping markup, 
 then the presence of landmark tags would have to be 
 tracked by ;/XML/ processors as state data or 
@@ -712,7 +763,7 @@ which presumably complicates the implemented procedures.
 
 Added complexity is not necessarily a bad thing, but these 
 examples suggest that markup formats come with different 
-tradeoffs; features that make some processing 
+tradeoffs.  Features that make some processing 
 routines easier to implement can render others more difficult, 
 and vice-versa.  But in the context of text encoding, 
 discussing such tradeoffs solely with respect to 
@@ -735,7 +786,7 @@ names, attribute keys and values, text content (if any),
 and nodes' parent/child and sibling relationship.  
 The parameters constituting a ;/TAGML/ instance are 
 different, given the latter's alternative approach 
-to nesting (discussed above), attributes (which are 
+to nesting (discussed above), attributes (which here are 
 more complex than key/value tuples), and text 
 content (potentially split into hypernodes).  It is 
 difficult to compare ;/XML/ and ;/TAGML/ structure 
@@ -774,7 +825,12 @@ accessible via a single transition-step.  For
 instance, the neighborhood of an ;/XML/ node 
 includes its text, attributes, next and previous 
 siblings, parent node, and first child; potentially 
-expand to its full child-node set and parent-ancestry.  
+expanded to its full child-node set and 
+parent-ancestry.{< An algorithm might only 
+ever need to visit child nodes in sibling order.  
+However, at least some ;/XML/ processors 
+present the option of moving to any 
+child node via a numeric index >}   
 The neighborhood of a ;/TAGML/ node is similar but 
 more complex due to ;/TAGML/'s looser attribute and 
 containment protocols.  The neighborhood of an 
@@ -787,7 +843,7 @@ and other hypernodes reachable via labeled
 graph edges.  The neighborhood of a 
 ;/JSON/ "/node/" would be a tuple of values 
 (for an array), or key/value pairs (for an object), 
-or a single scalar value, depending on where a given 
+or a single scalar value, depending on where the given 
 node was positioned in a ;/JSON/ hierarchy.
 
 When text content is encoded via ;/XML/, ;/TAGML/, ;/JSON/, etc., 
@@ -814,9 +870,10 @@ difficult to use for certain kinds of search and content-management
 requirements.  These are situations where computing 
 over text/discourse elements represented as objects in computer 
 memory is more efficient than traversing ;DOM nodes 
-and hierarchies.  As such, a framework such as ;/TSOM/, 
+and hierarchies.  As such, a framework such as a 
+"/Sentence Object Model/" %-- 
 where sentences and other discursive units are already 
-converted to code objects, is more convenient 
+converted to code objects %-- is more convenient 
 than (for example) ;XML files where nodes must be 
 mapped to objects as a preliminary step.
 
@@ -827,7 +884,7 @@ large manuscript assembled from many smaller documents.  Their authors
 have contributed ;PDF comment boxes associated with specific sentences, 
 paragraphs, or sections of their text, and have employed a "/handle/" 
 syntax to mark themes relevant to these content units, according to a 
-standardized vocabulary.  You goal is to scan each of the comment boxes 
+standardized vocabulary.  Your goal is to scan each of the comment boxes 
 so as to identify all inner documents which address specific themes.  
 That is, you want to build a mapping from theme labels 
 to lists of inner documents (or chapters, etc.) which could be 
@@ -840,7 +897,7 @@ web navigators, and so forth.
 To complete this task it is necessary to execute procedures that 
 can obtain the content of all ;PDF annotations, indexed by 
 page number.  One would then search each annotation-text for 
-every characteristic handles that indicates relevance ,visavis individual themes, building 
+every characteristic handle that indicates relevance ,visavis individual themes, building 
 up an ;;/std::map/ style data structure whose keys 
 are theme objects/labels.  Following the comment box page number, 
 one could moreover identify the chapter or inner document including 
@@ -855,7 +912,7 @@ then traverse the map structure to build a second one
 whose values are file names (while creating those files 
 as necessary).  These coding requirements %-- working with 
 object-based data structures and local filesystems %-- call 
-for programming in full-fledged languages such as ;/Cpp/ rather 
+for programming in full-fledged languages such as ;/C++/ rather 
 than queries or ;/XML/ transforms.
 
  -.> 
@@ -872,7 +929,7 @@ When the sources or comments are analyzed to extract those
 notations, the printed index could be extended by 
 incorporating that material into index entries.  For example, 
 instead of an undifferentiated heading locating \q{Keynesian economics,} 
-the index could produce subheadings such as 
+the index might produce subheadings such as 
 "/Keynesian economics, arguments for/"; "/Keynesian economics, arguments against/"; 
 "/Keynesian economics, mathematical models/"; 
 "/Keynesian economics, and macroeconomic theory/" and etc.
@@ -881,7 +938,7 @@ the index could produce subheadings such as
 linguistic article that contains a list of sample sentences/passages, 
 according to a common linguistics presentation style.  These 
 examples are intended to demonstrate specific claims (about 
-parsing structure, conceptualization, etc.) or to serve 
+parsing structure, conceptualization, cognitive schemas, etc.) or to serve 
 as a basis for subsequent analysis.  Such samples %-- which 
 might be obtained from written corpora, audio records, or simply 
 invented by the author to highlight specific linguistic topics 
@@ -933,7 +990,7 @@ forces, and so forth).  A similar example might be a chemistry textbook, with cu
 For this kind of context, special programming is needed to extract 
 textual data about chemical names and formulae, 
 and potentially to search for molecular files via science 
-;/API/s.  Furthermore %-- in the hopes of best leveraging \ThreeD{} visualization 
+;/API/s.  Furthermore %-- in the hopes of best leveraging ;3D visualization 
 capabilities %-- the ;PDF viewer has to interoperate 
 with science applications, either through a common message-passing 
 protocol or by embedding the entire ;PDF code base itself as a 
@@ -945,43 +1002,7 @@ specific chemical compound being studied, and its properties,
 could be cross-referenced to locations in 
 the original research manuscript (or, analogously, the students' textbooks).}
 
-/+
-
-These hypothetical examples (which actually are inspired by 
-projects I have worked on in the past) are cases where 
-extra programming is needed for some important part 
-of the document-prep workflow that stands apart from 
-familiar publishing pipelines.  Such applications 
-as comparing manuscript versions side-by-side 
-on a sentence-by-sentence basis, coding up  
-customized search algorithms to help 
-construct a print index, and 
-running searches to locate stretches of text 
-that should be subsumed under tags (or other 
-specialized object) are a different category 
-%-- requirements that could well apply to 
-many or all of the documents typically 
-handled by publishing software. 
-
-For example, suppose a manuscript takes a place among a 
-Research Object with geospatial data, with 
-;GIS "/attribute layers/" encoded via columns 
-in the so-called ;XYZ format (which is an alternative 
-to latitude/longitude more directly usable by 
-digital map displays).  It is entirely possible 
-that the main publication will include some 
-discussion about this format, which establishes 
-cross-reference points between the text and data 
-sets.  Meanwhile, included code %-- if it does 
-indeed seek to make the raw files usable for 
-analysis %-- will almost certainly include 
-procedures for ;XYZ to ;/lat/lon/ conversion, 
-as well as distance metrics in the former, 
-computations related to Mercatur projections, 
-and so forth.  These calculations thereby 
-yield cross-reference points between the source 
-code and components both of the textual and raw 
-data varieties.
+ -.> 
 
 Along similar lines, suppose a chemistry paper 
 includes various terms for named compounds, amino 
@@ -1001,11 +1022,68 @@ are populated %-- will ideally be synchronized
 among different parts of a Research Object, including 
 text (e.g., ;/PDF/) viewers.
 
-The presence of textual elements requirement special treatments 
-along these lines may be notated by conventions like 
+
+[|Papers with Geospatial Datasets|]    Suppose a manus\-cript takes a place among a 
+Research Object with geospatial data, with 
+;GIS "/attribute layers/" encoded via columns 
+in the so-called ;XYZ format (which is an alternative 
+to latitude/longitude more directly usable by 
+digital map displays).  It is entirely possible 
+that the main publication will include some 
+discussion about this format, which establishes 
+cross-reference points between the text and data 
+sets.  Meanwhile, included code %-- if it does 
+indeed seek to make the raw files usable for 
+analysis %-- will almost certainly include 
+procedures for ;XYZ to ,latlon conversion, 
+as well as distance metrics in the former, 
+computations related to Mercatur projections, 
+and so forth.  These calculations thereby 
+yield cross-reference points between the source 
+code and components both of the textual and raw 
+data varieties.
+
+-.>
+
+This and the prior example might even be combined.  Data sets 
+addressing environmental contamination (Such as the ;/EPA/'s 
+Toxic Release Inventory, mentioned above in the context of 
+;CSV files) include both ;GIS and Cheminformatics 
+objects.  Harful substances can be detected 
+in soil, water, or accident reports, and each 
+data point involves both the geographic location/area 
+where an observation occurs and the specific compound 
+inolves.  The former lends itself to digital maps; 
+the latter to molecular visualization 
+(which can help explain what makes a substance 
+dangerous to people or ecosystems).  Class types 
+and ;/GUI/s for both of these genres would 
+then be applicable to Executable Research 
+Objects surrounding the publications. 
+
+/+
+
+These hypothetical examples (which actually are inspired by 
+projects I have worked on in the past) are cases where 
+extra programming is needed for some important part 
+of the document-prep workflow that stands apart from 
+familiar publishing pipelines.  Such applications 
+as comparing manuscript versions side-by-side 
+on a sentence-by-sentence basis, coding up  
+customized search algorithms to help 
+construct a print index, and 
+running searches to locate stretches of text 
+that should be subsumed under tags (or other 
+specialized object) are a different category 
+%-- requirements that could well apply to 
+many or all of the documents typically 
+handled by publishing software. 
+
+The presence of textual elements that do demand special 
+treatments may be notated by conventions like 
 domain-specific ;XML tags, but actually implementing 
 the cross-component interop needed to leverage this 
-kind of metadata almost certain requires programming over 
+such almost certainly requires programming over 
 textual content as well as data-set materials as a whole.  
 In other words, these are concrete User Interaction 
 features that illustrate the principle that 
@@ -1016,7 +1094,7 @@ like fibres of a differentiable manifold.
     
 
 
-// //  Sentences are Preeminent Units of Discourse
+// //  Sentences are the Preeminent Units of Discourse
 
 I will assume that the basic unit of intrinsic 
 text representation is a single sentence %-- even 
@@ -1024,10 +1102,10 @@ if this is not how most encoding standards
 are designed.  Among common formats, only ;/BioC/ and 
 ;/TEI/ appear to employ distinct sentence tags, and 
 even here these are optional %-- thus, documents 
-in those formats may have "/sentence/" or "/s/" 
-elements (respectively) but there is no 
+in those formats may 
+have ;;/sentence/ or ;;/s/ elements (respectively) but there is no 
 guarantee that documents will identify textual 
-boundaries with that granularity.  The far 
+boundaries with that level of granularity.  The far 
 more common approach is to model documents 
 as series of paragraphs.
 
@@ -1057,7 +1135,7 @@ marker appears (although conversely footnote contents
 may be a clause on a scale smaller than that of 
 single sentences, akin to a parenthetical comment).  Similarly, 
 all the sentences of a block quote might be considered 
-"/children/" of the sentence that introduces 
+"/children/" of the sentence that introduces it 
 (which in turn, potentially, ends with a colon %-- or 
 no punctuation at all %-- rather than the usual 
 period or question/exclamation mark).  In short, sentences 
@@ -1089,7 +1167,24 @@ phrase is found (perhaps augmented with ;/PDF/ page coordinates
 for the sentence as a whole or the page-area spanned just 
 by the matched text %-- which is how 
 results are typically presented by ;/PDF/ libraries' own search routines 
-%-- assuming ;/PDF/ coordinate data is available).  In the absence 
+%-- assuming ;/PDF/ coordinate data is available).{< 
+The page-view rendering engine would then take 
+area coordinates and apply styling %-- usually 
+background shading %-- to visually mark 
+off search matches.  The complications arise when 
+we intend to override the internal ;/PDF/ search 
+algorithms to match against encoded text instead 
+(given the problems of ;/PDF/ queries from 
+hyphenation, ligatures, etc., as well as 
+inability to restrict matches to such contexts 
+as quotes or footnotes.  If users expect highlight 
+cues and a search runs against embedded or sibling 
+text-encoded assets, then matches in the latter 
+context have to be correlated with the former.  
+In special cases, however, ;/PDF/ page coordinates 
+of preselected items of interest (keywords, index entries, 
+etc.) can be preserved via mechanisms such as 
+,/LaTeX/ ;;/pgfsavepos/. >}  In the absence 
 of any restrictions, every sentence in a document should 
 thus be checked, with potential branching to account 
 for "/nesting/" relationships (as with footnotes and block quotes, potentially) 
@@ -1112,12 +1207,13 @@ of */being/* a footnote, block quote, inline quote, citation,
 etc., is a */characteristic/* of text subsumed under the 
 relevant element, and users restricting query scope 
 should be understood as narrowing focus to content 
-with one or more specific facets.  This can apply to 
+with one or more specific */facets/* (not specific 
+*/tags/* per se).  This can apply to 
 presentational features as well, such as italics or sans-serif.  
 Such restrictions might come into effect if a user is seeking 
 to find a passage they had read earlier, for instance, 
 and remembers certain words that were present and also 
-that the passage was italicized.
+some styling details.
 
 In a written context, moreover, some words or phrases have 
 semantic and/or structural properties that can be 
@@ -1145,8 +1241,8 @@ It is similarly non-trivial to define the scope of
 individual letters and symbols.  Conceptually, a 
 reasonable assumption is that every character in a 
 document (at least for English and most other languages) 
-can be reported as a two-byte UTF-16 code point.  
-But, expressive as it is, Unicode is arguably 
+can be reported as a two-byte ;/UTF-16/ code point.  
+But, expressive though it is, Unicode is arguably 
 flawed in the context of representing glyphs that 
 are visibly identical but functionally distinct, 
 such as end-of-sentence periods in contrast to 
@@ -1157,16 +1253,16 @@ Unicode Private Use areas, to ensure something
 closer to a one-to-one match between symbols' 
 code points and their discursive roles.
 
-Such details of */internal/* representation, however, 
-are distinct from user functionality such as copy-paste 
+Such details of */internal/* representation, furthermore, 
+are distinct from user functionality like copy-paste 
 or ;/PDF/ annotations.  For example, consider requests 
 to copy the current sentence to clipboard.  Presumably 
 the user then intends to paste those contents into some 
 other location, but that could be many things 
-%-- ;/LaTeX/, MS Word, email, a note-taking program, etc.  
+%-- ,/LaTeX/, MS Word, email, a note-taking program, etc.  
 With no separate specification, "/exported/" content 
 for things like copy/paste should be as simple as 
-possible, perhaps even restricted to Latin1 (so 
+possible, perhaps even restricted to ;/Latin1/ (so 
 that "/curly/" single and double quotes, say, are 
 replaced by their straight and non-chiral versions).  
 On the other hand, multiple forms might 
@@ -1175,16 +1271,16 @@ suppose a desired match is one single word enclosed
 in double quotes.  Quite plausibly the "/input/" to 
 that query could have either the straight/;/ASCII/ form 
 (if the user is typing from a keyboard) or 
-the curved left-versus-right forms (if they've copied 
-from some other document, perhaps).  Internally, meanwhile, 
+the curved left-versus-right forms (e.g., if they've copied 
+from some other document).  Internally, meanwhile, 
 the encoded text elements might not use quote delimeters at 
 all, but rather some form of quotation object.  
 Thus, testing whether an input string matches text/discourse 
 objects at a particular point in the character-stream 
 is more involved than simply comparing numeric glyph-codes.  
 Likewise, a text-query engine should assume that results 
-might be requested in a variety of formats (Latin1, UTF-16, 
-HTML, etc.) such that how text is conveyed, in a variety of 
+might be requested in a variety of formats (;/Latin1/, ;/UTF-16/, 
+;/HTML/, etc.) such that how text is conveyed, in a variety of 
 potential reporting protocol, becomes data for each 
 text element (e.g., sentence objects) that might deviate 
 from how such content is internally represented.  Similarly, 
@@ -1233,17 +1329,17 @@ the kinds of issues that have to be resolved
 for a "/topomorphic regime/" supporting traversal 
 across text documents, with a detailed model of 
 what constitutes a single discourse "/site/", 
-what data is immediately accessible from a site-neighborhood, 
+what data is immediately accessible from the site-neighborhood, 
 and what criteria come into play when navigating 
 from one site to another.   
 
-In a Research Object context, a ;/VM/ might be applied both for 
+In a Research Object context, a ;/VM/ could be applied both for 
 text-search queries against documents and queries in general 
 (or scripting) for data sets.  In this sense, apart from 
 topomorphic capabilities specific to the structures of 
 written discourse, the ;/VM/'s operations might also navigate 
 through various raw data formats, depending on how the 
-Research Object is encoded.  ;/VM/s, that is, may need to be 
+Research Object is encoded.  ,/lVM/s, that is, may need to be 
 adaptable for multiple kinds of "/topomorphic regimes/".  
 But algorithms specific to text searches may also 
 be applied to these different data formats, insofar as 
@@ -1265,7 +1361,7 @@ Research Object ;/VM/s in more general data-encoding contexts.
 For reasons already discussed, the kind of ;/VM/ relevant for this 
 paper would be designed for an Executable Research Object 
 context and, in particular, an environment where 
-most or all component are distributed in source-code 
+most or all components are distributed in source-code 
 fashion.  Special attention is therefore necessary 
 to ensure that a stack sufficient to support (at least modest) 
 script and query-language capabilities can be developed 
@@ -2164,7 +2260,7 @@ depends on the maximum legal size for ,,/y/).
 Any dispatch or fine-tuning which relies on 
 particular values for ,/lLen/ has to be 
 implemented in terms of runtime 
-checks (;;if/else and so on).  By extension, 
+checks (;;/if/else/ and so on).  By extension, 
 the same applies to ,,/y/, at least 
 in the context of behavior affected by ,,/y/'s size.
 
@@ -2256,7 +2352,7 @@ milieu relevant to this paper,
 these are reasonable assumptions. 
 
 
-///   Extensibility ,Visavis Grammar and Intermediate Representation
+///   Extensibility \Visavis{} Grammar and Intermediate Representation
 
 Here I address some further details about how 
 such ;/VM/s could employ robust type objects.  
