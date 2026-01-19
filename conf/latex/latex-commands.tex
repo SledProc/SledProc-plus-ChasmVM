@@ -28,7 +28,13 @@
 %\titleformat{\section}
 %  {\normalfont\Large}{\thesection}{1em}{}
 
-\renewcommand{\thesection}{\textcolor[rgb]{0,0.7,0.4}{\arabic{section}}}%
+
+%\definecolor{} eH
+
+
+\definecolor{sectioncolor}{RGB}{232, 12, 81}
+
+\renewcommand{\thesection}{\textcolor{sectioncolor}{\arabic{section}}}%
 
 
 %\titleformat{\subsection}
@@ -386,12 +392,38 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 
 \newcommand{\clrm}{\stepcounter{mpcode}{\micro{.}}%
+\ifnum\value{mpcode} = 17
+\clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
+\else
+\if@firstcolumn%
+\ifnum\value{mpcode} > 99
+\clrmarginpar{-21pt}{13pt}{\writempcode{0pt}}%
+\else%
+\ifnum\value{mpcode} > 9
+\clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
+\else%
+\clrmarginpar{-17pt}{13pt}{\writempcode{1pt}}%
+\fi\fi%
+\else%
+\ifnum\value{mpcode} > 99
+\clrmarginpar{-5pt}{13pt}{\writempcode{0pt}}%
+\else%
+\clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
+\fi\fi\fi%
+%\thempcode
+}
+
+
+
+
+
+\newcommand{\clrmXX}{\stepcounter{mpcode}{\micro{.}}%
 \ifnum\value{mpcode} = 35
 \clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
 \else
 \ifnum\value{mpcode} = 97
 \clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
-\else 
+\else
 \ifnum\value{mpcode} = 32
 \clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
 \else
@@ -415,6 +447,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \fi\fi\fi\fi\fi\fi%
 %\thempcode
 }
+
 
 
 \definecolor{cdotc}{RGB}{186, 99, 11}
@@ -1168,8 +1201,11 @@ breaklines=true
 \newcommand{\eS}[1]{\textcolor{eScolor}{\textbf{\textsf{{#1}}}}}
 
 
-\definecolor{eHcolor}{RGB}{232, 12, 81}
+\definecolor{eHcolor}{rgb}{0,0.7,0.4}
+
+%\definecolor{eHcolor}{RGB}{232, 12, 81}
 \newcommand{\eH}[1]{\textcolor{eHcolor}{\textbf{#1}}}
+
 
 \newcommand{\lLen}{\textcolor{eHcolor}{\ensuremath{l}}}
 
@@ -1226,15 +1262,20 @@ breaklines=true
 \newcommand{\lJSON}{\leA{J}\seA{SON}}
 \newcommand{\lVM}{\leA{V}\seA{M}}
 
+\newcommand{\fOFg}{\eH{f}\ensuremath{\circ}\eH{g}}
+
 
 
 \newcommand{\SAsmall}[1]{{\small{}#1}}
 
-\def\SAyear\SAsmall
-\def\SAnumber\SAsmall
+%\def\SAyear\SAsmall
+%\def\SAnumber\SAsmall
 
-%\newcommand{\SAyear}[1]{{\small{}#1}}
-%\newcommand{\SAnumber}[1]{{\small{}#1}}
+\newcommand{\SAyear}[1]{{\SAsmall{}#1}}
+\newcommand{\SAnmbr}[1]{\small{#1}}
+\newcommand{\SAdf}[1]{\SAsmall{#1}}
+
+%\newcommand{\SAnumbr}[1]{\SAsmall{#1}}
 
 
 \definecolor{rgr}{RGB}{61, 38, 48}
@@ -1276,6 +1317,11 @@ breaklines=true
 
 \newcommand{\lfRef}[1]{\textcolor{rgrAt!30}{\hspace{1pt}\raisebox{-1pt}{\xfigunderline{%
 \hspace{-1pt}\raisebox{-5pt}{\resizebox{!}{12pt}{\footref{#1}}}}}\hspace*{-2pt}}}}
+
+
+\newcommand{\hlinkOne}[1]{\url{#1}}
+\newcommand{\hlinkTwo}[2]{\href{#2}{#1}}
+
 
 %\newcommand{\lfRef}[1]{\raisebox{-6pt}{\resizebox{!}{12pt}{\footref{#1}}}}
 
@@ -1489,7 +1535,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 \usepackage[nottoc,numbib]{tocbibind}
 
-\DeclareRobustCommand{\Visavis}{Vis-\`a-vis}
+\DeclareRobustCommand{\Visavis}{Vis-\`a-Vis}
 \DeclareRobustCommand{\visavis}{vis-\`a-vis}
 
 \usepackage[utf8]{inputenc}
@@ -1547,7 +1593,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \renewcommand\@makefnmarkfn{%
 \raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}\@thefnmark}}}}
 
-\renewcommand\makefnmarkfnOne{%
+\newcommand\makefnmarkfnOne{%
 \raisebox{4pt}{\resizebox{!}{5pt}{{\color{fnc}1}}}}
 
 
@@ -1659,7 +1705,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \leftskip=9pt #1%\fnmini{#1}%
 }
 
-\renewcommand{\@makefntextX}[1]{\begin{group}#1\end{group}}
+\newcommand{\@makefntextX}[1]{\begin{group}#1\end{group}}
 
 %\renewcommand{\@makefntext}[1]{\fnmini{#1}}
 
@@ -1676,7 +1722,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 
 \newcommand{\fndagr}[2]{%\raisebox{1pt}{%
-\resizebox{#1}{#2}{\dagger}}}
+\resizebox{#1}{#2}{\dagger}}
 
 %\newcommand{\fnastx}{\raisebox{5pt}{%
 %\resizebox{!}{5pt}{$\bigstar$}}}

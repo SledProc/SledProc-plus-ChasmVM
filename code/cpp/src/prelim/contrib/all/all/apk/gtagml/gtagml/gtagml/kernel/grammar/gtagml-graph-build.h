@@ -323,6 +323,9 @@ public:
 
  void latex_command_via_semantic_annotation(QString concept, QString text);
 
+ void hyperlink_1(QString text);
+ void hyperlink_2(QString text, QString link);
+
  void exs_item(u2 number, QString text);
  void paren_ref(u2 number, QString text);
  void paren_ref_global(u2 number, QString text);

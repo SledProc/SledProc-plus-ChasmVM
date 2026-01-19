@@ -1279,6 +1279,22 @@ void GTagML_Graph_Build::leave_italics_mode()
 
 }
 
+void GTagML_Graph_Build::hyperlink_2(QString text, QString link)
+{
+ reset_primary();
+
+ xml_writer_.writeTextElement("hlink2", text + link);
+ latex_stream_ << "\\hlinkTwo{" << text << "}{" + link + "}";
+}
+
+void GTagML_Graph_Build::hyperlink_1(QString text)
+{
+ reset_primary();
+
+ xml_writer_.writeTextElement("hlink1", text);
+ latex_stream_ << "\\hlinkOne{" << text << "}";
+}
+
 void GTagML_Graph_Build::emph_symbolic(QString text)
 {
  reset_primary();

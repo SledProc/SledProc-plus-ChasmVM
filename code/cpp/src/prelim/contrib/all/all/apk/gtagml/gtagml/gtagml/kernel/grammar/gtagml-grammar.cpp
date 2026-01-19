@@ -632,6 +632,26 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
 
 
 
+ add_rule( gtagml_context, "hyperlink-1",
+   " \\[< (?<text> (?: [^>] | >[^\\]])+ ) \\s+ & \\s+ "
+   " (?<link> (?: [^>] | >[^\\]])+ ) >\\] "
+   ,[&]
+ {
+  QString text = p.matched("text");
+  QString link = p.matched("link");
+  graph_build.hyperlink_2(text.simplified(), link.simplified());
+ });
+
+
+
+ add_rule( gtagml_context, "hyperlink-1",
+//           " \\[ < (?<text> (?: [^>] | >[*\\]])+ ) > \\] "
+   " \\[ < (?<text> (?: [^>] | > [^\\]])+ ) > \\] "
+   ,[&]
+ {
+  QString text = p.matched("text");
+  graph_build.hyperlink_1(text.simplified());
+ });
 
 
  add_rule( flags_all_(parse_context ,double_quote_mode),
