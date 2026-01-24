@@ -60,7 +60,7 @@ Research Object "/Bundles/", Research "/Compendia/",
 or %-- as with the name of one US "/Data Infrastructure Building Blocks/" (;/DIBBs/)  
 initiative %-- "/the Whole Tale/".{< For the "/compendium/" 
 model, see [/LimorPeerEtAl/].  For "/executable papers/", 
-[/RudolfStrijkersEtAl/].  For FAIRdata,   
+[/RudolfStrijkersEtAl/].  For ;/FAIR/data,   
 [/NickGarabedianEtAl/].  For the "/Whole Tale/", [/BertramLudascherEtAl/]. >}  
 
 A common theme of these various formats is that the basic unit of 
@@ -667,6 +667,7 @@ structures %-- both textual and data sets %-- that
 need to traverse/navigate, insofar as the relevant 
 structural details may be directly incorporated 
 into the ;/VM/'s instruction roster. -%> `vspace<21pt>; 
+
 
 ///  Sentence Objects and Other Textual Elements
        
@@ -2066,7 +2067,7 @@ Unfortunately, there is no way to implement this kind
 of arrangement in 
 ordinary-looking ;/C++/ (this mechanism is similar 
 to how compilers implement Return Value Optimization).{< 
-For Return Value Optimization (;/RVO/) see [/AntonZhilin/].   
+For Return Value Optimization (;/RVO/) see [/SeanMurphy/] or [/AntonZhilin/].   
 Readers might be interested in an overview of 
 user-visible ;/RVO/-related techniques that I present as 
 a ;/C++/ code excerpt at [< https://cppinsights.io/s/cac923c9 >] 

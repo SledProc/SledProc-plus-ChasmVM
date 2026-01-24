@@ -1,3 +1,77 @@
+
+ For these collaborative initiatives, 
+authors deposit content in a 
+variety of media, including but not limited to 
+text documents.  This is the norm for 
+scientific \q{grids} such as
+the Cancer Biomedical Informatics Grid (\CaBIG{}),
+%National Cancer Informatics Project (\NCIP{}),
+Open Science Grid (\OSG{}),
+Center for the Development of a Virtual Tumor (\CViT{}), 
+European Grid Infrastructure (\EGI{}), 
+Earth System Grid Federation (\ESGF{}), 
+Langguage Applications Grid (\LAPPS{}), 
+Data Infrastructure Building Blocks (\DIBBs{}), 
+etc.  For example, \CaBIG{}
+is an oncology research network 
+across multiple continents; institutions can join 
+the network if they adhere to \VCDE{} (Vocabularies and Common Data Elements) 
+standards applying to \API{}s, metadata, provenance, 
+execution models, etc., to 
+support cross-network interoperability 
+(e.g., data from one institution  
+plugged in to simulations from another).  Preparing 
+indexes for structured research networks such as \CaBIG{} 
+(now succeeded by the National Cancer Informatics Project) optimally includes aligning each 
+index with semantic protocols.  Index 
+entries can be linked to \VCDE{} terms wherever 
+possible; likewise, \lGUI{} indexing can aid 
+in production of accurate, up-to-date documentation.                                      . 
+Or, text- and index-search \API{}s 
+may be subsumed under a grid's \API{} 
+policies; the shared versioning system could be 
+applied to iterations of a manuscript; and 
+metadata might cross-reference text publications 
+with other submissions by the same (or affiliated) authors.  
+
+
+\pseudoIndent{}  Disciplines such as systems biology, 
+environmental science, quantum cosmology, and neurophysics 
+are characterized by research networks that explore complex 
+systems from multiple angles, and leverage resources 
+combining data, code, graphics, simulations, and natural-language 
+text.  \lPacTk{} can help authors expand indexing protocols 
+to encompass this wider range of scientific content.  
+
+\pseudoIndent{}  In particular, we propose a \q{Science Grid Node}   
+protocol (\Scign{}-index) to standardize 
+code annotations according to \FAIR{}data principles, 
+with an emphasis on indexing \GUI{} logistics (\q{action-maps}) 
+and source-declared contracts.  This protocol 
+would reflect requirements for grid-computing 
+architectures, with a unified meta-index 
+paradigm encompassing data, code, and 
+visual assets for \FAIR{}-aligned research networks. 
+The \Scign{}-index model addresses 
+concerns specific to modular software engineering, 
+such as merging component-local with shared-database updates; 
+discovery, validation, and integration of new modules; 
+and reading intracomponent 
+annotations for shared, searchable 
+documentation (form fields, user-initiated 
+operations, authentication, component capabilities, etc.). 
+
+\pseudoIndent{}  Similarly, according to standards such as 
+\FAIR{}data, publishing findable, accessible, 
+interoperable, and reusable data sets goes beyond 
+just making raw data available on an open-access platform.  
+For instance, \FAIR{}data defines documentation and metadata 
+protocols, so that each statistical parameter (for example) 
+is described with range, measurement, distribution, and 
+similar analytic information. 
+
+
+
 <abbrev>
 <abbrev-journal-title>
 <abstract>

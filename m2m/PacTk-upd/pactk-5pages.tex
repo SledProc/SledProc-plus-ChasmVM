@@ -495,7 +495,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 \thispagestyle{empty}
 %\thispagestyle{firstpage}
 
-\vspace*{-72pt}
+\vspace*{-74pt}
 
 %\vspace*{1em}
 
@@ -646,7 +646,7 @@ is more efficient than working with markup directly.
 
 \begin{description}
 
-\item[\textbullet{}Compiling a Meta-Index]  \lPacTk{} helps book series, science grids, and 
+\item[Compiling a Meta-Index]  \lPacTk{} helps book series, science grids, and 
 potentially individual journals merge indexes from multiple documents 
 (wherever those indexes exist in the first place) into a full-text 
 database augmented with index metadata.  This is distinct from 
@@ -660,14 +660,14 @@ correct match to an indexed concept.  Indexing
 software based on \TSOM{} can be embedded into 
 \PDF{} viewers, allowing readers to access 
 Meta-Index search portals directly from \PDF{} 
-files via context menus (Figure~\Atref{fig:portal}~and~\Atref{fig:ss6},~\Atref{fig:ss7},~\Atref{fig:ss8}).  
+files via context menus (Figure~\Atref{fig:portal}).  
 In addition, match results (both from local 
 and meta indexes) can be presented to 
 users via navigable controls superimposed 
 alongside the main text (Figure~\Atref{fig:m2m}).  
 \PacTk{} can also help with \GUI{} components 
 for authors and editors to construct indexes to begin with
-(Figures~\Atref{fig:ss1},~\Atref{fig:ss2},~and~\Atref{fig:xNC}).  Via 
+(Figures~\Atref{fig:ss1}~and~\Atref{fig:ss2}).  Via 
 \TSOM{}, index entries are structured objects 
 that can be merged into a full-text database 
 while also generating the print index at the 
@@ -676,6 +676,47 @@ search periphery can be expanded to include
 computer code, Research Object data sets, 
 and other supplemental materials 
 packaged with a publication.
+   
+
+\item[Categorizing Inner Documents via Annotations]  
+%\p{\textbf{Categorizing Inner Documents via Annotations}:
+You are working with a 
+large manuscript assembled from many smaller documents.  Their authors 
+have contributed \PDF{} comment boxes associated with specific sentences, 
+paragraphs, or sections of their text, and have employed a \q{handle} 
+syntax to mark themes relevant to these content units, according to a 
+standardized vocabulary.  Your goal is to scan each of the comment boxes 
+so as to identify all inner documents which address specific themes.  
+That is, you want to build a mapping from theme labels 
+to lists of inner documents (or chapters, etc.) which could be 
+pressed into service after splitting the larger manuscript into smaller parts;  
+or utilized to assemble glossaries, enhanced \ToC{} pages, web navigators, and so forth.}
+
+%\psuedoIndent{} 
+%\vspace*{-9pt}
+\psUp{}
+\p{{\shortenp}To complete this task it is necessary to execute procedures that 
+can obtain the content of all \PDF{} annotations, indexed by 
+page number.  \textcolor{white}{One would then search each annotation-text for 
+every characteristic handle that indicates relevance vis-\`a-vis individual themes, building}
+One would then search each annotation-text for 
+every characteristic handle that indicates relevance vis-\`a-vis individual themes, building
+up an \textatc{std::map} style data structure whose keys 
+are theme objects/labels.  Following the comment box page number, 
+one could moreover identify the chapter or inner document including 
+that page, to serve as a value set for the aforementioned map (depending 
+on the set up, more granular locations such as paragraph ids 
+may be available as well).  On the basis of that map data structure, 
+the algorithms could generate additional code (e.g., for a glossary) 
+or manipulate secondary files: suppose, for instance, 
+that one goal is to split the manuscript into one file 
+per chapter, or per inner document.  The algorithm would 
+then traverse the map structure to build a second one 
+whose values are file names (while creating those files 
+as necessary).  These coding requirements --- working with 
+object-based data structures and local filesystems --- call 
+for programming in full-fledged languages such as \Cpp{} rather 
+than queries or \XML{} transforms.}
 
 %\psuedoIndent{}  
 \psUp{}
@@ -694,47 +735,7 @@ instead of an undifferentiated heading locating \q{Keynesian economics,}
 the index could produce subheadings such as 
 \q{Keynesian economics, arguments for}; \q{Keynesian economics, arguments against}; 
 \q{Keynesian economics, mathematical models}; 
-\q{Keynesian economics, and macroeconomic theory} \makebox{and etc.}  
-Via these annotations, Meta-Index search can hone in on 
-articles that are most directly relevant from a 
-rhetorical/argumentational point of view.}
-
-\item[\textbullet{}Working with Research Data and Simulations] When publications are  
-%\p{\textbf{Categorizing Inner Documents via Annotations}:
-associated with data sets, code, 
-or multimedia presentations, those supplemental materials 
-should be indexed alongside the text manuscripts.  This 
-allows search engines to query all parts of a Research Object, 
-not just documents.  Equally important, indexing full Research Object
-allows publications to be cross-referenced with data, code, and/or 
-multimedia.
-
-\psUp{}
-\p{{\shortenp}To see how multi-media cross-references might be used, suppose a publication
-includes a graphic taken from a video frame.  Naturally, some readers 
-will want to watch the entire video.  Cross-referencing between 
-that document-location and the video file would allow \PDF{} viewers 
-to play the video in a separate window (either from the beginning 
-or from shortly before the still shot that was captured).  Moreover, 
-suppose the video shows a specific geographic location --- for 
-instance, it addresses environmental effects of climate change.  
-By geotagging individual frames, the video player could  
-open a digital map centered at the currently visible \GIS{} 
-coordinates.  If the publication's Research Object includes 
-\GIS{} data sets, icons for dataset locations could then 
-be superimposed on the base map.}
-
-\psUp{}
-\p{{\shortenp}Alternatively, suppose a video is derived from a computer 
-simulation --- perhaps an analysis of how global 
-warming will affect ecosystems, assuming different 
-rates of greenhouse gas reduction (as input parameters).  In 
-addition to watching the video, readers might want to examine 
-the simulation directly: modify the initial parameters or 
-study the code implementing iteration updates.  Here, multi-media 
-cross-references could help a \PDF{} viewer open multiple 
-secondary windows, including a code preview and a dedicated
-window for the simulation graphics.}
+\q{Keynesian economics, and macroeconomic theory} \makebox{and etc.}}
 
 %\clearpage{}
 
@@ -746,28 +747,22 @@ window for the simulation graphics.}
 \end{figure}
 
 
-\item[\textbullet{}Digital Humanities]  
+\item[Extracting Linguistics Annotations]  
 %\p{\textbf{Extracting Linguistics Annotations}:
-Executable Research Objects --- combining text, code, and data into a single 
-package --- are identified with natural science, but similar programming techniques 
-apply to the humanities as well.  For instance, historical documents 
-are themselves objects of study or assets to scholarship (e.g., collected papers). 
-Archiving is more complex in this context because 
-digital twins --- whether 
-as images, transcribed to text, or both --- typically 
-demand more detailed markup structure (for instance, 
-transcription ambiguities are recorded, or 
-scribbled marginal notes notated alongside the 
-corresponding text).    Or, consider a linguistic article that contains 
-a list of sample sentences/passages, intended to demonstrate specific claims (about 
+You are working with a 
+linguistic article that contains a list of sample sentences/passages, 
+according to a common linguistics presentation style.  These 
+examples are intended to demonstrate specific claims (about 
 parsing structure, conceptualization, etc.) or to serve 
-as a basis for subsequent analysis.  Such samples (obtained from written 
-corpora/audio records or simply 
-invented by authors) are commonly typeset in a visually distinct style: 
-usually printed with id numbers, 
-contextual comments when needed, and sometimes special symbols representing 
+as a basis for subsequent analysis.  Such samples --- which 
+might be obtained from written corpora, audio records, or simply 
+invented by the author to highlight specific linguistic topics 
+--- are commonly used in this discipline and typeset in 
+formats that visually distinguish examples from primary 
+text.  Moreover, the samples are often printed with id numbers, 
+contextual comments, and sometimes special symbols representing 
 phonology, agglutination, word order, morphosyntactic 
-patterns, syntactic categories, and so forth.
+patterns, syntactic categories, and so forth.}
  
 \begin{figure}[h!]
 \figcolor
@@ -782,9 +777,10 @@ patterns, syntactic categories, and so forth.
 %\psuedoIndent{}  
 \psUp{}
 \p{{\shortenp}Because this mode of presentation is so common, 
-researchers could benefit repositories of such examples, 
-as a special kind of language corpus.  That is, linguistics 
-papers could be scanned for listed samples that get extracted into a common format, to be included in a 
+researchers could benefit from a searchable repository of these examples, 
+as a special kind of language corpus.  That is, multiple linguistics 
+papers may be scanned for listed samples and each of those 
+examples extracted into a common format, to be included in a 
 multi-publication database.  Interested readers could then 
 browse the samples to find articles that address specific 
 syntactic or semantic topics, particularly if each sample 
@@ -798,23 +794,24 @@ common format (e.g., distinct \XML{} tags) to notate the examples;
 but the full extracting and database persistence logic 
 would need specialized programming.}
 
-\item[\textbullet{}Interoperating Publication Viewers with Science Applications]  
+\item[Embedding a Publication Viewer in a Chemistry Application]  
 %\p{\textbf{Embedding a Publication Viewer in a Chemistry Application}:
-Graphics and data visualization provided by science applications can 
-augment the functionality and interactive features of document 
-viewers.  Consider an article about biochemistry whose text content  
-includes compounds identified either by a common name 
-or a chemical formula.  Assuming these special terms are 
-ended in a structured format (e.g., special \XML{} tags),     
-chemical names/formulae can be associated with 
+You are 
+working with an article about biochemistry, and the text 
+includes discussions of compounds identified either by a common name 
+or a chemical formula.  The authors and/or editors have been 
+attentive to encode these special terms in a structured format 
+(e.g., special \XML{} tags) and have also added informative 
+suggestions via \PDF{} comments.  Your goal is to find all 
+chemical terms/formulae which can be associated with 
 molecular-structure files in formats such as \PDB{} 
-(Protein Data Bank) or \CML{} (Chemical Markup 
-Language).  Those files may then be opened 
-via applications dedicated to 
+(Protein Data Bank), \MOL{}, \CML{} (Chemical Markup 
+Language), or similar standards.  Those files may then be opened 
+via science applications dedicated to 
 visualizing and analyzing chemical structures in three 
 dimensions (showing positions of atoms, atomic groups/arrangements, 
 bonding strength, sub- and inter-molecular 
-forces, and so forth).  A similar example might be a chemistry textbook, with custom classroom software.
+forces, and so forth).  A similar example might be a chemistry textbook, with custom classroom software.}
 
 %\pseudoIndent{}  
 \enlargethispage{12pt}
@@ -832,11 +829,7 @@ with these special \PDF{} components, because --- once
 \ThreeD{} files are loaded into the software --- the 
 specific chemical compound being studied, and its properties, 
 could be cross-referenced to locations in 
-the original research manuscript (or, analogously, the students' textbooks).
-Similar points could be made for interop between manuscript views 
-and multimedia content of many kinds: digital map displays, 
-videos (which may in turn be synced with digital maps by 
-geotagging individual frames), simultations, image series, and so on.}
+the original research manuscript (or, analogously, the students' textbooks).}
 
 \end{description}
 
@@ -849,45 +842,54 @@ geotagging individual frames), simultations, image series, and so on.}
 
 \vspace*{13pt}
 
-\p{Within Executable Research Objects, 
-text documents are paired with data, code, 
-graphics, and/or multimedia resources.  
-\lPacTk{} extends its meta-index protocol 
-to incorporate these variegated asset 
-types.  Index code sources and raw data files 
-through a framework oriented also to text 
-manuscripts --- rather than traditional 
-pre-search ingesting associated with 
-Content Management Systems (\CMS{}) --- 
-has numerous benefits: \textb{} indexable 
-terms may appear in many contexts,\footnote{\hspace*{4pt} Data types 
-and their fields/members; scales and units of measurement; 
-coordinate axes; dropdown combo boxes; context menus; 
-tabular column labels; user actions \hspace*{6.5pt}available 
-\visavis{} specific \GUI{} elements.} not all 
-of which are covered by \CMS{} 
-indexing; \textb{} indexes should be used not only 
-for searching and external documentation but also 
-incorporated into \GUI{} functionality directly;\footnote{\hspace*{4pt} For 
-instance, the executable portion of a Research Object 
-could be run in a special \q{assist} mode where 
-supplemental components illustrate how to use different \GUI{} \hspace*{6pt}windows} 
-and cross-references between text and non-text content 
-should incorporate such details as individual sentences 
-and \PDF{} page coordinates, which require rigorous 
-text encoding.}
+For some initiatives, authors deposit content in a 
+variety of media, including but not limited to 
+text documents.  This is the norm for 
+scientific \q{grids} such as
+the Cancer Biomedical Informatics Grid (\CaBIG{}),
+%National Cancer Informatics Project (\NCIP{}),
+Open Science Grid (\OSG{}),
+Center for the Development of a Virtual Tumor (\CViT{}), 
+European Grid Infrastructure (\EGI{}), 
+Earth System Grid Federation (\ESGF{}), 
+Langguage Applications Grid (\LAPPS{}), 
+Data Infrastructure Building Blocks (\DIBBs{}), 
+etc.  For example, \CaBIG{}
+is an oncology research network 
+across multiple continents; institutions can join 
+the network if they adhere to \VCDE{} (Vocabularies and Common Data Elements) 
+standards applying to \API{}s, metadata, provenance, 
+execution models, etc., to 
+support cross-network interoperability 
+(e.g., data from one institution  
+plugged in to simulations from another).  Preparing 
+indexes for structured research networks such as \CaBIG{} 
+(now succeeded by the National Cancer Informatics Project) optimally includes aligning each 
+index with semantic protocols.  For example, index 
+entries can be linked to \VCDE{} terms wherever 
+possible.  \lGUI{} indexing can likewise address 
+problems where users struggle to enact desired functionality because 
+they are seeing outdated 
+submenu instructions. 
+Or, text- and index-search \API{}s 
+may be subsumed under a grid's \API{} 
+policies; the shared versioning system could be 
+applied to iterations of a manuscript; and 
+metadata might cross-reference text publications 
+with other submissions by the same (or affiliated) authors.  
 
-\p{Executable Research Objects are often associated with 
-\q{grid} technology.  In general, a grid is designed with the assumption 
-that users will execute software packages which are accessible 
-via the grid, and that their primary reason for doing so is 
-participating in large, decentralized computations, or 
-because the software encapsulates novel research.  Although 
-originally focused on remote code-execution on special-purpose 
-computers, more recent use cases are more rigorously
-aligned with \FAIR{} principles: academic papers often present 
-\hspace*{-238pt}\makebox[1.8\textwidth]{research methods and theoretical models 
-in abstract,\hspace{3.5pt}mathematical terms. \hspace{1.5pt} Observing visuals, and experimenting with code parameters,} 
+\clearpage{} 
+\pseudoIndent{}  Similarly, according to standards such as 
+\FAIR{}data, publishing findable, accessible, 
+interoperable, and reusable data sets goes beyond 
+just making raw data available on an open-access platform.  
+For instance, \FAIR{}data defines documentation and metadata 
+protocols, so that each statistical parameter (for example) 
+is described with range, measurement, distribution, and 
+similar analytic information. 
+
+\enlargethispage{13pt}
+\vspace*{8pt}
 
 \begin{figure}[h!]
 \figcolor
@@ -899,65 +901,7 @@ in abstract,\hspace{3.5pt}mathematical terms. \hspace{1.5pt} Observing visuals, 
 
 \clearpage{}
 
-can help make the underlying research more understandable.  There is pedagogical value in running and examining 
-simulation and/or analytic code, that becomes accentuated insofar 
-as code is developed with explicit conceptual semantics 
-(pre- and post-condition declarations, Design by Contract, 
-unit-decorated types, and so on).   These code annotations 
-may then become a basis for text-integrated indexing.}
-
-\p{With this in mind, we can formulate several 
-core principles of \q{\FAIR{}} grid computing, 
-including: \textb{} code packages hosted 
-on a grid should be designed with as few 
-mandatory external dependencies as possible; 
-\textb{} where a given package has software 
-or hardware requirements that are difficult to 
-satisfy, a simplified version should be made 
-available that would at least allow some 
-provisional learning and evaluation of published 
-results; \textb{} every effort should be 
-made to ensure that the software executes in a 
-usable fashion even in the absence of dependencies 
-or preconditions that held true for those developing 
-the code; \textb{} grid collaborations should offer 
-replication-focused coding tools; and \makebox{\textb{} there} should be a 
-clear set of actions, with as few steps as 
-possible, allowing someone newly acquainted 
-with a grid-hosted package --- in particular, someone 
-who learns about the code from a technical publication 
---- to obtain and execute the relevant code.  
-Researchers, especially, should be able to build and 
-use the software in parallel with figures and 
-text discussions featured in document manuscripts.}
-
-\p{In general, then, publishers cannot 
-assume that \FAIR{} transparency is achieved simply by 
-sharing raw data files.  Instead, open-access materials should 
-wherever possible include plugins or source-code extensions (developed 
-individually for one manuscript; or collectively 
-for a book series, journal title, or document repository) 
-targeting science applications with requisite capabilities 
-to view/analyze domain-specific file types.  Similar 
-comments apply to humanities environments, such as 
-front-ends for studying linguistics corpora and/or 
-parse-structures; sociological/economic 
-statistics; or graphics tools for digital humanities.
-\lPacTk{} can help in this context 
-because a single \PacTk{} plugin may serve as middleware 
-on top of which extensions could operate that are individualized 
-to specific publications/manuscripts.  This can be more 
-efficient than building components against applications' 
-native plugin mechanisms directly.}
-
-%\clearpage{} 
-
-%\enlargethispage{13pt}
-%\vspace*{8pt}
-
-%\clearpage{}
-
-\begin{figure}[t!]
+\begin{figure}[h!]
 \figcolor
 \hspace{-25pt}\includegraphics[scale=.93, trim=0 4.34cm 0 0, clip]{x/m2m.png}
 \caption{Index Search in a PDF Front-End Context}
@@ -966,8 +910,62 @@ native plugin mechanisms directly.}
 
 \vspace*{-4pt}
 
-
+\pseudoIndent{}  On a scientific grid, many assets are executable code, 
+often for \q{\textit{in silico}} simulations.  
+From a user's perspective, however, such 
+executables often function as multimedia 
+resources, producing two- or three-dimensional 
+graphics that are pedagogically analogous 
+to image series or videos.  Such computer code 
+thereby connects to publications with a 
+similar rationale as videos, digital maps, and 
+other highly-visual content types.  As an example, 
+analysis of habitat regrowth after a forest 
+fire can be based on footage of actual locations 
+\textit{or} on agent-oriented simulations that provide 
+mathematical models for stages of regeneration 
+(which plant and animal species become reestablished 
+at which point in time).  Indexing and cross-referencing 
+policies that are adapted for image and video material 
+can thereby be extended to code libraries as 
+well.  Controlled vocabularies and other semantic 
+standards apply to elements 
+of computer code --- procedures, classes, data types, 
+inheritance/containment hierarchies, pre- and post-conditions, 
+etc.\@ --- but in a \q{research grid} context graphical displays 
+are assets in their own right and can 
+be annotated and indexed accordingly.  A \ThreeD{} simulation, 
+for instance, functions essentially as a video whose 
+specific frames evolve algorithmically as a product 
+of parameters and initial conditions that may 
+be modified for each run.
   
+\pseudoIndent{}  Disciplines such as systems biology, 
+environmental science, quantum cosmology, and neurophysics 
+are characterized by research networks that explore complex 
+systems from multiple angles, and leverage resources 
+combining data, code, graphics, simulations, and natural-language 
+text.  \lPacTk{} can help authors expand indexing protocols 
+to encompass this wider range of scientific content.  
+
+\pseudoIndent{}  In particular, we propose a \q{Science Grid Node}   
+protocol (\Scign{}-index) to standardize 
+code annotations according to \FAIR{}data principles, 
+with an emphasis on indexing \GUI{} logistics (\q{action-maps}) 
+and source-declared contracts.  This protocol 
+would reflect requirements for grid-computing 
+architectures, with a unified meta-index 
+paradigm encompassing data, code, and 
+visual assets for \FAIR{}-aligned research networks. 
+The \Scign{}-index model addresses 
+concerns specific to modular software engineering, 
+such as merging component-local with shared-database updates; 
+discovery, validation, and integration of new modules; 
+and reading intracomponent 
+annotations for shared, searchable 
+documentation (form fields, user-initiated 
+operations, authentication, component capabilities, etc.). 
+
 
 
 %\begin{figure}[h!]
@@ -1043,73 +1041,7 @@ and \PDF{} viewers:
 \pagestyle{lastpage}
 %
 
-%\clearpage{}
 
-
-\vspace*{-65pt}
-
-%\begin{minipage}{\pagewidth}
-\pagestyle{empty}
-
-\begin{figure}[h!]
-\figcolor
-\hspace{-5em}\includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/xNC.png}
-\caption{Subdivision formats for Paragraph IDs}
-\label{fig:xNC}
-
-\vspace*{22pt}
-
-\centering{
-\includegraphics[scale=0.6, trim=0 4.1cm 0 .4cm, clip]{fin/single.png}
-\caption{An index entry dialog window (and context menu for single and meta-index views)}
-\label{fig:ss6}
-}
-
-\end{figure}
-
-%\enlargethispage{35em}
-
-%\clearpage{}
-
-\vspace*{-82pt}
-
-\centering{
-
-\begin{figure}[h!]
-
-\figcolor
-
-\centering{
-\includegraphics[scale=0.66]{fin/meta.png}
-\caption{Dialog window for local and meta-index searches}
-\label{fig:ss7}
-}
-
-\vspace*{18pt}
-
-\centering{
-\includegraphics[scale=0.56, trim=8.4cm 0 0 1cm, clip]{fin/pisa.png}
-\caption{Configuring default back-end queries}
-\label{fig:ss8}
-}
-
-\end{figure}
-
-
-
-
-
-
-%\begin{figure}[h!]
-%\figcolor
-%\includegraphics[scale=0.49, trim=0 4.1cm 0 0, clip]{fin/single.png}
-%\caption{An index entry dialog window (and context menu for single and meta-index views)}
-%\label{fig:ss4}
-%\end{figure}
-
-%\end{minipage}
-
-%\clearpage{}
 
 \end{document}
 

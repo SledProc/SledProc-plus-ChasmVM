@@ -268,7 +268,7 @@ about pollutants/contamination (documentation plus raw CSV data).};
 
 \node [draw=red!60!black, fill=blue, anchor = south west, rounded corners,
 text width=8.2cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
-(s1) at (1.4, 5.1) {{Paragraph ids for this PacTk document 
+(s1) at (1.4, 5.1) {{Para Ids for this PacTk document 
 are color-coded, with outlined numbers (42., etc.) for ordinary 
 paragraphs, roman\\numerals (\textcolor{clrmcMid!20!gray}{$i$}, 
 \textcolor{clrmcMid!20!gray}{$ii$}) for block quotes, 
@@ -284,7 +284,7 @@ these styles are visible in the continuation
 
 \node [draw=red!60!black, fill=white, anchor = south west, rounded corners,
 text width=8.2cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
- at (1.33, 5) {Paragraph ids for this PacTk document 
+ at (1.33, 5) {Para Ids for this PacTk document 
 are color-coded, with outlined numbers (\textcolor{white}{42.}, etc.) for ordinary 
 paragraphs, roman\\numerals (\textcolor{clrmcMid!20!gray}{$i$}, 
 \textcolor{clrmcMid!20!gray}{$ii$}) for block quotes, 
@@ -643,6 +643,24 @@ text width=4.4cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-oute
 
 
 
+\node[shape=circle,draw=circ!40,line width=4pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2.7,10) {1};
+\node[shape=circle,draw=circ,line width=1pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2.7,10) {1};
+
+
+\node[shape=circle,draw=circ!40,line width=4pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (11.1,4.3) {2};
+\node[shape=circle,draw=circ,line width=1pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (11.1,4.3) {2};
+
+
+
+\node[shape=circle,draw=circ!40,line width=4pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2.8,3.5) {3};
+\node[shape=circle,draw=circ,line width=1pt, text=circ,fill=red!4,text centered,text width=8pt,inner sep=4pt] at (2.8,3.5) {3};
+
+
+\colorlet{bgray}{blue!30!gray}
+\colorlet{ou}{purple!60!red}
+\colorlet{in}{orange!60!black}
+
+
 \colorlet{bgray}{blue!30!gray}
 \colorlet{ou}{purple!60!red}
 \colorlet{in}{orange!60!black}
@@ -651,7 +669,7 @@ text width=4.4cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-oute
 \node [draw=ou!30, fill=bgray!49, anchor = south west, rounded corners,
 text width=7.5cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
 (s1) at (3.9, .8) {{Paragraphs where the matches are located 
-are also highlighted at their start and end points, plus with sidebars.
+are also highlighted at their start and end points (\tcircledb{2} and \tcircledb{3}).
 }
 };
 
@@ -659,24 +677,32 @@ are also highlighted at their start and end points, plus with sidebars.
 \node [draw=in!60, fill=white, anchor = south west, rounded corners,
 text width=7.5cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
  at (3.83, .7) {Paragraphs where the matches are located 
-are also highlighted at their start and end points, plus with sidebars.
+are also highlighted at their start and end points (\tcircledb{2} and \tcircledb{3}).
 };
 
 
 \node [draw=ou!30, fill=bgray!49, anchor = south west, rounded corners,
-text width=8.8cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
+text width=11.8cm, inner sep=17pt, xshift=-8pt, yshift=-8pt, font={\fontsize{9}{9}\selectfont}] (ltext)
 (s1) at (8.4, 5.9) {{Using highlights to indicate index entry locators.  
 This paragraph shows highlights applied after a user selects the 
-main entry \\(Harold Garfinkel), with related entries indicated as well.
+main entry (Harold Garfinkel) from the index.  For convenient 
+browsing, search-matching terms are shown on a side bar, alongside 
+a clickable arrow allowing users to browse to the next match 
+from the index (\tcircledb{1}).  Related entries identified via \textit{see also} 
+or subentry data from the index are also highlighted.
 }
 };
 
 
 \node [draw=in!60, fill=white, anchor = south west, rounded corners,
-text width=8.8cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
+text width=11.8cm, inner sep=13pt, font={\fontsize{9}{9}\selectfont}] (ltext-outer)
  at (8.25, 5.7) {Using highlights to indicate index entry locators.  
 This paragraph shows highlights applied after a user selects the 
-main entry \\(Harold Garfinkel), with related entries indicated as well.
+main entry (Harold Garfinkel) from the index.  For convenient 
+browsing, search-matching terms are shown on a side bar, alongside 
+a clickable arrow allowing users to browse to the next match 
+from the index (\tcircledb{1}).  Related entries identified via \textit{see also} 
+or subentry data from the index are also highlighted.
 };
 
 
@@ -1034,16 +1060,14 @@ theme of the initial book's current page.
 };
 
 
-
-\draw  [->,>=stealth', line width=4pt, draw=tp!50] ([yshift=12pt, xshift=-61pt] ltext.north west) to 
+\draw  [->,>=stealth', line width=4pt, draw=tp!50] ([yshift=84pt, xshift=-77pt] ltext.north west) to 
    ([yshift=163pt, xshift=-50pt] ltext.north east) ;
 
 
 
 \draw  [->,>=stealth', line width=4pt, draw=tp!50] 
-   ([yshift=233pt, xshift=4pt] ltext.north east) to 
-   ([yshift=33pt, xshift=125pt] ltext.north east) ;
-
+   ([yshift=273pt, xshift=64pt] ltext.north east) to 
+   ([yshift=53pt, xshift=95pt] ltext.north east) ;
 
 
 

@@ -51,6 +51,7 @@ class GTagML_Graph_Build
   bool active_annotation_tile:1;
   bool active_attribute_sequence:1;
   bool latex_only:1;
+  bool xml_only:1;
   bool sentences_only:1;
   bool sentences_latex_filter:1;
   bool just_ended_sentence:1;
@@ -231,6 +232,9 @@ class GTagML_Graph_Build
  Paragraph_Types current_paragraph_type_;
  QStack<Paragraph_Types> held_paragraph_types_;
 
+ u2 current_section_number_;
+ u2 current_item_count_;
+
 
 public:
 
@@ -264,10 +268,14 @@ public:
 
  }
 
+ void prepare_jats(QString& text);
+
  void save_jats(QString path)
  {
+  QString text = QString::fromLatin1(jats_array_);
+  prepare_jats(text);
   //jats_ = QString::fromLatin1(jat)
-  KA::TextIO::save_file(path, jats_array_);
+  KA::TextIO::save_file(path, text);// jats_array_.replace("@=", "&"));
  }
 
  void save_latex(QString path)

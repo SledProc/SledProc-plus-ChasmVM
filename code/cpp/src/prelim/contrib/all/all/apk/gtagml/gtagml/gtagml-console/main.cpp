@@ -70,7 +70,7 @@ void process_gtagml_file(QString path, GTagML_Project_Info* gpi, GTagML_Folder* 
  gdoc->insert_latex_template(path + "-template.tex");
  gdoc->insert_xml_template(path + "-template.xml");
 
- gdoc->save_jats(path + ".jats");
+ gdoc->save_jats(path + ".jats.xml");
  gdoc->save_latex(path + ".tex");
  gdoc->save_sentences(path + ".sentences.sdi");
 
