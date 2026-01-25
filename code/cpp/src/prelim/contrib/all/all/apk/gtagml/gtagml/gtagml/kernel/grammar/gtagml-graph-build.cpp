@@ -1830,6 +1830,8 @@ void GTagML_Graph_Build::prepare_jats(QString& text, QString bib_path)
 
  text.replace("\\Visavis{}", "Vis-a-vis");
  text.replace("{\sth}", " ");
+ text.replace("\\-", "");
+
 
  text.replace("\\\\", "");
 

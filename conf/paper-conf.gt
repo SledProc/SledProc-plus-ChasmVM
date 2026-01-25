@@ -15,7 +15,7 @@ basic units of scholarly dissemination
 are no longer single manuscripts but rather 
 composite packages including text, code, and 
 data, and according to ;/FAIR/ (Findable, 
-Accessible, Interopable, Reusable) principles 
+Accessible, Interoperable, Reusable) principles 
 such content should be in available in a 
 largely standalone fashion, hopefully 
 usable as soon as downloaded.  To this 
@@ -43,7 +43,7 @@ understand a "/publication/" to be a natural-language document
 (e.g. an article, book, or book chapter).  But several 
 more recent trends in publishing and science have complicated 
 this picture.  For example: the idea of a "/replication crisis/" 
-%-- concernts that results of influential experiments in natural and social 
+%-- concerns that results of influential experiments in natural and social 
 sciences have proven difficult to reproduce during updated studies. 
 Reaction to this "/crisis/"  
 spurred the goal of "/data transparency/" and initiatives to 
@@ -127,13 +127,13 @@ the ;Poppler library has a ;text method of
 scraper to eliminate headers and footers, for instance).  
 The strings returned by this method, however, will 
 usually differ from the input sources captured as 
-;/JATS/, for example.  The most straightfoward 
-contast would be among hyphenated words, but other anomalies 
+;/JATS/, for example.  The most straightforward 
+contrast would be among hyphenated words, but other anomalies 
 may occur, such as unexpected space characters distributed 
 between letters of words in special fonts (small spaces 
 may be present in the internal ;PDF text that are invisible to 
 human readers, but methods like ;;/Page::text/ have no mechanism 
-to report different sizes of text characters.  Likewise, depending 
+to report different sizes of text characters).  Likewise, depending 
 on the library being used, text-extraction routines 
 may or may not "/unpack/" ligatures like "/ffi/" to their 
 constituent letters. >}  In addition 
@@ -159,7 +159,7 @@ annotation would be more reliable.
 >}  These problems 
 were openly acknowledged by the team behind ,/CORD19/, who 
 described the steps they took to (imperfectly) convert 
-;/PDF/ files to a machine-readable ;/JSON/ format.  They even issused   
+;/PDF/ files to a machine-readable ;/JSON/ format.  They even issued   
 a "/call to action/" encouraging publishers to adopt a 
 more consistent text representation.{<
 Under a section explicitly titled "/call to action/" they 
@@ -277,7 +277,7 @@ In other words, as much as possible, interested readers
 should be able to obtain the content of an Executable Research 
 Object */in source code/* fashion and use those sources 
 %-- e.g., by building an entry-point executable %-- without having to 
-separately obstain and/or compile or install additional resources 
+separately obtain and/or compile or install additional resources 
 not packaged in the data set itself.  Programmers producing a 
 self-contained package in this sense may reasonably assume that 
 readers have access to a working and relatively up-to-date development 
@@ -289,8 +289,8 @@ ensure that clear instructions are given for users who need to
 set up a prototypical development environment to begin with.{< And external 
 dependencies should be favored which are easier to use.  For instance, 
 if two ;/C++/ libraries provide similar functionality, developers should 
-comparse them based on how easy or difficult it is to install 
-the libaries assuming they are not already present on one's 
+compare them based on how easy or difficult it is to install 
+the libraries assuming they are not already present on one's 
 system (while taking into account that the package manager 
 for a user's linux distro, for example, may not be up-to-date).  
 If one library is noticeably better in this regard, the Research 
@@ -322,7 +322,7 @@ could employ something like a built-in scripting language to run
 analytic code, fine-tune ;/GUI/s, compose plugins for external scientific applications, 
 etc.  (The principle that Research Object code should be self-contained and source-based 
 does not preclude users exploring data sets, or individual files therein, 
-via disipline-specific applications that have analytic or visualization capabilities 
+via discipline-specific applications that have analytic or visualization capabilities 
 conducive to advanced research %-- the idea of Executable Research Object is not necessarily 
 to replace the tools that scientists use for their core investigations, but rather to 
 provide accessible code for evaluative and pedagogical purposes for 
@@ -373,7 +373,7 @@ libraries are often maintained by individual academic departments or other
 groups working with limited resources, and they can have problems related 
 to versioning (the code being incompatible with newer, or older, representation specs), 
 lack of breadth for different programming languages or operating systems, 
-external dependencies (or other details that make the libaries hard to build and/or 
+external dependencies (or other details that make the libraries hard to build and/or 
 use for some people), and other issues affecting ;/FAIR/-style accessibility.  
      
 In principle, a ;/VM/ in this context could provide a common environment for 
@@ -403,7 +403,7 @@ who downloaded it.  Potentially, this involves both dedicated ;/GUI/ windows
 showing details about object-collections in aggregate and also individual 
 objects/records (e.g., something like a ;/GUI/ "/form/" showing the values 
 of individual data fields in an organized layout, perhaps with list-views 
-or hierarchical "/accordiaos/" for non-scalar information) as well as statistical 
+or hierarchical "/accordions/" for non-scalar information) as well as statistical 
 overviews, presented via (interactive) graphics (charts, plots, 
 diagrams, histograms, etc.).{< "/Accordion/" is a common term for a sort 
 of ;GUI control that has multiple inner segments, usually stacked 
@@ -450,7 +450,7 @@ chemical compounds or formulae, and it is possible
 to obtain (from a service such as Protein Data Bank, or 
 ;/PDB/) data files that certain applications are able to use 
 for constructing ,3D molecular visualizations, modeling 
-that subtantce's atomic structure.  If the ;PDF viewer 
+that substance's atomic structure.  If the ;PDF viewer 
 interoperates with such software/components 
 (I will review possible strategies later) then 
 launching the graphics' window with that 
@@ -461,7 +461,7 @@ activated in proximity to the annotated text
 
 Context menus are a good case in point because, in a ;PDF display, 
 most of a reader's attention is focused on the document and not 
-on ;GUI controls scatterred by the edge of the window.  Therefore, 
+on ;GUI controls scattered by the edge of the window.  Therefore, 
 functionality requested in the document's context would 
 typically be activated via a context menu rather than a 
 ;GUI button or other clickable area (the menu could be 
@@ -488,7 +488,7 @@ less suitable to context menus).
 Indeed, ;/GUI/ programming overall evinces a variety 
 of common practices that are relatively 
 standardized and help users feel comfortable 
-with a dektop-style software component.  
+with a desktop-style software component.  
 For instance, tooltips help users 
 identify clickable regions when they 
 hover the mouse nearby; conventions 
@@ -510,8 +510,8 @@ at their top-right).  Visual cues such as
 a thickened border around notebook 
 tabs help users grasp application state 
 (e.g., which tab is currently visible) 
-with little effort (similary, a common 
-policy is to append an asterix to file 
+with little effort (similarly, a common 
+policy is to append an asterisk to file 
 names when the files have not been saved 
 in their current state).  Cursor icons, 
 likewise, convey whether clicking, 
@@ -523,7 +523,7 @@ user gestures are implemented for more
 complex interactions than just, say, clicking a 
 button.  In ;3D graphics and ;2D (manual) image 
 annotation there are often multiple 
-possible interpretatons of actions like 
+possible interpretations of actions like 
 dragging the cursor or operating the mouse 
 wheel; applications often allow users 
 to specify their intentions by augmenting 
@@ -544,7 +544,7 @@ for ;/GUI/ components.  For example, each
 window area can be associated with visual 
 state-cues (e.g., whether a notebook tab or a 
 file view is the one currently visible), 
-cursor appearance, gesture logitics 
+cursor appearance, gesture logistics 
 (what interaction are recognized there and 
 how details such as key-presses modify them) 
 and so forth, and this represents semantic 
@@ -576,7 +576,7 @@ more readable than, say, inscrutable mathematical formulae.
 Even more so, source files may be written in a 
 style that accentuates this expository role: code constructions 
 or annotations are able to clarify details such as expected 
-value ranges, ccordinate systems,  
+value ranges, coordinate systems,  
 scales and units of measurement, cross-unit conversions, 
 unit-decorated types,  
 pre- and post-conditions, type invariants, etc.  
@@ -599,7 +599,7 @@ internal resources that someone with access to a data set
 can find some value just with the materials explicitly 
 included %-- one may reasonably anticipate that some scientists will 
 seek out the additional capabilities of dedicated 
-software for their field (at least if a Research Objech 
+software for their field (at least if a Research Object 
 involves information of a variety where such software exists).  
 Data sets (without violating ;/FAIR/) could be 
 designed to facilitate being loaded and visualized 
@@ -614,7 +614,7 @@ any program with spreadsheet-like functionality can load
 may not properly convey its structure and properties).  
 To address these situations, many scientific applications 
 supply a plugin mechanism such that data sets with 
-special prepatory requirements can provide plugins 
+special preparatory requirements can provide plugins 
 to implement these, alongside the raw data.  The problem 
 here is that plugins can be tricky to compile and install.  
 One solution is to develop a generic plugin that enables 
@@ -638,7 +638,7 @@ that can layer over the relevant class methods.
 
 Other possible use-cases arise in the context of ;/PDF/ viewers, 
 in which could be embedded a ;/VM/ interpreter/runtime.  
-New functionality may then be intrduced via ;/PDF/-related 
+New functionality may then be introduced via ;/PDF/-related 
 scripts; for instance, extra context-menu options, 
 interactive features pertaining to figures/graphics, 
 customizations for ;/PDF/ annotations and comment 
@@ -651,7 +651,7 @@ suggest that ;/VM/s embedded in Executable Research Objects
 can be useful across the different asset-types (documents, 
 code, raw data, graphics/multimedia).  Under the assumption 
 that a compiler and runtime environment (bytecode interpreter) 
-is offerred among the data-set package, then other 
+is offered among the data-set package, then other 
 components %-- ;/GUI/ classes, a customized ;/PDF/ viewer, deserialization 
 code %-- could each utilize (e.g., link against) the 
 ;/VM/ implementation in turn, achieving consistent scripting/query 
@@ -676,7 +676,7 @@ Conceptually, we assume that a Research Object
 structures, including both text and dataset content.  
 That is, natural-language documents are computational 
 artifacts that are coextensive with raw data 
-files and other reseach assets, subject to 
+files and other research assets, subject to 
 similar algorithms (or even the exact same 
 procedures, in contexts such as semantic searches 
 applied both to documents and to data files). 
@@ -688,7 +688,7 @@ for representing written text.  In recent years,
 popular, producing human-readable ;/PDF/s through techniques 
 like ;/XSL-FO/ while also enabling natural-language 
 content to be analyzed via generic ;/XML/ protocols, such as 
-;/XQuery/ and ;/XQSE/ (;/XQuery/ Scripting Extentions).  ,/lJSON/-based 
+;/XQuery/ and ;/XQSE/ (;/XQuery/ Scripting Extensions).  ,/lJSON/-based 
 formats are also used, like the ;/JSON/-;/S2ORC/ protocol adopted 
 by ,/CORD19/ (mentioned earlier).  Specifications such as the 
 Text Encoding Initiative (;/TEI/) may employ a generic 
@@ -890,7 +890,7 @@ data is encoded via an aggregate of "/sites/" with
 specific navigational possibilities from one site 
 to another.  A topomorphic */algorithm/* is one 
 that extracts information by navigating to a site 
-of interest, being able to obstain specific data points 
+of interest, being able to obtain specific data points 
 in the context of any one foreground site %-- e.g., the 
 text content and attributes values (per key) of an 
 ;/XML/ element %-- before traversing to a different site.  
@@ -1162,7 +1162,7 @@ such almost certainly requires programming over
 textual content as well as data-set materials as a whole.  
 In other words, these are concrete User Interaction 
 features that illustrate the principle that 
-text content (including objects modeleing rhetorical/discourse 
+text content (including objects modeling rhetorical/discourse 
 structures) is now situated as a computational 
 artifact among variegated information spaces, 
 like fibres of a differentiable manifold.  
@@ -1184,7 +1184,7 @@ boundaries with that level of granularity.  The far
 more common approach is to model documents 
 as series of paragraphs.
 
-Nonetheless, it neems obvious that written 
+Nonetheless, it seems obvious that written 
 text is fundamentally a stream of sentences 
 and that paragraphs are a separate, aggregative 
 layer.  So, the "/base/" layer for text-representation 
@@ -1339,7 +1339,7 @@ With no separate specification, "/exported/" content
 for things like copy/paste should be as simple as 
 possible,{< There is no guarantee that the program wherever 
 the copied content is pasted will understand anything 
-other than alphanumerics and basic punction >} perhaps 
+other than alphanumerics and basic punctuation >} perhaps 
 even restricted to ;/Latin1/ (so 
 that "/curly/" single and double quotes, say, are 
 replaced by their straight and non-chiral versions).  
@@ -1351,7 +1351,7 @@ that query could have either the straight/;/ASCII/ form
 (if the user is typing from a keyboard) or 
 the curved left-versus-right forms (e.g., if they've copied 
 from some other document).  Internally, meanwhile, 
-the encoded text elements might not use quote delimeters at 
+the encoded text elements might not use quote delimiters at 
 all, but rather some form of quotation object.  
 Thus, testing whether an input string matches text/discourse 
 objects at a particular point in the character-stream 
@@ -1393,7 +1393,7 @@ to initialize all data relevant for the ;/C++/ evaluative procedures.
 Meanwhile, a text-query ;/VM/ might have opcodes specifically 
 focused on navigation between/within sentence objects and 
 related text elements.  Defining a rigorous "/topomorphic/" 
-model of written discoure's structures is a nontrivial 
+model of written discourse's structures is a nontrivial 
 task because of complications to the straightforward 
 sentence-sequence norm, such as how the words directly 
 preceding a block quote appear to form the first half of a 
@@ -1567,7 +1567,7 @@ intended to be used for many different projects.
 Research Objects should avoid */depending/* on 
 external software such as ;/ParaView/ (though 
 */facilitating/* its use is fine), and this 
-may be achived by leveraging simpler components 
+may be achieved by leveraging simpler components 
 for tasks such as interactive ;/2D/ visualization 
 (based on ;;/QtCharts/ and/or ;;/QGraphicsView/, for instance).  
 Such components may take the form of a class or "/widget/" 
@@ -1575,7 +1575,7 @@ library made available to users by publishers, book series,
 journals, grid maintainers, etc. (similar comments apply 
 to digital cartography ;/GUI/s in lieu of ;/ArcGIS/, image graphics 
 to interactively demonstrate processing steps 
-originarily executed via ;/OpenCV/, and so forth, just 
+originally executed via ;/OpenCV/, and so forth, just 
 to reuse those examples).  If the components are 
 included as source code within data sets, it is  
 possible for all project-specific customizations to be 
@@ -1645,7 +1645,7 @@ thereby reduces to providing a name (potentially including
 class and namespace scopes), function pointer, and the 
 micro-signature code (by contrast, note that the analogous 
 ;/FFI/ step is noticeably more complex in ;/ECL/ and ;/AngelScript/).
-The code libary published along with this paper 
+The code library published along with this paper 
 demonstrates how micro-signatures map to 
 steps for arriving at the action function-call, 
 via a series of switch blocks %-- in this context 
@@ -1674,7 +1674,7 @@ procedures can be grouped into equivalence classes via their
 micro-signatures.  If two procedures have the same code, 
 they can called via the same cast of a function-pointer 
 (or pointer-to-member).  Wrappers are needed only for 
-those functons whose codes do not fall within any 
+those functions whose codes do not fall within any 
 of the supported equivalence classes.
 
 Another idiosyncratic of the demo ;/VM/ is what the code 
@@ -1788,7 +1788,7 @@ more detailed than ensured by data types alone.
 For example, writing to a file only possible if the 
 file exists; and dividing by an integer is only 
 possible if it is non-zero.  Some invariants 
-ae extensional properties of types themselves (for 
+are extensional properties of types themselves (for 
 instance, a signed one-byte integer can never have 
 values above @[nmbr:127] or below @[nmbr:-128]).  However, 
 many properties of interest are true only of 
@@ -1817,7 +1817,7 @@ may thereby assume this as a precondition.
 Procedures creating a double-array might therefore 
 take two lists and moreover stipulate that the 
 lists are the same size.  One question is then 
-how to enfore this.  Such a procedure could simply 
+how to enforce this.  Such a procedure could simply 
 check the two sizes and refuse to continue if 
 they are unequal; the question then is 
 what to return (perhaps an empty map, but 
@@ -1898,7 +1898,7 @@ be default */constructed/* >}  A ;/VM/ compiler and runtime should not attept to
 guess which approach is better for a given program.  Instead, it 
 can stipulate that whenever a procedure is annotated as governed 
 by a contract precondition, it must be paired with an implementation 
-that addresses violations.  By analogy, when inherting from an 
+that addresses violations.  By analogy, when inheriting from an 
 abstract base class, all overloads of virtual methods have to be 
 implemented for the derived class.
 
@@ -1909,7 +1909,7 @@ is simply to test it, and then call one or the other
 for that test is fairly straightforward.  In other cases, it may 
 be more complex, and the compiler might insist on the code-author 
 providing an explicit implementation for the test.  That test 
-function wuold then be analogous to an entry-point for 
+function would then be analogous to an entry-point for 
 multiple-value dispatch, returning some code that indicates 
 which of several possible follow-up procedures should be called.
 
@@ -1966,7 +1966,7 @@ object to be passed in through some specific kind of contract-verification
 channel.  Obviously that channel would not "/look/" in code 
 like regular input arguments, but a compiler could observe the 
 presence of that channel in the callee signature and endeavor 
-to popuate it with objects in the current lexical scope.  
+to populate it with objects in the current lexical scope.  
 A reified boolean such as one passed into the scope 
 by an ,,/if//,,/then/ test could serve this purpose.  
 That object would need to be declared and initialized in such a 
@@ -2011,7 +2011,7 @@ obligations that need to be fulfilled.
 
 There are also cases where a codewriter might be confident 
 that the kind of proof embodied by a reified boolean 
-applies even in the absense of a test like 
+applies even in the absence of a test like 
 ,,/x.size() == y.size()/.  If the second list 
 is obtained from the first by something like an 
 ,,/std::transform/, they will be guaranteed to have the 
@@ -2074,7 +2074,7 @@ a ;/C++/ code excerpt at [< https://cppinsights.io/s/cac923c9 >]
 which also addresses lifetime issues as discussed next.
 >}
 
-Which alernative is most convenient from a caller's point 
+Which alternative is most convenient from a caller's point 
 of view?  Pass-by-reference is a common ;/C++/ pattern: 
 simply declare an object, which (assuming it is a class instance 
 and not a primitive type) will trigger calling 
@@ -2083,7 +2083,7 @@ here %-- apart from cases of non-default-constructible
 types already mentioned %-- is that there is a visible 
 separation between the point of declaration (which is 
 also a minimal initialization) and the "/de facto/" 
-intialization effectuated by the called procedure.  
+initialization effectuated by the called procedure.  
 
 This might seem to be a minor annoyance, but admittedly 
 a form where a procedure returns a pointer, which is 
@@ -2176,7 +2176,7 @@ In ;/C++/, pass-by-reference serves as a workaround
 against both multiple-value-return limitations 
 and reluctance to return large byte-sizes.  
 In other words, often objects are passed 
-by referenec even if, behaviorally, the 
+by reference even if, behaviorally, the 
 role the callee vis-a-vis the object is 
 more like that object being */returned by/* 
 the callee.
@@ -2224,7 +2224,7 @@ one obvious question is whether the object
 is associated with the */inner/* code block or the surrounding scope 
 (and, hence, when its lifetime ends and destructors are 
 called, if relevant).  In ;/C++/, the specifics are forced by 
-syntax.  I envision languages where (perhaps with inobstrusive 
+syntax.  I envision languages where (perhaps with inobtrusive 
 notated cues) programmers can request specific lifetime/storage-duration 
 options in the context of procedure-calls that look mostly the 
 same otherwise.  For example, ,,/for/-loops should 
@@ -2258,13 +2258,13 @@ discussed previously.  For data, searches could be performed
 over individual records and (at least for table-like profiles) 
 column labels (plus columns' types, units, etc.).
 
-The analogous documentation for computer code would be serching 
+The analogous documentation for computer code would be searching 
 data types, fields, procedures, and so forth.  We can assume 
 Research Objects will try to compile a sort of concordance 
 listing (at least public-interface) procedure names, signatures, 
 and pre-/post-conditions.  Many projects automate this kind of step 
 via (e.g.) Doxygen, but for data-set code a concordance 
-should be more fine-grained.  For instance, detailes such as 
+should be more fine-grained.  For instance, details such as 
 functions' assumed units should be both notated in code and 
 described in documentation in a structured manner, rather than 
 relying on source comments.
@@ -2318,7 +2318,7 @@ in computer code is assigned a dependent
 type, then this general picture takes 
 on different variations.  If the actual 
 indexed-typed value for a specific 
-variable/symbol is itself obtaine 
+variable/symbol is itself obtained
 from some */other/* variable, then 
 the former also */depends on/* the 
 latter; aside from its type depending 
@@ -2456,7 +2456,7 @@ One way to see this explicitly is to consider
 the procedure being templated in terms 
 of ,,/y/'s type.  In a ;VM context, we 
 can assume that each different template 
-instantion yields a distinct block of bytecode 
+instantiation yields a distinct block of bytecode 
 instructions.  So, for any potential type 
 of ,,/y/, the procedure will have a 
 corresponding (distinct) bytecode block.  
@@ -2630,7 +2630,7 @@ rather than scalar types wherever possible.  For instance,
 "/moving/" a point some distance left/right then up/down 
 can be notated by convoluting the point with a 
 transform pair rather than disconnected scalars 
-(as with ;/QTransform/, affine translations are one 
+(as with ;;/QTransform/, affine translations are one 
 part of a larger transform matrix).  Similarly,    
 arguably a better rectangle constructor would take, 
 if not two opposing corners, then a width and height 
@@ -2662,7 +2662,7 @@ work with types along these lines, especially the
 sort of ;/VM/ I am considering here which is 
 far removed from assembly language and the physical 
 substratum of computers (the instruction set is 
-much differenet from machine code).  For example, 
+much different from machine code).  For example, 
 in the demo ;/VM/, channels are populated in general 
 by first loading a type object and then pushing a 
 value that gets associated to that object.  
@@ -2686,7 +2686,7 @@ declare that it expects types associated with a
 particular axiation, coordinate system, or unit 
 of measurement; in that 
 case, it could also be checked that the channel's type 
-objets are compatible with the procedure.  Alternatively, 
+objects are compatible with the procedure.  Alternatively, 
 the callee might declare that its calculations are not 
 affected by dimensional minutiae, but still reject channel  
 packages wherein two parameters have incompatible coordinates. 
@@ -2704,7 +2704,7 @@ procedures would thereby take and/or return
 arguments with analogous dimension, and so those 
 procedures and their signatures would be relevant 
 matches for searches given such terms as "/;/FPS//", 
-"/kilohertz/", etc.  Insofar as a code-domentation "/concordance/" 
+"/kilohertz/", etc.  Insofar as a code-documentation "/concordance/" 
 is exposed to the package's overall query system, 
 granular typing such a unit-decoration facilitates the 
 integration between data-set code and the overall Research Object.
@@ -2717,7 +2717,7 @@ overall extension).  Channel semantics offer a roadmap
 toward the execution-points that have to be checked to 
 guarantee such restrictions.  For instance, the demo code 
 uses the term "/carrier-handoff/" to refer to 
-actions such as transfering a value from one package's 
+actions such as transferring a value from one package's 
 "/return/" channel to another's "/lambda/" channel 
 (which is the default for inputs).  This would be a natural 
 place for runtime "/hooks/" confirming a range.
@@ -2754,7 +2754,7 @@ that could be built into source code directly.  In particular,
 I assume that language grammars are defined via regular expressions, which 
 are matched against input files via conventional Regex libraries.  
 Several of these exist for ;/C++/; within Research Objects employing 
-;/Qt/ for cross-platform ;/GUI/, the ;/QRegularExpression/ classes are adequate.
+;/Qt/ for cross-platform ;/GUI/, the ;;/QRegularExpression/ classes are adequate.
 
 Meanwhile, most ;/C++/ regular expression libraries take ordinary 
 strings as initializers for regex patterns.  This makes it possible 
@@ -2776,7 +2776,7 @@ precisely, each rule is associated with a callback function (typically
 an anonymous procedure, like a ;/C++/ "/lambda/") and the first matching 
 rule's callback is executed, preempting other potential 
 matches (since all patterns are anchored at the same place, there 
-is no need for a "/ranking/" or backtracking due to some matces being further 
+is no need for a "/ranking/" or backtracking due to some matches being further 
 forward than others).  Finally, grammars are assumed to be context-sensitive, 
 and it is possible to implement contexts and/or flags that 
 enable or disable rules.  A deactivated rule would be skipped over 
@@ -2908,7 +2908,7 @@ In any event, it makes sense for a ;/VM/ serving these
 sorts of use cases to have built-in instructions pertinent 
 to topomorphic computing, i.e. to "/visiting/" and 
 "/navigating between/" sites (e.g., graph nodes).  Perhaps 
-such generic instructions could call ;/C++/ methods overriden 
+such generic instructions could call ;/C++/ methods overridden 
 for different kinds of input sources and their "/regimes/"; 
 in particular, desiderata for moving from one site to another.  
 Insofar as such techniques may apply to both raw data files 
@@ -2940,7 +2940,7 @@ content.  One consequence is that types' and
 components' "/public interface/" stands in an environment  
 where synergy between code-related searching 
 and querying over text or data sets is one 
-design goal.  The structure of precedures' input and 
+design goal.  The structure of procedures' input and 
 output parameters, as well as how their preconditions 
 get expressed and verified, influences how 
 code-components may be presented and queried 
@@ -2959,7 +2959,7 @@ framework similar to ;/C++/ %-- with value
 as well as type template parameters, thus 
 supporting weak dependent types in a basic sense, 
 but also explicitly connecting 
-digergent template instantiations 
+divergent template instantiations 
 (even in the same specialization) to 
 distinct bytecode blocks %-- similarly 
 implements metaprogramming in a 
@@ -2981,14 +2981,14 @@ syntactic and semantic properties.
 
 Similar points apply to those places in an interface 
 where something other than return-by-value is 
-intended.  Mergnig pointer-return, reference-initialization, 
+intended.  Merging pointer-return, reference-initialization, 
 and Return Value Optimization into a common 
 interface design can help, I believe, 
 yield interfaces that cover variegated 
 coding requirements in a unified and 
 intuitive manner.  Similar techniques also 
 permit an expressive system for manipulating 
-varible lifetimes through explicit 
+variable lifetimes through explicit 
 notation in source code, which can 
 clarify often-opaque programming details.
 
