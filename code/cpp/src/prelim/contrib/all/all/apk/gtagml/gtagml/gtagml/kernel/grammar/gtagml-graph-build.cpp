@@ -1048,7 +1048,7 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
 
  else if(text == "desc")
  {
-  latex_stream_ << "\n\n\\begin{description}\n";
+  latex_stream_ << "\n\n\\begin{docDescription}\n";
 //  xml_writer_.writeStartElement("exs-group");
   parse_context_.flags.read_desc_label = true;
   parse_context_.flags.ignore_blank_lines = true;
@@ -1066,7 +1066,7 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
 
  else if(text == "enumn")
  {
-  latex_stream_ << "\n\n\\begin{enumerate}[1)]\n";
+  latex_stream_ << "\n\n\\begin{docEnumerate}[1)]\n";
   xml_writer_.writeStartElement("enumn");
   parse_context_.flags.read_numbered_items = true;
   parse_context_.flags.ignore_blank_lines = true;
@@ -1075,7 +1075,7 @@ void GTagML_Graph_Build::enter_subparagraph(QString text)
  else if(text == "enums")
  {
 //?  latex_stream_ << "\n\n\\begin{enums}\n";
-  latex_stream_ << "\n\n\\begin{enumerate}\n";
+  latex_stream_ << "\n\n\\begin{docEnumerate}\n";
   xml_writer_.writeStartElement("enums");
   parse_context_.flags.read_numbered_items = true;
   parse_context_.flags.ignore_blank_lines = true;
@@ -1166,7 +1166,7 @@ void GTagML_Graph_Build::single_slash_line()
   xml_writer_.writeComment("end of description");
   xml_writer_.writeCharacters("\n\n");
 
-  latex_stream_ << "\n\\end{description}\n";
+  latex_stream_ << "\n\\end{docDescription}\n";
   parse_context_.flags.read_desc_label = false;
   parse_context_.flags.ignore_blank_lines = false;
  }
@@ -1180,7 +1180,7 @@ void GTagML_Graph_Build::single_slash_line()
 
  else if(parse_context_.flags.read_numbered_items)
  {
-  latex_stream_ << "\n\\end{enumerate}\n";
+  latex_stream_ << "\n\\end{docEnumerate}\n";
 //?  latex_stream_ << "\n\\end{enums}\n";
   parse_context_.flags.read_numbered_items = false;
   parse_context_.flags.ignore_blank_lines = false;
@@ -1821,8 +1821,6 @@ void GTagML_Graph_Build::prepare_jats(QString& text, QString bib_path)
  QString bibtext = KA::TextIO::load_file(bib_path);
 
  text.replace("<!--bib:here-->", bibtext);
-
-
 
  //?text.replace("<document>", "<document xmlns:xlink=\"http://www.w3.org/1999/xlink\">");
 

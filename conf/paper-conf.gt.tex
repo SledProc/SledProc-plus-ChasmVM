@@ -29,7 +29,7 @@ basic units of scholarly dissemination
 are no longer single manuscripts but rather
 composite packages including text, code, and
 data, and according to \eA{FAIR} (Findable,
-Accessible, Interopable, Reusable) principles
+Accessible, Interoperable, Reusable) principles
 such content should be in available in a
 largely standalone fashion, hopefully
 usable as soon as downloaded. To this
@@ -59,7 +59,7 @@ understand a \q{publication} to be a natural-language document
 (e.g. an article, book, or book chapter). But several
 more recent trends in publishing and science have complicated
 this picture. For example: the idea of a \q{replication crisis}
-\mdash{} concernts that results of influential experiments in natural and social
+\mdash{} concerns that results of influential experiments in natural and social
 sciences have proven difficult to reproduce during updated studies.
 Reaction to this \q{crisis}
 spurred the goal of \q{data transparency} and initiatives to
@@ -148,13 +148,13 @@ the \eASomeLower{Poppler} library has a \eAAllLower{text} method of
 scraper to eliminate headers and footers, for instance).
 The strings returned by this method, however, will
 usually differ from the input sources captured as
-\eA{JATS}, for example. The most straightfoward
-contast would be among hyphenated words, but other anomalies
+\eA{JATS}, for example. The most straightforward
+contrast would be among hyphenated words, but other anomalies
 may occur, such as unexpected space characters distributed
 between letters of words in special fonts (small spaces
 may be present in the internal \eA{PDF} text that are invisible to
 human readers, but methods like \eS{Page::text} have no mechanism
-to report different sizes of text characters. Likewise, depending
+to report different sizes of text characters). Likewise, depending
 on the library being used, text-extraction routines
 may or may not \q{unpack} ligatures like \q{ffi} to their
 constituent letters.} In addition
@@ -178,7 +178,7 @@ same concept, and indicate how semantic
 annotation would be more reliable.} These problems
 were openly acknowledged by the team behind \CORDOneNine{}, who
 described the steps they took to (imperfectly) convert
-\eA{PDF} files to a machine-readable \eA{JSON} format. They even issused
+\eA{PDF} files to a machine-readable \eA{JSON} format. They even issued
 a \q{call to action} encouraging publishers to adopt a
 more consistent text representation.\docFootnote{Under a section explicitly titled \q{call to action} they
 counsel that \q{a number of
@@ -265,7 +265,7 @@ discussed in research papers with their own parameters.
 }% end paragraph 
 
 \p.1{%
-Perhaps it is not obvious that the same computational toolsets that
+\newpage{}Perhaps it is not obvious that the same computational toolsets that
 might be used to implement functionality related to
 text documents would also be applicable to Research Objects
 and data sets. Certainly there are structural differences
@@ -304,7 +304,7 @@ In other words, as much as possible, interested readers
 should be able to obtain the content of an Executable Research
 Object \textit{in source code} fashion and use those sources
 \mdash{} e.g., by building an entry-point executable \mdash{} without having to
-separately obstain and/or compile or install additional resources
+separately obtain and/or compile or install additional resources
 not packaged in the data set itself. Programmers producing a
 self-contained package in this sense may reasonably assume that
 readers have access to a working and relatively up-to-date development
@@ -316,8 +316,8 @@ ensure that clear instructions are given for users who need to
 set up a prototypical development environment to begin with.\docFootnote{And external
 dependencies should be favored which are easier to use. For instance,
 if two \eA{C++} libraries provide similar functionality, developers should
-comparse them based on how easy or difficult it is to install
-the libaries assuming they are not already present on one's
+compare them based on how easy or difficult it is to install
+the libraries assuming they are not already present on one's
 system (while taking into account that the package manager
 for a user's linux distro, for example, may not be up-to-date).
 If one library is noticeably better in this regard, the Research
@@ -351,7 +351,7 @@ could employ something like a built-in scripting language to run
 analytic code, fine-tune \eA{GUI}s, compose plugins for external scientific applications,
 etc. (The principle that Research Object code should be self-contained and source-based
 does not preclude users exploring data sets, or individual files therein,
-via disipline-specific applications that have analytic or visualization capabilities
+via discipline-specific applications that have analytic or visualization capabilities
 conducive to advanced research \mdash{} the idea of Executable Research Object is not necessarily
 to replace the tools that scientists use for their core investigations, but rather to
 provide accessible code for evaluative and pedagogical purposes for
@@ -405,7 +405,7 @@ libraries are often maintained by individual academic departments or other
 groups working with limited resources, and they can have problems related
 to versioning (the code being incompatible with newer, or older, representation specs),
 lack of breadth for different programming languages or operating systems,
-external dependencies (or other details that make the libaries hard to build and/or
+external dependencies (or other details that make the libraries hard to build and/or
 use for some people), and other issues affecting \eA{FAIR}-style accessibility.
 }% end paragraph 
 
@@ -441,7 +441,7 @@ who downloaded it. Potentially, this involves both dedicated \eA{GUI} windows
 showing details about object-collections in aggregate and also individual
 objects/records (e.g., something like a \eA{GUI} \q{form} showing the values
 of individual data fields in an organized layout, perhaps with list-views
-or hierarchical \q{accordiaos} for non-scalar information) as well as statistical
+or hierarchical \q{accordions} for non-scalar information) as well as statistical
 overviews, presented via (interactive) graphics (charts, plots,
 diagrams, histograms, etc.).\docFootnote{\q{Accordion} is a common term for a sort
 of \eA{GUI} control that has multiple inner segments, usually stacked
@@ -471,7 +471,7 @@ employed to populate those menus, being called somewhere after
 the triggering event (a right mouse-button click or \ctrlleft{} button)
 is registered. Similar comments could be made about areas of
 functionality such as setting up initial parameters for a
-simulation; managing text/data cross-references; logic for
+\enlargethispage{2em}simulation; managing text/data cross-references; logic for
 preserving application state and user preferences; etc.
 }% end paragraph 
 
@@ -494,7 +494,7 @@ chemical compounds or formulae, and it is possible
 to obtain (from a service such as Protein Data Bank, or
 \eA{PDB}) data files that certain applications are able to use
 for constructing \ThreeD{} molecular visualizations, modeling
-that subtantce's atomic structure. If the \eA{PDF} viewer
+that substance's atomic structure. If the \eA{PDF} viewer
 interoperates with such software/components
 (I will review possible strategies later) then
 launching the graphics' window with that
@@ -507,7 +507,7 @@ activated in proximity to the annotated text
 \p.1{%
 Context menus are a good case in point because, in a \eA{PDF} display,
 most of a reader's attention is focused on the document and not
-on \eA{GUI} controls scatterred by the edge of the window. Therefore,
+on \eA{GUI} controls scattered by the edge of the window. Therefore,
 functionality requested in the document's context would
 typically be activated via a context menu rather than a
 \eA{GUI} button or other clickable area (the menu could be
@@ -536,7 +536,7 @@ less suitable to context menus).
 Indeed, \eA{GUI} programming overall evinces a variety
 of common practices that are relatively
 standardized and help users feel comfortable
-with a dektop-style software component.
+with a desktop-style software component.
 For instance, tooltips help users
 identify clickable regions when they
 hover the mouse nearby; conventions
@@ -558,8 +558,8 @@ at their top-right). Visual cues such as
 a thickened border around notebook
 tabs help users grasp application state
 (e.g., which tab is currently visible)
-with little effort (similary, a common
-policy is to append an asterix to file
+with little effort (similarly, a common
+policy is to append an asterisk to file
 names when the files have not been saved
 in their current state). Cursor icons,
 likewise, convey whether clicking,
@@ -573,7 +573,7 @@ user gestures are implemented for more
 complex interactions than just, say, clicking a
 button. In \eA{3D} graphics and \eA{2D} (manual) image
 annotation there are often multiple
-possible interpretatons of actions like
+possible interpretations of actions like
 dragging the cursor or operating the mouse
 wheel; applications often allow users
 to specify their intentions by augmenting
@@ -596,7 +596,7 @@ for \eA{GUI} components. For example, each
 window area can be associated with visual
 state-cues (e.g., whether a notebook tab or a
 file view is the one currently visible),
-cursor appearance, gesture logitics
+cursor appearance, gesture logistics
 (what interaction are recognized there and
 how details such as key-presses modify them)
 and so forth, and this represents semantic
@@ -629,7 +629,7 @@ more readable than, say, inscrutable mathematical formulae.
 Even more so, source files may be written in a
 style that accentuates this expository role: code constructions
 or annotations are able to clarify details such as expected
-value ranges, ccordinate systems,
+value ranges, coordinate systems,
 scales and units of measurement, cross-unit conversions,
 unit-decorated types,
 pre- and post-conditions, type invariants, etc.
@@ -654,7 +654,7 @@ internal resources that someone with access to a data set
 can find some value just with the materials explicitly
 included \mdash{} one may reasonably anticipate that some scientists will
 seek out the additional capabilities of dedicated
-software for their field (at least if a Research Objech
+software for their field (at least if a Research Object
 involves information of a variety where such software exists).
 Data sets (without violating \eA{FAIR}) could be
 designed to facilitate being loaded and visualized
@@ -669,7 +669,7 @@ any program with spreadsheet-like functionality can load
 may not properly convey its structure and properties).
 To address these situations, many scientific applications
 supply a plugin mechanism such that data sets with
-special prepatory requirements can provide plugins
+special preparatory requirements can provide plugins
 to implement these, alongside the raw data. The problem
 here is that plugins can be tricky to compile and install.
 One solution is to develop a generic plugin that enables
@@ -697,7 +697,7 @@ that can layer over the relevant class methods.
 \p.1{%
 Other possible use-cases arise in the context of \eA{PDF} viewers,
 in which could be embedded a \eA{VM} interpreter/runtime.
-New functionality may then be intrduced via \eA{PDF}-related
+New functionality may then be introduced via \eA{PDF}-related
 scripts; for instance, extra context-menu options,
 interactive features pertaining to figures/graphics,
 customizations for \eA{PDF} annotations and comment
@@ -712,7 +712,7 @@ suggest that \eA{VM}s embedded in Executable Research Objects
 can be useful across the different asset-types (documents,
 code, raw data, graphics/multimedia). Under the assumption
 that a compiler and runtime environment (bytecode interpreter)
-is offerred among the data-set package, then other
+is offered among the data-set package, then other
 components \mdash{} \eA{GUI} classes, a customized \eA{PDF} viewer, deserialization
 code \mdash{} could each utilize (e.g., link against) the
 \eA{VM} implementation in turn, achieving consistent scripting/query
@@ -742,7 +742,7 @@ Conceptually, we assume that a Research Object
 structures, including both text and dataset content.
 That is, natural-language documents are computational
 artifacts that are coextensive with raw data
-files and other reseach assets, subject to
+files and other research assets, subject to
 similar algorithms (or even the exact same
 procedures, in contexts such as semantic searches
 applied both to documents and to data files).
@@ -756,7 +756,7 @@ for representing written text. In recent years,
 popular, producing human-readable \eA{PDF}s through techniques
 like \eA{XSL-FO} while also enabling natural-language
 content to be analyzed via generic \eA{XML} protocols, such as
-\eASomeLower{XQuery} and \eA{XQSE} (\eASomeLower{XQuery} Scripting Extentions). \lJSON{}-based
+\eASomeLower{XQuery} and \eA{XQSE} (\eASomeLower{XQuery} Scripting Extensions). \lJSON{}-based
 formats are also used, like the \eA{JSON}-\eA{S2ORC} protocol adopted
 by \CORDOneNine{} (mentioned earlier). Specifications such as the
 Text Encoding Initiative (\eA{TEI}) may employ a generic
@@ -971,7 +971,7 @@ data is encoded via an aggregate of \q{sites} with
 specific navigational possibilities from one site
 to another. A topomorphic \textit{algorithm} is one
 that extracts information by navigating to a site
-of interest, being able to obstain specific data points
+of interest, being able to obtain specific data points
 in the context of any one foreground site \mdash{} e.g., the
 text content and attributes values (per key) of an
 \eA{XML} element \mdash{} before traversing to a different site.
@@ -1037,7 +1037,7 @@ converted to code objects \mdash{} is more convenient
 than (for example) \eA{XML} files where nodes must be
 mapped to objects as a preliminary step.
 
-\begin{description}
+\begin{docDescription}
 
 
 \descItem{Categorizing Inner Documents via Annotations}\hback{5pt} You are working with a
@@ -1209,7 +1209,7 @@ dangerous to people or ecosystems). Class types
 and \eA{GUI}s for both of these genres would
 then be applicable to Executable Research
 Objects surrounding the publications.
-\end{description}
+\end{docDescription}
 
 \nip\clrmMid{a}%
 These hypothetical examples (which actually are inspired by
@@ -1238,7 +1238,7 @@ such almost certainly requires programming over
 textual content as well as data-set materials as a whole.
 In other words, these are concrete User Interaction
 features that illustrate the principle that
-text content (including objects modeleing rhetorical/discourse
+text content (including objects modeling rhetorical/discourse
 structures) is now situated as a computational
 artifact among variegated information spaces,
 like fibres of a differentiable manifold.
@@ -1263,7 +1263,7 @@ as series of paragraphs.
 }% end paragraph 
 
 \p.1{%
-Nonetheless, it neems obvious that written
+Nonetheless, it seems obvious that written
 text is fundamentally a stream of sentences
 and that paragraphs are a separate, aggregative
 layer. So, the \q{base} layer for text-representation
@@ -1431,7 +1431,7 @@ With no separate specification, \q{exported} content
 for things like copy/paste should be as simple as
 possible,\docFootnote{There is no guarantee that the program wherever
 the copied content is pasted will understand anything
-other than alphanumerics and basic punction}perhaps
+other than alphanumerics and basic punctuation}perhaps
 even restricted to \eASomeLower{Latin1} (so
 that \q{curly} single and double quotes, say, are
 replaced by their straight and non-chiral versions).
@@ -1443,7 +1443,7 @@ that query could have either the straight/\eA{ASCII} form
 (if the user is typing from a keyboard) or
 the curved left-versus-right forms (e.g., if they've copied
 from some other document). Internally, meanwhile,
-the encoded text elements might not use quote delimeters at
+the encoded text elements might not use quote delimiters at
 all, but rather some form of quotation object.
 Thus, testing whether an input string matches text/discourse
 objects at a particular point in the character-stream
@@ -1489,7 +1489,7 @@ to initialize all data relevant for the \eA{C++} evaluative procedures.
 Meanwhile, a text-query \eA{VM} might have opcodes specifically
 focused on navigation between/within sentence objects and
 related text elements. Defining a rigorous \q{topomorphic}
-model of written discoure's structures is a nontrivial
+model of written discourse's structures is a nontrivial
 task because of complications to the straightforward
 sentence-sequence norm, such as how the words directly
 preceding a block quote appear to form the first half of a
@@ -1528,7 +1528,7 @@ document manuscripts specifically.
 }% end paragraph 
 
 \p.1{%
-With that said, I will defer further discussion about text
+\newpage{}With that said, I will defer further discussion about text
 searching for now and pivot to an examination of
 Research Object \eA{VM}s in more general data-encoding contexts.
 }% end paragraph 
@@ -1662,8 +1662,8 @@ It is preferable for an interested reader to
 examine research on Image Processing, for instance,
 \textit{without} needing to install \eASomeLower{OpenCV}, or for
 scientists to assess multidimensional data spaces
-without having \eASomeLower{ParaView} (or comparable visualization
-software) on their computer. This can be achieved
+without having \eASomeLower{ParaView} (or comparable software)
+on their computer. This can be achieved
 if Research Objects provide more light-weight, perhaps
 scaled-down, but functionally similar components
 (as source code) to the tools offered within
@@ -1680,7 +1680,7 @@ intended to be used for many different projects.
 Research Objects should avoid \textit{depending} on
 external software such as \eASomeLower{ParaView} (though
 \textit{facilitating} its use is fine), and this
-may be achived by leveraging simpler components
+may be achieved by leveraging simpler components
 for tasks such as interactive \eA{2D} visualization
 (based on \eS{QtCharts} and/or \eS{QGraphicsView}, for instance).
 Such components may take the form of a class or \q{widget}
@@ -1688,7 +1688,7 @@ library made available to users by publishers, book series,
 journals, grid maintainers, etc. (similar comments apply
 to digital cartography \eA{GUI}s in lieu of \eASomeLower{ArcGIS}, image graphics
 to interactively demonstrate processing steps
-originarily executed via \eASomeLower{OpenCV}, and so forth, just
+originally executed via \eASomeLower{OpenCV}, and so forth, just
 to reuse those examples). If the components are
 included as source code within data sets, it is
 possible for all project-specific customizations to be
@@ -1717,7 +1717,6 @@ serve more as generic languages in their own right.
 }% end paragraph 
 
 \p.1{%
-%
 Conceptually, a \q{foreign-function interface} (\eA{FFI}) to
 \eA{C++} procedures is relatively straightforward. The called
 procedures themselves can be identified via function
@@ -1726,7 +1725,7 @@ proxy class may stand in for any method-declaring type;
 i.e., supply the left side of a \eI{CLASS::*METHOD-PTR} construction).
 Methods and procedures can be called, in general, through
 type-agnostic function pointers so long as the byte-lengths
-of all arguments match what the procedure expects.\docFootnote{A terminological
+of all arguments match what the procedure \enlargethispage{1em}expects.\docFootnote{A terminological
 note on words such as \q{procedure} and \q{function}. In most
 contexts I prefer the former, because there is less confusion
 with the more mathematical sense of \q{function} as a
@@ -1764,7 +1763,7 @@ thereby reduces to providing a name (potentially including
 class and namespace scopes), function pointer, and the
 micro-signature code (by contrast, note that the analogous
 \eA{FFI} step is noticeably more complex in \eA{ECL} and \eASomeLower{AngelScript}).
-The code libary published along with this paper
+The code library published along with this paper
 demonstrates how micro-signatures map to
 steps for arriving at the action function-call,
 via a series of switch blocks \mdash{} in this context
@@ -1795,7 +1794,7 @@ procedures can be grouped into equivalence classes via their
 micro-signatures. If two procedures have the same code,
 they can called via the same cast of a function-pointer
 (or pointer-to-member). Wrappers are needed only for
-those functons whose codes do not fall within any
+those functions whose codes do not fall within any
 of the supported equivalence classes.
 }% end paragraph 
 
@@ -1867,7 +1866,7 @@ handlers or monitors. It's worth noting that the
 to ordinary \eA{C++} methods, which can be extended, reimplemented,
 or debugged (or \q{breakpointed}) like any other
 \eA{C++} procedure. This gives the \eA{VM} greater operational transparency
-than other scripting languages, I believe.
+than other scripting languages, I believe. \vspace{1em}
 }% end paragraph 
 
 \p.1{%
@@ -1923,7 +1922,7 @@ more detailed than ensured by data types alone.
 For example, writing to a file only possible if the
 file exists; and dividing by an integer is only
 possible if it is non-zero. Some invariants
-ae extensional properties of types themselves (for
+are extensional properties of types themselves (for
 instance, a signed one-byte integer can never have
 values above \SAnmbr{127} or below \SAnmbr{-128}). However,
 many properties of interest are true only of
@@ -1956,7 +1955,7 @@ may thereby assume this as a precondition.
 Procedures creating a double-array might therefore
 take two lists and moreover stipulate that the
 lists are the same size. One question is then
-how to enfore this. Such a procedure could simply
+how to enforce this. Such a procedure could simply
 check the two sizes and refuse to continue if
 they are unequal; the question then is
 what to return (perhaps an empty map, but
@@ -2047,7 +2046,7 @@ be default \textit{constructed}} A \eA{VM} compiler and runtime should not attep
 guess which approach is better for a given program. Instead, it
 can stipulate that whenever a procedure is annotated as governed
 by a contract precondition, it must be paired with an implementation
-that addresses violations. By analogy, when inherting from an
+that addresses violations. By analogy, when inheriting from an
 abstract base class, all overloads of virtual methods have to be
 implemented for the derived class.
 }% end paragraph 
@@ -2060,7 +2059,7 @@ is simply to test it, and then call one or the other
 for that test is fairly straightforward. In other cases, it may
 be more complex, and the compiler might insist on the code-author
 providing an explicit implementation for the test. That test
-function wuold then be analogous to an entry-point for
+function would then be analogous to an entry-point for
 multiple-value dispatch, returning some code that indicates
 which of several possible follow-up procedures should be called.
 }% end paragraph 
@@ -2127,7 +2126,7 @@ object to be passed in through some specific kind of contract-verification
 channel. Obviously that channel would not \q{look} in code
 like regular input arguments, but a compiler could observe the
 presence of that channel in the callee signature and endeavor
-to popuate it with objects in the current lexical scope.
+to populate it with objects in the current lexical scope.
 A reified boolean such as one passed into the scope
 by an \eH{if}/\eH{then} test could serve this purpose.
 That object would need to be declared and initialized in such a
@@ -2178,7 +2177,7 @@ obligations that need to be fulfilled.
 \p.1{%
 There are also cases where a codewriter might be confident
 that the kind of proof embodied by a reified boolean
-applies even in the absense of a test like
+applies even in the absence of a test like
 \eH{x.size() == y.size()}. If the second list
 is obtained from the first by something like an
 \eH{std::transform}, they will be guaranteed to have the
@@ -2189,15 +2188,15 @@ cases, the called procedure might still be looking
 for a proof in scope. Here that proof would not be
 supplied by a reified boolean, but the programmer
 could explicitly declare such a proof as invariant in the
-current scope (if desired, the expression which achieves
+current scope.\docFootnote{And, if desired, the expression which achieves
 this could, under debug modes, also serve behaviorally
-as an assertion).
+as an assertion.}
 }% end paragraph 
 
 \p.1{%
 This arrangement \mdash{} coupled with an Overload by Contract
-convention that procedures requiring that contracts
-are overload in several versions (at least, those for
+convention that procedures requiring contracts
+are overloaded in several versions (at least, those for
 pass, fail, and testing of a relevant contract) \mdash{} may
 not be the most powerful engineering of a \eASomeLower{DbC} system,
 but I believe it makes the compiler's role straightforward.
@@ -2249,7 +2248,7 @@ which also addresses lifetime issues as discussed next.}
 }% end paragraph 
 
 \p.1{%
-Which alernative is most convenient from a caller's point
+\enlargethispage{2em}Which alternative is most convenient from a caller's point
 of view? Pass-by-reference is a common \eA{C++} pattern:
 simply declare an object, which (assuming it is a class instance
 and not a primitive type) will trigger calling
@@ -2258,7 +2257,7 @@ here \mdash{} apart from cases of non-default-constructible
 types already mentioned \mdash{} is that there is a visible
 separation between the point of declaration (which is
 also a minimal initialization) and the \q{de facto}
-intialization effectuated by the called procedure.
+initialization effectuated by the called procedure.
 }% end paragraph 
 
 \p.1{%
@@ -2299,10 +2298,10 @@ of temporary objects.
 Apart from illustrating one use for channels, these
 points are relevant to the general protocols
 and style of a scripting language. Observe
-that passing an object/value by (non-constant) reference
+that passing an object/ value by (non-constant) reference
 can serve one of several purposes:
 
-\begin{enumerate}
+\begin{docEnumerate}
 
 \enumsItem{}   The primary purpose of the callee is to initialize or modify
 that object
@@ -2316,11 +2315,9 @@ if in this case the object is unaltered
 but a return value is separately needed (perhaps to
 provide information about the status of that modification
 or other side-effects associated with it)
-\end{enumerate}
+\end{docEnumerate}
 
-}% end paragraph 
-
-\p.1{%
+\nip\clrmMid{a}%
 Woven with these alternatives are questions about
 potential modifications: e.g., whether the callee
 is \textit{guaranteed} to modify (as when a default-initialized
@@ -2346,7 +2343,7 @@ unavoidable while doing so.
 These various possibilities probably are not clearly
 demarcated, and it might be a subjective judgment as
 to what purposes or effects are \q{primary} and \q{secondary}.
-Nonetheless, programmers and maintainers will reason
+Still, programmers and maintainers will reason
 along these lines when understanding source code.
 One might then argue that programming languages
 should use syntactic cues to help clarify
@@ -2363,7 +2360,7 @@ In \eA{C++}, pass-by-reference serves as a workaround
 against both multiple-value-return limitations
 and reluctance to return large byte-sizes.
 In other words, often objects are passed
-by referenec even if, behaviorally, the
+by reference even if, behaviorally, the
 role the callee vis-a-vis the object is
 more like that object being \textit{returned by}
 the callee.
@@ -2408,7 +2405,7 @@ into the Janus, to serve as a return value.
 }% end paragraph 
 
 \p.1{%
-My overarching point is that, for procedures that employ
+My overarching point is that, for procedures whose signatures include
 a Janus channel, their interface subsumes both pass-by-(nonconst)reference
 and pointer-return semantics. An important detail here is the
 lifetime for Janus values. Supposing an object is initialized
@@ -2417,7 +2414,7 @@ one obvious question is whether the object
 is associated with the \textit{inner} code block or the surrounding scope
 (and, hence, when its lifetime ends and destructors are
 called, if relevant). In \eA{C++}, the specifics are forced by
-syntax. I envision languages where (perhaps with inobstrusive
+syntax. I envision languages where (perhaps with inobtrusive
 notated cues) programmers can request specific lifetime/storage-duration
 options in the context of procedure-calls that look mostly the
 same otherwise. For example, \eH{for}-loops should
@@ -2453,13 +2450,13 @@ column labels (plus columns' types, units, etc.).
 }% end paragraph 
 
 \p.1{%
-The analogous documentation for computer code would be serching
+The analogous documentation for computer code would be searching
 data types, fields, procedures, and so forth. We can assume
 Research Objects will try to compile a sort of concordance
 listing (at least public-interface) procedure names, signatures,
 and pre-/post-conditions. Many projects automate this kind of step
 via (e.g.) Doxygen, but for data-set code a concordance
-should be more fine-grained. For instance, detailes such as
+should be more fine-grained. For instance, details such as
 functions' assumed units should be both notated in code and
 described in documentation in a structured manner, rather than
 relying on source comments.
@@ -2515,7 +2512,7 @@ in computer code is assigned a dependent
 type, then this general picture takes
 on different variations. If the actual
 indexed-typed value for a specific
-variable/symbol is itself obtaine
+variable/symbol is itself obtained
 from some \textit{other} variable, then
 the former also \textit{depends on} the
 latter; aside from its type depending
@@ -2616,8 +2613,8 @@ more or less inapplicable in the former context.
 
 \p.1{%
 Consider what happens when a dependent type
-is passed to a procedure. Suppose the
-value is a list \eH{y} of length \SAnmbr{5}.
+is passed to a procedure \mdash{} e.g., a
+list \eH{y} of length \SAnmbr{5}.
 This is a \textit{runtime} detail
 and therefore that specific value cannot
 be manipulated at compile time. Instead,
@@ -2665,7 +2662,7 @@ One way to see this explicitly is to consider
 the procedure being templated in terms
 of \eH{y}'s type. In a \eA{VM} context, we
 can assume that each different template
-instantion yields a distinct block of bytecode
+instantiation yields a distinct block of bytecode
 instructions. So, for any potential type
 of \eH{y}, the procedure will have a
 corresponding (distinct) bytecode block.
@@ -2814,7 +2811,7 @@ such \eA{VM}s could employ robust type objects.
 This will lead to points about language
 extensibility, that belong to a broader
 issue spanning front-end parsers as well
-as back-end code generators.
+as back-end code generators.\newpage{}\upAdj{22pt}
 }% end paragraph 
 
 
@@ -2859,7 +2856,7 @@ rather than scalar types wherever possible. For instance,
 \q{moving} a point some distance left/right then up/down
 can be notated by convoluting the point with a
 transform pair rather than disconnected scalars
-(as with \eASomeLower{QTransform}, affine translations are one
+(as with \eS{QTransform}, affine translations are one
 part of a larger transform matrix). Similarly,
 arguably a better rectangle constructor would take,
 if not two opposing corners, then a width and height
@@ -2893,7 +2890,7 @@ work with types along these lines, especially the
 sort of \eA{VM} I am considering here which is
 far removed from assembly language and the physical
 substratum of computers (the instruction set is
-much differenet from machine code). For example,
+much different from machine code). For example,
 in the demo \eA{VM}, channels are populated in general
 by first loading a type object and then pushing a
 value that gets associated to that object.
@@ -2919,7 +2916,7 @@ declare that it expects types associated with a
 particular axiation, coordinate system, or unit
 of measurement; in that
 case, it could also be checked that the channel's type
-objets are compatible with the procedure. Alternatively,
+objects are compatible with the procedure. Alternatively,
 the callee might declare that its calculations are not
 affected by dimensional minutiae, but still reject channel
 packages wherein two parameters have incompatible coordinates.
@@ -2939,7 +2936,7 @@ procedures would thereby take and/or return
 arguments with analogous dimension, and so those
 procedures and their signatures would be relevant
 matches for searches given such terms as \q{\eA{FPS}},
-\q{kilohertz}, etc. Insofar as a code-domentation \q{concordance}
+\q{kilohertz}, etc. Insofar as a code-documentation \q{concordance}
 is exposed to the package's overall query system,
 granular typing such a unit-decoration facilitates the
 integration between data-set code and the overall Research Object.
@@ -2954,7 +2951,7 @@ overall extension). Channel semantics offer a roadmap
 toward the execution-points that have to be checked to
 guarantee such restrictions. For instance, the demo code
 uses the term \q{carrier-handoff} to refer to
-actions such as transfering a value from one package's
+actions such as transferring a value from one package's
 \q{return} channel to another's \q{lambda} channel
 (which is the default for inputs). This would be a natural
 place for runtime \q{hooks} confirming a range.
@@ -2997,11 +2994,35 @@ that could be built into source code directly. In particular,
 I assume that language grammars are defined via regular expressions, which
 are matched against input files via conventional Regex libraries.
 Several of these exist for \eA{C++}; within Research Objects employing
-\eASomeLower{Qt} for cross-platform \eA{GUI}, the \eASomeLower{QRegularExpression} classes are adequate.
-}% end paragraph 
-
-\p.1{%
-Meanwhile, most \eA{C++} regular expression libraries take ordinary
+\eASomeLower{Qt} for cross-platform \eA{GUI}, the \eS{QRegularExpression} classes
+are adequate.\docFootnote{For the record, I'll add a few comments however
+based on practical experience applying \eS{QRegularExpression} for
+this kind of grammar. One nice addition (which is not hard to
+implement via a string preprocessor for regex patterns) is to
+name common subpatterns and insert them (by name) into larger
+regexes (the point is not, necessarily, to create a subpattern
+\textit{group} but simply to reuse any part of a regex expression
+that occurs multiple times in a grammar serving similar roles).
+In some places, also, variable-width lookbehind (rarely supported) would be nice to have.
+Another useful addition (which I don't believe is a feature of
+regex engines in general) is to merge the functionality of
+capturing (via group) and positive lookaround \citeLabel{YuyaUezato}. Note that
+capture groups generally have two properties: first, all of their
+content is contained within the overall pattern match; and, second,
+in a system where you advance the \q{cursor} just beyond
+that overall match for the next rule, the cursor will be
+further ahead than any group. But there are occasions where
+one or both of these results is not ideally what you want.
+For example, you might want to leave content for some later
+match (which is a purpose of lookahead, rather than just
+consuming the relevant characters) but you also want to
+\q{read} that content to handle the \textit{current} rule.
+There are workarounds if these constructions are not
+supported by a regex engine directly, but
+the result tends to be added complexity
+in the amount of parser-state to keep track of
+(plus rule patterns that are less clear in the syntactic
+details they seek to express).} Meanwhile, most \eA{C++} regular expression libraries take ordinary
 strings as initializers for regex patterns. This makes it possible
 to add features to the basic regex language, so long as these
 may be expressed via ordinary regex patterns that are computationally
@@ -3023,7 +3044,7 @@ precisely, each rule is associated with a callback function (typically
 an anonymous procedure, like a \eA{C++} \q{lambda}) and the first matching
 rule's callback is executed, preempting other potential
 matches (since all patterns are anchored at the same place, there
-is no need for a \q{ranking} or backtracking due to some matces being further
+is no need for a \q{ranking} or backtracking due to some matches being further
 forward than others). Finally, grammars are assumed to be context-sensitive,
 and it is possible to implement contexts and/or flags that
 enable or disable rules. A deactivated rule would be skipped over
@@ -3031,7 +3052,7 @@ in the test-sequence.
 }% end paragraph 
 
 \p.1{%
-Conceptually, the goal of an initial parsing run would be to construct
+\enlargethispage{1em}Conceptually, the goal of an initial parsing run would be to construct
 an Intermediate Representation or \q{parse graph}. Schematically, the
 match-text of the successful regex (or some capture group therein) becomes
 the basis for a parse-graph node, and the rule's callback
@@ -3173,7 +3194,7 @@ In any event, it makes sense for a \eA{VM} serving these
 sorts of use cases to have built-in instructions pertinent
 to topomorphic computing, i.e. to \q{visiting} and
 \q{navigating between} sites (e.g., graph nodes). Perhaps
-such generic instructions could call \eA{C++} methods overriden
+such generic instructions could call \eA{C++} methods overridden
 for different kinds of input sources and their \q{regimes};
 in particular, desiderata for moving from one site to another.
 Insofar as such techniques may apply to both raw data files
@@ -3188,7 +3209,7 @@ in an Executable Research Object \mdash{} encompass
 manuscript content as well, bridging different data set components
 into a common computational space. Here I also circle back
 from data-related topics to textual encoding as discussed in the
-first section.
+first section. \thispagestyle{two}
 }% end paragraph 
 
 
@@ -3209,7 +3230,7 @@ content. One consequence is that types' and
 components' \q{public interface} stands in an environment
 where synergy between code-related searching
 and querying over text or data sets is one
-design goal. The structure of precedures' input and
+design goal. The structure of procedures' input and
 output parameters, as well as how their preconditions
 get expressed and verified, influences how
 code-components may be presented and queried
@@ -3228,7 +3249,7 @@ framework similar to \eA{C++} \mdash{} with value
 as well as type template parameters, thus
 supporting weak dependent types in a basic sense,
 but also explicitly connecting
-digergent template instantiations
+divergent template instantiations
 (even in the same specialization) to
 distinct bytecode blocks \mdash{} similarly
 implements metaprogramming in a
@@ -3248,20 +3269,20 @@ available as functionality within
 \eA{GUI} displays), and so forth, depend
 of code-introspection features whose
 capabilities are shaped by sources'
-syntactic and semantic properties.
+syntactic and semantic properties.\newpage{}
 }% end paragraph 
 
 \p.1{%
 Similar points apply to those places in an interface
 where something other than return-by-value is
-intended. Mergnig pointer-return, reference-initialization,
+intended. Merging pointer-return, reference-initialization,
 and Return Value Optimization into a common
 interface design can help, I believe,
 yield interfaces that cover variegated
 coding requirements in a unified and
 intuitive manner. Similar techniques also
 permit an expressive system for manipulating
-varible lifetimes through explicit
+variable lifetimes through explicit
 notation in source code, which can
 clarify often-opaque programming details.
 }% end paragraph 
