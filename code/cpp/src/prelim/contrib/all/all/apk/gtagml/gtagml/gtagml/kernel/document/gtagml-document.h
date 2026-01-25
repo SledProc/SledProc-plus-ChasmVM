@@ -115,7 +115,7 @@ public:
 
  void save_sentences(QString path);
 
- void save_jats(QString path);
+ void save_jats(QString path, QString bib_path);
  void save_latex(QString path);
 
  QString use_info_path();

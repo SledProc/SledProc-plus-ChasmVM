@@ -81,6 +81,7 @@ void GTagML_Graph_Build::init(caon_ptr<GTagML_Parser> parser)
  xml_writer_.writeComment("%XML-TEMPLATE%");
 
  xml_writer_.writeStartElement("document");
+ xml_writer_.writeAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
 
  latex_stream_ << "\n\n%PREAMBLE-TEMPLATE%\n\n\\begin{document}\n%BEGIN-TEMPLATE%";
 
@@ -590,6 +591,14 @@ void GTagML_Graph_Build::heading(u1 count, QString stext, QString ltext)
 
 }
 
+void GTagML_Graph_Build::prepare_bibliography()
+{
+ xml_writer_.writeCharacters("\n\n");
+ xml_writer_.writeStartElement("ref-list");
+ xml_writer_.writeComment("bib:here");
+ xml_writer_.writeEndElement();
+}
+
 void GTagML_Graph_Build::end_document()
 {
  reset_primary();
@@ -600,9 +609,17 @@ void GTagML_Graph_Build::end_document()
 
  latex_stream_ << "\n\\end{document}";
 
- xml_writer_.writeEndElement();
+//? xml_writer_.writeEndElement();
+//? xml_writer_.writeComment("prepare end document");
 
+ xml_writer_.writeCharacters("\n\n@=/sec=@\n");
+ xml_writer_.writeComment("end section");
+
+ prepare_bibliography();
+
+ xml_writer_.writeEndElement();
  xml_writer_.writeEndDocument();
+ xml_writer_.writeComment("ended document");
 
  parse_context_.flags.auto_paragraph_mode = false;
 }
@@ -637,6 +654,7 @@ void GTagML_Graph_Build::leave_footnote(QString pretext, QString space)
  if(!flags.latex_only)
  {
   xml_writer_.writeEndElement();
+  xml_writer_.writeComment("leave footnote");
   xml_writer_.writeCharacters("\n\n");
  }
 
@@ -883,7 +901,17 @@ void GTagML_Graph_Build::enter_auto_paragraph_mode()
 
 void GTagML_Graph_Build::close_paragraph()
 {
- xml_writer_.writeEndElement();
+ if(flags.in_pa_1)
+ {
+  flags.in_pa_1 = false;
+ }
+ else
+ {
+  xml_writer_.writeCharacters("\n");
+  xml_writer_.writeEndElement();
+  xml_writer_.writeComment("end of p1 paragraph");
+  xml_writer_.writeCharacters("\n\n");
+ }
 
  if(flags.just_ended_sentence)
  {
@@ -953,9 +981,24 @@ void GTagML_Graph_Build::auto_new_paragraph(QString cmd)
 
  current_slash_line_plus_count_ = 0;
 
- ++current_paragraph_count_;
+ bool skip_flags = false;
 
- xml_writer_.writeStartElement(cmd);
+ if(cmd == "p.1")
+ {
+  ++current_paragraph_count_;
+  xml_writer_.writeCharacters("\n");
+  xml_writer_.writeComment("enter " + cmd);
+  xml_writer_.writeStartElement(cmd);
+  xml_writer_.writeAttribute("id", QString::number(current_paragraph_count_));
+ }
+ else if(cmd == "pa.1")
+ {
+  skip_flags = true;
+  //   qDebug() << " \n\n   ! " << cmd;
+  //   xml_writer_.writeComment("bib:here");
+  flags.in_pa_1 = true;
+ }
+
  latex_stream_ << "\n\\" << cmd << "{%\n";
 
 // if(flags.use_latex_sdi_paragraph_markers)
@@ -965,6 +1008,9 @@ void GTagML_Graph_Build::auto_new_paragraph(QString cmd)
 //? latex_stream_ << "\n\n\\pLevelOne{";
 
 //? latex_stream_ << "\n\n\\pLevelOne{";
+
+ if(skip_flags)
+   return;
 
  flags.await_paragraph_start = true;
  flags.await_sentence_start = true;
@@ -1113,11 +1159,12 @@ void GTagML_Graph_Build::single_slash_line()
 
  if(parse_context_.flags.read_desc_label)
  {
-  xml_writer_.writeEndElement();
+//  xml_writer_.writeEndElement();
   xml_writer_.writeComment("end of list paragraph");
+  xml_writer_.writeCharacters("\n");
   xml_writer_.writeEndElement();
   xml_writer_.writeComment("end of description");
-  xml_writer_.writeCharacters("end of description");
+  xml_writer_.writeCharacters("\n\n");
 
   latex_stream_ << "\n\\end{description}\n";
   parse_context_.flags.read_desc_label = false;
@@ -1210,11 +1257,18 @@ void GTagML_Graph_Build::citation(QString full_match, QString label, QString loc
 
  sentences_text_stream_ << full_match;
 
+ QStringList qsl = locator.split("==");
+ locator = qsl.takeFirst();
+
+ if(!qsl.isEmpty())
+ {
+  xml_writer_.writeTextElement("attrib", qsl.join(", "));
+ }
+
  xml_writer_.writeStartElement("xref");
-
  xml_writer_.writeAttribute("ref-type", "bibr");
-
  xml_writer_.writeAttribute("rid", label);
+
 
  if(locator.isEmpty())
  {
@@ -1431,13 +1485,17 @@ void GTagML_Graph_Build::emph_acronym(QString text)
  latex_stream_ << "\\eA" << version << "{" << text << "}";
 }
 
-void GTagML_Graph_Build::enter_double_quote_mode()
+void GTagML_Graph_Build::enter_double_quote_mode(QString pre)
 {
  reset_primary();
 
  parse_context_.flags.double_quote_mode = true;
 
- xml_writer_.writeStartElement("q");
+ if(pre == "d")
+   xml_writer_.writeStartElement("disp-quote");
+ else
+   xml_writer_.writeStartElement("q");
+
  latex_stream_ << "\\q{";
 }
 
@@ -1758,10 +1816,26 @@ void GTagML_Graph_Build::special_character_sequence(QString text)
 // }
 }
 
-void GTagML_Graph_Build::prepare_jats(QString& text)
+void GTagML_Graph_Build::prepare_jats(QString& text, QString bib_path)
 {
+ QString bibtext = KA::TextIO::load_file(bib_path);
+
+ text.replace("<!--bib:here-->", bibtext);
+
+
+
+ //?text.replace("<document>", "<document xmlns:xlink=\"http://www.w3.org/1999/xlink\">");
+
  text.replace("doc-abstract>", "abstract>");
- text.replace("p.1>", "p>");
+
+ text.replace("\\Visavis{}", "Vis-a-vis");
+ text.replace("{\sth}", " ");
+
+ text.replace("\\\\", "");
+
+ text.replace("<p.1", "<p");
+// text.replace("<p.1>", "<p l=\"1\">");
+ text.replace("</p.1>", "</p> <!--/p.1-->");
 
  text.replace("<s1>", "<sec><title>");
  text.replace("</s1>", "</title>\n\n");

@@ -44,7 +44,7 @@ class GTagML_Document_Light_Xml;
 
 class GTagML_Graph_Build
 {
- flags_(2)
+ flags_(4)
   bool math_mode:1;
   bool skip_command_node_insert:1;
   bool active_annotation_entry:1;
@@ -60,6 +60,7 @@ class GTagML_Graph_Build
   bool use_latex_sdi_all_markers:1;
   bool use_latex_sdi_paragraph_markers:1;
   bool heading_acc:1;
+  bool in_pa_1:1;
  _flags
 
  enum class Acc_Mode {
@@ -235,6 +236,7 @@ class GTagML_Graph_Build
  u2 current_section_number_;
  u2 current_item_count_;
 
+// QMap<QString, u2> paragraph_cmd_counts_;
 
 public:
 
@@ -268,12 +270,14 @@ public:
 
  }
 
- void prepare_jats(QString& text);
+ void prepare_jats(QString& text, QString bib_path);
 
- void save_jats(QString path)
+ void save_jats(QString path, QString bib_path)
  {
+  KA::TextIO::save_file(path + ".test", jats_array_);// jats_array_.replace("@=", "&"));
+
   QString text = QString::fromLatin1(jats_array_);
-  prepare_jats(text);
+  prepare_jats(text,  bib_path);
   //jats_ = QString::fromLatin1(jat)
   KA::TextIO::save_file(path, text);// jats_array_.replace("@=", "&"));
  }
@@ -318,6 +322,8 @@ public:
  }
 
  void pseudo_paragraph();
+
+ void prepare_bibliography();
 
  void noindent_marker();
 
@@ -428,7 +434,7 @@ public:
 
  void enter_italics_mode();
  void leave_italics_mode();
- void enter_double_quote_mode();
+ void enter_double_quote_mode(QString pre);
  void leave_double_quote_mode();
  void enter_single_quote_mode();
  void leave_single_quote_mode();

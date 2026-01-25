@@ -353,9 +353,9 @@ void GTagML_Document::save_sentences(QString path)
  graph_build_->save_sentences(path);
 }
 
-void GTagML_Document::save_jats(QString path)
+void GTagML_Document::save_jats(QString path, QString bib_path)
 {
- graph_build_->save_jats(path);
+ graph_build_->save_jats(path, bib_path);
 }
 
 void GTagML_Document::save_latex(QString path)

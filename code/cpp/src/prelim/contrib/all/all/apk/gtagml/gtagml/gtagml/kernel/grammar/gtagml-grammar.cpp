@@ -666,7 +666,7 @@ void GTagML_Grammar::init(GTagML_Parser& p, GTagML_Graph& g, GTagML_Graph_Build&
    " \"(?<pre> \\w*)/ "
    ,[&]
  {
-  graph_build.enter_double_quote_mode();
+  graph_build.enter_double_quote_mode(p.matched("pre"));
  });
 
 

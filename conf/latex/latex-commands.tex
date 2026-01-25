@@ -47,6 +47,9 @@
 \hspace{1.5pt}.\hspace{1.5pt}\small{\textcolor[rgb]{0,0.3,0.4}{\arabic{subsection}}%
 }}
 
+
+\newcommand{\sth}{\hspace*{1pt}}
+
 \usepackage{xparse}
 
 \makeatletter
@@ -55,9 +58,9 @@
 %\newcommand{\@subsect}[1]{\vspace{9pt}\subsection{#1}}
 
 \newcommand{\sL@section}[1]{\vspace{-2pt}\section{#1}\vspace{-2pt}}
-\newcommand{\sL@subsection}[1]{\vspace{14pt}\subsection{#1}
+\newcommand{\sL@subsection}[1]{\vspace{14pt}{\linespread{1.16}\subsection{#1}}
 
-\vspace{-18pt}
+\vspace{-13pt}
 \textcolor[rgb]{0.6,0.6,0.8}{\rule{\columnwidth}{0.4pt}\vspace{-15pt}}}
 
 \newcommand{\@sectionLevel}[2]{%
@@ -388,6 +391,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 \newcommand{\writempcode}[1]{\mpcodef{#1}{\thempcode}}
 
+\newcommand{\slashA}{\eH{\textbackslash{}A}}
 
 
 

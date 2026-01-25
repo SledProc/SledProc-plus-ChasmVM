@@ -1,0 +1,254 @@
+
+
+<ref id="ArunaBansal">
+  <element-citation>
+    <string-name>Bansal, Aruna</string-name>, <article-title>HgMed: Hypergraphs Mediating Schematic 
+Translations Between Data Models</article-title> 
+    <source>Proceedings of the <conf-name>27th International Database 
+Engineered Applications Symposium (IDEAS '23)</conf-name></source>, <conf-date>May <year>2023</year></conf-date>.
+
+    <ext-link xlink:href="https://dl.acm.org/doi/pdf/10.1145/3589462.3589476" ext-link-type="url"><uri>https://dl.acm.org/doi/pdf/10.1145/3589462.3589476</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+
+<ref id="ContractsforC++">
+  <element-citation>
+    <string-name>Berne, Joshua</string-name>, <i>et al.</i>, <article-title>Contracts for C++</article-title>  ISO-C++ (<year>2025</year>).
+
+    <ext-link xlink:href="https://isocpp.org/files/papers/P2900R6.pdf" ext-link-type="url"><uri>https://isocpp.org/files/papers/P2900R6.pdf</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+<ref id="ElliBleekerEtAl">
+  <element-citation>
+    <string-name>Bleeker, Elli</string-name>, <i>et al.</i>, <article-title>Between Flexibility and Universality: Combining TAGML
+and XML to Enhance the Modeling of Cultural Heritage
+Text</article-title>
+    <source>Proceedings of <conf-name>CHR 2020: Workshop on Computational Humanities Research</conf-name> 
+<conf-date>(November <year>2020</year>)</conf-date></source>, pp. <fpage>340</fpage>--<lpage>350</lpage>.
+
+    <ext-link xlink:href="https://ceur-ws.org/Vol-2723/short39.pdf" ext-link-type="url"><uri>https://ceur-ws.org/Vol-2723/short39.pdf</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+<ref id="ElliBleekerEtAlTEI">
+  <element-citation>
+    <string-name>Bleeker, Elli</string-name>, <i>et al.</i>, <article-title>Texts as Hypergraphs: An Intuitive Representation
+of Interpretations of Text</article-title>
+    <source>Journal of the Text Encoding Initiative</source>, Vol. <volume>14</volume> (April 2021--March 2023)
+
+    <ext-link xlink:href="https://journals.openedition.org/jtei/3919" ext-link-type="url"><uri>https://journals.openedition.org/jtei/3919</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+<ref id="EdwinCBrady">
+  <element-citation>
+    <string-name>Brady, Edwin C.</string-name>, <article-title>IDRIS --- Systems Programming Meets Full Dependent Types</article-title>
+
+    <ext-link xlink:href="https://www.type-driven.org.uk/edwinb/papers/plpv11.pdf" ext-link-type="url"><uri>https://www.type-driven.org.uk/edwinb/papers/plpv11.pdf</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+<ref id="MartinBraenne">
+  <element-citation>
+    <string-name>Braenne, Martin</string-name>, <i>et al.</i>, <article-title>Lifetime annotations for C++}
+(Request for Comment), <year>2022</year>.
+ 
+    <ext-link xlink:href="https://discourse.llvm.org/t/rfc-lifetime-annotations-for-c/61377" ext-link-type="url"><uri>https://discourse.llvm.org/t/rfc-lifetime-annotations-for-c/61377</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+<ref id="NCDataIntegration">
+  <element-citation publication-type="book">
+    <string-name>Christen, Nathaniel</string-name> and <string-name>Neustein, Amy</string-name>, 
+<book-title>Innovative Data Integration 
+and Conceptual Space Modeling for COVID, Cancer, and Cardiac Care</book-title>
+Elsevier, <year>2022</year>.
+
+    <ext-link xlink:href="https://shop.elsevier.com/books/innovative-data-integration-and-conceptual-space-modeling-for-covid-cancer-and-cardiac-care/neustein/978-0-323-85197-8" ext-link-type="url"><uri>https://shop.elsevier.com/books/innovative-data-integration-and-conceptual-space-modeling-for-covid-cancer-and-cardiac-care/neustein/978-0-323-85197-8</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+
+
+<ref id="DonaldCComeauEtAl">
+  <element-citation>
+    <string-name>Comeau, Donald C.</string-name>, <i>et al.</i>, 
+<article-title>BioC: a minimalist approach to
+interoperability for biomedical text processing</article-title> 
+    <source>Database</source>, Vol. <volume><year>2013</year></volume>.
+
+    <ext-link xlink:href="https://dash.harvard.edu/server/api/core/bitstreams/7312037d-13b7-6bd4-e053-0100007fdf3b/content" ext-link-type="url"><uri>https://dash.harvard.edu/server/api/core/bitstreams/7312037d-13b7-6bd4-e053-0100007fdf3b/content</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+<ref id="NickGarabedianEtAl">
+  <element-citation>
+    <string-name>Garabedian, Nick</string-name>, <i>et al.</i>, <article-title>A Framework to Generate, Store, and Publish FAIR Data
+in Experimental Sciences</article-title> 
+    <source>Proceedings of the <conf-name>19th International Conference on 
+Semantic Systems</conf-name> <conf-date>(September <year>2023</year>)</conf-date></source>. 
+
+    <ext-link xlink:href="https://ceur-ws.org/Vol-3526/paper-01.pdf" ext-link-type="url"><uri>https://ceur-ws.org/Vol-3526/paper-01.pdf</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+
+<ref id="HarijsGrinbergs">
+  <element-citation>
+    <string-name>Grinbergs, Harijs</string-name>, <article-title>Production Quality Decision Support Using 
+Real-Time Computer Vision Framework</article-title> 
+    <source>Proceedings of <conf-name>Engineering for Rural 
+Development</conf-name> <conf-date>(May <year>2016</year>)</conf-date></source>, pp. <fpage>442</fpage>--<lpage>447</lpage>.
+
+    <ext-link xlink:href="https://www.iitf.lbtu.lv/conference/proceedings2016/Papers/N081.pdf" ext-link-type="url"><uri>https://www.iitf.lbtu.lv/conference/proceedings2016/Papers/N081.pdf</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+<ref id="PottayilHarisankerMenonEtAl">
+  <element-citation>
+    <string-name>Harisanker, Pottayil</string-name>, <i>et al.</i>, <article-title>A Practical, Typed Variant Object Model:
+Or, How to Stand On Your Head and Enjoy the View</article-title> 
+    <source>Proceedings of the <conf-name>19th International 
+Workshop on Foundations of Object-Oriented Languages</conf-name>
+(Tucson, AZ)</source> <year>2012</year>.
+
+    <ext-link xlink:href="https://www.cs.swarthmore.edu/~zpalmer/publications/fool12.pdf" ext-link-type="url"><uri>https://www.cs.swarthmore.edu/~zpalmer/publications/fool12.pdf</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+
+<ref id="BertramLudascherEtAl">
+  <element-citation>
+    <string-name>Ludaescher, Bertram, <i>et al.</i>, 
+<article-title>Capturing the 'Whole Tale' of Computational Research: Reproducibility 
+in Computing Environments</article-title>, in 
+    <source>arXiv</source> 1610.09958 (<year>2016</year>).
+
+    <ext-link xlink:href="https://arxiv.org/abs/1610.09958" ext-link-type="url"><uri>https://arxiv.org/abs/1610.09958</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+<ref id="SeanMurphy">
+  <element-citation>
+    <string-name>Murphy, Sean</string-name>, <i>et al.</i>, <article-title>Return value optimization (RVO)</article-title> 
+    <source>Special Interest Group on C++</source>, <year>2020</year>.
+
+    <ext-link xlink:href="https://sigcpp.github.io/2020/06/08/return-value-optimization" ext-link-type="url"><uri>https://sigcpp.github.io/2020/06/08/return-value-optimization</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+<ref id="LimorPeerEtAl">
+  <element-citation>
+    <string-name>Peer, Limor</string-name>, <i>et al.</i>, <article-title>Reproducible Research Publication Workflow:
+A Canonical Workflow Framework and FAIR Digital
+Object Approach to Quality Research Output</article-title> 
+    <source>Data Intelligence</source>, Vol. <volume>4</volume>, 
+Num. <issue>2</issue> (<year>2022</year>), pp. <fpage>306</fpage>--<lpage>319</lpage>.
+
+    <ext-link xlink:href="https://www.sciengine.com/DI/doi/10.1162/dint_a_00133" ext-link-type="url"><uri>https://www.sciengine.com/DI/doi/10.1162/dint_a_00133</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+<!-- https://doi.org/10.1162/dint_a_00133 -->
+
+
+
+<ref id="SimplexNumericaManual">
+  <element-citation>
+    <article-title>Simplex Numerica User Manual</article-title>, <year>2023</year>.
+
+    <ext-link xlink:href="https://www.simplexnumerica.com/app/download/10205099171/Manual.pdf" ext-link-type="url"><uri>https://www.simplexnumerica.com/app/download/10205099171/Manual.pdf</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+<ref id="VickyStevensEtAl">
+  <element-citation>
+    <string-name>Stevens, Vicky</string-name>, <i>et al.</i>, <article-title>Using ReproZip for 
+Reproducibility and Library Services</article-title>
+    <source>ASSIST Quarterly</source>, Vol. <volume>42</volume>, Num. <issue>1</issue>, pp. <fpage>1</fpage>--<lpage>14</lpage>, 
+
+    <ext-link xlink:href="https://iassistquarterly.com/index.php/iassist/article/view/18" ext-link-type="url"><uri>https://iassistquarterly.com/index.php/iassist/article/view/18</uri></ext-link>
+
+  </element-citation>
+</ref>
+<!-- DOI: https://doi.org/10.29173/iq18 -->
+
+
+<ref id="RudolfStrijkersEtAl">
+  <element-citation>
+    <string-name>Strijkers, Rudolf</string-name>, <i>et al.</i>, <article-title>Toward Executable Scientific Publications</article-title> 
+    <source>Proceedings of the <conf-name>International Conference on Computational 
+Science (ICCS)</conf-name></source>, <year>2011</year> 
+
+    <ext-link xlink:href="https://www.academia.edu/109735244/Toward_Executable_Scientific_Publications?uc-sb-sw=37138629" ext-link-type="url"><uri>https://www.academia.edu/109735244/Toward_Executable_Scientific_Publications?uc-sb-sw=37138629</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+<ref id="LucyLuWangEtAl">
+  <element-citation>
+    <string-name>Wang, Lucy Lu</string-name>, <i>et al.</i>, <article-title>CORD-19: The COVID-19 Open Research Dataset</article-title>
+
+    <ext-link xlink:href="https://openreview.net/pdf?id=0gLzHrE_t3z" ext-link-type="url"><uri>https://openreview.net/pdf?id=0gLzHrE_t3z</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+<ref id="AntonZhilin">
+  <element-citation>
+    <string-name>Zhilin, Anton</string-name>, <article-title>Guaranteed copy elision for named return objects} 
+(Published Proposal), <year>2020</year>.
+
+    <ext-link xlink:href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2025r0.html" ext-link-type="url"><uri>https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2025r0.html</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
+
+

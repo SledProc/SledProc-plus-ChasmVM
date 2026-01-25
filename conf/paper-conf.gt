@@ -160,9 +160,9 @@ annotation would be more reliable.
 were openly acknowledged by the team behind ,/CORD19/, who 
 described the steps they took to (imperfectly) convert 
 ;/PDF/ files to a machine-readable ;/JSON/ format.  They even issused   
-a "/call to arms/" encouraging publishers to adopt a 
+a "/call to action/" encouraging publishers to adopt a 
 more consistent text representation.{<
-Under a section explicitly titled "/call to arms/" they 
+Under a section explicitly titled "/call to action/" they 
 counsel that "/a number of 
 challenges prevent easy application of ;NLP
 and text mining techniques to these papers.... [T]he 
@@ -175,8 +175,8 @@ Significant effort is needed to coerce ;PDF into a
 format more amenable to text mining, such as ;JATS
 ;XML, ;BioC ... or ;S2ORC ;JSON.... [T]he
 community must define and agree upon an 
-appropriate standard of representation 
-[/LucyLuWangEtAl:6/].
+appropriate standard of representation./"
+[/LucyLuWangEtAl:6==Allen Institute/]
 >} -%> `thispagestyle<empty>;
 
 Text Mining and Natural Language Processing are sophisticated 
@@ -327,6 +327,7 @@ conducive to advanced research %-- the idea of Executable Research Object is not
 to replace the tools that scientists use for their core investigations, but rather to 
 provide accessible code for evaluative and pedagogical purposes for 
 users not familiar with or able to run the "/professional/" software).
+
 
 // //  Deserialization and Other User Cases
 
@@ -561,7 +562,7 @@ to and developed after the main application.
   
 
 
-// //  Text Search and Data Analyses (or demonstrative summaries thereof)
+// //  Text Search and Data Analyses\\{\sth}(or demonstrative summaries thereof)
 
 Another potential ;/VM/ use case involves data analysis.  
 Not to imply that a dataset-embedded ;/VM/ would be part of 
@@ -667,7 +668,6 @@ structures %-- both textual and data sets %-- that
 need to traverse/navigate, insofar as the relevant 
 structural details may be directly incorporated 
 into the ;/VM/'s instruction roster. -%> `vspace<21pt>; 
-
 
 ///  Sentence Objects and Other Textual Elements
        
@@ -824,8 +824,8 @@ against a ;/DOM/ hierarchy is not a seamless translation
 of node-overlap semantics to a non-concurrent 
 environment.{< Milestone tags, in their 
 structural (emulative) purpose, are not 
-intrinsic parts of tools such as ;XPath and ;/XQuery/ 
-%-- apart from their basic status as zero-width 
+intrinsic parts of tools such as ;XPath 
+and ;/XQuery/ %-- apart from their basic status as zero-width 
 elements, which does not by itself convey their special 
 role. >}  If an ;/XML/ file does 
 indeed use milestones to emulate overlapping markup, 
@@ -1003,7 +1003,7 @@ that subject matter (e.g., endorse, critique, or neutral/evaluative).
 When the sources or comments are analyzed to extract those 
 notations, the printed index could be extended by 
 incorporating that material into index entries.  For example, 
-instead of an undifferentiated heading locating \q{Keynesian economics,} 
+instead of an undifferentiated heading locating "/Keynesian economics/", 
 the index might produce subheadings such as 
 "/Keynesian economics, arguments for/"; "/Keynesian economics, arguments against/"; 
 "/Keynesian economics, mathematical models/"; 
@@ -1169,7 +1169,7 @@ like fibres of a differentiable manifold.
     
 
 
-// //  Sentences are the Preeminent Units of Discourse
+// //  Sentences are the Preeminent Units of\\Discourse
 
 I will assume that the basic unit of intrinsic 
 text representation is a single sentence %-- even 
@@ -1339,7 +1339,7 @@ With no separate specification, "/exported/" content
 for things like copy/paste should be as simple as 
 possible,{< There is no guarantee that the program wherever 
 the copied content is pasted will understand anything 
-other than alphanumerics and basic punction }> perhaps 
+other than alphanumerics and basic punction >} perhaps 
 even restricted to ;/Latin1/ (so 
 that "/curly/" single and double quotes, say, are 
 replaced by their straight and non-chiral versions).  
@@ -2038,7 +2038,7 @@ how channel-based calling conventions provide a roadmap
 to guide compilation steps that might be convoluted otherwise.  
    
 
-// //  Variable lifetimes and memory management
+// //  Variable Lifetimes and Memory\\Management
 
 Another situation where channels can have a similar role comes 
 into play in cases where procedures return values that are 
@@ -2281,7 +2281,7 @@ the concomitant annotations and incorporate them
 into search and documentation assets.
 
 
-// //  Dependent Types and Intermediate Representation
+// //  Dependent Types and Template\\Metaprogramming
 
 Constraints such as two lists having the same size, 
 which here I have examined via contracts, are also studied 
@@ -2504,7 +2504,63 @@ the relevant code has to be templated and
 then compiled to different bytecode 
 blocks, one for each "/tapset/" (we 
 might say, meaning "/type-attribution 
-per symbol/").  Some form of dependent 
+per symbol/").  For purpose of discussion, 
+I propose the term "/type */facet/*/" 
+for an (in principle) runtime type 
+attributed to some value or variable, 
+more precise (in the typical case) 
+than its actual (compile-time) type.
+
+The idea of using types to express 
+runtime conditions is plausible because 
+there may be some details that are guaranteed 
+within the logic of one type but not another.  
+For instance, any ;;/float/ (well, any rational/decimal) may 
+have fractional part zero, and so 
+be (losslessly) convertible to integers.  
+The fact that a ;;/float/ ,,f could also 
+be ;;/int/, say, is a detail whose logical 
+form can be expressed via types.  
+This appears, indeed, to be a contract 
+or precondition, but a special kind.  
+Here one way of stating the contract 
+is that ,,f is "/compatible/" with 
+;;/int/ in some sense.
+
+But what sense?  We need a systematic 
+way to discuss how types themselves enforce 
+preconditions (or invariants across their extension).
+One tactic is to consider the overall contract 
+machinery, but apply it specifically 
+to "/constructors/" (or factory functions %-- specifically, 
+procedures that serve the purpose of constructing 
+new values, whether or not they are literally 
+constructors with associated special semantics 
+in a language like ;/C++/).  More precisely, 
+in a channel system we can define a constructor in 
+a general sense as any procedure with an output 
+channel marked for a &/constructor/ role.  Then a 
+"/constructor contract/" could be any contract 
+defined on such procedures.
+
+But with this setup, we are free to abstract constructor 
+contracts from constructors' implementations.  
+Consider a type of all floats whose integer 
+value is exactly ,,/n/.  The test for a 
+constructor-contract in this case would 
+presumably just test an ,,/f/'s being at 
+least ,,/n/ and less than ,,/n+1/.  
+Insofar as some ,,/f/ passes the test, 
+then the hypothetical type can serve as a 
+*/facet/* even if no actual constructor 
+is called.  This facet is just a runtime 
+value, and can be represented in bytecode 
+as a dynamic entity whose specific value(s) 
+are not known at compile-time (in particular,
+multiple instances are representable 
+without some bytecode block being duplicated).   
+
+In short, some form of dependent 
 types could be allowed if they may be 
 implemented more as value-annotations 
 consistent with this templating mechanisms 
@@ -2563,7 +2619,7 @@ in ,,/x/-then-,,/y/ order.  Here the dimensions are conceptualized
 as ,,/x/ and ,,/y/ axes; but in other contexts pixels are treated 
 rather as "/cells/" as if in a table, and coordinate-pairs 
 are in &/row/-&/then/-&/column/ (i.e., &/vertical/-&/then/-&/horizontal/) order.  
-In the case of ;/QRectangle/, one similarly must commit 
+In the case of ;;/QRectangle/, one similarly must commit 
 to memory that the first scalar is "/width/" and the second "/height/".
 
 For both implementation and documentation, we can argue 
@@ -2709,7 +2765,7 @@ generated.
 Here (consistent with the demo code) I make the following assumptions: first, all 
 grammar rules are expressed in terms of patterns that are implicitly 
 anchored on the current point in a left-to-right parser (corresponding 
-to a "/slash-A/", i.e., ,,/\\A/, in Perl-compatible expressions).  That is, no rule 
+to a "/slash-A/", i.e., ,/slashA/, in Perl-compatible expressions).  That is, no rule 
 will "/skip over/" characters, and rules will not in general shift the "/current/" 
 parse-point except via the matches they consume.  Fallback rules may 
 implement logic to skip over characters or parts of the input that 
