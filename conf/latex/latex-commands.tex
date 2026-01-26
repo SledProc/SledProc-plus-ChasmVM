@@ -57,7 +57,7 @@
 %\newcommand{\@sect}[1]{\section{#1}}
 %\newcommand{\@subsect}[1]{\vspace{9pt}\subsection{#1}}
 
-\newcommand{\sL@section}[1]{\vspace{-2pt}\section{#1}\vspace{-2pt}}
+\newcommand{\sL@section}[1]{\vspace{22pt}\section{#1}\vspace{-2pt}}
 \newcommand{\sL@subsection}[1]{\vspace{14pt}{\linespread{1.16}\subsection{#1}}
 
 \vspace{-13pt}
@@ -396,8 +396,38 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 
 \newcommand{\clrm}{\stepcounter{mpcode}{\micro{.}}%
+\ifnum\value{mpcode} = 8
+\else
 \ifnum\value{mpcode} = 17
 \clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
+\else
+\ifnum\value{mpcode} = 32
+\clrmarginpar{-3pt}{13pt}{\writempcode{1pt}}%
+\else
+\ifnum\value{mpcode} = 48
+\clrmarginpar{-20pt}{13pt}{\writempcode{1pt}}%
+\else
+\ifnum\value{mpcode} = 53
+\else
+\ifnum\value{mpcode} = 68
+\clrmarginpar{-4pt}{13pt}{\writempcode{1pt}}%
+\else
+\ifnum\value{mpcode} = 72
+\clrmarginpar{-20pt}{13pt}{\writempcode{1pt}}%
+\else
+\ifnum\value{mpcode} = 88
+\else
+\ifnum\value{mpcode} = 93
+\clrmarginpar{-3pt}{13pt}{\writempcode{1pt}}%
+\else
+\ifnum\value{mpcode} = 101
+\clrmarginpar{-21pt}{2pt}{\writempcode{0pt}}%
+\else
+\ifnum\value{mpcode} = 122
+\clrmarginpar{-6pt}{13pt}{\writempcode{0pt}}%
+\else
+\ifnum\value{mpcode} = 131
+\clrmarginpar{-21pt}{13pt}{\writempcode{0pt}}%
 \else
 \if@firstcolumn%
 \ifnum\value{mpcode} > 99
@@ -405,7 +435,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \else%
 \ifnum\value{mpcode} > 9
 \clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
-\else%
+\else%  second column
 \clrmarginpar{-17pt}{13pt}{\writempcode{1pt}}%
 \fi\fi%
 \else%
@@ -413,10 +443,46 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \clrmarginpar{-5pt}{13pt}{\writempcode{0pt}}%
 \else%
 \clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
-\fi\fi\fi%
+\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi%
 %\thempcode
 }
 
+%\author{\vspace*{15pt}Nathaniel Christen}
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{%1
+\AtTextLowerLeft{
+\hspace*{-6pt}\raisebox{744pt}{%
+Nathaniel Christen
+}}}\fi
+}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=3{%1
+\AtTextLowerLeft{
+\hspace*{-36pt}\raisebox{734pt}{%
+\mpcodef{1pt}{8}
+}}}\fi
+}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=13{%1
+\AtTextLowerLeft{
+\hspace*{-38pt}\raisebox{734pt}{%
+\mpcodef{1pt}{53}
+}}}\fi
+}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=18{%1
+\AtTextLowerLeft{
+\hspace*{-38pt}\raisebox{734pt}{%
+\mpcodef{1pt}{88}
+}}}\fi
+}
 
 
 
@@ -892,7 +958,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 }
 
 
-\newcommand{\upAdj}[1]{\vspace{-#1}}
+\newcommand{\upAdj}[1]{\vspace*{-#1}}
 
 
 \newcommand{\nip}{\noindent}
@@ -1659,6 +1725,14 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 \begin{tabu}{|p{.98\textwidth}}\fontfamily{pbk}\fontsize{9.5pt}{12pt}\selectfont}%
 {\end{tabu}\end{group}\end{displayquote}}
 
+
+\newenvironment{docDescription}{\begin{description}\vspace*{1em}%
+}%
+{\end{description}}
+
+\newenvironment{docEnumerate}{\begin{enumerate}\vspace*{1em}%
+}%
+{\end{enumerate}}
 
 \usepackage[skins,breakable]{tcolorbox}
 

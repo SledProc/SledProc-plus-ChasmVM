@@ -2031,11 +2031,11 @@ convention that procedures requiring contracts
 are overloaded in several versions (at least, those for 
 pass, fail, and testing of a relevant contract) %-- may 
 not be the most powerful engineering of a ;/DbC/ system, 
-but I believe it makes the compiler's role straightforward.  
-Correspondingly, it is clear how the compiler should issue the relevant 
-;/VM/ instructions.  I believe this serves as an example of 
+but I think it makes the compiler's role straightforward %--  
+how to issue the relevant 
+;/VM/ instructions  for contract-enforcing logic.  I believe this serves as an example of 
 how channel-based calling conventions provide a roadmap 
-to guide compilation steps that might be convoluted otherwise.  
+to guide compilation steps that might be convoluted otherwise.`vspace<5pt>;  
    
 
 // //  Variable Lifetimes and Memory\\Management
@@ -2045,16 +2045,15 @@ into play in cases where procedures return values that are
 too large (in number of bytes) for return-by-value semantics.
 
 Consider return and/or initialization options in ;/C++/, on the 
-assumption that we are not simply returning by value directly 
-due to size concerns.  One possibility is to allocate a pointer 
+assumption that we are not just returning by value, due to size concerns.  One possibility is to allocate a pointer 
 in the callee, ownership of which is taken over by the 
 caller.  Another option is for the 
 caller to pass a value of the relevant type (presumably 
 trivially initialized) by mutable 
 reference, trusting the callee to (fully) initialize it.  One limitation 
 of the second alternative is that it only works with types 
-that can be given a default or preliminary initialization 
-and then have their "/real/" values (of internal data fields) 
+that can have a default or preliminary initialization, 
+with their "/real/" values (or internal data fields) 
 supplied later.  This cannot be assumed for all types.
 
 A more exotic solution that circumvents the issue just noted 
@@ -2074,7 +2073,7 @@ a ;/C++/ code excerpt at [< https://cppinsights.io/s/cac923c9 >]
 which also addresses lifetime issues as discussed next.
 >}
 
-`enlargethispage<2em>;Which alternative is most convenient from a caller's point 
+Which alternative is most convenient from a caller's point 
 of view?  Pass-by-reference is a common ;/C++/ pattern: 
 simply declare an object, which (assuming it is a class instance 
 and not a primitive type) will trigger calling 
@@ -2083,7 +2082,7 @@ here %-- apart from cases of non-default-constructible
 types already mentioned %-- is that there is a visible 
 separation between the point of declaration (which is 
 also a minimal initialization) and the "/de facto/" 
-initialization effectuated by the called procedure.  
+initialization effectuated by the called procedure.`newpage;  
 
 This might seem to be a minor annoyance, but admittedly 
 a form where a procedure returns a pointer, which is 
@@ -2119,7 +2118,7 @@ Apart from illustrating one use for channels, these
 points are relevant to the general protocols 
 and style of a scripting language.  Observe 
 that passing an object/ value by (non-constant) reference 
-can serve one of several purposes:
+can serve one of several purposes:`upAdj<7pt>;
 
 %/ enums
 
@@ -2613,7 +2612,6 @@ Consider the case of ;/2D/ graphics.  There are many (e.g.)
 ;/C++/ graphics and image libraries, and they are inconsistent 
 with respect to what the horizontal and vertical axes are 
 called, as well as which quantity comes first in a pair.  
-A ;/Qt/ rectangle, for example (in contexts like ;;/QGraphicsScene/;s) 
 is constructed either by naming two points (diagonally-opposed 
 corners) or by giving one point and two scalar values representing 
 width and height.  ;;/QPoints/ are integer pairs (;;/QPointF/ is floating-point instead) 
@@ -2766,16 +2764,18 @@ regexes (the point is not, necessarily, to create a subpattern
 */group/* but simply to reuse any part of a regex expression 
 that occurs multiple times in a grammar serving similar roles). 
 In some places, also, variable-width lookbehind (rarely supported) would be nice to have.
-Another useful addition (which I don't believe is a feature of 
-regex engines in general) is to merge the functionality of 
-capturing (via group) and positive lookaround [/YuyaUezato/].  Note that 
+Another useful addition is to merge the functionality of 
+capturing (via group) and positive lookaround [/YuyaUezato/].  
+Apparently enabled by some 
+regex engines but not others, arguably this option should be 
+available but notated with a distinct pattern.  Note that 
 capture groups generally have two properties: first, all of their 
 content is contained within the overall pattern match; and, second, 
 in a system where you advance the "/cursor/" just beyond 
 that overall match for the next rule, the cursor will be 
 further ahead than any group.  But there are occasions where 
-one or both of these results is not ideally what you want.  
-For example, you might want to leave content for some later 
+one or both of these results is not what you want.  
+For example, you might intend to leave content for some later 
 match (which is a purpose of lookahead, rather than just 
 consuming the relevant characters) but you also want to 
 "/read/" that content to handle the */current/* rule.  
@@ -2783,11 +2783,11 @@ There are workarounds if these constructions are not
 supported by a regex engine directly, but 
 the result tends to be added complexity 
 in the amount of parser-state to keep track of 
-(plus rule patterns that are less clear in the syntactic 
+(plus rule patterns that are less clear in the  
 details they seek to express). >}  Meanwhile, most ;/C++/ regular expression libraries take ordinary 
-strings as initializers for regex patterns.  This makes it possible 
-to add features to the basic regex language, so long as these 
-may be expressed via ordinary regex patterns that are computationally 
+strings as initializers for regex patterns; hence we can add features 
+to a basic pattern language, so long as these
+are expressible via ordinary regex patterns that are computationally 
 generated.
 
 Here (consistent with the demo code) I make the following assumptions: first, all 
@@ -2910,7 +2910,7 @@ directly, so that rule callbacks may invoke scripts
 or script-implemented functions instead of C++ ones.  
 That is, some or all parts of a grammar could 
 be implemented in a scripting language compiling to the 
-relevant ;/VM/.
+relevant Virtual Machine.
 
 This would be a step toward implementing deserializers 
 via ;/VM/ bytecode, where the ;/VM/ in question is 

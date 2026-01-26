@@ -1530,7 +1530,7 @@ context have to be correlated with the former.
 In special cases, however, <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> page coordinates
 of preselected items of interest (keywords, index entries,
 etc.) can be preserved via mechanisms such as
-<styled-content use="emph-macro"><![CDATA[LaTeX]]></styled-content> <styled-content use="emph-symbol">pgfsavepos</styled-content></fn>
+<styled-content use="emph-macro"><![CDATA[LaTeX]]></styled-content> <styled-content use="emph-symbol">pgfsavepos</styled-content>.</fn>
         <!--leave footnote-->
 
  In the absence
@@ -2506,9 +2506,9 @@ convention that procedures requiring contracts
 are overloaded in several versions (at least, those for
 pass, fail, and testing of a relevant contract) &#x2014; may
 not be the most powerful engineering of a <styled-content use="emph-acronym" lc-status="some-lower" >DbC</styled-content> system,
-but I believe it makes the compiler's role straightforward.
-Correspondingly, it is clear how the compiler should issue the relevant
-<styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> instructions. I believe this serves as an example of
+but I think it makes the compiler's role straightforward &#x2014;
+how to issue the relevant
+<styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> instructions  for contract-enforcing logic. I believe this serves as an example of
 how channel-based calling conventions provide a roadmap
 to guide compilation steps that might be convoluted otherwise.
 </p> <!--/p.1-->
@@ -2533,16 +2533,15 @@ too large (in number of bytes) for return-by-value semantics.
 
 <!--enter p.1-->
     <p id="90">Consider return and/or initialization options in <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, on the
-assumption that we are not simply returning by value directly
-due to size concerns. One possibility is to allocate a pointer
+assumption that we are not just returning by value, due to size concerns. One possibility is to allocate a pointer
 in the callee, ownership of which is taken over by the
 caller. Another option is for the
 caller to pass a value of the relevant type (presumably
 trivially initialized) by mutable
 reference, trusting the callee to (fully) initialize it. One limitation
 of the second alternative is that it only works with types
-that can be given a default or preliminary initialization
-and then have their <styled-content use="double-quote">real</styled-content> values (of internal data fields)
+that can have a default or preliminary initialization,
+with their <styled-content use="double-quote">real</styled-content> values (or internal data fields)
 supplied later. This cannot be assumed for all types.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
@@ -3244,7 +3243,6 @@ magnitudes as size, time, temperature, etc.
 <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> graphics and image libraries, and they are inconsistent
 with respect to what the horizontal and vertical axes are
 called, as well as which quantity comes first in a pair.
-A <styled-content use="emph-acronym" lc-status="some-lower" >Qt</styled-content> rectangle, for example (in contexts such as <styled-content use="emph-symbol">QGraphicsScene</styled-content>s)
 is constructed either by naming two points (diagonally-opposed
 corners) or by giving one point and two scalar values representing
 width and height. <styled-content use="emph-symbol">QPoints</styled-content> are integer pairs (<styled-content use="emph-symbol">QPointF</styled-content> is floating-point instead)
@@ -3436,16 +3434,18 @@ regexes (the point is not, necessarily, to create a subpattern
 <i>group</i> but simply to reuse any part of a regex expression
 that occurs multiple times in a grammar serving similar roles).
 In some places, also, variable-width lookbehind (rarely supported) would be nice to have.
-Another useful addition (which I don't believe is a feature of
-regex engines in general) is to merge the functionality of
-capturing (via group) and positive lookaround <xref ref-type="bibr" rid="YuyaUezato"/>. Note that
+Another useful addition is to merge the functionality of
+capturing (via group) and positive lookaround <xref ref-type="bibr" rid="YuyaUezato"/>.
+Apparently enabled by some
+regex engines but not others, arguably this option should be
+available but notated with a distinct pattern. Note that
 capture groups generally have two properties: first, all of their
 content is contained within the overall pattern match; and, second,
 in a system where you advance the <styled-content use="double-quote">cursor</styled-content> just beyond
 that overall match for the next rule, the cursor will be
 further ahead than any group. But there are occasions where
-one or both of these results is not ideally what you want.
-For example, you might want to leave content for some later
+one or both of these results is not what you want.
+For example, you might intend to leave content for some later
 match (which is a purpose of lookahead, rather than just
 consuming the relevant characters) but you also want to
 <styled-content use="double-quote">read</styled-content> that content to handle the <i>current</i> rule.
@@ -3453,14 +3453,14 @@ There are workarounds if these constructions are not
 supported by a regex engine directly, but
 the result tends to be added complexity
 in the amount of parser-state to keep track of
-(plus rule patterns that are less clear in the syntactic
+(plus rule patterns that are less clear in the
 details they seek to express).</fn>
         <!--leave footnote-->
 
  Meanwhile, most <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> regular expression libraries take ordinary
-strings as initializers for regex patterns. This makes it possible
-to add features to the basic regex language, so long as these
-may be expressed via ordinary regex patterns that are computationally
+strings as initializers for regex patterns; hence we can add features
+to a basic pattern language, so long as these
+are expressible via ordinary regex patterns that are computationally
 generated.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
