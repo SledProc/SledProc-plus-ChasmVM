@@ -2748,7 +2748,7 @@ naturally with the issue of extending */syntax/*, which I discuss next.
 
 // //   Language Grammar and Intermediate Representation
 
-External tools like ;/LEX/ and ;/YACC/ make compilers less self-contained, 
+`enlargethispage<1em>;External tools like ;/LEX/ and ;/YACC/ make compilers less self-contained, 
 so here I assume that initial parsing is performed via techniques 
 that could be built into source code directly.  In particular, 
 I assume that language grammars are defined via regular expressions, which 
@@ -2764,27 +2764,26 @@ regexes (the point is not, necessarily, to create a subpattern
 */group/* but simply to reuse any part of a regex expression 
 that occurs multiple times in a grammar serving similar roles). 
 In some places, also, variable-width lookbehind (rarely supported) would be nice to have.
-Another useful addition is to merge the functionality of 
+Another consideration is how to merge the functionality of 
 capturing (via group) and positive lookaround [/YuyaUezato/].  
-Apparently enabled by some 
-regex engines but not others, arguably this option should be 
-available but notated with a distinct pattern.  Note that 
-capture groups generally have two properties: first, all of their 
+Regular Expressions in a (one might say) "/unfolding/" grammar premised on 
+rules anchored to one "/cursor/" position %-- which is continually 
+advanced forward %-- have their own techniques, and one frequent issue is 
+where to situate the cursor after a successful match.  Normally this is 
+directly after the overall match end, but that is affected by lookahead 
+assertions; in general, it would be nice to control the post-rule positioning 
+in regex patterns directly. 
+Note that capture groups generally have two properties: first, all of their 
 content is contained within the overall pattern match; and, second, 
 in a system where you advance the "/cursor/" just beyond 
-that overall match for the next rule, the cursor will be 
+that overall match for the next rule, the new position will be 
 further ahead than any group.  But there are occasions where 
 one or both of these results is not what you want.  
 For example, you might intend to leave content for some later 
 match (which is a purpose of lookahead, rather than just 
 consuming the relevant characters) but you also want to 
-"/read/" that content to handle the */current/* rule.  
-There are workarounds if these constructions are not 
-supported by a regex engine directly, but 
-the result tends to be added complexity 
-in the amount of parser-state to keep track of 
-(plus rule patterns that are less clear in the  
-details they seek to express). >}  Meanwhile, most ;/C++/ regular expression libraries take ordinary 
+"/read/" that content to handle 
+the */current/* rule.  >}  Meanwhile, most ;/C++/ regular expression libraries take ordinary 
 strings as initializers for regex patterns; hence we can add features 
 to a basic pattern language, so long as these
 are expressible via ordinary regex patterns that are computationally 
