@@ -1791,8 +1791,8 @@ are extensional properties of types themselves (for
 instance, a signed one-byte integer can never have 
 values above @[nmbr:127] or below @[nmbr:-128]).  However, 
 many properties of interest are true only of 
-*/some/* instances for a given type.  For example, 
-in most file-system libraries there is no separate 
+*/some/* instances for a given type.  In most 
+file-system libraries, say, there is no separate 
 type specifically for files that are known to 
 exist (i.e., their path is checked against the local 
 directories); and integer types almost 
@@ -1809,10 +1809,11 @@ may be inverted (keys can be obtained from values
 as much as vice-versa).  To build such a container, 
 one must naturally start with two lists of instances, 
 the first corresponding to the key type and the 
-second to the value type; moreover, for invertability, 
-the two lists must be the same size.  An implementation 
-may thereby assume this as a precondition.
-
+second to the value type.  For invertability, 
+the two lists must be the same size.  The most 
+direct implementation %-- uncluttered by sanity 
+checks %-- would simply assume this as a precondition. 
+ 
 Procedures creating a double-array might therefore 
 take two lists and moreover stipulate that the 
 lists are the same size.  One question is then 
@@ -1826,18 +1827,18 @@ requirement is technically satisfied).  The
 procedure could throw an exception.  Or, it could 
 simply assume that the lists are indeed same-sized.
 
-Explicitly checking preconditions via if/then 
-tests is better than blind faith, all else being 
+Explicitly checking preconditions 
+via ,,/if/,,/then/ tests is better than blind faith, all else being 
 equal, but that convention does violate 
 "/separation of concerns/": arguably, checking 
 that arguments agree to stipulated contracts 
 is a separate process than actually carrying out 
 the procedure's computations, and should be factored 
-into a different procedure.  In other words, some 
+into a different function.  In other words, some 
 distinct code should perform the "/gatekeeping/" 
 role of rejecting contract-violating inputs, 
 and the visible separation of that logic from 
-the main procedure-body can help one 
+the main subroutine-body can help one 
 understand and maintain the code.
 
 Steps to guarantee that contract-annotated procedures 

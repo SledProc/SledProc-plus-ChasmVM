@@ -2188,8 +2188,8 @@ are extensional properties of types themselves (for
 instance, a signed one-byte integer can never have
 values above <SA-nmbr>127</SA-nmbr> or below <SA-nmbr>-128</SA-nmbr>). However,
 many properties of interest are true only of
-<i>some</i> instances for a given type. For example,
-in most file-system libraries there is no separate
+<i>some</i> instances for a given type. In most
+file-system libraries, say, there is no separate
 type specifically for files that are known to
 exist (i.e., their path is checked against the local
 directories); and integer types almost
@@ -2210,9 +2210,10 @@ may be inverted (keys can be obtained from values
 as much as vice-versa). To build such a container,
 one must naturally start with two lists of instances,
 the first corresponding to the key type and the
-second to the value type; moreover, for invertability,
-the two lists must be the same size. An implementation
-may thereby assume this as a precondition.
+second to the value type. For invertability,
+the two lists must be the same size. The most
+direct implementation &#x2014; uncluttered by sanity
+checks &#x2014; would simply assume this as a precondition.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
@@ -2235,18 +2236,18 @@ simply assume that the lists are indeed same-sized.
 
 
 <!--enter p.1-->
-    <p id="74">Explicitly checking preconditions via if/then
-tests is better than blind faith, all else being
+    <p id="74">Explicitly checking preconditions
+via <styled-content use="emph-highlight">if</styled-content><styled-content use="emph-highlight">then</styled-content> tests is better than blind faith, all else being
 equal, but that convention does violate
 <styled-content use="double-quote">separation of concerns</styled-content>: arguably, checking
 that arguments agree to stipulated contracts
 is a separate process than actually carrying out
 the procedure's computations, and should be factored
-into a different procedure. In other words, some
+into a different function. In other words, some
 distinct code should perform the <styled-content use="double-quote">gatekeeping</styled-content>
 role of rejecting contract-violating inputs,
 and the visible separation of that logic from
-the main procedure-body can help one
+the main subroutine-body can help one
 understand and maintain the code.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
