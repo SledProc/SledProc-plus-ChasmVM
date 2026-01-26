@@ -14,7 +14,7 @@ or other decentralized collaborations, the
 basic units of scholarly dissemination 
 are no longer single manuscripts but rather 
 composite packages including text, code, and 
-data, and according to ;/FAIR/ (Findable, 
+data.  According to ;/FAIR/ (Findable, 
 Accessible, Interoperable, Reusable) principles 
 such content should be in available in a 
 largely standalone fashion, hopefully 
@@ -23,7 +23,7 @@ end, this paper will consider
 how compiler and Virtual Machine tools 
 may be embedded within data-set 
 code, built from source files with 
-few external dependencies, and how a 
+few external dependencies.  The paper will consider how a 
 self-contained environment for scripting 
 or query language implementations 
 can promote text search, raw-data 
@@ -71,8 +71,10 @@ graphics or computer code.  Natural-language text is still important
 %-- readers are most likely to learn about data sets or Research 
 Objects via publications that introduce them %-- but in a Research 
 Object context manuscripts are packaged alongside sibling assets 
-with their own requisite functionality.  This affects functionality 
-intrinsic to text documents insofar as, to begin with, the various components 
+with their own requisite functionality.  `enlargethispage<6pt>;This affects functionality 
+intrinsic to text `whitepatch<documents insofar as, to begin with, the various components 
+of a data package can be mutually cross-referenced.>;`vspace<1.5pt>;  
+documents insofar as, to begin with, the various components 
 of a data package can be mutually cross-referenced.  For instance, 
 terms and keyphrases within a manuscript could be annotated 
 with links to data, code, or graphics content, if the 
@@ -81,13 +83,13 @@ measurement, data types, record fields, etc., within raw
 data files, supporting code, or visual materials 
 (e.g., axes on a scatter plot).
 
-Relatedly, researchers have explored the use of text mining 
-and Natural Language Processing tools to promote 
-the dissemination of scientific work.  In principle, say, 
-computational methods can highlight which additional 
-papers might benefit a particular researcher, given ones 
-they have already cited or written themselves.  As one example, 
-the ,/CORD19/ corpus was curated by the 
+Relatedly, researchers have explored text mining/Natural 
+Language Processing tools to facilitate
+discovery of scientific work. In principle, 
+computational methods can highlight which additional
+papers might benefit a particular researcher, given ones
+they have already cited or written themselves. 
+As one example, the ,/CORD19/ corpus was curated by the 
 Allen Institute for Artificial Intelligence, early in the Covid-19 pandemic, 
 as a large repository of open-access materials about ;/SARS/ and Coronaviruses 
 (much of which would ordinarily be paywalled but were made freely 
@@ -240,7 +242,7 @@ manuscript can be studied concretely in the implementation
 bodies of data-set functions; readers could replicate simulations 
 discussed in research papers with their own parameters.  
 
-`newpage;Perhaps it is not obvious that the same computational toolsets that 
+Perhaps it is not obvious that the same computational toolsets that 
 might be used to implement functionality related to 
 text documents would also be applicable to Research Objects 
 and data sets.  Certainly there are structural differences 

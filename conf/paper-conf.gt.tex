@@ -28,7 +28,7 @@ or other decentralized collaborations, the
 basic units of scholarly dissemination
 are no longer single manuscripts but rather
 composite packages including text, code, and
-data, and according to \eA{FAIR} (Findable,
+data. According to \eA{FAIR} (Findable,
 Accessible, Interoperable, Reusable) principles
 such content should be in available in a
 largely standalone fashion, hopefully
@@ -37,7 +37,7 @@ end, this paper will consider
 how compiler and Virtual Machine tools
 may be embedded within data-set
 code, built from source files with
-few external dependencies, and how a
+few external dependencies. The paper will consider how a
 self-contained environment for scripting
 or query language implementations
 can promote text search, raw-data
@@ -89,8 +89,10 @@ graphics or computer code. Natural-language text is still important
 \mdash{} readers are most likely to learn about data sets or Research
 Objects via publications that introduce them \mdash{} but in a Research
 Object context manuscripts are packaged alongside sibling assets
-with their own requisite functionality. This affects functionality
-intrinsic to text documents insofar as, to begin with, the various components
+with their own requisite functionality. \enlargethispage{6pt}This affects functionality
+intrinsic to text \whitepatch{documents insofar as, to begin with, the various components 
+of a data package can be mutually cross-referenced.}\vspace{1.5pt}
+documents insofar as, to begin with, the various components
 of a data package can be mutually cross-referenced. For instance,
 terms and keyphrases within a manuscript could be annotated
 with links to data, code, or graphics content, if the
@@ -101,13 +103,13 @@ data files, supporting code, or visual materials
 }% end paragraph 
 
 \p.1{%
-Relatedly, researchers have explored the use of text mining
-and Natural Language Processing tools to promote
-the dissemination of scientific work. In principle, say,
+Relatedly, researchers have explored  
+text mining/Natural Language Processing tools to facilitate
+discovery of scientific work. In principle,
 computational methods can highlight which additional
 papers might benefit a particular researcher, given ones
-they have already cited or written themselves. As one example,
-the \CORDOneNine{} corpus was curated by the
+they have already cited or written themselves.
+As one example, the \CORDOneNine{} corpus was curated by the
 Allen Institute for Artificial Intelligence, early in the Covid-19 pandemic,
 as a large repository of open-access materials about \eA{SARS} and Coronaviruses
 (much of which would ordinarily be paywalled but were made freely
@@ -265,7 +267,7 @@ discussed in research papers with their own parameters.
 }% end paragraph 
 
 \p.1{%
-\newpage{}Perhaps it is not obvious that the same computational toolsets that
+Perhaps it is not obvious that the same computational toolsets that
 might be used to implement functionality related to
 text documents would also be applicable to Research Objects
 and data sets. Certainly there are structural differences
@@ -2989,7 +2991,7 @@ naturally with the issue of extending \textit{syntax}, which I discuss next.
 \s|2|{Language Grammar and Intermediate Representation}
 
 \p.1{%
-External tools like \eA{LEX} and \eA{YACC} make compilers less self-contained,
+\enlargethispage{1em}External tools like \eA{LEX} and \eA{YACC} make compilers less self-contained,
 so here I assume that initial parsing is performed via techniques
 that could be built into source code directly. In particular,
 I assume that language grammars are defined via regular expressions, which
@@ -3005,27 +3007,26 @@ regexes (the point is not, necessarily, to create a subpattern
 \textit{group} but simply to reuse any part of a regex expression
 that occurs multiple times in a grammar serving similar roles).
 In some places, also, variable-width lookbehind (rarely supported) would be nice to have.
-Another useful addition is to merge the functionality of
+Another consideration is how to merge the functionality of
 capturing (via group) and positive lookaround \citeLabel{YuyaUezato}.
-Apparently enabled by some
-regex engines but not others, arguably this option should be
-available but notated with a distinct pattern. Note that
-capture groups generally have two properties: first, all of their
+Regular Expressions in a (one might say) \q{unfolding} grammar premised on
+rules anchored to one \q{cursor} position \mdash{} which is continually
+advanced forward \mdash{} have their own techniques, and one frequent issue is
+where to situate the cursor after a successful match. Normally this is
+directly after the overall match end, but that is affected by lookahead
+assertions; in general, it would be nice to control the post-rule positioning
+in regex patterns directly.
+Note that capture groups generally have two properties: first, all of their
 content is contained within the overall pattern match; and, second,
 in a system where you advance the \q{cursor} just beyond
-that overall match for the next rule, the cursor will be
+that overall match for the next rule, the new position will be
 further ahead than any group. But there are occasions where
 one or both of these results is not what you want.
 For example, you might intend to leave content for some later
 match (which is a purpose of lookahead, rather than just
 consuming the relevant characters) but you also want to
-\q{read} that content to handle the \textit{current} rule.
-There are workarounds if these constructions are not
-supported by a regex engine directly, but
-the result tends to be added complexity
-in the amount of parser-state to keep track of
-(plus rule patterns that are less clear in the
-details they seek to express).} Meanwhile, most \eA{C++} regular expression libraries take ordinary
+\q{read} that content to handle
+the \textit{current} rule.} Meanwhile, most \eA{C++} regular expression libraries take ordinary
 strings as initializers for regex patterns; hence we can add features
 to a basic pattern language, so long as these
 are expressible via ordinary regex patterns that are computationally
@@ -3165,7 +3166,7 @@ directly, so that rule callbacks may invoke scripts
 or script-implemented functions instead of C++ ones.
 That is, some or all parts of a grammar could
 be implemented in a scripting language compiling to the
-relevant \eA{VM}.
+relevant Virtual Machine.
 }% end paragraph 
 
 \p.1{%

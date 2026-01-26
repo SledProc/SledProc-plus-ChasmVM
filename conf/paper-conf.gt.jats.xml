@@ -14,7 +14,7 @@ or other decentralized collaborations, the
 basic units of scholarly dissemination
 are no longer single manuscripts but rather
 composite packages including text, code, and
-data, and according to <styled-content use="emph-acronym"><abbrev>FAIR</abbrev></styled-content> (Findable,
+data. According to <styled-content use="emph-acronym"><abbrev>FAIR</abbrev></styled-content> (Findable,
 Accessible, Interoperable, Reusable) principles
 such content should be in available in a
 largely standalone fashion, hopefully
@@ -23,7 +23,7 @@ end, this paper will consider
 how compiler and Virtual Machine tools
 may be embedded within data-set
 code, built from source files with
-few external dependencies, and how a
+few external dependencies. The paper will consider how a
 self-contained environment for scripting
 or query language implementations
 can promote text search, raw-data
@@ -86,7 +86,8 @@ graphics or computer code. Natural-language text is still important
 Objects via publications that introduce them &#x2014; but in a Research
 Object context manuscripts are packaged alongside sibling assets
 with their own requisite functionality. This affects functionality
-intrinsic to text documents insofar as, to begin with, the various components
+intrinsic to text 
+documents insofar as, to begin with, the various components
 of a data package can be mutually cross-referenced. For instance,
 terms and keyphrases within a manuscript could be annotated
 with links to data, code, or graphics content, if the
@@ -99,13 +100,12 @@ data files, supporting code, or visual materials
 
 
 <!--enter p.1-->
-    <p id="3">Relatedly, researchers have explored the use of text mining
-and Natural Language Processing tools to promote
-the dissemination of scientific work. In principle, say,
+    <p id="3">Relatedly, researchers have explored the use of text mining/Natural Language Processing tools to promote
+dissemination of scientific work. In principle,
 computational methods can highlight which additional
 papers might benefit a particular researcher, given ones
-they have already cited or written themselves. As one example,
-the <styled-content use="emph-macro"><![CDATA[CORD19]]></styled-content> corpus was curated by the
+they have already cited or written themselves.
+As one example, the <styled-content use="emph-macro"><![CDATA[CORD19]]></styled-content> corpus was curated by the
 Allen Institute for Artificial Intelligence, early in the Covid-19 pandemic,
 as a large repository of open-access materials about <styled-content use="emph-acronym"><abbrev>SARS</abbrev></styled-content> and Coronaviruses
 (much of which would ordinarily be paywalled but were made freely
@@ -3434,27 +3434,26 @@ regexes (the point is not, necessarily, to create a subpattern
 <i>group</i> but simply to reuse any part of a regex expression
 that occurs multiple times in a grammar serving similar roles).
 In some places, also, variable-width lookbehind (rarely supported) would be nice to have.
-Another useful addition is to merge the functionality of
+Another consideration is how to merge the functionality of
 capturing (via group) and positive lookaround <xref ref-type="bibr" rid="YuyaUezato"/>.
-Apparently enabled by some
-regex engines but not others, arguably this option should be
-available but notated with a distinct pattern. Note that
-capture groups generally have two properties: first, all of their
+Regular Expressions in a (one might say) <styled-content use="double-quote">unfolding</styled-content> grammar premised on
+rules anchored to one <styled-content use="double-quote">cursor</styled-content> position &#x2014; which is continually
+advanced forward &#x2014; have their own techniques, and one frequent issue is
+where to situate the cursor after a successful match. Normally this is
+directly after the overall match end, but that is affected by lookahead
+assertions; in general, it would be nice to control the post-rule positioning
+in regex patterns directly.
+Note that capture groups generally have two properties: first, all of their
 content is contained within the overall pattern match; and, second,
 in a system where you advance the <styled-content use="double-quote">cursor</styled-content> just beyond
-that overall match for the next rule, the cursor will be
+that overall match for the next rule, the new position will be
 further ahead than any group. But there are occasions where
 one or both of these results is not what you want.
 For example, you might intend to leave content for some later
 match (which is a purpose of lookahead, rather than just
 consuming the relevant characters) but you also want to
-<styled-content use="double-quote">read</styled-content> that content to handle the <i>current</i> rule.
-There are workarounds if these constructions are not
-supported by a regex engine directly, but
-the result tends to be added complexity
-in the amount of parser-state to keep track of
-(plus rule patterns that are less clear in the
-details they seek to express).</fn>
+<styled-content use="double-quote">read</styled-content> that content to handle
+the <i>current</i> rule.</fn>
         <!--leave footnote-->
 
  Meanwhile, most <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> regular expression libraries take ordinary
@@ -3616,7 +3615,7 @@ directly, so that rule callbacks may invoke scripts
 or script-implemented functions instead of C++ ones.
 That is, some or all parts of a grammar could
 be implemented in a scripting language compiling to the
-relevant <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content>.
+relevant Virtual Machine.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
