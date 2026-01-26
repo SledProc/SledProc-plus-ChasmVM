@@ -1343,7 +1343,7 @@ context have to be correlated with the former.
 In special cases, however, \eA{PDF} page coordinates
 of preselected items of interest (keywords, index entries,
 etc.) can be preserved via mechanisms such as
-\LaTeX{} \eS{pgfsavepos}.} In the absence
+\LaTeX{} \eS{pgfsavepos}} In the absence
 of any restrictions, every sentence in a document should
 thus be checked, with potential branching to account
 for \q{nesting} relationships (as with footnotes and block quotes, potentially)
@@ -2085,31 +2085,31 @@ In short, I advocate for more transparent approaches than formal
 proof systems whereby pre- and post-conditions are chained as if computing
 over states and effects (wherein, for instance, the length of an array
 is part of its type, and any operation to add a value increases the length
-by one and thereby changes its types).
+by one and thereby changes its type).
 }% end paragraph 
 
 \p.1{%
 In practice, then, we should not assume even that the compiler would recognize an
-if-expression like \eH{x.size() == y.size()} as testing the exact same state of affairs
+\eS{if}-expression like \eH{x.size() == y.size()} as testing the exact same state of affairs
 that is reported necessary for a contract. Instead, accept the notion
 that programmers need to hold the compiler's hand somewhat, both to make
 assumptions visible and to simplify compiler implementations. In the present
 context, one way to achieve this is via what might be termed a \q{reified boolean}.
-In this sense, the result of \eH{x.size() == y.size()} is not just a boolean
-true or fale, but a more substantial object that \textit{evaluates} to boolean
+This term hopefully connotes how the result of \eH{x.size() == y.size()} is not just a boolean
+\eS{true} or \eS{false}, but a more substantial object that \textit{evaluates} to boolean
 in the first clause of the \eH{if}/\eH{then} expression, but also persists as an
 object in the subsequent code blocks (whether the true branch or, if present,
 a false one). I assume that some added syntax is available to indicate where
 programmers intend apparent boolean expressions
-to evaluate not only to a boolean return value but a \q{reified} object.
+to evaluate not only to a boolean return value but to a \q{reified} object in this sense.
 }% end paragraph 
 
 \p.1{%
-When an \eH{if}/\eH{then} construction involves a \textit{reified} boolean I assume
+When an \eH{if}/\eH{then} construction does involve a \textit{reified} boolean I assume
 this object remains \q{in scope} for the associated code blocks; and
 that similar branching or loop formations could have similar
-conventions. Conceptually, \eH{if-then-else}, \eH{do-while}, etc., don't
-necessarily have to be special constructions in the language;
+conventions. Conceptually, \eH{if-then-else}, \eH{do-while}, etc., are not
+necessarily special constructions in the language;
 they could possibly be expressed as ordinary procedures, taking
 code blocks as arguments. In this case, the language could
 have a mechanism such that procedures which \textit{call} code blocks
@@ -2148,7 +2148,7 @@ proof object that matches the callee's contract.
 Notice that operations performed in the same scope as
 the proof object could render the proof invalid;
 if, say, new values are added to the key-list but not
-the list paired with it for the double-array. In
+the value-list paired with it for the double-array. In
 principle, one might imagine the compiler trying to
 prevent such invalidation from happening. That could
 be achieved simplistically by refusing to allow
@@ -2172,7 +2172,7 @@ to avoid conflicting calls. The point here is not
 to perform all analysis on the programmer's behalf, but
 rather to make the proof object a visual part of
 the source code and thus a reminder of contract
-obligations that need to be fulfilled.
+obligations that must be fulfilled.
 }% end paragraph 
 
 \p.1{%
@@ -2238,7 +2238,7 @@ memory-size and the callee to initialize \textit{that} via
 placement new. The memory itself could then come either
 from the stack or the heap, whereas there is no way
 for a callee to allocate values on the \textit{caller's} stack.
-Unfortunately, there is no way to implement this kind
+Unfortunately, there is no option to implement this kind
 of arrangement in
 ordinary-looking \eA{C++} (this mechanism is similar
 to how compilers implement Return Value Optimization).\docFootnote{For Return Value Optimization (\eA{RVO}) see \citeLabel{SeanMurphy} or \citeLabel{AntonZhilin}.
@@ -2270,7 +2270,7 @@ purpose of the call is to initialize that pointed-to value.
 Initializing a mutable reference is behaviorally
 similar, but it less clearly documents the relationship
 between the callee and the initialized variable.
-Moreover, sometimes the callee \textit{wants} a
+Moreover, sometimes the caller \textit{wants} a
 pointer return because the value should outlast
 its lifetime.
 }% end paragraph 
@@ -2290,7 +2290,7 @@ by reference, or constructed on the heap prior
 to the main body, or constructed (wherever the
 caller wants) via placement new. This idea
 essentially generalizes Return Value Optimization,
-which uses memory buffers behind-the-scene
+which uses memory buffers behind-the-scenes
 to eliminate the construction and copying
 of temporary objects.
 }% end paragraph 
@@ -2304,9 +2304,9 @@ can serve one of several purposes:
 
 \begin{docEnumerate}
 
-\enumsItem{}   The primary purpose of the callee is to initialize or modify
+\enumsItem{}   The primary goal of the callee is to initialize or modify
 that object
-\enumsItem{}   The object serves mostly to provide information the callee
+\enumsItem{}   The object is intended mostly to provide information the callee
 needs for its main purpose, but cannot be made constant
 either because one of the callee's secondary roles
 might be to update some field in the object, or else
@@ -2326,7 +2326,7 @@ object is in an invalid state). All changes
 are not the same: some may be necessary to render the
 object usable; some may be important to keep the
 object in sync with its peers or overall program state;
-others may be secondary and just represent a
+others can be secondary and just represent a
 report on the various effects a procedure has triggered.
 }% end paragraph 
 
@@ -2334,8 +2334,8 @@ report on the various effects a procedure has triggered.
 Likewise, consider a procedure that has certain side
 effects and then returns a value. It may be that the
 \textit{primary} purpose of the procedure are those
-effects, and that the return value is mostly a sanity
-check. Conversely, it may be that the primary purpose
+effects, and that the return value is mostly for sanity
+checks. Conversely, it may be that the primary purpose
 is to compute that value, but side effects are
 unavoidable while doing so.
 }% end paragraph 
@@ -2350,19 +2350,19 @@ One might then argue that programming languages
 should use syntactic cues to help clarify
 these issues, more so than in \eA{C++}, for example.
 For instance, with pass-by-reference there is no
-visible mechanism to distinguish object that
+visible mechanism to distinguish objects that
 will \textit{necessarily} be modified, or will be
 so assuming the callee returns normally,
 or instead only \textit{might} be modified.
 }% end paragraph 
 
 \p.1{%
-In \eA{C++}, pass-by-reference serves as a workaround
+In \eA{C++}, moreover, pass-by-reference serves as a workaround
 against both multiple-value-return limitations
 and reluctance to return large byte-sizes.
 In other words, often objects are passed
 by reference even if, behaviorally, the
-role the callee vis-a-vis the object is
+role of the callee vis-a-vis the object is
 more like that object being \textit{returned by}
 the callee.
 }% end paragraph 
@@ -2373,7 +2373,8 @@ syntax \mdash{} could do a better job of flagging its caller/callee
 semantics. For example, assignments (in \eA{C++}, the left
 side of a basic operator equals) may be
 \textit{initializations} (for a variable that, beforehand,
-was only declared) or else \q{re-initializations};
+was only declared) or else \q{re-initializations} of objects/values
+already in a valid state;
 there is no syntactic difference. A variable declared
 and then passed by reference will first be
 \textit{uninitialized} (for built-in types) or \textit{default initialized}
@@ -2387,8 +2388,8 @@ semantic possibilities. In the case of pointer-return
 versus pass-by-reference (or \eA{RVO})
 one option would be what might be called \q{Janus}
 (metaphorically \q{two-faced}) channels
-that (unlike most) may be either input or output.
-For sake of discussion, suppose we call a \q{Janus pointer}
+that (unlike the typical case) may be \textit{either} input or output.
+For sake of discussion, suppose we coin the phrase \q{Janus pointer}
 to be an object that, depending on context, could
 serve as a pointer, reference, or non-initialized memory buffer.
 Here \q{Janus} is not some pointer typeclass but
@@ -2398,7 +2399,7 @@ the compiler can check whether an \textit{initialized object/value}
 or else a \textit{memory buffer} has been pushed into the channel.
 If so, that gets passed as \textit{input} to the callee (in the
 latter case the callee is orchestrated to call placement
-new prior to its main execution). If a Janus channel
+new prior to its main execution). Conversely, if a Janus channel
 is present but empty, the compiler expects the callee
 to allocate on the heap (again, perhaps prior to its
 running its actual implementation block) and push that
@@ -2436,7 +2437,7 @@ to their scope's end) or aligned with sibling variables.}
 
 \p.1{%
 Procedures' \q{interface} is more than just an implementation detail,
-moreover, because at least some routines within a code library
+furthermore, because at least some routines within a code library
 are \q{semantic} entities that should be searched and documented
 alongside other textual and data content. An Executable Research
 Object, we can assume, provides some
@@ -2663,7 +2664,7 @@ One way to see this explicitly is to consider
 the procedure being templated in terms
 of \eH{y}'s type. In a \eA{VM} context, we
 can assume that each different template
-instantiation yields a distinct block of bytecode
+instantiation yields a distinct sequence of bytecode
 instructions. So, for any potential type
 of \eH{y}, the procedure will have a
 corresponding (distinct) bytecode block.
@@ -2672,10 +2673,10 @@ such blocks with thousands of copies.
 So the space of variation for \eH{y}'s type
 has to be restricted. If one still wants to
 conceive of \eH{y} as having a range of
-possible types comparable in cardinality
-to a range of ordinary values, then the
+possible types \mdash{} comparable in cardinality
+to a range of ordinary values \mdash{} then the
 specific runtime type \eH{y} inhabits
-must be modeled as a runtime value. Within
+must be modeled as a runtime value. That is to say: within
 the bytecode for a template instantiation,
 there must be some dynamic symbol or holder
 representing the runtime granule of
@@ -2690,8 +2691,8 @@ a language could give these dependent
 constructions the flavor of a type system,
 details like \eH{y}'s \q{granular} characterization
 are not types per se, but rather
-something like an annotation or
-axiom asserted relative to \eH{y}.
+a sort of annotation or
+characterization asserted relative to \eH{y}.
 }% end paragraph 
 
 \p.1{%
@@ -2731,7 +2732,7 @@ have fractional part zero, and so
 be (losslessly) convertible to integers.
 The fact that a \eS{float} \eH{f} could also
 be \eS{int}, say, is a detail whose logical
-form can be expressed via types.
+form is elegantly captured via types.
 This appears, indeed, to be a contract
 or precondition, but a special kind.
 Here one way of stating the contract
@@ -2761,7 +2762,7 @@ defined on such procedures.
 But with this setup, we are free to abstract constructor
 contracts from constructors' implementations.
 Consider a type of all floats whose integer
-value is exactly \eH{n}. The test for a
+value is exactly \eH{n}. The check for a
 constructor-contract in this case would
 presumably just test an \eH{f}'s being at
 least \eH{n} and less than \eH{n+1}.
@@ -2773,19 +2774,20 @@ value, and can be represented in bytecode
 as a dynamic entity whose specific value(s)
 are not known at compile-time (in particular,
 multiple instances are representable
-without some bytecode block being duplicated).
+without some bytecode sequence being duplicated).
 }% end paragraph 
 
 \p.1{%
 In short, some form of dependent
-types could be allowed if they may be
+types could be allowed if they are
 implemented more as value-annotations
-consistent with this templating mechanisms
-than as actual types attributed to their bearers.
+consistent with templating mechanisms
+(given an \q{instantiation equals block} paradigm)
+than as \textit{de facto} types attributed to their bearers.
 Not only does this approach clarify
 dependent-typing possibilities, it also
 indicates how template metaprogramming
-might be supported in a \eA{VM} context.
+might be supported in a (comparatively lightweight) \eA{VM} context.\enlargethispage{1em}
 }% end paragraph 
 
 \p.1{%
@@ -2800,19 +2802,19 @@ via duplicate generated bytecode-blocks
 is not the only tactic. But,
 for \eA{VM}s in the Research Object
 milieu relevant to this paper,
-these are reasonable assumptions.
+these are reasonable assumptions.\upAdj{2pt}
 }% end paragraph 
 
 
 \s|1|{Extensibility \Visavis{} Grammar and Intermediate Representation}
 
 \p.1{%
-Here I address some further details about how
+\upAdj{18.5pt}\par{}Here I address some further details about how
 such \eA{VM}s could employ robust type objects.
 This will lead to points about language
 extensibility, that belong to a broader
 issue spanning front-end parsers as well
-as back-end code generators.\newpage{}\upAdj{22pt}
+as back-end code generators.\newpage{}\upAdj{23pt}
 }% end paragraph 
 
 
@@ -2827,16 +2829,16 @@ manner; at the least, that two different function-arguments
 are scaled the same. These concerns are endemic
 to dimensional analysis and (for instance) \eA{SI} units
 in a scientific context, but they also extend to areas
-which do not obviously employ numbers measuring physical
-magnitudes such as size, time, temperature, etc.
+which do not obviously employ numbers measuring such clearly physical
+magnitudes as size, time, temperature, etc.
 }% end paragraph 
 
 \p.1{%
-Consider the case of \eA{2D} graphics. There are many
+Consider the case of \eA{2D} graphics. There are many (e.g.)
 \eA{C++} graphics and image libraries, and they are inconsistent
 with respect to what the horizontal and vertical axes are
 called, as well as which quantity comes first in a pair.
-A \eASomeLower{Qt} rectangle, for example (e.g., in \eS{QGraphicsScene} windows)
+A \eASomeLower{Qt} rectangle, for example (in contexts like \eS{QGraphicsScene}s)
 is constructed either by naming two points (diagonally-opposed
 corners) or by giving one point and two scalar values representing
 width and height. \eS{QPoints} are integer pairs (\eS{QPointF} is floating-point instead)

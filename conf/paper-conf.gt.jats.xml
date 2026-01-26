@@ -1530,7 +1530,7 @@ context have to be correlated with the former.
 In special cases, however, <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> page coordinates
 of preselected items of interest (keywords, index entries,
 etc.) can be preserved via mechanisms such as
-<styled-content use="emph-macro"><![CDATA[LaTeX]]></styled-content> <styled-content use="emph-symbol">pgfsavepos</styled-content>.</fn>
+<styled-content use="emph-macro"><![CDATA[LaTeX]]></styled-content> <styled-content use="emph-symbol">pgfsavepos</styled-content></fn>
         <!--leave footnote-->
 
  In the absence
@@ -2372,35 +2372,35 @@ In short, I advocate for more transparent approaches than formal
 proof systems whereby pre- and post-conditions are chained as if computing
 over states and effects (wherein, for instance, the length of an array
 is part of its type, and any operation to add a value increases the length
-by one and thereby changes its types).
+by one and thereby changes its type).
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
     <p id="82">In practice, then, we should not assume even that the compiler would recognize an
-if-expression like <styled-content use="emph-highlight">x.size() == y.size()</styled-content> as testing the exact same state of affairs
+<styled-content use="emph-symbol">if</styled-content>-expression like <styled-content use="emph-highlight">x.size() == y.size()</styled-content> as testing the exact same state of affairs
 that is reported necessary for a contract. Instead, accept the notion
 that programmers need to hold the compiler's hand somewhat, both to make
 assumptions visible and to simplify compiler implementations. In the present
 context, one way to achieve this is via what might be termed a <styled-content use="double-quote">reified boolean</styled-content>.
-In this sense, the result of <styled-content use="emph-highlight">x.size() == y.size()</styled-content> is not just a boolean
-true or fale, but a more substantial object that <i>evaluates</i> to boolean
+This term hopefully connotes how the result of <styled-content use="emph-highlight">x.size() == y.size()</styled-content> is not just a boolean
+<styled-content use="emph-symbol">true</styled-content> or <styled-content use="emph-symbol">false</styled-content>, but a more substantial object that <i>evaluates</i> to boolean
 in the first clause of the <styled-content use="emph-highlight">if</styled-content>/<styled-content use="emph-highlight">then</styled-content> expression, but also persists as an
 object in the subsequent code blocks (whether the true branch or, if present,
 a false one). I assume that some added syntax is available to indicate where
 programmers intend apparent boolean expressions
-to evaluate not only to a boolean return value but a <styled-content use="double-quote">reified</styled-content> object.
+to evaluate not only to a boolean return value but to a <styled-content use="double-quote">reified</styled-content> object in this sense.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-    <p id="83">When an <styled-content use="emph-highlight">if</styled-content>/<styled-content use="emph-highlight">then</styled-content> construction involves a <i>reified</i> boolean I assume
+    <p id="83">When an <styled-content use="emph-highlight">if</styled-content>/<styled-content use="emph-highlight">then</styled-content> construction does involve a <i>reified</i> boolean I assume
 this object remains <styled-content use="double-quote">in scope</styled-content> for the associated code blocks; and
 that similar branching or loop formations could have similar
-conventions. Conceptually, <styled-content use="emph-highlight">if-then-else</styled-content>, <styled-content use="emph-highlight">do-while</styled-content>, etc., don't
-necessarily have to be special constructions in the language;
+conventions. Conceptually, <styled-content use="emph-highlight">if-then-else</styled-content>, <styled-content use="emph-highlight">do-while</styled-content>, etc., are not
+necessarily special constructions in the language;
 they could possibly be expressed as ordinary procedures, taking
 code blocks as arguments. In this case, the language could
 have a mechanism such that procedures which <i>call</i> code blocks
@@ -2443,7 +2443,7 @@ proof object that matches the callee's contract.
     <p id="85">Notice that operations performed in the same scope as
 the proof object could render the proof invalid;
 if, say, new values are added to the key-list but not
-the list paired with it for the double-array. In
+the value-list paired with it for the double-array. In
 principle, one might imagine the compiler trying to
 prevent such invalidation from happening. That could
 be achieved simplistically by refusing to allow
@@ -2469,7 +2469,7 @@ to avoid conflicting calls. The point here is not
 to perform all analysis on the programmer's behalf, but
 rather to make the proof object a visual part of
 the source code and thus a reminder of contract
-obligations that need to be fulfilled.
+obligations that must be fulfilled.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
@@ -2555,7 +2555,7 @@ memory-size and the callee to initialize <i>that</i> via
 placement new. The memory itself could then come either
 from the stack or the heap, whereas there is no way
 for a callee to allocate values on the <i>caller's</i> stack.
-Unfortunately, there is no way to implement this kind
+Unfortunately, there is no option to implement this kind
 of arrangement in
 ordinary-looking <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> (this mechanism is similar
 to how compilers implement Return Value Optimization).
@@ -2596,7 +2596,7 @@ purpose of the call is to initialize that pointed-to value.
 Initializing a mutable reference is behaviorally
 similar, but it less clearly documents the relationship
 between the callee and the initialized variable.
-Moreover, sometimes the callee <i>wants</i> a
+Moreover, sometimes the caller <i>wants</i> a
 pointer return because the value should outlast
 its lifetime.
 </p> <!--/p.1-->
@@ -2618,7 +2618,7 @@ by reference, or constructed on the heap prior
 to the main body, or constructed (wherever the
 caller wants) via placement new. This idea
 essentially generalizes Return Value Optimization,
-which uses memory buffers behind-the-scene
+which uses memory buffers behind-the-scenes
 to eliminate the construction and copying
 of temporary objects.
 </p> <!--/p.1-->
@@ -2630,8 +2630,8 @@ of temporary objects.
 points are relevant to the general protocols
 and style of a scripting language. Observe
 that passing an object/ value by (non-constant) reference
-can serve one of several purposes:<enums><enums-item></enums-item>  The primary purpose of the callee is to initialize or modify
-that object<enums-item></enums-item>  The object serves mostly to provide information the callee
+can serve one of several purposes:<enums><enums-item></enums-item>  The primary goal of the callee is to initialize or modify
+that object<enums-item></enums-item>  The object is intended mostly to provide information the callee
 needs for its main purpose, but cannot be made constant
 either because one of the callee's secondary roles
 might be to update some field in the object, or else
@@ -2647,7 +2647,7 @@ object is in an invalid state). All changes
 are not the same: some may be necessary to render the
 object usable; some may be important to keep the
 object in sync with its peers or overall program state;
-others may be secondary and just represent a
+others can be secondary and just represent a
 report on the various effects a procedure has triggered.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
@@ -2657,8 +2657,8 @@ report on the various effects a procedure has triggered.
     <p id="96">Likewise, consider a procedure that has certain side
 effects and then returns a value. It may be that the
 <i>primary</i> purpose of the procedure are those
-effects, and that the return value is mostly a sanity
-check. Conversely, it may be that the primary purpose
+effects, and that the return value is mostly for sanity
+checks. Conversely, it may be that the primary purpose
 is to compute that value, but side effects are
 unavoidable while doing so.
 </p> <!--/p.1-->
@@ -2675,7 +2675,7 @@ One might then argue that programming languages
 should use syntactic cues to help clarify
 these issues, more so than in <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, for example.
 For instance, with pass-by-reference there is no
-visible mechanism to distinguish object that
+visible mechanism to distinguish objects that
 will <i>necessarily</i> be modified, or will be
 so assuming the callee returns normally,
 or instead only <i>might</i> be modified.
@@ -2684,12 +2684,12 @@ or instead only <i>might</i> be modified.
 
 
 <!--enter p.1-->
-    <p id="98">In <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, pass-by-reference serves as a workaround
+    <p id="98">In <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, moreover, pass-by-reference serves as a workaround
 against both multiple-value-return limitations
 and reluctance to return large byte-sizes.
 In other words, often objects are passed
 by reference even if, behaviorally, the
-role the callee vis-a-vis the object is
+role of the callee vis-a-vis the object is
 more like that object being <i>returned by</i>
 the callee.
 </p> <!--/p.1-->
@@ -2702,7 +2702,8 @@ syntax &#x2014; could do a better job of flagging its caller/callee
 semantics. For example, assignments (in <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, the left
 side of a basic operator equals) may be
 <i>initializations</i> (for a variable that, beforehand,
-was only declared) or else <styled-content use="double-quote">re-initializations</styled-content>;
+was only declared) or else <styled-content use="double-quote">re-initializations</styled-content> of objects/values
+already in a valid state;
 there is no syntactic difference. A variable declared
 and then passed by reference will first be
 <i>uninitialized</i> (for built-in types) or <i>default initialized</i>
@@ -2718,8 +2719,8 @@ semantic possibilities. In the case of pointer-return
 versus pass-by-reference (or <styled-content use="emph-acronym"><abbrev>RVO</abbrev></styled-content>)
 one option would be what might be called <styled-content use="double-quote">Janus</styled-content>
 (metaphorically <styled-content use="double-quote">two-faced</styled-content>) channels
-that (unlike most) may be either input or output.
-For sake of discussion, suppose we call a <styled-content use="double-quote">Janus pointer</styled-content>
+that (unlike the typical case) may be <i>either</i> input or output.
+For sake of discussion, suppose we coin the phrase <styled-content use="double-quote">Janus pointer</styled-content>
 to be an object that, depending on context, could
 serve as a pointer, reference, or non-initialized memory buffer.
 Here <styled-content use="double-quote">Janus</styled-content> is not some pointer typeclass but
@@ -2729,7 +2730,7 @@ the compiler can check whether an <i>initialized object/value</i>
 or else a <i>memory buffer</i> has been pushed into the channel.
 If so, that gets passed as <i>input</i> to the callee (in the
 latter case the callee is orchestrated to call placement
-new prior to its main execution). If a Janus channel
+new prior to its main execution). Conversely, if a Janus channel
 is present but empty, the compiler expects the callee
 to allocate on the heap (again, perhaps prior to its
 running its actual implementation block) and push that
@@ -2776,7 +2777,7 @@ to their scope's end) or aligned with sibling variables.</fn>
 
 <!--enter p.1-->
     <p id="102">Procedures' <styled-content use="double-quote">interface</styled-content> is more than just an implementation detail,
-moreover, because at least some routines within a code library
+furthermore, because at least some routines within a code library
 are <styled-content use="double-quote">semantic</styled-content> entities that should be searched and documented
 alongside other textual and data content. An Executable Research
 Object, we can assume, provides some
@@ -3041,7 +3042,7 @@ but not computational purposes.
 the procedure being templated in terms
 of <styled-content use="emph-highlight">y</styled-content>'s type. In a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> context, we
 can assume that each different template
-instantiation yields a distinct block of bytecode
+instantiation yields a distinct sequence of bytecode
 instructions. So, for any potential type
 of <styled-content use="emph-highlight">y</styled-content>, the procedure will have a
 corresponding (distinct) bytecode block.
@@ -3050,10 +3051,10 @@ such blocks with thousands of copies.
 So the space of variation for <styled-content use="emph-highlight">y</styled-content>'s type
 has to be restricted. If one still wants to
 conceive of <styled-content use="emph-highlight">y</styled-content> as having a range of
-possible types comparable in cardinality
-to a range of ordinary values, then the
+possible types &#x2014; comparable in cardinality
+to a range of ordinary values &#x2014; then the
 specific runtime type <styled-content use="emph-highlight">y</styled-content> inhabits
-must be modeled as a runtime value. Within
+must be modeled as a runtime value. That is to say: within
 the bytecode for a template instantiation,
 there must be some dynamic symbol or holder
 representing the runtime granule of
@@ -3068,8 +3069,8 @@ a language could give these dependent
 constructions the flavor of a type system,
 details like <styled-content use="emph-highlight">y</styled-content>'s <styled-content use="double-quote">granular</styled-content> characterization
 are not types per se, but rather
-something like an annotation or
-axiom asserted relative to <styled-content use="emph-highlight">y</styled-content>.
+a sort of annotation or
+characterization asserted relative to <styled-content use="emph-highlight">y</styled-content>.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
@@ -3113,7 +3114,7 @@ have fractional part zero, and so
 be (losslessly) convertible to integers.
 The fact that a <styled-content use="emph-symbol">float</styled-content> <styled-content use="emph-highlight">f</styled-content> could also
 be <styled-content use="emph-symbol">int</styled-content>, say, is a detail whose logical
-form can be expressed via types.
+form is elegantly captured via types.
 This appears, indeed, to be a contract
 or precondition, but a special kind.
 Here one way of stating the contract
@@ -3147,7 +3148,7 @@ defined on such procedures.
     <p id="115">But with this setup, we are free to abstract constructor
 contracts from constructors' implementations.
 Consider a type of all floats whose integer
-value is exactly <styled-content use="emph-highlight">n</styled-content>. The test for a
+value is exactly <styled-content use="emph-highlight">n</styled-content>. The check for a
 constructor-contract in this case would
 presumably just test an <styled-content use="emph-highlight">f</styled-content>'s being at
 least <styled-content use="emph-highlight">n</styled-content> and less than <styled-content use="emph-highlight">n+1</styled-content>.
@@ -3159,21 +3160,22 @@ value, and can be represented in bytecode
 as a dynamic entity whose specific value(s)
 are not known at compile-time (in particular,
 multiple instances are representable
-without some bytecode block being duplicated).
+without some bytecode sequence being duplicated).
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
     <p id="116">In short, some form of dependent
-types could be allowed if they may be
+types could be allowed if they are
 implemented more as value-annotations
-consistent with this templating mechanisms
-than as actual types attributed to their bearers.
+consistent with templating mechanisms
+(given an <styled-content use="double-quote">instantiation equals block</styled-content> paradigm)
+than as <i>de facto</i> types attributed to their bearers.
 Not only does this approach clarify
 dependent-typing possibilities, it also
 indicates how template metaprogramming
-might be supported in a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> context.
+might be supported in a (comparatively lightweight) <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> context.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
@@ -3231,18 +3233,18 @@ manner; at the least, that two different function-arguments
 are scaled the same. These concerns are endemic
 to dimensional analysis and (for instance) <styled-content use="emph-acronym"><abbrev>SI</abbrev></styled-content> units
 in a scientific context, but they also extend to areas
-which do not obviously employ numbers measuring physical
-magnitudes such as size, time, temperature, etc.
+which do not obviously employ numbers measuring such clearly physical
+magnitudes as size, time, temperature, etc.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-    <p id="120">Consider the case of <styled-content use="emph-acronym"><abbrev>2D</abbrev></styled-content> graphics. There are many
+    <p id="120">Consider the case of <styled-content use="emph-acronym"><abbrev>2D</abbrev></styled-content> graphics. There are many (e.g.)
 <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> graphics and image libraries, and they are inconsistent
 with respect to what the horizontal and vertical axes are
 called, as well as which quantity comes first in a pair.
-A <styled-content use="emph-acronym" lc-status="some-lower" >Qt</styled-content> rectangle, for example (e.g., in <styled-content use="emph-symbol">QGraphicsScene</styled-content> windows)
+A <styled-content use="emph-acronym" lc-status="some-lower" >Qt</styled-content> rectangle, for example (in contexts such as <styled-content use="emph-symbol">QGraphicsScene</styled-content>s)
 is constructed either by naming two points (diagonally-opposed
 corners) or by giving one point and two scalar values representing
 width and height. <styled-content use="emph-symbol">QPoints</styled-content> are integer pairs (<styled-content use="emph-symbol">QPointF</styled-content> is floating-point instead)
