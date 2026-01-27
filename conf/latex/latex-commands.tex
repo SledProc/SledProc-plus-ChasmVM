@@ -407,26 +407,26 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \ifnum\value{mpcode} = 48
 \clrmarginpar{-20pt}{13pt}{\writempcode{1pt}}%
 \else
-\ifnum\value{mpcode} = 53
+\ifnum\value{mpcode} = 54
 \else
-\ifnum\value{mpcode} = 68
+\ifnum\value{mpcode} = 69
 \clrmarginpar{-4pt}{13pt}{\writempcode{1pt}}%
 \else
-\ifnum\value{mpcode} = 72
+\ifnum\value{mpcode} = 73
 \clrmarginpar{-20pt}{13pt}{\writempcode{1pt}}%
 \else
-\ifnum\value{mpcode} = 88
+\ifnum\value{mpcode} = 89
 \else
-\ifnum\value{mpcode} = 93
+\ifnum\value{mpcode} = 94
 \clrmarginpar{-3pt}{13pt}{\writempcode{1pt}}%
 \else
-\ifnum\value{mpcode} = 101
+\ifnum\value{mpcode} = 102
 \clrmarginpar{-21pt}{2pt}{\writempcode{0pt}}%
 \else
-\ifnum\value{mpcode} = 122
+\ifnum\value{mpcode} = 123
 \clrmarginpar{-6pt}{13pt}{\writempcode{0pt}}%
 \else
-\ifnum\value{mpcode} = 131
+\ifnum\value{mpcode} = 132
 \clrmarginpar{-21pt}{13pt}{\writempcode{0pt}}%
 \else
 \if@firstcolumn%
@@ -485,7 +485,7 @@ Nathaniel Christen
 }
 
 
-
+\newcommand{\whitepatch}[1]{\textcolor{white}{#1}}
 
 \newcommand{\clrmXX}{\stepcounter{mpcode}{\micro{.}}%
 \ifnum\value{mpcode} = 35
@@ -810,7 +810,7 @@ Nathaniel Christen
 \newcommand{\@pLevel}[2]{%
 \ifcase#1\relax{p0=#2}
 \or{\vspace{6pt}{\clrm}{\pcodelabel}#2}
-\or{p2=#2}
+\or{p2!=#2}
 \else{}
 \fi
 }
@@ -818,7 +818,7 @@ Nathaniel Christen
 \newcommand{\@paLevel}[2]{%
 \ifcase#1\relax{p0=#2}
 \or{\vspace{6pt}#2}
-\or{p2=#2}
+\or{pa2=#2}
 \else{}
 \fi
 }
@@ -838,6 +838,7 @@ Nathaniel Christen
 
 %\or{\vspace*{6pt}{\clrm}#2}
 
+\newcommand{\forcehypertarget}[1]{\hypertarget{#1}{}}
 
 \NewDocumentCommand{\p}{E{.}{}D||{}+m}{%
 \IfNoValueTF{#1}{

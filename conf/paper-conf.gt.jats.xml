@@ -100,8 +100,9 @@ data files, supporting code, or visual materials
 
 
 <!--enter p.1-->
-    <p id="3">Relatedly, researchers have explored the use of text mining/Natural Language Processing tools to promote
-dissemination of scientific work. In principle,
+    <p id="3">Relatedly, researchers have explored text mining/Natural
+Language Processing tools to facilitate
+discovery of scientific work. In principle,
 computational methods can highlight which additional
 papers might benefit a particular researcher, given ones
 they have already cited or written themselves.
@@ -139,10 +140,10 @@ a large volume of documents to be browsed by human
 readers, but to augment their research via text mining.
 Unfortunately, the most common format for dissemination
 of those publications &#x2014; <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> &#x2014; is flawed from a
-computational perspective because the internal
+computational perspective, because the internal
 <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> representation of natural language often differs
 from how human readers would transcribe the same
-content when seeing it rendered in a <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> viewer. Such
+content (e.g., when seeing it rendered in a <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> viewer). Such
 details as ligatures, headers/footers, hyphenation, and
 font-face variations can introduce artifacts in
 text extraction (or <styled-content use="double-quote">scraping</styled-content>) from <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> files.
@@ -150,9 +151,9 @@ text extraction (or <styled-content use="double-quote">scraping</styled-content>
 <fn>To clarify these remarks: <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> code libraries typically
 have some procedure that can be called to obtain text
 from one page and/or window area. In <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, for example,
-the <styled-content use="emph-acronym" lc-status="some-lower" >Poppler</styled-content> library has a <styled-content use="emph-acronym" lc-status="all-lower" >text</styled-content> method of
+the <styled-content use="emph-acronym" lc-status="some-lower" >Poppler</styled-content> library has a <styled-content use="emph-symbol">text</styled-content> method of
 <styled-content use="emph-symbol">Poppler::Page</styled-content> which optionally takes a rectangular subarea (this allows
-scraper to eliminate headers and footers, for instance).
+scrapers to eliminate headers and footers, for instance).
 The strings returned by this method, however, will
 usually differ from the input sources captured as
 <styled-content use="emph-acronym"><abbrev>JATS</abbrev></styled-content>, for example. The most straightforward
@@ -179,12 +180,12 @@ was not preserved in the final <styled-content use="emph-acronym"><abbrev>PDF</a
 <fn>In my own analysis of <styled-content use="emph-macro"><![CDATA[CORD19]]></styled-content> mentioned above,
 I gave the example of a compound <eIbox>2'-C-ethynyl</eIbox>,
 which is also notated as <eIbox>2 0-C-ethynyl</eIbox>. With
-these alternatives, and also the fact that the <styled-content use="emph-acronym"><abbrev>JSON</abbrev></styled-content>
-markup appeared in places to incorrectly parse
-the strings &#x2014; i.e., breaking the formula
+these alternatives, plus the fact that the <styled-content use="emph-acronym"><abbrev>JSON</abbrev></styled-content>
+markup appeared sometimes to incorrectly parse
+the strings &#x2014; i.e., breaking the character-sequence
 at the wrong location &#x2014; the corpus overall
 has multiple different representations for
-the same formula. This obvious obscured the
+the same formula. This obviously obscures the
 fact that each of these represent the
 same concept, and indicate how semantic
 annotation would be more reliable.</fn>
@@ -212,7 +213,7 @@ format more amenable to text mining, such as <styled-content use="emph-acronym">
 community must define and agree upon an
 appropriate standard of representation.</styled-content>
 <attrib>Allen Institute</attrib>
-            <xref ref-type="bibr" rid="LucyLuWangEtAl" page="6"/></fn>
+            <xref ref-type="bibr" rid="LucyLuWangEtAl" page="8"/></fn>
         <!--leave footnote-->
 
 
@@ -222,21 +223,23 @@ appropriate standard of representation.</styled-content>
 
 <!--enter p.1-->
     <p id="5">Text Mining and Natural Language Processing are sophisticated
-use-cases for machine-readable text encoding, but more
+use cases for machine-readable text encoding, but more
 mundane functionality is relevant as well, such as searching
 within <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> documents. Given the imperfections of
-<styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> text representation, it would be reasonable for <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> viewers to
-run text searches first through more-precise data about
+<styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> text representation, it would be
+reasonable for 
+<styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> viewers to run text searches first through more-precise data about
 text content &#x2014; if <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> files provide as much &#x2014; in lieu of
-<styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content>-internal text objects. For example, many <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> files in
-current publishing are produced from <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content> format such as
-<styled-content use="emph-acronym"><abbrev>JATS</abbrev></styled-content> or <styled-content use="emph-acronym"><abbrev>BITS</abbrev></styled-content>; if such intermediate assets were embedded in
+<styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content>-internal text objects. For example, many <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> files are
+currently produced from <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content> formats such as
+<styled-content use="emph-acronym"><abbrev>JATS</abbrev></styled-content> or <styled-content use="emph-acronym"><abbrev>BITS</abbrev></styled-content>; if these intermediate assets (or at least
+links thereto) were embedded in
 <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> directly then they could be extracted and employed by
 <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> viewers as structured text encoding, in preference to the
 more <styled-content use="double-quote">semi-structured</styled-content> data one may obtain from
 methods such as <styled-content use="emph-symbol">text()</styled-content> in the <styled-content use="emph-acronym" lc-status="some-lower" >Poppler</styled-content> library
-(which I've mentioned in footnote ).
-Similar use-cases might be compiling human-readable document
+(which I've mentioned in footnote \lhRef{poppler-adj}{3}).
+Similar use cases might be compiling human-readable document
 indexes, or comparing two different versions of a manuscript
 during an editing/reviewing changes cycle.
 </p> <!--/p.1-->
@@ -383,17 +386,18 @@ there are some domain-specific or fine-tuning details that
 might usefully be coded in a special-purpose language. For example, the
 information encoded in a data set may be approached <i>de facto</i> as a
 database which accepts queries in an <styled-content use="emph-acronym"><abbrev>SQL</abbrev></styled-content>-like (or some flavor of <styled-content use="emph-acronym" lc-status="some-lower" >NoSQL</styled-content>)
-format &#x2014; potentially extended to <styled-content use="double-quote">full-text search</styled-content> <styled-content use="emph-macro"><![CDATA[visavis]]></styled-content>
-associated text documents. In other scenarios, an Executable Research Object
+format &#x2014; potentially extended to <styled-content use="double-quote">full-text search</styled-content> with
+associated text documents, via query specifications
+geared to text content (<i>cf.</i> <xref ref-type="bibr" rid="ChavdarBotevEtAl"/>, for example). In other scenarios, an Executable Research Object
 could employ something like a built-in scripting language to run
 analytic code, fine-tune <styled-content use="emph-acronym"><abbrev>GUI</abbrev></styled-content>s, compose plugins for external scientific applications,
 etc. (The principle that Research Object code should be self-contained and source-based
 does not preclude users exploring data sets, or individual files therein,
 via discipline-specific applications that have analytic or visualization capabilities
-conducive to advanced research &#x2014; the idea of Executable Research Object is not necessarily
+conducive to advanced research &#x2014; the idea of Executable Research Objects is not necessarily
 to replace the tools that scientists use for their core investigations, but rather to
-provide accessible code for evaluative and pedagogical purposes for
-users not familiar with or able to run the <styled-content use="double-quote">professional</styled-content> software).
+provide accessible code for evaluative and pedagogical purposes and/or for
+anyone not familiar with or able to run the <styled-content use="double-quote">professional</styled-content> software).
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
@@ -408,10 +412,10 @@ users not familiar with or able to run the <styled-content use="double-quote">pr
 
 <!--enter p.1-->
     <p id="11">To clarify why a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> can have nontrivial roles in a Research Object context, I will
-identify potential <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> use cases. One obvious example is that of deserializing data sets.
+identify potential <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> use cases. One obvious example is deserializing data sets.
 Many subject areas have special-purpose data formats reflecting the unique kinds of
 information pertinent to their scientific field. Some of these are narrowings of
-canonical formats like <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content> or <styled-content use="emph-acronym"><abbrev>JSON</abbrev></styled-content>, but even in these cases dedicated code is
+canonical languages like <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content> or <styled-content use="emph-acronym"><abbrev>JSON</abbrev></styled-content>, but even in those cases dedicated code is
 needed to traverse a <styled-content use="emph-acronym"><abbrev>DOM</abbrev></styled-content> hierarchy, respond to <styled-content use="emph-acronym"><abbrev>SAX</abbrev></styled-content> events, or otherwise
 walk through nodes of the generic data structure to extract individual values that
 populate fields of domain-specific data types. Other formats have their
@@ -433,7 +437,7 @@ between those columns and reasonable data fields of deserialized objects.
 Instead, some groups of columns serve to indirectly encode vectors
 of similarly-typed value, with up to perhaps five elements; others
 encode special conditions that are applicable to only a few records
-in the collection; still others encode text strings which have to comform
+in the collection; still others encode text strings which have to conform
 to a restricted list of enumerated values. In short, a class type
 holding record-data would use a collection of vector-like collections,
 <styled-content use="emph-highlight">enum</styled-content>s, boolean flags, and so forth to represent many of the
@@ -443,7 +447,7 @@ process (<styled-content use="double-quote"><styled-content use="emph-acronym"><
 
 
 That is, code to deserialize <styled-content use="emph-acronym"><abbrev>CSV</abbrev></styled-content> can be equally complex to <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content> or <styled-content use="emph-acronym"><abbrev>JSON</abbrev></styled-content> (likewise for
-alternatives such as <styled-content use="emph-acronym"><abbrev>RDF</abbrev></styled-content>, multi-dimensional arrays, and so on).
+alternatives such as <styled-content use="emph-acronym"><abbrev>RDF</abbrev></styled-content>, multi-dimensional arrays, multi-value <styled-content use="emph-acronym"><abbrev>SQL</abbrev></styled-content>, and so on).
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
@@ -453,7 +457,7 @@ alternatives such as <styled-content use="emph-acronym"><abbrev>RDF</abbrev></st
 (or typed values generally) will hopefully not have to write deserialization code
 from scratch; instead, scientific communities often endeavor to publish
 code libraries to parse/traverse the relevant file types. Nonetheless, such
-libraries are often maintained by individual academic departments or other
+libraries are frequently maintained by individual academic departments or other
 groups working with limited resources, and they can have problems related
 to versioning (the code being incompatible with newer, or older, representation specs),
 lack of breadth for different programming languages or operating systems,
@@ -482,7 +486,7 @@ tested against multiple platforms, to the extent that it serves as a
 
 
 <!--enter p.1-->
-    <p id="14">Assuming that this is indeed a primary use-case, notice that the <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> would not
+    <p id="14">Assuming that this is indeed a primary use case, notice that the <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> would not
 need to be highly optimized in terms of execution speed, multi-threading support,
 fault-tolerance, and so forth. Even as the compilation target of a special-purpose
 scripting format, the <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> would not primarily function as host to a
@@ -547,7 +551,8 @@ preserving application state and user preferences; etc.
 shows a video frame. An obvious context action
 for menus near that image is for the user to watch
 the video in question (perhaps with an option to
-start shortly before the still that is depicted). If
+start shortly before the still that is depicted). Plus, not all
+science videos are from cameras: if
 the video actually records the run of
 one computer simulation, the
 user could instead be brought to <styled-content use="emph-acronym"><abbrev>GUI</abbrev></styled-content> controls
@@ -582,7 +587,7 @@ on <styled-content use="emph-acronym"><abbrev>GUI</abbrev></styled-content> cont
 functionality requested in the document's context would
 typically be activated via a context menu rather than a
 <styled-content use="emph-acronym"><abbrev>GUI</abbrev></styled-content> button or other clickable area (the menu could be
-localized to individual words/text segments, particularly
+localized to individual words/ text segments, particularly
 for keyphrases and indexed headings; or figure graphics,
 hyperlinks, and other components of a publication that
 might have extra programming attached). However,
@@ -594,11 +599,11 @@ the entire package, not just the current <styled-content use="emph-acronym"><abb
 (exactly how to interpret searches over, say, raw
 data files depends on the data set in question). A
 <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> viewer designed specifically to embed
-in Executable Research Objects could moreover adopt
+in Executable Research Objects might furthermore adopt
 a standard protocol for adding <styled-content use="emph-acronym"><abbrev>GUI</abbrev></styled-content> buttons/controls
-to interactive screen areas where individual projects
-would place clickable elements that invoke functionality
-more general than just those localized to
+to interactive screen areas &#x2014; here, individual projects
+could place clickable elements that invoke functionality
+more general than just what should be localized to
 particular areas of text/documents (and therefore
 less suitable to context menus).
 </p> <!--/p.1-->
@@ -620,10 +625,10 @@ splitter left/right or up/down),
 or notebook controls (where one tab is
 visible at a time) help accommodate
 more information than can be present
-in a window at any one time; and
+in a window at any one time. By expectation,
 functionality is distributed amongst
 screen areas of different size (for
-instance, a notebook tab &#x2014; whose
+instance, notebook tabs &#x2014; whose
 roles include switching from one tab-view
 to another when clicked &#x2014; also typically
 have a small <styled-content use="ital-literal">x</styled-content>-shaped close button
@@ -653,11 +658,11 @@ dragging the cursor or operating the mouse
 wheel; applications often allow users
 to specify their intentions by augmenting
 their gestures with key-presses such as
-<styled-content use="emph-macro"><![CDATA[ctrl]]></styled-content> or <styled-content use="emph-macro"><![CDATA[alt]]></styled-content>. When constructing
+<styled-content use="ital-literal">ctrl</styled-content> or <styled-content use="ital-literal">alt</styled-content>. When constructing
 an arrow overlay, for instance, some gestures
-lengthen the shaft, others adjust the head,
-and others rotate the arrow to a desired angle.
-When certain patterns of interaction (through
+lengthen the shaft; others adjust the head;
+others rotate the arrow to a desired angle.
+Once certain patterns of interaction (through
 mouse and/or keyboard) are implemented in one
 part of an application, it is helpful for
 users to adopt similar conventions globally.
@@ -719,8 +724,8 @@ unit-decorated types,
 pre- and post-conditions, type invariants, etc.
 This degree of in-code specificity is not usually present
 in mainstream languages, so a Research Object <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> could
-supporting scripting dialects which attempt to
-make code assumptions and pedagogical use-cases
+support scripting dialects which attempt to
+make code assumptions and pedagogical use cases
 as transparent as possible.
 
 <fn>To put it differently, the original
@@ -773,7 +778,7 @@ than interfacing with the host software's plugin mechanism directly.
 
 
 <!--enter p.1-->
-    <p id="25">Having thereby outlined several use-cases on the data-set side,
+    <p id="25">Having thereby outlined several use cases on the data-set side,
 I will also touch on how <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> technology could support text-related
 tasks, such as indexing and full-text search. One obvious
 possibility is to achieve search functionality via a
@@ -790,7 +795,7 @@ that can layer over the relevant class methods.
 
 
 <!--enter p.1-->
-    <p id="26">Other possible use-cases arise in the context of <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> viewers,
+    <p id="26">Other possible use cases arise in the context of <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> viewers,
 in which could be embedded a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> interpreter/runtime.
 New functionality may then be introduced via <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content>-related
 scripts; for instance, extra context-menu options,
@@ -804,9 +809,9 @@ given scientific subject area, for instance).
 
 
 <!--enter p.1-->
-    <p id="27">The range of use-cases addressing both text and data content
+    <p id="27">The range of use cases addressing both text and data content
 suggest that <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content>s embedded in Executable Research Objects
-can be useful across the different asset-types (documents,
+can be useful across their different asset-types (documents,
 code, raw data, graphics/multimedia). Under the assumption
 that a compiler and runtime environment (bytecode interpreter)
 is offered among the data-set package, then other
@@ -822,7 +827,7 @@ design across the various components.
     <p id="28">Having thereby identified the <i>purpose</i> of a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> engineered
 for the data-publishing context, the remainder of this
 paper will examine certain theoretical and implementational
-details relevant for these use-cases in particular.
+details relevant for these use cases in particular.
 The discussion will address both compiler and runtime
 concerns, and also consider the forms of information
 structures &#x2014; both textual and data sets &#x2014; that
@@ -875,7 +880,7 @@ in <SA-year>1987</SA-year>, predates <styled-content use="emph-acronym"><abbrev>
 special markup languages like <styled-content use="emph-acronym"><abbrev>TAGML</abbrev></styled-content> (the Text-as-Graph
 Markup Language) &#x2014; which are structurally
 distinct from straightforward tag hierarchies (and therefore
-not just a realization or dialect of <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content>) have been proposed as more faithful
+not just a realization or dialect of <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content>) &#x2014; have been proposed as more faithful
 to the inner structure of text content than generic
 formats (<styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content>, <styled-content use="emph-acronym"><abbrev>JSON</abbrev></styled-content>, etc.).
 
@@ -912,7 +917,7 @@ is conceptually a <i>space</i> in the sense
 that we can use some terms of discrete topology
 therein: we have a notion of <styled-content use="double-quote">movement</styled-content> within
 the space; some parts are closer to each other
-than others; we can consider indivisible
+than elsewhere; we can consider indivisible
 elements of the structure and picture them
 as a <styled-content use="double-quote">foreground</styled-content> or <styled-content use="double-quote">cursor</styled-content> that
 an algorithm visits before moving onward.
@@ -929,7 +934,7 @@ There is extensive literature on both
 property graphs (conventional graphs
 with key/value tuples added) and hypergraphs
 (where hypernodes contain other nodes, and
-hyperedged contain other edges); the
+hyperedges contain other edges); the
 property hypergraph paradigm merges
 both of those representational devices.
 I have an overview of how different graph
@@ -972,7 +977,8 @@ approach over the other is a rather abstract question.
 A more concrete assessment can consider actual processing
 tasks and address whether algorithms that <styled-content use="double-quote">quantify</styled-content>
 over concurrent markup structures, or conversely
-purely hierarchical ones, are easer to implement/test/maintain.
+purely hierarchical ones, are easer to implement (or,
+likewise, test, or maintain).
 Assuming that most algorithms navigate around a structure
 by tracking a <styled-content use="double-quote">foreground</styled-content> node &#x2014; some kind of visitor
 pattern where one node at a time is the one visited
@@ -1054,7 +1060,7 @@ and vice-versa. But in the context of text encoding,
 discussing such tradeoffs solely with respect to
 <i>generic</i> formats like <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content> or <styled-content use="emph-acronym"><abbrev>TAGML</abbrev></styled-content> skirts the
 key point that here we are primarily concerned with
-representing of <i>text</i> content, not generic
+the representation of <i>text</i> content, not generic
 data structures. It is one thing to serialize and deserialize
 information in general through the nodes of a hierarchical
 or concurrent document format. It is another to focus
@@ -1136,7 +1142,7 @@ containment protocols. The neighborhood of an
 in a property hypergraph &#x2014; would be
 (in this case, more involved than simpler
 Semantic Web triples) any contained nodes
-inside the hypernode, its key-value properties,
+inside the hypernode; its key-value properties;
 and other hypernodes reachable via labeled
 graph edges. The neighborhood of a
 <styled-content use="emph-acronym"><abbrev>JSON</abbrev></styled-content> <styled-content use="double-quote">node</styled-content> would be a tuple of values
@@ -1156,7 +1162,7 @@ amounts to navigating between sibling paragraph
 elements in an <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content> tree, assuming that paragraphs
 are the basic units of encoding. However, natural-language
 text has its own topomorphic profile which is only
-approximately captured by topomorphic regimes of
+approximately captured by <styled-content use="double-quote">topomorphic regimes</styled-content> <i>in toto</i> of
 generic formats adopted for text encoding. In this
 section I will consider topomorphic properties of
 text on its own terms, separate and apart from
@@ -1242,7 +1248,7 @@ instead of an undifferentiated heading locating <styled-content use="double-quot
 the index might produce subheadings such as
 <styled-content use="double-quote">Keynesian economics, arguments for</styled-content>; <styled-content use="double-quote">Keynesian economics, arguments against</styled-content>;
 <styled-content use="double-quote">Keynesian economics, mathematical models</styled-content>;
-<styled-content use="double-quote">Keynesian economics, and macroeconomic theory</styled-content> and etc.
+<styled-content use="double-quote">Keynesian economics, and macroeconomic theory</styled-content> and so on.
 </p>
             <!--end of list paragraph-->
 
@@ -1266,16 +1272,16 @@ phonology, agglutination, word order, morphosyntactic patterns, syntactic catego
 researchers could benefit from a searchable repository of these examples,
 as a special kind of language corpus. That is, multiple linguistics
 papers may be scanned for listed samples and each of those
-examples extracted into a common format, to be included in a
+examples extracted into a common format, to be folded into a
 multi-publication database. Interested readers could then
 browse the samples to find articles that address specific
-syntactic or semantic themes, particularly if each sample
+syntactic or semantic themes, particularly if each item
 is classified according to the linguistic subject they
 exemplify (or serve thereto as a basis for analysis). Moreover, it is not uncommon
 for the same case study
-to be analyzed by multiple linguists, potentially creating
+to be analyzed by multiple authors, potentially creating
 interesting contrasts in theories and paradigms.
-The whole process would be accelerated if authors employ a
+The whole process would be accelerated if publications employ a
 common format (e.g., distinct <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content> tags) to notate the examples;
 but the full extracting and database persistence logic
 would need specialized programming.
@@ -1291,9 +1297,9 @@ attentive to encode these special terms in a structured format
 (e.g., special <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content> tags) and have also added informative
 suggestions via <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> comments. Your goal is to find all
 chemical terms/formulae which can be associated with
-molecular-structure files in formats such as <styled-content use="emph-acronym"><abbrev>PDB</abbrev></styled-content>
-(Protein Data Bank), <styled-content use="emph-acronym"><abbrev>MOL</abbrev></styled-content>, <styled-content use="emph-acronym"><abbrev>CML</abbrev></styled-content> (Chemical Markup
-Language), or similar standards. Those files may then be opened
+molecular-structure files in formats such as <styled-content use="emph-acronym"><abbrev>PDB</abbrev></styled-content>, <styled-content use="emph-acronym"><abbrev>MOL</abbrev></styled-content>, <styled-content use="emph-acronym"><abbrev>CML</abbrev></styled-content> (Chemical Markup
+Language), or similar standards. Those files may then be
+read &#x2014; and converted to <styled-content use="emph-acronym"><abbrev>GUI</abbrev></styled-content> displays &#x2014;
 via science applications dedicated to
 visualizing and analyzing chemical structures in three
 dimensions (showing positions of atoms, atomic groups/arrangements,
@@ -1318,14 +1324,14 @@ the original research manuscript (or, analogously, the students' textbooks).}
 </p>
             <!--end of list paragraph-->
             <p paragraph-container="list">Along similar lines, suppose a chemistry paper
-includes various terms for named compounds, amino
-acids, and so on (just considered in the molecular-visualization
+includes various terms for named proteins/compounds, amino
+acids, etc. (just considering the molecular-visualization
 context). With these specific technical entities, special-purpose
 supplemental data and annotations can be relevant, such as
-<styled-content use="emph-acronym"><abbrev>PDB</abbrev></styled-content> assession numbers, launch-requests for external
+<styled-content use="emph-acronym"><abbrev>PDB</abbrev></styled-content> accession numbers, launch-requests for external
 visualization tools, transcriptions between names and
 formulae, etc. It would be reasonable to include access to
-such information among context-menus activated both in the
+such information among context-menus activated both in
 <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> window areas proximate to names/formulas in text
 form, and in software tools that might be drafted
 for interactive displays or scientific analysis.
@@ -1339,11 +1345,12 @@ text (e.g., <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-cont
             <!--end of list paragraph-->
 
 <list-item>Papers with Geospatial Datasets</list-item>
-            <p paragraph-container="list">   Suppose a manuscript takes a place among a
-Research Object with geospatial data, with
+            <p paragraph-container="list">   Suppose a manuscript takes
+its place among a
+Research Object whose information content includes geospatial data, with
 <styled-content use="emph-acronym"><abbrev>GIS</abbrev></styled-content> <styled-content use="double-quote">attribute layers</styled-content> encoded via columns
-in the so-called <styled-content use="emph-acronym"><abbrev>XYZ</abbrev></styled-content> format (which is an alternative
-to latitude/longitude more directly usable by
+in the so-called <styled-content use="emph-acronym"><abbrev>XYZ</abbrev></styled-content> format (an alternative
+to latitude/longitude; one more directly usable by
 digital map displays). It is entirely possible
 that the main publication will include some
 discussion about this format, which establishes
@@ -1351,7 +1358,7 @@ cross-reference points between the text and data
 sets. Meanwhile, included code &#x2014; if it does
 indeed seek to make the raw files usable for
 analysis &#x2014; will almost certainly include
-procedures for <styled-content use="emph-acronym"><abbrev>XYZ</abbrev></styled-content> to <styled-content use="emph-macro"><![CDATA[latlon]]></styled-content> conversion,
+procedures for <styled-content use="emph-acronym"><abbrev>XYZ</abbrev></styled-content> to <styled-content use="ital-literal">lat</styled-content>/<styled-content use="ital-literal">lon</styled-content> conversion,
 as well as distance metrics in the former,
 computations related to Mercatur projections,
 and so forth. These calculations thereby
@@ -1361,16 +1368,16 @@ data varieties.
 </p>
             <!--end of list paragraph-->
             <p paragraph-container="list">This and the prior example might even be combined. Data sets
-addressing environmental contamination (Such as the <styled-content use="emph-acronym"><abbrev>EPA</abbrev></styled-content>'s
+addressing environmental contamination (such as the <styled-content use="emph-acronym"><abbrev>EPA</abbrev></styled-content>'s
 Toxic Release Inventory, mentioned above in the context of
 <styled-content use="emph-acronym"><abbrev>CSV</abbrev></styled-content> files) include both <styled-content use="emph-acronym"><abbrev>GIS</abbrev></styled-content> and Cheminformatics
-objects. Harful substances can be detected
+objects. Harmful substances can be detected
 in soil, water, or accident reports, and each
 data point involves both the geographic location/area
 where an observation occurs and the specific compound
-inolves. The former lends itself to digital maps;
-the latter to molecular visualization
-(which can help explain what makes a substance
+inolved. The former lends itself to digital maps;
+the latter to molecular visualization displays
+(to help explain visually those qualities that make a substance
 dangerous to people or ecosystems). Class types
 and <styled-content use="emph-acronym"><abbrev>GUI</abbrev></styled-content>s for both of these genres would
 then be applicable to Executable Research
@@ -1383,7 +1390,7 @@ Objects surrounding the publications.</p>
 These hypothetical examples (which actually are inspired by
 projects I have worked on in the past) are cases where
 extra programming is needed for some important part
-of the document-prep workflow that stands apart from
+of the document-prep workflow, one that stands apart from
 familiar publishing pipelines. Such applications
 as comparing manuscript versions side-by-side
 on a sentence-by-sentence basis, coding up
@@ -1403,8 +1410,8 @@ handled by publishing software.
     <p id="40">The presence of textual elements that do demand special
 treatments may be notated by conventions like
 domain-specific <styled-content use="emph-acronym"><abbrev>XML</abbrev></styled-content> tags, but actually implementing
-the cross-component interop needed to leverage this
-such almost certainly requires programming over
+the cross-component interop needed to leverage them
+almost certainly requires programming over
 textual content as well as data-set materials as a whole.
 In other words, these are concrete User Interaction
 features that illustrate the principle that
@@ -1521,7 +1528,7 @@ off search matches. The complications arise when
 we intend to override the internal <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> search
 algorithms to match against encoded text instead
 (given the problems of <styled-content use="emph-acronym"><abbrev>PDF</abbrev></styled-content> queries from
-hyphenation, ligatures, etc., as well as
+hyphenation, ligatures, etc.), as well as
 inability to restrict matches to such contexts
 as quotes or footnotes. If users expect highlight
 cues and a search runs against embedded or sibling
@@ -1538,8 +1545,8 @@ of any restrictions, every sentence in a document should
 thus be checked, with potential branching to account
 for <styled-content use="double-quote">nesting</styled-content> relationships (as with footnotes and block quotes, potentially)
 as well as divergent possibilities for <styled-content use="double-quote">next sibling</styled-content> (consider a footnote
-marked just after the end of one sentence: we can consider the discourse
-as continuing on two tracks, one within the footnote and one the main text.
+marked just after the end of one sentence: we can visualize the discourse
+as continuing on two tracks, one within the footnote and one continuing the main text.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
@@ -1550,7 +1557,7 @@ explicitly narrow the scope to exclude or include specific
 areas of text. They might filter searches to consider
 only main document content, not (say) footnotes or endnotes;
 conversely, perhaps they <i>only</i> want to search within
-footnote, quotes, bulleted content, etc. From a topomorphic
+footnote lines, quotes, bulleted content, etc. From a topomorphic
 perspective, the relevant details here are not so much
 the explicit <styled-content use="double-quote">tags</styled-content> or other markup via which special
 segments like quotes and footnotes are introduced, but
@@ -1565,8 +1572,8 @@ with one or more specific <i>facets</i> (not specific
 presentational features as well, such as italics or sans-serif.
 Such restrictions might come into effect if a user is seeking
 to find a passage they had read earlier, for instance,
-and remembers certain words that were present and also
-some styling details.
+remembering certain words that were present and recalls
+some of their styling details.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
@@ -1590,7 +1597,7 @@ for by algorithms for searching and related tasks
 some string to match a query, and if so, how
 should their special status be notated in the match-result
 context)? Meanwhile, specialized segments such as
-chemical formulae, phonemic transcriptions (for linguistics
+chemical formulae, genus/species names, phonemic transcriptions (for linguistics
 papers), etc., might need both distinct representations
 and customized treatment for query matching.
 </p> <!--/p.1-->
@@ -1602,7 +1609,8 @@ and customized treatment for query matching.
 individual letters and symbols. Conceptually, a
 reasonable assumption is that every character in a
 document (at least for English and most other languages)
-can be reported as a two-byte <styled-content use="emph-acronym"><abbrev>UTF-16</abbrev></styled-content> code point.
+can be reported as a two-byte <styled-content use="emph-acronym"><abbrev>UTF-16</abbrev></styled-content> code point
+(albeit maybe <i>stored</i> with <i>one</i> byte).
 But, expressive though it is, Unicode is arguably
 flawed in the context of representing glyphs that
 are visibly identical but functionally distinct,
@@ -1631,14 +1639,19 @@ possible,
 
 <fn>There is no guarantee that the program wherever
 the copied content is pasted will understand anything
-other than alphanumerics and basic punctuation</fn>
+other than alphanumerics and basic punctuation.</fn>
         <!--leave footnote-->
 
-perhaps
+ perhaps
 even restricted to <styled-content use="emph-acronym" lc-status="some-lower" >Latin1</styled-content> (so
 that <styled-content use="double-quote">curly</styled-content> single and double quotes, say, are
 replaced by their straight and non-chiral versions).
-On the other hand, multiple forms might
+</p> <!--/p.1-->
+    <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+    <p id="50">On the other hand, multiple forms might
 be present in query/search strings. For example,
 suppose a desired match is one single word enclosed
 in double quotes. Quite plausibly the <styled-content use="double-quote">input</styled-content> to
@@ -1654,7 +1667,7 @@ is more involved than simply comparing numeric glyph-codes.
 Likewise, a text-query engine should assume that results
 might be requested in a variety of formats (<styled-content use="emph-acronym" lc-status="some-lower" >Latin1</styled-content>, <styled-content use="emph-acronym"><abbrev>UTF-16</abbrev></styled-content>,
 <styled-content use="emph-acronym"><abbrev>HTML</abbrev></styled-content>, etc.) such that how text is conveyed, in a variety of
-potential reporting protocol, becomes data for each
+potential reporting protocols, becomes data for each
 text element (e.g., sentence objects) that might deviate
 from how such content is internally represented. Similarly,
 how should results note the presence of footnote markers;
@@ -1665,9 +1678,9 @@ of ellipses and emendations for quotes; etc.?
 
 
 <!--enter p.1-->
-    <p id="50">In short, there are structural differences between <i>query input</i>
-formats, internal (object-based) encoding, and various result
-<i>output</i> formats, and nontrivial algorithms might be
+    <p id="51">In short, there are structural differences between <i>query input</i>
+formats, <i>internal</i> (object-based) encoding, and various result
+<i>output</i> formats; and nontrivial algorithms might be
 needed to map both the first to second (and evaluate potential
 matches) and the second to the third. All of these details
 should be considered by a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> whose roles include serving as a
@@ -1693,7 +1706,7 @@ to initialize all data relevant for the <styled-content use="emph-acronym"><abbr
 
 
 <!--enter p.1-->
-    <p id="51">Meanwhile, a text-query <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> might have opcodes specifically
+    <p id="52">Meanwhile, a text-query <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> might have opcodes specifically
 focused on navigation between/within sentence objects and
 related text elements. Defining a rigorous <styled-content use="double-quote">topomorphic</styled-content>
 model of written discourse's structures is a nontrivial
@@ -1709,8 +1722,8 @@ but merely the more abstract observation that these are
 the kinds of issues that have to be resolved
 for a <styled-content use="double-quote">topomorphic regime</styled-content> supporting traversal
 across text documents, with a detailed model of
-what constitutes a single discourse <styled-content use="double-quote">site</styled-content>,
-what data is immediately accessible from the site-neighborhood,
+what constitutes a single discourse <styled-content use="double-quote">site</styled-content>;
+what data is immediately accessible from the site-neighborhood;
 and what criteria come into play when navigating
 from one site to another.
 </p> <!--/p.1-->
@@ -1718,7 +1731,7 @@ from one site to another.
 
 
 <!--enter p.1-->
-    <p id="52">In a Research Object context, a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> could be applied both for
+    <p id="53">In a Research Object context, a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> could be applied both for
 text-search queries against documents and queries in general
 (or scripting) for data sets. In this sense, apart from
 topomorphic capabilities specific to the structures of
@@ -1739,7 +1752,7 @@ document manuscripts specifically.
 
 
 <!--enter p.1-->
-    <p id="53">With that said, I will defer further discussion about text
+    <p id="54">With that said, I will defer further discussion about text
 searching for now and pivot to an examination of
 Research Object <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content>s in more general data-encoding contexts.
 </p> <!--/p.1-->
@@ -1755,15 +1768,15 @@ Research Object <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-c
 
 
 <!--enter p.1-->
-    <p id="54">For reasons already discussed, the kind of <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> relevant for this
+    <p id="55">For reasons already discussed, the kind of <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> relevant for this
 paper would be designed for an Executable Research Object
 context and, in particular, an environment where
 most or all components are distributed in source-code
 fashion. Special attention is therefore necessary
-to ensure that a stack sufficient to support (at least modest)
-script and query-language capabilities can be developed
+to ensure that a technology stack sufficient to support (at least modest)
+scripting and query-language capabilities can be developed
 in an accordingly standalone fashion, with limited
-external dependencies, included compilers for front-end
+external dependencies, and including compilers for front-end
 code and whatever logic is relevant for processing and
 transforms applicable to intermediate representations.
 For obvious reasons, these requirements preclude
@@ -1774,10 +1787,10 @@ such as <styled-content use="emph-acronym"><abbrev>LLVM</abbrev></styled-content
 
 
 <!--enter p.1-->
-    <p id="55">In the landscape of programming languages, a few are
+    <p id="56">In the landscape of programming languages, a few are
 mostly self-contained in the sense that installing the
 language from a source package is relatively straightforward,
-and does not require a user to first have something like
+and does not require users to first have something like
 <styled-content use="emph-acronym"><abbrev>LLVM</abbrev></styled-content> or <styled-content use="emph-acronym" lc-status="some-lower" >libClang</styled-content> on hand. Two examples that I
 am familiar with, and which might be relevant as case-studies,
 are <styled-content use="emph-acronym"><abbrev>ECL</abbrev></styled-content> (Embeddable Common Lisp)
@@ -1788,13 +1801,13 @@ here, partly because &#x2014; despite being well-designed from the
 perspective of (and to the extent that such is desired to be
 begin with) the languages in their totality, as
 computational artifacts (i.e., the full stack needed to
-execute scripts, with compilation and bytecode as implementation
-needed) are comparatively straightforward to compile &#x2014; these
+execute scripts, with compilation and bytecode interpretation
+as necessary) are comparatively straightforward to compile &#x2014; these
 components are not primarily intended as providing
 scripting/query layers for other code which is <i>also</i>
 distributed from source. For whatever reason,
 almost surely <styled-content use="emph-acronym"><abbrev>ECL</abbrev></styled-content> and <styled-content use="emph-acronym" lc-status="some-lower" >AngelScript</styled-content> (and
-other lesser-known languages with similar benefits) are not used very
+other lesser-known languages with similar benefits) are not utilized very
 often for code supporting (and packaged within)
 data sets or Research Objects.
 </p> <!--/p.1-->
@@ -1802,7 +1815,7 @@ data sets or Research Objects.
 
 
 <!--enter p.1-->
-    <p id="56">Moreover (and granted this is a more subjective point) these languages
+    <p id="57">Moreover (and granted this is a more subjective point) these languages
 do not appear to be implemented in a fashion that is
 explicitly oriented toward customization and adaptation
 for individual data sets. The kind of compiler and
@@ -1822,7 +1835,7 @@ the internal code for languages like <styled-content use="emph-acronym"><abbrev>
 
 
 <!--enter p.1-->
-    <p id="57">In this discussion I will assume that the language and
+    <p id="58">In this discussion I will assume that the language and
 any components it interacts with are written in <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>.
 This is partly because the prototype compiler and
 <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> I will occasionally refer to are written in <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>,
@@ -1837,14 +1850,14 @@ I discuss involve techniques specific to <styled-content use="emph-acronym"><abb
 is entirely possible that similar <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content>s, potentially
 executing the exact same bytecode, could be programmed
 in other languages (<styled-content use="emph-acronym" lc-status="some-lower" >Java</styled-content>, <styled-content use="emph-acronym" lc-status="some-lower" >JavaScript</styled-content>, etc.) &#x2014;
-which of course would be more conducive to some use-cases
+which of course would be more conducive to some use cases
 I identified above, such as cross-platform deserialization.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-    <p id="58">To be clear then, I envision Executable Research Objects
+    <p id="59">To be clear then, I envision Executable Research Objects
 where <i>both</i> an internal scripting and/or query language
 and <i>also</i> major <styled-content use="emph-acronym"><abbrev>GUI</abbrev></styled-content> and analytic components
 are coded in <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> and distributed within the data set
@@ -1862,7 +1875,7 @@ for customizations, like <styled-content use="emph-acronym" lc-status="some-lowe
 or <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> itself (as an interpreted language) in <styled-content use="emph-acronym"><abbrev>CERN</abbrev></styled-content>-<styled-content use="emph-acronym"><abbrev>ROOT</abbrev></styled-content>.
 Clearly the entirety of <styled-content use="emph-acronym" lc-status="some-lower" >ParaView</styled-content>, <styled-content use="emph-acronym" lc-status="some-lower" >ArcGIS</styled-content>, <styled-content use="emph-acronym" lc-status="some-lower" >OpenCV</styled-content>,
 or <styled-content use="emph-acronym"><abbrev>ROOT</abbrev></styled-content> (not to mention <styled-content use="emph-acronym"><abbrev>LLVM</abbrev></styled-content> and <styled-content use="emph-acronym" lc-status="some-lower" >Clang</styled-content> for the latter)
-and all their dependencies cannot feasbily be included
+and all their dependencies cannot feasibly be included
 within a single data set. These are conceived instead
 as tools scientists install (probably from binary)
 and use on many occasions for their research work.
@@ -1882,7 +1895,7 @@ the published material in depth).
 
 
 <!--enter p.1-->
-    <p id="59">While acknowledging such scenarios as entirely proper and
+    <p id="60">While acknowledging such scenarios as entirely proper and
 common, my point here is that there are other purposes
 for research publications wherein avoiding
 dependencies on large, external platforms is desirable.
@@ -1901,7 +1914,7 @@ larger platforms (<styled-content use="emph-acronym" lc-status="some-lower" >Par
 
 
 <!--enter p.1-->
-    <p id="60">But with that said, having to micro-customize
+    <p id="61">But with that said, having to micro-customize
 scientific <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> code can still add extra development
 time to a data-publishing project. Again, I am
 envisioning data sets including <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> classes that
@@ -1932,7 +1945,7 @@ like those being fine-tuned.
 
 
 <!--enter p.1-->
-    <p id="61">I therefore see numerous use cases for a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> to buttress
+    <p id="62">I therefore see numerous use cases for a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> to buttress
 scripting or query languages that express
 customizations that would be more complex
 to achieve via manually editing <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> code itself.
@@ -1951,7 +1964,7 @@ serve more as generic languages in their own right.
 
 
 <!--enter p.1-->
-    <p id="62">Conceptually, a <styled-content use="double-quote">foreign-function interface</styled-content> (<styled-content use="emph-acronym"><abbrev>FFI</abbrev></styled-content>) to
+    <p id="63">Conceptually, a <styled-content use="double-quote">foreign-function interface</styled-content> (<styled-content use="emph-acronym"><abbrev>FFI</abbrev></styled-content>) to
 <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> procedures is relatively straightforward. The called
 procedures themselves can be identified via function
 pointers (in the case of pointer-to-members, a trivial
@@ -1965,19 +1978,19 @@ of all arguments match what the procedure expects.
 note on words such as <styled-content use="double-quote">procedure</styled-content> and <styled-content use="double-quote">function</styled-content>. In most
 contexts I prefer the former, because there is less confusion
 with the more mathematical sense of <styled-content use="double-quote">function</styled-content> as a
-value-to-value mapping. Conversely, when discussion language
+value-to-value mapping. Conversely, when discussing language
 implementation and specification for the likes of <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>,
 <styled-content use="double-quote">function</styled-content> is the more common term. I believe a useful
-contrast is as follows: <styled-content use="double-quote">procedure</styled-content> can typically be
+contrast is as follows: <styled-content use="double-quote">procedures</styled-content> can typically be
 understood as functions with implementation bodies
 actually written in source code. Note that
 functions sometimes have algebraic relationships
 wherein they may be considered individual values:
 the composition <styled-content use="emph-macro"><![CDATA[fOFg]]></styled-content> means to call <styled-content use="emph-highlight">g</styled-content> first,
 then <styled-content use="emph-highlight">f</styled-content> with its result. Here <styled-content use="double-quote">composition</styled-content>
-acts like a binary operator on two function values.
+acts like a binary operator on two function objects.
 For languages that support similar notation,
-certain function-values could be expressed
+certain functional values could be expressed
 without an implementation body on their
 own. This leaves open the possibility
 of construing functions as a superset of procedures,
@@ -1992,7 +2005,7 @@ indirectly.</fn>
 
 
 <!--enter p.1-->
-    <p id="63">Details like mutable references, exceptions, the presence
+    <p id="64">Details like mutable references, exceptions, the presence
 or absence of return values, and static versus object methods
 complicate the picture a little, but still for <i>most</i>
 <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> procedures it is possible to compress all data needed
@@ -2020,7 +2033,7 @@ idea of a compiler and <styled-content use="emph-acronym"><abbrev>VM</abbrev></s
 
 
 <!--enter p.1-->
-    <p id="64">Some of the demo code which works off of micro-signatures
+    <p id="65">Some of the demo code which works off of micro-signatures
 was generated automatically, and it does have the
 limitation that not every semantically meaningful micro-signature
 code <styled-content use="double-quote">works</styled-content> with the switch-branching mechanism
@@ -2044,7 +2057,7 @@ of the supported equivalence classes.
 
 
 <!--enter p.1-->
-    <p id="65">Another idiosyncratic of the demo <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> is what the code
+    <p id="66">Another idiosyncratic aspect of the demo <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> is what the code
 calls <styled-content use="double-quote">channels</styled-content>. The goal here is to design an
 abstract/ generic model that
 could be adopted to different calling conventions and
@@ -2072,7 +2085,7 @@ only modest resource usage).
 
 
 <!--enter p.1-->
-    <p id="66">Although other use cases will be mentioned later, the main
+    <p id="67">Although other use cases will be mentioned later, the main
 purpose of channels is to supply a larger perimeter of
 <styled-content use="double-quote">hooks</styled-content> where observer code can identify either via
 static analysis or at runtime. For one thing, channels
@@ -2097,7 +2110,7 @@ between procedures.
 
 
 <!--enter p.1-->
-    <p id="67">More generally, the channel system yields well-defined execution
+    <p id="68">More generally, the channel system yields well-defined execution
 points pertaining to phenomena such as value-reassignment
 (for mutable variables) and type-casts. Channels are
 technically deques (double-ended queues) where values
@@ -2121,7 +2134,7 @@ than other scripting languages, I believe.
 
 
 <!--enter p.1-->
-    <p id="68">Another purpose for channels is to support a wider range of
+    <p id="69">Another purpose for channels is to support a wider range of
 inter-procedure communication behind the scenes,
 some use cases for which will be discussed in the next section.
 </p> <!--/p.1-->
@@ -2137,7 +2150,7 @@ some use cases for which will be discussed in the next section.
 
 
 <!--enter p.1-->
-    <p id="69">As discussed, one purpose for scripts within Executable Research Objects
+    <p id="70">As discussed, one purpose for scripts within Executable Research Objects
 is to document analyses and data structures pertinent to
 published investigations. The resulting programs are not necessarily
 exactly the same as originary code, but they can introduce or
@@ -2155,7 +2168,7 @@ techniques visible through the sources.
 
 
 <!--enter p.1-->
-    <p id="70">There are multiple ways of handling such details as
+    <p id="71">There are multiple ways of handling such details as
 algorithm preconditions, including <styled-content use="double-quote">assert</styled-content> statements,
 boolean checks performed prior to a procedure entering
 its primary logic, exceptions, comments, and code
@@ -2176,7 +2189,7 @@ that incorporate these features.
 
 
 <!--enter p.1-->
-    <p id="71">Consider <styled-content use="emph-acronym" lc-status="some-lower" >DbC</styled-content> in particular. The fundamental insight
+    <p id="72">Consider <styled-content use="emph-acronym" lc-status="some-lower" >DbC</styled-content> in particular. The fundamental insight
 behind code contracts is that procedures' implementation
 bodies will often make specific assumptions about
 their parameters (or other relevant values) that are
@@ -2202,7 +2215,7 @@ simply via procedures' type signatures.
 
 
 <!--enter p.1-->
-    <p id="72">For another concrete example, consider a procedure
+    <p id="73">For another concrete example, consider a procedure
 whose role is to initialize a <styled-content use="double-quote">double-associative</styled-content>
 array or <styled-content use="double-quote">reversible map</styled-content>; that is, a tuple of pairs that uniquely map
 each key to a unique value, so the association
@@ -2210,8 +2223,8 @@ may be inverted (keys can be obtained from values
 as much as vice-versa). To build such a container,
 one must naturally start with two lists of instances,
 the first corresponding to the key type and the
-second to the value type. For invertability,
-the two lists must be the same size. The most
+second to the value type. For invertibility,
+the two lists must be of equal size. The most
 direct implementation &#x2014; uncluttered by sanity
 checks &#x2014; would simply assume this as a precondition.
 </p> <!--/p.1-->
@@ -2219,7 +2232,7 @@ checks &#x2014; would simply assume this as a precondition.
 
 
 <!--enter p.1-->
-    <p id="73">Procedures creating a double-array might therefore
+    <p id="74">Procedures creating a double-array might therefore
 take two lists and moreover stipulate that the
 lists are the same size. One question is then
 how to enforce this. Such a procedure could simply
@@ -2236,7 +2249,7 @@ simply assume that the lists are indeed same-sized.
 
 
 <!--enter p.1-->
-    <p id="74">Explicitly checking preconditions
+    <p id="75">Explicitly checking preconditions
 via <styled-content use="emph-highlight">if</styled-content><styled-content use="emph-highlight">then</styled-content> tests is better than blind faith, all else being
 equal, but that convention does violate
 <styled-content use="double-quote">separation of concerns</styled-content>: arguably, checking
@@ -2254,7 +2267,7 @@ understand and maintain the code.
 
 
 <!--enter p.1-->
-    <p id="75">Steps to guarantee that contract-annotated procedures
+    <p id="76">Steps to guarantee that contract-annotated procedures
 are <i>only</i> called with preconditions duly satisfied
 can be taken either at runtime or compile time (or both).
 In general, compilers can assess whether it is <i>possible</i>
@@ -2273,7 +2286,7 @@ intervention.
 
 
 <!--enter p.1-->
-    <p id="76">A related question is how to handle execution paths when
+    <p id="77">A related question is how to handle execution paths when
 we get to the point where it is established that a precondition
 is not honored. The most common approach appears to be
 falling back on a language's exception mechanism, or something
@@ -2292,7 +2305,7 @@ employed by most <styled-content use="emph-acronym" lc-status="some-lower" >DbC<
 
 
 <!--enter p.1-->
-    <p id="77">This all seems wrong. I believe a more intuitive
+    <p id="78">This all seems wrong. I believe a more intuitive
 framework would employ what might be called <styled-content use="double-quote">overload by contract</styled-content>,
 in which the presence of absence of violations serves as
 state-variations suitable for overloading. I hesitate
@@ -2300,14 +2313,14 @@ to claim definitively that something along those lines
 is indeed rather counter-paradigmatic in programming language
 design, because its omission is puzzling, which might
 signal that I'm missing something. But in any case, a
-<styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> use-case I wish to examine here is to support <styled-content use="double-quote">Overload by Contract</styled-content>
+<styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> use case I wish to examine here is to support <styled-content use="double-quote">Overload by Contract</styled-content>
 (<styled-content use="emph-acronym" lc-status="some-lower" >ObC</styled-content>) as one version of <styled-content use="emph-acronym" lc-status="some-lower" >DbC</styled-content>.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
 
 
 <!--enter p.1-->
-    <p id="78">Consider again the double-array example. At any point in time, there are
+    <p id="79">Consider again the double-array example. At any point in time, there are
 essentially three possibilities: we might have enough information
 to confirm that the list-size precondition is satisfied; or, we might
 know that it is <i>not</i> satisfied; or, that status might still be
@@ -2324,7 +2337,8 @@ to match the shorter, or supply default values for unpaired keys
 be default <i>constructed</i></fn>
         <!--leave footnote-->
 
- A <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> compiler and runtime should not attept to
+ A <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> compiler and
+runtime should not attempt to
 guess which approach is better for a given program. Instead, it
 can stipulate that whenever a procedure is annotated as governed
 by a contract precondition, it must be paired with an implementation
@@ -2336,7 +2350,7 @@ implemented for the derived class.
 
 
 <!--enter p.1-->
-    <p id="79">On the other hand, if we are in a program-state where the precondition
+    <p id="80">On the other hand, if we are in a program-state where the precondition
 is not known to either pass or fail, an obvious solution in general
 is simply to test it, and then call one or the other
 <styled-content use="double-quote">overload</styled-content> in response. In a same-size list case, logic
@@ -2351,7 +2365,7 @@ which of several possible follow-up procedures should be called.
 
 
 <!--enter p.1-->
-    <p id="80">Continuing the double-array case, suppose the main procedure
+    <p id="81">Continuing the double-array case, suppose the main procedure
 is called within the scope of a statement-block wherein the
 size of the two lists is explicitly checked. If they
 evaluate equal (as in <styled-content use="emph-highlight">x.size() == y.size()</styled-content> or similar) and no
@@ -2363,7 +2377,7 @@ governed by the contract.
 
 
 <!--enter p.1-->
-    <p id="81">We should avoid, however, designing a compiler where too much subtle reasoning
+    <p id="82">We should avoid, however, designing a compiler where too much subtle reasoning
 is expected. For one thing, compilers in this lightweight context should
 be as simple as possible. For another, it is helpful for preconditions
 to be explicitly notated in code &#x2014; both at call-sites and within
@@ -2378,7 +2392,7 @@ by one and thereby changes its type).
 
 
 <!--enter p.1-->
-    <p id="82">In practice, then, we should not assume even that the compiler would recognize an
+    <p id="83">In practice, then, we should not assume even that the compiler would recognize an
 <styled-content use="emph-symbol">if</styled-content>-expression like <styled-content use="emph-highlight">x.size() == y.size()</styled-content> as testing the exact same state of affairs
 that is reported necessary for a contract. Instead, accept the notion
 that programmers need to hold the compiler's hand somewhat, both to make
@@ -2396,7 +2410,7 @@ to evaluate not only to a boolean return value but to a <styled-content use="dou
 
 
 <!--enter p.1-->
-    <p id="83">When an <styled-content use="emph-highlight">if</styled-content>/<styled-content use="emph-highlight">then</styled-content> construction does involve a <i>reified</i> boolean I assume
+    <p id="84">When an <styled-content use="emph-highlight">if</styled-content>/<styled-content use="emph-highlight">then</styled-content> construction does involve a <i>reified</i> boolean I assume
 this object remains <styled-content use="double-quote">in scope</styled-content> for the associated code blocks; and
 that similar branching or loop formations could have similar
 conventions. Conceptually, <styled-content use="emph-highlight">if-then-else</styled-content>, <styled-content use="emph-highlight">do-while</styled-content>, etc., are not
@@ -2411,7 +2425,7 @@ analogy to how a closure captures variables from enclosing scopes).
 
 
 <!--enter p.1-->
-    <p id="84">The notion of <styled-content use="double-quote">channels</styled-content> also comes into play.
+    <p id="85">The notion of <styled-content use="double-quote">channels</styled-content> also comes into play.
 Conceptually, channels capture data from a call-site scope. If a procedure
 declares its reliance on or assumption of a contract &#x2014; e.g.,
 two of its parameters having equal list-size &#x2014; then in the
@@ -2440,7 +2454,7 @@ proof object that matches the callee's contract.
 
 
 <!--enter p.1-->
-    <p id="85">Notice that operations performed in the same scope as
+    <p id="86">Notice that operations performed in the same scope as
 the proof object could render the proof invalid;
 if, say, new values are added to the key-list but not
 the value-list paired with it for the double-array. In
@@ -2462,7 +2476,7 @@ do not apply in the current scope.
 
 
 <!--enter p.1-->
-    <p id="86">A reasonable alternative is to assume that a proof
+    <p id="87">A reasonable alternative is to assume that a proof
 in scope will remain valid through the duration of the
 scope. It is then the programmer's responsibility
 to avoid conflicting calls. The point here is not
@@ -2475,7 +2489,7 @@ obligations that must be fulfilled.
 
 
 <!--enter p.1-->
-    <p id="87">There are also cases where a codewriter might be confident
+    <p id="88">There are also cases where a codewriter might be confident
 that the kind of proof embodied by a reified boolean
 applies even in the absence of a test like
 <styled-content use="emph-highlight">x.size() == y.size()</styled-content>. If the second list
@@ -2501,7 +2515,7 @@ as an assertion.</fn>
 
 
 <!--enter p.1-->
-    <p id="88">This arrangement &#x2014; coupled with an Overload by Contract
+    <p id="89">This arrangement &#x2014; coupled with an Overload by Contract
 convention that procedures requiring contracts
 are overloaded in several versions (at least, those for
 pass, fail, and testing of a relevant contract) &#x2014; may
@@ -2524,7 +2538,7 @@ to guide compilation steps that might be convoluted otherwise.
 
 
 <!--enter p.1-->
-    <p id="89">Another situation where channels can have a similar role comes
+    <p id="90">Another situation where channels can have a similar role comes
 into play in cases where procedures return values that are
 too large (in number of bytes) for return-by-value semantics.
 </p> <!--/p.1-->
@@ -2532,7 +2546,7 @@ too large (in number of bytes) for return-by-value semantics.
 
 
 <!--enter p.1-->
-    <p id="90">Consider return and/or initialization options in <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, on the
+    <p id="91">Consider return and/or initialization options in <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, on the
 assumption that we are not just returning by value, due to size concerns. One possibility is to allocate a pointer
 in the callee, ownership of which is taken over by the
 caller. Another option is for the
@@ -2548,7 +2562,7 @@ supplied later. This cannot be assumed for all types.
 
 
 <!--enter p.1-->
-    <p id="91">A more exotic solution that circumvents the issue just noted
+    <p id="92">A more exotic solution that circumvents the issue just noted
 is for the caller to allocate a buffer with the proper
 memory-size and the callee to initialize <i>that</i> via
 placement new. The memory itself could then come either
@@ -2572,7 +2586,7 @@ which also addresses lifetime issues as discussed next.</fn>
 
 
 <!--enter p.1-->
-    <p id="92">Which alternative is most convenient from a caller's point
+    <p id="93">Which alternative is most convenient from a caller's point
 of view? Pass-by-reference is a common <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> pattern:
 simply declare an object, which (assuming it is a class instance
 and not a primitive type) will trigger calling
@@ -2587,7 +2601,7 @@ initialization effectuated by the called procedure.
 
 
 <!--enter p.1-->
-    <p id="93">This might seem to be a minor annoyance, but admittedly
+    <p id="94">This might seem to be a minor annoyance, but admittedly
 a form where a procedure returns a pointer, which is
 assigned to a variable initialized at that point,
 is closer to how the code is conceived: the
@@ -2603,7 +2617,7 @@ its lifetime.
 
 
 <!--enter p.1-->
-    <p id="94">From the callee's perspective, the question of how to
+    <p id="95">From the callee's perspective, the question of how to
 package its result is tangential to the main
 concern, which is to perform whatever
 steps and calculations are needed to fully initialize
@@ -2625,7 +2639,7 @@ of temporary objects.
 
 
 <!--enter p.1-->
-    <p id="95">Apart from illustrating one use for channels, these
+    <p id="96">Apart from illustrating one use for channels, these
 points are relevant to the general protocols
 and style of a scripting language. Observe
 that passing an object/ value by (non-constant) reference
@@ -2653,7 +2667,7 @@ report on the various effects a procedure has triggered.
 
 
 <!--enter p.1-->
-    <p id="96">Likewise, consider a procedure that has certain side
+    <p id="97">Likewise, consider a procedure that has certain side
 effects and then returns a value. It may be that the
 <i>primary</i> purpose of the procedure are those
 effects, and that the return value is mostly for sanity
@@ -2665,7 +2679,7 @@ unavoidable while doing so.
 
 
 <!--enter p.1-->
-    <p id="97">These various possibilities probably are not clearly
+    <p id="98">These various possibilities probably are not clearly
 demarcated, and it might be a subjective judgment as
 to what purposes or effects are <styled-content use="double-quote">primary</styled-content> and <styled-content use="double-quote">secondary</styled-content>.
 Still, programmers and maintainers will reason
@@ -2683,7 +2697,7 @@ or instead only <i>might</i> be modified.
 
 
 <!--enter p.1-->
-    <p id="98">In <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, moreover, pass-by-reference serves as a workaround
+    <p id="99">In <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, moreover, pass-by-reference serves as a workaround
 against both multiple-value-return limitations
 and reluctance to return large byte-sizes.
 In other words, often objects are passed
@@ -2696,7 +2710,7 @@ the callee.
 
 
 <!--enter p.1-->
-    <p id="99">A scripting language &#x2014; with more freedom to tweak its
+    <p id="100">A scripting language &#x2014; with more freedom to tweak its
 syntax &#x2014; could do a better job of flagging its caller/callee
 semantics. For example, assignments (in <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content>, the left
 side of a basic operator equals) may be
@@ -2712,7 +2726,7 @@ and then passed by reference will first be
 
 
 <!--enter p.1-->
-    <p id="100">A scripting language could be more profligate in using
+    <p id="101">A scripting language could be more profligate in using
 separate syntactic forms to differentiate these various
 semantic possibilities. In the case of pointer-return
 versus pass-by-reference (or <styled-content use="emph-acronym"><abbrev>RVO</abbrev></styled-content>)
@@ -2739,7 +2753,7 @@ into the Janus, to serve as a return value.
 
 
 <!--enter p.1-->
-    <p id="101">My overarching point is that, for procedures whose signatures include
+    <p id="102">My overarching point is that, for procedures whose signatures include
 a Janus channel, their interface subsumes both pass-by-(nonconst)reference
 and pointer-return semantics. An important detail here is the
 lifetime for Janus values. Supposing an object is initialized
@@ -2775,7 +2789,7 @@ to their scope's end) or aligned with sibling variables.</fn>
 
 
 <!--enter p.1-->
-    <p id="102">Procedures' <styled-content use="double-quote">interface</styled-content> is more than just an implementation detail,
+    <p id="103">Procedures' <styled-content use="double-quote">interface</styled-content> is more than just an implementation detail,
 furthermore, because at least some routines within a code library
 are <styled-content use="double-quote">semantic</styled-content> entities that should be searched and documented
 alongside other textual and data content. An Executable Research
@@ -2793,7 +2807,7 @@ column labels (plus columns' types, units, etc.).
 
 
 <!--enter p.1-->
-    <p id="103">The analogous documentation for computer code would be searching
+    <p id="104">The analogous documentation for computer code would be searching
 data types, fields, procedures, and so forth. We can assume
 Research Objects will try to compile a sort of concordance
 listing (at least public-interface) procedure names, signatures,
@@ -2808,7 +2822,7 @@ relying on source comments.
 
 
 <!--enter p.1-->
-    <p id="104">One possibility is to run scripts at the point where the
+    <p id="105">One possibility is to run scripts at the point where the
 <styled-content use="double-quote">executable</styled-content> resource(s) of an Executable Research Object
 start up; scripts with the responsibility of building
 a search/documentation concordance, carrying more
@@ -2831,7 +2845,7 @@ into search and documentation assets.
 
 
 <!--enter p.1-->
-    <p id="105">Constraints such as two lists having the same size,
+    <p id="106">Constraints such as two lists having the same size,
 which here I have examined via contracts, are also studied
 in terms of dependent type theory. A type whose instances
 are lists of length <styled-content use="emph-macro"><![CDATA[lLen]]></styled-content> is <styled-content use="double-quote">dependent</styled-content> in that
@@ -2907,7 +2921,7 @@ in the channel package.
 
 
 <!--enter p.1-->
-    <p id="106">It is <i>not</i> a matter of strong dependence
+    <p id="107">It is <i>not</i> a matter of strong dependence
 to construct a type whose instances are <i>pairs of</i>
 lists having the same size. Here one would merely
 check in the constructor that this invariant
@@ -2929,7 +2943,7 @@ implemented via contracts or other precondition enforcement).
 
 
 <!--enter p.1-->
-    <p id="107">Expressing relevant constraints via <styled-content use="double-quote">just</styled-content> the type
+    <p id="108">Expressing relevant constraints via <styled-content use="double-quote">just</styled-content> the type
 system is an interesting possibility because we then
 have a single framework for expressing a wide variety
 of preconditions, rather than dividing this into
@@ -2969,7 +2983,7 @@ are extensionally equivalent.
 
 
 <!--enter p.1-->
-    <p id="108">In a language such as <styled-content use="emph-acronym" lc-status="some-lower" >Idris</styled-content>, where dependent
+    <p id="109">In a language such as <styled-content use="emph-acronym" lc-status="some-lower" >Idris</styled-content>, where dependent
 typing is built in intrinsically, types
 become essentially <styled-content use="double-quote">runtime</styled-content> phenomena
 not substantially different from values as such.
@@ -2987,7 +3001,7 @@ more or less inapplicable in the former context.
 
 
 <!--enter p.1-->
-    <p id="109">Consider what happens when a dependent type
+    <p id="110">Consider what happens when a dependent type
 is passed to a procedure &#x2014; e.g., a
 list <styled-content use="emph-highlight">y</styled-content> of length <SA-nmbr>5</SA-nmbr>.
 This is a <i>runtime</i> detail
@@ -3014,7 +3028,7 @@ in the context of behavior affected by <styled-content use="emph-highlight">y</s
 
 
 <!--enter p.1-->
-    <p id="110">However, if we end up treating this size as
+    <p id="111">However, if we end up treating this size as
 only a runtime detail, we aren't really
 exploiting <styled-content use="emph-highlight">y</styled-content>'s <i>dependent</i> type
 in the first case. In effect, any procedure
@@ -3037,7 +3051,7 @@ but not computational purposes.
 
 
 <!--enter p.1-->
-    <p id="111">One way to see this explicitly is to consider
+    <p id="112">One way to see this explicitly is to consider
 the procedure being templated in terms
 of <styled-content use="emph-highlight">y</styled-content>'s type. In a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> context, we
 can assume that each different template
@@ -3075,7 +3089,7 @@ characterization asserted relative to <styled-content use="emph-highlight">y</st
 
 
 <!--enter p.1-->
-    <p id="112">None of which precludes developing something
+    <p id="113">None of which precludes developing something
 like a dependent type system, but the
 class of <styled-content use="double-quote">dependent</styled-content> types has to be
 recognized as fundamentally different
@@ -3104,7 +3118,7 @@ than its actual (compile-time) type.
 
 
 <!--enter p.1-->
-    <p id="113">The idea of using types to express
+    <p id="114">The idea of using types to express
 runtime conditions is plausible because
 there may be some details that are guaranteed
 within the logic of one type but not another.
@@ -3124,7 +3138,7 @@ is that <styled-content use="emph-highlight">f</styled-content> is <styled-conte
 
 
 <!--enter p.1-->
-    <p id="114">But what sense? We need a systematic
+    <p id="115">But what sense? We need a systematic
 way to discuss how types themselves enforce
 preconditions (or invariants across their extension).
 One tactic is to consider the overall contract
@@ -3144,7 +3158,7 @@ defined on such procedures.
 
 
 <!--enter p.1-->
-    <p id="115">But with this setup, we are free to abstract constructor
+    <p id="116">But with this setup, we are free to abstract constructor
 contracts from constructors' implementations.
 Consider a type of all floats whose integer
 value is exactly <styled-content use="emph-highlight">n</styled-content>. The check for a
@@ -3165,7 +3179,7 @@ without some bytecode sequence being duplicated).
 
 
 <!--enter p.1-->
-    <p id="116">In short, some form of dependent
+    <p id="117">In short, some form of dependent
 types could be allowed if they are
 implemented more as value-annotations
 consistent with templating mechanisms
@@ -3180,7 +3194,7 @@ might be supported in a (comparatively lightweight) <styled-content use="emph-ac
 
 
 <!--enter p.1-->
-    <p id="117">Of course, I have implicitly
+    <p id="118">Of course, I have implicitly
 made assumptions about the
 <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> in question. Clearly the
 <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> would work in general with
@@ -3205,7 +3219,7 @@ these are reasonable assumptions.
 
 
 <!--enter p.1-->
-    <p id="118">Here I address some further details about how
+    <p id="119">Here I address some further details about how
 such <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content>s could employ robust type objects.
 This will lead to points about language
 extensibility, that belong to a broader
@@ -3224,7 +3238,7 @@ as back-end code generators.
 
 
 <!--enter p.1-->
-    <p id="119">Similar to contracts and channels, units and scales of
+    <p id="120">Similar to contracts and channels, units and scales of
 measurement straddle implementation and documentation.
 The key goal in this context is to ensure that
 procedures are called with quantities scaled in a consistent
@@ -3239,7 +3253,7 @@ magnitudes as size, time, temperature, etc.
 
 
 <!--enter p.1-->
-    <p id="120">Consider the case of <styled-content use="emph-acronym"><abbrev>2D</abbrev></styled-content> graphics. There are many (e.g.)
+    <p id="121">Consider the case of <styled-content use="emph-acronym"><abbrev>2D</abbrev></styled-content> graphics. There are many (e.g.)
 <styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> graphics and image libraries, and they are inconsistent
 with respect to what the horizontal and vertical axes are
 called, as well as which quantity comes first in a pair.
@@ -3257,7 +3271,7 @@ to memory that the first scalar is <styled-content use="double-quote">width</sty
 
 
 <!--enter p.1-->
-    <p id="121">For both implementation and documentation, we can argue
+    <p id="122">For both implementation and documentation, we can argue
 that aggregating magnitudes into coordinate groups is more
 rigorous than employing lists of individual scalars,
 so procedures' interface should nudge toward coordinate
@@ -3290,7 +3304,7 @@ than top-left corner).
 
 
 <!--enter p.1-->
-    <p id="122">These concerns in general address how coordinates
+    <p id="123">These concerns in general address how coordinates
 project onto axes (they could be called <styled-content use="double-quote">axiation</styled-content> details),
 which is a separate matter from lengths' units of measurement:
 pixels, typographic points (<SA-df>1/72</SA-df> of an inch), millimeters,
@@ -3316,7 +3330,7 @@ or dimensional aggregates in the sense of
 
 
 <!--enter p.1-->
-    <p id="123">A straightforward use case would be as follows:
+    <p id="124">A straightforward use case would be as follows:
 suppose a procedure-call is being prepared and two
 successive values are pushed to a channel, preceded
 by loading type objects. A check could be
@@ -3338,7 +3352,7 @@ packages wherein two parameters have incompatible coordinates.
 
 
 <!--enter p.1-->
-    <p id="124">Modeling coordinate details explicitly may
+    <p id="125">Modeling coordinate details explicitly may
 avoid certain programming errors, but a further benefit
 is how dimensions become an intrinsic part of a
 procedure's signature, propagating to documentation,
@@ -3360,7 +3374,7 @@ integration between data-set code and the overall Research Object.
 
 
 <!--enter p.1-->
-    <p id="125">Similar points could be made about value-ranges. Annotations
+    <p id="126">Similar points could be made about value-ranges. Annotations
 might declare that the value held by some variable
 (or reference, object-field, etc.) will/should always
 fall within some range (narrower than its type's
@@ -3377,7 +3391,7 @@ place for runtime <styled-content use="double-quote">hooks</styled-content> conf
 
 
 <!--enter p.1-->
-    <p id="126">In brief, in a channel-oriented framework <i>most</i> of a compiler's
+    <p id="127">In brief, in a channel-oriented framework <i>most</i> of a compiler's
 operations involve pushing values into a channel and then transferring
 control to a callee. That comment might sound underwhelming, because
 for normal compilers one could equally say that much of their work
@@ -3401,7 +3415,7 @@ prior to a control-transfer) or to code-block operations
 
 
 <!--enter p.1-->
-    <p id="127">These comments apply mostly to <i>semantic</i> customization. They pair
+    <p id="128">These comments apply mostly to <i>semantic</i> customization. They pair
 naturally with the issue of extending <i>syntax</i>, which I discuss next.
 </p> <!--/p.1-->
     <!--end of p1 paragraph-->
@@ -3416,7 +3430,7 @@ naturally with the issue of extending <i>syntax</i>, which I discuss next.
 
 
 <!--enter p.1-->
-    <p id="128">External tools like <styled-content use="emph-acronym"><abbrev>LEX</abbrev></styled-content> and <styled-content use="emph-acronym"><abbrev>YACC</abbrev></styled-content> make compilers less self-contained,
+    <p id="129">External tools like <styled-content use="emph-acronym"><abbrev>LEX</abbrev></styled-content> and <styled-content use="emph-acronym"><abbrev>YACC</abbrev></styled-content> make compilers less self-contained,
 so here I assume that initial parsing is performed via techniques
 that could be built into source code directly. In particular,
 I assume that language grammars are defined via regular expressions, which
@@ -3466,7 +3480,7 @@ generated.
 
 
 <!--enter p.1-->
-    <p id="129">Here (consistent with the demo code) I make the following assumptions: first, all
+    <p id="130">Here (consistent with the demo code) I make the following assumptions: first, all
 grammar rules are expressed in terms of patterns that are implicitly
 anchored on the current point in a left-to-right parser (corresponding
 to a <styled-content use="double-quote">slash-A</styled-content>, i.e., <styled-content use="emph-macro"><![CDATA[slashA]]></styled-content>, in Perl-compatible expressions). That is, no rule
@@ -3490,7 +3504,7 @@ in the test-sequence.
 
 
 <!--enter p.1-->
-    <p id="130">Conceptually, the goal of an initial parsing run would be to construct
+    <p id="131">Conceptually, the goal of an initial parsing run would be to construct
 an Intermediate Representation or <styled-content use="double-quote">parse graph</styled-content>. Schematically, the
 match-text of the successful regex (or some capture group therein) becomes
 the basis for a parse-graph node, and the rule's callback
@@ -3508,7 +3522,7 @@ theory, are logically subsequent.
 
 
 <!--enter p.1-->
-    <p id="131">It is worth noting here that the parsing techniques under discussion
+    <p id="132">It is worth noting here that the parsing techniques under discussion
 are considered both for markup and scripting/ query languages; that is,
 they might be used for an input language to create textual
 documents as well as programs in a scripting or query format. Suppose
@@ -3521,7 +3535,7 @@ step to produce such <styled-content use="emph-macro"><![CDATA[LaTeX]]></styled-
 
 
 <!--enter p.1-->
-    <p id="132">For sake of discussion, then (this is the apprach taken by the demo code)
+    <p id="133">For sake of discussion, then (this is the approach taken by the demo code)
 each rule's callback works primarily by emitting code for a kind
 of preliminary or preparatory <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content>. This is not the <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> whose
 bytecode is the overall compilation target, but rather a kind of
@@ -3543,7 +3557,7 @@ those insertion points.
 
 
 <!--enter p.1-->
-    <p id="133">The bytecode statements themselves need not be very complex
+    <p id="134">The bytecode statements themselves need not be very complex
 (again, we need not engage directly with things like
 <styled-content use="emph-acronym" lc-status="all-lower" >x86</styled-content> registers). Both for the <styled-content use="double-quote">preliminary</styled-content> and <styled-content use="double-quote">primary</styled-content>
 <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content>s a single instruction can take either a single value
@@ -3570,7 +3584,7 @@ expressed as byte-sequences rather than literal strings.
 
 
 <!--enter p.1-->
-    <p id="134">Given this setup, extending the <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> should be conceptually
+    <p id="135">Given this setup, extending the <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> should be conceptually
 uncomplicated. Developers could work first off the
 human-readable bytecode versions (which, admittedly, are
 not really bytecode in themselves, but the optimizations
@@ -3607,7 +3621,7 @@ languages such as <styled-content use="emph-acronym" lc-status="some-lower" >Ang
 
 
 <!--enter p.1-->
-    <p id="135">The pure-<styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> parsing system described above could
+    <p id="136">The pure-<styled-content use="emph-acronym"><abbrev>C++</abbrev></styled-content> parsing system described above could
 be isolated from the rest of the workflow sketched
 in this section. In so doing, one option is to
 register a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> interpreter with the grammar
@@ -3621,7 +3635,7 @@ relevant Virtual Machine.
 
 
 <!--enter p.1-->
-    <p id="136">This would be a step toward implementing deserializers
+    <p id="137">This would be a step toward implementing deserializers
 via <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> bytecode, where the <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> in question is
 distributed as source code within Research Objects
 themselves. That solution would address the requirements
@@ -3632,7 +3646,7 @@ thereby obviate the need for external deserialization libraries.
 
 
 <!--enter p.1-->
-    <p id="137">As with scripting, query, or markup languages, for reasons touched
+    <p id="138">As with scripting, query, or markup languages, for reasons touched
 on in this section, deserializers could proceed either by
 assembling all data (i.e., text strings) extracted from
 input files into a graph structure before then traversing this
@@ -3649,7 +3663,7 @@ regime</styled-content> is already implicit in the representation standard.
 
 
 <!--enter p.1-->
-    <p id="138">In any event, it makes sense for a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> serving these
+    <p id="139">In any event, it makes sense for a <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> serving these
 sorts of use cases to have built-in instructions pertinent
 to topomorphic computing, i.e. to <styled-content use="double-quote">visiting</styled-content> and
 <styled-content use="double-quote">navigating between</styled-content> sites (e.g., graph nodes). Perhaps
@@ -3682,7 +3696,7 @@ first section.
 
 
 <!--enter p.1-->
-    <p id="139">The first half of this paper focused on text encoding,
+    <p id="140">The first half of this paper focused on text encoding,
 whereas the second was involved with <styled-content use="emph-acronym"><abbrev>VM</abbrev></styled-content> and
 compiler topics. For clarification, I should review the
 connection between these two subjects.
@@ -3691,7 +3705,7 @@ connection between these two subjects.
 
 
 <!--enter p.1-->
-    <p id="140">First. computer code in a Research Object context
+    <p id="141">First. computer code in a Research Object context
 is (hopeful) annotated and documented, so it is subject
 to searching and indexing analogous to textual
 content. One consequence is that types' and
@@ -3727,7 +3741,7 @@ manner accessible to code/text/data integration.
 
 
 <!--enter p.1-->
-    <p id="141">Let me add that interface design
+    <p id="142">Let me add that interface design
 is not only a matter of documentation; it
 affects actual component implementation
 as well. Scripting engines, routines
@@ -3745,7 +3759,7 @@ syntactic and semantic properties.
 
 
 <!--enter p.1-->
-    <p id="142">Similar points apply to those places in an interface
+    <p id="143">Similar points apply to those places in an interface
 where something other than return-by-value is
 intended. Merging pointer-return, reference-initialization,
 and Return Value Optimization into a common
@@ -3762,7 +3776,7 @@ clarify often-opaque programming details.
 
 
 <!--enter p.1-->
-    <p id="143">Focusing instead on text encoding, in
+    <p id="144">Focusing instead on text encoding, in
 Research Object contexts similar
 to ones envisaged here &#x2014; where raw
 data files are paired with deserializer
@@ -3783,7 +3797,7 @@ in languages like <styled-content use="emph-acronym"><abbrev>C++</abbrev></style
 
 
 <!--enter p.1-->
-    <p id="144">That is, both textual phenomena and raw data
+    <p id="145">That is, both textual phenomena and raw data
 records/ observations are merged into a
 common runtime (and, canonically,
 Object-Oriented) information space.
@@ -3837,7 +3851,7 @@ Engineered Applications Symposium (IDEAS '23)</conf-name></source>, <conf-date>M
 and XML to Enhance the Modeling of Cultural Heritage
 Text</article-title>
     <source>Proceedings of <conf-name>CHR 2020: Workshop on Computational Humanities Research</conf-name> 
-<conf-date>(November <year>2020</year>)</conf-date></source>, pp. <fpage>340</fpage>--<lpage>350</lpage>.
+<conf-date>(November <year>2020</year>)</conf-date></source>, pp. <fpage>340</fpage>&#x2013;<lpage>350</lpage>.
 
     <ext-link xlink:href="https://ceur-ws.org/Vol-2723/short39.pdf" ext-link-type="url"><uri>https://ceur-ws.org/Vol-2723/short39.pdf</uri></ext-link>
 
@@ -3849,7 +3863,7 @@ Text</article-title>
   <element-citation>
     <string-name>Bleeker, Elli</string-name>, <i>et al.</i>, <article-title>Texts as Hypergraphs: An Intuitive Representation
 of Interpretations of Text</article-title>
-    <source>Journal of the Text Encoding Initiative</source>, Vol. <volume>14</volume> (April 2021--March 2023)
+    <source>Journal of the Text Encoding Initiative</source>, Vol. <volume>14</volume> (April 2021&#x2013;March 2023)
 
     <ext-link xlink:href="https://journals.openedition.org/jtei/3919" ext-link-type="url"><uri>https://journals.openedition.org/jtei/3919</uri></ext-link>
 
@@ -3858,9 +3872,23 @@ of Interpretations of Text</article-title>
 
 
 
+<ref id="ChavdarBotevEtAl">
+  <element-citation>
+    <string-name>Botev, Chavdar</string-name>, <i>et al.</i>, 
+<article-title>Expressiveness and Performance of Full-Text Search Languages</article-title> 
+    <source>Proceedings of the <conf-name>10th International Conference on 
+Extending Database Technology</conf-name> <conf-date>(March <year>2006</year>)</conf-date></source>. 
+
+    <ext-link xlink:href="https://ecommons.cornell.edu/server/api/core/bitstreams/68074eab-f0fa-441c-81ea-0b4debf66f87/content" ext-link-type="url"><uri>https://ecommons.cornell.edu/server/api/core/bitstreams/68074eab-f0fa-441c-81ea-0b4debf66f87/content</uri></ext-link>
+
+  </element-citation>
+</ref>
+
+
+
 <ref id="EdwinCBrady">
   <element-citation>
-    <string-name>Brady, Edwin C.</string-name>, <article-title>IDRIS --- Systems Programming Meets Full Dependent Types</article-title>
+    <string-name>Brady, Edwin C.</string-name>, <article-title>IDRIS &#x2014; Systems Programming Meets Full Dependent Types</article-title>
 
     <ext-link xlink:href="https://www.type-driven.org.uk/edwinb/papers/plpv11.pdf" ext-link-type="url"><uri>https://www.type-driven.org.uk/edwinb/papers/plpv11.pdf</uri></ext-link>
 
@@ -3929,7 +3957,7 @@ Semantic Systems</conf-name> <conf-date>(September <year>2023</year>)</conf-date
     <string-name>Grinbergs, Harijs</string-name>, <article-title>Production Quality Decision Support Using 
 Real-Time Computer Vision Framework</article-title> 
     <source>Proceedings of <conf-name>Engineering for Rural 
-Development</conf-name> <conf-date>(May <year>2016</year>)</conf-date></source>, pp. <fpage>442</fpage>--<lpage>447</lpage>.
+Development</conf-name> <conf-date>(May <year>2016</year>)</conf-date></source>, pp. <fpage>442</fpage>&#x2013;<lpage>447</lpage>.
 
     <ext-link xlink:href="https://www.iitf.lbtu.lv/conference/proceedings2016/Papers/N081.pdf" ext-link-type="url"><uri>https://www.iitf.lbtu.lv/conference/proceedings2016/Papers/N081.pdf</uri></ext-link>
 
@@ -3985,7 +4013,7 @@ in Computing Environments</article-title>.
 A Canonical Workflow Framework and FAIR Digital
 Object Approach to Quality Research Output</article-title> 
     <source>Data Intelligence</source>, Vol. <volume>4</volume>, 
-Num. <issue>2</issue> (<year>2022</year>), pp. <fpage>306</fpage>--<lpage>319</lpage>.
+Num. <issue>2</issue> (<year>2022</year>), pp. <fpage>306</fpage>&#x2013;<lpage>319</lpage>.
 
     <ext-link xlink:href="https://www.sciengine.com/DI/doi/10.1162/dint_a_00133" ext-link-type="url"><uri>https://www.sciengine.com/DI/doi/10.1162/dint_a_00133</uri></ext-link>
 
