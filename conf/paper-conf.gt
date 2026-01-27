@@ -755,7 +755,7 @@ both of those representational devices.
 I have an overview of how different graph 
 formats extend one another, in terms 
 of expressiveness and structural 
-features [/NCDataIntegration;pp.x--x/].  
+features [/NCDataIntegration;pp.134--143/].  
 The property-hypergraph model can itself 
 be subsumed into others.  For instance, 
 (hyper)edges may be associated with contexts 

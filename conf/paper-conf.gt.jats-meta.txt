@@ -13,6 +13,4 @@
       </name>
     </contrib>
   </contrib-group>
-</article-meta>
 
-</front>
