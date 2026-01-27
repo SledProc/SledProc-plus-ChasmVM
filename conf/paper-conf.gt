@@ -1527,11 +1527,11 @@ as source files.  This need not entail everything
 built from scratch; instead publishers or grid collaborations 
 could provide a suite of mostly-usable classes which 
 authors (or programmers on their behalf) may customize 
-for their own data publications.  Nonetheless, if 
+for their own data publications.  Nevertheless, if 
 each Research Object has its own specialized 
 ;/C++/ code, it can be unclear what role a ;/VM/ would play.  
 This is not analogous to large-scale scientific 
-applications that that embeds a scripting interpreter 
+applications that embed a scripting interpreter 
 for customizations, like ;/Python/ in the context of 
 ;/ParaView/ or ;/ArcGIS/, ;/JavaScript/ ,visavis ;/OpenCV.js/, 
 or ;/C++/ itself (as an interpreted language) in ;/CERN/-;/ROOT/.  
@@ -1581,7 +1581,7 @@ may be achieved by leveraging simpler components
 for tasks such as interactive ;/2D/ visualization 
 (based on ;;/QtCharts/ and/or ;;/QGraphicsView/, for instance).  
 Such components may take the form of a class or "/widget/" 
-library made available to users by publishers, book series, 
+library made available to authors and readers by publishers, book series, 
 journals, grid maintainers, etc. (similar comments apply 
 to digital cartography ;/GUI/s in lieu of ;/ArcGIS/, image graphics 
 to interactively demonstrate processing steps 
@@ -1615,7 +1615,7 @@ Conceptually, a "/foreign-function interface/" (;/FFI/) to
 procedures themselves can be identified via function 
 pointers (in the case of pointer-to-members, a trivial 
 proxy class may stand in for any method-declaring type; 
-i.e., supply the left side of a &/CLASS::*METHOD-PTR/ construction).  
+i.e., supplying the left side of a &/CLASS::*METHOD-PTR/ construction).  
 Methods and procedures can be called, in general, through 
 type-agnostic function pointers so long as the byte-lengths 
 of all arguments match what the procedure expects.{< A terminological 
@@ -1688,7 +1688,7 @@ of the supported equivalence classes.
 
 Another idiosyncratic aspect of the demo ;/VM/ is what the code 
 calls "/channels/".  The goal here is to design an 
-abstract/ generic model that 
+abstract/generic model that 
 could be adopted to different calling conventions and 
 ;/ABI/s relevant to the ;/VM/ environment, both the 
 host language (which, in the general case, is not 
@@ -1712,7 +1712,7 @@ only modest resource usage).
 
 Although other use cases will be mentioned later, the main 
 purpose of channels is to supply a larger perimeter of 
-"/hooks/" where observer code can identify either via 
+"/hooks/" which observer code can identify (and maybe inject other code) either via 
 static analysis or at runtime.  For one thing, channels 
 have names, and the ;/VM/ places no restriction on the strings 
 chosen for these.  As an example, a separate channel can be allocated 
@@ -1734,7 +1734,7 @@ between procedures.
 More generally, the channel system yields well-defined execution 
 points pertaining to phenomena such as value-reassignment 
 (for mutable variables) and type-casts.  Channels are 
-technically deques (double-ended queues) where values 
+technically deques (double-ended queues) wherein values 
 (called "/carriers/") may be pushed in front or from behind.  
 The operation to do so is an execution point that 
 can involve "/effects/" such as a value being read 
@@ -1743,8 +1743,8 @@ can involve "/effects/" such as a value being read
 names, value type(s), variable names, and their 
 relevant lexical (or global) scope are all pieces of 
 information that could be used to isolate these 
-points in particular, and potential install runtime 
-handlers or monitors.  It's worth noting that the 
+points in particular, and potentially install runtime 
+handlers or monitors.  It is worth noting that the 
 ;/VM/ "/instructions/" are themselves actually calls 
 to ordinary ;/C++/ methods, which can be extended, reimplemented, 
 or debugged (or "/breakpointed/") like any other 

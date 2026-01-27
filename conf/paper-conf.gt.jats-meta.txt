@@ -1,0 +1,18 @@
+
+<front>
+
+<article-meta>
+  <title-group>
+    <article-title>Merging Full-Text Query with Data Sets: A perspective from compiler theory</article-title>
+  </title-group>
+  <contrib-group content-type="authors">
+    <contrib contrib-type="author" corresp="yes">
+      <name>
+        <surname>Christen</surname>
+        <given-names>Nathaniel</given-names>
+      </name>
+    </contrib>
+  </contrib-group>
+</article-meta>
+
+</front>

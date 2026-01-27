@@ -200,9 +200,6 @@ Num. <issue>2</issue> (<year>2022</year>), pp. <fpage>306</fpage>&#x2013;<lpage>
   </element-citation>
 </ref>
 
-<!-- https://doi.org/10.1162/dint_a_00133 -->
-
-
 
 
 <ref id="SimplexNumericaManual">
@@ -226,7 +223,6 @@ Reproducibility and Library Services</article-title>
 
   </element-citation>
 </ref>
-<!-- DOI: https://doi.org/10.29173/iq18 -->
 
 
 <ref id="RudolfStrijkersEtAl">

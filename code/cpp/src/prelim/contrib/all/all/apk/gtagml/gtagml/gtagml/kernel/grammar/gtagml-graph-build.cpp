@@ -80,8 +80,13 @@ void GTagML_Graph_Build::init(caon_ptr<GTagML_Parser> parser)
 
  xml_writer_.writeComment("%XML-TEMPLATE%");
 
- xml_writer_.writeStartElement("document");
+ xml_writer_.writeStartElement("article");
  xml_writer_.writeAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
+ xml_writer_.writeAttribute("xml:lang", "en");
+
+ xml_writer_.writeComment("meta:here");
+
+ xml_writer_.writeStartElement("body");
 
  latex_stream_ << "\n\n%PREAMBLE-TEMPLATE%\n\n\\begin{document}\n%BEGIN-TEMPLATE%";
 
@@ -616,6 +621,9 @@ void GTagML_Graph_Build::end_document()
  xml_writer_.writeComment("end section");
 
  prepare_bibliography();
+
+ xml_writer_.writeEndElement();
+ xml_writer_.writeComment("ended body");
 
  xml_writer_.writeEndElement();
  xml_writer_.writeEndDocument();
@@ -1820,7 +1828,15 @@ void GTagML_Graph_Build::prepare_jats(QString& text, QString bib_path)
 {
  QString bibtext = KA::TextIO::load_file(bib_path);
 
+ QString meta = KA::TextIO::load_file(bib_path.replace("bib", "meta"));
+
  text.replace("<!--bib:here-->", bibtext);
+ text.replace("<!--meta:here-->", meta);
+
+ text.replace("\\lhRef{poppler-adj}{3}", "<xref ref-type=\"fn\">3</xref>");
+ text.replace("{\\sth}", " ");
+
+
 
  //?text.replace("<document>", "<document xmlns:xlink=\"http://www.w3.org/1999/xlink\">");
 
