@@ -1904,7 +1904,7 @@ options (short of exceptions or termination).  The result could be
 an empty map, or the code could scale the longer list down in size 
 to match the shorter, or supply default values for unpaired keys 
 (or vice-versa).{< For the map to be invertible, these cannot just 
-be default */constructed/* >}  A ;/VM/ compiler and 
+be default */constructed/*. >}  A ;/VM/ compiler and 
 runtime should not attempt to 
 guess which approach is better for a given program.  Instead, it 
 can stipulate that whenever a procedure is annotated as governed 
