@@ -409,6 +409,9 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \else
 \ifnum\value{mpcode} = 54
 \else
+\ifnum\value{mpcode} = 64
+\clrmarginpar{-4pt}{13pt}{\writempcode{1pt}}%
+\else
 \ifnum\value{mpcode} = 69
 \clrmarginpar{-4pt}{13pt}{\writempcode{1pt}}%
 \else
@@ -443,7 +446,7 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \clrmarginpar{-5pt}{13pt}{\writempcode{0pt}}%
 \else%
 \clrmarginpar{-2pt}{13pt}{\writempcode{1pt}}%
-\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi%
+\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi%
 %\thempcode
 }
 
@@ -457,6 +460,49 @@ Nathaniel Christen
 }}}\fi
 }
 
+\newcommand{\hlDbl}[1]{\hyperlink{#1}{#1}}
+
+\definecolor{tCB}{RGB}{2, 39, 87}
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{%1
+\AtTextLowerLeft{
+\hspace*{-25pt}\raisebox{-33pt}{%
+{\scriptsize
+\begin{minipage}{\textwidth}
+\begin{tcolorbox}[
+		parbox=false, colback=gray!13,
+		colframe=tCB,
+		width=571pt,
+		boxrule=1pt,leftrule=3pt,
+		rightrule=1pt,toprule=.5pt,arc=5pt,auto outer arc
+		]
+{\resizebox{35pt}{!}{\textbf{SOURCES}} \hspace*{4pt}}%
+  Demo \hspace*{-1pt} code: \hspace*{6pt} \hlDbl{https://github.com/scignscape/PNP} \hspace*{12pt} \resizebox{!}{5pt}{\eA{JATS}}:%
+ \hspace*{6pt} \hlDbl{https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.jats.xml} 
+
+\eS{.gt} file: \hspace*{6pt} \hlDbl{https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.gt}
+\end{tcolorbox}
+\end{minipage}
+}
+}}}\fi
+}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=9{%1
+  \AtPageLowerLeft{%
+    \hspace*{11pt}
+ \rotatebox{90}{%
+        \begin{minipage}{\paperheight}
+   \centering
+   {\color{yellow!15!gray}\textcopyright ~\today{} Nathaniel Christen}
+        \end{minipage} %
+      }
+    } %
+  }%
+\fi
+}
 
 \AddToShipoutPicture{%
 \ifnum\value{page}=3{%1
@@ -1388,6 +1434,9 @@ breaklines=true
 
 \newcommand{\lfRef}[1]{\textcolor{rgrAt!30}{\hspace{1pt}\raisebox{-1pt}{\xfigunderline{%
 \hspace{-1pt}\raisebox{-5pt}{\resizebox{!}{12pt}{\footref{#1}}}}}\hspace*{-2pt}}}}
+
+\newcommand{\lRefDbl}[1]{\textcolor{rgrAt!30}{\hspace{1pt}\xfigunderline{%
+\hspace{-1pt}\hyperlink{#1}{#1}\hspace*{-2pt}}}}
 
 
 \newcommand{\hlinkOne}[1]{\url{#1}}
