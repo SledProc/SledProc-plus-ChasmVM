@@ -452,36 +452,61 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 
 %\author{\vspace*{15pt}Nathaniel Christen}
 
+\newcounter{fntrack}
+
+\newcommand{\fntrackLabel}[1]{\label{fn:#1}\newcounter{trackFN#1}\setcounter{trackFN#1}{\value{footnote}}}
+
+
+\newcommand{\hlDbl}[2]{\resizebox{!}{#1pt}{\url{#2}}}
+
+\definecolor{tCB}{RGB}{2, 39, 87}
+
+\definecolor{tCBt}{RGB}{87, 39, 2}
+
 \AddToShipoutPicture{%
 \ifnum\value{page}=1{%1
 \AtTextLowerLeft{
-\hspace*{-6pt}\raisebox{744pt}{%
+\hspace*{-11pt}\raisebox{741pt}{%
 Nathaniel Christen
 }}}\fi
 }
 
-\newcommand{\hlDbl}[1]{\hyperlink{#1}{#1}}
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{%1
+\AtTextLowerLeft{
+\hspace*{-32pt}\raisebox{773pt}{%
+\begin{tcolorbox}[
+		parbox=false, colback=gray!13,
+		colframe=tCBt,
+		width=530pt,boxsep=-3pt,
+		boxrule=1pt,rightrule=0pt,
+		leftrule=1pt,toprule=0pt,arc=0pt,auto outer arc
+		]
+\textit{This file is} \hspace*{3pt} \hlDbl{7}{https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.pdf}
+\end{tcolorbox}
+}}}\fi
+}
 
-\definecolor{tCB}{RGB}{2, 39, 87}
+
 
 \AddToShipoutPicture{%
 \ifnum\value{page}=1{%1
 \AtTextLowerLeft{
-\hspace*{-25pt}\raisebox{-33pt}{%
+\hspace*{-33pt}\raisebox{-33pt}{%
 {\scriptsize
 \begin{minipage}{\textwidth}
 \begin{tcolorbox}[
 		parbox=false, colback=gray!13,
 		colframe=tCB,
-		width=571pt,
+		width=576pt,
 		boxrule=1pt,leftrule=3pt,
 		rightrule=1pt,toprule=.5pt,arc=5pt,auto outer arc
 		]
 {\resizebox{35pt}{!}{\textbf{SOURCES}} \hspace*{4pt}}%
-  Demo \hspace*{-1pt} code: \hspace*{6pt} \hlDbl{https://github.com/scignscape/PNP} \hspace*{12pt} \resizebox{!}{5pt}{\eA{JATS}}:%
- \hspace*{6pt} \hlDbl{https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.jats.xml} 
+  Demo \hspace*{-3spt} code: \hspace*{3pt} \hlDbl{5}{https://github.com/scignscape/PNP} \hspace*{7pt} \resizebox{!}{5pt}{\eA{JATS}}:%
+ \hspace*{6pt} \hlDbl{4.5}{https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.jats.xml} 
 
-\eS{.gt} file: \hspace*{6pt} \hlDbl{https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.gt}
+\eS{.gt} file (parses into C++ objects): \hspace*{6pt} \hlDbl{5}{https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.gt}
 \end{tcolorbox}
 \end{minipage}
 }
@@ -1318,7 +1343,11 @@ breaklines=true
 \newcommand{\eS}[1]{\textcolor{eScolor}{\textbf{\textsf{{#1}}}}}
 
 
-\definecolor{eHcolor}{rgb}{0,0.7,0.4}
+%\definecolor{eHcolor}{RGB}{255, 71, 0}
+%\definecolor{eHcolor}{RGB}{235, 31, 51}
+\definecolor{eHcolor}{RGB}{168, 30, 35}
+
+
 
 %\definecolor{eHcolor}{RGB}{232, 12, 81}
 \newcommand{\eH}[1]{\textcolor{eHcolor}{\textbf{#1}}}
@@ -1866,7 +1895,13 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\phantom{\ul{#1}}};
 
 
 %\definecolor{fnMarkColor}{RGB}{52, 105, 125}
-\definecolor{fnMarkColor}{RGB}{218, 56, 97}
+%\definecolor{fnMarkColor}{RGB}{193, 3, 3}
+%\definecolor{fnMarkColor}{RGB}{87, 39, 2}
+%\definecolor{fnMarkColor}{RGB}{217, 34, 2}
+%\definecolor{fnMarkColor}{RGB}{235, 31, 51}
+\definecolor{fnMarkColor}{RGB}{255, 71, 0}
+
+
 
 \renewcommand\@makefnmark{%
 \raisebox{3.5pt}{\resizebox{!}{5pt}{{\color{fnMarkColor}\@thefnmark}}}}

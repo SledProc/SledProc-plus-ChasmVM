@@ -412,7 +412,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 \AddToShipoutPicture{%
 \ifnum\value{page}=1{
 \AtTextLowerLeft{
-{\hspace*{431pt}\raisebox{864pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
+{\hspace*{431pt}\raisebox{871pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
 \colorbox{ybk}{\textls*[-50]{\textit{\textcolor{rgr}{``Scientific Publishing is\ }}}}}
 }
 }
@@ -424,7 +424,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 \AddToShipoutPicture{%
 \ifnum\value{page}=1{
 \AtTextLowerLeft{
-{\hspace*{433pt}\raisebox{846pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
+{\hspace*{433pt}\raisebox{853pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
 \colorbox{ybk}{\textls*[-50]{\textit{\textcolor{rgr}{\ \ a Scientific Discipline''\ }}}}}
 }
 }
@@ -495,7 +495,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 \thispagestyle{empty}
 %\thispagestyle{firstpage}
 
-\vspace*{-72pt}
+\vspace*{-77pt}
 
 %\vspace*{1em}
 
@@ -525,13 +525,13 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 
 %{\large{Architecture, Construction, and Property Data}}
 
-\vspace*{-2pt}
+\vspace*{-3pt}
 
 }
 
 {\cyanhr}
 
-\vspace*{14pt}
+\vspace*{12pt}
 
 \hspace{-32pt}Amy Neustein, Ph.D.\\
 \hspace{-32pt}CEO and Founder\\
@@ -552,7 +552,7 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %}
 
 
-\vspace*{1pt}
+\vspace*{-1pt}
 
 {\setstretch{1.12}
 
@@ -560,11 +560,11 @@ inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
 %\section{Overview}
 %\vspace{}
 \noindent\subtitle{{Class Libraries and Full-Text Search/Encoding Tools for   \\
-\vspace{2pt}
+\vspace{1pt}
 Publishing Documents, Datasets, and Multimedia Resources}}
 %\sectvspace{}
 
-\vspace*{1pt}
+\vspace*{-1pt}
 {\semihr{0.077\textwidth}}
 \vspace*{3pt}
 %\sectnum{1.}
@@ -586,7 +586,10 @@ of document text include many anomalies due to
 ligatures, hyphenation, font specs, and other layout-related 
 discrepancies between \XML{} inputs and user-visible output 
 (in short, internal \PDF{} text is only a partial representation  
-of textual content as understood by authors and editors).}
+of textual content as understood by authors and editors).  
+As a consequence, \PDF{} files are opaque to full-text search 
+languages such as \XQFT{} (\XQuery{} Full Text), \DSL{} (Dimensions Search Language), 
+and OpenSearch Query \DSL{} (Domain-Specific Language).}
 
 \p{Given the limitations of \PDF{} and \XML{} for natural-language 
 documents, numerous competing formats how possible 
@@ -621,7 +624,7 @@ for future research work, funding, translational
 implementation, and then implementational feedback.}  
 
 
-\vspace*{1pt}
+\vspace*{4pt}
 {\semihr{0.082\textwidth}}
 \vspace*{4pt}
 %\sectnum{1.}

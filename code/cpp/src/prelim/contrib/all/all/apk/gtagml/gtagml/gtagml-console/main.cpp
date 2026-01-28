@@ -213,6 +213,38 @@ void _main(QString file, QString folder, QString manfolder)
 }
 
 
+#ifdef HIDE
+#include <QXmlSchemaValidator>
+#include <QXmlSchema>
+
+#include <QApplication>
+
+int main(int argc, char *argv[])
+{
+ QApplication qapp(argc, argv);
+
+ QXmlSchema qs;
+
+// QUrl surl = QUrl::fromLocalFile("/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/conf/JATS-journalpublishing1-4.xsd");
+
+ QUrl surl = QUrl("http://jats.nlm.nih.gov/publishing/1.4/xsd/JATS-journalpublishing1-4.xsd");
+ qs.load(surl);
+
+
+ QXmlSchemaValidator qsv(qs);
+
+ QUrl furl = QUrl::fromLocalFile("/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/conf/paper-conf.xml");
+ bool valid = qsv.validate(furl);
+
+ if(valid)
+   qDebug() << "OK";
+
+ else
+ {
+  qDebug() << "\n !! \n";
+ }
+}
+#endif
 
 int main(int argc, char *argv[])
 {

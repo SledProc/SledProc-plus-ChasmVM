@@ -68,7 +68,7 @@ details behind published findings. Such initiatives in turn
 led to \q{Minimum Information} standards (e.g.,
 Minimum Information for Biological and Biomedical Investigations, or
 \eA{MIBBI}, which encompasses several dozen more specific specifications)
-and to mixed data/code/multimedia formats such as \eA{FAIR}sharing
+and to mixed data/ code/multimedia formats such as \eA{FAIR}sharing
 (Findable, Accessible, Interoperable, Reusable) and
 Research Objects (including \q{Executable Research Objects},
 \q{Executable Papers},
@@ -142,8 +142,8 @@ from how human readers would transcribe the same
 content (e.g., when seeing it rendered in a \eA{PDF} viewer). Such
 details as ligatures, headers/footers, hyphenation, and
 font-face variations can introduce artifacts in
-text extraction (or \q{scraping}) from \eA{PDF} files.\docFootnote{\label{fn:poppler}To clarify these remarks: \eA{PDF} code libraries typically
-have some procedure that can be called to obtain text
+text extraction (or \q{scraping}) from \eA{PDF} files.\docFootnote{\fntrackLabel{poppler}To clarify these remarks: \eA{PDF} code
+libraries typically have some procedure that can be called to obtain text
 from one page and/or window area. In \eA{C++}, for example,
 the \eASomeLower{Poppler} library has a \eS{text} method of
 \eS{Poppler::Page} which optionally takes a rectangular subarea (this allows
@@ -216,7 +216,7 @@ links thereto) were embedded in
 \eA{PDF} viewers as structured text encoding, in preference to the
 more \q{semi-structured} data one may obtain from
 methods such as \eS{text()} in the \eASomeLower{Poppler} library
-(which I've mentioned in footnote \lhRef{poppler-adj}{3}).
+(which I've mentioned in footnote \lhRef{poppler-adj}{\thetrackFNpoppler}).
 Similar use cases might be compiling human-readable document
 indexes, or comparing two different versions of a manuscript
 during an editing/reviewing changes cycle.
@@ -1171,7 +1171,7 @@ supplemental data and annotations can be relevant, such as
 visualization tools, transcriptions between names and
 formulae, etc. It would be reasonable to include access to
 such information among context-menus activated both in
-\eA{PDF} window areas proximate to names/formulas in text
+\eA{PDF} window areas proximate to names/ formulas in text
 form, and in software tools that might be drafted
 for interactive displays or scientific analysis.
 In other words, context-menu implementations
@@ -1981,7 +1981,7 @@ simply assume that the lists are indeed same-sized.
 
 \p.1{%
 Explicitly checking preconditions
-via \eH{if}\eH{then} tests is better than blind faith, all else being
+via \eH{if}/\eH{then} tests is better than blind faith, all else being
 equal, but that convention does violate
 \q{separation of concerns}: arguably, checking
 that arguments agree to stipulated contracts

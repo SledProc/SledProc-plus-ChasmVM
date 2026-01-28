@@ -59,9 +59,36 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
    ,paragraph_id_(0)
    ,footnote_id_(0)
    ,current_section_number_(0)
-   ,current_item_count_(0  )
+   ,current_item_count_(0)
+   ,pseudo_paragraph_counts_({0,0})
+   ,fn_count_(0)
 //   ,jats_stream_(&jats_)
 {
+ ref_labels_ = QStringList {
+  "ArunaBansal",
+  "ContractsforC++",
+  "ElliBleekerEtAl",
+  "ElliBleekerEtAlTEI",
+  "ChavdarBotevEtAl",
+  "EdwinCBrady",
+  "MartinBraenne",
+  "NCDataIntegration",
+  "DonaldCComeauEtAl",
+  "NickGarabedianEtAl",
+  "HarijsGrinbergs",
+  "PottayilHarisankerMenonEtAl",
+  "BertramLudascherEtAl",
+  "SeanMurphy",
+  "LimorPeerEtAl",
+  "SimplexNumericaManual",
+  "VickyStevensEtAl",
+  "RudolfStrijkersEtAl",
+  "YuyaUezato",
+  "LucyLuWangEtAl",
+  "AntonZhilin",
+  };
+
+
 // flags.use_latex_sdi_all_markers = true;
 // flags.use_latex_sdi_paragraph_markers = true;
 }
@@ -83,6 +110,7 @@ void GTagML_Graph_Build::init(caon_ptr<GTagML_Parser> parser)
  xml_writer_.writeStartElement("article");
  xml_writer_.writeAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
  xml_writer_.writeAttribute("xml:lang", "en");
+ xml_writer_.writeAttribute("dtd-version", "1.4");
 
  xml_writer_.writeComment("meta:here");
 
@@ -620,10 +648,11 @@ void GTagML_Graph_Build::end_document()
  xml_writer_.writeCharacters("\n\n@=/sec=@\n");
  xml_writer_.writeComment("end section");
 
- prepare_bibliography();
-
  xml_writer_.writeEndElement();
  xml_writer_.writeComment("ended body");
+
+ xml_writer_.writeComment("inserting bibliography");
+ prepare_bibliography();
 
  xml_writer_.writeEndElement();
  xml_writer_.writeEndDocument();
@@ -697,11 +726,16 @@ void GTagML_Graph_Build::enter_footnote(QString pretext, QString space)
   ++sentence_nesting_depth_;
  }
 
+ ++fn_count_;
+
  if(!flags.latex_only)
  {
   xml_writer_.writeCharacters("\n\n");
 //  xml_writer_.writeStartElement("doc-footnote");
   xml_writer_.writeStartElement("fn");
+
+  xml_writer_.writeAttribute("id", "fn-%1"_qt.arg(fn_count_));
+  xml_writer_.writeCharacters("@fn-hold@");
  }
 
  if(!flags.xml_only)
@@ -997,7 +1031,7 @@ void GTagML_Graph_Build::auto_new_paragraph(QString cmd)
   xml_writer_.writeCharacters("\n");
   xml_writer_.writeComment("enter " + cmd);
   xml_writer_.writeStartElement(cmd);
-  xml_writer_.writeAttribute("id", QString::number(current_paragraph_count_));
+  xml_writer_.writeAttribute("id", QString::number(current_paragraph_count_).prepend("Para-"));
  }
  else if(cmd == "pa.1")
  {
@@ -1032,8 +1066,13 @@ void GTagML_Graph_Build::pseudo_paragraph()
  xml_writer_.writeEndElement();
  xml_writer_.writeComment("end of list paragraph");
 
+ ++pseudo_paragraph_counts_.second;
+
  xml_writer_.writeStartElement("p");
- xml_writer_.writeAttribute("paragraph-container", "list");
+// xml_writer_.writeAttribute("paragraph-container", "list");
+
+ xml_writer_.writeAttribute("id", "P-list_%1-%2"_qt
+   .arg(pseudo_paragraph_counts_.first).arg(pseudo_paragraph_counts_.second));
 
  //? xml_writer_.writeTextElement("<pp>", "");
  latex_stream_ << "\n\n\\pseudoIndent{} ";
@@ -1170,8 +1209,13 @@ void GTagML_Graph_Build::single_slash_line()
 //  xml_writer_.writeEndElement();
   xml_writer_.writeComment("end of list paragraph");
   xml_writer_.writeCharacters("\n");
+  xml_writer_.writeCharacters("@=/list-item=@");
+  xml_writer_.writeCharacters("\n");
+
   xml_writer_.writeEndElement();
   xml_writer_.writeComment("end of description");
+
+
   xml_writer_.writeCharacters("\n\n");
 
   latex_stream_ << "\n\\end{docDescription}\n";
@@ -1261,6 +1305,8 @@ void GTagML_Graph_Build::latex_command_auto_closed(QString command_name, QString
 
 void GTagML_Graph_Build::citation(QString full_match, QString label, QString locator)
 {
+ u2 ref_index = ref_labels_.indexOf(label);
+
  reset_primary();
 
  sentences_text_stream_ << full_match;
@@ -1275,8 +1321,11 @@ void GTagML_Graph_Build::citation(QString full_match, QString label, QString loc
 
  xml_writer_.writeStartElement("xref");
  xml_writer_.writeAttribute("ref-type", "bibr");
- xml_writer_.writeAttribute("rid", label);
+//? xml_writer_.writeAttribute("rid", label);
 
+ xml_writer_.writeAttribute("rid", "B%1"_qt.arg(ref_index + 1));
+
+ xml_writer_.writeCharacters("%1"_qt.arg(ref_index + 1));
 
  if(locator.isEmpty())
  {
@@ -1291,14 +1340,15 @@ void GTagML_Graph_Build::citation(QString full_match, QString label, QString loc
    latex_stream_ << "\\citePage{" << label << "}"
      << "(" << qsl.first() << ")";
 
-   xml_writer_.writeAttribute("page", qsl.first());
+//   xml_writer_.writeAttribute("page", qsl.first());
+   xml_writer_.writeCharacters(", p. %1"_qt.arg(qsl.first()));
   }
   else
   {
    latex_stream_ << "\\citePages{" << label << "}"
      << "(" << qsl.join(", ") << ")";
 
-   xml_writer_.writeAttribute("pages", qsl.join(","));
+   xml_writer_.writeCharacters(", pp. %1"_qt.arg(qsl.join("&#x2013;")));
   }
  }
 
@@ -1307,7 +1357,11 @@ void GTagML_Graph_Build::citation(QString full_match, QString label, QString loc
   latex_stream_ << "\\citeLocator{" << label << "}"
     << "(" << locator.mid(1) << ")";
 
-  xml_writer_.writeAttribute("locator", locator.mid(1));
+  QString loc = locator.mid(1);
+  loc.replace("pp.", "pp. ");
+  loc.replace("--", "@=#x2013;");
+//  xml_writer_.writeAttribute("locator", locator.mid(1));
+  xml_writer_.writeCharacters(loc.prepend(", "));
  }
 
  xml_writer_.writeEndElement();
@@ -1333,7 +1387,9 @@ void GTagML_Graph_Build::enums_item(u2 number, QString text, QString follow)
  else
    latex_stream_ << "\n\\enumsItem{} ";
 
- xml_writer_.writeTextElement("enums-item", "");
+// xml_writer_.writeTextElement("enums-item", "");
+
+ xml_writer_.writeComment("enums-item");
 }
 
 void GTagML_Graph_Build::desc_item_with_multiline_label(QString text)
@@ -1357,10 +1413,21 @@ void GTagML_Graph_Build::desc_item_with_multiline_label(QString text)
   xml_writer_.writeCharacters("\n\n");
  }
 
+ ++pseudo_paragraph_counts_.first;
+ pseudo_paragraph_counts_.second = 0;
+
+ if(pseudo_paragraph_counts_.first > 1)
+   xml_writer_.writeCharacters("@=/list-item=@");
+
  xml_writer_.writeTextElement("list-item", text);
 
+ ++pseudo_paragraph_counts_.second;
+
  xml_writer_.writeStartElement("p");
- xml_writer_.writeAttribute("paragraph-container", "list");
+// xml_writer_.writeAttribute("paragraph-container", "list");
+ xml_writer_.writeAttribute("id", "P-list_%1-%2"_qt
+   .arg(pseudo_paragraph_counts_.first).arg(pseudo_paragraph_counts_.second));
+
 
  end_sentence();
 }
@@ -1370,6 +1437,9 @@ void GTagML_Graph_Build::desc_item(QString text)
  reset_primary();
 
  ++current_item_count_;
+
+ ++pseudo_paragraph_counts_.first;
+ pseudo_paragraph_counts_.second = 0;
 
  if(current_item_count_ == 1)
  {
@@ -1381,12 +1451,25 @@ void GTagML_Graph_Build::desc_item(QString text)
   xml_writer_.writeEndElement();
   xml_writer_.writeComment("end of list paragraph");
   xml_writer_.writeCharacters("\n\n");
+
+  xml_writer_.writeCharacters("@=/list-item=@");
  }
 
+ // if(pseudo_paragraph_counts_.first > 1)
  xml_writer_.writeTextElement("list-item", text);
 
  xml_writer_.writeStartElement("p");
- xml_writer_.writeAttribute("paragraph-container", "list");
+
+
+ ++pseudo_paragraph_counts_.second;
+
+// xml_writer_.writeStartElement("p");
+// xml_writer_.writeAttribute("paragraph-container", "list");
+
+ xml_writer_.writeAttribute("id", "P-list_%1-%2"_qt
+   .arg(pseudo_paragraph_counts_.first).arg(pseudo_paragraph_counts_.second));
+
+// xml_writer_.writeAttribute("paragraph-container", "list");
 
  latex_stream_ << "\n\n\\descItem{" << text << "}";
 //? xml_writer_.writeTextElement("exs-item", "");
@@ -1828,22 +1911,54 @@ void GTagML_Graph_Build::prepare_jats(QString& text, QString bib_path)
 {
  QString bibtext = KA::TextIO::load_file(bib_path);
 
+ u1 count = 0;
+ for(QString ref_label : ref_labels_)
+ {
+  ++count;
+  bibtext.replace(ref_label, "B%1"_qt.arg(count));
+ }
+
+ bibtext.replace("B3TEI", "B4");
+
+
+
  QString meta = KA::TextIO::load_file(bib_path.replace("bib", "meta"));
 
  text.replace("<!--bib:here-->", bibtext);
  text.replace("<!--meta:here-->", meta);
 
- text.replace("\\lhRef{poppler-adj}{3}", "<xref ref-type=\"fn\">3</xref>");
+ text.replace("footnote \\lhRef{poppler-adj}{\\thetrackFNpoppler}",
+   "footnote&#xa0;<xref ref-type=\"fn\" rid=\"fn-3\">3</xref>");
  text.replace("{\\sth}", " ");
 
 
 
  //?text.replace("<document>", "<document xmlns:xlink=\"http://www.w3.org/1999/xlink\">");
+ text.replace("<body>", "");
 
- text.replace("doc-abstract>", "abstract>");
+ QString da = R"(
+<fn fn-type="supplementary-material"><p>
+SOURCES: PDF <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.pdf</pdf>
+         Demo code <uri>https://github.com/scignscape/PNP</uri>
+         JATS <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.jats.xml</uri>
+         .gt file (parses into C++ objects): <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.gt</uri>
+</fn>
+
+  )";
+
+
+ text.replace("<doc-abstract>", "<abstract><p>");
+ text.replace("</doc-abstract>", da + "</p></abstract></article-meta></front>\n\n<body>");
+
+ text.replace("@fn-hold@", "<p>");
+ text.replace("</fn>", "</p></fn>");
+
+
+ text.replace("<ref-list>", "<back><ref-list>");
+ text.replace("</ref-list>", "</ref-list></back>");
 
  text.replace("\\Visavis{}", "Vis-a-vis");
- text.replace("{\sth}", " ");
+ text.replace("{\\sth}", " ");
  text.replace("\\-", "");
 
 
@@ -1853,15 +1968,21 @@ void GTagML_Graph_Build::prepare_jats(QString& text, QString bib_path)
 // text.replace("<p.1>", "<p l=\"1\">");
  text.replace("</p.1>", "</p> <!--/p.1-->");
 
+ text.replace("<i>", "<italic>");
+ text.replace("</i>", "</italic>");
+
+
  text.replace("<s1>", "<sec><title>");
  text.replace("</s1>", "</title>\n\n");
 
- text.replace("<eASomeLower>", "<styled-content use=\"emph-acronym\" "
-                               "lc-status=\"some-lower\" >");
+ text.replace("<eASomeLower>", "<styled-content use=\"emph-acronym_some-lc\">");
+//                               "lc-status=\"some-lower\" >");
+
  text.replace("</eASomeLower>", "</styled-content>");
 
- text.replace("<eAAllLower>", "<styled-content use=\"emph-acronym\" "
-                               "lc-status=\"all-lower\" >");
+ text.replace("<eAAllLower>", "<styled-content use=\"emph-acronym_all-lc\">");
+//                               "lc-status=\"all-lower\" >");
+
  text.replace("</eAAllLower>", "</styled-content>");
 
  text.replace("<eA>", "<styled-content use=\"emph-acronym\"><abbrev>");
@@ -1876,11 +1997,40 @@ void GTagML_Graph_Build::prepare_jats(QString& text, QString bib_path)
  text.replace("<eI>", "<styled-content use=\"ital-literal\">");
  text.replace("</eI>", "</styled-content>");
 
+ text.replace("<eIbox>", "<styled-content use=\"ital-literal-boxed\">");
+ text.replace("</eIbox>", "</styled-content>");
+
  text.replace("<sM>", "<styled-content use=\"emph-macro\">");
  text.replace("</sM>", "</styled-content>");
 
+ text.replace("<SA-nmbr>", "<styled-content use=\"SA-nmbr\">");
+ text.replace("</SA-nmbr>", "</styled-content>");
+
+ text.replace("<SA-year>", "<styled-content use=\"SA-year\">");
+ text.replace("</SA-year>", "</styled-content>");
+
+ text.replace("<SA-df>", "<styled-content use=\"SA-df\">");
+ text.replace("</SA-df>", "</styled-content>");
+
+ text.replace("<hlink1>", "<styled-content use=\"hlink1\">");
+ text.replace("</hlink1>", "</styled-content>");
+
  text.replace("<q>", "<styled-content use=\"double-quote\">");
  text.replace("</q>", "</styled-content>");
+
+
+ text.replace("styled-content use", "styled-content style");
+
+ text.replace("<attrib>", "<!-- source: ");
+ text.replace("</attrib>", " -->");
+
+ text.replace("<list-item>", "<list-item><title>");
+ text.replace("</list-item>", "</title>");
+
+ text.replace("<enums><!--enums-item-->", "<list><list-item><p>");
+ text.replace("<!--enums-item-->", "</p></list-item><list-item><p>");
+ text.replace("</enums>", "</p></list-item></list>");
+
 
  text.replace("@=/", "</");
  text.replace("=@", ">");

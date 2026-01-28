@@ -8,6 +8,8 @@ PROJECT_NAME = gtagml-console
 
 #QT -= gui
 
+QT += xmlpatterns gui widgets
+
 include(../build-group.pri)
 
 

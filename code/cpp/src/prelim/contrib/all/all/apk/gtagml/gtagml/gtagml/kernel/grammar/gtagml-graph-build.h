@@ -222,6 +222,12 @@ class GTagML_Graph_Build
 
  u2 current_slash_line_plus_count_;
 
+ QPair<u2, u2> pseudo_paragraph_counts_;
+
+ QStringList ref_labels_;
+
+ u2 fn_count_;
+
  void set_paragraph_bridge();
 
  enum class Paragraph_Types {
