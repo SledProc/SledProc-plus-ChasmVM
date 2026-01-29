@@ -34,6 +34,7 @@ permission to archive and post a copy of this paper on the Journal Article Tag S
 
 
 <abstract><p>In data sharing and publishing
+<styled-content style-type="long-double-quote" style="color:rgb(48, 14, 40)">&#x201c;test <styled-content style-type="emph-acronym_in-ql" style="color:rgb(154, 14, 19)"><abbrev>GGG</abbrev></styled-content> ok.&#x201d;</styled-content>
 contexts such as <styled-content style-type="double-quote">&#x201c;Executable Research Objects&#x201d;</styled-content>,
 natural-language documents coexist with raw
 data files and, potentially, multimedia resources.
@@ -239,17 +240,17 @@ a <styled-content style-type="double-quote">&#x201c;call to action&#x201d;</styl
 more consistent text representation.
 
 <fn id="fn-5"><p>Under a section explicitly titled <styled-content style-type="double-quote">&#x201c;call to action&#x201d;</styled-content> they
-counsel that <styled-content style-type="double-quote">&#x201c;a number of
-challenges prevent easy application of <styled-content style-type="emph-acronym" style="color:rgb(2, 37, 48)"><abbrev>NLP</abbrev></styled-content>
+counsel that <styled-content style-type="long-double-quote" style="color:rgb(48, 14, 40)">&#x201c;a number of
+challenges prevent easy application of <styled-content style-type="emph-acronym_in-ql" style="color:rgb(154, 14, 19)"><abbrev>NLP</abbrev></styled-content>
 and text mining techniques to these papers [T]he
 primary distribution format of scientific papers
-&#x2014; <styled-content style-type="emph-acronym" style="color:rgb(2, 37, 48)"><abbrev>PDF</abbrev></styled-content> &#x2014; is not amenable to text processing. The
-<styled-content style-type="emph-acronym" style="color:rgb(2, 37, 48)"><abbrev>PDF</abbrev></styled-content> file format is designed to share electronic documents
+&#x2014; <styled-content style-type="emph-acronym_in-ql" style="color:rgb(154, 14, 19)"><abbrev>PDF</abbrev></styled-content> &#x2014; is not amenable to text processing. The
+<styled-content style-type="emph-acronym_in-ql" style="color:rgb(154, 14, 19)"><abbrev>PDF</abbrev></styled-content> file format is designed to share electronic documents
 rendered faithfully for reading and printing, and
 mixes visual with semantic information.
-Significant effort is needed to coerce <styled-content style-type="emph-acronym" style="color:rgb(2, 37, 48)"><abbrev>PDF</abbrev></styled-content> into a
-format more amenable to text mining, such as <styled-content style-type="emph-acronym" style="color:rgb(2, 37, 48)"><abbrev>JATS</abbrev></styled-content>
-<styled-content style-type="emph-acronym" style="color:rgb(2, 37, 48)"><abbrev>XML,</abbrev></styled-content> <styled-content style-type="emph-acronym_some-lc" style="color:rgb(2, 37, 48)">BioC</styled-content>  or <styled-content style-type="emph-acronym" style="color:rgb(2, 37, 48)"><abbrev>S2ORC</abbrev></styled-content> <styled-content style-type="emph-acronym" style="color:rgb(2, 37, 48)"><abbrev>JSON</abbrev></styled-content>  [T]he
+Significant effort is needed to coerce <styled-content style-type="emph-acronym_in-ql" style="color:rgb(154, 14, 19)"><abbrev>PDF</abbrev></styled-content> into a
+format more amenable to text mining, such as <styled-content style-type="emph-acronym_in-ql" style="color:rgb(154, 14, 19)"><abbrev>JATS</abbrev></styled-content>
+<styled-content style-type="emph-acronym_in-ql" style="color:rgb(154, 14, 19)"><abbrev>XML</abbrev></styled-content>, <styled-content style-type="emph-acronym_in-ql_some-lc" style="color:rgb(154, 14, 19)">BioC</styled-content>  or <styled-content style-type="emph-acronym_in-ql" style="color:rgb(154, 14, 19)"><abbrev>S2ORC</abbrev></styled-content> <styled-content style-type="emph-acronym_in-ql" style="color:rgb(154, 14, 19)"><abbrev>JSON</abbrev></styled-content>  [T]he
 community must define and agree upon an
 appropriate standard of representation.&#x201d;</styled-content>
 <!-- source: Allen Institute -->

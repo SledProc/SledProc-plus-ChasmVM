@@ -61,6 +61,7 @@ class GTagML_Graph_Build
   bool use_latex_sdi_paragraph_markers:1;
   bool heading_acc:1;
   bool in_pa_1:1;
+  bool in_ql:1;
  _flags
 
  enum class Acc_Mode {

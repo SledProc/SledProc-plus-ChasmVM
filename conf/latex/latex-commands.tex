@@ -512,8 +512,8 @@ Nathaniel Christen
 		boxrule=1pt,leftrule=3pt,
 		rightrule=1pt,toprule=.5pt,arc=5pt,auto outer arc
 		]
-{\resizebox{35pt}{!}{\textcolor{Scolor}{\textbf{SOURCES}}} \hspace*{4pt}}%
-  Demo \hspace*{-3spt} code: \hspace*{3pt} \hlDbl{5}{https://github.com/scignscape/PNP} \hspace*{7pt} \resizebox{!}{5pt}{\eA{JATS}}:%
+{\resizebox{35pt}{!}{\raisebox{.5pt}{\colorbox{red!12}{\textcolor{Scolor}{\textbf{SOURCES}}}}} \hspace*{4pt}}%
+  Demo \hspace*{1pt} code: \hspace*{3pt} \hlDbl{5}{https://github.com/scignscape/PNP} \hspace*{7pt} \resizebox{!}{5pt}{\eA{JATS}}:%
  \hspace*{6pt} \hlDbl{4.5}{https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.jats.xml} 
 
 \eS{.gt} file (parses into C++ objects): \hspace*{6pt} \hlDbl{5}{https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.gt}
@@ -1019,7 +1019,17 @@ Nathaniel Christen
 \newcommand{\eSc}[1]{\textbf{{\fontsize{9}{9}%
 \fontfamily{ppl}\selectfont{\textcolor{red!40!black}{#1}}}}}
 
+
+
 \newcommand{\q}[1]{``#1''}
+
+\definecolor{Qcolor}{RGB}{48, 14, 40} 
+
+\newif\ifinql
+\inqlfalse
+
+\newcommand{\ql}[1]{\textcolor{Qcolor}{``\inqltrue#1\inqlfalse''}}
+
 
 \newcommand{\mdash}{---}
 
@@ -1396,7 +1406,12 @@ breaklines=true
 
 \definecolor{DOIcolor}{RGB}{120, 6, 15} 
 
-\newcommand{\doi}[1]{\textcolor{DOIcolor}{#1}}
+\definecolor{DOIlbl}{RGB}{48, 37, 2} 
+
+\newcommand{\doil}[1]{{\fontfamily{lmss}\fontsize{7}{7}\selectfont #1}}
+
+\newcommand{\doi}[1]{\hspace{3pt}\textcolor{DOIlbl}{\doil{Doi} %
+\raisebox{.5pt}{\resizebox{!}{2pt}{$\rightarrow$}} } \textcolor{DOIcolor}{#1}}
 
 
 
@@ -1406,7 +1421,14 @@ breaklines=true
 %\definecolor{eAcolor}{RGB}{136, 92, 90} 
 %\definecolor{eAcolor}{RGB}{120, 6, 15} 
 
-\newcommand{\eAstyle}[1]{{\fontfamily{qcs}\selectfont\textcolor{eAcolor}{#1}}}}
+\newcommand{\eAstyleInQL}[1]{{\fontfamily{qcs}\selectfont\textcolor{eAcolor!40!red}{#1}}}}
+\newcommand{\eAstyleNormal}[1]{{\fontfamily{qcs}\selectfont\textcolor{eAcolor}{#1}}}}
+
+
+\newcommand{\eAstyle}[1]{\ifinql\eAstyleInQL{#1}\else\eAstyleNormal{#1}\fi}
+
+
+
 
 \newcommand{\eAnonfoot}[1]{\resizebox{!}{6pt}{\eAstyle{#1}}}
 \newcommand{\eAfoot}[1]{\resizebox{!}{5pt}{\eAstyle{#1}}}

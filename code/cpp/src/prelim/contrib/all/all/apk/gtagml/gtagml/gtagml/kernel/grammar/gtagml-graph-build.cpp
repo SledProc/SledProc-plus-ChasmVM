@@ -1572,7 +1572,17 @@ void GTagML_Graph_Build::emph_acronym(QString text)
  else if(text != text.toUpper())
    version = "SomeLower";
 
- xml_writer_.writeTextElement("eA" + version, text);
+// QString eA = flags.in_ql? "iq_eA" : "eA";
+ QString eA;
+
+ if(flags.in_ql)
+ {
+  eA = "iq_eA";
+ }
+ else
+  eA = "eA";
+
+ xml_writer_.writeTextElement(eA + version, text);
  latex_stream_ << "\\eA" << version << "{" << text << "}";
 }
 
@@ -1584,10 +1594,18 @@ void GTagML_Graph_Build::enter_double_quote_mode(QString pre)
 
  if(pre == "d")
    xml_writer_.writeStartElement("disp-quote");
+ else if(pre == "!")
+   xml_writer_.writeStartElement("ql");
  else
    xml_writer_.writeStartElement("q");
 
- latex_stream_ << "\\q{";
+ if(pre == "!")
+ {
+  latex_stream_ << "\\ql{";
+  flags.in_ql = true;
+ }
+ else
+   latex_stream_ << "\\q{";
 }
 
 void GTagML_Graph_Build::leave_double_quote_mode()
@@ -1595,6 +1613,12 @@ void GTagML_Graph_Build::leave_double_quote_mode()
  reset_primary();
 
  parse_context_.flags.double_quote_mode = false;
+
+ if(flags.in_ql)
+ {
+  // //  anything?
+  flags.in_ql = false;
+ }
 
  xml_writer_.writeEndElement();
  latex_stream_ << "}";
@@ -1683,7 +1707,11 @@ void GTagML_Graph_Build::leave_acronym_mode()
 
 skip_this:
 
- xml_writer_.writeStartElement(held_macro_string_ + version);
+ if(flags.in_ql)
+   xml_writer_.writeStartElement("iq_" + held_macro_string_ + version);
+ else
+   xml_writer_.writeStartElement(held_macro_string_ + version);
+
  latex_stream_ << "\\" + held_macro_string_ << version << "{";
 
  reset_primary();
@@ -1988,13 +2016,26 @@ SOURCES: PDF <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-
 
  text.replace("</eASomeLower>", "</styled-content>");
 
+
+ text.replace("<iq_eASomeLower>", "<styled-content use=\"emph-acronym_in-ql_some-lc\" style=\"color:rgb(154, 14, 19)\">");
+ text.replace("</iq_eASomeLower>", "</styled-content>");
+
  text.replace("<eAAllLower>", "<styled-content use=\"emph-acronym_all-lc\" style=\"color:rgb(2, 37, 48)\">");
 //                               "lc-status=\"all-lower\" >");
 
  text.replace("</eAAllLower>", "</styled-content>");
 
+
+ text.replace("<iq_eAAllLower>", "<styled-content use=\"emph-acronym_in-ql_all-lc\" style=\"color:rgb(154, 14, 19)\">");
+ text.replace("</iq_eAAllLower>", "</styled-content>");
+
+
  text.replace("<eA>", "<styled-content use=\"emph-acronym\" style=\"color:rgb(2, 37, 48)\"><abbrev>");
  text.replace("</eA>", "</abbrev></styled-content>");
+
+ text.replace("<iq_eA>", "<styled-content use=\"emph-acronym_in-ql\" style=\"color:rgb(154, 14, 19)\"><abbrev>");
+ text.replace("</iq_eA>", "</abbrev></styled-content>");
+
 
  text.replace("<eS>", "<styled-content use=\"emph-symbol\" style=\"color:rgb(93, 129, 194)\">");
  text.replace("</eS>", "</styled-content>");
@@ -2026,6 +2067,8 @@ SOURCES: PDF <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-
  text.replace("<q>", "<styled-content use=\"double-quote\">&#x201c;");
  text.replace("</q>", "&#x201d;</styled-content>");
 
+ text.replace("<ql>", "<styled-content use=\"long-double-quote\" style=\"color:rgb(48, 14, 40)\">&#x201c;");
+ text.replace("</ql>", "&#x201d;</styled-content>");
 
  text.replace("styled-content use", "styled-content style-type");
 
