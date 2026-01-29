@@ -1931,14 +1931,22 @@ void GTagML_Graph_Build::prepare_jats(QString& text, QString bib_path)
    "footnote&#xa0;<xref ref-type=\"fn\" rid=\"fn-3\">3</xref>");
  text.replace("{\\sth}", " ");
 
+ text.replace("\\resizebox{51pt}{!}{capabilities}", "capabilities");
 
+ text.replace("CDATA[l", "CDATA[");
+ text.replace("CDATA[Len", "CDATA[l");
+ text.replace("CDATA[ctrlleft", "CDATA[ctrl+click");
+ text.replace("CDATA[ThreeD", "CDATA[3D");
+
+ text.replace(" ....", " &#x2026;.");
+ text.replace("....", ".&#x2026;");
 
  //?text.replace("<document>", "<document xmlns:xlink=\"http://www.w3.org/1999/xlink\">");
  text.replace("<body>", "");
 
  QString da = R"(
 <fn fn-type="supplementary-material"><p>
-SOURCES: PDF <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.pdf</pdf>
+SOURCES: PDF <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.pdf</uri>
          Demo code <uri>https://github.com/scignscape/PNP</uri>
          JATS <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.jats.xml</uri>
          .gt file (parses into C++ objects): <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.gt</uri>
