@@ -1983,23 +1983,23 @@ SOURCES: PDF <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-
  text.replace("<s1>", "<sec><title>");
  text.replace("</s1>", "</title>\n\n");
 
- text.replace("<eASomeLower>", "<styled-content use=\"emph-acronym_some-lc\">");
+ text.replace("<eASomeLower>", "<styled-content use=\"emph-acronym_some-lc\" style=\"color:rgb(2, 37, 48)\">");
 //                               "lc-status=\"some-lower\" >");
 
  text.replace("</eASomeLower>", "</styled-content>");
 
- text.replace("<eAAllLower>", "<styled-content use=\"emph-acronym_all-lc\">");
+ text.replace("<eAAllLower>", "<styled-content use=\"emph-acronym_all-lc\" style=\"color:rgb(2, 37, 48)\">");
 //                               "lc-status=\"all-lower\" >");
 
  text.replace("</eAAllLower>", "</styled-content>");
 
- text.replace("<eA>", "<styled-content use=\"emph-acronym\"><abbrev>");
+ text.replace("<eA>", "<styled-content use=\"emph-acronym\" style=\"color:rgb(2, 37, 48)\"><abbrev>");
  text.replace("</eA>", "</abbrev></styled-content>");
 
- text.replace("<eS>", "<styled-content use=\"emph-symbol\">");
+ text.replace("<eS>", "<styled-content use=\"emph-symbol\" style=\"color:rgb(93, 129, 194)\">");
  text.replace("</eS>", "</styled-content>");
 
- text.replace("<eH>", "<styled-content use=\"emph-highlight\">");
+ text.replace("<eH>", "<styled-content use=\"emph-highlight\" style=\"color:rgb(168, 30, 35)\">");
  text.replace("</eH>", "</styled-content>");
 
  text.replace("<eI>", "<styled-content use=\"ital-literal\">");
@@ -2023,11 +2023,11 @@ SOURCES: PDF <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-
  text.replace("<hlink1>", "<styled-content use=\"hlink1\">");
  text.replace("</hlink1>", "</styled-content>");
 
- text.replace("<q>", "<styled-content use=\"double-quote\">");
- text.replace("</q>", "</styled-content>");
+ text.replace("<q>", "<styled-content use=\"double-quote\">&#x201c;");
+ text.replace("</q>", "&#x201d;</styled-content>");
 
 
- text.replace("styled-content use", "styled-content style");
+ text.replace("styled-content use", "styled-content style-type");
 
  text.replace("<attrib>", "<!-- source: ");
  text.replace("</attrib>", " -->");

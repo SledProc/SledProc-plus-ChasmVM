@@ -13,4 +13,16 @@
       </name>
     </contrib>
   </contrib-group>
+  <permissions>
+     <copyright-statement>Copyright 2025 by Nathaniel Christen</copyright-statement>
+     <copyright-year>2025</copyright-year>
+     <copyright-holder>Nathaniel Christen</copyright-holder>
+     <license>
+       <license-p>The copyright holder grants the U.S. National Library of Medicine 
+permission to archive and post a copy of this paper on the Journal Article Tag Suite Conference proceedings website.</license-p>
+     </license>
+     <license license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc/3.0/us/">
+       <license-p>This work is licensed under a Creative Commons Attribution-Noncommercial 3.0 United States License</license-p>
+     </license>
+   </permissions>
 

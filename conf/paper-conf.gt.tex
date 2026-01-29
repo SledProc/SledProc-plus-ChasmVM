@@ -37,7 +37,7 @@ end, this paper will consider
 how compiler and Virtual Machine tools
 may be embedded within data-set
 code, built from source files with
-few external dependencies. The paper will consider how a
+few external dependencies. The paper will discuss how a
 self-contained environment for scripting
 or query language implementations
 can promote text search, raw-data
@@ -67,7 +67,7 @@ document more rigorously the raw data, methodology, and analytic
 details behind published findings. Such initiatives in turn
 led to \q{Minimum Information} standards (e.g.,
 Minimum Information for Biological and Biomedical Investigations, or
-\eA{MIBBI}, which encompasses several dozen more specific specifications)
+\eA{MIBBI}, which encompasses several dozen more targeted specifications)
 and to mixed data/ code/multimedia formats such as \eA{FAIR}sharing
 (Findable, Accessible, Interoperable, Reusable) and
 Research Objects (including \q{Executable Research Objects},
@@ -82,19 +82,19 @@ model, see \citeLabel{LimorPeerEtAl}. For \q{executable papers},
 
 \p.1{%
 A common theme of these various formats is that the basic unit of
-disseminating scientific or academic research is not (or no longer)
+disseminating scientific or academic scholarship is not (or no longer)
 a single document, but rather a
 collection of distinct files representing text, data, and potentially
 graphics or computer code. Natural-language text is still important
 \mdash{} readers are most likely to learn about data sets or Research
 Objects via publications that introduce them \mdash{} but in a Research
 Object context manuscripts are packaged alongside sibling assets
-with their own requisite functionality. \enlargethispage{6pt}This affects functionality
+with their own requisite \resizebox{51pt}{!}{capabilities}. \enlargethispage{6pt}This affects functionality
 intrinsic to text \whitepatch{documents insofar as, to begin with, the various components 
 of a data package can be mutually cross-referenced.}\vspace{1.5pt}
 documents insofar as, to begin with, the various components
 of a data package can be mutually cross-referenced. For instance,
-terms and keyphrases within a manuscript could be annotated
+terms and keywords/keyphrases within a manuscript could be annotated
 with links to data, code, or graphics content, if the
 same concepts appear as statistical parameters, units of
 measurement, data types, record fields, etc., within raw
@@ -167,8 +167,8 @@ strings such as organic or chemical formulae; the
 notating these (potentially semantically significant)
 textual elements (or, at least, structured data
 was not preserved in the final \eA{PDF}).\docFootnote{In my own analysis of \CORDOneNine{} mentioned above,
-I gave the example of a compound \eIbox{2'-C-ethynyl},
-which is also notated as \eIbox{2 0-C-ethynyl}. With
+I gave the example of a fragment \eIbox{2'-C-ethynyl},
+which was also notated as \eIbox{2 0-C-ethynyl}. With
 these alternatives, plus the fact that the \eA{JSON}
 markup appeared sometimes to incorrectly parse
 the strings \mdash{} i.e., breaking the character-sequence
@@ -193,7 +193,7 @@ rendered faithfully for reading and printing, and
 mixes visual with semantic information.
 Significant effort is needed to coerce \eA{PDF} into a
 format more amenable to text mining, such as \eA{JATS}
-\eA{XML,} \eASomeLower{BioC} \ellThree{2pt}{2pt}\ or \eA{S2ORC} \eA{JSON....} [T]he
+\eA{XML,} \eASomeLower{BioC} \ellThree{2pt}{2pt}\ or \eA{S2ORC} \eA{JSON} \ellFour{2pt}{2pt} [T]he
 community must define and agree upon an
 appropriate standard of representation.}
 \citePage{LucyLuWangEtAl}(8)}\thispagestyle{empty}
@@ -213,7 +213,7 @@ currently produced from \eA{XML} formats such as
 \eA{JATS} or \eA{BITS}; if these intermediate assets (or at least
 links thereto) were embedded in
 \eA{PDF} directly then they could be extracted and employed by
-\eA{PDF} viewers as structured text encoding, in preference to the
+\eA{PDF} viewers as a structured text encoding, in preference to the
 more \q{semi-structured} data one may obtain from
 methods such as \eS{text()} in the \eASomeLower{Poppler} library
 (which I've mentioned in footnote \lhRef{poppler-adj}{\thetrackFNpoppler}).
@@ -244,18 +244,18 @@ of text with raw data and/or code within unified data packages,
 we can consider to what extent User Experience and structural
 models should be conceptualized as applying simultaneously to
 text and to data sets, as well as \eA{GUI} components that present
-them respectively in the form of visual resources.
+both of such content-types, respectively, in the form of visual resources.
 }% end paragraph 
 
 \p.1{%
-For example, we can isolate specific areas of potential
-\eA{GUI} functionality in contexts where human readers are seeing
+For example, there are specific areas of potential
+\eA{GUI} functionality that could be isolated, in contexts where human readers are seeing
 renderings of text documents (or pages therefrom): copying
 the words of a sentence to the clipboard; searching for
 information about a single word, phrase, or term; examining the
 original text from which a quote was sampled; accessing a data
 set and/or multimedia resources that are indirectly included
-in text documents through figures/ graphics (for instance,
+in text documents through figures/graphics (for instance,
 if a picture shows one frame from a video, finding and
 watching the video in its entirety). We can
 then identify related capabilities operational in the
@@ -473,7 +473,7 @@ query format rather than manually rewriting \eA{C++} code. For instance,
 context menus tend to need specific action options unique to the
 current data set, so \q{scripts} against an embedded \eA{VM} might be
 employed to populate those menus, being called somewhere after
-the triggering event (a right mouse-button click or \ctrlleft{} button)
+the triggering event (a right mouse-button click, or \ctrlleft{} with a single button)
 is registered. Similar comments could be made about areas of
 functionality such as setting up initial parameters for a
 \enlargethispage{2em}simulation; managing text/data cross-references; logic for
@@ -579,7 +579,7 @@ user gestures are implemented for more
 complex interactions than just, say, clicking a
 button. In \eA{3D} graphics and \eA{2D} (manual) image
 annotation there are often multiple
-possible interpretations of actions like
+possible interpretations for actions like
 dragging the cursor or operating the mouse
 wheel; applications often allow users
 to specify their intentions by augmenting
@@ -639,8 +639,8 @@ value ranges, coordinate systems,
 scales and units of measurement, cross-unit conversions,
 unit-decorated types,
 pre- and post-conditions, type invariants, etc.
-This degree of in-code specificity is not usually present
-in mainstream languages, so a Research Object \eA{VM} could
+This degree of in-code specificity is not usually prioritized
+by mainstream languages, so a Research Object \eA{VM} could
 support scripting dialects which attempt to
 make code assumptions and pedagogical use cases
 as transparent as possible.\docFootnote{To put it differently, the original
@@ -658,14 +658,14 @@ imply that Research Objects can be used on their own.
 So \mdash{} although authors should attempt to provide sufficient
 internal resources that someone with access to a data set
 can find some value just with the materials explicitly
-included \mdash{} one may reasonably anticipate that some scientists will
+included \mdash{} one may reasonably anticipate that a cohort of scientists will
 seek out the additional capabilities of dedicated
 software for their field (at least if a Research Object
 involves information of a variety where such software exists).
 Data sets (without violating \eA{FAIR}) could be
 designed to facilitate being loaded and visualized
 via such discipline-specific applications where applicable.
-Yet, in these cases, even when
+Yet still in these cases, even when
 raw data files are encoded in a format that a given
 application recognizes, raw files alone are
 not necessarily sufficient to ensure
@@ -722,12 +722,12 @@ is offered among the data-set package, then other
 components \mdash{} \eA{GUI} classes, a customized \eA{PDF} viewer, deserialization
 code \mdash{} could each utilize (e.g., link against) the
 \eA{VM} implementation in turn, achieving consistent scripting/query
-design across the various components.
+design across the various parts/modules of an Executable Research Object.
 }% end paragraph 
 
 \p.1{%
-Having thereby identified the \textit{purpose} of a \eA{VM} engineered
-for the data-publishing context, the remainder of this
+With my comments thus far speculating on a \textit{purpose} for \eA{VM}s engineered
+in the data-publishing context, the remainder of this
 paper will examine certain theoretical and implementational
 details relevant for these use cases in particular.
 The discussion will address both compiler and runtime
@@ -736,7 +736,7 @@ structures \mdash{} both textual and data sets \mdash{} that
 \eA{VM}-compiled components would likely
 need to traverse/navigate, insofar as the relevant
 structural details may be directly incorporated
-into the \eA{VM}'s instruction roster.\vspace{11pt}
+into the \eA{VM}'s instruction roster.
 }% end paragraph 
 
 
@@ -756,8 +756,8 @@ applied both to documents and to data files).
 
 \p.1{%
 Text-encoding specialists have devoted some attention
-to investigating the best formats
-for representing written text. In recent years,
+to exploring optimal formats
+for representing the written word. In recent years,
 \eA{XML}-based standards such as \eA{JATS} and \eA{BITS} have become
 popular, producing human-readable \eA{PDF}s through techniques
 like \eA{XSL-FO} while also enabling natural-language
@@ -843,25 +843,28 @@ concept of \q{topomorphic regimes}.}
 \p.1{%
 The structural facets of any meta-model
 determines how algorithms transform and/or
-extract data from structure-instances. The issue
-is not the explicit structure of a single
+extract data from structure-instances. The key issue
+is not whatever explicit structure is borne by any single
 instance of a model, but rather
-the various criteria which may
+the various criteria which
 define a \q{structure} to begin with.
+}% end paragraph 
+
+\p.1{%
 For example, an important contrast between \eA{XML} and \eA{TAGML} is that
 the latter supports concurrent/overlapping markup,
 which can only be achieved in the former indirectly
 (e.g., via empty \q{milestone} nodes). Endorsing one
 approach over the other is a rather abstract question.
-A more concrete assessment can consider actual processing
+A more concrete assessment might consider actual processing
 tasks and address whether algorithms that \q{quantify}
 over concurrent markup structures, or conversely
 purely hierarchical ones, are easer to implement (or,
 likewise, test, or maintain).
 Assuming that most algorithms navigate around a structure
-by tracking a \q{foreground} node \mdash{} some kind of visitor
-pattern where one node at a time is the one visited
-\mdash{} then \eA{TAGML}-style overlap complicates the decision-space
+by tracking a \q{foreground} node \mdash{} some sort of visitor
+pattern wherein one node at a time is the one visited
+\mdash{} then \eA{TAGML}'s overlap complicates the decision-space
 for node-to-node transitions. For instance, an element
 that begins in the \textit{interior} of some quasi-parent node,
 but \textit{ends} properly after the latter, does not have a
@@ -872,7 +875,7 @@ at the \textit{beginning} of the element or, rather, at its end?
 }% end paragraph 
 
 \p.1{%
-Moreover, \eA{TAGML} recognizes two distinct forms of de-facto
+Moreover, \eA{TAGML} recognizes two distinct flavors of \textit{de-facto}
 parent/child relations, namely \q{containment} versus
 \q{domination}. In the latter case, one node has a
 logical or semantic nesting inside another; the parent
@@ -909,7 +912,8 @@ structural (emulative) purpose, are not
 intrinsic parts of tools such as \eASomeLower{XPath}
 and \eASomeLower{XQuery} \mdash{} apart from their basic status as zero-width
 elements, which does not by itself convey their special
-role.} If an \eA{XML} file does
+role (one might find rather convoluted implementations
+online, but that's the point \mdash{} the need for such workarounds).} If an \eA{XML} file does
 indeed use milestones to emulate overlapping markup,
 then the presence of landmark tags would have to be
 tracked by \eA{XML} processors as state data or
@@ -924,7 +928,7 @@ Added complexity is not necessarily a bad thing, but these
 examples suggest that markup formats come with different
 tradeoffs. Features that make some processing
 routines easier to implement can render others more difficult,
-and vice-versa. But in the context of text encoding,
+and vice-versa. With all that said, though, in the context of text encoding
 discussing such tradeoffs solely with respect to
 \textit{generic} formats like \eA{XML} or \eA{TAGML} skirts the
 key point that here we are primarily concerned with
@@ -971,14 +975,14 @@ not appear to be defined in a computer science context;
 but I think it is a useful neologism to address the
 overall class of algorithms and data structures subject
 to \q{visitor patterns} and variegated constructions
-as to criteria of individuation for individual structures.
+as to criteria of individuation for any particular structure.
 That is, a given representational protocol is associated
 with a distinct topomorphic profile insofar as
 data is encoded via an aggregate of \q{sites} with
 specific navigational possibilities from one site
 to another. A topomorphic \textit{algorithm} is one
 that extracts information by navigating to a site
-of interest, being able to obtain specific data points
+of interest, obtaining specific data points
 in the context of any one foreground site \mdash{} e.g., the
 text content and attributes values (per key) of an
 \eA{XML} element \mdash{} before traversing to a different site.
@@ -1014,12 +1018,12 @@ node was positioned in a \eA{JSON} hierarchy.
 When text content is encoded via \eA{XML}, \eA{TAGML}, \eA{JSON}, etc.,
 it takes on the \q{topomorphic} properties of the
 underlying representation. For instance,
-navigation between consecutive paragraphs
-amounts to navigating between sibling paragraph
+navigation between consecutive paragraphs would amount
+(presumably) to navigating between sibling paragraph
 elements in an \eA{XML} tree, assuming that paragraphs
-are the basic units of encoding. However, natural-language
+are the basic units of encoding (in a document hierarchy). However, natural-language
 text has its own topomorphic profile which is only
-approximately captured by \q{topomorphic regimes} \textit{in toto} of
+approximately captured by \q{topomorphic regimes} of
 generic formats adopted for text encoding. In this
 section I will consider topomorphic properties of
 text on its own terms, separate and apart from
@@ -1320,7 +1324,7 @@ From the topomorphic perspective, such details
 inform how we model text content as a \q{space} to
 be navigated within and traversed across. This,
 in turn, is dependent on the goals of algorithms
-that operate against textual objects.
+that operate against textual objects.\enlargethispage{1em}
 }% end paragraph 
 
 \p.1{%
@@ -1351,13 +1355,14 @@ context have to be correlated with the former.
 In special cases, however, \eA{PDF} page coordinates
 of preselected items of interest (keywords, index entries,
 etc.) can be preserved via mechanisms such as
-\LaTeX{} \eS{pgfsavepos}.} In the absence
-of any restrictions, every sentence in a document should
-thus be checked, with potential branching to account
+\LaTeX{} \eS{pgfsavepos}.} Sentences (not, say, context-unaware k-windows) are the
+basic match-containers. Sentences, on this approach
+(not, say, context-unaware k-windows) are the basic containers seen to surround a match. Absent
+any restrictions otherwise, all sentence in a document are search candidates, with potential branching to account
 for \q{nesting} relationships (as with footnotes and block quotes, potentially)
 as well as divergent possibilities for \q{next sibling} (consider a footnote
 marked just after the end of one sentence: we can visualize the discourse
-as continuing on two tracks, one within the footnote and one continuing the main text.
+as continuing on two tracks, one within the footnote and one continuing the main text).\enlargethispage{1em}
 }% end paragraph 
 
 \p.1{%
@@ -1366,7 +1371,7 @@ explicitly narrow the scope to exclude or include specific
 areas of text. They might filter searches to consider
 only main document content, not (say) footnotes or endnotes;
 conversely, perhaps they \textit{only} want to search within
-footnote lines, quotes, bulleted content, etc. From a topomorphic
+footnotes' lines, quotations, bulleted content, etc. From a topomorphic
 perspective, the relevant details here are not so much
 the explicit \q{tags} or other markup via which special
 segments like quotes and footnotes are introduced, but
@@ -1430,8 +1435,8 @@ code points and their discursive roles.
 
 \p.1{%
 Such details of \textit{internal} representation, furthermore,
-are distinct from user functionality like copy-paste
-or \eA{PDF} annotations. For example, consider requests
+are distinct from such \eA{UX} protocols as copy-paste
+or \eA{PDF} comment-annotations. For example, consider requests
 to copy the current sentence to clipboard. Presumably
 the user then intends to paste those contents into some
 other location, but that could be many things
@@ -1453,7 +1458,7 @@ suppose a desired match is one single word enclosed
 in double quotes. Quite plausibly the \q{input} to
 that query could have either the straight/\eA{ASCII} form
 (if the user is typing from a keyboard) or
-the curved left-versus-right forms (e.g., if they've copied
+the curved left-versus-right forms (e.g., if they were copied
 from some other document). Internally, meanwhile,
 the encoded text elements might not use quote delimiters at
 all, but rather some form of quotation object.
@@ -1461,7 +1466,7 @@ Thus, testing whether an input string matches text/discourse
 objects at a particular point in the character-stream
 is more involved than simply comparing numeric glyph-codes.
 Likewise, a text-query engine should assume that results
-might be requested in a variety of formats (\eASomeLower{Latin1}, \eA{UTF-16},
+could be requested in a variety of formats (\eASomeLower{Latin1}, \eA{UTF-16},
 \eA{HTML}, etc.) such that how text is conveyed, in a variety of
 potential reporting protocols, becomes data for each
 text element (e.g., sentence objects) that might deviate
@@ -1472,7 +1477,7 @@ of ellipses and emendations for quotes; etc.?
 }% end paragraph 
 
 \p.1{%
-In short, there are structural differences between \textit{query input}
+In short, there are structural differences between queries' \textit{input}
 formats, \textit{internal} (object-based) encoding, and various result
 \textit{output} formats; and nontrivial algorithms might be
 needed to map both the first to second (and evaluate potential
@@ -1481,9 +1486,9 @@ should be considered by a \eA{VM} whose roles include serving as a
 compilation target for a text-query language. Suppose
 that all discursive content is stored internally as
 \eA{C++} objects, and that methods on those objects
-handle all the complicating factors related to whether a
-specific part of a given sentence (canonically) is a successful
-match to a query string. Robust query-evaluation algorithms
+handle any complicating factors regarding whether a
+specific part of a given sentence (or other potential match-container) is a successful
+hit for a query string. Robust query-evaluation algorithms
 would presumably encompass a variety of parameters/flags and
 protocol variation, considering the range of discursive
 contexts which have somewhat different match-evaluation
@@ -1529,9 +1534,9 @@ written discourse, the \eA{VM}'s operations might also navigate
 through various raw data formats, depending on how the
 Research Object is encoded. \lVM{}s, that is, may need to be
 adaptable for multiple kinds of \q{topomorphic regimes}.
-But algorithms specific to text searches may also
+But algorithms specific to text searches could also
 be applied to these different data formats, insofar as
-a query might be applied against data entities
+a query might be evaluated against data entities
 (column labels, text which is an individual field for some
 record) and/or computer code. Questions about character
 encoding and converting from query-input formats are relevant
@@ -3239,7 +3244,7 @@ connection between these two subjects.
 
 \p.1{%
 First. computer code in a Research Object context
-is (hopeful) annotated and documented, so it is subject
+is (hopefully) annotated and documented, so it is subject
 to searching and indexing analogous to textual
 content. One consequence is that types' and
 components' \q{public interface} stands in an environment

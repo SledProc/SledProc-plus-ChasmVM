@@ -348,8 +348,15 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 \usetikzlibrary{shapes, shapes.misc, positioning}
 
 
+\definecolor{mForecolor}{RGB}{2, 31, 48}
+
+\definecolor{mBkgcolor}{RGB}{243, 231, 222}
+
+%\textcolor{margin!60!black}{%
+
+
 \newcommand{\mpcodeffore}[1]{%
-\textcolor{margin!60!black}{%
+\textcolor{mForecolor}{%
 \resizebox{!}{5pt}{#1}}}
 
 %\newcommand{\mpcodefbkg}[1]{#1} %\colorbox{margin!10}{#1}}
@@ -358,9 +365,11 @@ xscale=.8, yscale=.7, line width=.5pt, inner sep=0pt]
 \newcommand{\mpcodefbkg}[2]{%
 \tikz[baseline=(char.base)]{%
 
+% fill = margin!10
+
 %\node at (0, 0)
  \node[shape=regular polygon, regular polygon sides = 8,
-fill = margin!10, inner sep=#1] (char)
+fill = mBkgcolor, inner sep=#1] (char)
 %top color=white, bottom color=blggr!6,
 %fill opacity=1, yscale=.7, shape border rotate=39,
 %inner sep=6.5pt, shading angle=90,label={}] (bk) 
@@ -399,37 +408,38 @@ fill opacity=0, line width=2pt, draw=yellow!5, inner sep=#1]
 \ifnum\value{mpcode} = 8
 \else
 \ifnum\value{mpcode} = 17
-\clrmarginpar{-21pt}{13pt}{\writempcode{1pt}}%
+\clrmarginpar{-4pt}{11pt}{\writempcode{1pt}}%
 \else
 \ifnum\value{mpcode} = 32
 \clrmarginpar{-3pt}{13pt}{\writempcode{1pt}}%
 \else
-\ifnum\value{mpcode} = 48
+\ifnum\value{mpcode} = 49
 \clrmarginpar{-20pt}{13pt}{\writempcode{1pt}}%
 \else
-\ifnum\value{mpcode} = 54
-\else
-\ifnum\value{mpcode} = 64
-\clrmarginpar{-4pt}{13pt}{\writempcode{1pt}}%
-\else
-\ifnum\value{mpcode} = 69
-\clrmarginpar{-4pt}{13pt}{\writempcode{1pt}}%
-\else
-\ifnum\value{mpcode} = 73
+\ifnum\value{mpcode} = 55
 \clrmarginpar{-20pt}{13pt}{\writempcode{1pt}}%
 \else
-\ifnum\value{mpcode} = 89
+\ifnum\value{mpcode} = 65
+\clrmarginpar{-4pt}{13pt}{\writempcode{1pt}}%
 \else
-\ifnum\value{mpcode} = 94
-\clrmarginpar{-3pt}{13pt}{\writempcode{1pt}}%
+\ifnum\value{mpcode} = 70
+\clrmarginpar{-4pt}{13pt}{\writempcode{1pt}}%
 \else
-\ifnum\value{mpcode} = 102
+\ifnum\value{mpcode} = 74
+\clrmarginpar{-20pt}{13pt}{\writempcode{1pt}}%
+\else
+\ifnum\value{mpcode} = 90
+\else
+\ifnum\value{mpcode} = 91
+\clrmarginpar{-20pt}{13pt}{\writempcode{1pt}}%
+\else
+\ifnum\value{mpcode} = 103
 \clrmarginpar{-21pt}{2pt}{\writempcode{0pt}}%
 \else
-\ifnum\value{mpcode} = 123
+\ifnum\value{mpcode} = 124
 \clrmarginpar{-6pt}{13pt}{\writempcode{0pt}}%
 \else
-\ifnum\value{mpcode} = 132
+\ifnum\value{mpcode} = 133
 \clrmarginpar{-21pt}{13pt}{\writempcode{0pt}}%
 \else
 \if@firstcolumn%
@@ -487,7 +497,7 @@ Nathaniel Christen
 }}}\fi
 }
 
-
+\definecolor{Scolor}{RGB}{35, 48, 2}
 
 \AddToShipoutPicture{%
 \ifnum\value{page}=1{%1
@@ -502,7 +512,7 @@ Nathaniel Christen
 		boxrule=1pt,leftrule=3pt,
 		rightrule=1pt,toprule=.5pt,arc=5pt,auto outer arc
 		]
-{\resizebox{35pt}{!}{\textbf{SOURCES}} \hspace*{4pt}}%
+{\resizebox{35pt}{!}{\textcolor{Scolor}{\textbf{SOURCES}}} \hspace*{4pt}}%
   Demo \hspace*{-3spt} code: \hspace*{3pt} \hlDbl{5}{https://github.com/scignscape/PNP} \hspace*{7pt} \resizebox{!}{5pt}{\eA{JATS}}:%
  \hspace*{6pt} \hlDbl{4.5}{https://scignscape.github.io/PNP/documents/A-perspective-from-compiler-theory.jats.xml} 
 
@@ -539,7 +549,7 @@ Nathaniel Christen
 
 
 \AddToShipoutPicture{%
-\ifnum\value{page}=13{%1
+\ifnum\value{page}=113{%1
 \AtTextLowerLeft{
 \hspace*{-38pt}\raisebox{734pt}{%
 \mpcodef{1pt}{53}
@@ -551,7 +561,7 @@ Nathaniel Christen
 \ifnum\value{page}=18{%1
 \AtTextLowerLeft{
 \hspace*{-38pt}\raisebox{734pt}{%
-\mpcodef{1pt}{88}
+\mpcodef{1pt}{90}
 }}}\fi
 }
 
@@ -1360,10 +1370,12 @@ breaklines=true
 \newcommand{\eIbox}[1]{\makebox{\textcolor{eIcolor}{\textit{#1}}}}
 
 
-\newcommand{\ctrlleft}{\eH{ctrl}\eS{+}left}
+\newcommand{\ctrlleft}{\eH{ctrl}\eS{+}click}
 
 
 \newcommand{\latlon}{\eA{lat/lon}}
+
+\newcommand{\ThreeD}{\eA{3D}}
 
 
 
@@ -1382,14 +1394,28 @@ breaklines=true
 %\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}
 %\fi}
 
-\newcommand{\eAnonfoot}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
-\newcommand{\eAfoot}[1]{\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}}
+\definecolor{DOIcolor}{RGB}{120, 6, 15} 
 
-\newcommand{\eASomeLowernonfoot}[1]{\resizebox{!}{6.5pt}{{\fontfamily{qcs}\selectfont #1}}}
-\newcommand{\eASomeLowerfoot}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
+\newcommand{\doi}[1]{\textcolor{DOIcolor}{#1}}
 
-\newcommand{\eAAllLowernonfoot}[1]{\resizebox{!}{7.5pt}{{\fontfamily{qcs}\selectfont #1}}}
-\newcommand{\eAAllLowerfoot}[1]{\resizebox{!}{6.5pt}{{\fontfamily{qcs}\selectfont #1}}}
+
+
+%\definecolor{eAcolor}{RGB}{2, 31, 48}
+\definecolor{eAcolor}{RGB}{2, 37, 48} 
+%\definecolor{eAcolor}{RGB}{48, 37, 2} 
+%\definecolor{eAcolor}{RGB}{136, 92, 90} 
+%\definecolor{eAcolor}{RGB}{120, 6, 15} 
+
+\newcommand{\eAstyle}[1]{{\fontfamily{qcs}\selectfont\textcolor{eAcolor}{#1}}}}
+
+\newcommand{\eAnonfoot}[1]{\resizebox{!}{6pt}{\eAstyle{#1}}}
+\newcommand{\eAfoot}[1]{\resizebox{!}{5pt}{\eAstyle{#1}}}
+
+\newcommand{\eASomeLowernonfoot}[1]{\resizebox{!}{6.5pt}{\eAstyle{#1}}}
+\newcommand{\eASomeLowerfoot}[1]{\resizebox{!}{6pt}{\eAstyle{#1}}}
+
+\newcommand{\eAAllLowernonfoot}[1]{\resizebox{!}{7.5pt}{\eAstyle{#1}}}
+\newcommand{\eAAllLowerfoot}[1]{\resizebox{!}{6.5pt}{\eAstyle{#1}}}
 
 \newcommand{\eA}[1]{\ifcurrentfootnote\eAfoot{#1}\else\eAnonfoot{#1}\fi}
 
@@ -1399,11 +1425,11 @@ breaklines=true
 
 
 
-\newcommand{\eAfn}[1]{\resizebox{!}{5pt}{{\fontfamily{qcs}\selectfont #1}}}
+\newcommand{\eAfn}[1]{\resizebox{!}{5pt}{\eAstyle{#1}}}
 
-\newcommand{\leA}[1]{\resizebox{!}{6.5pt}{{\fontfamily{qcs}\selectfont #1}}}
+\newcommand{\leA}[1]{\resizebox{!}{6.5pt}{\eAstyle{#1}}}
 
-\newcommand{\seA}[1]{\resizebox{!}{6pt}{{\fontfamily{qcs}\selectfont #1}}}
+\newcommand{\seA}[1]{\resizebox{!}{6pt}{\eAstyle{#1}}}
 
 \newcommand{\lJSON}{\leA{J}\seA{SON}}
 \newcommand{\lVM}{\leA{V}\seA{M}}
