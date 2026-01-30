@@ -2082,11 +2082,15 @@ SOURCES: PDF <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-
  text.replace("<!--enums-item-->", "</p></list-item><list-item><p>");
  text.replace("</enums>", "</p></list-item></list>");
 
+ text.replace("\\makebox{object/value}", "object/value");
 
  text.replace("@=/", "</");
  text.replace("=@", ">");
 
  text.replace("@=", "&");
+
+ text.replace("/ ", "/");
+
 }
 
 
