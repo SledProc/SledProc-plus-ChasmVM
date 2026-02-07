@@ -1,0 +1,1162 @@
+﻿
+
+
+\documentclass[11pt]{article}
+
+\usepackage[top=.85in, bottom=.65in, left=.56in, right=.45in, footskip=0pt,
+paperheight=13.5in,paperwidth=9.25in]{geometry}
+
+\usepackage{csquotes}
+
+\newcommand{\Ldown}[1]{\hspace{-2pt}\raisebox{-1pt}{{%\fontfamily{lmhh}
+\fontsize{14}{11}\selectfont{}{\textnormal{#1.}}}}\hspace{3pt}}
+
+
+\newcommand{\semihr}[1]{{\textcolor{orange!60!black}{\hrule width #1}}}
+
+
+\usepackage{xcolor}
+
+
+\usepackage{xcolor}
+
+
+\input{innerpactk}
+
+
+\usepackage{titleps}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+
+\definecolor{AquaA5}{HTML}{4bacc6}
+\definecolor{blggr}{rgb}{25, 180, 180}
+
+\definecolor{rbl}{RGB}{225, 180, 180}
+
+%\usepackage{soul}
+\newcommand{\ul}[1]{\underline{#1}}
+
+
+
+\newcommand*\fndiamondX[1]{\tikz[baseline=(char.base), x=2cm,y=1.5cm]{
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+%shape=circle,
+top color=red!31, bottom color=red!0,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,0) {\ul{{#1}}};
+
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+top color=AquaA5!50!black, bottom color=blggr!20,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\ul{{#1}}};
+
+
+}}
+
+
+
+\definecolor{bkgr}{HTML}{228AFE}
+
+\colorlet{rgrAt}{rgr!30!bkgr}
+
+\definecolor{ru}{RGB}{199, 99, 4}
+
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{.7pt}
+\contourlength{0.3pt}
+
+\newcommand\reduline{\bgroup\markoverwith
+{\textcolor{ru}{\rule[-.25ex]{3pt}{3.4pt}}}\ULon}
+
+\DeclareRobustCommand{\xfigunderline}[1]{\reduline{#1}
+\llap{\dashuline{\phantom{#1}}}%
+}
+
+
+\DeclareRobustCommand{\figunderline}[1]{%
+\raisebox{-.5pt}{\large%
+  \textcolor{ru}{\uline{\phantom{#1}}}%
+  \llap{\contour{white}{#1}}}%
+}
+
+%Figure~
+
+\def\figureautorefname{}
+
+%\DeclareRobustCommand{\Atref}[1]{{\ref{\textcolor{blue}{#1}}}}
+
+
+%\let\Oldautoref\autoref
+\renewcommand{\Atref}[1]{\textcolor{rgrAt!30}{\xfigunderline{\hspace{-2pt}\autoref{#1}\hspace*{-2pt}}}}
+
+\newcommand{\Athref}[2]{\textcolor{rgrAt!30}{\xfigunderline{\hspace{-2pt}\hyperlink{#1}{#2}\hspace*{-2pt}}}}
+
+
+
+
+%\let{\Oldref}{\ref}
+%\renewcommand{\ref}[1]{\Oldref{#1} on page \pageref{#1}}
+
+
+\usepackage[all]{hypcap}
+
+\usepackage{caption}
+
+%\let\svthefigure\thefigure
+
+%\let\svthefiguretxt\thefigure
+%\renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefiguretxt}}}
+
+
+\let\svthefigure\thefigure
+\let\svfigurename\figurename
+\newcommand\figcolortxt{%
+  \renewcommand\thefigure{\bfseries\sffamily\color{blue}\svthefigure}%
+  \renewcommand\figurename{\bfseries\sffamily\color{blue}\svfigurename}%
+}
+
+%  
+%\renewcommand\figurename{\color{rgr!70!ybk}\svfigurename}
+ % \renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefigure}}}
+
+\newcommand{\figm}[1]{{\color{rgrAt}\figunderline{\large #1}}}
+
+\let\svthefigure\thefigure
+\let\svfigurename\figurename
+\renewcommand\thefigure{\protect\myfigmarkup\svthefigure}
+\renewcommand\figurename{\protect\myfigmarkupn\svfigurename}
+\let\myfigmarkup\relax
+\newcommand\figcolor{%
+  \def\myfigmarkupn{\color{rgr!70!ybk}}%
+  \def\myfigmarkup{\figm}}%
+}
+
+
+%\newcommand\figcolor{%
+%\renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefigure}}}
+%}
+
+%\newcommand\figcolorundo{\renewcommand\thefigure{\svthefigure}}
+
+
+%\figcolor{}
+
+
+\newcommand*\fndiamond[1]{\tikz[baseline=(char.base)]{
+
+
+% \node[shape=circle,fill=white,draw=white,
+%inner sep=17pt, xshift=.5pt,yshift=-.5pt] (char) at (0,5) {};
+
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+%shape=circle,
+top color=rbl!30, bottom color=rbl!20,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,0) {\ul{{#1}}};
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+%shape=circle,
+top color=AquaA5!50!black, bottom color=white,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,0.15) {\ul{{#1}}};
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+%shape=circle,
+top color=AquaA5!50!black, bottom color=white,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,0.2) {\ul{{#1}}};
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+top color=white, bottom color=white,
+fill opacity=1,
+inner sep=2.5pt, shading angle=90,label={}] (bk)  at (0,0.2) {\ul{{#1}}};
+%
+}
+}
+
+
+\newcommand*\fnacircled[1]{\tikz[baseline=(char.base)]{
+
+ \node[shape=regular polygon, regular polygon sides=5, 
+shape border rotate=180,
+%shape=circle,
+top color=AquaA5!50!black, bottom color=blggr!20,
+inner sep=4.5pt, shading angle=210,xshift=.5pt,yshift=-.5pt] (char) {\ul{#1}};
+
+ \node[shape=regular polygon, regular polygon sides=5, 
+shape border rotate=180,
+top color=white, bottom color=blggr!20,
+fill opacity=1,
+inner sep=3.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
+
+
+% \node[shape=regular polygon,regular polygon sides=5,
+%shape border rotate=180,
+%AquaA5!50!black, bottom color=blggr!20, %top color=blggr!20, bottom color=yellow!20,
+%inner sep=6pt, shading angle=125,xshift=.5pt,yshift=-.5pt,label={}] (char) {\ul{#1}};
+
+% \node[shape=regular polygon,regular polygon sides=5,
+%shape border rotate=180,
+%fill opacity=1,top color=white, bottom color=blggr!20,
+%inner sep=5.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
+}}
+
+
+
+
+
+
+
+
+
+\newcommand*\fncircled[1]{\tikz[baseline=(char.base)]{
+
+ \node[shape=circle,
+top color=blggr!20, bottom color=AquaA5!90!black,
+inner sep=7pt, shading angle=75,xshift=.5pt,yshift=-.5pt] (char) {\ul{#1}};
+
+ \node[shape=circle,top color=white, bottom color=blggr!16,
+fill opacity=1,
+inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
+}}
+
+
+
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+
+
+\fancypagestyle{lastpageX}{
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}
+    \fancyfoot[C] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fndiamond{\usepage}}}}}
+
+}
+
+
+\fancypagestyle{lastpagey}{
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}
+
+     \fancyfoot[C] {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fndiamond{\usepage}}}}
+
+
+
+%     \fancyfoot[L] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamondX{\usepage}}}}
+
+
+%     \fancyfoot[C] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamond{\usepage}}}}
+
+
+%    \fancyfoot[C] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamond{\usepage}}}}}
+%    \fancyfoot[L] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamondX{\usepage}}}
+
+}
+
+
+%\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamond{\usepage}}}}
+
+\fancypagestyle{firstpagex}{
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}   
+    \fancyfoot[C] {\fontsize{12}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fnacircled{\textheight}}}}}
+}
+
+
+
+
+
+\fancypagestyle{default}{
+    \fancyhf{}           
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}   
+    \fancyfoot[C] {\fontsize{12}{10}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\hspace{1.6em}\fncircled{\usepage}}}}}}
+}
+
+
+\fancypagestyle{predefault}{
+    \fancyhf{}           
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0.2pt}   
+    \fancyfoot[RO, LE] {Pre \thepage}
+}
+
+\fancypagestyle{lastpage}{
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}
+    \fancyfoot[C] {}
+}
+
+
+
+\pagestyle{default}
+
+
+
+
+
+
+
+%\begin{center}
+%{\relscale{1.2}{\fontfamily{phv}\fontseries{b}\selectfont 
+%{\colorbox{black}{\color{blue}{\llWC{} Database Engine \\and 
+%\llMOSAIC{} Native Application Toolkit}}}}}
+
+\colorlet{ctmp}{logoPeach!20!gray}
+\colorlet{ctmpp}{ctmp!90!yellow}
+\colorlet{ctmppp}{ctmpp!50!black}
+\colorlet{ctmpppp}{ctmppp!90!logoRed}
+\colorlet{ctmcyan}{ctmpppp!70!cyan}
+
+\colorlet{ctmcyano}{ctmcyan!40!orange}
+\colorlet{ctmcyanor}{ctmcyano!50!red}
+
+\colorlet{cyann}{cyan!70!blue}
+
+\newcommand{\cyanhr}{{\textcolor{cyann!40}{\hrule}}}
+
+%109 52 4359
+
+%\textcolor{logoRed}{\textbf{January 27, 2021}}
+
+\newcommand{\sectprevspace}{\vspace{24pt}}
+
+\newcommand{\sectnum}[1]{\hspace*{25pt}\textcolor{red!70!black}{}\hspace*{3pt}}
+
+\newcommand{\secttitle}[1]{\textcolor{red!70!black}{\textit{\textbf{#1}}}}
+
+\newcommand{\subtitle}[1]{\begin{center}\textcolor{purple!70!black}{\textit{\textbf{%
+{\fontsize{11.5}{9.5}\selectfont{}#1}}}}\end{center}}
+
+\newcommand{\cfootnote}[1]{\footnote{\centering #1}}
+
+
+%\newcommand{\ConceptsDB}{\resizebox{!}{7.5pt}{\ATexttclr{ConceptsDB}}}
+
+\newcommand{\lConceptsDB}{\resizebox{!}{7pt}{\ATexttclr{Concepts}}%
+\resizebox{!}{6.5pt}{\ATexttclr{DB}}}
+
+\newcommand{\llConceptsDB}{Concepts%
+\hspace*{.5pt}\resizebox{!}{7.5pt}{\textcolor{dsl!70!black}{DB}}}
+
+\newcommand{\PylonAthreeR}{\resizebox{!}{6.5pt}{\ATexttclr{Pylon}}%
+\resizebox{!}{6pt}{\ATexttclr{A3R}}}
+
+
+\newcommand{\lPylonAthreeR}{\resizebox{!}{7pt}{\ATexttclr{Pylon}}%
+\resizebox{!}{6.5pt}{\ATexttclr{A3R}}}
+
+\newcommand{\llPylonAthreeR}{Pylon%
+\hspace*{.5pt}\resizebox{!}{7.5pt}{\textcolor{dsl!70!black}{A3R}}}
+
+
+\newcommand{\PHCN}{\resizebox{!}{6.5pt}{\ATexttclr{PHCN}}}
+\newcommand{\lPHCN}{\resizebox{!}{7pt}{\ATexttclr{P}}\resizebox{!}{6pt}{\ATexttclr{HCN}}}
+
+
+
+
+%\setlength{\itemsep}{50pt}
+
+
+\AddToShipoutPictureBG{%
+
+\colorlet{redbl}{red!40!magenta}
+\colorlet{yelbl}{yellow!60!magenta}
+
+\colorlet{redblg}{redbl!30!black}
+
+%\ifnum\value{page}=5{
+%\AtTextLowerLeft{\raisebox{-5pt}{\hspace{5pt}\fontfamily{qtm}\fontsize{10}{11}\fontseries{b}\selectfont{}{\colorbox{yelbl!7}{\textcolor{redblg!70}{PLEASE SEE OUR SOFTWARE DEMO VIDEOS: \href{http://www.lingtechsys.com/videos/qmt-composite.mkv}{GIS},
+%\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{360\textdegree{} photography}, and \href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{image processing}.}}}}}
+%}\fi
+
+}
+
+\usetikzlibrary{arrows}
+
+
+\input{PacTkOverlaysy}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+{\hspace*{278pt}\raisebox{-27pt}{\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fnacircled{\usepage}} }}}
+}
+}\fi
+}
+
+
+\definecolor{rgr}{RGB}{61, 38, 48}
+
+\definecolor{ybk}{RGB}{187, 228, 240}
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+{\hspace*{431pt}\raisebox{867pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
+\colorbox{ybk}{\textls*[-50]{\textit{\textcolor{rgr}{``Scientific Publishing is\ }}}}}
+}
+}
+}
+}\fi
+}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+{\hspace*{433pt}\raisebox{849pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
+\colorbox{ybk}{\textls*[-50]{\textit{\textcolor{rgr}{\ \ a Scientific Discipline''\ }}}}}
+}
+}
+}
+}\fi
+}
+
+
+
+
+
+
+
+
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=5{
+\AtTextLowerLeft{
+\hspace{266pt}\raisebox{-27pt}{%  
+{\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fndiamond{\usepage} }}}
+}}
+
+\AtTextLowerLeft{
+\hspace{-8pt}\raisebox{62pt}{%
+ \href{http://www.lingtechsys.com/videos/qmt-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.4]{pm/qmt-composite.png}\\GIS}}%
+ \hspace{10pt}\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.255]{pm/dhax-composite.png}\\360\textdegree{} photography}}%
+ \hspace{25pt}\href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.35]{pm/xcsd-composite.png}\\Image Processing}}%
+}}}\fi
+}
+
+
+
+
+
+%\AddToShipoutPicture*{%
+%\ifnum\value{page}=12{
+%  \AtPageLowerLeft{%
+%    \raisebox{20pt}{%
+      
+%\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamond{\usepage}}}
+%
+%    }%
+%  }
+%\fi}
+%}
+
+\renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}%
+{\fontfamily{lmss}\fontseries{bx}\fontsize{12}{12}\selectfont%
+\textcolor{bkgr!50!black}{#1}\hspace*{1.5em}}
+}
+
+
+%\renewcommand{\pseudoIndent}{\vspace*{-4pt}\noindent\hspace{4pt}}
+
+\newcommand{\psUp}{\vspace*{-9pt}}
+
+\renewcommand{\shortenp}{\hspace*{5pt}}
+
+\begin{document}
+
+
+%\setlength{\footskip}{22pt}
+
+
+\thispagestyle{empty}
+%\thispagestyle{firstpage}
+
+\vspace*{-77pt}
+
+%\vspace*{1em}
+
+\begin{center}
+
+{\cyanhr}
+
+\vspace*{9pt}
+
+{\color{red!70!black}\fontfamily{phv}\fontseries{b}\selectfont
+
+%\vspace*{13pt}
+
+%{\Large{Solving the Machine Readable Problem}}
+
+%\vspace*{10pt}
+
+%{\Large{by}}
+
+{\large{The Publishing Accelerator Toolkit (PacTk)}}
+
+%\vspace*{7pt}
+
+%{\large{as applied to Multimedia Government, Civil and Environmental Informatics}}
+
+%\vspace*{7pt}
+
+%{\large{Architecture, Construction, and Property Data}}
+
+\vspace*{-3pt}
+
+}
+
+{\cyanhr}
+
+\vspace*{12pt}
+
+\hspace{-32pt}Amy Neustein, Ph.D.\\
+\hspace{-32pt}CEO and Founder\\
+\hspace{-32pt}Linguistic Technology Systems\\
+\hspace{-32pt}Fort Lee, NJ\\
+\hspace{-32pt}917-817-2184\\
+\hspace{-32pt}\href{mailto://amy.neustein@verizon.net}{amy.neustein@verizon.net}
+
+\end{center}
+
+%\newgeometry{}
+
+%{\large{}}
+
+%vspace*{6pt}
+
+
+%}
+
+
+\vspace*{-1pt}
+
+{\setstretch{1.12}
+
+
+%\section{Overview}
+%\vspace{}
+\noindent\subtitle{{Class Libraries and Full-Text Search/Encoding Tools for   \\
+\vspace{1pt}
+Publishing Documents, Datasets, and Multimedia Resources}}
+%\sectvspace{}
+
+\vspace*{-1pt}
+{\semihr{0.077\textwidth}}
+\vspace*{3pt}
+%\sectnum{1.}
+\hspace{2pt}\secttitle{{Overview}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
+\vspace*{5pt}
+{\semihr{0.077\textwidth}}
+
+\vspace*{3pt}
+
+\p{In contemporary publishing, the standard workflow includes \XML{}-based 
+formats such as \JATS{} or \BITS{}, which become the basis for  
+\PDF{}s and other human-visible documents.  However, 
+\XML{} itself is not explicitly built for representing 
+textual data.  As a result, examining \JATS{} or \BITS{} files via 
+generic \XML{} technology renders certain publishing-related 
+query and editing tasks difficult to implement.  The \PDF{} format 
+is similarly opaque because internal \PDF{} representations 
+of document text include many anomalies due to 
+ligatures, hyphenation, font specs, and other layout-related 
+discrepancies between \XML{} inputs and user-visible output 
+(in short, internal \PDF{} text is only a partial representation  
+of textual content as understood by authors and editors).  
+As a consequence, \PDF{} files are opaque to full-text search 
+languages such as \XQFT{} (\XQuery{} Full Text), \DSL{} (Dimensions Search Language), 
+and OpenSearch Query \DSL{} (Domain-Specific Language).}
+
+\p{Given the limitations of \PDF{} and \XML{} for natural-language 
+documents, numerous competing formats how possible 
+applications within publishing workflows such as \TEI{} (Text Encoding Initiative), \TagML{} 
+(Text-as-Graph Markup Language), \BioC{} (a biomedical text mining 
+standard defined by PubMed Central), and Markdown (popular for wikis and 
+social media).  The \PacTk{} system presents a different kind 
+of alternative, based on a class library implemented 
+in computer code rather than any single markup language.}
+
+\p{\lPacTk{}'s design reflects trends in scientific research 
+and the emergence of interdisciplinary fields such as 
+social ecology, translational medicine, and medical humanities. 
+It is the view of \PacTk{}'s developers that 
+the value of new investigations often cannot be fully 
+expressed in single-disciplinary terms; nor does one individual 
+publication mark the end of a well-conceived research 
+project.  Instead, any single publications are milestones in the 
+unfolding of projects that, in the best case, 
+progress to socially-beneficial deployments.  
+More so than in the past, research projects 
+(summarized but not fully articulated by 
+academic papers) can serve as foundations 
+for scholars' and scientists' technical \q{identity,} 
+potentially more significant than details such as degree specialization 
+or disciplinary affiliation.  In recognition of 
+these paradigms, \PacTk{} seeks to help 
+authors build multi-faceted presentations 
+covering data, code, and foundations for practical 
+applications, which authors could build upon 
+for future research work, funding, translational 
+implementation, and then implementational feedback.}  
+
+
+\vspace*{14pt}
+{\semihr{0.082\textwidth}}
+\vspace*{4pt}
+%\sectnum{1.}
+\hspace{2pt}\secttitle{{Examples}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
+\vspace*{4pt}
+{\semihr{0.082\textwidth}}
+
+\vspace*{11pt}
+
+
+\lPacTk{} represents text internally via a \q{Topomorphic 
+Sentence Object Model} (\TSOM{}), wherein sentences 
+and other discursively significant text areas are 
+instances of \Cpp{} classes, instead of  
+relying on markup to organize documents.  
+\lPacTk{} provides a format called \GTagML{} 
+to initialize \TSOM{} data, but \XML{} or 
+\TagML{} input sources could be used as well. 
+The following cases may help to clarify why 
+an object-based intermediate representation 
+is more efficient than working with markup directly.
+
+\begin{description}
+
+\item[\textbullet{}Compiling a Meta-Index]  \lPacTk{} helps book series, science grids, and 
+potentially individual journals merge indexes from multiple documents 
+(wherever those indexes exist in the first place) into a full-text 
+database augmented with index metadata.  This is distinct from 
+a \q{reverse index} typically employed by search engines, 
+which is based solely on the words in each document.  
+A Meta-Index, by contrast, incorporates index entries, 
+subheadings, \q{see also} redirection, and content 
+locators that have been vetted by authors or editors, 
+to confirm that a particular sentence or paragraph is a 
+correct match to an indexed concept.  Indexing 
+software based on \TSOM{} can be embedded into 
+\PDF{} viewers, allowing readers to access 
+Meta-Index search portals directly from \PDF{} 
+files via context menus 
+(Figure~\Atref{fig:portal}~and~\Atref{fig:ss6},~\Atref{fig:ss7},~\Atref{fig:ss8},~\Athref{fsvg}{10}).  
+In addition, match results (both from local 
+and meta indexes) can be presented to 
+users via navigable controls superimposed 
+alongside the main text (Figure~\Atref{fig:m2m}).  
+\PacTk{} can also help with \GUI{} components 
+for authors and editors to construct indexes to begin with
+(Figures~\Atref{fig:ss1},~\Atref{fig:ss2},~\Atref{fig:xNC},~\Atref{fig:ling}).  Via 
+\TSOM{}, index entries are structured objects 
+that can be merged into a full-text database 
+while also generating the print index at the 
+end of a book/publication.  Furthermore, the 
+search periphery can be expanded to include 
+computer code, Research Object data sets, 
+and other supplemental materials 
+packaged with a publication.
+
+%\psuedoIndent{}  
+\psUp{}
+\p{{\shortenp}Once a meta-index is compiled and published as a web service, 
+the next step is to different software components to access meta-index information 
+via \API{}s and/or database queries.  The \PacTk{} query language --- which 
+can be customized for each project --- is unique in that it 
+focuses on individual sentences as the basic units of written text, 
+as a search parameter (e.g., restricting matches to inside a single sentence, 
+or at one's start) and query-result container.  This query language 
+can function in multiple contexts: within web services guiding access to full-text 
+search; embedded in \PDF{} viewers or Executable 
+Research Object code; or as a standalone tool for authors and editors.  In the \PDF{} context, 
+an embedded query language could augment the capabilities of 
+internal \PDF{} while also exposing this functionality to 
+query scripts that may be loaded at runtime, so searches can 
+take on new parameters not built in to the \PDF{} viewers' \GUI{} objects.
+For Executable Research Objects, raw data files may be indexed and a query system fine-tuned specifically 
+for that project's research data could be included as part of 
+the data set's executable assets.  \lPacTk{} defines an interface 
+which any class may use to expose its data members or other facets 
+to query evaluation.  \lGUI{} indexing can include key-press handlers, 
+mouse-action logistics (and associated cursor-icon cues), context 
+menu options, and on-screen positions where \GUI{} controls 
+could be added for individual data sets.  }
+
+\item[\textbullet{}Working with Research Data and Simulations] When publications are  
+%\p{\textbf{Categorizing Inner Documents via Annotations}:
+associated with data sets, code, 
+or multimedia presentations, those supplemental materials 
+should be indexed alongside the text manuscripts.  This 
+allows search engines to query all parts of a Research Object, 
+not just documents.  Equally important, indexing full Research Object
+allows publications to be cross-referenced with data, code, and/or 
+multimedia.
+
+\psUp{}
+\p{{\shortenp}To see how multimedia cross-references might be used, suppose a publication
+includes a graphic taken from a video frame.  Naturally, some readers 
+will want to watch the entire video.  Cross-referencing between 
+that document-location and the video file would allow \PDF{} viewers 
+to play the video in a separate window (either from the beginning 
+or from shortly before the still shot that was captured).  Moreover, 
+suppose the video shows a specific geographic location --- for 
+instance, it addresses environmental effects of climate change.  
+By geotagging individual frames, the video player could  
+open a digital map centered at the currently visible \GIS{} 
+coordinates.  If the publication's Research Object includes 
+\GIS{} data sets, icons for dataset locations could then 
+be superimposed on the base map.}
+
+\psUp{}
+\p{{\shortenp}Alternatively, suppose a video is derived from a computer 
+simulation --- perhaps an analysis of how global 
+warming will affect ecosystems, assuming different 
+rates of greenhouse gas reduction (as input parameters).  In 
+addition to watching the video, readers might want to examine 
+the simulation directly: modify the initial parameters or 
+study the code implementing iteration updates.  Here, multimedia 
+cross-references could help a \PDF{} viewer open multiple 
+secondary windows, including a code preview and a dedicated
+window for the simulation graphics.}
+
+%\clearpage{}
+
+\begin{figure}[t!]
+\figcolor
+\begin{center}
+\includegraphics[scale=0.45,clip,trim=0 0 260pt 150pt]{fin/ie.png}
+\caption{GUI functionality for compiling and curating indexes}
+\label{fig:ss1}
+\end{center}
+\end{figure}
+
+
+\item[\textbullet{}Digital Humanities]  
+%\p{\textbf{Extracting Linguistics Annotations}:
+Executable Research Objects --- combining text, code, and data into a single 
+package --- are identified with natural science, but similar programming techniques 
+apply to the humanities as well.  For instance, historical documents 
+are themselves objects of study or assets to scholarship (e.g., collected papers). 
+Archiving is more complex in this context because 
+digital twins --- whether 
+as images, transcribed to text, or both --- typically 
+demand more detailed markup structure (for instance, 
+transcription ambiguities are recorded, or 
+scribbled marginal notes notated alongside the 
+corresponding text).    Or, consider a linguistic article that contains 
+a list of sample sentences/passages, intended to demonstrate specific claims (about 
+parsing structure, conceptualization, etc.) or to serve 
+as a basis for subsequent analysis.  Such samples (obtained from written 
+corpora/audio records or simply 
+invented by authors) are commonly typeset in a visually distinct style: 
+usually printed with id numbers, 
+contextual comments when needed, and sometimes special symbols representing 
+phonology, agglutination, word order, morphosyntactic 
+patterns, syntactic categories, and so forth.
+ 
+\begin{figure}[h!]
+\figcolor
+\includegraphics[scale=0.45,clip,trim=290pt 190pt 0pt 0pt]{fin/ie.png}
+\caption{Compiling an index for the second edition of a book}
+%\includegraphics[scale=0.45]{fin/ling.png}
+%\caption{Enhanced GUI capabilities enabled by machine-readable text encoding}
+\label{fig:ss2}
+\end{figure}
+
+
+
+
+%\psuedoIndent{}  
+\psUp{}
+\p{{\shortenp}Because this mode of presentation is so common, 
+researchers could benefit repositories of such examples, 
+as a special kind of language corpus.  That is, linguistics 
+papers could be scanned for listed samples that get extracted into a common format, to be included in a 
+multi-publication database.  Interested readers could then 
+browse the samples to find articles that address specific 
+syntactic or semantic topics, particularly if each sample 
+is classified according to the linguistic subject they 
+exemplify (or serve thereto as a basis for analysis).  Moreover, it is not uncommon 
+for the same case study 
+to be analyzed by multiple linguists, potentially creating 
+interesting contrasts in theories and paradigms.  
+The whole process would be accelerated if authors employ a 
+common format (e.g., distinct \XML{} tags) to notate the examples;  
+but the full extracting and database persistence logic 
+would need specialized programming.}
+
+\item[\textbullet{}Interoperating Publication Viewers with Science Applications]  
+%\p{\textbf{Embedding a Publication Viewer in a Chemistry Application}:
+Graphics and data visualization provided by science applications can 
+augment the functionality and interactive features of document 
+viewers.  Consider an article about biochemistry whose text content  
+includes compounds identified either by a common name 
+or a chemical formula.  Assuming these special terms are 
+ended in a structured format (e.g., special \XML{} tags),     
+chemical names/formulae can be associated with 
+molecular-structure files in formats such as \PDB{} 
+(Protein Data Bank) or \CML{} (Chemical Markup 
+Language).  Those files may then be opened 
+via applications dedicated to 
+visualizing and analyzing chemical structures in three 
+dimensions (showing positions of atoms, atomic groups/arrangements, 
+bonding strength, sub- and inter-molecular 
+forces, and so forth).  A similar example might be a chemistry textbook, with custom classroom software.
+
+%\pseudoIndent{}  
+\enlargethispage{12pt}
+\psUp{}
+\p{{\shortenp}For this kind of context, special programming is needed to extract 
+textual data about chemical names and formulae, 
+and potentially to search for molecular files via science 
+\API{}s.  Furthermore --- in the hopes of best leveraging \ThreeD{} visualization 
+capabilities --- the \PDF{} viewer has to interoperate 
+with science applications, either through a common message-passing 
+protocol or by embedding the entire \PDF{} code base itself as a 
+plugin or extension.  Ideally, one or more molecular visualization 
+applications themselves can be modified to work directly 
+with these special \PDF{} components, because --- once 
+\ThreeD{} files are loaded into the software --- the 
+specific chemical compound being studied, and its properties, 
+could be cross-referenced to locations in 
+the original research manuscript (or, analogously, the students' textbooks).
+Similar points could be made for interop between manuscript views 
+and multimedia content of many kinds: digital map displays, 
+videos (which may in turn be synced with digital maps by 
+geotagging individual frames), simulations, image series, and so on.}
+
+\end{description}
+
+
+%}
+
+\vspace*{-13pt}
+%
+\sstitle{Indexing Digital/Multimedia Repositories}  
+
+\vspace*{13pt}
+
+\p{Within Executable Research Objects, 
+text documents are paired with data, code, 
+graphics, and/or multimedia resources.  
+\lPacTk{} extends its meta-index protocol 
+to incorporate these variegated asset 
+types.  Index code sources and raw data files 
+through a framework oriented also to text 
+manuscripts --- rather than traditional 
+pre-search ingesting associated with 
+Content Management Systems (\CMS{}) --- 
+has numerous benefits: \textb{} indexable 
+terms may appear in many contexts,\footnote{\hspace*{4pt} Data types 
+and their fields/members; scales and units of measurement; 
+coordinate axes; dropdown combo boxes; context menus; 
+tabular column labels; user actions \hspace*{6.5pt}available 
+\visavis{} specific \GUI{} elements.} not all 
+of which are covered by \CMS{} 
+indexing; \textb{} indexes should be used not only 
+for searching and external documentation but also 
+incorporated into \GUI{} functionality directly;\footnote{\hspace*{4pt} For 
+instance, the executable portion of a Research Object 
+could be run in a special \q{assist} mode where 
+supplemental components illustrate how to use different \GUI{} \hspace*{6pt}windows} 
+and cross-references between text and non-text content 
+should incorporate such details as individual sentences 
+and \PDF{} page coordinates, which require rigorous 
+text encoding.}
+
+\p{Executable Research Objects are often associated with 
+\q{grid} technology.  In general, a grid is designed with the assumption 
+that users will execute software packages which are accessible 
+via the grid, and that their primary reason for doing so is 
+participating in large, decentralized computations, or 
+because the software encapsulates novel research.  Although 
+originally focused on remote code-execution on special-purpose 
+computers, more recent use cases are more rigorously
+aligned with \FAIR{} principles: academic papers often present 
+\hspace*{-238pt}\makebox[1.8\textwidth]{research methods and theoretical models 
+in abstract,\hspace{3.5pt}mathematical terms. \hspace{1.5pt} Observing visuals, and experimenting with code parameters,} 
+
+\begin{figure}[h!]
+\figcolor
+\includegraphics[scale=0.5]{fin/stark-mi.png}
+\includegraphics[scale=0.5]{fin/stark.png}
+\caption{Meta-index search through a web portal}
+\label{fig:portal}
+\end{figure}
+
+\clearpage{}
+
+can help make the underlying research more understandable.  There is pedagogical value in running and examining 
+simulation and/or analytic code, that becomes accentuated insofar 
+as code is developed with explicit conceptual semantics 
+(pre- and post-condition declarations, Design by Contract, 
+unit-decorated types, and so on).   These code annotations 
+may then become a basis for text-integrated indexing.}
+
+\p{With this in mind, we can formulate several 
+core principles of \q{\FAIR{}} grid computing, 
+including: \textb{} code packages hosted 
+on a grid should be designed with as few 
+mandatory external dependencies as possible; 
+\textb{} where a given package has software 
+or hardware requirements that are difficult to 
+satisfy, a simplified version should be made 
+available that would at least allow some 
+provisional learning and evaluation of published 
+results; \textb{} every effort should be 
+made to ensure that the software executes in a 
+usable fashion even in the absence of dependencies 
+or preconditions that held true for those developing 
+the code; \textb{} grid collaborations should offer 
+replication-focused coding tools; and \makebox{\textb{} there} should be a 
+clear set of actions, with as few steps as 
+possible, allowing someone newly acquainted 
+with a grid-hosted package --- in particular, someone 
+who learns about the code from a technical publication 
+--- to obtain and execute the relevant code.  
+Researchers, especially, should be able to build and 
+use the software in parallel with figures and 
+text discussions featured in document manuscripts.}
+
+\p{In general, then, publishers cannot 
+assume that \FAIR{} transparency is achieved simply by 
+sharing raw data files.  Instead, open-access materials should 
+wherever possible include plugins or source-code extensions (developed 
+individually for one manuscript; or collectively 
+for a book series, journal title, or document repository) 
+targeting science applications with requisite capabilities 
+to view/analyze domain-specific file types.  Similar 
+comments apply to humanities environments, such as 
+front-ends for studying linguistics corpora and/or 
+parse-structures; sociological/economic 
+statistics; or graphics tools for digital humanities.
+\lPacTk{} can help in this context 
+because a single \PacTk{} plugin may serve as middleware 
+on top of which extensions could operate that are individualized 
+to specific publications/manuscripts.  This can be more 
+efficient than building components against applications' 
+native plugin mechanisms directly.}
+
+%\clearpage{} 
+
+%\enlargethispage{13pt}
+%\vspace*{8pt}
+
+%\clearpage{}
+
+\begin{figure}[t!]
+\figcolor
+\hspace{-25pt}\includegraphics[scale=.93, trim=0 4.34cm 0 0, clip]{x/m2m.png}
+\caption{Index Search in a PDF Front-End Context}
+\label{fig:m2m}
+\end{figure}
+
+\vspace*{-4pt}
+
+
+  
+
+
+%\begin{figure}[h!]
+%\figcolor
+%\hspace{-25pt}\includegraphics[scale=.95, trim=0 4.34cm 0 0, clip]{x/m2m.png}
+%\caption{Index Search in a PDF Front-End Context}
+%\label{fig:m2m}
+%\end{figure}
+
+
+%\clearpage{}
+
+
+\end{description}
+
+
+\vspace*{-5pt}
+
+\thispagestyle{empty}
+
+\sstitle{Video Links}
+
+\vspace*{3pt}
+
+\p{For more information, please see our software demo videos, which show 
+software components that could be integrated into dataset applications 
+and \PDF{} viewers:
+
+
+}
+
+
+
+\vspace*{8pt}
+
+
+
+%\setlength{\belowcaptionskip}{5pt}
+%\setlength{\belowcaptionskip}{0pt}
+
+%}
+
+%\newgeometry{bottom=.7in}
+
+
+%\p{}
+%\p{}
+
+%\vspace*{-21pt}
+
+%{\semihr{0.164\textwidth}}
+%\vspace*{4pt}
+%\sectnum{1.}
+%\hspace*{-28pt}\secttitle{{Video Links}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
+%\vspace*{4pt}
+%{\semihr{0.164\textwidth}}
+
+
+
+
+
+
+
+% \href{http://www.lingtechsys.com/videos/qmt-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.3]{pm/qmt-composite.png}\\\GIS{}}}%
+% \hspace{10pt}\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.255]{pm/dhax-composite.png}\\360\textdegree{} photography}}%
+% \hspace{25pt}\href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.35]{pm/xcsd-composite.png}\\Image Processing}}%
+
+}
+
+
+%\vspace*{3pt}
+
+\pagestyle{lastpage}
+%
+
+%\clearpage{}
+
+
+\vspace*{-65pt}
+
+%\begin{minipage}{\pagewidth}
+\pagestyle{empty}
+
+\begin{figure}[h!]
+\figcolor
+\hspace{-5em}\includegraphics[scale=0.71, trim=0 0 0 0, clip]{x/xNC.png}
+\caption{Subdivision formats for Paragraph IDs}
+\label{fig:xNC}
+
+\vspace*{22pt}
+
+\centering{
+\includegraphics[scale=0.6, trim=0 4.1cm 0 .4cm, clip]{fin/single.png}
+\caption{An index entry dialog window (and context menu for single and meta-index views)}
+\label{fig:ss6}
+}
+
+\end{figure}
+
+%\enlargethispage{35em}
+
+%\clearpage{}
+
+\vspace*{-82pt}
+
+\centering{
+
+\begin{figure}[h!]
+
+\figcolor
+
+\centering{
+\includegraphics[scale=0.66]{fin/meta.png}
+\caption{Dialog window for local and meta-index searches}
+\label{fig:ss7}
+}
+
+\vspace*{18pt}
+
+\centering{
+\includegraphics[scale=0.56, trim=8.4cm 0 0 1cm, clip]{fin/pisa.png}
+\caption{Configuring default back-end queries}
+\label{fig:ss8}
+}
+
+\end{figure}
+
+
+
+
+\begin{figure}[h!]
+
+\figcolor
+
+%\centering{
+\hspace*{-26pt}\includegraphics[scale=0.5]{fin/ling.png}
+\caption{Enhanced GUI capabilities enabled by machine-readable text encoding}
+\label{fig:ling}
+%}
+
+\vspace*{58pt}
+
+\hypertarget{fsvg}{ }
+
+%\centering{
+%\includegraphics[scale=0.56, trim=8.4cm 0 0 1cm, clip]{fin/pisa.png}
+%\caption{Configuring default back-end queries}
+\hspace{8pt}
+\includegraphics[scale=0.5, trim=0 7mm 0 8mm, clip]{fin/sah.png}
+\caption{A category-based web-accessible index table for SVG pages}
+\label{fig:svg}
+%}
+
+\end{figure}
+
+
+
+%\begin{figure}[h!]
+%\figcolor
+%\includegraphics[scale=0.49, trim=0 4.1cm 0 0, clip]{fin/single.png}
+%\caption{An index entry dialog window (and context menu for single and meta-index views)}
+%\label{fig:ss4}
+%\end{figure}
+
+%\end{minipage}
+
+%\clearpage{}
+
+\end{document}
+
+% Figure 1  ZoLa compared with a static \PDF{} map
+% Figure 2  Merging NYC environment-related classifications 
+ %            with WRI and ISI designations
+% Figure 3  Custom query windows for accessing E-Designation data
+% Figure 4  Customizable basemaps and data-layer overlays
+% Figure 5  Managing communications with NYCPlanning \API{}s as part 
+ %            of a metro area-wide \API{} integration 
+
+
+
+
