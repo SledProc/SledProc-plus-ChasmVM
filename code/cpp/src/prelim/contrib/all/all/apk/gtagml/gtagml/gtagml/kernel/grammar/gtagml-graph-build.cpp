@@ -74,6 +74,7 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
   "MartinBraenne",
   "NCDataIntegration",
   "DonaldCComeauEtAl",
+  "ReginaldCushingEtAl",
   "NickGarabedianEtAl",
   "HarijsGrinbergs",
   "PottayilHarisankerMenonEtAl",
@@ -82,7 +83,6 @@ GTagML_Graph_Build::GTagML_Graph_Build(GTagML_Graph& g, GTagML_Document_Info& do
   "LimorPeerEtAl",
   "SimplexNumericaManual",
   "VickyStevensEtAl",
-  "RudolfStrijkersEtAl",
   "YuyaUezato",
   "LucyLuWangEtAl",
   "AntonZhilin",
@@ -155,6 +155,8 @@ void GTagML_Graph_Build::enter_abstract()
  latex_stream_ << "\n\n\\twocolumn[\\begin{docAbstract}\n";
 
  sentences_sdi_stream_ << "\n\n--- Abstract/start\n";
+
+ sentences_sdi_stream_ << "\n\n--- Sentence/start\nid: " << sentence_id_;
 }
 
 
@@ -627,9 +629,19 @@ void GTagML_Graph_Build::heading(u1 count, QString stext, QString ltext)
 void GTagML_Graph_Build::prepare_bibliography()
 {
  xml_writer_.writeCharacters("\n\n");
+ //<sec><title>Introduction</title> <ref
+
+// xml_writer_.writeStartElement("sec");
+// xml_writer_.writeTextElement("title", "Bibliography");
+
+ xml_writer_.writeStartElement("back");
  xml_writer_.writeStartElement("ref-list");
+ xml_writer_.writeTextElement("title", "Bibliography");
  xml_writer_.writeComment("bib:here");
  xml_writer_.writeEndElement();
+
+ xml_writer_.writeEndElement();
+// xml_writer_.writeEndElement();
 }
 
 void GTagML_Graph_Build::end_document()
@@ -1319,6 +1331,7 @@ void GTagML_Graph_Build::citation(QString full_match, QString label, QString loc
   xml_writer_.writeTextElement("attrib", qsl.join(", "));
  }
 
+ xml_writer_.writeCharacters("[");
  xml_writer_.writeStartElement("xref");
  xml_writer_.writeAttribute("ref-type", "bibr");
 //? xml_writer_.writeAttribute("rid", label);
@@ -1365,6 +1378,7 @@ void GTagML_Graph_Build::citation(QString full_match, QString label, QString loc
  }
 
  xml_writer_.writeEndElement();
+ xml_writer_.writeCharacters("]");
 }
 
 void GTagML_Graph_Build::bulleted_item(QString symbol, QString supp)
@@ -1956,7 +1970,7 @@ void GTagML_Graph_Build::prepare_jats(QString& text, QString bib_path)
  text.replace("<!--meta:here-->", meta);
 
  text.replace("footnote \\lhRef{poppler-adj}{\\thetrackFNpoppler}",
-   "footnote&#xa0;<xref ref-type=\"fn\" rid=\"fn-3\">3</xref>");
+   "footnote&#xa0;<xref ref-type=\"fn\" rid=\"fn-3\"></xref>");
  text.replace("{\\sth}", " ");
 
  text.replace("\\resizebox{51pt}{!}{capabilities}", "capabilities");
@@ -1990,13 +2004,17 @@ SOURCES: PDF <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-
  text.replace("</fn>", "</p></fn>");
 
 
- text.replace("<ref-list>", "<back><ref-list>");
- text.replace("</ref-list>", "</ref-list></back>");
+// text.replace("<ref-list>", "<back><ref-list>");
+// text.replace("</ref-list>", "</ref-list></back>");
 
  text.replace("\\Visavis{}", "Vis-a-vis");
  text.replace("{\\sth}", " ");
  text.replace("\\-", "");
 
+ text.replace("visavis", "vis-a-vis");
+
+ text.replace("fOFg", "f-of-g");
+ text.replace("slashA", "\\A");
 
  text.replace("\\\\", "");
 
@@ -2083,6 +2101,8 @@ SOURCES: PDF <uri>https://scignscape.github.io/PNP/documents/A-perspective-from-
  text.replace("</enums>", "</p></list-item></list>");
 
  text.replace("\\makebox{object/value}", "object/value");
+
+ text.replace("\\lhRef{section-one-one}{\\soneone}", "1.1");
 
  text.replace("@=/", "</");
  text.replace("=@", ">");
