@@ -28,6 +28,8 @@
 
 \setlength{\headsep}{35pt}
 
+\newcommand{\ndash}{--}
+
 \setlength{\parindent}{0pt}
 
 \newcommand{\parbreak}{
@@ -37,6 +39,9 @@
 \newcommand{\dunderline}[3][-1pt]{{%
   \sbox0{#3}%
   \ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+
+
+\usepackage{enumitem}
 
 
 \newenvironment{hungitem}[1]%
@@ -209,7 +214,7 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 }
 
 
-\newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
+\newenvironment{docEnumerate}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
 
 \newcommand{\enumsItem}{\item}
 

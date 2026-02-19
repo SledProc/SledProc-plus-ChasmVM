@@ -28,6 +28,8 @@
 
 \setlength{\headsep}{35pt}
 
+\newcommand{\ndash}{--}
+
 \setlength{\parindent}{0pt}
 
 \newcommand{\parbreak}{
@@ -75,8 +77,6 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 \usepackage{xcolor}
 
 %\newcommand{\notePage}[1]{ === page #1 === }
-
-\newcommand{\ndash}{--}
 
 
 \newcommand{\notesdiv}[1]{\vspace{2em}\textbf{#1}\vspace{2pt}}
@@ -212,7 +212,7 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 }
 
 
-\newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
+\newenvironment{docEnumerate}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
 
 \newcommand{\enumsItem}{\item}
 

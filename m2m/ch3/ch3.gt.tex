@@ -13,45 +13,6 @@
 
 \input{setup}
 
-\usepackage{amssymb}
-\usepackage{bbding}
-\usepackage{ulem}
-
-\usepackage{contour}
-\usepackage{ulem}
-
-\renewcommand{\ULdepth}{1.8pt}
-\contourlength{0.8pt}
-
-\newcommand{\myuline}[1]{%
-  \uline{\phantom{#1}}%
-  \llap{\contour{white}{#1}}%
-}
-
-\definecolor{ru}{RGB}{199, 99, 4}
-
-\newcommand\reduline{\bgroup\markoverwith
-{\textcolor{ru}{\rule[-0.25ex]{2pt}{0.4pt}}}\ULon}
-
-\newcommand{\myuuline}[1]{\reduline{#1}
-\llap{\dashuline{\phantom{#1}}}%
-}
-
-
-\newcommand{\myuulinex}[1]{%
-  \dashuline{\phantom{#1}}%
-  \llap{\contour{white}{#1}}%
-}
-
-%\newcommand{\uuline}[1]{%
-
-%}
-
-
-%\usepackage{marginpar}
-
-
-
 %%
 
 
@@ -131,8 +92,8 @@ simply explain their conduct.
 }% end paragraph 
 
 \p.1{%
-Harold Garfinkel, who founded ethnomethodology some thirty-
-five years ago, defined this discipline as \q{the organizational study of a
+Harold Garfinkel, who founded ethnomethodology some thirtyfive
+years ago, defined this discipline as \q{the organizational study of a
 member’s knowledge of his ordinary affairs, of his own organized enterprises, where that knowledge is treated by us as part of the same setting
 that it also makes orderable.}\fnm{2}
 When we apply ethnomethodology to the study of the family court
@@ -149,87 +110,31 @@ through their situated actions continually re-create the setting that gives
 contextually relevant meaning to their interactive work.
 }% end paragraph 
 
-\definecolor{b2}{RGB}{0, 148, 123}
-\definecolor{b1}{RGB}{148, 0, 123}
-
-\definecolor{a2}{RGB}{0, 248, 223}
-\definecolor{a1}{RGB}{248, 0, 223}
-
-\definecolor{a3}{RGB}{22, 100, 23}
-
-
-\newcommand{\spindexmark}{%
-\hspace{-9pt}\raisebox{5pt}{%
-\resizebox{6pt}{3pt}{\textcolor{a3}{$\mapsto$}}}\hspace{3pt}}
-
-\newcommand{\epindexmark}{%
-\hspace{3pt}\raisebox{-2pt}{%
-\resizebox{4pt}{4pt}{\textcolor{a3}{$\blacksquare$}}}}
-
-%nearrow logix
-
-\newcommand{\secondaryindexmark}{%
-\hspace{-2pt}\raisebox{5pt}{%
-\resizebox{6pt}{4pt}{\textcolor{a2}{$\blacklozenge$}}}}
-
-\newcommand{\primaryindexmark}{%
-\hspace{-2pt}\raisebox{5pt}{%
-\resizebox{6pt}{5pt}{\textcolor{a1}{\ArrowBoldRightShort}}}}
-
-%mapsto
-
-\definecolor{m1}{RGB}{177, 49, 10}
-\definecolor{m2}{RGB}{77, 49, 10}
-
-\newcommand{\marginal}[1]{%
-{\fontfamily{qhv}\fontsize{10}{9}\selectfont%
-#1}}
-
-\newcommand{\mcll}[1]{\textcolor{m1}{#1}}
-\newcommand{\mcl}[1]{\textcolor{m2}{#1}}
-
-\marginpar[\marginal{
-
-\vspace*{3em}
-\hspace*{53pt}\mcll{Garfinkel},\\\hspace*{63pt}\mcll{Harold}%
-\\\hspace*{53pt}\mcl{Lynch},\\\hspace*{63pt}\mcl{Michael}%
-\\\hspace*{53pt}\mcl{Durkheim},\\\hspace*{63pt}\mcl{Emile}}]{}
-
 \p.1{%
-\spindexmark{}For example, \textcolor{b2}{\secondaryindexmark{}\myuline{Lynch}} 
-(1997) studied \q{the judge (in criminal court) as
+For example, Lynch (1997) studied \q{the judge (in criminal court) as
 a figure within the collaborative production of a courtroom hearing \ellThree{2pt}{2pt}}
-(p.\@ 99). \textcolor{b2}{\secondaryindexmark{}\myuline{Lynch}} 
-followed \textcolor{b1}{\primaryindexmark{}\myuuline{Garfinkel}}, 
-who \q{transforms \textcolor{b2}{\secondaryindexmark{}\myuline{Durkheim}}’s (1938)
+(p. 99). Lynch followed Garfinkel, who \q{transforms Durkheim’s (1938)
 classic aphorism, ‘the objective reality of social facts is sociology’s fundamental phenomenon,’ by setting out an ethnomethodological alternative
-to \textcolor{b2}{\secondaryindexmark{}\myuline{Durkheim}}’s analytic sociology \ellThree{2pt}{2pt}\ [which is] to examine the regularities \ellThree{2pt}{2pt}\ [of social life] \ellThree{2pt}{2pt}\ and to explicate how social order is achieved
+to Durkheim’s analytic sociology \ellThree{2pt}{2pt}\ [which is] to examine the regularities \ellThree{2pt}{2pt}\ [of social life] \ellThree{2pt}{2pt}\ and to explicate how social order is achieved
 reflexively in and through the unrelenting practices of local parties who
-dwell in a society} (p. 100).\epindexmark{}}
-
-\marginpar[\marginal{
-
-\vspace*{3em}
-\\\hspace*{53pt}\mcl{Lynch},\\\hspace*{63pt}\mcl{Michael}%
-}]{}
-
+dwell in a society} (p. 100).
+}% end paragraph 
 
 \p.1{%
-\spindexmark{}In keeping with the ethnomethodological tradition, 
-\textcolor{b2}{\secondaryindexmark{}\myuline{Lynch}} did not
+In keeping with the ethnomethodological tradition, Lynch did not
 \q{objectify} judges’ work by imposing social-psychological interpretations on their social actions\mdash{}examining gender or race, or trying to go
 \q{behind the scenes [to uncover what was] ‘in the judge’s head,’ behind
 the closed doors of the judge’s chambers, or in the judge’s social background} (p. 99). Instead, he studied how judges were \q{publicly available
-in the embodied production of the hearing} (p.\@ 99) and examined closely
+in the embodied production of the hearing} (p. 99) and examined closely
 how they displayed an orderly, publicly observable (by interactants in
 the courtroom setting)\fnm{3} accounting of \q{their judicial actions and reasons
-as constituents of the courtroom hearings} (p.\hspace{1pt}125).\epindexmark{}
-}
+as constituents of the courtroom hearings} (p. 125).
+}% end paragraph 
 
 \p.1{%
 Like Lynch, we, in our study of the family courts, do not treat judicial decision making as \q{a composite of variables in a regression analysis
 [that is] specified by measures of socio-economic status, gender, educational attainment, ethnicity, regional background, or any other social
-factor or combination of factors} (p.\@ 100). If we were to do so, we might
+factor or combination of factors} (p. 100). If we were to do so, we might
 learn nothing more about judicial decision making than our own predetermined variables would allow. We would also be in a quandary when
 forced to produce some rational explanation (assuming we could) for
 the fact that female judges in the family courts have handed down the
@@ -284,7 +189,7 @@ sociological reasoning (the production of rational explanations to suffice \q{fo
 their unique set of family court experiences and in so doing, evince what
 Garfinkel has described as the \q{documentary method of interpretation}:
 
-\begin{enumerate}
+\begin{docEnumerate}
 
 \enumsItem{}  A woman in the process of divorcing her husband, who has
 abused their daughter, participates in a study of support
@@ -292,9 +197,8 @@ services given to mothers of abused children by the Jane
 Addams College of Social Work (University of Illinois) in the
 late 1990s. In the course of the interview, the mother \q{asks hesitantly if
 there are very many other mothers in her situation \ellThree{2pt}{2pt}\ [stating]
-she doesn’t know anyone.} While Massat and Lundy (1999, p.
-
-\item[)] , who conducted this study, had been primarily querying the
+she doesn’t know anyone.} While Massat and Lundy (1999, p.~42), who
+conducted this study, had been primarily querying the
 interviewee about her access to affordable housing, public
 assistance, and other practical service and support needs, the
 mother used this occasion to socially constitute her own
@@ -320,7 +224,7 @@ case of Washington, DC, plastic surgeon Elizabeth Morgan,
 not about her anger or pain, but about a legal \textit{system} that had
 failed to learn and understand} (p. 206, emphasis added).
 
-\end{enumerate}
+\end{docEnumerate}
 
 }% end paragraph 
 

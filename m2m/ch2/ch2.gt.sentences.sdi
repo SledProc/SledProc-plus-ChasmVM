@@ -183,7 +183,7 @@ r#  1985  42  1
 
 --- Sentence//end
 id: 7
-r#  3285  56  23
+r#  3284  56  23
 p: .
 t. 
 |  But protective mothers often present a special problem to the social
@@ -193,7 +193,7 @@ t.
 |  them. This can often lead to antagonism between mothers and child
 |  protection caseworkers. In several cases we have studied, the formal
 |  charges pressed against mothers in family courts by child welfare agencies were essentially based on the allegedly difficult or insulting
-|  behavior of the mothers toward the case workers - not their capacity
+|  behavior of the mothers toward the caseworkers - not their capacity
 |  as parents. What is more, some CPS workers simply resist accusations
 |  of child sexual abuse. Researchers M.D. Everson and B.W. Boat (1989) have found
 |  that a certain proportion of CPS workers are more skeptical of children’s
@@ -204,7 +204,7 @@ t.
 
 --- Sentence/end 
 id: 7
-r#  3286  56  24
+r#  3285  56  24
 
 --- Paragraph/end 
 id: 6
@@ -213,16 +213,16 @@ y: N/A
 
 --- Paragraph/start
 id: 7
-r#  3290  58  3
+r#  3289  58  3
 
 
 --- Sentence/start
 id: 8
-r#  3290  58  3
+r#  3289  58  3
 
 --- Sentence//end
 id: 8
-r#  4378  73  10
+r#  4377  73  10
 p: .
 t. 
 |  Law guardians or guardians ad litem are not new to the courts,
@@ -244,7 +244,7 @@ t.
 
 --- Sentence/end 
 id: 8
-r#  4379  73  11
+r#  4378  73  11
 
 --- Paragraph/end 
 id: 7
@@ -253,16 +253,16 @@ y: N/A
 
 --- Paragraph/start
 id: 8
-r#  4381  75  1
+r#  4380  75  1
 
 
 --- Sentence/start
 id: 9
-r#  4381  75  1
+r#  4380  75  1
 
 --- Sentence//end
 id: 9
-r#  4773  80  34
+r#  4772  80  34
 p: .
 t. 
 |  The involvement of auxiliaries dramatically changes the landscape of
@@ -274,7 +274,7 @@ t.
 
 --- Sentence/end 
 id: 9
-r#  4774  80  35
+r#  4773  80  35
 
 --- Paragraph/end 
 id: 8
@@ -283,12 +283,12 @@ y: N/A
 
 --- Paragraph/start
 id: 9
-r#  4776  82  1
+r#  4775  82  1
 
 
 --- Sentence/start
 id: 10
-r#  4776  82  1
+r#  4775  82  1
 --- Paragraph/end 
 id: 9
 y: N/A
@@ -296,16 +296,16 @@ y: N/A
 
 --- Paragraph/start
 id: 10
-r#  6241  101  1
+r#  6240  101  1
 
 
 --- Sentence/start
 id: 11
-r#  6241  101  1
+r#  6240  101  1
 
 --- Sentence//end
 id: 11
-r#  7332  114  71
+r#  7331  114  71
 p: .
 t. 
 |  The influence of CPS social workers and lawyers on a family court
@@ -343,7 +343,7 @@ t.
 
 --- Sentence/switch
 id: 12
-r#  7333  114  72
+r#  7332  114  72
 
 --- Paragraph/end 
 id: 10
@@ -352,16 +352,16 @@ y: N/A
 
 --- Paragraph/start
 id: 11
-r#  7489  118  1
+r#  7488  118  1
 
 
 --- Sentence/start
 id: 13
-r#  7489  118  1
+r#  7488  118  1
 
 --- Sentence//end
 id: 13
-r#  7928  122  13
+r#  7927  122  13
 p: .
 t. 
 |  However, the mother cannot recoup the enormous financial loss she suffered because of the law guardian’s action, while the father enjoyed a free
@@ -373,7 +373,7 @@ t.
 
 --- Sentence/end 
 id: 13
-r#  7929  122  14
+r#  7928  122  14
 
 --- Paragraph/end 
 id: 11
@@ -382,34 +382,34 @@ y: N/A
 
 --- Paragraph/start
 id: 12
-r#  7933  124  3
+r#  7932  124  3
 
 
 --- Sentence/start
 id: 14
-r#  7933  124  3
+r#  7932  124  3
 
 --- Sentence//end
 id: 14
-r#  8353  129  68
+r#  8351  129  75
 p: .
 t. 
 |  Visitation supervisors represent another class of interlopers in
 |  modern-day custody proceedings in which an abuse issue has been
 |  raised. Their purpose is to monitor visits between a child and a parent,
 |  ostensibly for the protection of the child. But they are often called on in
-|  cases in which a family court judge suspects a mother of having brain-
-.  washed her children into believing they have been sexually abused
+|  cases in which a family court judge suspects a mother of having
+.  brainwashed her children into believing they have been sexually abused
 
 
 --- Sentence/switch
 id: 15
-r#  8354  129  69
+r#  8352  129  76
 
 
 --- Sentence//end
 id: 15
-r#  8954  137  16
+r#  8952  137  16
 p: .
 t. 
 |  In such cases, visitation supervisors play their role in the family court
@@ -423,7 +423,7 @@ t.
 
 --- Sentence/end 
 id: 15
-r#  8955  137  17
+r#  8953  137  17
 
 --- Paragraph/end 
 id: 12
@@ -432,16 +432,16 @@ y: N/A
 
 --- Paragraph/start
 id: 13
-r#  8957  139  1
+r#  8955  139  1
 
 
 --- Sentence/start
 id: 16
-r#  8957  139  1
+r#  8955  139  1
 
 --- Sentence//end
 id: 16
-r#  9026  139  70
+r#  9024  139  70
 p: .
 t. 
 .  This is clearly not what such supervisors were originally meant to do
@@ -449,12 +449,12 @@ t.
 
 --- Sentence/switch
 id: 17
-r#  9027  139  71
+r#  9025  139  71
 
 
 --- Sentence//end
 id: 17
-r#  9600  145  59
+r#  9598  145  59
 p: .
 t. 
 |  Stern and Oehme (2002) opine in Temple Law Review that although supervised visitation was originally established to provide a crucial service,
@@ -466,7 +466,7 @@ t.
 
 --- Sentence/end 
 id: 17
-r#  9601  145  60
+r#  9599  145  60
 
 --- Paragraph/end 
 id: 13
@@ -475,16 +475,16 @@ y: N/A
 
 --- Paragraph/start
 id: 14
-r#  9603  147  1
+r#  9601  147  1
 
 
 --- Sentence/start
 id: 18
-r#  9603  147  1
+r#  9601  147  1
 
 --- Sentence//end
 id: 18
-r#  10182  153  11
+r#  10180  153  11
 p: .
 t. 
 |  The evidentiary weight that family courts give to visitation reports,
@@ -497,7 +497,7 @@ t.
 
 --- Sentence/end 
 id: 18
-r#  10183  153  12
+r#  10181  153  12
 
 --- Paragraph/end 
 id: 14
@@ -506,19 +506,19 @@ y: N/A
 
 --- Paragraph/start
 id: 15
-r#  10185  155  1
+r#  10183  155  1
 
 
 --- Sentence/start
 id: 19
-r#  10185  155  1
+r#  10183  155  1
 
 --- Sentence//end
 id: 19
-r#  10996  165  45
+r#  11017  165  45
 p: .
 t. 
-|  Among the most important figures in  of child
+|  Among the most important figures in the new legal landscape of child
 |  abuse/custody litigation are mental health experts (and evaluators) who
 |  are hired by litigants or (more often) appointed by the court to evaluate
 |  the parenting skills of both parents. They are also called on to present
@@ -532,7 +532,7 @@ t.
 
 --- Sentence/end 
 id: 19
-r#  10997  165  46
+r#  11018  165  46
 
 --- Paragraph/end 
 id: 15
@@ -541,16 +541,16 @@ y: N/A
 
 --- Paragraph/start
 id: 16
-r#  10999  167  1
+r#  11020  167  1
 
 
 --- Sentence/start
 id: 20
-r#  10999  167  1
+r#  11020  167  1
 
 --- Sentence//end
 id: 20
-r#  11873  178  14
+r#  11894  178  14
 p: .
 t. 
 |  By 1985, some experts had found themselves under attack from angry
@@ -568,7 +568,7 @@ t.
 
 --- Sentence/end 
 id: 20
-r#  11874  178  15
+r#  11895  178  15
 
 --- Paragraph/end 
 id: 16
@@ -577,16 +577,16 @@ y: N/A
 
 --- Paragraph/start
 id: 17
-r#  11876  180  1
+r#  11897  180  1
 
 
 --- Sentence/start
 id: 21
-r#  11876  180  1
+r#  11897  180  1
 
 --- Sentence//end
 id: 21
-r#  12542  188  26
+r#  12563  188  26
 p: .
 t. 
 |  One such theory is Parental Alienation Syndrome (PAS). New Jersey
@@ -601,7 +601,7 @@ t.
 
 --- Sentence/end 
 id: 21
-r#  12543  188  27
+r#  12564  188  27
 
 --- Paragraph/end 
 id: 17
@@ -610,16 +610,16 @@ y: N/A
 
 --- Paragraph/start
 id: 18
-r#  12545  190  1
+r#  12566  190  1
 
 
 --- Sentence/start
 id: 22
-r#  12545  190  1
+r#  12566  190  1
 
 --- Sentence//end
 id: 22
-r#  12883  192  48
+r#  12904  192  48
 p: .
 t. 
 |  Gardner’s theories have received extensive criticism in published articles by other mental health professionals. They were officially rejected by
@@ -628,7 +628,7 @@ t.
 
 --- Sentence/end 
 id: 22
-r#  12884  192  49
+r#  12905  192  49
 
 --- Paragraph/end 
 id: 18
@@ -637,16 +637,16 @@ y: N/A
 
 --- Paragraph/start
 id: 19
-r#  12886  194  1
+r#  12907  194  1
 
 
 --- Sentence/start
 id: 23
-r#  12886  194  1
+r#  12907  194  1
 
 --- Sentence//end
 id: 23
-r#  13076  196  48
+r#  13097  196  48
 p: .
 t. 
 |  Like Gardner, Dr. Arthur Green (mentioned in Chapter 1) claimed
@@ -655,7 +655,7 @@ t.
 
 --- Sentence/end 
 id: 23
-r#  13077  196  49
+r#  13098  196  49
 
 --- Paragraph/end 
 id: 19
@@ -664,16 +664,16 @@ y: N/A
 
 --- Paragraph/start
 id: 20
-r#  13079  198  1
+r#  13100  198  1
 
 
 --- Sentence/start
 id: 24
-r#  13079  198  1
+r#  13100  198  1
 
 --- Sentence//end
 id: 24
-r#  13650  203  75
+r#  13671  203  75
 p: .
 t. 
 |  Green advocated closely watching the mother-child interaction when
@@ -686,12 +686,12 @@ t.
 
 --- Sentence/switch
 id: 25
-r#  13651  203  76
+r#  13672  203  76
 
 
 --- Sentence//end
 id: 25
-r#  13857  206  67
+r#  13878  206  67
 p: .
 t. 
 |  In fact, the influence of the theories of Gardner and Green is so
@@ -701,12 +701,12 @@ t.
 
 --- Sentence/switch
 id: 26
-r#  13858  206  68
+r#  13879  206  68
 
 
 --- Sentence//end
 id: 26
-r#  14928  220  50
+r#  14949  220  50
 p: .
 t. 
 |  As previously noted, American Jurisprudence Proof of Facts
@@ -726,7 +726,7 @@ t.
 
 --- Sentence/end 
 id: 26
-r#  14929  220  51
+r#  14950  220  51
 
 --- Paragraph/end 
 id: 20
@@ -735,16 +735,16 @@ y: N/A
 
 --- Paragraph/start
 id: 21
-r#  14931  222  1
+r#  14952  222  1
 
 
 --- Sentence/start
 id: 27
-r#  14931  222  1
+r#  14952  222  1
 
 --- Sentence//end
 id: 27
-r#  16363  237  10
+r#  16384  237  10
 p: .
 t. 
 |  The anti-mother bias that thrives in the family courts has accommodated even more extreme psychological theories. For instance, psychologist Ira Turkat has
@@ -766,7 +766,7 @@ t.
 
 --- Sentence/end 
 id: 27
-r#  16364  237  11
+r#  16385  237  11
 
 --- Paragraph/end 
 id: 21
@@ -781,16 +781,16 @@ y: N/A
 
 --- Paragraph/start
 id: 22
-r#  16400  242  1
+r#  16421  242  1
 
 
 --- Sentence/start
 id: 28
-r#  16400  242  1
+r#  16421  242  1
 
 --- Sentence//end
 id: 28
-r#  16514  243  44
+r#  16535  243  44
 p: .
 t. 
 |  Family courts are characterized by procedural peculiarities that often
@@ -798,7 +798,7 @@ t.
 
 --- Sentence/end 
 id: 28
-r#  16515  243  45
+r#  16536  243  45
 
 --- Paragraph/end 
 id: 22
@@ -807,16 +807,16 @@ y: N/A
 
 --- Paragraph/start
 id: 23
-r#  16517  245  1
+r#  16538  245  1
 
 
 --- Sentence/start
 id: 29
-r#  16517  245  1
+r#  16538  245  1
 
 --- Sentence//end
 id: 29
-r#  17031  251  10
+r#  17052  251  10
 p: .
 t. 
 |  First, the proceedings are confidential. This protects family court
@@ -829,7 +829,7 @@ t.
 
 --- Sentence/end 
 id: 29
-r#  17032  251  11
+r#  17053  251  11
 
 --- Paragraph/end 
 id: 23
@@ -838,12 +838,12 @@ y: N/A
 
 --- Paragraph/start
 id: 24
-r#  17036  253  3
+r#  17057  253  3
 
 
 --- Sentence/start
 id: 30
-r#  17036  253  3
+r#  17057  253  3
 --- Paragraph/end 
 id: 24
 y: N/A
@@ -851,16 +851,16 @@ y: N/A
 
 --- Paragraph/start
 id: 25
-r#  17584  261  1
+r#  17605  261  1
 
 
 --- Sentence/start
 id: 31
-r#  17584  261  1
+r#  17605  261  1
 
 --- Sentence//end
 id: 31
-r#  18747  275  21
+r#  18768  275  21
 p: .
 t. 
 |  Confidentiality may be extended even further. Mothers may be ordered not to talk to the public, or to friends, family, or support groups,
@@ -887,7 +887,7 @@ t.
 
 --- Sentence/end 
 id: 31
-r#  18748  275  22
+r#  18769  275  22
 
 --- Paragraph/end 
 id: 25
@@ -902,16 +902,16 @@ y: N/A
 
 --- Paragraph/start
 id: 26
-r#  18777  280  1
+r#  18798  280  1
 
 
 --- Sentence/start
 id: 32
-r#  18777  280  1
+r#  18798  280  1
 
 --- Sentence//end
 id: 32
-r#  19298  286  9
+r#  19319  286  9
 p: .
 t. 
 |  One especially unnerving aspect of today’s divorce and abuse litigation
@@ -924,7 +924,7 @@ t.
 
 --- Sentence/end 
 id: 32
-r#  19299  286  10
+r#  19320  286  10
 
 --- Paragraph/end 
 id: 26
@@ -933,16 +933,16 @@ y: N/A
 
 --- Paragraph/start
 id: 27
-r#  19301  288  1
+r#  19322  288  1
 
 
 --- Sentence/start
 id: 33
-r#  19301  288  1
+r#  19322  288  1
 
 --- Sentence//end
 id: 33
-r#  19997  296  52
+r#  20018  296  52
 p: .
 t. 
 |  Since most judges tend to follow the recommendations of state CPS
@@ -957,7 +957,7 @@ t.
 
 --- Sentence/end 
 id: 33
-r#  19998  296  53
+r#  20019  296  53
 
 --- Paragraph/end 
 id: 27
@@ -966,16 +966,16 @@ y: N/A
 
 --- Paragraph/start
 id: 28
-r#  20001  298  1
+r#  20022  298  1
 
 
 --- Sentence/start
 id: 34
-r#  20001  298  1
+r#  20022  298  1
 
 --- Sentence//end
 id: 34
-r#  20566  303  71
+r#  20587  303  71
 p: .
 t. 
 |  For example, during one New York case, after a change of custody
@@ -988,12 +988,12 @@ t.
 
 --- Sentence/switch
 id: 35
-r#  20567  303  72
+r#  20588  303  72
 
 
 --- Sentence//end
 id: 35
-r#  20911  308  55
+r#  20932  308  55
 p: .
 t. 
 |  This father, incidentally, was not poor; he was a practicing physician. Yet
@@ -1004,7 +1004,7 @@ t.
 
 --- Sentence/end 
 id: 35
-r#  20912  308  56
+r#  20933  308  56
 
 --- Paragraph/end 
 id: 28
@@ -1019,16 +1019,16 @@ y: N/A
 
 --- Paragraph/start
 id: 29
-r#  20953  313  1
+r#  20974  313  1
 
 
 --- Sentence/start
 id: 36
-r#  20953  313  1
+r#  20974  313  1
 
 --- Sentence//end
 id: 36
-r#  21174  315  72
+r#  21195  315  72
 p: .
 t. 
 |  In theory, appellate courts exist to correct errors made at the trial level,
@@ -1038,12 +1038,12 @@ t.
 
 --- Sentence/switch
 id: 37
-r#  21175  315  73
+r#  21196  315  73
 
 
 --- Sentence//end
 id: 37
-r#  21418  319  17
+r#  21439  319  17
 p: .
 t. 
 |  Appeals from family court rulings, particularly when an abuse or neglect
@@ -1053,7 +1053,7 @@ t.
 
 --- Sentence/end 
 id: 37
-r#  21419  319  18
+r#  21440  319  18
 
 --- Paragraph/end 
 id: 29
@@ -1062,16 +1062,16 @@ y: N/A
 
 --- Paragraph/start
 id: 30
-r#  21421  321  1
+r#  21442  321  1
 
 
 --- Sentence/start
 id: 38
-r#  21421  321  1
+r#  21442  321  1
 
 --- Sentence//end
 id: 38
-r#  22107  327  38
+r#  22128  327  38
 p: .
 t. 
 |  The lack of serious appellate interest in family court rulings is one reason many of these rulings are not appealed to begin with. But there are
@@ -1084,7 +1084,7 @@ t.
 
 --- Sentence/end 
 id: 38
-r#  22108  327  39
+r#  22129  327  39
 
 --- Paragraph/end 
 id: 30
@@ -1093,12 +1093,12 @@ y: N/A
 
 --- Paragraph/start
 id: 31
-r#  22111  329  1
+r#  22132  329  1
 
 
 --- Sentence/start
 id: 39
-r#  22111  329  1
+r#  22132  329  1
 --- Paragraph/end 
 id: 31
 y: N/A
@@ -1106,16 +1106,16 @@ y: N/A
 
 --- Paragraph/start
 id: 32
-r#  23331  348  1
+r#  23352  348  1
 
 
 --- Sentence/start
 id: 40
-r#  23331  348  1
+r#  23352  348  1
 
 --- Sentence//end
 id: 40
-r#  23534  349  67
+r#  23555  349  67
 p: .
 t. 
 |  Second, protective parents are often pressured to make deals with CPS
@@ -1140,7 +1140,7 @@ t.
 
 --- Sentence/end 
 id: 40
-r#  23535  349  68
+r#  23556  349  68
 
 --- Paragraph/end 
 id: 32

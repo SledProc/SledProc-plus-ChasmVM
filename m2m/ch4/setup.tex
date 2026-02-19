@@ -9,6 +9,8 @@
 
 \setcounter{page}{60}
 
+
+
 \fancyhf{} % Clear all headers and footers first
 
 \renewcommand{\headrulewidth}{0pt}
@@ -27,6 +29,8 @@
 %\fancyfoot[C]{Confidential} % "Confidential" in the center of all footers
 
 \setlength{\headsep}{35pt}
+
+\newcommand{\ndash}{--}
 
 
 \newcommand{\parbreak}{
@@ -179,7 +183,8 @@ paperheight=11in,paperwidth=8.5in]{geometry}
 }
 
 
-\newenvironment{enums}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
+\usepackge{enumitem}
+\newenvironment{docEnumerate}{\vspace{5pt}\begin{enumerate}}{\end{enumerate}\vspace{-3pt}}
 
 \newcommand{\enumsItem}{\item}
 

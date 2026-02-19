@@ -331,6 +331,8 @@ When judicial rudeness and ex parte communications did not suffice
 to silence the mother, the judge apparently resorted to civil rights violations. In legal papers filed with an appellate court, the mother’s attorney
 has stated the following (under penalty of perjury)\25 about the judge’s
 order switching custody of the three-year-old to her father:
+
+%/ block
 Said Order, dated June 30, 1986, by Justice Doyle was made and
 entered ex parte without any written application and without any
 notice to [the mother’s counsel] nor opportunity to be heard by
@@ -340,7 +342,8 @@ June 17, 1986 of Dr.. Bruce Bleichfeld, a psychologist appointed as
 the Court’s witness ... and where no evidentiary hearing has been
 held as to its contents, nor opportunity permitted to cross-examine
 the Court’s psychologist-witness as to his credentials and 
-expertise. (pp..1%-3)
+expertise. (pp...1%-3)
+/
 
 According to these statements, the mother had become a "/bad/" parent
 to the family court judge because of the way she pursued her claims in
@@ -612,7 +615,7 @@ is not subject to disclosure in litigation.\43 Courts of other states have
 likewise recognized that "/the threat of court-ordered disclosure [in a
 custody case] can too easily become a strategic weapon for the other
 parent. Compelled disclosure of treatment information will impair the
-potential benefits of treatment.../"\44
+potential benefits of treatment..../"\44
 
 The Idaho family court disagreed, however, and ordered the disclosure of the psychologist’s entire file to the father. When the mother
 appealed, her legal arguments went largely unanswered by the father’s
@@ -932,7 +935,7 @@ names.
 Heritage and Watson (1979), in their description and analysis of the
 conversational work of "/formulating,/" found that formulations may have
 a "/special role to play/" when the topic has been "/the object of contest or
-negotiation/" (pp. 149%-150). In keeping with this finding, our analysis of
+negotiation/" (pp...149%-150). In keeping with this finding, our analysis of
 court records reveals that judicial name-calling, as a "/type/" of formulation, arises when the case takes on problematic meaning%--as judges and
 mothers come to see the facts of the case from diametrically opposed
 points of view.
@@ -1054,7 +1057,7 @@ which judges intend an exemplary effect on subsequent decisions and
 of explicative transactions in the traffic courts, showed that for rulings to have an exemplary or definitional force%--in other words, to
 be explicative%--they usually need to be made "/in the presence of onlookers/" (such as other defendants). This is because, in the presence of
 others, the judge is "/constituting the situated meaning of the particulars
-[of each case] to which s/he responds .../" (pp. 228%-229). That is, "/the
+[of each case] to which s/he responds .../" (pp.. 228%-229). That is, "/the
 present case [is] considered [in the presence of onlookers] in terms of
 its capacity to jeopardize or preserve features of already adjudicated
 cases and its capacity to furnish [or prevent] undesirable precedents/"
@@ -1121,7 +1124,7 @@ with the total suspension of the mother’s visits with her eight-year-old
 daughter. Nothing happened to the judge.
 
 
-// //  BEHIND ROBED RAGE: COURTROOM VS. PUBLIC FORUM
+// //  BEHIND ROBED RAGE^: COURTROOM VS. PUBLIC FORUM
 
 ---One unusual feature of court proceedings concerning alleged child
 abuse is the cloak of confidentiality (ostensibly to protect child victims) that insulates such proceedings from the general public. This helps
@@ -1641,7 +1644,7 @@ their child.
 
 To wit, the judge prevented the mother from:
 
-%/ enums
+%/ enumn =10pt
 1) presenting testimony that would have revealed the children’s
 disclosures about their father;
 

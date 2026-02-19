@@ -39,7 +39,7 @@ r#  99  8  1
 
 --- Sentence//end
 id: 2
-r#  197  9  10
+r#  198  9  11
 p: .
 t. 
 |  Agus, C. (1993b). Standing Fast to Get Her Kids Back. New York Newsday, July 11,
@@ -47,7 +47,7 @@ t.
 
 --- Sentence/end 
 id: 2
-r#  198  9  11
+r#  199  9  12
 
 --- Paragraph/end 
 id: 2
@@ -56,16 +56,16 @@ y: N/A
 
 --- Paragraph/start
 id: 3
-r#  200  11  1
+r#  201  11  1
 
 
 --- Sentence/start
 id: 3
-r#  200  11  1
+r#  201  11  1
 
 --- Sentence//end
 id: 3
-r#  296  12  9
+r#  297  12  9
 p: .
 t. 
 |  Allen, N. (2022). Review of Children of the Underground, RogerEbert.com, August
@@ -73,7 +73,7 @@ t.
 
 --- Sentence/end 
 id: 3
-r#  297  12  10
+r#  298  12  10
 
 --- Paragraph/end 
 id: 3
@@ -82,23 +82,23 @@ y: N/A
 
 --- Paragraph/start
 id: 4
-r#  301  14  3
+r#  302  14  3
 
 
 --- Sentence/start
 id: 4
-r#  301  14  3
+r#  302  14  3
 
 --- Sentence//end
 id: 4
-r#  380  14  82
+r#  379  14  80
 p: .
 t. 
 .  American Jurisprudence Proof of Facts, 3rd ed. (1995). Vol. 33, section 303
 
 --- Sentence/end 
 id: 4
-r#  381  14  83
+r#  380  14  81
 
 --- Paragraph/end 
 id: 4
@@ -107,16 +107,16 @@ y: N/A
 
 --- Paragraph/start
 id: 5
-r#  383  16  1
+r#  382  16  1
 
 
 --- Sentence/start
 id: 5
-r#  383  16  1
+r#  382  16  1
 
 --- Sentence//end
 id: 5
-r#  566  18  43
+r#  565  18  43
 p: .
 t. 
 |  American Psychological Association Presidential Task Force on Violence and the
@@ -125,7 +125,7 @@ t.
 
 --- Sentence/end 
 id: 5
-r#  567  18  44
+r#  566  18  44
 
 --- Paragraph/end 
 id: 5
@@ -134,16 +134,16 @@ y: N/A
 
 --- Paragraph/start
 id: 6
-r#  569  20  1
+r#  568  20  1
 
 
 --- Sentence/start
 id: 6
-r#  569  20  1
+r#  568  20  1
 
 --- Sentence//end
 id: 6
-r#  725  21  80
+r#  724  21  80
 p: .
 t. 
 |  Apolo, J. (1999). Munchausen Syndrome by Proxy: The Syndrome of Fabricated
@@ -151,7 +151,7 @@ t.
 
 --- Sentence/end 
 id: 6
-r#  726  21  81
+r#  725  21  81
 
 --- Paragraph/end 
 id: 6
@@ -160,16 +160,16 @@ y: N/A
 
 --- Paragraph/start
 id: 7
-r#  728  23  1
+r#  727  23  1
 
 
 --- Sentence/start
 id: 7
-r#  728  23  1
+r#  727  23  1
 
 --- Sentence//end
 id: 7
-r#  988  26  15
+r#  987  26  15
 p: .
 t. 
 |  Applied Survey Research. (2007). Toward a More Coordinated, County-Wide Response
@@ -179,7 +179,7 @@ t.
 
 --- Sentence/end 
 id: 7
-r#  989  26  16
+r#  988  26  16
 
 --- Paragraph/end 
 id: 7
@@ -188,16 +188,16 @@ y: N/A
 
 --- Paragraph/start
 id: 8
-r#  991  28  1
+r#  990  28  1
 
 
 --- Sentence/start
 id: 8
-r#  991  28  1
+r#  990  28  1
 
 --- Sentence//end
 id: 8
-r#  1097  29  17
+r#  1096  29  17
 p: .
 t. 
 |  Arens, R., and Lasswell, H. D. (1961). In Defense of Public Order. New York: Columbia
@@ -205,7 +205,7 @@ t.
 
 --- Sentence/end 
 id: 8
-r#  1098  29  18
+r#  1097  29  18
 
 --- Paragraph/end 
 id: 8
@@ -214,25 +214,24 @@ y: N/A
 
 --- Paragraph/start
 id: 9
-r#  1100  31  1
+r#  1099  31  1
 
 
 --- Sentence/start
 id: 9
-r#  1100  31  1
+r#  1099  31  1
 
 --- Sentence//end
 id: 9
-r#  1196  33  12
+r#  1195  32  45
 p: .
 t. 
 |  Armstrong, L. (1983). The Home Front: Notes from
-|  the Family War Zone. New York:
-.  McGraw-Hill
+.  the Family War Zone. New York: McGraw-Hill
 
 --- Sentence/end 
 id: 9
-r#  1197  33  13
+r#  1196  32  46
 
 --- Paragraph/end 
 id: 9
@@ -241,16 +240,16 @@ y: N/A
 
 --- Paragraph/start
 id: 10
-r#  1199  35  1
+r#  1198  34  1
 
 
 --- Sentence/start
 id: 10
-r#  1199  35  1
+r#  1198  34  1
 
 --- Sentence//end
 id: 10
-r#  1348  36  68
+r#  1347  35  68
 p: .
 t. 
 |  Armstrong, L. (1994). Rocking the Cradle of Sexual Politics: What Happened When
@@ -258,7 +257,7 @@ t.
 
 --- Sentence/end 
 id: 10
-r#  1349  36  69
+r#  1348  35  69
 
 --- Paragraph/end 
 id: 10
@@ -267,16 +266,16 @@ y: N/A
 
 --- Paragraph/start
 id: 11
-r#  1351  38  1
+r#  1350  37  1
 
 
 --- Sentence/start
 id: 11
-r#  1351  38  1
+r#  1350  37  1
 
 --- Sentence//end
 id: 11
-r#  1555  40  45
+r#  1555  39  46
 p: .
 t. 
 |  Atkinson, J. M. (1979). Sequencing and Shared Attentiveness to Court Proceedings.
@@ -285,7 +284,7 @@ t.
 
 --- Sentence/end 
 id: 11
-r#  1556  40  46
+r#  1556  39  47
 
 --- Paragraph/end 
 id: 11
@@ -294,16 +293,16 @@ y: N/A
 
 --- Paragraph/start
 id: 12
-r#  1558  42  1
+r#  1558  41  1
 
 
 --- Sentence/start
 id: 12
-r#  1558  42  1
+r#  1558  41  1
 
 --- Sentence//end
 id: 12
-r#  1694  43  54
+r#  1694  42  54
 p: .
 t. 
 |  Atkinson, J. M., and Drew, P. (1979). Order in Court: The Organization of Verbal
@@ -311,7 +310,7 @@ t.
 
 --- Sentence/end 
 id: 12
-r#  1695  43  55
+r#  1695  42  55
 
 --- Paragraph/end 
 id: 12
@@ -320,16 +319,16 @@ y: N/A
 
 --- Paragraph/start
 id: 13
-r#  1697  45  1
+r#  1697  44  1
 
 
 --- Sentence/start
 id: 13
-r#  1697  45  1
+r#  1697  44  1
 
 --- Sentence//end
 id: 13
-r#  1820  46  44
+r#  1821  45  45
 p: .
 t. 
 |  Baer, S. (1989). G.A. [Georgia] Woman Guides Abused Children toward Havens.
@@ -337,7 +336,7 @@ t.
 
 --- Sentence/end 
 id: 13
-r#  1821  46  45
+r#  1822  45  46
 
 --- Paragraph/end 
 id: 13
@@ -346,16 +345,16 @@ y: N/A
 
 --- Paragraph/start
 id: 14
-r#  1823  48  1
+r#  1824  47  1
 
 
 --- Sentence/start
 id: 14
-r#  1823  48  1
+r#  1824  47  1
 
 --- Sentence//end
 id: 14
-r#  2067  50  85
+r#  2072  49  89
 p: .
 t. 
 |  Banks, D., Landsverk, J., and Wang, K. (2008). Changing Policy and Practice in
@@ -364,7 +363,7 @@ t.
 
 --- Sentence/end 
 id: 14
-r#  2068  50  86
+r#  2073  49  90
 
 --- Paragraph/end 
 id: 14
@@ -373,16 +372,16 @@ y: N/A
 
 --- Paragraph/start
 id: 15
-r#  2070  52  1
+r#  2075  51  1
 
 
 --- Sentence/start
 id: 15
-r#  2070  52  1
+r#  2075  51  1
 
 --- Sentence//end
 id: 15
-r#  2181  53  36
+r#  2186  52  36
 p: .
 t. 
 |  Bennett, B. (1996a). Book Citing Hardin Case Stirs Debate. Lexington
@@ -390,7 +389,7 @@ t.
 
 --- Sentence/end 
 id: 15
-r#  2182  53  37
+r#  2187  52  37
 
 --- Paragraph/end 
 id: 15
@@ -399,16 +398,16 @@ y: N/A
 
 --- Paragraph/start
 id: 16
-r#  2184  55  1
+r#  2189  54  1
 
 
 --- Sentence/start
 id: 16
-r#  2184  55  1
+r#  2189  54  1
 
 --- Sentence//end
 id: 16
-r#  2298  56  36
+r#  2303  55  36
 p: .
 t. 
 |  Bennett, B. (1996b). Controversial Case Can’t Be Cited Later. Lexington
@@ -416,7 +415,7 @@ t.
 
 --- Sentence/end 
 id: 16
-r#  2299  56  37
+r#  2304  55  37
 
 --- Paragraph/end 
 id: 16
@@ -425,16 +424,16 @@ y: N/A
 
 --- Paragraph/start
 id: 17
-r#  2301  58  1
+r#  2306  57  1
 
 
 --- Sentence/start
 id: 17
-r#  2301  58  1
+r#  2306  57  1
 
 --- Sentence//end
 id: 17
-r#  2410  59  20
+r#  2416  58  21
 p: .
 t. 
 |  Berger, J. (1993). Three Deaths: A Mother, a Daughter, the Truth. New York Times,
@@ -442,7 +441,7 @@ t.
 
 --- Sentence/end 
 id: 17
-r#  2411  59  21
+r#  2417  58  22
 
 --- Paragraph/end 
 id: 17
@@ -451,16 +450,16 @@ y: N/A
 
 --- Paragraph/start
 id: 18
-r#  2413  61  1
+r#  2419  60  1
 
 
 --- Sentence/start
 id: 18
-r#  2413  61  1
+r#  2419  60  1
 
 --- Sentence//end
 id: 18
-r#  2496  61  84
+r#  2502  60  84
 p: .
 t. 
 .  Berliner, L. (1988). Deciding Whether a Child Has Been Sexually Abused. In E. B
@@ -468,12 +467,12 @@ t.
 
 --- Sentence/switch
 id: 19
-r#  2497  61  85
+r#  2503  60  85
 
 
 --- Sentence//end
 id: 19
-r#  2641  63  60
+r#  2652  62  63
 p: .
 t. 
 |  Nicholson and J. Buckley (eds.), Sexual Abuse Allegations in Custody and Visitation
@@ -481,7 +480,7 @@ t.
 
 --- Sentence/end 
 id: 19
-r#  2642  63  61
+r#  2653  62  64
 
 --- Paragraph/end 
 id: 18
@@ -490,16 +489,16 @@ y: N/A
 
 --- Paragraph/start
 id: 19
-r#  2644  65  1
+r#  2655  64  1
 
 
 --- Sentence/start
 id: 20
-r#  2644  65  1
+r#  2655  64  1
 
 --- Sentence//end
 id: 20
-r#  2770  66  46
+r#  2781  65  46
 p: .
 t. 
 |  Brooklyn Citizen Court Monitors. (1986). An Inside Look at the Brooklyn Family
@@ -507,7 +506,7 @@ t.
 
 --- Sentence/end 
 id: 20
-r#  2771  66  47
+r#  2782  65  47
 
 --- Paragraph/end 
 id: 19
@@ -516,16 +515,16 @@ y: N/A
 
 --- Paragraph/start
 id: 20
-r#  2773  68  1
+r#  2784  67  1
 
 
 --- Sentence/start
 id: 21
-r#  2773  68  1
+r#  2784  67  1
 
 --- Sentence//end
 id: 21
-r#  2930  69  73
+r#  2941  68  73
 p: .
 t. 
 |  Bruch, C. S. (2001). Parental Alienation Syndrome and Parental Alienation: Getting
@@ -533,7 +532,7 @@ t.
 
 --- Sentence/end 
 id: 21
-r#  2931  69  74
+r#  2942  68  74
 
 --- Paragraph/end 
 id: 20
@@ -542,25 +541,25 @@ y: N/A
 
 --- Paragraph/start
 id: 21
-r#  2933  71  1
+r#  2944  70  1
 
 
 --- Sentence/start
 id: 22
-r#  2933  71  1
+r#  2944  70  1
 
 --- Sentence//end
 id: 22
-r#  3140  73  55
+r#  3151  72  55
 p: .
 t. 
 |  Buckmaster, H. [1941] (1992). Let My People Go: The Story of the Underground
 |  Railroad and the Growth of the Abolition Movement. New York: Harper and
-.  Brothers; Columbia: University of South Caroline Press
+.  Brothers; Columbia: University of South Carolina Press
 
 --- Sentence/end 
 id: 22
-r#  3141  73  56
+r#  3152  72  56
 
 --- Paragraph/end 
 id: 21
@@ -569,23 +568,23 @@ y: N/A
 
 --- Paragraph/start
 id: 22
-r#  3143  75  1
+r#  3154  74  1
 
 
 --- Sentence/start
 id: 23
-r#  3143  75  1
+r#  3154  74  1
 
 --- Sentence//end
 id: 23
-r#  3213  75  71
+r#  3224  74  71
 p: .
 t. 
 .  Carner, T. (2023). Run, Mommy, Run. Women’s eNews, February 19
 
 --- Sentence/end 
 id: 23
-r#  3214  75  72
+r#  3225  74  72
 
 --- Paragraph/end 
 id: 22
@@ -594,16 +593,16 @@ y: N/A
 
 --- Paragraph/start
 id: 23
-r#  3216  77  1
+r#  3227  76  1
 
 
 --- Sentence/start
 id: 24
-r#  3216  77  1
+r#  3227  76  1
 
 --- Sentence//end
 id: 24
-r#  3318  78  19
+r#  3329  77  19
 p: .
 t. 
 |  Carpenter, M. (1997). Children of the Underground. Pittsburgh Post-Gazette,
@@ -611,7 +610,7 @@ t.
 
 --- Sentence/end 
 id: 24
-r#  3319  78  20
+r#  3330  77  20
 
 --- Paragraph/end 
 id: 23
@@ -620,16 +619,16 @@ y: N/A
 
 --- Paragraph/start
 id: 24
-r#  3321  80  1
+r#  3332  79  1
 
 
 --- Sentence/start
 id: 25
-r#  3321  80  1
+r#  3332  79  1
 
 --- Sentence//end
 id: 25
-r#  3419  81  6
+r#  3430  80  6
 p: .
 t. 
 |  Chesler, P. (1986). Mothers on Trial: The Battle for Children and Custody. Seattle: Seal
@@ -637,7 +636,7 @@ t.
 
 --- Sentence/end 
 id: 25
-r#  3420  81  7
+r#  3431  80  7
 
 --- Paragraph/end 
 id: 24
@@ -646,23 +645,23 @@ y: N/A
 
 --- Paragraph/start
 id: 25
-r#  3422  83  1
+r#  3433  82  1
 
 
 --- Sentence/start
 id: 26
-r#  3422  83  1
+r#  3433  82  1
 
 --- Sentence//end
 id: 26
-r#  3512  83  91
+r#  3523  82  91
 p: .
 t. 
 .  Cicourel, A. (1968). The Social Organization of Juvenile Justice. New York: John Wiley
 
 --- Sentence/end 
 id: 26
-r#  3513  83  92
+r#  3524  82  92
 
 --- Paragraph/end 
 id: 25
@@ -671,16 +670,16 @@ y: N/A
 
 --- Paragraph/start
 id: 26
-r#  3515  85  1
+r#  3526  84  1
 
 
 --- Sentence/start
 id: 27
-r#  3515  85  1
+r#  3526  84  1
 
 --- Sentence//end
 id: 27
-r#  3706  87  26
+r#  3717  86  26
 p: .
 t. 
 |  Corwin, D. L., Berliner, L., Goodman, G., Goodwin, J., and White, S. (1987). Child
@@ -689,7 +688,7 @@ t.
 
 --- Sentence/end 
 id: 27
-r#  3707  87  27
+r#  3718  86  27
 
 --- Paragraph/end 
 id: 26
@@ -698,16 +697,16 @@ y: N/A
 
 --- Paragraph/start
 id: 27
-r#  3709  89  1
+r#  3720  88  1
 
 
 --- Sentence/start
 id: 28
-r#  3709  89  1
+r#  3720  88  1
 
 --- Sentence//end
 id: 28
-r#  3881  90  91
+r#  3893  89  92
 p: .
 t. 
 |  Curran, W. J. (1985). The Vulnerability of Court-Appointed Impartial Experts in
@@ -715,7 +714,7 @@ t.
 
 --- Sentence/end 
 id: 28
-r#  3882  90  92
+r#  3894  89  93
 
 --- Paragraph/end 
 id: 27
@@ -724,16 +723,16 @@ y: N/A
 
 --- Paragraph/start
 id: 28
-r#  3884  92  1
+r#  3896  91  1
 
 
 --- Sentence/start
 id: 29
-r#  3884  92  1
+r#  3896  91  1
 
 --- Sentence//end
 id: 29
-r#  3969  92  86
+r#  3981  91  86
 p: .
 t. 
 .  Cuthbert, C., Slote, K., Driggers, M. G., Mesh, C. M., Bancroft, L., and Silverman, J
@@ -741,12 +740,12 @@ t.
 
 --- Sentence/switch
 id: 30
-r#  3970  92  87
+r#  3982  91  87
 
 
 --- Sentence//end
 id: 30
-r#  4193  95  62
+r#  4205  94  62
 p: .
 t. 
 |  (2002). Battered Mothers Speak Out: A Human Rights Report on Domestic Violence
@@ -755,7 +754,7 @@ t.
 
 --- Sentence/end 
 id: 30
-r#  4194  95  63
+r#  4206  94  63
 
 --- Paragraph/end 
 id: 28
@@ -764,16 +763,16 @@ y: N/A
 
 --- Paragraph/start
 id: 29
-r#  4196  97  1
+r#  4208  96  1
 
 
 --- Sentence/start
 id: 31
-r#  4196  97  1
+r#  4208  96  1
 
 --- Sentence//end
 id: 31
-r#  4450  99  16
+r#  4466  98  16
 p: .
 t. 
 |  Deblinger, E., Stauffer, L. B., and Steer, R. A. (2001). Comparative Efficacies of Supportive and Cognitive Behavioral Group Therapies for Young Children Who Have
@@ -782,7 +781,7 @@ t.
 
 --- Sentence/end 
 id: 31
-r#  4451  99  17
+r#  4467  98  17
 
 --- Paragraph/end 
 id: 29
@@ -791,16 +790,16 @@ y: N/A
 
 --- Paragraph/start
 id: 30
-r#  4453  101  1
+r#  4469  100  1
 
 
 --- Sentence/start
 id: 32
-r#  4453  101  1
+r#  4469  100  1
 
 --- Sentence//end
 id: 32
-r#  4632  103  19
+r#  4648  102  19
 p: .
 t. 
 |  Denike, M., Huang, A. and Kachuk, P. (1998). Myths and Realities of Custody and
@@ -809,7 +808,7 @@ t.
 
 --- Sentence/end 
 id: 32
-r#  4633  103  20
+r#  4649  102  20
 
 --- Paragraph/end 
 id: 30
@@ -818,25 +817,24 @@ y: N/A
 
 --- Paragraph/start
 id: 31
-r#  4635  105  1
+r#  4651  104  1
 
 
 --- Sentence/start
 id: 33
-r#  4635  105  1
+r#  4651  104  1
 
 --- Sentence//end
 id: 33
-r#  4767  106  48
+r#  4783  105  48
 p: .
 t. 
 |  Derdyn, A. P. (1976). A Consideration of Legal Issues in Child Custody Contests.
 .  Archives of General Psychiatry 33: 165--171
 
-
---- Sentence/switch
-id: 34
-r#  4768  106  49
+--- Sentence/end 
+id: 33
+r#  4784  105  49
 
 --- Paragraph/end 
 id: 31
@@ -845,25 +843,25 @@ y: N/A
 
 --- Paragraph/start
 id: 32
-r#  4774  109  1
+r#  4786  107  1
 
 
 --- Sentence/start
-id: 35
-r#  4774  109  1
+id: 34
+r#  4786  107  1
 
 --- Sentence//end
-id: 35
-r#  5019  111  78
+id: 34
+r#  5032  109  79
 p: .
 t. 
-|  368Drew, P. (1992). Contested Evidence in Courtroom Cross-Examination: The Case
+|  Drew, P. (1992). Contested Evidence in Courtroom Cross-Examination: The Case
 |  of a Trial for Rape. In P. Drew and J. Heritage (eds.), Talk at Work: Interaction in
 .  Institutional Settings, pp. 470--520. Cambridge: Cambridge University Press
 
 --- Sentence/end 
-id: 35
-r#  5020  111  79
+id: 34
+r#  5033  109  80
 
 --- Paragraph/end 
 id: 32
@@ -872,24 +870,24 @@ y: N/A
 
 --- Paragraph/start
 id: 33
-r#  5022  113  1
+r#  5035  111  1
 
 
 --- Sentence/start
-id: 36
-r#  5022  113  1
+id: 35
+r#  5035  111  1
 
 --- Sentence//end
-id: 36
-r#  5172  114  67
+id: 35
+r#  5185  112  67
 p: .
 t. 
 |  Ducote, R. (2002). Guardians Ad Litem in Private Custody Litigation: The Case for
 .  Abolition. Loyola Journal of Public Interest Law 3: 106--151
 
 --- Sentence/end 
-id: 36
-r#  5173  114  68
+id: 35
+r#  5186  112  68
 
 --- Paragraph/end 
 id: 33
@@ -898,36 +896,36 @@ y: N/A
 
 --- Paragraph/start
 id: 34
-r#  5175  116  1
+r#  5188  114  1
 
 
 --- Sentence/start
-id: 37
-r#  5175  116  1
+id: 36
+r#  5188  114  1
 
 --- Sentence//end
-id: 37
-r#  5232  116  58
+id: 36
+r#  5245  114  58
 p: .
 t. 
 .  Durkheim, E. (1938). The Rules of Sociological Method
 
 
 --- Sentence/switch
-id: 38
-r#  5233  116  59
+id: 37
+r#  5246  114  59
 
 
 --- Sentence//end
-id: 38
-r#  5262  117  28
+id: 37
+r#  5275  115  28
 p: .
 t. 
 .  Glencoe, UK: The Free Press
 
 --- Sentence/end 
-id: 38
-r#  5263  117  29
+id: 37
+r#  5276  115  29
 
 --- Paragraph/end 
 id: 34
@@ -936,12 +934,12 @@ y: N/A
 
 --- Paragraph/start
 id: 35
-r#  5265  119  1
+r#  5278  117  1
 
 
 --- Sentence/start
-id: 39
-r#  5265  119  1
+id: 38
+r#  5278  117  1
 --- Paragraph/end 
 id: 35
 y: N/A
@@ -949,24 +947,24 @@ y: N/A
 
 --- Paragraph/start
 id: 36
-r#  5424  122  1
+r#  5437  120  1
 
 
 --- Sentence/start
-id: 40
-r#  5424  122  1
+id: 39
+r#  5437  120  1
 
 --- Sentence//end
-id: 40
-r#  5553  122  130
+id: 39
+r#  5566  120  130
 p: .
 t. 
 |  Dziech, B. W., and Schudson, C. B. (1989). On Trial: America’s Courts and Their
 .  Treatment of Sexually Abused Children. Boston: Beacon Press.\vspace{-1em}Edleson, J. L. (1999). The Overlap Between Child Maltreatment and Woman Battering. Violence Against Women 5 (2): 134--154
 
 --- Sentence/end 
-id: 40
-r#  5554  122  131
+id: 39
+r#  5567  120  131
 
 --- Paragraph/end 
 id: 36
@@ -975,24 +973,24 @@ y: N/A
 
 --- Paragraph/start
 id: 37
-r#  5556  124  1
+r#  5569  122  1
 
 
 --- Sentence/start
-id: 41
-r#  5556  124  1
+id: 40
+r#  5569  122  1
 
 --- Sentence//end
-id: 41
-r#  5719  125  81
+id: 40
+r#  5732  123  81
 p: .
 t. 
 |  Edwards, L., and Lucero, K. (2019). The Santa Clara County Greenbook Story: From
 .  Theory to Transformation. Juvenile and Family Court Journal 70 (4): 49--76
 
 --- Sentence/end 
-id: 41
-r#  5720  125  82
+id: 40
+r#  5733  123  82
 
 --- Paragraph/end 
 id: 37
@@ -1001,24 +999,24 @@ y: N/A
 
 --- Paragraph/start
 id: 38
-r#  5722  127  1
+r#  5735  125  1
 
 
 --- Sentence/start
-id: 42
-r#  5722  127  1
+id: 41
+r#  5735  125  1
 
 --- Sentence//end
-id: 42
-r#  5916  128  30
+id: 41
+r#  5929  126  30
 p: .
 t. 
 |  Everson, M. D., and Boat, B. W. (1989). False Allegations of Sexual Abuse by Children and Adolescents. Journal of the American Academy of Child and Adolescent
 .  Psychiatry 28 (2): 230--235
 
 --- Sentence/end 
-id: 42
-r#  5917  128  31
+id: 41
+r#  5930  126  31
 
 --- Paragraph/end 
 id: 38
@@ -1027,24 +1025,24 @@ y: N/A
 
 --- Paragraph/start
 id: 39
-r#  5919  130  1
+r#  5932  128  1
 
 
 --- Sentence/start
-id: 43
-r#  5919  130  1
+id: 42
+r#  5932  128  1
 
 --- Sentence//end
-id: 43
-r#  6074  131  69
+id: 42
+r#  6087  129  69
 p: .
 t. 
 |  Faller, K. C. (1988). Child Sexual Abuse: An Interdisciplinary Manual for Diagnosis,
 .  Case Management and Treatment. New York: Columbia University Press
 
 --- Sentence/end 
-id: 43
-r#  6075  131  70
+id: 42
+r#  6088  129  70
 
 --- Paragraph/end 
 id: 39
@@ -1053,24 +1051,24 @@ y: N/A
 
 --- Paragraph/start
 id: 40
-r#  6077  133  1
+r#  6090  131  1
 
 
 --- Sentence/start
-id: 44
-r#  6077  133  1
+id: 43
+r#  6090  131  1
 
 --- Sentence//end
-id: 44
-r#  6212  134  53
+id: 43
+r#  6225  132  53
 p: .
 t. 
 |  Faller, K. C. (1998). The Parental Alienation Syndrome: What Is It and What Data
 .  Support It? Child Maltreatment 3 (2): 100--115
 
 --- Sentence/end 
-id: 44
-r#  6213  134  54
+id: 43
+r#  6226  132  54
 
 --- Paragraph/end 
 id: 40
@@ -1079,24 +1077,24 @@ y: N/A
 
 --- Paragraph/start
 id: 41
-r#  6215  136  1
+r#  6228  134  1
 
 
 --- Sentence/start
-id: 45
-r#  6215  136  1
+id: 44
+r#  6228  134  1
 
 --- Sentence//end
-id: 45
-r#  6366  137  74
+id: 44
+r#  6379  135  74
 p: .
 t. 
 |  Faller, K. C. (2000). Child Maltreatment and Endangerment in the Context of
 .  Divorce. University of Arkansas Little Rock Law Review 22: 429--452
 
 --- Sentence/end 
-id: 45
-r#  6367  137  75
+id: 44
+r#  6380  135  75
 
 --- Paragraph/end 
 id: 41
@@ -1105,16 +1103,16 @@ y: N/A
 
 --- Paragraph/start
 id: 42
-r#  6369  139  1
+r#  6382  137  1
 
 
 --- Sentence/start
-id: 46
-r#  6369  139  1
+id: 45
+r#  6382  137  1
 
 --- Sentence//end
-id: 46
-r#  6572  141  46
+id: 45
+r#  6585  139  46
 p: .
 t. 
 |  Faller, K. C. (2002). Allegations of Sexual Abuse in Divorce.
@@ -1122,8 +1120,8 @@ t.
 .  Maltreatment. Portland, Maine, September 13
 
 --- Sentence/end 
-id: 46
-r#  6573  141  47
+id: 45
+r#  6586  139  47
 
 --- Paragraph/end 
 id: 42
@@ -1132,16 +1130,16 @@ y: N/A
 
 --- Paragraph/start
 id: 43
-r#  6575  143  1
+r#  6588  141  1
 
 
 --- Sentence/start
-id: 47
-r#  6575  143  1
+id: 46
+r#  6588  141  1
 
 --- Sentence//end
-id: 47
-r#  6800  145  56
+id: 46
+r#  6813  143  56
 p: .
 t. 
 |  Faller, K. C., Corwin, D. L., and Olafson, E. (1993). Literature Review: Research on
@@ -1149,8 +1147,8 @@ t.
 .  the Abuse of Children (APSAC) Adviser 6 (3): 1, 7--10
 
 --- Sentence/end 
-id: 47
-r#  6801  145  57
+id: 46
+r#  6814  143  57
 
 --- Paragraph/end 
 id: 43
@@ -1159,24 +1157,24 @@ y: N/A
 
 --- Paragraph/start
 id: 44
-r#  6803  147  1
+r#  6816  145  1
 
 
 --- Sentence/start
-id: 48
-r#  6803  147  1
+id: 47
+r#  6816  145  1
 
 --- Sentence//end
-id: 48
-r#  6931  148  47
+id: 47
+r#  6944  146  47
 p: .
 t. 
 |  Faller, K. C., and DeVoe, E. (1995). Allegations of Sexual Abuse in Divorce.
 .  Journal of Child Sexual Abuse 4 (4): 1--25
 
 --- Sentence/end 
-id: 48
-r#  6932  148  48
+id: 47
+r#  6945  146  48
 
 --- Paragraph/end 
 id: 44
@@ -1185,24 +1183,24 @@ y: N/A
 
 --- Paragraph/start
 id: 45
-r#  6934  150  1
+r#  6947  148  1
 
 
 --- Sentence/start
-id: 49
-r#  6934  150  1
+id: 48
+r#  6947  148  1
 
 --- Sentence//end
-id: 49
-r#  7042  151  33
+id: 48
+r#  7055  149  33
 p: .
 t. 
 |  Fentress, G. (1987). Mothers Defy Court, Keep Children. Sun Herald
 .  (Gulfport, MS), August 15, p. C1
 
 --- Sentence/end 
-id: 49
-r#  7043  151  34
+id: 48
+r#  7056  149  34
 
 --- Paragraph/end 
 id: 45
@@ -1211,25 +1209,25 @@ y: N/A
 
 --- Paragraph/start
 id: 46
-r#  7045  153  1
+r#  7058  151  1
 
 
 --- Sentence/start
-id: 50
-r#  7045  153  1
+id: 49
+r#  7058  151  1
 
 --- Sentence//end
-id: 50
-r#  7210  155  9
+id: 49
+r#  7238  153  23
 p: .
 t. 
 |  Fields-Meyer, T. (2002). In the Dead of Night: A State Department Worker Is
-|  Charged with Trying to Kill Her Best Friend’s Ex-Husband. People 57 (8):
-.  123--126
+|  Charged with Trying to Kill Her Best Friend’s Ex-Husband. People 57 (8),
+.  March 4: pp. 123--126
 
 --- Sentence/end 
-id: 50
-r#  7211  155  10
+id: 49
+r#  7239  153  24
 
 --- Paragraph/end 
 id: 46
@@ -1238,24 +1236,24 @@ y: N/A
 
 --- Paragraph/start
 id: 47
-r#  7213  157  1
+r#  7241  155  1
 
 
 --- Sentence/start
-id: 51
-r#  7213  157  1
+id: 50
+r#  7241  155  1
 
 --- Sentence//end
-id: 51
-r#  7364  158  68
+id: 50
+r#  7392  156  68
 p: .
 t. 
 |  Fifield, A., and Lesher, M. (1996). A Child’s at Stake: A Custody Fight Becomes a
 .  Political Nightmare. Village Voice, October 1, pp. 10, 12--13
 
 --- Sentence/end 
-id: 51
-r#  7365  158  69
+id: 50
+r#  7393  156  69
 
 --- Paragraph/end 
 id: 47
@@ -1264,24 +1262,24 @@ y: N/A
 
 --- Paragraph/start
 id: 48
-r#  7367  160  1
+r#  7395  158  1
 
 
 --- Sentence/start
-id: 52
-r#  7367  160  1
+id: 51
+r#  7395  158  1
 
 --- Sentence//end
-id: 52
-r#  7465  161  13
+id: 51
+r#  7493  159  13
 p: .
 t. 
 |  Finkelhor, D. (1986). A Sourcebook on Child Sexual Abuse. Thousand Oaks, CA: SAGE
 .  Publications
 
 --- Sentence/end 
-id: 52
-r#  7466  161  14
+id: 51
+r#  7494  159  14
 
 --- Paragraph/end 
 id: 48
@@ -1290,24 +1288,24 @@ y: N/A
 
 --- Paragraph/start
 id: 49
-r#  7468  163  1
+r#  7496  161  1
 
 
 --- Sentence/start
-id: 53
-r#  7468  163  1
+id: 52
+r#  7496  161  1
 
 --- Sentence//end
-id: 53
-r#  7571  164  17
+id: 52
+r#  7599  162  17
 p: .
 t. 
 |  Forrest, S. (1996). Children Die - but No Caseworkers Punished. New York Post,
 .  January 17, p. 4
 
 --- Sentence/end 
-id: 53
-r#  7572  164  18
+id: 52
+r#  7600  162  18
 
 --- Paragraph/end 
 id: 49
@@ -1316,24 +1314,24 @@ y: N/A
 
 --- Paragraph/start
 id: 50
-r#  7574  166  1
+r#  7602  164  1
 
 
 --- Sentence/start
-id: 54
-r#  7574  166  1
+id: 53
+r#  7602  164  1
 
 --- Sentence//end
-id: 54
-r#  7711  167  51
+id: 53
+r#  7739  165  51
 p: .
 t. 
 |  Frey, W. H. (2020). The nation is diversifying even faster than predicted, according
 .  to new census data. Brookings Report, July 1
 
 --- Sentence/end 
-id: 54
-r#  7712  167  52
+id: 53
+r#  7740  165  52
 
 --- Paragraph/end 
 id: 50
@@ -1342,24 +1340,24 @@ y: N/A
 
 --- Paragraph/start
 id: 51
-r#  7714  169  1
+r#  7742  167  1
 
 
 --- Sentence/start
-id: 55
-r#  7714  169  1
+id: 54
+r#  7742  167  1
 
 --- Sentence//end
-id: 55
-r#  7816  170  18
+id: 54
+r#  7844  168  18
 p: .
 t. 
 |  Friedrich, W. N. (1993). Sexual Behavior in Sexually Abused Children. Violence
 .  Update 3: 1--20
 
 --- Sentence/end 
-id: 55
-r#  7817  170  19
+id: 54
+r#  7845  168  19
 
 --- Paragraph/end 
 id: 51
@@ -1368,24 +1366,24 @@ y: N/A
 
 --- Paragraph/start
 id: 52
-r#  7819  172  1
+r#  7847  170  1
 
 
 --- Sentence/start
-id: 56
-r#  7819  172  1
+id: 55
+r#  7847  170  1
 
 --- Sentence//end
-id: 56
-r#  7951  173  45
+id: 55
+r#  7979  171  45
 p: .
 t. 
 |  Froning, M. L. (1988). Letter to the Editor. Journal of the American Academy of Child
 .  and Adolescent Psychiatry 27 (5): 665--666
 
 --- Sentence/end 
-id: 56
-r#  7952  173  46
+id: 55
+r#  7980  171  46
 
 --- Paragraph/end 
 id: 52
@@ -1394,24 +1392,24 @@ y: N/A
 
 --- Paragraph/start
 id: 53
-r#  7954  175  1
+r#  7982  173  1
 
 
 --- Sentence/start
-id: 57
-r#  7954  175  1
+id: 56
+r#  7982  173  1
 
 --- Sentence//end
-id: 57
-r#  8059  176  20
+id: 56
+r#  8088  174  21
 p: .
 t. 
 |  Galtney, L. (1988). Mothers on the Run. U.S. News and World Report 104 (23),
 .  June 13, pp. 22--33
 
 --- Sentence/end 
-id: 57
-r#  8060  176  21
+id: 56
+r#  8089  174  22
 
 --- Paragraph/end 
 id: 53
@@ -1420,16 +1418,16 @@ y: N/A
 
 --- Paragraph/start
 id: 54
-r#  8062  178  1
+r#  8091  176  1
 
 
 --- Sentence/start
-id: 58
-r#  8062  178  1
+id: 57
+r#  8091  176  1
 
 --- Sentence//end
-id: 58
-r#  8292  180  59
+id: 57
+r#  8321  178  59
 p: .
 t. 
 |  Gara, M. A., Minsky, S., Silverstein, S. M., Miskimen, T., and Strakowski, S. (2019). A
@@ -1437,8 +1435,8 @@ t.
 .  Health Clinic. Psychiatric Services 70 (2): 130--134
 
 --- Sentence/end 
-id: 58
-r#  8293  180  60
+id: 57
+r#  8322  178  60
 
 --- Paragraph/end 
 id: 54
@@ -1447,16 +1445,16 @@ y: N/A
 
 --- Paragraph/start
 id: 55
-r#  8295  182  1
+r#  8324  180  1
 
 
 --- Sentence/start
-id: 59
-r#  8295  182  1
+id: 58
+r#  8324  180  1
 
 --- Sentence//end
-id: 59
-r#  8556  184  26
+id: 58
+r#  8585  182  26
 p: .
 t. 
 |  Garber, B. D. (2021). The Dynamics of the Enmeshed Family System Ten Years
@@ -1464,8 +1462,8 @@ t.
 .  Lawyers 34 (1): 97--120
 
 --- Sentence/end 
-id: 59
-r#  8557  184  27
+id: 58
+r#  8586  182  27
 
 --- Paragraph/end 
 id: 55
@@ -1474,24 +1472,24 @@ y: N/A
 
 --- Paragraph/start
 id: 56
-r#  8559  186  1
+r#  8588  184  1
 
 
 --- Sentence/start
-id: 60
-r#  8559  186  1
+id: 59
+r#  8588  184  1
 
 --- Sentence//end
-id: 60
-r#  8665  187  21
+id: 59
+r#  8694  185  21
 p: .
 t. 
 |  Gardner, R. A. (1985). Recent Trends in Divorce and Custody Litigation. Academy
 .  Forum 29 (2): 3--7
 
 --- Sentence/end 
-id: 60
-r#  8666  187  22
+id: 59
+r#  8695  185  22
 
 --- Paragraph/end 
 id: 56
@@ -1500,16 +1498,16 @@ y: N/A
 
 --- Paragraph/start
 id: 57
-r#  8668  189  1
+r#  8697  187  1
 
 
 --- Sentence/start
-id: 61
-r#  8668  189  1
+id: 60
+r#  8697  187  1
 
 --- Sentence//end
-id: 61
-r#  8839  191  13
+id: 60
+r#  8868  189  13
 p: .
 t. 
 |  Gardner, R. A. (1987). The Parental Alienation Syndrome and the Differentiation
@@ -1517,8 +1515,8 @@ t.
 .  Therapeutics
 
 --- Sentence/end 
-id: 61
-r#  8840  191  14
+id: 60
+r#  8869  189  14
 
 --- Paragraph/end 
 id: 57
@@ -1527,24 +1525,24 @@ y: N/A
 
 --- Paragraph/start
 id: 58
-r#  8842  193  1
+r#  8871  191  1
 
 
 --- Sentence/start
-id: 62
-r#  8842  193  1
+id: 61
+r#  8871  191  1
 
 --- Sentence//end
-id: 62
-r#  8991  194  64
+id: 61
+r#  9020  192  64
 p: .
 t. 
 |  Gardner, R. A. (1992a). The Parental Alienation Syndrome: A Guide for Mental Health
 .  and Legal Professionals. Cresskill, NJ: Creative Therapeutics
 
 --- Sentence/end 
-id: 62
-r#  8992  194  65
+id: 61
+r#  9021  192  65
 
 --- Paragraph/end 
 id: 58
@@ -1553,24 +1551,24 @@ y: N/A
 
 --- Paragraph/start
 id: 59
-r#  8994  196  1
+r#  9023  194  1
 
 
 --- Sentence/start
-id: 63
-r#  8994  196  1
+id: 62
+r#  9023  194  1
 
 --- Sentence//end
-id: 63
-r#  9105  197  22
+id: 62
+r#  9134  195  22
 p: .
 t. 
 |  Gardner, R. A. (1992b). True and False Accusations of Child Sex Abuse. Cresskill, NJ:
 .  Creative Therapeutics
 
 --- Sentence/end 
-id: 63
-r#  9106  197  23
+id: 62
+r#  9135  195  23
 
 --- Paragraph/end 
 id: 59
@@ -1579,24 +1577,24 @@ y: N/A
 
 --- Paragraph/start
 id: 60
-r#  9108  199  1
+r#  9137  197  1
 
 
 --- Sentence/start
-id: 64
-r#  9108  199  1
+id: 63
+r#  9137  197  1
 
 --- Sentence//end
-id: 64
-r#  9212  200  16
+id: 63
+r#  9241  198  16
 p: .
 t. 
 |  Gardner, R. A. (1998). Rebuttal to Kathleen Faller’s Article. Child Maltreatment
 .  3 (4): 309--312
 
 --- Sentence/end 
-id: 64
-r#  9213  200  17
+id: 63
+r#  9242  198  17
 
 --- Paragraph/end 
 id: 60
@@ -1605,16 +1603,16 @@ y: N/A
 
 --- Paragraph/start
 id: 61
-r#  9215  202  1
+r#  9244  200  1
 
 
 --- Sentence/start
-id: 65
-r#  9215  202  1
+id: 64
+r#  9244  200  1
 
 --- Sentence//end
-id: 65
-r#  9396  204  16
+id: 64
+r#  9425  202  16
 p: .
 t. 
 |  Gardner, R. A. (2001). Should Courts Order PAS Children to Visit/Reside with the
@@ -1622,8 +1620,8 @@ t.
 .  19 (3): 61--106
 
 --- Sentence/end 
-id: 65
-r#  9397  204  17
+id: 64
+r#  9426  202  17
 
 --- Paragraph/end 
 id: 61
@@ -1632,24 +1630,24 @@ y: N/A
 
 --- Paragraph/start
 id: 62
-r#  9399  206  1
+r#  9428  204  1
 
 
 --- Sentence/start
-id: 66
-r#  9399  206  1
+id: 65
+r#  9428  204  1
 
 --- Sentence//end
-id: 66
-r#  9490  207  14
+id: 65
+r#  9519  205  14
 p: .
 t. 
 |  Garfinkel, H. (1967). Studies in Ethnomethodology. Englewood Cliffs, NJ:
 .  Prentice-Hall
 
 --- Sentence/end 
-id: 66
-r#  9491  207  15
+id: 65
+r#  9520  205  15
 
 --- Paragraph/end 
 id: 62
@@ -1658,37 +1656,37 @@ y: N/A
 
 --- Paragraph/start
 id: 63
-r#  9493  209  1
+r#  9522  207  1
 
 
 --- Sentence/start
-id: 67
-r#  9493  209  1
+id: 66
+r#  9522  207  1
 
 --- Sentence//end
-id: 67
-r#  9569  209  77
+id: 66
+r#  9598  207  77
 p: .
 t. 
 .  Garfinkel, H. (1974). The Origins of the Term Ethnomethodology. In R
 
 
 --- Sentence/switch
-id: 68
-r#  9570  209  78
+id: 67
+r#  9599  207  78
 
 
 --- Sentence//end
-id: 68
-r#  9655  211  10
+id: 67
+r#  9685  209  10
 p: .
 t. 
 |  Turner (ed.), Ethnomethodology, pp. 15--18. Harmondsworth, UK: Penguin
 .  Education
 
 --- Sentence/end 
-id: 68
-r#  9656  211  11
+id: 67
+r#  9686  209  11
 
 --- Paragraph/end 
 id: 63
@@ -1697,24 +1695,24 @@ y: N/A
 
 --- Paragraph/start
 id: 64
-r#  9658  213  1
+r#  9688  211  1
 
 
 --- Sentence/start
-id: 69
-r#  9658  213  1
+id: 68
+r#  9688  211  1
 
 --- Sentence//end
-id: 69
-r#  9862  214  117
+id: 68
+r#  9893  212  118
 p: .
 t. 
 |  Garfinkel, H., and Bittner, E. (1967). Good Organizational Reasons for Bad Clinic
 .  Records. In H. Garfinkel (ed.), Studies in Ethnomethodology, pp. 186--207. Englewood Cliffs, NJ: Prentice-Hall
 
 --- Sentence/end 
-id: 69
-r#  9863  214  118
+id: 68
+r#  9894  212  119
 
 --- Paragraph/end 
 id: 64
@@ -1723,16 +1721,16 @@ y: N/A
 
 --- Paragraph/start
 id: 65
-r#  9865  216  1
+r#  9896  214  1
 
 
 --- Sentence/start
-id: 70
-r#  9865  216  1
+id: 69
+r#  9896  214  1
 
 --- Sentence//end
-id: 70
-r#  10100  218  64
+id: 69
+r#  10132  216  65
 p: .
 t. 
 |  Garfinkel, H., and Sacks, H. (1970). On Formal Structures of Practical Actions. In
@@ -1740,8 +1738,8 @@ t.
 .  Developments, pp. 337--366. New York: Appleton-Century-Crofts
 
 --- Sentence/end 
-id: 70
-r#  10101  218  65
+id: 69
+r#  10133  216  66
 
 --- Paragraph/end 
 id: 65
@@ -1750,24 +1748,24 @@ y: N/A
 
 --- Paragraph/start
 id: 66
-r#  10103  220  1
+r#  10135  218  1
 
 
 --- Sentence/start
-id: 71
-r#  10103  220  1
+id: 70
+r#  10135  218  1
 
 --- Sentence//end
-id: 71
-r#  10216  221  26
+id: 70
+r#  10248  219  26
 p: .
 t. 
 |  Gentile, O. (2023). Her Son Said Her Ex Sexually Abused Him. Then She Lost Custody.
 .  Insider, May 18, 2023
 
 --- Sentence/end 
-id: 71
-r#  10217  221  27
+id: 70
+r#  10249  219  27
 
 --- Paragraph/end 
 id: 66
@@ -1776,24 +1774,24 @@ y: N/A
 
 --- Paragraph/start
 id: 67
-r#  10219  223  1
+r#  10251  221  1
 
 
 --- Sentence/start
-id: 72
-r#  10219  223  1
+id: 71
+r#  10251  221  1
 
 --- Sentence//end
-id: 72
-r#  10348  224  42
+id: 71
+r#  10380  222  42
 p: .
 t. 
 |  Gill, J. E. (1981). Stolen Children: How and Why Parents Kidnap Their Kids - and What
 .  to Do about It. New York: Seaview Books
 
 --- Sentence/end 
-id: 72
-r#  10349  224  43
+id: 71
+r#  10381  222  43
 
 --- Paragraph/end 
 id: 67
@@ -1802,16 +1800,16 @@ y: N/A
 
 --- Paragraph/start
 id: 68
-r#  10351  226  1
+r#  10383  224  1
 
 
 --- Sentence/start
-id: 73
-r#  10351  226  1
+id: 72
+r#  10383  224  1
 
 --- Sentence//end
-id: 73
-r#  10519  228  7
+id: 72
+r#  10551  226  7
 p: .
 t. 
 |  Goldstein, B., and Liu, E. (2022). Working with Guardians ad Litem or Others
@@ -1819,8 +1817,8 @@ t.
 .  25--47
 
 --- Sentence/end 
-id: 73
-r#  10520  228  8
+id: 72
+r#  10552  226  8
 
 --- Paragraph/end 
 id: 68
@@ -1829,16 +1827,16 @@ y: N/A
 
 --- Paragraph/start
 id: 69
-r#  10522  230  1
+r#  10554  228  1
 
 
 --- Sentence/start
-id: 74
-r#  10522  230  1
+id: 73
+r#  10554  228  1
 
 --- Sentence//end
-id: 74
-r#  10684  231  77
+id: 73
+r#  10716  229  77
 p: .
 t. 
 |  Goodhue, M. B. (1989). Child Protection and the Family Court: A Study of Processes,
@@ -1846,20 +1844,20 @@ t.
 
 
 --- Sentence/switch
-id: 75
-r#  10685  231  78
+id: 74
+r#  10717  229  78
 
 
 --- Sentence//end
-id: 75
-r#  10739  232  54
+id: 74
+r#  10771  230  54
 p: .
 t. 
 .  Albany: New York State Senate Committee on Child Care
 
 --- Sentence/end 
-id: 75
-r#  10740  232  55
+id: 74
+r#  10772  230  55
 
 --- Paragraph/end 
 id: 69
@@ -1868,24 +1866,24 @@ y: N/A
 
 --- Paragraph/start
 id: 70
-r#  10742  234  1
+r#  10774  232  1
 
 
 --- Sentence/start
-id: 76
-r#  10742  234  1
+id: 75
+r#  10774  232  1
 
 --- Sentence//end
-id: 76
-r#  10853  235  31
+id: 75
+r#  10885  233  31
 p: .
 t. 
 |  Gothard, S. (1992). Children in Courtrooms: A Commentary. Journal of Child
 .  Sexual Abuse 1 (3): 115--117
 
 --- Sentence/end 
-id: 76
-r#  10854  235  32
+id: 75
+r#  10886  233  32
 
 --- Paragraph/end 
 id: 70
@@ -1894,36 +1892,36 @@ y: N/A
 
 --- Paragraph/start
 id: 71
-r#  10856  237  1
+r#  10888  235  1
 
 
 --- Sentence/start
-id: 77
-r#  10856  237  1
+id: 76
+r#  10888  235  1
 
 --- Sentence//end
-id: 77
-r#  10940  237  85
+id: 76
+r#  10972  235  85
 p: .
 t. 
 .  Gould, J. W. (1998). Conducting Scientifically Crafted Child Custody Evaluations
 
 
 --- Sentence/switch
-id: 78
-r#  10941  237  86
+id: 77
+r#  10973  235  86
 
 
 --- Sentence//end
-id: 78
-r#  10978  238  37
+id: 77
+r#  11010  236  37
 p: .
 t. 
 .  Thousand Oaks, CA: SAGE Publications
 
 --- Sentence/end 
-id: 78
-r#  10979  238  38
+id: 77
+r#  11011  236  38
 
 --- Paragraph/end 
 id: 71
@@ -1932,23 +1930,23 @@ y: N/A
 
 --- Paragraph/start
 id: 72
-r#  10981  240  1
+r#  11013  238  1
 
 
 --- Sentence/start
-id: 79
-r#  10981  240  1
+id: 78
+r#  11013  238  1
 
 --- Sentence//end
-id: 79
-r#  11062  240  82
+id: 78
+r#  11094  238  82
 p: .
 t. 
 .  Grant, A. (2014). End the Nightmare at Family Court. Amazon.com, September 22
 
 --- Sentence/end 
-id: 79
-r#  11063  240  83
+id: 78
+r#  11095  238  83
 
 --- Paragraph/end 
 id: 72
@@ -1957,24 +1955,24 @@ y: N/A
 
 --- Paragraph/start
 id: 73
-r#  11065  242  1
+r#  11097  240  1
 
 
 --- Sentence/start
-id: 80
-r#  11065  242  1
+id: 79
+r#  11097  240  1
 
 --- Sentence//end
-id: 80
-r#  11232  243  85
+id: 79
+r#  11264  241  85
 p: .
 t. 
 |  Green, A. H. (1986). True and False Allegations of Sexual Abuse in Child Custody
 .  Disputes. Journal of the American Academy of Child Psychiatry 25 (4): 449--456
 
 --- Sentence/end 
-id: 80
-r#  11233  243  86
+id: 79
+r#  11265  241  86
 
 --- Paragraph/end 
 id: 73
@@ -1983,16 +1981,16 @@ y: N/A
 
 --- Paragraph/start
 id: 74
-r#  11235  245  1
+r#  11267  243  1
 
 
 --- Sentence/start
-id: 81
-r#  11235  245  1
+id: 80
+r#  11267  243  1
 
 --- Sentence//end
-id: 81
-r#  11416  247  10
+id: 80
+r#  11448  245  10
 p: .
 t. 
 |  Hannah, M. T., and Goldstein, B. (eds.). (2016). Domestic Violence, Abuse, and Child
@@ -2000,8 +1998,8 @@ t.
 .  Institute
 
 --- Sentence/end 
-id: 81
-r#  11417  247  11
+id: 80
+r#  11449  245  11
 
 --- Paragraph/end 
 id: 74
@@ -2010,24 +2008,24 @@ y: N/A
 
 --- Paragraph/start
 id: 75
-r#  11419  249  1
+r#  11451  247  1
 
 
 --- Sentence/start
-id: 82
-r#  11419  249  1
+id: 81
+r#  11451  247  1
 
 --- Sentence//end
-id: 82
-r#  11573  250  66
+id: 81
+r#  11605  248  66
 p: .
 t. 
 |  Hanson, G. (1988). The Sex Abuse Controversy: Letter to the Editor. Journal of the
 .  American Academy of Child and Adolescent Psychiatry 27 (2): 258
 
 --- Sentence/end 
-id: 82
-r#  11574  250  67
+id: 81
+r#  11606  248  67
 
 --- Paragraph/end 
 id: 75
@@ -2036,16 +2034,16 @@ y: N/A
 
 --- Paragraph/start
 id: 76
-r#  11576  252  1
+r#  11608  250  1
 
 
 --- Sentence/start
-id: 83
-r#  11576  252  1
+id: 82
+r#  11608  250  1
 
 --- Sentence//end
-id: 83
-r#  11774  254  58
+id: 82
+r#  11806  252  58
 p: .
 t. 
 |  Hayward-Brown, H. (2003). Misdiagnosed Children, Misdiagnosed Parents:
@@ -2053,8 +2051,8 @@ t.
 .  PhD dissertation, Charles Sturt University, NSW Australia
 
 --- Sentence/end 
-id: 83
-r#  11775  254  59
+id: 82
+r#  11807  252  59
 
 --- Paragraph/end 
 id: 76
@@ -2063,24 +2061,24 @@ y: N/A
 
 --- Paragraph/start
 id: 77
-r#  11777  256  1
+r#  11809  254  1
 
 
 --- Sentence/start
-id: 84
-r#  11777  256  1
+id: 83
+r#  11809  254  1
 
 --- Sentence//end
-id: 84
-r#  11938  257  4
+id: 83
+r#  11970  255  4
 p: .
 t. 
 |  Heim, S., Grieco, H., Paola, S. D., and Allen, R. (2002). California National Organization for Women Family Court Report 2002. Sacramento, CA: California
 .  NOW
 
 --- Sentence/end 
-id: 84
-r#  11939  257  5
+id: 83
+r#  11971  255  5
 
 --- Paragraph/end 
 id: 77
@@ -2089,24 +2087,24 @@ y: N/A
 
 --- Paragraph/start
 id: 78
-r#  11941  259  1
+r#  11973  257  1
 
 
 --- Sentence/start
-id: 85
-r#  11941  259  1
+id: 84
+r#  11973  257  1
 
 --- Sentence//end
-id: 85
-r#  12082  260  56
+id: 84
+r#  12115  258  57
 p: .
 t. 
 |  Hemphill, C. (1990). The Agony of Yacov Riegler: Bureaucracy Fails to Save Brooklyn
 .  Boy. New York Newsday, December 16, pp. 6, 22--23
 
 --- Sentence/end 
-id: 85
-r#  12083  260  57
+id: 84
+r#  12116  258  58
 
 --- Paragraph/end 
 id: 78
@@ -2115,24 +2113,24 @@ y: N/A
 
 --- Paragraph/start
 id: 79
-r#  12085  262  1
+r#  12118  260  1
 
 
 --- Sentence/start
-id: 86
-r#  12085  262  1
+id: 85
+r#  12118  260  1
 
 --- Sentence//end
-id: 86
-r#  12176  263  6
+id: 85
+r#  12209  261  6
 p: .
 t. 
 |  Herbert, B. (1986). Who Serves the Children? New York Daily News, October 28,
 .  p. 29
 
 --- Sentence/end 
-id: 86
-r#  12177  263  7
+id: 85
+r#  12210  261  7
 
 --- Paragraph/end 
 id: 79
@@ -2141,24 +2139,24 @@ y: N/A
 
 --- Paragraph/start
 id: 80
-r#  12179  265  1
+r#  12212  263  1
 
 
 --- Sentence/start
-id: 87
-r#  12179  265  1
+id: 86
+r#  12212  263  1
 
 --- Sentence//end
-id: 87
-r#  12326  266  67
+id: 86
+r#  12359  264  67
 p: .
 t. 
 |  Herbert, K. (2001). Norton vs. Norton: When Opposites Sides Clash, Courts Have
 .  Tough Choice. Morning Call (Allentown, PA), October 14, p. 1
 
 --- Sentence/end 
-id: 87
-r#  12327  266  68
+id: 86
+r#  12360  264  68
 
 --- Paragraph/end 
 id: 80
@@ -2167,16 +2165,16 @@ y: N/A
 
 --- Paragraph/start
 id: 81
-r#  12329  268  1
+r#  12362  266  1
 
 
 --- Sentence/start
-id: 88
-r#  12329  268  1
+id: 87
+r#  12362  266  1
 
 --- Sentence//end
-id: 88
-r#  12643  270  64
+id: 87
+r#  12677  268  65
 p: .
 t. 
 |  Heritage, J., and Sefi, S. (1992). Dilemmas of Advice: Aspects of the Delivery and
@@ -2184,8 +2182,8 @@ t.
 .  Settings, pp. 359--417. Cambridge: Cambridge University Press
 
 --- Sentence/end 
-id: 88
-r#  12644  270  65
+id: 87
+r#  12678  268  66
 
 --- Paragraph/end 
 id: 81
@@ -2194,16 +2192,16 @@ y: N/A
 
 --- Paragraph/start
 id: 82
-r#  12646  272  1
+r#  12680  270  1
 
 
 --- Sentence/start
-id: 89
-r#  12646  272  1
+id: 88
+r#  12680  270  1
 
 --- Sentence//end
-id: 89
-r#  12851  274  36
+id: 88
+r#  12886  272  36
 p: .
 t. 
 |  Heritage, J. C., and Watson, D. R. (1979). Formulations as Conversational Objects.
@@ -2211,8 +2209,8 @@ t.
 .  162. New York: Irvington Publishers
 
 --- Sentence/end 
-id: 89
-r#  12852  274  37
+id: 88
+r#  12887  272  37
 
 --- Paragraph/end 
 id: 82
@@ -2221,24 +2219,24 @@ y: N/A
 
 --- Paragraph/start
 id: 83
-r#  12854  276  1
+r#  12889  274  1
 
 
 --- Sentence/start
-id: 90
-r#  12854  276  1
+id: 89
+r#  12889  274  1
 
 --- Sentence//end
-id: 90
-r#  12967  277  24
+id: 89
+r#  13002  275  24
 p: .
 t. 
 |  Holstein, J. (1983). Jurors’ Uses of Judges’ Instructions. Sociological Methods and
 .  Research 11: 501--518
 
 --- Sentence/end 
-id: 90
-r#  12968  277  25
+id: 89
+r#  13003  275  25
 
 --- Paragraph/end 
 id: 83
@@ -2247,24 +2245,24 @@ y: N/A
 
 --- Paragraph/start
 id: 84
-r#  12970  279  1
+r#  13005  277  1
 
 
 --- Sentence/start
-id: 91
-r#  12970  279  1
+id: 90
+r#  13005  277  1
 
 --- Sentence//end
-id: 91
-r#  13138  280  82
+id: 90
+r#  13173  278  82
 p: .
 t. 
 |  Holstein, J. (1988). Studying Family Usage: Family Image and Discourse in Mental
 .  Hospitalization Decisions. Journal of Contemporary Ethnography 17: 261--284
 
 --- Sentence/end 
-id: 91
-r#  13139  280  83
+id: 90
+r#  13174  278  83
 
 --- Paragraph/end 
 id: 84
@@ -2273,16 +2271,16 @@ y: N/A
 
 --- Paragraph/start
 id: 85
-r#  13141  282  1
+r#  13176  280  1
 
 
 --- Sentence/start
-id: 92
-r#  13141  282  1
+id: 91
+r#  13176  280  1
 
 --- Sentence//end
-id: 92
-r#  13300  284  9
+id: 91
+r#  13335  282  9
 p: .
 t. 
 |  Holstein, J. A., and Gubrium, J. F. (1995). Deprivatization and the
@@ -2290,8 +2288,8 @@ t.
 .  894--908
 
 --- Sentence/end 
-id: 92
-r#  13301  284  10
+id: 91
+r#  13336  282  10
 
 --- Paragraph/end 
 id: 85
@@ -2300,24 +2298,24 @@ y: N/A
 
 --- Paragraph/start
 id: 86
-r#  13303  286  1
+r#  13338  284  1
 
 
 --- Sentence/start
-id: 93
-r#  13303  286  1
+id: 92
+r#  13338  284  1
 
 --- Sentence//end
-id: 93
-r#  13430  287  45
+id: 92
+r#  13465  285  45
 p: .
 t. 
 |  Jacobbi, M., and Wright, R. (1988). Mothers Who Go to Jail for Their Children.
 .  Good Housekeeping 207 (4): 158, 234--238
 
 --- Sentence/end 
-id: 93
-r#  13431  287  46
+id: 92
+r#  13466  285  46
 
 --- Paragraph/end 
 id: 86
@@ -2326,24 +2324,24 @@ y: N/A
 
 --- Paragraph/start
 id: 87
-r#  13433  289  1
+r#  13468  287  1
 
 
 --- Sentence/start
-id: 94
-r#  13433  289  1
+id: 93
+r#  13468  287  1
 
 --- Sentence//end
-id: 94
-r#  13539  290  27
+id: 93
+r#  13575  288  28
 p: .
 t. 
 |  Jaffe, H., and Rich, C. (2002). Deadly Triangle. Washingtonian 37 (9),
 .  June, pp. 52--57, 107--114
 
 --- Sentence/end 
-id: 94
-r#  13540  290  28
+id: 93
+r#  13576  288  29
 
 --- Paragraph/end 
 id: 87
@@ -2352,24 +2350,24 @@ y: N/A
 
 --- Paragraph/start
 id: 88
-r#  13542  292  1
+r#  13578  290  1
 
 
 --- Sentence/start
-id: 95
-r#  13542  292  1
+id: 94
+r#  13578  290  1
 
 --- Sentence//end
-id: 95
-r#  13699  293  73
+id: 94
+r#  13735  291  73
 p: .
 t. 
 |  Jones, D. P., and McGraw, J. M. (1987). Reliable and Fictitious Accounts of Sexual
 .  Abuse to Children. Journal of Interpersonal Violence 2 (1): 27--45
 
 --- Sentence/end 
-id: 95
-r#  13700  293  74
+id: 94
+r#  13736  291  74
 
 --- Paragraph/end 
 id: 88
@@ -2378,16 +2376,16 @@ y: N/A
 
 --- Paragraph/start
 id: 89
-r#  13702  295  1
+r#  13738  293  1
 
 
 --- Sentence/start
-id: 96
-r#  13702  295  1
+id: 95
+r#  13738  293  1
 
 --- Sentence//end
-id: 96
-r#  13983  297  25
+id: 95
+r#  14020  295  25
 p: .
 t. 
 |  Jones, D. P., and Seig, A. (1988). Child Sexual Abuse Allegations in Custody or Visitation Cases: A Report of 20 Cases. In E. B. Nicholson and J. Bulkley (eds.),
@@ -2395,8 +2393,8 @@ t.
 .  American Bar Association
 
 --- Sentence/end 
-id: 96
-r#  13984  297  26
+id: 95
+r#  14021  295  26
 
 --- Paragraph/end 
 id: 89
@@ -2405,16 +2403,16 @@ y: N/A
 
 --- Paragraph/start
 id: 90
-r#  13986  299  1
+r#  14023  297  1
 
 
 --- Sentence/start
-id: 97
-r#  13986  299  1
+id: 96
+r#  14023  297  1
 
 --- Sentence//end
-id: 97
-r#  14167  301  36
+id: 96
+r#  14204  299  36
 p: .
 t. 
 |  Kaplan, S. L., and Kaplan, S. J. (1981). The Child’s Accusation of Sexual Abuse during
@@ -2422,8 +2420,8 @@ t.
 .  Clinical Psychiatry 3 (1): 81--95
 
 --- Sentence/end 
-id: 97
-r#  14168  301  37
+id: 96
+r#  14205  299  37
 
 --- Paragraph/end 
 id: 90
@@ -2432,24 +2430,24 @@ y: N/A
 
 --- Paragraph/start
 id: 91
-r#  14170  303  1
+r#  14207  301  1
 
 
 --- Sentence/start
-id: 98
-r#  14170  303  1
+id: 97
+r#  14207  301  1
 
 --- Sentence//end
-id: 98
-r#  14292  304  35
+id: 97
+r#  14329  302  35
 p: .
 t. 
 |  Keating, S. S. (1988). Children in Incestuous Relationships: The Forgotten Victims.
 .  Loyola Law Review 34: 111--123
 
 --- Sentence/end 
-id: 98
-r#  14293  304  36
+id: 97
+r#  14330  302  36
 
 --- Paragraph/end 
 id: 91
@@ -2458,24 +2456,24 @@ y: N/A
 
 --- Paragraph/start
 id: 92
-r#  14295  306  1
+r#  14332  304  1
 
 
 --- Sentence/start
-id: 99
-r#  14295  306  1
+id: 98
+r#  14332  304  1
 
 --- Sentence//end
-id: 99
-r#  14423  307  45
+id: 98
+r#  14460  305  45
 p: .
 t. 
 |  Kerrison, R. (1989a). Anguished Mothers Beg for Help: Protect Our Kids from Sex
 .  Abuse. New York Post, March 10, p. 2
 
 --- Sentence/end 
-id: 99
-r#  14424  307  46
+id: 98
+r#  14461  305  46
 
 --- Paragraph/end 
 id: 92
@@ -2484,24 +2482,24 @@ y: N/A
 
 --- Paragraph/start
 id: 93
-r#  14426  309  1
+r#  14463  307  1
 
 
 --- Sentence/start
-id: 100
-r#  14426  309  1
+id: 99
+r#  14463  307  1
 
 --- Sentence//end
-id: 100
-r#  14558  310  53
+id: 99
+r#  14595  308  53
 p: .
 t. 
 |  Kerrison, R. (1989b). Exposing Dads Who Rape Their Children: Albany Has Taken
 .  First Bold Step. New York Post, March 13, p. 2
 
 --- Sentence/end 
-id: 100
-r#  14559  310  54
+id: 99
+r#  14596  308  54
 
 --- Paragraph/end 
 id: 93
@@ -2510,24 +2508,24 @@ y: N/A
 
 --- Paragraph/start
 id: 94
-r#  14561  312  1
+r#  14598  310  1
 
 
 --- Sentence/start
-id: 101
-r#  14561  312  1
+id: 100
+r#  14598  310  1
 
 --- Sentence//end
-id: 101
-r#  14699  313  57
+id: 100
+r#  14736  311  57
 p: .
 t. 
 |  Kerrison, R. (1990). Incredible Return of Misogynist a Disgrace: Judge Rewarded
 .  for Awful Offenses. New York Post, August 31, p. 4
 
 --- Sentence/end 
-id: 101
-r#  14700  313  58
+id: 100
+r#  14737  311  58
 
 --- Paragraph/end 
 id: 94
@@ -2536,24 +2534,24 @@ y: N/A
 
 --- Paragraph/start
 id: 95
-r#  14702  315  1
+r#  14739  313  1
 
 
 --- Sentence/start
-id: 102
-r#  14702  315  1
+id: 101
+r#  14739  313  1
 
 --- Sentence//end
-id: 102
-r#  14804  316  22
+id: 101
+r#  14842  314  23
 p: .
 t. 
 |  Kerrison, R. (1992). Pleas for a Dying Child Go Unheeded. New York Post,
 .  November 7, pp. 7, 14
 
 --- Sentence/end 
-id: 102
-r#  14805  316  23
+id: 101
+r#  14843  314  24
 
 --- Paragraph/end 
 id: 95
@@ -2562,16 +2560,16 @@ y: N/A
 
 --- Paragraph/start
 id: 96
-r#  14807  318  1
+r#  14845  316  1
 
 
 --- Sentence/start
-id: 103
-r#  14807  318  1
+id: 102
+r#  14845  316  1
 
 --- Sentence//end
-id: 103
-r#  15072  321  11
+id: 102
+r#  15111  319  11
 p: .
 t. 
 |  Komter, M. L. (1995). The Distribution of Knowledge in Courtroom Interaction. In
@@ -2580,8 +2578,8 @@ t.
 .  of America
 
 --- Sentence/end 
-id: 103
-r#  15073  321  12
+id: 102
+r#  15112  319  12
 
 --- Paragraph/end 
 id: 96
@@ -2590,24 +2588,24 @@ y: N/A
 
 --- Paragraph/start
 id: 97
-r#  15075  323  1
+r#  15114  321  1
 
 
 --- Sentence/start
-id: 104
-r#  15075  323  1
+id: 103
+r#  15114  321  1
 
 --- Sentence//end
-id: 104
-r#  15234  324  74
+id: 103
+r#  15273  322  74
 p: .
 t. 
 |  Komter, M. L. (1998). Dilemmas in the Courtroom: A Study of Trials of Violent Crime
 .  in the Netherlands. Mahwah, NJ: Lawrence Erlbaum Associates, Publishers
 
 --- Sentence/end 
-id: 104
-r#  15235  324  75
+id: 103
+r#  15274  322  75
 
 --- Paragraph/end 
 id: 97
@@ -2616,37 +2614,25 @@ y: N/A
 
 --- Paragraph/start
 id: 98
-r#  15237  326  1
+r#  15276  324  1
 
 
 --- Sentence/start
-id: 105
-r#  15237  326  1
+id: 104
+r#  15276  324  1
 
 --- Sentence//end
-id: 105
-r#  15401  327  78
+id: 104
+r#  15449  326  7
 p: .
 t. 
 |  Kramer, Jill. (2002). Justice Denied: Money Talks in Family Court, Hurting the Cases
-.  of Many Dependent Women. Pacific Sun (Mill Valley, CA), November 20, pp
-
-
---- Sentence/switch
-id: 106
-r#  15402  327  79
-
-
---- Sentence//end
-id: 106
-r#  15409  328  7
-p: .
-t. 
+|  of Many Dependent Women. Pacific Sun (Mill Valley, CA), November 20, pp.
 .  13--18
 
 --- Sentence/end 
-id: 106
-r#  15410  328  8
+id: 104
+r#  15450  326  8
 
 --- Paragraph/end 
 id: 98
@@ -2655,16 +2641,16 @@ y: N/A
 
 --- Paragraph/start
 id: 99
-r#  15412  330  1
+r#  15452  328  1
 
 
 --- Sentence/start
-id: 107
-r#  15412  330  1
+id: 105
+r#  15452  328  1
 
 --- Sentence//end
-id: 107
-r#  15598  332  25
+id: 105
+r#  15638  330  25
 p: .
 t. 
 |  Krause, A. (2000). Letting Children Speak for Themselves: Youth in Court Need
@@ -2672,8 +2658,8 @@ t.
 .  Journal, July 17, p. 4
 
 --- Sentence/end 
-id: 107
-r#  15599  332  26
+id: 105
+r#  15639  330  26
 
 --- Paragraph/end 
 id: 99
@@ -2682,24 +2668,24 @@ y: N/A
 
 --- Paragraph/start
 id: 100
-r#  15601  334  1
+r#  15641  332  1
 
 
 --- Sentence/start
-id: 108
-r#  15601  334  1
+id: 106
+r#  15641  332  1
 
 --- Sentence//end
-id: 108
-r#  15749  335  68
+id: 106
+r#  15789  333  68
 p: .
 t. 
 |  Lawson, L., and Chaffin, M. (1992). False Negatives in Sexual Abuse Disclosure
 .  Interviews. Journal of Interpersonal Violence 7 (4): 532--542
 
 --- Sentence/end 
-id: 108
-r#  15750  335  69
+id: 106
+r#  15790  333  69
 
 --- Paragraph/end 
 id: 100
@@ -2708,26 +2694,25 @@ y: N/A
 
 --- Paragraph/start
 id: 101
-r#  15752  337  1
+r#  15792  335  1
 
 
 --- Sentence/start
-id: 109
-r#  15752  337  1
+id: 107
+r#  15792  335  1
 
 --- Sentence//end
-id: 109
-r#  15947  339  36
+id: 107
+r#  15987  337  36
 p: .
 t. 
 |  Lesher, M. (1996). Speaking with Their Silence: A Troubling Child Sex Abuse Case
 |  in Orthodox Community Raises the Question, Where Are Our Leaders? Jewish
 .  Week, 209 (27), November 1, p. 28
 
-
---- Sentence/switch
-id: 110
-r#  15948  339  37
+--- Sentence/end 
+id: 107
+r#  15988  337  37
 
 --- Paragraph/end 
 id: 101
@@ -2736,24 +2721,24 @@ y: N/A
 
 --- Paragraph/start
 id: 102
-r#  15954  342  1
+r#  15990  339  1
 
 
 --- Sentence/start
-id: 111
-r#  15954  342  1
+id: 108
+r#  15990  339  1
 
 --- Sentence//end
-id: 111
-r#  16157  343  123
+id: 108
+r#  16193  340  123
 p: .
 t. 
-|  372Lidman, R. C., and Hollingsworth, B. R. (1998). The Guardian Ad Litem in Child
+|  Lidman, R. C., and Hollingsworth, B. R. (1998). The Guardian Ad Litem in Child
 .  Custody Cases: The Contours of Our Judicial System Stretched beyond Recognition. George Mason Law Review 6: 255--306
 
 --- Sentence/end 
-id: 111
-r#  16158  343  124
+id: 108
+r#  16194  340  124
 
 --- Paragraph/end 
 id: 102
@@ -2762,23 +2747,23 @@ y: N/A
 
 --- Paragraph/start
 id: 103
-r#  16160  345  1
+r#  16196  342  1
 
 
 --- Sentence/start
-id: 112
-r#  16160  345  1
+id: 109
+r#  16196  342  1
 
 --- Sentence//end
-id: 112
-r#  16250  345  91
+id: 109
+r#  16286  342  91
 p: .
 t. 
 .  Lombardi, K. (2003). Custodians of Abuse. Boston Phoenix, January 10, p. 1, 12--20
 
 --- Sentence/end 
-id: 112
-r#  16251  345  92
+id: 109
+r#  16287  342  92
 
 --- Paragraph/end 
 id: 103
@@ -2787,16 +2772,16 @@ y: N/A
 
 --- Paragraph/start
 id: 104
-r#  16253  347  1
+r#  16289  344  1
 
 
 --- Sentence/start
-id: 113
-r#  16253  347  1
+id: 110
+r#  16289  344  1
 
 --- Sentence//end
-id: 113
-r#  16497  349  79
+id: 110
+r#  16534  346  80
 p: .
 t. 
 |  Lynch, M. (1997). Preliminary Notes on Judges’ Work: The Judge as a Constituent
@@ -2805,20 +2790,20 @@ t.
 
 
 --- Sentence/switch
-id: 114
-r#  16498  349  80
+id: 111
+r#  16535  346  81
 
 
 --- Sentence//end
-id: 114
-r#  16531  350  33
+id: 111
+r#  16568  347  33
 p: .
 t. 
 .  Aldershot, UK: Ashgate/Dartmouth
 
 --- Sentence/end 
-id: 114
-r#  16532  350  34
+id: 111
+r#  16569  347  34
 
 --- Paragraph/end 
 id: 104
@@ -2827,24 +2812,24 @@ y: N/A
 
 --- Paragraph/start
 id: 105
-r#  16534  352  1
+r#  16571  349  1
 
 
 --- Sentence/start
-id: 115
-r#  16534  352  1
+id: 112
+r#  16571  349  1
 
 --- Sentence//end
-id: 115
-r#  16749  353  138
+id: 112
+r#  16786  350  138
 p: .
 t. 
 |  Mandel, D., and Wright, C. (2019). Building on the Greenbook: A Perpetrator
 .  Pattern-Based Approach to Improve Child Welfare’s Response to Domestic Violence. Juvenile and Family Court Journal 70 (4): 119--135
 
 --- Sentence/end 
-id: 115
-r#  16750  353  139
+id: 112
+r#  16787  350  139
 
 --- Paragraph/end 
 id: 105
@@ -2853,24 +2838,24 @@ y: N/A
 
 --- Paragraph/start
 id: 106
-r#  16752  355  1
+r#  16789  352  1
 
 
 --- Sentence/start
-id: 116
-r#  16752  355  1
+id: 113
+r#  16789  352  1
 
 --- Sentence//end
-id: 116
-r#  16899  356  65
+id: 113
+r#  16936  353  65
 p: .
 t. 
 |  Martindale, D. A. (2001). Cross-examining Mental Health Experts in Child Custody
 .  Litigation. Journal of Psychiatry and Law 29 (4): 483--511
 
 --- Sentence/end 
-id: 116
-r#  16900  356  66
+id: 113
+r#  16937  353  66
 
 --- Paragraph/end 
 id: 106
@@ -2879,24 +2864,24 @@ y: N/A
 
 --- Paragraph/start
 id: 107
-r#  16902  358  1
+r#  16939  355  1
 
 
 --- Sentence/start
-id: 117
-r#  16902  358  1
+id: 114
+r#  16939  355  1
 
 --- Sentence//end
-id: 117
-r#  17067  359  80
+id: 114
+r#  17104  356  80
 p: .
 t. 
 |  Massat, C. R., and Lundy, M. (1998). Reporting Costs to Nonoffending Parents in
 .  Cases of Intrafamilial Child Sexual Abuse. Child Welfare 77 (4): 371--388
 
 --- Sentence/end 
-id: 117
-r#  17068  359  81
+id: 114
+r#  17105  356  81
 
 --- Paragraph/end 
 id: 107
@@ -2905,16 +2890,16 @@ y: N/A
 
 --- Paragraph/start
 id: 108
-r#  17070  361  1
+r#  17107  358  1
 
 
 --- Sentence/start
-id: 118
-r#  17070  361  1
+id: 115
+r#  17107  358  1
 
 --- Sentence//end
-id: 118
-r#  17249  363  7
+id: 115
+r#  17286  360  7
 p: .
 t. 
 |  Massat, C. R., and Lundy, M. (1999). Service and Support Needs of Non-Offending
@@ -2922,8 +2907,8 @@ t.
 .  41--56
 
 --- Sentence/end 
-id: 118
-r#  17250  363  8
+id: 115
+r#  17287  360  8
 
 --- Paragraph/end 
 id: 108
@@ -2932,24 +2917,24 @@ y: N/A
 
 --- Paragraph/start
 id: 109
-r#  17252  365  1
+r#  17289  362  1
 
 
 --- Sentence/start
-id: 119
-r#  17252  365  1
+id: 116
+r#  17289  362  1
 
 --- Sentence//end
-id: 119
-r#  17375  366  62
+id: 116
+r#  17412  363  62
 p: .
 t. 
 |  Matoesian, G. (1993). Reproducing Rape: Domination through
 .  Talk in the Courtroom. Chicago: University of Chicago Press
 
 --- Sentence/end 
-id: 119
-r#  17376  366  63
+id: 116
+r#  17413  363  63
 
 --- Paragraph/end 
 id: 109
@@ -2958,24 +2943,24 @@ y: N/A
 
 --- Paragraph/start
 id: 110
-r#  17378  368  1
+r#  17415  365  1
 
 
 --- Sentence/start
-id: 120
-r#  17378  368  1
+id: 117
+r#  17415  365  1
 
 --- Sentence//end
-id: 120
-r#  17474  369  13
+id: 117
+r#  17511  366  13
 p: .
 t. 
 |  Maynard, D. W. (1984). Inside Plea-Bargaining: The Language of Negotiation. New
 .  York: Plenum
 
 --- Sentence/end 
-id: 120
-r#  17475  369  14
+id: 117
+r#  17512  366  14
 
 --- Paragraph/end 
 id: 110
@@ -2984,36 +2969,24 @@ y: N/A
 
 --- Paragraph/start
 id: 111
-r#  17477  371  1
+r#  17514  368  1
 
 
 --- Sentence/start
-id: 121
-r#  17477  371  1
+id: 118
+r#  17514  368  1
 
 --- Sentence//end
-id: 121
-r#  17561  371  85
+id: 118
+r#  17606  369  6
 p: .
 t. 
-.  McAlary, M. (1989). Court with Disney Touch. New York Daily News, June 2, pp
-
-
---- Sentence/switch
-id: 122
-r#  17562  371  86
-
-
---- Sentence//end
-id: 122
-r#  17568  372  6
-p: .
-t. 
+|  McAlary, M. (1989). Court with Disney Touch. New York Daily News, June 2, pp.
 .  5, 28
 
 --- Sentence/end 
-id: 122
-r#  17569  372  7
+id: 118
+r#  17607  369  7
 
 --- Paragraph/end 
 id: 111
@@ -3022,24 +2995,24 @@ y: N/A
 
 --- Paragraph/start
 id: 112
-r#  17571  374  1
+r#  17609  371  1
 
 
 --- Sentence/start
-id: 123
-r#  17571  374  1
+id: 119
+r#  17609  371  1
 
 --- Sentence//end
-id: 123
-r#  17696  375  45
+id: 119
+r#  17734  372  45
 p: .
 t. 
 |  McDonald, M. (1998). The Myth of Epidemic False Allegations of Sexual Abuse in
 .  Divorce Cases. Court Review 35: 12--19
 
 --- Sentence/end 
-id: 123
-r#  17697  375  46
+id: 119
+r#  17735  372  46
 
 --- Paragraph/end 
 id: 112
@@ -3048,16 +3021,16 @@ y: N/A
 
 --- Paragraph/start
 id: 113
-r#  17699  377  1
+r#  17737  374  1
 
 
 --- Sentence/start
-id: 124
-r#  17699  377  1
+id: 120
+r#  17737  374  1
 
 --- Sentence//end
-id: 124
-r#  18001  379  66
+id: 120
+r#  18039  376  66
 p: .
 t. 
 |  McDonald, W. R. (2004). Child Maltreatment 2002. Prepared by the National Child
@@ -3065,8 +3038,8 @@ t.
 .  and Human Services. Washington, DC: US Government Printing Office
 
 --- Sentence/end 
-id: 124
-r#  18002  379  67
+id: 120
+r#  18040  376  67
 
 --- Paragraph/end 
 id: 113
@@ -3075,16 +3048,16 @@ y: N/A
 
 --- Paragraph/start
 id: 114
-r#  18004  381  1
+r#  18042  378  1
 
 
 --- Sentence/start
-id: 125
-r#  18004  381  1
+id: 121
+r#  18042  378  1
 
 --- Sentence//end
-id: 125
-r#  18200  383  48
+id: 121
+r#  18238  380  48
 p: .
 t. 
 |  McGraw, J. M., and Smith, H. A. (1992). Child Sexual Abuse Allegations amidst
@@ -3092,8 +3065,8 @@ t.
 .  Journal of Child Sexual Abuse 1 (1): 49--62
 
 --- Sentence/end 
-id: 125
-r#  18201  383  49
+id: 121
+r#  18239  380  49
 
 --- Paragraph/end 
 id: 114
@@ -3102,16 +3075,16 @@ y: N/A
 
 --- Paragraph/start
 id: 115
-r#  18203  385  1
+r#  18241  382  1
 
 
 --- Sentence/start
-id: 126
-r#  18203  385  1
+id: 122
+r#  18241  382  1
 
 --- Sentence//end
-id: 126
-r#  18452  387  90
+id: 122
+r#  18490  384  90
 p: .
 t. 
 |  Meehan, A. J. (1997). Record-Keeping Practices in the Policing of Juveniles. In
@@ -3119,8 +3092,8 @@ t.
 .  Conversation Analytic Approaches to Law, pp. 183--208. Aldershot, UK: Ashgate/Dartmouth
 
 --- Sentence/end 
-id: 126
-r#  18453  387  91
+id: 122
+r#  18491  384  91
 
 --- Paragraph/end 
 id: 115
@@ -3129,24 +3102,24 @@ y: N/A
 
 --- Paragraph/start
 id: 116
-r#  18455  389  1
+r#  18493  386  1
 
 
 --- Sentence/start
-id: 127
-r#  18455  389  1
+id: 123
+r#  18493  386  1
 
 --- Sentence//end
-id: 127
-r#  18653  390  33
+id: 123
+r#  18691  387  33
 p: .
 t. 
 |  Meier, J. S. (2020). U.S. Child Custody Outcomes in Cases Involving Parental Alienation and Abuse Allegations: What Do the Data Show? Journal of Social Welfare
 .  and Family Law 42 (1): 92--105
 
 --- Sentence/end 
-id: 127
-r#  18654  390  34
+id: 123
+r#  18692  387  34
 
 --- Paragraph/end 
 id: 116
@@ -3155,16 +3128,16 @@ y: N/A
 
 --- Paragraph/start
 id: 117
-r#  18656  392  1
+r#  18694  389  1
 
 
 --- Sentence/start
-id: 128
-r#  18656  392  1
+id: 124
+r#  18694  389  1
 
 --- Sentence//end
-id: 128
-r#  18886  394  62
+id: 124
+r#  18924  391  62
 p: .
 t. 
 |  Meier, J. S., Dickson, S., O’Sullivan, C. S., and Rosen, L. N. (2022). Harman and
@@ -3172,8 +3145,8 @@ t.
 .  Trauma, Child Custody & Child Development 19 (2): 119--138
 
 --- Sentence/end 
-id: 128
-r#  18887  394  63
+id: 124
+r#  18925  391  63
 
 --- Paragraph/end 
 id: 117
@@ -3182,16 +3155,16 @@ y: N/A
 
 --- Paragraph/start
 id: 118
-r#  18889  396  1
+r#  18927  393  1
 
 
 --- Sentence/start
-id: 129
-r#  18889  396  1
+id: 125
+r#  18927  393  1
 
 --- Sentence//end
-id: 129
-r#  19107  398  50
+id: 125
+r#  19145  395  50
 p: .
 t. 
 |  Meier, J. S., Dickson, S., O’Sullivan, C., Rosen, L., and Hayes, J. (2019). Child Custody
@@ -3199,8 +3172,8 @@ t.
 .  Law School Public Law Research Paper No. 2019-56
 
 --- Sentence/end 
-id: 129
-r#  19108  398  51
+id: 125
+r#  19146  395  51
 
 --- Paragraph/end 
 id: 118
@@ -3209,24 +3182,24 @@ y: N/A
 
 --- Paragraph/start
 id: 119
-r#  19110  400  1
+r#  19148  397  1
 
 
 --- Sentence/start
-id: 130
-r#  19110  400  1
+id: 126
+r#  19148  397  1
 
 --- Sentence//end
-id: 130
-r#  19259  401  63
+id: 126
+r#  19297  398  63
 p: .
 t. 
 |  Melton, G. B., Petrila, J., Poythress, N. G., and Slobogin, C. (1997). Psychological
 .  Evaluations for the Courts, 2nd ed. New York: Guilford Press
 
 --- Sentence/end 
-id: 130
-r#  19260  401  64
+id: 126
+r#  19298  398  64
 
 --- Paragraph/end 
 id: 119
@@ -3235,24 +3208,24 @@ y: N/A
 
 --- Paragraph/start
 id: 120
-r#  19262  403  1
+r#  19300  400  1
 
 
 --- Sentence/start
-id: 131
-r#  19262  403  1
+id: 127
+r#  19300  400  1
 
 --- Sentence//end
-id: 131
-r#  19400  404  55
+id: 127
+r#  19439  401  55
 p: .
 t. 
 |  Miller, J., and Robuck, R. (2014). Child Abuse & Domestic Violence: Putting CAPTA
 .  to Work. San Francisco, CA: Futures Without Violence
 
 --- Sentence/end 
-id: 131
-r#  19401  404  56
+id: 127
+r#  19440  401  56
 
 --- Paragraph/end 
 id: 120
@@ -3261,24 +3234,24 @@ y: N/A
 
 --- Paragraph/start
 id: 121
-r#  19403  406  1
+r#  19442  403  1
 
 
 --- Sentence/start
-id: 132
-r#  19403  406  1
+id: 128
+r#  19442  403  1
 
 --- Sentence//end
-id: 132
-r#  19536  407  52
+id: 128
+r#  19576  404  46
 p: .
 t. 
-|  Moyer, Justin Wm. In Child Custody Dispute, Breastfeeding Mom is Ordered to Use
-.  Bottle. The Washington Post, February 1, 2023
+|  Moyer, Justin Wm. (2023) In Child Custody Dispute, Breastfeeding Mom is Ordered to Use
+.  Bottle. The Washington Post, February 1
 
 --- Sentence/end 
-id: 132
-r#  19537  407  53
+id: 128
+r#  19577  404  47
 
 --- Paragraph/end 
 id: 121
@@ -3287,38 +3260,24 @@ y: N/A
 
 --- Paragraph/start
 id: 122
-r#  19539  409  1
+r#  19579  406  1
 
 
 --- Sentence/start
-id: 133
-r#  19539  409  1
+id: 129
+r#  19579  406  1
 
 --- Sentence//end
-id: 133
-r#  19689  410  66
+id: 129
+r#  19729  407  66
 p: .
 t. 
 |  Myers, J. E. B. (1997). A Mother’s Nightmare - Incest: A Practical Legal Guide for
 .  Parents and Professionals. Thousand Oaks, CA: SAGE Publications
 
-
---- Sentence/switch
-id: 134
-r#  19690  410  67
-
-
---- Sentence//end
-id: 134
-r#  19804  412  29
-p: .
-t. 
-|  Nance, S. (1989). Validation Evidence Poses Issue in Child Abuse Cases. New York
-.  Law Journal, October 5, p. 1
-
 --- Sentence/end 
-id: 134
-r#  19805  412  30
+id: 129
+r#  19730  407  67
 
 --- Paragraph/end 
 id: 122
@@ -3327,23 +3286,24 @@ y: N/A
 
 --- Paragraph/start
 id: 123
-r#  19809  414  3
+r#  19732  409  1
 
 
 --- Sentence/start
-id: 135
-r#  19809  414  3
+id: 130
+r#  19732  409  1
 
 --- Sentence//end
-id: 135
-r#  19860  414  54
+id: 130
+r#  19845  410  29
 p: .
 t. 
-.  NBC Nightly News with Lester Holt. (2021). May 13
+|  Nance, S. (1989). Validation Evidence Poses Issue in Child Abuse Cases. New York
+.  Law Journal, October 5, p. 1
 
 --- Sentence/end 
-id: 135
-r#  19861  414  55
+id: 130
+r#  19846  410  30
 
 --- Paragraph/end 
 id: 123
@@ -3352,23 +3312,23 @@ y: N/A
 
 --- Paragraph/start
 id: 124
-r#  19865  416  3
+r#  19850  412  3
 
 
 --- Sentence/start
-id: 136
-r#  19865  416  3
+id: 131
+r#  19850  412  3
 
 --- Sentence//end
-id: 136
-r#  19916  416  54
+id: 131
+r#  19901  412  54
 p: .
 t. 
-.  NBC Nightly News with Lester Holt. (2021). May 14
+.  NBC Nightly News with Lester Holt. (2021). May 13
 
 --- Sentence/end 
-id: 136
-r#  19917  416  55
+id: 131
+r#  19902  412  55
 
 --- Paragraph/end 
 id: 124
@@ -3377,24 +3337,23 @@ y: N/A
 
 --- Paragraph/start
 id: 125
-r#  19919  418  1
+r#  19906  414  3
 
 
 --- Sentence/start
-id: 137
-r#  19919  418  1
+id: 132
+r#  19906  414  3
 
 --- Sentence//end
-id: 137
-r#  20077  419  81
+id: 132
+r#  19957  414  54
 p: .
 t. 
-|  Neustein, A. (1986). Getting Straight Answers from Experts: A Comprehensive
-.  Guide to What They Appear to Be Saying. Judges’ Journal 25 (3): 31--33, 56
+.  NBC Nightly News with Lester Holt. (2021). May 14
 
 --- Sentence/end 
-id: 137
-r#  20078  419  82
+id: 132
+r#  19958  414  55
 
 --- Paragraph/end 
 id: 125
@@ -3403,24 +3362,24 @@ y: N/A
 
 --- Paragraph/start
 id: 126
-r#  20080  421  1
+r#  19960  416  1
 
 
 --- Sentence/start
-id: 138
-r#  20080  421  1
+id: 133
+r#  19960  416  1
 
 --- Sentence//end
-id: 138
-r#  20223  422  58
+id: 133
+r#  20118  417  81
 p: .
 t. 
-|  Neustein, A. (2022a). Mothers who Report Abuse Still Losing Custody at Staggering
-.  Rates. Washington Jewish Week, September 1, p. 13
+|  Neustein, A. (1986). Getting Straight Answers from Experts: A Comprehensive
+.  Guide to What They Appear to Be Saying. Judges’ Journal 25 (3): 31--33, 56
 
 --- Sentence/end 
-id: 138
-r#  20224  422  59
+id: 133
+r#  20119  417  82
 
 --- Paragraph/end 
 id: 126
@@ -3429,25 +3388,24 @@ y: N/A
 
 --- Paragraph/start
 id: 127
-r#  20226  424  1
+r#  20121  419  1
 
 
 --- Sentence/start
-id: 139
-r#  20226  424  1
+id: 134
+r#  20121  419  1
 
 --- Sentence//end
-id: 139
-r#  20426  426  41
+id: 134
+r#  20264  420  58
 p: .
 t. 
-|  Neustein, A. (2022b). Trafficking of Minors by Child Protective Services/Foster Care
-|  Agencies/Minor’s Counsel. Memorandum to United States Attorney General
-.  Merrick Garland, September 25, pp. 1--31
+|  Neustein, A. (2022a). Mothers Who Report Abuse Still Losing Custody at Staggering
+.  Rates. Washington Jewish Week, September 1, p. 13
 
 --- Sentence/end 
-id: 139
-r#  20427  426  42
+id: 134
+r#  20265  420  59
 
 --- Paragraph/end 
 id: 127
@@ -3456,24 +3414,25 @@ y: N/A
 
 --- Paragraph/start
 id: 128
-r#  20429  428  1
+r#  20267  422  1
 
 
 --- Sentence/start
-id: 140
-r#  20429  428  1
+id: 135
+r#  20267  422  1
 
 --- Sentence//end
-id: 140
-r#  20593  429  76
+id: 135
+r#  20468  424  42
 p: .
 t. 
-|  Neustein, A. (2023a). Mothers Face Civil Rights Crisis in the Family Courts  -  United
-.  States Department of Justice Must Investigate. Women’s eNews, February 16
+|  Neustein, A. (2022b). Trafficking of Minors by Child Protective Services/Foster Care
+|  Agencies/Minor’s Counsel. Memorandum to United States Attorney General
+.  Merrick Garland, September 25, pp. 1--31
 
 --- Sentence/end 
-id: 140
-r#  20594  429  77
+id: 135
+r#  20469  424  43
 
 --- Paragraph/end 
 id: 128
@@ -3482,24 +3441,24 @@ y: N/A
 
 --- Paragraph/start
 id: 129
-r#  20596  431  1
+r#  20471  426  1
 
 
 --- Sentence/start
-id: 141
-r#  20596  431  1
+id: 136
+r#  20471  426  1
 
 --- Sentence//end
-id: 141
-r#  20740  432  65
+id: 136
+r#  20635  427  76
 p: .
 t. 
-|  Neustein, A. (2023b). Family Court Drives Mothers to Suicide: Former Brooklyn
-.  Federal Prosecutor is Latest Victim. Women’s eNews, June 4
+|  Neustein, A. (2023a). Mothers Face Civil Rights Crisis in the Family Courts  -  United
+.  States Department of Justice Must Investigate. Women’s eNews, February 16
 
 --- Sentence/end 
-id: 141
-r#  20741  432  66
+id: 136
+r#  20636  427  77
 
 --- Paragraph/end 
 id: 129
@@ -3508,24 +3467,24 @@ y: N/A
 
 --- Paragraph/start
 id: 130
-r#  20743  434  1
+r#  20638  429  1
 
 
 --- Sentence/start
-id: 142
-r#  20743  434  1
+id: 137
+r#  20638  429  1
 
 --- Sentence//end
-id: 142
-r#  20887  435  61
+id: 137
+r#  20782  430  65
 p: .
 t. 
-|  Neustein, A. (2024a) Mothers Likewise Suffer from Poor Debate’ Performance: But
-.  the Consequences are Far Worse. Women’s eNews, July 14
+|  Neustein, A. (2023b). Family Court Drives Mothers to Suicide: Former Brooklyn
+.  Federal Prosecutor is Latest Victim. Women’s eNews, June 4
 
 --- Sentence/end 
-id: 142
-r#  20888  435  62
+id: 137
+r#  20783  430  66
 
 --- Paragraph/end 
 id: 130
@@ -3534,24 +3493,24 @@ y: N/A
 
 --- Paragraph/start
 id: 131
-r#  20890  437  1
+r#  20785  432  1
 
 
 --- Sentence/start
-id: 143
-r#  20890  437  1
+id: 138
+r#  20785  432  1
 
 --- Sentence//end
-id: 143
-r#  21093  438  36
+id: 138
+r#  20930  433  61
 p: .
 t. 
-|  Neustein, A. (2024b) Pardons, Politics, and Pandora’s Box: Garland’s Justice Department Must Address the Plight of the Protective Mother  -  at this Eleventh Hour.
-.  Women’s eNews, December 5, 2024
+|  Neustein, A. (2024a) Mothers Likewise Suffer from Poor Debate Performance: But
+.  the Consequences are Far Worse. Women’s eNews, July 14
 
 --- Sentence/end 
-id: 143
-r#  21094  438  37
+id: 138
+r#  20931  433  62
 
 --- Paragraph/end 
 id: 131
@@ -3560,26 +3519,24 @@ y: N/A
 
 --- Paragraph/start
 id: 132
-r#  21096  440  1
+r#  20933  435  1
 
 
 --- Sentence/start
-id: 144
-r#  21096  440  1
+id: 139
+r#  20933  435  1
 
 --- Sentence//end
-id: 144
-r#  21357  443  9
+id: 139
+r#  21136  436  36
 p: .
 t. 
-|  Neustein, A., Burton, J. R., and Quirk, S. A. (1993). Concerning the Plight of Children
-|  in Cases of Parental Abuse. Memorandum to United States Attorney General Janet
-|  F. Reno. Washington, DC: American Coalition for Abuse Awareness, November 29,
-.  pp. 1-30
+|  Neustein, A. (2024b) Pardons, Politics, and Pandora’s Box: Garland’s Justice Department Must Address the Plight of the Protective Mother  -  at this Eleventh Hour.
+.  Women’s eNews, December 5, 2024
 
 --- Sentence/end 
-id: 144
-r#  21358  443  10
+id: 139
+r#  21137  436  37
 
 --- Paragraph/end 
 id: 132
@@ -3588,24 +3545,26 @@ y: N/A
 
 --- Paragraph/start
 id: 133
-r#  21360  445  1
+r#  21139  438  1
 
 
 --- Sentence/start
-id: 145
-r#  21360  445  1
+id: 140
+r#  21139  438  1
 
 --- Sentence//end
-id: 145
-r#  21500  446  52
+id: 140
+r#  21401  441  10
 p: .
 t. 
-|  Neustein, A., and Etlin, M. (2023). Infants are being penalized in the name of men’s
-.  rights. The Washington Post, February 7, p. A16
+|  Neustein, A., Burton, J. R., and Quirk, S. A. (1993). Concerning the Plight of Children
+|  in Cases of Parental Abuse. Memorandum to United States Attorney General Janet
+|  F. Reno. Washington, DC: American Coalition for Abuse Awareness, November 29,
+.  pp. 1-30
 
 --- Sentence/end 
-id: 145
-r#  21501  446  53
+id: 140
+r#  21402  441  11
 
 --- Paragraph/end 
 id: 133
@@ -3614,24 +3573,24 @@ y: N/A
 
 --- Paragraph/start
 id: 134
-r#  21503  448  1
+r#  21404  443  1
 
 
 --- Sentence/start
-id: 146
-r#  21503  448  1
+id: 141
+r#  21404  443  1
 
 --- Sentence//end
-id: 146
-r#  21660  449  73
+id: 141
+r#  21548  444  56
 p: .
 t. 
-|  Neustein, A., and Etlin, M. (2024a). Mothers’ Vote May Be Key to Kamala Harris
-.  Winning Nomination  -  and Defeating Trump. Women’s eNews, July 23
+|  Neustein, A., and Etlin, M. (2023). Infants are being penalized in the name of men’s
+.  rights. The Washington Post, February 7, p. A16
 
 --- Sentence/end 
-id: 146
-r#  21661  449  74
+id: 141
+r#  21549  444  57
 
 --- Paragraph/end 
 id: 134
@@ -3640,24 +3599,24 @@ y: N/A
 
 --- Paragraph/start
 id: 135
-r#  21663  451  1
+r#  21551  446  1
 
 
 --- Sentence/start
-id: 147
-r#  21663  451  1
+id: 142
+r#  21551  446  1
 
 --- Sentence//end
-id: 147
-r#  21824  452  86
+id: 142
+r#  21708  447  73
 p: .
 t. 
-|  Neustein, A., and Etlin, M. (2024b). One group of mothers who need Kamala
-.  Harris’s help - and will give her their votes. Pittsburgh Post-Gazette, July 31
+|  Neustein, A., and Etlin, M. (2024a). Mothers’ Vote May Be Key to Kamala Harris
+.  Winning Nomination  -  and Defeating Trump. Women’s eNews, July 23
 
 --- Sentence/end 
-id: 147
-r#  21825  452  87
+id: 142
+r#  21709  447  74
 
 --- Paragraph/end 
 id: 135
@@ -3666,24 +3625,24 @@ y: N/A
 
 --- Paragraph/start
 id: 136
-r#  21827  454  1
+r#  21711  449  1
 
 
 --- Sentence/start
-id: 148
-r#  21827  454  1
+id: 143
+r#  21711  449  1
 
 --- Sentence//end
-id: 148
-r#  21992  454  166
+id: 143
+r#  21872  450  86
 p: .
 t. 
-.  Neustein, A., and Etlin, M. (2024c). Schumer’s No Kings Act Challenges the Sacrosanct Judiciary  -  While Giving Hope to Mothers. Women’s eNews, August 5
+|  Neustein, A., and Etlin, M. (2024b). One group of mothers who need Kamala
+.  Harris’s help - and will give her their votes. Pittsburgh Post-Gazette, July 31
 
-
---- Sentence/switch
-id: 149
-r#  21993  454  167
+--- Sentence/end 
+id: 143
+r#  21873  450  87
 
 --- Paragraph/end 
 id: 136
@@ -3692,24 +3651,23 @@ y: N/A
 
 --- Paragraph/start
 id: 137
-r#  21999  457  1
+r#  21875  452  1
 
 
 --- Sentence/start
-id: 150
-r#  21999  457  1
+id: 144
+r#  21875  452  1
 
 --- Sentence//end
-id: 150
-r#  22170  458  9
+id: 144
+r#  22040  452  166
 p: .
 t. 
-|  374Neustein, A., and Goetting, A. (1999). Judicial Responses to the Protective Parent’s Complaint of Child Sexual Abuse. Journal of Child Sexual Abuse 8 (4):
-.  103--122
+.  Neustein, A., and Etlin, M. (2024c). Schumer’s No Kings Act Challenges the Sacrosanct Judiciary  -  While Giving Hope to Mothers. Women’s eNews, August 5
 
 --- Sentence/end 
-id: 150
-r#  22171  458  10
+id: 144
+r#  22041  452  167
 
 --- Paragraph/end 
 id: 137
@@ -3718,24 +3676,24 @@ y: N/A
 
 --- Paragraph/start
 id: 138
-r#  22173  460  1
+r#  22043  454  1
 
 
 --- Sentence/start
-id: 151
-r#  22173  460  1
+id: 145
+r#  22043  454  1
 
 --- Sentence//end
-id: 151
-r#  22336  461  78
+id: 145
+r#  22214  455  9
 p: .
 t. 
-|  Neustein, A., and Lesher, M. (1999). Legislative Solutions to the Protective Parent
-.  Backlash. Family Violence and Sexual Assault Bulletin 25 (2--3): 19--26
+|  Neustein, A., and Goetting, A. (1999). Judicial Responses to the Protective Parent’s Complaint of Child Sexual Abuse. Journal of Child Sexual Abuse 8 (4):
+.  103--122
 
 --- Sentence/end 
-id: 151
-r#  22337  461  79
+id: 145
+r#  22215  455  10
 
 --- Paragraph/end 
 id: 138
@@ -3744,24 +3702,24 @@ y: N/A
 
 --- Paragraph/start
 id: 139
-r#  22339  463  1
+r#  22217  457  1
 
 
 --- Sentence/start
-id: 152
-r#  22339  463  1
+id: 146
+r#  22217  457  1
 
 --- Sentence//end
-id: 152
-r#  22485  464  63
+id: 146
+r#  22380  458  78
 p: .
 t. 
-|  Neustein, A., and Lesher, M. (2002a). Does the Jewish Community Sacrifice Victims
-.  of Sexual Abuse? Jewish Exponent 211 (22), May 30, p. 37
+|  Neustein, A., and Lesher, M. (1999). Legislative Solutions to the Protective Parent
+.  Backlash. Family Violence and Sexual Assault Bulletin 25 (2--3): 19--26
 
 --- Sentence/end 
-id: 152
-r#  22486  464  64
+id: 146
+r#  22381  458  79
 
 --- Paragraph/end 
 id: 139
@@ -3770,25 +3728,24 @@ y: N/A
 
 --- Paragraph/start
 id: 140
-r#  22488  466  1
+r#  22383  460  1
 
 
 --- Sentence/start
-id: 153
-r#  22488  466  1
+id: 147
+r#  22383  460  1
 
 --- Sentence//end
-id: 153
-r#  22721  468  84
+id: 147
+r#  22529  461  63
 p: .
 t. 
-|  Neustein, A., and Lesher, M. (2002b). The Silence of the Jewish Media on Sexual
-|  Abuse in the Orthodox Jewish Community. In D. S. Claussen (ed.),
-.  Sex, Religion, Media, pp. 79--87. Lanham, MD: Rowman and Littlefield Publishers
+|  Neustein, A., and Lesher, M. (2002a). Does the Jewish Community Sacrifice Victims
+.  of Sexual Abuse? Jewish Exponent 211 (22), May 30, p. 37
 
 --- Sentence/end 
-id: 153
-r#  22722  468  85
+id: 147
+r#  22530  461  64
 
 --- Paragraph/end 
 id: 140
@@ -3797,24 +3754,25 @@ y: N/A
 
 --- Paragraph/start
 id: 141
-r#  22724  470  1
+r#  22532  463  1
 
 
 --- Sentence/start
-id: 154
-r#  22724  470  1
+id: 148
+r#  22532  463  1
 
 --- Sentence//end
-id: 154
-r#  22852  471  52
+id: 148
+r#  22766  465  85
 p: .
 t. 
-|  Neustein, A., and Lesher, M. (2004). Courts See Moms as Guilty Till Proven
-.  Innocent. New York Daily News, June 21, p. 39
+|  Neustein, A., and Lesher, M. (2002b). The Silence of the Jewish Media on Sexual
+|  Abuse in the Orthodox Jewish Community. In D. S. Claussen (ed.),
+.  Sex, Religion, Media, pp. 79--87. Lanham, MD: Rowman and Littlefield Publishers
 
 --- Sentence/end 
-id: 154
-r#  22853  471  53
+id: 148
+r#  22767  465  86
 
 --- Paragraph/end 
 id: 141
@@ -3823,26 +3781,24 @@ y: N/A
 
 --- Paragraph/start
 id: 142
-r#  22855  473  1
+r#  22769  467  1
 
 
 --- Sentence/start
-id: 155
-r#  22855  473  1
+id: 149
+r#  22769  467  1
 
 --- Sentence//end
-id: 155
-r#  23100  476  8
+id: 149
+r#  22897  468  52
 p: .
 t. 
-|  Neustein, A., and Lesher, M. (2005/2006). From Madness to Mutiny: Why Mothers are
-|  Running from the Family Courts - and What Can Be Done about It. The
-|  Northeastern Series on Gender, Crime and Law. Hanover, MA: University Press of New
-.  England
+|  Neustein, A., and Lesher, M. (2004). Courts See Moms as Guilty Till Proven
+.  Innocent. New York Daily News, June 21, p. 39
 
 --- Sentence/end 
-id: 155
-r#  23101  476  9
+id: 149
+r#  22898  468  53
 
 --- Paragraph/end 
 id: 142
@@ -3851,25 +3807,26 @@ y: N/A
 
 --- Paragraph/start
 id: 143
-r#  23103  478  1
+r#  22900  470  1
 
 
 --- Sentence/start
-id: 156
-r#  23103  478  1
+id: 150
+r#  22900  470  1
 
 --- Sentence//end
-id: 156
-r#  23334  480  74
+id: 150
+r#  23145  473  8
 p: .
 t. 
-|  Neustein, A., and Lesher, M. (2006). The Other Side of Child Neglect Charges: What
-|  Happens When There Are No Standard Criteria for Charging a Non-Offending
-.  Mother with Neglect? Journal of Child Sexual Abuse 15 (4): 111--115
+|  Neustein, A., and Lesher, M. (2005/2006). From Madness to Mutiny: Why Mothers are
+|  Running from the Family Courts - and What Can Be Done about It. The
+|  Northeastern Series on Gender, Crime and Law. Hanover, MA: University Press of New
+.  England
 
 --- Sentence/end 
-id: 156
-r#  23335  480  75
+id: 150
+r#  23146  473  9
 
 --- Paragraph/end 
 id: 143
@@ -3878,25 +3835,25 @@ y: N/A
 
 --- Paragraph/start
 id: 144
-r#  23337  482  1
+r#  23148  475  1
 
 
 --- Sentence/start
-id: 157
-r#  23337  482  1
+id: 151
+r#  23148  475  1
 
 --- Sentence//end
-id: 157
-r#  23526  484  16
+id: 151
+r#  23379  477  74
 p: .
 t. 
-|  Neustein, A., and Lesher, M. (2009). Evaluating PAS: A Critique of Elizabeth Ellis’s
-|  A Stepwise Approach to Evaluating Children for PAS. Journal of Child Custody
-.  6 (3): 322--325
+|  Neustein, A., and Lesher, M. (2006). The Other Side of Child Neglect Charges: What
+|  Happens When There Are No Standard Criteria for Charging a Non-Offending
+.  Mother with Neglect? Journal of Child Sexual Abuse 15 (4): 111--115
 
 --- Sentence/end 
-id: 157
-r#  23527  484  17
+id: 151
+r#  23380  477  75
 
 --- Paragraph/end 
 id: 144
@@ -3905,24 +3862,25 @@ y: N/A
 
 --- Paragraph/start
 id: 145
-r#  23529  486  1
+r#  23382  479  1
 
 
 --- Sentence/start
-id: 158
-r#  23529  486  1
+id: 152
+r#  23382  479  1
 
 --- Sentence//end
-id: 158
-r#  23685  487  76
+id: 152
+r#  23571  481  16
 p: .
 t. 
-|  Niggemyer, K. (1998). Parental Alienation Is Open Heart Surgery: It Needs More
-.  than a Band-Aid to Fix It. California Western Law Review 34: 567--587
+|  Neustein, A., and Lesher, M. (2009). Evaluating PAS: A Critique of Elizabeth Ellis’s
+|  A Stepwise Approach to Evaluating Children for PAS. Journal of Child Custody
+.  6 (3): 322--325
 
 --- Sentence/end 
-id: 158
-r#  23686  487  77
+id: 152
+r#  23572  481  17
 
 --- Paragraph/end 
 id: 145
@@ -3931,24 +3889,24 @@ y: N/A
 
 --- Paragraph/start
 id: 146
-r#  23688  489  1
+r#  23574  483  1
 
 
 --- Sentence/start
-id: 159
-r#  23688  489  1
+id: 153
+r#  23574  483  1
 
 --- Sentence//end
-id: 159
-r#  23839  490  65
+id: 153
+r#  23730  484  76
 p: .
 t. 
-|  Nicholson, E. B., and Bulkley, J. (eds.) (1988). Sexual Abuse Allegations in Custody
-.  and Visitation Cases. Washington, DC: American Bar Association
+|  Niggemyer, K. (1998). Parental Alienation Is Open Heart Surgery: It Needs More
+.  than a Band-Aid to Fix It. California Western Law Review 34: 567--587
 
 --- Sentence/end 
-id: 159
-r#  23840  490  66
+id: 153
+r#  23731  484  77
 
 --- Paragraph/end 
 id: 146
@@ -3957,25 +3915,24 @@ y: N/A
 
 --- Paragraph/start
 id: 147
-r#  23842  492  1
+r#  23733  486  1
 
 
 --- Sentence/start
-id: 160
-r#  23842  492  1
+id: 154
+r#  23733  486  1
 
 --- Sentence//end
-id: 160
-r#  24011  494  9
+id: 154
+r#  23884  487  65
 p: .
 t. 
-|  O’Donohue, W., and Bradley, A. R. (1999). Conceptual and Empirical Issues
-|  in Child Custody Evaluations. Clinical Psychology: Science and Practice 6 (3):
-.  310--322
+|  Nicholson, E. B., and Bulkley, J. (eds.) (1988). Sexual Abuse Allegations in Custody
+.  and Visitation Cases. Washington, DC: American Bar Association
 
 --- Sentence/end 
-id: 160
-r#  24012  494  10
+id: 154
+r#  23885  487  66
 
 --- Paragraph/end 
 id: 147
@@ -3984,25 +3941,25 @@ y: N/A
 
 --- Paragraph/start
 id: 148
-r#  24014  496  1
+r#  23887  489  1
 
 
 --- Sentence/start
-id: 161
-r#  24014  496  1
+id: 155
+r#  23887  489  1
 
 --- Sentence//end
-id: 161
-r#  24194  498  10
+id: 155
+r#  24056  491  9
 p: .
 t. 
-|  Olafson, E., Corwin, D. L., and Summit, R. C. (1993). Modern History of Child Sexual
-|  Abuse Awareness: Cycles of Discovery and Suppression. Child Abuse and Neglect
-.  17: 7--24
+|  O’Donohue, W., and Bradley, A. R. (1999). Conceptual and Empirical Issues
+|  in Child Custody Evaluations. Clinical Psychology: Science and Practice 6 (3):
+.  310--322
 
 --- Sentence/end 
-id: 161
-r#  24195  498  11
+id: 155
+r#  24057  491  10
 
 --- Paragraph/end 
 id: 148
@@ -4011,24 +3968,25 @@ y: N/A
 
 --- Paragraph/start
 id: 149
-r#  24197  500  1
+r#  24059  493  1
 
 
 --- Sentence/start
-id: 162
-r#  24197  500  1
+id: 156
+r#  24059  493  1
 
 --- Sentence//end
-id: 162
-r#  24324  501  47
+id: 156
+r#  24239  495  10
 p: .
 t. 
-|  Pagnozzi, A. (1990). Mom Was Trying to Help Her Kids, So Why Is She the One on
-.  Trial? New York Post, February 23, p. 13
+|  Olafson, E., Corwin, D. L., and Summit, R. C. (1993). Modern History of Child Sexual
+|  Abuse Awareness: Cycles of Discovery and Suppression. Child Abuse and Neglect
+.  17: 7--24
 
 --- Sentence/end 
-id: 162
-r#  24325  501  48
+id: 156
+r#  24240  495  11
 
 --- Paragraph/end 
 id: 149
@@ -4037,25 +3995,24 @@ y: N/A
 
 --- Paragraph/start
 id: 150
-r#  24327  503  1
+r#  24242  497  1
 
 
 --- Sentence/start
-id: 163
-r#  24327  503  1
+id: 157
+r#  24242  497  1
 
 --- Sentence//end
-id: 163
-r#  24518  505  17
+id: 157
+r#  24369  498  47
 p: .
 t. 
-|  Palmer, S. E., and Brown, R. A. (1999). Responding to Disclosures of Familial Abuse:
-|  What Survivors Tell Us. Child Welfare  -  Journal of Policy, Practice and Program
-.  78 (2): 259--282
+|  Pagnozzi, A. (1990). Mom Was Trying to Help Her Kids, So Why Is She the One on
+.  Trial? New York Post, February 23, p. 13
 
 --- Sentence/end 
-id: 163
-r#  24519  505  18
+id: 157
+r#  24370  498  48
 
 --- Paragraph/end 
 id: 150
@@ -4064,24 +4021,25 @@ y: N/A
 
 --- Paragraph/start
 id: 151
-r#  24521  507  1
+r#  24372  500  1
 
 
 --- Sentence/start
-id: 164
-r#  24521  507  1
+id: 158
+r#  24372  500  1
 
 --- Sentence//end
-id: 164
-r#  24680  508  77
+id: 158
+r#  24563  502  17
 p: .
 t. 
-|  Penfold, P. S. (1997). Questionable Beliefs about Child Sexual Abuse Allegations
-.  during Custody Disputes. Canadian Journal of Family Law 14 (1): 11--30
+|  Palmer, S. E., and Brown, R. A. (1999). Responding to Disclosures of Familial Abuse:
+|  What Survivors Tell Us. Child Welfare  -  Journal of Policy, Practice and Program
+.  78 (2): 259--282
 
 --- Sentence/end 
-id: 164
-r#  24681  508  78
+id: 158
+r#  24564  502  18
 
 --- Paragraph/end 
 id: 151
@@ -4090,24 +4048,24 @@ y: N/A
 
 --- Paragraph/start
 id: 152
-r#  24683  510  1
+r#  24566  504  1
 
 
 --- Sentence/start
-id: 165
-r#  24683  510  1
+id: 159
+r#  24566  504  1
 
 --- Sentence//end
-id: 165
-r#  24819  511  50
+id: 159
+r#  24725  505  77
 p: .
 t. 
-|  Pennington, H. J. (1992). The Judicial Training Act. Testimony before the US House
-.  of Representatives, Judiciary Committee, August 6
+|  Penfold, P. S. (1997). Questionable Beliefs about Child Sexual Abuse Allegations
+.  during Custody Disputes. Canadian Journal of Family Law 14 (1): 11--30
 
 --- Sentence/end 
-id: 165
-r#  24820  511  51
+id: 159
+r#  24726  505  78
 
 --- Paragraph/end 
 id: 152
@@ -4116,24 +4074,24 @@ y: N/A
 
 --- Paragraph/start
 id: 153
-r#  24822  513  1
+r#  24728  507  1
 
 
 --- Sentence/start
-id: 166
-r#  24822  513  1
+id: 160
+r#  24728  507  1
 
 --- Sentence//end
-id: 166
-r#  24941  514  30
+id: 160
+r#  24864  508  50
 p: .
 t. 
-|  Pennington, H. J. (1993). The Hardest Case: Custody and Incest. Trenton, NJ: National
-.  Center for Protective Parents
+|  Pennington, H. J. (1992). The Judicial Training Act. Testimony before the US House
+.  of Representatives, Judiciary Committee, August 6
 
 --- Sentence/end 
-id: 166
-r#  24942  514  31
+id: 160
+r#  24865  508  51
 
 --- Paragraph/end 
 id: 153
@@ -4142,25 +4100,24 @@ y: N/A
 
 --- Paragraph/start
 id: 154
-r#  24944  516  1
+r#  24867  510  1
 
 
 --- Sentence/start
-id: 167
-r#  24944  516  1
+id: 161
+r#  24867  510  1
 
 --- Sentence//end
-id: 167
-r#  25140  518  24
+id: 161
+r#  24986  511  30
 p: .
 t. 
-|  Pennington, H. J., and Woods, L. (1990). Legal Issues and Legal Options in Civil Child
-|  Sexual Abuse Cases: Representing the Protective Parent. New York: National Center
-.  on Women and Family Law
+|  Pennington, H. J. (1993). The Hardest Case: Custody and Incest. Trenton, NJ: National
+.  Center for Protective Parents
 
 --- Sentence/end 
-id: 167
-r#  25141  518  25
+id: 161
+r#  24987  511  31
 
 --- Paragraph/end 
 id: 154
@@ -4169,25 +4126,25 @@ y: N/A
 
 --- Paragraph/start
 id: 155
-r#  25143  520  1
+r#  24989  513  1
 
 
 --- Sentence/start
-id: 168
-r#  25143  520  1
+id: 162
+r#  24989  513  1
 
 --- Sentence//end
-id: 168
-r#  25395  522  85
+id: 162
+r#  25185  515  24
 p: .
 t. 
-|  Podesta, J. S., and Van Biema, D. (1989). Running for Their Lives, Defying the Law to
-|  Save Their Children from Alleged Sexual Horrors, Fugitive Parents Turn to Their
-.  Last Hope: The New Underground Railroad. People 31 (3), January 23, pp. 70--88
+|  Pennington, H. J., and Woods, L. (1990). Legal Issues and Legal Options in Civil Child
+|  Sexual Abuse Cases: Representing the Protective Parent. New York: National Center
+.  on Women and Family Law
 
 --- Sentence/end 
-id: 168
-r#  25396  522  86
+id: 162
+r#  25186  515  25
 
 --- Paragraph/end 
 id: 155
@@ -4196,24 +4153,25 @@ y: N/A
 
 --- Paragraph/start
 id: 156
-r#  25398  524  1
+r#  25188  517  1
 
 
 --- Sentence/start
-id: 169
-r#  25398  524  1
+id: 163
+r#  25188  517  1
 
 --- Sentence//end
-id: 169
-r#  25563  525  3
+id: 163
+r#  25441  519  86
 p: .
 t. 
-|  Pollack, D. (2021). Parents Say Family Courts Too Often Ignore Allegations of Violence in Custody Disputes. NBC Nightly News with Lester Holt, May 13, May
-.  14
+|  Podesta, J. S., and Van Biema, D. (1989). Running for Their Lives, Defying the Law to
+|  Save Their Children from Alleged Sexual Horrors, Fugitive Parents Turn to Their
+.  Last Hope: The New Underground Railroad. People 31 (3), January 23, pp. 70--88
 
 --- Sentence/end 
-id: 169
-r#  25564  525  4
+id: 163
+r#  25442  519  87
 
 --- Paragraph/end 
 id: 156
@@ -4222,25 +4180,24 @@ y: N/A
 
 --- Paragraph/start
 id: 157
-r#  25566  527  1
+r#  25444  521  1
 
 
 --- Sentence/start
-id: 170
-r#  25566  527  1
+id: 164
+r#  25444  521  1
 
 --- Sentence//end
-id: 170
-r#  25780  529  65
+id: 164
+r#  25609  522  3
 p: .
 t. 
-|  Pollner, M. (1979). Explicative Transactions: Making and Managing Meaning in
-|  Traffic Court. In G. Psathas (ed.), Everyday Language: Studies in
-.  Ethnomethodology, pp. 227--255. New York: Irvington Publishers
+|  Pollack, D. (2021). Parents Say Family Courts Too Often Ignore Allegations of Violence in Custody Disputes. NBC Nightly News with Lester Holt, May 13, May
+.  14
 
 --- Sentence/end 
-id: 170
-r#  25781  529  66
+id: 164
+r#  25610  522  4
 
 --- Paragraph/end 
 id: 157
@@ -4249,24 +4206,25 @@ y: N/A
 
 --- Paragraph/start
 id: 158
-r#  25783  531  1
+r#  25612  524  1
 
 
 --- Sentence/start
-id: 171
-r#  25783  531  1
+id: 165
+r#  25612  524  1
 
 --- Sentence//end
-id: 171
-r#  25975  532  36
+id: 165
+r#  25827  526  66
 p: .
 t. 
-|  Post, D., and Corcoran, K. (2003). Battered Mothers’ Testimony Project: A Human Rights Approach to Child Custody and Domestic Violence. Pheonix: Arizona
-.  Coalition against Domestic Violence
+|  Pollner, M. (1979). Explicative Transactions: Making and Managing Meaning in
+|  Traffic Court. In G. Psathas (ed.), Everyday Language: Studies in
+.  Ethnomethodology, pp. 227--255. New York: Irvington Publishers
 
 --- Sentence/end 
-id: 171
-r#  25976  532  37
+id: 165
+r#  25828  526  67
 
 --- Paragraph/end 
 id: 158
@@ -4275,24 +4233,24 @@ y: N/A
 
 --- Paragraph/start
 id: 159
-r#  25978  534  1
+r#  25830  528  1
 
 
 --- Sentence/start
-id: 172
-r#  25978  534  1
+id: 166
+r#  25830  528  1
 
 --- Sentence//end
-id: 172
-r#  26092  535  33
+id: 166
+r#  26022  529  36
 p: .
 t. 
-|  Quindlen, A. (1994). The Good Mother: Sexual Abuse and Custody Battles. New
-.  York Times, December 10, p. 15
+|  Post, D., and Corcoran, K. (2003). Battered Mothers’ Testimony Project: A Human Rights Approach to Child Custody and Domestic Violence. Pheonix: Arizona
+.  Coalition against Domestic Violence
 
 --- Sentence/end 
-id: 172
-r#  26093  535  34
+id: 166
+r#  26023  529  37
 
 --- Paragraph/end 
 id: 159
@@ -4301,24 +4259,24 @@ y: N/A
 
 --- Paragraph/start
 id: 160
-r#  26095  537  1
+r#  26025  531  1
 
 
 --- Sentence/start
-id: 173
-r#  26095  537  1
+id: 167
+r#  26025  531  1
 
 --- Sentence//end
-id: 173
-r#  26230  538  52
+id: 167
+r#  26139  532  33
 p: .
 t. 
-|  Quinn, K. M. (1988). The Credibility of Children’s Allegations of Sexual Abuse.
-.  Behavioral Sciences and the Law 6 (2): 181--199
+|  Quindlen, A. (1994). The Good Mother: Sexual Abuse and Custody Battles. New
+.  York Times, December 10, p. 15
 
 --- Sentence/end 
-id: 173
-r#  26231  538  53
+id: 167
+r#  26140  532  34
 
 --- Paragraph/end 
 id: 160
@@ -4327,24 +4285,24 @@ y: N/A
 
 --- Paragraph/start
 id: 161
-r#  26233  540  1
+r#  26142  534  1
 
 
 --- Sentence/start
-id: 174
-r#  26233  540  1
+id: 168
+r#  26142  534  1
 
 --- Sentence//end
-id: 174
-r#  26385  541  74
+id: 168
+r#  26277  535  52
 p: .
 t. 
-|  Rand, D. C. (1990). Munchausen Syndrome by Proxy: Integration of Classic and
-.  Contemporary Types. Issues in Child Abuse Accusations 2 (2): 83--89
+|  Quinn, K. M. (1988). The Credibility of Children’s Allegations of Sexual Abuse.
+.  Behavioral Sciences and the Law 6 (2): 181--199
 
 --- Sentence/end 
-id: 174
-r#  26386  541  75
+id: 168
+r#  26278  535  53
 
 --- Paragraph/end 
 id: 161
@@ -4353,25 +4311,24 @@ y: N/A
 
 --- Paragraph/start
 id: 162
-r#  26388  543  1
+r#  26280  537  1
 
 
 --- Sentence/start
-id: 175
-r#  26388  543  1
+id: 169
+r#  26280  537  1
 
 --- Sentence//end
-id: 175
-r#  26595  545  43
+id: 169
+r#  26432  538  74
 p: .
 t. 
-|  Rand, D. C. (1993). Munchausen Syndrome by Proxy: A Complex Type of Emotional
-|  Abuse Responsible for Some False Allegations of Child Abuse in Divorce. Issues
-.  in Child Abuse Accusations 5 (3): 135--155
+|  Rand, D. C. (1990). Munchausen Syndrome by Proxy: Integration of Classic and
+.  Contemporary Types. Issues in Child Abuse Accusations 2 (2): 83--89
 
 --- Sentence/end 
-id: 175
-r#  26596  545  44
+id: 169
+r#  26433  538  75
 
 --- Paragraph/end 
 id: 162
@@ -4380,24 +4337,25 @@ y: N/A
 
 --- Paragraph/start
 id: 163
-r#  26598  547  1
+r#  26435  540  1
 
 
 --- Sentence/start
-id: 176
-r#  26598  547  1
+id: 170
+r#  26435  540  1
 
 --- Sentence//end
-id: 176
-r#  26703  548  30
+id: 170
+r#  26643  542  54
 p: .
 t. 
-|  Reynolds, B. (1993). Children’s Cries for Help Deserve More Attention.
-.  USA Today, May 21, p. 11A
+|  Rand, D. C. (1993). Munchausen Syndrome by Proxy: A Complex Type of Emotional
+|  Abuse Responsible for Some False Allegations of Child Abuse in Divorce.
+.  Issues in Child Abuse Accusations 5 (3): 135--155
 
 --- Sentence/end 
-id: 176
-r#  26704  548  31
+id: 170
+r#  26644  542  55
 
 --- Paragraph/end 
 id: 163
@@ -4406,24 +4364,24 @@ y: N/A
 
 --- Paragraph/start
 id: 164
-r#  26706  550  1
+r#  26646  544  1
 
 
 --- Sentence/start
-id: 177
-r#  26706  550  1
+id: 171
+r#  26646  544  1
 
 --- Sentence//end
-id: 177
-r#  26802  551  7
+id: 171
+r#  26751  545  30
 p: .
 t. 
-|  Reynolds, B. (1995). Judges Sentence Kids to Life of Pain. USA Today, November 3,
-.  p. 11A
+|  Reynolds, B. (1993). Children’s Cries for Help Deserve More Attention.
+.  USA Today, May 21, p. 11A
 
 --- Sentence/end 
-id: 177
-r#  26803  551  8
+id: 171
+r#  26752  545  31
 
 --- Paragraph/end 
 id: 164
@@ -4432,24 +4390,24 @@ y: N/A
 
 --- Paragraph/start
 id: 165
-r#  26805  553  1
+r#  26754  547  1
 
 
 --- Sentence/start
-id: 178
-r#  26805  553  1
+id: 172
+r#  26754  547  1
 
 --- Sentence//end
-id: 178
-r#  26944  554  61
+id: 172
+r#  26850  548  7
 p: .
 t. 
-|  Rosen, L. N. (2014). Beyond the Hostage Child: Towards Empowering Protective
-.  Parents. Amazon: CreateSpace Independent Publishing Platform
+|  Reynolds, B. (1995). Judges Sentence Kids to Life of Pain. USA Today, November 3,
+.  p. 11A
 
 --- Sentence/end 
-id: 178
-r#  26945  554  62
+id: 172
+r#  26851  548  8
 
 --- Paragraph/end 
 id: 165
@@ -4458,12 +4416,25 @@ y: N/A
 
 --- Paragraph/start
 id: 166
-r#  26947  556  1
+r#  26853  550  1
 
 
 --- Sentence/start
-id: 179
-r#  26947  556  1
+id: 173
+r#  26853  550  1
+
+--- Sentence//end
+id: 173
+r#  26992  551  61
+p: .
+t. 
+|  Rosen, L. N. (2014). Beyond the Hostage Child: Towards Empowering Protective
+.  Parents. Amazon: CreateSpace Independent Publishing Platform
+
+--- Sentence/end 
+id: 173
+r#  26993  551  62
+
 --- Paragraph/end 
 id: 166
 y: N/A
@@ -4471,26 +4442,12 @@ y: N/A
 
 --- Paragraph/start
 id: 167
-r#  27099  559  1
+r#  26995  553  1
 
 
 --- Sentence/start
-id: 180
-r#  27099  559  1
-
---- Sentence//end
-id: 180
-r#  27238  560  50
-p: .
-t. 
-|  Rosen, L. N. (2017). Beyond the Hostage Child: Towards Empowering
-|  Protective Parents, 2nd ed. Amazon: CreateSpace Independent Publishing PlatformRosen, L. N., and Etlin, M. (1996). The Hostage Child: Sex Abuse Allegations in Custody
-.  Disputes. Bloomington: Indiana University Press
-
---- Sentence/end 
-id: 180
-r#  27239  560  51
-
+id: 174
+r#  26995  553  1
 --- Paragraph/end 
 id: 167
 y: N/A
@@ -4498,25 +4455,25 @@ y: N/A
 
 --- Paragraph/start
 id: 168
-r#  27241  562  1
+r#  27147  556  1
 
 
 --- Sentence/start
-id: 181
-r#  27241  562  1
+id: 175
+r#  27147  556  1
 
 --- Sentence//end
-id: 181
-r#  27429  564  21
+id: 175
+r#  27286  557  50
 p: .
 t. 
-|  Rothman, D. A., and Watson, D. E. (1990). Achieving Equal Justice for Women and Men
-|  in the Courts. San Francisco, CA: Judicial Council of California Administrative
-.  Office of the Courts
+|  Rosen, L. N. (2017). Beyond the Hostage Child: Towards Empowering
+|  Protective Parents, 2nd ed. Amazon: CreateSpace Independent Publishing PlatformRosen, L. N., and Etlin, M. (1996). The Hostage Child: Sex Abuse Allegations in Custody
+.  Disputes. Bloomington: Indiana University Press
 
 --- Sentence/end 
-id: 181
-r#  27430  564  22
+id: 175
+r#  27287  557  51
 
 --- Paragraph/end 
 id: 168
@@ -4525,23 +4482,25 @@ y: N/A
 
 --- Paragraph/start
 id: 169
-r#  27432  566  1
+r#  27289  559  1
 
 
 --- Sentence/start
-id: 182
-r#  27432  566  1
+id: 176
+r#  27289  559  1
 
 --- Sentence//end
-id: 182
-r#  27598  566  167
+id: 176
+r#  27477  561  21
 p: .
 t. 
-.  Russell, D. E. H. (1983). The Incidence and Prevalence of Intrafamilial and Extrafamilial Sexual Abuse of Female Children. Child Abuse and Neglect 7: 133--146
+|  Rothman, D. A., and Watson, D. E. (1990). Achieving Equal Justice for Women and Men
+|  in the Courts. San Francisco, CA: Judicial Council of California Administrative
+.  Office of the Courts
 
 --- Sentence/end 
-id: 182
-r#  27599  566  168
+id: 176
+r#  27478  561  22
 
 --- Paragraph/end 
 id: 169
@@ -4550,24 +4509,23 @@ y: N/A
 
 --- Paragraph/start
 id: 170
-r#  27601  568  1
+r#  27480  563  1
 
 
 --- Sentence/start
-id: 183
-r#  27601  568  1
+id: 177
+r#  27480  563  1
 
 --- Sentence//end
-id: 183
-r#  27712  569  41
+id: 177
+r#  27646  563  167
 p: .
 t. 
-|  Russell, D. E. H. (1986). The Secret Trauma: Incest in the Lives of
-.  Women and Girls. New York: Basic Books
+.  Russell, D. E. H. (1983). The Incidence and Prevalence of Intrafamilial and Extrafamilial Sexual Abuse of Female Children. Child Abuse and Neglect 7: 133--146
 
 --- Sentence/end 
-id: 183
-r#  27713  569  42
+id: 177
+r#  27647  563  168
 
 --- Paragraph/end 
 id: 170
@@ -4576,27 +4534,24 @@ y: N/A
 
 --- Paragraph/start
 id: 171
-r#  27715  571  1
+r#  27649  565  1
 
 
 --- Sentence/start
-id: 184
-r#  27715  571  1
+id: 178
+r#  27649  565  1
 
 --- Sentence//end
-id: 184
-r#  28090  575  55
+id: 178
+r#  27760  566  41
 p: .
 t. 
-|  Rybicki, D.J. (2003). Parental Alienation and Enmeshment Issues in Child Custody
-|  Cases. Paper presented at Training for Child Custody Evaluators: Meeting the
-|  1257.4 Requirements, Part II. (Domestic Violence: Impact on Families; Special
-|  Topics in Child Custody Evaluation; Investigation of Allegations of Child Sexual
-.  Abuse), January 17--19, Westlake Village Inn, CA, p. 3
+|  Russell, D. E. H. (1986). The Secret Trauma: Incest in the Lives of
+.  Women and Girls. New York: Basic Books
 
 --- Sentence/end 
-id: 184
-r#  28091  575  56
+id: 178
+r#  27761  566  42
 
 --- Paragraph/end 
 id: 171
@@ -4605,24 +4560,27 @@ y: N/A
 
 --- Paragraph/start
 id: 172
-r#  28093  577  1
+r#  27763  568  1
 
 
 --- Sentence/start
-id: 185
-r#  28093  577  1
+id: 179
+r#  27763  568  1
 
 --- Sentence//end
-id: 185
-r#  28217  578  39
+id: 179
+r#  28139  572  55
 p: .
 t. 
-|  Salcido Carter, L. (2019). Advocacy Perspectives on the Greenbook. Juvenile and
-.  Family Court Journal 70 (4): 77--101
+|  Rybicki, D. J. (2003). Parental Alienation and Enmeshment Issues in Child Custody
+|  Cases. Paper presented at Training for Child Custody Evaluators: Meeting the
+|  1257.4 Requirements, Part II. (Domestic Violence: Impact on Families; Special
+|  Topics in Child Custody Evaluation; Investigation of Allegations of Child Sexual
+.  Abuse), January 17--19, Westlake Village Inn, CA, p. 3
 
 --- Sentence/end 
-id: 185
-r#  28218  578  40
+id: 179
+r#  28140  572  56
 
 --- Paragraph/end 
 id: 172
@@ -4631,24 +4589,24 @@ y: N/A
 
 --- Paragraph/start
 id: 173
-r#  28220  580  1
+r#  28142  574  1
 
 
 --- Sentence/start
-id: 186
-r#  28220  580  1
+id: 180
+r#  28142  574  1
 
 --- Sentence//end
-id: 186
-r#  28343  581  44
+id: 180
+r#  28266  575  39
 p: .
 t. 
-|  Schafran, L. H. (1987). Documenting Gender Bias in the Courts: The Task Force
-.  Approach. Judicature 70 (5): 280--290
+|  Salcido Carter, L. (2019). Advocacy Perspectives on the Greenbook. Juvenile and
+.  Family Court Journal 70 (4): 77--101
 
 --- Sentence/end 
-id: 186
-r#  28344  581  45
+id: 180
+r#  28267  575  40
 
 --- Paragraph/end 
 id: 173
@@ -4657,24 +4615,24 @@ y: N/A
 
 --- Paragraph/start
 id: 174
-r#  28346  583  1
+r#  28269  577  1
 
 
 --- Sentence/start
-id: 187
-r#  28346  583  1
+id: 181
+r#  28269  577  1
 
 --- Sentence//end
-id: 187
-r#  28475  584  39
+id: 181
+r#  28392  578  44
 p: .
 t. 
-|  Schafran, L. H. (2003). Evaluating the Evaluators: Problems with Outside Neutrals.
-.  Judges’ Journal 42 (1): 10--15, 38
+|  Schafran, L. H. (1987). Documenting Gender Bias in the Courts: The Task Force
+.  Approach. Judicature 70 (5): 280--290
 
 --- Sentence/end 
-id: 187
-r#  28476  584  40
+id: 181
+r#  28393  578  45
 
 --- Paragraph/end 
 id: 174
@@ -4683,25 +4641,24 @@ y: N/A
 
 --- Paragraph/start
 id: 175
-r#  28478  586  1
+r#  28395  580  1
 
 
 --- Sentence/start
-id: 188
-r#  28478  586  1
+id: 182
+r#  28395  580  1
 
 --- Sentence//end
-id: 188
-r#  28690  588  44
+id: 182
+r#  28524  581  39
 p: .
 t. 
-|  Schechter, S., and Edleson, J. L. (1999). Effective Intervention in Domestic Violence
-|  and Child Maltreatment: Guidelines for Policy and Practice. Reno, NV: National
-.  Council of Juvenile and Family Court Judges
+|  Schafran, L. H. (2003). Evaluating the Evaluators: Problems with Outside Neutrals.
+.  Judges’ Journal 42 (1): 10--15, 38
 
 --- Sentence/end 
-id: 188
-r#  28691  588  45
+id: 182
+r#  28525  581  40
 
 --- Paragraph/end 
 id: 175
@@ -4710,12 +4667,26 @@ y: N/A
 
 --- Paragraph/start
 id: 176
-r#  28693  590  1
+r#  28527  583  1
 
 
 --- Sentence/start
-id: 189
-r#  28693  590  1
+id: 183
+r#  28527  583  1
+
+--- Sentence//end
+id: 183
+r#  28739  585  44
+p: .
+t. 
+|  Schechter, S., and Edleson, J. L. (1999). Effective Intervention in Domestic Violence
+|  and Child Maltreatment: Guidelines for Policy and Practice. Reno, NV: National
+.  Council of Juvenile and Family Court Judges
+
+--- Sentence/end 
+id: 183
+r#  28740  585  45
+
 --- Paragraph/end 
 id: 176
 y: N/A
@@ -4723,26 +4694,12 @@ y: N/A
 
 --- Paragraph/start
 id: 177
-r#  28861  593  1
+r#  28742  587  1
 
 
 --- Sentence/start
-id: 190
-r#  28861  593  1
-
---- Sentence//end
-id: 190
-r#  28969  594  29
-p: .
-t. 
-|  Schmidt, S. (2019). A Gendered Trap: When Mothers Allege Child Abuse by Fathers, the Mothers Often Lose Custody, Study Shows. The Washington Post, July
-|  29Sherman, R. (1993). No Choice, She Kills Self and Daughter. National
-.  Law Journal, July 26, p. 8
-
---- Sentence/end 
-id: 190
-r#  28970  594  30
-
+id: 184
+r#  28742  587  1
 --- Paragraph/end 
 id: 177
 y: N/A
@@ -4750,24 +4707,25 @@ y: N/A
 
 --- Paragraph/start
 id: 178
-r#  28972  596  1
+r#  28910  590  1
 
 
 --- Sentence/start
-id: 191
-r#  28972  596  1
+id: 185
+r#  28910  590  1
 
 --- Sentence//end
-id: 191
-r#  29139  597  81
+id: 185
+r#  29018  591  29
 p: .
 t. 
-|  Silberg, J., and Dallam, S. (2019). Abusers Gaining Custody in Family Courts: A Case
-.  Series of Over Turned Decisions. Journal of Child Custody 16 (2): 140--169
+|  Schmidt, S. (2019). A Gendered Trap: When Mothers Allege Child Abuse by Fathers, the Mothers Often Lose Custody, Study Shows. The Washington Post, July
+|  29Sherman, R. (1993). No Choice, She Kills Self and Daughter. National
+.  Law Journal, July 26, p. 8
 
 --- Sentence/end 
-id: 191
-r#  29140  597  82
+id: 185
+r#  29019  591  30
 
 --- Paragraph/end 
 id: 178
@@ -4776,38 +4734,24 @@ y: N/A
 
 --- Paragraph/start
 id: 179
-r#  29142  599  1
+r#  29021  593  1
 
 
 --- Sentence/start
-id: 192
-r#  29142  599  1
+id: 186
+r#  29021  593  1
 
 --- Sentence//end
-id: 192
-r#  29216  599  75
+id: 186
+r#  29188  594  81
 p: .
 t. 
-.  Silverman, J. G., Mesh, C. M., Cuthbert, C. V., Slote, K., and Bancroft, L
-
-
---- Sentence/switch
-id: 193
-r#  29217  599  76
-
-
---- Sentence//end
-id: 193
-r#  29384  602  9
-p: .
-t. 
-|  (2004). Child Custody Determinations in Cases Involving Intimate Partner
-|  Violence: A Human Rights Analysis. American Journal of Public Health 94 (6):
-.  951--957
+|  Silberg, J., and Dallam, S. (2019). Abusers Gaining Custody in Family Courts: A Case
+.  Series of Over Turned Decisions. Journal of Child Custody 16 (2): 140--169
 
 --- Sentence/end 
-id: 193
-r#  29385  602  10
+id: 186
+r#  29189  594  82
 
 --- Paragraph/end 
 id: 179
@@ -4816,24 +4760,38 @@ y: N/A
 
 --- Paragraph/start
 id: 180
-r#  29387  604  1
+r#  29191  596  1
 
 
 --- Sentence/start
-id: 194
-r#  29387  604  1
+id: 187
+r#  29191  596  1
 
 --- Sentence//end
-id: 194
-r#  29526  605  60
+id: 187
+r#  29265  596  75
 p: .
 t. 
-|  Sinanan, K., and Haughton, H. (1986). Evolution of Variants of the Munchausen
-.  Syndrome. British Journal of Psychiatry 148: 465--467
+.  Silverman, J. G., Mesh, C. M., Cuthbert, C. V., Slote, K., and Bancroft, L
+
+
+--- Sentence/switch
+id: 188
+r#  29266  596  76
+
+
+--- Sentence//end
+id: 188
+r#  29433  599  9
+p: .
+t. 
+|  (2004). Child Custody Determinations in Cases Involving Intimate Partner
+|  Violence: A Human Rights Analysis. American Journal of Public Health 94 (6):
+.  951--957
 
 --- Sentence/end 
-id: 194
-r#  29527  605  61
+id: 188
+r#  29434  599  10
 
 --- Paragraph/end 
 id: 180
@@ -4842,24 +4800,24 @@ y: N/A
 
 --- Paragraph/start
 id: 181
-r#  29529  607  1
+r#  29436  601  1
 
 
 --- Sentence/start
-id: 195
-r#  29529  607  1
+id: 189
+r#  29436  601  1
 
 --- Sentence//end
-id: 195
-r#  29628  608  10
+id: 189
+r#  29575  602  60
 p: .
 t. 
-|  Skipper, D. (1987). Mom Remains in Hattiesburg Jail. Hattiesburg American, August
-.  22, p. 2A
+|  Sinanan, K., and Haughton, H. (1986). Evolution of Variants of the Munchausen
+.  Syndrome. British Journal of Psychiatry 148: 465--467
 
 --- Sentence/end 
-id: 195
-r#  29629  608  11
+id: 189
+r#  29576  602  61
 
 --- Paragraph/end 
 id: 181
@@ -4868,25 +4826,24 @@ y: N/A
 
 --- Paragraph/start
 id: 182
-r#  29631  610  1
+r#  29578  604  1
 
 
 --- Sentence/start
-id: 196
-r#  29631  610  1
+id: 190
+r#  29578  604  1
 
 --- Sentence//end
-id: 196
-r#  29813  612  11
+id: 190
+r#  29677  605  10
 p: .
 t. 
-|  Smith, R., and Coukos, P. (1997). Fairness and Accuracy in Evaluations of Domestic
-|  Violence and Child Abuse in Custody Determinations. Judges’ Journal 36 (4): 38--
-.  42, 54--56
+|  Skipper, D. (1987). Mom Remains in Hattiesburg Jail. Hattiesburg American, August
+.  22, p. 2A
 
 --- Sentence/end 
-id: 196
-r#  29814  612  12
+id: 190
+r#  29678  605  11
 
 --- Paragraph/end 
 id: 182
@@ -4895,25 +4852,25 @@ y: N/A
 
 --- Paragraph/start
 id: 183
-r#  29816  614  1
+r#  29680  607  1
 
 
 --- Sentence/start
-id: 197
-r#  29816  614  1
+id: 191
+r#  29680  607  1
 
 --- Sentence//end
-id: 197
-r#  30039  616  64
+id: 191
+r#  29862  609  20
 p: .
 t. 
-|  Stahly, G. B., Valentine, C., and York, V. (2021). Protective Mothers, Endangered
-|  Children: Tracing System Failure for Children of Divorce and Separation.
-.  Family & Intimate Partner Violence Quarterly 14 (2): 7--34
+|  Smith, R., and Coukos, P. (1997). Fairness and Accuracy in Evaluations of Domestic
+|  Violence and Child Abuse in Custody Determinations. Judges’ Journal 36
+.  (4): 38--42, 54--56
 
 --- Sentence/end 
-id: 197
-r#  30040  616  65
+id: 191
+r#  29863  609  21
 
 --- Paragraph/end 
 id: 183
@@ -4922,24 +4879,25 @@ y: N/A
 
 --- Paragraph/start
 id: 184
-r#  30042  618  1
+r#  29865  611  1
 
 
 --- Sentence/start
-id: 198
-r#  30042  618  1
+id: 192
+r#  29865  611  1
 
 --- Sentence//end
-id: 198
-r#  30194  619  69
+id: 192
+r#  30088  613  64
 p: .
 t. 
-|  Stern, N., and Oehme, K. (2002). The Troubling Admission of Supervised Visitation
-.  Records in Custody Proceedings. Temple Law Review 75: 271--311
+|  Stahly, G. B., Valentine, C., and York, V. (2021). Protective Mothers, Endangered
+|  Children: Tracing System Failure for Children of Divorce and Separation.
+.  Family & Intimate Partner Violence Quarterly 14 (2): 7--34
 
 --- Sentence/end 
-id: 198
-r#  30195  619  70
+id: 192
+r#  30089  613  65
 
 --- Paragraph/end 
 id: 184
@@ -4948,24 +4906,24 @@ y: N/A
 
 --- Paragraph/start
 id: 185
-r#  30197  621  1
+r#  30091  615  1
 
 
 --- Sentence/start
-id: 199
-r#  30197  621  1
+id: 193
+r#  30091  615  1
 
 --- Sentence//end
-id: 199
-r#  30351  622  70
+id: 193
+r#  30243  616  69
 p: .
 t. 
-|  Stewart, K. (2019). Evolving Federal Policies and Their Implications for Greenbook
-.  Interventions. Juvenile and Family Court Journal 70 (4): 37--48
+|  Stern, N., and Oehme, K. (2002). The Troubling Admission of Supervised Visitation
+.  Records in Custody Proceedings. Temple Law Review 75: 271--311
 
 --- Sentence/end 
-id: 199
-r#  30352  622  71
+id: 193
+r#  30244  616  70
 
 --- Paragraph/end 
 id: 185
@@ -4974,24 +4932,24 @@ y: N/A
 
 --- Paragraph/start
 id: 186
-r#  30354  624  1
+r#  30246  618  1
 
 
 --- Sentence/start
-id: 200
-r#  30354  624  1
+id: 194
+r#  30246  618  1
 
 --- Sentence//end
-id: 200
-r#  30470  625  36
+id: 194
+r#  30400  619  70
 p: .
 t. 
-|  Summit, R. C. (1983). The Child Sexual Abuse Accommodation Syndrome. Child
-.  Abuse and Neglect 7 (2): 177--193
+|  Stewart, K. (2019). Evolving Federal Policies and Their Implications for Greenbook
+.  Interventions. Juvenile and Family Court Journal 70 (4): 37--48
 
 --- Sentence/end 
-id: 200
-r#  30471  625  37
+id: 194
+r#  30401  619  71
 
 --- Paragraph/end 
 id: 186
@@ -5000,24 +4958,24 @@ y: N/A
 
 --- Paragraph/start
 id: 187
-r#  30473  627  1
+r#  30403  621  1
 
 
 --- Sentence/start
-id: 201
-r#  30473  627  1
+id: 195
+r#  30403  621  1
 
 --- Sentence//end
-id: 201
-r#  30579  628  40
+id: 195
+r#  30519  622  36
 p: .
 t. 
-|  Swithin, T. (2012). Divorcing a Narcissist: One Mom’s Battle.
-.  \urltext{https://www.onemomsbattle.com}
+|  Summit, R. C. (1983). The Child Sexual Abuse Accommodation Syndrome. Child
+.  Abuse and Neglect 7 (2): 177--193
 
 --- Sentence/end 
-id: 201
-r#  30580  628  41
+id: 195
+r#  30520  622  37
 
 --- Paragraph/end 
 id: 187
@@ -5026,24 +4984,24 @@ y: N/A
 
 --- Paragraph/start
 id: 188
-r#  30582  630  1
+r#  30522  624  1
 
 
 --- Sentence/start
-id: 202
-r#  30582  630  1
+id: 196
+r#  30522  624  1
 
 --- Sentence//end
-id: 202
-r#  30801  631  46
+id: 196
+r#  30628  625  40
 p: .
 t. 
-|  Thoennes, N., Pearson, J., and Tjaden, P. G. (1988). Allegations of Sexual Abuse in Custody and Visitation Cases: An Empirical Study of 169 Cases from 12 States. Denver:
-.  Association of Family and Conciliation Courts
+|  Swithin, T. (2012). Divorcing a Narcissist: One Mom’s Battle.
+.  \urltext{https://www.onemomsbattle.com}
 
 --- Sentence/end 
-id: 202
-r#  30802  631  47
+id: 196
+r#  30629  625  41
 
 --- Paragraph/end 
 id: 188
@@ -5052,25 +5010,24 @@ y: N/A
 
 --- Paragraph/start
 id: 189
-r#  30804  633  1
+r#  30631  627  1
 
 
 --- Sentence/start
-id: 203
-r#  30804  633  1
+id: 197
+r#  30631  627  1
 
 --- Sentence//end
-id: 203
-r#  30989  635  17
+id: 197
+r#  30850  628  46
 p: .
 t. 
-|  Thoennes, N., and Tjaden, P. G. (1990). The Extent, Nature, and Validity of Sexual
-|  Abuse Allegations in Custody and Visitation Disputes. Child Abuse and Neglect
-.  14 (2): 151--163
+|  Thoennes, N., Pearson, J., and Tjaden, P. G. (1988). Allegations of Sexual Abuse in Custody and Visitation Cases: An Empirical Study of 169 Cases from 12 States. Denver:
+.  Association of Family and Conciliation Courts
 
 --- Sentence/end 
-id: 203
-r#  30990  635  18
+id: 197
+r#  30851  628  47
 
 --- Paragraph/end 
 id: 189
@@ -5079,24 +5036,25 @@ y: N/A
 
 --- Paragraph/start
 id: 190
-r#  30992  637  1
+r#  30853  630  1
 
 
 --- Sentence/start
-id: 204
-r#  30992  637  1
+id: 198
+r#  30853  630  1
 
 --- Sentence//end
-id: 204
-r#  31110  638  29
+id: 198
+r#  31038  632  17
 p: .
 t. 
-|  Tippins, T. M. (2003). Custody Evaluations - Part 1: Expertise by Default? New York
-.  Law Journal, July 15, p. 3
+|  Thoennes, N., and Tjaden, P. G. (1990). The Extent, Nature, and Validity of Sexual
+|  Abuse Allegations in Custody and Visitation Disputes. Child Abuse and Neglect
+.  14 (2): 151--163
 
 --- Sentence/end 
-id: 204
-r#  31111  638  30
+id: 198
+r#  31039  632  18
 
 --- Paragraph/end 
 id: 190
@@ -5105,23 +5063,24 @@ y: N/A
 
 --- Paragraph/start
 id: 191
-r#  31113  640  1
+r#  31041  634  1
 
 
 --- Sentence/start
-id: 205
-r#  31113  640  1
+id: 199
+r#  31041  634  1
 
 --- Sentence//end
-id: 205
-r#  31197  640  85
+id: 199
+r#  31159  635  29
 p: .
 t. 
-.  Traubmann, T. (2003). Junk Science Has Its Way in Court. Ha’aretz, August 15
+|  Tippins, T. M. (2003). Custody Evaluations - Part 1: Expertise by Default? New York
+.  Law Journal, July 15, p. 3
 
 --- Sentence/end 
-id: 205
-r#  31198  640  86
+id: 199
+r#  31160  635  30
 
 --- Paragraph/end 
 id: 191
@@ -5130,24 +5089,23 @@ y: N/A
 
 --- Paragraph/start
 id: 192
-r#  31200  642  1
+r#  31162  637  1
 
 
 --- Sentence/start
-id: 206
-r#  31200  642  1
+id: 200
+r#  31162  637  1
 
 --- Sentence//end
-id: 206
-r#  31362  643  76
+id: 200
+r#  31246  637  85
 p: .
 t. 
-|  Travers, M., and Manzo, J. F. (eds.). (1997). Law in Action: Ethnomethodological and
-.  Conversation Analytic Approaches to Law. Aldershot, UK: Ashgate/Dartmouth
+.  Traubmann, T. (2003). Junk Science Has Its Way in Court. Ha’aretz, August 15
 
 --- Sentence/end 
-id: 206
-r#  31363  643  77
+id: 200
+r#  31247  637  86
 
 --- Paragraph/end 
 id: 192
@@ -5156,24 +5114,24 @@ y: N/A
 
 --- Paragraph/start
 id: 193
-r#  31365  645  1
+r#  31249  639  1
 
 
 --- Sentence/start
-id: 207
-r#  31365  645  1
+id: 201
+r#  31249  639  1
 
 --- Sentence//end
-id: 207
-r#  31468  646  11
+id: 201
+r#  31410  640  76
 p: .
 t. 
-|  Turkat, I. D. (1997). Management of Visitation Interference. Judges’ Journal 36 (2):
-.  17--21, 47
+|  Travers, M., and Manzo, J. F. (eds.) (1997). Law in Action: Ethnomethodological and
+.  Conversation Analytic Approaches to Law. Aldershot, UK: Ashgate/Dartmouth
 
 --- Sentence/end 
-id: 207
-r#  31469  646  12
+id: 201
+r#  31411  640  77
 
 --- Paragraph/end 
 id: 193
@@ -5182,23 +5140,24 @@ y: N/A
 
 --- Paragraph/start
 id: 194
-r#  31471  648  1
+r#  31413  642  1
 
 
 --- Sentence/start
-id: 208
-r#  31471  648  1
+id: 202
+r#  31413  642  1
 
 --- Sentence//end
-id: 208
-r#  31546  648  76
+id: 202
+r#  31516  643  11
 p: .
 t. 
-.  Turner, V. (1974). The Ritual Process. Harmondsworth, UK: Pelican Books
+|  Turkat, I. D. (1997). Management of Visitation Interference. Judges’ Journal 36 (2):
+.  17--21, 47
 
 --- Sentence/end 
-id: 208
-r#  31547  648  77
+id: 202
+r#  31517  643  12
 
 --- Paragraph/end 
 id: 194
@@ -5207,24 +5166,23 @@ y: N/A
 
 --- Paragraph/start
 id: 195
-r#  31549  650  1
+r#  31519  645  1
 
 
 --- Sentence/start
-id: 209
-r#  31549  650  1
+id: 203
+r#  31519  645  1
 
 --- Sentence//end
-id: 209
-r#  31672  651  42
+id: 203
+r#  31594  645  76
 p: .
 t. 
-|  Udesky, L. (2016). Custody in Crisis: How Family Courts Nationwide Put Children
-.  in Danger. 100Reporters, December 1
+.  Turner, V. (1974). The Ritual Process. Harmondsworth, UK: Pelican Books
 
 --- Sentence/end 
-id: 209
-r#  31673  651  43
+id: 203
+r#  31595  645  77
 
 --- Paragraph/end 
 id: 195
@@ -5233,16 +5191,42 @@ y: N/A
 
 --- Paragraph/start
 id: 196
-r#  31675  653  1
+r#  31597  647  1
 
 
 --- Sentence/start
-id: 210
-r#  31675  653  1
+id: 204
+r#  31597  647  1
 
 --- Sentence//end
-id: 210
-r#  31945  656  28
+id: 204
+r#  31720  648  42
+p: .
+t. 
+|  Udesky, L. (2016). Custody in Crisis: How Family Courts Nationwide Put Children
+.  in Danger. 100Reporters, December 1
+
+--- Sentence/end 
+id: 204
+r#  31721  648  43
+
+--- Paragraph/end 
+id: 196
+y: N/A
+
+
+--- Paragraph/start
+id: 197
+r#  31723  650  1
+
+
+--- Sentence/start
+id: 205
+r#  31723  650  1
+
+--- Sentence//end
+id: 205
+r#  31993  653  28
 p: .
 t. 
 |  United Nations Human Rights Office of the High Commissioner. (2022). Call for
@@ -5251,26 +5235,26 @@ t.
 .  Consequences. December 15
 
 --- Sentence/end 
-id: 210
-r#  31946  656  29
+id: 205
+r#  31994  653  29
 
 --- Paragraph/end 
-id: 196
+id: 197
 y: N/A
 
 
 --- Paragraph/start
-id: 197
-r#  31948  658  1
+id: 198
+r#  31996  655  1
 
 
 --- Sentence/start
-id: 211
-r#  31948  658  1
+id: 206
+r#  31996  655  1
 
 --- Sentence//end
-id: 211
-r#  32126  660  21
+id: 206
+r#  32174  657  21
 p: .
 t. 
 |  United Nations Human Rights Office of the High Commissioner. (2023). Urgent
@@ -5278,47 +5262,8 @@ t.
 .  UN Expert. June 23
 
 --- Sentence/end 
-id: 211
-r#  32127  660  22
-
---- Paragraph/end 
-id: 197
-y: N/A
-
-
---- Paragraph/start
-id: 198
-r#  32129  662  1
-
-
---- Sentence/start
-id: 212
-r#  32129  662  1
-
---- Sentence//end
-id: 212
-r#  32284  663  78
-p: .
-t. 
-|  Viva (1989). Women and Children Last: How the Family Court Serves to Punish
-.  the Very People It Was Created to Protect. New York Woman, November, pp
-
-
---- Sentence/switch
-id: 213
-r#  32285  663  79
-
-
---- Sentence//end
-id: 213
-r#  32294  664  9
-p: .
-t. 
-.  110--115
-
---- Sentence/end 
-id: 213
-r#  32295  664  10
+id: 206
+r#  32175  657  22
 
 --- Paragraph/end 
 id: 198
@@ -5327,24 +5272,25 @@ y: N/A
 
 --- Paragraph/start
 id: 199
-r#  32297  666  1
+r#  32177  659  1
 
 
 --- Sentence/start
-id: 214
-r#  32297  666  1
+id: 207
+r#  32177  659  1
 
 --- Sentence//end
-id: 214
-r#  32453  667  65
+id: 207
+r#  32343  661  9
 p: .
 t. 
-|  Waller, G. (2001). Small Justice: Little Justice in America’s Family Courts. New York
-.  International Independent Film and Video Festival, September 7
+|  Viva (1989). Women and Children Last: How the Family Court Serves to Punish
+|  the Very People It Was Created to Protect. New York Woman, November, pp.
+.  110--115
 
 --- Sentence/end 
-id: 214
-r#  32454  667  66
+id: 207
+r#  32344  661  10
 
 --- Paragraph/end 
 id: 199
@@ -5353,16 +5299,42 @@ y: N/A
 
 --- Paragraph/start
 id: 200
-r#  32456  669  1
+r#  32346  663  1
 
 
 --- Sentence/start
-id: 215
-r#  32456  669  1
+id: 208
+r#  32346  663  1
 
 --- Sentence//end
-id: 215
-r#  32618  670  87
+id: 208
+r#  32502  664  65
+p: .
+t. 
+|  Waller, G. (2001). Small Justice: Little Justice in America’s Family Courts. New York
+.  International Independent Film and Video Festival, September 7
+
+--- Sentence/end 
+id: 208
+r#  32503  664  66
+
+--- Paragraph/end 
+id: 200
+y: N/A
+
+
+--- Paragraph/start
+id: 201
+r#  32505  666  1
+
+
+--- Sentence/start
+id: 209
+r#  32505  666  1
+
+--- Sentence//end
+id: 209
+r#  32668  667  88
 p: .
 t. 
 |  Watson, D. R. (1990). Some Features of the Elicitation of Confessions in
@@ -5370,48 +5342,20 @@ t.
 
 
 --- Sentence/switch
-id: 216
-r#  32619  670  88
+id: 210
+r#  32669  667  89
 
 
 --- Sentence//end
-id: 216
-r#  32663  671  44
+id: 210
+r#  32713  668  44
 p: .
 t. 
 .  Washington, DC: University Press of America
 
 --- Sentence/end 
-id: 216
-r#  32664  671  45
-
---- Paragraph/end 
-id: 200
-y: N/A
-
-
---- Paragraph/start
-id: 201
-r#  32666  673  1
-
-
---- Sentence/start
-id: 217
-r#  32666  673  1
-
---- Sentence//end
-id: 217
-r#  32915  675  81
-p: .
-t. 
-|  Watson, R. (1997). The Presentation of Victim and Motive in Discourse: The Case of
-|  Police Interrogations and Interviews. In M. Travers and J. F. Manzo (eds.), Law
-.  in Action: Ethnomethodological and Conversation Analytic Approaches to Law, pp
-
-
---- Sentence/switch
-id: 218
-r#  32916  675  82
+id: 210
+r#  32714  668  45
 
 --- Paragraph/end 
 id: 201
@@ -5420,25 +5364,12 @@ y: N/A
 
 --- Paragraph/start
 id: 202
-r#  32973  678  1
+r#  32716  670  1
 
 
 --- Sentence/start
-id: 219
-r#  32973  678  1
-
---- Sentence//end
-id: 219
-r#  33063  679  19
-p: .
-t. 
-|  77--97. Aldershot, UK: Ashgate/Dartmouth.\vspace{-1em}Weick, K. E. (1969). The Social Psychology of Organizing. Reading,
-.  MA: Addison-Wesley
-
---- Sentence/end 
-id: 219
-r#  33064  679  20
-
+id: 211
+r#  32716  670  1
 --- Paragraph/end 
 id: 202
 y: N/A
@@ -5446,24 +5377,27 @@ y: N/A
 
 --- Paragraph/start
 id: 203
-r#  33066  681  1
+r#  33024  675  1
 
 
 --- Sentence/start
-id: 220
-r#  33066  681  1
+id: 212
+r#  33024  675  1
 
 --- Sentence//end
-id: 220
-r#  33182  682  35
+id: 212
+r#  33114  676  19
 p: .
 t. 
-|  Wexler, R. (1990). Wounded Innocents: The Real Victims of the War against Child
-.  Abuse. Buffalo: Prometheus Books
+|  Watson, R. (1997). The Presentation of Victim and Motive in Discourse: The Case of
+|  Police Interrogations and Interviews. In M. Travers and J. F. Manzo (eds.), Law
+|  in Action: Ethnomethodological and Conversation Analytic Approaches to Law, pp.
+|  77--97. Aldershot, UK: Ashgate/Dartmouth.\vspace{-1em}Weick, K. E. (1969). The Social Psychology of Organizing. Reading,
+.  MA: Addison-Wesley
 
 --- Sentence/end 
-id: 220
-r#  33183  682  36
+id: 212
+r#  33115  676  20
 
 --- Paragraph/end 
 id: 203
@@ -5472,24 +5406,24 @@ y: N/A
 
 --- Paragraph/start
 id: 204
-r#  33185  684  1
+r#  33117  678  1
 
 
 --- Sentence/start
-id: 221
-r#  33185  684  1
+id: 213
+r#  33117  678  1
 
 --- Sentence//end
-id: 221
-r#  33303  685  40
+id: 213
+r#  33233  679  35
 p: .
 t. 
-|  Wilson, T. (1997). Will Paternal Paranoia Triumph? The Organization of Angry
-.  Dads. On the Issues 6 (1): 20--21
+|  Wexler, R. (1990). Wounded Innocents: The Real Victims of the War against Child
+.  Abuse. Buffalo: Prometheus Books
 
 --- Sentence/end 
-id: 221
-r#  33304  685  41
+id: 213
+r#  33234  679  36
 
 --- Paragraph/end 
 id: 204
@@ -5498,24 +5432,24 @@ y: N/A
 
 --- Paragraph/start
 id: 205
-r#  33306  687  1
+r#  33236  681  1
 
 
 --- Sentence/start
-id: 222
-r#  33306  687  1
+id: 214
+r#  33236  681  1
 
 --- Sentence//end
-id: 222
-r#  33435  688  51
+id: 214
+r#  33354  682  40
 p: .
 t. 
-|  Winner, K. (1996). Divorced from Justice: The Abuse of Women and Children by
-.  Divorce Lawyers and Judges. New York: ReganBooks
+|  Wilson, T. (1997). Will Paternal Paranoia Triumph? The Organization of Angry
+.  Dads. On the Issues 6 (1): 20--21
 
 --- Sentence/end 
-id: 222
-r#  33436  688  52
+id: 214
+r#  33355  682  41
 
 --- Paragraph/end 
 id: 205
@@ -5524,16 +5458,42 @@ y: N/A
 
 --- Paragraph/start
 id: 206
-r#  33438  690  1
+r#  33357  684  1
 
 
 --- Sentence/start
-id: 223
-r#  33438  690  1
+id: 215
+r#  33357  684  1
 
 --- Sentence//end
-id: 223
-r#  33643  692  39
+id: 215
+r#  33486  685  51
+p: .
+t. 
+|  Winner, K. (1996). Divorced from Justice: The Abuse of Women and Children by
+.  Divorce Lawyers and Judges. New York: ReganBooks
+
+--- Sentence/end 
+id: 215
+r#  33487  685  52
+
+--- Paragraph/end 
+id: 206
+y: N/A
+
+
+--- Paragraph/start
+id: 207
+r#  33489  687  1
+
+
+--- Sentence/start
+id: 216
+r#  33489  687  1
+
+--- Sentence//end
+id: 216
+r#  33694  689  39
 p: .
 t. 
 |  Winner, K. (2000a). Findings on Judge Michael Dufficy, Commissioner Sylvia Shapiro,
@@ -5541,34 +5501,8 @@ t.
 .  The Justice Seekers, Inc., February 28
 
 --- Sentence/end 
-id: 223
-r#  33644  692  40
-
---- Paragraph/end 
-id: 206
-y: N/A
-
-
---- Paragraph/start
-id: 207
-r#  33646  694  1
-
-
---- Sentence/start
-id: 224
-r#  33646  694  1
-
---- Sentence//end
-id: 224
-r#  33838  695  30
-p: .
-t. 
-|  Winner, K. (2000b). Placing Children at Risk: Questionable Psychologists and Therapists in the Sacramento Family Court and Surrounding Counties. New York: The
-.  Justice Seekers, Inc., May 15
-
---- Sentence/end 
-id: 224
-r#  33839  695  31
+id: 216
+r#  33695  689  40
 
 --- Paragraph/end 
 id: 207
@@ -5577,16 +5511,42 @@ y: N/A
 
 --- Paragraph/start
 id: 208
-r#  33841  697  1
+r#  33697  691  1
 
 
 --- Sentence/start
-id: 225
-r#  33841  697  1
+id: 217
+r#  33697  691  1
 
 --- Sentence//end
-id: 225
-r#  34016  699  7
+id: 217
+r#  33889  692  30
+p: .
+t. 
+|  Winner, K. (2000b). Placing Children at Risk: Questionable Psychologists and Therapists in the Sacramento Family Court and Surrounding Counties. New York: The
+.  Justice Seekers, Inc., May 15
+
+--- Sentence/end 
+id: 217
+r#  33890  692  31
+
+--- Paragraph/end 
+id: 208
+y: N/A
+
+
+--- Paragraph/start
+id: 209
+r#  33892  694  1
+
+
+--- Sentence/start
+id: 218
+r#  33892  694  1
+
+--- Sentence//end
+id: 218
+r#  34067  696  7
 p: .
 t. 
 |  Wittmann, J. J. (1985). Child Advocacy and the Scientific Model in Family Court:
@@ -5594,86 +5554,86 @@ t.
 .  61--82
 
 --- Sentence/end 
-id: 225
-r#  34017  699  8
+id: 218
+r#  34068  696  8
 
 --- Paragraph/end 
-id: 208
+id: 209
 y: N/A
 
 
 --- Paragraph/start
-id: 209
-r#  34019  701  1
+id: 210
+r#  34070  698  1
 
 
 --- Sentence/start
-id: 226
-r#  34019  701  1
+id: 219
+r#  34070  698  1
 
 --- Sentence//end
-id: 226
-r#  34164  702  67
+id: 219
+r#  34216  699  67
 p: .
 t. 
 |  Women’s Coalition News & Views. (2022). UN Human Rights Council Takes on the
 .  Custody Crisis. Women’s Coalition News & Views, November 20
 
 --- Sentence/end 
-id: 226
-r#  34165  702  68
+id: 219
+r#  34217  699  68
 
 --- Paragraph/end 
-id: 209
+id: 210
 y: N/A
 
 
 --- Paragraph/start
-id: 210
-r#  34167  704  1
+id: 211
+r#  34219  701  1
 
 
 --- Sentence/start
-id: 227
-r#  34167  704  1
+id: 220
+r#  34219  701  1
 
 --- Sentence//end
-id: 227
-r#  34269  705  17
+id: 220
+r#  34321  702  17
 p: .
 t. 
 |  Woodlin, R. (1987). Newsom Gaining Public Support. Sun Herald (Gulfport, MS),
 .  August 28, p. A1
 
 --- Sentence/end 
-id: 227
-r#  34270  705  18
+id: 220
+r#  34322  702  18
 
 --- Paragraph/end 
-id: 210
+id: 211
 y: N/A
 
 
 --- Paragraph/start
-id: 211
-r#  34272  707  1
+id: 212
+r#  34324  704  1
 
 
 --- Sentence/start
-id: 228
-r#  34272  707  1
+id: 221
+r#  34324  704  1
 
 --- Sentence//end
-id: 228
-r#  34337  707  66
+id: 221
+r#  34389  704  66
 p: .
 t. 
 .  Words and Phrases. (1964). St. Paul, MN: West Publishing Company
 
 --- Sentence/end 
-id: 228
-r#  34338  707  67
+id: 221
+r#  34390  704  67
 
 --- Paragraph/end 
-id: 211
+id: 212
 y: N/A

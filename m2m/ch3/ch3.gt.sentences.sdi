@@ -160,11 +160,11 @@ r#  3027  50  1
 
 --- Sentence//end
 id: 6
-r#  4325  65  56
+r#  4324  65  56
 p: .
 t. 
-|  Harold Garfinkel, who founded ethnomethodology some thirty-
-|  five years ago, defined this discipline as the organizational study of a
+|  Harold Garfinkel, who founded ethnomethodology some thirtyfive
+|  years ago, defined this discipline as the organizational study of a
 |  member’s knowledge of his ordinary affairs, of his own organized enterprises, where that knowledge is treated by us as part of the same setting
 |  that it also makes orderable.\2
 |  When we apply ethnomethodology to the study of the family court
@@ -182,7 +182,7 @@ t.
 
 --- Sentence/end 
 id: 6
-r#  4326  65  57
+r#  4325  65  57
 
 --- Paragraph/end 
 id: 4
@@ -191,16 +191,16 @@ y: N/A
 
 --- Paragraph/start
 id: 5
-r#  4328  67  1
+r#  4327  67  1
 
 
 --- Sentence/start
 id: 7
-r#  4328  67  1
+r#  4327  67  1
 
 --- Sentence//end
 id: 7
-r#  4938  73  30
+r#  4937  73  30
 p: .
 t. 
 |  For example, Lynch (1997) studied the judge (in criminal court) as
@@ -211,15 +211,27 @@ t.
 |  reflexively in and through the unrelenting practices of local parties who
 .  dwell in a society (p. 100)
 
+--- Sentence/end 
+id: 7
+r#  4938  73  31
 
---- Sentence/switch
+--- Paragraph/end 
+id: 5
+y: N/A
+
+
+--- Paragraph/start
+id: 6
+r#  4940  75  1
+
+
+--- Sentence/start
 id: 8
-r#  4939  73  31
-
+r#  4940  75  1
 
 --- Sentence//end
 id: 8
-r#  5639  81  53
+r#  5639  82  53
 p: .
 t. 
 |  In keeping with the ethnomethodological tradition, Lynch did not
@@ -231,15 +243,27 @@ t.
 |  the courtroom setting)\3 accounting of their judicial actions and reasons
 .  as constituents of the courtroom hearings (p. 125)
 
+--- Sentence/end 
+id: 8
+r#  5640  82  54
 
---- Sentence/switch
+--- Paragraph/end 
+id: 6
+y: N/A
+
+
+--- Paragraph/start
+id: 7
+r#  5642  84  1
+
+
+--- Sentence/start
 id: 9
-r#  5640  81  54
-
+r#  5642  84  1
 
 --- Sentence//end
 id: 9
-r#  6426  90  5
+r#  6427  92  5
 p: .
 t. 
 |  Like Lynch, we, in our study of the family courts, do not treat judicial decision making as a composite of variables in a regression analysis
@@ -254,25 +278,25 @@ t.
 
 --- Sentence/end 
 id: 9
-r#  6427  90  6
+r#  6428  92  6
 
 --- Paragraph/end 
-id: 5
+id: 7
 y: N/A
 
 
 --- Paragraph/start
-id: 6
-r#  6429  92  1
+id: 8
+r#  6430  94  1
 
 
 --- Sentence/start
 id: 10
-r#  6429  92  1
+r#  6430  94  1
 
 --- Sentence//end
 id: 10
-r#  6815  97  46
+r#  6816  99  46
 p: .
 t. 
 |  Lynch’s 1997 study of the criminal court also showed that the role
@@ -284,25 +308,25 @@ t.
 
 --- Sentence/end 
 id: 10
-r#  6816  97  47
+r#  6817  99  47
 
 --- Paragraph/end 
-id: 6
+id: 8
 y: N/A
 
 
 --- Paragraph/start
-id: 7
-r#  6818  99  1
+id: 9
+r#  6819  101  1
 
 
 --- Sentence/start
 id: 11
-r#  6818  99  1
+r#  6819  101  1
 
 --- Sentence//end
 id: 11
-r#  7178  103  71
+r#  7179  105  71
 p: .
 t. 
 |  By understanding the production of social action, and in particular
@@ -313,10 +337,10 @@ t.
 
 --- Sentence/end 
 id: 11
-r#  7179  103  72
+r#  7180  105  72
 
 --- Paragraph/end 
-id: 7
+id: 9
 y: N/A
 
 
@@ -327,30 +351,30 @@ y: N/A
 
 
 --- Paragraph/start
-id: 8
-r#  7231  108  1
+id: 10
+r#  7232  110  1
 
 
 --- Sentence/start
 id: 12
-r#  7231  108  1
+r#  7232  110  1
 --- Paragraph/end 
-id: 8
+id: 10
 y: N/A
 
 
 --- Paragraph/start
-id: 9
-r#  8248  125  1
+id: 11
+r#  8249  127  1
 
 
 --- Sentence/start
 id: 13
-r#  8248  125  1
+r#  8249  127  1
 
 --- Sentence//end
 id: 13
-r#  9059  138  59
+r#  9732  152  14
 p: .
 t. 
 |  The ethnomethodological form of sociological inquiry can help us to
@@ -374,20 +398,8 @@ t.
 |  Addams College of Social Work (University of Illinois) in the
 |  late 1990s. In the course of the interview, the mother asks hesitantly if
 |  there are very many other mothers in her situation ...\ [stating]
-.  she doesn’t know anyone. While Massat and Lundy (1999, p
-
-
---- Sentence/switch
-id: 14
-r#  9060  138  60
-
-
---- Sentence//end
-id: 14
-r#  9730  150  14
-p: .
-t. 
-|  , who conducted this study, had been primarily querying the
+|  she doesn’t know anyone. While Massat and Lundy (1999, p. 42), who
+|  conducted this study, had been primarily querying the
 |  interviewee about her access to affordable housing, public
 |  assistance, and other practical service and support needs, the
 |  mother used this occasion to socially constitute her own
@@ -402,13 +414,13 @@ t.
 
 
 --- Sentence/switch
-id: 15
-r#  9735  152  3
+id: 14
+r#  9737  154  3
 
 
 --- Sentence//end
-id: 15
-r#  10538  165  58
+id: 14
+r#  10540  167  58
 p: .
 t. 
 |  A New York protective mother, not yet knowing of another
@@ -426,26 +438,26 @@ t.
 
 
 --- Sentence/switch
-id: 16
-r#  10539  165  59
+id: 15
+r#  10541  167  59
 
 --- Paragraph/end 
-id: 9
+id: 11
 y: N/A
 
 
 --- Paragraph/start
-id: 10
-r#  10543  168  1
+id: 12
+r#  10545  170  1
 
 
 --- Sentence/start
-id: 17
-r#  10543  168  1
+id: 16
+r#  10545  170  1
 
 --- Sentence//end
-id: 17
-r#  11221  175  30
+id: 16
+r#  11223  177  30
 p: .
 t. 
 |  As protective mothers become increasingly entrenched in their family court cases and they come to see what is happening to them as wholly
@@ -458,26 +470,26 @@ t.
 .  as education, class, and race
 
 --- Sentence/end 
-id: 17
-r#  11222  175  31
+id: 16
+r#  11224  177  31
 
 --- Paragraph/end 
-id: 10
+id: 12
 y: N/A
 
 
 --- Paragraph/start
-id: 11
-r#  11224  177  1
+id: 13
+r#  11226  179  1
 
 
 --- Sentence/start
-id: 18
-r#  11224  177  1
+id: 17
+r#  11226  179  1
 
 --- Sentence//end
-id: 18
-r#  11782  183  12
+id: 17
+r#  11784  185  12
 p: .
 t. 
 |  For example, some protective mothers who are Black and poor, and
@@ -489,26 +501,26 @@ t.
 .  subjugation
 
 --- Sentence/end 
-id: 18
-r#  11783  183  13
+id: 17
+r#  11785  185  13
 
 --- Paragraph/end 
-id: 11
+id: 13
 y: N/A
 
 
 --- Paragraph/start
-id: 12
-r#  11785  185  1
+id: 14
+r#  11787  187  1
 
 
 --- Sentence/start
-id: 19
-r#  11785  185  1
+id: 18
+r#  11787  187  1
 
 --- Sentence//end
-id: 19
-r#  11955  187  36
+id: 18
+r#  11957  189  36
 p: .
 t. 
 |  Mothers with a more affluent lifestyle often attribute their court
@@ -516,26 +528,26 @@ t.
 .  politically controlled court system
 
 --- Sentence/end 
-id: 19
-r#  11956  187  37
+id: 18
+r#  11958  189  37
 
 --- Paragraph/end 
-id: 12
+id: 14
 y: N/A
 
 
 --- Paragraph/start
-id: 13
-r#  11958  189  1
+id: 15
+r#  11960  191  1
 
 
 --- Sentence/start
-id: 20
-r#  11958  189  1
+id: 19
+r#  11960  191  1
 
 --- Sentence//end
-id: 20
-r#  12620  196  27
+id: 19
+r#  12622  198  27
 p: .
 t. 
 |  Finally, mothers who are believers in end world theories have
@@ -548,26 +560,26 @@ t.
 .  sexual abuse by the father
 
 --- Sentence/end 
-id: 20
-r#  12621  196  28
+id: 19
+r#  12623  198  28
 
 --- Paragraph/end 
-id: 13
+id: 15
 y: N/A
 
 
 --- Paragraph/start
-id: 14
-r#  12623  198  1
+id: 16
+r#  12625  200  1
 
 
 --- Sentence/start
-id: 21
-r#  12623  198  1
+id: 20
+r#  12625  200  1
 
 --- Sentence//end
-id: 21
-r#  13240  205  45
+id: 20
+r#  13242  207  45
 p: .
 t. 
 |  What we see here is that whatever explanation protective mothers
@@ -580,24 +592,24 @@ t.
 .  solution is naturally seen as collective too
 
 --- Sentence/end 
-id: 21
-r#  13241  205  46
+id: 20
+r#  13243  207  46
 
 --- Paragraph/end 
-id: 14
+id: 16
 y: N/A
 
 
 --- Paragraph/start
-id: 15
-r#  13243  207  1
+id: 17
+r#  13245  209  1
 
 
 --- Sentence/start
-id: 22
-r#  13243  207  1
+id: 21
+r#  13245  209  1
 --- Paragraph/end 
-id: 15
+id: 17
 y: N/A
 
 
@@ -608,17 +620,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 16
-r#  13804  219  1
+id: 18
+r#  13806  221  1
 
 
 --- Sentence/start
-id: 23
-r#  13804  219  1
+id: 22
+r#  13806  221  1
 
 --- Sentence//end
-id: 23
-r#  14758  229  19
+id: 22
+r#  14760  231  19
 p: .
 t. 
 |  When we interviewed mothers, it became clear they were constantly
@@ -641,26 +653,26 @@ t.
 .  visible (p. 229)
 
 --- Sentence/end 
-id: 23
-r#  14759  229  20
+id: 22
+r#  14761  231  20
 
 --- Paragraph/end 
-id: 16
+id: 18
 y: N/A
 
 
 --- Paragraph/start
-id: 17
-r#  14761  231  1
+id: 19
+r#  14763  233  1
 
 
 --- Sentence/start
-id: 24
-r#  14761  231  1
+id: 23
+r#  14763  233  1
 
 --- Sentence//end
-id: 24
-r#  15118  235  73
+id: 23
+r#  15120  237  73
 p: .
 t. 
 |  In trying to illustrate explicative transactions, Pollner demonstrates
@@ -670,26 +682,26 @@ t.
 .  furnishing the conditions and context of subsequent decisions (p. 242)
 
 --- Sentence/end 
-id: 24
-r#  15119  235  74
+id: 23
+r#  15121  237  74
 
 --- Paragraph/end 
-id: 17
+id: 19
 y: N/A
 
 
 --- Paragraph/start
-id: 18
-r#  15121  237  1
+id: 20
+r#  15123  239  1
 
 
 --- Sentence/start
-id: 25
-r#  15121  237  1
+id: 24
+r#  15123  239  1
 
 --- Sentence//end
-id: 25
-r#  15450  240  51
+id: 24
+r#  15452  242  51
 p: .
 t. 
 |  Among the examples Pollner gives of explicative transactions is that
@@ -699,13 +711,13 @@ t.
 
 
 --- Sentence/switch
-id: 26
-r#  15451  240  52
+id: 25
+r#  15453  242  52
 
 
 --- Sentence//end
-id: 26
-r#  16039  249  69
+id: 25
+r#  16041  251  69
 p: .
 t. 
 |  In another instance, Pollner explains that a judge’s refusal to grant a
@@ -720,13 +732,13 @@ t.
 
 
 --- Sentence/switch
-id: 27
-r#  16040  249  70
+id: 26
+r#  16042  251  70
 
 
 --- Sentence//end
-id: 27
-r#  16567  255  25
+id: 26
+r#  16569  257  25
 p: .
 t. 
 |  For example, an Illinois family court judge, after incarcerating a mother
@@ -738,26 +750,26 @@ t.
 
 
 --- Sentence/switch
-id: 28
-r#  16568  255  26
+id: 27
+r#  16570  257  26
 
 --- Paragraph/end 
-id: 18
+id: 20
 y: N/A
 
 
 --- Paragraph/start
-id: 19
-r#  16926  261  1
+id: 21
+r#  16928  263  1
 
 
 --- Sentence/start
-id: 29
-r#  16926  261  1
+id: 28
+r#  16928  263  1
 
 --- Sentence//end
-id: 29
-r#  17132  262  142
+id: 28
+r#  17134  264  142
 p: .
 t. 
 |  In another example, a Brooklyn, New York, judge, when challenged
@@ -768,13 +780,13 @@ t.
 
 
 --- Sentence/switch
-id: 30
-r#  17133  262  143
+id: 29
+r#  17135  264  143
 
 
 --- Sentence//end
-id: 30
-r#  17676  270  48
+id: 29
+r#  17678  272  48
 p: .
 t. 
 |  For example, in the early 1990s, an Idaho protective mother had her
@@ -787,11 +799,11 @@ t.
 .  well-known medical doctor in the local hospital
 
 --- Sentence/end 
-id: 30
-r#  17677  270  49
+id: 29
+r#  17679  272  49
 
 --- Paragraph/end 
-id: 19
+id: 21
 y: N/A
 
 
@@ -802,17 +814,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 20
-r#  17699  275  1
+id: 22
+r#  17701  277  1
 
 
 --- Sentence/start
-id: 31
-r#  17699  275  1
+id: 30
+r#  17701  277  1
 
 --- Sentence//end
-id: 31
-r#  18028  278  78
+id: 30
+r#  18030  280  78
 p: .
 t. 
 |  Garfinkel and Sacks (1970) describe a process by which social interactants use some part of their interactive discourse as an occasion
@@ -821,26 +833,26 @@ t.
 .  saying-in-so-many-words-what-we-are-doing or formulating (pp. 350--351)
 
 --- Sentence/end 
-id: 31
-r#  18029  278  79
+id: 30
+r#  18031  280  79
 
 --- Paragraph/end 
-id: 20
+id: 22
 y: N/A
 
 
 --- Paragraph/start
-id: 21
-r#  18031  280  1
+id: 23
+r#  18033  282  1
 
 
 --- Sentence/start
-id: 32
-r#  18031  280  1
+id: 31
+r#  18033  282  1
 
 --- Sentence//end
-id: 32
-r#  18904  290  139
+id: 31
+r#  18906  292  139
 p: .
 t. 
 |  Here is an example of formulating: a Massachusetts family court
@@ -857,13 +869,13 @@ t.
 
 
 --- Sentence/switch
-id: 33
-r#  18905  290  140
+id: 32
+r#  18907  292  140
 
 
 --- Sentence//end
-id: 33
-r#  19301  294  5
+id: 32
+r#  19303  296  5
 p: .
 t. 
 |  Thus, if we were to question social actors, they would not lead us
@@ -872,11 +884,11 @@ t.
 .  part
 
 --- Sentence/end 
-id: 33
-r#  19302  294  6
+id: 32
+r#  19304  296  6
 
 --- Paragraph/end 
-id: 21
+id: 23
 y: N/A
 
 
@@ -887,17 +899,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 22
-r#  19363  299  1
+id: 24
+r#  19365  301  1
 
 
 --- Sentence/start
-id: 34
-r#  19363  299  1
+id: 33
+r#  19365  301  1
 
 --- Sentence//end
-id: 34
-r#  20283  308  75
+id: 33
+r#  20285  310  75
 p: .
 t. 
 |  Holstein and Gubrium (1995) demonstrated, in their study of hospital discharge hearings, how the definition of family is neither an a
@@ -912,26 +924,26 @@ t.
 .  opinions) as to what constitutes in each instance a viable family unit
 
 --- Sentence/end 
-id: 34
-r#  20284  308  76
+id: 33
+r#  20286  310  76
 
 --- Paragraph/end 
-id: 22
+id: 24
 y: N/A
 
 
 --- Paragraph/start
-id: 23
-r#  20286  310  1
+id: 25
+r#  20288  312  1
 
 
 --- Sentence/start
-id: 35
-r#  20286  310  1
+id: 34
+r#  20288  312  1
 
 --- Sentence//end
-id: 35
-r#  20856  316  73
+id: 34
+r#  20858  318  73
 p: .
 t. 
 |  In our study, we similarly show how the definition of a suitable family unit, or specifically a fit mother, is the situated accomplishment
@@ -943,26 +955,26 @@ t.
 .  something that could never be justified outside the family court setting
 
 --- Sentence/end 
-id: 35
-r#  20857  316  74
+id: 34
+r#  20859  318  74
 
 --- Paragraph/end 
-id: 23
+id: 25
 y: N/A
 
 
 --- Paragraph/start
-id: 24
-r#  20859  318  1
+id: 26
+r#  20861  320  1
 
 
 --- Sentence/start
-id: 36
-r#  20859  318  1
+id: 35
+r#  20861  320  1
 
 --- Sentence//end
-id: 36
-r#  21766  328  27
+id: 35
+r#  21768  330  27
 p: .
 t. 
 |  What happens in family court is that maternal fitness, as the defining
@@ -978,26 +990,26 @@ t.
 .  found in the family courts
 
 --- Sentence/end 
-id: 36
-r#  21767  328  28
+id: 35
+r#  21769  330  28
 
 --- Paragraph/end 
-id: 24
+id: 26
 y: N/A
 
 
 --- Paragraph/start
-id: 25
-r#  21769  330  1
+id: 27
+r#  21771  332  1
 
 
 --- Sentence/start
-id: 37
-r#  21769  330  1
+id: 36
+r#  21771  332  1
 
 --- Sentence//end
-id: 37
-r#  22251  335  49
+id: 36
+r#  22253  337  49
 p: .
 t. 
 |  For example, in a California case, a mother lost all visitation contact
@@ -1008,26 +1020,26 @@ t.
 .  Services (CPS) caseworkers in the boys’ presence
 
 --- Sentence/end 
-id: 37
-r#  22252  335  50
+id: 36
+r#  22254  337  50
 
 --- Paragraph/end 
-id: 25
+id: 27
 y: N/A
 
 
 --- Paragraph/start
-id: 26
-r#  22254  337  1
+id: 28
+r#  22256  339  1
 
 
 --- Sentence/start
-id: 38
-r#  22254  337  1
+id: 37
+r#  22256  339  1
 
 --- Sentence//end
-id: 38
-r#  22961  345  64
+id: 37
+r#  22963  347  64
 p: .
 t. 
 |  As family court litigation progresses, the locally managed (contextually relevant) definition of what constitutes a fit mother becomes
@@ -1041,26 +1053,26 @@ t.
 .  why these good mothers lost their custody and/or visitation
 
 --- Sentence/end 
-id: 38
-r#  22962  345  65
+id: 37
+r#  22964  347  65
 
 --- Paragraph/end 
-id: 26
+id: 28
 y: N/A
 
 
 --- Paragraph/start
-id: 27
-r#  22964  347  1
+id: 29
+r#  22966  349  1
 
 
 --- Sentence/start
-id: 39
-r#  22964  347  1
+id: 38
+r#  22966  349  1
 
 --- Sentence//end
-id: 39
-r#  23417  352  32
+id: 38
+r#  23419  354  32
 p: .
 t. 
 |  Judges themselves, as members of society at large, appear to be very
@@ -1071,26 +1083,26 @@ t.
 .  constitutes parental competence
 
 --- Sentence/end 
-id: 39
-r#  23418  352  33
+id: 38
+r#  23420  354  33
 
 --- Paragraph/end 
-id: 27
+id: 29
 y: N/A
 
 
 --- Paragraph/start
-id: 28
-r#  23420  354  1
+id: 30
+r#  23422  356  1
 
 
 --- Sentence/start
-id: 40
-r#  23420  354  1
+id: 39
+r#  23422  356  1
 
 --- Sentence//end
-id: 40
-r#  24234  362  35
+id: 39
+r#  24236  364  35
 p: .
 t. 
 |  For instance, in one case, a family court judge justified severe restrictions on a mother’s interactions with her children, in part, with the
@@ -1104,26 +1116,26 @@ t.
 .  men and develop good relationships
 
 --- Sentence/end 
-id: 40
-r#  24235  362  36
+id: 39
+r#  24237  364  36
 
 --- Paragraph/end 
-id: 28
+id: 30
 y: N/A
 
 
 --- Paragraph/start
-id: 29
-r#  24237  364  1
+id: 31
+r#  24239  366  1
 
 
 --- Sentence/start
-id: 41
-r#  24237  364  1
+id: 40
+r#  24239  366  1
 
 --- Sentence//end
-id: 41
-r#  24476  367  34
+id: 40
+r#  24478  369  34
 p: .
 t. 
 |  In some of the more extreme cases, judges have punished protective
@@ -1132,26 +1144,26 @@ t.
 .  to be unfit in conventional terms
 
 --- Sentence/end 
-id: 41
-r#  24477  367  35
+id: 40
+r#  24479  369  35
 
 --- Paragraph/end 
-id: 29
+id: 31
 y: N/A
 
 
 --- Paragraph/start
-id: 30
-r#  24479  369  1
+id: 32
+r#  24481  371  1
 
 
 --- Sentence/start
-id: 42
-r#  24479  369  1
+id: 41
+r#  24481  371  1
 
 --- Sentence//end
-id: 42
-r#  25230  376  38
+id: 41
+r#  25232  378  38
 p: .
 t. 
 |  Excising a mother from the life of her child, as draconian as such a
@@ -1164,26 +1176,26 @@ t.
 .  forgotten in the family court setting
 
 --- Sentence/end 
-id: 42
-r#  25231  376  39
+id: 41
+r#  25233  378  39
 
 --- Paragraph/end 
-id: 30
+id: 32
 y: N/A
 
 
 --- Paragraph/start
-id: 31
-r#  25233  378  1
+id: 33
+r#  25235  380  1
 
 
 --- Sentence/start
-id: 43
-r#  25233  378  1
+id: 42
+r#  25235  380  1
 
 --- Sentence//end
-id: 43
-r#  25746  382  31
+id: 42
+r#  25748  384  31
 p: .
 t. 
 |  The reader can begin to see that by employing an ethnomethodological form of inquiry, in which we examine the practical reasoning and
@@ -1193,26 +1205,26 @@ t.
 .  mother’s litigation activities
 
 --- Sentence/end 
-id: 43
-r#  25747  382  32
+id: 42
+r#  25749  384  32
 
 --- Paragraph/end 
-id: 31
+id: 33
 y: N/A
 
 
 --- Paragraph/start
-id: 32
-r#  25749  384  1
+id: 34
+r#  25751  386  1
 
 
 --- Sentence/start
-id: 44
-r#  25749  384  1
+id: 43
+r#  25751  386  1
 
 --- Sentence//end
-id: 44
-r#  26478  392  46
+id: 43
+r#  26480  394  46
 p: .
 t. 
 |  Because maternal fitness assumes a negotiated meaning as the collaborative achievement of both mothers and court personnel, we not
@@ -1226,26 +1238,26 @@ t.
 .  from mother-as-nurturer to mother-as-litigant
 
 --- Sentence/end 
-id: 44
-r#  26479  392  47
+id: 43
+r#  26481  394  47
 
 --- Paragraph/end 
-id: 32
+id: 34
 y: N/A
 
 
 --- Paragraph/start
-id: 33
-r#  26481  394  1
+id: 35
+r#  26483  396  1
 
 
 --- Sentence/start
-id: 45
-r#  26481  394  1
+id: 44
+r#  26483  396  1
 
 --- Sentence//end
-id: 45
-r#  26842  398  74
+id: 44
+r#  26844  400  74
 p: .
 t. 
 |  For example, when mothers see that the system attacks their litigation
@@ -1256,13 +1268,13 @@ t.
 
 
 --- Sentence/switch
-id: 46
-r#  26843  398  75
+id: 45
+r#  26845  400  75
 
 
 --- Sentence//end
-id: 46
-r#  27647  406  39
+id: 45
+r#  27649  408  39
 p: .
 t. 
 |  By following the hearing record, one can see how the meaning of
@@ -1275,11 +1287,11 @@ t.
 .  attacking the unfairness of the system
 
 --- Sentence/end 
-id: 46
-r#  27648  406  40
+id: 45
+r#  27650  408  40
 
 --- Paragraph/end 
-id: 33
+id: 35
 y: N/A
 
 
@@ -1290,17 +1302,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 34
-r#  27742  411  1
+id: 36
+r#  27744  413  1
 
 
 --- Sentence/start
-id: 47
-r#  27742  411  1
+id: 46
+r#  27744  413  1
 
 --- Sentence//end
-id: 47
-r#  28013  413  56
+id: 46
+r#  28015  415  56
 p: .
 t. 
 |  As part of our study of the madness and mutiny found in the family court
@@ -1308,26 +1320,26 @@ t.
 .  service caseworkers, before the case ever gets to court
 
 --- Sentence/end 
-id: 47
-r#  28014  413  57
+id: 46
+r#  28016  415  57
 
 --- Paragraph/end 
-id: 34
+id: 36
 y: N/A
 
 
 --- Paragraph/start
-id: 35
-r#  28016  415  1
+id: 37
+r#  28018  417  1
 
 
 --- Sentence/start
-id: 48
-r#  28016  415  1
+id: 47
+r#  28018  417  1
 
 --- Sentence//end
-id: 48
-r#  28685  423  23
+id: 47
+r#  28687  425  23
 p: .
 t. 
 |  Lynch (1997) demonstrated how social interactants accomplish the
@@ -1341,39 +1353,39 @@ t.
 .  of maternal competence
 
 --- Sentence/end 
-id: 48
-r#  28686  423  24
+id: 47
+r#  28688  425  24
 
 --- Paragraph/end 
-id: 35
+id: 37
 y: N/A
 
 
 --- Paragraph/start
-id: 36
-r#  28688  425  1
+id: 38
+r#  28690  427  1
+
+
+--- Sentence/start
+id: 48
+r#  28690  427  1
+--- Paragraph/end 
+id: 38
+y: N/A
+
+
+--- Paragraph/start
+id: 39
+r#  29466  437  1
 
 
 --- Sentence/start
 id: 49
-r#  28688  425  1
---- Paragraph/end 
-id: 36
-y: N/A
-
-
---- Paragraph/start
-id: 37
-r#  29464  435  1
-
-
---- Sentence/start
-id: 50
-r#  29464  435  1
+r#  29466  437  1
 
 --- Sentence//end
-id: 50
-r#  30332  445  25
+id: 49
+r#  30334  447  25
 p: .
 t. 
 |  In a discipline closely related to ethnomethodology known as conversation analysis - the study of the interactional organization of
@@ -1397,39 +1409,39 @@ t.
 .  from opposing viewpoints
 
 --- Sentence/end 
-id: 50
-r#  30333  445  26
+id: 49
+r#  30335  447  26
 
 --- Paragraph/end 
-id: 37
+id: 39
 y: N/A
 
 
 --- Paragraph/start
-id: 38
-r#  30335  447  1
+id: 40
+r#  30337  449  1
+
+
+--- Sentence/start
+id: 50
+r#  30337  449  1
+--- Paragraph/end 
+id: 40
+y: N/A
+
+
+--- Paragraph/start
+id: 41
+r#  30957  458  1
 
 
 --- Sentence/start
 id: 51
-r#  30335  447  1
---- Paragraph/end 
-id: 38
-y: N/A
-
-
---- Paragraph/start
-id: 39
-r#  30955  456  1
-
-
---- Sentence/start
-id: 52
-r#  30955  456  1
+r#  30957  458  1
 
 --- Sentence//end
-id: 52
-r#  31496  463  27
+id: 51
+r#  31498  465  27
 p: .
 t. 
 |  Such opposing projections of how a judge would assess maternal
@@ -1449,11 +1461,11 @@ t.
 .  or alienating behavior
 
 --- Sentence/end 
-id: 52
-r#  31497  463  28
+id: 51
+r#  31499  465  28
 
 --- Paragraph/end 
-id: 39
+id: 41
 y: N/A
 
 
@@ -1464,17 +1476,17 @@ y: N/A
 
 
 --- Paragraph/start
-id: 40
-r#  31581  467  1
+id: 42
+r#  31583  469  1
 
 
 --- Sentence/start
-id: 53
-r#  31581  467  1
+id: 52
+r#  31583  469  1
 
 --- Sentence//end
-id: 53
-r#  32376  476  7
+id: 52
+r#  32378  478  7
 p: .
 t. 
 |  As part of our study of judicial madness, we closely examined the participation of child protective service agencies and, in particular, their
@@ -1489,26 +1501,26 @@ t.
 .  served
 
 --- Sentence/end 
-id: 53
-r#  32377  476  8
+id: 52
+r#  32379  478  8
 
 --- Paragraph/end 
-id: 40
+id: 42
 y: N/A
 
 
 --- Paragraph/start
-id: 41
-r#  32379  478  1
+id: 43
+r#  32381  480  1
 
 
 --- Sentence/start
-id: 54
-r#  32379  478  1
+id: 53
+r#  32381  480  1
 
 --- Sentence//end
-id: 54
-r#  32836  483  9
+id: 53
+r#  32838  485  9
 p: .
 t. 
 |  Albert J. Meehan (1997), in studying the record-keeping practices of police,
@@ -1519,26 +1531,26 @@ t.
 .  (p. 187)
 
 --- Sentence/end 
-id: 54
-r#  32837  483  10
+id: 53
+r#  32839  485  10
 
 --- Paragraph/end 
-id: 41
+id: 43
 y: N/A
 
 
 --- Paragraph/start
-id: 42
-r#  32839  485  1
+id: 44
+r#  32841  487  1
 
 
 --- Sentence/start
-id: 55
-r#  32839  485  1
+id: 54
+r#  32841  487  1
 
 --- Sentence//end
-id: 55
-r#  33467  491  217
+id: 54
+r#  33469  493  217
 p: .
 t. 
 |  In much the same way, in our study of the family courts and their
@@ -1550,26 +1562,26 @@ t.
 .  children to sexually abusive fathers, the contractual, rather than actuarial, purpose of CPS agency records causes the records to anticipate such custodial transfers of sexually abused children to abusive parents
 
 --- Sentence/end 
-id: 55
-r#  33468  491  218
+id: 54
+r#  33470  493  218
 
 --- Paragraph/end 
-id: 42
+id: 44
 y: N/A
 
 
 --- Paragraph/start
-id: 43
-r#  33470  493  1
+id: 45
+r#  33472  495  1
 
 
 --- Sentence/start
-id: 56
-r#  33470  493  1
+id: 55
+r#  33472  495  1
 
 --- Sentence//end
-id: 56
-r#  34504  504  147
+id: 55
+r#  34506  506  147
 p: .
 t. 
 |  This fact helps to explain the otherwise baffling tendency of CPS agencies to make contradictory charges against protective mothers in the
@@ -1587,13 +1599,13 @@ t.
 
 
 --- Sentence/switch
-id: 57
-r#  34505  504  148
+id: 56
+r#  34507  506  148
 
 
 --- Sentence//end
-id: 57
-r#  34829  509  33
+id: 56
+r#  34831  511  33
 p: .
 t. 
 |  The second charge - brainwashing - can be used against the mother as
@@ -1603,26 +1615,26 @@ t.
 .  would have the same legal effect
 
 --- Sentence/end 
-id: 57
-r#  34830  509  34
+id: 56
+r#  34832  511  34
 
 --- Paragraph/end 
-id: 43
+id: 45
 y: N/A
 
 
 --- Paragraph/start
-id: 44
-r#  34832  511  1
+id: 46
+r#  34834  513  1
 
 
 --- Sentence/start
-id: 58
-r#  34832  511  1
+id: 57
+r#  34834  513  1
 
 --- Sentence//end
-id: 58
-r#  35801  521  57
+id: 57
+r#  35803  523  57
 p: .
 t. 
 |  If CPS records were truly intended to serve an actuarial
@@ -1638,26 +1650,26 @@ t.
 .  everyday contractual purposes in the family court system
 
 --- Sentence/end 
-id: 58
-r#  35802  521  58
+id: 57
+r#  35804  523  58
 
 --- Paragraph/end 
-id: 44
+id: 46
 y: N/A
 
 
 --- Paragraph/start
-id: 45
-r#  35804  523  1
+id: 47
+r#  35806  525  1
 
 
 --- Sentence/start
-id: 59
-r#  35804  523  1
+id: 58
+r#  35806  525  1
 
 --- Sentence//end
-id: 59
-r#  36383  529  67
+id: 58
+r#  36385  531  67
 p: .
 t. 
 |  Meehan’s research on record-keeping practices is helpful in our study
@@ -1669,26 +1681,26 @@ t.
 .  produced and shared reporting of persons and events ... (p. 199)
 
 --- Sentence/end 
-id: 59
-r#  36384  529  68
+id: 58
+r#  36386  531  68
 
 --- Paragraph/end 
-id: 45
+id: 47
 y: N/A
 
 
 --- Paragraph/start
-id: 46
-r#  36386  531  1
+id: 48
+r#  36388  533  1
 
 
 --- Sentence/start
-id: 60
-r#  36386  531  1
+id: 59
+r#  36388  533  1
 
 --- Sentence//end
-id: 60
-r#  37727  545  42
+id: 59
+r#  37729  547  42
 p: .
 t. 
 |  We likewise have found that CPS agencies, law guardians, judges, and
@@ -1708,26 +1720,26 @@ t.
 .  (let alone affecting) what goes on inside
 
 --- Sentence/end 
-id: 60
-r#  37728  545  43
+id: 59
+r#  37730  547  43
 
 --- Paragraph/end 
-id: 46
+id: 48
 y: N/A
 
 
 --- Paragraph/start
-id: 47
-r#  37730  547  1
+id: 49
+r#  37732  549  1
 
 
 --- Sentence/start
-id: 61
-r#  37730  547  1
+id: 60
+r#  37732  549  1
 
 --- Sentence//end
-id: 61
-r#  38252  552  26
+id: 60
+r#  38254  554  26
 p: .
 t. 
 |  This is one reason why, when state and federal investigators have
@@ -1738,26 +1750,26 @@ t.
 .  record in the first place
 
 --- Sentence/end 
-id: 61
-r#  38253  552  27
+id: 60
+r#  38255  554  27
 
 --- Paragraph/end 
-id: 47
+id: 49
 y: N/A
 
 
 --- Paragraph/start
-id: 48
-r#  38255  554  1
+id: 50
+r#  38257  556  1
 
 
 --- Sentence/start
-id: 62
-r#  38255  554  1
+id: 61
+r#  38257  556  1
 
 --- Sentence//end
-id: 62
-r#  38754  559  12
+id: 61
+r#  38756  561  12
 p: .
 t. 
 |  We have found that running records have become so prevalent in
@@ -1768,26 +1780,26 @@ t.
 .  commonplace
 
 --- Sentence/end 
-id: 62
-r#  38755  559  13
+id: 61
+r#  38757  561  13
 
 --- Paragraph/end 
-id: 48
+id: 50
 y: N/A
 
 
 --- Paragraph/start
-id: 49
-r#  38757  561  1
+id: 51
+r#  38759  563  1
 
 
 --- Sentence/start
-id: 63
-r#  38757  561  1
+id: 62
+r#  38759  563  1
 
 --- Sentence//end
-id: 63
-r#  39523  571  47
+id: 62
+r#  39525  573  47
 p: .
 t. 
 |  Meehan observed that these running records are evoked at key
@@ -1803,26 +1815,26 @@ t.
 .  at which the mother and her counsel are absent
 
 --- Sentence/end 
-id: 63
-r#  39524  571  48
+id: 62
+r#  39526  573  48
 
 --- Paragraph/end 
-id: 49
+id: 51
 y: N/A
 
 
 --- Paragraph/start
-id: 50
-r#  39526  573  1
+id: 52
+r#  39528  575  1
 
 
 --- Sentence/start
-id: 64
-r#  39526  573  1
+id: 63
+r#  39528  575  1
 
 --- Sentence//end
-id: 64
-r#  40033  577  35
+id: 63
+r#  40035  579  35
 p: .
 t. 
 |  We can thus begin to see how the application of the ethnomethodological form of sociological inquiry to the family court system provides special insight into how judges and their auxiliaries produce
@@ -1832,9 +1844,9 @@ t.
 .  American family court system today
 
 --- Sentence/end 
-id: 64
-r#  40034  577  36
+id: 63
+r#  40036  579  36
 
 --- Paragraph/end 
-id: 50
+id: 52
 y: N/A

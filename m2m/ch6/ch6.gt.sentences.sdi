@@ -178,23 +178,23 @@ r#  3601  60  1
 
 --- Sentence//end
 id: 7
-r#  4026  63  69
+r#  4027  63  69
 p: .
 t. 
 |  But our research of family court cases shows that CPS agencies often abuse the process, filing petitions simply to inject themselves into
 |  divorce litigation whether or not they believe a child has actually been
-|  abused. In many protective mother cases, they file their petitions to gaincontrol of the accuser, who thus suddenly finds herself at the mercy of
+|  abused. In many protective mother cases, they file their petitions to gain control of the accuser, who thus suddenly finds herself at the mercy of
 .  the very agency that is supposed to exist for her children's benefit
 
 
 --- Sentence/switch
 id: 8
-r#  4027  63  70
+r#  4028  63  70
 
 
 --- Sentence//end
 id: 8
-r#  4149  65  50
+r#  4150  65  50
 p: .
 t. 
 |  Examples of bogus petitions appear later in this chapter, but there are
@@ -203,12 +203,12 @@ t.
 
 --- Sentence/switch
 id: 9
-r#  4150  65  51
+r#  4151  65  51
 
 
 --- Sentence//end
 id: 9
-r#  4657  72  8
+r#  4658  72  8
 p: .
 t. 
 |  First, petitions against protective mothers may be based on allegations that do not constitute child abuse or neglect as defined by the
@@ -221,7 +221,7 @@ t.
 
 --- Sentence/end 
 id: 9
-r#  4658  72  9
+r#  4659  72  9
 
 --- Paragraph/end 
 id: 5
@@ -230,16 +230,16 @@ y: N/A
 
 --- Paragraph/start
 id: 6
-r#  4660  74  1
+r#  4661  74  1
 
 
 --- Sentence/start
 id: 10
-r#  4660  74  1
+r#  4661  74  1
 
 --- Sentence//end
 id: 10
-r#  4726  74  67
+r#  4727  74  67
 p: .
 t. 
 .  Second, CPS petitions may contain statements that are simply false
@@ -247,12 +247,12 @@ t.
 
 --- Sentence/switch
 id: 11
-r#  4727  74  68
+r#  4728  74  68
 
 
 --- Sentence//end
 id: 11
-r#  6264  93  16
+r#  6265  93  16
 p: .
 t. 
 |  CPS agencies are permitted by law to include allegations in their removal
@@ -277,7 +277,7 @@ t.
 
 --- Sentence/end 
 id: 11
-r#  6265  93  17
+r#  6266  93  17
 
 --- Paragraph/end 
 id: 6
@@ -286,16 +286,16 @@ y: N/A
 
 --- Paragraph/start
 id: 7
-r#  6267  95  1
+r#  6268  95  1
 
 
 --- Sentence/start
 id: 12
-r#  6267  95  1
+r#  6268  95  1
 
 --- Sentence//end
 id: 12
-r#  6582  97  33
+r#  6583  97  33
 p: .
 t. 
 |  In fact, in many cases, CPS removal petitions are sworn to by someone other than the caseworkers who investigate the facts - almost as if
@@ -305,12 +305,12 @@ t.
 
 --- Sentence/switch
 id: 13
-r#  6583  97  34
+r#  6584  97  34
 
 
 --- Sentence//end
 id: 13
-r#  7083  104  70
+r#  7084  104  70
 p: ?
 t. 
 |  Third, CPS agencies can fall back on the get the kids first, explain
@@ -324,12 +324,12 @@ t.
 
 --- Sentence/switch
 id: 14
-r#  7084  104  71
+r#  7085  104  71
 
 
 --- Sentence//end
 id: 14
-r#  7343  108  37
+r#  7344  108  37
 p: .
 t. 
 |  Is someone watching them at literally all times? Are they dirty? If CPS
@@ -339,7 +339,7 @@ t.
 
 --- Sentence/end 
 id: 14
-r#  7344  108  38
+r#  7345  108  38
 
 --- Paragraph/end 
 id: 7
@@ -354,16 +354,16 @@ y: N/A
 
 --- Paragraph/start
 id: 8
-r#  7374  113  4
+r#  7375  113  4
 
 
 --- Sentence/start
 id: 15
-r#  7374  113  4
+r#  7375  113  4
 
 --- Sentence//end
 id: 15
-r#  7591  115  70
+r#  7592  115  70
 p: .
 t. 
 |  CPS generally performs the supervision of visits when such supervision
@@ -373,12 +373,12 @@ t.
 
 --- Sentence/switch
 id: 16
-r#  7592  115  71
+r#  7593  115  71
 
 
 --- Sentence//end
 id: 16
-r#  7848  119  43
+r#  7849  119  43
 p: .
 t. 
 |  As we have mentioned, protective parents are often the targets of such
@@ -389,12 +389,12 @@ t.
 
 --- Sentence/switch
 id: 17
-r#  7849  119  44
+r#  7850  119  44
 
 
 --- Sentence//end
 id: 17
-r#  7920  120  71
+r#  7921  120  71
 p: .
 t. 
 .  Supervision of visits is meant only for the protection of the children
@@ -402,12 +402,12 @@ t.
 
 --- Sentence/switch
 id: 18
-r#  7921  120  72
+r#  7922  120  72
 
 
 --- Sentence//end
 id: 18
-r#  8087  123  25
+r#  8088  123  25
 p: .
 t. 
 |  But supervision can mean much more than that to a hypervigilant CPS
@@ -416,7 +416,7 @@ t.
 
 --- Sentence/end 
 id: 18
-r#  8088  123  26
+r#  8089  123  26
 
 --- Paragraph/end 
 id: 8
@@ -425,22 +425,23 @@ y: N/A
 
 --- Paragraph/start
 id: 9
-r#  8090  125  1
+r#  8091  125  1
 
 
 --- Sentence/start
 id: 19
-r#  8090  125  1
+r#  8091  125  1
 
 --- Sentence//end
 id: 19
-r#  8776  133  33
+r#  8778  134  33
 p: .
 t. 
 |  Restrictions imposed by CPS in many of the cases we have studied
 |  include the following: parents are not allowed to whisper or speak softly
 |  to the children; parents are not allowed to give or receive written notes;
-|  parents are not allowed to hold their children in their lap; parents arenot allowed to touch the children at all; parents are barred from bringing
+|  parents are not allowed to hold their children in their lap; parents are
+|  not allowed to touch the children at all; parents are barred from bringing
 |  plastic utensils to eat cake; parents are not allowed to make any reference
 |  to the caseworkers; parents are not allowed to say anything about the
 |  case, even if the children ask about it; and parents are not allowed to
@@ -449,7 +450,7 @@ t.
 
 --- Sentence/end 
 id: 19
-r#  8777  133  34
+r#  8779  134  34
 
 --- Paragraph/end 
 id: 9
@@ -458,16 +459,16 @@ y: N/A
 
 --- Paragraph/start
 id: 10
-r#  8779  135  1
+r#  8781  136  1
 
 
 --- Sentence/start
 id: 20
-r#  8779  135  1
+r#  8781  136  1
 
 --- Sentence//end
 id: 20
-r#  8989  136  143
+r#  8991  137  143
 p: .
 t. 
 |  In addition, caseworkers often intimidate parents by busily writing
@@ -476,12 +477,12 @@ t.
 
 --- Sentence/switch
 id: 21
-r#  8990  136  144
+r#  8992  137  144
 
 
 --- Sentence//end
 id: 21
-r#  9275  139  68
+r#  9277  140  68
 p: .
 t. 
 |  These notes are often written with a predetermined agenda in mind and
@@ -490,7 +491,7 @@ t.
 
 --- Sentence/end 
 id: 21
-r#  9276  139  69
+r#  9278  140  69
 
 --- Paragraph/end 
 id: 10
@@ -505,16 +506,16 @@ y: N/A
 
 --- Paragraph/start
 id: 11
-r#  9309  144  4
+r#  9311  145  4
 
 
 --- Sentence/start
 id: 22
-r#  9309  144  4
+r#  9311  145  4
 
 --- Sentence//end
 id: 22
-r#  9856  150  59
+r#  9858  151  59
 p: .
 t. 
 |  CPS can claim even more extraordinary powers over a parent's life. Besides supervising visits, CPS has the power to inspect a parent's home
@@ -527,7 +528,7 @@ t.
 
 --- Sentence/end 
 id: 22
-r#  9857  150  60
+r#  9859  151  60
 
 --- Paragraph/end 
 id: 11
@@ -536,16 +537,16 @@ y: N/A
 
 --- Paragraph/start
 id: 12
-r#  9859  152  1
+r#  9861  153  1
 
 
 --- Sentence/start
 id: 23
-r#  9859  152  1
+r#  9861  153  1
 
 --- Sentence//end
 id: 23
-r#  10277  157  71
+r#  10279  158  71
 p: .
 t. 
 |  CPS home inspections may concentrate on mundane details such as
@@ -558,12 +559,12 @@ t.
 
 --- Sentence/switch
 id: 24
-r#  10278  157  72
+r#  10280  158  72
 
 
 --- Sentence//end
 id: 24
-r#  10863  164  72
+r#  10865  165  72
 p: .
 t. 
 |  However CPS goes about creating an unflattering record of a protective mother's life, habits, and character, the targets frequently find that
@@ -577,12 +578,12 @@ t.
 
 --- Sentence/switch
 id: 25
-r#  10864  164  73
+r#  10866  165  73
 
 
 --- Sentence//end
 id: 25
-r#  11036  167  24
+r#  11038  168  24
 p: .
 t. 
 |  Such running records fill in where the facts leave off; consequently, they
@@ -591,7 +592,7 @@ t.
 
 --- Sentence/end 
 id: 25
-r#  11037  167  25
+r#  11039  168  25
 
 --- Paragraph/end 
 id: 12
@@ -606,16 +607,16 @@ y: N/A
 
 --- Paragraph/start
 id: 13
-r#  11089  172  4
+r#  11091  173  4
 
 
 --- Sentence/start
 id: 26
-r#  11089  172  4
+r#  11091  173  4
 
 --- Sentence//end
 id: 26
-r#  11223  173  65
+r#  11225  174  65
 p: .
 t. 
 |  CPS malfunction stems from its very nature. Of particular concern are
@@ -623,7 +624,7 @@ t.
 
 --- Sentence/end 
 id: 26
-r#  11224  173  66
+r#  11226  174  66
 
 --- Paragraph/end 
 id: 13
@@ -632,12 +633,12 @@ y: N/A
 
 --- Paragraph/start
 id: 14
-r#  11226  175  1
+r#  11228  176  1
 
 
 --- Sentence/start
 id: 27
-r#  11226  175  1
+r#  11228  176  1
 --- Paragraph/end 
 id: 14
 y: N/A
@@ -645,12 +646,12 @@ y: N/A
 
 --- Paragraph/start
 id: 15
-r#  12762  195  1
+r#  12765  197  1
 
 
 --- Sentence/start
 id: 28
-r#  12762  195  1
+r#  12765  197  1
 --- Paragraph/end 
 id: 15
 y: N/A
@@ -658,16 +659,16 @@ y: N/A
 
 --- Paragraph/start
 id: 16
-r#  13198  205  1
+r#  13201  207  1
 
 
 --- Sentence/start
 id: 29
-r#  13198  205  1
+r#  13201  207  1
 
 --- Sentence//end
 id: 29
-r#  13400  207  65
+r#  13403  209  65
 p: .
 t. 
 |  These factors - already touched on - contribute to a third problem, which is an attitude among CPS officials that they alone should
@@ -686,7 +687,8 @@ t.
 |  not involving the parent in decisions and not obtaining consent,
 |  agencies presume it is their right to determine what to share with
 |  the parent. Psychiatric examinations of children performed by the
-|  agency employees are not discussed with the parent in advancenor after completion. These reports, however, contain information
+|  agency employees are not discussed with the parent in advance
+|  nor after completion. These reports, however, contain information
 |  regarding her children that she has every right to know.\1Billings also pointed out how CPS misapplies the confidentiality (read:
 |  secrecy) rules:When family members are trying to address the family matters to
 |  which the Child Welfare Administration records on the family pertain, the CWA employees, without legal basis, resist disclosure. In
@@ -698,7 +700,7 @@ t.
 
 --- Sentence/end 
 id: 29
-r#  13401  207  66
+r#  13404  209  66
 
 --- Paragraph/end 
 id: 16
@@ -707,16 +709,16 @@ y: N/A
 
 --- Paragraph/start
 id: 17
-r#  13403  209  1
+r#  13406  211  1
 
 
 --- Sentence/start
 id: 30
-r#  13403  209  1
+r#  13406  211  1
 
 --- Sentence//end
 id: 30
-r#  13758  213  71
+r#  13761  215  71
 p: .
 t. 
 |  Furthermore, Billings identified a problem that is almost unique to
@@ -728,12 +730,12 @@ t.
 
 --- Sentence/switch
 id: 31
-r#  13759  213  72
+r#  13762  215  72
 
 
 --- Sentence//end
 id: 31
-r#  14091  218  46
+r#  14094  220  46
 p: .
 t. 
 |  Similarly, mothers in family court cases have frequently complained to
@@ -744,7 +746,7 @@ t.
 
 --- Sentence/end 
 id: 31
-r#  14092  218  47
+r#  14095  220  47
 
 --- Paragraph/end 
 id: 17
@@ -759,16 +761,16 @@ y: N/A
 
 --- Paragraph/start
 id: 18
-r#  14120  223  4
+r#  14123  225  4
 
 
 --- Sentence/start
 id: 32
-r#  14120  223  4
+r#  14123  225  4
 
 --- Sentence//end
 id: 32
-r#  14898  230  65
+r#  14901  232  65
 p: .
 t. 
 |  CPS's casual assumption of unchecked power has several practical results. One is the ease with which CPS plays judge. That is, CPS agencies
@@ -782,7 +784,7 @@ t.
 
 --- Sentence/end 
 id: 32
-r#  14899  230  66
+r#  14902  232  66
 
 --- Paragraph/end 
 id: 18
@@ -791,16 +793,16 @@ y: N/A
 
 --- Paragraph/start
 id: 19
-r#  14901  232  1
+r#  14904  234  1
 
 
 --- Sentence/start
 id: 33
-r#  14901  232  1
+r#  14904  234  1
 
 --- Sentence//end
 id: 33
-r#  15456  237  69
+r#  15459  239  69
 p: .
 t. 
 |  Visit supervision by CPS calls forth some of the greatest agency creativity in imposing harsh and excessive conditions. We have already
@@ -813,12 +815,12 @@ t.
 
 --- Sentence/switch
 id: 34
-r#  15457  237  70
+r#  15460  239  70
 
 
 --- Sentence//end
 id: 34
-r#  15702  240  34
+r#  15705  242  34
 p: .
 t. 
 |  When a Long Island, New York, mother complained at a court hearing
@@ -827,7 +829,7 @@ t.
 
 --- Sentence/end 
 id: 34
-r#  15703  240  35
+r#  15706  242  35
 
 --- Paragraph/end 
 id: 19
@@ -836,12 +838,12 @@ y: N/A
 
 --- Paragraph/start
 id: 20
-r#  15705  242  1
+r#  15708  244  1
 
 
 --- Sentence/start
 id: 35
-r#  15705  242  1
+r#  15708  244  1
 --- Paragraph/end 
 id: 20
 y: N/A
@@ -849,16 +851,16 @@ y: N/A
 
 --- Paragraph/start
 id: 21
-r#  16772  256  1
+r#  16775  258  1
 
 
 --- Sentence/start
 id: 36
-r#  16772  256  1
+r#  16775  258  1
 
 --- Sentence//end
 id: 36
-r#  17022  258  53
+r#  17026  261  53
 p: .
 t. 
 |  CPS prohibitions can border on the bizarre. One New York protective mother, for example, in a case from the mid-1980s, was barred
@@ -874,12 +876,13 @@ t.
 |  who monitored the visitation room rushed over and angrily told the
 |  grandmother, If you move forward one more inch you'll be arrested,
 |  ma'am!Supervised visitation not only provides a setting for draconian
-|  restric\-tions - it also gives CPS a golden opportunity to manufactureevidence that serves to prejudice the mother in court. Her word
+|  restric\-tions - it also gives CPS a golden opportunity to manufacture
+|  evidence that serves to prejudice the mother in court. Her word
 .  is rarely of much value against caseworkers' reports
 
 --- Sentence/end 
 id: 36
-r#  17023  258  54
+r#  17027  261  54
 
 --- Paragraph/end 
 id: 21
@@ -888,16 +891,16 @@ y: N/A
 
 --- Paragraph/start
 id: 22
-r#  17025  260  1
+r#  17029  263  1
 
 
 --- Sentence/start
 id: 37
-r#  17025  260  1
+r#  17029  263  1
 
 --- Sentence//end
 id: 37
-r#  17517  266  72
+r#  17521  269  72
 p: .
 t. 
 |  For example, in a 2001 New Jersey case, a mother's visits with her
@@ -911,7 +914,7 @@ t.
 
 --- Sentence/switch
 id: 38
-r#  17518  266  73
+r#  17522  269  73
 
 --- Paragraph/end 
 id: 22
@@ -920,12 +923,12 @@ y: N/A
 
 --- Paragraph/start
 id: 23
-r#  18282  279  1
+r#  18286  282  1
 
 
 --- Sentence/start
 id: 39
-r#  18282  279  1
+r#  18286  282  1
 --- Paragraph/end 
 id: 23
 y: N/A
@@ -933,16 +936,16 @@ y: N/A
 
 --- Paragraph/start
 id: 24
-r#  19141  292  1
+r#  19145  295  1
 
 
 --- Sentence/start
 id: 40
-r#  19141  292  1
+r#  19145  295  1
 
 --- Sentence//end
 id: 40
-r#  20135  305  52
+r#  20139  308  52
 p: .
 t. 
 |  One of the boys started to follow his mother and was pulled back by the
@@ -983,7 +986,7 @@ t.
 
 --- Sentence/end 
 id: 40
-r#  20136  305  53
+r#  20140  308  53
 
 --- Paragraph/end 
 id: 24
@@ -992,16 +995,16 @@ y: N/A
 
 --- Paragraph/start
 id: 25
-r#  20138  307  1
+r#  20142  310  1
 
 
 --- Sentence/start
 id: 41
-r#  20138  307  1
+r#  20142  310  1
 
 --- Sentence//end
 id: 41
-r#  20926  317  11
+r#  20930  320  11
 p: .
 t. 
 |  One particularly excruciating aspect of living in the CPS fishbowl is
@@ -1018,7 +1021,7 @@ t.
 
 --- Sentence/end 
 id: 41
-r#  20927  317  12
+r#  20931  320  12
 
 --- Paragraph/end 
 id: 25
@@ -1027,16 +1030,16 @@ y: N/A
 
 --- Paragraph/start
 id: 26
-r#  20929  319  1
+r#  20933  322  1
 
 
 --- Sentence/start
 id: 42
-r#  20929  319  1
+r#  20933  322  1
 
 --- Sentence//end
 id: 42
-r#  21631  326  76
+r#  21635  329  76
 p: .
 t. 
 |  CPS also flexes extralegal muscles during home visits to inspect the
@@ -1051,12 +1054,12 @@ t.
 
 --- Sentence/switch
 id: 43
-r#  21632  326  77
+r#  21636  329  77
 
 
 --- Sentence//end
 id: 43
-r#  21700  327  68
+r#  21704  330  68
 p: .
 t. 
 .  A Brooklyn, New York, mother suffered a different sort of intrusion
@@ -1064,15 +1067,16 @@ t.
 
 --- Sentence/switch
 id: 44
-r#  21701  327  69
+r#  21705  330  69
 
 
 --- Sentence//end
 id: 44
-r#  22297  333  42
+r#  22303  337  42
 p: .
 t. 
-|  Apparently because the mother believed that her daughter had beensexually abused (and was therefore, by definition, a flight threat), a caseworker was assigned to follow the mother whenever she traveled from
+|  Apparently because the mother believed that her daughter had
+|  been sexually abused (and was therefore, by definition, a flight threat), a caseworker was assigned to follow the mother whenever she traveled from
 |  one borough to another. At other times, the same caseworker would
 |  park her black sports car outside the mother's home for hours, sometimes for half a day, while closely observing who was going into and
 |  out of the house.\6 The mother had not been accused of neglect and had
@@ -1082,12 +1086,12 @@ t.
 
 --- Sentence/switch
 id: 45
-r#  22298  333  43
+r#  22304  337  43
 
 
 --- Sentence//end
 id: 45
-r#  22390  335  25
+r#  22396  339  25
 p: .
 t. 
 |  Some mothers get a taste of how CPS can play judge even before
@@ -1095,7 +1099,7 @@ t.
 
 --- Sentence/end 
 id: 45
-r#  22391  335  26
+r#  22397  339  26
 
 --- Paragraph/end 
 id: 26
@@ -1104,16 +1108,16 @@ y: N/A
 
 --- Paragraph/start
 id: 27
-r#  22393  337  1
+r#  22399  341  1
 
 
 --- Sentence/start
 id: 46
-r#  22393  337  1
+r#  22399  341  1
 
 --- Sentence//end
 id: 46
-r#  22675  340  74
+r#  22681  344  74
 p: .
 t. 
 |  For instance, in 2001, a West Virginia mother's three-year-old child
@@ -1124,7 +1128,7 @@ t.
 
 --- Sentence/switch
 id: 47
-r#  22676  340  75
+r#  22682  344  75
 
 --- Paragraph/end 
 id: 27
@@ -1139,16 +1143,16 @@ y: N/A
 
 --- Paragraph/start
 id: 28
-r#  23174  350  4
+r#  23180  354  4
 
 
 --- Sentence/start
 id: 48
-r#  23174  350  4
+r#  23180  354  4
 
 --- Sentence//end
 id: 48
-r#  23527  355  9
+r#  23533  359  9
 p: .
 t. 
 |  Instead, according to the mother, once CPS officials met with the father (and his lawyer) the CPS caseworker assigned to the case solemnly
@@ -1164,7 +1168,7 @@ t.
 
 --- Sentence/end 
 id: 48
-r#  23528  355  10
+r#  23534  359  10
 
 --- Paragraph/end 
 id: 28
@@ -1173,16 +1177,16 @@ y: N/A
 
 --- Paragraph/start
 id: 29
-r#  23530  357  1
+r#  23536  361  1
 
 
 --- Sentence/start
 id: 49
-r#  23530  357  1
+r#  23536  361  1
 
 --- Sentence//end
 id: 49
-r#  23955  361  11
+r#  23961  365  11
 p: .
 t. 
 |  In 1993, Dr. Marta Lundy, then assistant professor of social work at
@@ -1193,7 +1197,7 @@ t.
 
 --- Sentence/end 
 id: 49
-r#  23956  361  12
+r#  23962  365  12
 
 --- Paragraph/end 
 id: 29
@@ -1202,16 +1206,16 @@ y: N/A
 
 --- Paragraph/start
 id: 30
-r#  23958  363  1
+r#  23964  367  1
 
 
 --- Sentence/start
 id: 50
-r#  23958  363  1
+r#  23964  367  1
 
 --- Sentence//end
 id: 50
-r#  24599  372  21
+r#  24605  376  21
 p: .
 t. 
 |  Dr. Lundy had been conducting research under a federal grant into
@@ -1227,7 +1231,7 @@ t.
 
 --- Sentence/end 
 id: 50
-r#  24600  372  22
+r#  24606  376  22
 
 --- Paragraph/end 
 id: 30
@@ -1236,12 +1240,12 @@ y: N/A
 
 --- Paragraph/start
 id: 31
-r#  24602  374  1
+r#  24608  378  1
 
 
 --- Sentence/start
 id: 51
-r#  24602  374  1
+r#  24608  378  1
 --- Paragraph/end 
 id: 31
 y: N/A
@@ -1249,12 +1253,12 @@ y: N/A
 
 --- Paragraph/start
 id: 32
-r#  24832  379  1
+r#  24838  383  1
 
 
 --- Sentence/start
 id: 52
-r#  24832  379  1
+r#  24838  383  1
 --- Paragraph/end 
 id: 32
 y: N/A
@@ -1262,12 +1266,12 @@ y: N/A
 
 --- Paragraph/start
 id: 33
-r#  25547  389  1
+r#  25553  393  1
 
 
 --- Sentence/start
 id: 53
-r#  25547  389  1
+r#  25553  393  1
 --- Paragraph/end 
 id: 33
 y: N/A
@@ -1275,12 +1279,12 @@ y: N/A
 
 --- Paragraph/start
 id: 34
-r#  25820  394  1
+r#  25826  398  1
 
 
 --- Sentence/start
 id: 54
-r#  25820  394  1
+r#  25826  398  1
 --- Paragraph/end 
 id: 34
 y: N/A
@@ -1288,12 +1292,12 @@ y: N/A
 
 --- Paragraph/start
 id: 35
-r#  26484  403  1
+r#  26492  408  1
 
 
 --- Sentence/start
 id: 55
-r#  26484  403  1
+r#  26492  408  1
 --- Paragraph/end 
 id: 35
 y: N/A
@@ -1301,16 +1305,16 @@ y: N/A
 
 --- Paragraph/start
 id: 36
-r#  26865  409  1
+r#  26873  414  1
 
 
 --- Sentence/start
 id: 56
-r#  26865  409  1
+r#  26873  414  1
 
 --- Sentence//end
 id: 56
-r#  26927  409  63
+r#  26935  414  63
 p: .
 t. 
 |  When she appeared before the CPS commissioner, she was sternly
@@ -1329,7 +1333,8 @@ t.
 |  phenomenon that is the subject of this book - that is, the penalization
 |  of mothers, and others, for reporting sexual abuse.\10Less than a year later, after Dr. Lundy and Dr. Massat had seen
 |  several cases in which CPS penalized mothers for making good-faith reports of sexual abuse, Dr. Massat took the extraordinary step of writing
-|  to George Burgasser, then acting chief of the Child Exploitation andObscenity Section of the US Department of Justice, to apprise him of
+|  to George Burgasser, then acting chief of the Child Exploitation and
+|  Obscenity Section of the US Department of Justice, to apprise him of
 |  this disturbing pattern: The findings of a preliminary study funded by
 |  NCCAN showed a consistent pattern of punitive responses [to the
 |  non-offending parent] to the reporting of child maltreatment ...\ a pattern of
@@ -1343,12 +1348,12 @@ t.
 
 --- Sentence/switch
 id: 57
-r#  26928  409  64
+r#  26936  414  64
 
 
 --- Sentence//end
 id: 57
-r#  27387  417  24
+r#  27395  422  24
 p: .
 t. 
 |  In January 1996, the New York Post reported that New York City's
@@ -1362,7 +1367,7 @@ t.
 
 --- Sentence/end 
 id: 57
-r#  27388  417  25
+r#  27396  422  25
 
 --- Paragraph/end 
 id: 36
@@ -1371,12 +1376,12 @@ y: N/A
 
 --- Paragraph/start
 id: 37
-r#  27390  419  1
+r#  27398  424  1
 
 
 --- Sentence/start
 id: 58
-r#  27390  419  1
+r#  27398  424  1
 --- Paragraph/end 
 id: 37
 y: N/A
@@ -1384,16 +1389,16 @@ y: N/A
 
 --- Paragraph/start
 id: 38
-r#  28513  433  1
+r#  28521  438  1
 
 
 --- Sentence/start
 id: 59
-r#  28513  433  1
+r#  28521  438  1
 
 --- Sentence//end
 id: 59
-r#  29267  442  50
+r#  29275  447  50
 p: .
 t. 
 |  That bitter custody battle involved a child who was abruptly removed from her mother's custody and placed in foster care for nearly a
@@ -1421,7 +1426,7 @@ t.
 
 --- Sentence/end 
 id: 59
-r#  29268  442  51
+r#  29276  447  51
 
 --- Paragraph/end 
 id: 38
@@ -1430,12 +1435,12 @@ y: N/A
 
 --- Paragraph/start
 id: 39
-r#  29270  444  1
+r#  29278  449  1
 
 
 --- Sentence/start
 id: 60
-r#  29270  444  1
+r#  29278  449  1
 --- Paragraph/end 
 id: 39
 y: N/A
@@ -1443,16 +1448,16 @@ y: N/A
 
 --- Paragraph/start
 id: 40
-r#  30397  462  1
+r#  30405  467  1
 
 
 --- Sentence/start
 id: 61
-r#  30397  462  1
+r#  30405  467  1
 
 --- Sentence//end
 id: 61
-r#  31091  470  24
+r#  30579  469  41
 p: .
 t. 
 |  A week after Paterson shared his suspicions with the Post, he repeated
@@ -1470,7 +1475,21 @@ t.
 |  effort made to crack open this case once and for all.\14
 |  One final way in which CPS agencies play God in protective mother
 |  cases is by assuming the power to redefine a case's facts and legal
-|  procedure in order to change its outcome.A District of Columbia case illustrates how CPS officials can do this,
+.  procedure in order to change its outcome
+
+
+--- Sentence/switch
+id: 62
+r#  30580  469  42
+
+
+--- Sentence//end
+id: 62
+r#  31102  476  24
+p: .
+t. 
+|   A District of
+|  Columbia case illustrates how CPS officials can do this,
 |  playing judge and God at the same time. The mother in this case lived
 |  in Maryland, where she was litigating a divorce from a man she believed
 |  had sexually abused her two boys, aged four and seven. The Maryland
@@ -1479,8 +1498,8 @@ t.
 .  judge, however, refused
 
 --- Sentence/end 
-id: 61
-r#  31092  470  25
+id: 62
+r#  31103  476  25
 
 --- Paragraph/end 
 id: 40
@@ -1489,16 +1508,16 @@ y: N/A
 
 --- Paragraph/start
 id: 41
-r#  31094  472  1
+r#  31105  478  1
 
 
 --- Sentence/start
-id: 62
-r#  31094  472  1
+id: 63
+r#  31105  478  1
 
 --- Sentence//end
-id: 62
-r#  31486  476  44
+id: 63
+r#  31497  482  44
 p: .
 t. 
 |  But the law guardian was in simultaneous contact with a higher authority: the CPS agency of Washington, DC, where the father lived. Even
@@ -1509,8 +1528,8 @@ t.
 
 
 --- Sentence/switch
-id: 63
-r#  31487  476  45
+id: 64
+r#  31498  482  45
 
 --- Paragraph/end 
 id: 41
@@ -1519,16 +1538,16 @@ y: N/A
 
 --- Paragraph/start
 id: 42
-r#  31788  483  1
+r#  31799  489  1
 
 
 --- Sentence/start
-id: 64
-r#  31788  483  1
+id: 65
+r#  31799  489  1
 
 --- Sentence//end
-id: 64
-r#  32517  497  40
+id: 65
+r#  32528  503  40
 p: .
 t. 
 |  Before the Maryland court had discounted the charges against the
@@ -1548,13 +1567,13 @@ t.
 
 
 --- Sentence/switch
-id: 65
-r#  32520  499  1
+id: 66
+r#  32531  505  1
 
 
 --- Sentence//end
-id: 65
-r#  32869  504  32
+id: 66
+r#  32880  510  32
 p: .
 t. 
 |   The caseworker claimed that an evaluator appointed by the
@@ -1566,8 +1585,8 @@ t.
 
 
 --- Sentence/switch
-id: 66
-r#  32870  504  33
+id: 67
+r#  32881  510  33
 
 --- Paragraph/end 
 id: 42
@@ -1576,16 +1595,16 @@ y: N/A
 
 --- Paragraph/start
 id: 43
-r#  32874  507  1
+r#  32885  513  1
 
 
 --- Sentence/start
-id: 67
-r#  32874  507  1
+id: 68
+r#  32885  513  1
 
 --- Sentence//end
-id: 67
-r#  33443  514  4
+id: 68
+r#  33454  520  4
 p: .
 t. 
 |  On the very day the Maryland court signed an order refusing to find
@@ -1598,8 +1617,8 @@ t.
 .  him
 
 --- Sentence/end 
-id: 67
-r#  33444  514  5
+id: 68
+r#  33455  520  5
 
 --- Paragraph/end 
 id: 43
@@ -1608,16 +1627,16 @@ y: N/A
 
 --- Paragraph/start
 id: 44
-r#  33446  516  1
+r#  33457  522  1
 
 
 --- Sentence/start
-id: 68
-r#  33446  516  1
+id: 69
+r#  33457  522  1
 
 --- Sentence//end
-id: 68
-r#  34528  529  7
+id: 69
+r#  34539  535  7
 p: .
 t. 
 |  The allegations against the father did not lack evidentiary support. A
@@ -1636,8 +1655,8 @@ t.
 .  record
 
 --- Sentence/end 
-id: 68
-r#  34529  529  8
+id: 69
+r#  34540  535  8
 
 --- Paragraph/end 
 id: 44
@@ -1646,16 +1665,16 @@ y: N/A
 
 --- Paragraph/start
 id: 45
-r#  34531  531  1
+r#  34542  537  1
 
 
 --- Sentence/start
-id: 69
-r#  34531  531  1
+id: 70
+r#  34542  537  1
 
 --- Sentence//end
-id: 69
-r#  35492  543  33
+id: 70
+r#  35506  551  33
 p: .
 t. 
 |  As the months wore on, and the mother struggled in vain to have her
@@ -1664,7 +1683,9 @@ t.
 |  bizarre. Eventually a DC police detective assigned to the case claimed
 |  in a sworn deposition that the mother posed a threat to the children
 |  because the thought crossed my mind that the mother would enter
-|  into a murder suicide pack [sic] ...\ with her and the children if shelost custody to the father. As for how the detective came to believe this
+|  into a murder suicide pack [sic] ...\ with her and the
+|  children if she lost custody to the father. As for
+|  how the detective came to believe this
 |  danger existed, she admitted she had not consulted a psychiatrist but
 |  said, You know, you hear about it in the news all the time.\19 Perhaps
 |  she believed herself capable of reading the mother's mind - which is less
@@ -1673,8 +1694,8 @@ t.
 .  to achieve the results it wanted
 
 --- Sentence/end 
-id: 69
-r#  35493  543  34
+id: 70
+r#  35507  551  34
 
 --- Paragraph/end 
 id: 45
@@ -1689,16 +1710,16 @@ y: N/A
 
 --- Paragraph/start
 id: 46
-r#  35525  548  4
+r#  35539  556  4
 
 
 --- Sentence/start
-id: 70
-r#  35525  548  4
+id: 71
+r#  35539  556  4
 
 --- Sentence//end
-id: 70
-r#  35990  553  35
+id: 71
+r#  36004  561  35
 p: .
 t. 
 |  We have seen (in Chapter 5) that law guardians can produce records
@@ -1709,8 +1730,8 @@ t.
 .  environment isolated from scrutiny
 
 --- Sentence/end 
-id: 70
-r#  35991  553  36
+id: 71
+r#  36005  561  36
 
 --- Paragraph/end 
 id: 46
@@ -1719,16 +1740,16 @@ y: N/A
 
 --- Paragraph/start
 id: 47
-r#  35993  555  1
+r#  36007  563  1
 
 
 --- Sentence/start
-id: 71
-r#  35993  555  1
+id: 72
+r#  36007  563  1
 
 --- Sentence//end
-id: 71
-r#  36716  562  68
+id: 72
+r#  36730  570  68
 p: .
 t. 
 |  Suppose a CPS agency files a petition against a mother that contains
@@ -1742,13 +1763,13 @@ t.
 
 
 --- Sentence/switch
-id: 72
-r#  36717  562  69
+id: 73
+r#  36731  570  69
 
 
 --- Sentence//end
-id: 72
-r#  36893  565  24
+id: 73
+r#  36907  573  24
 p: .
 t. 
 |  This, in turn, gives the judge a rationale for removing the children from
@@ -1756,8 +1777,8 @@ t.
 .  was completely baseless
 
 --- Sentence/end 
-id: 72
-r#  36894  565  25
+id: 73
+r#  36908  573  25
 
 --- Paragraph/end 
 id: 47
@@ -1766,16 +1787,16 @@ y: N/A
 
 --- Paragraph/start
 id: 48
-r#  36896  567  1
+r#  36910  575  1
 
 
 --- Sentence/start
-id: 73
-r#  36896  567  1
+id: 74
+r#  36910  575  1
 
 --- Sentence//end
-id: 73
-r#  37811  575  52
+id: 74
+r#  37825  583  52
 p: .
 t. 
 |  False records can become true in another way as well. Certain actions, such as child custody, can become self-justifying over time. That
@@ -1790,13 +1811,13 @@ t.
 
 
 --- Sentence/switch
-id: 74
-r#  37812  575  53
+id: 75
+r#  37826  583  53
 
 
 --- Sentence//end
-id: 74
-r#  38309  581  72
+id: 75
+r#  38323  589  72
 p: .
 t. 
 |  To make matters worse, there is really nothing to stop caseworkers
@@ -1807,8 +1828,8 @@ t.
 .  possible reforms in the law - in greater detail in Part III, Chapter 11
 
 --- Sentence/end 
-id: 74
-r#  38310  581  73
+id: 75
+r#  38324  589  73
 
 --- Paragraph/end 
 id: 48
@@ -1823,16 +1844,16 @@ y: N/A
 
 --- Paragraph/start
 id: 49
-r#  38351  586  4
+r#  38365  594  4
 
 
 --- Sentence/start
-id: 75
-r#  38351  586  4
+id: 76
+r#  38365  594  4
 
 --- Sentence//end
-id: 75
-r#  38583  589  24
+id: 76
+r#  38597  597  24
 p: .
 t. 
 |  We have already seen that the formal complaints, or petitions, by which
@@ -1841,8 +1862,8 @@ t.
 .  phenomenon more closely
 
 --- Sentence/end 
-id: 75
-r#  38584  589  25
+id: 76
+r#  38598  597  25
 
 --- Paragraph/end 
 id: 49
@@ -1851,16 +1872,16 @@ y: N/A
 
 --- Paragraph/start
 id: 50
-r#  38586  591  1
+r#  38600  599  1
 
 
 --- Sentence/start
-id: 76
-r#  38586  591  1
+id: 77
+r#  38600  599  1
 
 --- Sentence//end
-id: 76
-r#  41433  623  13
+id: 77
+r#  41448  632  13
 p: .
 t. 
 |  The laws governing family courts throughout the country, although
@@ -1870,7 +1891,8 @@ t.
 |  of his parent or other person legally responsible for his care to exercise
 |  a minimum degree of care.\20 In Colorado, a parent is guilty of neglect
 |  if they have abandoned the child or has subjected him or her to mistreatment or abuse or ...\ has suffered or allowed another to mistreat or
-|  abuse the child without taking lawful means to stop such mistreatmentor abuse and prevent it from recurring.\21 Similarly, California law defines child neglect as the negligent treatment or the maltreatment of a
+|  abuse the child without taking lawful means to stop such mistreatment
+|  or abuse and prevent it from recurring.\21 Similarly, California law defines child neglect as the negligent treatment or the maltreatment of a
 |  child by a person responsible for the child's welfare under circumstances
 |  indicating harm or threatened harm to the child's health or welfare.\22
 |  It is noteworthy that none of these definitions includes the making
@@ -1898,8 +1920,8 @@ t.
 .  fifty states
 
 --- Sentence/end 
-id: 76
-r#  41434  623  14
+id: 77
+r#  41449  632  14
 
 --- Paragraph/end 
 id: 50
@@ -1908,16 +1930,16 @@ y: N/A
 
 --- Paragraph/start
 id: 51
-r#  41436  625  1
+r#  41451  634  1
 
 
 --- Sentence/start
-id: 77
-r#  41436  625  1
+id: 78
+r#  41451  634  1
 
 --- Sentence//end
-id: 77
-r#  41990  632  41
+id: 78
+r#  42005  641  41
 p: .
 t. 
 |  In practice, however, CPS applies extremely elastic definitions to
@@ -1930,8 +1952,8 @@ t.
 .  obtaining permission from a family court
 
 --- Sentence/end 
-id: 77
-r#  41991  632  42
+id: 78
+r#  42006  641  42
 
 --- Paragraph/end 
 id: 51
@@ -1940,16 +1962,16 @@ y: N/A
 
 --- Paragraph/start
 id: 52
-r#  41993  634  1
+r#  42008  643  1
 
 
 --- Sentence/start
-id: 78
-r#  41993  634  1
+id: 79
+r#  42008  643  1
 
 --- Sentence//end
-id: 78
-r#  42255  637  44
+id: 79
+r#  42270  646  44
 p: .
 t. 
 |  It is evident that none of these claims fits the statutory definitions of
@@ -1958,8 +1980,8 @@ t.
 .  of young children from their mothers' homes
 
 --- Sentence/end 
-id: 78
-r#  42256  637  45
+id: 79
+r#  42271  646  45
 
 --- Paragraph/end 
 id: 52
@@ -1968,16 +1990,16 @@ y: N/A
 
 --- Paragraph/start
 id: 53
-r#  42258  639  1
+r#  42273  648  1
 
 
 --- Sentence/start
-id: 79
-r#  42258  639  1
+id: 80
+r#  42273  648  1
 
 --- Sentence//end
-id: 79
-r#  43270  652  16
+id: 80
+r#  43285  661  16
 p: .
 t. 
 |  In fact, in some cases we have examined, CPS's accusations were apparently not even believed by CPS. For example, a Brooklyn, New York,
@@ -1996,8 +2018,8 @@ t.
 .  detail later on
 
 --- Sentence/end 
-id: 79
-r#  43271  652  17
+id: 80
+r#  43286  661  17
 
 --- Paragraph/end 
 id: 53
@@ -2006,55 +2028,16 @@ y: N/A
 
 --- Paragraph/start
 id: 54
-r#  43273  654  1
-
-
---- Sentence/start
-id: 80
-r#  43273  654  1
---- Paragraph/end 
-id: 54
-y: N/A
-
-
---- Paragraph/start
-id: 55
-r#  44376  670  1
+r#  43288  663  1
 
 
 --- Sentence/start
 id: 81
-r#  44376  670  1
---- Paragraph/end 
-id: 55
-y: N/A
-
-
---- Paragraph/start
-id: 56
-r#  44916  677  1
-
-
---- Sentence/start
-id: 82
-r#  44916  677  1
---- Paragraph/end 
-id: 56
-y: N/A
-
-
---- Paragraph/start
-id: 57
-r#  45143  681  1
-
-
---- Sentence/start
-id: 83
-r#  45143  681  1
+r#  43288  663  1
 
 --- Sentence//end
-id: 83
-r#  45487  684  67
+id: 81
+r#  44041  672  57
 p: .
 t. 
 |  Of course, CPS agencies would not generate spurious petitions if
@@ -2066,7 +2049,76 @@ t.
 |  press CPS to file a neglect petition on the flimsiest of grounds.\27
 |  What follows are a few case histories involving spurious petitions for
 |  neglect and the ensuing orders removing a child or children from the
-|  mother's custody. They are typical of many similar cases.The False Reporting Mother
+.  mother's custody. They are typical of many similar cases
+
+--- Sentence/end 
+id: 81
+r#  44042  672  58
+
+--- Paragraph/end 
+id: 54
+y: N/A
+
+
+--- Section/start
+-l  2
+-i  9
+-t  The ``False Reporting'' Mother
+
+
+--- Paragraph/start
+id: 55
+r#  44085  678  1
+
+
+--- Sentence/start
+id: 82
+r#  44085  678  1
+--- Paragraph/end 
+id: 55
+y: N/A
+
+
+--- Paragraph/start
+id: 56
+r#  44403  684  1
+
+
+--- Sentence/start
+id: 83
+r#  44403  684  1
+--- Paragraph/end 
+id: 56
+y: N/A
+
+
+--- Paragraph/start
+id: 57
+r#  44943  691  1
+
+
+--- Sentence/start
+id: 84
+r#  44943  691  1
+--- Paragraph/end 
+id: 57
+y: N/A
+
+
+--- Paragraph/start
+id: 58
+r#  45170  695  1
+
+
+--- Sentence/start
+id: 85
+r#  45170  695  1
+
+--- Sentence//end
+id: 85
+r#  45514  698  67
+p: .
+t. 
 |  In 1993, a young British-born Brooklyn, New York, Orthodox Jewish
 |  mother fled to a kosher battered women's shelter with her three-year-old
 |  son. She told workers there that her husband had been abusing her and
@@ -2085,13 +2137,13 @@ t.
 
 
 --- Sentence/switch
-id: 84
-r#  45488  684  68
+id: 86
+r#  45515  698  68
 
 
 --- Sentence//end
-id: 84
-r#  46189  693  62
+id: 86
+r#  46216  707  62
 p: .
 t. 
 |  Then, in May 1996, the case took a new turn when the mother brought
@@ -2106,13 +2158,13 @@ t.
 
 
 --- Sentence/switch
-id: 85
-r#  46190  693  63
+id: 87
+r#  46217  707  63
 
 
 --- Sentence//end
-id: 85
-r#  46503  698  42
+id: 87
+r#  46530  712  42
 p: .
 t. 
 |  CPS was more than happy to oblige. The next day, its officials filed
@@ -2122,34 +2174,8 @@ t.
 .  merry-go-round was off to a typical start
 
 --- Sentence/end 
-id: 85
-r#  46504  698  43
-
---- Paragraph/end 
-id: 57
-y: N/A
-
-
---- Paragraph/start
-id: 58
-r#  46506  700  1
-
-
---- Sentence/start
-id: 86
-r#  46506  700  1
-
---- Sentence//end
-id: 86
-r#  46647  700  142
-p: .
-t. 
-.  No one who has read this far will be surprised to learn that the allegations used to obtain this emergency removal were wildly inaccurate
-
-
---- Sentence/switch
 id: 87
-r#  46648  700  143
+r#  46531  712  43
 
 --- Paragraph/end 
 id: 58
@@ -2158,12 +2184,25 @@ y: N/A
 
 --- Paragraph/start
 id: 59
-r#  47052  710  1
+r#  46533  714  1
 
 
 --- Sentence/start
 id: 88
-r#  47052  710  1
+r#  46533  714  1
+
+--- Sentence//end
+id: 88
+r#  46674  714  142
+p: .
+t. 
+.  No one who has read this far will be surprised to learn that the allegations used to obtain this emergency removal were wildly inaccurate
+
+
+--- Sentence/switch
+id: 89
+r#  46675  714  143
+
 --- Paragraph/end 
 id: 59
 y: N/A
@@ -2171,12 +2210,12 @@ y: N/A
 
 --- Paragraph/start
 id: 60
-r#  47234  714  1
+r#  47079  724  1
 
 
 --- Sentence/start
-id: 89
-r#  47234  714  1
+id: 90
+r#  47079  724  1
 --- Paragraph/end 
 id: 60
 y: N/A
@@ -2184,16 +2223,29 @@ y: N/A
 
 --- Paragraph/start
 id: 61
-r#  47400  718  1
+r#  47261  728  1
 
 
 --- Sentence/start
-id: 90
-r#  47400  718  1
+id: 91
+r#  47261  728  1
+--- Paragraph/end 
+id: 61
+y: N/A
+
+
+--- Paragraph/start
+id: 62
+r#  47427  732  1
+
+
+--- Sentence/start
+id: 92
+r#  47427  732  1
 
 --- Sentence//end
-id: 90
-r#  47694  721  11
+id: 92
+r#  47721  735  11
 p: .
 t. 
 |  For example, CPS's petition against the mother stated:Since approximately March 1996, the respondent mother has made
@@ -2210,22 +2262,9 @@ t.
 .  inaccuracy
 
 --- Sentence/end 
-id: 90
-r#  47695  721  12
+id: 92
+r#  47722  735  12
 
---- Paragraph/end 
-id: 61
-y: N/A
-
-
---- Paragraph/start
-id: 62
-r#  47697  723  1
-
-
---- Sentence/start
-id: 91
-r#  47697  723  1
 --- Paragraph/end 
 id: 62
 y: N/A
@@ -2233,16 +2272,16 @@ y: N/A
 
 --- Paragraph/start
 id: 63
-r#  49167  745  1
+r#  47724  737  1
 
 
 --- Sentence/start
-id: 92
-r#  49167  745  1
+id: 93
+r#  47724  737  1
 
 --- Sentence//end
-id: 92
-r#  49874  753  7
+id: 93
+r#  48316  745  19
 p: .
 t. 
 |  Paradoxically, having charged the mother with making false reports,
@@ -2253,7 +2292,33 @@ t.
 |  had falsely reported abuse, but the abuse had occurred.) This charge was
 |  intended only to justify the child's removal into foster care, however;
 |  once the boy was away from his mother, CPS forgot all about the charges
-|  against the father.As is usual in family courts, the falsity of the charges against the
+.  against the father
+
+
+--- Sentence/switch
+id: 94
+r#  48317  745  20
+
+--- Paragraph/end 
+id: 63
+y: N/A
+
+
+--- Paragraph/start
+id: 64
+r#  49196  759  1
+
+
+--- Sentence/start
+id: 95
+r#  49196  759  1
+
+--- Sentence//end
+id: 95
+r#  49903  767  7
+p: .
+t. 
+|   As is usual in family courts, the falsity of the charges against the
 |  mother did not attract undue attention. The law guardian sided with
 |  CPS, telling a reporter that removal had been necessary because the
 |  mother was making a series of accusations that ...\ were unfounded.
@@ -2276,35 +2341,8 @@ t.
 .  longer
 
 --- Sentence/end 
-id: 92
-r#  49875  753  8
-
---- Paragraph/end 
-id: 63
-y: N/A
-
-
---- Paragraph/start
-id: 64
-r#  49877  755  1
-
-
---- Sentence/start
-id: 93
-r#  49877  755  1
-
---- Sentence//end
-id: 93
-r#  50140  757  11
-p: .
-t. 
-|  During this time, the mother was subject to unannounced home visits by CPS at any time, and required to attend therapy
-|  sessions - always with counselors who worked for CPS or were recommended by the agency. She also had to report regularly to a CPS
-.  caseworker
-
---- Sentence/end 
-id: 93
-r#  50141  757  12
+id: 95
+r#  49904  767  8
 
 --- Paragraph/end 
 id: 64
@@ -2313,16 +2351,43 @@ y: N/A
 
 --- Paragraph/start
 id: 65
-r#  50143  759  1
+r#  49906  769  1
 
 
 --- Sentence/start
-id: 94
-r#  50143  759  1
+id: 96
+r#  49906  769  1
 
 --- Sentence//end
-id: 94
-r#  50850  766  60
+id: 96
+r#  50169  771  11
+p: .
+t. 
+|  During this time, the mother was subject to unannounced home visits by CPS at any time, and required to attend therapy
+|  sessions - always with counselors who worked for CPS or were recommended by the agency. She also had to report regularly to a CPS
+.  caseworker
+
+--- Sentence/end 
+id: 96
+r#  50170  771  12
+
+--- Paragraph/end 
+id: 65
+y: N/A
+
+
+--- Paragraph/start
+id: 66
+r#  50172  773  1
+
+
+--- Sentence/start
+id: 97
+r#  50172  773  1
+
+--- Sentence//end
+id: 97
+r#  50879  780  60
 p: .
 t. 
 |  When CPS originally removed this mother's son from her home, the
@@ -2336,13 +2401,13 @@ t.
 
 
 --- Sentence/switch
-id: 95
-r#  50851  766  61
+id: 98
+r#  50880  780  61
 
 
 --- Sentence//end
-id: 95
-r#  51751  776  51
+id: 98
+r#  51780  790  51
 p: .
 t. 
 |  CPS's constant interviews, therapy sessions, and unannounced visits gave the caseworkers ample opportunity to observe the mother's
@@ -2358,13 +2423,13 @@ t.
 
 
 --- Sentence/switch
-id: 96
-r#  51752  776  52
+id: 99
+r#  51781  790  52
 
 
 --- Sentence//end
-id: 96
-r#  52169  782  67
+id: 99
+r#  52198  796  67
 p: ?
 t. 
 |  This sounds almost comical, but it was not funny to the mother: she
@@ -2376,26 +2441,26 @@ t.
 
 
 --- Sentence/switch
-id: 97
-r#  52170  782  68
+id: 100
+r#  52199  796  68
 
 
 --- Sentence//end
-id: 97
-r#  52240  783  70
+id: 100
+r#  52269  797  70
 p: .
 t. 
 .  Needless to say, the mother's anxiety did not improve her performance
 
 
 --- Sentence/switch
-id: 98
-r#  52241  783  71
+id: 101
+r#  52270  797  71
 
 
 --- Sentence//end
-id: 98
-r#  52728  789  66
+id: 101
+r#  52757  803  66
 p: .
 t. 
 |  Meanwhile, CPS caseworkers were not content with criticizing every
@@ -2407,18 +2472,19 @@ t.
 
 
 --- Sentence/switch
-id: 99
-r#  52729  789  67
+id: 102
+r#  52758  803  67
 
 
 --- Sentence//end
-id: 99
-r#  53857  803  6
+id: 102
+r#  53888  818  6
 p: .
 t. 
 |  CPS pressure did not stop there, however. Eventually the caseworkers
 |  persuaded this Orthodox mother to relinquish her parental rights altogether (and to have her child placed for adoption) lest she face a long,
-|  difficult court battle trying to prove her parental fitness.We have dwelt on the details of this case, which bear repeating - if
+|  difficult court battle trying to prove her parental fitness. We
+|  have dwelt on the details of this case, which bear repeating - if
 |  only in summary - because they show how CPS intervention, through
 |  the family court process, can effectively reshape reality. The case began
 |  with some unverified and inaccurate entries in a CPS file; it passed into
@@ -2432,41 +2498,28 @@ t.
 .  chose
 
 --- Sentence/end 
-id: 99
-r#  53858  803  7
+id: 102
+r#  53889  818  7
 
 --- Paragraph/end 
-id: 65
+id: 66
 y: N/A
 
 
 --- Section/start
--l  3
--i  1
+-l  2
+-i  10
 -t  The Mother with No ``Energy and Time Left for Parenting''
 
 
 --- Paragraph/start
-id: 66
-r#  53930  807  4
-
-
---- Sentence/start
-id: 100
-r#  53930  807  4
---- Paragraph/end 
-id: 66
-y: N/A
-
-
---- Paragraph/start
 id: 67
-r#  54250  813  1
+r#  53960  822  4
 
 
 --- Sentence/start
-id: 101
-r#  54250  813  1
+id: 103
+r#  53960  822  4
 --- Paragraph/end 
 id: 67
 y: N/A
@@ -2474,16 +2527,29 @@ y: N/A
 
 --- Paragraph/start
 id: 68
-r#  54469  817  1
+r#  54280  828  1
 
 
 --- Sentence/start
-id: 102
-r#  54469  817  1
+id: 104
+r#  54280  828  1
+--- Paragraph/end 
+id: 68
+y: N/A
+
+
+--- Paragraph/start
+id: 69
+r#  54499  832  1
+
+
+--- Sentence/start
+id: 105
+r#  54499  832  1
 
 --- Sentence//end
-id: 102
-r#  55288  826  20
+id: 105
+r#  55318  841  20
 p: .
 t. 
 |  In 1989, a New Mexico mother whose ex-boyfriend may have sexually
@@ -2504,39 +2570,39 @@ t.
 .  between the parents
 
 --- Sentence/end 
-id: 102
-r#  55289  826  21
+id: 105
+r#  55319  841  21
 
 --- Paragraph/end 
-id: 68
+id: 69
 y: N/A
 
 
 --- Paragraph/start
-id: 69
-r#  55291  828  1
+id: 70
+r#  55321  843  1
 
 
 --- Sentence/start
-id: 103
-r#  55291  828  1
+id: 106
+r#  55321  843  1
 
 --- Sentence//end
-id: 103
-r#  55361  828  71
+id: 106
+r#  55391  843  71
 p: .
 t. 
 .  The mother told us that the father would erupt whenever he saw her
 
 
 --- Sentence/switch
-id: 104
-r#  55362  828  72
+id: 107
+r#  55392  843  72
 
 
 --- Sentence//end
-id: 104
-r#  55682  833  33
+id: 107
+r#  55712  848  33
 p: .
 t. 
 |  An affidavit submitted by the child's attorney confirms that the parents
@@ -2546,26 +2612,26 @@ t.
 .  and jailed for contempt of court
 
 --- Sentence/end 
-id: 104
-r#  55683  833  34
+id: 107
+r#  55713  848  34
 
 --- Paragraph/end 
-id: 69
+id: 70
 y: N/A
 
 
 --- Paragraph/start
-id: 70
-r#  55685  835  1
+id: 71
+r#  55715  850  1
 
 
 --- Sentence/start
-id: 105
-r#  55685  835  1
+id: 108
+r#  55715  850  1
 
 --- Sentence//end
-id: 105
-r#  56199  840  18
+id: 108
+r#  56229  855  18
 p: .
 t. 
 |  Not long afterward, the clinic decided that supervising these visits
@@ -2576,26 +2642,26 @@ t.
 .  her mother's home
 
 --- Sentence/end 
-id: 105
-r#  56200  840  19
+id: 108
+r#  56230  855  19
 
 --- Paragraph/end 
-id: 70
+id: 71
 y: N/A
 
 
 --- Paragraph/start
-id: 71
-r#  56202  842  1
+id: 72
+r#  56232  857  1
 
 
 --- Sentence/start
-id: 106
-r#  56202  842  1
+id: 109
+r#  56232  857  1
 
 --- Sentence//end
-id: 106
-r#  56967  852  65
+id: 109
+r#  56997  867  65
 p: .
 t. 
 |  In other words, CPS justified the removal of a four-year-old child
@@ -2612,13 +2678,13 @@ t.
 
 
 --- Sentence/switch
-id: 107
-r#  56968  852  66
+id: 110
+r#  56998  867  66
 
 
 --- Sentence//end
-id: 107
-r#  57796  864  23
+id: 110
+r#  57827  879  23
 p: .
 t. 
 |  But that is what CPS did. Having achieved its goal of removing the
@@ -2627,7 +2693,7 @@ t.
 |  one was evidently only a means to get the child into foster care. Instead,
 |  according to the mother, CPS urged that the child be placed with the
 |  father, who gained sole custody of the girl after a three-month interval
-|  of foster care.Ironically, the charge of excessive litigation
+|  of foster care. Ironically, the charge of excessive litigation
 |  then became a self-fulfilling prophecy, as the mother waged a two-year political campaign
 |  to regain her daughter, reaching out to support groups, news media, and
 |  politicians. CPS saw all this merely as proof of the mother's unfitness,
@@ -2635,26 +2701,26 @@ t.
 .  her child be suspended
 
 --- Sentence/end 
-id: 107
-r#  57797  864  24
+id: 110
+r#  57828  879  24
 
 --- Paragraph/end 
-id: 71
+id: 72
 y: N/A
 
 
 --- Paragraph/start
-id: 72
-r#  57799  866  1
+id: 73
+r#  57830  881  1
 
 
 --- Sentence/start
-id: 108
-r#  57799  866  1
+id: 111
+r#  57830  881  1
 
 --- Sentence//end
-id: 108
-r#  58163  870  71
+id: 111
+r#  58194  885  71
 p: .
 t. 
 |  Having lost her daughter entirely to CPS, the mother finally, painfully,
@@ -2664,32 +2730,32 @@ t.
 .  worrying that CPS would take the new one away just as it had the first
 
 --- Sentence/end 
-id: 108
-r#  58164  870  72
+id: 111
+r#  58195  885  72
 
 --- Paragraph/end 
-id: 72
+id: 73
 y: N/A
 
 
 --- Section/start
--l  3
--i  2
+-l  2
+-i  11
 -t  The ``Brainwashing ⁄ Coaching'' Mother
 
 
 --- Paragraph/start
-id: 73
-r#  58218  875  4
+id: 74
+r#  58248  890  4
 
 
 --- Sentence/start
-id: 109
-r#  58218  875  4
+id: 112
+r#  58248  890  4
 
 --- Sentence//end
-id: 109
-r#  58843  882  44
+id: 112
+r#  58873  897  44
 p: .
 t. 
 |  In 1986, a California case began hopefully for a protective mother when
@@ -2702,22 +2768,9 @@ t.
 .  visitation should continue to be supervised
 
 --- Sentence/end 
-id: 109
-r#  58844  882  45
+id: 112
+r#  58874  897  45
 
---- Paragraph/end 
-id: 73
-y: N/A
-
-
---- Paragraph/start
-id: 74
-r#  58846  884  1
-
-
---- Sentence/start
-id: 110
-r#  58846  884  1
 --- Paragraph/end 
 id: 74
 y: N/A
@@ -2725,16 +2778,29 @@ y: N/A
 
 --- Paragraph/start
 id: 75
-r#  59171  889  1
+r#  58876  899  1
 
 
 --- Sentence/start
-id: 111
-r#  59171  889  1
+id: 113
+r#  58876  899  1
+--- Paragraph/end 
+id: 75
+y: N/A
+
+
+--- Paragraph/start
+id: 76
+r#  59201  904  1
+
+
+--- Sentence/start
+id: 114
+r#  59201  904  1
 
 --- Sentence//end
-id: 111
-r#  59400  891  25
+id: 114
+r#  59430  906  25
 p: .
 t. 
 |  But before the next court date, according to the mother's later testimony (submitted in writing to a congressional committee), the father
@@ -2745,26 +2811,26 @@ t.
 .  supporting documentation
 
 --- Sentence/end 
-id: 111
-r#  59401  891  26
+id: 114
+r#  59431  906  26
 
 --- Paragraph/end 
-id: 75
+id: 76
 y: N/A
 
 
 --- Paragraph/start
-id: 76
-r#  59403  893  1
+id: 77
+r#  59433  908  1
 
 
 --- Sentence/start
-id: 112
-r#  59403  893  1
+id: 115
+r#  59433  908  1
 
 --- Sentence//end
-id: 112
-r#  60189  901  15
+id: 115
+r#  60219  916  15
 p: .
 t. 
 |  In August 1987, CPS, citing the recommendations of the
@@ -2778,36 +2844,8 @@ t.
 .  several months
 
 --- Sentence/end 
-id: 112
-r#  60190  901  16
-
---- Paragraph/end 
-id: 76
-y: N/A
-
-
---- Paragraph/start
-id: 77
-r#  60192  903  1
-
-
---- Sentence/start
-id: 113
-r#  60192  903  1
-
---- Sentence//end
-id: 113
-r#  60392  905  59
-p: .
-t. 
-|  Thus, in classic family court fashion, the mother was judged more by
-|  her running record - the party line on her case, shared by auxiliary
-.  agents in collaboration with the judge - than by the facts
-
-
---- Sentence/switch
-id: 114
-r#  60393  905  60
+id: 115
+r#  60220  916  16
 
 --- Paragraph/end 
 id: 77
@@ -2816,16 +2854,44 @@ y: N/A
 
 --- Paragraph/start
 id: 78
-r#  60777  912  1
+r#  60222  918  1
 
 
 --- Sentence/start
-id: 115
-r#  60777  912  1
+id: 116
+r#  60222  918  1
 
 --- Sentence//end
-id: 115
-r#  61221  917  15
+id: 116
+r#  60422  920  59
+p: .
+t. 
+|  Thus, in classic family court fashion, the mother was judged more by
+|  her running record - the party line on her case, shared by auxiliary
+.  agents in collaboration with the judge - than by the facts
+
+
+--- Sentence/switch
+id: 117
+r#  60423  920  60
+
+--- Paragraph/end 
+id: 78
+y: N/A
+
+
+--- Paragraph/start
+id: 79
+r#  60807  927  1
+
+
+--- Sentence/start
+id: 118
+r#  60807  927  1
+
+--- Sentence//end
+id: 118
+r#  61251  932  15
 p: .
 t. 
 |  In this hostile environment, battling CPS and an expert who did
@@ -2840,22 +2906,9 @@ t.
 .  ignored by CPS
 
 --- Sentence/end 
-id: 115
-r#  61222  917  16
+id: 118
+r#  61252  932  16
 
---- Paragraph/end 
-id: 78
-y: N/A
-
-
---- Paragraph/start
-id: 79
-r#  61224  919  1
-
-
---- Sentence/start
-id: 116
-r#  61224  919  1
 --- Paragraph/end 
 id: 79
 y: N/A
@@ -2863,16 +2916,29 @@ y: N/A
 
 --- Paragraph/start
 id: 80
-r#  62300  933  1
+r#  61254  934  1
 
 
 --- Sentence/start
-id: 117
-r#  62300  933  1
+id: 119
+r#  61254  934  1
+--- Paragraph/end 
+id: 80
+y: N/A
+
+
+--- Paragraph/start
+id: 81
+r#  62332  949  1
+
+
+--- Sentence/start
+id: 120
+r#  62332  949  1
 
 --- Sentence//end
-id: 117
-r#  62478  934  43
+id: 120
+r#  62510  950  43
 p: .
 t. 
 |  Finally, in February 1988, the child complained again of molestation
@@ -2882,7 +2948,8 @@ t.
 |  (since the child was legally in the custody of CPS). Freed from CPS's
 |  restrictions concerning which doctors the mother could consult, the
 |  mother arranged for the child to be brought to a pediatric gynecologist
-|  in Oregon for testing. A colposcopic examination of the child's genitalia revealed a dramatic fact: the girl had a sexually transmitted disease.In her report, the examining physician noted, After what appeared to
+|  in Oregon for testing. A colposcopic examination of the child's genitalia revealed a dramatic fact: the girl had a sexually transmitted disease. In
+|  her report, the examining physician noted, After what appeared to
 |  be condyloma lesions ...\ on the perineum, a biopsy was taken in the
 |  right lower perineal area [showing] definite condyloma infection. She
 |  summed up: At this point, the conclusion has to be noted that the patient probably has contracted a known sexually transmitted infection,
@@ -2892,13 +2959,13 @@ t.
 
 
 --- Sentence/switch
-id: 118
-r#  62479  934  44
+id: 121
+r#  62511  950  44
 
 
 --- Sentence//end
-id: 118
-r#  62786  939  29
+id: 121
+r#  62818  955  29
 p: ?
 t. 
 |  The mother later told one of us that when she received this medical
@@ -2908,26 +2975,26 @@ t.
 .  blame her for believing that
 
 --- Sentence/end 
-id: 118
-r#  62787  939  30
+id: 121
+r#  62819  955  30
 
 --- Paragraph/end 
-id: 80
+id: 81
 y: N/A
 
 
 --- Paragraph/start
-id: 81
-r#  62789  941  1
+id: 82
+r#  62821  957  1
 
 
 --- Sentence/start
-id: 119
-r#  62789  941  1
+id: 122
+r#  62821  957  1
 
 --- Sentence//end
-id: 119
-r#  63326  947  55
+id: 122
+r#  63358  963  55
 p: .
 t. 
 |  But she was wrong. A member of the mother's family contacted CPS
@@ -2939,26 +3006,26 @@ t.
 .  nothing to an agency that had already made up its mind
 
 --- Sentence/end 
-id: 119
-r#  63327  947  56
+id: 122
+r#  63359  963  56
 
 --- Paragraph/end 
-id: 81
+id: 82
 y: N/A
 
 
 --- Paragraph/start
-id: 82
-r#  63329  949  1
+id: 83
+r#  63361  965  1
 
 
 --- Sentence/start
-id: 120
-r#  63329  949  1
+id: 123
+r#  63361  965  1
 
 --- Sentence//end
-id: 120
-r#  64168  958  69
+id: 123
+r#  64200  974  69
 p: .
 t. 
 |  The family court judge had a federal warrant issued for the mother's
@@ -2974,13 +3041,13 @@ t.
 
 
 --- Sentence/switch
-id: 121
-r#  64169  958  70
+id: 124
+r#  64201  974  70
 
 
 --- Sentence//end
-id: 121
-r#  64503  962  45
+id: 124
+r#  64535  978  45
 p: .
 t. 
 |  On the day the court ruled in his favor, CPS yanked the child, according to her mother, kicking and screaming, out of school to take her
@@ -2989,26 +3056,26 @@ t.
 .  a safe house connected with the Railroad
 
 --- Sentence/end 
-id: 121
-r#  64504  962  46
+id: 124
+r#  64536  978  46
 
 --- Paragraph/end 
-id: 82
+id: 83
 y: N/A
 
 
 --- Paragraph/start
-id: 83
-r#  64506  964  1
+id: 84
+r#  64538  980  1
 
 
 --- Sentence/start
-id: 122
-r#  64506  964  1
+id: 125
+r#  64538  980  1
 
 --- Sentence//end
-id: 122
-r#  64865  968  8
+id: 125
+r#  64897  984  8
 p: .
 t. 
 |  This did not mean a reunion with her mother, however. The safe
@@ -3018,45 +3085,45 @@ t.
 .  control
 
 --- Sentence/end 
-id: 122
-r#  64866  968  9
+id: 125
+r#  64898  984  9
 
---- Paragraph/end 
-id: 83
-y: N/A
-
-
---- Paragraph/start
-id: 84
-r#  64868  970  1
-
-
---- Sentence/start
-id: 123
-r#  64868  970  1
 --- Paragraph/end 
 id: 84
 y: N/A
-
-
---- Section/start
--l  3
--i  3
--t  The Mother Who Communicated ``False Information'' to the Doctor
 
 
 --- Paragraph/start
 id: 85
-r#  66176  992  4
+r#  64900  986  1
 
 
 --- Sentence/start
-id: 124
-r#  66176  992  4
+id: 126
+r#  64900  986  1
+--- Paragraph/end 
+id: 85
+y: N/A
+
+
+--- Section/start
+-l  2
+-i  12
+-t  The Mother Who Communicated ``False Information'' to the Doctor
+
+
+--- Paragraph/start
+id: 86
+r#  66213  1008  4
+
+
+--- Sentence/start
+id: 127
+r#  66213  1008  4
 
 --- Sentence//end
-id: 124
-r#  66601  996  70
+id: 127
+r#  66640  1013  70
 p: .
 t. 
 |  By then, the years of futile court battles, oppression by CPS, and life as
@@ -3078,19 +3145,20 @@ t.
 |  her from the parent who had tried to protect her: CPS just shook my
 |  beliefs in democracy and freedom in America.In 1991, a divorcing New York mother of two young girls, a registered
 |  nurse, was awarded sole custody of her two daughters, aged three and
-|  seven. Several months later, after a weekend visit of both girls with theirfather, the mother made a report to CPS, claiming a suspicion of sexual
+|  seven. Several months later, after a weekend visit of both
+|  girls with their father, the mother made a report to CPS, claiming a suspicion of sexual
 |  abuse. CPS took no action; the father then persuaded the family court
 .  to move the children to his custody, claiming the mother was unstable
 
 
 --- Sentence/switch
-id: 125
-r#  66602  996  71
+id: 128
+r#  66641  1013  71
 
 
 --- Sentence//end
-id: 125
-r#  67172  1005  6
+id: 128
+r#  67211  1022  6
 p: .
 t. 
 |  About a year later, while the mother was litigating for the return of her
@@ -3104,34 +3172,8 @@ t.
 .  abuse
 
 --- Sentence/end 
-id: 125
-r#  67173  1005  7
-
---- Paragraph/end 
-id: 85
-y: N/A
-
-
---- Paragraph/start
-id: 86
-r#  67175  1007  1
-
-
---- Sentence/start
-id: 126
-r#  67175  1007  1
-
---- Sentence//end
-id: 126
-r#  67295  1008  55
-p: .
-t. 
-|  Thanks to the information given by the mother, the doctors made a
-.  report to CPS that child sexual abuse had been alleged
-
---- Sentence/end 
-id: 126
-r#  67296  1008  56
+id: 128
+r#  67212  1022  7
 
 --- Paragraph/end 
 id: 86
@@ -3140,12 +3182,25 @@ y: N/A
 
 --- Paragraph/start
 id: 87
-r#  67298  1010  1
+r#  67214  1024  1
 
 
 --- Sentence/start
-id: 127
-r#  67298  1010  1
+id: 129
+r#  67214  1024  1
+
+--- Sentence//end
+id: 129
+r#  67334  1025  55
+p: .
+t. 
+|  Thanks to the information given by the mother, the doctors made a
+.  report to CPS that child sexual abuse had been alleged
+
+--- Sentence/end 
+id: 129
+r#  67335  1025  56
+
 --- Paragraph/end 
 id: 87
 y: N/A
@@ -3153,16 +3208,29 @@ y: N/A
 
 --- Paragraph/start
 id: 88
-r#  68402  1028  1
+r#  67337  1027  1
 
 
 --- Sentence/start
-id: 128
-r#  68402  1028  1
+id: 130
+r#  67337  1027  1
+--- Paragraph/end 
+id: 88
+y: N/A
+
+
+--- Paragraph/start
+id: 89
+r#  68441  1045  1
+
+
+--- Sentence/start
+id: 131
+r#  68441  1045  1
 
 --- Sentence//end
-id: 128
-r#  68825  1033  50
+id: 131
+r#  68864  1050  50
 p: .
 t. 
 |  A few days later, the mother was stunned by the arrival of a formal
@@ -3186,26 +3254,26 @@ t.
 .  has been sexually abused by [the father] (p. 3)
 
 --- Sentence/end 
-id: 128
-r#  68826  1033  51
+id: 131
+r#  68865  1050  51
 
 --- Paragraph/end 
-id: 88
+id: 89
 y: N/A
 
 
 --- Paragraph/start
-id: 89
-r#  68828  1035  1
+id: 90
+r#  68867  1052  1
 
 
 --- Sentence/start
-id: 129
-r#  68828  1035  1
+id: 132
+r#  68867  1052  1
 
 --- Sentence//end
-id: 129
-r#  69457  1042  7
+id: 132
+r#  69496  1059  7
 p: .
 t. 
 |  The filing of this neglect petition was enough to prevent family
@@ -3218,22 +3286,9 @@ t.
 .  mother
 
 --- Sentence/end 
-id: 129
-r#  69458  1042  8
+id: 132
+r#  69497  1059  8
 
---- Paragraph/end 
-id: 89
-y: N/A
-
-
---- Paragraph/start
-id: 90
-r#  69460  1044  1
-
-
---- Sentence/start
-id: 130
-r#  69460  1044  1
 --- Paragraph/end 
 id: 90
 y: N/A
@@ -3241,12 +3296,12 @@ y: N/A
 
 --- Paragraph/start
 id: 91
-r#  69901  1051  1
+r#  69499  1061  1
 
 
 --- Sentence/start
-id: 131
-r#  69901  1051  1
+id: 133
+r#  69499  1061  1
 --- Paragraph/end 
 id: 91
 y: N/A
@@ -3254,16 +3309,29 @@ y: N/A
 
 --- Paragraph/start
 id: 92
-r#  70751  1062  1
+r#  69940  1068  1
 
 
 --- Sentence/start
-id: 132
-r#  70751  1062  1
+id: 134
+r#  69940  1068  1
+--- Paragraph/end 
+id: 92
+y: N/A
+
+
+--- Paragraph/start
+id: 93
+r#  70790  1079  1
+
+
+--- Sentence/start
+id: 135
+r#  70790  1079  1
 
 --- Sentence//end
-id: 132
-r#  71149  1066  48
+id: 135
+r#  71191  1085  48
 p: .
 t. 
 |  A few months later, when the mother picked up her daughters for
@@ -3283,30 +3351,32 @@ t.
 |  rather than back in their mother's custody.\51In fact, CPS's new attitude was only a facade. Hardly had the children
 |  been placed in foster homes when CPS dropped the charges against the
 |  father, while still maintaining that the mother was neglectful. Now
-|  the stage was set for the father to regain full custody. CPS bowed outof the case, having taken no action of any kind, throughout its long
+|  the stage was set for the father to regain
+|  full custody. CPS bowed out of the case, having
+|  taken no action of any kind, throughout its long
 .  involvement, to protect the children from abuse
 
 --- Sentence/end 
-id: 132
-r#  71150  1066  49
+id: 135
+r#  71192  1085  49
 
 --- Paragraph/end 
-id: 92
+id: 93
 y: N/A
 
 
 --- Paragraph/start
-id: 93
-r#  71152  1068  1
+id: 94
+r#  71194  1087  1
 
 
 --- Sentence/start
-id: 133
-r#  71152  1068  1
+id: 136
+r#  71194  1087  1
 
 --- Sentence//end
-id: 133
-r#  72269  1084  70
+id: 136
+r#  72311  1103  70
 p: .
 t. 
 |  Having been the target of one false CPS petition after another, the
@@ -3326,33 +3396,33 @@ t.
 
 
 --- Sentence/switch
-id: 134
-r#  72270  1084  71
+id: 137
+r#  72312  1103  71
 
 --- Paragraph/end 
-id: 93
+id: 94
 y: N/A
 
 
 --- Section/start
--l  3
--i  4
+-l  2
+-i  13
 -t  The Mother Who Failed to Prevent Abuse but at the Same Time
 Made an Abuse Report That Was ``Not Totally True''
 
 
 --- Paragraph/start
-id: 94
-r#  72875  1096  4
+id: 95
+r#  72916  1115  4
 
 
 --- Sentence/start
-id: 135
-r#  72875  1096  4
+id: 138
+r#  72916  1115  4
 
 --- Sentence//end
-id: 135
-r#  73050  1098  33
+id: 138
+r#  73091  1117  33
 p: .
 t. 
 |  After years of failed attempts to protect her children, this mother
@@ -3365,26 +3435,26 @@ t.
 .  according to CPS, never happened
 
 --- Sentence/end 
-id: 135
-r#  73051  1098  34
+id: 138
+r#  73092  1117  34
 
 --- Paragraph/end 
-id: 94
+id: 95
 y: N/A
 
 
 --- Paragraph/start
-id: 95
-r#  73053  1100  1
+id: 96
+r#  73094  1119  1
 
 
 --- Sentence/start
-id: 136
-r#  73053  1100  1
+id: 139
+r#  73094  1119  1
 
 --- Sentence//end
-id: 136
-r#  73642  1106  16
+id: 139
+r#  73683  1125  16
 p: .
 t. 
 |  The couple had divorced in 1983, and the mother - who, by agreement, had full custody of the couple's only child - took the child to live
@@ -3396,26 +3466,26 @@ t.
 .  did not like it
 
 --- Sentence/end 
-id: 136
-r#  73643  1106  17
+id: 139
+r#  73684  1125  17
 
 --- Paragraph/end 
-id: 95
+id: 96
 y: N/A
 
 
 --- Paragraph/start
-id: 96
-r#  73645  1108  1
+id: 97
+r#  73686  1127  1
 
 
 --- Sentence/start
-id: 137
-r#  73645  1108  1
+id: 140
+r#  73686  1127  1
 
 --- Sentence//end
-id: 137
-r#  73918  1111  57
+id: 140
+r#  73959  1130  57
 p: .
 t. 
 |  The girl's mother had not been present during the visit, but when she
@@ -3425,13 +3495,13 @@ t.
 
 
 --- Sentence/switch
-id: 138
-r#  73919  1111  58
+id: 141
+r#  73960  1130  58
 
 
 --- Sentence//end
-id: 138
-r#  74117  1114  68
+id: 141
+r#  74158  1133  68
 p: .
 t. 
 |  The Brooklyn Society for the Prevention of Cruelty to Children
@@ -3440,13 +3510,13 @@ t.
 
 
 --- Sentence/switch
-id: 139
-r#  74118  1114  69
+id: 142
+r#  74159  1133  69
 
 
 --- Sentence//end
-id: 139
-r#  74989  1127  11
+id: 142
+r#  75030  1146  11
 p: !
 t. 
 |  The girl confirmed her grandmother's eyewitness account of sexual
@@ -3464,39 +3534,8 @@ t.
 .  whatsoever
 
 --- Sentence/end 
-id: 139
-r#  74990  1127  12
-
---- Paragraph/end 
-id: 96
-y: N/A
-
-
---- Paragraph/start
-id: 97
-r#  74992  1129  1
-
-
---- Sentence/start
-id: 140
-r#  74992  1129  1
-
---- Sentence//end
-id: 140
-r#  75529  1134  52
-p: .
-t. 
-|  CPS's petition (like others we have examined here) was sworn to by a
-|  person who knew nothing of the facts. That was natural, perhaps, considering that it contained critical misstatements. The mother was absent
-|  from the house when the alleged abuse occurred (and so could not have
-|  prevented it); and she did not make the report (and so could not have
-|  made a false one). Yet, with a bizarre double standard we have seen inother cases discussed previously, CPS was prepared to condemn her
-.  based solely on charges made against her ex-husband
-
-
---- Sentence/switch
-id: 141
-r#  75530  1134  53
+id: 142
+r#  75031  1146  12
 
 --- Paragraph/end 
 id: 97
@@ -3505,16 +3544,48 @@ y: N/A
 
 --- Paragraph/start
 id: 98
-r#  76402  1148  1
+r#  75033  1148  1
 
 
 --- Sentence/start
-id: 142
-r#  76402  1148  1
+id: 143
+r#  75033  1148  1
 
 --- Sentence//end
-id: 142
-r#  76782  1151  37
+id: 143
+r#  75572  1154  52
+p: .
+t. 
+|  CPS's petition (like others we have examined here) was sworn to by a
+|  person who knew nothing of the facts. That was natural, perhaps, considering that it contained critical misstatements. The mother was absent
+|  from the house when the alleged abuse occurred (and so could not have
+|  prevented it); and she did not make the report (and so could not have
+|  made a false one). Yet, with a bizarre double standard we have seen in
+|  other cases discussed previously, CPS was prepared to condemn her
+.  based solely on charges made against her ex-husband
+
+
+--- Sentence/switch
+id: 144
+r#  75573  1154  53
+
+--- Paragraph/end 
+id: 98
+y: N/A
+
+
+--- Paragraph/start
+id: 99
+r#  76445  1168  1
+
+
+--- Sentence/start
+id: 145
+r#  76445  1168  1
+
+--- Sentence//end
+id: 145
+r#  76825  1171  37
 p: .
 t. 
 |  The mother appeared for a court-ordered psychiatric examination
@@ -3534,35 +3605,8 @@ t.
 .  wondered at, under the circumstances
 
 --- Sentence/end 
-id: 142
-r#  76783  1151  38
-
---- Paragraph/end 
-id: 98
-y: N/A
-
-
---- Paragraph/start
-id: 99
-r#  76785  1153  1
-
-
---- Sentence/start
-id: 143
-r#  76785  1153  1
-
---- Sentence//end
-id: 143
-r#  76990  1154  69
-p: .
-t. 
-|  That was enough for CPS. The very next day, without even giving notice to the mother or her lawyer, CPS's lawyer demanded - and got - an
-.  order from the family court removing the young girl into foster care
-
-
---- Sentence/switch
-id: 144
-r#  76991  1154  70
+id: 145
+r#  76826  1171  38
 
 --- Paragraph/end 
 id: 99
@@ -3571,16 +3615,43 @@ y: N/A
 
 --- Paragraph/start
 id: 100
-r#  77728  1166  1
+r#  76828  1173  1
 
 
 --- Sentence/start
-id: 145
-r#  77728  1166  1
+id: 146
+r#  76828  1173  1
 
 --- Sentence//end
-id: 145
-r#  78093  1171  15
+id: 146
+r#  77033  1174  69
+p: .
+t. 
+|  That was enough for CPS. The very next day, without even giving notice to the mother or her lawyer, CPS's lawyer demanded - and got - an
+.  order from the family court removing the young girl into foster care
+
+
+--- Sentence/switch
+id: 147
+r#  77034  1174  70
+
+--- Paragraph/end 
+id: 100
+y: N/A
+
+
+--- Paragraph/start
+id: 101
+r#  77771  1186  1
+
+
+--- Sentence/start
+id: 148
+r#  77771  1186  1
+
+--- Sentence//end
+id: 148
+r#  78136  1191  15
 p: .
 t. 
 |  CPS's lawyer angrily complained that the mother was resistant to the
@@ -3600,22 +3671,9 @@ t.
 .  him altogether
 
 --- Sentence/end 
-id: 145
-r#  78094  1171  16
+id: 148
+r#  78137  1191  16
 
---- Paragraph/end 
-id: 100
-y: N/A
-
-
---- Paragraph/start
-id: 101
-r#  78096  1173  1
-
-
---- Sentence/start
-id: 146
-r#  78096  1173  1
 --- Paragraph/end 
 id: 101
 y: N/A
@@ -3623,16 +3681,29 @@ y: N/A
 
 --- Paragraph/start
 id: 102
-r#  78578  1180  1
+r#  78139  1193  1
 
 
 --- Sentence/start
-id: 147
-r#  78578  1180  1
+id: 149
+r#  78139  1193  1
+--- Paragraph/end 
+id: 102
+y: N/A
+
+
+--- Paragraph/start
+id: 103
+r#  78621  1200  1
+
+
+--- Sentence/start
+id: 150
+r#  78621  1200  1
 
 --- Sentence//end
-id: 147
-r#  80311  1200  34
+id: 150
+r#  80356  1221  34
 p: .
 t. 
 |  It is worth noting that the removal caused by CPS was not only
@@ -3656,33 +3727,34 @@ t.
 |  be called paranoid - it was, in fact, completely justified: an official of
 |  the foster care agency itself admitted in testimony that he had told the
 |  mother her daughter would be adopted.\61 To CPS, anything the mother
-|  said or believed, even when it was true, was proof of mental illness.As in other cases we have discussed, once CPS had secured the
+|  said or believed, even when it was true, was proof of mental illness.
+|  As in other cases we have discussed, once CPS had secured the
 |  child's removal into foster care, it abandoned the charge against the
 |  father. It also abandoned the factual claims made against the mother
 |  and amended the petition no fewer than three times in order to ensure that the
 .  mother would never regain custody
 
 --- Sentence/end 
-id: 147
-r#  80312  1200  35
+id: 150
+r#  80357  1221  35
 
 --- Paragraph/end 
-id: 102
+id: 103
 y: N/A
 
 
 --- Paragraph/start
-id: 103
-r#  80314  1202  1
+id: 104
+r#  80359  1223  1
 
 
 --- Sentence/start
-id: 148
-r#  80314  1202  1
+id: 151
+r#  80359  1223  1
 
 --- Sentence//end
-id: 148
-r#  81428  1212  48
+id: 151
+r#  81473  1233  48
 p: .
 t. 
 |  The plan worked. The mother never regained custody; in fact, family court ultimately awarded the allegedly abusive father full custody
@@ -3698,49 +3770,8 @@ t.
 .  even barring her from writing the child letters
 
 --- Sentence/end 
-id: 148
-r#  81429  1212  49
-
---- Paragraph/end 
-id: 103
-y: N/A
-
-
---- Paragraph/start
-id: 104
-r#  81431  1214  1
-
-
---- Sentence/start
-id: 149
-r#  81431  1214  1
-
---- Sentence//end
-id: 149
-r#  81569  1215  69
-p: .
-t. 
-|  This mother turned to activism, appearing on dozens of television and
-.  radio programs to publicize what had happened in her case and others
-
-
---- Sentence/switch
-id: 150
-r#  81570  1215  70
-
-
---- Sentence//end
-id: 150
-r#  81712  1218  8
-p: .
-t. 
-|  On several occasions, when CPS learned of an upcoming appearance,
-|  CPS's lawyer contacted the show's producers and maligned the mother
-.  to them
-
---- Sentence/end 
-id: 150
-r#  81713  1218  9
+id: 151
+r#  81474  1233  49
 
 --- Paragraph/end 
 id: 104
@@ -3749,16 +3780,57 @@ y: N/A
 
 --- Paragraph/start
 id: 105
-r#  81715  1220  1
+r#  81476  1235  1
 
 
 --- Sentence/start
-id: 151
-r#  81715  1220  1
+id: 152
+r#  81476  1235  1
 
 --- Sentence//end
-id: 151
-r#  82188  1226  36
+id: 152
+r#  81614  1236  69
+p: .
+t. 
+|  This mother turned to activism, appearing on dozens of television and
+.  radio programs to publicize what had happened in her case and others
+
+
+--- Sentence/switch
+id: 153
+r#  81615  1236  70
+
+
+--- Sentence//end
+id: 153
+r#  81757  1239  8
+p: .
+t. 
+|  On several occasions, when CPS learned of an upcoming appearance,
+|  CPS's lawyer contacted the show's producers and maligned the mother
+.  to them
+
+--- Sentence/end 
+id: 153
+r#  81758  1239  9
+
+--- Paragraph/end 
+id: 105
+y: N/A
+
+
+--- Paragraph/start
+id: 106
+r#  81760  1241  1
+
+
+--- Sentence/start
+id: 154
+r#  81760  1241  1
+
+--- Sentence//end
+id: 154
+r#  82233  1247  36
 p: ?
 t. 
 |  This mother, like some of the others whose stories have been told here,
@@ -3770,32 +3842,32 @@ t.
 .  this one, too, should be taken away
 
 --- Sentence/end 
-id: 151
-r#  82189  1226  37
+id: 154
+r#  82234  1247  37
 
 --- Paragraph/end 
-id: 105
+id: 106
 y: N/A
 
 
 --- Section/start
 -l  2
--i  9
+-i  14
 -t  CONCLUSION
 
 
 --- Paragraph/start
-id: 106
-r#  82214  1231  4
+id: 107
+r#  82259  1252  4
 
 
 --- Sentence/start
-id: 152
-r#  82214  1231  4
+id: 155
+r#  82259  1252  4
 
 --- Sentence//end
-id: 152
-r#  82981  1241  7
+id: 155
+r#  83026  1262  7
 p: .
 t. 
 |  The case histories summarized in this chapter are representative of a
@@ -3811,26 +3883,26 @@ t.
 .  please
 
 --- Sentence/end 
-id: 152
-r#  82982  1241  8
+id: 155
+r#  83027  1262  8
 
 --- Paragraph/end 
-id: 106
+id: 107
 y: N/A
 
 
 --- Paragraph/start
-id: 107
-r#  82984  1243  1
+id: 108
+r#  83029  1264  1
 
 
 --- Sentence/start
-id: 153
-r#  82984  1243  1
+id: 156
+r#  83029  1264  1
 
 --- Sentence//end
-id: 153
-r#  83505  1248  33
+id: 156
+r#  83550  1269  33
 p: .
 t. 
 |  In recent years, the child welfare system has come under attack for
@@ -3841,26 +3913,26 @@ t.
 .  protect children from real abuse
 
 --- Sentence/end 
-id: 153
-r#  83506  1248  34
+id: 156
+r#  83551  1269  34
 
 --- Paragraph/end 
-id: 107
+id: 108
 y: N/A
 
 
 --- Paragraph/start
-id: 108
-r#  83508  1250  1
+id: 109
+r#  83553  1271  1
 
 
 --- Sentence/start
-id: 154
-r#  83508  1250  1
+id: 157
+r#  83553  1271  1
 
 --- Sentence//end
-id: 154
-r#  83980  1256  11
+id: 157
+r#  84025  1277  11
 p: .
 t. 
 |  For instance, from Child Maltreatment 2002, the annual report
@@ -3872,26 +3944,26 @@ t.
 .  fatalities
 
 --- Sentence/end 
-id: 154
-r#  83981  1256  12
+id: 157
+r#  84026  1277  12
 
 --- Paragraph/end 
-id: 108
+id: 109
 y: N/A
 
 
 --- Paragraph/start
-id: 109
-r#  83983  1258  1
+id: 110
+r#  84028  1279  1
 
 
 --- Sentence/start
-id: 155
-r#  83983  1258  1
+id: 158
+r#  84028  1279  1
 
 --- Sentence//end
-id: 155
-r#  84238  1261  41
+id: 158
+r#  84283  1282  41
 p: .
 t. 
 |  All in all, it should be clear that the madness of today's family courts
@@ -3900,59 +3972,59 @@ t.
 .  have reported suspicions of sexual abuse
 
 --- Sentence/end 
-id: 155
-r#  84239  1261  42
+id: 158
+r#  84284  1282  42
 
 --- Paragraph/end 
-id: 109
+id: 110
 y: N/A
 
 
 --- Paragraph/start
-id: 110
-r#  84242  1264  1
+id: 111
+r#  84287  1285  1
 
 
 --- Sentence/start
-id: 156
-r#  84242  1264  1
+id: 159
+r#  84287  1285  1
 --- Paragraph/end 
-id: 110
+id: 111
 y: N/A
 
 
 --- Section/start
--l  3
--i  5
+-l  2
+-i  15
 -t  Spurious Charges against Protective Mothers - Conflating
 ``Abuse'' and ``Neglect''
 
 
 --- Paragraph/start
-id: 111
-r#  84363  1270  4
+id: 112
+r#  84407  1291  4
 
 
 --- Sentence/start
-id: 157
-r#  84363  1270  4
+id: 160
+r#  84407  1291  4
 --- Paragraph/end 
-id: 111
+id: 112
 y: N/A
 
 
 --- Paragraph/start
-id: 112
-r#  85569  1286  1
+id: 113
+r#  85613  1307  1
 
 
 --- Sentence/start
-id: 158
-r#  85569  1286  1
+id: 161
+r#  85613  1307  1
 
 --- Sentence//end
-id: 158
-r#  86822  1301  24
+id: 161
+r#  86866  1322  24
 p: .
 t. 
 |  \writeAddendum{}Shortly after the publication of From Madness to Mutiny, we were invited to write a commentary for the Journal of Child Sexual Abuse on
@@ -3987,32 +4059,32 @@ t.
 .  mothers in recent years
 
 --- Sentence/end 
-id: 158
-r#  86823  1301  25
+id: 161
+r#  86867  1322  25
 
 --- Paragraph/end 
-id: 112
+id: 113
 y: N/A
 
 
 --- Section/start
--l  3
--i  6
+-l  2
+-i  16
 -t  How Child Protective Services Racially Discriminates against BIPOC Mothers
 
 
 --- Paragraph/start
-id: 113
-r#  86911  1305  4
+id: 114
+r#  86954  1326  4
 
 
 --- Sentence/start
-id: 159
-r#  86911  1305  4
+id: 162
+r#  86954  1326  4
 
 --- Sentence//end
-id: 159
-r#  87192  1308  69
+id: 162
+r#  87235  1329  69
 p: .
 t. 
 |  In analyzing the more recent protective mother cases, one must remain
@@ -4022,13 +4094,13 @@ t.
 
 
 --- Sentence/switch
-id: 160
-r#  87193  1308  70
+id: 163
+r#  87236  1329  70
 
 
 --- Sentence//end
-id: 160
-r#  87610  1313  68
+id: 163
+r#  87653  1334  68
 p: .
 t. 
 |  This is not surprising given the fact the BIPOC population in general
@@ -4039,13 +4111,13 @@ t.
 
 
 --- Sentence/switch
-id: 161
-r#  87611  1313  69
+id: 164
+r#  87654  1334  69
 
 
 --- Sentence//end
-id: 161
-r#  87988  1318  22
+id: 164
+r#  88031  1339  22
 p: .
 t. 
 |  Consequently, close attention must be paid to how the family courts
@@ -4055,26 +4127,26 @@ t.
 .  should not be ignored
 
 --- Sentence/end 
-id: 161
-r#  87989  1318  23
+id: 164
+r#  88032  1339  23
 
 --- Paragraph/end 
-id: 113
+id: 114
 y: N/A
 
 
 --- Paragraph/start
-id: 114
-r#  87991  1320  1
+id: 115
+r#  88034  1341  1
 
 
 --- Sentence/start
-id: 162
-r#  87991  1320  1
+id: 165
+r#  88034  1341  1
 
 --- Sentence//end
-id: 162
-r#  88347  1323  77
+id: 165
+r#  88390  1344  77
 p: .
 t. 
 |  Specifically, one recurring pattern of such prejudices is the insertion of gratuitous statements in CPS documents (e.g., petitions, child
@@ -4084,29 +4156,30 @@ t.
 
 
 --- Sentence/switch
-id: 163
-r#  88348  1323  78
+id: 166
+r#  88391  1344  78
 
 --- Paragraph/end 
-id: 114
+id: 115
 y: N/A
 
 
 --- Paragraph/start
-id: 115
-r#  88526  1327  1
+id: 116
+r#  88570  1349  1
 
 
 --- Sentence/start
-id: 164
-r#  88526  1327  1
+id: 167
+r#  88570  1349  1
 
 --- Sentence//end
-id: 164
-r#  89071  1331  45
+id: 167
+r#  89115  1353  45
 p: .
 t. 
-|  This follows the general prejudices across the mental health professionin which people of color are more frequently diagnosed with psychosis
+|  This follows the general prejudices across the mental health profession
+|  in which people of color are more frequently diagnosed with psychosis
 |  whether it is warranted or not.\70Moreover, another recurring pattern, as seen in the documents contained in CPS files, is to ridicule the BIPOC mother's mundane behavior,
 |  albeit without warrant (e.g., as bizarre, peculiar, or out of control),
 |  even if it doesn't rise to a level of psychological abnormality. Interestingly enough, notwithstanding the lacing of the CPS files of BIPOC
@@ -4115,13 +4188,13 @@ t.
 
 
 --- Sentence/switch
-id: 165
-r#  89072  1331  46
+id: 168
+r#  89116  1353  46
 
 
 --- Sentence//end
-id: 165
-r#  89951  1341  26
+id: 168
+r#  89995  1363  26
 p: .
 t. 
 |  Comparative Analysis of BIPOC with Caucasian Protective Mothers
@@ -4136,26 +4209,26 @@ t.
 .  reported abuse themselves
 
 --- Sentence/end 
-id: 165
-r#  89952  1341  27
+id: 168
+r#  89996  1363  27
 
 --- Paragraph/end 
-id: 115
+id: 116
 y: N/A
 
 
 --- Paragraph/start
-id: 116
-r#  89954  1343  1
+id: 117
+r#  89998  1365  1
 
 
 --- Sentence/start
-id: 166
-r#  89954  1343  1
+id: 169
+r#  89998  1365  1
 
 --- Sentence//end
-id: 166
-r#  90454  1349  8
+id: 169
+r#  90498  1371  8
 p: .
 t. 
 |  Given that family court cases are confidential and thus closed to the
@@ -4167,26 +4240,26 @@ t.
 .  in race
 
 --- Sentence/end 
-id: 166
-r#  90455  1349  9
+id: 169
+r#  90499  1371  9
 
 --- Paragraph/end 
-id: 116
+id: 117
 y: N/A
 
 
 --- Paragraph/start
-id: 117
-r#  90457  1351  1
+id: 118
+r#  90501  1373  1
 
 
 --- Sentence/start
-id: 167
-r#  90457  1351  1
+id: 170
+r#  90501  1373  1
 
 --- Sentence//end
-id: 167
-r#  91302  1362  10
+id: 170
+r#  91346  1384  10
 p: .
 t. 
 |  Specifically, whereas both mothers were accused by CPS of fabricating
@@ -4203,26 +4276,26 @@ t.
 .  psychosis
 
 --- Sentence/end 
-id: 167
-r#  91303  1362  11
+id: 170
+r#  91347  1384  11
 
 --- Paragraph/end 
-id: 117
+id: 118
 y: N/A
 
 
 --- Paragraph/start
-id: 118
-r#  91305  1364  1
+id: 119
+r#  91349  1386  1
 
 
 --- Sentence/start
-id: 168
-r#  91305  1364  1
+id: 171
+r#  91349  1386  1
 
 --- Sentence//end
-id: 168
-r#  92000  1373  8
+id: 171
+r#  92044  1395  8
 p: .
 t. 
 |  Such racist views no doubt add another layer of injury for a BIPOC
@@ -4237,52 +4310,53 @@ t.
 .  debacle
 
 --- Sentence/end 
-id: 168
-r#  92001  1373  9
+id: 171
+r#  92045  1395  9
 
 --- Paragraph/end 
-id: 118
+id: 119
 y: N/A
 
 
 --- Section/start
--l  3
--i  7
+-l  2
+-i  17
 -t  Cook County Caucasian Mother Seeks Medical Intervention for Child
 
 
 --- Paragraph/start
-id: 119
-r#  92082  1378  4
+id: 120
+r#  92125  1400  4
 
 
 --- Sentence/start
-id: 169
-r#  92082  1378  4
+id: 172
+r#  92125  1400  4
 --- Paragraph/end 
-id: 119
+id: 120
 y: N/A
 
 
 --- Paragraph/start
-id: 120
-r#  92968  1391  1
+id: 121
+r#  93012  1414  1
 
 
 --- Sentence/start
-id: 170
-r#  92968  1391  1
+id: 173
+r#  93012  1414  1
 
 --- Sentence//end
-id: 170
-r#  93106  1392  71
+id: 173
+r#  93150  1415  71
 p: .
 t. 
 |  The Cook County Caucasian mother brought her six-year-old daughter
 |  to the emergency room for rectal bleeding following an overnight visit
 |  with the father. Returning from the visit, the child had made alarming
 |  disclosures to the mother about her father coming into her bedroom at
-|  night and forcing himself on her. She reported both sodomy and rape toher mother. At the hospital the child was interviewed by an emergency
+|  night and forcing himself on her. She reported both sodomy and rape to
+|  her mother. At the hospital the child was interviewed by an emergency
 |  room nurse in the absence of the mother. The child disclosed to the
 |  nurse that when she goes by her dad's house while she is sleeping he
 |  puts his penis in her vagina and in her rectum. The child then clarified
@@ -4294,13 +4368,13 @@ t.
 
 
 --- Sentence/switch
-id: 171
-r#  93107  1392  72
+id: 174
+r#  93151  1415  72
 
 
 --- Sentence//end
-id: 171
-r#  93907  1402  20
+id: 174
+r#  93951  1425  20
 p: .
 t. 
 |  At the second hospital, a full diagnostic workup for child sexual abuse
@@ -4315,39 +4389,39 @@ t.
 .  was in bed at night
 
 --- Sentence/end 
-id: 171
-r#  93908  1402  21
+id: 174
+r#  93952  1425  21
 
 --- Paragraph/end 
-id: 120
+id: 121
 y: N/A
 
 
 --- Paragraph/start
-id: 121
-r#  93910  1404  1
+id: 122
+r#  93954  1427  1
 
 
 --- Sentence/start
-id: 172
-r#  93910  1404  1
+id: 175
+r#  93954  1427  1
 
 --- Sentence//end
-id: 172
-r#  93973  1404  64
+id: 175
+r#  94017  1427  64
 p: .
 t. 
 .  The mother went back to family court and pleaded for protection
 
 
 --- Sentence/switch
-id: 173
-r#  93974  1404  65
+id: 176
+r#  94018  1427  65
 
 
 --- Sentence//end
-id: 173
-r#  94699  1413  5
+id: 176
+r#  94743  1436  5
 p: .
 t. 
 |  The judge ordered supervised visitation between the child and the father at the father's home. This, itself, was ostensibly a canard, in that
@@ -4361,26 +4435,26 @@ t.
 .  DCFS
 
 --- Sentence/end 
-id: 173
-r#  94700  1413  6
+id: 176
+r#  94744  1436  6
 
 --- Paragraph/end 
-id: 121
+id: 122
 y: N/A
 
 
 --- Paragraph/start
-id: 122
-r#  94702  1415  1
+id: 123
+r#  94746  1438  1
 
 
 --- Sentence/start
-id: 174
-r#  94702  1415  1
+id: 177
+r#  94746  1438  1
 
 --- Sentence//end
-id: 174
-r#  95416  1423  76
+id: 177
+r#  95460  1446  76
 p: .
 t. 
 |  Child Protective Services Uses Foster Care to Cover Itself
@@ -4395,13 +4469,13 @@ t.
 
 
 --- Sentence/switch
-id: 175
-r#  95417  1423  77
+id: 178
+r#  95461  1446  77
 
 
 --- Sentence//end
-id: 175
-r#  95642  1426  68
+id: 178
+r#  95686  1449  68
 p: .
 t. 
 |  After all, placing a child in foster care is insult on top of injury: for a child
@@ -4410,13 +4484,13 @@ t.
 
 
 --- Sentence/switch
-id: 176
-r#  95643  1426  69
+id: 179
+r#  95687  1449  69
 
 
 --- Sentence//end
-id: 176
-r#  97336  1446  187
+id: 179
+r#  97236  1469  43
 p: .
 t. 
 |  Such stratagems, albeit traumatic to the child and certainly a flagrant
@@ -4438,49 +4512,64 @@ t.
 |  to seek medical treatment after an incident of sexual assault committed
 |  by the father. Hence, such duplicitous placements of sexually abused
 |  children in foster care have become more or less the standard operating
-.  procedure in protective mother cases today.But there is another factor driving these indefensible foster care placements in response to a mother's good faith attempt to protect her child
+.  procedure in protective mother cases today
+
+
+--- Sentence/switch
+id: 180
+r#  97237  1469  44
+
+
+--- Sentence//end
+id: 180
+r#  97384  1471  89
+p: .
+t. 
+|   But
+|  there is another factor driving these indefensible
+.  foster care placements in response to a mother's good faith attempt to protect her child
 
 --- Sentence/end 
-id: 176
-r#  97337  1446  188
+id: 180
+r#  97385  1471  90
 
 --- Paragraph/end 
-id: 122
+id: 123
 y: N/A
 
 
 --- Paragraph/start
-id: 123
-r#  97339  1448  1
+id: 124
+r#  97387  1473  1
 
 
 --- Sentence/start
-id: 177
-r#  97339  1448  1
+id: 181
+r#  97387  1473  1
 --- Paragraph/end 
-id: 123
+id: 124
 y: N/A
 
 
 --- Section/start
--l  3
--i  8
+-l  2
+-i  18
 -t  Child Protective Services Transfers Child to the Father - with
 Restricted Supervised Visitation for the Mother
 
 
 --- Paragraph/start
-id: 124
-r#  98858  1469  4
+id: 125
+r#  98905  1494  4
 
 
 --- Sentence/start
-id: 178
-r#  98858  1469  4
+id: 182
+r#  98905  1494  4
 
 --- Sentence//end
-id: 178
-r#  99670  1479  24
+id: 182
+r#  99717  1504  24
 p: .
 t. 
 |  And that factor is sinister. In case after case, we have witnessed how
@@ -4512,22 +4601,9 @@ t.
 .  to visit with her child
 
 --- Sentence/end 
-id: 178
-r#  99671  1479  25
+id: 182
+r#  99718  1504  25
 
---- Paragraph/end 
-id: 124
-y: N/A
-
-
---- Paragraph/start
-id: 125
-r#  99673  1481  1
-
-
---- Sentence/start
-id: 179
-r#  99673  1481  1
 --- Paragraph/end 
 id: 125
 y: N/A
@@ -4535,16 +4611,29 @@ y: N/A
 
 --- Paragraph/start
 id: 126
-r#  101209  1498  1
+r#  99720  1506  1
 
 
 --- Sentence/start
-id: 180
-r#  101209  1498  1
+id: 183
+r#  99720  1506  1
+--- Paragraph/end 
+id: 126
+y: N/A
+
+
+--- Paragraph/start
+id: 127
+r#  101256  1523  1
+
+
+--- Sentence/start
+id: 184
+r#  101256  1523  1
 
 --- Sentence//end
-id: 180
-r#  101994  1505  64
+id: 184
+r#  102041  1530  64
 p: .
 t. 
 |  The conditions of these visits had an effect on the child over time. Certainly, the traumatic rupture of this child from her mother compounded
@@ -4572,33 +4661,33 @@ t.
 .  children - usually at a facility that contracts with the courts
 
 --- Sentence/end 
-id: 180
-r#  101995  1505  65
+id: 184
+r#  102042  1530  65
 
 --- Paragraph/end 
-id: 126
+id: 127
 y: N/A
 
 
 --- Section/start
--l  3
--i  9
+-l  2
+-i  19
 -t  CPS Contorts the Law - Inventing New Ways of
 Prosecuting Protective Mothers
 
 
 --- Paragraph/start
-id: 127
-r#  102092  1511  4
+id: 128
+r#  102138  1536  4
 
 
 --- Sentence/start
-id: 181
-r#  102092  1511  4
+id: 185
+r#  102138  1536  4
 
 --- Sentence//end
-id: 181
-r#  102447  1514  68
+id: 185
+r#  102493  1539  68
 p: .
 t. 
 |  This mother, after losing custody to the father in 2019, would spend the
@@ -4608,13 +4697,13 @@ t.
 
 
 --- Sentence/switch
-id: 182
-r#  102448  1514  69
+id: 186
+r#  102494  1539  69
 
 
 --- Sentence//end
-id: 182
-r#  103648  1528  44
+id: 186
+r#  103694  1553  44
 p: .
 t. 
 |  The language of this charge deserves some comparative analysis. In
@@ -4633,26 +4722,26 @@ t.
 .  a parent's rights to their biological child
 
 --- Sentence/end 
-id: 182
-r#  103649  1528  45
+id: 186
+r#  103695  1553  45
 
 --- Paragraph/end 
-id: 127
+id: 128
 y: N/A
 
 
 --- Paragraph/start
-id: 128
-r#  103651  1530  1
+id: 129
+r#  103697  1555  1
 
 
 --- Sentence/start
-id: 183
-r#  103651  1530  1
+id: 187
+r#  103697  1555  1
 
 --- Sentence//end
-id: 183
-r#  104139  1533  145
+id: 187
+r#  104185  1558  145
 p: .
 t. 
 |  In this case however, the mother was not even accused of Munchausen's Syndrome by Proxy or any permutation thereof; nor was there
@@ -4662,13 +4751,13 @@ t.
 
 
 --- Sentence/switch
-id: 184
-r#  104140  1533  146
+id: 188
+r#  104186  1558  146
 
 
 --- Sentence//end
-id: 184
-r#  104682  1540  41
+id: 188
+r#  104728  1565  41
 p: .
 t. 
 |  Yet, DCFS steamrolled ahead with an abuse charge against this innocent mother. As CPS has become more emboldened over the years,
@@ -4680,26 +4769,26 @@ t.
 .  such a serious charge in the first place
 
 --- Sentence/end 
-id: 184
-r#  104683  1540  42
+id: 188
+r#  104729  1565  42
 
 --- Paragraph/end 
-id: 128
+id: 129
 y: N/A
 
 
 --- Paragraph/start
-id: 129
-r#  104685  1542  1
+id: 130
+r#  104731  1567  1
 
 
 --- Sentence/start
-id: 185
-r#  104685  1542  1
+id: 189
+r#  104731  1567  1
 
 --- Sentence//end
-id: 185
-r#  106234  1560  43
+id: 189
+r#  106280  1585  43
 p: ?
 t. 
 |  In an attempt to formulate the medical child abuse charge brought
@@ -4723,44 +4812,8 @@ t.
 .  having been coached by the mother to do so
 
 --- Sentence/end 
-id: 185
-r#  106235  1560  44
-
---- Paragraph/end 
-id: 129
-y: N/A
-
-
---- Paragraph/start
-id: 130
-r#  106237  1562  1
-
-
---- Sentence/start
-id: 186
-r#  106237  1562  1
-
---- Sentence//end
-id: 186
-r#  107294  1573  13
-p: .
-t. 
-|  In the absence of solid evidence that the mother had been planting
-|  ideas in the child's mind, the expert chose to speculate. But she did so
-|  with an air of diagnostic certainty that one only sees in the contorted
-|  world of family courts; in all other settings physicians generally maintain a degree of uncertainty as integral to the canonical paradigm of
-|  differential diagnosis, which has proven essential for proper medical decision-making. In the summary section of her report the expert
-|  stated, I am sure the mother is talking to [the child] about this [sexabuse] frequently as the mother has an anxiety disorder.\80 In fact,
-|  the expert acknowledged the mother was following her treatment plan
-|  of medication and talk therapy for her condition of generalized anxiety disorder, which not surprisingly occurred only after the mother
-|  was subjected to the trauma of losing her young daughter through
-|  the courts. All in all, the mother's symptoms were now under control;
-|  with an amelioration of her condition, the mother was not likely to be
-.  overreacting
-
---- Sentence/end 
-id: 186
-r#  107295  1573  14
+id: 189
+r#  106281  1585  44
 
 --- Paragraph/end 
 id: 130
@@ -4769,16 +4822,53 @@ y: N/A
 
 --- Paragraph/start
 id: 131
-r#  107297  1575  1
+r#  106283  1587  1
 
 
 --- Sentence/start
-id: 187
-r#  107297  1575  1
+id: 190
+r#  106283  1587  1
 
 --- Sentence//end
-id: 187
-r#  107902  1581  44
+id: 190
+r#  107342  1599  13
+p: .
+t. 
+|  In the absence of solid evidence that the mother had been planting
+|  ideas in the child's mind, the expert chose to speculate. But she did so
+|  with an air of diagnostic certainty that one only sees in the contorted
+|  world of family courts; in all other settings physicians generally maintain a degree of uncertainty as integral to the canonical paradigm of
+|  differential diagnosis, which has proven essential for proper medical decision-making. In the summary section of her report the expert
+|  stated, I am sure the mother is talking to [the child]
+|  about this [sex abuse] frequently as the mother has an anxiety disorder.\80 In fact,
+|  the expert acknowledged the mother was following her treatment plan
+|  of medication and talk therapy for her condition of generalized anxiety disorder, which not surprisingly occurred only after the mother
+|  was subjected to the trauma of losing her young daughter through
+|  the courts. All in all, the mother's symptoms were now under control;
+|  with an amelioration of her condition, the mother was not likely to be
+.  overreacting
+
+--- Sentence/end 
+id: 190
+r#  107343  1599  14
+
+--- Paragraph/end 
+id: 131
+y: N/A
+
+
+--- Paragraph/start
+id: 132
+r#  107345  1601  1
+
+
+--- Sentence/start
+id: 191
+r#  107345  1601  1
+
+--- Sentence//end
+id: 191
+r#  107950  1607  44
 p: ?
 t. 
 |  The expert concluded that [the child] is being sexually abused by
@@ -4790,22 +4880,9 @@ t.
 .  and vindicating the allegedly guilty father
 
 --- Sentence/end 
-id: 187
-r#  107903  1581  45
+id: 191
+r#  107951  1607  45
 
---- Paragraph/end 
-id: 131
-y: N/A
-
-
---- Paragraph/start
-id: 132
-r#  107905  1583  1
-
-
---- Sentence/start
-id: 188
-r#  107905  1583  1
 --- Paragraph/end 
 id: 132
 y: N/A
@@ -4813,12 +4890,12 @@ y: N/A
 
 --- Paragraph/start
 id: 133
-r#  109119  1597  1
+r#  107953  1609  1
 
 
 --- Sentence/start
-id: 189
-r#  109119  1597  1
+id: 192
+r#  107953  1609  1
 --- Paragraph/end 
 id: 133
 y: N/A
@@ -4826,16 +4903,29 @@ y: N/A
 
 --- Paragraph/start
 id: 134
-r#  110277  1610  1
+r#  109167  1623  1
 
 
 --- Sentence/start
-id: 190
-r#  110277  1610  1
+id: 193
+r#  109167  1623  1
+--- Paragraph/end 
+id: 134
+y: N/A
+
+
+--- Paragraph/start
+id: 135
+r#  110325  1636  1
+
+
+--- Sentence/start
+id: 194
+r#  110325  1636  1
 
 --- Sentence//end
-id: 190
-r#  110565  1613  75
+id: 194
+r#  110613  1639  75
 p: .
 t. 
 |  Actually, one must struggle to find any rationality to the charge of
@@ -4868,13 +4958,13 @@ t.
 
 
 --- Sentence/switch
-id: 191
-r#  110566  1613  76
+id: 195
+r#  110614  1639  76
 
 
 --- Sentence//end
-id: 191
-r#  111270  1623  53
+id: 195
+r#  111318  1649  53
 p: .
 t. 
 |  That is, the doctors at the hospital found abuse, and the child told the
@@ -4889,32 +4979,33 @@ t.
 .  were conducted outside of the presence of the mother
 
 --- Sentence/end 
-id: 191
-r#  111271  1623  54
+id: 195
+r#  111319  1649  54
 
 --- Paragraph/end 
-id: 134
+id: 135
 y: N/A
 
 
 --- Paragraph/start
-id: 135
-r#  111273  1625  1
+id: 136
+r#  111321  1651  1
 
 
 --- Sentence/start
-id: 192
-r#  111273  1625  1
+id: 196
+r#  111321  1651  1
 
 --- Sentence//end
-id: 192
-r#  112643  1640  33
+id: 196
+r#  112692  1667  33
 p: .
 t. 
 |  Tragically, the lives of children are at stake as child protection twists
 |  and contorts statutory and case law definitions, making up its own rules
 |  to support the father accused of sexual abuse while the mother can
-|  be prosecuted and impoverished as she struggles to free herself of theoppressive and forceful powers of CPS. In fact, this Chicago mother,
+|  be prosecuted and impoverished as she struggles to free herself of the
+|  oppressive and forceful powers of CPS. In fact, this Chicago mother,
 |  like far too many protective mothers pursued by CPS, saw that they have
 |  to wait years just to finalize their divorce. This is so, because in most
 |  states once the case gets into Juvenile Court or Family Court, the divorce proceedings are generally stayed pending the resolution of CPS's
@@ -4929,32 +5020,32 @@ t.
 .  Amendment to the US Constitution
 
 --- Sentence/end 
-id: 192
-r#  112644  1640  34
+id: 196
+r#  112693  1667  34
 
 --- Paragraph/end 
-id: 135
+id: 136
 y: N/A
 
 
 --- Section/start
--l  3
--i  10
+-l  2
+-i  20
 -t  Mother Threatened with Jail if they Shared their Torment by the Courts with Others
 
 
 --- Paragraph/start
-id: 136
-r#  112741  1644  4
+id: 137
+r#  112789  1671  4
 
 
 --- Sentence/start
-id: 193
-r#  112741  1644  4
+id: 197
+r#  112789  1671  4
 
 --- Sentence//end
-id: 193
-r#  113014  1647  68
+id: 197
+r#  113062  1674  68
 p: .
 t. 
 |  This Chicago mother was threatened by the judge with contempt of
@@ -4964,13 +5055,13 @@ t.
 
 
 --- Sentence/switch
-id: 194
-r#  113015  1647  69
+id: 198
+r#  113063  1674  69
 
 
 --- Sentence//end
-id: 194
-r#  113666  1655  145
+id: 198
+r#  113714  1682  145
 p: .
 t. 
 |  Similarly, just a year earlier, a New Jersey high school science teacher,
@@ -4984,13 +5075,13 @@ t.
 
 
 --- Sentence/switch
-id: 195
-r#  113667  1655  146
+id: 199
+r#  113715  1682  146
 
 
 --- Sentence//end
-id: 195
-r#  113951  1659  7
+id: 199
+r#  113999  1686  7
 p: .
 t. 
 |  So, there does not appear to have been any sound legal reason to forbid either this Chicago mother or the New Jersey mother, or any of
@@ -4999,45 +5090,45 @@ t.
 .  system
 
 --- Sentence/end 
-id: 195
-r#  113952  1659  8
+id: 199
+r#  114000  1686  8
 
---- Paragraph/end 
-id: 136
-y: N/A
-
-
---- Paragraph/start
-id: 137
-r#  113954  1661  1
-
-
---- Sentence/start
-id: 196
-r#  113954  1661  1
 --- Paragraph/end 
 id: 137
 y: N/A
-
-
---- Section/start
--l  3
--i  11
--t  BIPOC Mother Suffers Ordeal with Child Protective Services - and Fears her Own Hired Counsel
 
 
 --- Paragraph/start
 id: 138
-r#  116170  1693  4
+r#  114002  1688  1
 
 
 --- Sentence/start
-id: 197
-r#  116170  1693  4
+id: 200
+r#  114002  1688  1
+--- Paragraph/end 
+id: 138
+y: N/A
+
+
+--- Section/start
+-l  2
+-i  21
+-t  BIPOC Mother Suffers Ordeal with Child Protective Services - and Fears her Own Hired Counsel
+
+
+--- Paragraph/start
+id: 139
+r#  116219  1721  4
+
+
+--- Sentence/start
+id: 201
+r#  116219  1721  4
 
 --- Sentence//end
-id: 197
-r#  116645  1698  58
+id: 201
+r#  116694  1726  58
 p: .
 t. 
 |  By isolating the mother from her primary support system, the trauma
@@ -5062,7 +5153,8 @@ t.
 |  extreme form of harassment (viz., gaslighting). To wit, the CPS officials are playing with the mind of the mother in order to force
 |  a recantation from her so that the father will be exonerated. Using
 |  government grants and other means of public funding in order to
-|  oppress, subjugate, and otherwise overpower a mother by forcingher into therapy with the CPS [approved] psychologist for the
+|  oppress, subjugate, and otherwise overpower a mother by forcing
+|  her into therapy with the CPS [approved] psychologist for the
 |  sole purpose of washing away a record of abuse committed by the
 |  father enables taxpayers to bankroll this criminal conspiracy.\90
 |  In comparing the BIPOC Chicago protective mother case with that of
@@ -5073,22 +5165,9 @@ t.
 .  will give a brief history of what transpired in this case
 
 --- Sentence/end 
-id: 197
-r#  116646  1698  59
+id: 201
+r#  116695  1726  59
 
---- Paragraph/end 
-id: 138
-y: N/A
-
-
---- Paragraph/start
-id: 139
-r#  116648  1700  1
-
-
---- Sentence/start
-id: 198
-r#  116648  1700  1
 --- Paragraph/end 
 id: 139
 y: N/A
@@ -5096,16 +5175,29 @@ y: N/A
 
 --- Paragraph/start
 id: 140
-r#  116966  1706  1
+r#  116697  1728  1
 
 
 --- Sentence/start
-id: 199
-r#  116966  1706  1
+id: 202
+r#  116697  1728  1
+--- Paragraph/end 
+id: 140
+y: N/A
+
+
+--- Paragraph/start
+id: 141
+r#  117015  1734  1
+
+
+--- Sentence/start
+id: 203
+r#  117015  1734  1
 
 --- Sentence//end
-id: 199
-r#  117674  1713  59
+id: 203
+r#  117723  1741  59
 p: .
 t. 
 |  On Christmas Day 2020, the BIPOC mother brought her
@@ -5122,22 +5214,9 @@ t.
 .  from her own lawyer for bringing her child to the hospital
 
 --- Sentence/end 
-id: 199
-r#  117675  1713  60
+id: 203
+r#  117724  1741  60
 
---- Paragraph/end 
-id: 140
-y: N/A
-
-
---- Paragraph/start
-id: 141
-r#  117677  1715  1
-
-
---- Sentence/start
-id: 200
-r#  117677  1715  1
 --- Paragraph/end 
 id: 141
 y: N/A
@@ -5145,16 +5224,29 @@ y: N/A
 
 --- Paragraph/start
 id: 142
-r#  118504  1725  1
+r#  117726  1743  1
 
 
 --- Sentence/start
-id: 201
-r#  118504  1725  1
+id: 204
+r#  117726  1743  1
+--- Paragraph/end 
+id: 142
+y: N/A
+
+
+--- Paragraph/start
+id: 143
+r#  118554  1753  1
+
+
+--- Sentence/start
+id: 205
+r#  118554  1753  1
 
 --- Sentence//end
-id: 201
-r#  118808  1729  20
+id: 205
+r#  118858  1757  20
 p: .
 t. 
 |  Although the child had a set of bruises covering a relatively large portion of her body (her back, side, and buttocks) and was complaining that
@@ -5172,22 +5264,9 @@ t.
 .  workup of the child
 
 --- Sentence/end 
-id: 201
-r#  118809  1729  21
+id: 205
+r#  118859  1757  21
 
---- Paragraph/end 
-id: 142
-y: N/A
-
-
---- Paragraph/start
-id: 143
-r#  118811  1731  1
-
-
---- Sentence/start
-id: 202
-r#  118811  1731  1
 --- Paragraph/end 
 id: 143
 y: N/A
@@ -5195,16 +5274,29 @@ y: N/A
 
 --- Paragraph/start
 id: 144
-r#  119618  1744  1
+r#  118861  1759  1
 
 
 --- Sentence/start
-id: 203
-r#  119618  1744  1
+id: 206
+r#  118861  1759  1
+--- Paragraph/end 
+id: 144
+y: N/A
+
+
+--- Paragraph/start
+id: 145
+r#  119668  1772  1
+
+
+--- Sentence/start
+id: 207
+r#  119668  1772  1
 
 --- Sentence//end
-id: 203
-r#  120549  1753  28
+id: 207
+r#  120601  1782  28
 p: .
 t. 
 |  The angst this mother showed in the face of such disturbing
@@ -5225,50 +5317,51 @@ t.
 |  shoulders of BIPOC mothers who encounter racial prejudice and hostility even from those to whom they turn for help. The BIPOC mother's
 |  fears were proven to be well founded. Similar to the Caucasian mother,
 |  the BIPOC mother was charged by DCFS with medical child abuse for
-|  trying to seek proper medical intervention for her child. But the comments of the medical expert who had been similarly hired by DCFS in the othercase, in which she likewise made a diagnostic finding against the mother
+|  trying to seek proper medical intervention for her child. But the comments of the medical expert who had been similarly hired by DCFS in the other case,
+|  in which she likewise made a diagnostic finding against the mother
 |  for medical child abuse, took on a particularly contemptuous tone in her
 .  report on this BIPOC mother
 
 --- Sentence/end 
-id: 203
-r#  120550  1753  29
+id: 207
+r#  120602  1782  29
 
 --- Paragraph/end 
-id: 144
+id: 145
 y: N/A
 
 
 --- Section/start
--l  3
--i  12
+-l  2
+-i  22
 -t  BIPOC Mother Mocked by Child Protective Services - while Evidence of Child Abuse is Ignored
 
 
 --- Paragraph/start
-id: 145
-r#  120657  1758  4
+id: 146
+r#  120708  1787  4
 
 
 --- Sentence/start
-id: 204
-r#  120657  1758  4
+id: 208
+r#  120708  1787  4
 --- Paragraph/end 
-id: 145
+id: 146
 y: N/A
 
 
 --- Paragraph/start
-id: 146
-r#  121572  1770  1
+id: 147
+r#  121623  1799  1
 
 
 --- Sentence/start
-id: 205
-r#  121572  1770  1
+id: 209
+r#  121623  1799  1
 
 --- Sentence//end
-id: 205
-r#  121776  1772  68
+id: 209
+r#  121827  1801  68
 p: .
 t. 
 |  For example, the medical expert hired by DCFS started off her lengthy
@@ -5287,13 +5380,13 @@ t.
 
 
 --- Sentence/switch
-id: 206
-r#  121777  1772  69
+id: 210
+r#  121828  1801  69
 
 
 --- Sentence//end
-id: 206
-r#  122588  1782  34
+id: 210
+r#  122639  1811  34
 p: .
 t. 
 |  Nor was any consideration given to the child's night terrors and enuresis following visits with the father. Instead, the evaluation focused on
@@ -5308,26 +5401,26 @@ t.
 .  concerns were indeed well founded
 
 --- Sentence/end 
-id: 206
-r#  122589  1782  35
+id: 210
+r#  122640  1811  35
 
 --- Paragraph/end 
-id: 146
+id: 147
 y: N/A
 
 
 --- Paragraph/start
-id: 147
-r#  122591  1784  1
+id: 148
+r#  122642  1813  1
 
 
 --- Sentence/start
-id: 207
-r#  122591  1784  1
+id: 211
+r#  122642  1813  1
 
 --- Sentence//end
-id: 207
-r#  123262  1790  18
+id: 211
+r#  123313  1819  18
 p: .
 t. 
 |  In truth, the right of a mother to have an attorney represent her interests and speak, when necessary, to the medical team working for DCFS
@@ -5339,22 +5432,9 @@ t.
 .  with racist views
 
 --- Sentence/end 
-id: 207
-r#  123263  1790  19
+id: 211
+r#  123314  1819  19
 
---- Paragraph/end 
-id: 147
-y: N/A
-
-
---- Paragraph/start
-id: 148
-r#  123265  1792  1
-
-
---- Sentence/start
-id: 208
-r#  123265  1792  1
 --- Paragraph/end 
 id: 148
 y: N/A
@@ -5362,16 +5442,29 @@ y: N/A
 
 --- Paragraph/start
 id: 149
-r#  124180  1804  1
+r#  123316  1821  1
 
 
 --- Sentence/start
-id: 209
-r#  124180  1804  1
+id: 212
+r#  123316  1821  1
+--- Paragraph/end 
+id: 149
+y: N/A
+
+
+--- Paragraph/start
+id: 150
+r#  124231  1833  1
+
+
+--- Sentence/start
+id: 213
+r#  124231  1833  1
 
 --- Sentence//end
-id: 209
-r#  124849  1812  44
+id: 213
+r#  124900  1841  44
 p: .
 t. 
 |  While forming a diagnosis of medical child abuse on the grounds
@@ -5379,7 +5472,7 @@ t.
 |  abuse trauma] provoked by the parent,\98 the medical expert commented that the child, who recently turned four, may need separation
 |  from her mother to allow normalizing her environment [sic]. The expert justified her recommendation that this BIPOC protective mother be
 |  charged by the state child protective services with medical child abuse
-|  because [the] mother has a perception that her child is being abused and
+|  because [t]he mother has a perception that her child is being abused and
 |  therefore [is] not an objective caretaker. Sadly, the expert's comment
 |  that the child may need separation from her mother eerily suggests
 |  that the child may risk being placed in foster care given the ominous
@@ -5395,32 +5488,32 @@ t.
 .  terrors), and regressed behavior (enuresis)
 
 --- Sentence/end 
-id: 209
-r#  124850  1812  45
+id: 213
+r#  124901  1841  45
 
 --- Paragraph/end 
-id: 149
+id: 150
 y: N/A
 
 
 --- Section/start
--l  3
--i  13
+-l  2
+-i  23
 -t  BIPOC Mother Reproached by Child Protective Services' Expert - With Added Hints of Psychopathology
 
 
 --- Paragraph/start
-id: 150
-r#  124965  1817  4
+id: 151
+r#  125015  1846  4
 
 
 --- Sentence/start
-id: 210
-r#  124965  1817  4
+id: 214
+r#  125015  1846  4
 
 --- Sentence//end
-id: 210
-r#  125314  1820  72
+id: 214
+r#  125364  1849  72
 p: .
 t. 
 |  As will be shown, the medical expert consultant for CPS - in using mere
@@ -5430,13 +5523,13 @@ t.
 
 
 --- Sentence/switch
-id: 211
-r#  125315  1820  73
+id: 215
+r#  125365  1849  73
 
 
 --- Sentence//end
-id: 211
-r#  125672  1824  6
+id: 215
+r#  125722  1853  6
 p: .
 t. 
 |  Certainly, in the Caucasian case, the medical expert reached diagnostic conclusions premised on flawed reasoning. For example, she used
@@ -5445,36 +5538,8 @@ t.
 .  abuse
 
 --- Sentence/end 
-id: 211
-r#  125673  1824  7
-
---- Paragraph/end 
-id: 150
-y: N/A
-
-
---- Paragraph/start
-id: 151
-r#  125675  1826  1
-
-
---- Sentence/start
-id: 212
-r#  125675  1826  1
-
---- Sentence//end
-id: 212
-r#  126036  1829  26
-p: .
-t. 
-|  The expert's unwarranted reasoning was similarly evident in her professional assessment of the BIPOC mother. However, when comparing
-|  her two assessments, it is clear that the expert was remarkably less restrained in describing the BIPOC mother when compared with the
-|  Caucasian mother, even invoking bizarre psychopathological labels to
-.  describe the BIPOC mother
-
---- Sentence/end 
-id: 212
-r#  126037  1829  27
+id: 215
+r#  125723  1853  7
 
 --- Paragraph/end 
 id: 151
@@ -5483,16 +5548,44 @@ y: N/A
 
 --- Paragraph/start
 id: 152
-r#  126039  1831  1
+r#  125725  1855  1
 
 
 --- Sentence/start
-id: 213
-r#  126039  1831  1
+id: 216
+r#  125725  1855  1
 
 --- Sentence//end
-id: 213
-r#  126882  1839  136
+id: 216
+r#  126086  1858  26
+p: .
+t. 
+|  The expert's unwarranted reasoning was similarly evident in her professional assessment of the BIPOC mother. However, when comparing
+|  her two assessments, it is clear that the expert was remarkably less restrained in describing the BIPOC mother when compared with the
+|  Caucasian mother, even invoking bizarre psychopathological labels to
+.  describe the BIPOC mother
+
+--- Sentence/end 
+id: 216
+r#  126087  1858  27
+
+--- Paragraph/end 
+id: 152
+y: N/A
+
+
+--- Paragraph/start
+id: 153
+r#  126089  1860  1
+
+
+--- Sentence/start
+id: 217
+r#  126089  1860  1
+
+--- Sentence//end
+id: 217
+r#  126932  1868  136
 p: .
 t. 
 |  For example, pointing to the BIPOC mother's condition of baseline
@@ -5506,26 +5599,26 @@ t.
 .  psychopathology - and when such terms are used in a medical context, as opposed to casual conversation, they bear clinical significance
 
 --- Sentence/end 
-id: 213
-r#  126883  1839  137
+id: 217
+r#  126933  1868  137
 
 --- Paragraph/end 
-id: 152
+id: 153
 y: N/A
 
 
 --- Paragraph/start
-id: 153
-r#  126885  1841  1
+id: 154
+r#  126935  1870  1
 
 
 --- Sentence/start
-id: 214
-r#  126885  1841  1
+id: 218
+r#  126935  1870  1
 
 --- Sentence//end
-id: 214
-r#  127493  1849  61
+id: 218
+r#  127543  1878  61
 p: .
 t. 
 |  Although the psychiatric labeling of BIPOC mothers is particularly
@@ -5539,9 +5632,9 @@ t.
 .  brought on by malicious child protective service proceedings
 
 --- Sentence/end 
-id: 214
-r#  127494  1849  62
+id: 218
+r#  127544  1878  62
 
 --- Paragraph/end 
-id: 153
+id: 154
 y: N/A

@@ -328,10 +328,10 @@ int main(int argc, char *argv[])
 
 // _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references/references.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references/references.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
 // file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/toc/toc.gt";
 // folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/toc";
@@ -350,10 +350,10 @@ int main(int argc, char *argv[])
 
 
 
-   file = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/conf/paper-conf.gt";
-   folder = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/src";
+//   file = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/conf/paper-conf.gt";
+//   folder = "/home/nlevisrael/gits/PacTk-web/PacTk-jats/docs/gt/src";
 
-   _main(file, folder, manfolder);
+//   _main(file, folder, manfolder);
 
 
 #ifdef HIDE
