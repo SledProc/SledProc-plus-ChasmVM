@@ -1,0 +1,773 @@
+﻿
+
+
+\documentclass[11pt]{article}
+
+\usepackage[top=.85in, bottom=.65in, left=.56in, right=.45in, footskip=0pt,
+paperheight=12in,paperwidth=9.25in]{geometry}
+
+\usepackage{csquotes}
+
+\newcommand{\Ldown}[1]{\hspace{-2pt}\raisebox{-1pt}{{%\fontfamily{lmhh}
+\fontsize{14}{11}\selectfont{}{\textnormal{#1.}}}}\hspace{3pt}}
+
+
+\newcommand{\semihr}[1]{{\textcolor{orange!60!black}{\hrule width #1}}}
+
+%\newcommand{\toptxt}[1]{#1}
+
+\newcommand{\toptxt}[2]{\hspace*{#1}\textcolor{blue!50!black}{%
+\fontfamily{ppl}\fontsize{21}{21}\selectfont \textbf{\textit{#2}}}}
+
+
+
+\usepackage{xcolor}
+
+
+\usepackage{xcolor}
+
+
+\input{innerpactk}
+
+
+\usepackage{titleps}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+
+\definecolor{AquaA5}{HTML}{4bacc6}
+\definecolor{blggr}{rgb}{25, 180, 180}
+
+\definecolor{rbl}{RGB}{225, 180, 180}
+
+%\usepackage{soul}
+\newcommand{\ul}[1]{\underline{#1}}
+
+
+
+\newcommand*\fndiamondX[1]{\tikz[baseline=(char.base), x=2cm,y=1.5cm]{
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+%shape=circle,
+top color=red!31, bottom color=red!0,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,0) {\ul{{#1}}};
+
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+top color=AquaA5!50!black, bottom color=blggr!20,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\ul{{#1}}};
+
+
+}}
+
+
+
+\definecolor{bkgr}{HTML}{228AFE}
+
+\colorlet{rgrAt}{rgr!30!bkgr}
+
+\definecolor{ru}{RGB}{199, 99, 4}
+
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{.7pt}
+\contourlength{0.3pt}
+
+\newcommand\reduline{\bgroup\markoverwith
+{\textcolor{ru}{\rule[-.25ex]{3pt}{3.4pt}}}\ULon}
+
+\DeclareRobustCommand{\xfigunderline}[1]{\reduline{#1}
+\llap{\dashuline{\phantom{#1}}}%
+}
+
+
+\DeclareRobustCommand{\figunderline}[1]{%
+\raisebox{-.5pt}{\large%
+  \textcolor{ru}{\uline{\phantom{#1}}}%
+  \llap{\contour{white}{#1}}}%
+}
+
+%Figure~
+
+\def\figureautorefname{}
+
+%\DeclareRobustCommand{\Atref}[1]{{\ref{\textcolor{blue}{#1}}}}
+
+
+%\let\Oldautoref\autoref
+\renewcommand{\Atref}[1]{\textcolor{rgrAt!30}{\xfigunderline{\hspace{-2pt}\autoref{#1}\hspace*{-2pt}}}}
+
+\newcommand{\Athref}[2]{\textcolor{rgrAt!30}{\xfigunderline{\hspace{-2pt}\hyperlink{#1}{#2}\hspace*{-2pt}}}}
+
+
+
+
+%\let{\Oldref}{\ref}
+%\renewcommand{\ref}[1]{\Oldref{#1} on page \pageref{#1}}
+
+
+\usepackage[all]{hypcap}
+
+\usepackage{caption}
+
+%\let\svthefigure\thefigure
+
+%\let\svthefiguretxt\thefigure
+%\renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefiguretxt}}}
+
+
+\let\svthefigure\thefigure
+\let\svfigurename\figurename
+\newcommand\figcolortxt{%
+  \renewcommand\thefigure{\bfseries\sffamily\color{blue}\svthefigure}%
+  \renewcommand\figurename{\bfseries\sffamily\color{blue}\svfigurename}%
+}
+
+%  
+%\renewcommand\figurename{\color{rgr!70!ybk}\svfigurename}
+ % \renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefigure}}}
+
+\newcommand{\figm}[1]{{\color{rgrAt}\figunderline{\large #1}}}
+
+\let\svthefigure\thefigure
+\let\svfigurename\figurename
+\renewcommand\thefigure{\protect\myfigmarkup\svthefigure}
+\renewcommand\figurename{\protect\myfigmarkupn\svfigurename}
+\let\myfigmarkup\relax
+\newcommand\figcolor{%
+  \def\myfigmarkupn{\color{rgr!70!ybk}}%
+  \def\myfigmarkup{\figm}}%
+}
+
+
+%\newcommand\figcolor{%
+%\renewcommand\thefigure{\color{rgrAt}{\figunderline{\svthefigure}}}
+%}
+
+%\newcommand\figcolorundo{\renewcommand\thefigure{\svthefigure}}
+
+
+%\figcolor{}
+
+
+\newcommand*\fndiamond[1]{\tikz[baseline=(char.base)]{
+
+
+% \node[shape=circle,fill=white,draw=white,
+%inner sep=17pt, xshift=.5pt,yshift=-.5pt] (char) at (0,5) {};
+
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+%shape=circle,
+top color=rbl!30, bottom color=rbl!20,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,0) {\ul{{#1}}};
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+%shape=circle,
+top color=AquaA5!50!black, bottom color=white,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,0.15) {\ul{{#1}}};
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+%shape=circle,
+top color=AquaA5!50!black, bottom color=white,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,0.2) {\ul{{#1}}};
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45,
+top color=white, bottom color=white,
+fill opacity=1,
+inner sep=2.5pt, shading angle=90,label={}] (bk)  at (0,0.2) {\ul{{#1}}};
+%
+}
+}
+
+
+\newcommand*\fnacircled[1]{\tikz[baseline=(char.base)]{
+
+ \node[shape=regular polygon, regular polygon sides=5, 
+shape border rotate=180,
+%shape=circle,
+top color=AquaA5!50!black, bottom color=blggr!20,
+inner sep=4.5pt, shading angle=210,xshift=.5pt,yshift=-.5pt] (char) {\ul{#1}};
+
+ \node[shape=regular polygon, regular polygon sides=5, 
+shape border rotate=180,
+top color=white, bottom color=blggr!20,
+fill opacity=1,
+inner sep=3.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
+
+
+% \node[shape=regular polygon,regular polygon sides=5,
+%shape border rotate=180,
+%AquaA5!50!black, bottom color=blggr!20, %top color=blggr!20, bottom color=yellow!20,
+%inner sep=6pt, shading angle=125,xshift=.5pt,yshift=-.5pt,label={}] (char) {\ul{#1}};
+
+% \node[shape=regular polygon,regular polygon sides=5,
+%shape border rotate=180,
+%fill opacity=1,top color=white, bottom color=blggr!20,
+%inner sep=5.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
+}}
+
+
+
+
+
+
+
+
+
+\newcommand*\fncircled[1]{\tikz[baseline=(char.base)]{
+
+ \node[shape=circle,
+top color=blggr!20, bottom color=AquaA5!90!black,
+inner sep=7pt, shading angle=75,xshift=.5pt,yshift=-.5pt] (char) {\ul{#1}};
+
+ \node[shape=circle,top color=white, bottom color=blggr!16,
+fill opacity=1,
+inner sep=6.5pt, shading angle=90,label={}] (bk) {\ul{#1}};
+}}
+
+
+
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+
+
+\fancypagestyle{lastpageX}{
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}
+    \fancyfoot[C] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fndiamond{\usepage}}}}}
+
+}
+
+
+\fancypagestyle{lastpagey}{
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}
+
+     \fancyfoot[C] {\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fndiamond{\usepage}}}}
+
+
+
+%     \fancyfoot[L] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamondX{\usepage}}}}
+
+
+%     \fancyfoot[C] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamond{\usepage}}}}
+
+
+%    \fancyfoot[C] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamond{\usepage}}}}}
+%    \fancyfoot[L] {\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamondX{\usepage}}}
+
+}
+
+
+%\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamond{\usepage}}}}
+
+\fancypagestyle{firstpagex}{
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}   
+    \fancyfoot[C] {\fontsize{12}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fnacircled{\textheight}}}}}
+}
+
+
+
+
+
+\fancypagestyle{default}{
+    \fancyhf{}           
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}   
+    \fancyfoot[C] {\fontsize{12}{10}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\hspace{1.6em}\fncircled{\usepage}}}}}}
+}
+
+
+\fancypagestyle{predefault}{
+    \fancyhf{}           
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0.2pt}   
+    \fancyfoot[RO, LE] {Pre \thepage}
+}
+
+\fancypagestyle{lastpage}{
+    \renewcommand{\headrulewidth}{0pt}    
+    \renewcommand{\footrulewidth}{0pt}
+    \fancyfoot[C] {}
+}
+
+
+
+\pagestyle{default}
+
+
+
+
+
+
+
+%\begin{center}
+%{\relscale{1.2}{\fontfamily{phv}\fontseries{b}\selectfont 
+%{\colorbox{black}{\color{blue}{\llWC{} Database Engine \\and 
+%\llMOSAIC{} Native Application Toolkit}}}}}
+
+\colorlet{ctmp}{logoPeach!20!gray}
+\colorlet{ctmpp}{ctmp!90!yellow}
+\colorlet{ctmppp}{ctmpp!50!black}
+\colorlet{ctmpppp}{ctmppp!90!logoRed}
+\colorlet{ctmcyan}{ctmpppp!70!cyan}
+
+\colorlet{ctmcyano}{ctmcyan!40!orange}
+\colorlet{ctmcyanor}{ctmcyano!50!red}
+
+\colorlet{cyann}{cyan!70!blue}
+
+\newcommand{\cyanhr}{{\textcolor{cyann!40}{\hrule}}}
+
+%109 52 4359
+
+%\textcolor{logoRed}{\textbf{January 27, 2021}}
+
+\newcommand{\sectprevspace}{\vspace{24pt}}
+
+\newcommand{\sectnum}[1]{\hspace*{25pt}\textcolor{red!70!black}{}\hspace*{3pt}}
+
+\newcommand{\secttitle}[1]{\textcolor{red!70!black}{\textit{\textbf{#1}}}}
+
+\newcommand{\subtitle}[1]{\begin{center}\textcolor{purple!70!black}{\textit{\textbf{%
+{\fontsize{11.5}{9.5}\selectfont{}#1}}}}\end{center}}
+
+\newcommand{\cfootnote}[1]{\footnote{\centering #1}}
+
+
+%\newcommand{\ConceptsDB}{\resizebox{!}{7.5pt}{\ATexttclr{ConceptsDB}}}
+
+\newcommand{\lConceptsDB}{\resizebox{!}{7pt}{\ATexttclr{Concepts}}%
+\resizebox{!}{6.5pt}{\ATexttclr{DB}}}
+
+\newcommand{\llConceptsDB}{Concepts%
+\hspace*{.5pt}\resizebox{!}{7.5pt}{\textcolor{dsl!70!black}{DB}}}
+
+\newcommand{\PylonAthreeR}{\resizebox{!}{6.5pt}{\ATexttclr{Pylon}}%
+\resizebox{!}{6pt}{\ATexttclr{A3R}}}
+
+
+\newcommand{\lPylonAthreeR}{\resizebox{!}{7pt}{\ATexttclr{Pylon}}%
+\resizebox{!}{6.5pt}{\ATexttclr{A3R}}}
+
+\newcommand{\llPylonAthreeR}{Pylon%
+\hspace*{.5pt}\resizebox{!}{7.5pt}{\textcolor{dsl!70!black}{A3R}}}
+
+
+\newcommand{\PHCN}{\resizebox{!}{6.5pt}{\ATexttclr{PHCN}}}
+\newcommand{\lPHCN}{\resizebox{!}{7pt}{\ATexttclr{P}}\resizebox{!}{6pt}{\ATexttclr{HCN}}}
+
+
+
+
+%\setlength{\itemsep}{50pt}
+
+
+\AddToShipoutPictureBG{%
+
+\colorlet{redbl}{red!40!magenta}
+\colorlet{yelbl}{yellow!60!magenta}
+
+\colorlet{redblg}{redbl!30!black}
+
+%\ifnum\value{page}=5{
+%\AtTextLowerLeft{\raisebox{-5pt}{\hspace{5pt}\fontfamily{qtm}\fontsize{10}{11}\fontseries{b}\selectfont{}{\colorbox{yelbl!7}{\textcolor{redblg!70}{PLEASE SEE OUR SOFTWARE DEMO VIDEOS: \href{http://www.lingtechsys.com/videos/qmt-composite.mkv}{GIS},
+%\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{360\textdegree{} photography}, and \href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{image processing}.}}}}}
+%}\fi
+
+}
+
+\usetikzlibrary{arrows}
+
+
+\input{PacTkOverlaysz}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+{\hspace*{278pt}\raisebox{-27pt}{\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+\fnacircled{\usepage}} }}}
+}
+}\fi
+}
+
+
+\definecolor{rgr}{RGB}{61, 38, 48}
+
+\definecolor{ybk}{RGB}{187, 228, 240}
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+{\hspace*{431pt}\raisebox{728pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
+\colorbox{ybk}{\textls*[-50]{\textit{\textcolor{rgr}{``Scientific Publishing is\ }}}}}
+}
+}
+}
+}\fi
+}
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=1{
+\AtTextLowerLeft{
+{\hspace*{433pt}\raisebox{710pt}{\fontfamily{pnc}\fontsize{13}{11}\selectfont{%
+\colorbox{ybk}{\textls*[-50]{\textit{\textcolor{rgr}{\ \ a Scientific Discipline''\ }}}}}
+}
+}
+}
+}\fi
+}
+
+
+
+
+
+
+
+
+
+
+\AddToShipoutPicture{%
+\ifnum\value{page}=111{
+
+\AtTextLowerLeft{
+\hspace{-8pt}\raisebox{82pt}{%
+ \href{http://www.lingtechsys.com/videos/qmt-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.4]{pm/qmt-composite.png}\\GIS}}%
+ \hspace{10pt}\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.255]{pm/dhax-composite.png}\\360\textdegree{} photography}}%
+ \hspace{25pt}\href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.35]{pm/xcsd-composite.png}\\Image Processing}}%
+}}}\fi
+}
+
+
+
+
+
+%\AddToShipoutPicture*{%
+%\ifnum\value{page}=12{
+%  \AtPageLowerLeft{%
+%    \raisebox{20pt}{%
+      
+%\hspace*{9pt}\fontsize{11}{11}\selectfont{\textcolor{logoOrange!50!magenta}{%
+%\fndiamond{\usepage}}}
+%
+%    }%
+%  }
+%\fi}
+%}
+
+\renewcommand{\descriptionlabel}[1]{\hspace{\labelsep}%
+{\fontfamily{lmss}\fontseries{bx}\fontsize{12}{12}\selectfont%
+\textcolor{bkgr!50!black}{#1}\hspace*{1.5em}}
+}
+
+
+%\renewcommand{\pseudoIndent}{\vspace*{-4pt}\noindent\hspace{4pt}}
+
+\newcommand{\psUp}{\vspace*{-9pt}}
+
+\renewcommand{\shortenp}{\hspace*{5pt}}
+
+\begin{document}
+
+
+%\setlength{\footskip}{22pt}
+
+
+\thispagestyle{empty}
+%\thispagestyle{firstpage}
+
+\vspace*{-47pt}
+
+%\vspace*{1em}
+
+\begin{center}
+
+{\cyanhr}
+
+\vspace*{9pt}
+
+{\color{red!70!black}\fontfamily{phv}\fontseries{b}\selectfont
+
+%\vspace*{13pt}
+
+%{\Large{Solving the Machine Readable Problem}}
+
+%\vspace*{10pt}
+
+%{\Large{by}}
+
+{\large{The Publishing Accelerator Toolkit (PacTk)}}
+
+%\vspace*{7pt}
+
+%{\large{as applied to Multimedia Government, Civil and Environmental Informatics}}
+
+%\vspace*{7pt}
+
+%{\large{Architecture, Construction, and Property Data}}
+
+\vspace*{-3pt}
+
+}
+
+{\cyanhr}
+
+\vspace*{23pt}
+
+\hspace{-32pt}Amy Neustein, Ph.D.\\
+\hspace{-32pt}CEO and Founder\\
+\hspace{-32pt}Linguistic Technology Systems\\
+\hspace{-32pt}Fort Lee, NJ\\
+\hspace{-32pt}917-817-2184\\
+\hspace{-32pt}\href{mailto://amy.neustein@verizon.net}{amy.neustein@verizon.net}
+
+\end{center}
+
+%\newgeometry{}
+
+%{\large{}}
+
+%vspace*{6pt}
+
+
+%}
+
+\vspace*{4pt}
+
+
+{\setstretch{1.12}
+
+
+%\section{Overview}
+%\vspace{}
+\noindent\subtitle{{Class Libraries and Full-Text Search/Encoding Tools for   \\
+\vspace{1pt}
+Publishing Documents, Datasets, and Multimedia Resources}}
+%\sectvspace{}
+
+\vspace*{9pt}
+
+
+\vspace*{-1pt}
+{\semihr{0.219\textwidth}}
+\vspace*{5pt}
+%\sectnum{1.}
+\hspace{2pt}\secttitle{{Executive Summary}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
+\vspace*{5pt}
+{\semihr{0.219\textwidth}}
+
+\vspace*{12pt}
+
+\p{\lPacTk{} is a customizable \PDF{} viewer and a class-library 
+for mid-stream publishing workflows}
+
+\p{Use cases include:}
+
+
+\begin{description}
+
+\item[\textbullet{}Navigation Handles for Finding Index Terms:] \hspace*{-16pt} After a 
+user selects an index entry, buttons will appear 
+in the margins.
+These buttons will allow users to scroll between the pages 
+where the index term appears, without needing to go back to the 
+index itself each time to find the next page with a paragraph 
+that matches the index entry (Figure~\Atref{fig:f1}).
+
+\item[\textbullet{}Meta-Index for Side-by-Side Reading of 
+Multiple Books:]  \hspace*{-16pt}  This allows indexes from 
+multiple books to be pooled into a single searchable database.  Then, 
+users who are reading one book from the publisher 
+can select a word or phrase --- the 
+\PDF{} viewer will then find matching pages from other books 
+by the publisher and display them in a new 
+window on the same screen so they could be 
+read side-by-side (Figure~\Atref{fig:f2}).
+
+\item[\textbullet{}Compiling Indexes:] \hspace*{-16pt}  The \PacTk{} \PDF{} viewer 
+has special windows for indexing tasks.  For example, after 
+compiling a list of index entries, authors or production editors 
+could instruct the \PDF{} viewer to work through these index 
+entries to find the matching words or phrases within the 
+manuscript.  The \PDF{} viewer would then insert a button next 
+to each matching paragraph that could be clicked to 
+automatically add the current page number or Para ID to the index. 
+Another example is that 
+when building an index for a second edition, 
+this matching process would be performed within both books, 
+allowing authors and production editors to compare the results 
+side-by-side (Figure~\Atref{fig:f3}).
+
+\vspace{5pt}
+
+Typically, if a paragraph was referenced in the 
+index for the first edition, and a similar or identical 
+paragraph is preserved in the second edition, the author 
+will likely want the corresponding Para ID to be 
+included in the second edition's index as well.  
+For this reason, examining the two editions 
+side-by-side can speed up the index process, allowing 
+the author or production editor to conclude quickly that a 
+second-edition paragraph matches --- and hit the \q{yes} 
+button to confirm, so that the locator (either as a Para ID 
+or as a page number) will be added to the index.
+
+\item[\textbullet{}Multimedia Plugins:] \hspace*{-16pt}  Another 
+feature of \PacTk{}'s \PDF{} viewer is the option 
+to embed windows showing different kinds of multimedia content 
+that can enhance or accompany scientific publications.  
+These supplemental materials might include videos, 
+digital maps, computer simulations, 
+\ThreeD{}/panoramic photography, and other kinds 
+of \ThreeD{} graphics.  A \PDF{} document 
+that contains conventional \TwoD{} graphics --- for 
+example, a map centered on some specific latitude/longitude 
+coordinates, or a video frame, or one shot from a simulation 
+--- could then be paired with a \GUI{} 
+display showing a full map, video, or \ThreeD{} graphics 
+from which the still image is taken.
+
+\vspace*{9pt}
+
+%\sstitle{White Paper}
+
+\textcolor{orr!65!black}{\hrule}
+
+\vspace*{3pt}
+
+\p{For more information a longer technical report can be found 
+\href{https://scignscape.github.io/PNP/documents/PacTk/Publishing-Accelerator-Toolkit.pdf}{here}%  Or, please see our software demo videos:
+
+
+
+
+}
+
+%\clearpage{}
+
+
+\begin{figure}[h!]
+\figcolor
+\hspace{-25pt}\includegraphics[scale=.93, trim=0 4.34cm 0 0, clip]{x/m2m.png}
+\caption{Index Search in a PDF Front-End Context}
+\label{fig:f1}
+\end{figure}
+
+%\vspace*{-22em}
+
+%s
+\clearpage{}
+
+
+
+\begin{figure}[t!]
+\figcolor
+\vspace*{-3em}
+\includegraphics[scale=0.5]{fin/stark-mi.png}
+\includegraphics[scale=0.5]{fin/stark.png}
+\caption{Meta-index search through a web portal}
+\label{fig:f2}
+\end{figure}
+
+\thispagestyle{empty}
+%\vspace*{8pt}
+
+\clearpage{}
+
+
+\begin{figure}[h!]
+\vspace{200pt}
+\figcolor
+\includegraphics[scale=0.45,clip,trim=290pt 190pt 0pt 0pt]{fin/ie.png}
+\caption{Compiling an index for the second edition of a book}
+\label{fig:f3}
+\end{figure}
+
+
+
+\clearpage{}
+
+\begin{figure}[h!]
+\vspace{200pt}
+\figcolor
+\includegraphics[scale=.8,clip,trim=20pt 7pt 0pt 0pt]{fin/mol.png}
+\vspace{2em}
+\caption{A PDF Plugin Showing an Interactive 3D Molecular Visualization Window}
+\label{fig:f4}
+\end{figure}
+
+
+
+%\setlength{\belowcaptionskip}{5pt}
+%\setlength{\belowcaptionskip}{0pt}
+
+%}
+
+%\newgeometry{bottom=.7in}
+
+
+%\p{}
+%\p{}
+
+%\vspace*{-21pt}
+
+%{\semihr{0.164\textwidth}}
+%\vspace*{4pt}
+%\sectnum{1.}
+%\hspace*{-28pt}\secttitle{{Video Links}}\sstitletri{7}\sstitletri{2}\sstitletri{2}
+%\vspace*{4pt}
+%{\semihr{0.164\textwidth}}
+
+
+
+
+
+
+
+% \href{http://www.lingtechsys.com/videos/qmt-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.3]{pm/qmt-composite.png}\\\GIS{}}}%
+% \hspace{10pt}\href{http://www.lingtechsys.com/videos/dhax-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.255]{pm/dhax-composite.png}\\360\textdegree{} photography}}%
+% \hspace{25pt}\href{http://www.lingtechsys.com/videos/xcsd-composite.mkv}{\parbox{.3\textwidth}{\includegraphics[scale=.35]{pm/xcsd-composite.png}\\Image Processing}}%
+
+}
+
+
+%\vspace*{3pt}
+
+%\pagestyle{lastpage}
+%
+
+%\clearpage{}
+
+\end{document}
+
+% Figure 1  ZoLa compared with a static \PDF{} map
+% Figure 2  Merging NYC environment-related classifications 
+ %            with WRI and ISI designations
+% Figure 3  Custom query windows for accessing E-Designation data
+% Figure 4  Customizable basemaps and data-layer overlays
+% Figure 5  Managing communications with NYCPlanning \API{}s as part 
+ %            of a metro area-wide \API{} integration 
+
+
+
+

@@ -258,95 +258,95 @@ int main(int argc, char *argv[])
 // _main(file, folder, manfolder);
 
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/foreword/foreword.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/foreword";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/foreword/foreword.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/foreword";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/intro/intro.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/intro";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/intro/intro.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/intro";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch1/ch1.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch1";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch1/ch1.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch1";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch2/ch2.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch2";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch2/ch2.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch2";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch3/ch3.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch3";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch3/ch3.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch3";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch4/ch4.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch4";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch4/ch4.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch4";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5/ch5.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5/ch5.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch5";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch6/ch6.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch6";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch6/ch6.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch6";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch7/ch7.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch7";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch7/ch7.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch7";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch8/ch8.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch8";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch8/ch8.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch8";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch9/ch9.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch9";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch9/ch9.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch9";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch10/ch10.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch10";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch10/ch10.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch10";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch11/ch11.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch11";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch11/ch11.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ch11";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes/notes.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes/notes.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/notes";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
  file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references/references.gt";
  folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/references";
 
  _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/toc/toc.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/toc";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/toc/toc.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/toc";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-// file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ack/ack.gt";
-// folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ack";
+ file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ack/ack.gt";
+ folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/ack";
 
-// _main(file, folder, manfolder);
+ _main(file, folder, manfolder);
 
-//  file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/pers/pers.gt";
-//  folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/pers";
+  file = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/pers/pers.gt";
+  folder = "/home/nlevisrael/gits/sled/s+p-prelim/ar/m2m/pers";
 
-//  _main(file, folder, manfolder);
+  _main(file, folder, manfolder);
 
 
 

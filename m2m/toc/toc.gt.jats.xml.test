@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---->
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" dtd-version="1.4">
+    <!--meta:here-->
+    <body>
+
+
+<!--enter p.1-->
+        <p.1 id="Para-1">Foreword by Margaret B. Drew  \hf{xiii}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-2">Preface by Robert Geffner  \hf{xvi}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-3">Acknowledgments   \hf{xxiii}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-4">Prologue   \hf{xxxi}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-5">Introduction   \hf{lxxiv}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-6">1 An Overview of Family Court Madness—and Mothers’\\
+Mutiny  \hf{2}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-7">2 The New Legal Landscape    \hf{27}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-8">3 Research Methods    \hf{39}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-9">4 Robed Rage   \hf{60}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-10">5 Lawless Law Guardians    \hf{120}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-11">6 Anti-Social Services   \hf{157}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-12">7 Mental Health Quackery    \hf{219}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-13">8 Mothers and Madness: The <q>Aftershocks</q> of the\\
+System    \hf{280}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-14">9 <q>Rebirthing</q> the Family Court System    \hf{297}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-15">10 Reforming the Courts   \hf{306}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-16">11 Reforming the Court Auxiliaries   \hf{328}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-17">Notes   \hf{353}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-18">References   \hf{428}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-19">Index   \hf{452}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+
+@=/sec=@
+<!--end section-->
+    </body>
+    <!--ended body-->
+    <!--inserting bibliography-->
+
+<back>
+        <ref-list>
+            <title>Bibliography</title>
+            <!--bib:here-->
+        </ref-list>
+    </back>
+</article>
+
+<!--ended document-->

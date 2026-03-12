@@ -1,0 +1,31 @@
+
+\usetikzlibrary{calc}
+
+\makeatletter
+\newlength\link@width
+\newsavebox\link@box
+
+\newcommand{\formatlink}[1]{%
+   % --- save the box to be displayed (so that e.g. footnote counters do not
+   %     get incremented twice)
+   \savebox{\link@box}{#1}%
+   % --- calculate the width of the box for later use
+   \settowidth\link@width{\usebox{\link@box}}%
+   % --- draw the link
+   \tikz[baseline=(todotted.base)]{
+   \node[inner sep=-1pt,outer sep=0pt] (todotted) {\usebox{\link@box}};
+   \draw[dotted, line width=1pt, draw=magenta!30!black] 
+      ([yshift=-1pt]$(todotted.base)-(.5\link@width,2pt)$) -- +(\link@width,0); 
+   \draw[dotted, line width=1pt, draw=yellow] 
+      ([yshift=-1pt,xshift=1pt]$(todotted.base)-(.5\link@width,2pt)$) -- +(\link@width,0); 
+
+   }%
+}
+
+\makeatother
+
+\AtBeginDocument{%
+   % --- replace hyperref command
+   \let\oldhref=\href
+   \renewcommand\href[2]{\formatlink{\oldhref{#1}{#2}}}
+}

@@ -1,0 +1,104 @@
+
+
+\usepackage[top=1in, bottom=.95in, left=.8in, right=.8in,  
+paperheight=12in,paperwidth=8.5in]{geometry}
+
+\setlength{\headsep}{40pt}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+
+\usepackage{ifthen}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyheadoffset[rh]{0pt}
+\fancyheadoffset[lh]{0pt}
+    
+%\fancyhead[L]{\textbf{\arabic{page}}} 
+
+\definecolor{pg-inner}{RGB}{227, 225, 226}
+\definecolor{pg-outer}{RGB}{227, 185, 126}
+    
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle, draw=pg-outer, 
+text=red!50!black, fill=pg-inner,inner sep=5pt] (char) {\textbf{#1}};}}
+
+\newcommand*\diamond[1]{\tikz[baseline=(char.base)]{
+            \node[shape=regular polygon, regular polygon sides=4, draw=pg-outer, 
+text=red!50!black, fill=pg-inner,inner sep=5pt] (char) {\textbf{#1}};}}
+
+
+\newcommand*\fndiamond[1]{\tikz[baseline=(char.base), x=2cm,y=1.5cm]{
+
+% \node[shape=regular polygon, regular polygon sides=4, 
+%shape border rotate=45,
+%top color=red!31, bottom color=red!0,
+%inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,0) {#1};
+
+
+ \node[shape=regular polygon, regular polygon sides=4, 
+shape border rotate=45, text=blue!50!black, 
+top color=pg-inner, bottom color=red!10,
+inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\textbf{#1}};
+
+}}
+
+
+
+\fancyhead[L]{\ifnum\thepage=1%
+\else\hspace{-30pt}{\raisebox{14pt}{\circled{\thepage}}}
+\fi
+}
+
+
+\fancyfoot[R]{\ifnum\thepage>2%
+\raisebox{14pt}{\fndiamond{\thepage}}%
+\else%
+\fndiamond{\thepage}\fi}
+    
+\fancyhead[C]{{\fontfamily{bch}\fontsize{21}{21}\selectfont OIL RECORD BOOK USERS GUIDE}} 
+
+
+\usepackage[outline]{contour}
+
+
+
+\newcommand{\acct}[1]{%
+\contourlength{0.1pt}\contournumber{10}\contour{red}{#1}}
+
+
+\definecolor{pwordc}{RGB}{14, 125, 72}
+\newcommand{\pword}[1]{%
+\contourlength{0.1pt}\contournumber{10}\contour{pwordc}{#1}}
+
+\definecolor{elogsc}{RGB}{48, 175, 184}
+\newcommand{\eLogs}{%\textbf{\textsf{eLogs}}}
+\contourlength{0.1pt}\contournumber{10}\contour{elogsc}{\textsf{eLogs}}}
+
+
+
+\definecolor{emphtc}{RGB}{179, 79, 39}
+\newcommand{\empht}[1]{%
+\contourlength{0.1pt}\contournumber{10}\contour{emphtc}{#1}}
+
+
+\colorlet{em}{blue!70!pink}
+
+\newcommand{\emphs}[1]{\textcolor{em!50!black}{#1}}
+
+\newcommand{\qc}[1]{\textcolor{emphtc!7!purple}{\q{\textbf{\textsf{\small #1}}}}}
+
+
+\newcommand{\q}[1]{{\fontfamily{phv}\selectfont ``}#1{\fontfamily{phv}\selectfont ''}} 
+
+
+\newcommand{\pskip}{\vspace*{14pt}}
+

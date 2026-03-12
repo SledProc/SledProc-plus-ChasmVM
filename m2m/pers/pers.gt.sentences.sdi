@@ -118,7 +118,7 @@ id: 6
 r#  1137  31  38
 p: .
 t. 
-|  Currently I walks dogs for roughly 3-4 hours per
+|  Currently I walk dogs for roughly 3--4 hours per
 |  day (every day) mostly from approximately 10:00 -- 11:30,
 |  4:15 -- 5:15, and 6:00 -- 7:00, occasionally with a
 |  couple other owners as well when they are out of town
@@ -140,7 +140,7 @@ t.
 |  established a fixed fee schedule, but in general I've
 |  received $40 per week from one owner, and $80 per month
 |  from another (the latter was affected by the government
-|  shutdown however so I did not receive payment for two
+|  shutdown, such that I did not receive payment for two
 |  months around September and October), so in general
 .  I receive about $240 each month
 
@@ -165,7 +165,7 @@ r#  1859  45  1
 
 --- Sentence//end
 id: 9
-r#  2019  47  29
+r#  2011  47  29
 p: .
 t. 
 |   For the aforementioned
@@ -174,19 +174,19 @@ t.
 |  the government shutdown-related gap essentially cancels that out}
 |  I sometimes also walk for a neighbor with a very charming chocolate
 |  lab, but that's not for monetary compensation.\footnote{Rather, I join them
-|  afterward for dinner.}On numerous occasions I have heard from other neighbors that they
+|  afterward for dinner.}Several times I have heard from other neighbors that they
 |  too need dog walking services (or cat-sitting on one occasion),
 .  but never got contacted back
 
 
 --- Sentence/switch
 id: 10
-r#  2020  47  30
+r#  2012  47  30
 
 
 --- Sentence//end
 id: 10
-r#  2098  48  40
+r#  2090  48  40
 p: .
 t. 
 |   It seems difficult to make informal
@@ -194,7 +194,7 @@ t.
 
 --- Sentence/end 
 id: 10
-r#  2099  48  41
+r#  2091  48  41
 
 --- Paragraph/end 
 id: 5
@@ -203,30 +203,30 @@ y: N/A
 
 --- Paragraph/start
 id: 6
-r#  2101  50  1
+r#  2093  50  1
 
 
 --- Sentence/start
 id: 11
-r#  2101  50  1
+r#  2093  50  1
 
 --- Sentence//end
 id: 11
-r#  2198  51  21
+r#  2195  51  21
 p: .
 t. 
-|  So when the dust settles I can figure roughly $200-$250 per month working
+|  In sum, when the dust settles I can figure roughly $200-$250 per month working
 .  3.5 -- 4 hours a day
 
 
 --- Sentence/switch
 id: 12
-r#  2199  51  22
+r#  2196  51  22
 
 
 --- Sentence//end
 id: 12
-r#  2362  53  78
+r#  2359  53  78
 p: .
 t. 
 |   This helps with incidental
@@ -235,7 +235,7 @@ t.
 
 --- Sentence/end 
 id: 12
-r#  2363  53  79
+r#  2360  53  79
 
 --- Paragraph/end 
 id: 6
@@ -244,12 +244,12 @@ y: N/A
 
 --- Paragraph/start
 id: 7
-r#  2365  55  1
+r#  2362  55  1
 
 
 --- Sentence/start
 id: 13
-r#  2365  55  1
+r#  2362  55  1
 --- Paragraph/end 
 id: 7
 y: N/A
@@ -257,16 +257,16 @@ y: N/A
 
 --- Paragraph/start
 id: 8
-r#  2376  57  1
+r#  2373  57  1
 
 
 --- Sentence/start
 id: 14
-r#  2376  57  1
+r#  2373  57  1
 
 --- Sentence//end
 id: 14
-r#  2558  59  33
+r#  2555  59  33
 p: .
 t. 
 |  \ghrule{}Since rougly 2015 I have been employed\footnote{informally, at least}\hspace{3pt}by a
@@ -276,12 +276,12 @@ t.
 
 --- Sentence/switch
 id: 15
-r#  2559  59  34
+r#  2556  59  34
 
 
 --- Sentence//end
 id: 15
-r#  2640  60  50
+r#  2637  60  50
 p: .
 t. 
 |   Before the Covid pandemic we
@@ -289,7 +289,7 @@ t.
 
 --- Sentence/end 
 id: 15
-r#  2641  60  51
+r#  2638  60  51
 
 --- Paragraph/end 
 id: 8
@@ -298,16 +298,16 @@ y: N/A
 
 --- Paragraph/start
 id: 9
-r#  2643  62  1
+r#  2640  62  1
 
 
 --- Sentence/start
 id: 16
-r#  2643  62  1
+r#  2640  62  1
 
 --- Sentence//end
 id: 16
-r#  2766  63  65
+r#  2763  63  65
 p: .
 t. 
 |  I have a BA-level computer science degree, but I ended up
@@ -316,12 +316,12 @@ t.
 
 --- Sentence/switch
 id: 17
-r#  2767  63  66
+r#  2764  63  66
 
 
 --- Sentence//end
 id: 17
-r#  3028  67  51
+r#  3025  67  51
 p: .
 t. 
 |  Academically, I was especially interested in philosophy of science
@@ -331,7 +331,7 @@ t.
 
 --- Sentence/end 
 id: 17
-r#  3029  67  52
+r#  3026  67  52
 
 --- Paragraph/end 
 id: 9
@@ -340,16 +340,16 @@ y: N/A
 
 --- Paragraph/start
 id: 10
-r#  3033  69  1
+r#  3030  69  1
 
 
 --- Sentence/start
 id: 18
-r#  3033  69  1
+r#  3030  69  1
 
 --- Sentence//end
 id: 18
-r#  3484  75  38
+r#  3481  75  38
 p: .
 t. 
 |  Cotemporous with my doctoral studies (which were in Canada), I
@@ -363,12 +363,12 @@ t.
 
 --- Sentence/switch
 id: 19
-r#  3485  75  39
+r#  3482  75  39
 
 
 --- Sentence//end
 id: 19
-r#  3831  80  67
+r#  3828  80  67
 p: .
 t. 
 |   I built a software tool
@@ -381,12 +381,12 @@ t.
 
 --- Sentence/switch
 id: 20
-r#  3832  80  68
+r#  3829  80  68
 
 
 --- Sentence//end
 id: 20
-r#  4069  84  32
+r#  4066  84  32
 p: .
 t. 
 |  In the end, splitting time between the US and Canada, I had trouble
@@ -397,12 +397,12 @@ t.
 
 --- Sentence/switch
 id: 21
-r#  4070  84  33
+r#  4067  84  33
 
 
 --- Sentence//end
 id: 21
-r#  4229  86  33
+r#  4226  86  33
 p: .
 t. 
 |   After my father died my mother and I continued the
@@ -412,35 +412,35 @@ t.
 
 --- Sentence/switch
 id: 22
-r#  4230  86  34
+r#  4227  86  34
 
 
 --- Sentence//end
 id: 22
-r#  4488  89  67
+r#  4489  89  71
 p: .
 t. 
 |   There I attended small-business seminars,
 |  tech meetup groups, and other programming-related activities, with the
 |  goal of potentially migrating the family business from our own e-commerce
-.  shop to providing website-management software for other businesses
+.  shop toward providing website-management software for other businesses
 
 
 --- Sentence/switch
 id: 23
-r#  4489  89  68
+r#  4490  89  72
 
 
 --- Sentence//end
 id: 23
-r#  4562  90  71
+r#  4563  90  71
 p: .
 t. 
 .  This was how I eventually connected with the startup mentioned earlier
 
 --- Sentence/end 
 id: 23
-r#  4563  90  72
+r#  4564  90  72
 
 --- Paragraph/end 
 id: 10
@@ -449,31 +449,31 @@ y: N/A
 
 --- Paragraph/start
 id: 11
-r#  4565  92  1
+r#  4566  92  1
 
 
 --- Sentence/start
 id: 24
-r#  4565  92  1
+r#  4566  92  1
 
 --- Sentence//end
 id: 24
-r#  4750  94  57
+r#  4784  94  90
 p: .
 t. 
 |  As a doctoral student I had at one point served on a committee that
 |  was redesigning our departmental website, with the goal of
-.  providing a publishing platform for students and faculty
+.  providing a publishing platform and search/annotation system for our students and faculty
 
 
 --- Sentence/switch
 id: 25
-r#  4751  94  58
+r#  4785  94  91
 
 
 --- Sentence//end
 id: 25
-r#  4977  98  36
+r#  5011  98  36
 p: .
 t. 
 |   From
@@ -484,7 +484,7 @@ t.
 
 --- Sentence/end 
 id: 25
-r#  4978  98  37
+r#  5012  98  37
 
 --- Paragraph/end 
 id: 11
@@ -493,16 +493,16 @@ y: N/A
 
 --- Paragraph/start
 id: 12
-r#  4982  100  1
+r#  5016  100  1
 
 
 --- Sentence/start
 id: 26
-r#  4982  100  1
+r#  5016  100  1
 
 --- Sentence//end
 id: 26
-r#  5236  104  51
+r#  5270  104  51
 p: .
 t. 
 |  The startup founder
@@ -514,12 +514,12 @@ t.
 
 --- Sentence/switch
 id: 27
-r#  5237  104  52
+r#  5271  104  52
 
 
 --- Sentence//end
 id: 27
-r#  5469  109  43
+r#  5503  109  43
 p: .
 t. 
 |  As a student I
@@ -531,12 +531,12 @@ t.
 
 --- Sentence/switch
 id: 28
-r#  5470  109  44
+r#  5504  109  44
 
 
 --- Sentence//end
 id: 28
-r#  6101  120  39
+r#  6135  120  39
 p: .
 t. 
 |   Her government
@@ -554,7 +554,7 @@ t.
 
 --- Sentence/end 
 id: 28
-r#  6102  120  40
+r#  6136  120  40
 
 --- Paragraph/end 
 id: 12
@@ -563,16 +563,16 @@ y: N/A
 
 --- Paragraph/start
 id: 13
-r#  6106  122  1
+r#  6140  122  1
 
 
 --- Sentence/start
 id: 29
-r#  6106  122  1
+r#  6140  122  1
 
 --- Sentence//end
 id: 29
-r#  6369  127  31
+r#  6403  127  31
 p: .
 t. 
 |  Our general
@@ -585,12 +585,12 @@ t.
 
 --- Sentence/switch
 id: 30
-r#  6370  127  32
+r#  6404  127  32
 
 
 --- Sentence//end
 id: 30
-r#  6490  129  33
+r#  6524  129  33
 p: .
 t. 
 |   This is in contrast to
@@ -600,12 +600,12 @@ t.
 
 --- Sentence/switch
 id: 31
-r#  6491  129  34
+r#  6525  129  34
 
 
 --- Sentence//end
 id: 31
-r#  6724  132  62
+r#  6758  132  62
 p: .
 t. 
 |   Our theory is that grid-computing
@@ -615,7 +615,7 @@ t.
 
 --- Sentence/end 
 id: 31
-r#  6725  132  63
+r#  6759  132  63
 
 --- Paragraph/end 
 id: 13
@@ -624,16 +624,16 @@ y: N/A
 
 --- Paragraph/start
 id: 14
-r#  6727  134  1
+r#  6761  134  1
 
 
 --- Sentence/start
 id: 32
-r#  6727  134  1
+r#  6761  134  1
 
 --- Sentence//end
 id: 32
-r#  6916  136  54
+r#  6950  136  54
 p: .
 t. 
 |  Unfortunately, the Covid pandemic made it difficult to continue unfunded
@@ -643,12 +643,12 @@ t.
 
 --- Sentence/switch
 id: 33
-r#  6917  136  55
+r#  6951  136  55
 
 
 --- Sentence//end
 id: 33
-r#  7209  141  27
+r#  7243  141  27
 p: .
 t. 
 |   During this
@@ -661,21 +661,21 @@ t.
 
 --- Sentence/switch
 id: 34
-r#  7210  141  28
+r#  7244  141  28
 
 
 --- Sentence//end
 id: 34
-r#  7382  143  54
+r#  7416  143  54
 p: .
 t. 
 |   In short, we both had multiple publishing
 |  projects and I found it worthwhile to implement new publishing software,
-.  even if (at that point) for just our own internal use
+.  even if (at that point) just for our own internal use
 
 --- Sentence/end 
 id: 34
-r#  7383  143  55
+r#  7417  143  55
 
 --- Paragraph/end 
 id: 14
@@ -684,32 +684,32 @@ y: N/A
 
 --- Paragraph/start
 id: 15
-r#  7387  145  1
+r#  7421  145  1
 
 
 --- Sentence/start
 id: 35
-r#  7387  145  1
+r#  7421  145  1
 
 --- Sentence//end
 id: 35
-r#  7581  148  23
+r#  7606  148  23
 p: .
 t. 
-|  In addition to science technology (as
-|  editor of a Springer Nature journal and book series) the founder
+|  In addition to science (as
+|  editor of a Springer Nature journal and a book series) the founder
 |  has been involved in political activism, particularly in the area
-.  of family court reform
+.  of family-court reform
 
 
 --- Sentence/switch
 id: 36
-r#  7582  148  24
+r#  7607  148  24
 
 
 --- Sentence//end
 id: 36
-r#  7735  150  46
+r#  7760  150  46
 p: .
 t. 
 |   In this capacity she sometimes provides
@@ -719,12 +719,12 @@ t.
 
 --- Sentence/switch
 id: 37
-r#  7736  150  47
+r#  7761  150  47
 
 
 --- Sentence//end
 id: 37
-r#  7950  153  37
+r#  7975  153  37
 p: .
 t. 
 |   During the pandemic, we essentially
@@ -735,12 +735,12 @@ t.
 
 --- Sentence/switch
 id: 38
-r#  7951  153  38
+r#  7976  153  38
 
 
 --- Sentence//end
 id: 38
-r#  8263  158  24
+r#  8288  158  24
 p: .
 t. 
 |   In some cases we built custom
@@ -752,7 +752,7 @@ t.
 
 --- Sentence/end 
 id: 38
-r#  8264  158  25
+r#  8289  158  25
 
 --- Paragraph/end 
 id: 15
@@ -761,16 +761,16 @@ y: N/A
 
 --- Paragraph/start
 id: 16
-r#  8266  160  1
+r#  8291  160  1
 
 
 --- Sentence/start
 id: 39
-r#  8266  160  1
+r#  8291  160  1
 
 --- Sentence//end
 id: 39
-r#  8654  165  25
+r#  8679  165  25
 p: .
 t. 
 |  I received a book contract and some compensation for working on legal documents,
@@ -783,12 +783,12 @@ t.
 
 --- Sentence/switch
 id: 40
-r#  8655  165  26
+r#  8680  165  26
 
 
 --- Sentence//end
 id: 40
-r#  8809  167  32
+r#  8834  167  32
 p: .
 t. 
 |   In exchange, she arranged for me to stay with a
@@ -798,22 +798,22 @@ t.
 
 --- Sentence/switch
 id: 41
-r#  8810  167  33
+r#  8835  167  33
 
 
 --- Sentence//end
 id: 41
-r#  9032  170  43
+r#  9058  170  43
 p: .
 t. 
 |   Recently my landlady sold her house,
 |  which led to my relocating to Baltimore under a similar arrangement
-|  with a close associate of my boss who has coauthored with her and
-.  shares her interest in family court reform
+|  with a close associate of the founder, who has coauthored with her and
+.  shares her interest in family-court reform
 
 --- Sentence/end 
 id: 41
-r#  9033  170  44
+r#  9059  170  44
 
 --- Paragraph/end 
 id: 16
@@ -822,16 +822,16 @@ y: N/A
 
 --- Paragraph/start
 id: 17
-r#  9037  172  1
+r#  9063  172  1
 
 
 --- Sentence/start
 id: 42
-r#  9037  172  1
+r#  9063  172  1
 
 --- Sentence//end
 id: 42
-r#  9284  175  31
+r#  9310  175  31
 p: .
 t. 
 |  Leveraging rent-free housing in exchange for in kind work isn't a
@@ -842,15 +842,15 @@ t.
 
 --- Sentence/switch
 id: 43
-r#  9285  175  32
+r#  9311  175  32
 
 
 --- Sentence//end
 id: 43
-r#  9537  179  34
+r#  9574  179  34
 p: .
 t. 
-|   Meanwhile, instead of one-off
+|   Meanwhile, instead of relying on one-off
 |  work on individual publishing projects we are building
 |  more substantial software for potential use either by publishing
 |  houses or curatorial organizations, such as PubMed Central and
@@ -859,12 +859,12 @@ t.
 
 --- Sentence/switch
 id: 44
-r#  9538  179  35
+r#  9575  179  35
 
 
 --- Sentence//end
 id: 44
-r#  9712  182  46
+r#  9749  182  46
 p: .
 t. 
 |   I have
@@ -874,7 +874,7 @@ t.
 
 --- Sentence/end 
 id: 44
-r#  9713  182  47
+r#  9750  182  47
 
 --- Paragraph/end 
 id: 17
@@ -883,12 +883,12 @@ y: N/A
 
 --- Paragraph/start
 id: 18
-r#  9715  184  1
+r#  9752  184  1
 
 
 --- Sentence/start
 id: 45
-r#  9715  184  1
+r#  9752  184  1
 --- Paragraph/end 
 id: 18
 y: N/A
@@ -896,12 +896,12 @@ y: N/A
 
 --- Paragraph/start
 id: 19
-r#  9726  186  1
+r#  9763  186  1
 
 
 --- Sentence/start
 id: 46
-r#  9726  186  1
+r#  9763  186  1
 --- Paragraph/end 
 id: 19
 y: N/A
@@ -909,16 +909,16 @@ y: N/A
 
 --- Paragraph/start
 id: 20
-r#  9745  189  4
+r#  9782  189  4
 
 
 --- Sentence/start
 id: 47
-r#  9745  189  4
+r#  9782  189  4
 
 --- Sentence//end
 id: 47
-r#  9820  190  53
+r#  9857  190  53
 p: .
 t. 
 |  \ghrule{}\Supplement{}A few comments about
@@ -926,7 +926,7 @@ t.
 
 --- Sentence/end 
 id: 47
-r#  9821  190  54
+r#  9858  190  54
 
 --- Paragraph/end 
 id: 20
@@ -935,16 +935,16 @@ y: N/A
 
 --- Paragraph/start
 id: 21
-r#  9823  192  1
+r#  9860  192  1
 
 
 --- Sentence/start
 id: 48
-r#  9823  192  1
+r#  9860  192  1
 
 --- Sentence//end
 id: 48
-r#  9952  194  20
+r#  9989  194  20
 p: .
 t. 
 |  Research networks or grids are an increasingly popular
@@ -954,18 +954,18 @@ t.
 
 --- Sentence/switch
 id: 49
-r#  9953  194  21
+r#  9990  194  21
 
 
 --- Sentence//end
 id: 49
-r#  10337  200  110
+r#  10374  200  110
 p: .
 t. 
 |   Examples include the
 |  Cancer Bioinformatics Grid (caBIG),
 |  Center for the Development of
-|  a Virtual Tumor (CVIT), National Cancer Informatics Program (NCIP),
+|  a Virtual Tumor (CViT), National Cancer Informatics Program (NCIP),
 |  Data Infrastructure Building Blocks (from the
 |  National Science Foundation), Open Science Grid (OSG),
 .  Worldwide LHC Computing Grid (WLCG), EarthCube, Earth System Grid Federation (ESGF), and many others
@@ -973,7 +973,7 @@ t.
 
 --- Sentence/switch
 id: 50
-r#  10338  200  111
+r#  10375  200  111
 
 --- Paragraph/end 
 id: 21
@@ -982,16 +982,16 @@ y: N/A
 
 --- Paragraph/start
 id: 22
-r#  10800  209  1
+r#  10837  209  1
 
 
 --- Sentence/start
 id: 51
-r#  10800  209  1
+r#  10837  209  1
 
 --- Sentence//end
 id: 51
-r#  10859  209  60
+r#  10896  209  60
 p: .
 t. 
 |  Although originally designed to support decentralized
@@ -1005,12 +1005,12 @@ t.
 
 --- Sentence/switch
 id: 52
-r#  10860  209  61
+r#  10897  209  61
 
 
 --- Sentence//end
 id: 52
-r#  11026  212  41
+r#  11063  212  41
 p: .
 t. 
 |  There are not necessarily standard guidelines for actual
@@ -1020,33 +1020,45 @@ t.
 
 --- Sentence/switch
 id: 53
-r#  11027  212  42
+r#  11064  212  42
 
 
 --- Sentence//end
 id: 53
-r#  11278  217  21
+r#  11340  217  21
 p: .
 t. 
-|   There are,
-|  however, detailed features and annotations that may be
+|    I consider this a
+|  lacuna, because there are detailed features and annotations that may be
 |  applied to help grid components interoperate, and to
 |  increase overall usability, especially with an
 |  emphasis on FAIR (Findable, Accessible, Interoperable,
 .  Reusable) priorities
 
+--- Sentence/end 
+id: 53
+r#  11341  217  22
 
---- Sentence/switch
+--- Paragraph/end 
+id: 22
+y: N/A
+
+
+--- Paragraph/start
+id: 23
+r#  11345  219  1
+
+
+--- Sentence/start
 id: 54
-r#  11279  217  22
-
+r#  11345  219  1
 
 --- Sentence//end
 id: 54
-r#  11479  220  55
+r#  11543  222  55
 p: .
 t. 
-|   One rationale for grid computing
+|  One rationale for grid computing
 |  is to provide remote services for investigations that
 |  require special-purpose equipment  -  i.e., computing
 .  power beyond that typically accessible for researchers
@@ -1054,12 +1066,12 @@ t.
 
 --- Sentence/switch
 id: 55
-r#  11480  220  56
+r#  11544  222  56
 
 
 --- Sentence//end
 id: 55
-r#  11726  224  60
+r#  11790  226  60
 p: .
 t. 
 |   However, a different
@@ -1071,12 +1083,12 @@ t.
 
 --- Sentence/switch
 id: 56
-r#  11727  224  61
+r#  11791  226  61
 
 
 --- Sentence//end
 id: 56
-r#  11880  227  25
+r#  11944  229  25
 p: .
 t. 
 |  This serves both data-transparency and pedagogical goals
@@ -1086,12 +1098,12 @@ t.
 
 --- Sentence/switch
 id: 57
-r#  11881  227  26
+r#  11945  229  26
 
 
 --- Sentence//end
 id: 57
-r#  12014  229  47
+r#  12078  231  47
 p: .
 t. 
 |   For this use-case, it is important
@@ -1100,25 +1112,25 @@ t.
 
 --- Sentence/end 
 id: 57
-r#  12015  229  48
+r#  12079  231  48
 
 --- Paragraph/end 
-id: 22
+id: 23
 y: N/A
 
 
 --- Paragraph/start
-id: 23
-r#  12017  231  1
+id: 24
+r#  12081  233  1
 
 
 --- Sentence/start
 id: 58
-r#  12017  231  1
+r#  12081  233  1
 
 --- Sentence//end
 id: 58
-r#  12140  233  26
+r#  12204  235  26
 p: .
 t. 
 |  There are many advanced science applications that
@@ -1128,12 +1140,12 @@ t.
 
 --- Sentence/switch
 id: 59
-r#  12141  233  27
+r#  12205  235  27
 
 
 --- Sentence//end
 id: 59
-r#  12254  235  40
+r#  12318  237  40
 p: .
 t. 
 |   These can be compiled
@@ -1143,12 +1155,12 @@ t.
 
 --- Sentence/switch
 id: 60
-r#  12255  235  41
+r#  12319  237  41
 
 
 --- Sentence//end
 id: 60
-r#  12609  242  41
+r#  12673  244  41
 p: .
 t. 
 |  It is possible to design executable research objects
@@ -1162,12 +1174,12 @@ t.
 
 --- Sentence/switch
 id: 61
-r#  12610  242  42
+r#  12674  244  42
 
 
 --- Sentence//end
 id: 61
-r#  12792  245  62
+r#  12856  247  62
 p: .
 t. 
 |   These
@@ -1177,25 +1189,25 @@ t.
 
 --- Sentence/end 
 id: 61
-r#  12793  245  63
+r#  12857  247  63
 
 --- Paragraph/end 
-id: 23
+id: 24
 y: N/A
 
 
 --- Paragraph/start
-id: 24
-r#  12797  247  1
+id: 25
+r#  12861  249  1
 
 
 --- Sentence/start
 id: 62
-r#  12797  247  1
+r#  12861  249  1
 
 --- Sentence//end
 id: 62
-r#  13003  251  9
+r#  13067  253  9
 p: .
 t. 
 |  The resulting Research Object model is based on
@@ -1207,12 +1219,12 @@ t.
 
 --- Sentence/switch
 id: 63
-r#  13004  251  10
+r#  13068  253  10
 
 
 --- Sentence//end
 id: 63
-r#  13086  252  48
+r#  13150  254  48
 p: .
 t. 
 |   This paradigm is different than
@@ -1221,12 +1233,12 @@ t.
 
 --- Sentence/switch
 id: 64
-r#  13087  252  49
+r#  13151  254  49
 
 
 --- Sentence//end
 id: 64
-r#  13336  257  58
+r#  13400  259  58
 p: .
 t. 
 |  Such differences has compelled our startup to
@@ -1237,25 +1249,25 @@ t.
 
 --- Sentence/end 
 id: 64
-r#  13337  257  59
+r#  13401  259  59
 
 --- Paragraph/end 
-id: 24
+id: 25
 y: N/A
 
 
 --- Paragraph/start
-id: 25
-r#  13339  259  1
+id: 26
+r#  13403  261  1
 
 
 --- Sentence/start
 id: 65
-r#  13339  259  1
+r#  13403  261  1
 
 --- Sentence//end
 id: 65
-r#  13539  262  48
+r#  13603  264  48
 p: .
 t. 
 |  Not speaking for everyone involved with the startup,
@@ -1266,12 +1278,12 @@ t.
 
 --- Sentence/switch
 id: 66
-r#  13540  262  49
+r#  13604  264  49
 
 
 --- Sentence//end
 id: 66
-r#  13782  267  29
+r#  13846  269  29
 p: .
 t. 
 |   There
@@ -1284,8 +1296,8 @@ t.
 
 --- Sentence/switch
 id: 67
-r#  13783  267  30
+r#  13847  269  30
 
 --- Paragraph/end 
-id: 25
+id: 26
 y: N/A

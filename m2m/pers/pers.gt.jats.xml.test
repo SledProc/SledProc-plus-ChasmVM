@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---->
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" dtd-version="1.4">
+    <!--meta:here-->
+    <body>
+
+
+<!--enter p.1-->
+        <p.1 id="Para-1">During a phone interview on December 16, 2025, I
+was asked to compose a Personal Statement outlining
+my source of income and other relevant information
+to upload via the Maryland Benefits document portal.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-2">I did not receive any specific instructions
+about the desired format for this document, so I
+have constructed it in paragraph form.
+I will briefly mention de facto <q>part time</q>
+work and then discuss longer-term projects
+relevant to my current housing and employment situations.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-3">\ghrule{}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-4">With respect to part-time <q>gigs</q>, shortly after
+moving to Maryland in May of 2025, I met a few
+neighbors who needed help with dog-walking (I myself
+had a pitbull mix in Brooklyn that had to be rehomed
+with a friend of the family before I left, and I've had
+experience in the past with dog walking/sitting).
+Currently I walk dogs for roughly 3@=#x2013;4 hours per
+day (every day) mostly from approximately 10:00 @=#x2013; 11:30,
+4:15 @=#x2013; 5:15, and 6:00 @=#x2013; 7:00, occasionally with a
+couple other owners as well when they are out of town
+or exceptionally busy (for one owner I sometimes
+feed her birds and clean a bird cage). I haven't
+established a fixed fee schedule, but in general I've
+received $40 per week from one owner, and $80 per month
+from another (the latter was affected by the government
+shutdown, such that I did not receive payment for two
+months around September and October), so in general
+I receive about $240 each month. For the aforementioned
+owner with birds (and two small dogs I've walked on occasion)
+I might get an additional $20/month on average.\footnote{Subtracting
+the government shutdown-related gap essentially cancels that out}
+I sometimes also walk for a neighbor with a very charming chocolate
+lab, but that's not for monetary compensation.\footnote{Rather, I join them
+afterward for dinner.}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-5">Several times I have heard from other neighbors that they
+too need dog walking services (or cat-sitting on one occasion),
+but never got contacted back. It seems difficult to make informal
+pet care one's primary source of income.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-6">In sum, when the dust settles I can figure roughly $200-$250 per month working
+3.5 @=#x2013; 4 hours a day. This helps with incidental
+expenses (food, mostly) but I need to provide a little
+backstory to address the situation with where I am living and related details.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-7">\ghrule{}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-8">Since rougly 2015 I have been employed\footnote{informally, at least}\hspace{3pt}by a
+small start-up based in New Jersey which is currently focused
+primary on publishing technology. Before the Covid pandemic we
+had also devoted attention to biomedical software.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-9">I have a BA-level computer science degree, but I ended up
+pursuing a PhD in philosophy, specifically philosophy of science.
+Academically, I was especially interested in philosophy of science
+in conjunction with Cognitive Linguistics (both linguistics as a science and,
+conversely, applying cognitive-linguistic models to analyze
+the cognitive foundations of scientific reasoning).
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-10">Cotemporous with my doctoral studies (which were in Canada), I
+was helping with my parents' business, implementing an e-commerce
+platform.\footnote{There was actually a science connection, because my
+father was trying to launch a store as an antiques collector, and
+much of his inventory was scientific instruments or other devices
+with patents, or other information we could investigate about how the tools
+or machines were constructed and used. I built a software tool
+that connected to the US Patent Office and helped us match patent
+images with our inventory items.}  While rewarding --- and
+profitable online --- the <q>brick-and-mortar</q> business did
+not really pan out and my family ended up struggling (my father
+committed suicide; my mother had a stroke and needed live-in help).
+In the end, splitting time between the US and Canada, I had trouble
+renewing my Canadian visa and did not defend my dissertation, although
+I did complete a second version after getting feedback for the
+initial draft from my committee. After my father died my mother and I continued the
+business for several years in solely-digital fashion, during which time
+we moved (back) to New York City. There I attended small-business seminars,
+tech meetup groups, and other programming-related activities, with the
+goal of potentially migrating the family business from our own e-commerce
+shop toward providing website-management software for other businesses.
+This was how I eventually connected with the startup mentioned earlier.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-11">As a doctoral student I had at one point served on a committee that
+was redesigning our departmental website, with the goal of
+providing a publishing platform and search/annotation system for our students and faculty. From
+a philosophy of science perspective, I was interested in
+how <q>executable research objects</q> and other Science Grid
+technologies could help document theoretical and methodological
+foundations for scientific research.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-12">The startup founder
+had similar interests; she was initially focused on
+Natural Language Processing, but also engaged with health-care
+applications.\footnote{She had done volunteer work at an Israeli
+hospital, and several of her advisers were doctors.
+As a student I
+had also briefly worked at a refugee camp in Thailand.}
+She had contacts in the government and we put together
+numerous slide decks and presentations for US <q>scouts</q>
+as well as hospitals and medical practices. Her government
+contacts encouraged us to develop software for
+<q>under-resourced</q> communities, and we eventually began
+collaborating with a startup that was New York based (supported by
+an <eA>NYU</eA> incubator program) but doing field work in India, deploying
+informatics and diagnostic tools to rural clinics.\footnote{Open-source
+Hospital Information Systems, Electronic
+Medical Records, and Operating Systems (such as
+BioLinux) can offer an important savings for hospitals
+and point-of-care providers, since there are no
+licensing fees.}  This led us to build front-end components
+in collaboration with the Indian group.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-13">Our general
+paradigm was that open-source <eA>EMR</eA> components should be
+designed as embedded plugins, or via similar coding
+conventions and interoperability, to existing
+software focused on research, bioimaging, immuno-oncology,
+and other bioinformatics areas. This is in contrast to
+the way <eA>EMR</eA> systems are usually conceived, which are more
+isolated to the clinical setting. Our theory is that grid-computing
+techniques are conducive to <eA>EMR</eA> systems that are more adaptable
+(e.g., for hospitals that develop community-oriented initiatives,
+or require special forms for clinical trial management, etc.).
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-14">Unfortunately, the Covid pandemic made it difficult to continue unfunded
+projects in perpetuity, and the startup's founder decided to
+shift attention to technology for academic publishing. During this
+time I wrote an Elsevier book on biomedical software, plus eight
+chapters or articles on various computer-science topics
+(e.g., computational linguistics and compiler theory); she
+(the founder) was working on her own book contract and many op-eds
+and popular-media articles. In short, we both had multiple publishing
+projects and I found it worthwhile to implement new publishing software,
+even if (at that point) just for our own internal use.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-15">In addition to science (as
+editor of a Springer Nature journal and a book series) the founder
+has been involved in political activism, particularly in the area
+of family-court reform. In this capacity she sometimes provides
+counseling to mothers engaged in custody battles, or restricted
+to visiting children as non-custodial parents. During the pandemic, we essentially
+became a small-scale publishing house, compiling legal documents,
+newsletters, graphics design (e.g., for real estate ads), translation,
+and other document-preparation tasks. In some cases we built custom
+publishing software to address requirements for individual projects,
+including producing two full-length books
+(eventually published by Elsevier and Oxford University Press respectively)
+and the equivalent of a third book as the dataset component of a
+Springer Nature article.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-16">I received a book contract and some compensation for working on legal documents,
+graphics design, translation, etc., but on a day-to-day basis much of
+my work was centered on the founder's advocacy, maintaining a web site
+and preparing/preserving articles, op-eds, and other materials
+she published in venues including the New York Times and Washington Post,
+plus many smaller papers. In exchange, she arranged for me to stay with a
+colleague and paid rent on my behalf (probably the equivalent of about
+$850/month on the open market). Recently my landlady sold her house,
+which led to my relocating to Baltimore under a similar arrangement
+with a close associate of the founder, who has coauthored with her and
+shares her interest in family-court reform.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-17">Leveraging rent-free housing in exchange for <q>in kind</q> work isn't a
+great long-term solution, so I hope <eA>SNAP</eA> benefits would allow me to
+reallocate funds I receive from more informal <q>gig</q> engagements toward
+a more secure rental situation. Meanwhile, instead of relying on one-off
+work on individual publishing projects we are building
+more substantial software for potential use either by publishing
+houses or curatorial organizations, such as PubMed Central and
+the National Institutes of Health. I have
+implemented numerous code prototypes and presentations about
+unique features of our software, which has been used to
+build full-scale books and research data sets.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-18">\ghrule{}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-19">\Supplement{}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-20">A few comments about
+science and publishing technology, for clarification.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-21">Research networks or <q>grids</q> are an increasingly popular
+architecture for collaborative and decentralized
+science communities. Examples include the
+Cancer Bioinformatics Grid (<eASomeLower>caBIG</eASomeLower>),
+Center for the Development of
+a Virtual Tumor (<eASomeLower>CViT</eASomeLower>), National Cancer Informatics Program (<eA>NCIP</eA>),
+Data Infrastructure Building Blocks (from the
+National Science Foundation), Open Science Grid (<eA>OSG</eA>),
+Worldwide <eA>LHC</eA> Computing Grid (<eA>WLCG</eA>), EarthCube, Earth System Grid Federation (<eA>ESGF</eA>), and many others.
+Although originally designed to support decentralized
+parallel computing @=#x2014; that is, for original
+research @=#x2014; grids have evolved into
+pedagogical and reproduction tools as well
+as hosts for initial experiments.\footnote{\raggedright\citeref{\q{%
+caGrid 1.0: An Enterprise Grid Infrastructure for Biomedical Research} (2008)} %
+\hspace*{19pt}(\href{https://pmc.ncbi.nlm.nih.gov/articles/PMC2274794/}{https://pmc.ncbi.nlm.nih.gov/articles/PMC2274794/})}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-22">Grid specifications are often focused on metadata standards.
+There are not necessarily standard guidelines for actual
+<i>code</i>, as written in common science-computing languages, for
+components that will be hosted on a grid.  I consider this a
+lacuna, because there are detailed features and annotations that may be
+applied to help grid components interoperate, and to
+increase overall usability, especially with an
+emphasis on <eA>FAIR</eA> (Findable, Accessible, Interoperable,
+Reusable) priorities.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-23">One rationale for grid computing
+is to provide remote services for investigations that
+require special-purpose equipment @=#x2014; i.e., computing
+power beyond that typically accessible for researchers. However, a different
+aspect of grid architecture is effectively the
+opposite: allowing scientists and students to replicate
+research (perhaps in a scaled-down version) on their own
+computers, or otherwise in quotidian computing environments.
+This serves both data-transparency and pedagogical goals
+(a concrete forum for fellow investigators to understand published
+results more thoroughly). For this use-case, it is important
+for executable research objects to be developed
+which do <i>not</i> need special-purpose hardware.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-24">There are many advanced science applications that
+are designed in a self-contained manner, with
+few external dependencies. These can be compiled
+and executed on ordinary desktop computers, and
+can form the basis of <eA>FAIR</eA> data sets.
+It is possible to design executable research objects
+wherein data visualization and analysis tools are
+provided as source code files internal to the
+data set, perhaps by including (in whole or in part)
+source-code archives for relevant discipline-specific
+applications, to be compiled on-site (in lieu of
+downloading prebuilt binary executables). These
+data packages can likewise contain customized
+<eA>PDF</eA> viewers, and the relevant <eA>PDF</eA> and scientific software
+may be integrated together for indexing and cross-referencing.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-25">The resulting Research Object model is based on
+code packages distributed as source files with
+minimal external dependencies, rather than as binary
+components or as assets that require external
+software. This paradigm is different than
+how Research Objects are typically disseminated.
+Such differences has compelled our startup to
+work on science-grid technology even though we
+have no direct affiliation with universities
+that participate in one or more grid networks,
+because we are adopting an approach not pursued elsewhere.
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+<!--enter p.1-->
+        <p.1 id="Para-26">Not speaking for everyone involved with the startup,
+but I personally remain committed to the work we did
+earlier on clinical information systems and
+<eA>EMR</eA> software for under-resourced communities. There
+are technical similarities between source-focused
+grid packages and extensible <eA>EMR</eA> platforms, and
+I hope that concrete deployment of instances of the
+former can help us transition to implementation
+of latter components as well. Building
+<eA>EMR</eA> software via science-grid components can help
+with migrating research results to on-site
+clinical practice, in accord with <q>Translational Medicine</q>
+techniques.\enlargethispage{1em}
+</p.1>
+        <!--end of p1 paragraph-->
+
+
+
+@=/sec=@
+<!--end section-->
+    </body>
+    <!--ended body-->
+    <!--inserting bibliography-->
+
+<back>
+        <ref-list>
+            <title>Bibliography</title>
+            <!--bib:here-->
+        </ref-list>
+    </back>
+</article>
+
+<!--ended document-->

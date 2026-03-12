@@ -744,14 +744,14 @@ r#  14952  222  1
 
 --- Sentence//end
 id: 27
-r#  16384  237  10
+r#  16386  237  10
 p: .
 t. 
 |  The anti-mother bias that thrives in the family courts has accommodated even more extreme psychological theories. For instance, psychologist Ira Turkat has
 |  named Malicious Mother Syndrome (MMS) to
 |  identify mothers [who] not only try to alienate their children from
 |  their fathers, but are committed to a broadly based campaign to hurt
-|  the father directly (1997, pp. 17--18). Like PAS, this theory has the particularly insidious feature of apparently substituting for a factual inquiry
+|  the father directly (1997, pp...17--18). Like PAS, this theory has the particularly insidious feature of apparently substituting for a factual inquiry
 |  into an abuse allegation, since it classifies such accusations as true
 |  or false based on the behavior and attitudes of the mother who believes them. Responding to Turkat in Judges’ Journal, Smith and Coukos
 |  (1997) stated: Courts should be vigilant in evaluating any psychological expert testimony that claims to be able to discern false from true
@@ -766,7 +766,7 @@ t.
 
 --- Sentence/end 
 id: 27
-r#  16385  237  11
+r#  16387  237  11
 
 --- Paragraph/end 
 id: 21
@@ -781,16 +781,16 @@ y: N/A
 
 --- Paragraph/start
 id: 22
-r#  16421  242  1
+r#  16423  242  1
 
 
 --- Sentence/start
 id: 28
-r#  16421  242  1
+r#  16423  242  1
 
 --- Sentence//end
 id: 28
-r#  16535  243  44
+r#  16537  243  44
 p: .
 t. 
 |  Family courts are characterized by procedural peculiarities that often
@@ -798,7 +798,7 @@ t.
 
 --- Sentence/end 
 id: 28
-r#  16536  243  45
+r#  16538  243  45
 
 --- Paragraph/end 
 id: 22
@@ -807,16 +807,16 @@ y: N/A
 
 --- Paragraph/start
 id: 23
-r#  16538  245  1
+r#  16540  245  1
 
 
 --- Sentence/start
 id: 29
-r#  16538  245  1
+r#  16540  245  1
 
 --- Sentence//end
 id: 29
-r#  17052  251  10
+r#  17054  251  10
 p: .
 t. 
 |  First, the proceedings are confidential. This protects family court
@@ -829,7 +829,7 @@ t.
 
 --- Sentence/end 
 id: 29
-r#  17053  251  11
+r#  17055  251  11
 
 --- Paragraph/end 
 id: 23
@@ -838,12 +838,12 @@ y: N/A
 
 --- Paragraph/start
 id: 24
-r#  17057  253  3
+r#  17059  253  3
 
 
 --- Sentence/start
 id: 30
-r#  17057  253  3
+r#  17059  253  3
 --- Paragraph/end 
 id: 24
 y: N/A
@@ -851,16 +851,16 @@ y: N/A
 
 --- Paragraph/start
 id: 25
-r#  17605  261  1
+r#  17607  261  1
 
 
 --- Sentence/start
 id: 31
-r#  17605  261  1
+r#  17607  261  1
 
 --- Sentence//end
 id: 31
-r#  18768  275  21
+r#  18770  275  21
 p: .
 t. 
 |  Confidentiality may be extended even further. Mothers may be ordered not to talk to the public, or to friends, family, or support groups,
@@ -887,7 +887,7 @@ t.
 
 --- Sentence/end 
 id: 31
-r#  18769  275  22
+r#  18771  275  22
 
 --- Paragraph/end 
 id: 25
@@ -902,16 +902,16 @@ y: N/A
 
 --- Paragraph/start
 id: 26
-r#  18798  280  1
+r#  18800  280  1
 
 
 --- Sentence/start
 id: 32
-r#  18798  280  1
+r#  18800  280  1
 
 --- Sentence//end
 id: 32
-r#  19319  286  9
+r#  19321  286  9
 p: .
 t. 
 |  One especially unnerving aspect of today’s divorce and abuse litigation
@@ -924,7 +924,7 @@ t.
 
 --- Sentence/end 
 id: 32
-r#  19320  286  10
+r#  19322  286  10
 
 --- Paragraph/end 
 id: 26
@@ -933,16 +933,16 @@ y: N/A
 
 --- Paragraph/start
 id: 27
-r#  19322  288  1
+r#  19324  288  1
 
 
 --- Sentence/start
 id: 33
-r#  19322  288  1
+r#  19324  288  1
 
 --- Sentence//end
 id: 33
-r#  20018  296  52
+r#  20020  296  52
 p: .
 t. 
 |  Since most judges tend to follow the recommendations of state CPS
@@ -957,7 +957,7 @@ t.
 
 --- Sentence/end 
 id: 33
-r#  20019  296  53
+r#  20021  296  53
 
 --- Paragraph/end 
 id: 27
@@ -966,16 +966,16 @@ y: N/A
 
 --- Paragraph/start
 id: 28
-r#  20022  298  1
+r#  20024  298  1
 
 
 --- Sentence/start
 id: 34
-r#  20022  298  1
+r#  20024  298  1
 
 --- Sentence//end
 id: 34
-r#  20587  303  71
+r#  20589  303  71
 p: .
 t. 
 |  For example, during one New York case, after a change of custody
@@ -988,12 +988,12 @@ t.
 
 --- Sentence/switch
 id: 35
-r#  20588  303  72
+r#  20590  303  72
 
 
 --- Sentence//end
 id: 35
-r#  20932  308  55
+r#  20934  308  55
 p: .
 t. 
 |  This father, incidentally, was not poor; he was a practicing physician. Yet
@@ -1004,7 +1004,7 @@ t.
 
 --- Sentence/end 
 id: 35
-r#  20933  308  56
+r#  20935  308  56
 
 --- Paragraph/end 
 id: 28
@@ -1019,16 +1019,16 @@ y: N/A
 
 --- Paragraph/start
 id: 29
-r#  20974  313  1
+r#  20976  313  1
 
 
 --- Sentence/start
 id: 36
-r#  20974  313  1
+r#  20976  313  1
 
 --- Sentence//end
 id: 36
-r#  21195  315  72
+r#  21197  315  72
 p: .
 t. 
 |  In theory, appellate courts exist to correct errors made at the trial level,
@@ -1038,12 +1038,12 @@ t.
 
 --- Sentence/switch
 id: 37
-r#  21196  315  73
+r#  21198  315  73
 
 
 --- Sentence//end
 id: 37
-r#  21439  319  17
+r#  21441  319  17
 p: .
 t. 
 |  Appeals from family court rulings, particularly when an abuse or neglect
@@ -1053,7 +1053,7 @@ t.
 
 --- Sentence/end 
 id: 37
-r#  21440  319  18
+r#  21442  319  18
 
 --- Paragraph/end 
 id: 29
@@ -1062,16 +1062,16 @@ y: N/A
 
 --- Paragraph/start
 id: 30
-r#  21442  321  1
+r#  21444  321  1
 
 
 --- Sentence/start
 id: 38
-r#  21442  321  1
+r#  21444  321  1
 
 --- Sentence//end
 id: 38
-r#  22128  327  38
+r#  22130  327  38
 p: .
 t. 
 |  The lack of serious appellate interest in family court rulings is one reason many of these rulings are not appealed to begin with. But there are
@@ -1084,7 +1084,7 @@ t.
 
 --- Sentence/end 
 id: 38
-r#  22129  327  39
+r#  22131  327  39
 
 --- Paragraph/end 
 id: 30
@@ -1093,12 +1093,12 @@ y: N/A
 
 --- Paragraph/start
 id: 31
-r#  22132  329  1
+r#  22134  329  1
 
 
 --- Sentence/start
 id: 39
-r#  22132  329  1
+r#  22134  329  1
 --- Paragraph/end 
 id: 31
 y: N/A
@@ -1106,16 +1106,16 @@ y: N/A
 
 --- Paragraph/start
 id: 32
-r#  23352  348  1
+r#  23354  348  1
 
 
 --- Sentence/start
 id: 40
-r#  23352  348  1
+r#  23354  348  1
 
 --- Sentence//end
 id: 40
-r#  23555  349  67
+r#  23557  349  67
 p: .
 t. 
 |  Second, protective parents are often pressured to make deals with CPS
@@ -1140,7 +1140,7 @@ t.
 
 --- Sentence/end 
 id: 40
-r#  23556  349  68
+r#  23558  349  68
 
 --- Paragraph/end 
 id: 32

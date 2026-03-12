@@ -1,0 +1,216 @@
+
+\documentclass[11pt, twoside]{article}
+
+\raggedbottom{}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\definecolor{urlc}{RGB}{150, 183, 184}
+
+\hypersetup{
+    pdfborderstyle={/S/U/W 1}, % underline links instead of boxes
+    linkbordercolor=red,       % color of internal links
+    citebordercolor=green,     % color of links to bibliography
+    filebordercolor=magenta,   % color of file links
+    urlbordercolor=urlc        % color of external links
+}
+
+
+\input{setup}
+
+\input{cmd/latex-commands}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+{\fontfamily{pbk}\fontsize{11}{14}\selectfont
+
+I have created users accounts \acct{shipuser1} (Management level officer) 
+and \acct{shipuser2} (Operational level officer) for testing. Password \pword{marad1234}
+
+\vspace*{14pt}
+
+\hspace*{-4pt}\includegraphics[scale=.65]{pics/user-list.png}
+
+\vspace*{14pt}
+
+\textbf{Accessing eLogs:} this can be done in 2 ways:
+
+\begin{enumerate}[itemsep=-1pt]
+
+\item{} Open the UAT RD Web page: 
+
+\item{} Click on the NSA-E log remote app to launch the app. 
+For purposes of this guide we will use the first option with following steps: 
+
+\vspace*{14pt}
+
+\hspace*{-41pt}\includegraphics[scale=1]{pics/remote-app.png}
+
+\vspace*{14pt}
+
+\item{} Login to the NSE instance using your NS Account credentials. 
+
+\item{} Click on the \eLogs{} Module to open the module. 
+
+\vspace*{14pt}
+
+\hspace*{-29pt}\includegraphics[scale=1]{pics/module.png}
+
+%\vspace*{14pt}
+
+\item{} That will open the \eLogs{} module on MS Edge browser. \eLogs{} is a web-based module and it will be accessed from a browser only.
+
+
+\end{enumerate}
+
+The other option to access \eLogs{} is by directly opening the \eLogs{} URL from a browser. 
+The URLs are different for each site since the host's name is part of the URL. 
+For testing, access \eLogs{} by opening the URL: 
+\href{http://marhsawas908:7071/#/login}{http://marhsawas908:7071/\#/login} from a browser. 
+(\eLogs{} works better if the Chrome browser is used). Once at the login page, 
+use your NSE Credentials to log in.
+
+\clearpage{}
+
+\hspace*{-29pt}\includegraphics[scale=.52]{pics/sign-in.png}
+
+\vspace*{14pt}
+
+After login, the user selects change/Create PIN and creates a signature.
+
+\pskip{}
+
+If a signature is not saved, the user will need to create the signature each time, submitting an update. We are using test account \acct{test user 1} or \acct{test user 2} 
+and password \pword{marad1234} to capture the process of creating/resetting a PIN and Signature.
+
+\begin{enumerate}[itemsep=-1pt]
+
+\item{} After login to \eLogs{} click on \empht{Account settings} located at the top-right of the page.
+
+\vspace*{14pt}
+
+\hspace*{-43pt}\includegraphics[scale=.6]{pics/settings.png}
+
+\item{} On the user account settings page, click the 
+\empht{Reset Pin/Password} button and update your user PIN and Signature  
+
+\vspace*{14pt}
+
+\hspace*{-43pt}\includegraphics[scale=.6]{pics/reset-pin-password.png}
+
+\clearpage{}
+
+\item{} If the user has an existing PIN (this applies recently created NSE accounts), the system will prompt the users to enter the \empht{current Signature PIN}, 
+\empht{New Signature PIN}, and \empht{Confirm Signature PIN}.  If the user does not have an existing PIN (this applies for older NSE accounts), the system will prompt users to enter a 
+\empht{New Signature PIN} and \empht{Confirm Signature PIN}. Type the new PIN, 
+Confirm the new PIN, and \empht{Save} to apply the change.
+
+\vspace*{14pt}
+
+\hspace*{-23pt}\includegraphics[scale=.57]{pics/reset-pin-signature.png}
+
+\vspace*{14pt}
+
+\item{} Log out of \eLogs{} to apply the PIN update.
+
+\item{} After login to \eLogs{}, go to Accounts Settings.  Select 
+\empht{Reset Pin/Password}/\empht{Change Signature} to create your signature. At this point the system will prompt the user to enter the PIN number. Enter the PIN created and 
+click \qc{\emphs{Ok}}.
+
+\item{} A box will open for the user to upload or sign a signature. Click the 
+\empht{Upload} option to use an existing signature that is saved locally on your computer. 
+Use the mouse to create your signature and click \empht{Save} to apply the update. 
+The \empht{Clear} option is to delete an existing signature.
+
+\vspace*{14pt}
+
+\begin{center}
+\includegraphics[scale=1]{pics/signature-upload.png}
+\end{center}
+
+\clearpage{}
+
+\item{} Click on \empht{Save \& Close} to close Account Settings.
+
+\item{} Saving the Signature is important, or the user will need to sign the signature each time submitting a record update. Below is an example: 
+when the user clicks on \empht{Sign} the signature window 
+with an already existing signature will open. Enter the PIN and 
+click \qc{\emphs{Ok}} to complete submitting the record update. 
+
+\vspace*{14pt}
+
+\hspace*{-21pt}\includegraphics[width=\textwidth]{pics/signature-pin.png}
+
+\vspace*{14pt}
+
+\item{} This is number 9 E-log dashboard MARPOL BOOKS
+
+
+\vspace*{14pt}
+
+\hspace*{-32pt}\includegraphics[scale=.54]{pics/deck-log.png}
+
+\clearpage{}
+
+\item{} This is the oil record book dashboard. The icons are active, you click on them 
+to make log entries as needed.
+
+\item{} This is the Input Data Selection page/action operation page.\\
+
+\vspace*{-15pt}
+\hspace{1pt}\textbullet{} From the dashboard page please select the OIL RECORD BOOK PART 1.
+
+\vspace*{14pt}
+
+\hspace*{-43pt}\includegraphics[scale=.55]{pics/admin.png}
+
+\vspace*{14pt}
+
+
+
+%\vspace*{21pt}
+%\vspace*{14pt}
+
+\item{} Click on the \empht{Create +} button to record your daily entries.
+
+\vspace*{14pt}
+
+\hspace*{-30pt}\includegraphics[scale=.54,
+ trim=0 110pt 0 0, clip]{pics/actions1.png}
+
+\clearpage{}
+
+\hspace*{-30pt}\includegraphics[scale=.54]{pics/actions2.png}
+
+\vspace*{14pt}
+
+
+\item{} Clicking on the \empht{Create +} button will take you here to this page, to the Oil record book template.  Entries that are underlined in red are mandatory 
+and must has to be completed for submission of the \eLogs{} record.
+
+\vspace*{14pt}
+
+\hspace*{-50pt}\includegraphics[width=1.1\textwidth, 
+trim=0 100pt 0 0, clip]{pics/entries.png}
+
+
+\end{enumerate}
+
+\vspace{1em}
+
+\textcolor[RGB]{48, 72, 184}{\textbf{\textsf{\large The End}}}
+
+%TEST.
+%TEST.
+
+
+
+}
+
+
+\end{document}

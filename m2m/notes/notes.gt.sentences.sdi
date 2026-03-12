@@ -16572,25 +16572,25 @@ y: N/A
 
 --- Paragraph/start
 id: 586
-r#  107763  2061  1
+r#  107762  2061  1
 
 
 --- Sentence/start
 id: 1199
-r#  107763  2061  1
+r#  107762  2061  1
 
 --- Sentence//end
 id: 1199
-r#  107764  2061  2
+r#  107763  2061  2
 p: .
 t. 
-|  Kennedy v. Kennedy, 55 Md. App. 299, 462 A.2d 1208 (Md. App. , 1983) (emphasis
+|  Kennedy v. Kennedy, 55 Md. App. 299, 462 A.2d 1208 (Md. App., 1983) (emphasis
 .  added).8
 
 
 --- Sentence/switch
 id: 1200
-r#  107772  2061  10
+r#  107771  2061  10
 
 --- Paragraph/end 
 id: 586
@@ -16599,16 +16599,16 @@ y: N/A
 
 --- Paragraph/start
 id: 587
-r#  107834  2063  1
+r#  107833  2063  1
 
 
 --- Sentence/start
 id: 1201
-r#  107834  2063  1
+r#  107833  2063  1
 
 --- Sentence//end
 id: 1201
-r#  107835  2063  2
+r#  107834  2063  2
 p: .
 t. 
 .  129 N.J. Super. 486, 324 A.2d 90 (Chancery Div., 1974).9
@@ -16616,7 +16616,7 @@ t.
 
 --- Sentence/switch
 id: 1202
-r#  107841  2063  8
+r#  107840  2063  8
 
 --- Paragraph/end 
 id: 587
@@ -16625,16 +16625,16 @@ y: N/A
 
 --- Paragraph/start
 id: 588
-r#  108014  2067  1
+r#  108013  2067  1
 
 
 --- Sentence/start
 id: 1203
-r#  108014  2067  1
+r#  108013  2067  1
 
 --- Sentence//end
 id: 1203
-r#  108016  2067  3
+r#  108015  2067  3
 p: .
 t. 
 |  Indeed, homosexuality was still officially listed as a mental disorder by the
@@ -16644,7 +16644,7 @@ t.
 
 --- Sentence/switch
 id: 1204
-r#  108022  2067  9
+r#  108021  2067  9
 
 --- Paragraph/end 
 id: 588
@@ -16653,16 +16653,16 @@ y: N/A
 
 --- Paragraph/start
 id: 589
-r#  108203  2071  1
+r#  108202  2071  1
 
 
 --- Sentence/start
 id: 1205
-r#  108203  2071  1
+r#  108202  2071  1
 
 --- Sentence//end
 id: 1205
-r#  108205  2071  3
+r#  108204  2071  3
 p: .
 t. 
 |  That this argument was based directly on a decision of the US Supreme
@@ -16672,7 +16672,7 @@ t.
 
 --- Sentence/switch
 id: 1206
-r#  108211  2071  9
+r#  108210  2071  9
 
 --- Paragraph/end 
 id: 589
@@ -16681,16 +16681,16 @@ y: N/A
 
 --- Paragraph/start
 id: 590
-r#  108345  2074  1
+r#  108344  2074  1
 
 
 --- Sentence/start
 id: 1207
-r#  108345  2074  1
+r#  108344  2074  1
 
 --- Sentence//end
 id: 1207
-r#  108347  2074  3
+r#  108346  2074  3
 p: .
 t. 
 |  Stanley v. Illinois, 405 U.S. 645, 92 S. Ct. 1208, 31 L. Ed. 2d 551 (1972);
@@ -16699,7 +16699,7 @@ t.
 
 --- Sentence/switch
 id: 1208
-r#  108353  2074  9
+r#  108352  2074  9
 
 --- Paragraph/end 
 id: 590
@@ -16708,16 +16708,16 @@ y: N/A
 
 --- Paragraph/start
 id: 591
-r#  108698  2080  1
+r#  108697  2080  1
 
 
 --- Sentence/start
 id: 1209
-r#  108698  2080  1
+r#  108697  2080  1
 
 --- Sentence//end
 id: 1209
-r#  108700  2080  3
+r#  108699  2080  3
 p: .
 t. 
 |  It is well known that misguided attitudes about rape - that victims asked for
@@ -16729,7 +16729,7 @@ t.
 
 --- Sentence/switch
 id: 1210
-r#  108706  2080  9
+r#  108705  2080  9
 
 --- Paragraph/end 
 id: 591
@@ -16738,16 +16738,16 @@ y: N/A
 
 --- Paragraph/start
 id: 592
-r#  108755  2082  1
+r#  108754  2082  1
 
 
 --- Sentence/start
 id: 1211
-r#  108755  2082  1
+r#  108754  2082  1
 
 --- Sentence//end
 id: 1211
-r#  108757  2082  3
+r#  108756  2082  3
 p: .
 t. 
 .  Winner, Divorced from Justice, p. 133.14
@@ -16755,7 +16755,7 @@ t.
 
 --- Sentence/switch
 id: 1212
-r#  108763  2082  9
+r#  108762  2082  9
 
 --- Paragraph/end 
 id: 592
@@ -16764,16 +16764,16 @@ y: N/A
 
 --- Paragraph/start
 id: 593
-r#  108784  2084  1
+r#  108783  2084  1
 
 
 --- Sentence/start
 id: 1213
-r#  108784  2084  1
+r#  108783  2084  1
 
 --- Sentence//end
 id: 1213
-r#  108786  2084  3
+r#  108785  2084  3
 p: .
 t. 
 .  See Chapter 1.15
@@ -16781,7 +16781,7 @@ t.
 
 --- Sentence/switch
 id: 1214
-r#  108792  2084  9
+r#  108791  2084  9
 
 --- Paragraph/end 
 id: 593
@@ -16790,16 +16790,16 @@ y: N/A
 
 --- Paragraph/start
 id: 594
-r#  108855  2089  1
+r#  108854  2089  1
 
 
 --- Sentence/start
 id: 1215
-r#  108855  2089  1
+r#  108854  2089  1
 
 --- Sentence//end
 id: 1215
-r#  108856  2089  2
+r#  108855  2089  2
 p: .
 t. 
 .  McAlary, Court with Disney Touch.1
@@ -16807,7 +16807,7 @@ t.
 
 --- Sentence/switch
 id: 1216
-r#  108862  2089  8
+r#  108861  2089  8
 
 --- Paragraph/end 
 id: 594
@@ -16816,16 +16816,16 @@ y: N/A
 
 --- Paragraph/start
 id: 595
-r#  108898  2091  1
+r#  108897  2091  1
 
 
 --- Sentence/start
 id: 1217
-r#  108898  2091  1
+r#  108897  2091  1
 
 --- Sentence//end
 id: 1217
-r#  108899  2091  2
+r#  108898  2091  2
 p: .
 t. 
 .  42 U.S.C. §§ 5101 et seq.2
@@ -16833,7 +16833,7 @@ t.
 
 --- Sentence/switch
 id: 1218
-r#  108905  2091  8
+r#  108904  2091  8
 
 --- Paragraph/end 
 id: 595
@@ -16842,16 +16842,16 @@ y: N/A
 
 --- Paragraph/start
 id: 596
-r#  108993  2093  1
+r#  108992  2093  1
 
 
 --- Sentence/start
 id: 1219
-r#  108993  2093  1
+r#  108992  2093  1
 
 --- Sentence//end
 id: 1219
-r#  108994  2093  2
+r#  108993  2093  2
 p: .
 t. 
 .  Neustein and Lesher, Legislative Solutions to the Protective Parent Backlash.3
@@ -16859,7 +16859,7 @@ t.
 
 --- Sentence/switch
 id: 1220
-r#  109000  2093  8
+r#  108999  2093  8
 
 --- Paragraph/end 
 id: 596
@@ -16868,16 +16868,16 @@ y: N/A
 
 --- Paragraph/start
 id: 597
-r#  109043  2095  1
+r#  109042  2095  1
 
 
 --- Sentence/start
 id: 1221
-r#  109043  2095  1
+r#  109042  2095  1
 
 --- Sentence//end
 id: 1221
-r#  109044  2095  2
+r#  109043  2095  2
 p: .
 t. 
 .  See Part II, Chapter 4 of this book.4
@@ -16885,7 +16885,7 @@ t.
 
 --- Sentence/switch
 id: 1222
-r#  109050  2095  8
+r#  109049  2095  8
 
 --- Paragraph/end 
 id: 597
@@ -16894,16 +16894,16 @@ y: N/A
 
 --- Paragraph/start
 id: 598
-r#  109106  2097  1
+r#  109105  2097  1
 
 
 --- Sentence/start
 id: 1223
-r#  109106  2097  1
+r#  109105  2097  1
 
 --- Sentence//end
 id: 1223
-r#  109107  2097  2
+r#  109106  2097  2
 p: .
 t. 
 .  Pennington, The Judicial Training Act, p. 10.5
@@ -16911,12 +16911,12 @@ t.
 
 --- Sentence/switch
 id: 1224
-r#  109113  2097  8
+r#  109112  2097  8
 
 
 --- Sentence//end
 id: 1224
-r#  109269  2098  76
+r#  109268  2098  76
 p: .
 t. 
 |  States such as California originally enacted provisions for ex parte changes of
@@ -16925,7 +16925,7 @@ t.
 
 --- Sentence/switch
 id: 1225
-r#  109270  2098  77
+r#  109269  2098  77
 
 --- Paragraph/end 
 id: 598
@@ -16934,16 +16934,16 @@ y: N/A
 
 --- Paragraph/start
 id: 599
-r#  109412  2102  1
+r#  109411  2102  1
 
 
 --- Sentence/start
 id: 1226
-r#  109412  2102  1
+r#  109411  2102  1
 
 --- Sentence//end
 id: 1226
-r#  109413  2102  2
+r#  109412  2102  2
 p: .
 t. 
 |  Ironically, the same laws have often served the interests of abusive fathers, who
@@ -16952,7 +16952,7 @@ t.
 
 --- Sentence/switch
 id: 1227
-r#  109419  2102  8
+r#  109418  2102  8
 
 --- Paragraph/end 
 id: 599
@@ -16961,16 +16961,16 @@ y: N/A
 
 --- Paragraph/start
 id: 600
-r#  110055  2112  1
+r#  110054  2112  1
 
 
 --- Sentence/start
 id: 1228
-r#  110055  2112  1
+r#  110054  2112  1
 
 --- Sentence//end
 id: 1228
-r#  110056  2112  2
+r#  110055  2112  2
 p: .
 t. 
 |  This has already been proposed by New York State assemblywoman Cecile
@@ -16986,7 +16986,7 @@ t.
 
 --- Sentence/switch
 id: 1229
-r#  110062  2112  8
+r#  110061  2112  8
 
 --- Paragraph/end 
 id: 600
@@ -16995,16 +16995,16 @@ y: N/A
 
 --- Paragraph/start
 id: 601
-r#  110101  2114  1
+r#  110100  2114  1
 
 
 --- Sentence/start
 id: 1230
-r#  110101  2114  1
+r#  110100  2114  1
 
 --- Sentence//end
 id: 1230
-r#  110102  2114  2
+r#  110101  2114  2
 p: .
 t. 
 .  California Family Code § 3027.5.8
@@ -17012,7 +17012,7 @@ t.
 
 --- Sentence/switch
 id: 1231
-r#  110108  2114  8
+r#  110107  2114  8
 
 --- Paragraph/end 
 id: 601
@@ -17021,16 +17021,16 @@ y: N/A
 
 --- Paragraph/start
 id: 602
-r#  110151  2116  1
+r#  110150  2116  1
 
 
 --- Sentence/start
 id: 1232
-r#  110151  2116  1
+r#  110150  2116  1
 
 --- Sentence//end
 id: 1232
-r#  110152  2116  2
+r#  110151  2116  2
 p: .
 t. 
 .  See Part II, Chapter 4 of this book.9
@@ -17038,7 +17038,7 @@ t.
 
 --- Sentence/switch
 id: 1233
-r#  110158  2116  8
+r#  110157  2116  8
 
 --- Paragraph/end 
 id: 602
@@ -17047,16 +17047,16 @@ y: N/A
 
 --- Paragraph/start
 id: 603
-r#  110425  2121  1
+r#  110424  2121  1
 
 
 --- Sentence/start
 id: 1234
-r#  110425  2121  1
+r#  110424  2121  1
 
 --- Sentence//end
 id: 1234
-r#  110427  2121  3
+r#  110426  2121  3
 p: .
 t. 
 |  Adding this eligibility requirement to CAPTA addresses the backlash against
@@ -17067,7 +17067,7 @@ t.
 
 --- Sentence/switch
 id: 1235
-r#  110433  2121  9
+r#  110432  2121  9
 
 --- Paragraph/end 
 id: 603
@@ -17076,16 +17076,16 @@ y: N/A
 
 --- Paragraph/start
 id: 604
-r#  111127  2131  1
+r#  111126  2131  1
 
 
 --- Sentence/start
 id: 1236
-r#  111127  2131  1
+r#  111126  2131  1
 
 --- Sentence//end
 id: 1236
-r#  111129  2131  3
+r#  111128  2131  3
 p: .
 t. 
 |  In 1998, another complaint against Deutsch - then a JHO
@@ -17101,7 +17101,7 @@ t.
 
 --- Sentence/switch
 id: 1237
-r#  111135  2131  9
+r#  111134  2131  9
 
 --- Paragraph/end 
 id: 604
@@ -17110,16 +17110,16 @@ y: N/A
 
 --- Paragraph/start
 id: 605
-r#  111476  2137  1
+r#  111475  2137  1
 
 
 --- Sentence/start
 id: 1238
-r#  111476  2137  1
+r#  111475  2137  1
 
 --- Sentence//end
 id: 1238
-r#  111478  2137  3
+r#  111477  2137  3
 p: .
 t. 
 |  Today’s trend is that wherever federal courts can decline jurisdiction over a
@@ -17131,7 +17131,7 @@ t.
 
 --- Sentence/switch
 id: 1239
-r#  111484  2137  9
+r#  111483  2137  9
 
 --- Paragraph/end 
 id: 605
@@ -17140,16 +17140,16 @@ y: N/A
 
 --- Paragraph/start
 id: 606
-r#  111535  2139  1
+r#  111534  2139  1
 
 
 --- Sentence/start
 id: 1240
-r#  111535  2139  1
+r#  111534  2139  1
 
 --- Sentence//end
 id: 1240
-r#  111537  2139  3
+r#  111536  2139  3
 p: .
 t. 
 .  Gothard, Children in Courtrooms, p. 115.13
@@ -17157,7 +17157,7 @@ t.
 
 --- Sentence/switch
 id: 1241
-r#  111543  2139  9
+r#  111542  2139  9
 
 --- Paragraph/end 
 id: 606
@@ -17166,16 +17166,16 @@ y: N/A
 
 --- Paragraph/start
 id: 607
-r#  111590  2141  1
+r#  111589  2141  1
 
 
 --- Sentence/start
 id: 1242
-r#  111590  2141  1
+r#  111589  2141  1
 
 --- Sentence//end
 id: 1242
-r#  111592  2141  3
+r#  111591  2141  3
 p: .
 t. 
 .  Pennington, The Hardest Case, p. 20.14
@@ -17183,7 +17183,7 @@ t.
 
 --- Sentence/switch
 id: 1243
-r#  111598  2141  9
+r#  111597  2141  9
 
 --- Paragraph/end 
 id: 607
@@ -17192,16 +17192,16 @@ y: N/A
 
 --- Paragraph/start
 id: 608
-r#  111767  2144  1
+r#  111766  2144  1
 
 
 --- Sentence/start
 id: 1244
-r#  111767  2144  1
+r#  111766  2144  1
 
 --- Sentence//end
 id: 1244
-r#  111769  2144  3
+r#  111768  2144  3
 p: .
 t. 
 |  Such a questionnaire was formulated in 1993 by one of us at the request of attorney Sherry Quirk, senior partner at the firm of Verner Liipfert in Washington,
@@ -17210,12 +17210,12 @@ t.
 
 --- Sentence/switch
 id: 1245
-r#  111775  2144  9
+r#  111774  2144  9
 
 
 --- Sentence//end
 id: 1245
-r#  112118  2147  155
+r#  112117  2147  155
 p: .
 t. 
 |  Such a case was reported to us. After a judge determined that a father had abused
@@ -17226,7 +17226,7 @@ t.
 
 --- Sentence/switch
 id: 1246
-r#  112119  2147  156
+r#  112118  2147  156
 
 --- Paragraph/end 
 id: 608
@@ -17235,16 +17235,16 @@ y: N/A
 
 --- Paragraph/start
 id: 609
-r#  112403  2153  1
+r#  112402  2153  1
 
 
 --- Sentence/start
 id: 1247
-r#  112403  2153  1
+r#  112402  2153  1
 
 --- Sentence//end
 id: 1247
-r#  112405  2153  3
+r#  112404  2153  3
 p: .
 t. 
 |  He agreed to do so - but only if the mother waived her right to have the judge
@@ -17255,7 +17255,7 @@ t.
 
 --- Sentence/switch
 id: 1248
-r#  112411  2153  9
+r#  112410  2153  9
 
 --- Paragraph/end 
 id: 609
@@ -17264,16 +17264,16 @@ y: N/A
 
 --- Paragraph/start
 id: 610
-r#  113403  2167  1
+r#  113402  2167  1
 
 
 --- Sentence/start
 id: 1249
-r#  113403  2167  1
+r#  113402  2167  1
 
 --- Sentence//end
 id: 1249
-r#  113404  2167  2
+r#  113403  2167  2
 p: .
 t. 
 |  Congress, in its enactment of CAPTA, evidently anticipated future amendments
@@ -17290,7 +17290,7 @@ t.
 
 --- Sentence/switch
 id: 1250
-r#  113410  2167  8
+r#  113409  2167  8
 
 --- Paragraph/end 
 id: 610
@@ -17299,16 +17299,16 @@ y: N/A
 
 --- Paragraph/start
 id: 611
-r#  114130  2177  1
+r#  114129  2177  1
 
 
 --- Sentence/start
 id: 1251
-r#  114130  2177  1
+r#  114129  2177  1
 
 --- Sentence//end
 id: 1251
-r#  114131  2177  2
+r#  114130  2177  2
 p: .
 t. 
 |  For example, in Krause v. Krause (Docket No. C 02--5277 JSW, N.D. Cal.), a
@@ -17324,7 +17324,7 @@ t.
 
 --- Sentence/switch
 id: 1252
-r#  114137  2177  8
+r#  114136  2177  8
 
 --- Paragraph/end 
 id: 611
@@ -17333,16 +17333,16 @@ y: N/A
 
 --- Paragraph/start
 id: 612
-r#  114449  2181  1
+r#  114448  2181  1
 
 
 --- Sentence/start
 id: 1253
-r#  114449  2181  1
+r#  114448  2181  1
 
 --- Sentence//end
 id: 1253
-r#  114450  2181  2
+r#  114449  2181  2
 p: .
 t. 
 |  The reason for this privilege is that if judges could be sued for their official acts,
@@ -17352,7 +17352,7 @@ t.
 
 --- Sentence/switch
 id: 1254
-r#  114456  2181  8
+r#  114455  2181  8
 
 --- Paragraph/end 
 id: 612
@@ -17361,16 +17361,16 @@ y: N/A
 
 --- Paragraph/start
 id: 613
-r#  114839  2187  1
+r#  114838  2187  1
 
 
 --- Sentence/start
 id: 1255
-r#  114839  2187  1
+r#  114838  2187  1
 
 --- Sentence//end
 id: 1255
-r#  114840  2187  2
+r#  114839  2187  2
 p: .
 t. 
 |  We have been astonished at the number of law guardians who have made critical
@@ -17382,7 +17382,7 @@ t.
 
 --- Sentence/switch
 id: 1256
-r#  114846  2187  8
+r#  114845  2187  8
 
 --- Paragraph/end 
 id: 613
@@ -17391,16 +17391,16 @@ y: N/A
 
 --- Paragraph/start
 id: 614
-r#  115291  2194  1
+r#  115290  2194  1
 
 
 --- Sentence/start
 id: 1257
-r#  115291  2194  1
+r#  115290  2194  1
 
 --- Sentence//end
 id: 1257
-r#  115292  2194  2
+r#  115291  2194  2
 p: .
 t. 
 |  Ordinary lawyers may communicate with others (although not with the court)
@@ -17413,12 +17413,12 @@ t.
 
 --- Sentence/switch
 id: 1258
-r#  115298  2194  8
+r#  115297  2194  8
 
 
 --- Sentence//end
 id: 1258
-r#  115899  2201  37
+r#  115898  2201  37
 p: .
 t. 
 |  It may be objected that the law guardian’s role is not definitely over, since the
@@ -17432,7 +17432,7 @@ t.
 
 --- Sentence/end 
 id: 1258
-r#  115905  2201  43
+r#  115904  2201  43
 
 --- Paragraph/end 
 id: 614
@@ -17441,16 +17441,16 @@ y: N/A
 
 --- Paragraph/start
 id: 615
-r#  115907  2203  1
+r#  115906  2203  1
 
 
 --- Sentence/start
 id: 1259
-r#  115907  2203  1
+r#  115906  2203  1
 
 --- Sentence//end
 id: 1259
-r#  115908  2203  2
+r#  115907  2203  2
 p: .
 t. 
 .  6
@@ -17458,7 +17458,7 @@ t.
 
 --- Sentence/switch
 id: 1260
-r#  115914  2203  8
+r#  115913  2203  8
 
 --- Paragraph/end 
 id: 615
@@ -17467,16 +17467,16 @@ y: N/A
 
 --- Paragraph/start
 id: 616
-r#  115960  2205  1
+r#  115959  2205  1
 
 
 --- Sentence/start
 id: 1261
-r#  115960  2205  1
+r#  115959  2205  1
 
 --- Sentence//end
 id: 1261
-r#  115961  2205  2
+r#  115960  2205  2
 p: .
 t. 
 .  Tippins, Custody Evaluations, p. 3.7
@@ -17484,7 +17484,7 @@ t.
 
 --- Sentence/switch
 id: 1262
-r#  115967  2205  8
+r#  115966  2205  8
 
 --- Paragraph/end 
 id: 616
@@ -17493,16 +17493,16 @@ y: N/A
 
 --- Paragraph/start
 id: 617
-r#  116046  2207  1
+r#  116045  2207  1
 
 
 --- Sentence/start
 id: 1263
-r#  116046  2207  1
+r#  116045  2207  1
 
 --- Sentence//end
 id: 1263
-r#  116047  2207  2
+r#  116046  2207  2
 p: .
 t. 
 .  Melton et al., Psychological Evaluations for the Courts, p. 484.8
@@ -17510,7 +17510,7 @@ t.
 
 --- Sentence/switch
 id: 1264
-r#  116053  2207  8
+r#  116052  2207  8
 
 --- Paragraph/end 
 id: 617
@@ -17519,16 +17519,16 @@ y: N/A
 
 --- Paragraph/start
 id: 618
-r#  116405  2212  1
+r#  116404  2212  1
 
 
 --- Sentence/start
 id: 1265
-r#  116405  2212  1
+r#  116404  2212  1
 
 --- Sentence//end
 id: 1265
-r#  116406  2212  2
+r#  116405  2212  2
 p: .
 t. 
 |  Schafran, Evaluating the Evaluators. Schafran proposes that all custody evaluations contain the same required elements, including a list of all parties
@@ -17539,7 +17539,7 @@ t.
 
 --- Sentence/switch
 id: 1266
-r#  116412  2212  8
+r#  116411  2212  8
 
 --- Paragraph/end 
 id: 618
@@ -17548,16 +17548,16 @@ y: N/A
 
 --- Paragraph/start
 id: 619
-r#  116478  2214  1
+r#  116477  2214  1
 
 
 --- Sentence/start
 id: 1267
-r#  116478  2214  1
+r#  116477  2214  1
 
 --- Sentence//end
 id: 1267
-r#  116480  2214  3
+r#  116479  2214  3
 p: .
 t. 
 .  Friedrich, Sexual Behavior in Sexually Abused Children.10
@@ -17565,7 +17565,7 @@ t.
 
 --- Sentence/switch
 id: 1268
-r#  116486  2214  9
+r#  116485  2214  9
 
 --- Paragraph/end 
 id: 619
@@ -17574,16 +17574,16 @@ y: N/A
 
 --- Paragraph/start
 id: 620
-r#  116545  2216  1
+r#  116544  2216  1
 
 
 --- Sentence/start
 id: 1269
-r#  116545  2216  1
+r#  116544  2216  1
 
 --- Sentence//end
 id: 1269
-r#  116547  2216  3
+r#  116546  2216  3
 p: .
 t. 
 .  Severson v. Hansen, 529 N.W.2d 167 (N.D., 1995).11
@@ -17591,12 +17591,12 @@ t.
 
 --- Sentence/switch
 id: 1270
-r#  116553  2216  9
+r#  116552  2216  9
 
 
 --- Sentence//end
 id: 1270
-r#  116615  2216  71
+r#  116614  2216  71
 p: .
 t. 
 .  Report of psychologist to the court, April 2, 2003, pp. 2--3
@@ -17604,7 +17604,7 @@ t.
 
 --- Sentence/switch
 id: 1271
-r#  116616  2216  72
+r#  116615  2216  72
 
 --- Paragraph/end 
 id: 620
@@ -17613,16 +17613,16 @@ y: N/A
 
 --- Paragraph/start
 id: 621
-r#  116709  2220  1
+r#  116708  2220  1
 
 
 --- Sentence/start
 id: 1272
-r#  116709  2220  1
+r#  116708  2220  1
 
 --- Sentence//end
 id: 1272
-r#  116711  2220  3
+r#  116710  2220  3
 p: .
 t. 
 |  J. Wittmann, Child Advocacy and the Scientific Model in Family Court, pp.
@@ -17631,7 +17631,7 @@ t.
 
 --- Sentence/switch
 id: 1273
-r#  116717  2220  9
+r#  116716  2220  9
 
 --- Paragraph/end 
 id: 621
@@ -17640,16 +17640,16 @@ y: N/A
 
 --- Paragraph/start
 id: 622
-r#  117213  2227  1
+r#  117212  2227  1
 
 
 --- Sentence/start
 id: 1274
-r#  117213  2227  1
+r#  117212  2227  1
 
 --- Sentence//end
 id: 1274
-r#  117215  2227  3
+r#  117214  2227  3
 p: .
 t. 
 |  Indeed, in 1999, two mental health professionals published an article calling
@@ -17662,7 +17662,7 @@ t.
 
 --- Sentence/switch
 id: 1275
-r#  117221  2227  9
+r#  117220  2227  9
 
 --- Paragraph/end 
 id: 622
@@ -17671,16 +17671,16 @@ y: N/A
 
 --- Paragraph/start
 id: 623
-r#  117383  2230  1
+r#  117382  2230  1
 
 
 --- Sentence/start
 id: 1276
-r#  117383  2230  1
+r#  117382  2230  1
 
 --- Sentence//end
 id: 1276
-r#  117385  2230  3
+r#  117384  2230  3
 p: .
 t. 
 |  For an analysis of how judges can best work with expert medical testimony in
@@ -17689,7 +17689,7 @@ t.
 
 --- Sentence/switch
 id: 1277
-r#  117391  2230  9
+r#  117390  2230  9
 
 --- Paragraph/end 
 id: 623
@@ -17698,16 +17698,16 @@ y: N/A
 
 --- Paragraph/start
 id: 624
-r#  117551  2233  1
+r#  117550  2233  1
 
 
 --- Sentence/start
 id: 1278
-r#  117551  2233  1
+r#  117550  2233  1
 
 --- Sentence//end
 id: 1278
-r#  117553  2233  3
+r#  117552  2233  3
 p: .
 t. 
 |  Matter of Sayeh R. v. Monroe County Dept. of Social Services, 91 N.Y.2d 306, 693
@@ -17716,7 +17716,7 @@ t.
 
 --- Sentence/switch
 id: 1279
-r#  117559  2233  9
+r#  117558  2233  9
 
 --- Paragraph/end 
 id: 624
@@ -17725,16 +17725,16 @@ y: N/A
 
 --- Paragraph/start
 id: 625
-r#  117656  2235  1
+r#  117655  2235  1
 
 
 --- Sentence/start
 id: 1280
-r#  117656  2235  1
+r#  117655  2235  1
 
 --- Sentence//end
 id: 1280
-r#  117658  2235  3
+r#  117657  2235  3
 p: .
 t. 
 .  Martindale, Cross-examining Mental Health Experts in Child Custody Litigation, p. 488.16
@@ -17742,7 +17742,7 @@ t.
 
 --- Sentence/switch
 id: 1281
-r#  117664  2235  9
+r#  117663  2235  9
 
 --- Paragraph/end 
 id: 625
@@ -17751,16 +17751,16 @@ y: N/A
 
 --- Paragraph/start
 id: 626
-r#  117827  2238  1
+r#  117826  2238  1
 
 
 --- Sentence/start
 id: 1282
-r#  117827  2238  1
+r#  117826  2238  1
 
 --- Sentence//end
 id: 1282
-r#  117829  2238  3
+r#  117828  2238  3
 p: .
 t. 
 |  Schechter and Edleson, Effective Intervention in Domestic Violence and Child
@@ -17769,7 +17769,7 @@ t.
 
 --- Sentence/switch
 id: 1283
-r#  117835  2238  9
+r#  117834  2238  9
 
 --- Paragraph/end 
 id: 626
@@ -17778,16 +17778,16 @@ y: N/A
 
 --- Paragraph/start
 id: 627
-r#  117856  2240  1
+r#  117855  2240  1
 
 
 --- Sentence/start
 id: 1284
-r#  117856  2240  1
+r#  117855  2240  1
 
 --- Sentence//end
 id: 1284
-r#  117858  2240  3
+r#  117857  2240  3
 p: .
 t. 
 .  Id., p. 5.18
@@ -17795,7 +17795,7 @@ t.
 
 --- Sentence/switch
 id: 1285
-r#  117864  2240  9
+r#  117863  2240  9
 
 --- Paragraph/end 
 id: 627
@@ -17804,16 +17804,16 @@ y: N/A
 
 --- Paragraph/start
 id: 628
-r#  117919  2242  1
+r#  117918  2242  1
 
 
 --- Sentence/start
 id: 1286
-r#  117919  2242  1
+r#  117918  2242  1
 
 --- Sentence//end
 id: 1286
-r#  117921  2242  3
+r#  117920  2242  3
 p: .
 t. 
 .  From Madness to Mutiny, pp. 220 and 264n16.19
@@ -17821,7 +17821,7 @@ t.
 
 --- Sentence/switch
 id: 1287
-r#  117927  2242  9
+r#  117926  2242  9
 
 --- Paragraph/end 
 id: 628
@@ -17830,16 +17830,16 @@ y: N/A
 
 --- Paragraph/start
 id: 629
-r#  118031  2244  1
+r#  118030  2244  1
 
 
 --- Sentence/start
 id: 1288
-r#  118031  2244  1
+r#  118030  2244  1
 
 --- Sentence//end
 id: 1288
-r#  118033  2244  3
+r#  118032  2244  3
 p: .
 t. 
 .  Stewart, Evolving Federal Policies and Their Implications for Greenbook Interventions, p. 41.20
@@ -17847,7 +17847,7 @@ t.
 
 --- Sentence/switch
 id: 1289
-r#  118039  2244  9
+r#  118038  2244  9
 
 --- Paragraph/end 
 id: 629
@@ -17856,16 +17856,16 @@ y: N/A
 
 --- Paragraph/start
 id: 630
-r#  118053  2246  1
+r#  118052  2246  1
 
 
 --- Sentence/start
 id: 1290
-r#  118053  2246  1
+r#  118052  2246  1
 
 --- Sentence//end
 id: 1290
-r#  118055  2246  3
+r#  118054  2246  3
 p: .
 t. 
 .  Id.21
@@ -17873,7 +17873,7 @@ t.
 
 --- Sentence/switch
 id: 1291
-r#  118061  2246  9
+r#  118060  2246  9
 
 --- Paragraph/end 
 id: 630
@@ -17882,16 +17882,16 @@ y: N/A
 
 --- Paragraph/start
 id: 631
-r#  118158  2249  1
+r#  118157  2249  1
 
 
 --- Sentence/start
 id: 1292
-r#  118158  2249  1
+r#  118157  2249  1
 
 --- Sentence//end
 id: 1292
-r#  118160  2249  3
+r#  118159  2249  3
 p: .
 t. 
 |  Id., p. 45. See also Miller and Robuck, Child Abuse & Domestic Violence, pp.
@@ -17900,12 +17900,12 @@ t.
 
 --- Sentence/switch
 id: 1293
-r#  118166  2249  9
+r#  118165  2249  9
 
 
 --- Sentence//end
 id: 1293
-r#  118232  2249  75
+r#  118231  2249  75
 p: .
 t. 
 .  Salcido Carter, Advocacy Perspectives on the Greenbook, p. 87
@@ -17913,7 +17913,7 @@ t.
 
 --- Sentence/switch
 id: 1294
-r#  118233  2249  76
+r#  118232  2249  76
 
 --- Paragraph/end 
 id: 631
@@ -17922,16 +17922,16 @@ y: N/A
 
 --- Paragraph/start
 id: 632
-r#  118255  2252  1
+r#  118254  2252  1
 
 
 --- Sentence/start
 id: 1295
-r#  118255  2252  1
+r#  118254  2252  1
 
 --- Sentence//end
 id: 1295
-r#  118257  2252  3
+r#  118256  2252  3
 p: .
 t. 
 .  Id., p. 97.23
@@ -17939,7 +17939,7 @@ t.
 
 --- Sentence/switch
 id: 1296
-r#  118263  2252  9
+r#  118262  2252  9
 
 --- Paragraph/end 
 id: 632
@@ -17948,16 +17948,16 @@ y: N/A
 
 --- Paragraph/start
 id: 633
-r#  118346  2254  1
+r#  118345  2254  1
 
 
 --- Sentence/start
 id: 1297
-r#  118346  2254  1
+r#  118345  2254  1
 
 --- Sentence//end
 id: 1297
-r#  118348  2254  3
+r#  118347  2254  3
 p: .
 t. 
 .  Edwards and Lucero, The Santa Clara County Greenbook Story, pp. 52--53.24
@@ -17965,7 +17965,7 @@ t.
 
 --- Sentence/switch
 id: 1298
-r#  118354  2254  9
+r#  118353  2254  9
 
 --- Paragraph/end 
 id: 633
@@ -17974,16 +17974,16 @@ y: N/A
 
 --- Paragraph/start
 id: 634
-r#  118448  2257  1
+r#  118447  2257  1
 
 
 --- Sentence/start
 id: 1299
-r#  118448  2257  1
+r#  118447  2257  1
 
 --- Sentence//end
 id: 1299
-r#  118450  2257  3
+r#  118449  2257  3
 p: .
 t. 
 |  Edleson, The Overlap Between Child Maltreatment and Woman Battering, pp.
@@ -17992,7 +17992,7 @@ t.
 
 --- Sentence/switch
 id: 1300
-r#  118456  2257  9
+r#  118455  2257  9
 
 --- Paragraph/end 
 id: 634
@@ -18001,16 +18001,16 @@ y: N/A
 
 --- Paragraph/start
 id: 635
-r#  118568  2260  1
+r#  118567  2260  1
 
 
 --- Sentence/start
 id: 1301
-r#  118568  2260  1
+r#  118567  2260  1
 
 --- Sentence//end
 id: 1301
-r#  118570  2260  3
+r#  118569  2260  3
 p: .
 t. 
 |  Applied Survey Research, Toward a More Coordinated, Cou\-nty-Wide Response to
@@ -18019,7 +18019,7 @@ t.
 
 --- Sentence/switch
 id: 1302
-r#  118576  2260  9
+r#  118575  2260  9
 
 --- Paragraph/end 
 id: 635
@@ -18028,16 +18028,16 @@ y: N/A
 
 --- Paragraph/start
 id: 636
-r#  118687  2263  1
+r#  118686  2263  1
 
 
 --- Sentence/start
 id: 1303
-r#  118687  2263  1
+r#  118686  2263  1
 
 --- Sentence//end
 id: 1303
-r#  118689  2263  3
+r#  118688  2263  3
 p: .
 t. 
 |  Banks, Landsverk, and Wang, Changing Policy and Practice in the Child
@@ -18046,7 +18046,7 @@ t.
 
 --- Sentence/switch
 id: 1304
-r#  118695  2263  9
+r#  118694  2263  9
 
 --- Paragraph/end 
 id: 636
@@ -18055,16 +18055,16 @@ y: N/A
 
 --- Paragraph/start
 id: 637
-r#  118759  2265  1
+r#  118758  2265  1
 
 
 --- Sentence/start
 id: 1305
-r#  118759  2265  1
+r#  118758  2265  1
 
 --- Sentence//end
 id: 1305
-r#  118761  2265  3
+r#  118760  2265  3
 p: .
 t. 
 .  Mandel and Wright, Building on the Greenbook, p. 122.28
@@ -18072,7 +18072,7 @@ t.
 
 --- Sentence/switch
 id: 1306
-r#  118767  2265  9
+r#  118766  2265  9
 
 --- Paragraph/end 
 id: 637

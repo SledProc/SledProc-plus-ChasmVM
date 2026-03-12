@@ -1,0 +1,59 @@
+20:49:48: Running steps for project chasm-runtime-bridge...
+20:49:48: Configuration unchanged, skipping qmake step.
+20:49:48: Starting: "/usr/bin/make" -j4
+g++ -c -pipe -g -Wall -Wextra -D_REENTRANT -fPIC -DWHICH_DEFINES=\"./_defines/isobuild_defines.h\" -DROOT_FOLDER=\"/home/nlevisrael/gits/pnp-dev/prelim-dev/ar\" -DCAON_DEBUG -DRELAE_LABEL_NODES -DUSE_OTNS -DQT_QML_DEBUG -DQT_NO_KEYWORDS -DQT_CORE_LIB -I../chasm-runtime-bridge -I. -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/global -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-lib -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/phaon-graph -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/relae/relae-graph -I/home/nlevisrael/gits/pnp-dev/prelim-dev/ar -I/home/nlevisrael/Qt/5.15.2/gcc_64/include -I/home/nlevisrael/Qt/5.15.2/gcc_64/include/QtCore -I. -I/home/nlevisrael/Qt/5.15.2/gcc_64/mkspecs/linux-g++ -o /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-5-15-2-GCC_10/PROJECT_OBJECTS/chasm-runtime-bridge/debug/chasm-runner.o /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.cpp
+In file included from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-lib/chasm-lib/chasm/chasm-carrier.h:16,
+                 from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.h:18,
+                 from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.cpp:8:
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/flags.h:204:1: warning: multi-line comment [-Wcomment]
+  204 | //#define flags_(byte_count) \
+      | ^
+In file included from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/global-types.h:24,
+                 from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-lib/chasm-lib/chasm/chasm-carrier.h:18,
+                 from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.h:18,
+                 from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.cpp:8:
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/enum-macros.h:107:1: warning: multi-line comment [-Wcomment]
+  107 | //friend constexpr e operator,(e& lhs, e rhs) \
+      | ^
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/enum-macros.h:113:1: warning: multi-line comment [-Wcomment]
+  113 | //friend constexpr e operator,(e& lhs, u1 rhs) \
+      | ^
+In file included from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.h:28,
+                 from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.cpp:8:
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-run-router.h:69:1: warning: multi-line comment [-Wcomment]
+   69 | // #define CHASM_FUNCTION_CODES_( Family_Name ) \
+      | ^
+In file included from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.templates.h:16,
+                 from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.cpp:12:
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/graph-run/call/asg-call-v-v.h: In static member function ‘static void OTQR::Chasm_TR::ASG_Proc_Run<OTQR::Chasm_TR::ASG_Graph_Call_VV, 1, OTQR::Chasm_TR::ASG_Type_Family::Internal>::run(OTQR::Chasm_TR::Chasm_Result_Holder&, OTQR::Chasm_TR::Chasm_Value_Holder&, OTQR::Chasm_TR::Chasm_Value_Holder&)’:
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/graph-run/call/asg-call-v-v.h:77:39: warning: unused parameter ‘rh’ [-Wunused-parameter]
+   77 |  static void run(Chasm_Result_Holder& rh, Chasm_Value_Holder& v1,
+      |                  ~~~~~~~~~~~~~~~~~~~~~^~
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/graph-run/call/asg-call-v-v.h:77:63: warning: unused parameter ‘v1’ [-Wunused-parameter]
+   77 |  static void run(Chasm_Result_Holder& rh, Chasm_Value_Holder& v1,
+      |                                           ~~~~~~~~~~~~~~~~~~~~^~
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/graph-run/call/asg-call-v-v.h:78:24: warning: unused parameter ‘v2’ [-Wunused-parameter]
+   78 |    Chasm_Value_Holder& v2)
+      |    ~~~~~~~~~~~~~~~~~~~~^~
+In file included from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.cpp:12:
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.templates.h: In static member function ‘static void OTQR::Chasm_TR::Chasm_Runner::run(OTQR::Chasm_TR::Chasm_Result_Holder&, OTQR::Chasm_TR::Chasm_Run_Router::Known_Procedure_Codes, OTQR::Chasm_TR::Chasm_Value_Holder&, OTQR::Chasm_TR::Chasm_Value_Holder&) [with OTQR::Chasm_TR::ASG_Proc_Family <anonymous> = OTQR::Chasm_TR::ASG_Graph_Call_VV]’:
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.templates.h:22:125: warning: unused parameter ‘proc_code’ [-Wunused-parameter]
+   22 | void Chasm_Runner::run<ASG_Proc_Family::ASG_Graph_Call_VV>(Chasm_Result_Holder& rh, Chasm_Run_Router::Known_Procedure_Codes proc_code,
+      |                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.h:28,
+                 from /home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.cpp:8:
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-run-router.h: In instantiation of ‘static void OTQR::Chasm_TR::Chasm_Run_Router::Cast_Schedule<PROC_Family, CORE_FUNCTION_Code, TYPE_FAMILY_Enum, LHS_Type, RHS_Type, RETURN_Type>::Runner<CAST_SCHED_Type, ARITY_FAMILY_Type, TFam, true>::run(OTQR::Chasm_TR::Chasm_Result_Holder&, caon_ptr<T1>, caon_ptr<T2>) [with T1 = OTQR::Chasm_TR::Chasm_Value_Holder; T2 = OTQR::Chasm_TR::Chasm_Value_Holder; CAST_SCHED_Type = OTQR::Chasm_TR::Chasm_Run_Router::Cast_Schedule<OTQR::Chasm_TR::ASG_Graph_Call_VV, OTQR::Chasm_TR::Chasm_Run_Router::Known_Procedure_Codes::Add2, OTQR::Chasm_TR::ASG_Type_Family::Internal>; ARITY_FAMILY_Type = int; OTQR::Chasm_TR::ASG_Type_Family TFam = OTQR::Chasm_TR::ASG_Type_Family::Internal; OTQR::Chasm_TR::ASG_Proc_Family PROC_Family = OTQR::Chasm_TR::ASG_Graph_Call_VV; OTQR::Chasm_TR::Chasm_Run_Router::Known_Procedure_Codes CORE_FUNCTION_Code = OTQR::Chasm_TR::Chasm_Run_Router::Known_Procedure_Codes::Add2; OTQR::Chasm_TR::ASG_Type_Family TYPE_FAMILY_Enum = OTQR::Chasm_TR::ASG_Type_Family::Internal; LHS_Type = OTQR::Chasm_TR::Chasm_Run_Router::Cast_Needed; RHS_Type = OTQR::Chasm_TR::Chasm_Run_Router::Cast_Needed; RETURN_Type = OTQR::Chasm_TR::Chasm_Run_Router::Cast_Null_Marker]’:
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-runner.templates.h:32:72:   required from here
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-run-router.h:291:75: error: no matching function for call to ‘OTQR::Chasm_TR::ASG_Proc_Run<OTQR::Chasm_TR::ASG_Graph_Call_VV, 1, OTQR::Chasm_TR::ASG_Type_Family::Internal>::run<OTQR::Chasm_TR::Chasm_Value_Holder, OTQR::Chasm_TR::Chasm_Value_Holder>(OTQR::Chasm_TR::Chasm_Result_Holder&, OTQR::Chasm_TR::Chasm_Value_Holder&, OTQR::Chasm_TR::Chasm_Value_Holder&)’
+  291 |      ASG_Proc_Run<ASG_Graph_Call_VV, 1, Type_Family>::template run<T1, T2>(rh, *t1, *t2); break;
+      |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/src/prelim/contrib/all/all/sk/chasm/chasm-vm/chasm-runtime-bridge/runner/chasm-run-router.h:285:10: warning: unused variable ‘cfc’ [-Wunused-variable]
+  285 |     auto cfc = CAST_SCHED_Type::Core_Function_Code;
+      |          ^~~
+Makefile:1061: recipe for target '/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-5-15-2-GCC_10/PROJECT_OBJECTS/chasm-runtime-bridge/debug/chasm-runner.o' failed
+make: *** [/home/nlevisrael/gits/pnp-dev/prelim-dev/ar/code/cpp/targets/contrib/all/all/qt/qt-multiple/nomark/targets-5-15-2-GCC_10/PROJECT_OBJECTS/chasm-runtime-bridge/debug/chasm-runner.o] Error 1
+20:49:49: The process "/usr/bin/make" exited with code 2.
+Error while building/deploying project chasm-runtime-bridge (kit: GCC-10)
+When executing step "Make"
+20:49:49: Elapsed time: 00:01.
+
