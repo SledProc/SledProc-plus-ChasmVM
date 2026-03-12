@@ -1,0 +1,77 @@
+
+\usepackage{eso-pic}
+
+\AddToShipoutPictureFG{
+
+
+
+\ifnum\value{page}=2{
+\AtTextLowerLeft{
+
+\raisebox{55pt}{
+
+\begin{tikzpicture}
+
+\node at (0,0) [text=white] {};
+
+%\draw (.6,4.3) circle  (6pt) [xscale=1.4];
+%\draw (1,0) circle (6pt);
+
+\definecolor{back1}{RGB}{245, 137, 173}
+
+\node [draw, circle, minimum size=38pt, xscale=3.3,  yscale=2, text opacity=0,
+draw=teal!40!black, shading angle=160, 
+top color=back1, bottom color=back1!40!cyan] (b1) at (5.4,.24) {};
+
+\draw  [-{Stealth[scale=.4,angle'=86]}, line width=2pt, draw=magenta!50!black] ([yshift=-2pt, 
+xshift=1pt] b1.north) to 
+ % [bend right=30, in=180, out=0]
+  ([yshift=17pt, xshift=-6.5pt] b1.north) ;
+
+\node [draw, circle, minimum size=38pt, xscale=3.2,  yscale=2, text opacity=0,
+draw=back1!40!black, fill=yellow!30] (b1) at (5.4,.24) {};
+
+\node at (b1) [text width=120pt, align=center] {to reset your NSE user\\account password};
+
+
+
+\node [draw, circle, minimum size=68pt, xscale=1.5,  yscale=1, text opacity=0,
+draw=teal!40!black, shading angle=160, 
+top color=back1, bottom color=back1!40!cyan] (b2) at (9.8,.24) {};
+
+\draw  [-{Stealth[scale=.4,angle'=86]}, line width=2pt, draw=magenta!50!black] 
+([yshift=-2pt, xshift=5pt] b2.north) to 
+ % [bend right=30, in=180, out=0]
+  ([yshift=21pt, xshift=8pt] b2.north) ;
+
+\node [draw, circle, minimum size=68pt, xscale=1.45,  yscale=1, text opacity=0,
+draw=back1!40!black, fill=yellow!30]  at (b2) {};
+
+
+\node at (b2) [text width=90pt, align=center] {to create/\\reset PIN};
+
+
+
+\node [draw, circle, minimum size=78pt, xscale=1.6,  yscale=1, text opacity=0,
+draw=teal!40!black, shading angle=160, 
+top color=back1, bottom color=back1!40!cyan] (b3) at (14.36,.24) {};
+
+\draw  [-{Stealth[scale=.4,angle'=86]}, line width=2pt, draw=magenta!50!black] 
+([yshift=-4pt, xshift=-13pt] b3.north) to 
+ % [bend right=30, in=180, out=0]
+  ([yshift=16pt, xshift=-7pt] b3.north) ;
+
+\node [draw, circle, minimum size=78pt, xscale=1.55,  yscale=1, text opacity=0,
+draw=back1!40!black, fill=yellow!30] at (14.36,.24) {};
+
+\node at (b3) [text width=90pt, align=center] {to create/\\change Signature};
+
+
+
+\end{tikzpicture}
+
+}}
+
+}\fi
+
+}
