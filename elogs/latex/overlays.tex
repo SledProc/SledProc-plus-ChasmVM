@@ -3,6 +3,36 @@
 
 \AddToShipoutPictureFG{
 
+\AtTextLowerLeft{
+
+\hspace*{500pt}\fndiamond{{\fontfamily{bch}\fontsize{11}{21}\selectfont \thepage}}
+
+}
+
+\AtTextLowerLeft{
+
+
+\raisebox{762pt}{
+
+\begin{tikzpicture}
+
+\node at (0,0) [text=red] {};
+
+\definecolor{und}{RGB}{245, 169, 137}
+
+\draw [line width=2pt, draw=black!50!und] (1.8,0) to (15.1,0);
+
+
+\node[shape=regular polygon, regular polygon sides=3, draw=white!30, 
+top color=und!40!black, bottom color=und, draw opacity=0.5, line width=4pt,
+shape border rotate=60, inner sep=2pt,
+xscale=20, anchor=north west] at (1.8,0) {};
+
+\end{tikzpicture}
+
+}
+
+}
 
 
 \ifnum\value{page}=2{

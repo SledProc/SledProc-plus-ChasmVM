@@ -1,9 +1,9 @@
 
 
-\usepackage[top=1in, bottom=.95in, left=.8in, right=.8in,  
+\usepackage[top=1in, bottom=.9in, left=.8in, right=.8in,  
 paperheight=12in,paperwidth=8.5in]{geometry}
 
-\setlength{\headsep}{40pt}
+\setlength{\headsep}{50pt}
 
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric}
@@ -45,8 +45,10 @@ text=red!50!black, fill=pg-inner,inner sep=5pt] (char) {\textbf{#1}};}}
 %inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,0) {#1};
 
 
+\definecolor{pgtext}{RGB}{76, 66, 122}
+
  \node[shape=regular polygon, regular polygon sides=4, 
-shape border rotate=45, text=blue!50!black, 
+shape border rotate=45, text=pgtext, 
 top color=pg-inner, bottom color=red!10,
 inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\textbf{#1}};
 
@@ -59,13 +61,12 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\textbf{#1}};
 \fi
 }
 
-
-\fancyfoot[R]{\ifnum\thepage>2%
-\raisebox{14pt}{\fndiamond{\thepage}}%
-\else%
-\fndiamond{\thepage}\fi}
+%\fancyfoot[R]{\ifnum\thepage>2%
+%\raisebox{10pt}{\fndiamond{\thepage}}%
+%\else%
+%\raisebox{21pt}{\fndiamond{\thepage}}\fi}
     
-\fancyhead[C]{{\fontfamily{bch}\fontsize{21}{21}\selectfont OIL RECORD BOOK USERS GUIDE}} 
+\fancyhead[C]{{\fontfamily{bch}\fontsize{25}{21}\selectfont OIL RECORD BOOK USERS GUIDE}} 
 
 
 \usepackage[outline]{contour}
@@ -91,14 +92,17 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\textbf{#1}};
 \contourlength{0.1pt}\contournumber{10}\contour{emphtc}{#1}}
 
 
-\colorlet{em}{blue!70!pink}
+\definecolor{em}{RGB}{99, 105, 80}
 
-\newcommand{\emphs}[1]{\textcolor{em!50!black}{#1}}
+\newcommand{\emphs}[1]{\textcolor{em}{#1}}
 
-\newcommand{\qc}[1]{\textcolor{emphtc!7!purple}{\q{\textbf{\textsf{\small #1}}}}}
+\newcommand{\qc}[1]{\textcolor{emphtc!7!purple}{\q{%
+\raisebox{-.5pt}{\textbf{\textsf{\large #1}}}}}}
 
 
 \newcommand{\q}[1]{{\fontfamily{phv}\selectfont ``}#1{\fontfamily{phv}\selectfont ''}} 
+
+\newcommand{\qce}[1]{\qc{\emphs{#1}}}
 
 
 \newcommand{\pskip}{\vspace*{14pt}}
