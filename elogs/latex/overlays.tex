@@ -1,4 +1,69 @@
 
+\usetikzlibrary{arrows}
+\usetikzlibrary{backgrounds}
+
+
+\newcommand\CircledImage[4]{%
+
+\node (cc) at (#4) {};
+
+%\draw [line width=2pt, draw=black!50!yellow] ([xshift=-4pt]cc) to ([xshift=4pt]cc);
+
+%\draw [line width=2pt, draw=black!50!yellow,
+%->, shorten >=55] (14,15.5) to (16.4,15.5);
+
+%\draw [line width=2pt, draw=black!50!yellow,
+%<-, shorten <=55] (14,15.5) to (16.4,15.5);
+
+
+ \node (cc) at (#4) {};%
+
+ \node (ccl) [left=39pt of cc] {};%
+ \node (ccr) [right=39pt of cc] {};%
+
+\draw [line width=2pt, draw=black!50!yellow,
+->, shorten >=18] (ccl) to (cc);
+
+\draw [line width=2pt, draw=black!50!yellow,
+->, shorten >=18] (ccr) to (cc);
+
+ \node[circle, inner sep=15pt, line width=1pt,
+top color=brown!20, bottom color=red!60!black, 
+shading angle=0, 
+line width=1pt] at (#4) {};%
+
+% \node[circle, inner sep=14.5pt, fill=white, 
+%shading angle=120, 
+%line width=.5pt] at (#4);%
+
+ \node[circle, inner sep=14pt, fill=, 
+%top color=brown!50!red, bottom color=orange!30, 
+top color=brown!20, bottom color=red!60!black, 
+shading angle=180,  
+line width=1.5pt] at (#4) {};%
+
+ \node[circle, inner sep=13pt, fill=white, 
+%shading angle=120, 
+line width=.5pt] at (#4) {};%
+
+
+ \node[circle, inner sep=12pt, fill overzoom image*={%width=.5\linewidth, 
+clip,trim=#2}{#3}, draw=white, draw opacity=0.4, line width=2pt] at (#4) {};%
+
+
+
+
+}
+
+
+\newcommand\CircledImagex[4]{%
+ \node[circle, %fill overzoom image*={}{pics/reset-pin-signature.png}, %width=.5\linewidth,{#3}, 
+inner sep=0pt, outer sep=0pt, 
+minimum width=133pt, fill overzoom image*={[width=300pt]}{pics/reset-pin-signature.png},
+draw=blue, line width=2pt] at (4,14);%
+}
+
+
 \usepackage{eso-pic}
 
 \AddToShipoutPictureFG{
@@ -10,7 +75,6 @@
 }
 
 \AtTextLowerLeft{
-
 
 \raisebox{762pt}{
 
@@ -44,7 +108,34 @@ xscale=20, anchor=north west] at (1.8,0) {};
 
 \node at (0,0) [text=white] {};
 
-%\draw (.6,4.3) circle  (6pt) [xscale=1.4];
+\definecolor{arr1}{RGB}{25, 137, 173}
+
+
+\draw (16.077,8.37) [draw=magenta!50!black] circle  (7pt);
+
+\draw (16.077,8.37) [draw=arr1, opacity=0.5, line width=1pt] circle  (7.5pt);
+
+\draw (16.07,8.365) [draw=magenta!50!red] circle  (7.5pt);
+
+\colorlet{mr}{magenta!20!orange}
+
+\node (mr) at (13.05,6.8) [fill=white] %[text=magenta!50!red] 
+{%
+\contourlength{.5pt}\contournumber{11}\contour{mr!20}{%
+\textbf{\textcolor{magenta!50!black}{Account Settings}}}
+};
+
+
+\draw  [-{Stealth[scale=.4,angle'=56]}, shorten >=-2pt, line width=4pt, draw=arr1] 
+([yshift=0pt, xshift=12pt] mr.north) to 
+  ([yshift=30pt, xshift=80pt] mr.north) ;
+
+\draw  [-{Stealth[scale=.6,angle'=56]}, 
+shorten >=.5pt, line width=3pt, draw=arr1!30!red, opacity=0.8] 
+([yshift=0pt, xshift=12pt] mr.north) to 
+  ([yshift=30pt, xshift=80pt] mr.north) ;
+
+
 %\draw (1,0) circle (6pt);
 
 \definecolor{back1}{RGB}{245, 137, 173}
@@ -103,5 +194,28 @@ draw=back1!40!black, fill=yellow!30] at (14.36,.24) {};
 }}
 
 }\fi
+
+
+
+\ifnum\value{page}=3{
+\AtTextLowerLeft{
+
+\raisebox{55pt}{
+
+\begin{tikzpicture}
+
+\node at (0,0) [text=white] {};
+
+\CircledImage{scale=2}{623pt 3pt 0pt 259pt}{pics/reset-pin-signature.png}{15.2,15.5}
+
+\CircledImage{scale=2}{135pt 5pt 20pt 205pt}{pics/signature-upload.png}{10.8,1.7}
+
+
+\end{tikzpicture}
+
+}}
+
+}\fi
+
 
 }

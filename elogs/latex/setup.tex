@@ -8,6 +8,8 @@ paperheight=12in,paperwidth=8.5in]{geometry}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric}
 \usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
+
 
 \usepackage{ifthen}
 
@@ -71,7 +73,8 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\textbf{#1}};
 
 \usepackage[outline]{contour}
 
-
+\usepackage[many]{tcolorbox}
+\usetikzlibrary{arrows,shadows,petri,decorations.markings,shapes}
 
 \newcommand{\acct}[1]{%
 \contourlength{0.1pt}\contournumber{10}\contour{red}{#1}}
@@ -85,11 +88,20 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\textbf{#1}};
 \newcommand{\eLogs}{%\textbf{\textsf{eLogs}}}
 \contourlength{0.1pt}\contournumber{10}\contour{elogsc}{\textsf{eLogs}}}
 
-
-
 \definecolor{emphtc}{RGB}{179, 79, 39}
-\newcommand{\empht}[1]{%
+\newcommand{\emphtSL}[1]{%
 \contourlength{0.1pt}\contournumber{10}\contour{emphtc}{#1}}
+
+
+\ExplSyntaxOn
+\NewDocumentCommand{\empht}{m}
+ {
+  \seq_set_split:Nnn \l_tmpa_seq { ~ } { #1 }
+  \seq_map_inline:Nn \l_tmpa_seq { \emphtSL{##1} ~ } \unskip
+ }
+\ExplSyntaxOff
+
+
 
 
 \definecolor{em}{RGB}{99, 105, 80}
@@ -106,4 +118,33 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\textbf{#1}};
 
 
 \newcommand{\pskip}{\vspace*{14pt}}
+
+\newcommand{\bfs}[1]{\resizebox{!}{7pt}{\textbf{#1}}}
+
+
+
+\tcbuselibrary{skins}
+
+\definecolor{sheadc}{RGB}{38, 44, 66}
+
+\newcommand{\shead}[1]{\colorbox{sheadc}{\parbox{\textwidth}{%
+\begin{tcolorbox}[enhanced, colback=sheadc,arc=0,frame hidden,boxsep=-1mm,
+left=5pt,right=0pt,top=4pt,bottom=2pt,
+borderline west = {0.5pt}{0pt}{sheadc!70},borderline north = {0.5pt}{0pt}{sheadc!70}]
+\textcolor{white}{{\Large #1}}
+\end{tcolorbox}\vspace*{-6pt}
+%
+}}}
+
+\newcommand{\sshead}[2]{\hfill\parbox{#1}{
+\begin{tcolorbox}[enhanced, colback=white,arc=0.4pt,frame hidden,boxsep=-1mm,
+left=5pt,right=0pt,top=4pt,bottom=7pt,
+borderline south = {1.5pt}{0pt}{sheadc!60}]
+\textsf{{\Large #2}}
+\end{tcolorbox}}}
+
+
+\newcommand{\Tip}{\textcolor{red}{Tip\raisebox{2pt}{%
+\resizebox{4pt}{6pt}{!}%
+}}\hspace*{5pt}}
 
