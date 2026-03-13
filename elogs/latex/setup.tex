@@ -111,10 +111,41 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\textbf{#1}};
 \newcommand{\qc}[1]{\textcolor{emphtc!7!purple}{\q{%
 \raisebox{-.5pt}{\textbf{\textsf{\large #1}}}}}}
 
+\newcommand{\qb}[1]{\textcolor{emphtc!7!purple}{{%
+\raisebox{-.5pt}{\textbf{\textsf{\large #1}}}}}}
+
+\newcommand{\qbalt}[1]{\textcolor{em}{{%
+\raisebox{-.5pt}{\textbf{\textsf{\large #1}}}}}}
+
+
+\ExplSyntaxOn
+\NewDocumentCommand{\qbSLemphsSL}{m}
+ {
+  \seq_set_split:Nnn \l_tmpa_seq { ~ } { #1 }
+  \seq_map_inline:Nn \l_tmpa_seq { \qbalt{##1} ~ } \unskip
+ }
+\ExplSyntaxOff
+
+
+\ExplSyntaxOn
+\NewDocumentCommand{\emphsSL}{m}
+ {
+  \seq_set_split:Nnn \l_tmpa_seq { ~ } { #1 }
+  \seq_map_inline:Nn \l_tmpa_seq { \emphs{##1} ~ } \unskip
+ }
+\ExplSyntaxOff
+
+
 
 \newcommand{\q}[1]{{\fontfamily{phv}\selectfont ``}#1{\fontfamily{phv}\selectfont ''}} 
 
+\newcommand{\qcl}{{\fontfamily{phv}\selectfont \textcolor{emphtc!7!purple}{``}}} 
+\newcommand{\qcr}{{\fontfamily{phv}\selectfont \textcolor{emphtc!7!purple}{''}}} 
+
+
+
 \newcommand{\qce}[1]{\qc{\emphs{#1}}}
+\newcommand{\qbe}[1]{{\qcl}\qbSLemphsSL{#1}{\qcr}}}
 
 
 \newcommand{\pskip}{\vspace*{14pt}}
@@ -132,7 +163,7 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\textbf{#1}};
 left=5pt,right=0pt,top=4pt,bottom=2pt,
 borderline west = {0.5pt}{0pt}{sheadc!70},borderline north = {0.5pt}{0pt}{sheadc!70}]
 \textcolor{white}{{\Large #1}}
-\end{tcolorbox}\vspace*{-6pt}
+\end{tcolorbox}\vspace*{-4pt}
 %
 }}}
 
