@@ -235,7 +235,8 @@ trim=0 100pt 0 0, clip]{pics/entries.png}
 The record book's screen displays.
 
 \item{}  Select the appropriate \empht{Record Date} and \empht{Category}. 
-The form will populate with additional sections for data entry.
+The form will populate with additional sections for data entry.  
+The \empht{Category} will be a letter from \textbf{(A)} -- \textbf{(H)}.
 
 \vspace*{14pt}
 
@@ -251,18 +252,92 @@ the \empht{Preview Record Book Entry}, in
 the exported file and can be found in the print out of the record.
 
 \item{}  Enter the appropriate information in all required fields. Required fields are underlined
-in \textcolor{red}{red}.
+in \textcolor{red}{red}.  Some information is encoded, and can be previewed from the 
+\empht{Preview Record Book Entry} section.
 
 \clearpage{}
 
 \item{}  \textbf{Optional}. For \empht{Tank Details}, there are 
 three options that can be selected where ballasting
-was performed: \empht{Already Cleaned}, \empht{Not Cleaned}, \empht{Performed Cleaning}.
+was performed: \empht{Already Cleaned}, 
+\empht{Not Cleaned}, \empht{Performed Cleaning}.  
+Checking the corresponding boxes opens 
+an additional form line in the accordion display.
 
-\vspace*{14pt}
+\vspace*{4pt}
 
-\hspace*{-60pt}\includegraphics[scale=.85,
- trim=0 0 0 130pt, clip]{pics/pics/50.png}
+%\hspace*{-60pt}\includegraphics[scale=.85,
+% trim=0 0 0 130pt, clip]{pics/pics/50.png}
+
+
+\begin{center}
+
+\definecolor{arr1}{RGB}{25, 137, 173}
+
+
+\begin{tikzpicture}[spy using outlines={circle,
+blue,opacity=0,magnification=2,size=24pt, connect spies}]
+
+\node (top) at (0,0) {
+\includegraphics[scale=.7, trim=0 0 0 21pt, clip]{pics/x/1.png}
+};
+
+\coordinate (spy-top1) at (-6.2,4.75);
+\coordinate (spy-top1-m) at (-4.2,4.4);
+
+\spy on (spy-top1) in node [center] at (spy-top1-m);
+\spyPair{spy-top1}{spy-top1-m}
+
+
+\coordinate (spy-top2) at (-2.6,4.75);
+\coordinate (spy-top2-m) at (-1,4.4);
+
+\spy on (spy-top2) in node [center] at (spy-top2-m);
+\spyPair{spy-top2}{spy-top2-m}
+
+
+\coordinate (spy-top3) at (1,4.75);
+\coordinate (spy-top3-m) at (3.3,4.4);
+
+\spy on (spy-top3) in node [center] at (spy-top3-m);
+\spyPair{spy-top3}{spy-top3-m}
+
+\loct{-6.5,3.75}{11}{1.8}
+
+\loct{-6.5,1.25}{10}{1.8}
+
+\loct{-6.4,-.79}{12.3}{1.7}
+
+\node (bottom) at (-.17,-7.6) {
+\includegraphics[scale=.7, trim=0 74 0 54pt, clip]{pics/x/2.png}
+};
+
+%\includegraphics[scale=.7,
+% trim=0 74 0 54pt, clip]{pics/x/2.png}
+
+%\draw (spy-top-m) [draw=magenta!50!black, fill=none] circle  (13pt);
+%\draw (spy-top-m) [draw=arr1, opacity=0.5, line width=1pt, fill=none] circle  (13.5pt);
+%\draw (spy-top-m) [draw=magenta!50!red, fill=none] circle  (13.5pt);
+
+%\draw (spy-top) [draw=magenta!50!black, fill=none] circle  (6.5pt);
+%\draw (spy-top) [draw=arr1, opacity=0.5, line width=1pt, fill=none] circle  (7pt);
+%\draw (spy-top) [draw=magenta!50!red, fill=none] circle  (7pt);
+
+
+
+\end{tikzpicture}
+
+
+%\includegraphics[scale=.7,
+% trim=0 0 0 21pt, clip]{pics/x/1.png}\\
+%\vspace*{-64pt}\hspace{-9pt}\includegraphics[scale=.7,
+% trim=0 74 0 54pt, clip]{pics/x/2.png}
+
+\end{center}
+
+
+\Tip{} You need to enter \textit{either} a port location \textit{or} a 
+latitude/longitude coordinate pair.
 
 \vspace*{14pt}
 
@@ -274,7 +349,7 @@ just above the \empht{Save As Draft} button. The \empht{Vessel's Last Known Stat
 dialog will be opened.  Click either \empht{Vessel's Operational Status} 
 or \empht{Engine Status} for details.
 
-\vspace*{9pt}
+\vspace*{6pt}
 
 
 \Tip{} This feature can be used on a rig or offshore vessel to view the time and location of
@@ -322,12 +397,105 @@ Then select \qce{Weekly Update of Oil Residues}.
 
 \clearpage{}
 
+\textbullet{} Encoded information is listed and can be previewed from the 
+\empht{Preview Record Book Entry} section.
+
+\vspace*{14pt}
+
+
+\hspace{-29pt}\begin{tikzpicture}[spy using outlines={circle,
+blue,opacity=0,magnification=2,size=24pt, connect spies}]
+
+\node (top1) at (0,0) {
+\includegraphics[scale=.8, trim=706pt 300pt 0 0, clip]{pics/pics/ORB-B-pre.png}
+};
+
+\node (top2) at (-1.72,4.7) {
+\includegraphics[scale=1, trim=0 4pt 0 0, clip]{pics/preview.png}
+};
+
+\node (top3) at (4,4.7) {
+\includegraphics[scale=1, trim=150pt 4pt 0 0, clip]{pics/preview.png}
+};
+
+
+\node (bottom1) at (-.05,-6) {
+\includegraphics[scale=.8, trim=706pt 300pt 0 0, clip]{pics/pics/ORB-C-pre.png}
+};
+
+\node (bottom2) at (-1.72,-.25) {
+\includegraphics[scale=1, trim=0 4pt 0 0, clip]{pics/preview.png}
+};
+
+\node (bottom3) at (4,-.25) {
+\includegraphics[scale=1, trim=150pt 4pt 0 0, clip]{pics/preview.png}
+};
+
+\loct{-3.08,4.25}{19}{2}
+
+\loct{-3.08,-.59}{19}{2}
+
+
+\end{tikzpicture}
+
+\vspace*{-214pt}
+
+If you make changes to the encoded information, click \empht{Submit} 
+once finalized.
+
+\vspace*{21pt}
+
+\hspace*{-6pt}\begin{tikzpicture}[spy using outlines={circle,
+blue,opacity=0,magnification=1.3,size=48pt, connect spies}]
+
+\node (pic) at (0,0) {
+\includegraphics[scale=1,
+ trim=0 0 0 0pt, clip]{pics/preview.png}
+};
+
+\coordinate (spy-pic) at (6.8,0);
+\coordinate (spy-pic-m) at (3,-1.7);
+
+\spy on (spy-pic) in node [center] at (spy-pic-m);
+\spyPairEnl{spy-pic}{spy-pic-m}
+
+
+\end{tikzpicture}
+
+
+\vspace*{32pt}
+
+Enter your PIN Number and click the \qc{\emphs{Ok}} button.
+
+\vspace*{14pt}
+
+\hspace*{-6pt}\begin{tikzpicture}[spy using outlines={circle,
+blue,opacity=0,magnification=1.3,size=48pt, connect spies}]
+
+\node (pic) at (0,0) {
+\includegraphics[scale=1,
+ trim=0 0 0 0pt, clip]{pics/pre-pin.png}
+};
+
+\coordinate (spy-pic) at (2.1,-1.26);
+\coordinate (spy-pic-m) at (4,-3);
+
+\spy on (spy-pic) in node [center] at (spy-pic-m);
+\spyPairEnl{spy-pic}{spy-pic-m}
+
+
+\end{tikzpicture}
+
+\clearpage{}
+
 To create a record for non-automatic water discharge, navigate to 
 \empht{Oil Record Book Part I -- Machinery Space Operations}
 
 \vspace*{14pt}
 
-\hspace*{-60pt}\includegraphics[scale=.85,
+
+
+\hspace*{-54pt}\includegraphics[scale=.82,
  trim=0 0 0 0pt, clip]{pics/pics/ORB-D.png}
 
 \vspace*{14pt}
@@ -392,9 +560,6 @@ For the \textbf{Category}, select \qbe{(G) Accidental or other exceptional
 discharges of oil}.  
 
 \vspace*{11pt}
-
-\Tip{} You need to enter \textit{either} a port location \textit{or} a 
-latitude/longitude coordinate pair.
 
 \clearpage{}
 

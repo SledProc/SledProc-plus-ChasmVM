@@ -9,7 +9,7 @@ paperheight=12in,paperwidth=8.5in]{geometry}
 \usetikzlibrary{shapes.geometric}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{positioning}
-
+\usetikzlibrary{spy}
 
 \usepackage{ifthen}
 
@@ -75,6 +75,14 @@ inner sep=3pt, shading angle=210,xshift=.5pt] (char) at (0,5) {\textbf{#1}};
 
 \usepackage[many]{tcolorbox}
 \usetikzlibrary{arrows,shadows,petri,decorations.markings,shapes}
+
+
+\newcommand{\cwhite}[2]{%
+\contourlength{1.5pt}\contournumber{10}\contour{black!#1}{\textcolor{white}{#2}}}
+
+\newcommand{\cwhiteEm}[1]{\cwhite{#1}{---}}
+
+\newcommand{\cwhiteTip}[1]{\cwhiteEm{40} \cwhite{59}{\textsf{{\Large #1}}}}
 
 \newcommand{\acct}[1]{%
 \contourlength{0.1pt}\contournumber{10}\contour{red}{#1}}
@@ -178,4 +186,106 @@ borderline south = {1.5pt}{0pt}{sheadc!60}]
 \newcommand{\Tip}{\textcolor{red}{Tip\raisebox{2pt}{%
 \resizebox{4pt}{6pt}{!}%
 }}\hspace*{5pt}}
+
+
+
+\definecolor{spyPairc1}{RGB}{98, 84, 107}
+\definecolor{spyPairc2}{RGB}{255, 172, 0}
+\colorlet{spyPairc12}{spyPairc1!50!spyPairc2}
+
+\newcommand{\loct}[3]{
+\node at (#1) [anchor=north west, draw=spyPairc2!50!gray, line width=1pt,
+fill=yellow, fill opacity=0.2, regular polygon, 
+regular polygon sides=8, xscale=#2, yscale=#3] {};
+}
+
+\newcommand{\cloud}[3]{
+
+\node[anchor=north west, cloud, cloud puffs=10.3,cloud puff arc=120, aspect=2, opacity=0.7,
+top color=magenta!50!blue, bottom color=white, shading angle=0, 
+inner ysep=1em, xscale=#1, yscale=#2, 
+draw=brown, line width=4pt, draw opacity=0.3]  at (#3) {};
+
+\node[anchor=north west, cloud, cloud puffs=10.3,cloud puff arc=120, aspect=2, opacity=0.5, 
+top color=magenta!50!blue, bottom color=white, shading angle=180, 
+inner ysep=1em, xscale=#1, yscale=#2,
+draw=blue!30!black, line width=2pt, draw opacity=0.3]  at (#3) {};
+
+}
+
+\newcommand{\spyPair}[2]{
+
+
+\fill (#2) [top color=spyPairc1, bottom color=spyPairc2, 
+shading angle=180, draw=none] circle  (14pt);
+\fill (#2) [top color=spyPairc1, bottom color=spyPairc2, 
+shading angle=0, draw=none] circle  (13pt);
+\fill (#2) [fill=white, 
+line width=.5pt] circle  (12pt);
+
+\draw (#1) [draw=magenta!50!black, fill=none] circle  (6.5pt);
+\draw (#1) [draw=arr1, opacity=0.5, line width=1pt, fill=none] circle  (7pt);
+\draw (#1) [draw=magenta!50!red, fill=none] circle  (7pt);
+
+\node(cc) at (#2) {};
+
+ \node (ccl) [left=21pt of cc] {};%
+ \node (ccr) [right=21pt of cc] {};%
+
+\draw [line width=2pt, draw=spyPairc12, 
+-{Stealth[spyPairc12!70!magenta,length=2pt,width=9pt]}, shorten >=10] (ccl) to (cc);
+
+\draw [line width=2pt, draw=spyPairc12, 
+-{Stealth[spyPairc12!70!magenta,length=2pt,width=9pt]}, shorten >=10] (ccr) to (cc);
+
+
+}
+
+
+
+\newcommand{\spyPairEnl}[2]{
+
+
+\fill (#2) [top color=spyPairc1, bottom color=spyPairc2, 
+shading angle=180, draw=none] circle  (25pt);
+\fill (#2) [top color=spyPairc1, bottom color=spyPairc2, 
+shading angle=0, draw=none] circle  (24pt);
+\fill (#2) [fill=white, 
+line width=.5pt] circle  (23pt);
+
+\draw (#1) [draw=magenta!50!black, fill=none] circle  (18.5pt);
+\draw (#1) [draw=arr1, opacity=0.5, line width=1pt, fill=none] circle  (19pt);
+\draw (#1) [draw=magenta!50!red, fill=none] circle  (19pt);
+
+\node(cc) at (#2) {};
+
+ \node (ccl) [left=35pt of cc] {};%
+ \node (ccr) [right=35pt of cc] {};%
+
+\draw [line width=2pt, draw=spyPairc12, 
+-{Stealth[spyPairc12!70!magenta,length=2pt,width=9pt]}, shorten >=21] (ccl) to (cc);
+
+\draw [line width=2pt, draw=spyPairc12, 
+-{Stealth[spyPairc12!70!magenta,length=2pt,width=9pt]}, shorten >=21] (ccr) to (cc);
+
+
+}
+
+
+
+
+
+
+
+%\draw (#2) [draw=magenta!50!black, fill=none] circle  (13pt);
+%\draw (#2) [draw=arr1, opacity=0.5, line width=1pt, fill=none] circle  (13.5pt);
+%\draw (#2) [draw=magenta!50!red, fill=none] circle  (13.5pt);
+
+%\draw (#1) [draw=magenta!50!black, fill=none] circle  (6.5pt);
+%\draw (#1) [draw=arr1, opacity=0.5, line width=1pt, fill=none] circle  (7pt);
+%\draw (#1) [draw=magenta!50!red, fill=none] circle  (7pt);
+
+
+
+
 
