@@ -90,6 +90,7 @@ cpp/qmake-console/targets/*
 *.zip
 !/dev/documents/gen/src-copy.zip
 !/preferred/preferred-zip.zip
+!latex.zip
 
 *.gz
 *.aux

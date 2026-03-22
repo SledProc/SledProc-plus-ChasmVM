@@ -29,6 +29,43 @@
 
 {\fontfamily{pbk}\fontsize{11}{14}\selectfont
 
+\vspace*{23pt}
+
+\shead{Summary}
+
+\vspace*{32pt}
+
+This document provides a detailed guide for accessing and using the \eLogs{} electronic record-keeping system, including account setup, PIN and signature creation, 
+and making entries in the \empht{Oil Record Book} for 
+machinery space operations -- i.e., the \empht{Machinery Space} module.
+
+\vspace*{6pt}
+
+\begin{itemize}[itemsep=13pt, leftmargin=21pt, labelsep=13pt, 
+label=\cbull{}]
+
+\item{} User accounts and access methods: Two test user accounts are created with passwords, and \eLogs{} can be accessed via the \textbf{UAT RD} Web page or directly through site-specific URLs, preferably using a Chrome browser. Login requires NSE credentials. 
+
+\item{} Initial PIN and signature setup: Upon first login, users must reset or create a PIN and save their signature to avoid repeated signing for each record update. This is done via 
+\qce{Account Settings}, with instructions for both new and older accounts. 
+
+\item{} Saving and using signature: After creating the signature, users must save it to avoid signing repeatedly. When submitting records, users enter their PIN to apply the saved signature. 
+
+\item{} \eLogs{} dashboard and module navigation: The document shows the MARPOL Books dashboard and guides users to select the \empht{Oil Record Book Part I} for machinery space operations to make log entries. 
+
+\item{} Creating daily log entries: Users click the \CreatePlus{} button to enter daily logs, ensuring all mandatory fields (underlined in red) are completed for submission. 
+
+\item{} Entry details and time format: Entries require selecting record date and category, with times entered in military format using GMT and local time. Optional tank details can be specified regarding ballasting. 
+
+\item{} Viewing vessel status: Users can view the vessel's last known operational or engine status from the entry screen, useful for rigs or offshore vessels. 
+
+\item{} Categories for record entries: Various categories are available for specific record types including dirty ballast discharge, oil residues, bilge water discharge, oil filtering equipment condition, accidental oil discharges, bunkering, and general remarks. Location details are required for some entries. 
+
+\item{} Attachments and record submission: Users can upload attachments in several file formats, save drafts, and enter officer details and signature PIN (necessary to submit records). Drafts can be deleted before final submission.  
+
+\end{itemize}
+
+\clearpage{}
 
 \shead{Introduction}
 
@@ -49,7 +86,10 @@ Password \pword{marad1234}.
 
 \begin{enumerate}[itemsep=-1pt]
 
-\item{} Open the UAT RD Web page.
+\item{} Open the UAT RD Web page:\\
+\href{https://marhsawas908.ad.dot.gov/RDWeb/Pages/en-US/Default.aspx}%
+{https://marhsawas908.ad.dot.gov/RDWeb/Pages/en-US/Default.aspx}
+\vspace*{8pt}
 
 \item{} Click on the NSA-E log remote app to launch the app.\\
 
@@ -78,7 +118,7 @@ For purposes of this guide we will use the first option with following steps:
 \end{enumerate}
 
 The other option to access \eLogs{} is by directly opening the \eLogs{} URL from a browser. 
-The URLs are different for each site since the host's name is part of the URL. 
+The URLs are different for each site because the host's name is part of the URL. 
 For testing, access \eLogs{} by opening the URL: 
 \href{http://marhsawas908:7071/#/login}{http://marhsawas908:7071/\#/login} from a browser. 
 (\eLogs{} works better if the Chrome browser is used). Once at the login page, 
@@ -86,13 +126,14 @@ use your NSE Credentials to log in.
 
 \clearpage{}
 
-%\vspace{1.6em}
+\vspace*{-21pt}
+
 \sshead{.55\textwidth}{Login}
 \vspace{1em}
 
 \hspace*{-29pt}\includegraphics[scale=.52]{pics/sign-in.png}
 
-\vspace*{14pt}
+\vspace*{11pt}
 
 After login, the user selects \empht{change/Create PIN} and creates a signature.
 
@@ -105,7 +146,7 @@ and password \pword{marad1234} to capture the process of creating/resetting a PI
 
 \item{} After login to \eLogs{}, click on \empht{Account settings} located at the top-right of the page:
 
-\vspace*{14pt}
+\vspace*{11pt}
 
 \hspace*{-43pt}\includegraphics[scale=.6]{pics/settings.png}
 
@@ -170,47 +211,55 @@ click \qc{\emphs{Ok}} to complete submitting the record update.
 
 \clearpage{}
 
-\item{} This is the oil record book dashboard. The icons are active, you click on them 
-to make log entries as needed.
-
-\item{} This is the Input Data Selection page/action operation page.\\
+\item{} This is the oil record book dashboard. The icons are active: you click on them 
+to make log entries as needed. \\
 
 \vspace*{-15pt}
-\hspace{1pt}\textbullet{} From the dashboard page please select the 
-OIL RECORD BOOK PART 1:
+\hspace{1pt}\cbull{} \hspace{5pt} From the dashboard page please select the 
+\qce{OIL RECORD BOOK PART 1} option:
 
 \vspace*{14pt}
 
 \hspace*{-43pt}\includegraphics[scale=.55]{pics/admin.png}
 
-\vspace*{14pt}
-
-
+\vspace*{32pt}
 
 %\vspace*{21pt}
 %\vspace*{14pt}
 
-\item{} Click on the \empht{Create +} button to record your daily entries.
+\item{} This is the Input Data Selection page/action operation page.
 
 \vspace*{14pt}
 
 \hspace*{-30pt}\includegraphics[scale=.54,
  trim=0 110pt 0 0, clip]{pics/actions1.png}
 
+
 \clearpage{}
 
-\hspace*{-30pt}\includegraphics[scale=.54]{pics/actions2.png}
+\vspace*{-36pt}
+
+The different buttons allow you to create, print, view, modify, 
+and strike (delete) record book entries, among other actions.
 
 \vspace*{14pt}
 
+\hspace*{-30pt}\includegraphics[scale=.54]{pics/actions2.png}
 
-\item{} Clicking on the \empht{Create +} button will take you here to this page, to the Oil record book template.  Entries that are underlined in red are mandatory 
-and must has to be completed for submission of the \eLogs{} record.
+\vspace*{26pt}
+
+\item{} Click on the \CreatePlus{} button to record your daily entries.  
+You will then be taken to this page: the 
+\qce{Oil Record Book} template.   \\
+
+\vspace*{-7pt}
+\hspace{1pt}\cbull{} \hspace{5pt} Entries that are underlined in \textcolor{red}{red} are mandatory 
+and must be completed for submission of the \eLogs{} record.
 
 \vspace*{14pt}
 
 \hspace*{-50pt}\includegraphics[width=1.1\textwidth, 
-trim=0 100pt 0 0, clip]{pics/entries.png}
+trim=0 198pt 0 0, clip]{pics/entries.png}
 
 
 \end{enumerate}
@@ -228,7 +277,7 @@ trim=0 100pt 0 0, clip]{pics/entries.png}
 
 \begin{enumerate}
 
-\item{}  From the Electronic Record Books (\eLogs{}) screen (ship level), select the 
+\item{}  From the Electronic Record Books (\eLogs{}) screen (ship level), select 
 \empht{Oil Record Book Part I -- Machinery Space Operations}.
 
 \item{}  On the record book menu, select the \empht{Create} button. 
@@ -343,7 +392,7 @@ latitude/longitude coordinate pair.
 
 %\clearpage{}
 
-\textbullet{} To view the \empht{Vessel's Last Known Status}, 
+\cbull{} \hspace{5pt} To view the \empht{Vessel's Last Known Status}, 
 click the button located to the top right of the screen
 just above the \empht{Save As Draft} button. The \empht{Vessel's Last Known Status} 
 dialog will be opened.  Click either \empht{Vessel's Operational Status} 
@@ -397,7 +446,7 @@ Then select \qce{Weekly Update of Oil Residues}.
 
 \clearpage{}
 
-\textbullet{} Encoded information is listed and can be previewed from the 
+\hspace{1pt} \cbull{} \hspace{5pt} Encoded information is listed and can be previewed from the 
 \empht{Preview Record Book Entry} section.
 
 \vspace*{14pt}
